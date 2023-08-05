@@ -1,0 +1,12 @@
+peruse/__init__.py,sha256=moREgJv5XsJgsxHGlDsLvHbeCW8mVw1p3ov1kuJ_X5w,109
+peruse/single_wf_snip_analysis.py,sha256=KMcLBbGWCD1wqNTaaoNfRtkkKZxibEK_BdtVHqXmIlQ,20675
+peruse/slang_lite_py2http_ws.py,sha256=HQyf16rkVpu88fRJadBxWDafRM4JmcV9oMESBDrOfYA,8242
+peruse/slang_lite_ws.py,sha256=EsYfkR0qczglJGzzSMuHHrAEaMIl_ad32qd3Xne0DVw,5536
+peruse/util.py,sha256=VUV8nWspTuAfuEugvVLLSaL8Fob1at6mzxHS4933zsg,2898
+peruse/scrap/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peruse/scrap/correlation_detection.py,sha256=KA6VlXko3PloxD716oduyDD8oHgnq5QzUYn8QvN7IZU,1900
+peruse-0.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+peruse-0.0.11.dist-info/METADATA,sha256=1R42xPhiQ0ReNBEyV1CMlzxh6rC5idcxP7HLLdGJwfE,2757
+peruse-0.0.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+peruse-0.0.11.dist-info/top_level.txt,sha256=TizyBalw2_4OrNcOhzYLmnJNd5KBBzk1qRlaF2mAoGY,7
+peruse-0.0.11.dist-info/RECORD,,
