@@ -1,0 +1,3 @@
+[console_scripts]
+skippex=skippex.cmd:main
+
