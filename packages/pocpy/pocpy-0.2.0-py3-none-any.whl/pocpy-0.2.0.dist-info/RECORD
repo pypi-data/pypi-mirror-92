@@ -1,0 +1,9 @@
+pocpy/__init__.py,sha256=_dSZyeDWfr1eQ9i-7UI6Ywn-8am2AeOe6-jpMZ8-o58,84
+pocpy/logpolar_opencv2.py,sha256=-Yo1ZNlwAUZH8zihUkCzfsOvuejkBjaOUklYUSlNVCU,380
+pocpy/logpolar_opencv3.py,sha256=_LDGMyKzzybG_LwuPUCIDQqDSgRagtJpcmdCS64iuLA,170
+pocpy/poc.py,sha256=UndP5lgju9Ln0YeAsi1W_9ji6GQ1eFlJM2JsJHmDpJo,3483
+pocpy-0.2.0.dist-info/LICENSE,sha256=ya6wTohzVKuxmkmZDcbEt9zjnI5_tNn90pPu5VZ8kTg,1074
+pocpy-0.2.0.dist-info/METADATA,sha256=4182IEqepDCH9uj21mP5OGotYFwphkSw2Hzm5ahHYvQ,907
+pocpy-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pocpy-0.2.0.dist-info/top_level.txt,sha256=3VIRoXRcRMW4YEPuM2BYc-sZh9mICjrSMy1dTccFEcs,6
+pocpy-0.2.0.dist-info/RECORD,,
