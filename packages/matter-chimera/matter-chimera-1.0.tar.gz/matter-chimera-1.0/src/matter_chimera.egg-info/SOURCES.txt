@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/chimera/__init__.py
+src/chimera/_version.py
+src/chimera/chimera.py
+src/matter_chimera.egg-info/PKG-INFO
+src/matter_chimera.egg-info/SOURCES.txt
+src/matter_chimera.egg-info/dependency_links.txt
+src/matter_chimera.egg-info/not-zip-safe
+src/matter_chimera.egg-info/requires.txt
+src/matter_chimera.egg-info/top_level.txt
