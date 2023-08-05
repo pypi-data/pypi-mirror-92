@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: neurohive-devops-tools
+Version: 0.0.58
+Summary: Neurohive devops tools
+Home-page: UNKNOWN
+Author: Dmitriy Shelestovskiy
+Author-email: one@sonhador.ru
+License: UNKNOWN
+Description: # Info
+        
+        Set of various scripts which were used in '19-'20 to operate some integrations in CI pipelines.
+        
+        It previously was distributed via PIP package, now it's a python-based Docker container.
+        
+        # Installation
+        
+        ## Handy
+        
+        Just use a docker container, e.g.:
+        
+        ```
+        docker build . -t devops-integration-tools
+        docker run --rm -ti devops-integration-tools
+        ```
+        
+        ## Manual
+        
+        Build a package:
+        
+        ```
+        pip install setuptools wheel
+        python ./setup.py  sdist bdist_wheel
+        ```
+        
+        Then upload to PyPI:
+        
+        ```
+        twine upload ./dist/*
+        ```
+        
+        Then install it somewhere:
+        
+        ```
+        pip install devops-integration-tools
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
