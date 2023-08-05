@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+mkdocs_git_snippet/__init__.py
+mkdocs_git_snippet/plugin.py
+mkdocs_git_snippet/util.py
+mkdocs_git_snippet.egg-info/PKG-INFO
+mkdocs_git_snippet.egg-info/SOURCES.txt
+mkdocs_git_snippet.egg-info/dependency_links.txt
+mkdocs_git_snippet.egg-info/entry_points.txt
+mkdocs_git_snippet.egg-info/not-zip-safe
+mkdocs_git_snippet.egg-info/requires.txt
+mkdocs_git_snippet.egg-info/top_level.txt
