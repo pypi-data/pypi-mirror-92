@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ganariya-neats
+Version: 0.2.2
+Summary: A NEAT (NeuroEvolution of Augmenting Topologies) implementation
+Home-page: https://github.com/ganariya/neat-python
+Author: cesar.gomes, mirrorballu2, ganariya
+Author-email: nobody@nowhere.com
+Maintainer: CodeReclaimers, LLC, ganariya
+Maintainer-email: ganariya2525@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+
+Python implementation of NEAT (NeuroEvolution of Augmenting Topologies), a method developed by Kenneth O. Stanley for evolving arbitrary neural networks.
+
+
