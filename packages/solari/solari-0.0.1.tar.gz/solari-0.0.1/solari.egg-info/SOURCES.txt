@@ -1,0 +1,16 @@
+README.md
+setup.py
+solari/__init__.py
+solari/solari.py
+solari.egg-info/PKG-INFO
+solari.egg-info/SOURCES.txt
+solari.egg-info/dependency_links.txt
+solari.egg-info/requires.txt
+solari.egg-info/top_level.txt
+solari/stats/__init__.py
+solari/stats/champions_rate_stats.py
+solari/stats/champions_stats.py
+solari/stats/items_rate_stats.py
+solari/stats/player_rates.py
+solari/stats/stats_managers.py
+solari/stats/stats_types.py
