@@ -1,0 +1,9 @@
+README.md
+setup.py
+logmagic/MongoHandler.py
+logmagic/__init__.py
+logmagic/loggerutil.py
+logmagic.egg-info/PKG-INFO
+logmagic.egg-info/SOURCES.txt
+logmagic.egg-info/dependency_links.txt
+logmagic.egg-info/top_level.txt
