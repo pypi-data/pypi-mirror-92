@@ -1,0 +1,167 @@
+image: registry.gitlab.com/ftrotta/python3.6-ubuntu18.04:01
+
+before_script:
+  - pip install --upgrade pip
+
+stages:
+  - test
+  - deploy
+
+test:unit-with-coverage:
+  stage: test
+  script:
+    - pip install -r requirements/test.txt
+    - pip install .
+    - cd src
+    - pytest --cov=ftrotta.pycolib --cov-branch --cov-report term-missing tests
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(rc(0|[1-9]\d*))?$/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH !~ /wip/i'
+      when: always
+    - when: never
+  coverage: '/^TOTAL\s+\d+\s+\d+\s+\d+\s+\d+\s+(\d+\%)$/'
+  tags:
+    - docker
+
+lint:pylint:
+  stage: test
+  script:
+    - pip install -r requirements/run.txt && pip install -r requirements/test.txt
+    - cd src
+    - export PYTHONPATH=$PYTHONPATH:$(pwd)
+    - exec > >(tee -i ../pylint_output)
+    - pylint tests ftrotta
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(rc(0|[1-9]\d*))?$/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH !~ /wip/i'
+      when: always
+    - when: never
+  artifacts:
+    paths:
+      - pylint_output
+    expire_in: 30 min
+  tags:
+    - docker
+
+lint:flake8:
+  stage: test
+  script:
+    - pip install -r requirements/run.txt && pip install -r requirements/test.txt
+    - cd src
+    - flake8 tests ftrotta
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(rc(0|[1-9]\d*))?$/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH !~ /wip/i'
+      when: always
+    - when: never
+  tags:
+    - docker
+
+static-type-check:
+  stage: test
+  script:
+    - pip install -r requirements/run.txt && pip install -r requirements/test.txt
+    - cd src
+    - pytype --config=pytype.cfg tests ftrotta
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(rc(0|[1-9]\d*))?$/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH !~ /wip/i'
+      when: always
+    - when: never
+  tags:
+    - docker
+
+test:pypi:
+  stage: test
+  variables:
+    TWINE_USERNAME: '__token__'
+    TWINE_PASSWORD: $TWINE_TEST_PASSWORD
+    # Be careful to CI variables, that are only exposed to PROTECTED branches/tags by default
+    TWINE_NON_INTERACTIVE: '1'
+  script:
+    - pip install --upgrade setuptools twine
+    - python setup.py sdist bdist_wheel
+    - twine check --strict dist/*
+    - twine upload --repository testpypi dist/*
+  artifacts:
+    paths:
+      - dist
+    when: on_success
+    expire_in: 1d
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)rc(0|[1-9]\d*)$/'
+      when: always
+    - when: never
+  tags:
+    - docker
+
+test:documentation:
+  stage: test
+  script:
+    - pip install -r requirements/run.txt && pip install -r requirements/doc.txt
+    - cd docs
+    - sphinx-build -W . _build
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(rc(0|[1-9]\d*))?$/'
+      when: always
+    - if: '$CI_COMMIT_BRANCH !~ /wip/i'
+      when: always
+    - when: never
+  tags:
+    - docker
+
+pypi:
+  stage: deploy
+  variables:
+    TWINE_USERNAME: '__token__'
+    TWINE_PASSWORD: $TWINE_LIVE_PASSWORD
+    # Be careful to CI variables, that are only exposed to PROTECTED branches/tags by default
+    TWINE_NON_INTERACTIVE: '1'
+  script:
+    - pip install --upgrade setuptools twine
+    - python setup.py sdist bdist_wheel
+    - twine check --strict dist/*
+    - twine upload dist/*
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/'
+      when: always
+    - when: never
+  dependencies:
+    - test:pypi
+  tags:
+    - docker
+
+custom-badges:
+  stage: deploy
+  image: python:3.6.6
+  script:
+    - mkdir badges
+    - pip install anybadge
+    - latest_version=$(git describe)
+    - anybadge -l "latest version" -v ${latest_version} -f badges/latest_version.svg -c green
+    - pylint_score=$(grep -o -E '[0-9]+([.][0-9]+)' pylint_output)
+    - anybadge -l pylint -v ${pylint_score} -f badges/pylint.svg pylint
+    - anybadge -l pytype -v checked -f badges/pytype.svg -c green
+    - anybadge -l flake8 -v checked -f badges/flake8.svg -c green
+  artifacts:
+    paths:
+      - badges
+    when: always
+    expire_in: never
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /^v(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/'
+      when: always
+    - when: never
+  dependencies:
+    - lint:pylint
+    - static-type-check
+    - lint:flake8
+  tags:
+    - docker
+
+
+# Debug single job locally by `gitlab-runner exec docker <job-name>`

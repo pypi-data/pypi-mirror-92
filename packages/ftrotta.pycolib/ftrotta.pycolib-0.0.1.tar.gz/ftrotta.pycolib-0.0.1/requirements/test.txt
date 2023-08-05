@@ -1,0 +1,8 @@
+# Packages for testing
+pytest
+pytest-cov
+pytest-sugar
+coverage
+pylint
+pytype
+flake8

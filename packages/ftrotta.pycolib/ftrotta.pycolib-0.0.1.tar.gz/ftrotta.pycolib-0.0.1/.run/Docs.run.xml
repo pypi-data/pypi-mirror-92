@@ -1,0 +1,48 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Docs" type="docs" factoryName="Sphinx task">
+    <module name="pycolib" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <option name="SDK_HOME" value="docker://pycolib:latest/python" />
+    <option name="WORKING_DIRECTORY" value="/opt/project/docs" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <EXTENSION ID="DockerContainerSettingsRunConfigurationExtension">
+      <option name="envVars">
+        <list />
+      </option>
+      <option name="extraHosts">
+        <list />
+      </option>
+      <option name="links">
+        <list />
+      </option>
+      <option name="networkDisabled" value="false" />
+      <option name="networkMode" value="bridge" />
+      <option name="portBindings">
+        <list />
+      </option>
+      <option name="publishAllPorts" value="false" />
+      <option name="runCliOptions" value="--entrypoint= --rm" />
+      <option name="version" value="2" />
+      <option name="volumeBindings">
+        <list>
+          <DockerVolumeBindingImpl>
+            <option name="containerPath" value="/opt/project" />
+            <option name="editable" value="true" />
+            <option name="hostPath" value="$PROJECT_DIR$" />
+            <option name="readOnly" value="false" />
+          </DockerVolumeBindingImpl>
+        </list>
+      </option>
+    </EXTENSION>
+    <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+    <option name="docutils_input_file" value="." />
+    <option name="docutils_output_file" value="_build" />
+    <option name="docutils_params" value="-W" />
+    <option name="docutils_task" value="html" />
+    <option name="docutils_open_in_browser" value="false" />
+    <method v="2" />
+  </configuration>
+</component>
