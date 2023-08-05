@@ -1,0 +1,6 @@
+numpy
+msgpack
+onnx
+onnxruntime>=1.2.0
+nnoir
+protobuf>=3.8
