@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/fortiel.py
+src/gfortiel.py
+src/fortiel.egg-info/PKG-INFO
+src/fortiel.egg-info/SOURCES.txt
+src/fortiel.egg-info/dependency_links.txt
+src/fortiel.egg-info/entry_points.txt
+src/fortiel.egg-info/top_level.txt
