@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: GamesmanPuzzles
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: Flask (>=1.1.1)
+Requires-Dist: pytest (>=5.3.5)
+Requires-Dist: sqlitedict (>=1.6.0)
+Requires-Dist: progressbar2 (>=3.51.0)
+Requires-Dist: networkx (>=2.4)
+
+UNKNOWN
+
+
