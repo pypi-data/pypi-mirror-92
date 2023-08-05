@@ -1,0 +1,22 @@
+parameters:
+  databricksbundle:
+    enableNotebookErrorHandler: True
+
+services:
+  databricksbundle.notebook.decorator.DuplicateColumnsChecker:
+    arguments:
+      - '@databricksbundle.logger'
+
+  databricksbundle.notebook.decorator.help.ArgumentsHelpGenerator:
+    arguments:
+      - !tagged 'databricksbundle.notebook.decorator.popularService'
+
+  databricksbundle.notebook.function.ArgumentResolver:
+    arguments:
+      - '@databricksbundle.logger'
+
+  databricksbundle.notebook.function.ArgumentsResolver:
+
+  databricksbundle.notebook.logger.NotebookLoggerFactory:
+    arguments:
+      - '@databricksbundle.notebook.pathResolver'
