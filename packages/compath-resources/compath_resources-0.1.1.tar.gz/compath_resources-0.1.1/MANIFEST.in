@@ -1,0 +1,15 @@
+graft src
+graft tests
+prune notebooks
+prune docs
+
+recursive-include mappings *.csv
+recursive-include mappings *.tsv
+recursive-exclude mappings *.rdf
+recursive-exclude mappings *.rst
+recursive-exclude mappings *.xlsx
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib .DS_Store *.gpickle
+
+exclude .bumpversion.cfg
+include *.rst *.txt *.yml LICENSE tox.ini .flake8 doc8.ini .coveragerc
