@@ -1,0 +1,7 @@
+scrapy_sink/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+scrapy_sink/pipelines.py,sha256=vrB6JE5uO7Hcrrf_9Iwhn2aRGxfguo5uhn32A3nONDs,955
+scrapy_sink/simple.py,sha256=KF5bATe90kSSo1g5FnSSRiqnK4sSS71HilrU1wuu43o,1057
+scrapy_sink-0.1.2.dist-info/METADATA,sha256=qLBysdRIP-twiZn2ZdrNxryFAoxCX9mcLIN0TyD5zfc,1967
+scrapy_sink-0.1.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+scrapy_sink-0.1.2.dist-info/top_level.txt,sha256=gEOrbVokogEneTpCL_ueU_MyeInqfhurRv49MDoHLTw,12
+scrapy_sink-0.1.2.dist-info/RECORD,,
