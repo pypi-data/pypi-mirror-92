@@ -1,0 +1,10 @@
+README.md
+gitsafe.py
+setup.py
+gitsafe.egg-info/PKG-INFO
+gitsafe.egg-info/SOURCES.txt
+gitsafe.egg-info/dependency_links.txt
+gitsafe.egg-info/entry_points.txt
+gitsafe.egg-info/not-zip-safe
+gitsafe.egg-info/requires.txt
+gitsafe.egg-info/top_level.txt
