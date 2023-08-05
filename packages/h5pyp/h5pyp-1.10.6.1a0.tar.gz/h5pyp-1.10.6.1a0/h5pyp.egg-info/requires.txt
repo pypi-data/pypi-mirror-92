@@ -1,0 +1,4 @@
+mpi4py>=3.0.0
+numpy>=1.18.0
+setuptools>=45.0.0
+six>=1.14.0

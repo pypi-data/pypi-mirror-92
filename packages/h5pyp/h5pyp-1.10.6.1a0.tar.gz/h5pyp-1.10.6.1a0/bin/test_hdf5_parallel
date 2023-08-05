@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# This script belongs to Python package h5pyp
+""" Run this script with:
+
+    mpiexec -n 4 python3 test_hdf5_parallel.py
+
+    and check the output with:
+
+    .../venv/lib/python3.6/site-packages/hdf5lib/bin/h5pyp_dump
+            parallel_test.hdf5
+"""
+from mpi4py import MPI
+import h5py
+
+if MPI.COMM_WORLD.size == 1:
+    print('Please run this command with'
+            ' "mpiexec -n 4 test_hdf5_parallel"\n'
+            'and check its output with "h5pyp_dump parallel_test.hdf5"')
+rank = MPI.COMM_WORLD.rank  # The process ID (integer 0-3 for 4-process run)
+
+f = h5py.File('parallel_test.hdf5', 'w', driver='mpio', comm=MPI.COMM_WORLD)
+
+dset = f.create_dataset('test', (MPI.COMM_WORLD.size,), dtype='i')
+dset[rank] = rank
+
+f.close()

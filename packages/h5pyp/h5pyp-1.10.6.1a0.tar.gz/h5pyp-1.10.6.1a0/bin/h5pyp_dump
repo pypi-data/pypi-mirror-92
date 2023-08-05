@@ -1,0 +1,11 @@
+#!/d0/test/venv/bin/python3
+# This script belongs to Python package h5pyp
+import os
+import sys
+import subprocess
+import h5py
+
+site_packages_dir = os.path.dirname(h5py.__path__[0])
+h5dump = os.path.join(site_packages_dir, 'h5pyp', 'bin', 'h5dump')
+
+subprocess.check_call([h5dump, *sys.argv[1:]])
