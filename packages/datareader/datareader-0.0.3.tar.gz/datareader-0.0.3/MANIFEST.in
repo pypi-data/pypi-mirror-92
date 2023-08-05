@@ -1,0 +1,2 @@
+include *.txt
+recursive-include /home/michael/PycharmProjects/datareader/data *.txt *.py *.md
