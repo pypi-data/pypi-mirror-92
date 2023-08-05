@@ -1,0 +1,10 @@
+veils/__init__.py,sha256=madKe6If6DWVfjD6i7eq5inFTGmib9ZvHciGqLXuE20,83
+veils/_async_dummy.py,sha256=I9Zg4hqbzCx1f6POdm3DUqtQ_41Y0_7Grl_IJnOOjBM,43
+veils/memo.py,sha256=TnSM6MuIh31ZiBpx1DBc4IITdfQjAbFKofX4rZvacws,3526
+veils/unpiercable.py,sha256=a93v5wX44ECqJJ1fQBBIj9xUNwV8eL9hdivYikGLP3o,2523
+veils/veil.py,sha256=oGsd3TYvUhvBuACZkrgyQx6mkOCWD6LImZwrJ-khozU,3799
+veils/veil_factory.py,sha256=-zP6jQIgUCDbSL1fMUl30GhVirvz8kRhtV7pHbJpBFQ,2003
+veils-0.2.0.dist-info/LICENSE,sha256=1oQVVMSk6To1-6xqKrXNHX1em14worF2kxRTrELJKXM,1069
+veils-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+veils-0.2.0.dist-info/METADATA,sha256=FMeMloCT_kG1u8aPlii8A4vNlIQD29TGglgGnFItuEM,3296
+veils-0.2.0.dist-info/RECORD,,
