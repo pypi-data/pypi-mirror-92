@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: PyTop-Generator
+Version: 0.0.2
+Summary: A package to generate desktop files for your python script.
+Home-page: https://gitlab.com/Raspilot/pytop-generator
+Author: Fabian Becker
+Author-email: fab.becker@protonmail.com
+License: BSD License
+Download-URL: https://gitlab.com/Raspilot/pytop-generator.git
+Description: # PyTop Generator
+        
+        … offers an easy way to add your python script to any linux desktop.
+        
+Keywords: desktop files icon shortcut pytop generator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
