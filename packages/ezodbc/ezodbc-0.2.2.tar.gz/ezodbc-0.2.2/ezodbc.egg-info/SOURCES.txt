@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ezodbc/__init__.py
+ezodbc/__version__.py
+ezodbc/core.py
+ezodbc/profiles.py
+ezodbc/test.py
+ezodbc/ui.py
+ezodbc.egg-info/PKG-INFO
+ezodbc.egg-info/SOURCES.txt
+ezodbc.egg-info/dependency_links.txt
+ezodbc.egg-info/requires.txt
+ezodbc.egg-info/top_level.txt
