@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: biobrary
+Version: 0.0.2
+Summary: library for bioinformatics.
+Home-page: https://github.com/benjaminfang/biobrary
+Author: Benjamin Fang
+Author-email: benjaminfang.ol@outlook.com
+License: MIT
+Description: biobrary
+        A library for bioinformatics.
+        
+Keywords: bioinformatics,file_parser
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
