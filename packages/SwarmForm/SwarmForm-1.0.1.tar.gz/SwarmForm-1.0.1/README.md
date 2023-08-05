@@ -1,0 +1,83 @@
+**SwarmForm**
+
+SwarmForm is a distributed workflow management system for High Performance Computing environments. SwarmForm introduces task clustering to reduce the makespan of workflows executed using it by minimizing the overheads. SwarmForm follows a distributed architecture with independent programs controlling different functional layers in workflow management.
+
+**Getting Started**
+
+These instructions will get you familiar with the installation and basic functions of the SwarmForm.
+
+**_Prerequisites_**
+
+Following prerequisites should be installed to run SwarmForm.
+
+* MongoDB
+* Python 3.3+
+* pip
+
+**_Installation_**
+
+To install SwarmForm, simply type
+
+```
+pip install SwarmForm
+```
+
+**_Basic Usage_**
+
+Following is a step by step series of examples that tell you how to use the basic system functions.
+
+* Initialize a SwarmForm launchpad YAML file
+
+```
+sform init
+```
+
+
+* Insert a SwarmFlow from file
+
+```
+sform add -sf <file path>
+```
+
+* Get SwarmFlow from SwarmPad
+
+```
+sform get_sf -id <SwarmFlow ID>
+```
+
+* Cluster the fireworks in the SwarmFlow and save the new SwarmFlow to the database
+
+```
+sform cluster -sf <SwarmFlow ID>
+```
+or
+
+```
+sform cluster -sf <SwarmFlow ID> -a <clustering algorithm rac/wpa> -cc <cluster count>
+```
+
+* Reset and re-initialize the SwarmForm database
+
+```
+sform reset
+```
+
+**Built With**
+
+* [Python](https://www.python.org/) 
+* [FireWorks](https://github.com/materialsproject/fireworks)
+
+**Authors**
+
+* **Kalana Dananjaya** - https://github.com/KalanaDananjaya
+* **Ayesh Weerasinghe** - https://github.com/AyeshW
+* **Randika Jayasekara** - https://github.com/rpjayasekara
+
+**Publication**
+
+A. Weerasinghe, K. Wijethunga, R. Jayasekara, I. Perera and A.
+Wickramarachchi, "SwarmForm: A Distributed Workflow Management System with Task Clustering",
+in 20th International Conference on Advances in ICT for Emerging Regions, Colombo, Sri Lanka, 2020.
+
+
+Copyright 2021 © SwarmForm.
