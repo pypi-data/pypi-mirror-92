@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+REQUIREMENTS.txt
+setup.cfg
+setup.py
+hostlist/__init__.py
+hostlist/cla_hostlist.py
+hostlist/hostlist.py
+hostlist/unittest_hostlist.py
+py_hostlist.egg-info/PKG-INFO
+py_hostlist.egg-info/SOURCES.txt
+py_hostlist.egg-info/dependency_links.txt
+py_hostlist.egg-info/entry_points.txt
+py_hostlist.egg-info/top_level.txt
