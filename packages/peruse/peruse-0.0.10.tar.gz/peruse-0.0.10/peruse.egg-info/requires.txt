@@ -1,0 +1,10 @@
+slang
+hum
+numpy
+scikit-learn
+matplotlib
+soundfile
+flask
+flask_cors
+py2api
+py2http
