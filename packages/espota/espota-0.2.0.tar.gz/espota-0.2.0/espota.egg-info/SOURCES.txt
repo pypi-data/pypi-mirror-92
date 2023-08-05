@@ -1,0 +1,7 @@
+README.md
+setup.py
+espota/__init__.py
+espota.egg-info/PKG-INFO
+espota.egg-info/SOURCES.txt
+espota.egg-info/dependency_links.txt
+espota.egg-info/top_level.txt
