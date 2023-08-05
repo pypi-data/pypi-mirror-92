@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: migflow
+Version: 1.2
+Summary: Model for Immersed Granular Flows
+Home-page: https://www.migflow.be
+Author: Migflow Team
+Author-email: jonathan.lambrechts@uclouvain.be
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+
+# [MigFlow](https://www.migflow.be)
+
+MigFlow is a free and open source software dedicated to the simulations, in complex geometry, of immersed granular flows (mixture fluid-grains) presenting a large discrepancy in the solid volume fraction going from pure fluid to porous media. The fluid is solved using the finite element method at a greater scale than the grain scale while the grains are solved using the discrete element method to obtain accurate representation of the local effects due to the grains configuration.
+
+If you use MigFlow, please cite the following reference in your work:
+Constant, M., Dubois, F., Lambrechts, J. and Legat, V. (2018). Implementation of an unresolved stabilised FEM-DEM model to solve immersed granular flows. _Computational Particle Mechanics_. [doi:10.1007/s40571-018-0209-4](https://doi.org/10.1007/s40571-018-0209-4). 
+
+See the [wiki](https://git.immc.ucl.ac.be/fluidparticles/migflow/wikis/home) for documented examples and installation instructions. See the project [website](https://www.migflow.be) for information about the model or news
+
