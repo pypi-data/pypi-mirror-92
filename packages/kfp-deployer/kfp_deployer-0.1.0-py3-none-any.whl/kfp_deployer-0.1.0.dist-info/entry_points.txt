@@ -1,0 +1,3 @@
+[console_scripts]
+kfp-deploy=kfp_deployer.main:main
+
