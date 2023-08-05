@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: nones
+Version: 0.0.2
+Summary: Values for using in default arguments.
+Home-page: UNKNOWN
+Author: Vadim Simakin
+Author-email: sima.vad@gmail.com
+License: UNKNOWN
+Description: 
+        Values for using in default arguments.Example:
+        	def func(f=lambda:None):
+        		return f()
+        	# Tip: func(f=<function <lambda> at 0x73a8cd2a60>)
+        	from nones import NONE_AS_FUNC
+        	def func(f=NONE_AS_FUNC):
+        		return f()
+        	# Tip: func(f=func)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/plain
