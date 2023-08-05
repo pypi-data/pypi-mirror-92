@@ -1,0 +1,14 @@
+# utils
+meutils
+
+# db sdk
+py2neo
+pymysql
+pymongo
+pymilvus
+redis-py-cluster
+
+# config/log
+apollo-client
+jovian
+wandb
