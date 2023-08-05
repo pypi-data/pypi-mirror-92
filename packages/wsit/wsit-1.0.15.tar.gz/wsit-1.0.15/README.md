@@ -1,0 +1,1 @@
+This package contains a set of classes for WSIT that facilitates the integration of new or existing code written in 3GL languages with Python.
