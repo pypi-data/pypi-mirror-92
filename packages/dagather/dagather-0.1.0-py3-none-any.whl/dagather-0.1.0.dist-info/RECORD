@@ -1,0 +1,12 @@
+dagather/__init__.py,sha256=qQNijd8Ynfgd3IjhJzxAYi6g6xpQXqtXMOs985Uupns,423
+dagather/_version.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+dagather/exceptions.py,sha256=bSIMcFbuJ2OHU7CI6SMFR0Lcb-xrWrqA9TEAzo9RMto,273
+dagather/multigather.py,sha256=A2yRjGA9VTCxDKTLeef1M7TMUpvH6lquEAE71ShIies,8645
+dagather/result.py,sha256=5hSPGLkvfHbtQmNcWdGsSBn0rcxoJ-s4kgtNqJ2Jzfk,1051
+dagather/sibling_tasks.py,sha256=yo40Fhe4B-44fPF5dWCH7wRkW3Vh1sb0vJ3O1CpPC50,1751
+dagather/tasktemplate.py,sha256=JSsh-7eWQh4O9ScJruUYuPmc8lEnFyHQUku6zb0d7Mk,4120
+dagather/util.py,sha256=thGL5geETKjZzZUlrwLx48QzHd-wMK6gI3oGPmc7cTI,636
+dagather-0.1.0.dist-info/LICENSE,sha256=G0P7rCxrB0qcPpUti_SzfQlFIO_97f0gNjdZb0gCK0o,1051
+dagather-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dagather-0.1.0.dist-info/METADATA,sha256=EiHZqRxovnX8j8fcxRBk32uuLN6NNT_iabthi2IMRHs,1853
+dagather-0.1.0.dist-info/RECORD,,
