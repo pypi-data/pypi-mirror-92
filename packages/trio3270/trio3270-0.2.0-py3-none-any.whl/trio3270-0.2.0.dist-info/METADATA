@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: trio3270
+Version: 0.2.0
+Summary: A IBM3270 trionic library
+Home-page: UNKNOWN
+Author: Clovis Fabricio Costa
+Author-email: python.nosklo@0sg.net
+License: GPLv3 or later
+Keywords: async,io,networking,IBM3270,IBM,trio
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Framework :: Trio
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: trio
+Requires-Dist: tricycle
+
+Trio 3270
+=========
+
+Welcome to `Trio 3270 <Project URL (for setup.py metadata)>`__!
+
+A IBM3270 trionic library
+
+License: GPLv3 as published by the Free Software Foundation, or (at your option) any later version
+
+
