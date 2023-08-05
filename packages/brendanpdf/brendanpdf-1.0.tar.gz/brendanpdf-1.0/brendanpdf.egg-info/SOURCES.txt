@@ -1,0 +1,9 @@
+README.md
+setup.py
+brendanpdf/__init__.py
+brendanpdf/pdf2image.py
+brendanpdf/pdf2text.py
+brendanpdf.egg-info/PKG-INFO
+brendanpdf.egg-info/SOURCES.txt
+brendanpdf.egg-info/dependency_links.txt
+brendanpdf.egg-info/top_level.txt
