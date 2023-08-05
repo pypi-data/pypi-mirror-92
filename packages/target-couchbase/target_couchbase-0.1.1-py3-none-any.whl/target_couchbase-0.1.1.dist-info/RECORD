@@ -1,0 +1,9 @@
+target_couchbase/__init__.py,sha256=9X-EAazsWHpDGE2coCbqjm6WLkCIJZ3PdRWIFwTGaCk,5313
+target_couchbase/schema.py,sha256=E5RmT9UvehCqQgArwmN97pnYIACPRjG9QQGEmpTzBwQ,2655
+target_couchbase-0.1.1.dist-info/AUTHORS.md,sha256=ELCe77scQ75aoO4Zr7mIWdNQmLe3uoFd_fhrkOxum40,170
+target_couchbase-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+target_couchbase-0.1.1.dist-info/METADATA,sha256=1ZvhGnNpuUlV0laUm_4KxmeU13_D71L7oS1LqKArczo,2689
+target_couchbase-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+target_couchbase-0.1.1.dist-info/entry_points.txt,sha256=megVk5kPlwuHEYolZTbZEKTAQnIwKZKZgR-hkSKQEBM,70
+target_couchbase-0.1.1.dist-info/top_level.txt,sha256=iKXpoNGpqW77nURCne_5HpS7qkqLWYaD3ZSk7ANQGKg,17
+target_couchbase-0.1.1.dist-info/RECORD,,
