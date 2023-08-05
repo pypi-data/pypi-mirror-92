@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[sailboat_plugins]
+tiller = tiller.__main__:Tiller
+
