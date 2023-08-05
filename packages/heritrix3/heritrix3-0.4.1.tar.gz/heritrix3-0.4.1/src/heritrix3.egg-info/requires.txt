@@ -1,0 +1,6 @@
+click
+lxml
+requests
+
+[cli]
+pygments
