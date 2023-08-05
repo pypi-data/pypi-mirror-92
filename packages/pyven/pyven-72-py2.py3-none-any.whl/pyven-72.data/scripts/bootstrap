@@ -1,0 +1,46 @@
+#!/bin/bash
+
+set -ex
+
+tempdir=$(mktemp -d)
+
+trap 'rm -r $tempdir' EXIT
+
+function initbootvenv {
+
+    bootvenv=$tempdir/$version
+
+    virtualenv -p python$version $bootvenv
+
+    $bootvenv/bin/pip install "$@" pyven
+
+    (
+
+        cd "$(dirname "$0")"
+
+        $bootvenv/bin/pipify
+
+        # TODO: Inspect project.arid to get these names.
+        $bootvenv/bin/pip install -e ../aridity -e ../diapyr -e ../lagoon -e .
+
+    )
+
+}
+
+function initoptvenv {
+
+    $bootvenv/bin/initopt "$@" ~/opt/venv$version
+
+}
+
+version=3
+
+initbootvenv
+
+initoptvenv "$@"
+
+version=2
+
+initbootvenv setuptools==44.1.1 twine==1.15.0
+
+initoptvenv --solver legacy
