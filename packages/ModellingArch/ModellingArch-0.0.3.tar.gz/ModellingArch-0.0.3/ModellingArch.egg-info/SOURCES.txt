@@ -1,0 +1,10 @@
+README.md
+setup.py
+ModellingArch/Model.py
+ModellingArch/__init__.py
+ModellingArch/__main__.py
+ModellingArch.egg-info/PKG-INFO
+ModellingArch.egg-info/SOURCES.txt
+ModellingArch.egg-info/dependency_links.txt
+ModellingArch.egg-info/requires.txt
+ModellingArch.egg-info/top_level.txt
