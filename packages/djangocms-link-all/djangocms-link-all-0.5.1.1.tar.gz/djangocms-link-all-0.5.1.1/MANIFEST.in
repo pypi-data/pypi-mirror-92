@@ -1,0 +1,7 @@
+recursive-include docs *
+recursive-include link_all *.py *.html *.ts *.js *.css *.vue
+include setup.py
+include setup.cfg
+include README.md
+
+recursive-exclude link_all/static/link_all/node_modules *

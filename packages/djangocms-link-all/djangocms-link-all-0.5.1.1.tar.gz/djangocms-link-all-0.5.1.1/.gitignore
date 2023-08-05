@@ -1,0 +1,14 @@
+# compiled backend files
+__pycache__/
+*.py[cod]
+*$py.class
+*.mo
+
+# dev env files
+.idea/
+/*.log
+*.iml
+*.egg-info
+/dist/
+build/
+.venv
