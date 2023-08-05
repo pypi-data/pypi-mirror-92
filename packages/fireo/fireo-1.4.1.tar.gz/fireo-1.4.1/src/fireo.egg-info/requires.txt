@@ -1,0 +1,2 @@
+google-cloud-firestore==1.9.0
+backports-datetime-fromisoformat==1.0.0
