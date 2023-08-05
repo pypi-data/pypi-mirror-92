@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: math-function
+Version: 0.0.1
+Summary: Small Calculator
+Home-page: UNKNOWN
+Author: Shrutika Bhapkar
+Author-email: shrutika01234@gmail.com
+License: UNKNOWN
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
