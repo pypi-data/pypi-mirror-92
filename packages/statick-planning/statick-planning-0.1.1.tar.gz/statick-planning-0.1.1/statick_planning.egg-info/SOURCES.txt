@@ -1,0 +1,15 @@
+README.md
+setup.py
+./rsc/planning-config.yaml
+./rsc/planning-profile.yaml
+src/statick_planning/plugins/discovery/__init__.py
+src/statick_planning/plugins/discovery/pddl_discovery_plugin.py
+src/statick_planning/plugins/discovery/pddl_discovery_plugin.yapsy-plugin
+src/statick_planning/plugins/tool/__init__.py
+src/statick_planning/plugins/tool/val_validate_tool_plugin.py
+src/statick_planning/plugins/tool/val_validate_tool_plugin.yapsy-plugin
+statick_planning.egg-info/PKG-INFO
+statick_planning.egg-info/SOURCES.txt
+statick_planning.egg-info/dependency_links.txt
+statick_planning.egg-info/requires.txt
+statick_planning.egg-info/top_level.txt
