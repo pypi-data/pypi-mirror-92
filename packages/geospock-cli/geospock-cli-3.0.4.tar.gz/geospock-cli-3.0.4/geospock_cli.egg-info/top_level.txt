@@ -1,0 +1,1 @@
+geospock_cli
