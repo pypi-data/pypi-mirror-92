@@ -1,0 +1,5 @@
+elemental/__init__.py,sha256=9BZtsVnTvvIryEeGJ2RKKOmAfCZ9ff8RwgVxHrEJ8Ic,220
+elemental/client.py,sha256=7fOUzzgjRgDeXOOmA5MR7uf1fdzON5HJun1_cT-I28Q,13852
+python_elemental-0.7.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+python_elemental-0.7.1.dist-info/METADATA,sha256=YdlO3_ZRO2MxEHMK-Ghro6hIeX-XKRTTXRd57yfQPNA,1581
+python_elemental-0.7.1.dist-info/RECORD,,
