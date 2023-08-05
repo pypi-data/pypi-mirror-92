@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4", "tqdm",
+            "miutil[cuda,web]>=0.7.0"]
+
+[tool.setuptools_scm]
+write_to = "niftypet/ninst/_dist_ver.py"
+write_to_template = "__version__ = '{version}'\n"
+
+[tool.black]
+target_version = ["py36", "py38"]
