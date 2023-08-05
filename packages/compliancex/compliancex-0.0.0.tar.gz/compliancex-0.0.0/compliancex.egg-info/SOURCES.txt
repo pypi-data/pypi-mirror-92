@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.py
+compliance/Constant.py
+compliance/__init__.py
+compliance/bcolor.py
+compliance/cli.py
+compliance/endpoints.py
+compliancex.egg-info/PKG-INFO
+compliancex.egg-info/SOURCES.txt
+compliancex.egg-info/dependency_links.txt
+compliancex.egg-info/requires.txt
+compliancex.egg-info/top_level.txt
+tests/__init__.py
+tests/test_compliance.py
