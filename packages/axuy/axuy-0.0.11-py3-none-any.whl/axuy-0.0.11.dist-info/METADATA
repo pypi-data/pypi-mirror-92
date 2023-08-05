@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: axuy
+Version: 0.0.11
+Summary: Axuy is a minimalist peer-to-peer first-person shooter.
+Home-page: https://sr.ht/~cnx/axuy
+License: AGPLv3+
+Keywords: fps,p2p,opengl,glfw
+Author: Nguyễn Gia Phong
+Author-email: mcsinyx@disroot.org
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment :: First Person Shooters
+Requires-Dist: appdirs
+Requires-Dist: glfw>=1.8
+Requires-Dist: moderngl
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: pyrr
+Requires-Dist: setuptools
+
+# axuy
+
+Minimalist peer-to-peer first-person shooter
+
+![icon](https://git.disroot.org/McSinyx/axuy/raw/branch/master/axuy/icon.png)
+
+## Goals
+
+* Written in pure Python and thus be portable
+* Easy to read codebase as well as easy on resources
+* Generative visuals
+* Functional when possible
+* P2P communication based on calculated *trust*
+* Modularized for the ease of bot scripting
+
+## Screenshots
+
+Since axuy's screenshots would look like some kinky abstract art,
+I instead document the development progress as short clips on Youtube,
+[listed in reverse chronological order][yt].  If software freedom is concerned,
+one may view them using MPV with youtube-dl support.
+
+## Installation
+
+The game is still work-in-progress.  Preview releases are available on PyPI
+and can be installed for Python 3.6+ via
+
+    pip install axuy
+
+Unless one is on either Windows or macOS, perse would have to
+additionally install GLFW version 3.3 (or higher).
+
+Axuy can then be launch from the command-line using
+
+    axuy --port=42069 &
+    axuy --seeder=:42069
+
+There is also `aisample` in `tools` as an automated example
+with similar command-line interface.
+
+For hacking, after having dependenies installed, one may also invoke axuy
+from the project's root directory by
+
+    python -m axuy --port=42069 &
+    python -m axuy --seeder=:42069
+
+[yt]: https://www.youtube.com/playlist?list=PLAA9fHINq3sayfxEyZSF2D_rMgDZGyL3N
+
