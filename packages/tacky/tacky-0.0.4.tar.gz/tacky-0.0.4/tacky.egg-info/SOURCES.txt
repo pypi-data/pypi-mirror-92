@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/__main__.py
+tacky.egg-info/PKG-INFO
+tacky.egg-info/SOURCES.txt
+tacky.egg-info/dependency_links.txt
+tacky.egg-info/entry_points.txt
+tacky.egg-info/requires.txt
+tacky.egg-info/top_level.txt

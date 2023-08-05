@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: tacky
+Version: 0.0.4
+Summary: copy and paste specific UTI's from the macOS Pasteboard
+Home-page: https://github.com/friedenberg/tacky
+Author: Sasha Friedenberg
+Author-email: carley.f253fa96@icantbelieveitsnotgmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: MacOS X :: Cocoa
+Requires-Python: >=3.6.8
