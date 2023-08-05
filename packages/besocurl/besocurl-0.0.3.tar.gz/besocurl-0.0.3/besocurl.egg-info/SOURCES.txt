@@ -1,0 +1,8 @@
+README.md
+setup.py
+besocurl.egg-info/PKG-INFO
+besocurl.egg-info/SOURCES.txt
+besocurl.egg-info/dependency_links.txt
+besocurl.egg-info/top_level.txt
+master/__init__.py
+master/besocurl.py
