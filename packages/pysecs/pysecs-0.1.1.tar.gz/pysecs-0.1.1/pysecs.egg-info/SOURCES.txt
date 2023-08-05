@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pysecs/__init__.py
+pysecs/secs.py
+pysecs.egg-info/PKG-INFO
+pysecs.egg-info/SOURCES.txt
+pysecs.egg-info/dependency_links.txt
+pysecs.egg-info/requires.txt
+pysecs.egg-info/top_level.txt
