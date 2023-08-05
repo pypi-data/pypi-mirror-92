@@ -1,0 +1,14 @@
+_scrapers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_scrapers/hierarchy.py,sha256=S6rZN03ARMGIqFofAWVm6Wvmxo0YhoaTPDr_-JJRY9Q,6821
+_scrapers/member.py,sha256=0IOUGfM0uoi4w9KGvQDOXugkZOkn8Gs986WWctR3PLY,29062
+schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemas/hierarchy.py,sha256=lOcW7HBPeEyLUvmrxwGNli-OiHOpabgBGhuKK9TIIFM,1441
+schemas/member.py,sha256=CH4-0hVy3Cnlib3aj1H_EYR8yoQpkg4Zht1GPVaVZ7s,10523
+util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+util/hierarchy.py,sha256=GSRK0jMnPmaeUkD_Tip4tijBtzLlsND1BxX07ZCqp2M,833
+util/people.py,sha256=pc5AR9dotGC3LpnSmiK_ttPD1zLYAYLpBsb1RPC5Buw,5255
+compass_interface_core-0.2.1.dist-info/LICENSE,sha256=yM0Iq3A2Ut5r1_Jyb94LgK3nFIC7yp2JZn1FDb9cG8Q,1082
+compass_interface_core-0.2.1.dist-info/METADATA,sha256=QeFM9DIl1KEpWZXbUkvMAhhOVhFj3qz4l_es_DpCZm0,4049
+compass_interface_core-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+compass_interface_core-0.2.1.dist-info/top_level.txt,sha256=W8lJVtyMLt7-VfBifHnfzVU0urND1IOA8pkdRWZ6IaA,23
+compass_interface_core-0.2.1.dist-info/RECORD,,
