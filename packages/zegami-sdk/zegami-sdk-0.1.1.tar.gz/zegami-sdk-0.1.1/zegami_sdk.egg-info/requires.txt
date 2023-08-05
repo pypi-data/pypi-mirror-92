@@ -1,0 +1,7 @@
+twine
+pathlib
+numpy
+pandas
+Pillow
+requests
+xlrd
