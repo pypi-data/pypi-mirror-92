@@ -1,0 +1,16 @@
+odoo/addons/survey_description/README.rst,sha256=h7DgfzeVzuoZ-EIVuy9UmqYQTlJmPvOaxc_fKNtfa9k,3839
+odoo/addons/survey_description/__init__.py,sha256=FNlMPDojEQpwvHZlf1L1FiQCxOYOu7R3lMKD6aozhvU,65
+odoo/addons/survey_description/__manifest__.py,sha256=msoM1KmbLSvjmKxnTcB-ksGSFDm-1iIrtU505FfcsNk,680
+odoo/addons/survey_description/i18n/survey_description.pot,sha256=XxdEsVyoPiYI2D32ZYbzdlSIPXiaRPHKYxYoWz3WqSw,781
+odoo/addons/survey_description/readme/CONTRIBUTORS.rst,sha256=ZE4bRnAf9qZ2RMipBzzeRjd3ooqMEeZkM0aAmudhP5I,42
+odoo/addons/survey_description/readme/CREDITS.rst,sha256=in-4JOvIqvGXykAgM1Dv53gGghCsmHOQ1RSa_POQCAQ,214
+odoo/addons/survey_description/readme/DESCRIPTION.rst,sha256=muP1z-XEptPd_5ryCqnZEvOO4tt1d3hZ12ml8Qdrte8,479
+odoo/addons/survey_description/readme/USAGE.rst,sha256=eB6RqGAWZb6DOW_mSTm69JAJwmYJESn9dpB36dXtRoY,289
+odoo/addons/survey_description/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/survey_description/static/description/icon.svg,sha256=diKhOMF5l92KAWYh0Ei8TCDq2cJnMT7UPvFPIqVPFVU,45999
+odoo/addons/survey_description/static/description/index.html,sha256=trkKLdS880duaIgDG-HBHp-42fE-Bj51h9KeBEL1abY,13579
+odoo/addons/survey_description/views/survey_views.xml,sha256=u9NI5IEJCjJUt0zrpVDCK-fjOHCb4uLUPNWwmtmkZD8,1796
+odoo12_addon_survey_description-12.0.1.0.1.dist-info/METADATA,sha256=FxWpX_0ZkYwKeFjQKSaxMu6WXFNy9S8ZjSzHOTw4EgA,4431
+odoo12_addon_survey_description-12.0.1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo12_addon_survey_description-12.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_survey_description-12.0.1.0.1.dist-info/RECORD,,
