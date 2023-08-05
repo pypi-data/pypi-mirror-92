@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: chronos-forecast
+Version: 0.0.1
+Summary: Time series prediction using probabilistic programming
+Home-page: https://github.com/boris-shabash/Chronos
+Author: Boris Shabash
+Author-email: boris.shabash@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
