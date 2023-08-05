@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: rtea
+Version: 0.1.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Rust
+Classifier: Typing :: Typed
+Author: zkonge <zkonge@outlook.com>
+Author-Email: zkonge <zkonge@outlook.com>
+Requires-Python: >=3.6
