@@ -1,0 +1,37 @@
+Metadata-Version: 1.2
+Name: flask-djangofy
+Version: 1.0
+Summary: A Flask package which looks like Django
+Home-page: https://flask-djangofy.readthedocs.io/en/latest/
+Author: Muhammad Hassan Siddiqui
+Author-email: mhassan.eeng@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://flask-djangofy.readthedocs.io/en/latest/
+Project-URL: Release notes, https://flask-djangofy.readthedocs.io/en/latest/releases/
+Project-URL: Source, https://github.com/mhsiddiqui/flask-djangofy
+Description: # Flask-Djangofy
+        
+        flask-djangofy is a library which enable you write your flask app just like Django app. You will make urls just like Django, define settings just like Django. You will make project structure just like Django where you will have multiple apps against your each module and define urls for each app separately. 
+        
+        Read the full documentation [here](https://flask-djangofy.readthedocs.io/en/latest/).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5

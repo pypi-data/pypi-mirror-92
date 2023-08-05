@@ -1,0 +1,3 @@
+[console_scripts]
+flask-djangofy-admin = flask_djangofy.core.management:execute_from_command_line
+
