@@ -1,0 +1,11 @@
+sentimentpl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentimentpl/datautils.py,sha256=08j7He2djO5CSlrgwvUJTTxl_y66WX-XHnRJBSzDNdk,929
+sentimentpl/models.py,sha256=f00Gcz1rsobOsRJ647B1gMKN28kiU0PO8g6HLghByGo,1922
+sentimentpl/train.py,sha256=6FAU8V5om2VmFPuWELBDHW5_fA0RbrVNpF4CK0nZTUI,2545
+sentimentpl/trained_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sentimentpl/trained_models/latest.pth,sha256=iG1porT7UjAmKbwplNBDmy_0EZO4f8xKrmyv46b1bMg,806303
+sentimentpl-0.0.6.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+sentimentpl-0.0.6.dist-info/METADATA,sha256=VBGm_7bkdA0UEbY3tjIv5g1VlyJSSaOx9pPhEnMWpzM,3405
+sentimentpl-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sentimentpl-0.0.6.dist-info/top_level.txt,sha256=WlkauF68p4S656VSWAJyIvSex4-nyY11VCpbNLfJ8ug,12
+sentimentpl-0.0.6.dist-info/RECORD,,
