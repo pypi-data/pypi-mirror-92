@@ -1,0 +1,8 @@
+typer
+requests
+typer
+colorama
+dataclasses-json
+ruamel.yaml
+python-dotenv
+bs4
