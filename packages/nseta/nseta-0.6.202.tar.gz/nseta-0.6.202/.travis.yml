@@ -1,0 +1,26 @@
+language: shell
+cache:
+  directories:
+    - ~/Library/Caches/pip
+    - ~/Library/Caches/Homebrew
+os: osx
+before_install:
+  - git config --global http.postBuffer 524288000
+  - which brew || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  - brew install ta-lib
+  - pip3 install fastquant git+git://github.com/enzoampil/fastquant.git@5f17e7087e1efb534e2db88775dba268d31de4be
+  - pip3 install -r requirements.txt
+  - pip3 install convertdate==2.2.0
+  - pip3 install timeout-decorator
+install:
+  - python3 setup.py clean build install sdist bdist_wheel
+  - pip3 install codecov
+  - pip3 install coverage
+script:
+  - coverage run -m unittest discover -s tests -p 'test_*.py'
+  - coverage report -m
+  - coverage html
+  - nseta --help
+# Push the results back to codecov
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
