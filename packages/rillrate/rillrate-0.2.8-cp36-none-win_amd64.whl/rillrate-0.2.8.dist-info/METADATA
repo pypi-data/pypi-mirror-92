@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rillrate
+Version: 0.2.8
+Summary: rillrate bindings for python
+Keywords: logging
+Home-Page: https://github.com/rate-technology/rillrate-py
+Author: Denis Kolodin <deniskolodin@gmail.com>, overfloat <rillrate@gmail.com>
+Author-Email: Denis Kolodin <deniskolodin@gmail.com>, overfloat <rillrate@gmail.com>
+License: MIT/Apache-2.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# rillrate
+
+Python bindings for RillRate
+
