@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zowe-zos-files-for-zowe-sdk
+Version: 0.5.0
+Summary: Zowe Python SDK - z/OS Files package
+Home-page: https://github.com/zowe/zowe-client-python-sdk
+Author: Guilherme Cartier
+Author-email: gcartier94@gmail.com
+License: EPL-2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Requires-Dist: zowe.core-for-zowe-sdk
+
+UNKNOWN
+
+
