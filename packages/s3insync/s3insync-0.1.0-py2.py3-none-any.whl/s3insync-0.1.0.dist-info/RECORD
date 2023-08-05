@@ -1,0 +1,13 @@
+s3insync/__init__.py,sha256=AotmHyx3naFZcSmpPu2ZjMjDE9bp_PSe2trdNeOTOMY,97
+s3insync/__main__.py,sha256=psl80tNRNXiS_JQAyzJxyReMMc58AfxlqDzo-Dbd8Dw,39
+s3insync/cli.py,sha256=FZqKjiHvwoIZRvnnizsJzRD32z2No6CHcflC7hmUtjs,1385
+s3insync/operations.py,sha256=8mstN5AFK8uiz9olTUJIoNdjZMzmtM7z2oEzOyYZSBA,746
+s3insync/repositories.py,sha256=MoghLPsZC1JlgbMMvWM7OzgcNSWih5ccXl3kg3hXowU,5711
+s3insync/sync_decider.py,sha256=QAIS_IC5v4crTMrHqWL2qUHBz3PkEK9gugbqwmTMZ7U,2223
+s3insync/cmd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3insync/cmd/pull.py,sha256=1kpeL38DxneyTabB6mPxYuKGm0AA4ovngdxH8K_jjyw,2173
+s3insync-0.1.0.dist-info/entry_points.txt,sha256=ICnS-UJ4O0r_SZbqnJ01BiwkZNmao1VjGIFEeNssvvk,46
+s3insync-0.1.0.dist-info/LICENSE,sha256=ieEKJ-VczfHpbzAARBk5cBwN-Qfu4_jjKLNpnH1JyAg,9161
+s3insync-0.1.0.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+s3insync-0.1.0.dist-info/METADATA,sha256=qmo7NfbGbi4ApGXkH1s3YKx1upN-VTMPGh8cQLLX6Fk,488
+s3insync-0.1.0.dist-info/RECORD,,
