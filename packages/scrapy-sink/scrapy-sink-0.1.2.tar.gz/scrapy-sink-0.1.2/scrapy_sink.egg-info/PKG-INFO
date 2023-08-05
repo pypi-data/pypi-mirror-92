@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: scrapy-sink
+Version: 0.1.2
+Summary: Pipeline to post scrapy item to your url
+Home-page: https://github.com/etng/scrapy-sink
+Author: etng
+Maintainer: etng
+Maintainer-email: etng2004@gmail.com
+License: BSD
+Description: # Pipeline to post scrapy item to your url
+        
+        
+        ## Installation
+        
+        Install scrapy-sink using pip::
+        
+            $ pip install scrapy-sink
+        
+        ## Configuration
+        
+        1. Add the  ``settings.py`` of your Scrapy project like this:
+        
+        ```python
+        SINK_ADDR = 'http://127.0.0.1:8000/data_receiver.php'
+        ```
+        
+        You can also only set it in your environment variable
+        
+        2. Enable the pipeline by adding it to ``ITEM_PIPELINES`` in your ``settings.py`` file and changing HttpCompressionMiddleware
+         priority:
+           
+        ```python
+        ITEM_PIPELINES = {
+            'scrapy_sink.pipelines.SinkPipeline': 9999,
+        }
+        ```
+        The order should after your persist pipeline such as save to database and after your preprocess pipeline.
+        
+        ## Usage
+        
+        no need to change your code
+        
+        ## Getting help
+        
+        Please use github issue
+        
+        ## Contributing
+        
+        PRs are always welcomed.
+        
+        ## Changes
+        
+        ### 0.1.0 (2020-12-26)
+        
+        Initial release
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Scrapy
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: scrapy
+Requires: requests
+Description-Content-Type: text/markdown

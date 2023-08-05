@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+scrapy_sink/__init__.py
+scrapy_sink/pipelines.py
+scrapy_sink/simple.py
+scrapy_sink.egg-info/PKG-INFO
+scrapy_sink.egg-info/SOURCES.txt
+scrapy_sink.egg-info/dependency_links.txt
+scrapy_sink.egg-info/not-zip-safe
+scrapy_sink.egg-info/top_level.txt
