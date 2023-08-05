@@ -1,0 +1,6 @@
+pathlib
+boto
+cvxpy
+dipy
+scipy
+numpy>=1.13
