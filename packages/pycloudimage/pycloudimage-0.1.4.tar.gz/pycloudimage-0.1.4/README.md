@@ -1,0 +1,53 @@
+# PyCloudImage 0.1.4
+
+## 介绍
+
+ 强大的获取卫星云图的工具 
+
+## 例子
+
+```python
+from pycloudimage import *
+#显示最新的风云四号A星全彩圆盘图
+FY4A_DISK.getlatest().show()
+```
+
+## 类
+
+```python
+class CloudImage(ciinfo = '', latestapi = None, timeapi = None)
+```
+
+ciinfo : 云图的简要介绍
+
+latestapi : URL字符串或字典
+
+timeapi : URL字符串或字典，目前没有内置云图设置
+
+## 方法
+
+CloudImage.ciinfo => str
+
+云图的简要介绍
+
+CloudImage.getlatest(size = None, delwatermark = True) => PIL.Image.Image
+
+下载最新云图
+
+CloudImage.gettime(self, itime, size = None) => PIL.Image.Image
+
+下载具体时间的云图，目前还不稳定
+
+## API参数
+
+url : 云图URL（必填）
+
+crop : 云图裁剪
+
+del : 云图填充去水印
+
+size : 云图大小
+
+## 内置云图
+
+你可以通过查看源码或使用dir命令查看内置云图。
