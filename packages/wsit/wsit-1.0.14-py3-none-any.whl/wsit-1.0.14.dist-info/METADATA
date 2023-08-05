@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wsit
+Version: 1.0.14
+Summary: Web Services Integration Toolkit
+Home-page: https://vmssoftware.com/products/web-services-integration-toolkit/
+Author: VMS Software, Inc.
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: wsit-interface
+Requires-Dist: numpy
+Requires-Dist: pytest
+
+This package contains a set of classes for WSIT that facilitates the integration of new or existing code written in 3GL languages with Python.
+
+
