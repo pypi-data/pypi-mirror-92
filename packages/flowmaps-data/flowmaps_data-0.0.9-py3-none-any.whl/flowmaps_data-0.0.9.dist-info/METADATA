@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: flowmaps-data
+Version: 0.0.9
+Summary: A tool for downloading Spanish COVID-19 and mobility data
+Home-page: https://flowmaps.life.bsc.es/flowboard/data
+Author: Javier del Valle Contreras
+Author-email: javier.delvalle@bsc.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: progress (==1.5)
+Requires-Dist: pandas (==1.1.4)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: python-dateutil (==2.8.1)
+
+# flowmaps-data-downloader
+
+A tool for downloading COVID-19 and mobility datasets for Spain. 
+
+The database integrates two main types of data:
+
+1. Time dependent population **mobility networks** across Spain (provided by MITMA and INE)
+
+2. Daily reports of **COVID-19** cases in Spain, at different levels of spatial resolution (provided by the CNE and the different Autonomous Communities)
+
+All the data records are associated with a specific area from a geographic layer:
+
+3. **Geographic layers** for Spain, in geojson format, at different levels of spatial resolution.
+
+All the data has been gather from official access points.
+
+More info about the data: https://flowmaps.life.bsc.es/flowboard/data
+
+API: https://flowmaps.life.bsc.es/api
+
+Contact us: https://flowmaps.life.bsc.es/flowboard/contact
+
+
+## Installation
+
+
+### Install using pip:
+
+    pip install flowmaps-data
+
+
+### Install manually:
+
+Create virtual environment:
+
+	virtualenv env --python=python3
+	source env/bin/activate
+
+
+Install python dependencies:
+
+	pip3 install -r requirements.txt
+
+
+
+## Usage
+
+```
+usage: flowmaps-data.py [-h] COLLECTION [list describe download]
+
+examples: 
+
+    # Geojson layers
+    flowmaps-data.py layers list
+    flowmaps-data.py layers describe --layer cnig_provincias --provenance
+    flowmaps-data.py layers describe --layer cnig_provincias --plot
+    flowmaps-data.py layers download --layer cnig_provincias
+
+    # Consolidated COVID-19 health data
+    flowmaps-data.py covid19 list
+    flowmaps-data.py covid19 describe --ev ES.covid_cpro
+    flowmaps-data.py covid19 download --ev ES.covid_cpro --output_file out.csv --output_type csv
+
+    # Population
+    flowmaps-data.py population list
+    flowmaps-data.py population describe --layer cnig_provincias
+    flowmaps-data.py population download --layer zbs_15 --output_file out.csv
+
+    # Origin-destination daily mobility (from MITMA)
+    flowmaps-data.py daily_mobility_matrix list
+    flowmaps-data.py daily_mobility_matrix describe
+    flowmaps-data.py daily_mobility_matrix download --source_layer cnig_provincias --target_layer cnig_provincias --date 2020-10-10 --output_file out.csv
+
+    # Daily zone movements (from MITMA)
+    flowmaps-data.py zone_movements list
+    flowmaps-data.py zone_movements describe
+    flowmaps-data.py zone_movements download --layer cnig_provincias --output_file out.csv --start-date 2020-10-10 --end-date 2020-10-10
+
+    # Raw datasets
+    flowmaps-data.py datasets list
+    flowmaps-data.py datasets describe --ev ES.covid_cpro
+    flowmaps-data.py datasets download --ev ES.covid_cpro --output_file out.csv --output_type csv
+```
+
+
