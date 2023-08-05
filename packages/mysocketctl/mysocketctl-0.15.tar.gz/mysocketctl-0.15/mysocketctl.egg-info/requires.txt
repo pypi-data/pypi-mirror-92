@@ -1,0 +1,6 @@
+Click
+requests
+pyjwt==1.7.1
+prettytable
+paramiko
+validate_email
