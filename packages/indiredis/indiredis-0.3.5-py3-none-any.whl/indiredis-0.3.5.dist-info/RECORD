@@ -1,0 +1,17 @@
+indiredis/__init__.py,sha256=Ngph_EFgF9EJ2vvGdrn-zsMKRBrVul4Ip2TmK1QPLfw,5293
+indiredis/__main__.py,sha256=TNju6RUbgsiyALMDgXx8eijXU1jQguK5DzKG1R1PwNo,3996
+indiredis/indiredis/data/defaults.json,sha256=_p8T0GIsmFxAu-84HfPbxrd0dq-ck2mwFjfi-8GHKUI,13785
+indiredis/indiredis/data/project.json,sha256=9cnrtk9TQN4M_6H20IyuJgbgvCwqWMJi-Dw6nxOlFD8,58432
+indiredis/indiredis/data/textblocks_json/en.json,sha256=OymgxC8baagN_vy30fZT_E3w5qWnakSmMQMoa5FTgHk,2726
+indiredis/indiredis/static/css/w3-theme-ski.css,sha256=_bvFJxOTQCUKbAQeERltUJoaYBB-r6mCDIlf6b1Him0,1524
+indiredis/indiredis/static/images/logo.svg,sha256=Bag6xAd4RPAxy1kjTBOWGHpjLNa_axeKyqeQS5Wsf0c,712
+indiredis/indiredis/static/images/logo_icon16.svg,sha256=D1045tQJoYkF9-EK6NaHiNWPO6qJY8-XatZXvYu2zSY,513
+indiredis/webcode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+indiredis/webcode/blobs.py,sha256=2xQUYJcrrXxeVSzp5NRkmFo4t3nLHCi5P3DVtyi9AL0,1904
+indiredis/webcode/devices.py,sha256=hpt76hrBYeIQOlfEtVLirYkV6mkS4UfOX1e8lAxql1s,51411
+indiredis/webcode/setvalues.py,sha256=Hr7gvDXek28wMIzZKROcZ1Jx2KORA-PijMmhxfNK9Fs,20618
+indiredis-0.3.5.dist-info/LICENSE,sha256=ik0B8iaj_vQmYt2LZtQsy_UKFkepEkfUw-2yYzYg0_8,1056
+indiredis-0.3.5.dist-info/METADATA,sha256=nidekvnH27Px7-TUO4L6jpt9qel1_SaD_rod8CztKJs,3440
+indiredis-0.3.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+indiredis-0.3.5.dist-info/top_level.txt,sha256=2eIprJRlFRAvqy4W2zvf1qfkEpdScyuJs1ZueHRkBQ0,10
+indiredis-0.3.5.dist-info/RECORD,,
