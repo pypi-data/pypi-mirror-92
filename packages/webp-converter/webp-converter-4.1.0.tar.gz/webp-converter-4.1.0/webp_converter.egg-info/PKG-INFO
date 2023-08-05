@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: webp-converter
+Version: 4.1.0
+Summary: An powerful webp batch converter and differ analytics
+Home-page: https://github.com/Jacksgong/webp-converter
+Author: Jacksgong
+Author-email: igzhenjie@gmail.com
+License: Apache2
+Description: more detail please move to https://github.com/Jacksgong/webp-converter.
+Keywords: webp converter
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5

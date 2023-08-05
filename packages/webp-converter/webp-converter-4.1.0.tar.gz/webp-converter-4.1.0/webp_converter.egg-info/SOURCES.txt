@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+webp_converter.egg-info/PKG-INFO
+webp_converter.egg-info/SOURCES.txt
+webp_converter.egg-info/dependency_links.txt
+webp_converter.egg-info/entry_points.txt
+webp_converter.egg-info/requires.txt
+webp_converter.egg-info/top_level.txt
+webpc/__init__.py
+webpc/converter.py
+webpc/helper.py
