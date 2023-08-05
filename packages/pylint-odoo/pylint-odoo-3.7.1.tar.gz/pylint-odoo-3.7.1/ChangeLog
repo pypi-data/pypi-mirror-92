@@ -1,0 +1,129 @@
+CHANGES
+=======
+
+3.7.1
+-----
+
+* [FIX] test-folder-imported: Support all import styles (#315)
+* [FIX] misc.py: Properly support python namespace package when detecting the odoo addon directory (#317)
+
+3.7.0
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [ADD] translation-positional-used: New check to valid the allow change the order of string formatting (#305)
+* [ADD] str-format-used: Check if str.format was used in translated string (#304)
+* [ADD] test-folder-imported: check if tests folder is imported in init file (#310)
+
+3.6.0
+-----
+
+* [FIX] requirements: fix dependencies break with pip 20.3 Fix #306 (#313)
+* [ADD] add compatibility to v14.0 (#312)
+
+3.5.1
+-----
+
+* [REF] .travis.yml: Enable condition to deploy pypi
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [FIX] dangerous-view-replace-wo-priority: check all child tags with replace (#309)
+* [ADD] pylint-odoo: add new check to maintainers key in manifest must be a list of str (#308)
+* [REF] development-status-allowed: Explicitly report possible values (#301)
+* [REF]  odoo-addons-relative-import: does not apply in tests/ directory (#307)
+* [REF] CI: Enable py3.8 and py3.9 (#294)
+
+3.5.0
+-----
+
+* [FIX] messages2rst: Compatible with more than 3 message items
+* [REF] no-utf8-coding-comment,unnecessary-utf8-coding-comment: Using python version to enable/disable them (#292)
+* [REF] po-msgstr-variables: Check if there is missing 'module:' comment (#291)
+
+3.4.0
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* Fixing pragma: no cover position
+* [ADD] po-msgstr-variables: Check if string translated can be parsed correctly
+* [ADD] duplicate-po-message-definition, po-syntax-error: Enable PO checks
+
+3.3.2
+-----
+
+* [REF] missing-manifest-dependency: Add openupgradelib as a whitelist. (#288)
+* [FIX] sql-injection: Consider valid arguments built with psycopg2.sql
+
+3.3.1
+-----
+
+* [REF] missing-import-error: Add new packages for Odoo v13.0
+
+3.3.0
+-----
+
+* [REF] requirements.txt: Update packages version (#285)
+
+3.2.0
+-----
+
+* [FIX] get\_manifest\_file: Get manifest file correctly
+* [FIX] Visit module: manage odoo subdirectories Better way to check whether a path is a path of a subdirectoy of a Odoo module. Before, '/a/b/cc/d' was considered as a subdirectoy of '/a/b/c' because '/a/b/c' in '/a/b/cc/d' == True
+
+3.1.0
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [FIX] rst\_lint: Using UTF-8 encoding by default (#272)
+* [ADD] Possibility of package name include dots
+* [REF] .travis.yml: Using py3.7 stable instead of dev (#271)
+* Improve incoherent-interpreter-exec-perm message
+* Fix incompatibility with isort configuration file
+* [FIX] rst-syntax-error: Using a 0 by default if line None is returned
+
+3.0.3
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* Revert "[ADD] method-default prefix" (#254)
+
+3.0.2
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [REF] CI: Fixing flake8, tests and clean requirements
+* [REF] pylint\_odoo: Supports odoo 13.0
+* [ADD] method-default prefix
+* [FIX] .travis.yml: Upgrade nvm version supported for eslint
+* Allow console statements
+* [ADD] print-used: Use \_logger instead of print (#241)
+
+3.0.1
+-----
+
+* [FIX] AttributeError: 'MessagesStore' object has no attribute '\_messages' related to https://github.com/PyCQA/pylint/commit/75cecdb1b88cc759223e83fd325aeafd09fec37e
+* [IMP] added support Pylint 2.3.0 and Astroid 2.2.0
+
+3.0.0
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [REF] sql-injection: Test private attributes (#226)
+* [REF] tox: Upgrade new pylint for py3 (#215)
+
+2.0.2
+-----
+
+* [REF] manifest-required-authors: Support old deprecated parameter
+
+2.0.1
+-----
+
+* [REF] README: Auto-update Using pylint\_odoo.messages2rst()
+* [DEL] require-jsdoc, keep require-valid-jsdoc
+* [FIX]change the location of Guidelines URL
+* [ADD] development-status-allowed: New check to verity valid development status Fix https://github.com/OCA/pylint-odoo/issues/199
+* [REF] missing-import-error: Check enabled just for odoo <= 11.0
+* Add fuzzy to ES globals
+* Allow usage of \`undefined\` (#214)
+* Jslint jsdoc relax (#209)
+* [REF] pylint-odoo: Compatibility with python3.7 (#205)
