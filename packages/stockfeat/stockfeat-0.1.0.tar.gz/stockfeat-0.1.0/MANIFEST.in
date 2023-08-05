@@ -1,0 +1,2 @@
+include stockfeat/data/*.zip
+include stockfeat/data/*.txt

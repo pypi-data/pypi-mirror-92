@@ -1,0 +1,6 @@
+wget
+matplotlib
+numpy
+pandas
+tqdm
+ta-lib
