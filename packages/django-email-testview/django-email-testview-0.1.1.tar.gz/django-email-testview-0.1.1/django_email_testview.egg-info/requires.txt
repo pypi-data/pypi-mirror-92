@@ -1,0 +1,8 @@
+Django<3
+
+[dev]
+pytest
+pytest-django
+pytest-cov
+fabric
+mixer
