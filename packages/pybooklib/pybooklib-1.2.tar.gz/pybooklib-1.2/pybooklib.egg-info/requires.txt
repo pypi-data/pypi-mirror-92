@@ -1,0 +1,7 @@
+click
+requests
+flask
+rich
+
+[:python_version < "3.7"]
+importlib_resources

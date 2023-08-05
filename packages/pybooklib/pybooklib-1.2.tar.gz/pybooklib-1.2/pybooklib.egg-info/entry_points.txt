@@ -1,0 +1,5 @@
+[console_scripts]
+pybook = pybooklib.pybook_cli:cli
+pybooklib = pybooklib.pybooklib_cli:about
+pylib = pybooklib.pylib_cli:cli
+
