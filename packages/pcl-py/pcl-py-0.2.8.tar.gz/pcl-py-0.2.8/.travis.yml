@@ -1,0 +1,57 @@
+language: python
+
+matrix:
+  include:
+    - name: "Python2.7 + PCL1.8 + Numpy1.11"
+      dist: bionic
+      python: 2.7
+      env: NUMPY=1.11 PCLVER=180
+
+    - name: "Python3.6 + PCL1.7 + Numpy1.13"
+      dist: xenial
+      python: 3.6
+      env: NUMPY=1.13 PCLVER=170
+
+    - name: "Python3.7 + PCL1.8 + Numpy1.15"
+      dist: bionic
+      python: 3.7
+      env: NUMPY=1.15 PCLVER=180
+
+  # - os: osx
+  #   osx_image: xcode10.2  # Python 3.7.2 running on macOS 10.14.3
+  #   language: shell
+
+  # - os: windows
+  #   python: 3.6
+  #   env: NUMPY=1.12 
+
+branches:
+  only:
+    - master
+
+before_install:
+  - sudo apt update
+  - sudo apt install -y libpcl-dev
+  - pip install numpy==$NUMPY cython scikit-build
+  - if [ "$RUN_COVERAGE" == "yes" ]; then
+      pip install coveralls pytest-cov -q;
+    fi
+  - if [ "$PCLVER" -lt 180 ]; then
+      sudo apt install -y libproj-dev;
+      sudo ln -s /usr/lib/x86_64-linux-gnu/libvtkCommonCore-6.2.so /usr/lib/libvtkproj4.so;
+    fi
+
+install:
+  - python setup.py develop
+
+script:
+  # visualizer is not available in container
+  - if [ "$RUN_COVERAGE" == "yes" ]; then
+      py.test test/ --ignore test/test_visualizer.py --cov;
+    else
+      py.test test/ --ignore test/test_visualizer.py;
+    fi
+
+after_success:
+  - if [ "$RUN_COVERAGE" == "yes" ]; then coveralls; fi
+  # TODO: push dist packages directly to PyPI

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pcl-py
+Version: 0.2.8
+Summary: Cython bindings of Point Cloud Library (PCL)
+Home-page: https://github.com/cmpute/pcl.py
+Author: Jacob Zhong
+Author-email: cmpute@gmail.com
+License: BSD-3-Clause
+Download-URL: https://github.com/cmpute/pcl.py/archive/master.zip
+Description: (see project homepage)
+Keywords: pcl,pointcloud,numpy,cython,binding
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: test
