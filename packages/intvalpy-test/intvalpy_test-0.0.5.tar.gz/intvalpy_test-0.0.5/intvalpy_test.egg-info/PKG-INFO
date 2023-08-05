@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: intvalpy-test
+Version: 0.0.5
+Summary: Interval library in Python using classical interval arithmetic + Kahan division in some functions
+Home-page: https://github.com/AndrosovAS/intvalpy
+Author: Андросов Артем Станиславович
+Author-email: artem.androsov@gmail.com
+License: UNKNOWN
+Description: ![alt tag](examples/SolSet.png)
+        
+        
+Platform: UNKNOWN
