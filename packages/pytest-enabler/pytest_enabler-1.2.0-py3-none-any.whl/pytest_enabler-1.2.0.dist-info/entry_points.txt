@@ -1,0 +1,3 @@
+[pytest11]
+plugin-enabled options = pytest_enabler
+
