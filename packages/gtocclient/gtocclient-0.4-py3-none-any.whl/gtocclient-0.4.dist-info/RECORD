@@ -1,0 +1,10 @@
+owncloud/__init__.py,sha256=x-2uEzmq79qIYNZSnPgn01fAwUEggDTlAnTOQ7Ym8Vc,97
+owncloud/owncloud.py,sha256=rJXeYC-qIxbgq1EHEnKDcYEwgCNVyuDMlDCRfkVk0kk,69303
+owncloud/utils.py,sha256=y0HhNw4pDqKAV-nfieGtHL-5mflnRHwbl7wMM-e1pHc,2245
+owncloud/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+owncloud/test/test.py,sha256=eCknUllp_TKAJ_B8yxcoxa0ozwpidcfUupwI0jTdqzc,59797
+gtocclient-0.4.dist-info/LICENSE.txt,sha256=_JIr9bI2HQvg_fsPw3QZLGPLo9PaHS6rpIo3rtvPDUs,1104
+gtocclient-0.4.dist-info/METADATA,sha256=XUijeJvG4s1oPrrssyiIbjvzgKwcKLHzyQnpk1djjkM,3593
+gtocclient-0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gtocclient-0.4.dist-info/top_level.txt,sha256=muQzbh3efXf0Rhf6jdyEVungD2mCNPFaJvFMSlZq7zI,9
+gtocclient-0.4.dist-info/RECORD,,
