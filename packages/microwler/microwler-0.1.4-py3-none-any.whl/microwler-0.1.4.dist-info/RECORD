@@ -1,0 +1,17 @@
+microwler/__init__.py,sha256=jowa398Wxn9MiLMPGRAFytONJDMJ-ENQ66sTf5Btzt4,1361
+microwler/crawler.py,sha256=Csl0WGhKHU38MJIiKO2LQujvmCVQsU7Qv1LS7fZBijw,8771
+microwler/export.py,sha256=sHkkBgLW9qlHUIhFWeiXFZCcbCvQvLKlb7yd5SXjmA8,3224
+microwler/page.py,sha256=Fhz9m2s9qXuJ4HW2abskZlZoSdVi4HtGwrwl71rcs38,2693
+microwler/scrape.py,sha256=RcX7D0yAGOP4atdZiuFmpTS3xBh9wiIkism7GJAF_wg,1496
+microwler/settings.py,sha256=FpeBkjqxZfOX69vSGxb0RMI8fzFbLrpY3yFBZS23ytg,833
+microwler/utils.py,sha256=hN5H35iYwgGDQaUM_1Lnlm7QBFDizpzUjgtbpOuUJr0,3181
+microwler/webservice.py,sha256=cT4sTRcDj5PLe4bOm_2c6Kj_sx4yYOefP2oLqr8oXqk,2530
+microwler/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+microwler/cli/cmd.py,sha256=nsG9S1UmFhfAxkmWr_YpzIzqCTphWVEpk7ToYJvOyx8,3935
+microwler/cli/template.py,sha256=zyqRNOuamJoWlfTWE8vt3zuYrPTW3Ubgc5oGAF-hS1U,603
+microwler-0.1.4.dist-info/LICENSE,sha256=puA2D0EjBsX0ZeD8DFyCkXublyoSIr_jdNn51kIiVWU,1076
+microwler-0.1.4.dist-info/METADATA,sha256=vuIM4E2E-w81pQRmyUVuVqQpCuuNYoF7NfjJyCpKwLI,4423
+microwler-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+microwler-0.1.4.dist-info/entry_points.txt,sha256=o7zaSPotBPsFe5QNptRCajl0pB1gL7wdXyqxw3uuNNs,186
+microwler-0.1.4.dist-info/top_level.txt,sha256=3YA4MkOBFO0OABmD3xjm-cbtQLxUNpiOrN1m5A9nFCA,10
+microwler-0.1.4.dist-info/RECORD,,
