@@ -1,0 +1,11 @@
+EasyGA
+attributes
+crossover
+database
+fitness_examples
+mutation
+parent
+structure
+survivor
+termination
+test_EasyGA
