@@ -1,0 +1,19 @@
+"""
+Example task subclass used in the tests
+"""
+from dkist_processing_core import TaskBase
+
+
+class Task(TaskBase):
+    log_url = "http://localhost:8080/log?execution_date=2021-01-07T18%3A19%3A38.214767%2B00%3A00&task_id=task_a&dag_id=test_dag"
+
+    def __init__(self, *args, **kwargs):
+        self.run_was_called = False
+        self.record_provenance_was_called = False
+        super().__init__(*args, **kwargs)
+
+    def run(self):
+        self.run_was_called = True
+
+    def record_provenance(self):
+        self.record_provenance_was_called = True
