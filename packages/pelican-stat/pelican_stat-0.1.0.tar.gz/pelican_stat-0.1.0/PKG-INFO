@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pelican-stat
+Version: 0.1.0
+Summary: Command line tool that generates pelican article statistics
+License: MIT
+Author: Wei Lee
+Author-email: weilee.rx@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Markdown (>=3.3.3,<4.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: pelican (==4.5.4)
+Description-Content-Type: text/markdown
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+# pelican_stat
+
+cli tool for generating pelican article statistics
+
+## Getting Started
+
+### Prerequisites
+* [Python](https://www.python.org/downloads/)
+
+## Usage
+
+
+## Contributing
+See [Contributing](contributing.md)
+
+## Authors
+Wei Lee <weilee.rx@gmail.com>
+
+
+Created from [Lee-W/cookiecutter-python-template](https://github.com/Lee-W/cookiecutter-python-template/) version 0.6.1
+
