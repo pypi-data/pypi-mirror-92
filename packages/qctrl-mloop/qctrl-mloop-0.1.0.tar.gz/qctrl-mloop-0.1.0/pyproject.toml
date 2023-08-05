@@ -1,0 +1,83 @@
+[tool.poetry]
+name = "qctrl-mloop"
+version = "0.1.0"
+description = "Q-CTRL Python M-LOOP"
+license = "https://q-ctrl.com/terms"
+authors = ["Q-CTRL <support@q-ctrl.com>"]
+maintainers = ["Q-CTRL <support@q-ctrl.com>"]
+readme = "DESCRIPTION.md"
+repository = ""
+keywords = [
+    "q-ctrl",
+    "qctrl",
+    "quantum control"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Distributed Computing"
+]
+packages = [
+    { include = "qctrlmloop" },
+]
+
+[tool.poetry.dependencies]  # https://poetry.eustace.io/docs/versions
+python = ">=3.6.4, <3.9"
+numpy = "^1.18"
+toml = "^0.10.0"
+qctrl = "^8.6.1"
+M-LOOP = "~3.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.5"
+pylint = "*"
+pylint_runner = "*"
+black = "^19.10b0"
+mypy = "^0.770"
+isort = "^5.4.2"
+
+[tool.poetry.urls]
+GitHub = "https://github.com/qctrl"
+Twitter = "https://twitter.com/qctrlHQ"
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+    \.git
+    | \.pytest_cache
+    | \.github
+    | docs
+  )/
+  | setup.py
+)
+'''
+
+[tool.isort]
+profile = "black"
+force_grid_wrap = "2"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
+versioning = "pep"
+prereleases = true
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
