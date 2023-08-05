@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: xander
+Version: 0.0.5.9
+Summary: A small ML-ops tool for dummies and anyone who needs it.
+Home-page: UNKNOWN
+Author: Andrea Cola
+Author-email: andrea.cola95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Xander
+
+Xander is my first experience in developing MLOps tools. I developed this tool one piece at time since my first day in Bip spa.
+This tool represents my personal and professional growth, it contains scripts on which every Data Science project is based. Repeating them every time was frustrating so why not create a tool that did it for me?
+
+Xander is a Greek name meaning "the one who saves".
+
