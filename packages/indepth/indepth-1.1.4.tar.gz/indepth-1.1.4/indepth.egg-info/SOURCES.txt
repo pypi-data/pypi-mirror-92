@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+indepth/__init__.py
+indepth/functions.py
+indepth/lookup.py
+indepth.egg-info/PKG-INFO
+indepth.egg-info/SOURCES.txt
+indepth.egg-info/dependency_links.txt
+indepth.egg-info/top_level.txt
+indepth/data/mrc_psycholing.pkl

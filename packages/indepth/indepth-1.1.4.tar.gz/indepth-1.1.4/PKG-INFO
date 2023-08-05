@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: indepth
+Version: 1.1.4
+Summary: A Natural Language Processing toolkit
+Home-page: https://github.com/SidharthMacherla/indepth
+Author: Sidharth Macherla
+Author-email: msidharthrasik@gmail.com
+License: MIT
+Description: This Python package is currently unstable.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
