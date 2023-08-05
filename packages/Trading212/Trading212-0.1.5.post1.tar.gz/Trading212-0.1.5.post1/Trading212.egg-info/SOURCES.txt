@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+README.rst
+setup.cfg
+setup.py
+Trading212/__init__.py
+Trading212/api.py
+Trading212/utils.py
+Trading212.egg-info/PKG-INFO
+Trading212.egg-info/SOURCES.txt
+Trading212.egg-info/dependency_links.txt
+Trading212.egg-info/requires.txt
+Trading212.egg-info/top_level.txt
