@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+changelog.md
+setup.py
+src/xarray_regex/__init__.py
+src/xarray_regex/file_finder.py
+src/xarray_regex/library.py
+src/xarray_regex/matcher.py
+src/xarray_regex.egg-info/PKG-INFO
+src/xarray_regex.egg-info/SOURCES.txt
+src/xarray_regex.egg-info/dependency_links.txt
+src/xarray_regex.egg-info/top_level.txt
