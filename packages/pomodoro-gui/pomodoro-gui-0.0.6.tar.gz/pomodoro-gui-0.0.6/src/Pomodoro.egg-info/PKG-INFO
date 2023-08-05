@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Pomodoro
+Version: 0.0.6
+Summary: A small pomodoro GUI for Windows/Linux created with PyQt5.
+Home-page: https://github.com/burakmartin/pomodoro
+Author: Burak Martin
+Author-email: burak.martin100@gmail.com
+License: GPL-3.0-or-later
+Description: UNKNOWN
+Platform: Windows
+Platform: Linux
