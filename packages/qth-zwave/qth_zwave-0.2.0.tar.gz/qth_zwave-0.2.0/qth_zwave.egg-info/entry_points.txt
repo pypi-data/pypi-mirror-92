@@ -1,0 +1,3 @@
+[console_scripts]
+qth_zwave = qth_zwave:main
+
