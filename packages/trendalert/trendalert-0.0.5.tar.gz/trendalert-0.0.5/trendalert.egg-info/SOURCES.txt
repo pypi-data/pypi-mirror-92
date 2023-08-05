@@ -1,0 +1,8 @@
+README.md
+setup.py
+trendalert/__init__.py
+trendalert/alert.py
+trendalert.egg-info/PKG-INFO
+trendalert.egg-info/SOURCES.txt
+trendalert.egg-info/dependency_links.txt
+trendalert.egg-info/top_level.txt
