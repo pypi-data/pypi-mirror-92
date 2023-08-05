@@ -1,0 +1,8 @@
+fhir_starter/__init__.py,sha256=3FsRrS7iNUFRwTg35yzP2MFgC-RfyQQ0lzpCAMPlFuU,127
+fhir_starter/audit_client.py,sha256=i6H0i0vcPBXUZlbyNwoY7DW1BVDyfagM0-hB34uQimI,480
+fhir_starter/audit_messages.py,sha256=ZH5KteFYzgwXEtZOjVMb3-GY1VIpnWS_dzYz2DYObqE,4526
+hit_starter_on_fhir-0.1.1.dist-info/LICENSE,sha256=xZyC5elTTNczlue3Nndm-WDssutrZJBDLEOfdKjmQRc,1065
+hit_starter_on_fhir-0.1.1.dist-info/METADATA,sha256=hRo84m12ksDYMIENFkkB5PKvZK_Qihejw7SALGmmr6s,1973
+hit_starter_on_fhir-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+hit_starter_on_fhir-0.1.1.dist-info/top_level.txt,sha256=Sjf9f9_e-SMlcqrJT6cRoXwcvIQOWNBxRnSuhAQIH7g,13
+hit_starter_on_fhir-0.1.1.dist-info/RECORD,,
