@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pyompa
+Version: 0.3.0.3
+Summary: Python OMPA
+Home-page: https://github.com/nitrogenlab/pyompa
+Author: Avanti Shrikumar
+Author-email: avanti.shrikumar@gmail.com
+License: UNKNOWN
+Description: Python package for conducting OMPA (Optimum Multiparameter Water Mass Analysis)
+Platform: UNKNOWN
+Provides-Extra: altair
