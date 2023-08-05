@@ -1,0 +1,20 @@
+    273 1 * * * * cd /home/work/zhangyibo/online/cloudml_job_clean && sh delete_failed_jobs.sh >> logs.txt 2>&1
+
+
+
+############ wangxuntao #############
+394
+395 ## rm mitv_tfSample by wangxuntao
+396 10 19 * * * cd /home/work/wangxuntao/push-pipeline/scripts && nohup sh -x rm_mitv_tfSample.sh 2>&1 >rm_mitv_tfSample.log &
+397
+398 ## commen_meta bug by wangxuntao
+399 55 09 * * * cd /home/work/wangxuntao/push-pipeline/scripts && sh -x commen_meta.sh 2>&1 >commen_meta.log &
+400
+401 ## push mitv dnn model by wangxuntao
+402 00 20 * * * cd /home/work/wangxuntao/sparse-zoo && nohup sh -x daily_train_mitv_base_days.sh 2>&1 >logs/daily_train_mitv_base.log &
+404
+405 ## browser_push model  by wangxuntao
+406 #50 22 * * * cd /home/work/wangxuntao/sparse-zoo && nohup sh -x browser_online_daily.sh 2>&1 >logs/browser_online_daily.log &
+407
+408 ## mitv push queue remove lower ctr articles by wangxuntao
+409 00 03 * * * cd /home/work/wangxuntao/push-pipeline && sh -x mitv_remove_article.sh 2>&1 >mitv/mitv_remove_article.log &

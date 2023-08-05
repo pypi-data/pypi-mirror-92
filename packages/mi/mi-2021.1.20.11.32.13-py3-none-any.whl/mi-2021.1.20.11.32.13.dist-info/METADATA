@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: mi
+Version: 2021.1.20.11.32.13
+Summary: description
+Home-page: https://github.com/Jie-Yuan/mi
+Author: JieYuan
+Author-email: 313303303@qq.com
+Maintainer: JieYuan
+Maintainer-email: 313303303@qq.com
+License: MIT
+Keywords: tool wheel,yuanjie,utils
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: meutils
+Requires-Dist: py2neo
+Requires-Dist: pymysql
+Requires-Dist: pymongo
+Requires-Dist: pymilvus
+Requires-Dist: redis-py-cluster
+Requires-Dist: apollo-client
+Requires-Dist: jovian
+Requires-Dist: wandb
+
+<h1 align = "center">:rocket: MI :rocket:</h1>
+
+---
+# TODO: 公司内部的需要封装在mi, 其他封装于meutils
+- fds cmd
+- hdfs cmd
+- cloudml cmd
+- email
+- feishu
+- zk
+
+
+
