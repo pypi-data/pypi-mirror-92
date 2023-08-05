@@ -1,0 +1,86 @@
+#!python
+
+import os
+import sys
+import argparse
+
+from mkstm32.cli import CLI
+from mkstm32.stlink import STLink
+from mkstm32.project import Project
+from mkstm32.version import __version__
+
+if __name__ == '__main__':
+  parser = argparse.ArgumentParser(
+    description='Upload, debug and compile STM32CubeMX Makefile projects')
+
+  common_ops = parser.add_argument_group(title='Common operations')
+  common_ops.add_argument('-u', '--upload', action='store_true')
+  common_ops.add_argument('-d', '--debug', action='store_true', help='Start GDB session')
+  common_ops.add_argument('-M', '--upload-method', type=str, default='stlink')
+  common_ops.add_argument('-v', '--verbosity', type=int, default=2, metavar='V',
+    help='Verbosity level from -1 (completely silent) to 2 (fully verbose, default)')
+  common_ops.add_argument('-V', '--version', action='store_true', help='Print version')
+
+  project_ops = parser.add_argument_group(title='Project operations')
+  project_ops.add_argument('-c', '--compile', action='store_true',
+    help='Call make with appropriate Makefile')
+  project_ops.add_argument('-p', '--project-dir', default=os.getcwd(),
+    metavar='DIR', type=str, help='Defaults to current dir')
+  project_ops.add_argument('-s', '--size', action='store_true', help='Print size of built binaries')
+  project_ops.add_argument('-x', '--cpp', help='Use C++ rather than C', action='store_true')
+  project_ops.add_argument('-z', '--clean', action='store_true',
+    help='Clean (remove) build directory')
+
+  stlink_ops = parser.add_argument_group(title='ST-Link operations')
+  stlink_ops.add_argument('-b', '--baud-rate', type=int, default=115200,
+    help='Baud rate for serial monitor')
+  stlink_ops.add_argument('-i', '--probe', action='store_true',
+    help='Print ST-Link connection information')
+  stlink_ops.add_argument('-l', '--list-ports', action='store_true', help='List serial ports')
+  stlink_ops.add_argument('-m', '--monitor', action='store_true', help='Serial monitor')
+  stlink_ops.add_argument('-P', '--port', type=str, metavar='PORT')
+  stlink_ops.add_argument('-r', '--reset', action='store_true', help='Reset the microcontroller')
+  stlink_ops.add_argument('--uart-reset-time', type=int, default=1,
+    help='Sleep time before resetting the connection on error')
+
+  if len(sys.argv) < 2:
+    parser.print_help()
+    sys.exit()
+
+  args = parser.parse_args()
+
+  cli = CLI(__file__, verbosity=args.verbosity)
+  stlink = STLink(cli)
+
+  if args.version:
+    cli.print(__version__)
+    sys.exit()
+
+  if args.list_ports:
+    stlink.list_ports()
+
+  if args.reset:
+    stlink.reset()
+
+  if args.probe:
+    stlink.probe()
+
+  if args.monitor:
+    stlink.monitor(args.port, args.baud_rate, args.uart_reset_time)
+
+  with Project(args.project_dir, cli, stlink, cpp=args.cpp) as project:
+    if args.size:
+      project.size()
+
+    if args.clean:
+      project.clean()
+
+    if args.compile:
+      project.make()
+
+    if args.upload:
+      project.upload(method=args.upload_method)
+
+    if args.debug:
+      project.debug()
+
