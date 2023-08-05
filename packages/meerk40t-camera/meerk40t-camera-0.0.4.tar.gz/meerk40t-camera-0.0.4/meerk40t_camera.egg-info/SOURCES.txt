@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+./camera/__init__.py
+./camera/camera.py
+camera/__init__.py
+camera/camera.py
+meerk40t_camera.egg-info/PKG-INFO
+meerk40t_camera.egg-info/SOURCES.txt
+meerk40t_camera.egg-info/dependency_links.txt
+meerk40t_camera.egg-info/entry_points.txt
+meerk40t_camera.egg-info/requires.txt
+meerk40t_camera.egg-info/top_level.txt
+meerk40t_camera.egg-info/zip-safe
