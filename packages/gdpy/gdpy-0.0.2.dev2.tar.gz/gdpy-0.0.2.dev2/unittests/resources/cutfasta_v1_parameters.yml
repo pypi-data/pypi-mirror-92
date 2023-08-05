@@ -1,0 +1,58 @@
+Conditions:
+  schedule: ''
+Inputs:
+  loaddataNode1:
+    alias: load the data
+    category: loaddata
+    data:
+    - enid: <Please input the enid of the data in here>
+      name: '/luxitong/C1_Total.fasta'
+      property:
+        block_file:
+          block_name: null
+          is_block: false
+          split_format: default
+    formats:
+    - fasta
+    maxitems: 1
+    minitems: 0
+    required: true
+    type: file
+Outputs:
+  storedataNode3:
+    alias: store data
+    data:
+    - description: "test_sdk_o"
+      name: "test_sdk_o"
+      property:
+        block_file:
+          block_name: null
+          is_block: false
+          split_format: default
+    formats:
+    - tar.bz
+    maxitems: 1
+    minitems: 0
+    type: file
+Parameters:
+  cut_fastaNode2:
+    alias: ''
+    parameters:
+      cutf:
+        hint: ''
+        maxvalue: 100
+        minvalue: 0
+        required: true
+        type: integer
+        value: 3
+        variable: false
+Property:
+  CDN:
+    required: true
+  reference_task:
+  - id: null
+  water_mark:
+    required: true
+    style: null
+description: null
+name: test_sdk

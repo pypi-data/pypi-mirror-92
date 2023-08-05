@@ -1,0 +1,64 @@
+app:
+  account: public
+  alias: fastqc 0.11.5
+  category: Quality Control Tools
+  cmd_template: 'set -x
+  
+    mkdir /var/data/fastqc
+  
+    fastqc  -o /var/data/fastqc  -t {{requirements.resources.cpu}}  {% for one in inputs.inputseq
+    %} {{ one.path }} {% endfor %} ;
+  
+    tar zcvf {%for one in outputs.outputtgz %} {{ one.path }}{% endfor %} fastqc/*'
+  description: FastQC是一款非常常用的二代测序数据质控软件。本程序用来实现FastQC步骤，可以多个文件输入。
+  document_author: public
+  homepage: http://www.bioinformatics.babraham.ac.uk/projects/fastqc
+  inputs:
+    inputseq:
+      formats:
+      - bam
+      - fq
+      - fastq
+      - gz
+      - sam
+      hint: 输入的序列文件。
+      item:
+        separator: ' '
+      maxitems: 1000
+      minitems: 1
+      prefix: ''
+      required: true
+      separator: ''
+      stdin: false
+      type: file
+  name: Fastqc
+  outputs:
+    outputtgz:
+      formats: tgz
+      hint: 输出文件打包。
+      item:
+        separator: ''
+      maxitems: 1
+      minitems: 1
+      prefix: ''
+      required: true
+      separator: ''
+      stdout: false
+      type: file
+  package: null
+  parameters: {}
+  requirements:
+    container:
+      image: public/i1mapping:latest
+      type: docker
+    resources:
+      cpu: 4
+      disk: 4096m
+      mem: 4096m
+      network: false
+      port: []
+  status: checked
+  tutorial: fastqc [-o output dir] seqfile1 .. seqfileN
+  type: public
+  version: 1
+  
