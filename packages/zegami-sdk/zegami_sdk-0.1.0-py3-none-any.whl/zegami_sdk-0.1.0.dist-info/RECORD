@@ -1,0 +1,8 @@
+zegami_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zegami_sdk/stats.py,sha256=s6P9cTJSAaDChIs8yS8Cn8acykasyfHE124SaNSLzUA,4235
+zegami_sdk/zegami_client.py,sha256=vvPl4ZR1cWfh1XQCYxicR4HZYcpVarHh6UeY31VshZE,23517
+zegami_sdk-0.1.0.dist-info/LICENSE.md,sha256=PoGGeSwDaWqVNtzD5_OVJ3N1USkR6elgtwmdQbau95E,11545
+zegami_sdk-0.1.0.dist-info/METADATA,sha256=qnKoY9x91gFH4TJvKoWOc6r7OHKIItj7V3pUoATHsPQ,2168
+zegami_sdk-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+zegami_sdk-0.1.0.dist-info/top_level.txt,sha256=12IxJUPqSfONcxie8L9OCpTq6sb3daexduZCYKTedFM,11
+zegami_sdk-0.1.0.dist-info/RECORD,,
