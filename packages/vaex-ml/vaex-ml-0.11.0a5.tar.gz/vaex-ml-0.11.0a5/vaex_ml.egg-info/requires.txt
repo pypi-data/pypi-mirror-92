@@ -1,0 +1,4 @@
+vaex-core<5,>=4.0.0-alpha.3
+numba
+traitlets
+jinja2
