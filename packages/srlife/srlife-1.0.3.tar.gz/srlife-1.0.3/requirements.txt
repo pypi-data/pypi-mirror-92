@@ -1,0 +1,14 @@
+numpy==1.18
+scipy
+h5py
+vtk
+nose
+matplotlib
+pylint
+neml
+scikit-fem
+meshio
+networkx
+tqdm
+multiprocess
+dill

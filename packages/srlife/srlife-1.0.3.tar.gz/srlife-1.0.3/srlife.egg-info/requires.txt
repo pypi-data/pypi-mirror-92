@@ -1,0 +1,16 @@
+numpy==1.18
+scipy
+h5py
+nose
+matplotlib
+pylint
+neml
+scikit-fem
+meshio
+networkx
+tqdm
+multiprocess
+dill
+
+[:platform_system != "Darwin"]
+vtk
