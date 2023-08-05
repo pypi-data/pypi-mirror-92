@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: rethinkdb-mock
+Version: 0.9.8
+Summary: A pure-python in-memory mock of rethinkdb (formerly MockThink)
+Home-page: http://github.com/scivey/rethinkdb_mock
+Maintainer: Christopher Baklid
+Maintainer-email: cbaklid@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
