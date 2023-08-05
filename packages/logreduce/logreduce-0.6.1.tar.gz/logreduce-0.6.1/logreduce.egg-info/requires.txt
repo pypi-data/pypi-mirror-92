@@ -1,0 +1,9 @@
+aiohttp
+requests
+numpy
+scipy
+scikit-learn
+PyYAML
+
+[:(python_version < '3.8')]
+typing-extensions
