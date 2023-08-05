@@ -1,0 +1,7 @@
+README.md
+setup.py
+exitter/__init__.py
+exitter.egg-info/PKG-INFO
+exitter.egg-info/SOURCES.txt
+exitter.egg-info/dependency_links.txt
+exitter.egg-info/top_level.txt
