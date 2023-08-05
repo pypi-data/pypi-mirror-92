@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: knowledge-repo
+Version: 0.9.0
+Summary:  A workflow for contributing company knowledge, in the form  of RMarkdowns, iPythons, and Markdowns, rendered and organized to magnify research impact across teams and time 
+Home-page: UNKNOWN
+Author: Erik Ritter (maintainer), Serena Jiang, John Bodley, Bill Ulammandakh, Naoya Kanai, Robert Chang, Dan Frank,  Chetan Sharma,  Matthew Wardrop
+Author-email: erik.ritter@airbnb.com, serena.jiang@airbnb.com, john.bodley@airbnb.com, bill.ulammandakh@airbnb.com, naoya.kanai@airbnb.com, robert.chang@airbnb.com, dan.frank@airbnb.com, chetan.sharma@airbnb.com, mpwardrop@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: ipynb
+Provides-Extra: pdf
+Provides-Extra: oauth
+Provides-Extra: ldap
+Provides-Extra: dev
+Provides-Extra: all
