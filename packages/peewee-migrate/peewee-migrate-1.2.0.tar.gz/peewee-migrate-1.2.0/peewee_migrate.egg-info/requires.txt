@@ -1,0 +1,11 @@
+click>=6.7
+peewee>=3.3.3
+
+[build]
+bump2version
+twine
+wheel
+
+[tests]
+pytest
+psycopg2-binary
