@@ -1,0 +1,7 @@
+geopandas
+pycrs
+scipy
+overpass
+osm2geojson
+requests
+orjson
