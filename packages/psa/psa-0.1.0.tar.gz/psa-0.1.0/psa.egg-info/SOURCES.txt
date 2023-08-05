@@ -1,0 +1,16 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+psa/__init__.py
+psa/stein.py
+psa.egg-info/PKG-INFO
+psa.egg-info/SOURCES.txt
+psa.egg-info/dependency_links.txt
+psa.egg-info/requires.txt
+psa.egg-info/top_level.txt
+tests/__init__.py
+tests/test_example.py
+tests/util.py
