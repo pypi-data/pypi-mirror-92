@@ -1,0 +1,17 @@
+python_cassandra_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_cassandra_cli/__main__.py,sha256=ytzfCsBFeAzTIlGlZqFkaGdGb9xmemoKohBv6eRnKaA,9832
+python_cassandra_cli/aws_utils.py,sha256=4pPaH8N4QYDHzKJ4CI_NZTXBkjhZK5VzjB21JCqrteA,802
+python_cassandra_cli/constant.py,sha256=rTxs5QAsTQdVYFciXhZvoRhhs6gl6r-IVGI41ONqXyI,1323
+python_cassandra_cli/constants.py,sha256=RO-_5kCBK4tA2Wa1dBd0zBQ1LaExDxHLP1uXWw1wx20,1450
+python_cassandra_cli/copy_snapshot_folder.py,sha256=pztmDUnetOnEnBpGwabr0yhjG7xx0xk0ru4zPIxk7P8,861
+python_cassandra_cli/main.py,sha256=YAcJHGmdgR7jxVH2fa4RCl1ZJHtGKPkkzab-jZVh6ZY,9821
+python_cassandra_cli/restore_snapshot_keyspace.py,sha256=lpVzXQLXX4sZgJ0Mc_-lxwIxHtnnASccyLOjBMSvgXo,5518
+python_cassandra_cli/restore_snapshot_table.py,sha256=gOaDLJtAPcKfxSgD7lYchHRRYFqTBeXVOKKfROebnWs,4954
+python_cassandra_cli/store_snapshot_keyspace.py,sha256=9S7gn8VRBJ52l7qkuTlvcTh8ZeTnPTxaXCKqQV5dM-w,4095
+python_cassandra_cli/store_snapshot_table.py,sha256=QVvIIM4vdjqCdxAWIrOBiH1X1A6UMV3zD5MFufvAkVA,4107
+python_cassandra_cli-1.0.2.dist-info/LICENCE,sha256=xCs5ywcMLkMC-TvTeDkUMLmDVEBNtjCVCqz5NAo3SJY,1073
+python_cassandra_cli-1.0.2.dist-info/METADATA,sha256=i6RdtJVHc0W7celviVf5Tf8MBGvxn3L1jhmuEx-pbus,4063
+python_cassandra_cli-1.0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+python_cassandra_cli-1.0.2.dist-info/entry_points.txt,sha256=0ClKWFF1UOuUFevG9Lvd-bsh0_YAUQncXilkoXXpelc,76
+python_cassandra_cli-1.0.2.dist-info/top_level.txt,sha256=kArqxTzELHxyJlVTDa5acXJa_IlUK3qwal1rmSRJsvI,21
+python_cassandra_cli-1.0.2.dist-info/RECORD,,
