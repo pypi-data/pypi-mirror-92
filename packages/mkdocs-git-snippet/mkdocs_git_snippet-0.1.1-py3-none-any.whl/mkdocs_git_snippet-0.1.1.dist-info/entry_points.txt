@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+git-snippet = mkdocs_git_snippet.plugin:GitSnippetPlugin
+
