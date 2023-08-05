@@ -1,0 +1,14 @@
+widget_bandsplot/__init__.py,sha256=INFGT-yorU-gcUZCXxo6-X1yWzUyA00iu8c9NrQqRTM,1042
+widget_bandsplot/_version.py,sha256=UxyyjuubssaHM0CnooI-lrBFgXGoz8kqYYakShQLcyo,395
+widget_bandsplot/example.py,sha256=zTAOf_QNXloCPfET80IPw6cH28m1p_BMHQumYnl7350,1300
+widget_bandsplot/static/extension.js,sha256=PyaxuzHbTGkpTQaD0dMpewDh6Xt_JR2GazDLIX51Ovc,3354
+widget_bandsplot/static/index.js,sha256=vZOXCGJfLETvr4-zx1_mfVx7BejLG5lY4wZulbmVfK0,2424385
+widget_bandsplot/static/index.js.map,sha256=EWUlEUPl83VDO-tuAOiD1bgTvrHX0y7i6pVBjeS3PUE,2932571
+widget_bandsplot-0.1.0a0.data/data/etc/jupyter/nbconfig/notebook.d/widget-bandsplot.json,sha256=cga1gEtlFG1B9Memox18XtgQLrw6jBCJ0EzR94UNydQ,70
+widget_bandsplot-0.1.0a0.data/data/share/jupyter/nbextensions/widget-bandsplot/extension.js,sha256=PyaxuzHbTGkpTQaD0dMpewDh6Xt_JR2GazDLIX51Ovc,3354
+widget_bandsplot-0.1.0a0.data/data/share/jupyter/nbextensions/widget-bandsplot/index.js,sha256=vZOXCGJfLETvr4-zx1_mfVx7BejLG5lY4wZulbmVfK0,2424385
+widget_bandsplot-0.1.0a0.data/data/share/jupyter/nbextensions/widget-bandsplot/index.js.map,sha256=EWUlEUPl83VDO-tuAOiD1bgTvrHX0y7i6pVBjeS3PUE,2932571
+widget_bandsplot-0.1.0a0.dist-info/METADATA,sha256=1DFKWwv1ovNSgQduPBjxhVQMMpM9eNNoEUoXpUkP5yU,949
+widget_bandsplot-0.1.0a0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+widget_bandsplot-0.1.0a0.dist-info/top_level.txt,sha256=d4Nzku1sFSJLq9MbCTxlY8Y9wmbocfr29_ZCiAGVGeA,17
+widget_bandsplot-0.1.0a0.dist-info/RECORD,,
