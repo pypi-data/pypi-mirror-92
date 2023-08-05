@@ -1,0 +1,50 @@
+# seed for the random number generators, to make things reproducible
+seed: 0
+true_energy_column: corsika_event_header_total_energy
+
+energy:
+  #the classifier to use
+  regressor : |
+    ensemble.RandomForestRegressor(
+      n_estimators=30,
+      max_features='sqrt',
+      n_jobs=-1,
+      max_depth=12,
+    )
+
+  # randomly sample the data if you dont want to use the whole set
+  n_signal: 500
+
+  # define th number of cross validations to perform
+  n_cross_validations: 5
+
+  # define the name of the regression target
+  target_column: corsika_event_header_total_energy
+
+
+  # Define the name of the variable you want estimate by regression.
+  # The default is 'gamma_energy_energy'.
+  output_name: gamma_energy_prediction
+
+  features:
+    - size
+    - length
+    - width
+    - num_islands
+    - leakage1
+    - leakage2
+    - skewness_long
+    - skewness_trans
+    - concentration_cog
+    - concentration_core
+
+  # Generate some features using pd.DataFrame.eval
+  # List all keys that have to be read from the input files
+  # in needed keys.
+  # features must be a mapping of feature name -> expression
+  feature_generation:
+    needed_columns:
+      - width
+      - length
+    features:
+      area: width * length * @pi
