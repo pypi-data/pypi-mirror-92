@@ -1,0 +1,3 @@
+[console_scripts]
+tacky = tacky.__main__:main
+
