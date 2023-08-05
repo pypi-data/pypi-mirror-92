@@ -1,0 +1,165 @@
+2021-01-11 17:11:57,991 [1626152] DEBUG    thamos: Debug mode turned on
+2021-01-11 17:11:57,991 [1626152] DEBUG    thamos: Thamos version: '1.5.4'
+2021-01-11 17:11:57,993 [1626152] WARNING  thamos: Development dependencies will not be considered during the resolution process - see https://thoth-station.ninja/j/no_dev
+2021-01-11 17:11:57,993 [1626152] INFO     thamos.lib: Using Pipenv files to manage dependencies located in '/home/fpokorny/git/thoth-station/thamos/examples/lockdown'
+2021-01-11 17:11:57,994 [1626152] WARNING  thamos.config: TLS verification turned off, its highly recommended to use a secured connection, see configuration file for configuration options
+2021-01-11 17:11:58,798 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:11:58,812 [1626152] INFO     thamos.lib: Performing static analysis of sources to gather library usage
+2021-01-11 17:11:58,816 [1626152] DEBUG    thamos.lib: Library usage:
+{}
+2021-01-11 17:11:59,860 [1626152] INFO     thamos.lib: Successfully submitted advise analysis 'adviser-63de2520' to 'https://khemenu.thoth-station.ninja/api/v1'
+2021-01-11 17:11:59,861 [1626152] DEBUG    thamos.lib: Noting last analysis id 'adviser-63de2520'
+2021-01-11 17:11:59,862 [1626152] DEBUG    thamos.lib: Analysis parameters:
+"{'count': 1,\n 'debug': False,\n 'dev': False,\n 'force': False,\n 'origin': 'git@github.com:fridex/thamos',\n 'recommendation_type': 'latest',\n 'source_type': 'cli'}"
+2021-01-11 17:11:59,863 [1626152] DEBUG    thamos.lib: Adviser input:
+{'application_stack': {'requirements': '[[source]]\n'
+                                       'url = "https://pypi.org/simple"\n'
+                                       'verify_ssl = true\n'
+                                       'name = "pypi"\n'
+                                       '\n'
+                                       '[[source]]\n'
+                                       'url = "https://pypi.org/simple"\n'
+                                       'verify_ssl = true\n'
+                                       'name = "pypi-org"\n'
+                                       '\n'
+                                       '[packages]\n'
+                                       'click = ">=7.1.1"\n'
+                                       'dill = ">=0.3.1.1"\n'
+                                       'keras = ">=2.3.1"\n'
+                                       'librosa = ">=0.7.2"\n'
+                                       'matplotlib = ">=3.2.1"\n'
+                                       'natsort = ">=7.0.1"\n'
+                                       'numba = ">=0.48"\n'
+                                       'numpy = ">=1.18.2"\n'
+                                       'pandas = ">=1.0.3"\n'
+                                       'python-speech-features = ">=0.6"\n'
+                                       'tensorflow = ">=2.3.0"\n'
+                                       'tqdm = ">=4.45.0"\n'
+                                       '\n'
+                                       '[dev-packages]\n'
+                                       '\n'
+                                       '[requires]\n'
+                                       'python_version = "3.8"\n',
+                       'requirements_format': None,
+                       'requirements_lock': ''},
+ 'library_usage': {'report': {'flask': ['flask.Flask'],
+                              'tensorflow': ['tensorflow.constant',
+                                             'tensorflow.Session']},
+                   'version': '0.1.0'},
+ 'runtime_environment': {'cuda_version': None,
+                         'hardware': None,
+                         'ipython': None,
+                         'name': 'my_project',
+                         'operating_system': {'name': 'rhel', 'version': '8.0'},
+                         'platform': None,
+                         'python_version': '3.8'}}
+2021-01-11 17:12:01,766 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:02,666 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.898804
+2021-01-11 17:12:02,673 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 0.5 seconds (state: running)
+2021-01-11 17:12:04,921 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:05,722 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.800464
+2021-01-11 17:12:05,729 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 1 seconds (state: running)
+2021-01-11 17:12:09,031 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:09,833 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.801401
+2021-01-11 17:12:09,838 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 2 seconds (state: running)
+2021-01-11 17:12:14,054 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:14,732 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.677312
+2021-01-11 17:12:14,737 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 4 seconds (state: running)
+2021-01-11 17:12:20,566 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:21,370 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.803634
+2021-01-11 17:12:21,376 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 8 seconds (state: running)
+2021-01-11 17:12:30,779 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:31,391 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.611098
+2021-01-11 17:12:31,396 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 8 seconds (state: running)
+2021-01-11 17:12:41,196 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:42,067 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.869633
+2021-01-11 17:12:42,072 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 8 seconds (state: running)
+2021-01-11 17:12:51,508 [1626152] DEBUG    thamos.lib: Using API: https://khemenu.thoth-station.ninja/api/v1
+2021-01-11 17:12:52,267 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 0.758491
+2021-01-11 17:12:52,272 [1626152] DEBUG    thamos.lib: Waiting for 'adviser-63de2520' to finish for 8 seconds (state: running)
+2021-01-11 17:13:01,937 [1626152] DEBUG    thamos.lib: Retrieving adviser result for 'adviser-63de2520'
+2021-01-11 17:13:03,582 [1626152] DEBUG    thamos.lib: Adviser check metadata: {'_datetime': '2021-01-11T16:12:55.936316',
+ 'analyzer': 'thoth-adviser',
+ 'analyzer_version': '0.21.1',
+ 'arguments': {'advise': {'beam_width': 25000,
+                          'count': 1,
+                          'dev': False,
+                          'library_usage': {'report': {'flask': ['flask.Flask'],
+                                                       'tensorflow': ['tensorflow.constant',
+                                                                      'tensorflow.Session']},
+                                            'version': '0.1.0'},
+                          'limit': 1,
+                          'limit_latest_versions': -1,
+                          'no_pretty': False,
+                          'output': '/mnt/workdir/adviser-63de2520',
+                          'pipeline': None,
+                          'plot': None,
+                          'predictor': 'AUTO',
+                          'predictor_config': {},
+                          'recommendation_type': 'latest',
+                          'requirements': '[[source]]\n'
+                                          'url = "https://pypi.org/simple"\n'
+                                          'verify_ssl = true\n'
+                                          'name = "pypi"\n'
+                                          '\n'
+                                          '[[source]]\n'
+                                          'url = "https://pypi.org/simple"\n'
+                                          'verify_ssl = true\n'
+                                          'name = "pypi-org"\n'
+                                          '\n'
+                                          '[packages]\n'
+                                          'click = ">=7.1.1"\n'
+                                          'dill = ">=0.3.1.1"\n'
+                                          'keras = ">=2.3.1"\n'
+                                          'librosa = ">=0.7.2"\n'
+                                          'matplotlib = ">=3.2.1"\n'
+                                          'natsort = ">=7.0.1"\n'
+                                          'numba = ">=0.48"\n'
+                                          'numpy = ">=1.18.2"\n'
+                                          'pandas = ">=1.0.3"\n'
+                                          'python-speech-features = ">=0.6"\n'
+                                          'tensorflow = ">=2.3.0"\n'
+                                          'tqdm = ">=4.45.0"\n'
+                                          '\n'
+                                          '[dev-packages]\n'
+                                          '\n'
+                                          '[requires]\n'
+                                          'python_version = "3.8"\n',
+                          'requirements_format': 'pipenv',
+                          'requirements_locked': None,
+                          'runtime_environment': {'cuda_version': None,
+                                                  'hardware': {'cpu_family': None,
+                                                               'cpu_model': None},
+                                                  'name': 'my_project',
+                                                  'operating_system': {'name': 'rhel',
+                                                                       'version': '8.0'},
+                                                  'platform': None,
+                                                  'python_version': '3.8'},
+                          'seed': 42,
+                          'user_stack_scoring': True},
+               'thoth-adviser': {'metadata': {'github_base_repo_url': None,
+                                              'github_check_run_id': None,
+                                              'github_event_type': None,
+                                              'github_installation_id': None,
+                                              'origin': 'git@github.com:fridex/thamos',
+                                              're_run_adviser_id': None,
+                                              'source_type': 'CLI'},
+                                 'verbose': False}},
+ 'distribution': {'codename': 'Ootpa',
+                  'id': 'rhel',
+                  'like': 'fedora',
+                  'version': '8.3',
+                  'version_parts': {'build_number': '',
+                                    'major': '8',
+                                    'minor': '3'}},
+ 'hostname': 'adviser-63de2520-1475225767',
+ 'python': {'api_version': 1013,
+            'implementation_name': 'cpython',
+            'major': 3,
+            'micro': 8,
+            'minor': 6,
+            'releaselevel': 'final',
+            'serial': 0}}
+2021-01-11 17:13:03,583 [1626152] DEBUG    thamos.lib: Elapsed seconds processing request: 64.783788
+2021-01-11 17:13:03,987 [1626152] DEBUG    thamos: No advises on configuration, nothing to adjust
+2021-01-11 17:13:03,988 [1626152] DEBUG    thamos: Writing to Pipfile/Pipfile.lock in '/home/fpokorny/git/thoth-station/thamos/examples/lockdown'
