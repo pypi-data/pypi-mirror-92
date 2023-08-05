@@ -1,0 +1,9 @@
+setup.py
+MyPackage0406019/__init__.py
+MyPackage0406019/functions.py
+MyPackage0406019/greet.py
+MyPackage0406019.egg-info/PKG-INFO
+MyPackage0406019.egg-info/SOURCES.txt
+MyPackage0406019.egg-info/dependency_links.txt
+MyPackage0406019.egg-info/not-zip-safe
+MyPackage0406019.egg-info/top_level.txt
