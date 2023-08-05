@@ -1,0 +1,6 @@
+[console_scripts]
+rudder = tiller.__main__:command
+
+[sailboat_plugins]
+tiller = tiller.__main__:Tiller
+
