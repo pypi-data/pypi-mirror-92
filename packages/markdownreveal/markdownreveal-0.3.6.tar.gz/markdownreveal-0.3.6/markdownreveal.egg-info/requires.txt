@@ -1,0 +1,17 @@
+PyYAML>=5.1
+requests
+pypandoc
+livereload==2.6.2
+watchdog
+click
+click_default_group
+
+[dev]
+
+[docs]
+sphinx
+numpydoc
+sphinx_rtd_theme
+
+[test]
+tox
