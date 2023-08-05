@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gdb-pounce
+Version: 0.0.2
+Summary: attach to a process precisely after a successful execve() / execveat()
+Home-page: https://github.com/mephi42/gdb-pounce
+Author: mephi42
+Author-email: mephi42@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
+UNKNOWN
+
+
