@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: automate-insurance-pricing
+Version: 1.0.5
+Summary: Bunch of functions for insurance pricing purposes
+Home-page: https://github.com/nassmim/automate-insurance-pricing
+Author: Nassim Ezzakraoui
+Author-email: nassmim972@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: chainladder (~=0.7)
+Requires-Dist: hyperopt (~=0.2)
+Requires-Dist: joypy (~=0.2)
+Requires-Dist: matplotlib (~=3.1)
+Requires-Dist: numpy (~=1.18)
+Requires-Dist: openpyxl (~=3.0)
+Requires-Dist: pandas (~=1.0)
+Requires-Dist: scikit-learn (~=0.22)
+Requires-Dist: scipy (~=1.4)
+Requires-Dist: seaborn (~=0.10)
+Requires-Dist: statsmodels (~=0.11)
+Requires-Dist: xlrd (~=1.2)
+Requires-Dist: XlsxWriter (~=1.2)
+Requires-Dist: xlwings (~=0.19)
+Requires-Dist: docx-mailmerge (~=0.5)
+
+# automate-insurance-pricing
+
+## Introduction
+Library gathering a bunch of modules aiming at speeding up usual tasks dealing with data prep, visualization, profitability analysis and risk modelling in insurance field.
+
+
+# Getting Started
+
+## 1.	Installation process
+
+To install use pip: pip install automate-insurance-pricing
+
+Alternatively, install directly from github: pip install git+https://github.com/nassmim/automate-insurance-pricing
+
+* Note: This package requires Python 3.7 and later.* 
+
+
+## 2.	Sub modules and functions
+
+This library is composed of several modules families: 
+* data exploration
+* data preprocessing
+* profitability analysis
+* risk modelling
+* results exportation
+* other functions less specific
+
+To import all modules from the family taks abc: from automate_insurance_pricing import abc
+
+To import a specific module def from the family taks abc: from automate_insurance_pricing.abc import def
+
+To import all functions from a specific module def within the family abc : from automate_insurance_pricing.abc.def import *
+
+
+## 3.	Software/Libraries dependencies
+
+Several libraries will be automatically installed when you install our library. Below is a non-exhaustive list of the packages that will be installed.
+
+* *pandas~=1.0*
+* *numpy~=1.18*
+* *scikit-learn~=0.22*
+* *scipy~=1.4*
+* *chainladder~=0.7*
+* *hyperopt~=0.2*
+* *joypy~=0.2*
+* *matplotlib~=3.1*
+* *openpyxl~=3.0*
+* *seaborn~=0.10*
+* *statsmodels~=0.11*
+* *xlrd~=1.2*
+* *XlsxWriter~=1.2*
+* *xlwings~=0.19*
+
+If some packages are not installed automatically, please do it manually.
+
+## 4.	Warnings
+Reports module is too specific and cannot be reused as it is. Will be re-worked to be more general. 
+
+
+# Contribute
+Anyone willing to make this library more exhaustive, more generic and efficient. 
+
+
