@@ -1,0 +1,10 @@
+matflow_damask/__init__.py,sha256=M5t0TfaRVgCbWuSJX-7o5p0H3Cw8C6zBEve-cHcnREw,780
+matflow_damask/_version.py,sha256=xPSSfY6ku6QWyVVFqpnrqTYF4Y5m8ZhJA9w4qUUHVVg,23
+matflow_damask/main.py,sha256=bhZ82WOo4CKo3M0k8gQX6Z9dTM5SAZs3vVrBcdE2gxE,14279
+matflow_damask/utils.py,sha256=f2OX_rj8K2nTImqW8LUpLlgmPS5jEtK4oocu8gCBsz8,915
+matflow_damask-0.1.15.dist-info/LICENSE,sha256=I86zaKNtBOoJgXSXYpeuTr9PfW-29BTlb_j6Tnn6-KA,1096
+matflow_damask-0.1.15.dist-info/METADATA,sha256=Om6s68NPVzHu2d5kWqx6_A4K0Yatb1poHq-ZbwnhImA,4493
+matflow_damask-0.1.15.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+matflow_damask-0.1.15.dist-info/entry_points.txt,sha256=PC3ZySy-2zneKJd76WlmHIdK0uFibs28aoPnXQQtiyE,63
+matflow_damask-0.1.15.dist-info/top_level.txt,sha256=9VryvZQAUOZmEoaPdpwyJt44N01a8kKsHNx9izp05Eg,15
+matflow_damask-0.1.15.dist-info/RECORD,,
