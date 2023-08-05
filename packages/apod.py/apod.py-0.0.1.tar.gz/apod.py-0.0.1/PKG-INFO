@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: apod.py
+Version: 0.0.1
+Summary: a simple easy to use python wrapper for Nasa Astronomy Picture of the Day
+Home-page: https://github.com/Zihad-Kabir-Tanvir/apod.py
+Author: Zihad-Kabir-Tanvir
+License: MIT
+Description: # Apod-py
+        A simple easy to use python wrapper for the "Astronomy Picture Of the Day" api.
+        
+        # Installation
+        
+        ```py
+        pip install apod.py
+        ```
+        
+        # Usage 
+        
+        ```py
+        import apod 
+        client = apod.Client("api_key") #replace "api key" with your api key
+        data = client.fetch() #this will return a json file
+        print(data) #will print the json file
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Freeware
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
