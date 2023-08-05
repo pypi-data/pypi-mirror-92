@@ -1,0 +1,13 @@
+numpy
+matplotlib
+scipy
+h5py
+future
+netCDF4
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[mayavi]
+mayavi
+PyQt5
