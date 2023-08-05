@@ -1,0 +1,13 @@
+aiohttp
+beautifulsoup4
+ruamel.yaml
+selenium
+webdriver-manager
+
+[dev]
+black
+isort
+
+[test]
+pytest
+pytest-cov
