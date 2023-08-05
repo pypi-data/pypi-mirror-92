@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: testlearing04UncelShcool
+Version: 0.0.0.3
+Summary: OOP Learning Example by lidm0707
+Home-page: https://github.com/lidm0707/BBSic-oop
+Author: lidm0707
+Author-email: lightdemon17@gmail.com
+License: MIT
+Download-URL: https://github.com/lidm0707/BBSic-oop/archive/v_00.tar.gz
+Description: OOP Learning Example by lidm0707
+Keywords: OOP,THAI,PYTHON
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
