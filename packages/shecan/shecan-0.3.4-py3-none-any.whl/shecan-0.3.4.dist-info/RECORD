@@ -1,0 +1,12 @@
+shecan/__init__.py,sha256=Rmx3wIrocc5wEd9Hxz9scUBmn0qfjMZBIi_pdwJw0Gg,265
+shecan/api.py,sha256=Duk91KAoWIjTgd5O9Ygbpv1857ZlzFBLFw07ZDsvc68,1362
+shecan/cli.py,sha256=UxGWlpSyd1Ezf72LMbtbnl8F38L8FotFXyogHA35jBE,5487
+shecan/db.py,sha256=Kp4UHz52OAZUnsQOL7hzgKtLA1SQQeZwS5w7sIrld8A,1645
+shecan/log.py,sha256=iqAPYWkus3eGs02kM23LRdcJWz4C5aIBEMV-GwNMLPY,439
+shecan/utils.py,sha256=Hv_qTpbbJs_e5LjwP_icqqVWoDhhiUNHxYRz9E5CxsA,551
+shecan-0.3.4.dist-info/LICENSE,sha256=SI_IpwGImJrsd_7SZgHUkPJhWvwOCCZYaq5zYZqo1WQ,10291
+shecan-0.3.4.dist-info/METADATA,sha256=tqmt4PQiZfTixXMEe5SKZrFZshrHLg0-Ykbeoyp7jwE,2810
+shecan-0.3.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shecan-0.3.4.dist-info/entry_points.txt,sha256=aoV_Vrd7wP68aAnLkKyD8tdBNky8ZqlwK7sRMBRsm4s,50
+shecan-0.3.4.dist-info/top_level.txt,sha256=a1pnWTk52eEHQgAcL3own-jkqTMqVUACPKR7XRrbjJk,7
+shecan-0.3.4.dist-info/RECORD,,
