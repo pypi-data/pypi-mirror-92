@@ -1,0 +1,11 @@
+trood/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trood/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trood/cli/application.py,sha256=qWC6RGipwZNccTC0XKHJwZX9oUYya8MB1t8PltNEcS4,2592
+trood/cli/spaces.py,sha256=VPeBvQ7JHlWWtCiubJ3N6NjXPjVinTZiTja7EGK5LEM,3961
+trood/cli/trood.py,sha256=3JsTMeVj2tS1xwjnngBolZ7p8CPagQRyih7AwOreWAU,1981
+trood/cli/utils.py,sha256=gK-lgAXvse5EWsGPRgzeZdWBiudbXbo-gACvRNYORKk,3580
+trood_cli-2021.1.dev25.dist-info/METADATA,sha256=qlFH4K-T3H5mgj0iqEl8jkjUHec21fD7Kn8WpTvmJoQ,309
+trood_cli-2021.1.dev25.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+trood_cli-2021.1.dev25.dist-info/entry_points.txt,sha256=Tpbj7DGrjZeKc4ERXHB-FzOql7PgROjbqj3xhvoauo0,67
+trood_cli-2021.1.dev25.dist-info/top_level.txt,sha256=9H9vI8Yjlhb9J1YcXyFqgB8jIcZcMK_EjIbb3_kT120,6
+trood_cli-2021.1.dev25.dist-info/RECORD,,
