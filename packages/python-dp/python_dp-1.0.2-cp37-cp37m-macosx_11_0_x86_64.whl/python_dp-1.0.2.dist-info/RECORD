@@ -1,0 +1,16 @@
+python_dp-1.0.2.data/purelib/pydp/__init__.py,sha256=jhjp7BL4UumYDJC_Z2abhhGGLEQk8lQ7ypjSKo4pSHk,279
+python_dp-1.0.2.data/purelib/pydp/_pydp.so,sha256=3Dfm0XKpFrMROT9waJm7IA0ZKGrh_3mflEi5e4hjgKo,15732800
+python_dp-1.0.2.data/purelib/pydp/algorithms/__init__.py,sha256=Ype5vGCENM8eY3F6LZD6Rwuko1Vhj1ke14e_kDz5mYo,49
+python_dp-1.0.2.data/purelib/pydp/algorithms/_algorithm.py,sha256=WdbO1lhnsrZkchve2RMqwRj5A3vQJBj-6AvLBlepm0o,6897
+python_dp-1.0.2.data/purelib/pydp/algorithms/laplacian/__init__.py,sha256=Qfyi2Ce_K3m-V7AqPCAU4twWH6Z1c4IwlRKbEALC1j4,387
+python_dp-1.0.2.data/purelib/pydp/algorithms/laplacian/_bounded_algorithms.py,sha256=_KerU-iQ8JFTqN1XfBeiaqW6vPzG5gKvo9Q43H0B9HE,3265
+python_dp-1.0.2.data/purelib/pydp/algorithms/laplacian/_count.py,sha256=VuFK_dB8SOqhFWeoe8MyKEhDy189FOtg1QWzDGQyDKU,557
+python_dp-1.0.2.data/purelib/pydp/algorithms/laplacian/_percentile.py,sha256=-VIiVpAq8bCfJG7sI6St1s6FYonwID3LOlriAFYtLn4,870
+python_dp-1.0.2.data/purelib/pydp/distributions/__init__.py,sha256=F50X2XSwZy15E4k9lSYRxrp2sp-O9T7JFG1sRayWn8s,53
+python_dp-1.0.2.data/purelib/pydp/util/__init__.py,sha256=_87UMeORqHtU-zfKiyep-jyrMpUdZfxRY8qdM-BUyYg,44
+python_dp-1.0.2.data/purelib/python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_dp-1.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+python_dp-1.0.2.dist-info/METADATA,sha256=MNXj3k_sROQAVK2eQC6pNLbCFXgHgOsieeTNu2RM2yw,5090
+python_dp-1.0.2.dist-info/WHEEL,sha256=16vIHGD8pbCJPpQF9C_cCJWpydsNH1wYfsT-1xG-X1Q,110
+python_dp-1.0.2.dist-info/top_level.txt,sha256=JzxGXAEJKX8Wb_stHZZN5vp4zqGxi-nOo027P-2vihQ,12
+python_dp-1.0.2.dist-info/RECORD,,
