@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pversion/__init__.py
+pversion/_version.py
+pversion/pversion.py
+pversion.egg-info/PKG-INFO
+pversion.egg-info/SOURCES.txt
+pversion.egg-info/dependency_links.txt
+pversion.egg-info/top_level.txt
+tests/__init__.py
+tests/test_pversion.py

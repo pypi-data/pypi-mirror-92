@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pversion
+Version: 1.0.1
+Summary: Retrieve a package version.
+Home-page: https://github.com/sfneal/pversion
+Author: Stephen Neal
+Author-email: stephen@stephenneal.net
+License: MIT
+Description: 
+        Retrieve the package version from a version file in the package root.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
