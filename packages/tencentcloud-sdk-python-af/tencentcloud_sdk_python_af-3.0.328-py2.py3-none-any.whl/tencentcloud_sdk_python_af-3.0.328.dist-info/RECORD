@@ -1,0 +1,9 @@
+tencentcloud/__init__.py,sha256=ANufkcT8qbreWlVWPIw_otSNlxMQmSm2y49btl1gwFo,630
+tencentcloud/af/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/af/v20200226/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tencentcloud/af/v20200226/af_client.py,sha256=QgvMRtMq2s2mH1Os4PbGrPmedG6gGOhrqTyYieN5Xyw,2411
+tencentcloud/af/v20200226/models.py,sha256=0XsPMTcr3BHsOdxAY1j8vRm42aThMnx1OAmCDx7ffNU,6524
+tencentcloud_sdk_python_af-3.0.328.dist-info/METADATA,sha256=9eHCLLrW2Sx5ujvcd_sWEgexMYXK20tKyp6_a53LVy4,1427
+tencentcloud_sdk_python_af-3.0.328.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+tencentcloud_sdk_python_af-3.0.328.dist-info/top_level.txt,sha256=g-8OyzoqI6O6LiS85zkeNzhB-osEnRIPZMdyRd_0eL0,13
+tencentcloud_sdk_python_af-3.0.328.dist-info/RECORD,,
