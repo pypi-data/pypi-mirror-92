@@ -1,0 +1,8 @@
+README.md
+setup.py
+AsyncWebsocketStreamInterface/AsyncWebsocketStreamInterface.py
+AsyncWebsocketStreamInterface/__init__.py
+AsyncWebsocketStreamInterface.egg-info/PKG-INFO
+AsyncWebsocketStreamInterface.egg-info/SOURCES.txt
+AsyncWebsocketStreamInterface.egg-info/dependency_links.txt
+AsyncWebsocketStreamInterface.egg-info/top_level.txt
