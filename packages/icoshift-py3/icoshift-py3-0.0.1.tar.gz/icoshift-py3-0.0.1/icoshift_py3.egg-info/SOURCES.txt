@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+icoshift-py3/__init__.py
+icoshift-py3/icoshift.py
+icoshift-py3/test_wine.py
+icoshift-py3/tests.py
+icoshift_py3.egg-info/PKG-INFO
+icoshift_py3.egg-info/SOURCES.txt
+icoshift_py3.egg-info/dependency_links.txt
+icoshift_py3.egg-info/requires.txt
+icoshift_py3.egg-info/top_level.txt
