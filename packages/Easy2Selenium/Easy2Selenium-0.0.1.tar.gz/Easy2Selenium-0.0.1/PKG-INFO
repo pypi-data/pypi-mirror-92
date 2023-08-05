@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Easy2Selenium
+Version: 0.0.1
+Summary: Library for easy use of Selenium.
+Home-page: https://github.com/HHongSeungWoo/EasySelenium
+Author: HHongSeungWoo
+Author-email: qksn1541@gmail.com
+License: UNKNOWN
+Description: 셀레니움을 쉽게 사용하기 위한 라이브러리입니다.
+        
+        ```python
+        from EasySelenium import webdriver
+        
+        driver = webdriver.Chrome()
+        driver.get("https://github.com")
+        driver.quit()
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
