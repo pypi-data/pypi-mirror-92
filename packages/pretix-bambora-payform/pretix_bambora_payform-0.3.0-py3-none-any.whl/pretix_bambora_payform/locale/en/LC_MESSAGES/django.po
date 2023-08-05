@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-01-19 19:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pretix_bambora_payform/__init__.py:18
+#, fuzzy
+#| msgid "Payment plugin for Bambora Payform"
+msgid "Payment plugin for Visma Pay"
+msgstr "Payment plugin for Visma Pay"
+
+#: pretix_bambora_payform/payment.py:24
+#, fuzzy
+#| msgid "You will be redirected to Bambora Payform to complete the payment"
+msgid "You will be redirected to Visma Pay to complete the payment"
+msgstr "You will be redirected to Visma Pay to complete the payment"
+
+#: pretix_bambora_payform/payment.py:59
+msgid "Bank and credit card payments"
+msgstr "Bank and credit card payments"
+
+#: pretix_bambora_payform/payment.py:63
+#, python-format
+msgid ""
+"Payment will be simulated while the shop is in test mode. No money will be "
+"transferred. Read more at: %(url)s"
+msgstr "Payment will be simulated while the shop is in test mode. No money will be transferred. Read more at: %(url)s"
+
+#: pretix_bambora_payform/signals.py:20
+#, fuzzy
+#| msgid "Bambora Payform: API key"
+msgid "Visma Pay: API key"
+msgstr "Visma Pay: API key"
+
+#: pretix_bambora_payform/signals.py:24
+#, fuzzy
+#| msgid "Bambora Payform: Private key"
+msgid "Visma Pay: Private key"
+msgstr "Visma Pay: Private key"
+
+#: pretix_bambora_payform/signals.py:28
+#, fuzzy
+#| msgid "Bambora Payform: API key"
+msgid "Visma Pay: Test API key"
+msgstr "Visma Pay: API key"
+
+#: pretix_bambora_payform/signals.py:32
+#, fuzzy
+#| msgid "Bambora Payform: Private key"
+msgid "Visma Pay: Test private key"
+msgstr "Visma Pay: Private key"
