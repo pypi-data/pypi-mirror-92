@@ -1,0 +1,10 @@
+class Constant:
+    __slots__ = ()
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, self.__class__):
+            return NotImplemented
+        return True
+
+    def __repr__(self) -> str:
+        return "<Constant>"
