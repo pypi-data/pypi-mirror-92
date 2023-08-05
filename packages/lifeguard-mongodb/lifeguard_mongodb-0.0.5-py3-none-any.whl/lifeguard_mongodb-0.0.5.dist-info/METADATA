@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lifeguard-mongodb
+Version: 0.0.5
+Summary: Lifeguard integration with MongoDB
+Home-page: https://github.com/LifeguardSystem/lifeguard-mongodb
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Requires-Dist: lifeguard
+Requires-Dist: pymongo
+
+UNKNOWN
+
+
