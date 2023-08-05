@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: gym-cartpole-swingup
+Version: 0.1.1
+Summary: A simple, continuous-control environment for OpenAI Gym
+Home-page: https://github.com/angelolovatto/gym-cartpole-swingup
+License: GNU General Public License v3.0
+Author: Ângelo Gregório Lovatto
+Author-email: angelolovatto@gmail.com
+Requires-Python: >=3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: gym (>=0.18.0,<0.19.0)
+Requires-Dist: poetry-version (>=0.1.5,<0.2.0)
+Project-URL: Repository, https://github.com/angelolovatto/gym-cartpole-swingup
+Description-Content-Type: text/markdown
+
+[![PyPI](https://img.shields.io/pypi/v/gym-cartpole-swingup?color=blue&logo=PyPI&logoColor=white)](https://pypi.org/project/gym-cartpole-swingup/)
+
+# gym-cartpole-swingup
+A simple, continuous-control environment for OpenAI Gym
+
+## Installation
+```bash
+pip install gym-cartpole-swingup
+```
+
+## Usage example
+```python
+# coding: utf-8
+import gym
+import gym_cartpole_swingup
+
+# Could be one of:
+# CartPoleSwingUp-v0, CartPoleSwingUp-v1
+# If you have PyTorch installed:
+# TorchCartPoleSwingUp-v0, TorchCartPoleSwingUp-v1
+env = gym.make("CartPoleSwingUp-v0")
+done = False
+
+while not done:
+    action = env.action_space.sample()
+    obs, rew, done, info = env.step(action)
+    env.render()
+```
+
+![](https://i.imgur.com/Z8bLLM8.png)
+
