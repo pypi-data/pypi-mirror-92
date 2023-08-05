@@ -1,0 +1,272 @@
+# Hungarian translation for caffeine
+# Copyright (c) 2009 Rosetta Contributors and Canonical Ltd 2009
+# This file is distributed under the same license as the caffeine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caffeine\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-11 23:00+0300\n"
+"PO-Revision-Date: 2018-05-11 23:13+0300\n"
+"Last-Translator: Richard Somlói <ricsipontaz@gmail.com>\n"
+"Language-Team: Hungarian <hu@li.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2011-11-20 05:36+0000\n"
+"X-Generator: Poedit 2.0.7\n"
+
+#: caffeine/core.py:176
+msgid "Timed activation set; "
+msgstr "Letiltás aktiválva. "
+
+#: caffeine/core.py:177
+msgid "Caffeine will prevent powersaving for the next "
+msgstr "Az energiakezelés letiltásának időtartama: "
+
+#: caffeine/core.py:183
+msgid "Activated for "
+msgstr "Aktiválás időtartama: "
+
+#: caffeine/core.py:243 caffeine/main.py:212
+msgid "Caffeine is dormant; powersaving is enabled"
+msgstr "A Caffeine leállt, az energiakezelés újra aktív"
+
+#: caffeine/core.py:250
+msgid "Timed activation cancelled (was set for "
+msgstr "Az aktiválás leállítva (beállított időtartam: "
+
+#: caffeine/core.py:264
+msgid " have elapsed; powersaving is re-enabled"
+msgstr " letelt, az energiakezelés újra aktív"
+
+#: caffeine/main.py:198
+msgid "Caffeine is running"
+msgstr "A Caffeine fut"
+
+#: caffeine/main.py:199
+#, fuzzy
+#| msgid "Show tray icon"
+msgid ""
+"To show the tray icon, \n"
+"run "
+msgstr "Tálcaikon megjelenítése"
+
+#: caffeine/main.py:201
+msgid "or open Caffeine Preferences from your system menu."
+msgstr ""
+
+#: caffeine/main.py:263
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Caffeine Developers https://launchpad.net/~caffeine-developers\n"
+"  Gabor Kelemen https://launchpad.net/~kelemeng\n"
+"  Muszela Balázs https://launchpad.net/~bazsi86-deactivatedaccount\n"
+"  Richard Somlói https://launchpad.net/~ricsipontaz"
+
+#: caffeine/main.py:302 caffeine/main.py:365 share/caffeine/glade/GUI.glade:286
+msgid "Enable Caffeine"
+msgstr "Képernyővédő tiltása"
+
+#: caffeine/main.py:302 caffeine/main.py:365
+msgid "Disable Caffeine"
+msgstr "Képernyővédő engedélyezése"
+
+#: share/caffeine/glade/GUI.glade:16
+msgid ""
+"An application to temporarily prevent the activation of both\n"
+" the screen saver and the \"sleep\" powersaving mode."
+msgstr ""
+"Egy alkalmazás amely ideiglenesen megakadályozza, hogy életbe lépjen \n"
+" a monitor energiatakarékossági módja vagy a képernyőkímélő"
+
+#: share/caffeine/glade/GUI.glade:114
+msgid "Duration"
+msgstr "Időtartam"
+
+#: share/caffeine/glade/GUI.glade:147
+msgid "Hours:"
+msgstr "Óra:"
+
+#: share/caffeine/glade/GUI.glade:188
+msgid "Minutes:"
+msgstr "Perc:"
+
+#: share/caffeine/glade/GUI.glade:301
+#, fuzzy
+#| msgid "Enable Caffeine"
+msgid "Enable Caffeine for..."
+msgstr "Képernyővédő tiltása"
+
+#: share/caffeine/glade/GUI.glade:421
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: share/caffeine/glade/GUI.glade:466
+msgid "Automatic activation"
+msgstr "Automatikus aktiválás"
+
+#: share/caffeine/glade/GUI.glade:492
+msgid ""
+"Caffeine can activate automatically\n"
+"whenever certain programs are runnning."
+msgstr ""
+"Egyes alkalmazások esetén a\n"
+"Caffeine automatikusan aktiválódik."
+
+#: share/caffeine/glade/GUI.glade:510
+msgid "List of programs that Caffeine activates for:"
+msgstr "A Caffeine az alábbi alkalmazásoknál aktiválódjon:"
+
+#: share/caffeine/glade/GUI.glade:535
+msgid ""
+"When Caffeine detects that one of the processes in this\n"
+"list is running, it will prevent the activation of the screensaver\n"
+"and powersaving modes. This can be useful for applications\n"
+"(particularly full-screen applications) that do not properly\n"
+"prevent the screensaver and powersaving modes on their own."
+msgstr ""
+"A Caffeine automatikusan letiltja a képernyővédőt\n"
+"és az energiakezelést, ha érzékeli, hogy valamelyik\n"
+"alkalmazás elindul a megadott listából. Hasznos lehet\n"
+"olyan teljes képernyős alkalmazásoknál, amelyekben\n"
+"nem található ilyen funkció."
+
+#: share/caffeine/glade/GUI.glade:640
+msgid "Tray icon"
+msgstr "Tálcaikon"
+
+#: share/caffeine/glade/GUI.glade:659
+msgid "Show tray icon"
+msgstr "Tálcaikon megjelenítése"
+
+#: share/caffeine/glade/GUI.glade:682
+msgid "Show notification on startup"
+msgstr "Értesítés megjelenítése induláskor"
+
+#: share/caffeine/glade/GUI.glade:742
+msgid "    "
+msgstr "    "
+
+#: share/caffeine/glade/proc.glade:8
+msgid "Select a process name..."
+msgstr "Válasszon egy folyamatot..."
+
+#~ msgid "Activated for Flash video"
+#~ msgstr "Aktiválva a Flash videóknál"
+
+#~ msgid "Activated for Quake Live"
+#~ msgstr "Aktiválva Quake Live közben"
+
+#~ msgid " and "
+#~ msgstr " és "
+
+#~ msgid "hour"
+#~ msgstr "óra"
+
+#~ msgid "minute"
+#~ msgstr "perc"
+
+#~ msgid "hours"
+#~ msgstr "óra"
+
+#~ msgid "minutes"
+#~ msgstr "perc"
+
+#~ msgid "Caffeine is preventing powersaving modes and screensaver activation "
+#~ msgstr "A Caffeine letiltja az energiakezelést, illetve a képernyővédőt "
+
+#~ msgid "Please install"
+#~ msgstr "Kérem telepítse"
+
+#~ msgid "Disable Screensaver for..."
+#~ msgstr "Képernyővédő tiltása…"
+
+#~ msgid "Autostart"
+#~ msgstr "Automatikus indítás"
+
+#~ msgid "Start Caffeine on login"
+#~ msgstr "A Caffeine indítása bejelentkezéskor"
+
+#~ msgid ""
+#~ "Enable this option to automatically run Caffeine as soon as\n"
+#~ "your computer has finished starting up and you have\n"
+#~ "successfully entered your username and password."
+#~ msgstr ""
+#~ "Az opció engedélyezésével a Caffeine automatikusan elindul a\n"
+#~ "rendszerrel együtt, ha helyesen adta meg felhasználónevét, illetve jelszavát."
+
+#~ msgid "Activate for Flash video"
+#~ msgstr "Aktiválás a Flash videóknál"
+
+#~ msgid ""
+#~ "Some websites, such as www.youtube.com, show videos using\n"
+#~ "a technology known as \"Flash\". Enable this option to cause\n"
+#~ "Caffeine to automatically prevent the activation of the\n"
+#~ "screensaver and powersaving modes when a Flash video is\n"
+#~ "embedded in the web page that you are currently browsing."
+#~ msgstr ""
+#~ "Néhány honlap, például a www.youtube.com, a videomegjelenítéshez\n"
+#~ "az úgynevezett \"Flash\" technológiát használja. Engedélyezve\n"
+#~ "ezt az opciót a Caffeine automatikusan letiltja a képernyővédőt,\n"
+#~ "illetve az energiakezelőt, ha az éppen böngészett oldalon\n"
+#~ "beágyazott flash videót talál."
+
+#~ msgid "Activate for Quake Live"
+#~ msgstr "Aktiválás Quake Live közben"
+
+#~ msgid ""
+#~ "Enable this option to cause Caffeine to automatically prevent\n"
+#~ "the activation of the screensaver and powersaving modes\n"
+#~ "when it detects that you are playing the Quake Live video\n"
+#~ "game. Visit www.quakelive.com to play the game for free."
+#~ msgstr ""
+#~ "Engedélyezve ezt az opciót a Caffeine automatikusan letiltja\n"
+#~ "a képernyővédőt, illetve az energiakezelőt, ha a Quake Live\n"
+#~ "futását érzékeli. Látogasson el a www.quakelive.com honlapra,\n"
+#~ "és próbálja ki a játékot ingyen."
+
+#~ msgid "Other..."
+#~ msgstr "Egyéb..."
+
+#~ msgid "Running Processes"
+#~ msgstr "Futó folyamatok"
+
+#~ msgid "Recent Processes"
+#~ msgstr "Jelenlegi folyamatok"
+
+#~ msgid "Configure Caffeine"
+#~ msgstr "Caffiene beállítása"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 percre"
+
+#~ msgid "10 minutes"
+#~ msgstr "10 percre"
+
+#~ msgid "15 minutes"
+#~ msgstr "15 percre"
+
+#~ msgid "30 minutes"
+#~ msgstr "30 percre"
+
+#~ msgid "1 hour"
+#~ msgstr "1 órára"
+
+#~ msgid "2 hours"
+#~ msgstr "2 órára"
+
+#~ msgid "3 hours"
+#~ msgstr "3 órára"
+
+#~ msgid "4 hours"
+#~ msgstr "4 órára"
+
+#~ msgid "An application to temporarily prevent the activation of both the screen saver and the \"sleep\" powersaving mode."
+#~ msgstr "Az energiakezelés, illetve a képernyővédő ideiglenes letiltására szolgáló alkalmazás."
+
+#~ msgid "Activate for"
+#~ msgstr "Aktiválás"
