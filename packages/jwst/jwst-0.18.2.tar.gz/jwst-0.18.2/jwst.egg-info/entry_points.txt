@@ -1,0 +1,4 @@
+[asdf_extensions]
+jwst_datamodel = jwst.datamodels.extension:DataModelExtension
+jwst_pipeline = jwst.transforms.jwextension:JWSTExtension
+
