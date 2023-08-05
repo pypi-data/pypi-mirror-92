@@ -1,0 +1,11 @@
+unidic2ud>=2.6.7
+spacy>=2.2.2
+allennlp>=1.2.0
+torch>=1.6.0
+absl-py>=0.9.0
+conllu>=2.3.2
+dataclasses-json>=0.5.2
+requests>=2.23.0
+overrides>=3.1.0
+fugashi>=1.0.1
+ipadic>=1.0.0
