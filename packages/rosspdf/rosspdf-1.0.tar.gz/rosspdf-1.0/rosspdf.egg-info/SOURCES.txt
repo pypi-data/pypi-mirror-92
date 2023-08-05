@@ -1,0 +1,6 @@
+README.md
+setup.py
+rosspdf.egg-info/PKG-INFO
+rosspdf.egg-info/SOURCES.txt
+rosspdf.egg-info/dependency_links.txt
+rosspdf.egg-info/top_level.txt
