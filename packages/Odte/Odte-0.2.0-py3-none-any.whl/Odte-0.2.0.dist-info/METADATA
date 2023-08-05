@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Odte
+Version: 0.2.0
+Summary: Oblique decision tree Ensemble
+Home-page: https://github.com/doctorado-ml/stree
+Author: Ricardo Montañana Gómez
+Author-email: ricardo.montanana@alu.uclm.es
+License: MIT License
+Keywords: scikit-learn oblique-classifier oblique-decision-tree decision-    tree ensemble svm svc
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+Requires-Dist: ipympl
+Requires-Dist: stree
+
+![CI](https://github.com/Doctorado-ML/Odte/workflows/CI/badge.svg)
+[![codecov](https://codecov.io/gh/Doctorado-ML/odte/branch/master/graph/badge.svg)](https://codecov.io/gh/Doctorado-ML/odte)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c85f935ac6a0482ab67d3ebed4611459)](https://www.codacy.com/gh/Doctorado-ML/Odte?utm_source=github.com&utm_medium=referral&utm_content=Doctorado-ML/Odte&utm_campaign=Badge_Grade)
+
+# Odte
+
+Oblique Decision Tree Ensemble
+
+
