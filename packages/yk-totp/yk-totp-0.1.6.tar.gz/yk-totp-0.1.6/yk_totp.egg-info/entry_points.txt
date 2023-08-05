@@ -1,0 +1,3 @@
+[console_scripts]
+yk-totp = yktotp.__main__:cli
+
