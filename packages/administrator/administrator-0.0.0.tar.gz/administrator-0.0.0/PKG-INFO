@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: administrator
+Version: 0.0.0
+Summary: Access to admin data APIs for inference and missing data
+Home-page: https://gitlab.com/Trijeet/administrator
+Author: Trijeet Sethi
+Author-email: trijeets@gmail.com
+License: UNKNOWN
+Description: This is a high-level package that manages each of the APIs to infer 
+        missing administrative data.
+        
+        The API currently handles the following fields:
+        1. Gender
+        2. Ethnicity
+        3. Race
+        4. Age
+        5. Political Affiliation
+        
+        This package exposes methods to access each of these independently, but 
+        also offers auto-detect and calls.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
