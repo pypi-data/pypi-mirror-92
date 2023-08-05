@@ -1,0 +1,2 @@
+# This is an optional requirement
+setuptools==41.0.1
