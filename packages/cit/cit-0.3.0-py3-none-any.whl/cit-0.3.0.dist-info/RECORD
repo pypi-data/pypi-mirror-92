@@ -1,0 +1,11 @@
+Cit/4.2.0.zip,sha256=8z6B1yds7AytNnLYikbPjTDqxMKpe47OyrAN9x0sB-g,2093741
+Cit/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+Cit/basic.py,sha256=MAOqwAzVptlNbRNYYIet8O6Kf72IU61buo6yqqDyuIs,548
+Cit/cit_url.py,sha256=H3WlT0gEecGlmRNwPCnfwXfxkZVqePVHZssL21DSTPc,2046
+Cit/cit_wget.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Cit/main.py,sha256=roocHedWAfugGnH555nUIf9zL2QeT0dme7oP1ucPOPU,2606
+Cit/test.py,sha256=z1QilBlUqjh4psxenC2yYYqKQGIlrrpKHzsC6xJHVzM,766
+Cit/test01.py,sha256=djq0LJkKOte8zYwavJ6MMVo_Wn-kmPNRtuY5Xjqb13E,1513
+cit-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cit-0.3.0.dist-info/METADATA,sha256=a-m1LPPyuGCqDcqHQbiWZL4VC-s2-POe2BuOBD_eAdQ,3258
+cit-0.3.0.dist-info/RECORD,,
