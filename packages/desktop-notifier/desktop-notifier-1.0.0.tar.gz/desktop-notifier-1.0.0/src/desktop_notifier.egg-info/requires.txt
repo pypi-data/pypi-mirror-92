@@ -1,0 +1,21 @@
+
+[:sys_platform == "darwin"]
+rubicon-objc>=0.3.1
+
+[:sys_platform == "linux"]
+dbus-next>=0.1.4
+
+[dev]
+black
+bump2version
+flake8
+mypy
+pre-commit
+pytest
+pytest-cov
+
+[docs]
+sphinx
+m2r2
+sphinx-autoapi
+sphinx_rtd_theme
