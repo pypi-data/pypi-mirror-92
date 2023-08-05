@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    tensorboard-projects=tensorboard_projects.cli:cli
+    
