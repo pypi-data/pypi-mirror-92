@@ -1,0 +1,25 @@
+[build-system]
+build-backend = "pdm.pep517.api"
+requires = ["pdm-pep517"]
+
+[project]
+authors = [
+    {name = "Longlone", email = "1162410187@qq.com"},
+]
+dependencies = [
+    
+]
+
+description = "A pdm plugin is used to generate requirements.txt"
+dev-dependencies = []
+dynamic = ["classifiers"]
+name = "pdm-freeze"
+requires-python = ">=3.7"
+version = "1.0.1"
+license = "MIT"
+
+[project.entry-points."pdm.plugin"]
+hello = "freeze:freeze_plugin"
+
+[tool]
+[tool.pdm]
