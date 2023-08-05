@@ -1,0 +1,4 @@
+numpy
+cython_vst_loader
+dependency-injector
+scipy
