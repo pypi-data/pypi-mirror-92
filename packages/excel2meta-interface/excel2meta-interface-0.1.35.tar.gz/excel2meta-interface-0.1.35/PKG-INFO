@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: excel2meta-interface
+Version: 0.1.35
+Summary: Example how to use an Excel as input for the metadata interfaces
+Home-page: https://github.com/jacbeekers/excel2meta-interface
+Author: Jac. Beekers
+Author-email: beekersjac@gmail.com
+License: UNKNOWN
+Description: # excel2meta-interface
+        Convert Excel input for metadata interfaces
+        
+        ## Run
+        to-do
+        
+        ## Contribute
+        
+        * Clone this repository
+        * run the following to get the referenced git repositories
+            ```shell
+            git submodule init
+            git submodule update
+            ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

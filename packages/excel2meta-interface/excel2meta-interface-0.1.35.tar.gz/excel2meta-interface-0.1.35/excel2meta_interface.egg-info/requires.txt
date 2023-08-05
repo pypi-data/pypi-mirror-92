@@ -1,0 +1,4 @@
+jsonschema
+openpyxl
+jinja2
+informatica-edc-rest-api-samples>=0.3.80
