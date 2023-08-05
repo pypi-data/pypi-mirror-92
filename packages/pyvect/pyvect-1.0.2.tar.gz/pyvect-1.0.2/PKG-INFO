@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pyvect
+Version: 1.0.2
+Summary: Pyvect is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!
+Home-page: https://github.com/ToastCoder/pyvect
+Author: ['Vigneshwar K R', 'Mouli Shankar M R', 'Vishal Balaji Sivaraman']
+Author-email: vicky.pcbasic@gmail.com
+License: MIT
+Download-URL: https://github.com/ToastCoder/pyvect/archive/master.zip
+Description: # Pyvect
+        
+        Pyvect is a open source python module created for the purpose of simplifying the vector calculations such as finding the angle between vectors, projection of one vector over the other and much more...!
+        
+        ### Developed by:
+        
+        * [Vigneshwar Ravichandar](https://github.com/ToastCoder/)
+        
+        * [Moulishankar M R](https://github.com/Moulishankar10)
+        
+        * [Vishal Balaji Sivaraman](https://github.com/The-SocialLion)
+        
+        ### Installation:
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install pyvect.
+        
+        ```bash
+        pip install pyvect
+        ```
+        
+        ### Importing pyvect to your program:
+        
+        ```python
+        import pyvect
+        ```
+        
+        ### Documentation:
+        
+        Click here to view the [documentation](https://pyvect.readthedocs.io/)
+        
+        (Currently under development. Docs will be updated soon)
+        
+        ## License:
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+        ## Any bugs/suggestions:
+        Leave a message [here](https://t.me/ToastCoder)
+        
+Keywords: VECTOR,VECTOR_ALGEBRA_FUNCTIONS,VECTOR_CALCULATIONS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

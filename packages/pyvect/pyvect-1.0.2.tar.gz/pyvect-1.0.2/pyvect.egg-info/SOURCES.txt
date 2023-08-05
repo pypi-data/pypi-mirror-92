@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pyvect/__init__.py
+pyvect/area.py
+pyvect/cent.py
+pyvect/dist.py
+pyvect/prod.py
+pyvect.egg-info/PKG-INFO
+pyvect.egg-info/SOURCES.txt
+pyvect.egg-info/dependency_links.txt
+pyvect.egg-info/requires.txt
+pyvect.egg-info/top_level.txt
