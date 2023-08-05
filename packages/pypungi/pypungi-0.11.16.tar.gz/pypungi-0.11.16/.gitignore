@@ -1,0 +1,11 @@
+dist/*
+
+dist/*
+.pytest_cache/*
+.vscode/*
+pypungi/__pycache__/__init__.cpython-37.pyc
+pypungi/__pycache__/main.cpython-37.pyc
+venv/*
+pypungi/__pycache__/*
+pypungi/__pycache__/models.cpython-37.pyc
+.DS_Store
