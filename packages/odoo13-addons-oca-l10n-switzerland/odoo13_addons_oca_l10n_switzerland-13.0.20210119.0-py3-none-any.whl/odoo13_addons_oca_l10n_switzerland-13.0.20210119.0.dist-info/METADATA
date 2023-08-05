@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo13-addons-oca-l10n-switzerland
+Version: 13.0.20210119.0
+Summary: Meta package for oca-l10n-switzerland Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo13-addon-l10n-ch-account-tags
+Requires-Dist: odoo13-addon-l10n-ch-base-bank
+Requires-Dist: odoo13-addon-l10n-ch-invoice-reports
+Requires-Dist: odoo13-addon-l10n-ch-isr-payment-grouping
+Requires-Dist: odoo13-addon-l10n-ch-isrb
+Requires-Dist: odoo13-addon-l10n-ch-states
+
+UNKNOWN
+
+
