@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+rubysubs/__init__.py
+rubysubs/__main__.py
+rubysubs/rubysubs.py
+rubysubs/tag_parse_migaku_ja.py
+rubysubs/tag_parse_ruby.py
+rubysubs/tags.py
+rubysubs.egg-info/PKG-INFO
+rubysubs.egg-info/SOURCES.txt
+rubysubs.egg-info/dependency_links.txt
+rubysubs.egg-info/entry_points.txt
+rubysubs.egg-info/requires.txt
+rubysubs.egg-info/top_level.txt

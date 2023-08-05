@@ -1,0 +1,3 @@
+cchardet
+pysubs2
+PyQt5
