@@ -1,0 +1,205 @@
+#!python
+import argparse
+import ctypes
+import itertools
+import os
+import platform
+import shlex
+import signal
+import subprocess
+import sys
+import traceback
+
+import bcc
+
+PROJECT = "gdb-pounce"
+REQUIRED_SYSTEM = "Linux"
+REQUIRED_RELEASE = "5.3"
+REQUIRED_BCC_VERSION = "0.11.0"
+TEXT = r"""#include <linux/sched.h>
+#include <uapi/linux/bpf.h>
+#include <uapi/linux/ptrace.h>
+#include <uapi/linux/signal.h>
+
+struct key {
+    u32 prefixlen;
+    char data[TASK_COMM_LEN];
+};
+
+struct __attribute__((__packed__)) event {
+    u32 pid;
+};
+
+BPF_LPM_TRIE(comms, struct key, u8);
+BPF_PERF_OUTPUT(events);
+
+int retprobe(struct pt_regs *ctx)
+{
+    struct key key;
+    size_t comm_len;
+    struct event event;
+
+    if (PT_REGS_RC(ctx) != 0)
+        return 0;
+
+    if (bpf_get_current_comm(key.data, sizeof(key.data)) != 0)
+        return 0;
+    for (comm_len = 0; comm_len < TASK_COMM_LEN; comm_len++)
+        if (key.data[comm_len] == 0)
+            break;
+    key.prefixlen = (comm_len + 1) * 8;
+    if (comms.lookup(&key) == NULL)
+        return 0;
+
+    bpf_send_signal(SIGSTOP);
+
+    event.pid = bpf_get_current_pid_tgid() >> 32;
+    events.perf_submit(ctx, &event, sizeof(event));
+
+    return 0;
+}
+"""
+
+TASK_COMM_LEN = 16
+COMM_T = ctypes.c_uint8 * TASK_COMM_LEN
+
+
+class Key(ctypes.Structure):
+    _fields_ = [
+        ("prefixlen", ctypes.c_uint32),
+        ("data", COMM_T),
+    ]
+
+
+def version_is_less(v1, v2):
+    for w1, w2 in itertools.zip_longest(v1.split("."), v2.split("."), fillvalue="0"):
+        try:
+            w1, w2 = int(w1), int(w2)
+        except ValueError:
+            pass
+        if w1 < w2:
+            return True
+        elif w1 > w2:
+            return False
+    return False
+
+
+def check_system_requirements():
+    actual_system = platform.system()
+    if actual_system != REQUIRED_SYSTEM:
+        print(
+            f"{PROJECT} can only run on {REQUIRED_SYSTEM}, "
+            f"but you have {actual_system}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    actual_release = platform.release()
+    if version_is_less(actual_release, REQUIRED_RELEASE):
+        print(
+            f"Please upgrade kernel: you have {actual_release}, "
+            f"but {PROJECT} requires {REQUIRED_RELEASE}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+    actual_bcc_version = bcc.__version__
+    if version_is_less(actual_bcc_version, REQUIRED_BCC_VERSION):
+        print(
+            f"Please upgrade bcc: you have {actual_bcc_version}, "
+            f"but {PROJECT} requires {REQUIRED_BCC_VERSION}",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+
+class SigintHandler:
+    def __init__(self):
+        self.raise_keyboard_interrupt = True
+        signal.signal(signal.SIGINT, self)
+
+    def __call__(self, signum, frame):
+        if self.raise_keyboard_interrupt:
+            raise KeyboardInterrupt()
+
+
+def main():
+    check_system_requirements()
+
+    parser = argparse.ArgumentParser(
+        description="Attach gdb to a new process before it had a chance to run."
+    )
+    parser.add_argument(
+        "name", type=str, nargs="+", help="basename of an executable to wait for",
+    )
+    parser.add_argument(
+        "--async", action="store_true", help="allow multiple gdbs in separate terminals"
+    )
+    args, rest = parser.parse_known_args()
+
+    try:
+        bpf = bcc.BPF(text=TEXT)
+    except Exception:
+        print(file=sys.stderr)
+        traceback.print_exc()
+        if os.getuid() != 0:
+            print(
+                f"""
+Are you root? Do you have CAP_SYS_ADMIN / CAP_BPF? Try this:
+sudo env \"PATH=$PATH\" {shlex.join(sys.argv)}""",
+                file=sys.stderr,
+            )
+        sys.exit(1)
+    comms_map = bpf["comms"]
+    for name in args.name:
+        comm_bytes = name[:15].encode() + b"\0"
+        key = Key(prefixlen=len(comm_bytes) * 8, data=COMM_T(*comm_bytes))
+        comms_map[key] = ctypes.c_uint8(0)
+    for syscall in ("execve", "execveat"):
+        bpf.attach_kretprobe(event=bpf.get_syscall_fnname(syscall), fn_name="retprobe")
+    bpf_events = bpf["events"]
+    events = []
+
+    def callback(cpu, data, size):
+        events.append(bpf_events.event(data))
+
+    bpf_events.open_perf_buffer(callback)
+    sigint_handler = SigintHandler()
+    print("Running, press Ctrl+C to stop...", file=sys.stderr)
+    while True:
+        bpf.perf_buffer_poll()
+        for event in events:
+            pid = event.pid
+            try:
+                exe = os.readlink(f"/proc/{pid}/exe")
+            except FileNotFoundError:
+                print(f"Skipping nonexistent pid {pid}...", file=sys.stderr)
+                continue
+            if os.path.basename(exe) not in args.name:
+                print(f"Skipping non-matching pid {pid}...", file=sys.stderr)
+                continue
+            print(f"Attaching to pid {pid}...", file=sys.stderr)
+            gdb_argv = [
+                "gdb",
+                "-p",
+                str(pid),
+                # When attaching to a SIGSTOPped process, gdb receives an event
+                # that indicates that the process got a SIGSTOP. It then passes
+                # this signal to the process after each resumption, making
+                # debugging impossible. Maybe this should be reported?
+                "-ex",
+                "handle SIGSTOP nostop noprint nopass",
+            ] + rest
+            if getattr(args, "async"):
+                subprocess.Popen(["x-terminal-emulator", "--"] + gdb_argv)
+            else:
+                sigint_handler.raise_keyboard_interrupt = False
+                try:
+                    subprocess.call(gdb_argv)
+                finally:
+                    sigint_handler.raise_keyboard_interrupt = True
+        events.clear()
+
+
+if __name__ == "__main__":
+    main()
