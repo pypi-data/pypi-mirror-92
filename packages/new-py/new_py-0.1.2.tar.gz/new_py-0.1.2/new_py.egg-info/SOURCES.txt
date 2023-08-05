@@ -1,0 +1,9 @@
+README.md
+__init__.py
+newpy.py
+setup.py
+new_py.egg-info/PKG-INFO
+new_py.egg-info/SOURCES.txt
+new_py.egg-info/dependency_links.txt
+new_py.egg-info/entry_points.txt
+new_py.egg-info/top_level.txt
