@@ -1,0 +1,231 @@
+bSecure Checkout 
+=========================
+Pakistan's first universal checkout solution that is easy and simple to integrate on your e-commerce store. 
+
+### About bSecure Checkout ##
+
+It gives you an option to enable *universal-login*, *two-click checkout* and accept multiple payment method for your customers, as well as run your e-commerce store hassle free.\
+It is built for *desktop*, *tablet*, and *mobile devices* and is continuously tested and updated to offer a frictionless payment experience for your e-commerce store.
+
+
+## bSecure
+bSecure is a utility library for two-click checkout custom integration. bSecure library simplifies communication between builder and bSecure server and processing tasks for builder's ease.
+
+### Installation
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install **bsecure**.
+
+```bash
+pip install bsecure
+```
+
+#### Prerequisites
+
+bSecure requires Python 3.3.0 or newer
+
+
+### Configuration Setup
+
+By following a few simple steps, you can set up your **bSecure Checkout** and **Single-Sign-On**. 
+
+#### Getting Your Credentials
+
+1. Go to [Builder Portal](https://builder.bsecure.pk/)
+2. [App Integration](https://builder.bsecure.pk/integration-sandbox) >> Sandbox / Live
+3. Select Environment Type (Custom Integration)
+4. Fill following fields:\
+    a. *Store URL* its required in any case\
+    b. *Login Redirect URL* Required for feature **Login with bSecure**\
+    c. *Checkout Redirect URL* Required for feature **Pay with bSecure**\
+    d. *Checkout Order Status webhook* Required for feature **Pay with bSecure**
+5. Save your client credentials (Client ID and Client Secret)
+6. Please make sure to keep credentials at safe place in your code
+
+
+## Usage
+
+### Integration Steps:
+
+Import the package
+
+```bash
+import bSecure as bsecure
+```
+
+### Create Order
+In order to create an order you should follow below mentioned steps:
+#### Authenticate Client 
+To call create order function of bSecure, you first have to authenticate your client.\
+`bsecure.authenticate` will be used to authenticate your client as shown below:
+```bash
+bsecure.authenticate(client_id, client_secret)
+```
+>**_client_id_** and _**client_secret**_ can be obtained from [Builder Portal](https://builder.bsecure.pk/) for your application.
+
+This is time limited activation, and must be considered to implement in a way that traffic may not disrupt your
+ application.
+We suggest to call this function before each of the following to keep authentication updated:
+- create_order
+- order_status
+- get_customer_profile
+ 
+#### 2. Set Order 
+To create an order you should have an **order_details** object parameters that are to be set before creating an order.
+
+Before proceeding further **order_details** object has some pre-condition rules that are mentioned below:
+###### Shipment Object Rule
+
+Shipment object should be in below mentioned format:
+
+>1- If the merchant want his pre-specified shipment method then he should pass shipment method detail in order detail object.
+
+###### Customer Object Rule
+
+Customer object mentioned in order detail object should be in below mentioned format:
+
+>1- If the customer has already signed-in via bSecure into your system and you have auth_code for the customer you can
+just pass that code in the customer object no need for the rest of the fields.
+
+>2- Since all the fields in Customer object are optional, if you don’t have any information about customer just pass the
+empty object, or if you have customer details then your customer object should be in below mentioned format:
+```
+'customer': { 
+    'name': 'string',
+    'email': 'string',
+    'country_code': 'string',
+    'phone_number': 'string',
+}
+```
+##### Order Detail Request Params:
+*Here you can see sample order format* 
+Dictionary format shared below is necessary to activate your bSecure Universal Checkout create order function.
+
+```
+order_details = {
+    "discount_amount": 0,
+    "sub_total_amount": 300.78,
+    "total_amount": 300.78,
+    "currency_code": "PKR",
+    "order_id": "order-id-in-your-system-0001",
+    "customer": {
+        "name": "your customer name",
+        "email": "your.customer.email@yourapplication.com",
+        "country_code": "92",
+        "phone_number": "345-6789012"
+    },
+    "products": {
+        "0": {
+            "id": "product-id-in-your-system-0001",,
+            "name": "BAZIC Asst. Size Paint Brush Set (15/Pack)",
+            "sku": "product-sku-in-your-system-123",
+            "quantity": 1,
+            "price": 25.5,
+            "sale_price": 35.5,
+            "image": "https://sc01.alicdn.com/kf/UT8ChMOXjBbXXagOFbXU.jpg",
+            "description": "product headline/short description",
+            "short_description": "Detailed description for product. Here you will share all that you know about the product."
+        }
+    }
+}
+```
+
+After you have created the dictionary in above mentioned format, call:
+`bsecure.set_order(order_details)` should always be called whenever want to create an order with bSecure. 
+```
+bsecure.set_order(order_details=order_details)
+```
+
+
+
+##### 3. Create Order 
+Now you are good to go to proceed with create order request. Once order_details are set in your order then, call
+```
+order_created = bsecure.create_order()
+```
+
+In response `bsecure.created_order()`, will return `expiry`, `checkout_url`, `order_reference` and 
+`merchant_order_id` about current order.
+```
+>>> print(order_created)
+>>> {
+>>>   'expiry': '2020-11-27 10:55:14',
+>>>   'checkout_url': '<bSecure-checkout-url>', # Redirect URL
+>>>   'order_reference': 'bsecure-reference',
+>>>   'merchant_order_id': 'your-order-id',
+>>> } 
+```
+> In webview, redirect the to  `checkout_url` from `order_created` variable as shown above.
+```
+if order_created.__contains__('checkout_url') and order_created.get('checkout_url', None):
+    return redirect(order_created.get('checkout_url')
+```
+
+#### Callback on Order Placement
+Once the order is successfully placed, bSecure will redirect the customer to the url you mentioned in “Checkout
+redirect url” in your [environment settings](https://builder.bsecure.pk/) in Builder Portal, with one additional param 
+`order_ref` in the query string.
+
+#### Order Updates
+By using `order_ref` you received in the "**[Callback on Order Placement](#callback-on-order-placement)**" you can call below method to get order details.
+```
+order_status = bsecure.order_status(order_reference=order_ref)
+```
+This will give you detailed status of your order
+
+Note: We suggest to store `order_ref` with your order to use it in future for order status
+
+## bSecure Single Sign On (SSO)
+Once your account is set up you are ready to authenticate users! You will need two functions: one for redirecting the user to the OAuth provider, and another for receiving the customer profile from the provider after authentication.
+
+### Authenticate Client
+
+Here is what you have to do:
+
+1: setup data as below:
+
+```
+sso_data = {
+  "client_id": "<your client_id for bsecure>",
+  "state": "string"
+}
+```
+`state` should be unique to each user and stored in your system against each user. 
+## We also support Single Sign On Feature for your application
+
+Here is what you have to do:
+
+#### Step 1: Redirecting Customer to bSecure
+>```
+>sso_data = {
+>  "client_id": "<your client_id for bsecure>",
+>  "state": "string"
+>}
+>```
+
+In above data, `state` should be unique `str` and be stored for later usage.
+
+write the code as shown below
+```
+bsecure.single_sign_on_set_values(state=sso_data.get('state'), client_id=sso_data.get('client_id'))
+redirect_url = bsecure.customer_authenticator()
+```
+
+Above code with create and return redirect url to variable `redirect_url`.\
+You should redirect your application to `redirect_url`
+
+#### Step 2: Redirected back to your web application:
+When User/customer has completed their registration/login flow with us, we will redirect to your application.\
+You will receive a `code` and `state` as query-params to your application as a get request.\
+You should now:
+
+Verify the `state` you received matches with the one you created during
+`Step 1`
+
+If `state` matches:
+call function `bsecure.get_customer_profile` as with the value of `code` that you received.:
+
+```
+customer_profile = bsecure.get_customer_profile(code=code)
+```
+
+You will get customer profile from bSecure in variable `customer_profile`
+Then based on the data in customer_data, you will register/login customer in your system.
