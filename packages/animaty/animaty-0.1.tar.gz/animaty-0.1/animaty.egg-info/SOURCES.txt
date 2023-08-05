@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+animaty/__init__.py
+animaty/animate.py
+animaty/helpers.py
+animaty.egg-info/PKG-INFO
+animaty.egg-info/SOURCES.txt
+animaty.egg-info/dependency_links.txt
+animaty.egg-info/requires.txt
+animaty.egg-info/top_level.txt
