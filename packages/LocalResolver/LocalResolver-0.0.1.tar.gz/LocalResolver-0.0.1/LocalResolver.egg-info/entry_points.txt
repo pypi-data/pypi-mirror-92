@@ -1,0 +1,3 @@
+[console_scripts]
+HostnameResolver = LocalResolver:resolve
+
