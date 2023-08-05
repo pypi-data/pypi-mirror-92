@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stratovolquant
+Version: 0.0.13
+Summary: Stratovolquant utils
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: stratovolquant@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pymongo
+Requires-Dist: dnspython
+Requires-Dist: arctic
+
+Stratovolquant utils, for instance MongoDb collection manager
+
+
