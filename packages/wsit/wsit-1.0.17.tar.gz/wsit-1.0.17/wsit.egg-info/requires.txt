@@ -1,0 +1,4 @@
+python-interface
+numpy
+pytest
+pika
