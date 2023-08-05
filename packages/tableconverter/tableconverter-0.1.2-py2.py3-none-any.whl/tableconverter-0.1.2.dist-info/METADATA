@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tableconverter
+Version: 0.1.2
+Summary: Tools for converting tables in different formats.
+Home-page: https://github.com/Blueswing/tableconverter
+Author: Yeefea
+Author-email: yifei.shen@yahoo.com
+License: MIT license
+Keywords: tableconverter antlr
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: Click (>=7.0)
+Requires-Dist: antlr4-python3-runtime (==4.8)
+
+
+
+History
+========
+
+
+0.1.0
+------------------
+
+* First release on PyPI.
+
+
