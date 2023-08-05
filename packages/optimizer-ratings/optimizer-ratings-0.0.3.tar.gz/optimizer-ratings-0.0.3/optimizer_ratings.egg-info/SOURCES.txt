@@ -1,0 +1,9 @@
+README.md
+setup.py
+optimizer-ratings/__init__.py
+optimizer-ratings/matchup.py
+optimizer_ratings.egg-info/PKG-INFO
+optimizer_ratings.egg-info/SOURCES.txt
+optimizer_ratings.egg-info/dependency_links.txt
+optimizer_ratings.egg-info/requires.txt
+optimizer_ratings.egg-info/top_level.txt

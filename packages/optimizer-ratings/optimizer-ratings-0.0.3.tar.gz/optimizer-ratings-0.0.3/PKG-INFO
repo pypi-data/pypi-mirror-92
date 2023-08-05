@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: optimizer-ratings
+Version: 0.0.3
+Summary: Compares performance of optimizers used for time series model hyper-param optimization
+Home-page: https://github.com/microprediction/optimizer-ratings
+Author: microprediction
+Author-email: pcotton@intechinvestments.com
+License: MIT
+Description: # optimizer-ratings
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
