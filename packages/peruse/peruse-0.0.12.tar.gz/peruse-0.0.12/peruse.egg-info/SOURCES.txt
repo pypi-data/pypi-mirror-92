@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+peruse/__init__.py
+peruse/single_wf_snip_analysis.py
+peruse/slang_lite_py2http_ws.py
+peruse/slang_lite_ws.py
+peruse/util.py
+peruse.egg-info/PKG-INFO
+peruse.egg-info/SOURCES.txt
+peruse.egg-info/dependency_links.txt
+peruse.egg-info/not-zip-safe
+peruse.egg-info/requires.txt
+peruse.egg-info/top_level.txt
+peruse/scrap/__init__.py
+peruse/scrap/correlation_detection.py
