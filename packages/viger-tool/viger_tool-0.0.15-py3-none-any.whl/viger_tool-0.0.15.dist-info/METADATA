@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: viger-tool
+Version: 0.0.15
+Summary: Tool package
+Home-page: https://github.com/viger1228/viger-tool
+Author: walker
+Author-email: walkerIVI@gmail.com
+License: MIT Licence
+Keywords: pip,tool,viger
+Platform: any
+Requires-Dist: requests
+Requires-Dist: prettytable
+
+UNKNOWN
+
+
