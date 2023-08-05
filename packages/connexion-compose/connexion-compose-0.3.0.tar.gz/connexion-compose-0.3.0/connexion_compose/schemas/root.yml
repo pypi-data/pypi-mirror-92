@@ -1,0 +1,15 @@
+swagger: '2.0'
+info:
+  title: Please add a title
+  description: Please add a description
+  contact:
+    name: Please add a contact name
+  version: '0.0.0'
+  x-visibility: unlisted
+basePath: /
+schemes:
+  - https
+consumes:
+  - application/json
+produces:
+  - application/json
