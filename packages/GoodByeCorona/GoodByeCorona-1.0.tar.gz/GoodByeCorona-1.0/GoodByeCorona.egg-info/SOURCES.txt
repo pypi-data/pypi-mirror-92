@@ -1,0 +1,8 @@
+README.md
+setup.py
+GoodByeCorona/Corona.py
+GoodByeCorona/__init__.py
+GoodByeCorona.egg-info/PKG-INFO
+GoodByeCorona.egg-info/SOURCES.txt
+GoodByeCorona.egg-info/dependency_links.txt
+GoodByeCorona.egg-info/top_level.txt
