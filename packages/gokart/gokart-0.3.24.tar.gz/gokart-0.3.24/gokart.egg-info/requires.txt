@@ -1,0 +1,12 @@
+luigi
+boto3
+slack_sdk
+pandas<1.2
+numpy
+tqdm
+google-auth
+pyarrow
+uritemplate
+google-api-python-client
+APScheduler
+redis
