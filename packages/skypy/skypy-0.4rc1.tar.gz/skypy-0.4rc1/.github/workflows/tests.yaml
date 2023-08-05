@@ -1,0 +1,69 @@
+name: Tests
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+jobs:
+  test:
+    name: ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+
+          - name: latest supported versions
+            os: ubuntu-latest
+            python: 3.8
+            toxenv: py38-test-all-latest-cov
+            toxposargs: --cov-report=xml:${GITHUB_WORKSPACE}/coverage.xml
+
+          - name: oldest supported versions
+            os: ubuntu-latest
+            python: 3.6
+            toxenv: py36-test-oldest
+
+          - name: macOS latest supported
+            os: macos-latest
+            python: 3.8
+            toxenv: py38-test-latest
+
+          - name: Windows latest supported
+            os: windows-latest
+            python: 3.8
+            toxenv: py38-test-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Install Python ${{ matrix.python }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python }}
+    - name: Cache SkyPy data
+      uses: actions/cache@v2
+      with:
+        path: ~/.skypy/cache
+        key: ${{ runner.os }}-skypy-cache-${{ matrix.toxenv }}-${{ github.run_id }}
+        restore-keys: |
+          ${{ runner.os }}-skypy-cache-${{ matrix.toxenv }}-
+    - name: Install Dependencies
+      run: |
+        pip install tox
+    - if: contains(matrix.toxenv, '-all') && runner.os == 'Linux'
+      name: Install Additional Dependencies (Linux)
+      run: |
+        sudo install $(which gfortran-9) /usr/bin/gfortran
+        echo gfortran=$(which gfortran)
+    - name: Add pytest Matcher
+      run: |
+        echo ::add-matcher::.github/problem_matchers/pytest.json
+    - name: Run Tests
+      run: |
+        tox -e ${{ matrix.toxenv }} ${{ matrix.toxargs }} -- ${{ matrix.toxposargs }}
+    - if: contains(matrix.toxenv, '-cov')
+      name: Report Coverage
+      uses: codecov/codecov-action@v1
