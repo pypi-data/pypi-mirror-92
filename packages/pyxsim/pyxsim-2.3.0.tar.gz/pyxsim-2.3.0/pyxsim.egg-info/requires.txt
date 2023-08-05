@@ -1,0 +1,7 @@
+six
+numpy
+astropy>=2.0
+h5py
+scipy
+yt>=3.5.1
+soxs>=2.3.0
