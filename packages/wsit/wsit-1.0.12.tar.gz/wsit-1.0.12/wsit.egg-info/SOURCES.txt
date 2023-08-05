@@ -1,0 +1,8 @@
+README.md
+setup.py
+wsit.egg-info/PKG-INFO
+wsit.egg-info/SOURCES.txt
+wsit.egg-info/dependency_links.txt
+wsit.egg-info/not-zip-safe
+wsit.egg-info/requires.txt
+wsit.egg-info/top_level.txt
