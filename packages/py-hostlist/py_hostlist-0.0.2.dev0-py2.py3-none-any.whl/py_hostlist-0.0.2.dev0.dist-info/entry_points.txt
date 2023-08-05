@@ -1,0 +1,3 @@
+[console_scripts]
+hostlist = hostlist.cla_hostlist:main
+
