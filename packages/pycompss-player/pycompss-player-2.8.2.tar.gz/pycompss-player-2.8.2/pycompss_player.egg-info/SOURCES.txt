@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+VERSION.txt
+requirements.txt
+setup.py
+pycompss-player/__init__.py
+pycompss-player/compss
+pycompss-player/dislib
+pycompss-player/pycompss
+pycompss-player/pycompss_cmd.py
+pycompss_player.egg-info/PKG-INFO
+pycompss_player.egg-info/SOURCES.txt
+pycompss_player.egg-info/dependency_links.txt
+pycompss_player.egg-info/requires.txt
+pycompss_player.egg-info/top_level.txt
