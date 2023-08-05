@@ -1,0 +1,24 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    >
+
+  <browser:view
+      name="test-ptpatcher"
+      for="*"
+      class=".test_patchedtemplate.DummyView"
+      permission="zope.Public"
+      />
+
+  <browser:view
+      name="test-patched-plone-overview"
+      for="*"
+      class=".test_patchedtemplate.PatchedOverview"
+      permission="zope.Public"
+      />
+
+  <include package="z3c.jbot" file="meta.zcml" />
+
+  <browser:jbot directory="jbot" />
+
+</configure>

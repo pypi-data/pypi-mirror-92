@@ -1,0 +1,5 @@
+====================
+collective.ptpatcher
+====================
+
+User documentation
