@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: GeocodingCHN
+Version: 1.0
+Summary: 地址标准化
+Home-page: UNKNOWN
+Author: ZhouHang
+Author-email: fjkl@vip.qq.com
+License: UNKNOWN
+Requires-Dist: jpype1
+
+# Geocoding
+
+
