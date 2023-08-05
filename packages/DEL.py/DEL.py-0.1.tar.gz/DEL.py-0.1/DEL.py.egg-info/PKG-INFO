@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: DEL.py
+Version: 0.1
+Summary: API wrapper for discordextremelist
+Home-page: https://github.com/discordextremelist/del.py
+Author: Moksej
+Author-email: moksej@gmail.com
+License: MIT
+Download-URL: https://github.com/discordextremelist/del.py.git
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
