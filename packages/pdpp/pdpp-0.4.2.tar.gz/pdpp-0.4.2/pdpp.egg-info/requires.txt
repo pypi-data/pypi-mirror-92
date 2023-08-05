@@ -1,0 +1,7 @@
+Click>=7.0
+doit>=0.31.1
+graphviz>=0.10.1
+networkx>=2.2
+pydot>=1.4.1
+pyyaml>=5.3
+questionary>=1.0.2
