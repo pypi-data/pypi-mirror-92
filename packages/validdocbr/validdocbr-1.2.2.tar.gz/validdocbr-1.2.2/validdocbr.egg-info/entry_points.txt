@@ -1,0 +1,3 @@
+[console_scripts]
+validdocbr = validdocbr.__main__:main
+
