@@ -1,0 +1,11 @@
+README.md
+setup.py
+pocpy/__init__.py
+pocpy/logpolar_opencv2.py
+pocpy/logpolar_opencv3.py
+pocpy/poc.py
+pocpy.egg-info/PKG-INFO
+pocpy.egg-info/SOURCES.txt
+pocpy.egg-info/dependency_links.txt
+pocpy.egg-info/requires.txt
+pocpy.egg-info/top_level.txt
