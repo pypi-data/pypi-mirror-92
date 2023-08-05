@@ -1,0 +1,7 @@
+requests
+certifi
+lxml
+pandas
+pydantic
+email-validator
+phonenumbers
