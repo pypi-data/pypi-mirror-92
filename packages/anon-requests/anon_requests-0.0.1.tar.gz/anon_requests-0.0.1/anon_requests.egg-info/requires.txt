@@ -1,0 +1,5 @@
+PySocks>=1.5.7
+requests>=2.11.0
+stem>=1.4.0
+bs4
+requests_cache
