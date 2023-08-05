@@ -1,0 +1,3 @@
+[console_scripts]
+heritrix3 = heritrix3.cli:main
+
