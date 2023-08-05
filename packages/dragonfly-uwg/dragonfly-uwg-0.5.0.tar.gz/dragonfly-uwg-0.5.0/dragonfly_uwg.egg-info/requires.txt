@@ -1,0 +1,6 @@
+dragonfly-core==1.27.5
+uwg==5.8.3
+
+[cli]
+click==7.1.2
+dragonfly-core[cli]==1.27.2
