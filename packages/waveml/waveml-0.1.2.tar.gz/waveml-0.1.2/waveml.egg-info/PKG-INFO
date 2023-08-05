@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: waveml
+Version: 0.1.2
+Summary: Open source machine learning library for performance of a weighted average over stacked predictions
+Home-page: https://github.com/leffff/waveml
+Author: leffff
+Author-email: levnovitskiy@gmail.com
+License: Apache License 2.0
+Description: # wave
+        Open source machine learning library for performance of a weighted average over stacked predictions
+        
+        ## Installation
+        ```
+        git clone https://github.com/leffff/wave.git
+        ```
+        ### Pip
+        ```
+        pip install -r requirements.txt
+        ```
+        ### Conda
+        ```
+        conda install --file requirements.txt
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
