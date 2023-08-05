@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bp-accessible-output2
+Version: 0.5
+Summary: Speech and Braille output for python apps
+Home-page: https://github.com/blindpandas/bp-accessible_output2
+Author: Blind Pandas Team (original: Tyler Spivey<tspivey@pcdesk.net>)
+Author-email: info@blindpandas.com
+License: MIT
+Keywords: a11y speech Braille
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bp-platform-utils
+Requires-Dist: appscript ; sys_platform == "Darwin"
+Requires-Dist: pywin32 (==228) ; sys_platform == "win32"
+
+UNKNOWN
+
+

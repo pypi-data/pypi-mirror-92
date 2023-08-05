@@ -1,0 +1,3 @@
+[pyinstaller40]
+hook-dirs = accessible_output2.__pyinstaller:get_hook_dirs
+
