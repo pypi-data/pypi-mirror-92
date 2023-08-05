@@ -1,0 +1,4 @@
+python-nmap
+tabulate
+fire
+reprint
