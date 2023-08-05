@@ -1,0 +1,13 @@
+discord/ext/reactioncommands/__init__.py,sha256=G4u2N_IAPNDnmICHaetV0doFyoXwLADViYLNmFC4FzM,225
+discord/ext/reactioncommands/reactionbot.py,sha256=B3wDBdDT7Sk8Zmnnv6aQHlvB9hoLVz2UX22RiB-WVD8,22786
+discord/ext/reactioncommands/reactioncontext.py,sha256=IPu6od0FL_PGFqsfMJSXmMrsh6u8TT7BUjNDCaEZd58,4513
+discord/ext/reactioncommands/reactioncore.py,sha256=CnSj99mbaiOCOcBiDGdVAug8jQjSpw1jEj8Yxp0LW6A,17944
+discord/ext/reactioncommands/reactionerrors.py,sha256=94rxIJBOhU5kEqk8aoZ6z9hbc4EBXi-bc6ebOC29WyM,289
+discord/ext/reactioncommands/reactionhelp.py,sha256=X8K8J_zNAVy3EvecSqZSiLoXZ8nucctFkgy2vZuXsEo,8326
+discord/ext/reactioncommands/reactionproxy.py,sha256=Nc_Akm7Ypa4711rvV3c_3BgTamEB6v3iT6UT5vnsqvQ,6892
+discord/ext/reactioncommands/utils.py,sha256=PV8b1wuSLathtyDanM1E4xWPqSkb-ndeW0guniIroPY,855
+ext_reactions-0.1.1.dist-info/LICENSE,sha256=0Ih10xU16r7A-hNYRsI7em8yjPSIMamXCh_G_YcI9c8,1070
+ext_reactions-0.1.1.dist-info/METADATA,sha256=OL-v2G-6JXKTteEKSo6veS7ABEedN9Dl8DyGihmQtcU,1909
+ext_reactions-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ext_reactions-0.1.1.dist-info/top_level.txt,sha256=fJkrNbR-_8ubMBUcDEJBcfkpECrvSEmMrNKgvLlQFoM,8
+ext_reactions-0.1.1.dist-info/RECORD,,
