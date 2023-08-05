@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: testdb
+Version: 1.0.0.2
+Summary: db sdk
+Home-page: UNKNOWN
+Author: skyeye
+Author-email: skyeye@gmail.com
+License: MIT Licence
+Description: db sdk for python
+Keywords: test,xxx
+Platform: any
