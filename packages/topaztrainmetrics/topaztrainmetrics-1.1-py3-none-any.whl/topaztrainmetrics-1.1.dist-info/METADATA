@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: topaztrainmetrics
+Version: 1.1
+Summary: Plot metrics from a Topaz training run
+Home-page: https://github.com/Guillawme/topaztrainmetrics
+Author: Guillaume Gaullier
+Author-email: contact@gaullier.org
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/Guillawme/topaztrainmetrics/issues
+Project-URL: Source, https://github.com/Guillawme/topaztrainmetrics
+Keywords: cryo-EM particle-picking Topaz visualization
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: pandas (>=1.1.5)
+
+# topaztrainmetrics
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4451826.svg)](https://doi.org/10.5281/zenodo.4451826)
+
+Plot metrics from a [Topaz](https://github.com/tbepler/topaz) training run.
+
+## Installation
+
+```
+$ pip install topaztrainmetrics
+```
+
+## Usage
+
+```
+$  topaztrainmetrics --help
+Usage: topaztrainmetrics [OPTIONS] <file>
+
+  Plot validation metrics from a Topaz training run.
+
+  <file> is the results.txt file from standalone Topaz or the
+  model_plot.star file from Topaz run within RELION.
+
+Options:
+  -l, --loss                Plot loss.
+  -g, --gepenalty           Plot GE penalty.
+  -p, --precision           Plot precision.
+  -t, --tpr                 Plot true/false positive rates.
+  -c, --auprc               Plot area under precision/recall curve (default).
+  -x, --xaxis [iter|epoch]  X axis (iter or epoch; default: iter).
+  -o, --output TEXT         File name to save the plot (optional: with no file
+                            name, simply display plot on screen without saving
+                            it; recommended file formats: .png, .pdf, .svg or
+                            any format supported by matplotlib).
+
+  -h, --help                Show this message and exit.
+```
+
+
