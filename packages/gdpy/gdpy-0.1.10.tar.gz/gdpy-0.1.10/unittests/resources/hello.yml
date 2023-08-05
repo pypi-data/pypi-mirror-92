@@ -1,0 +1,26 @@
+app:
+  package: hello
+  category: system
+  homepage:  “”
+  version: 1
+  name: "Hello"
+  alias: "hello"
+  description: >
+    该流程为测试用的免费工作流，通过此流程，您可以大致了解我们的系统。该流程无输入文件，无输出文件，用户可以在日志栏看到”Hello world！”字样。
+  tutorial: >
+    echo "Hello world！"
+  document_author: wangqiang@genedock.com
+  requirements:
+    container:
+      type: docker
+      image: '55b8da1bf6f4060023390cae'
+    resources:
+      cpu: 1
+      mem: '1024m'
+      network: true
+      port: []
+      disk: '1024m'
+  inputs: null
+  outputs: null
+  cmd_template: >
+    echo "Hello world！" {{ '\n' }}

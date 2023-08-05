@@ -1,0 +1,27 @@
+language: python
+python:
+- 2.7
+- 3.3
+- 3.4
+- 3.5
+
+install:
+  - pip install pep8
+  - pip install nose
+  - pip install -r requirements.txt
+
+before_script:
+    - "export UNITTEST=1"
+
+script:
+  - "pep8 --ignore=E501,E402,E731 ."
+  - "nosetests -v"
+
+notifications:
+  slack:
+    rooms:
+      - genedock:r2GymfExvINEuVN4uB3w3X1f#general
+      - genedock:r2GymfExvINEuVN4uB3w3X1f#random
+
+after_script:
+    - "export UNITTEST=0"

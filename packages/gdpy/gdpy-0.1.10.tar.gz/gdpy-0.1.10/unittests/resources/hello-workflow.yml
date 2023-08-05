@@ -1,0 +1,12 @@
+workflow:
+  name: 'Hello'
+  description: >
+    该流程为测试用的免费工作流，通过此流程，您可以大致了解我们的系统。该流程无输入文件，无输出文件，用户可以在日志栏看到”Hello world！”字样。
+  account: wangqiang@genedock.com
+  version: 1
+  nodelist:
+    - node_id: hello
+      app_id: 55cda357f6f406001a060872
+      alias: 'Hello world workflow'
+      inputs: null
+      outputs: null
