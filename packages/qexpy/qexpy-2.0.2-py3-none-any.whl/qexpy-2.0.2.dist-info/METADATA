@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: qexpy
+Version: 2.0.2
+Summary: Package to handle error analysis and data plotting aimed at undergraduate physics.
+Home-page: https://github.com/Queens-Physics/QExPy
+Author: Astral Cai, Connor Kapahi, Prof. Ryan Martin
+Author-email: ryan.martin@queensu.ca, astral.cai@queensu.ca
+License: GNU GLP v3
+Keywords: physics,laboratories,labs,undergraduate,data analysis,uncertainties,plotting,error analysis,error propagation,uncertainty propagation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: IPython
+Provides-Extra: dev
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: jupyterlab ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: nbsphinx-link ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+
+UNKNOWN
+
+
