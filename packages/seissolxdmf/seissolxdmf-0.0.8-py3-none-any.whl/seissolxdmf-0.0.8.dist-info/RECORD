@@ -1,0 +1,10 @@
+seissolxdmf/__init__.py,sha256=t5IOH2hhdoqoiIeYHLawxFI1c4LR_TcgJo_sA7LWYE8,49
+seissolxdmf/extractDataFromUnstructuredOutputb.py,sha256=H2GGxXRKI3T7UAZzsWMDeZry2cKSv8jUMPNZ_Cd4_s0,4641
+seissolxdmf/recreateXdmf.py,sha256=s0xADqUjTv5nSB_vRGrzOxrlrI-ju7ThJF3qXxmNcos,6708
+seissolxdmf/seissolxdmf.py,sha256=zoufiVLU4gnwXvm1DMR6Oz6sPi3lfr-ek0RODtltveI,10264
+seissolxdmf/test.py,sha256=sC1dklbZxFcTesqfyDaOUD8njbnmGR4HZl-tEqX2IWA,129
+seissolxdmf-0.0.8.dist-info/LICENSE,sha256=XEmeTFbwIXSSMPNSOKmrZkIh8rfbDB3j2pZDpADLIOw,1513
+seissolxdmf-0.0.8.dist-info/METADATA,sha256=ebE9bGmmBZQQWg9Bo9IIRvF7BeKCKr-IYQFKSyI0PUc,1286
+seissolxdmf-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+seissolxdmf-0.0.8.dist-info/top_level.txt,sha256=HTnG86xYDaodyZaWcD6Zyvp5wwH8xiHRKik0F4kVY5I,12
+seissolxdmf-0.0.8.dist-info/RECORD,,
