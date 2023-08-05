@@ -1,0 +1,8 @@
+README.md
+setup.py
+CB_ModernAPI.egg-info/PKG-INFO
+CB_ModernAPI.egg-info/SOURCES.txt
+CB_ModernAPI.egg-info/dependency_links.txt
+CB_ModernAPI.egg-info/requires.txt
+CB_ModernAPI.egg-info/top_level.txt
+cb_wrapper/__init__.py
