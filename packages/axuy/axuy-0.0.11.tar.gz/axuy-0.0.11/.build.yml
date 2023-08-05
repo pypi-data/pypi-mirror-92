@@ -1,0 +1,7 @@
+image: debian/sid
+packages:
+  - tox
+sources:
+  - https://git.sr.ht/~cnx/axuy
+tasks:
+  - test: tox -c axuy
