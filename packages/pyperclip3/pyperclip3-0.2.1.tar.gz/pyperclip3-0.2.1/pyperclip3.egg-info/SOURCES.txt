@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyperclip3/__init__.py
+pyperclip3/__main__.py
+pyperclip3/base.py
+pyperclip3/cli.py
+pyperclip3/macos_clip.py
+pyperclip3/util.py
+pyperclip3/win_clip.py
+pyperclip3.egg-info/PKG-INFO
+pyperclip3.egg-info/SOURCES.txt
+pyperclip3.egg-info/dependency_links.txt
+pyperclip3.egg-info/requires.txt
+pyperclip3.egg-info/top_level.txt
