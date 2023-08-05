@@ -1,0 +1,6 @@
+README.md
+setup.py
+BPMN_RPA.egg-info/PKG-INFO
+BPMN_RPA.egg-info/SOURCES.txt
+BPMN_RPA.egg-info/dependency_links.txt
+BPMN_RPA.egg-info/top_level.txt
