@@ -1,0 +1,14 @@
+-r requirements.in
+
+# Requirements to build documentation
+graphviz
+ipywidgets
+jupyter
+myst-nb < 0.11  # myst_admonition_enable
+Sphinx >= 3
+sphinx-book-theme
+sphinx-copybutton
+sphinx-panels
+sphinx-thebe
+sphinx-togglebutton
+sphobjinv
