@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: witcher
+Version: 0.0.22
+Summary: Automated AI tool including: recommender system, deep Learnings ...
+Home-page: https://github.com/BabakEA/witcher
+Author: Babak EA
+Author-email: emami.babak@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: stdlib-list (>=0.6.0)
+Requires-Dist: ipywidgets (==7.5.1)
+Requires-Dist: pandas
+Requires-Dist: sklearn
+Requires-Dist: traitlets
+Requires-Dist: ipywidgets
+Requires-Dist: IPython
+Requires-Dist: statsmodels
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: yfinance
+Requires-Dist: pmdarima
+Requires-Dist: opencv-python
+Provides-Extra: test
+Requires-Dist: IPython (>=7.12.0); extra == 'test'
+Requires-Dist: notebook (>=6.0.1); extra == 'test'
+
+# witcher
+Witcher is an automated, driverless tool to build an errorfree machine learning application.
+
+
+Witcher is an automated AI application designed to speed up the data processing phases.
+The current witcher's magical-recommender-system will provide you with a comprehensive product recommendation using product popularity, product similarity and user similarity models.
+
+Magical data processing, predictive, and deep learning models will be joining witchers functions very soon :)
+
+hope you will enjoy using the witcher library
+
+Thank you. 
+
+Babak.EA
+
+
+How to run : 
+
+<b> using Jupyter notbook </b> 
+
+from witcher import Recommender
+
+
+
+
+
+
+source code : github
+https://github.com/BabakEA/witcher
+
+
+
+
+PyPi : 
+pip install witcher 
+
+
