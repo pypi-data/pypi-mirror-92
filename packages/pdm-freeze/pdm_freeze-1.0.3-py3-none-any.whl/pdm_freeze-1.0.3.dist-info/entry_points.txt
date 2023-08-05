@@ -1,0 +1,3 @@
+[pdm.plugin]
+hello=freeze:freeze_plugin
+
