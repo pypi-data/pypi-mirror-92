@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: kfp-deployer
+Version: 0.1.0
+Summary: Deploy the KFP ML Pipeline from CLI.
+Home-page: https://github.com/reproio/kfp-deployer
+Author: Karno
+Author-email: karnoroid@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: kfp (>=1.3.0,<2.0.0)
+Requires-Dist: pytz (>=2020.5,<2021.0)
+Project-URL: Repository, https://github.com/reproio/kfp-deployer
+Description-Content-Type: text/markdown
+
+# kfp-deployer
+
+Deploy your ml-pipeline with `kfp-deploy` from cli.
+
+## How to use
+
+`kfp-deploy https://your-kubeflow-host/ "pipeline-name" ./pipeline_file.yaml`
+
+for more detail, see `kfp-deploy -h`.
+
+## what the difference from `kfp pipeline upload`?
+
+
+Kubeflow Pipelines requires the all pipelines must have unique names. 
+Otherwise you have to use `update the version` instead of `upload the pipeline`.
+Furthermore, you have to use unique name when uploading the new version of pipeline.
+
+This command does everything required in the upload process for you. 
+This command will communicate with kfp host and automatically determine 
+whether update or upload is required and perform it.
+Furthermore, the version string is automatically generated based on the upload timestamp.
+
