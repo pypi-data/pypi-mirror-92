@@ -1,0 +1,8 @@
+README.md
+setup.py
+slbb_armstr/__init__.py
+slbb_armstr/armstrongNo.py
+slbb_armstr.egg-info/PKG-INFO
+slbb_armstr.egg-info/SOURCES.txt
+slbb_armstr.egg-info/dependency_links.txt
+slbb_armstr.egg-info/top_level.txt

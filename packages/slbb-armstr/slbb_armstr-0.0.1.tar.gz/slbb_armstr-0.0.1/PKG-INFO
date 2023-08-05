@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: slbb_armstr
+Version: 0.0.1
+Summary: A Armstrong no. code
+Home-page: https://github.com/Bavishyaa/Python-Capsule/Package
+Author: bavishyaa
+Author-email: bavishyaa@armstrong.com
+License: UNKNOWN
+Description: This a armstrong code which will help u find whether a number is armstrong no. or not.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

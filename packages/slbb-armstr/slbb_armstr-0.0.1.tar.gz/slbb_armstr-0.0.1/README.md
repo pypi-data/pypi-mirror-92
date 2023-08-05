@@ -1,0 +1,1 @@
+This a armstrong code which will help u find whether a number is armstrong no. or not.
