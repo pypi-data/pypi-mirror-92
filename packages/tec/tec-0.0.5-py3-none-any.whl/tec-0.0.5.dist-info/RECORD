@@ -1,0 +1,15 @@
+tec/__init__.py,sha256=p_e8ugbYySLDi5WcOskZREXYW-oj3zl__RCjHlE-LBY,534
+tec/doctest_utils.py,sha256=AqRhFASgTmom1uq6W8QbSwnusBIoOOk6MJNc9vimGqY,1082
+tec/findimports.py,sha256=jFHPU-GNTtysvsXsKjM8tLb2j-kqdAUwvHcVvDer480,35672
+tec/import_counting.py,sha256=ghp-pN7TLY2wsRP5GOyBnoz1VjkaHlqV90Lr3-Xl6EE,8992
+tec/modules.py,sha256=WkOV72k7tTs7f5wLka24l75vugUoM5r9Q-dOPyfGwMo,9757
+tec/packages.py,sha256=ZwVX6T1MsNMNxvAHQwkfw1N-O5j-d90QGr_wv5MLyv8,4189
+tec/peek.py,sha256=Ejvh670Iv1XJIGv8Xxqc_2xpLhYHTGe6S78QNGrsMho,2306
+tec/pip_packaging.py,sha256=8PlRh01QSkvjHDxz8zmktl9ZXG4U03HhXm5qjluldes,6700
+tec/pip_requirements.py,sha256=NIucof40Q5QRa1NbiX_nUfDFv3lx9rjQePicD2Ebqig,5428
+tec/stores.py,sha256=e6JaS2yX-WZVGO6S7Bj3N1WURaCwViiXWEU4SqBzFtE,2719
+tec-0.0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tec-0.0.5.dist-info/METADATA,sha256=Wl56HoNoVRGPTnOFOK6XstLl3-jWF_XxvZCr9FblhJo,2433
+tec-0.0.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tec-0.0.5.dist-info/top_level.txt,sha256=JSCwI_aOhBYXaUZjuyX8IwZqjkj8TGAjV1PDD_MymZI,4
+tec-0.0.5.dist-info/RECORD,,
