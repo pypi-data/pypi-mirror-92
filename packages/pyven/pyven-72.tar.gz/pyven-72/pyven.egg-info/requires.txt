@@ -1,0 +1,5 @@
+aridity>=49
+diapyr>=18
+lagoon>=22
+setuptools>=44.1.1
+twine>=1.15.0
