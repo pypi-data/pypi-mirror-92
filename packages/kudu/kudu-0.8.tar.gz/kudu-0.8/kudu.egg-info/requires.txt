@@ -1,0 +1,5 @@
+click<8
+GitPython
+PyYAML
+requests>=2.20.1
+watchdog
