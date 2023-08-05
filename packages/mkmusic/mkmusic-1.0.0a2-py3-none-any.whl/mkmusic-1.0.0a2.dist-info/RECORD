@@ -1,0 +1,12 @@
+mkmusic/__init__.py,sha256=XgOBiJO0gIPa_zYwNRctBr9Z-ZPum76lE_pw9eDrwMI,1555
+mkmusic/instrument.py,sha256=GtcMoT3oa2EIU4XccPjmNEttpAf3h1MawZF9vSe7L0c,3898
+mkmusic/mclass.py,sha256=m5E4c_bETfmmp5kEDICy-ifRBi9Qcv13VWVFbbLCHDk,3462
+mkmusic/readfile.py,sha256=5X8w5nqt6DoQrqitX7huxKt-_jd3yPxU_5s5iZ3WFKk,7777
+mkmusic/table.py,sha256=UlzAkdQh14SDIwufDW7Yq1M7zQ4eJG87JScOrKKRBhc,1237
+mkmusic/version.py,sha256=x07rRJ-oMnaxBvm8h7AakyeR3ef_vMXeyySnUfIeT7I,88
+mkmusic-1.0.0a2.dist-info/LICENSE,sha256=3jTNdgm3_AuEjPC6RVsmRaLeLln_be7OLFGnHmkCj5U,1079
+mkmusic-1.0.0a2.dist-info/METADATA,sha256=TU6K90OeP38eBYrwi0BrQJ-EIy1GVvx3jV16lR6h0zs,511
+mkmusic-1.0.0a2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+mkmusic-1.0.0a2.dist-info/entry_points.txt,sha256=mh_-4AFEeUN3ra5gFIM7Mwbgihhf3bCXu8oEJ719Sug,51
+mkmusic-1.0.0a2.dist-info/top_level.txt,sha256=BhFClubb1OaMchN8b2WUjaUW_jY6lmF2ggRXoiLERmQ,8
+mkmusic-1.0.0a2.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+mkmusic = mkmusic:start_program
+
