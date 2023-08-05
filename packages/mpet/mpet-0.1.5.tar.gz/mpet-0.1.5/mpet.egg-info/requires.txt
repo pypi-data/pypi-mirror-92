@@ -1,0 +1,11 @@
+numpy
+scipy
+matplotlib
+pyQt5
+
+[test]
+pytest
+coverage
+coveralls
+configparser
+h5py
