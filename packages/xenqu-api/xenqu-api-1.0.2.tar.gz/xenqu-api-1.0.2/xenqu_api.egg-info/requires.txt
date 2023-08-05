@@ -1,0 +1,5 @@
+requests
+jwcrypto
+requests_oauthlib
+datetime
+jwt
