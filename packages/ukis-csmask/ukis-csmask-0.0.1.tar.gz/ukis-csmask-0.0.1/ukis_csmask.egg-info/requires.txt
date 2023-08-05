@@ -1,0 +1,10 @@
+numpy
+onnxruntime
+pytest
+scipy
+
+[dev]
+pytest
+
+[gpu]
+onnxruntime-gpu
