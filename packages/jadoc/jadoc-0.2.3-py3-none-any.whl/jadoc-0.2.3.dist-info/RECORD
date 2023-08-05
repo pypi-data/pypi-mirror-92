@@ -1,0 +1,17 @@
+jadoc/__init__.py,sha256=DhVQ3xOpAdF1W5PzcyO11JqFbtmFLzMCm7UkNfx3CiE,292
+jadoc/conj.py,sha256=Ndv89JoW7JfBBHOnzXEwymJUF1IwYcX7QiPaXHKAecI,6869
+jadoc/doc.py,sha256=MbhOwhNMcmol6H-CH4DQxRXbl4rWICqi4w_lcFeZgBc,6769
+jadoc/errors.py,sha256=V0GwF8nAx0595lWF97RbX8lcjQV2BfNj-wfH7QCrY44,619
+jadoc/mecab/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jadoc/mecab/config.py,sha256=MYv79pOBDYyBy6ax-4Cd4dBrb2olimZ7PnlIMF90pf4,1241
+jadoc/mecab/tokenizer.py,sha256=5uauUmiY1D1FgarP3YLep0iEP-xrZGXw_bhOKMFN0-w,6739
+jadoc/utils.py,sha256=w4O9tpfGw7x8r-yDdbLeYMGtThXKrYarFb0qER80wI0,433
+jadoc/word/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jadoc/word/cform.py,sha256=EXRx-OMXezw3wOifmh8dfv5jnT40GRPMCfLGcl_n6aM,4338
+jadoc/word/ctype.py,sha256=dx1mHZptigVM-0aLtT05WGUWYfjG7Me5GTf1yrO9zgs,7488
+jadoc/word/pos.py,sha256=bHdwYAMxXjxYLaC9IXtR7ibjumCFJ_How0xgcDTVlC4,4117
+jadoc/word/word.py,sha256=fEJR6t0bRb2VkgTdQq3c5usNtyiazr524X9OZVIxUTA,1686
+jadoc-0.2.3.dist-info/LICENSE,sha256=1o0CwV1HJyG2swhVeX7Q3TugAPD6zUkWArTRWEUa_NE,11336
+jadoc-0.2.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jadoc-0.2.3.dist-info/METADATA,sha256=dN-K4Wr0nvojQLBNfFw2IyhY5bLZCwmVVG7Dc04QgiM,2499
+jadoc-0.2.3.dist-info/RECORD,,
