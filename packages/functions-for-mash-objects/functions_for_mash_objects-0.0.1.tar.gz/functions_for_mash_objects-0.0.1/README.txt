@@ -1,0 +1,1 @@
+Functions for parsing of maya ascii files that returns name, position and uid of all mesh objects

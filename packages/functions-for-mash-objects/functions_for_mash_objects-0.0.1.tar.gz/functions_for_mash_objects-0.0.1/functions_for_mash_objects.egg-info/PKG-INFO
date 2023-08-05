@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: functions-for-mash-objects
+Version: 0.0.1
+Summary: Functions for parsing of maya ascii files that returns name, position and uid of all mesh objects
+Home-page: UNKNOWN
+Author: Katarina Knezevic
+Author-email: kvknezevic@gmial.com
+License: MIT
+Description: Functions for parsing of maya ascii files that returns name, position and uid of all mesh objects
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+Keywords: maya ascii
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2

@@ -1,0 +1,6 @@
+README.txt
+setup.py
+functions_for_mash_objects.egg-info/PKG-INFO
+functions_for_mash_objects.egg-info/SOURCES.txt
+functions_for_mash_objects.egg-info/dependency_links.txt
+functions_for_mash_objects.egg-info/top_level.txt
