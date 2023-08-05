@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+ArticutAPI.egg-info/PKG-INFO
+ArticutAPI.egg-info/SOURCES.txt
+ArticutAPI.egg-info/dependency_links.txt
+ArticutAPI.egg-info/requires.txt
+ArticutAPI.egg-info/top_level.txt
+src/ArticutAPI.py
+src/MP_ArticutAPI.py
+src/WS_ArticutAPI.py
+src/__init__.py
