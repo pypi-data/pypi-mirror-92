@@ -1,0 +1,3 @@
+[console_scripts]
+tiler-swift=tiler_swift.scripts.__main__:main
+
