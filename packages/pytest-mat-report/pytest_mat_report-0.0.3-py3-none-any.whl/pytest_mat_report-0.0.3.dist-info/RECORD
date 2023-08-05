@@ -1,0 +1,6 @@
+pytest_mat_report/__init__.py,sha256=CRp0qnPACqQ-z6VdPJ_qsgU-DFmXz6KWJSTEmdmh9R8,24
+pytest_mat_report/plugin.py,sha256=z5H36-lQsI5hIq7FfTD_os5bCrxlit_moPWKk0GMLCI,1658
+pytest_mat_report-0.0.3.dist-info/entry_points.txt,sha256=7epcT9XRRfM2CZxEOfcrf_w7i7Qtx9yFWsscDddf5ZQ,48
+pytest_mat_report-0.0.3.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+pytest_mat_report-0.0.3.dist-info/METADATA,sha256=0t5tQdhZD9sCGz_KNF7AAx3hJGpPfKQvjBjaA1JxJEs,312
+pytest_mat_report-0.0.3.dist-info/RECORD,,
