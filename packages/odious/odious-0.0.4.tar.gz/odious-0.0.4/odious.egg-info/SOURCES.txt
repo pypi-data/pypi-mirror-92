@@ -1,0 +1,10 @@
+README.md
+setup.py
+odious/__init__.py
+odious/config.py
+odious/matchup.py
+odious.egg-info/PKG-INFO
+odious.egg-info/SOURCES.txt
+odious.egg-info/dependency_links.txt
+odious.egg-info/requires.txt
+odious.egg-info/top_level.txt
