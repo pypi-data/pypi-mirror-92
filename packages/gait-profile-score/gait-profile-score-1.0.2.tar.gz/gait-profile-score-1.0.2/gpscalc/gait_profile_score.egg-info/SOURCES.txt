@@ -1,0 +1,8 @@
+README.rst
+setup.py
+docs/source/index.rst
+gpscalc/gpscalculator.py
+gpscalc/gait_profile_score.egg-info/PKG-INFO
+gpscalc/gait_profile_score.egg-info/SOURCES.txt
+gpscalc/gait_profile_score.egg-info/dependency_links.txt
+gpscalc/gait_profile_score.egg-info/top_level.txt
