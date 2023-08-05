@@ -1,0 +1,11 @@
+classeval/ROC.py,sha256=PI4PTW_WqeF7vhi60BWw-RrAiZwyr2jOJZMjjGmgvjg,10775
+classeval/__init__.py,sha256=poV3_jXCgoS3o9Zavh0zGcsif5BCobmHGqLGKtJVNZk,1712
+classeval/classeval.py,sha256=OMaalKB_begc24m-s7NM5nGttjez2_Wx73J5n9NE_-A,27953
+classeval/confmatrix.py,sha256=b5vyZ2Gx760sEZUHJizHbI3UYlxZ6YGjGVFB8dFaHMU,5125
+classeval/examples.py,sha256=pjCwFh1dAvgOQxvpMRLXaguNTB34KtAFQHrny0QZXpQ,3392
+classeval/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classeval-0.1.11.dist-info/LICENSE,sha256=tNyUBByDd0Klrrkdc7Vy9SvSaRBlutCsO-qhLat2VPk,1122
+classeval-0.1.11.dist-info/METADATA,sha256=nFGsBeuAvSoY0ifYBlKtuNBmPyyo64MDWmRSbl6Isxc,4427
+classeval-0.1.11.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+classeval-0.1.11.dist-info/top_level.txt,sha256=yihj2-ohTX_lIDTqWyE8qNYjzNhqmQQeqsJm6-5hZjM,10
+classeval-0.1.11.dist-info/RECORD,,
