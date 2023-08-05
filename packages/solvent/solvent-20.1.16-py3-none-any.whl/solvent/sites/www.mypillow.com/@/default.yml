@@ -1,0 +1,79 @@
+locators:
+  inclusions:
+    -
+  exclusions:
+    -
+actions:
+  - verb: ''
+    name: ''
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+  - verb: fill
+    name: phone
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: name
+        value: mobile_phone
+        index: 0
+        uses: -1
+      - mode: name
+        value: mobile-phone
+        index: 0
+        uses: -1
+      - mode: id
+        value: mobile_phone
+        index: 0
+        uses: -1
+      - mode: id
+        value: mobile-phone
+        index: 0
+        uses: -1
+      - mode: css
+        value: '[aria-label="Mobile Phone"]'
+        index: 0
+        uses: -1
+      - mode: id
+        value: MobilePhone
+        index: 0
+        uses: -1
+      - mode: id
+        value: ltkpopup-phone
+        index: 0
+        uses: 38
+      - mode: id
+        value: ltkpopup-phone
+        index: 0
+        uses: 0
+  - verb: click
+    name: submit
+    locators:
+      - mode: ''
+        value: ''
+        index: 0
+        uses: 0
+      - mode: text
+        value: Get Discount
+        index: 0
+        uses: -1
+      - mode: text
+        value: Get discount
+        index: 0
+        uses: -1
+      - mode: value
+        value: Get Discount
+        index: 0
+        uses: -1
+      - mode: value
+        value: Get discount
+        index: 0
+        uses: -1
+      - mode: id
+        value: ltkpopup-submit
+        index: 0
+        uses: 40
