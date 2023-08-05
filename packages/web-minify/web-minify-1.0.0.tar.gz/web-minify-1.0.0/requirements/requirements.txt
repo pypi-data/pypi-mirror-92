@@ -1,0 +1,12 @@
+colored-traceback==0.3.0
+    # via -r requirements.in
+colorlog==4.7.2
+    # via -r requirements.in
+libsass==0.20.1
+    # via -r requirements.in
+pygments==2.7.4
+    # via colored-traceback
+six==1.15.0
+    # via
+    #   -r requirements.in
+    #   libsass
