@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Pymars_india
+Version: 1.0.2
+Summary: Mars orbital mission
+Home-page: https://github.com/Priteshraj10/Pymars_india
+Author: Pritesh Raj
+Author-email: priteshraj41@gmail.com
+License: MIT
+Description: # Pymars_india
+        India's first interplanetary mission into the Martian orbit.It has provided an overwhelming amount of data back to ISRO with the Mars Colour Camera (MCC) onboard which the orbiter had snapped 980+ images and prepared the Mars Atlas.
+        
+        [![Python](https://img.shields.io/pypi/pyversions/pymars_india.svg?style=plastic)](https://badge.fury.io/py/pymars_india)
+        
+        
+        ![alt text](https://github.com/Priteshraj10/Pymars_india/blob/master/files/70685875.cms_.png)
+        
+        ## Installation
+        ```pip install pymars_india```
+        
+        
+        ## License
+        
+        Â© 2021 Pritesh Raj
+        
+        This repository is licensed under the MIT license. See LICENSE for details.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
