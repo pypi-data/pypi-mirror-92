@@ -1,0 +1,9 @@
+tensorflow>2
+pandas
+sklearn
+pydot
+matplotlib
+flask
+terminaltables
+seaborn
+pyyaml
