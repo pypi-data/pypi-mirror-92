@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+bin/ssmpm
+ssmpm/__init__.py
+ssmpm.egg-info/PKG-INFO
+ssmpm.egg-info/SOURCES.txt
+ssmpm.egg-info/dependency_links.txt
+ssmpm.egg-info/requires.txt
+ssmpm.egg-info/top_level.txt
