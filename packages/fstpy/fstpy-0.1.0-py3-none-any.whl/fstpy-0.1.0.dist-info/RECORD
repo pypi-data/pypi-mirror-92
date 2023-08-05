@@ -1,0 +1,9 @@
+fstpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fstpy/authorizers.py,sha256=D8cExLoDuGDIANWEvJpIr2FGeF77-fp6g3Vl1nNu83M,5118
+fstpy/filesystems.py,sha256=ty052LgZAZrALMT9bo4YDtJpssuBPrl4vvE7BrN2jJ8,22664
+fstpy-0.1.0.data/scripts/fstpyd,sha256=eMJFfNsmH_m1drABxoTqNTETIPn4S7T19k7D_Fsk5gU,3506
+fstpy-0.1.0.dist-info/LICENSE,sha256=ZxALe39zmgcHR92JVusOYWGqwlwXFnJFvNUCScQhsL4,1073
+fstpy-0.1.0.dist-info/METADATA,sha256=qch7yLNk0JitgsrdnvrXSwlFzY4W21hjL5nyCtc_8Nw,5297
+fstpy-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fstpy-0.1.0.dist-info/top_level.txt,sha256=z98nzFIe1JR1tLQ5rOvuX4E65TG3hcKpdObyKcy7EUw,6
+fstpy-0.1.0.dist-info/RECORD,,
