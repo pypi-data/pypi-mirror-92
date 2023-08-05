@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: validdocbr
+Version: 1.2.2
+Summary: Brazilian document validator using the check digit
+Home-page: https://github.com/JohnChinaski/validdocbr
+Author: johnchinaski
+Author-email: joao.pog90@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# validdocbr   
+
+* Validador do padrão numérico de documentos brasileiros com base no dígito verificador.
+* Deve ser utilizado apenas para uma pré validação e não ser considerado como validador oficial. Para validação oficial, favor consultar os entidades específicas para cada documento e/ou cartão.
+
+
+# Instalação:   
+
+```   
+pip install validdocbr
+pip3 install validdocbr
+```   
+
+# Documentos validados:
+* CPF
+* CNPJ
+* RG
+* CNH
+* RENAVAM
+* Título de eleitor
+
+# Outros validadores:
+* Cartão de crédito
+
+# Construtores:
+* Máscara para RG
+* Máscara para CPF
+* Máscara para CNPJ
+
+# Utilização:   
+* Enviar (como string) o número do documento que deseja como parâmetro da função. Pode conter máscara.       
+
+# Exemplos validadores:      
+
+* Importar o validador e instanciá-lo:
+```
+from validdocbr import validdocbr
+
+validator = validdocbr()   
+ ```
+
+* CPF
+```
+validator.cpf("12345678999") ---> para validar padrão do CPF      
+```
+
+* CNPJ
+```
+validator.cnpj("12345678000189") ---> para validar padrão do CNPJ      
+```
+
+* CNH
+```
+validator.cnh("01234567890") ---> para validar padrão do CNH      
+```
+
+* RENAVAM
+```
+validator.renavam("01234567890") ---> para validar padrão do RENAVAM      
+```
+
+* RG
+```
+validator.rg("123456789") ---> para validar padrão do RG      
+```
+
+* Título de eleitor
+```
+validator.te("123456789") ---> para validar padrão do Título de eleitor      
+```
+
+* Cartão de crédito
+```
+validator.cc("1234567890123456") ---> para validar padrão do Cartão de crédito
+```
+
+* Tipos de respostas para os validadores
+```
+True ---> caso padrão do documento seja válido     
+False ---> caso padrão do documento seja inválido      
+```
+
+# Exemplos construtores:
+
+* Máscara para RG
+```
+validator.rg_mask("123456789") ---> Para máscara em RG
+```
+
+* Máscara para CPF
+```
+validator.cpf_mask("12345678901") ---> Para máscara em CPF
+```
+
+* Máscara para CNPJ
+```
+validator.cnpj_mask("12345678901234") ---> Para máscara em CNPJ
+```
+
+* Tipos de respostas para os construtores
+```
+máscara RG ---> "12.345.678-9"     
+máscara CPF ---> "123.456.789-01"     
+máscara CNPJ ---> "12.345.678/0001-90"     
+False ---> caso quantidade de dígitos do documento esteja incorreta (RG = 9, CPF = 11, CNPJ = 14)      
+```
+
+
