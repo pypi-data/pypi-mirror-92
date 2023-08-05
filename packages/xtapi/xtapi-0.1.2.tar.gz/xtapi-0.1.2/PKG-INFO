@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: xtapi
+Version: 0.1.2
+Summary: Web api
+Home-page: https://github.com/istommao/xtapi
+Author: codingcat
+Author-email: istommao@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: xtapi is a web api base on FastAPI
+Platform: UNKNOWN
