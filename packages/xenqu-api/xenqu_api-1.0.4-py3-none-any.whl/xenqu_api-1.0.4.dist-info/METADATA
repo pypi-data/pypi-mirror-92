@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: xenqu-api
+Version: 1.0.4
+Summary: A full implementation of the Xenqu API in Python.
+Home-page: https://github.com/EssiumLLC/lib-xenqu-python
+Author: Charles Buffington II
+Author-email: charles.buffington@essium.co
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: jwcrypto
+Requires-Dist: requests-oauthlib
+
+UNKNOWN
+
+
