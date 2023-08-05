@@ -1,0 +1,8 @@
+numpy
+asyncssh
+sounddevice
+samplerate
+prompt_toolkit
+
+[:sys_platform == "linux"]
+xlib
