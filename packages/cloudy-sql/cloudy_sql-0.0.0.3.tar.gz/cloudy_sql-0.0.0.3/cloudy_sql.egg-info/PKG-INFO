@@ -1,0 +1,215 @@
+Metadata-Version: 2.1
+Name: cloudy-sql
+Version: 0.0.0.3
+Summary: This project is currently in development. DO NOT USE.
+Home-page: https://github.com/hashmapinc/sales-and-marketing/pocs/sam-kohlleffel-poc/pandas-cloudy-extension
+Author: Hashmap, Inc
+Author-email: accelerators@hashmapinc.com
+License: UNKNOWN
+Description: <!---
+        # Modifications © 2020 Hashmap, Inc
+        #
+        # Licensed under the Apache License, Version 2.0 (the "License");
+        # you may not use this file except in compliance with the License.
+        # You may obtain a copy of the License at
+        #
+        #     http://www.apache.org/licenses/LICENSE-2.0
+        #
+        # Unless required by applicable law or agreed to in writing, software
+        # distributed under the License is distributed on an "AS IS" BASIS,
+        # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        # See the License for the specific language governing permissions and
+        # limitations under the License.
+        -->
+        # cloudy_sql
+        
+        ## Snowflake Support
+        The cloudy_sql is an Ipython Magics library and pandas extension that currently supports: 
+        - a Magics function that allows users to easily execute SQL Queries in Snowflake
+        - writing to an existing Snowflake table from a pandas dataframe
+        - creating a new Snowflake table from a pandas dataframe
+        ## How To Use cloudy_sql
+        
+        **Installation**
+        
+        `pip install cloudy-sql`
+        
+        **Configuration** 
+        
+        Upon installation, open a jupyter notebook and run the following cell.
+        ```python
+        %load_ext cloudy_sql
+        ```
+        After you run the cell, a configuration file will be created in your HOME directory.
+        The path to the configuration file is: `$HOME/.cloudy_sql/configuration_profiles.yml`
+        
+        For Windows user: use $USERPROFILE instead of $HOME variable
+        
+        The configuration file is a YAML file with the following format
+        ```yaml
+        profiles:
+          snowflake:
+            user: <your snowflake username>
+            pass: <your snowflake password>
+            acct: <your snowflake account>
+            role: <your snowflake role>
+            warehouse: <your snowflake warehouse>
+            database: <your snowflake database>
+            schema: <your snowflake schema>
+        ```
+        The user, pass, acct, database, schema, values all should be filled in with your desired Snowflake credentials and connection details. The variables in this
+        file serve as default arguments when calling a cloudy_sql method. Role and warehouse can be filled in as well, but they are optional arguments when connecting to Snowflake.
+        
+        
+        ## API
+        The intent has been to keep the API as simple as possible by minimally extending the pandas and IPython Magics APIs.
+        
+        ### Optional Arguments
+        There are two methods for passing optional arguments into a method.
+        1. The configuration file
+        2. Directly pass in the arguments when calling the method
+        
+        The variables saved in the configuration file serve as default arguments for the methods to use.
+        However, you tell the method to use different credentials by passing in arguments directly. The method will use the passed in arguments 
+        instead of the default arguments saved in `configuration_profiles.yml`. 
+        
+        For example, if I had the `database` variable saved in the `configuration_profiles.yml` as `database_1`, but passed in `database = database_2` directly into the method,
+        the method would use `database_2` instead of `database_1`. 
+        
+        However, if I choose to not directly pass a `database` argument in, the method will use the 
+        `database_1` because it is the default. The passed in arguments take priority over the default variables saved in `configuration_profiles.yml`.
+        ### IPython Magics
+        #### %%sql_to_snowflake
+        IPython Cell Magic to seamlessly connect to Snowflake and run a query in Snowflake and return a pandas DataFrame as the result.
+        ```
+        %%sql_to_snowflake [<destination_var>] [--username <snowflake_username>]
+                           [--password <snowflake_password>] [--account <snowflake_account>]
+                           [--role <snowflake_role>] [--warehouse <snowflake_warehouse>]
+        <SQL query>
+        ```
+        #### Parameters
+            * <destination_var> (Optional [IPython line argument]): 
+                Variable to store the query results. If none is given, the magic will return
+                the first 10 rows of the pandas DataFrame if applicable.
+        
+            * --params <params> (Optional [IPython line argument]):
+                Parameters to be used in the SQL Query. Params must be passed in as a 
+                dictionary string in the format {"param_name": "param_value"} or reference a 
+                dictionary string defined in a previous cell. The use of the parameter in the 
+                query should be indicated with {{param_name}}.
+        
+            * --username <username> (Optional [IPython line argument]):
+                If provided, the called method will connect to Snowflake with this username 
+                instead of the default in the configuration file.
+            
+            * --password <password> (Optional [IPython line argument]):
+                If provided, the called method will connect to Snowflake with this password
+                instead of the default in the configuration file.
+        
+            * --account <account> (Optional [IPython line argument]):
+                If provided, the called method will connect to Snowflake with this account 
+                instead of the default in the configuration file.
+        
+            * --role <role> (Optional [IPython line argument]):
+                If provided, the called method will connect to Snowflake with this role 
+                instead of the default in the configuration file.
+        
+            * --warehouse <warehouse> (Optional [IPython line argument]):
+                If provided, the called method will use this warehouse instead of the 
+                default in the configuration file.
+        
+        ### write_snowflake
+        ```python
+        pd.DataFrame.cloudy_sql.write_snowflake(table: str, 
+                                                database: str = None, 
+                                                schema: str = None, 
+                                                overwrite: bool = False, 
+                                                username: str = None,
+                                                password: str = None, 
+                                                account: str = None, 
+                                                role: str = None, 
+                                                warehouse: str = None
+                                               )
+        ```
+        This method writes to a Snowflake table and informs you on success. This method works when writing to either an existing Snowflake table or a previously non-existing Snowflake table. 
+        If the table that you provide does not exist, this method creates a new Snowflake table and writes to it. If the table already exists, the DataFrame data is 
+        appended to the existing table by default. If you would like to replace the table with the pandas DataFrame
+        set `overwrite = True` when calling the method. You can configure your `database` and `schema` default values in the configuration file. You can also pass them in directly when calling the method.
+        The passed in values are used instead of the defaults in the configuration file.
+        
+        The goal of this method is to be used in tandem with `%%sql_to_snowflake`. You use the magic function to run your SQL query
+        that returns a pandas DataFrame. Then, you can transform the DataFrame and write the DataFrame to a Snowflake using this method.
+        
+        
+        ## Examples
+        
+        __Using `%%sql_to_snowflake` magic and `write_snowflake` method__
+        ```
+        In [1]:  %load_ext cloudy_sql
+        
+        In [2]:  %%sql_to_snowflake df 
+                 SELECT * from db.schema.table
+                 
+                 Query successfully ran and results were stored to the 'df' destination variable.
+        
+        In [3]:  df.head()
+        Out[3]:  
+                 CUSTOMER_ID	FIRST_NAME	LAST_NAME	FIRST_ORDER_DATE	MOST_RECENT_ORDER_DATE	NUMBER_OF_ORDERS
+             0   	   1	   Michael	       P.	      2018-01-01	            2018-02-10	               2
+             1   	   2	     Shawn	       M.	      2018-01-11	            2018-01-11	               1
+             2   	   3	  Kathleen	       P.	      2018-01-02	            2018-03-11	               3
+             3   	   4	     Jimmy	       C.	            None	                  None	               0
+             4   	   5	 Katherine	       R.	            None	                  None	               0
+             
+        In [4]: df.cloudy_sql.write_snowflake(table="test_cloudy_sql")
+        
+                Successfully wrote to the test_cloudy_sql Snowflake table
+        
+        In [5]: %%sql_to_snowflake
+                drop table if exists db.schema.test_cloudy_sql
+                
+                Successfully ran SQL Query in Snowflake
+                
+        In [6]: %close_connection
+        ```
+        The above example runs a SQL query with `%%sql_to_snowflake` and saves the results as a pandas DataFrame by passing
+        in the destination variable `df`. The example then shows how to easily write that `df` to a Snowflake table `In [4]`. Also, the created table is dropped `In [5]`.
+        The connection is then closed by calling the `%close_connection` magic `In [6]`.
+        
+        __Using `%%sql_to_snowflake` magic with the `--params` inline argument__
+        ```
+        In [1]:  %load_ext cloudy_sql
+        
+        In [2]:  parameters = {'firstname': 'Michael', 'orders': '2'}
+                 
+        In [3]:  %%sql_to_snowflake --params $parameters
+                 SELECT * from db.schema.table
+                 WHERE FIRST_NAME = {{firstname}} and NUMBER_OF_ORDERS = {{orders}}
+        Out[3]:  
+                 CUSTOMER_ID	FIRST_NAME	LAST_NAME	FIRST_ORDER_DATE	MOST_RECENT_ORDER_DATE	NUMBER_OF_ORDERS
+             0   	   1	   Michael	       P.	      2018-01-01	            2018-02-10	               2
+             
+        ```
+        The above example runs a SQL query with passed-in variables. The variables are used directly in the SQL query by placing each one inside `{{  }}`. A dictionary string `parameters` is passed in when the 
+        magic is called by including a `--params` inline argument and placing a `$` to reference the dictionary string creating in the previous cell. There is no specified `destination variable`. Therefore, the magic prints out the resulting pandas dataframe.
+        
+        __Using `%%sql_to_snowflake` magic with the `--params` inline argument__
+        ```
+        In [1]:  %load_ext cloudy_sql
+                 
+        In [2]:  %%sql_to_snowflake --params {'firstname': 'Michael', 'orders': '2'}
+                 SELECT * from db.schema.table
+                 WHERE FIRST_NAME = {{firstname}} and NUMBER_OF_ORDERS = {{orders}}
+        Out[2]:  
+                 CUSTOMER_ID	FIRST_NAME	LAST_NAME	FIRST_ORDER_DATE	MOST_RECENT_ORDER_DATE	NUMBER_OF_ORDERS
+             0   	   1	   Michael	       P.	      2018-01-01	            2018-02-10	               2
+             
+        ```
+        This example directly passes in the dictionary string when calling the `--params` inline argument.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

@@ -1,0 +1,17 @@
+README.md
+setup.py
+cloudy_sql/__init__.py
+cloudy_sql.egg-info/PKG-INFO
+cloudy_sql.egg-info/SOURCES.txt
+cloudy_sql.egg-info/dependency_links.txt
+cloudy_sql.egg-info/requires.txt
+cloudy_sql.egg-info/top_level.txt
+cloudy_sql/magics/__init__.py
+cloudy_sql/magics/sql_to_snowflake.py
+cloudy_sql/parse/__init__.py
+cloudy_sql/parse/arg_parser.py
+cloudy_sql/snowflake_objects/__init__.py
+cloudy_sql/snowflake_objects/snowflake_object.py
+cloudy_sql/snowflake_objects/write_snowflake.py
+tests/__init__.py
+tests/test_arg_parser.py
