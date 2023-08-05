@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+target_bigquery/__init__.py
+target_bigquery/schema.py
+target_bigquery_partition.egg-info/PKG-INFO
+target_bigquery_partition.egg-info/SOURCES.txt
+target_bigquery_partition.egg-info/dependency_links.txt
+target_bigquery_partition.egg-info/entry_points.txt
+target_bigquery_partition.egg-info/requires.txt
+target_bigquery_partition.egg-info/top_level.txt

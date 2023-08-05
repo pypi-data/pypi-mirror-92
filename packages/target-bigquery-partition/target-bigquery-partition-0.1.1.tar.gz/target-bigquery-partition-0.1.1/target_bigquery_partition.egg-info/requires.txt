@@ -1,0 +1,5 @@
+google-api-python-client>=1.6.2
+google-cloud-bigquery==1.16.0
+setuptools>=40.3.0
+simplejson==3.11.1
+singer-python>=5.2.0
