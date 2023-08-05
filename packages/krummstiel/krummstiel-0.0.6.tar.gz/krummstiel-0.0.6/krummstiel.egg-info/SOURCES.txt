@@ -1,0 +1,8 @@
+setup.py
+krummstiel/__init__.py
+krummstiel/krummstiel.py
+krummstiel.egg-info/PKG-INFO
+krummstiel.egg-info/SOURCES.txt
+krummstiel.egg-info/dependency_links.txt
+krummstiel.egg-info/entry_points.txt
+krummstiel.egg-info/top_level.txt
