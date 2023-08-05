@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: sitemap42
+Version: 2021.1.17
+Summary: sitemap generator
+Home-page: https://github.com/andrewp-as-is/sitemap42.py
+License: Unlicense
+Description: <!--
+        https://readme42.com
+        -->
+        
+        
+        [![](https://img.shields.io/pypi/v/sitemap42.svg?maxAge=3600)](https://pypi.org/project/sitemap42/)
+        [![](https://img.shields.io/badge/License-Unlicense-blue.svg?longCache=True)](https://unlicense.org/)
+        
+        ### Installation
+        ```bash
+        $ [sudo] pip install sitemap42
+        ```
+        
+        #### Examples
+        ```python
+        from sitemap42 import Sitemap
+        
+        sitemap = Sitemap()
+        sitemap.append('https://domain.com/page1', )
+        sitemap.append('https://domain.com/page2', changefreq='daily', priority=0.5, lastmod=datetime.now())
+        
+        sitemap.tostring()
+        sitemap.write('sitemap.xml')
+        ```
+        
+        ```python
+        from sitemap42 import Sitemapindex
+        
+        sitemapindex = Sitemap()
+        sitemapindex.append('https://domain.com/sitemap1.xml')
+        sitemapindex.append('https://domain.com/sitemap2.xml', lastmod=datetime.now())
+        ```
+        
+        #### Links
+        +   [Sitemaps XML format](https://www.sitemaps.org/protocol.html)
+        
+        <p align="center">
+            <a href="https://readme42.com/">readme42.com</a>
+        </p>
+Keywords: sitemap
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
