@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyReconcile
+Version: 0.0.3
+Summary: A reconciliation loop system.
+Home-page: https://gitlab.com/cunruh3760/pyreconcile
+Author: Charles Unruh
+Author-email: charles.unruh.dev@gmail.com
+License: UNKNOWN
+Description: # pyReconcile
+        
+        pyReconcile is a library providing a reconciliation loop system for enabling declarative configuration of arbitrary systems.
+        
+        You bring the systems, the state representations, and the actions to modify them, and this brings the glue to put it all together.
+        
+        ## Installaion
+        
+        ## Usage
+        See two-lists.py for an example of a built around mutating one list into another.
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        ## License
+        [Mozilla Public License, v2.0](http://mozilla.org/MPL/2.0/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6.8
+Description-Content-Type: text/markdown
