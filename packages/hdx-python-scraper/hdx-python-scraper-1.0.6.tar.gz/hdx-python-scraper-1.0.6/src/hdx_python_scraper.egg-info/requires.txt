@@ -1,0 +1,7 @@
+hdx-python-api>=4.8.5
+olefile
+pygsheets
+regex
+
+[pandas]
+pandas
