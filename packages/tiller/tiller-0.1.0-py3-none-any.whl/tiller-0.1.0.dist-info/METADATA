@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tiller
+Version: 0.1.0
+Summary: A small example sailboat plugin.
+Home-page: https://github.com/cole-wilson/tiller
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: none
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sailboat
+
+# Tiller
+A small example sailboat plugin.
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
