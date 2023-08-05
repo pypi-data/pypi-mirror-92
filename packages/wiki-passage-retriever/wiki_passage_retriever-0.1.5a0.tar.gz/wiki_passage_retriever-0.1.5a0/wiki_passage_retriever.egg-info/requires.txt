@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+torch
+transformers
+click
+annoy
+nltk
