@@ -1,0 +1,78 @@
+Author: Tormod Volden
+    core: raise ValueError if no matching interface is found (#350)
+    
+    Otherwise the type check for claim_interface will fail and the
+    error message is less helpful.
+    
+    Signed-off-by: Tormod Volden <debian.tormod@gmail.com>
+Author: Jonas Malaco
+    tree: update copyright notice
+
+Author: Jonas Malaco
+    interop: automatically UTF-8 encode strings in as_array
+    
+    Restores previous/documented behavior.
+    
+    Closes: #346 ("usb._interop.as_array should accept strings")
+
+Author: Jonas Malaco
+    tox: enable Python 3.9 testing with tox
+
+Author: petemyron
+    docs: README: add mac OS installation instructions (#352)
+    
+
+Author: Tim Gates
+    docs: fix simple typo, respectivelly -> respectively (#349)
+    
+    There is a small typo in usb/backend/__init__.py.
+    
+    Should read `respectively` rather than `respectivelly`.
+Author: Jonas Malaco
+    deploy: generate, sign and upload a Python wheel in addition to the sdist
+    
+    Related: #337 ("setup.py failure")
+
+Author: Jonas Malaco
+    interop: fix call to deprecated and now removed array.fromstring
+    
+    Closes: #338 ("[_interop.py] Migrate to 3.9 compatibility.")
+
+Author: Jonas Malaco
+    ci: add Python 3.9, drop Python 2.7/3.5
+
+Author: Jonas Malaco
+    libusb1: discard partial prototypes if previous load failed
+    
+    If loading libusb1 failed, perhaps due to a missing symbol, a second
+    call to libusb1.get_backend would reuse partially constructed prototypes
+    and return an unsound _LibUSB instance.[1]
+    
+    To fix this, remove the previous optimization and load/setup the library
+    every time.
+    
+    [1] https://github.com/pyusb/pyusb/issues/333#issuecomment-710688807
+    
+    Related: #333 ("show_devices() segfaults when run twice")
+
+Author: Jonas Malaco
+    Merge #332: support pytest (disables currently unsuable hardware tests)
+    
+    From ap--/pyusb: pytest-compat-simple.
+Author: Andreas Poehlmann
+    tests: minimal changeset for pytest support
+    
+    This commit allows to use pytest for testing.
+    NOTE: It removes parts of the testsuite that require a special USB device.
+
+Author: Jonas Malaco
+    Merge #329: readme: link to FAQ
+    
+
+Author: clach04
+    Link to FAQ
+Author: Jonas Malaco
+    readme: do some minor clean up
+
+Author: Jonas Malaco
+    deploy: don't pin remote to origin or delete dist/
