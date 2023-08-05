@@ -1,0 +1,7 @@
+muffin>=0.41.10
+sentry-sdk>=0.19.5
+
+[tests]
+anyio
+trio
+pytest
