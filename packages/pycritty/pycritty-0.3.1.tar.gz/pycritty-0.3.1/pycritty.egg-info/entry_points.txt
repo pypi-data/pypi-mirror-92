@@ -1,0 +1,3 @@
+[console_scripts]
+pycritty = pycritty.main:main
+
