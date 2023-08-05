@@ -1,0 +1,13 @@
+wmc/__init__.py,sha256=1Er_zHDx9-mn0myvvJNKi5MsZA_SA1FjclFuRZ9NngY,231
+wmc/__main__.py,sha256=YCa13_IvBiGR386N_StyLtE0T_lNWy0OgjHs38CwGFY,135
+wmc/cli.py,sha256=QbolDJnVQdd1USAgJe8OeQick0vax2nMjKdXb-VNUYA,2373
+wmc/dispatch.py,sha256=smQV1gZ6w4Ls9aOd23zUIiK-hYz6aKpjjn88yV15RVs,1267
+wmc/utils.py,sha256=F7OWivlbUNmZkURVXePL5E4OKqkdfh0MFSMviFTO1DM,2718
+wmc/commands/__init__.py,sha256=5iZvWzCqDStmGQGtDb0FaM2KQ1a26wqKLPKfStthtxc,1866
+wmc/commands/record.py,sha256=yneZH6MWtvXPFuWg8YcgJf_zeoIYTxG0gJU00TOVNkE,2832
+wmc-0.3.3.dist-info/LICENSE,sha256=fl-XSmW9Mwk8HnuEcmyiq1u75lo6PU_e0RIGO8sPaC0,1069
+wmc-0.3.3.dist-info/METADATA,sha256=DD_NLMbADAXuNKmsILy234-tdzs6Ol4HXXyrOHZoU2o,5643
+wmc-0.3.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wmc-0.3.3.dist-info/entry_points.txt,sha256=cdRNaKhyZFqH0BvAJJJSe_KNpGDCLPlBMcA75F3Fq-I,164
+wmc-0.3.3.dist-info/top_level.txt,sha256=ggaIwwyoFuXoMDEAoSvYD9milkzqLgzj0zwCnivpEYE,4
+wmc-0.3.3.dist-info/RECORD,,
