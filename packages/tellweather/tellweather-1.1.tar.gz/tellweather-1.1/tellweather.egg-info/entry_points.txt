@@ -1,0 +1,3 @@
+[console_scripts]
+tellweather = tellweather.cli:main
+

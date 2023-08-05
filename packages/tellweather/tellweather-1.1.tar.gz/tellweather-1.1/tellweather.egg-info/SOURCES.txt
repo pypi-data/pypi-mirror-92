@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tellweather/cli.py
+tellweather/utils.py
+tellweather.egg-info/PKG-INFO
+tellweather.egg-info/SOURCES.txt
+tellweather.egg-info/dependency_links.txt
+tellweather.egg-info/entry_points.txt
+tellweather.egg-info/requires.txt
+tellweather.egg-info/top_level.txt
