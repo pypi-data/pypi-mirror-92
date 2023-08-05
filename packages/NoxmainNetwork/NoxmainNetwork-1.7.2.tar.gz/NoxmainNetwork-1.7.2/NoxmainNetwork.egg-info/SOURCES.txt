@@ -1,0 +1,7 @@
+README.md
+setup.py
+NoxmainNetwork/__init__.py
+NoxmainNetwork.egg-info/PKG-INFO
+NoxmainNetwork.egg-info/SOURCES.txt
+NoxmainNetwork.egg-info/dependency_links.txt
+NoxmainNetwork.egg-info/top_level.txt
