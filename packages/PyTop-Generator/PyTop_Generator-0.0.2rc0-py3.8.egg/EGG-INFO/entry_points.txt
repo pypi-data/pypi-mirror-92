@@ -1,0 +1,3 @@
+[console_scripts]
+add_this_to_desktop = desktop_file_generator.generator:automatic
+

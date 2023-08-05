@@ -1,0 +1,8 @@
+README.md
+README.rst
+setup.py
+PyTop_Generator.egg-info/PKG-INFO
+PyTop_Generator.egg-info/SOURCES.txt
+PyTop_Generator.egg-info/dependency_links.txt
+PyTop_Generator.egg-info/entry_points.txt
+PyTop_Generator.egg-info/top_level.txt
