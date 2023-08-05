@@ -1,0 +1,40 @@
+# -- igwn-accounting source package -------------
+
+Source: igwn-accounting
+Section: python
+Priority: optional
+Maintainer: Duncan Macleod <duncan.macleod@ligo.org>
+Standards-Version: 4.2.1
+X-Python3-Version: >= 3.5
+Homepage: https://git.ligo.org/duncanmmacleod/igwn-accounting
+Build-Depends:
+ debhelper (>= 9),
+ dh-python,
+ python3-all,
+ python3-argparse-manpage | help2man,
+ python3-condor | htcondor,
+ python3-dateutil,
+ python3-setuptools,
+
+# -- python3-igwn-accounting --------------------
+
+Package: python3-igwn-accounting
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-condor | htcondor,
+ python3-dateutil,
+Description: IGWN Accounting tools
+ The Python 3 IGWN Accounting library.
+
+# -- ciecp-utils --------------------------------------------------------------
+
+Package: igwn-accounting
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ python3-igwn-accounting (= ${binary:Version}),
+Description: Command-line utilities for IGWN Accounting
+ The IGWN Accounting command-line utilities

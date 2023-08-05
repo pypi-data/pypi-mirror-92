@@ -1,0 +1,4 @@
+include LICENSE README.md MANIFEST.in
+include igwn-accounting.spec
+recursive-include debian *
+recursive-include igwn_accounting/tests *txt
