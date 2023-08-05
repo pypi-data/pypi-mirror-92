@@ -1,0 +1,7 @@
+scipy
+numpy
+joblib
+scikit-learn
+pandas
+pydantic
+xgboost
