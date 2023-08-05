@@ -1,0 +1,3 @@
+[console_scripts]
+takeonme=takeonme.cli:cli
+

@@ -1,0 +1,14 @@
+takeonme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takeonme/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takeonme/aws/commands.py,sha256=htbT9fF9bIw36avFYIOeul_K5vT5UWTzZ7v8XAJ-Oew,1014
+takeonme/aws/route53.py,sha256=93Gka3_pIe2EiBGVzFpq0n179y0gviPW5CEFDHrR4Yo,1274
+takeonme/cli.py,sha256=_yTHuYMaLvlXhczWUeJ333G7UjHN63IPYh60l7pd0IA,419
+takeonme/dns_util.py,sha256=JI7-NrfzgkjUF-q6NboK1SER7E2wQAuhjtM33UK1Gck,694
+takeonme/gcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+takeonme/gcp/cloud_dns.py,sha256=vHhopQ-fTxg47XaFBzm5h2ZfUCArPs93obTm3mjifsQ,2686
+takeonme/gcp/commands.py,sha256=uXrR1jMl1e3EUy3Mb2DaV8F6B6OQuIDQCIfdVuNBcAY,1031
+takeonme-0.2.0.dist-info/entry_points.txt,sha256=ehNYoHaN9dK297d44lAmWp5UIxMEVzSHbgN5eTDYY0Q,45
+takeonme-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+takeonme-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+takeonme-0.2.0.dist-info/METADATA,sha256=mxs1mbhmKB-NmvBAcsfX8OKdB-PD7bdHNkE_twmdwEM,575
+takeonme-0.2.0.dist-info/RECORD,,
