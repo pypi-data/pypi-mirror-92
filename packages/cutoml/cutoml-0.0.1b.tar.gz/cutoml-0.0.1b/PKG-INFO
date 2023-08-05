@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: cutoml
+Version: 0.0.1b
+Summary: A lightweight automl framework for classification/regression tasks
+Home-page: https://github.com/omkarudawant/CutoML
+Author: Omkar Udawant
+Author-email: omkarudawant97@gmail.com
+License: gpl-3.0
+Download-URL: https://github.com/omkarudawant/CutoML/archive/0.0.1b.tar.gz
+Description: UNKNOWN
+Keywords: automl,pipeline optimization,hyperparameter optimization,data science,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
