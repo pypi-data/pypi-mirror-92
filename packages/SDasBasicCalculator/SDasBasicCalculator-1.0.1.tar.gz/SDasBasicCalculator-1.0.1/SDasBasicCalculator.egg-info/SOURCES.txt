@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+SDasBasicCalculator/__init__.py
+SDasBasicCalculator.egg-info/PKG-INFO
+SDasBasicCalculator.egg-info/SOURCES.txt
+SDasBasicCalculator.egg-info/dependency_links.txt
+SDasBasicCalculator.egg-info/requires.txt
+SDasBasicCalculator.egg-info/top_level.txt

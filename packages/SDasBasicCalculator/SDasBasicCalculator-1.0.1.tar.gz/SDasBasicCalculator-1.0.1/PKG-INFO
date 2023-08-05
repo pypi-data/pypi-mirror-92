@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: SDasBasicCalculator
+Version: 1.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: Subhayan Das
+Author-email: nips.subhayan@gmail.com
+License: MIT
+Description: # Basic Calculator
+        
+        This is my first python package. This is a very simple calculator that takes 2 numbers and can either add, subtract, multiply or divide them.
+        
+        # Installation
+        
+        Run the following  to install :
+        
+        ```python
+        pip install SDasBasicCalculator 
+        ```
+        
+        ## Usage
+        
+        ```python
+        from SDasBasicCalculator import add_num
+        from SDasBasicCalculator import sub_num
+        from SDasBasicCalculator import mul_num
+        from SDasBasicCalculator import div_num
+        ```
+        
+        
+        
+        #### Add 2 numbers:
+        
+        add_num(*num1*, *num2*)
+        
+        #### Subtract2 numbers:
+        
+        sub_num(*num1*, *num2*)
+        
+        #### Multiply 2 numbers:
+        
+        mul_num(*num1*, *num2*)
+        
+        #### Divide 2 numbers:
+        
+        add_num(*num1*, *num2*)
+        
+        ## Developing Basic Calculator
+        
+        To install Basic Calculator, along with the tools you need to develop and run tests, run the following in your virtualenv:
+        
+        ```bash
+        $pip install -e .[dev]
+        ```
+        
+        
+        CHANGE LOG
+        ==========
+        
+        1.0.1 (20/01/2021)
+        ------------------
+        -FIRST RELEASE
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: dev
