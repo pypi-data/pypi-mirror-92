@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: exitter
+Version: 1.1.2
+Summary: A package which helps you code the exit loop in python
+Home-page: https://github.com/Pranay-Chopra/exitter
+Author: Pranay Chopra
+Author-email: pranaychopra2007@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=1.1
+Description-Content-Type: text/markdown
+
+# Exitter
+
+This is a simple example package which helps you write an exit code for your python projects in no time.
+Just import it, use 'exitter.bye()' or 'bye()' if you have used 'from exitter import bye' and call the current function in the program after using the 'exitter.bye()' or 'bye()' commands. Useful only for console-based programs.
+Check out [My GitHub](https://github.com/Pranay-Chopra)
+
