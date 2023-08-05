@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: mqtt-ws-bridge
+Version: 0.1.1
+Summary: Websocket to TCP Bridge for MQTT
+Home-page: https://github.com/mossblaser/mqtt_ws_bridge
+Author: Jonathan Heathcote
+Author-email: UNKNOWN
+License: GPLv2
+Description: UNKNOWN
+Keywords: mqtt websockets
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
