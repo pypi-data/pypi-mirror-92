@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: numericalmethodsJB
+Version: 0.0.1
+Summary: A library containing numerical methods to solve problems computationally
+Home-page: https://github.com/javierb07/numerical-methodspip install check-manifest
+Author: Javier Belmonte
+Author-email: javierbelmonte07@gmail.com
+License: UNKNOWN
+Description: # Numerical Methods in Python
+        A collection of numerical methods to solve scientific problems using a computer
+        
+        ## Usage
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

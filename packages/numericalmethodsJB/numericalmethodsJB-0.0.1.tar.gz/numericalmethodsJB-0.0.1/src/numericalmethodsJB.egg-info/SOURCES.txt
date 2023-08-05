@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/rootfinding.py
+src/numericalmethodsJB.egg-info/PKG-INFO
+src/numericalmethodsJB.egg-info/SOURCES.txt
+src/numericalmethodsJB.egg-info/dependency_links.txt
+src/numericalmethodsJB.egg-info/top_level.txt
