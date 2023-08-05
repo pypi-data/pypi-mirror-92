@@ -1,0 +1,57 @@
+.TH igwn-accounting-report "1" Manual
+.SH NAME
+igwn-accounting-report \- generate a condor usage report
+.SH SYNOPSIS
+.B igwn-accounting-report
+[-h] [-v] [-V] -c CLUSTER [-s [SCHEDULERS ...]] [-p POOL] [-u UTC] [-o OUTPUT_FILE] [-f {json,ascii}] [-j JOBS] [-w]
+.SH DESCRIPTION
+Generate a report of IGWN Computing Grid usage for a 24\-hour period.
+.SH OPTIONS
+
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+show verbose output
+
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+show version number and exit
+
+.TP
+\fB\-c\fR \fI\,CLUSTER\/\fR, \fB\-\-cluster\fR \fI\,CLUSTER\/\fR
+computing centre from which the accounting data comes (required)
+
+.TP
+\fB\-s\fR [\fI\,SCHEDULERS\/\fR ...], \fB\-\-schedulers\fR [\fI\,SCHEDULERS\/\fR ...]
+schedulers to query, multiple arguments can be given
+
+.TP
+\fB\-p\fR \fI\,POOL\/\fR, \fB\-\-pool\fR \fI\,POOL\/\fR
+name of collector to query
+
+.TP
+\fB\-u\fR \fI\,UTC\/\fR, \fB\-\-utc\fR \fI\,UTC\/\fR
+UTC date to query
+
+.TP
+\fB\-o\fR \fI\,OUTPUT_FILE\/\fR, \fB\-\-output\-file\fR \fI\,OUTPUT_FILE\/\fR
+path of file to write output into
+
+.TP
+\fB\-f\fR {json,ascii}, \fB\-\-format\fR {json,ascii}
+output format
+
+.TP
+\fB\-j\fR \fI\,JOBS\/\fR, \fB\-\-jobs\fR \fI\,JOBS\/\fR
+number of processes to use
+
+.TP
+\fB\-w\fR, \fB\-\-warn\-on\-error\fR
+only print a warning when history queries fail rather than erroring
+
+.SH AUTHORS
+.B igwn\-accounting
+was written by Duncan Macleod <duncan.macleod@ligo.org>.
+.SH DISTRIBUTION
+The latest version of igwn\-accounting may be downloaded from
+.UR https://accounting.ligo.org
+.UE

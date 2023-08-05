@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: igwn-accounting
+Version: 1.0.0
+Summary: IGWN Computing accounting tools
+Home-page: https://accounting.ligo.org
+Author: Duncan Macleod
+Author-email: duncan.macleod@ligo.org
+License: Apache-2.0
+Keywords: physics,astronomy,htcondor,gravitational-waves,kagra,ligo,virgo
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.5
+Requires-Dist: htcondor
+Requires-Dist: python-dateutil
+
+# IGWN Accounting
+
+This small python package provides tools for accounting for
+computing usage on the IGWN Computing Grid.
+
+## Accounting reports
+
+The `igwn-accounting-report` script can be used to generate ASCII-formatted
+reports.
+
+### Accounting report format
+
+Accounting reports submitted for inclusion in the IGWN accounting must be in
+plain ASCII with the following space-separated columns
+
+```
+USERNAME ACCOUNTING_TAG CPU_HOURS YYYY-MM-DD CLUSTER
+```
+
+None of the data should include string quotes of any kind, and the `CLUSTER`
+string should be pre-registerd with the central IGWN accounting.
+For example:
+
+```
+duncan.macleod igwn.dev.o4.computing.accounting 12345 2021-01-01 ARCCA-CDF
+```
+
+

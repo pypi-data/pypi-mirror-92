@@ -1,0 +1,3 @@
+[console_scripts]
+igwn-accounting-report = igwn_accounting.report:main
+
