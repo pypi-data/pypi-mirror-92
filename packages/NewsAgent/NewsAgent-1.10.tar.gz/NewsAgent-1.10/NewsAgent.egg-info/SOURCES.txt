@@ -1,0 +1,12 @@
+README.md
+setup.py
+NewsAgent/__init__.py
+NewsAgent/__main__.py
+NewsAgent/agent.py
+NewsAgent/destinations.py
+NewsAgent/newsitems.py
+NewsAgent/sources.py
+NewsAgent.egg-info/PKG-INFO
+NewsAgent.egg-info/SOURCES.txt
+NewsAgent.egg-info/dependency_links.txt
+NewsAgent.egg-info/top_level.txt

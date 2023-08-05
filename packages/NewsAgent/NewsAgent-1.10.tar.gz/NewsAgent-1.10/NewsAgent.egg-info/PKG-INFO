@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: NewsAgent
+Version: 1.10
+Summary: A News Agent
+Home-page: https://github.com/pypa/sampleproject
+Author: Allen
+Author-email: allen.haha@hotmail.com
+License: UNKNOWN
+Description: This is a simple news agent program that collects news from lots of different sources and distributes them to lots of different destinations
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
