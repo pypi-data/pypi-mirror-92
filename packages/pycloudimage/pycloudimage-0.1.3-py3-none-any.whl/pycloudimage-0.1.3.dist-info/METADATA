@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pycloudimage
+Version: 0.1.3
+Summary: Get Cloud Image from Internet
+Home-page: https://gitee.com/timefiles/pycloudimage
+Author: TimeStudio
+Author-email: sjgzszg@163.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: pytz
+
+# PyCloudImage 0.1.1
+
+## 介绍
+
+ 强大的获取卫星云图的工具 
+
+## 例子
+
+```python
+from pycloudimage import *
+#显示最新的风云四号A星全彩圆盘图
+FY4A_DISK.getlatest().show()
+```
+
+
+
