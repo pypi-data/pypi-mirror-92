@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: srlife
+Version: 1.0.3
+Summary: Evaluate the structural life of a solar receiver
+Home-page: https://github.com/Argonne-National-Laboratory/srlife
+Author: Argonne National Laboratory
+Author-email: messner@anl.gov
+License: UNKNOWN
+Keywords: materials structures modeling
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.18)
+Requires-Dist: scipy
+Requires-Dist: h5py
+Requires-Dist: nose
+Requires-Dist: matplotlib
+Requires-Dist: pylint
+Requires-Dist: neml
+Requires-Dist: scikit-fem
+Requires-Dist: meshio
+Requires-Dist: networkx
+Requires-Dist: tqdm
+Requires-Dist: multiprocess
+Requires-Dist: dill
+Requires-Dist: vtk ; platform_system != "Darwin"
+
+# srlife: solar receiver life estimation tool
+
+![Test Status](https://github.com/Argonne-National-Laboratory/srlife/workflows/tests/badge.svg?branch=master) ![Documentation Status](https://readthedocs.org/projects/srlife/badge/?version=latest)
+
+This python package evaluates the structural life of tubular solar receivers against
+creep rupture, fatigue, and creep-fatigue damage modes.
+
+Full documentation is available [here](https://srlife.readthedocs.io/).
+
+## Prerequisites
+
+The package itself is pure python, however it relies on several additional
+python packages listed in [requirements.txt](requirements.txt).
+Note that srlife uses Python3.
+
+Of these additional requirements, only [neml](https://github.com/Argonne-National-Laboratory/neml)
+is difficult to install as currently the maintainers do not provide binary packages.
+See the installation instructions in the full documentation for how to install srlife and dependencies.
+
+## License
+
+The package is provided under an MIT license found in the
+[LICENSE](LICENSE) file.
+
+
