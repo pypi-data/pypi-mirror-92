@@ -1,0 +1,3 @@
+[console_scripts]
+Pymars_india = Pymars_india.__main__:main
+
