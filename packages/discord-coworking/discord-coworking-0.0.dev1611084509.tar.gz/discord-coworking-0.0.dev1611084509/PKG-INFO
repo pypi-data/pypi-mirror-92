@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: discord-coworking
+Version: 0.0.dev1611084509
+Summary: Discord coworking server management toolkit
+Home-page: UNKNOWN
+Author: Ettore Leandro Tognoli
+Author-email: ettoreleandrotognoli@gmail.com
+License: Apache License 2.0
+Description: # Discord Coworking
+        
+        ---
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
