@@ -1,0 +1,2 @@
+pytket~=0.6
+Qulacs~=0.2
