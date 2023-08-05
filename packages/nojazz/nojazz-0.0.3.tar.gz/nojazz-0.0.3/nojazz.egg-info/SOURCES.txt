@@ -1,0 +1,10 @@
+README.md
+setup.py
+nojazz/__init__.py
+nojazz/pandas.py
+nojazz/sqlite.py
+nojazz.egg-info/PKG-INFO
+nojazz.egg-info/SOURCES.txt
+nojazz.egg-info/dependency_links.txt
+nojazz.egg-info/requires.txt
+nojazz.egg-info/top_level.txt
