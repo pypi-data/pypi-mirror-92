@@ -1,0 +1,10 @@
+quip_spreadsheet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quip_spreadsheet/quip.py,sha256=Yf9Td7xSAyxKLSJjh4gRQ90D4kRY2L08XhLcrGM9r6w,16381
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/constants.py,sha256=BE77nDHF2wjPRiZ862FE04LqpTnN6kD_fnnhKj1iyS8,6195
+tests/test_quip_client.py,sha256=gEyYcqCPBBX11MVghptHu8Ou2tzq05r10QctGSKScOQ,23688
+quip_spreadsheet-0.5.0b2.dist-info/LICENSE,sha256=wgJ7G9kxGOn_gSYCnEruypWYWxzag82SQO4TQhW8fI4,1070
+quip_spreadsheet-0.5.0b2.dist-info/METADATA,sha256=ZpONV9n10up8PYa4-nAWjT-OUN3Try7IcNCvDxj9Szs,2291
+quip_spreadsheet-0.5.0b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quip_spreadsheet-0.5.0b2.dist-info/top_level.txt,sha256=sC91Gli8PlUItpOK_odbk1Bo3Z8YVn0vPm_AdDbG3L4,23
+quip_spreadsheet-0.5.0b2.dist-info/RECORD,,
