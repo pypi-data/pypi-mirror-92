@@ -1,0 +1,7 @@
+README.md
+setup.py
+diracnet.egg-info/PKG-INFO
+diracnet.egg-info/SOURCES.txt
+diracnet.egg-info/dependency_links.txt
+diracnet.egg-info/requires.txt
+diracnet.egg-info/top_level.txt

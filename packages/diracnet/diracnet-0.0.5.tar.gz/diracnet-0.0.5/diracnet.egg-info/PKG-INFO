@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: diracnet
+Version: 0.0.5
+Summary: Pseudo implementation of Ferminet based on PyTorch | 基于PyTorch的Ferminet伪实现
+Home-page: https://github.com/llxlr/diracnet
+Author: llxlr
+Author-email: i@xhlr.top
+License: Apache 2.0
+Description: # Diracnet
+        Pseudo implementation of Ferminet based on PyTorch | 基于PyTorch的Ferminet伪实现
+        
+Platform: any
+Description-Content-Type: text/markdown
+Provides-Extra: torch
