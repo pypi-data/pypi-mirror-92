@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pycno/__init__.py
+pycno.egg-info/PKG-INFO
+pycno.egg-info/SOURCES.txt
+pycno.egg-info/dependency_links.txt
+pycno.egg-info/requires.txt
+pycno.egg-info/top_level.txt
+pycno/data/MWDB_Coasts_Countries_3.cnob
+pycno/data/README.md
+pycno/data/test.cno
+pycno/data/test.cnob
+pycno/tests/__init__.py
+pycno/tests/test_cno.py
