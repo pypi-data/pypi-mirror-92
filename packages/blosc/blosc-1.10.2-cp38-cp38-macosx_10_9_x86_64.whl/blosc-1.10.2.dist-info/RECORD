@@ -1,0 +1,17 @@
+blosc/__init__.py,sha256=0M6x7yKdv40txmLDFVswkJcbl6k0k77OXEO2MRYqMH0,2241
+blosc/blosc_extension.cpython-38-darwin.so,sha256=dNtsUyNeVgqv4cLgfKsb191aJBqVBawis4B9t48FLuU,1054920
+blosc/test.py,sha256=spETwYLw6zVTIm8dvVLIUfIak9MtggPPYaDxLIMrCSM,15303
+blosc/toplevel.py,sha256=ZaBWAExQ2hiDvpUr1ULxwaq81SK-bFVFZQ1hfbnBUqk,23276
+blosc/version.py,sha256=GM4QdiF0_-fWO8sMouJ5ZAAKDp1-TUDnUAF7FBD77AY,23
+blosc-1.10.2.data/data/include/blosc-export.h,sha256=NYRdplvRO0thB1IRbYwMrnA88iqGoAdXQTPDW8g5WyA,1639
+blosc-1.10.2.data/data/include/blosc.h,sha256=0MmhZ7iBQLdRBhWTRayaTKYojufARkIHP_-tKhn7gDU,19565
+blosc-1.10.2.data/data/lib/libblosc.1.21.0.dylib,sha256=QT5ka_axysvTaIsz3c4E1YciPXACotBZXbDa3osRY4o,1087496
+blosc-1.10.2.data/data/lib/libblosc.1.dylib,sha256=QT5ka_axysvTaIsz3c4E1YciPXACotBZXbDa3osRY4o,1087496
+blosc-1.10.2.data/data/lib/libblosc.a,sha256=gHX-MDIi8lnv-kdO-Pu7a36A06o48RwXFdIsEJkiLCM,1190680
+blosc-1.10.2.data/data/lib/libblosc.dylib,sha256=QT5ka_axysvTaIsz3c4E1YciPXACotBZXbDa3osRY4o,1087496
+blosc-1.10.2.data/data/lib/pkgconfig/blosc.pc,sha256=4VhzGSe2c4-AvL9pgzfy1Pub9VzNKwRcNe1yK0tuifc,432
+blosc-1.10.2.dist-info/LICENSE.txt,sha256=fk_2mKMhq2x5QG4SjL86ak2w1v9nb-4LMXzSlVWlko4,1885
+blosc-1.10.2.dist-info/METADATA,sha256=ChH5VNSfItKQohrL5BrxpvmCejngSWrARc2Nkqi5XMY,16281
+blosc-1.10.2.dist-info/WHEEL,sha256=zohm8VNggQ0upBkDRB5UeXSG8sb4NcSRZ3lgqfr_KE8,103
+blosc-1.10.2.dist-info/top_level.txt,sha256=KJ6p1UrBVgNo0AdML7ikuWa5_3GxnWjppvba__D-ZhM,6
+blosc-1.10.2.dist-info/RECORD,,
