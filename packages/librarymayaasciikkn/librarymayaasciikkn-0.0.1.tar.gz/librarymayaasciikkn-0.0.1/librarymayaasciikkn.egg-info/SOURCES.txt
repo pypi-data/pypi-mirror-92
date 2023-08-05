@@ -1,0 +1,7 @@
+README.txt
+setup.py
+librarymayaasciikkn/__init__.py
+librarymayaasciikkn.egg-info/PKG-INFO
+librarymayaasciikkn.egg-info/SOURCES.txt
+librarymayaasciikkn.egg-info/dependency_links.txt
+librarymayaasciikkn.egg-info/top_level.txt
