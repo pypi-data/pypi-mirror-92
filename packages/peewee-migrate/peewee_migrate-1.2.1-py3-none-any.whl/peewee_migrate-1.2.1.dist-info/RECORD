@@ -1,0 +1,14 @@
+peewee_migrate/__init__.py,sha256=QwybaUKSsnK06k-7d3popkVb1HeohbZvK1lpZn8_SkY,684
+peewee_migrate/__main__.py,sha256=QU_R-xINUz57FT8jRLw9AAEm2iE5qfxv_kb3LfOS8UY,51
+peewee_migrate/auto.py,sha256=2XrKkCVX6gpcbdhmTnB6yJwHmz-VjJOL1HUuO-X7XmY,8182
+peewee_migrate/cli.py,sha256=KcyOkrXJRF9Lst5Nsibwx_TXH1Otx4ZpczQi5x-HMFA,5072
+peewee_migrate/compat.py,sha256=e3Wn6b2MnyB_OrZ55-tHyi7KdC5U0-KyE4GXul5YAFo,5714
+peewee_migrate/migrator.py,sha256=E1x9hnkOVLxQEj0sKvd6kytrFLChoEywP8PyS0H8dQQ,12101
+peewee_migrate/router.py,sha256=Kp5FjrN5qVb6ej7GIfKMDkK4ABcpTcCqCsSXtc1k7vM,11183
+peewee_migrate/template.txt,sha256=4ZZ6f2J4IP4TBeuPDKku0BLf_CUKYOEWOzpP_YekfRE,1461
+peewee_migrate-1.2.1.dist-info/LICENSE,sha256=Iy0A5NdYcJhbtb6XJTFXo6lWGQP33gmHiZwPQOv5NtQ,1484
+peewee_migrate-1.2.1.dist-info/METADATA,sha256=3La6H3kArixqeFIfmKJOs-3NLnVwLH1DwnS5oMbLuro,5599
+peewee_migrate-1.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+peewee_migrate-1.2.1.dist-info/entry_points.txt,sha256=cfx3wXzh9YJofg6cYb71HDBwNv4_x1Lm6NrTWvYwgIQ,55
+peewee_migrate-1.2.1.dist-info/top_level.txt,sha256=UbA-B0RoOYXUsMhVIV1sa9P0V5HnGdPfwCtg0HcIszU,15
+peewee_migrate-1.2.1.dist-info/RECORD,,
