@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+Setup.py
+setup.py
+craterstudiotask/__init__.py
+craterstudiotask.egg-info/PKG-INFO
+craterstudiotask.egg-info/SOURCES.txt
+craterstudiotask.egg-info/dependency_links.txt
+craterstudiotask.egg-info/top_level.txt
