@@ -1,0 +1,10 @@
+README.md
+setup.py
+extraEncodings/__init__.py
+extraEncodings/ciphers.py
+extraEncodings/encodings.py
+extraEncodings/encodingsGui.py
+extraEncodings.egg-info/PKG-INFO
+extraEncodings.egg-info/SOURCES.txt
+extraEncodings.egg-info/dependency_links.txt
+extraEncodings.egg-info/top_level.txt

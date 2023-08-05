@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: extraEncodings
+Version: 1.5.7.2
+Summary: Extra text encodings and encoders.
+Home-page: UNKNOWN
+Author: codecode
+Author-email: code80191@gmail.com
+License: UNKNOWN
+Description: # Extra encodings for Python 
+        #### Full documentation available at [sites.google.com](https://sites.google.com/view/extra-encodings-docs/)
+        Final Major Release.
+        3 months of thinking and work.
+        Thank you.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
