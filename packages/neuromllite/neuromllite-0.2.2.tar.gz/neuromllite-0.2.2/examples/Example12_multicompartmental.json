@@ -1,0 +1,83 @@
+{
+    "Example12_multicompartmental": {
+        "version": "NeuroMLlite v0.2.1",
+        "seed": 7890,
+        "temperature": 32.0,
+        "parameters": {
+            "N_pyr": 5,
+            "input_amp1": 0.3,
+            "input_amp2": -0.2
+        },
+        "notes": "Example 12: testing with multicompartmental cells...",
+        "cells": [
+            {
+                "pyr_4_sym": {
+                    "neuroml2_source_file": "test_files/acnet2/pyr_4_sym.cell.nml"
+                }
+            }
+        ],
+        "input_sources": [
+            {
+                "poissonFiringSyn": {
+                    "neuroml2_source_file": "test_files/inputs.nml"
+                }
+            },
+            {
+                "i_clamp1": {
+                    "pynn_input": "DCSource",
+                    "parameters": {
+                        "amplitude": "input_amp1",
+                        "start": 100,
+                        "stop": 300
+                    }
+                }
+            },
+            {
+                "i_clamp2": {
+                    "pynn_input": "DCSource",
+                    "parameters": {
+                        "amplitude": "input_amp2",
+                        "start": 500,
+                        "stop": 800
+                    }
+                }
+            }
+        ],
+        "regions": [
+            {
+                "region1": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "width": 1000.0,
+                    "height": 100.0,
+                    "depth": 1000.0
+                }
+            }
+        ],
+        "populations": [
+            {
+                "popPyr": {
+                    "size": "N_pyr",
+                    "component": "pyr_4_sym",
+                    "properties": {
+                        "color": ".7 0 0"
+                    },
+                    "random_layout": {
+                        "region": "region1"
+                    }
+                }
+            }
+        ],
+        "inputs": [
+            {
+                "stim": {
+                    "input_source": "poissonFiringSyn",
+                    "population": "popPyr",
+                    "percentage": 100.0,
+                    "segment_ids": "[3,8]"
+                }
+            }
+        ]
+    }
+}
