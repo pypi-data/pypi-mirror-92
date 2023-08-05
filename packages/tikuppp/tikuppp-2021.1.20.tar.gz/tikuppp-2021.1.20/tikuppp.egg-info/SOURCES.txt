@@ -1,0 +1,11 @@
+README.md
+setup.py
+tikup/__init__.py
+tikup/argparser.py
+tikup/tikup.py
+tikuppp.egg-info/PKG-INFO
+tikuppp.egg-info/SOURCES.txt
+tikuppp.egg-info/dependency_links.txt
+tikuppp.egg-info/entry_points.txt
+tikuppp.egg-info/requires.txt
+tikuppp.egg-info/top_level.txt
