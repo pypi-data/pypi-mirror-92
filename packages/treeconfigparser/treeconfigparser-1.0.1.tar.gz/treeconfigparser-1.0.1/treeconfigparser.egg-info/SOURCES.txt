@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+treeconfigparser/__init__.py
+treeconfigparser.egg-info/PKG-INFO
+treeconfigparser.egg-info/SOURCES.txt
+treeconfigparser.egg-info/dependency_links.txt
+treeconfigparser.egg-info/requires.txt
+treeconfigparser.egg-info/top_level.txt
