@@ -1,0 +1,10 @@
+paretoset/__init__.py,sha256=58zq6siO6JKiDYhchV_elWOQiXJvumTip2NQUBWMB0Y,680
+paretoset/algorithms_numba.py,sha256=5sBR1kVORSW0p0Es_nbCJK1qw2lHHoPkoN2puX7pbq8,8953
+paretoset/algorithms_numpy.py,sha256=RjYAJMSyTgXtVndrzgJQRD1Swd4fznURkE8pNV-6gGc,7358
+paretoset/user_interface.py,sha256=-lUW2Qhtzfm9_oMZeBGKmAhza2XFZNlubg3gRxpJios,9560
+paretoset/utils.py,sha256=9T1TKoLxJRLYXjl2v1sWHrLcFAbLV5Ew0Qegeh0cfVE,2554
+paretoset-1.2.0.dist-info/LICENSE,sha256=QZIuV0etvkDx3-UDaAvB3TcOHOZDqzIVZxIF52cITBY,1062
+paretoset-1.2.0.dist-info/METADATA,sha256=tnVWr0sPCf40o_6BdVLtP8W9plk-cM9sN2FOOnbRj5E,4907
+paretoset-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+paretoset-1.2.0.dist-info/top_level.txt,sha256=a8-EUSBgI_GtEJCp1OVz2Sp_fQ6h-CyweBj7m-3lezk,10
+paretoset-1.2.0.dist-info/RECORD,,
