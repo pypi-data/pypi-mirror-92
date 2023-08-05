@@ -1,0 +1,18 @@
+README.md
+setup.py
+witcher/FileChooser.py
+witcher/ImageToCartoon.py
+witcher/Recommender.py
+witcher/StockMarket.py
+witcher/__init__.py
+witcher - Copy/FileChooser.py
+witcher - Copy/ImageToCartoon.py
+witcher - Copy/Recommender.py
+witcher - Copy/StockMarket.py
+witcher - Copy/__init__.py
+witcher.egg-info/PKG-INFO
+witcher.egg-info/SOURCES.txt
+witcher.egg-info/dependency_links.txt
+witcher.egg-info/not-zip-safe
+witcher.egg-info/requires.txt
+witcher.egg-info/top_level.txt
