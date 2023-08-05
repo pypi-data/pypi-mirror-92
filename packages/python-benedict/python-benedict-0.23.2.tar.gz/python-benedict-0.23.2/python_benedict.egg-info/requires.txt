@@ -1,0 +1,16 @@
+mailchecker
+phonenumbers
+python-dateutil
+python-fsutil
+python-slugify
+pyyaml
+requests
+six
+toml
+xmltodict
+
+[:python_version < "3.4"]
+ftfy==4.4.3
+
+[:python_version > "2.7"]
+ftfy
