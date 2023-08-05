@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pytest-mat-report
+Version: 0.0.1
+Summary: this is report
+Author: 解释
+Author-email: xieshi@forchange.tech
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
