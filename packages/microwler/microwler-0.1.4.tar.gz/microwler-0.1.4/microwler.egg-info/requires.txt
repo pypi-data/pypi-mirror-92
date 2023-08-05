@@ -1,0 +1,10 @@
+aiohttp
+lxml
+diskcache
+prettytable
+quart
+random-user-agent
+html-text
+completely
+click
+parsel
