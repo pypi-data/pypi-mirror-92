@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: schwifty
+Version: 2021.1.0
+Summary: Validate/generate IBANs and BICs
+Home-page: http://github.com/mdomke/schwifty
+Author: Martin Domke
+Author-email: mail@martindomke.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: iso3166
+Requires-Dist: pycountry
+
+README.rst
+
+
