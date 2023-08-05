@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "skippex"
+version = "0.2.4"
+description = "Automatic 'skip intro' for Plex with Chromecast support"
+authors = ["sprt <hellosprt@gmail.com>"]
+license = "MPL-2.0"
+readme = "README.md"
+repository = "https://github.com/sprt/skippex"
+keywords = ["plex", "chromecast", "mediaserver"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Multimedia :: Video",
+]
+
+[tool.poetry.scripts]
+skippex = 'skippex.cmd:main'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+PlexAPI = "^4.2.0"
+requests = "^2.25.1"
+websocket_client = "^0.57.0"
+PyChromecast = "^7.7.1"
+wrapt = "^1.12.1"
+zeroconf = "^0.28.8"
+dataclasses = { version = "^0.7", python = "<3.7" }
+typing-extensions = "^3.7.4"
+xdg = "^5.0.1"
+pid = "^3.0.4"
+
+[tool.poetry.dev-dependencies]
+ipython = "<7.17"  # Python 3.6 support was removed in v7.17.
+pytest = "^6.2.1"
+tox = "^3.21.1"
+tox-poetry-dev-dependencies = "^0.0.9"
+subprocess-tee = "^0.2.0"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    # https://github.com/home-assistant-libs/pychromecast/issues/447
+    'ignore:Call to deprecated create function:DeprecationWarning:pychromecast',
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
