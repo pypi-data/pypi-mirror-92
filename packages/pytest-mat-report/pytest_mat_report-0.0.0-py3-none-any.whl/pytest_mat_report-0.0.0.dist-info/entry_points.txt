@@ -1,0 +1,3 @@
+[pytest11]
+mat_report=pytest_mat_report.plugin
+
