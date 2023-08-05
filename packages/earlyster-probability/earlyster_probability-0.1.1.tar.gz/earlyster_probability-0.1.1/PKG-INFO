@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: earlyster_probability
+Version: 0.1.1
+Summary: A Binomial and Gaussian Distribution Probability Library
+Home-page: https://github.com/earlyster/earlyster_probability
+Author: Justin Early
+Author-email: earlyster@gmail.com
+License: MIT
+Description: earlyster_probability
+        =====================
+        
+        .. image:: https://img.shields.io/pypi/v/earlyster_probability.svg
+            :target: https://pypi.python.org/pypi/earlyster_probability
+            :alt: Latest PyPI version
+        
+        
+        Binomial and Gaussian Distribution Probability Library
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `earlyster_probability` was written by `Justin Early <earlyster@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
