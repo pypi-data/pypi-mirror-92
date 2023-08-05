@@ -1,0 +1,8 @@
+lowpy/__init__.py,sha256=ziCYt7dRTT1MIrlEdXZ6w42wuyVIvqNAhlnOXHki38U,59
+lowpy/dense.py,sha256=r_PV3RU-TCDtS-Y8ZXh1j2Ama_J7d-2cRgsGhR88B9A,7879
+lowpy/sequential.py,sha256=0GU9UCXDZvjTcPhBdPAIklTUEbFK53cNT1vjly17jRk,7205
+lowpy-0.0.3.dist-info/LICENSE,sha256=h96GODHjSKo5VFT1VyMI39HjhTyYVRTgQOiXEgcYINM,1071
+lowpy-0.0.3.dist-info/METADATA,sha256=wgOa24qWhXTLSr_pNg3vaMZbDie9YRJ5SaaM2sg2ndk,1606
+lowpy-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lowpy-0.0.3.dist-info/top_level.txt,sha256=mEuS8NdJlstIgHLstvIWG5uKfAca3WWpGJCE6t-GbMU,6
+lowpy-0.0.3.dist-info/RECORD,,
