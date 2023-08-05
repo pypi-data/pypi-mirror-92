@@ -1,0 +1,12 @@
+pleroma_bot/__init__.py,sha256=vQrWJblTxfeMG8s53vviCdZVjBLT46rVLinYS32T6pQ,1028
+pleroma_bot/_pin.py,sha256=p359RB9DQ36xRDNZhfgKYZlZ17sZwkWR3wugInxJpxs,4203
+pleroma_bot/_pleroma.py,sha256=FMTHguAbAisZdT5vIMP7EvzIwUWRHp86ggw0SbYRTlo,8101
+pleroma_bot/_twitter.py,sha256=vxG4GD6UNUnH5PTtIwsg6qBqiAbLJiQt8eVcU-JQ37I,6447
+pleroma_bot/_utils.py,sha256=TKmK4ZbUfoH9ykU5k_zd_nCdK7vGx4KcVRM5zY18TE8,15036
+pleroma_bot/cli.py,sha256=vT-R5nC0NSEYVimvs8QDlCZ5aYxgGsXQoGapxqFngKM,11055
+pleroma_bot-0.7.0.dist-info/LICENSE.md,sha256=LegKjrFvmNGhOuw7BxOpJr_xkycA6My-5WW1OEhk-sA,1126
+pleroma_bot-0.7.0.dist-info/METADATA,sha256=w_R44pd0wbgMb0wSKBz89QGeQ8MSt9-B1zlsIzIGlFk,12118
+pleroma_bot-0.7.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pleroma_bot-0.7.0.dist-info/entry_points.txt,sha256=j52YZLWjrW6_b6Glnrc7dqjE5o3-xv_Xnk94Y-K7RGk,54
+pleroma_bot-0.7.0.dist-info/top_level.txt,sha256=eK4rVsHGx7dTb-zp0q49ga2PFLCTh7wcnb1vfTxHIf0,12
+pleroma_bot-0.7.0.dist-info/RECORD,,
