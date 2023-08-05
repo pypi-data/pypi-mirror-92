@@ -1,0 +1,11 @@
+colorama
+SQLObject
+sh
+tabulate
+tqdm
+typer
+
+[dev]
+black
+wheel
+twine
