@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: numpygraph
+Version: 0.0.1.3
+Summary: A small example package
+Home-page: https://github.com/hp027/numpygraph
+Author: hp027
+Author-email: hp027@foxmail.com
+License: UNKNOWN
+Description: # 快速开始
+        * spark_benchmark.ipynb 为数据准备脚本  
+        * python3 -m litegraph.importer.importer-node /data/workspace/litegraph/data/graphset.csv/ /data/workspace/litegraph/data/graph 数据导入bash
+        
+        
+        # litegraph 的理想场景，理论状态
+        
+        
+        ## 理想场景：    
+        * 保证包的精简，不需要dameon服务， 能直接以package的形式嵌入到服务和实验阶段  
+        * 保证上线压力最小，颗粒度最低（虚机， 容器均可运行），避免多用户接入后存在集群运维压力， 可线性扩展；  
+        * 单机部署， 最低核心数要求限制， 最低内存限制；代码包依赖度低  
+        * 方案选用为：  
+            ***核心数据结构（list， dict） 均使用 numpy memmap 来实现；特点在于***
+            1. np memmap 适合服务冷启动， 不需要任何服务初始化即可直接开始采样， 点查询。  
+            2. np memmap 天生合理利用操作系统的pagecache， 同时和np memory原生方法一致， 互转效率高；  
+            3. 后续tf， torch 也是原生以来numpy的， 整个路径非常native；（numpy_memap(in disk) <-> numpy_memory(in memory)<->torch tensor(in GPU))  
+            ***dict 使用批量存取***  
+            ***针对耗时hash计算过程， 尝试改为cpu或者gpu（充分利用gpu， 除了建模阶段， 对数据导入也有增益）的类MPI操作***
+        
+        
+        # 现有 importer 逻辑
+        1. relationship2indexarray   
+            对 relation_*.csv 做 lines2idxarr 转换，因为多文件， 多核心的操作， 该阶段结束后产生大量小片段文件
+            优化手段包括：
+                node_id hash直接映射方式，写快读快
+                随机batch保证cpu的充分使用
+                使用预统计方法， 对高频节点， 低频节点使用不同的重排列方法
+                numpy_in_memory to numpy_in_memmap 控制磁盘交换节奏
+        
+        2. merge_index_array_then_sort  
+            对一阶段产生的小文件做排序和整合， 里面包括三个小的阶段
+                1. 对非高频节点做重排， 整合
+                2. 对高频节点直接做整合
+                3. 对节点邻居位的起始点和长度做记录
+            自此， 我们已经有了 [[hid, index, length], ...] 记录表
+        
+        3. hid_idx_merge  
+            此阶段将 list [[hid, index, length], ...] 转换为 dict {hid:(index, length)} 结构
+        
+        **整个importer阶段算结束了**  
+        自此， 针对任意采样 可使用 hash("NODE_primary_key") -> dict中查询index， length -> np.random(range(length), sample_length) 来获取其邻居节点的采样结果
+        
+        # 中间数据
+        ## Input:
+        * /data/workspace/litegraph/data/graphset # hdfs准备好的文件和边文件
+        * /data/workspace/litegraph/data/graphset.csv # 节点和边文件整合
+        * /data/workspace/litegraph/data/graph # 中间处理文件 + 图文件
+            - /data/workspace/litegraph/data/graph/relation_*.idxarr/hid_48_event_id.idxarr.chunk_5.0
+            命名格式: hid_{HID_SHORT}_event_id.idxarr.chunk_{CHUNK_ID}.{ARRAYLIST_ID} 
+            功能: 低频节点，按照type和short_hid的形式切分数据， 将边转换为from->to结构
+            数据结构: numpylist<('from', np.int64), ('to', np.int64)> -> numpylist<('from', np.int64), ('to', np.int64), ('timestamp', np.int32)> 带时间戳的低频节点边索引表
+            - /data/workspace/litegraph/data/graph/relation_*.idxarr/freq_edges/hid_9078059443032260526_app_id.idxarr.chunk_7.0
+            命名格式: hid_{HID}_app_id.idxarr.chunk_{CHUNK_ID}.{ARRAYLIST_ID}
+            功能: 高频节点，按照type和short_hid的形式切分数据， 将边转换为from->to结构，
+            数据结构: numpylist<('to', np.int64)>  -> numpylist<('to', np.int64), ('timestamp', np.int32)> 带时间戳的高频节点边索引表
+            - /data/workspace/litegraph/data/graph/edges_sort/hid_8_se_property.idx.arr
+            命名格式: hid_{HID_SHORT}_se_property.idx.arr # sorted
+            功能: 索引
+            数据结构: numpylist<('hid', 'start_index', 'length')>
+            - /data/workspace/litegraph/data/graph/edges_sort/concat.to.arr
+            命名格式: concat.to.arr
+            功能: 出度对应的节点列表
+            数据结构: numpylist<'hid(to)'> -> numpylist<'hid(to),(timestamp, np.int32)'> # 带时间戳的边索引表
+            - /data/workspace/litegraph/data/graph/edges_mapper/hid_60.dict.arr
+            命名格式: hid_60.dict.arr
+            功能: 节点的边索引
+            数据结构: numpydict<'hid':('start_index':'length')>
+            节点属性表
+            numpydict<hid:(cursor, np.int64)>
+        
+        ## Output: 
+        
+        # 后续阶段需要补上的功能包括：
+        1. 当前只涉及到节点的导入， 节点的特征暂时未涉及， 考虑的结构为类Euler， 即暂时只支持（boolean， int， float）；以struct 结构组织到numpy memmap中，直接硬盘存储和采样， 对于文本存在两种情况，   
+            1. 文本为label， 转换为index   
+            2. 文本为描述， 整个计算过程不需要任何参与， 存储结构为，【文件ID， 开始指针， 文本长度】， 这样可以避免文本数据的二次存储， 同时既然不参与计算而是参与呈现，只会涉及1000条/s以下的返回， 这对硬盘io而言是够用了  
+        
+        2. 瓶颈分析， 导入过程hid的GPU计算  
+        3. 和tigergraph， neo4j，hugegraph 的 benchmark 评估（包括时间， cpu/mem峰值， 最后存盘文件的大小， 采样速度）  
+            
+        
+            
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

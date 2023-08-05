@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: numpygraph
+Version: 0.0.1.3
+Summary: A small example package
+Home-page: https://github.com/hp027/numpygraph
+Author: hp027
+Author-email: hp027@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+
+# 快速开始
+
+
+# litegraph 的理想场景，理论状态
+
+
+## 理想场景：    
+
+# 现有 importer 逻辑
+
+**整个importer阶段算结束了**  
+
+# 中间数据
+## Input:
+
+## Output: 
+
+# 后续阶段需要补上的功能包括：
+
+
+
+

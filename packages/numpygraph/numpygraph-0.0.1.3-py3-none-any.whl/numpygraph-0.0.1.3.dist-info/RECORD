@@ -1,0 +1,17 @@
+numpygraph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numpygraph/graph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numpygraph/graph/sampler.py,sha256=URzBNUULSVX9uAZf3nIcMcqdOKqYlBS1T0z4i_V4DO4,73
+numpygraph/importer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numpygraph/importer/importer.py,sha256=AYc4uHRtofNiKSH6C5tvOSUblTvqayFJ45hAz8jESqE,18279
+numpygraph/importer/importer_node.py,sha256=T40i4rb64x9eIGKBGoGAEgOx__iVsFvv3InXIQWRbUQ,28931
+numpygraph/importer/parser.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numpygraph/tools/__init__.py,sha256=MyE-ApkgM54vCzNj06WkLDKXmC7jfLMHWS6yJ-9h3tU,245
+numpygraph/tools/arraydict.py,sha256=St5ZrXi6z5y_97z-jM68cyzSiofiV_P_V_dtTSunQI8,8031
+numpygraph/tools/arraylist.py,sha256=ODSJABooSF8UBAxv991FfgVrVcVcynyERvZ08WEu7Vc,2647
+numpygraph/tools/fileshutil.py,sha256=lFtitJw0XKzu0Py2bvVUi9RhI0ipqikaZ63cNKoW6t8,2544
+numpygraph/tools/tools.py,sha256=pJzluPdy92_G_cmXOIDNUlPQoG3nGsAKc4ndFvqLIKs,2685
+numpygraph-0.0.1.3.dist-info/.ipynb_checkpoints/PKG-INFO-checkpoint,sha256=4gwkHK4vYb6Eg-CH7jgFG7u_yhK7qLhgGQusKcwt8R8,6375
+numpygraph-0.0.1.3.dist-info/METADATA,sha256=jnRz43OrizdmRPza3x1JqwvX4RrwrEAGuWWPqyI6Um0,687
+numpygraph-0.0.1.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+numpygraph-0.0.1.3.dist-info/top_level.txt,sha256=VM0uph0YXuyE6W88Mjv7siisv9sKnpaQkGX-M1-U3o4,11
+numpygraph-0.0.1.3.dist-info/RECORD,,
