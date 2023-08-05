@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pdpp
+Version: 0.4.1
+Summary: Command line tool for automation, transparency, and reproducibility in data processing projects
+Home-page: http://networkslab.org
+Author: Pierson Browne, Rachel Wood, Tyler Crick, John McLevey
+Author-email: pbrowne88@gmail.com
+License: UNKNOWN
+Keywords: doit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: Click (>=7.0)
+Requires-Dist: doit (>=0.31.1)
+Requires-Dist: graphviz (>=0.10.1)
+Requires-Dist: networkx (>=2.2)
+Requires-Dist: pydot (>=1.4.1)
+Requires-Dist: pyyaml (>=5.3.1)
+Requires-Dist: questionary (>=1.0.2)
+
+UNKNOWN
+
+
