@@ -1,0 +1,7 @@
+setup.py
+huyufirst.egg-info/PKG-INFO
+huyufirst.egg-info/SOURCES.txt
+huyufirst.egg-info/dependency_links.txt
+huyufirst.egg-info/entry_points.txt
+huyufirst.egg-info/top_level.txt
+src/hello.py

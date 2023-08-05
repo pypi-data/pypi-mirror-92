@@ -1,0 +1,3 @@
+[console_scripts]
+huyufirst = src.hello:main
+
