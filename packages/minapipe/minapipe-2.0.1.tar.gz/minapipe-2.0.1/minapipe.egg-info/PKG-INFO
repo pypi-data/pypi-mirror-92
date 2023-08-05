@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: minapipe
+Version: 2.0.1
+Summary:  this first test pipe
+Home-page: https://www.innovsoltech.com/
+Author: mina adel
+Author-email: mina.adel@smarttechsys.com
+Maintainer: mina adel
+Maintainer-email: mina.adel@smarttechsys.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<3.9
+Provides-Extra: full
+Provides-Extra: gh-release-notes
+Provides-Extra: jieba
+Provides-Extra: spacy
+Provides-Extra: transformers
