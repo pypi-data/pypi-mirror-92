@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+target_couchbase/__init__.py
+target_couchbase/schema.py
+target_couchbase.egg-info/PKG-INFO
+target_couchbase.egg-info/SOURCES.txt
+target_couchbase.egg-info/dependency_links.txt
+target_couchbase.egg-info/entry_points.txt
+target_couchbase.egg-info/requires.txt
+target_couchbase.egg-info/top_level.txt
