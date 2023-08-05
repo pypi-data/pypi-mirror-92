@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: target-couchbase
+Version: 0.1.0
+Summary: Load data on Couchbase via singer.io
+Home-page: https://github.com/anelendata/target_couchbase
+Author: Daigo Tanaka, Anelen Co., LLC
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: couchbase (>=3.0.8)
+Requires-Dist: setuptools (>=40.3.0)
+Requires-Dist: simplejson (==3.11.1)
+Requires-Dist: singer-python (>=5.2.0)
+
+# target-couchbase
+
+## What is it
+
+This is a [Singer](https://singer.io) target that loads JSON-formatted data
+following the [Singer spec](https://github.com/singer-io/getting-started/blob/master/SPEC.md)
+to [Couchbase Server](https://docs.couchbase.com/home/server.html).
+
+## Install
+
+First, make sure Python 3.6 or higher is installed on your system or follow
+these  installation instructions for Mac or Ubuntu.
+
+```
+pip install -U couchbase
+pip install -U target-couchbase
+```
+
+Or you can install the lastest development version from GitHub:
+
+```
+pip install -U couchbase
+pip install --no-cache-dir https://github.com/anelendata/target-couchbase/archive/master.tar.gz#egg=target-couchbase
+```
+
+## Run
+
+### Step 1: Configure
+
+Create a file called target_config.json in your working directory, following
+this sample:
+
+```
+{
+    "cluster": "{{ your-couchbase-server.com }}:8091",
+    "username": "{{ couchbase_username }}",
+    "password": "{{ couchbase_password }}",
+    "bucket": "{{ your-bucket-name }}"
+}
+```
+
+## Run
+
+target-bigquery can be run with any Singer Target. As example, let use
+[tap-exchangeratesapi](https://github.com/singer-io/tap-exchangeratesapi).
+
+```
+pip install tap-exchangeratesapi
+```
+
+And create tap_config.json that looks like:
+
+```
+{
+    "base": "USD",
+    "start_date": "2021-01-11"
+}
+```
+(Adjust your start date. 7 days ago is recommended for the test)
+
+Run:
+
+```
+tap-exchangeratesapi -c tap_config.json | target-couchbase -c target_config.json
+```
+
+## Original repository
+
+- https://github.com/anelendata/target_couchbase
+
+---
+
+Copyright &copy; 2021 Anelen Co., LLC
+
+
