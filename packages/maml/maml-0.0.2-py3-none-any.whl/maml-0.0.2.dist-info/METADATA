@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: maml
+Version: 0.0.2
+Summary: maml is a machine learning library for materials science.
+Home-page: http://www.materialsvirtuallab.org
+Author: Materials Virtual Lab
+Author-email: ongsp@eng.ucsd.edu
+Maintainer: Shyue Ping Ong
+Maintainer-email: ongsp@eng.ucsd.edu
+License: BSD
+Keywords: materials,science,deep,learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: monty
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: pymatgen
+Requires-Dist: tqdm
+
+Maml, acronym for MAterials Machine Learning and pronounced mammal, is a machine learning 
+    library for materials science. It builds on top of pymatgen (Python Materials Genomics) materials analysis library
+and well-known machine learning/deep learning libraries like scikit-learn, Keras and Tensorflow. The aim is to link the power of both kinds of 
+libraries for rapid experimentation and learning of materials data.
+
