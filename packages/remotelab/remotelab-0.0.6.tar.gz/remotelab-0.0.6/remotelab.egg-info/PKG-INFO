@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: remotelab
+Version: 0.0.6
+Summary: Simplified interaction library for Acrome Remote Lab products
+Home-page: UNKNOWN
+Author: Umut Ediz
+Author-email: umtedz@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
