@@ -1,0 +1,6 @@
+README.md
+setup.py
+mfperfquery.egg-info/PKG-INFO
+mfperfquery.egg-info/SOURCES.txt
+mfperfquery.egg-info/dependency_links.txt
+mfperfquery.egg-info/top_level.txt
