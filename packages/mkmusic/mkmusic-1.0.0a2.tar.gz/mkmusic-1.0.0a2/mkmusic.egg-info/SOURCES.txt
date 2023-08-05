@@ -1,0 +1,14 @@
+README.md
+setup.py
+mkmusic/__init__.py
+mkmusic/instrument.py
+mkmusic/mclass.py
+mkmusic/readfile.py
+mkmusic/table.py
+mkmusic/version.py
+mkmusic.egg-info/PKG-INFO
+mkmusic.egg-info/SOURCES.txt
+mkmusic.egg-info/dependency_links.txt
+mkmusic.egg-info/entry_points.txt
+mkmusic.egg-info/requires.txt
+mkmusic.egg-info/top_level.txt

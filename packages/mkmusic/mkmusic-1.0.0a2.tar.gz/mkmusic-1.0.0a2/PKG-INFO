@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mkmusic
+Version: 1.0.0a2
+Summary: Make your music with short code.
+Home-page: https://github.com/HCl-10/mkmusic
+Author: Hyperhydrochloric Acid
+Author-email: HCl_10@outlook.com
+License: UNKNOWN
+Description: # Mkmusic Compiler
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
