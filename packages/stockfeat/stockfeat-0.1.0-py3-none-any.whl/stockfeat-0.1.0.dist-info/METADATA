@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: stockfeat
+Version: 0.1.0
+Summary: Python package to create stock related features.
+Home-page: https://github.com/erdogant/stockfeat
+Author: Erdogan Taskesen
+Author-email: erdogant@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/erdogant/stockfeat/archive/0.1.0.tar.gz
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: wget
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: ta-lib
+
+# stockfeat
+
+[![Python](https://img.shields.io/pypi/pyversions/stockfeat)](https://img.shields.io/pypi/pyversions/stockfeat)
+[![PyPI Version](https://img.shields.io/pypi/v/stockfeat)](https://pypi.org/project/stockfeat/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/erdogant/stockfeat/blob/master/LICENSE)
+[![Coffee](https://img.shields.io/badge/coffee-black-grey.svg)](https://erdogant.github.io/donate/?currency=USD&amount=5)
+[![Github Forks](https://img.shields.io/github/forks/erdogant/stockfeat.svg)](https://github.com/erdogant/stockfeat/network)
+[![GitHub Open Issues](https://img.shields.io/github/issues/erdogant/stockfeat.svg)](https://github.com/erdogant/stockfeat/issues)
+[![Project Status](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
+[![Sphinx](https://img.shields.io/badge/Sphinx-Docs-blue)](https://erdogant.github.io/stockfeat/)
+[![Downloads](https://pepy.tech/badge/stockfeat/month)](https://pepy.tech/project/stockfeat/month)
+[![Downloads](https://pepy.tech/badge/stockfeat)](https://pepy.tech/project/stockfeat)
+
+* stockfeat is Python package
+
+### Installation
+* Install stockfeat from PyPI (recommended). stockfeat is compatible with Python 3.6+ and runs on Linux, MacOS X and Windows. 
+* A new environment can be created as following:
+
+```bash
+conda create -n env_stockfeat python=3.8
+conda activate env_stockfeat
+```
+
+```bash
+pip install stockfeat            # normal install
+pip install --upgrade stockfeat # or update if needed
+```
+
+* Alternatively, you can install from the GitHub source:
+```bash
+# Directly install from github source
+pip install -e git://github.com/erdogant/stockfeat.git@0.1.0#egg=master
+pip install git+https://github.com/erdogant/stockfeat#egg=master
+pip install git+https://github.com/erdogant/stockfeat
+
+# By cloning
+git clone https://github.com/erdogant/stockfeat.git
+cd stockfeat
+pip install -U .
+```  
+
+#### Import stockfeat package
+```python
+from stockfeat import stockfeat
+```
+
+#### Example:
+```python
+
+sf = stockfeat(col_open='Open', col_close='Close', col_volume='Volume', col_high='High', col_low='Low')
+df = sf.download_example()
+df = df.resample('D').mean()
+
+# Collect features
+X = sf.fit(df)
+```
+
+#### Citation
+Please cite stockfeat in your publications if this is useful for your research. Here is an example BibTeX entry:
+```BibTeX
+@misc{erdogant2020stockfeat,
+  title={stockfeat},
+  author={Erdogan Taskesen},
+  year={2020},
+  howpublished={\url{https://github.com/erdogant/stockfeat}},
+}
+```
+
+#### References
+* https://github.com/erdogant/stockfeat
+
+### Maintainer
+* Erdogan Taskesen, github: [erdogant](https://github.com/erdogant)
+* Contributions are welcome.
+* If you wish to buy me a <a href="https://erdogant.github.io/donate/?currency=USD&amount=5">Coffee</a> for this work, it is very appreciated :)
+	Star it if you like it!
+
+
