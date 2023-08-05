@@ -1,0 +1,15 @@
+gambaterm/__init__.py,sha256=9jRVm2gCiDxGHfum8z9JBVNCkzjdCHJ0OApdD8C7SiM,47
+gambaterm/__main__.py,sha256=HqTU1dKliKwnkZ0HQ6V_m7BZ-UtwhrHgU_JThkkxe8w,2783
+gambaterm/_gambatte.cpython-36m-darwin.so,sha256=eHjnhJs8vIyyG5tugSUDDuCi9q_OczjyjyfUg0jCoW0,555312
+gambaterm/audio.py,sha256=TPAqo1u_xky9Wi6bOwpKZKf-3SfvUGQKhocuPx5NAuA,2460
+gambaterm/colors.py,sha256=NA4Kf24pe5nZFAGZHy1v4zSWKo5HW0aQVnpWTipGRV8,1617
+gambaterm/inputs.py,sha256=yxnL4GwCcVz8FO56JBlrMnk7m4GlpOYn-I_u9IFXOZM,981
+gambaterm/run.py,sha256=E0G5xxKyKoNILD2JJocdf3gCZOb7IuApuv1oR7yCurI,4569
+gambaterm/ssh.py,sha256=SkpweEAFzzDxz7QPANnTild6VSEmMA5fFAfaQ4hlnVc,8608
+gambaterm/xinput.py,sha256=hp2VEYhRzqrsJ5BRfaSHyW3EKUtbNasp18L7vZBekiw,4644
+gambaterm-0.1.2.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+gambaterm-0.1.2.dist-info/METADATA,sha256=ZaVY2XsUpBmb88_DwzG4bHtS5vD3YgxhJoGoNInFNl4,567
+gambaterm-0.1.2.dist-info/WHEEL,sha256=SCcPaD1xriZouD6EXl7AgcYiQmH1NgiskymVTsykSG4,110
+gambaterm-0.1.2.dist-info/entry_points.txt,sha256=7YdC7iurXz2viGrehaBJqDyOYTMYEW182HDL6eFK7sc,81
+gambaterm-0.1.2.dist-info/top_level.txt,sha256=pv5QEEtskFLAp5hwSs-NKE2SOf6xpvFJ5I0JJ7VNoDk,10
+gambaterm-0.1.2.dist-info/RECORD,,
