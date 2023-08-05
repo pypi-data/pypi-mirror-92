@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CB-ModernAPI
+Version: 0.1
+Summary: Module Wrapper for MordernMT API
+Home-page: UNKNOWN
+Author: Leynaïc Brisse
+Author-email: leynaic.brisse@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytest
+Requires-Dist: pyyaml
+Requires-Dist: requests
+
+UNKNOWN
+
+
