@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: renku-mls
+Version: 0.0.3
+Summary: Renku MLS plugin
+Home-page: UNKNOWN
+Author: Viktor Gal
+Author-email: viktor.gal@maeth.com
+License: Apache License 2.0
+Keywords: Renku MLS
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 4 - Beta
+Requires-Dist: mlschema-converters
+Requires-Dist: deepdiff
+Requires-Dist: renku (>=0.12.2)
+Requires-Dist: prettytable
+
+UNKNOWN
+
+
