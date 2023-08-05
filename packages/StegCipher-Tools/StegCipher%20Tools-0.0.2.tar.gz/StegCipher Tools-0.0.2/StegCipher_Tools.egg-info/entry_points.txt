@@ -1,0 +1,3 @@
+[console_scripts]
+credtools = Cred.__main__:main
+
