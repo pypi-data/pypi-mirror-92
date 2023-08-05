@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lunanlp
+Version: 1.0
+Summary: eds sdk
+Home-page: https://github.com/dugu9sword/lunanlp
+Author: dugu9sword
+Author-email: dugu9sword@163.com
+License: WTFPL Licence
+Keywords: luna
+Platform: any
+Requires-Dist: colorama
+Requires-Dist: arrow
+Requires-Dist: psutil
+Requires-Dist: numpy
+Requires-Dist: tabulate
+
+My tool for research
+
+
