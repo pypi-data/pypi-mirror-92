@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dbcli_mongo_redis
+Version: 0.1.2
+Summary: mcli & rcli.
+Home-page: https://github.com/orasul/dbcli
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Mongo cli and redis cli.
+Platform: UNKNOWN
