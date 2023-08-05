@@ -1,0 +1,11 @@
+email_testview/__init__.py,sha256=LVXNSag910qv2ME-5_Ia6DSW_kpH1MxeppX5lzfqkyQ,46
+email_testview/registry.py,sha256=MqhryQa_mdEVpcTo8ouQK6Xe5iUc__BB8VjNaGVraS8,895
+email_testview/urls.py,sha256=XbEMRVpGBqbM9mb6Nnp7BVDV8twQcLrlijPv9d-roBM,214
+email_testview/utils.py,sha256=nX2FHoj2fH1Bn448mfAbWVMPcvDUWkJ80i-tWA6Hm6s,1359
+email_testview/views.py,sha256=lNZ4hrMA5jGj9X9lBzVp7_WVycFZp0KzlakFgoKoUfs,1542
+email_testview/templates/email_testview/emails_view.html,sha256=_yfPmfXXi73LWqfQROgFTHAh0q7Vre2sL_ITuxcijuU,124
+django_email_testview-0.1.1.dist-info/LICENSE,sha256=zgyd_dkZgZFgbdw8qPkmh2Xt1GJD4MI18uEiYSUQhsg,1085
+django_email_testview-0.1.1.dist-info/METADATA,sha256=iLJCZ-r6_PA28PMojfGu_vZetjGIWK-1Vbwd9Yer4Xs,7497
+django_email_testview-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_email_testview-0.1.1.dist-info/top_level.txt,sha256=C_RoBliHoHWaqeCjZflLDdGxOoKpudmRD3dtSoDGmSA,15
+django_email_testview-0.1.1.dist-info/RECORD,,
