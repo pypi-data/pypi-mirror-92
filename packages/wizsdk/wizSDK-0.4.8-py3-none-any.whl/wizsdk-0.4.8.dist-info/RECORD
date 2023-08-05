@@ -1,0 +1,15 @@
+wizsdk/__init__.py,sha256=gr27fz3PCqiRtFpV6dwa-QI0_ag-LLx-nxlfbFxt8wg,756
+wizsdk/battle.py,sha256=hqD2jYmA0-boTJLTI72WN3Wdp5q35L43o1KpJvqy_CE,5003
+wizsdk/card.py,sha256=zzPhP7f3eZPUrC_wfAlufZXHfy8KKNc7pWzRxDwbjYM,2273
+wizsdk/client.py,sha256=HJj8OtHCqZ40Q_88DbayzKAnCTviTkGj40bOwgPR-Mg,22194
+wizsdk/images/confirm.png,sha256=UM0RuQn6QB-Y4IIZAacC_m5xC8WMISY3Y_9J-tqtS9Y,1021
+wizsdk/images/enemy-first.png,sha256=_IyizVklk2DUpmKlvvrEhYxzUsicTMxqU0fD7VRfYgI,3110
+wizsdk/images/x.png,sha256=o_YYgQVluE3YDlvOdAoBMfyBPLRJRteVHkonpST7xt8,1749
+wizsdk/keyboard.py,sha256=mOkTrUEJ-2gu2RXGM1WhyzLP0vsV49jzEeLbCMYWVvQ,1502
+wizsdk/mouse.py,sha256=NHiOtcqAJjXFZEkNRVQAILQdC0ltjOm4JtFh0ONqp1c,7889
+wizsdk/pixels.py,sha256=zkeJRX9DzQAN8nRQreqb9PS3m-c2eDW9vgM_-wdexA0,7675
+wizsdk/utils.py,sha256=KhfQOSt10kcMFqJtp-EEN5Eg5RUN6-mwoyfuw34bmAA,2261
+wizsdk/window.py,sha256=8dmxp-JFRMT3fxdNtFbyA_gouJyWwbGB_uF4AK5Z1CE,1449
+wizsdk-0.4.8.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+wizsdk-0.4.8.dist-info/METADATA,sha256=DKz2R3JGRDXW4M8BFB17BBs4Xag-e1tyd8fEhtizIrM,1618
+wizsdk-0.4.8.dist-info/RECORD,,
