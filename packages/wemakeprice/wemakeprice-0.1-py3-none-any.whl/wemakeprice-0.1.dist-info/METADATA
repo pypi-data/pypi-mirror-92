@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wemakeprice
+Version: 0.1
+Summary: Python wrapper for wemakeprice wapi
+Home-page: https://github.com/kyungdongseo/wemakeprice
+Author: kyungdong seo
+Author-email: kyungdongseo@gmail.com
+License: MIT
+Keywords: wemakeprice,api,wemakeprice open api,wapi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# wemakeprice
+
+
