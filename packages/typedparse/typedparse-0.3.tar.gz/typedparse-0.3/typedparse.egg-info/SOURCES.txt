@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+typedparse/__init__.py
+typedparse/argparse.py
+typedparse/parser.py
+typedparse/spec.py
+typedparse.egg-info/PKG-INFO
+typedparse.egg-info/SOURCES.txt
+typedparse.egg-info/dependency_links.txt
+typedparse.egg-info/requires.txt
+typedparse.egg-info/top_level.txt
