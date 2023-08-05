@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bionicipc
+Version: 1.0rc0
+Summary: Pretty simple RPC-like IPC proto
+Home-page: https://git.h3xco.de/h3xcode/bionicipc
+Author: h3xcode
+Author-email: me@h3xco.de
+License: UNKNOWN
+Description: [![Build Status](https://droneio.h3xc.ml/api/badges/h3xcode/bionic/status.svg)](https://droneio.h3xc.ml/h3xcode/bionic)
+        # Bionic IPC
+        Bionic will be fully documented soon, and the README will be finished, sorry :)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
