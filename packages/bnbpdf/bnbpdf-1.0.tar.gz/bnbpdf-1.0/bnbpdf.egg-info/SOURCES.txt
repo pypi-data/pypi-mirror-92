@@ -1,0 +1,9 @@
+README.md
+setup.py
+bnbpdf/__init__.py
+bnbpdf/pdf2image.py
+bnbpdf/pdf2text.py
+bnbpdf.egg-info/PKG-INFO
+bnbpdf.egg-info/SOURCES.txt
+bnbpdf.egg-info/dependency_links.txt
+bnbpdf.egg-info/top_level.txt
