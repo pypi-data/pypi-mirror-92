@@ -1,0 +1,11 @@
+README.md
+setup.py
+tcpyPI/__init__.py
+tcpyPI/constants.py
+tcpyPI/pi.py
+tcpyPI/utilities.py
+tcpypi.egg-info/PKG-INFO
+tcpypi.egg-info/SOURCES.txt
+tcpypi.egg-info/dependency_links.txt
+tcpypi.egg-info/requires.txt
+tcpypi.egg-info/top_level.txt
