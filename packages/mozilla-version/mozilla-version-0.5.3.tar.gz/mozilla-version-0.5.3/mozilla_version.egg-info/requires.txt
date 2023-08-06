@@ -1,0 +1,5 @@
+attrs>=19.2
+future
+
+[:python_version < "3.4"]
+enum34
