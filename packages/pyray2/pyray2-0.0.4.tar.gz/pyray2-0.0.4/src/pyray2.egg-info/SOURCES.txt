@@ -1,0 +1,17 @@
+setup.py
+src/Linear.py
+src/abstract_classes.py
+src/activations.py
+src/cnn.py
+src/dataset.py
+src/evaluation.py
+src/loss.py
+src/model.py
+src/optim.py
+src/utils.py
+src/visualize.py
+src/pyray2.egg-info/PKG-INFO
+src/pyray2.egg-info/SOURCES.txt
+src/pyray2.egg-info/dependency_links.txt
+src/pyray2.egg-info/requires.txt
+src/pyray2.egg-info/top_level.txt
