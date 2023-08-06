@@ -1,0 +1,13 @@
+setup.py
+flask_scrapinghub/FlaskScrapinghub.py
+flask_scrapinghub/__init__.py
+flask_scrapinghub/flag.py
+flask_scrapinghub/spider_base.py
+flask_scrapinghub.egg-info/PKG-INFO
+flask_scrapinghub.egg-info/SOURCES.txt
+flask_scrapinghub.egg-info/dependency_links.txt
+flask_scrapinghub.egg-info/requires.txt
+flask_scrapinghub.egg-info/top_level.txt
+flask_scrapinghub/unispiders/__init__.py
+flask_scrapinghub/unispiders/unispider.py
+flask_scrapinghub/unispiders/unispider_queue.py
