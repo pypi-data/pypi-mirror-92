@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dagre-py"
+version = "0.1.6"
+description = "Thin python wrapper around dagre-d3"
+authors = ["Abhinav Tushar <abhinav@vernacular.ai>"]
+license = "MIT"
+homepage = "https://github.com/Vernacular-ai/dagre-py"
+repository = "https://github.com/Vernacular-ai/dagre-py"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.0"
+mypy = "^0.701"
