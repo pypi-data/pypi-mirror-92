@@ -1,0 +1,3 @@
+[pyfony.bundle]
+create=gen2aclbundle.Gen2AclBundle:Gen2AclBundle
+
