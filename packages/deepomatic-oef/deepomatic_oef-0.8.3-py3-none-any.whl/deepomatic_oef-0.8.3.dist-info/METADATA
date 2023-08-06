@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: deepomatic-oef
+Version: 0.8.3
+Summary: Open Experiment Format
+Home-page: https://github.com/Deepomatic/open-experiment-format
+Author: Deepomatic
+Author-email: support@deepomatic.com
+License: MIT License
+Project-URL: Product, https://deepomatic.com
+Project-URL: Source, https://github.com/deepomatic/open-experiment-format
+Project-URL: Tracker, https://github.com/deepomatic/open-experiment-format/issues
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+Requires-Dist: protobuf (>=3.8)
+Requires-Dist: requests (>=2.19.1)
+
+# open-experiment-format
+Open Experiment Format is a collection of protobufs that allows you to serialize an Experiment.
+
+## Building and testing
+
+Requirements:
+- `protoc`: See http://google.github.io/proto-lens/installing-protoc.html
+- `pytest`: run `pip3 install pytest` to install it.
+
+Those requirements are already installed if you develop via `dmake shell oef`.
+
+Then, simply run `make test` to launch tests.
+
+## How to deploy
+This should be done after your pull request has been merged to master.
+
+### Bump the version in `deepomatic/oef/__init__.py`
+
+If you break the protobuf format since the last release, you need to:
+- provide a migration file
+- bump and commit the major version number and reset other numbers to 0.
+- commit your changes
+
+### Tag the commit
+Once the pull request is merged, tag the (last) corresponding commit by doing:
+
+```bash
+git checkout commit_id
+version=0.1.2
+git tag -m "Release open-experiment-format v${version}" v${version}
+git push origin v${version}
+```
+
+### Create a github release
+
+- Start by doing `git fetch --tags --quiet --force` as a workaround for a bug in `dmake release`.
+- Run `dmake release open-experiment-format` and select the tag you just released
+- Dmake display the URL of you release: you can edit the description to hide unnecessary commits
+
+### Release the packages for this version on pypi
+
+Simply run `make publish`. You will need to be admin on PyPi for it to work. If on MacOS, you should be
+inside the ubuntu docker container to make sure you build a linux package (maybe not necessary, this has not been verified).
+
+You  can check the release here: https://pypi.org/project/deepomatic-oef/#files
+
+### Bump the version in `deepomatic/oef/__init__.py`
+
+You now bump the minor / patch version number to prepare for the next release:
+- if you a on the master branch, modify the minor version number
+- if you are on a maintenance branch, change the patch version.
+
+
+
