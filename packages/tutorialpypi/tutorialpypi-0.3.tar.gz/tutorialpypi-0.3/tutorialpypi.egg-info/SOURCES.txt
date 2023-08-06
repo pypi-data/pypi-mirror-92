@@ -1,0 +1,10 @@
+README.md
+setup.py
+tutorial/__init__.py
+tutorial/module.py
+tutorial/tests.py
+tutorialpypi.egg-info/PKG-INFO
+tutorialpypi.egg-info/SOURCES.txt
+tutorialpypi.egg-info/dependency_links.txt
+tutorialpypi.egg-info/requires.txt
+tutorialpypi.egg-info/top_level.txt
