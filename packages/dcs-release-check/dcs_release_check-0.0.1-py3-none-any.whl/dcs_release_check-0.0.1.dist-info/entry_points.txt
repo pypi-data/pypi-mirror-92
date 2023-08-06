@@ -1,0 +1,3 @@
+[console_scripts]
+release-check = release_check.cli:run
+

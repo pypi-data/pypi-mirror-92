@@ -1,0 +1,7 @@
+release_check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+release_check/cli.py,sha256=VXk8tyaONSOD41v2jMPsPqqA_rP-EW6zepHwrCREn0A,3401
+dcs_release_check-0.0.1.dist-info/METADATA,sha256=xZUpWblef8bIjcreTdO_KsOCW3KG7WNVNNj-hF7KRCs,542
+dcs_release_check-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dcs_release_check-0.0.1.dist-info/entry_points.txt,sha256=0IxNNhKXdg_ojFBmfvzeBw_wj4T_n1ENFKYhKA49z3Q,57
+dcs_release_check-0.0.1.dist-info/top_level.txt,sha256=YpJhHkdC01_5-vnBK5FjBWWB7DHbxERPJSRjIOCij-c,14
+dcs_release_check-0.0.1.dist-info/RECORD,,
