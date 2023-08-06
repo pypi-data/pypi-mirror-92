@@ -1,0 +1,4 @@
+nltk
+pymorphy2
+pymystem3
+stop_words
