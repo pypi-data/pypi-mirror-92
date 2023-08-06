@@ -1,0 +1,8 @@
+beautifulsoup4
+chardet
+html5lib
+html2text
+cloudscraper
+
+[image_processing]
+Pillow
