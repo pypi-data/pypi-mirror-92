@@ -1,0 +1,14 @@
+anndata
+flask
+flask-compress
+fsspec
+gunicorn
+loompy
+numpy
+pandas>=1.0
+pyarrow
+pymongo
+scipy
+
+[test]
+pytest
