@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: turtlescrape
+Version: 1.0.5
+Summary: A simple library used to make web scraping take up less lines of code.
+Home-page: https://github.com/maturner5/turtlescrape
+Author: Matt Turner
+Author-email: demexus2@gmail.com
+License: UNKNOWN
+Description: # turtlescrape
+        
+        This is a very simple project to make scraping websites easier so you don't have to type all of the code for the library yourself.
+        
+        This project uses these libraries: BeautifulSoup4, urllib.request and sys.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

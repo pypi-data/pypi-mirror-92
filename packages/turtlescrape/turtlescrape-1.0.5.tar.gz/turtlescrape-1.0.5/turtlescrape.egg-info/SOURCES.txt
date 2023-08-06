@@ -1,0 +1,7 @@
+README.md
+__init__.py
+setup.py
+turtlescrape.egg-info/PKG-INFO
+turtlescrape.egg-info/SOURCES.txt
+turtlescrape.egg-info/dependency_links.txt
+turtlescrape.egg-info/top_level.txt
