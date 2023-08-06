@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+matplotlib
+tqdm
+networkx
+scikit-learn
+pyamg
+ConfigArgParse
