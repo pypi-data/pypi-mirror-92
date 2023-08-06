@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tagtog"
+version = "0.1.1"
+description = "Python library & CLI to interact with tagtog APIs & datasets"
+homepage = "https://github.com/tagtog/pytagtog"
+
+authors = ["tagtog team <info@tagtog.net>"]
+
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
