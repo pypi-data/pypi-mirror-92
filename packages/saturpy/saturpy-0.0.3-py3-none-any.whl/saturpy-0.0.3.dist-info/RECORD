@@ -1,0 +1,10 @@
+saturpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saturpy/datasets/__init__.py,sha256=4hN2YMwhLAtNoJ-CaKUcskTTlT_VslU-cm0l72_yfbk,86
+saturpy/datasets/load_datasets.py,sha256=6DB2mgp_rZlcOCKGsVsP2ViM7T5cgrZWlYn7w0eZ4GQ,714
+saturpy/regressor/__init__.py,sha256=1-ypzQPX9SqqwtS7pUR2fz5WAvcjdWABjSYUw4Jcn-w,89
+saturpy/regressor/ols.py,sha256=6Uy5pqt2Cndn1sWSF6FSwfegs4pndrNaVS84BRv51Nc,306
+saturpy-0.0.3.dist-info/LICENSE,sha256=tYtK_4IyQteIFiY7g5-tj3pu8H1yD26T0emHNQgqypY,11349
+saturpy-0.0.3.dist-info/METADATA,sha256=JjpoLWzYOFRgyN8D6q-8-E5hOu-bb4mT4HgxZK-HhyQ,649
+saturpy-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+saturpy-0.0.3.dist-info/top_level.txt,sha256=xgRcswDhbFwPaWt5mTLFlsVvJeHvHWiCHevFpQRWtMY,8
+saturpy-0.0.3.dist-info/RECORD,,
