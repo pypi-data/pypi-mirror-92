@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pulp-cli
+Version: 0.2.0
+Summary: Command line interface to talk to pulpcore's REST API.
+Home-page: UNKNOWN
+License: GPLv2+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Software Distribution
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Provides-Extra: pygments
