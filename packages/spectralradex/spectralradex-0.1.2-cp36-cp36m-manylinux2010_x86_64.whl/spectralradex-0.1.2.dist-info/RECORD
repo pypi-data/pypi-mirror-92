@@ -1,0 +1,16 @@
+radexwrap.cpython-36m-x86_64-linux-gnu.so,sha256=MwkgUU5VKGsmGa8PF4q3arcwZWtlZJXTRmawgO4klkg,356424
+spectralradex.libs/libquadmath-2d0c479f.so.0.0.0,sha256=nw_dV1mLMDFbFsMwYHIwErTgu6dsMaBajxJfe8TohIA,263992
+spectralradex.libs/libz-eb09ad1d.so.1.2.3,sha256=Occ38Rdxpnqlv4lgkj2inrjERnLkx0ig9Kb0Ce5GMQ4,92080
+spectralradex.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=oj0CJ-MJIF4LU9y6QOWX4-PPjsDurhRs-ZZlDFGtuHA,2260064
+spectralradex/__init__.py,sha256=BU8bXJ5RNVraRPDVMoAmbwJ4XXqIyc5uc678RQO9g-Q,4809
+spectralradex/radex/__init__.py,sha256=lyBzZp5DA6q-Oauka1n3V5Ez_Wb0P8QPaB9jK7sq1BM,6798
+spectralradex/radex/data/hco+.dat,sha256=WFpNx6xxcZQPlSOmFBxRLJPabnlxEF6lRKw7kNH3DKo,26584
+spectralradex/radex/data/c+.dat,sha256=HmKHtLMJX7Kt7BTUWTX_SAKEJd_6FdB2O8kv-9KuTmQ,3351
+spectralradex/radex/data/SO-pH2.dat,sha256=4v8zIvLWvq8riz6bvNmqq2LMRPHSTATS4_tSjAzROV4,86758
+spectralradex/radex/data/co.dat,sha256=BJEa4O2osaPLbJjvKfcIaWlK7Wi3mD-uaM-OMYT3HDc,444204
+spectralradex/radex/data/c2h_h2_e.dat,sha256=Knvd-vFDvuRJP0Dm19QcRQyllOC4sthND-rDwG4wfdc,173313
+spectralradex-0.1.2.dist-info/WHEEL,sha256=0k8JcxMWZX7TJIi6JFgSy7UEc0KxSHdqNxJk5plm2FY,112
+spectralradex-0.1.2.dist-info/METADATA,sha256=g6S3Em0gI2CvohaSbSzkQQX-FpWsCSAfBLncqevfBG0,3859
+spectralradex-0.1.2.dist-info/top_level.txt,sha256=wVsDZL-n2ehheoevBqPrBblonj7b0nvb2R6LqxVQLQQ,24
+spectralradex-0.1.2.dist-info/RECORD,,
+spectralradex-0.1.2.dist-info/LICENSE,sha256=aX4uM4bAjTXTJx8ANtnufd-xWeaI-lnAkTKRNjly4-k,1056
