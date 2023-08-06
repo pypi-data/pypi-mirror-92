@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: pypocket
+Version: 0.0.1
+Summary: A Python wrapper for GetPocket
+Home-page: https://github.com/e-alizadeh/PyPocket
+License: MIT
+Keywords: GetPocket,pocket,wrapper
+Author: Essi Alizadeh
+Author-email: pypocket@ealizadeh.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pandas (>=1.2.0,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, https://github.com/e-alizadeh/PyPocket
+Description-Content-Type: text/markdown
+
+# PyPocket
+
+![](https://img.shields.io/badge/Project%20Status-Under%20Development-green)
+
+[![Actions Status](https://github.com/e-alizadeh/pypocket/workflows/Build%20and%20Test/badge.svg?feature=master)](https://github.com/e-alizadeh/pypocket/actions)
+[![PyPI version](https://badge.fury.io/py/pypocket.svg)](https://badge.fury.io/py/pypocket)
+![MIT License](https://img.shields.io/badge/License-MIT-blueviolet)
+[![Code Style: Black](https://img.shields.io/badge/Code%20style-black-black)](https://github.com/psf/black)
+ 
+
+---
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/dashboard?id=PyPocket)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=coverage)](https://sonarcloud.io/dashboard?id=PyPocket)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=security_rating)](https://sonarcloud.io/dashboard?id=PyPocket)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=PyPocket)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=PyPocket)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=PyPocket)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=PyPocket&metric=ncloc)](https://sonarcloud.io/dashboard?id=PyPocket)
+---
+[comment]: <> ([![SonarCloud]&#40;https://sonarcloud.io/images/project_badges/sonarcloud-white.svg&#41;]&#40;https://sonarcloud.io/dashboard?id=e-alizadeh_PyPocket&#41;)
+
+A Python Package for GetPocket (https://getpocket.com)
+
+
+## Installation
+```bash
+pip install pypocket
+```
+
+## Usage
+```python
+from pypocket import Pocket
+
+p =  Pocket(
+    consumer_key="your_consumer_key", 
+    access_token="your_token", 
+    html_filename="report"
+)
+p.to_html(num_post=10)
+```
+
+
+## New features in the pipeline
+- Retrieve pocket contents according to given tags
+- Modify the pocket contents properties
+

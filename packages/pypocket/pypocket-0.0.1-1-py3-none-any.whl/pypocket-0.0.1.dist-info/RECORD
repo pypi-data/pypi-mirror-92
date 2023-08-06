@@ -1,0 +1,10 @@
+pypocket/__init__.py,sha256=T3PTUtAQiwffVxPj--izWfsjV52rx2Wjg-tw3ZAzdz0,36
+pypocket/pocket.py,sha256=_VVmegcoavC4_xH39Vn72Lk6m5efbe7K-vWqX_GzU2I,2838
+pypocket/pocket_api_endpoints.py,sha256=-_KVVAiZDa70XLxds626Wfd2C1kIUYOQeBaMGPLC0XI,197
+pypocket/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypocket/test/utils_test.py,sha256=56necy4SBNERGf6CsGPCWrfo5LynDqNNpN-AmNf3c9M,591
+pypocket/utils.py,sha256=dDxTeEn5WXuts0HBjX_U8BwrUXElQCWhhmOkNsWucnc,472
+pypocket-0.0.1.dist-info/LICENSE,sha256=PaWiZBvx9nHmain2AtHIisY7kyU3tCLEL2PS68OnhmQ,1091
+pypocket-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pypocket-0.0.1.dist-info/METADATA,sha256=lWB5a1dSL3kXzVuAuYLWV980F4KiP0uVz_9ViyghoLo,2837
+pypocket-0.0.1.dist-info/RECORD,,
