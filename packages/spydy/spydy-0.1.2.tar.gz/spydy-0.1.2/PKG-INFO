@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: spydy
+Version: 0.1.2
+Summary: 基于Pipeline的快速爬虫框架（支持异步）
+Home-page: https://github.com/superjcd/spydy
+Author: Jiang Chaodi
+Author-email: 929760274@qq.com
+License: BSD
+Download-URL: https://github.com/superjcd/spydy/tarball/0.1.2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
