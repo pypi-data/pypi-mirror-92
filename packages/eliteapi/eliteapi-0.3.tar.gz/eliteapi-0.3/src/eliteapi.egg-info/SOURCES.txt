@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/__init__.py
+src/eliteapi.py
+src/eliteapi.egg-info/PKG-INFO
+src/eliteapi.egg-info/SOURCES.txt
+src/eliteapi.egg-info/dependency_links.txt
+src/eliteapi.egg-info/requires.txt
+src/eliteapi.egg-info/top_level.txt
