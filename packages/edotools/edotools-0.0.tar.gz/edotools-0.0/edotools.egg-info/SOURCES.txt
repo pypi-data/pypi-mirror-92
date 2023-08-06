@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+edotools/Binomialdistribution.py
+edotools/Gaussiandistribution.py
+edotools/Generaldistribution.py
+edotools/__init__.py
+edotools.egg-info/PKG-INFO
+edotools.egg-info/SOURCES.txt
+edotools.egg-info/dependency_links.txt
+edotools.egg-info/not-zip-safe
+edotools.egg-info/top_level.txt
