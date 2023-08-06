@@ -1,0 +1,13 @@
+README.md
+setup.py
+templatebot/__init__.py
+templatebot/bot.py
+templatebot.egg-info/PKG-INFO
+templatebot.egg-info/SOURCES.txt
+templatebot.egg-info/dependency_links.txt
+templatebot.egg-info/requires.txt
+templatebot.egg-info/top_level.txt
+templatebot/cogs/__init__.py
+templatebot/cogs/default.py
+templatebot/utils/__init__.py
+templatebot/utils/logger.py
