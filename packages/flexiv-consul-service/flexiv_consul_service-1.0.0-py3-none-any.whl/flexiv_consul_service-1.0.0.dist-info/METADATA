@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flexiv-consul-service
+Version: 1.0.0
+Summary: python版本的consul服务中心接口
+Home-page: https://github.com/DiligentApprentice
+Author: shenglong
+Author-email: shenglong.gu@flexiv.com
+License: MIT Licence
+Keywords: pip,defensor,shenglong,ms
+Platform: UNKNOWN
+Requires-Dist: python-consul (==1.1.0)
+Requires-Dist: requests (==2.25.1)
+
+UNKNOWN
+
+
