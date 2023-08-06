@@ -1,0 +1,8 @@
+pytest_cython/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+pytest_cython/plugin.py,sha256=uuZVaHi1gi9dOEXD864ePsdJ9lbnPrtgWgMHTb3GDb4,6804
+pytest_cython-0.1.1.dist-info/LICENSE,sha256=i6D7ggNB1zdAZrdZEM6qKxZ6uR8-Dabnklkq7ZCGoeE,1077
+pytest_cython-0.1.1.dist-info/METADATA,sha256=rHaJ5gBwtuKJEFnRbmwpSugmVIMkFbaNnwMVcc9-WAI,5133
+pytest_cython-0.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pytest_cython-0.1.1.dist-info/entry_points.txt,sha256=tYD-a-oWzG2rRzz48q64W12QczA8X9yTe_aeQth7xy4,49
+pytest_cython-0.1.1.dist-info/top_level.txt,sha256=El9_lJSc4xTrPJdgYkeHCvreXAdcdniyKD5rtYIwug4,14
+pytest_cython-0.1.1.dist-info/RECORD,,
