@@ -1,0 +1,7 @@
+policy_sentry>=0.11.3
+click
+schema
+boto3
+botocore
+markdown
+jinja2
