@@ -1,0 +1,16 @@
+README.md
+setup.py
+jisho_scraper/__init__.py
+jisho_scraper/anki_connect_client.py
+jisho_scraper/anki_exporter.py
+jisho_scraper/csv_exporter.py
+jisho_scraper/jisho_client.py
+jisho_scraper/jisho_data.py
+jisho_scraper/main.py
+jisho_scraper/output_prepare.py
+jisho_scraper.egg-info/PKG-INFO
+jisho_scraper.egg-info/SOURCES.txt
+jisho_scraper.egg-info/dependency_links.txt
+jisho_scraper.egg-info/entry_points.txt
+jisho_scraper.egg-info/requires.txt
+jisho_scraper.egg-info/top_level.txt
