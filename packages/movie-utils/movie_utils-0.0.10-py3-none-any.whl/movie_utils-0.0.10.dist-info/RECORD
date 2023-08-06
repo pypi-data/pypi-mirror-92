@@ -1,0 +1,9 @@
+movie_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+movie_utils/audio.py,sha256=KTHFy_uPkKsDwJhF2f2ykuC1guY8YaDK_AkFPg7K6Uw,795
+movie_utils/scene_detect.py,sha256=xoSdS1EcPuXzdITJ8up5Mdr4hpL6oHs5xoqcje6cBD0,14415
+movie_utils/utils.py,sha256=p3JRAZKXUlHuLG4upGJMRaLIdoEYn0CByU1mSutGjoI,3439
+movie_utils/video.py,sha256=7i7NBl31Hnizuy4jpBqiE5pvZFsaDzuf1sbluR-uw3Y,11198
+movie_utils-0.0.10.dist-info/METADATA,sha256=88AfSTx24pnCkTVPbZmRRvAuXeNC29u9X6PZI3VznNg,958
+movie_utils-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+movie_utils-0.0.10.dist-info/top_level.txt,sha256=L4s6tHJk99fMvMfLa4kZIjEqWT0NYVICckKULgeHM3s,12
+movie_utils-0.0.10.dist-info/RECORD,,
