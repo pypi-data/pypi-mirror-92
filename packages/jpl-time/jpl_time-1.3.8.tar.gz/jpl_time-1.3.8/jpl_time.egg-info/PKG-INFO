@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: jpl-time
+Version: 1.3.8
+Summary: Time and Duration classes which use SPICE to perform conversions and math.
+Home-page: https://github.jpl.nasa.gov/M20-Surface-Ops-Tools/jpl_time
+Author: Forrest Ridenhour
+Author-email: Forrest.Ridenhour@jpl.nasa.gov
+License: JPL
+Description: UNKNOWN
+Platform: UNKNOWN

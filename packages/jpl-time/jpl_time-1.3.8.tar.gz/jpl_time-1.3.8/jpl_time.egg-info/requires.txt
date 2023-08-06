@@ -1,0 +1,9 @@
+nose
+tornado
+setuptools
+six
+certifi
+pytz
+wheel
+numpy
+spiceypy
