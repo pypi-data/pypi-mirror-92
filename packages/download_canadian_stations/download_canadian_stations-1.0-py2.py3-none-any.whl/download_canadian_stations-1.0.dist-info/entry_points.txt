@@ -1,0 +1,3 @@
+[console_scripts]
+download_canadian_stations=download_canadian_stations:main
+
