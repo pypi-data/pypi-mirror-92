@@ -1,0 +1,12 @@
+ChemicalFormulaParser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ChemicalFormulaParser/atom.py,sha256=Y43Mep5O1-yCvByxjttqUhqhd3JSLoQmx8w8mJGzuWE,825
+ChemicalFormulaParser/molecule.py,sha256=aKVPo3md-RMzepmTj02hJQzzcwlf2ipYMWviDwdvodw,3194
+ChemicalFormulaParser/molecule_parser.py,sha256=QXQJmVOdMhF073Qioa2JTo68xcfVmGiJ0pXaZaSnKro,11436
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_atom.py,sha256=WPV5fl-8nnu0c5YwndQpdXH9TViDHxOABWvGZdDndJQ,575
+tests/test_molecule.py,sha256=iUadueBI_lbjb9DHmpze8tDgNr-ZjZx3Qm3YekGTe9M,778
+tests/test_molecule_parser.py,sha256=CTaSBD36FtVDNn8NNx6EzApQBIbVMeHmFxLGmAF01JQ,5263
+molecule_parser-0.0.1.dist-info/METADATA,sha256=YWnvbZarIu4ggPv76yjwPoR__yTGdVWS4ZzKDBJztZQ,617
+molecule_parser-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+molecule_parser-0.0.1.dist-info/top_level.txt,sha256=PCXxDWhLxGSEeT9pTAz-km-OxC79YsNcxdGKYh2NSZA,28
+molecule_parser-0.0.1.dist-info/RECORD,,
