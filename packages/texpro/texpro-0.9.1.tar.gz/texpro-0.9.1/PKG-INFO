@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: texpro
+Version: 0.9.1
+Summary: Create, view and export LaTeX assets (equations, figures, tables, etc.)
+Home-page: https://github.com/csemken/texpro/
+Author: Christoph Semken
+Author-email: christoph.tp@semken.info
