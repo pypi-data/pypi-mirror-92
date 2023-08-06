@@ -1,0 +1,22 @@
+{
+  "create_asset": {
+    "steps": {
+      "1": "generate_mock_manifest",
+      "2": "retrieve_image_from_origin",
+      "3": "check_jp2_compliance",
+      "4": "create_thumbnails",
+      "5": "save_to_storage",
+      "6": "save_data"
+    }
+  },
+  "update_asset": {
+    "steps": {
+      "1": "retrieve_image_from_origin",
+      "2": "check_jp2_compliance",
+      "3": "create_thumbnails",
+      "4": "save_to_storage",
+      "5": "delete_metadata",
+      "6": "save_data"
+    }
+  }
+}

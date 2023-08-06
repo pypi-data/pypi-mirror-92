@@ -1,0 +1,67 @@
+[
+  {
+    "job_name": "create_asset",
+    "steps": [
+      {
+        "step_number": 1,
+        "worker_type": "mps-image-manifest",
+        "task_name": "generate_mock_manifest"
+      },
+      {
+        "step_number": 2,
+        "worker_type": "mps-asset-retrieval",
+        "task_name": "retrieve_image_from_origin"
+      },
+      {
+        "step_number": 3,
+        "worker_type": "mps-asset-validation",
+        "task_name": "check_jp2_compliance"
+      },
+      {
+        "step_number": 4,
+        "worker_type": "mps-asset-thumbs",
+        "task_name": "create_thumbnails"
+      },
+      {
+        "step_number": 5,
+        "worker_type": "mps-asset-copy",
+        "task_name": "save_to_storage"
+      },
+      {
+        "step_number": 6,
+        "worker_type": "mps-asset-db-connector",
+        "task_name": "save_to_db"
+      }
+    ]
+  },
+  {
+    "job_name": "update_asset",
+    "steps": [
+      {
+        "step_number": 1,
+        "worker_type": "mps-asset-retrieval",
+        "task_name": "retrieve_image_from_origin"
+      },
+      {
+        "step_number": 2,
+        "worker_type": "mps-asset-validation",
+        "task_name": "check_jp2_compliance"
+      },
+      {
+        "step_number": 3,
+        "worker_type": "mps-asset-thumbs",
+        "task_name": "create_thumbnails"
+      },
+      {
+        "step_number": 4,
+        "worker_type": "mps-asset-copy",
+        "task_name": "save_to_storage"
+      },
+      {
+        "step_number": 5,
+        "worker_type": "mps-asset-db-connector",
+        "task_name": "save_to_db"
+      }
+    ]
+  }
+]

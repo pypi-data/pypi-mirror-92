@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Steps schema",
+  "description": "An array containing the steps",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "step_number": {
+        "description": "The number of this step in the workflow order",
+        "type": "integer"
+      },
+      "task_name": {
+        "description": "The name of the task to be completed in this step",
+        "type": "string"
+      },
+      "worker_type": {
+        "description": "The worker responsible for the task, the worker will listen to the queue that matches the worker type",
+        "type": "string"
+      }
+    },
+    "additionalProperties": false
+  }
+}
