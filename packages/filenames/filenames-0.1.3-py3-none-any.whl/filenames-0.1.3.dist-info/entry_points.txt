@@ -1,0 +1,3 @@
+[console_scripts]
+filenames = filenames.__main__:main
+
