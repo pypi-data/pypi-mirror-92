@@ -1,0 +1,10 @@
+csvlike/__init__.py,sha256=Ojz2duS0WczUwpAEwfOiHR-OyXq_5B8MqsYm-Q6i8BI,76
+csvlike/__meta__.py,sha256=is1LsMvWUMQSkMLIT9uo8XbFyCLSJJu_PFvL8nCqR8o,86
+csvlike/csv.py,sha256=8kmmmfBoDZGj-wo-DmqgzH6f1EeW-bldByvrDDurDb0,8938
+csvlike/helpers.py,sha256=5MVo1YqWFF5D1JqxV5XRCAhOM0QU_aPbONoF76059QI,552
+csvlike-1.0.0.dist-info/LICENCE.md,sha256=tMkndjDZJ2BIFtdG1pNohRq2zb13FFzUZuu4VoZZ4iU,1051
+csvlike-1.0.0.dist-info/METADATA,sha256=74KX98oF_DVrlOBbcduixi9as1X3mW6yKBkOZ0AhlG8,1776
+csvlike-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+csvlike-1.0.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+csvlike-1.0.0.dist-info/top_level.txt,sha256=x5hJLEifVRKo-PbYkd5pSwpswkgYAsrdPPru_Rurt70,8
+csvlike-1.0.0.dist-info/RECORD,,
