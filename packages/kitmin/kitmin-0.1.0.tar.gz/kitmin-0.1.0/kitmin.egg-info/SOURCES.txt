@@ -1,0 +1,9 @@
+README.md
+setup.py
+kitmin/__init__.py
+kitmin/kitmin.py
+kitmin.egg-info/PKG-INFO
+kitmin.egg-info/SOURCES.txt
+kitmin.egg-info/dependency_links.txt
+kitmin.egg-info/requires.txt
+kitmin.egg-info/top_level.txt
