@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: cicd-cli
+Version: 0.1.14
+Summary: Script for executing automated tasks
+Home-page: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Requires-Dist: pyyaml (==5.4.1)
+Requires-Dist: boto3 (==1.16.56)
+Requires-Dist: wget (==3.2)
+
+UNKNOWN
+
+
