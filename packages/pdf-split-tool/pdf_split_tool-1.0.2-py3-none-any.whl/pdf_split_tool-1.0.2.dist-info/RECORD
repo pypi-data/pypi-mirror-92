@@ -1,0 +1,10 @@
+pdf_split_tool/__init__.py,sha256=r1fnFSeJ3izCRaPg11svgbenwbPFKTMv1KqAyYm_ByQ,22
+pdf_split_tool/__main__.py,sha256=YOBNWJPYLaw8y8HEkuhCDKjQ4sc9JJZGkOGxpAumQak,1629
+pdf_split_tool/file_handler.py,sha256=_eo8hNpbHfdZuSQom303WHGs2TeZ1cbCoTN2I_lk1SE,551
+pdf_split_tool/pdf_splitter.py,sha256=ZrJiwBjXzcmNuuDB2SodWO9svWki5I7W5ogrPwK0STc,2618
+pdf_split_tool/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pdf_split_tool-1.0.2.dist-info/entry_points.txt,sha256=Du24dyp6DhZkYgYsyNOhJloZpJ5oj5bprrYMld2wSNg,63
+pdf_split_tool-1.0.2.dist-info/LICENSE.rst,sha256=rZJYkcEbDTZMd2nufO9EbSXQfj7SgEmqFb6hmT4XTIY,1096
+pdf_split_tool-1.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pdf_split_tool-1.0.2.dist-info/METADATA,sha256=Cg_-uebg6nodnXL6yFKG9waZOTCQ33TDlNAwZYoaouY,4828
+pdf_split_tool-1.0.2.dist-info/RECORD,,
