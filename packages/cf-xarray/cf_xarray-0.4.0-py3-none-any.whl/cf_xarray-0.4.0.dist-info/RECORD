@@ -1,0 +1,13 @@
+cf_xarray/__init__.py,sha256=nJlNH_ogc4zW_2cgkKJ_y7yhImtvyeDTHQTUffXGHpA,109
+cf_xarray/accessor.py,sha256=aSLDts45t4f85gKo_jpMlq0WVchdjADW1mCqW6XeMJ0,50283
+cf_xarray/helpers.py,sha256=-qd-9mvEZa4oHajRJALJVIbn5mLE-jF4xgbkomTaH_0,5020
+cf_xarray/utils.py,sha256=yFpIb0M-HmJXK_L6cZpJVCA6Bdh6obZwm0ZIj9LSAJk,1973
+cf_xarray/tests/__init__.py,sha256=Db0fQj5VbKn_jO9v6Aok426muuN2I2dhyQg4ay4T1gM,1151
+cf_xarray/tests/datasets.py,sha256=aqCvMwDvr_jK_-c5idK_y42G_zVlaIO7HkkcJ14I7eU,5796
+cf_xarray/tests/test_accessor.py,sha256=zW94twTL7ShaHjNSArk8e8x-yhBzOVWhEmEokP7sXj8,18552
+cf_xarray/tests/test_helpers.py,sha256=sjChBKY0NscuMTpZaLC9x2H__B3xAP_Ci01xYiwO18o,1966
+cf_xarray-0.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cf_xarray-0.4.0.dist-info/METADATA,sha256=xizmgY6XOLuitkmcesZepGeY1bmEN4M8Mg8XugpAHFw,348
+cf_xarray-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cf_xarray-0.4.0.dist-info/top_level.txt,sha256=LwmJZZlwaPyZL0ttCk4RY8H7pFj0FIoX2LZOJKXoRrw,10
+cf_xarray-0.4.0.dist-info/RECORD,,
