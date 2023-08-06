@@ -1,0 +1,12 @@
+aiobotocore>=1.0.4
+async-timeout>=3.0.1
+asyncio-throttle>=0.1.1
+
+[kpl]
+aws-kinesis-agg>=1.1.6
+
+[msgpack]
+msgpack>=0.6.1
+
+[redis]
+aredis>=1.1.8
