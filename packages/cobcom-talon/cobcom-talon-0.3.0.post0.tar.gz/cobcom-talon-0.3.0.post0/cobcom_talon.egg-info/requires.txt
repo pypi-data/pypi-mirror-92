@@ -1,0 +1,8 @@
+nibabel
+numpy
+pyunlocbox
+scipy
+
+[opencl]
+pyopencl
+pocl
