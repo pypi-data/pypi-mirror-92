@@ -1,0 +1,12 @@
+dockgit/__init__.py,sha256=Yg_PvT2Kuag_QZITLgpIDVHmGdavOh-jpFyQKSd_g8A,1135
+dockgit/dock_git.py,sha256=iFhkJ11Mh_SLVf--2e9bmgsO8M7koHsZCnG0XF0nVwk,5286
+dockgit/dockgit.py,sha256=Z0jdbfaaEbevZBj32i6ZUADmDRPh8FT6IwLocZLuxGA,5240
+dockgit/test.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dockit/__init__.py,sha256=Umtn4GsbikgkoKjFQ8IDJERiBQm3bpMvxpbg_3shBFU,1140
+dockit/dockit.py,sha256=YhcmR49GsCCkb4yS8jP-kGPyV_Ci6PgH7O1OvH_F0iw,10474
+dockit/test.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dockit-0.1.2.data/scripts/dockit,sha256=A9aJ2PBThHzUoSrHK2Cjx_I_M4ZagKpXLwUbSqYILVU,48
+dockit-0.1.2.dist-info/METADATA,sha256=tOTEKjOFpo76waAKkx4ts22QJDdxBWbAujGLImPkLCQ,2314
+dockit-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dockit-0.1.2.dist-info/top_level.txt,sha256=GH52EhA7JfCKi3mqmZXQ_lF6QgJoS2D18Q5PouRG3vk,7
+dockit-0.1.2.dist-info/RECORD,,
