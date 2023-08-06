@@ -1,0 +1,3 @@
+[console_scripts]
+stickytape = stickytape.main:main
+
