@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+sapling_lib/__init__.py
+sapling_lib/sapling.py
+sapling_lib.egg-info/PKG-INFO
+sapling_lib.egg-info/SOURCES.txt
+sapling_lib.egg-info/dependency_links.txt
+sapling_lib.egg-info/requires.txt
+sapling_lib.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: sapling-lib
+Version: 0.0.1
+Summary: Collection of sapling API functions, simplified
+Home-page: UNKNOWN
+Author: Sunny Shahi
+Author-email: shahisunny.990@gmail.com
+License: MIT
+Description: Sapling API python 
+        
+        Change Log
+        ==========
+        
+        0.0.1 (21/01/2021)
+        ------------------
+        - Initial version of sapling lib
+Keywords: Sapling,api
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
