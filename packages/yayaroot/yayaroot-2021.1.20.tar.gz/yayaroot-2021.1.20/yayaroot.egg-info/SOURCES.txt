@@ -1,0 +1,11 @@
+README.md
+setup.py
+tikup/__init__.py
+tikup/argparser.py
+tikup/tikup.py
+yayaroot.egg-info/PKG-INFO
+yayaroot.egg-info/SOURCES.txt
+yayaroot.egg-info/dependency_links.txt
+yayaroot.egg-info/entry_points.txt
+yayaroot.egg-info/requires.txt
+yayaroot.egg-info/top_level.txt
