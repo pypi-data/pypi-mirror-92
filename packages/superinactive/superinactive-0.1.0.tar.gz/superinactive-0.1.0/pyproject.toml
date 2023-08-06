@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "superinactive"
+version = "0.1.0"
+description = ""
+authors = ["volker <volker.jaenisch@inqbus.de>"]
+homepage = "https://github.com/Inqbus/superinactive.git"
+repository = "https://github.com/Inqbus/superinactive.git"
+license = "MIT"
+readme = "README.md"
+keywords = ["supervisor", "supervisord", "activity"]
+classifiers = [
+    "Environment :: Console",
+    "Framework :: supervisor",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+supervisor = "^4.2.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[tool.poetry.scripts]
+superinactive = "superinactive.superinactive:main"
+touch_file = "superinactive.touch_file:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
