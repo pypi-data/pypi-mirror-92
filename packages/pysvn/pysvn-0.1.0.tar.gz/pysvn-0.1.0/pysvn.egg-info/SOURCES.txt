@@ -1,0 +1,8 @@
+README.md
+setup.py
+pysvn/__init__.py
+pysvn/client.py
+pysvn.egg-info/PKG-INFO
+pysvn.egg-info/SOURCES.txt
+pysvn.egg-info/dependency_links.txt
+pysvn.egg-info/top_level.txt
