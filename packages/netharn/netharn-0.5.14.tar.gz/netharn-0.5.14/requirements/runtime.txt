@@ -1,0 +1,32 @@
+# Note: torch is not published on pypi for windows
+# We could add the line:  
+# --find-links=https://download.pytorch.org/whl/torch_stable.html
+# but that doesn't play well with setuptools. The current recommendation is to
+# install torch yourself on windows. Hopefully there will be a better alternative
+# in the future.
+
+torch >= 1.0.0
+torchvision >= 0.2.0
+
+six >= 1.11.0
+numpy >= 1.9.0
+ubelt >= 0.8.4
+parse >= 1.8.4
+pyflakes >= 1.6.0
+astunparse >= 1.6.1
+pygtrie >= 2.3.3
+
+imageio > 2.6.0;python_version > '3.0' 
+imageio < 2.8.0;python_version < '3.0' 
+
+imgaug >= 0.2.6
+# imgaug < 0.3.0;python_version < '3.0' 
+
+# NOTE: in the future kwimage and kwplot may become optional
+scriptconfig >= 0.4.0
+kwarray >= 0.4.0
+kwimage >= 0.4.0
+kwplot >= 0.4.0
+
+qualname>=0.1.0;python_version < '3.0' 
+torch_liberator >= 0.0.4
