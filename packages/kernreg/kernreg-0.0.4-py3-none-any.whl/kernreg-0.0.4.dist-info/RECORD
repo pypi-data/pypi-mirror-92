@@ -1,0 +1,12 @@
+kernreg/__init__.py,sha256=4Mk1zdWXK4b3SkjCffFQOzTCBUL9Sms6z5BuGL4ufY4,428
+kernreg/bandwidth_selection.py,sha256=6npzyaI12S3arddQFvLj1R-vxQMaZjUUpd2AR6ajvDE,7225
+kernreg/config.py,sha256=a3Ub9kdYTNVJ5wmKdDzWRRfFR7GMVMLsJRl8TwMsRzM,362
+kernreg/funcs_to_jit.py,sha256=1fEo_E7xPVEy_ZWIYPEFDb3tba9IVnkF__ho3NmLUak,4152
+kernreg/linear_binning.py,sha256=Xd-v-UiCT0ltuOx1frCSi1pdHOc-3vvLzeFiRBiW38Q,3294
+kernreg/smooth.py,sha256=5g5GXbPB78fFgbqOd2DnOp1AYHOxMQXYhIXgnjJcvfE,8681
+kernreg/utils.py,sha256=_TkhrK5mNwdV2tOsxOb_awcqp5LnzmXotMjarIGtj1E,1530
+kernreg/visualize.py,sha256=22qU8reRYQzCyBvPO9JHy_VtrOoRnVbFm63o6fyR4Tg,1642
+kernreg-0.0.4.dist-info/LICENSE,sha256=Z_288LfxngQIWnnoCB1V9PzXQ6hGQcmRJgnxFQhWekw,1072
+kernreg-0.0.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+kernreg-0.0.4.dist-info/METADATA,sha256=V-OTS7DNmxOOSzqB-3pg-vqyqaId26Ca7bIo8BS7wqI,5224
+kernreg-0.0.4.dist-info/RECORD,,
