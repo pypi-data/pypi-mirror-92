@@ -1,0 +1,840 @@
+Aaron: Aaron # bible
+Abbacuc: Abbacuc # prophet
+Abel: Abel # bible
+Abitus: Abiti Avitus # Avitus?
+Abiud: Abiud # Abioud
+Abraham: Abraham # bible
+Aprunculus: Aprunculo Aprunculus Aprunculi Abrunculus
+Absalon: Absalonem Absolonem # Absalon (vel Absolon)
+Achaz: Achaz
+Achim: Achim
+Adam: Adam
+Adovacrius: Adovacrius Adovacrio Odovacrius # Adovaire
+Adovarius: Adovarius Adovario
+Adrianus: Adrianus Adriano # Adrien
+Aegylanis: Aegylanis # Agilan
+Aetherius: Aetherius Aetherium Aetherio # évêque de Lyon
+Aetius: Aetium Aetius Aeti Aetii Aetio # general
+Agasastus: Agasastus # roi d'Athène
+Agatadis: Agatadis Agatadi # Agatade
+Agericus: Agericum Agericus Agerici Agerico Agiricus # Agéric, évêque de Verdun
+Agila: Agila Agilane Agilanem # roi des Goths
+Aginus: Aginum # Aginus, dux
+Agyno: Agyno # Agun
+Agnes: Agne Agni Agnis Agnitem Agnite # Agnès, abbesse
+Agricius: Agricium # Agricius
+Agricolae: Agricolae # Agricola
+Agroecula: Agroecula Agroecola Agroeculae
+Agroetius: Agroetius
+Agustus: Agusti Agustus Augustum Augusto Augusti # August
+Alaricus: Alaricum Alarici Alarico Alaricus # Alaric
+Albinus: Albinus Albini Albinum
+Alboenus: Alboeno Alboeni Alboenus
+Albofledis: Albofledis
+Alchima: Alchima
+Alexander: Alexandri # Alexandre
+Alithius: Alithium
+Amalaberga: Amalaberga
+Amalaricus: Amalarici Amalaricum Amalarico Amalaricus
+Amalo: Amalo # dux
+Amandus: Amandus
+Amantes: Amantes
+Ambrosius: Ambrosium Ambrosii Ambrosio
+Amelius: Amelio Amelius
+Amalonis: Amalonis
+Aminadab: Aminadab
+Amo: Amo
+Amon: Amon
+Ampsivariis: Ampsivariis
+Aunacharius: Aunacharius
+Anastasius: Anastasius Anastasio # Anastase
+Anatholius: Anatholius # Anatolie
+Andarchius: Andarchi Andarchius Andarci #
+Andelaus: Andelao # Andelot
+Andreae: Andreae
+Aniani: Aniani
+Animodus: Animodi
+Aninsola: Aninsola
+Annanias: Annaniae Annaniam
+Annianus: Annianus
+Ansovaldus: Ansovaldus Ansovaldum Ansovaldo
+Antechristus: Antechristus Antechristum
+Antestius: Antestius Antestio
+Antidius: Antidio
+Antolianus: Antolianus
+Antoninus: Antonini # Antonin
+Antonius: Antonius Antonii # Antoine
+# Apocalipsim: Apocalipsim # Apocalypse
+Apollonaris: Apollonari Apollinare Apollonaris Apollonarem
+Aptacharius: Aptacharius Aptacharium
+Aram: Aram
+Aravatius: Aravatio Aravatius
+Arbogastis: Arbogastis
+Archadium: Archadium Archadii Archadius Arcadi
+Aredius Aredium Aredii Aredius
+Aregisilus: Aregisilus Aregisilum Aregisili
+Aregundis: Aregundis Aregundem # Aregunde
+Aridius: Aridi Aridio # Arédius
+Armentius: Armentium Armentius # Armance
+Armentarius: Armentarius # Armentaire
+Arnegysilus: Arnegysilo # Arnégésile
+Arphaxath: Arphaxath
+Arrius: Arrium Arrius Arrii Arriana Arrianae Arriano Arriani Arrianorum # Arius, Arianisme
+Artemius: Artemius Arthemio Artemium
+Asa: Asa
+Asclipius: Asclipius # Asclépius
+Ascovindus: Ascovindum # Ascovinde
+Ascyla: Ascylam # Aschila
+Aser: Aser
+Asteriolus: Asteriolus Asteriolum Asteriolo # Astériole
+Asterius: Asterius
+Athalocus: Athalocus
+Athanagildus: Athanagildus Athanaeldo Athanaeldi Athanagilde Athanachilde# Athanaguilde
+Athanaricus: Athanarici Athanarico Athanaricus
+Attalus: Attalus Attalum Attali Attalo # Attale
+Attila: Attila Attela Attilanem
+Audica: Audica
+Audinus: Audini Audino
+Audo: Audonem
+Audovaldus: Audovaldus
+Audovera: Audovera Audoveo
+Auno: Aunone
+Aunulfus: Aunulfo # Arnulphe
+Aurilio: Aurilio
+Ausanius: Ausanius
+Austadius: Austadius
+Austerchilde: Austerchilde
+Austrapius: Austrapius Austrasiis Austrapio
+Austrigilde: Austrigilde Austregildem Austrigildis
+Austrighyselus: Austrighyselus Austrighyselum Austrighyselo
+Austrinus: Austrinus
+Austrovaldus: Austrovaldo Austrovaldus
+Avalocium: Avalocium
+Avonem: Avonem # Avon
+Axonam: Axonam
+Azor: Azor
+
+Babillas: Babillas Bobillam
+Baddo: Baddo Baddonem Baddone
+Badegysilus: Baudegysili Badegyseli Badegisilum Baudegyselus Badegysilus Bodigysilo Badigysili
+Badericus: Badericus Baderico
+Ballomeris: Ballomerem
+Belial: Belial
+Basilius: Basilius Basilii Basilium
+Basina: Basinae Basina Basinam
+Baudinus: Baudinus
+Begorra: Begorra
+Belphegor: Belphegor
+Belsuarius: Belsuarius Belsuarium
+Beniamin: Beniamin Beneamen
+Benigni: Benigni
+Beorretana: Beorretanae
+Beppolenus: Beppolenus Bippolinus Pappolenus Beppolenum Byppolenus Beppolini Beppoleno
+Beregisilus: Beregisilum
+Bersabee: Bersabee
+Bertecharius: Bertecharii
+Berthechramnus: Berthchramnum Berthchramnus Berthramnus Berthechramnus Bertchramnus Bertchramnum Bertechramnus Berthechramni Berthchramno Berthramno Bertechramno
+Berthefredis: Berthefledis Berthefredi Berthefredus Bertefredus Berthefredo Berthefredum
+Bertegundis: Bertegundis Berthegundis
+Berthacharium: Berthacharium Berthacharius
+Berulfus: Berulfus Berulfo
+Bladastis: Bladastis Bladasti # Bladaste
+Boantus: Boantum Boanti
+Booz: Booz
+Bobo: Bobo Bobone # Bobon
+Bobolenus: Boboleni Boboleno
+Bodicus: Bodicus
+Bodigysilus: Bodigysilus Bodygisilus
+Boso: Boso Bosonem Bosone Bosonis # Boson
+Brachione: Brachione Brachio?
+Brictius: Brictium Brictii Brictio Brictius # Brice
+Britianus: Britiani
+Brunichilde: Brunichilde Brunechilde Brunichildem Brunechildis Brunichildes Brunichildis Brunechildem # Brunehaut (Brunichildis)
+Buccelenus: Buccelenum Buccelenus # Buccelin
+Bucciovaldus: Bucciovaldo Bucciovaldus # Buciovald
+Buccus: Buccus
+Burgolenus: Burgolenus Burgolini Burgulini # Burgolin/Bursolène
+Burgundio: Burgundio
+Bysinus: Bysinum
+
+Catulus: Catulus # Catule
+Caecros: Caecros Cencris # Cecrops
+Caesar: Caesar Caesaris Caesario
+Caesaria: Caesariam Casariae Casaria Caesariae Caesariamquae Caesariensis Caesariensis # Césarée
+Caesarii: Caesarii
+Cain: Cain
+Cainan: Cainan
+Calomniosus: Calomniosi # Calumniosus
+Caluppa: Caluppa Caluppane
+Canao: Canaonem
+Canthia: Ganthia Canthia # Kent
+Caprasius: Caprasi # Caprasius
+Carietto: Carietto
+Carpilio: Carpilionis # Carpilion
+Cartherio: Cartherio #?
+Cassiani: Cassiani
+Cassius: Cassius Cassii Cassium # Cassius
+Castinus: Castinus # Castin
+Cautinus: Cautino Cautinus Cautini Cautinum # Cautinus
+Catianus: Catianus Catiani # Gatien
+Cato: Cato Catonem Catone Catonis Catoni
+Celsus: Celsum Celsi # Celse
+Ceresium: Ceresium # Corèze
+Cham: Cham # Cham
+Chamavi: Chamavi
+Chanaone: Chanaone Chanao
+Chararicus: Chararicus Chararici Chararicum
+Charegyselus: Charegyselus
+Chariberthus: Chariberthi Chariberthus Charibertho Charibertum Chariberthum # Charibert
+Charimeris: Charimerem
+Chariulfus: Chariulfo Chariulfus
+Charivaldus: Charivaldus # Charivalde
+Charterius: Charteri
+Chedinus: Chedinus
+Childeberthus: Childeberthus Childeberthi Childeberti Childebertum Childeberto Childeberthum Childebertus Childebertho Childiberthus # Childebert
+Childericus: Chulderici Childerico Chulderico Childericus Chuldericus Childericum # Childeric
+Chilpericus: Chilperico Chilpericum Chilpericus Chilperici # Chilpéric
+Chlochilaichus: Chlochilaichum
+Chlodericus: Chlodericus Chlodericum
+Chlodomeris: Chlodomere Chlodomeris Chlodomerem Chlodemeris
+Chlodoberthus : Chlodoberthum Chlodoberthus
+Chlodosinda: Chlodosuindam Chlodosinda Chlodosuinda
+Chlodovaldus: Chlodovaldus Chlodovaldum # Clodoald
+Chlodovechus: Chlodovechus Chlodovechi Chlodovechum Chlodovecho # Clovis
+Chlogio: Chlogio Chlogionem # Chlogion
+Chlotchildis: Chlotchildem
+Chlothacharius: Chlothachario Chlothacharius Chlothacharii Chlothacharium Chlothachari
+Chlotharius: Chlotharii Chlotharius Chlotchari Chlotharium Chlothari Chlothario Chlotlhrii # Clothaire
+Chlothihelda: Chlothiheldae # Clotilde
+Chlothosinda: Chlothosindam Chlothosinda Chlothsindam # Chlotsinde
+Chonomoris: Chonomorem # Chronomor
+Chonoober: Chonoober Chonoobro # Chonobre
+Chramnesindus: Chramisindo Chramisindi Chramisindus Chramnesindi Chramnesindus # Chramnisinde
+Chramnus: Chramnum Chramno Chramni Chramnus # Chramne
+Christoforus: Cristofori Cristoforus Christofori # Christophe
+Christus: Christus Christe Christum Christo Christiani Christi # Christ/chrétien
+Chrocus: Chrocus Chroco # Chrocus
+Chrodechildis: Chrodechilde Chrotchilde Chrodigilde Chrodigildis Chrodichildis Chrodechildis Chrotchildis Chrodielde Chrodieldes Chrodieldis Chrodieldae Chrodieldem
+Chrodinus: Chrodini Chrodinus # Chrodin
+Chundo: Chundonem Chundonis # Chaudon
+Chunsina: Chunsinam # Chunsène
+Chuppa: Chuppa Chuppanem Chuppani
+Chundo: Chundo
+Chus: Chus
+Ciucilo: Ciucilonem # Gucilian
+Clara: Claram # Claire
+Claudius: Claudii Claudius Claudio Claudium # Claude
+Claudus: Claudi
+Clauso: Clauso Clausis
+Clemens: Clemens Clementis
+Clenni: Clenni
+Cleuphe: Cleuphe
+Consolaribus: Consolaribus
+Constans: Constantis Constantio Constans Constante Constantium # Constance
+Constantinus: Constantinus Constantini Constantinis # Constantin
+Cornilius: Cornilius
+Cotiam: Cotiam Cothiam
+Crispus: Crispum # Crispus
+Crispinus: Crispini # Crépin
+Crispiniani: Crispiniani # Crépinien
+Crona: Crona # Chrona
+Cyces: Cyces
+Cymulus: Cymulum # Emule
+Cyprianus: Cyprianus
+Cyrola: Cyrola Cirola
+
+Dacco: Dacco Dacconis
+Dagaricus: Dagarici # Dagaric
+Dagulfus: Dagulfus Daulfi # Dagulf
+Dalmatius: Dalmatius Dalmatii Dalmatio
+Damianius: Damiani # Damien
+Dan: Dan
+Dani: Dani # Danois
+Danihel: Danihel # Daniel
+David: David Davitici # David
+Decimius: Decimius # Décimus
+Decius: Decii Decio # Dèce
+Dehas: Dehas
+Deus: Deo Deitas Deitate Deitatem Deitati Deitatis Deorum Deum
+Deuteria: Deuteria Deoteriam Deoteriae Deoteria Deuteriam # Deutérie
+Deotherius: Deotherius
+Desideratus: Desideratus
+Desiderius: Desiderius Desiderii Desiderium Desiderio # Didier
+Diana: Dianae Dianam # Diane
+Didimia: Didimia # Didyme
+Dinamius: Dinamium Dinamius Dinamio # Dynamius
+Dinifius: Dinifi Dinifio Dinifius # Denis
+Dioclicianus: Diocliciani Diocliciano # Dioclitien
+Diogenianus: Diogenianum # Diogène
+Dionisius: Diocisis Dionisius Dionisi Dionisii # Denis
+Disciola: Disciola # Dotiola
+Dodo: Dodonem
+Domigysilus: Domigysilo Domighisilo Domigysilus Domegiselus # Domegésile
+Dominus: Dominus Dominum Domini Domino # Seigneur
+Dominicus: Dominicus Dominicam
+Domicianus: Domicianus Domiciani
+Domitianus: Domitianus # Domitien
+Domnolus: Domnolus  Domnolo
+Domnola: Domnola Domnolae
+Dracolenus: Dracoleno Dracolenus Dracoleni Dracolenum
+Droctegyselus: Droctegyselo Droctigysilus # Droctégésile
+Droctulfus: Droctulfi Droctulfo Droctulfus Droctulfum # Droctulfe
+
+Eberegiselus: Eberegiselum # Ebrégésile
+Ebero: Eberonem # Eberon
+Eberulfus: Eberulfo Eberulfum Eberulfi Eberulfus
+Ebracharius: Ebracharium Ebracharius Ebrecharium
+Ebregysilus: Ebregysilum Ebregysilus # Ebrégésile
+Ecdicius: Ecdicius Ecdicium
+Edobeccus: Edobecco
+Edom: Edom
+Egidius: Egidium EgidiuEs Egidio Egidi # Egidius
+Eiecite: Eiecite
+Elafius: Elafius Elafio
+Eleazar: Eleazar # Eleazar
+Eliachim: Eliachim # Eliachim
+Eliuth: Eliuth
+Emerius: Emerium
+Emmanuhel: Emmanuhel # Emmanuel
+Enacim: Enacim # Enacim
+Ennodius: Ennodi Ennodius Ennodium
+Enoch: Enoch Senoch # Enoch
+Enos: Enos # Enos
+Epagatus: Epagati Epagatum
+Eparchius: Eparchio Eparchius
+Epyfanius: Epyfanius Epifanius Epyfanio Epifanio
+Epiphania: Epiphania # Epiphanie
+Epolon: Epolon
+Eposium: Eposium
+Eraclius: Eraclio
+Ermeneghildo: Ermeneghildo
+Erpo: Erpone Erponem
+Esaias: Esaias Isaiae Isaiam
+Esau: Esau Isac Isaac Isau
+Esdrom: Esdrom # Esdron
+Eseras: Eseram
+Esichyus: Esichyus
+Euantius: Euantius Euantium Euanti
+Euarix: Euarix
+Euchirium: Euchirium
+Eufimiae: Eufimiae
+Eufrasius: Eufrasius Eufrasio
+Eufronius: Eufronio Eufronii Eufronius Eufroni Eofronio Eufron Eofronius
+Eugenius: Eugenius Eugenium Eugenio # Eugène
+Eulalius: Eulalium Eulalio Eulalii Eulalius
+Eunius: Eunio Eonius Eunius Eunium
+Eunomius: Eonomius Eunomii Eunomius Eunomio
+Euricus: Eoricus Euricus Eurichus Eutices
+Europs: Eorops
+Eusebius: Eusebius Eusebii Eusebium # Eusèbe
+Eustasius: Eustasius
+Eustochius: Eustochi Eustochius Eustochio
+Eutropes: Eutropes
+Euvarex: Euvarege
+Euvodius: Euvodi
+Eva: Evam Ewa Eva
+Evaginatum : Evaginatum # ?
+Experear: Experear
+Ezechihel: Ezechihel Ezechiel Ezechie
+
+Faileuba: Faileuba Faileubam
+Falech: Falech
+Faramodus: Faramodus
+Faraonis: Faraonis Faraone
+Faraulfus: Faraulfus
+Farro: Farronem Farroni
+Fausta: Faustam
+Faustus: Fausti
+Faustianus: Faustianus Faustianum
+Felix: Filex Felice Felicem Felicis Filices Filici
+Ferreolus: Ferreolus Ferreoli Ferreolo
+Festus: Festus # Festina?
+Filius: Filius Fili Filia Filicem Filii Filio Filios Filium # le Fils
+Firminus: Firminus Firminum Firmino # Firmin
+Fistus: Fistus
+Flavaris: Flavaris
+Flavus: Flavus Flavum Flevi? # Flavus
+Flavianus: Flavianus Flaviano Flavianum # Flavian
+Florentianus: Florentianum
+Francia: Francia Francorum Franciam
+Francus: Francus Franciae Francos Francis Franci Francum Frantiae
+Francilio: Francilio # Francille
+Fredegundeis: Fredegundem Fredegundae Fredegunde Fredegundis # Frédégonde
+Friardus: Friardo Friardus # Friard
+Frigiretus: Frigiretus Frigiredi
+Fronimius: Fronimi Fronimius
+Frontonius: Frontonius Frontonium
+
+Gad: Gad # Gad
+Gailenus: Gailenus Gailenum Gaileno
+Gailesuinda: Gailesuinda Galsuintha Galsuintham # Galsuinthe
+Gaiso: Gaiso # Gaïse
+Galate: Galate # Vasso Galate: Mercure?
+Galienus: Galienus Gallienus Galienum # Galien
+Gallomagnus: Gallomagnum Gallomagnus # Gallomagnbe
+Garacharius: Garacharius
+Gararicus: Gararico Gararicus
+Garivaldus: Garivaldum # Garivald
+Gaudentius: Gaudentius # Gaudentius
+Gazitina: Gazitina
+Gelesimeris: Gelesimeris
+Genobaudes: Genobaude
+Genuveifa: Genuveifa
+Germanus: Germanus Germani Germano
+Gervasi: Gervasi
+Goar: Goare
+Godegisilus: Godegisilus Godeghisilus Godigisilus Godeghisilum Godegiselum Godegiselus Godeghiselus Godigiselus
+Godigiselus: Godigiselo Godigisili Godigisilo Godigyselo
+Godinus: Godinus
+Godomarus: Godomaro Godomarum Godomarus Godomari
+Goisuintha: Goisuintha Goesintha Gunsuintham
+Gogo: Gogo Gogone
+Goliath: Goliam Golian
+Gracina: Gracina
+Gratianus: Gratianus Gratiani Gratianum # Gratianus
+Gregorius: Gregorius Gregorii Gregori GREGORII # Grégoire
+Grindio: Grindionem
+Gripo: Gripo Gripone Griponem Griponis Griponi
+Gundegisilus: Gundegisilum Gundigisilum Gundigisilus Gundegysilus Gundigysilus Gundegysilum Gundegyselo
+Gundericus: Gundericus Gunderico
+Gundevechus: Gundevechus
+Gundobadus: Gundobadus Gundobadi Gundobadum Gundobado
+Gundovaldus: Gundovaldo Gundovaldi Gundovaldum Gundovaldus
+Gundulfus: Gundulfus Gundulfum Gundulfo
+Guntharius: Guntharius Guntharium Gunthecharius
+Gunthchramnus: Gunthramnus Gunthchramnus Gunthchramnum Gunthramnum Guntchramnum Guntchramnus Gunthramno Guntchramni Gunthchramno Guntchramno Gunthramni Gunthchramni Cunthchramno
+Guntheuca: Guntheucam
+
+Helarius: Helarius Helarium Hylario Helarii Helari # Hilaire
+Helena: Helenae # Hélène
+Helia: Heliae Helia
+Helius: Helius
+Heliseum: Helisei Heliseum # Elysée
+Heraclius: Heraclius Heraclium Heraclio # Héracle
+Hermenefredus: Hermenefrede Hermenefredum Hermenefredo Hermenifredi Herminefredus Hermenefredus
+Herminichildus: Herminichildum Herminigildus Herminichildus
+Herodes: Herodem Herodis Herodes Herodiano # Hérode
+Hesdras: Hesdras # Hesdras
+Hieroboam: Hieroboam # Jérobam
+Hieronimus: Hieronimi Hieronimus Hieronimusquae # Jérôme
+Hiezechihel: Hiezechihel # Ezéchiel
+Hilarius: Hilarius Hilario Hilarii Hilari # Hilaire
+Hillidius: Hillidio
+Hirenaeum: Hirenaeum
+Hireneus: Hireneus Hirineo
+Honoricus: Honoricus Honericus
+Honorius: Honori Honorianis
+Horosius: Horosi Horosius # Orose
+Hortinsii: Hortinsi # Hortensius
+Hospicius: Hospicius # Hospice?
+Hyppolitus: Hyppolitus # Hypolite
+
+Iacob: Iacobi Iacob Iacobus Iacobo # Jacob
+Iafeth: Iafeth
+Iareth: Iareth
+Iechonias: Iechonias
+Iesse: Iesse
+Iesus: Iesus Iesum Iesu
+Ignatius: Ignatius
+Ignarus: Ignarus
+Illidius: Illidius Illidi # Hillide
+Imnacharius: Imnacharium Imnacharius
+Indis: Indis Inde Indica
+Inghitrudis: Ingytrudis Inghitrudis Ingitrudis Ingutrudem
+Ingoberga: Ingoberga Ingobergae Ingobergam
+Ingomeris: Ingomerem
+Ingundis: Ingunde Ingundis Ingundae Ingundem
+Iniuriosus: Iniuriosus Iniuriosi Iniurioso
+Innocentius: Innocentio Innocentius
+Ioatha: Ioatha
+Iob: Iob
+Iobab: Iobab # Iob
+Iohannis: Iohanne Iohannis Iohannem Iohanni # Jean
+Iohel: Iohel
+Ionas: Ionas
+Ioram: Ioram
+Iordanes: Iordanis Iordanne # Jordanius
+Iosaphath: Iosaphath
+Ioseph: Ioseph # Joseph
+Iosias: Iosias # José
+Iosue: Iosue # Josué
+Ioviniani: Iovinianorum
+Iovinus: Iovinus Iovinum Iovino Iovini
+Ios: Iovis Iovis
+Iovius: Iovium
+Isaac: Isac Isaac
+Isachar: Isachar
+Isychius: Isychius
+Iuda: Iudas Iuda Iudae Iudeam Iudei
+Iudith: Iudith
+Iuli-Consorannis: Iuli-Consorannis
+Iulius: Iulius Iulii Iulio
+Iulias: Iulias Iuliam
+Iulianus: Iulianus Iuliano Iuliani # Julien
+Iustimnianus: Iustimniano
+Iustinus: Iustinus Iustini Iustinum Iustina # imperator Iustiunus
+Iustinianus: Iustinianum Iustinianus Iustiniano Iustiniani
+Iustus: Iustum # Juste
+Iuvencus: Iuvencum
+
+Kyrie: Kyrie
+
+Laban: Laba
+Lamech: Lamech
+Lampadius: Lampadius
+Lantechildis: Lantechildis
+Lapurdo: Lapurdo
+Laticina: Laticina
+Laurentium: Laurenti Laurentium Laurentius # Laurent
+Lazarus: Lazarus Lazari Lazarum # Lazare
+Legonus: Legonus Lyghnus
+Leo: Leo Leonem Leontio Leontius
+Leobovera: Leobovera Leuboveram
+Leocadius: Leocadium
+Leonardus: Leonardus # Léonard
+Leonastis: Leonastis Leunaste
+Leuba: Leuva Leuba Leubae
+Leubastes: Leubaste
+Leuchadius: Leuchadio
+Leudastis: Leudastis Leudaste Leudastem
+Leudeghiselus: Leudeghyselus Leudeghyselum Leudeghiselus Leudeghysili Leudeghisili
+Leudovaldus: Leudovaldo Leudovaldus Leudovaldum Leodovaldus # Leudovald
+Leuva: Leuvane Leuvanis # Liuva
+Leuvichildus: Leuvichildus Leuvichildi Leuvichildum Leuvichildo Leuvichilde Leuvigilde Leuvigildus Leuvigildi Leuvieldus Leuvieldo Leuvieldi # Liuvigild
+Levi: Levi
+Licerius: Licerius Licinius
+Liminius: Liminius
+Licinius: Licinio Licinius
+Litorius: Litorius Litorii
+Longinus: Longinus # Longin
+Loth: Loth
+Lupentius: Lupentius Lupenti
+Lupus: Lupus Lupum Lupi Lupo # Lupus
+Lytigius: Lytigius
+
+Macco: Macco Maccone Macconem Macconi # Maccon, comte
+Macliavus: Macliavi Macliavum Macliavus
+Magdalum: Magdalum
+Magus: Magna Magnae Magnam Magnas Magni Magno Magnum Magnus
+Magnacharius: Magnacharii Magnachari Magnarii
+Magnatrudis: Magnatrudis Marcatrudis
+Magnericus: Magnericus Magnerici Magnerico
+Magnovaldus: Magnovaldus Magnovaldi
+Magnulfus: Magnulfi Magnulfo Magnulfum
+Malalehel: Malalehel
+Mallulfus: Mallulfus
+Mamertus: Mamerto
+Manicheus: Manicheum # Mani (dieu)
+Mannases: Mannases # Mannases (Bible)
+Maracharius: Maracharius
+Maratis: Maratis
+Marcatrudis: Marcatrudem
+Marcellus: Marcelli Marcellini
+Marcialis: Marcialis
+Marcionitana: Marcionitana # imperator
+Marcomeris: Marcomere Marcomere # Marcomer
+Marcoveifa: Marcovefa Marcoveifa Marcoveifam # Mircovèfe
+Marcus: Marcus Marcum Marco Marcio
+Maria: Mariam Mariae Marie # Marie
+Marileifus: Marileifi Marileifum Marileifo # Mariléïphe
+Maroveus: Maroveus Maroveo Maroveum # Mérovée
+# Mars: Mars Martias Martialis Martio # Mars
+Martha: Martha
+Martianus: Martianus Martinus Martino Martine Martini Martinum # Martin
+Mathan: Mathan #
+Mattusalam: Mattusalam # Mathusalem
+Mauricius: Mauricius Mauricium Mauricio Mauritio # Maurice
+Maurilio: Maurilione Maurilio # Maurille
+Maxentius: Maxenti Maxentius # Maxence
+Maximinus: Maximinus # Maximin
+Maximus: Maximus Maximi Maximum Maxime # Maximus
+Medardus: Medardi Medardum Medardus # Médard
+Melania: Melanea Melanio Melania # Mélanie
+Melantius: Melantium Melantius Melantio # Mélantius
+Mercurius: Mercurius # Mercure
+Merita: Meritam # Mérida
+Merofledis: Merofledem Merofledis # Méroflède
+Merovechus: Merovechum Merovechus Merovecho Merovechi # Mérové
+Michahel: Michahel # Michel
+Mirus: Mirus Miro Mironem Mironis # roi de Galice
+Moabitibus: Moabitibus # Moabites
+Modestus: Modestus # Modeste
+Moyses: Moyse Moysi Moysen Moyses Moysaicas Moysaicae # Moïse
+Mummolinus: Mummolini
+Mummolus: Mummolo Mummolus Mummoli Mummolum # Mummole
+Mundericus: Mundericus Munderico Munderici Mundericum # Munderic
+
+Naason: Naason
+Nabuchodonosor: Nabuchodonosor # Nabuchodonosor
+Namatius: Namati Namatius Namatium Namatio # Namatius
+Nanthinus: Nanthinus Nanthino # Nanthin
+Nanninus: Nanneni Nanninus Nannenus Nanneno # Nanneus
+Narsis: Narsiti Narsitem Narsite Narsitis Narsis Narsitae # Narsès
+Nathan: Nathan # Nathan
+Nebroth: Nebroth # Nebroth
+Necetius: Necetius Nicetius Nicetio Nicetii Niceti Nicetium # Nicet
+Nectarius: Nectarius Nectarii Nectarium Nectari # Saint-Nectaire
+Nepotianus: Nepotianus # Népotien
+Neptalem: Neptalem # Neptalem (un des douze patriarches)
+Nero: Nerone Neronem # Néron
+Nicasius: Nicasium Nicasio # Nicaise
+Ninus: Ninus Nino Ninum # Ninus
+Noe: Noe # Noé
+Nonnichius: Nonnichius Nonnichium Nunnichio # évêque de Nantes
+Novatianus: Novatianus # Novatien
+
+Obeth: Obeth # Obeth (Bible)
+Occila: Occila # Occyla
+Octavianus: Octavianus # Octavien
+Octavus: Octavus Octavum Octave
+Ollo: Ollone # Ollon
+Olofernes: Olofernis # Holopherne
+Ommatius: Ommatius # Ommatius
+Oppila: Oppila
+Orbicus: Orbico # Urbicus
+Orestes: Orestes
+Orhosius: Orhosius
+Oriens: Oriente
+Otto: Otto # Otton
+Oxion: Oxion
+Ozia: Ozia
+
+Palladius: Palladius Palladi
+Pannoniis: Pannoniis # Pannonie
+Papianilla: Papianilla
+Pappolenus: Pappolenus
+Pappolus: Pappolo Pappolum Pappole
+Parius: Parius Parisios Pariseus Parisius
+Parisiacus: Parisiaci Parisiacae Parisiaco Parisiacus Parisiaca Parisiacam Parisiacis Parisiorum Parisiorum
+Parthenius: Partheni
+Pascentius: Pascentius
+Pastor: Pastores
+Pathir: Pathir Pathiren
+Patroclus: Patroclus
+Paulellus: Paulelli
+Paulinus: Paulinus
+Paulus: Paulo
+Pegasius: Pegasium
+Pelagiana: Pelagiana Pelagiam
+Pelagius: Pelagius
+Peonius: Peonius Peonio
+Perdedemus: Perdedemus
+Perpetuus: Perpetui Perpetuus
+Persi: Persi Persida Persas
+Petreus: Petreum Petros Petri Petrus
+Pharao: Pharao Pharaone
+Phares: Phares*
+Photinus: Photinus Photino
+Pientius: Pientius Pientio
+Pilatus: Pilati
+Placidina: Placidina
+Policarpus: Policarpi Policarpus Policarpo
+Polioctus: Polioctus
+Porcarius: Porcarium
+Prilidan: Prilidan
+Priscus: Priscus
+Privatus: Privatus Privato
+Proculus: Proculus Proculum Procule
+Profuturus: Profuturus
+Proina: Proina
+Promotus: Promotus
+Protasius: Protasi
+Pylatus: Pylatus
+
+Quintianus: Quintianum Quintianus
+Quintinus: Quintino Quintinus
+Quiriacus: Quiriacus
+Quirici: Quirici
+Quirinus: Quirinus
+
+Rachel: Rachel Raguel
+Radegundis: Radegundis Radigundi Radegundem Radegundae Radegunde
+Ragnacharius: Ragnachari Ragnechario Ragnacharius
+Ragnimodus: Ragnemodo Ragnimodi Ragnimodus Ragnemodus Ragnimodo
+Ragnovaldus: Ragnovaldo Ragnovaldi
+Raguel: Raguel
+Ratharius: Ratharium Ratharius
+Rauchingus: Rauchingi Rauchingum Rauchingo Rauchingus
+Rebecca: Rebecca
+Redemptur: Redemptur # Rédempteur
+Redonensis: Redonensis
+Rhedonicus: Redonicum Rhedonicus Rhedonicis Redonicam
+Remedius: Remedium
+Remus: Remus
+Remegius: Remegius Remigius Remegii
+Renatus: Renatus Renati
+Reovalis: Reovalis
+Respendial: Respendial
+Rhodomago: Rhodomago Rotomago Rodomago
+Richaridus: Richaredi Richaridus Richaredum Richaredus Richaredo Richaridi
+Richarius: Richario
+Richimeris: Richimeris
+Riculfus: Riculfum Riculfus Riculfo
+Rignomeris: Rignomeris
+Rigoialinsis: Rigoialinsim Rodoialensim Rotoialinsim
+Rigundis: Rigundem Rigundae Rigundis
+Rigunthis: Rigunthae Rigunthis Rigunthe
+Roboam: Roboam Roboae # Roboam
+Roccolenus: Roccolenus
+Romacharius: Romacharius
+Romulfus: Romulfus Romulfum # Romulfus
+Rubin: Rubin
+Rusticus: Rusticus Rustici # Rustique
+
+Sabaudus: Sabaudus # Sabaude
+Sabellius: Sabellius # Sabellius
+Sacerdos: Sacerdos Sacerdote Sacerdotes
+Sadoch: Sadoch Saruch # Sadoch
+Saffaracus: Saffaracum # Saffaracum
+Saffarius: Saffarium Saffario # Saffarius
+Saffira: Saffirae # Sapphire
+Sagittarius: Sagittarius Sagittarium Sagittario Sagittarii Sagittari
+Saius: Saius
+Salathiel: Salathiel # Salathiel
+Sale: Sale # Salé
+Salma: Salma # Salma
+Salomon: Salamonis Salamonem Salomonem Salamones Salamon Salomonis Salamone Salomon Salamoneacae
+Salonius: Salonium Salonius Saloni Salunio # Salone
+Salustius: Salustii Salustius Salustium # Saluste
+Salvius: Salvius Salvio Salvii Salvae Saius # Sauve
+Samson: Samson Samsonis # Samson
+Samuhel: Samuhel Samuelem # Samuel
+Saruch: Saruch
+Satanas: Satanas # Satan
+Saturninus: Saturninus Saturninum Saturnini # Saturnin
+Saturnus: Saturnus
+Saul: Saul # Saül
+Scaptharius: Scaptharius Scaptharium # Scaphtaire
+Scarioticae: Scarioticas # Iscariote
+# Scriptura: Scriptura # Les Ecritures
+Secundinus: Secundini # Secondin
+Sedulius: Sidulium  # Sédule
+Sem: Sem # Sem
+Semoes: Semoes
+Sergius: Sergii Sergi # Serge
+Servius: Servius # Servius
+Seth: Seth # Seth
+Severus: Severus Severo # Suplice Sévère
+Siacrius: Siacrius Syagrius Sigarius Siagrius Siacrium Syacrius Syagrium Siagri Siagrio# Syagrius
+Sicharius: Sichario Sicharius Sichari Sicharium # Sichaire
+Sidonius: Sidonio Simonis Sidonium Sidonii Sidoni Simoni Sidonius
+Sigamber: Sigamber # Sicambre
+Siggo: Siggo # Siggo
+Sigila: Sigila # Sigila
+Sygiberthus: Sygiberthus Sigiberthus Sigyberthum Syghiberthus Sygibertus Sygiberthum Sigibertum Sigyberthus Syghiberthi Sigyberthi Sygibertho Sigiberthi Sigybertho Syghiberti Sygiberthi Sigiberti Sigibertho # Sigebert
+Sigimundus: Sigimundo Sigymundo Sigimundus Sigimundum Sigymundum # Sigmund
+Sigiricus: Sigiricum # Sigeric
+Sigivaldus: Sigivaldus Sigivaldo Sigivaldum Sigyvaldus Sigivaldi # Sigevald
+Sigulfus: Sigulfus Sigulfum Sigulfo # Sigulf
+Silvester: Silvestrum Silvestri # Sylvestre
+Silvius: Silvius # Silvius
+Simeon: Symeoni Symon Simonem Simion Simeone Simon Semeon # Simon
+Simphorianus: Simphoriani Symphoriani # Symphorien
+Simplicius: Simplicium # évêque
+Sirivuldus: Sirivuldi Sirivuldo Sirivuldum # Siribald
+Sisinnius: Sisinnio Sisinnius # 87ème pape
+Socratius: Socratium # Socrate
+Sollius: Sollius # Sollius
+Sophia: Sophia Sophiam Sophiae # Sophia
+Spiritus: Spiritus Spiritum Spiritui Spiritu # le Saint-Esprit
+Stephanus: Stefanum Stefani Stefanus Stephani # Etienne/Stéphane
+Stilico: Stilico
+Stremoneus: Stremoneus Stremonius Stremonium # Strémon
+Sulpicius: Sulpicius Sulpici Sulpicio Sulpitius # Sulpice
+Sunnigysilus: Sunnigysilus Sunnegisilus Sunnegysilum # Sumnégisile
+Sunniulfus: Sunniulfo Sunniulfus # Sunniulphe
+Sunno: Sunnone Sunnonem # Sunnon
+Susanna: Susanna # Suzanne
+Syagrius: Syagrius Syagrium
+Symphoriani: Symphoriani
+Syrus: Sirus Syrus # Syrus
+
+Tatto: Tattonis # Tatton
+Terentiolus: Terentiolus # Terentiolus
+Tetradia: Tetradiam Tetradiae Tetradia
+Tetradius: Tetradius # Tétradia
+Tetricus: Tetricus Tetrico Tetrici # Tétrique
+Teutarius: Teutarius Theutharius Theutharium # Teuthaire
+Thare: Thare # Thare
+Thau: Thau # Thau
+Thebeus: Thebei # Thèbes
+Thecla: Thecla # Thécla
+Theodadus:  Theodadum # Théodat
+Theodobaldus: Theodobaldum Theodovaldus Theodovaldum Theodovaldi Theudovaldo Theudoaldus # Théovald
+Theodoberthus: Theodoberthum Theudoberthum Theudoberto Theudoberthus Theodoberto Theodoberthus Theodeberthum Theodobertum Theodoberthi Theodobertho Theudobertho Theudobertus Theudoberthi Theudobertum # Théodobert
+Theodogildis: Theodogildis Theudogildem # Teutéchilde
+Theodoricus: Theodoricus Theodoricum Theudorico Theudoricus Theudoricum Theudericum Theuderici Theodorici Theudorici Theudericus # Théodoric
+Theodorus: Theudori Theodor Theudor Theudoro Theodoro Theodorum Theodorus # Théodore
+Theodosius: Theudosi Theodosius Theodosio Theodosianae Theodosii Theodosio # Théodose
+Theuda: Theuda
+Theudegisilus: Theudegisilum # Theudégisile
+Theudomeris: Theudomerem # Théodomer
+Theudulfus: Theudulfus Theudulfi Theodulfum # Théodulf
+Thorismodus: Thorismodus Thorismodo # Thorismund
+Tiberius: Tiberium Tiberius Tiberii # Tibérius
+Traguilanem: Traguilanem # Traguilan
+Traianus: Traiano Traianus Traiani # Trajan
+Tranquilla: Tranquilla # Tranquille (femme)
+Transobadus: Transobadus # Transobade
+Trasamundus: Trasamundo Trasamundus # Thrasamund
+Tropas: Tropas # roi Tropas
+Trinitas: Trinitatem Trinitate # Trinité
+Trophimus: Trophimus # Trophime
+Trudulfus: Trudulfus # Trudulf
+
+Ultrogotho: Ultrogotho Vulthrogotham # Ultrogoth
+Urban: Urban # Urbain
+Urbanus: Urbano
+Urbecus: Urbecus Urbicus
+Ursicinus: Ursicinus Ursicinum # Ursicin
+Ursio: Ursio Ursionis Ursione # Ursion
+Ursus: Ursi Urso Ursum # Ursus
+
+Vafres: Vafres # Vafrès, roi d'Egypte
+Valdenus: Valdenus # Valdin
+Valens: Valens Valentis # Valens
+Valentinianus: Valentiniani Valentiniano Valentinianum Valentinianus Valentiniana Valentinianum # Valentinien
+Valerianus: Valerianus # Valérian
+Vectius: Vectium Vecti # Vettius
+Venantius: Venanti Venantius # Venant
+Veneranda: Venerandam
+Venerandus: Venerandus Venerandum Venerandi # Venerande
+Vennocus: Winnocus Vennocus # Winnoch
+Vespasianus: Vispasiano # Vespasien
+Victorinus: Victorinus Victorinum # Victorien
+Victor: Victuri Victore
+Victur: Victuris
+Victorius: Victorius Victorium Victurius Victorio # Victor
+Vidastis: Vidastis
+Vidimaclis: Vidimacle # Widimael
+Vigilius: Vigili
+Vincenti: Vincenti Vincentio # Vincent
+Vindimialis: Vindimialem Vindimialis Vindimia # Vindémiale
+Vinthrione: Vinthrione # Wintrion#
+Virgilius: Virgilii Virgilius # Virgile
+Virus: Virus Virum Viri Viro
+is: Visigardem Wisigardem # Wisigarde
+Vitalis: Vitalis
+Volusianus: Volusianus Volosiani # Volusien
+Vuldetrada: Vuldotradam Vuldetradam # Vultrade
+Vulfelaicus: Vulfelaici Vulfilaico # Vulfilaïc
+
+Waddo: Waddo Waddone Waddonis Waddonem
+Waldo: Waldonem
+Wandalinus: Wandalini Wandalis Wandelenus # Vandelin
+Warmarius: Warmarium # Warinaire
+Warocus: Waroci Warocus Varocum Warocum Warochus Waroco Warocho Varochus
+Werpinus: Werpino Werpinum # Guerpin
+Wiliacharius: Willachario Wiliachario Wiliacharius Wiliacharium Wiliacharii # Wiliachaire
+Wiliulfus: Wiliulfum Wiliulfi # Villulf
+Winnocus: Winnoco # Winnoc
+Wintrius: Wintrio # Wintrion
+Wistrimundus: Wistrimundi # Wistrimond
+
+Xystus: Xystus # Xystus
+
+Zaban: Zabanis Zabanem Zaban Zaba # Zaban
+Zabulon: Zabulon # Zabulon
+Zara: Zara # Zara
+Zoroaster: Zoroastren # Zoroastre
+Zorobabil: Zorobabil # Zorobabel
