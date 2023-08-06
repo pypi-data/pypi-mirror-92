@@ -1,0 +1,11 @@
+README.md
+setup.py
+ninty.egg-info/PKG-INFO
+ninty.egg-info/SOURCES.txt
+ninty.egg-info/dependency_links.txt
+ninty.egg-info/top_level.txt
+src/module_adpcm.cpp
+src/module_endian.cpp
+src/module_gx2.cpp
+src/module_lzss.cpp
+src/module_yaz0.cpp

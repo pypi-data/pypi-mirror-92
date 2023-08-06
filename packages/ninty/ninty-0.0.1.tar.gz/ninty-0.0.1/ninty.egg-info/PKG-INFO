@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ninty
+Version: 0.0.1
+Summary: Fast functions for Nintendo formats
+Home-page: https://github.com/kinnay/ninty
+Author: Yannik Marchand
+Author-email: ymarchand@me.com
+License: MIT
+Description: C++ extension with functions for which python is too slow.
+Platform: UNKNOWN
