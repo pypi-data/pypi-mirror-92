@@ -1,0 +1,16 @@
+version: '2.4'
+
+services:
+  netswitch:
+    image: beasteers/netswitch:latest
+    privileged: true
+    network_mode: host
+    volumes:
+      # have control over the current connected ssid
+      - /etc/wpa_supplicant:/etc/wpa_supplicant
+      # give the set of ssids that we can connect to
+      - /boot/resources/aps:/etc/wpa_supplicant/aps
+      # pass in a custom config file
+      - ./config.yml:/app/config.yml
+    environment:
+      LIFELINE_SSID: "${LIFELINE_SSID:-}"

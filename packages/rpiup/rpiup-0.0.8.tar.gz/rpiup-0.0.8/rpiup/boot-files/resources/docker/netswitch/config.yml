@@ -1,0 +1,8 @@
+# # specify a network ssid that the device will latch onto
+# # over any other network.
+# # this is useful for network engineers that need to be able to
+# # gain access to a device to debug sensor problems.
+# # Can also be set using LIFELINE_SSID, though this will take priority
+# lifeline: s0nycL1f3l1ne
+# # the number of seconds to wait after running each check
+# interval: 20

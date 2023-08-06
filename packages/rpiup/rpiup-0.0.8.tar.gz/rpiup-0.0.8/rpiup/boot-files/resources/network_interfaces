@@ -1,0 +1,19 @@
+source-directory /etc/network/interfaces.d
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+
+allow-hotplug ppp0
+iface ppp0 inet wvdial
+post-up echo "cellular (ppp0) is online"
+
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+
+allow-hotplug wlan1
+iface wlan1 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf

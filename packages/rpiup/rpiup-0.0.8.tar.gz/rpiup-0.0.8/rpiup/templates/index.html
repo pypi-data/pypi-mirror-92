@@ -1,0 +1,162 @@
+<html>
+<head>
+
+<style>
+
+body {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #030005;
+    background: linear-gradient(purple 0%, red 90%),
+        linear-gradient(to right, purple 0%, yellow 90%),
+        url('https://pixnio.com/free-images/2017/03/23/2017-03-23-12-34-28-725x307.jpg')
+        no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Monaco; /*Trebuchet MS, */
+    font-size: 0.75em;
+}
+body > h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+    /* mix-blend-mode: lighten; */
+    color: #ffffff26;
+}
+
+#status {
+    background: #000000d9;
+    color: white;
+    background-blend-mode: darken;
+    border-radius: 5px;
+    max-width: 700px;
+    overflow: auto;
+    padding: 3em;
+    margin: 1em 0.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+}
+
+#status .device {
+    margin-bottom: 1em;
+    background: #ffffff08;
+    padding: 1.2em 0.7em 0.7em;
+    overflow: auto;
+}
+#status .device.done {
+    border-left: 2px solid #70ff9f;
+}
+
+#status .device > div {
+    padding: 0.2em;
+}
+
+.pill {
+    border-radius: 10px;
+    margin: 0.1em 0.6em;
+    padding: 0.2em 0.7em;
+    background: #10174a;
+    font-style: italic;
+}
+
+
+/* #msg {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    background: black;
+    display: none;
+}
+#msg.success { background: green; }
+#msg.error { background: red; } */
+
+#pulse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 1px;
+    box-shadow: 0px 0px 20px 15px #70ff9f;
+    transition: opacity 1s ease-in;
+    opacity: 0;
+}
+#pulse.active {
+    opacity: 1;
+    transition: opacity 0.15s ease-out;
+}
+
+.button {
+  background-color: #5f5f5f4a;
+  border: none;
+  color: white;
+  padding: 0.2em 0.4em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* font-size: 16px; */
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
+
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/visibility.js/1.2.4/visibility.min.js" integrity="sha512-CxGjTNaxpFq6jbg35mqGrfKEpHSBDw19EVpHAbEq1zkDN07m5NxFQj8s2URnmWUB4akScjCb/QthLyvl2wVAWg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.5.0/fetch.min.js" integrity="sha512-TXERecoxO85MPkCFqSG3LSe5nVimbZddhrPP2PwSMH5C5+kIoXi30bm1RgBckHQMkNCZN/i5FvHIvJuytp6ECw==" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1>Device Provisioning</h1>
+    <!-- <div id='msg'> this is a test message</div> -->
+    <div id='status'>
+        <span id='pulse'></span>
+        <div id='status-inner'></div>
+        <!-- <a href="#" class="button">Clear All</a> -->
+    </div>
+
+
+    <script>
+    var statusdiv = document.getElementById('status-inner');
+    var msg = document.getElementById('msg');
+
+    var run = function(){
+        if(Visibility.hidden()) { return; };
+
+        fetch('/status/text').then(function(response) {return response.json();}).then(function(response) {
+            statusdiv.innerHTML = response.body;
+            // console.log(response)
+            pulse();
+        })
+    }
+    run()
+    setInterval(run, 5000);
+
+    var pulseel = document.getElementById('pulse');
+    function pulse() {
+        pulseel.className = 'active';
+        setTimeout(function() { pulseel.className = ''; }, 200)
+    }
+
+    function doquery(url) {
+        fetch(url).then(function(response) {
+            console.log(response);return response.json();
+        }).then(function(response) {
+            console.log(response);
+            el.innerHTML = response.message;
+            msg.className = response.error ? 'error' : 'success';
+            msg.style.display = 'block';
+            setTimeout(function() { msg.style.display = 'none'; });
+        })
+    }
+    </script>
+
+</body>
+
+</html>

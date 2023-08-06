@@ -1,0 +1,10 @@
+# export APP_NAME=myapp
+# export USERNAME=me
+# export PASSWORD=mysecret
+# export GIT_USERNAME=me
+# export GIT_PASSWORD=mysecret
+# export LIFELINE_SSID=lifeline-2G
+# export MONITOR_HOST=192.168.1.246:8056
+# export UUID=device-98cb3ui2b3
+# export firstboot_hostname=
+# export HOSTNAME_PREFIX=

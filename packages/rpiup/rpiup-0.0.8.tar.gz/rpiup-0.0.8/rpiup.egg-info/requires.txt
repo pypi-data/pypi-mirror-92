@@ -1,0 +1,6 @@
+fire
+
+[monitor]
+flask
+sqlitedict
+PyYAML
