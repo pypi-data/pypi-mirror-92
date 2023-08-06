@@ -1,0 +1,16 @@
+two_to_tango/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+two_to_tango/_nbdev.py,sha256=yTeHPRX3NMJaEqEzSg1I27_cntZn-aCN7JGyy1Ve474,4524
+two_to_tango/approach.py,sha256=iZTEz2tNLHlrlBdn3_RwZx4lDVGAQVFw9oVh-DyMpg8,11027
+two_to_tango/cli.py,sha256=YAtaJK8EhtqScltMuZRbGDAimKPyjYuh0wXje9xon4Y,9827
+two_to_tango/combo.py,sha256=zWvG4kHkkyokKkT1fTNsId-HsAR4y0PxF72IBWRiMFU,13236
+two_to_tango/eval.py,sha256=4DUkpglpxS8szCPFI9vu2tdHA7LjrFVr6puG1cTYiZE,9088
+two_to_tango/features.py,sha256=9u0w6Zr6gJf_VAdj1AN87O1mMdDL4UhPqzthbrq1BSI,6218
+two_to_tango/model.py,sha256=eCdtFlAQDucLaxrQGXOUueatWVHKeWz8lmcQZs8p-HI,9312
+two_to_tango/prep.py,sha256=NH8nGre1xIrgv3WMg4iRrwvt2_nMT2cpfStMrsnybWQ,9252
+two_to_tango/utils.py,sha256=umkI8vOQL27qP32onzkRoVB4CJgPZ8Z_Bi1qmruNlIU,4599
+two_to_tango-0.0.2.dist-info/LICENSE,sha256=yYY3UzvIDr6uDWiyWCbw-Ml8EV2pjkNUaVgAxbGct1U,11340
+two_to_tango-0.0.2.dist-info/METADATA,sha256=O5pKd8_5V8yVaa4IXeLgVTK7oMGSnMgSn-hNz8iFXo0,10575
+two_to_tango-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+two_to_tango-0.0.2.dist-info/entry_points.txt,sha256=h1Aa6IOadmE2PUabweFXqyebXqdx5QsAjpYdmrsV3-Y,138
+two_to_tango-0.0.2.dist-info/top_level.txt,sha256=uZcm5Y3feiiXnw3unro_r8YOjwtmMjoOenKdjB2zCQA,13
+two_to_tango-0.0.2.dist-info/RECORD,,
