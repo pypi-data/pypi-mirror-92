@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: deepfake-gitract
+Version: 0.0.1
+Summary: Deepfake gastrointestinal tract image generator.
+Home-page: https://github.com/vlbthambawita/deepfake-ecg
+Author: TBA
+Author-email: vlbthambawita@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: pandas
+Requires-Dist: pathlib
+Requires-Dist: stylegan2-pytorch
+
+# deepfake-gitract
+
+
