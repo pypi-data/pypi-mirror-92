@@ -1,0 +1,10 @@
+README.md
+setup.py
+autozoom/__init__.py
+autozoom/__main__.py
+autozoom.egg-info/PKG-INFO
+autozoom.egg-info/SOURCES.txt
+autozoom.egg-info/dependency_links.txt
+autozoom.egg-info/not-zip-safe
+autozoom.egg-info/requires.txt
+autozoom.egg-info/top_level.txt

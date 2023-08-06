@@ -1,0 +1,4 @@
+pyperclip
+keyboard>0.13.0
+requests
+texttable
