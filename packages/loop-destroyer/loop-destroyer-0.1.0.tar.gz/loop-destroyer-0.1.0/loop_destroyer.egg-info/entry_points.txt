@@ -1,0 +1,3 @@
+[console_scripts]
+loop-destroyer = loop_destroyer.loop_destroyer:launcher
+

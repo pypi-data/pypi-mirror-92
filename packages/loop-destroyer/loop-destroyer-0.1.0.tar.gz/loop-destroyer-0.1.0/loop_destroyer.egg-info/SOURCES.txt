@@ -1,0 +1,10 @@
+README.md
+setup.py
+loop_destroyer/__init__.py
+loop_destroyer/loop_destroyer.py
+loop_destroyer/script.py
+loop_destroyer.egg-info/PKG-INFO
+loop_destroyer.egg-info/SOURCES.txt
+loop_destroyer.egg-info/dependency_links.txt
+loop_destroyer.egg-info/entry_points.txt
+loop_destroyer.egg-info/top_level.txt
