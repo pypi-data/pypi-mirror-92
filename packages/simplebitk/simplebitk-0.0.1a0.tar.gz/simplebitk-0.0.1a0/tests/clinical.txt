@@ -1,0 +1,7 @@
+sample,condition,batch,starbam,hisat2bam
+SRR12678525,Control,b1,pair-end/results/RNA/SRR12678525/align_data/SRR12678525_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678525/align_data/SRR12678525_hisat2.bam
+SRR12678526,Control,b1,pair-end/results/RNA/SRR12678526/align_data/SRR12678526_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678526/align_data/SRR12678526_hisat2.bam
+SRR12678527,Control,b1,pair-end/results/RNA/SRR12678527/align_data/SRR12678527_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678527/align_data/SRR12678527_hisat2.bam
+SRR12678528,Case,b1,pair-end/results/RNA/SRR12678528/align_data/SRR12678528_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678528/align_data/SRR12678528_hisat2.bam
+SRR12678529,Case,b1,pair-end/results/RNA/SRR12678529/align_data/SRR12678529_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678529/align_data/SRR12678529_hisat2.bam
+SRR12678530,Case,b1,pair-end/results/RNA/SRR12678530/align_data/SRR12678530_STAR_Aligned.sortedByCoord.out.bam,pair-end/results/RNA/SRR12678530/align_data/SRR12678530_hisat2.bam

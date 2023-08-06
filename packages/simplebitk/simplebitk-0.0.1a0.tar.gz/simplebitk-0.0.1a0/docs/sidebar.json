@@ -1,0 +1,18 @@
+{
+  "simplebitk": {
+    "Overview": "/",
+    "utils.dedimensions": "utils_rd.html",
+    "pipelines": "pipelines.html",
+    "run_all": "mains.html",
+    "plots": "utils_plots.html",
+    "clusters": "utils_clusters.html",
+    "defaults": "default.html",
+    "preprocess": "preprocess.html",
+    "degfc": "merge_degfc.html",
+    "nanopore": "polya_sites.html",
+    "multirun": "utils_multirun.html",
+    "bamfilter": "utils_bamfilter.html",
+    "Title": "plots.html",
+    "reads": "reads_head.html"
+  }
+}

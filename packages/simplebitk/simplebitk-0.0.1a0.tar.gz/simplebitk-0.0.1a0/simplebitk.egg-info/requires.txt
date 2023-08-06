@@ -1,0 +1,8 @@
+scikit-learn
+phate
+umap-learn
+scipy
+seaborn
+defopt
+scipy
+pysam

@@ -1,0 +1,11 @@
+numpy==1.19.3
+seaborn
+scikit-learn
+phate
+umap-learn
+scipy
+defopt
+scipy
+pysam
+nbdev
+jupyter
