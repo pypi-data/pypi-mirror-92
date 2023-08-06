@@ -1,0 +1,54 @@
+## Simple python api using flask and sqlalchemy
+### Create/update with PUT 
+Description: Saves/updates the given user's name and date of birth in the database. 
+Request: PUT /hello/<username> {“dateOfBirth": "YYYY-MM-DD" }
+Response: 204 No Content
+ 
+**Note:**
+<usename> must contains only letters. 
+YYYY-MM-DD must be a date before the today date. 
+
+### See message with GET
+Description: Returns hello birthday message for the given user 
+Request: Get /hello/<username> 
+Response: 200 OK 
+
+**Response Examples: **
+A. If username's birthday is in N days: { "message": "Hello, <username>! Your birthday is in N day(s)" } 
+B. If username's birthday is today: { "message": "Hello, <username>! Happy birthday!" } 
+### APP variables
+Application listens on localhost:5000 by default, but you can set environment variables
+```
+export APP_HOST=someadress
+export APP_PORT=8080
+```
+
+### APP dependencies
+**Application uses postgresql and need following environment values:**
+```
+export SQLALCHEMY_DATABASE_URI="postgresql://user:somestrongpassword@localhost:5432/users"
+```
+
+### Starting application
+**To start application type:**
+```
+python -m roverqaz_simple_api
+```
+**Also you can install application with pip:**
+```
+pip install --upgrade roverqaz_simple_api
+python -m roverqaz_simple_api
+```
+### Unit tests
+**To run unit tests enter:**
+```
+python tests/test.py
+```
+**Tests includes for steps**
+ - put unittest user with birtdate on 31-12-%YEAR%
+ - gets unittest user and checks response message
+ - updates unittest user's birtdate to today
+ - gets unittest user and checks response message
+ 
+### Package on PyPi
+See [roverqaz-simple-api](https://pypi.org/project/roverqaz-simple-api/)
