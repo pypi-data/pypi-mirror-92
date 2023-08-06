@@ -1,0 +1,10 @@
+deepModel-0.0.1.dist-info/METADATA,sha256=3x4H_Ocxb1haY_VcNkttMArhkp-bFHr404_p-cM1KXY,583
+deepModel-0.0.1.dist-info/RECORD,,
+deepModel-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+deepModel-0.0.1.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+test/__init__.py,sha256=n6J9IqFx-8Z8YlN5QVLOLoP0ZGlT8-z1IAL2_jIj2o4,27
+test/hello.py,sha256=lQDM3TKTl-evhuTNEcle5QWxKmsg9osdiuj8p9zNrxQ,22
+test/utils.py,sha256=u8_IaLJN7DDB7_bMbRRNLbgPpp5QrGcCceoqSI2jdak,50
+test/models/__init__.py,sha256=Ld_Z8hEKrDhQ9MQ2Cqjg7WYBC9OgowuNL-tcRoqRJvc,95
+test/models/deepfm.py,sha256=TOnW7f-xOa6EvSa9RjvkF72amg36ZJQXA7_k9qkIkD8,128
+test/models/youtube.py,sha256=ggosQt6bUosl6etLYzyrNNv3bVYQOdQmFp38aGDJ74s,132
