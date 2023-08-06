@@ -1,0 +1,10 @@
+dogsvscats/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+dogsvscats/config.py,sha256=DZR-TvxHU0NzcGYKqjBFo3iNFOwZxKW7zjJ0InoT3_k,509
+dogsvscats/train.py,sha256=HcBA2TZ3vfud7qQZTg2sY5zUO_yqKHZOH-weoRTRO00,1092
+dogsvscats/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dogsvscats/data/dataset.py,sha256=G1froWC15AjFIwn7ffMZ22vApJGrPWH6xrIWE7AWXm8,3119
+dogsvscats/data/transforms.py,sha256=uv6diRD9FZzQwotSbO2IurAK_wHxPgrf-OsCQfmqx2s,470
+dogsvscats-0.0.1.dist-info/METADATA,sha256=APlPJCg7J-DiWrZYImZMGZdlsSOpIPv7iDjROjXZl8A,998
+dogsvscats-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+dogsvscats-0.0.1.dist-info/top_level.txt,sha256=v3lgXhQuJ7VC3iPYer4xnW-coDm0b6WD2xRMqX8Yoxc,11
+dogsvscats-0.0.1.dist-info/RECORD,,
