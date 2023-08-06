@@ -1,0 +1,8 @@
+include requirements.txt
+recursive-include qary/data *
+recursive-exclude qary/data *.tar.gz
+recursive-exclude qary/data *.bin
+recursive-exclude qary/data/qa-models **
+recursive-exclude qary/data/corpora/wikipedia *
+exclude qary/data/corpora/wikipedia/wikipedia-titles-alphaonly-hashed.uint64.npy.gz
+exclude qary/data/qa-models/albert-large-v2-0.2.0/pytorch_model.bin
