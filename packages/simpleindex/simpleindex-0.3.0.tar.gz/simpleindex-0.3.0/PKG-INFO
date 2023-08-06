@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: simpleindex
+Version: 0.3.0
+Summary: PEP 503 Simple Repository index by declaring routing rules.
+Home-page: https://github.com/uranusjr/simpleindex
+Author: Tzu-ping Chung
+Author-email: uranusjr@gmail.com
