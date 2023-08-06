@@ -1,0 +1,70 @@
+(edif inverter
+  (edifversion 2 0 0)
+  (edifLevel 0)
+  (keywordmap (keywordlevel 0))
+(status
+ (written
+  (timeStamp 2016 12 21 11 05 48)
+  (program "Vivado" (version "2016.2"))
+  (comment "Built on 'Thu Jun  2 16:32:40 MDT 2016'")
+  (comment "Built by 'xbuild'")
+ )
+)
+  (Library hdi_primitives
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell LUT1 (celltype GENERIC)
+     (view netlist (viewtype NETLIST)
+       (interface 
+        (port O (direction OUTPUT))
+        (port I0 (direction INPUT))
+       )
+     )
+   )
+   (cell INV (celltype GENERIC)
+     (view netlist (viewtype NETLIST)
+       (interface
+         (port I (direction INPUT))
+         (port O (direction OUTPUT))
+       )
+     )
+   )
+  )
+  (Library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+   (cell inverter (celltype GENERIC)
+     (view inverter (viewtype NETLIST)
+       (interface 
+        (port I (direction INPUT))
+        (port O (direction OUTPUT))
+       )
+       (contents
+         (instance O_INST_0 (viewref netlist (cellref LUT1 (libraryref hdi_primitives)))
+           (property INIT (string "2'h1"))
+         )
+         (net I (joined
+          (portref I0 (instanceref O_INST_0))
+          (portref I)
+          )
+         )
+         (net O (joined
+          (portref O (instanceref O_INST_0))
+          (portref O)
+          )
+         )
+       )
+
+           (property dont_touch (string "true"))
+     )
+   )
+  )
+(comment "Reference To The Cell Of Highest Level")
+
+  (design inverter
+    (cellref inverter (libraryref work))
+    (property XLNX_PROJ_DIR (string "C:/Users/akeller9/Xilinx/unusedBlackBox"))
+    (property (rename PHYSOPT_VERSION "PHYSOPT.VERSION") (string "2016.2_6"))
+    (property part (string "xc7vx485tffg1157-1"))
+  )
+)
