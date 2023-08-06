@@ -1,0 +1,17 @@
+glvis/__init__.py,sha256=BJMyAPyx6NE_aKDVIu_IWqZ29bZPZI3tW8XrWG9rSfE,858
+glvis/_version.py,sha256=thGCH2HjAKLbeslAI8-qfeU5BMpF0YfJ8yaIg63-LqY,100
+glvis/widget.py,sha256=Ey_ssXMx2YflSJVtiaCdmfMG8M_nMMMAoYsP4AHIoZA,3097
+glvis/nbextension/extension.js,sha256=GoHqs4BJu6aDcF1JNGc_cvaBp0_nO81HiwcgYV_VSSc,422
+glvis/nbextension/index.js,sha256=IuZ8fKim4pwlmS0IXjJ0eZ8uu2-ajRiGxawS2yEf0b0,5324549
+glvis/nbextension/index.js.LICENSE.txt,sha256=0z77300wm_pESBmVUTcf-B1fV2YbeB-vedJWVU4DhZU,336
+glvis/nbextension/index.js.map,sha256=N7_DE8wQzTAQWdCiiWWBCqUjzUxkb-M9JQln9VDfQaw,7405722
+glvis-0.2.1.data/data/etc/jupyter/nbconfig/notebook.d/glvis-jupyter.json,sha256=JSFCAOFAERUWBY4BhF45_MDGNOf8T_R_VVir0MAW5oU,67
+glvis-0.2.1.data/data/share/jupyter/nbextensions/glvis-jupyter/extension.js,sha256=GoHqs4BJu6aDcF1JNGc_cvaBp0_nO81HiwcgYV_VSSc,422
+glvis-0.2.1.data/data/share/jupyter/nbextensions/glvis-jupyter/index.js,sha256=IuZ8fKim4pwlmS0IXjJ0eZ8uu2-ajRiGxawS2yEf0b0,5324549
+glvis-0.2.1.data/data/share/jupyter/nbextensions/glvis-jupyter/index.js.map,sha256=N7_DE8wQzTAQWdCiiWWBCqUjzUxkb-M9JQln9VDfQaw,7405722
+glvis-0.2.1.dist-info/LICENSE,sha256=GbifxuuyRI8u0Lh2MQ5llLcYGiCQxuOGayRWpiWmUNE,1546
+glvis-0.2.1.dist-info/METADATA,sha256=TyndlqrlZPxYyJi9v69ddRczBkD7xn005uu3gddQq3U,475
+glvis-0.2.1.dist-info/NOTICE,sha256=FV5CQQrPccHKwiS8F9kNH5AU8oKMePIh-kTcTj6mVqg,1167
+glvis-0.2.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+glvis-0.2.1.dist-info/top_level.txt,sha256=OTgbKVHRMwNRym3MJbWeA8yu7LFkOtp21UPTW9bX6DY,6
+glvis-0.2.1.dist-info/RECORD,,

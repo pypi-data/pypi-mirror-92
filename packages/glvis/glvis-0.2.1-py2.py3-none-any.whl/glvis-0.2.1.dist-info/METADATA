@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: glvis
+Version: 0.2.1
+Summary: Jupyter Widget using glvis-js
+Home-page: https://github.com/glvis/pyglvis
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets,glvis,mfem
+Platform: UNKNOWN
+Classifier: Framework :: IPython
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: ipywidgets (>=7.0.0)
+Requires-Dist: traittypes (>=0.2.1)
+
+Jupyter Widget for GLVis
+
+
