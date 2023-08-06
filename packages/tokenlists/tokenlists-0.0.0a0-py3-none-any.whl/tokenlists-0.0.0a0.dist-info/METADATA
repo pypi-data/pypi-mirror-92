@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: tokenlists
+Version: 0.0.0a0
+Summary: UNKNOWN
+Home-page: https://github.com/iamdefinitelyahuman/py-tokenlists
+Author: Ben Hauser
+Author-email: ben@hauser.id
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Requires-Dist: eth-brownie (<2.0.0,>=1.13.0)
+
+# py-tokenlists
+
+Basic support for [Uniswap Token Lists](https://github.com/Uniswap/token-lists) in Brownie.
+
+## Dependencies
+
+* [python3](https://www.python.org/downloads/release/python-368/) version 3.6 or greater, python3-dev
+* [brownie](https://github.com/eth-brownie/brownie) version [1.13.0](https://github.com/eth-brownie/brownie/releases/tag/v1.13.0) or greater
+
+## Installation
+
+### via `pipx`
+
+If you have installed Brownie using [`pipx`](https://github.com/pipxproject/pipx), you need to add `tokenlists` into the same virtual environment:
+
+```bash
+pipx inject eth-brownie tokenlists
+```
+
+### via `pip`
+
+You can install the latest release via [`pip`](https://pypi.org/project/pip/):
+
+```bash
+pip install tokenlists
+```
+
+### via `setuptools`
+
+You can clone the repository and use [`setuptools`](https://github.com/pypa/setuptools) for the most up-to-date version:
+
+```bash
+git clone https://github.com/iamdefinitelyahuman/py-tokenlists.git
+cd py-tokenlists
+python3 setup.py install
+```
+
+## Quick Usage
+
+TODO
+
+## Development
+
+This project is in early development and should be considered an alpha. Things might not work, breaking changes are likely. Comments, questions, criticisms and pull requests are welcomed.
+
+## License
+
+This project is licensed under the [MIT license](LICENSE).
+
+
