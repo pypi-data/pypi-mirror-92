@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kraken_scrape.egg-info/PKG-INFO
+kraken_scrape.egg-info/SOURCES.txt
+kraken_scrape.egg-info/dependency_links.txt
+kraken_scrape.egg-info/top_level.txt
+kraken_scraper/datapoint.py
+kraken_scraper/kraken_scraper.py
+kraken_scraper/scraper_files.py
+kraken_scraper/scraper_main.py
+kraken_scraper/scraper_schemas.py
+kraken_scraper/scraper_tables.py
+kraken_scraper/scraper_videos.py
