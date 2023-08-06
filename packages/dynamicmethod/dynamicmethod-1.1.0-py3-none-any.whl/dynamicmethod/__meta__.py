@@ -1,0 +1,6 @@
+name = 'dynamicmethod'
+version = '1.1.0'
+description = 'An instance method decorator that also works as a classmethod.'
+url = 'https://github.com/justengel/dynamicmethod'
+author = 'Justin Engel'
+author_email = 'jtengel08@gmail.com'
