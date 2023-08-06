@@ -1,0 +1,9 @@
+README.md
+git_refs.py
+setup.py
+git_refs.egg-info/PKG-INFO
+git_refs.egg-info/SOURCES.txt
+git_refs.egg-info/dependency_links.txt
+git_refs.egg-info/entry_points.txt
+git_refs.egg-info/requires.txt
+git_refs.egg-info/top_level.txt

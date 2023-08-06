@@ -1,0 +1,3 @@
+[console_scripts]
+git-refs = git_refs:main
+
