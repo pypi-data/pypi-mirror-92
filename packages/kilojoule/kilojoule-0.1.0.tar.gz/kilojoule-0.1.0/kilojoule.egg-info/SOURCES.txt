@@ -1,0 +1,196 @@
+.coveragerc
+.gitignore
+AUTHORS.rst
+CHANGELOG.rst
+LICENSE.txt
+README.rst
+requirements.txt
+setup.py
+docs/Makefile
+docs/authors.rst
+docs/changelog.rst
+docs/conf.py
+docs/index.rst
+docs/license.rst
+docs/_static/.gitignore
+examples/.2020-07-23-224847.term-0.term
+examples/.2020-07-24-122314.term-0.term
+examples/.2020-07-24-122835.term-0.term
+examples/.ME321 Ex Template.ipynb.sage-jupyter2
+examples/.ME321 Ex0.0 Template.ipynb.sage-jupyter2
+examples/.ME321 Ex0.1 Filling a Tank.ipynb.sage-jupyter2
+examples/.ME321 Ex0.2 Compressor Isentropic Efficiency.ipynb.sage-jupyter2
+examples/.ME321 Ex0.3 Tank and Turbine.ipynb.sage-jupyter2
+examples/ME321 Ex Template.ipynb
+examples/ME321 Ex0.0 Template.ipynb
+examples/00 - Thermo I Review/.ME321 Ex0.1 Filling a Tank.ipynb-0.term
+examples/00 - Thermo I Review/.ME321 Ex0.1 Filling a Tank.ipynb.sage-jupyter2
+examples/00 - Thermo I Review/.ME321 Ex0.2 Compressor Isentropic Efficiency.ipynb-0.term
+examples/00 - Thermo I Review/.ME321 Ex0.2 Compressor Isentropic Efficiency.ipynb.sage-jupyter2
+examples/00 - Thermo I Review/.ME321 Ex0.3 Tank and Turbine.ipynb.sage-jupyter2
+examples/00 - Thermo I Review/ME321 Ex0.1 Filling a Tank.ipynb
+examples/00 - Thermo I Review/ME321 Ex0.2 Compressor Isentropic Efficiency.ipynb
+examples/00 - Thermo I Review/ME321 Ex0.3 Tank and Turbine.ipynb
+examples/00 - Thermo I Review/.ipynb_checkpoints/ME321 Ex0.1 Filling a Tank-checkpoint.ipynb
+examples/00 - Thermo I Review/.ipynb_checkpoints/ME321 Ex0.2 Compressor Isentropic Efficiency-checkpoint.ipynb
+examples/00 - Thermo I Review/.ipynb_checkpoints/ME321 Ex0.3 Tank and Turbine-checkpoint.ipynb
+examples/01 - Chapter 8 Exergy/.2020-08-14-213831.term-0.term
+examples/01 - Chapter 8 Exergy/.ME321 Ex8.1 Piston Exergy Analysis.ipynb.sage-jupyter2
+examples/01 - Chapter 8 Exergy/.ME321 Ex8.2 Compressor Second Law Efficiency.ipynb.sage-jupyter2
+examples/01 - Chapter 8 Exergy/.ME321 Ex8.3 Heat Exchanger Analysis.ipynb.sage-jupyter2
+examples/01 - Chapter 8 Exergy/ME321 Ex8.1 Piston Exergy Analysis.ipynb
+examples/01 - Chapter 8 Exergy/ME321 Ex8.2 Compressor Second Law Efficiency.ipynb
+examples/01 - Chapter 8 Exergy/ME321 Ex8.3 Heat Exchanger Analysis.ipynb
+examples/01 - Chapter 8 Exergy/.ipynb_checkpoints/ME321 Ex8.1 Piston Exergy Analysis-checkpoint.ipynb
+examples/01 - Chapter 8 Exergy/.ipynb_checkpoints/ME321 Ex8.2 Compressor Second Law Efficiency-checkpoint.ipynb
+examples/01 - Chapter 8 Exergy/.ipynb_checkpoints/ME321 Ex8.3 Heat Exchanger Analysis-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.1 Isentropic Compression (Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.1 Isentropic Compression (Cold-Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.1 Isentropic Compression (Real-Fluid).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.2 Otto (Cycle Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.2 Otto Cycle (Cold-Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.2 Otto Cycle (Real-Fluid).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.3 Dual Cycle (Cold-Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.4 Brayton Cycle (Cold-Air-Standard).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.5 Modified Brayton Cycle (Real-Fluid).ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.Ex9.6 Jet-Propulsion.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.ME321 Ex 9.1 Isentropic Compression.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.ME321 Ex9.1 Isentropic Compression.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.ME321 Ex9.2 Otto Cycle-IG.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.ME321 Ex9.2 Otto Cycle.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/.ME321 Ex9.3 Dual Cycle.ipynb.sage-jupyter2
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.1 Isentropic Compression (Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.1 Isentropic Compression (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.1 Isentropic Compression (Real-Fluid).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.2 Otto (Cycle Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.2 Otto Cycle (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.2 Otto Cycle (Real-Fluid).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.3 Dual Cycle (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.4 Brayton Cycle (Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.4 Brayton Cycle (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.4 Brayton Cycle (Real-Fluid).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.5 Modified Brayton Cycle (Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.5 Modified Brayton Cycle (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.5 Modified Brayton Cycle (Real-Fluid).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.6 Jet-Propulsion (Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/Ex9.6 Jet-Propulsion (Cold-Air-Standard).ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.1 Isentropic Compression (Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.1 Isentropic Compression (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.1 Isentropic Compression (Real-Fluid)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.2 Otto (Cycle Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.2 Otto Cycle (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.2 Otto Cycle (Real-Fluid)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.3 Dual Cycle (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.4 Brayton Cycle (Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.4 Brayton Cycle (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.4 Brayton Cycle (Real-Fluid)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.5 Modified Brayton Cycle (Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.5 Modified Brayton Cycle (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.5 Modified Brayton Cycle (Real-Fluid)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.6 Jet-Propulsion (Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/Ex9.6 Jet-Propulsion (Cold-Air-Standard)-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/ME321 Ex9.2 Otto Cycle-checkpoint.ipynb
+examples/02 - Chapter 9 Gas Power Cycles/.ipynb_checkpoints/ME321 Ex9.3 Dual Cycle-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.1 Ideal Rankine Cycle.ipynb-0.term
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.1 Ideal Rankine Cycle.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.2 Non-Ideal Rankine Cycle.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.3 Rankine with Superheat.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.4 Rankine with Reheat.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.5 Rankine with Reheat and OFH Regeneration.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.6 Rankine with Reheat and CFH Regeneration.ipynb-0.term
+examples/03 - Chapter 10 Vapor Power Cycles/.Ex10.6 Rankine with Reheat and CFH Regeneration.ipynb.sage-jupyter2
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.1 Ideal Rankine Cycle.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.2 Non-Ideal Rankine Cycle.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.3 Rankine with Superheat.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.4 Rankine with Reheat.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.5 Rankine with Reheat and OFH Regeneration.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/Ex10.6 Rankine with Reheat and CFH Regeneration.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.1 Ideal Rankine Cycle-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.2 Non-Ideal Rankine Cycle-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.3 Rankine with Superheat-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.4 Rankine with Reheat-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.5 Rankine with Reheat and OFH Regeneration-checkpoint.ipynb
+examples/03 - Chapter 10 Vapor Power Cycles/.ipynb_checkpoints/Ex10.6 Rankine with Reheat and CFH Regeneration-checkpoint.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.Ex11.1 Ideal Refrigeration.ipynb.sage-jupyter2
+examples/04 - Chapter 11 Refrigeration Cycles/.Ex11.2 Actual Refrigeration.ipynb.sage-jupyter2
+examples/04 - Chapter 11 Refrigeration Cycles/.Ex11.3 Heat Pump.ipynb.sage-jupyter2
+examples/04 - Chapter 11 Refrigeration Cycles/.Ex11.4 Modified Refrigeration.ipynb.sage-jupyter2
+examples/04 - Chapter 11 Refrigeration Cycles/.Ex11.5 Multistage Compression with Intercooling.ipynb.sage-jupyter2
+examples/04 - Chapter 11 Refrigeration Cycles/Ex11.1 Ideal Refrigeration.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/Ex11.2 Actual Refrigeration.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/Ex11.3 Heat Pump.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/Ex11.4 Modified Refrigeration.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/Ex11.5 Multistage Compression with Intercooling.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.ipynb_checkpoints/Ex11.1 Ideal Refrigeration-checkpoint.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.ipynb_checkpoints/Ex11.2 Actual Refrigeration-checkpoint.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.ipynb_checkpoints/Ex11.3 Heat Pump-checkpoint.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.ipynb_checkpoints/Ex11.4 Modified Refrigeration-checkpoint.ipynb
+examples/04 - Chapter 11 Refrigeration Cycles/.ipynb_checkpoints/Ex11.5 Multistage Compression with Intercooling-checkpoint.ipynb
+examples/05 - Chapter 12 Thermodynamic Property Relations/.Ex12.1 Clapeyron Equation.ipynb-0.term
+examples/05 - Chapter 12 Thermodynamic Property Relations/.Ex12.1 Clapeyron Equation.ipynb.sage-jupyter2
+examples/05 - Chapter 12 Thermodynamic Property Relations/Ex12.1 Clapeyron Equation.ipynb
+examples/05 - Chapter 12 Thermodynamic Property Relations/Ex12.2 - Joule-Thomson Coefficient.ipynb
+examples/05 - Chapter 12 Thermodynamic Property Relations/.ipynb_checkpoints/Ex12.1 Clapeyron Equation-checkpoint.ipynb
+examples/05 - Chapter 12 Thermodynamic Property Relations/.ipynb_checkpoints/Ex12.2 - Joule-Thomson Coefficient-checkpoint.ipynb
+examples/06 - Chapter 13 Gas Mixtures/.Ex13.4 Constant composition Expansion.ipynb.sage-jupyter2
+examples/06 - Chapter 13 Gas Mixtures/Ex13.1 Mass Fractions.ipynb
+examples/06 - Chapter 13 Gas Mixtures/Ex13.2 Mixing Gases.ipynb
+examples/06 - Chapter 13 Gas Mixtures/Ex13.3 Mixing Exergy Destruction.ipynb
+examples/06 - Chapter 13 Gas Mixtures/Ex13.4 Constant composition Expansion.ipynb
+examples/06 - Chapter 13 Gas Mixtures/.ipynb_checkpoints/Ex13.1 Mass Fractions-checkpoint.ipynb
+examples/06 - Chapter 13 Gas Mixtures/.ipynb_checkpoints/Ex13.2 Mixing Gases-checkpoint.ipynb
+examples/06 - Chapter 13 Gas Mixtures/.ipynb_checkpoints/Ex13.3 Mixing Exergy Destruction-checkpoint.ipynb
+examples/06 - Chapter 13 Gas Mixtures/.ipynb_checkpoints/Ex13.4 Constant composition Expansion-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.Ex 14.4 Heating with Humidification.ipynb.sage-jupyter2
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.Ex 14.5 Cooling with Dehumidification.ipynb.sage-jupyter2
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.Ex 14.6 Adiabatic Mixing.ipynb.sage-jupyter2
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex 14.4 Heating with Humidification.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex 14.5 Cooling with Dehumidification.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex 14.6 Adiabatic Mixing.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex 14.7 Comfort Zone.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex14.1 Relative Humidity.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex14.2 Sling Psychrometer.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/Ex14.3 Psychrometric Chart.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex 14.4 Heating with Humidification-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex 14.5 Cooling with Dehumidification-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex 14.6 Adiabatic Mixing-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex 14.7 Comfort Zone-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex14.1 Relative Humidity-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex14.2 Sling Psychrometer-checkpoint.ipynb
+examples/07 - Chapter 14 Gas-Vapor Mixtures/.ipynb_checkpoints/Ex14.3 Psychrometric Chart-checkpoint.ipynb
+kilojoule/.#chemical.py
+kilojoule/.#humidair.py
+kilojoule/.#plotting.py
+kilojoule/__init__.py
+kilojoule/chemical.py
+kilojoule/common.py
+kilojoule/display.py
+kilojoule/humidair.py
+kilojoule/idealgas.py
+kilojoule/organization.py
+kilojoule/plotting.py
+kilojoule/realfluid.py
+kilojoule/units.py
+kilojoule.egg-info/PKG-INFO
+kilojoule.egg-info/SOURCES.txt
+kilojoule.egg-info/dependency_links.txt
+kilojoule.egg-info/top_level.txt
+kilojoule/templates/.#USCS_F.py
+kilojoule/templates/USCS_F.py
+kilojoule/templates/USCS_R.py
+kilojoule/templates/__init__.py
+kilojoule/templates/default.py
+kilojoule/templates/humidair_USCS_F.py
+kilojoule/templates/humidair_default.py
+kilojoule/templates/kSI_C.py
+kilojoule/templates/kSI_K.py
+kilojoule/templates/.ipynb_checkpoints/USCS_F-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/USCS_R-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/__init__-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/default-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/humidair_USCS_F-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/humidair_default-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/kSI_C-checkpoint.py
+kilojoule/templates/.ipynb_checkpoints/kSI_K-checkpoint.py
+tests/conftest.py
+tests/test_skeleton.py
