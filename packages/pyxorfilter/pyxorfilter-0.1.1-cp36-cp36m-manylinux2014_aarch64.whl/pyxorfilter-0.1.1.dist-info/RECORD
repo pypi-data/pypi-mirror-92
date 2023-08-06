@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_xor8.py,sha256=FAvAqeX1itLtFvXq5z3wGpIu4ZYlchVMdf4IXD2T0aM,1049
+tests/test_xor16.py,sha256=Jej6Cpr_grDCLVSyLjySaVMNxFKA6sW267ROLxjlUj4,1543
+pyxorfilter-0.1.1.dist-info/RECORD,,
+pyxorfilter-0.1.1.dist-info/WHEEL,sha256=SvVHOuR2M93hYqiLt4VDjeFl_msRF-uASAPBu39xJDA,113
+pyxorfilter-0.1.1.dist-info/METADATA,sha256=Hm-5A-f7LuZbbviuVxtXRt5c_NgD6q0SfNVzmzbc0jY,2035
+pyxorfilter-0.1.1.dist-info/top_level.txt,sha256=CeEYmTaFhgSIZA-niToYbwNK4B75bgK8ncUKFTRlrcI,29
+pyxorfilter-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyxorfilter/pyxorfilter.py,sha256=SlVIuHIFXBia6-fJYqrTKzRF6t9IaIngykkKiJgTwx4,1902
+pyxorfilter/ffibuild.py,sha256=6ufbMfd4CQ-jmZMkPdvUstSS0CZE0sQMgHYJw7FXZ0M,4176
+pyxorfilter/__init__.py,sha256=8gOSJez12D9T1l70YhqZQXYGgLQMes5BUHRupGCpPCc,95
+pyxorfilter/_xorfilter.abi3.so,sha256=1OSQV63eGm5LDFNRLeEJbOOUumG1Zeop2RQK42bgfCU,387128
