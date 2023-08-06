@@ -1,0 +1,31 @@
+bool:
+  bottom: -b
+  grab: -f
+  wrap: null
+  ifne: null
+  ignorecase: -i
+  nooverlap: null
+
+input:
+  version: -v
+  lines: -l
+  monitor: -m
+  height: null
+  prompt: -p
+  prefix: null
+  index: null
+  scrollbar: null
+  font: -fn
+  title_background: -nb  # use default
+  title_foreground: -nf
+  normal_background: -nb
+  normal_foreground: -nf
+  filter_background: -nb  # use default
+  filter_foreground: -nf  # use default
+  high_background: -nb  # use default
+  high_foreground: -nf  # use default
+  scroll_background: -nb  # use default
+  scroll_foreground: -nf  # use default
+  selected_background: -sb
+  selected_foreground: -sf
+  windowid: -w
