@@ -1,0 +1,11 @@
+dmae/__init__.py,sha256=XWh_aOu0UiLyJcp4LUPTtq4JUsM5lUDKEO5bhzRL0lc,150
+dmae/dissimilarities.py,sha256=w3inJMVjOW4oawoOOjvSrouDjrJvn3LguODTg8XA97Q,4687
+dmae/initializers.py,sha256=TMldkYE7gz4VVvjGJRW4PhZYk17f5ufC7WAcPxhJg34,6770
+dmae/layers.py,sha256=pgT5zLya6KBe4qDj73Zx07axhzGx7x52LaiYx6rkj5Y,15717
+dmae/losses.py,sha256=LKY593QsBJ7hy_Ctj4fAhaxByi0ajJfeerdOjg1C9nQ,5982
+dmae/metrics.py,sha256=QeYALxBVgAHhZIBzHjjeEjSrAWBQ-JKz-IjNG4bT3UE,1539
+dmae-1.1.0.dist-info/LICENSE,sha256=3PItxLPBe3fo_fnvzHCaVwpEc-C8_aHByZHxKgLQV9w,1069
+dmae-1.1.0.dist-info/METADATA,sha256=c3eNzgZxojerp2Q4dNZs_d9cEwnlJpoKRV4BDuJlOVU,1994
+dmae-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dmae-1.1.0.dist-info/top_level.txt,sha256=WQpuam0zduLLdyWSxfIRFVkum2tRh9erBTVcqhD3rfs,5
+dmae-1.1.0.dist-info/RECORD,,
