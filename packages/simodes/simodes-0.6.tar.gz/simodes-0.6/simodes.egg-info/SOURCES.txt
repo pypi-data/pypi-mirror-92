@@ -1,0 +1,10 @@
+setup.py
+simodes/__init__.py
+simodes/code.py
+simodes/simulation.py
+simodes.egg-info/PKG-INFO
+simodes.egg-info/SOURCES.txt
+simodes.egg-info/dependency_links.txt
+simodes.egg-info/not-zip-safe
+simodes.egg-info/requires.txt
+simodes.egg-info/top_level.txt
