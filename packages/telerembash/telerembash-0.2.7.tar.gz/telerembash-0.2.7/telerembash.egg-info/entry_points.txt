@@ -1,0 +1,3 @@
+[console_scripts]
+telerem = telerembash.cli:main
+
