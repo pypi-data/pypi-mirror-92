@@ -1,0 +1,7 @@
+README.md
+setup.py
+kni/__init__.py
+knij.egg-info/PKG-INFO
+knij.egg-info/SOURCES.txt
+knij.egg-info/dependency_links.txt
+knij.egg-info/top_level.txt
