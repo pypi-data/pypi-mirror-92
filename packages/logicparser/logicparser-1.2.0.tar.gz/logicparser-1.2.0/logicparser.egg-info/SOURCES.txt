@@ -1,0 +1,9 @@
+README.md
+setup.py
+logicparser/__init__.py
+logicparser/main.py
+logicparser/utils.py
+logicparser.egg-info/PKG-INFO
+logicparser.egg-info/SOURCES.txt
+logicparser.egg-info/dependency_links.txt
+logicparser.egg-info/top_level.txt
