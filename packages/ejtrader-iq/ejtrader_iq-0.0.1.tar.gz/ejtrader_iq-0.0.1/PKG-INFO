@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ejtrader_iq
+Version: 0.0.1
+Summary: IQ Option API for python
+Home-page: https://github.com/traderpedroso/ejtrader_iq
+Author: Emerson Pedroso
+Author-email: emerson@ejtrader.com
+License: UNKNOWN
+Description: IQ Option API for python
+Platform: UNKNOWN
