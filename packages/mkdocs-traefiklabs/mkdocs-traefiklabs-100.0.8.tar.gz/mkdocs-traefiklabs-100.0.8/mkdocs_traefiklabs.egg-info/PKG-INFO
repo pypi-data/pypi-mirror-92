@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mkdocs-traefiklabs
+Version: 100.0.8
+Summary: A Traefik Labs branded Material Design theme for MkDocs
+Home-page: http://traefik.io
+Author: traefiklabs
+License: MIT
+Description: <p align="center">
+          <a href="https://squidfunk.github.io/mkdocs-material/">
+            <img src="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/.github/assets/logo.png" width="320" alt="Material for MkDocs">
+          </a>
+        </p>
+        
+        <p align="center">
+          <strong>
+            A 
+            <a href="https://traefik.io/">Traefik Labs</a> 
+            <a href="https://material.io/">Material Design</a> 
+            theme for 
+            <a href="https://www.mkdocs.org/">MkDocs</a>
+          </strong>
+        </p>
+        
+        ## Quick start
+        
+        Material for MkDocs can be installed with `pip`:
+        
+        ``` sh
+        pip install mkdocs-traefiklabs
+        ```
+        
+        Add the following line to `mkdocs.yml`:
+        
+        ``` yaml
+        theme:
+          name: traefik-labs
+        ```
+Keywords: mkdocs,traefik labs,documentation,theme
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Description-Content-Type: text/markdown
