@@ -1,0 +1,11 @@
+grunnlag/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grunnlag/extenders.py,sha256=d3PRv0dklTFCimao4j_9K1dRRRtZ30iDDJK3Ad_pTag,2173
+grunnlag/gql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grunnlag/gql/representation.py,sha256=3jjVMzl_HRYjk05ULDF6fzybc738ujlUMubS8TiAQ1I,713
+grunnlag/gql/sample.py,sha256=FfL7710udQlmBcoS4Yh1H8LQ_cF8T3Ot-cwMvng9vpw,461
+grunnlag/gql.py,sha256=ghTp_A0_A5vS_FVserheZbYZ27XCIePvxLaSgD5SokU,911
+grunnlag/managers.py,sha256=lBfrHUVE-wLDjysqjsGbxvBH6y4LUfbsk-SHV749FfE,356
+grunnlag/schema.py,sha256=KREf4Vs1uuna98aLDPRZ4CFqSIb04yLKziZl9uyRge0,1506
+grunnlag-0.1.13.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+grunnlag-0.1.13.dist-info/METADATA,sha256=D4Oi-6N0Rw4GDjkLDWmJAmB6ojdp1tQ4W-_SY9HjdIg,4386
+grunnlag-0.1.13.dist-info/RECORD,,
