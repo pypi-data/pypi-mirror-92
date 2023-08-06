@@ -1,0 +1,8 @@
+README.md
+setup.py
+emmpy/__init__.py
+emmpy/emmpy.py
+emmpy.egg-info/PKG-INFO
+emmpy.egg-info/SOURCES.txt
+emmpy.egg-info/dependency_links.txt
+emmpy.egg-info/top_level.txt
