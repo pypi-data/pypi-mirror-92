@@ -1,0 +1,8 @@
+asgi_dispatcher_middleware/__init__.py,sha256=syNNkpjcINNMT1eJ0SWMvhaO9MBbGf3f-P8i7FO1Czc,227
+asgi_dispatcher_middleware/_core.py,sha256=DAy4NkDwnHb3qeTCJdXD-ouV0CjX_bgSozsf1PYtogU,4448
+asgi_dispatcher_middleware/asgitypes.py,sha256=oGlNmASiPa-TETE_WCGeHbiAWuydfUrxDNRD4ELBJfU,6341
+asgi_dispatcher_middleware/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asgi_dispatcher_middleware-1.0.0.dist-info/LICENSE,sha256=dZbDtl34CltH9tOOhlqmpW3sCmz6tsWNbFla0GUmB0c,2375
+asgi_dispatcher_middleware-1.0.0.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+asgi_dispatcher_middleware-1.0.0.dist-info/METADATA,sha256=J37YJ4wBvs70zqO99UzJ--lsCzWvJvE1BDmgtHyTbWA,2194
+asgi_dispatcher_middleware-1.0.0.dist-info/RECORD,,
