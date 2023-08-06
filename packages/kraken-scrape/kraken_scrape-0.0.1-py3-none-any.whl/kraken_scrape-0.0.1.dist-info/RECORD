@@ -1,0 +1,12 @@
+kraken_scraper/datapoint.py,sha256=NCEzhewFF3TwdzRKW2GWGkBb4Wovcy1j_0jeLItKxgg,327
+kraken_scraper/kraken_scraper.py,sha256=s1LeprOs4cU3apasWd80w6uVOvYGuYgZLZrhoFV4Wo8,257
+kraken_scraper/scraper_files.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_scraper/scraper_main.py,sha256=SYvkD1eaBWpWG4OKLxYMnhdE8-7H7hCLiqFFWh9plCw,7935
+kraken_scraper/scraper_schemas.py,sha256=Jte4NtyWgiDnDlOrIYvth_N6LfF87Ljtu9ov88-SPlA,531
+kraken_scraper/scraper_tables.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_scraper/scraper_videos.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kraken_scrape-0.0.1.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+kraken_scrape-0.0.1.dist-info/METADATA,sha256=oz-CYRyMbWw1pwL88mlCZw_uQRcPNNStcl5i1EimKaw,409
+kraken_scrape-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kraken_scrape-0.0.1.dist-info/top_level.txt,sha256=mdGDcUJI4Bpz6Fde_X7hiFTHJY1fpRzfW8MZKsicvPI,15
+kraken_scrape-0.0.1.dist-info/RECORD,,
