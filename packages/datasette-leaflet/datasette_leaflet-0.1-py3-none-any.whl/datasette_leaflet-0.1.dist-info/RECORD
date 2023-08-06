@@ -1,0 +1,9 @@
+datasette_leaflet/__init__.py,sha256=PHdxCpCIA7SRRVlMtzDdhs5URfLu0XWMyQK5U9UcBcw,336
+datasette_leaflet/static/leaflet-v1.7.1.css,sha256=BPfK9M5v34c2XP6p0cxVz1mUQLst0gTLk0mlc7kuodA,14272
+datasette_leaflet/static/leaflet-v1.7.1.js,sha256=_Oa1BWEuEs9DwQIZ-xcwGQF-KnYfGkIt7o9JvYO4lHo,276313
+datasette_leaflet/static/leaflet-v1.7.1.min.js,sha256=920U74Y23FpP3SpydHl2zTexT6sPzCpxpKLM4tIr1sM,146010
+datasette_leaflet-0.1.dist-info/METADATA,sha256=-T0eBxePZNO45Qu3VuEPInhgkfP0dU1qx5PIJXkdpD4,4233
+datasette_leaflet-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_leaflet-0.1.dist-info/entry_points.txt,sha256=_zJF0xPh3ZeYmeyxw9cUG72tuOhEQq5Wu55i0gmMjDs,41
+datasette_leaflet-0.1.dist-info/top_level.txt,sha256=YLXnPUg56QJ57JKenS9kNAt3ppX-1HZjAeXDzk-YcWE,18
+datasette_leaflet-0.1.dist-info/RECORD,,
