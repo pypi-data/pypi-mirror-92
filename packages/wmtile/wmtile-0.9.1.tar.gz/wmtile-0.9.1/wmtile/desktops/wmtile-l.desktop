@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wmtile -l
+Exec=/home/xxxx/.local/bin/wmtile -l
+Comment=reshape as Landscapes all windows in current workspace
+Icon=/home/xxxx/.local/lib/python3.8/site-packages/wmtile/icons/wmtile-l.ico
+Terminal=false
+Type=Application
+StartupNotify=false
+MimeType=text/plain;
+Categories=Utility;

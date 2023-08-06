@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wmtile -s
+Exec=/home/xxxx/.local/bin/wmtile -s
+Comment=reshape as a Stack all windows in current workspace
+Icon=/home/xxxx/.local/lib/python3.8/site-packages/wmtile/icons/wmtile-s.ico
+Terminal=false
+Type=Application
+StartupNotify=false
+MimeType=text/plain;
+Categories=Utility;

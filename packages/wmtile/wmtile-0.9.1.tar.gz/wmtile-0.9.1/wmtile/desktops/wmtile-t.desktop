@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wmtile -t
+Exec=/home/xxxx/.local/bin/wmtile -t
+Comment=reshape as Tiles all windows in current workspace
+Icon=/home/xxxx/.local/lib/python3.8/site-packages/wmtile/icons/wmtile-t.ico
+Terminal=false
+Type=Application
+StartupNotify=false
+MimeType=text/plain;
+Categories=Utility;
