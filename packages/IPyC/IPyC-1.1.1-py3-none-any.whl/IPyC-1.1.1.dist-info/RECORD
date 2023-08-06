@@ -1,0 +1,12 @@
+ipyc/__init__.py,sha256=R6NSYpit6Lm4Vl8IWc8nDQDf1los2PXkdA7oFvZ4ylo,1015
+ipyc/asynchronous.py,sha256=O5CSLgC-zUmxlbmX6ktbmInuxBc4cfmU7nzwY2W0x8k,11438
+ipyc/blocking.py,sha256=6raoqGWfBrFsB1o2NXWDnts3Eji3lSKq-CqmegT3M_w,4409
+ipyc/headers.py,sha256=CzVo-4lrEiVrJtGAJwkwZ-axAp3dtxEIeitCWhs20Ro,685
+ipyc/links.py,sha256=oWzunj-eBWsgITdGbRdnBwhCW8Alamw5xRx-YfALhvk,15620
+ipyc/packets.py,sha256=T4nUM2wQfleyuSmaW4gjiH9lgwIuIvhmj_-Xyt8t8gI,1091
+ipyc/serialization.py,sha256=X1AHu2Au8s0bjxM9DHMEssIsTe7ky9E9HwykPh0_DAA,3442
+IPyC-1.1.1.dist-info/LICENSE,sha256=tb2KDDhk3waRqbWkk1npoaBiaiflorSH5T_VNg_Ha5A,1105
+IPyC-1.1.1.dist-info/METADATA,sha256=HUYaex9NnlHbu4I3_0K94dzriIOhJF-Yx3dWk_-mR1I,5691
+IPyC-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+IPyC-1.1.1.dist-info/top_level.txt,sha256=nDMQIVjaHQu3mjnfFNAzALTX9fePmCHJmHKlK6BsJt8,5
+IPyC-1.1.1.dist-info/RECORD,,
