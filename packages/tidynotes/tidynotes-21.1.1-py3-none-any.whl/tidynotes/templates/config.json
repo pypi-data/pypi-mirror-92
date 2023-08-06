@@ -1,0 +1,6 @@
+{
+  "notebook_name":"Test",
+  "note_file_format" : "%Y/%m/notes_%Y-%m-%d_%a.md",
+  "bg_hue": 35,
+  "text_col" : "rgb(20, 26, 21)"
+}
