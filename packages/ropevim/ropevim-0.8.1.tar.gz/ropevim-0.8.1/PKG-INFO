@@ -1,0 +1,57 @@
+Metadata-Version: 1.2
+Name: ropevim
+Version: 0.8.1
+Summary: A vim plugin for using rope python refactoring library
+Home-page: http://rope.sf.net/ropevim.html
+Author: Ali Gholami Rudi
+Author-email: aligrudi@users.sourceforge.net
+Maintainer: Matej Cepl
+Maintainer-email: mcepl@cepl.eu
+License: GNU GPL
+Description: 
+        **Note:** *Please note that this project has been moved to* 
+        `GitHub python-rope / ropevim`_
+        
+        .. _`GitHub python-rope / ropevim`:
+            https://github.com/python-rope/ropevim
+        
+        
+        ======================
+         ropevim, rope in vim
+        ======================
+        
+        
+        Overview
+        ========
+        
+        Ropevim is a vim mode that uses rope_ library to provide features like
+        python refactorings and code-assists.  You should install rope_
+        library before using ropevim.
+        
+        .. _rope: https://github.com/python-rope/rope
+        
+        
+        New Features
+        ============
+        
+        * works only with python3 ATM (python2 is not supported anymore)
+        * improved support of multibyte sources
+        * implemented `extended complete` feature (disabled by default)
+        * ropemode is not the part of distribution now
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: X11 Applications
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development
+Requires: ropemode
