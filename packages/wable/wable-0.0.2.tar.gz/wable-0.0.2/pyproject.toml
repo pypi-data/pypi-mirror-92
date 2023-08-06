@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "wable"
+version = "0.0.2"
+description = "A client to communicate with wable.org api"
+authors = ["Madhu <madhu@wable.org>"]
+license = "Apache"
+packages = [
+  { include="wable", from="." },
+]
+
+[tool.poetry.dependencies]
+python = ">3.6"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+yapf = "^0.30.0"
+pylint = "^2.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
