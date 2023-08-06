@@ -1,0 +1,7 @@
+README.md
+setup.py
+PygameEventSystem.egg-info/PKG-INFO
+PygameEventSystem.egg-info/SOURCES.txt
+PygameEventSystem.egg-info/dependency_links.txt
+PygameEventSystem.egg-info/top_level.txt
+PythonEventSystem/__init__.py
