@@ -1,0 +1,6 @@
+[console_scripts]
+ramstk = ramstk.__main__:the_one_ring
+
+[gui_scripts]
+ramstk = ramstk.__main__:the_one_ring
+
