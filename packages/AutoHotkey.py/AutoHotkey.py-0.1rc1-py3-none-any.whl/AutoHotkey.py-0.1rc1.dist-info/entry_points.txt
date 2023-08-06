@@ -1,0 +1,3 @@
+[console_scripts]
+ahkpy = ahkpy.launcher:main
+
