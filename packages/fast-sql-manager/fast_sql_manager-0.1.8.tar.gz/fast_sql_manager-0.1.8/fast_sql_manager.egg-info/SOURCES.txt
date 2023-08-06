@@ -1,0 +1,9 @@
+README.md
+setup.py
+fast_sql_manager/__init__.py
+fast_sql_manager/repository.py
+fast_sql_manager.egg-info/PKG-INFO
+fast_sql_manager.egg-info/SOURCES.txt
+fast_sql_manager.egg-info/dependency_links.txt
+fast_sql_manager.egg-info/requires.txt
+fast_sql_manager.egg-info/top_level.txt
