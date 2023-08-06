@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+nlpaeg/__init__.py
+nlpaeg/__main__.py
+nlpaeg/common_misspelled_eng_words.json
+nlpaeg/error_generator.py
+nlpaeg/testing_file.py
+nlpaeg.egg-info/PKG-INFO
+nlpaeg.egg-info/SOURCES.txt
+nlpaeg.egg-info/dependency_links.txt
+nlpaeg.egg-info/entry_points.txt
+nlpaeg.egg-info/requires.txt
+nlpaeg.egg-info/top_level.txt
