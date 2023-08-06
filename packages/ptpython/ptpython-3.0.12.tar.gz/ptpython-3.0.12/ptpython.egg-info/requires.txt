@@ -1,0 +1,11 @@
+appdirs
+jedi>=0.16.0
+prompt_toolkit<3.1.0,>=3.0.11
+pygments
+black
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[ptipython]
+ipython
