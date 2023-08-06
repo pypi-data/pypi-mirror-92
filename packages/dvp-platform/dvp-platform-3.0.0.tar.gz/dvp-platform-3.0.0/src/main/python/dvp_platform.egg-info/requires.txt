@@ -1,0 +1,5 @@
+dvp-api==1.4.0
+dvp-common==3.0.0
+
+[:python_version < "3.4"]
+enum34
