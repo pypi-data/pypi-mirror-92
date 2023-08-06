@@ -1,0 +1,15 @@
+biosimulators_utils>=0.1.35
+pandas
+tellurium
+
+[all]
+biosimulators_utils[docker]
+numpy
+pypdf2
+
+[docs]
+
+[tests]
+biosimulators_utils[docker]
+numpy
+pypdf2
