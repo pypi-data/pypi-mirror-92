@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+requests_opentracing/__init__.py
+requests_opentracing/tracing.py
+signalfx_instrumentation_requests.egg-info/PKG-INFO
+signalfx_instrumentation_requests.egg-info/SOURCES.txt
+signalfx_instrumentation_requests.egg-info/dependency_links.txt
+signalfx_instrumentation_requests.egg-info/requires.txt
+signalfx_instrumentation_requests.egg-info/top_level.txt
