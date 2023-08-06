@@ -1,0 +1,14 @@
+gitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitools/__main__.py,sha256=_uZGsU8eemoNlEqHQEKLPjCXyURfqieKjl3NyoWi8f0,3729
+gitools/module.py,sha256=x2jjlIc8X4kic1lF0st3G8xU8pZP8N6D9-rYac98EGE,4023
+gitools/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitools/modules/restore_backup.py,sha256=qdZ40WYTIS7vbliJW2Ea75EBwaExQbtGImkbBu3jceY,318
+gitools/modules/update_author.py,sha256=a2YORavC41vNwBJ2b_XLxjfJAYvswt7SnHqDByWB3JU,1432
+gitools/modules/update_date.py,sha256=4fU_4vkfA8QvVbb9LuZ-C8LoWymX64YoWUbAwGxRZYE,1575
+gitools/modules/update_message.py,sha256=jtQcc4jbqavn1zhK9_EdbxKDAqhzJiFsUK1MnuVGmtw,1282
+Gitools-1.3.2.dist-info/LICENSE,sha256=jtWi1gNTFpmTySnVYt-1KNdo07-ZVRK856lKdpn1lxw,1069
+Gitools-1.3.2.dist-info/METADATA,sha256=oJrJZ_HzV8eBayj7ug0kbe1K-jrtLnLDeQ2cFlWaIwQ,3224
+Gitools-1.3.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Gitools-1.3.2.dist-info/entry_points.txt,sha256=m_cESneXJPem9a-wLCCkHGeguET5qGrqMK8SGedgxP8,38
+Gitools-1.3.2.dist-info/top_level.txt,sha256=hKPz68keB67_DnyaTP3h2Mpwih7hbThwGtewEDD6LyE,8
+Gitools-1.3.2.dist-info/RECORD,,
