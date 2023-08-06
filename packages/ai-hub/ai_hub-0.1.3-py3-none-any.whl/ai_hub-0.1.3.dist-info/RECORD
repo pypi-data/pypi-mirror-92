@@ -1,0 +1,10 @@
+ai_hub/__init__.py,sha256=nAHpOfI3BD8ZUB4EIlAq3UxINW41BpkwYAN2K9gF5FA,52
+ai_hub/globalvar.py,sha256=2tERE7zpMmGddqYpyLnJDlZjwyaMT6t61nzQR5h-rHE,287
+ai_hub/inferServer.py,sha256=_ccFMFiRyDhlO2ESacQHnZhGHTgt5ehjId5colATR-o,1475
+ai_hub/log.py,sha256=HdaxPBtSl0_Hd-UD4gR5TVd9i-OeujlCRDupgAA0anY,506
+ai_hub/notice.py,sha256=vtksvSxDZqy0uCuAvojkAHPFCEgoGqhEMaVwT5iFCmo,639
+ai_hub/test.py,sha256=Xcb8jqJ6wdJmMea-VZMiUWMjOOWwVI1zLhTcD5t8Jl8,845
+ai_hub-0.1.3.dist-info/METADATA,sha256=KzUoTtnHIssHbVTUVWSq8HtGR3wrCA0JV8kU1VFJjLo,1152
+ai_hub-0.1.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ai_hub-0.1.3.dist-info/top_level.txt,sha256=FYikiYzTTAryjg0WtKm4LzWX3aGgu4KlK3fXVuLDU3w,7
+ai_hub-0.1.3.dist-info/RECORD,,
