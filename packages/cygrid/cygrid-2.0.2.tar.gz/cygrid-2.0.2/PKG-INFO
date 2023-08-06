@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: cygrid
+Version: 2.0.2
+Summary: Cygrid is a cython-powered convolution-based gridding module for astronomy
+Home-page: https://github.com/bwinkel/cygrid
+Author: Benjamin Winkel, Lars Flöer, Daniel Lenz
+Author-email: bwinkel@mpifr.de, mail@daniellenz.org
+License: GNU GPL v3+
+Description: Cygrid allows to resample a number of spectra (or data points) to a regular grid - a data cube - using any valid astronomical FITS/WCS projection. The method is a based on serialized convolution with finite gridding kernels. Currently, only Gaussian (radial-symmetric or elliptical) kernels are provided (which has the drawback of slight degradation of the effective resolution). The algorithm has very small memory footprint, allows easy parallelization, and is very fast.
+Platform: UNKNOWN
+Requires-Python: >=3.6
