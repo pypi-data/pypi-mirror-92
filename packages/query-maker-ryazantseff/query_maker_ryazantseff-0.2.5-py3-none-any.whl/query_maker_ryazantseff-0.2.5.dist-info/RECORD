@@ -1,0 +1,10 @@
+query_maker/MySql.py,sha256=cMlJX0K1yCU0e5aqJuSKw9V4TRLKY3v4-_iL6g0Z78A,5000
+query_maker/QueryMaker.py,sha256=Y8gEQGyQV1zuCfkz9zJPeWAp5ojOnwoqdNNeJjuhx-A,6481
+query_maker/__init__.py,sha256=paDcOpkrNzHy2ViNVdQuIA9EoxKWzd26L9-vapvlVuo,53
+query_maker/table.py,sha256=debQbvX6WZbXSNlOyYRPszSi1KN36Inptfhqo8AVWeU,1560
+tests/__init__.py,sha256=fGg2tguDtqaKV0sr74azcn5VlsLQjIM9fjnr3Q85NVE,2584
+query_maker_ryazantseff-0.2.5.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+query_maker_ryazantseff-0.2.5.dist-info/METADATA,sha256=GTTMFjr2hWGMaxUkHamuG3V2TxVIG52i9Nh9dlrzaaw,871
+query_maker_ryazantseff-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+query_maker_ryazantseff-0.2.5.dist-info/top_level.txt,sha256=XdVWtMioXfaCT2nVEdl0oA9ZSOre_LItJRJL4pxGKYo,18
+query_maker_ryazantseff-0.2.5.dist-info/RECORD,,
