@@ -1,0 +1,10 @@
+README.md
+setup.py
+twitchrealtimehandler/__init__.py
+twitchrealtimehandler/twitchgrabber.py
+twitchrealtimehandler/twitchhandler.py
+twitchrealtimehandler.egg-info/PKG-INFO
+twitchrealtimehandler.egg-info/SOURCES.txt
+twitchrealtimehandler.egg-info/dependency_links.txt
+twitchrealtimehandler.egg-info/requires.txt
+twitchrealtimehandler.egg-info/top_level.txt
