@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+dsorm/__init__.py
+dsorm/dsorm.py
+dsorm.egg-info/PKG-INFO
+dsorm.egg-info/SOURCES.txt
+dsorm.egg-info/dependency_links.txt
+dsorm.egg-info/top_level.txt
+test/test_db.py
