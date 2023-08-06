@@ -1,0 +1,3 @@
+[console_scripts]
+apyum = apyum.main:run
+
