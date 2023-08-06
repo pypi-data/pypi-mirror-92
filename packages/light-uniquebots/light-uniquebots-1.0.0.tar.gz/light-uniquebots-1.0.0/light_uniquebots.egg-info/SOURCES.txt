@@ -1,0 +1,7 @@
+README.md
+setup.py
+light_uniquebots/__init__.py
+light_uniquebots.egg-info/PKG-INFO
+light_uniquebots.egg-info/SOURCES.txt
+light_uniquebots.egg-info/dependency_links.txt
+light_uniquebots.egg-info/top_level.txt
