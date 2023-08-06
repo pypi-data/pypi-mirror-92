@@ -1,0 +1,6 @@
+numpy
+tqdm
+torch
+pandas
+pathlib
+stylegan2_pytorch
