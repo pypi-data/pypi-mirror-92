@@ -1,0 +1,12 @@
+npy2bdv/__init__.py,sha256=6AoTEv99JiTzdgUkWM8NeTm31Eqsv7v8wv9v5-IiKLE,47
+npy2bdv/examples.py,sha256=LyYaWfY6MFe8NKwUNcA-qchuJQR4e2hZWNO2k7-RXLU,7001
+npy2bdv/npy2bdv.py,sha256=U7M0OLxEDNG-mTJkdyig2-eW4CjqqQV5H5ff3OAKNNI,36140
+npy2bdv/test.py,sha256=kAXk32cti9YsCfIuGdvcyAJnhaIPt8GdaO7d9EDRfHU,9722
+npy2bdv-1.0.4.dist-info/METADATA,sha256=tI8EdFJAmGU-0L37YBlr_6DHsiaau7QLaxivSYp7Dh8,403
+npy2bdv-1.0.4.dist-info/RECORD,,
+npy2bdv-1.0.4.dist-info/WHEEL,sha256=YMb0M5ZpUQ80brK7WZo5oVUpcs4pD0RysNK16CC9HFY,97
+npy2bdv-1.0.4.dist-info/top_level.txt,sha256=AQqzT5FP-m9-JMaxG9s__q_EGQpdynR8vFIzRQDMBVI,13
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/sample.py,sha256=ys4Gc4jYdTbUsnmrBhSqfQ3y_Dmo19HE7IZQfcr2VCA,358
+test/test_h5.py,sha256=I0F7nW4khdk0sP8HK_LQUkRjyMxfUB9_U6nqvRgvxRk,15814
+test/test_n5.py,sha256=vUH0AqXrvoNqcEsQkcoZ-YEnMjGUCTHnDwV7dZ4Nzvo,6473
