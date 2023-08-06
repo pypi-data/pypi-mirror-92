@@ -1,0 +1,10 @@
+setup.py
+commonly-used-distributions/Binomialdistribution.py
+commonly-used-distributions/Gaussiandistribution.py
+commonly-used-distributions/Generaldistribution.py
+commonly-used-distributions/__init__.py
+commonly_used_distributions.egg-info/PKG-INFO
+commonly_used_distributions.egg-info/SOURCES.txt
+commonly_used_distributions.egg-info/dependency_links.txt
+commonly_used_distributions.egg-info/not-zip-safe
+commonly_used_distributions.egg-info/top_level.txt
