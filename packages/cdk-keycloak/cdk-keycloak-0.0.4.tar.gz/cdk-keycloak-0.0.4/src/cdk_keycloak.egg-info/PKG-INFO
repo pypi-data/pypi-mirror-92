@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cdk-keycloak
+Version: 0.0.4
+Summary: cdk-keycloak
+Home-page: https://github.com/pahud/cdk-keycloak.git
+Author: Pahud Hsieh<pahudnet@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/pahud/cdk-keycloak.git
+Description: [![NPM version](https://badge.fury.io/js/cdk-keycloak.svg)](https://badge.fury.io/js/cdk-keycloak)
+        [![PyPI version](https://badge.fury.io/py/cdk-keycloak.svg)](https://badge.fury.io/py/cdk-keycloak)
+        ![Release](https://github.com/pahud/cdk-keycloak/workflows/Release/badge.svg?branch=main)
+        
+        # `cdk-keycloak`
+        
+        CDK construct library that allows you to create KeyCloak service on AWS in TypeScript or Python
+        
+        # Sample
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        from cdk_keycloak import KeyCloak
+        
+        app = cdk.App()
+        
+        env = {
+            "region": process.env.CDK_DEFAULT_REGION,
+            "account": process.env.CDK_DEFAULT_ACCOUNT
+        }
+        
+        stack = cdk.Stack(app, "keycloak-demo", env=env)
+        KeyCloak(stack, "KeyCloak")
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
