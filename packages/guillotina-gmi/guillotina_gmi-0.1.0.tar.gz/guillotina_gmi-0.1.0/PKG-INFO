@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: guillotina_gmi
+Version: 0.1.0
+Summary: guillotina management interface
+Home-page: https://github.com/guillotinaweb/guillotina_react
+Author: jordi collell
+Author-email: jordic@gmail.com
+License: BSD
+Description: 
+        # Guillotina GMI
+        
+        A Management interface for Guillotina
+        
+        
+        This is the guillotina_react generic build for distributing
+        with guillotina as a pypi package.
+        
+        
+        ## INSTALL
+        
+        `
+        pip install guillotina_gmi
+        `
+        
+        # add to guillotina
+        
+        under config.yaml
+        add:
+        
+        ```
+        jsapps:
+          +manage: guillotina_gmi:gmi
+        
+        ```
+        
+        
+        
+        Guillotina management interface
+        
+Keywords: guillotina_gmi,zmi,gmi
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
