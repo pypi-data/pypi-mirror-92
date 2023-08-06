@@ -1,0 +1,17 @@
+caffoa/__init__.py,sha256=xYm_U76MDnLJ5NWvamLzaSym6Vd7pnRtOkP8agvdyuk,1530
+caffoa/__main__.py,sha256=8GJPX9DYZ2npc94WIlUXMTJhRDeuaeQ2U5JeyOTNvZ4,69
+caffoa/converter.py,sha256=Pdr_Yob77RM4k88l4_NKDHkuSY2wk-TwkJsK7dyMoMc,1284
+caffoa/function.py,sha256=Lse6ZmJ_3B_qHU7s2ome4S3jbQDfgSYieJ4DfIRSRkE,5278
+caffoa/schema.py,sha256=fP6Uy5JCyI1Ntvw5zBd24e08OkpKwCeE4MTA-yQk81c,7046
+caffoa/data/templates/DateSerializer.cs,sha256=2-ubEyfvFjgyORARUEdY7HVEPR8JU7b9C4oKGI0GBx0,409
+caffoa/data/templates/FunctionMethod.cs,sha256=LNr0RYt_qotCZ-WbSNJT4ym0Olfji7_NVa65UVODLZA,428
+caffoa/data/templates/FunctionTemplate.cs,sha256=8-3i3oaJQe1aj4DxEKa-fCR_4rspt5L97596_Ps5qAI,639
+caffoa/data/templates/InterfaceMethod.cs,sha256=bxXXUXEQphFlMyLgX-PiQy36y6qPoQ_URf0rZLJ17ZQ,126
+caffoa/data/templates/InterfaceTemplate.cs,sha256=YVoS3QWm3Pbd-Xglhz0CxlrspKftWNV8aIuCPu6763c,326
+caffoa/data/templates/ModelPropertyTemplate.cs,sha256=9NLGE23Ysn2aekYjFu9k3cfBpjqUy8r-8_l892uQMOg,128
+caffoa/data/templates/ModelTemplate.cs,sha256=tIH-5GJ4aA3rdOD52Xl4A5eQ1fOGD5mS4nP674ySch4,125
+caffoa-0.5.1.dist-info/LICENSE,sha256=LJgJCotznc_etFlWeugryAAbeJo9B0VPp03NhtMwr4I,1094
+caffoa-0.5.1.dist-info/METADATA,sha256=d_CH6ZK57ryPQcdiO4deqnIztbfHhbdSSrBWlLuEWQQ,3548
+caffoa-0.5.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+caffoa-0.5.1.dist-info/top_level.txt,sha256=fhKCifrbiUTk2NXNB5dsCL5Im9VSjX2r4YgBQQvsBZo,7
+caffoa-0.5.1.dist-info/RECORD,,
