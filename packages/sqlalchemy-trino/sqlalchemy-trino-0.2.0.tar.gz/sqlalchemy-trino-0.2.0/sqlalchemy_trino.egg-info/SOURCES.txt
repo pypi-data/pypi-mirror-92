@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sqlalchemy_trino/__init__.py
+sqlalchemy_trino/compiler.py
+sqlalchemy_trino/datatype.py
+sqlalchemy_trino/dbapi.py
+sqlalchemy_trino/dialect.py
+sqlalchemy_trino/error.py
+sqlalchemy_trino/result.py
+sqlalchemy_trino.egg-info/PKG-INFO
+sqlalchemy_trino.egg-info/SOURCES.txt
+sqlalchemy_trino.egg-info/dependency_links.txt
+sqlalchemy_trino.egg-info/entry_points.txt
+sqlalchemy_trino.egg-info/requires.txt
+sqlalchemy_trino.egg-info/top_level.txt
