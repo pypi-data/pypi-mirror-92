@@ -1,0 +1,11 @@
+__init__.py,sha256=4CqzpkeO6N95lm59RSJecCaEg1IvIb9hVPmmlLWM8II,2503
+inverted_encoding.py,sha256=mfqr4LJPLtkNL-7BsAR6lsQMqvtBX8x_wostDuhSZEk,5507
+package/__init__.py,sha256=ypDxm8-Tf-i4hKPubaoXa7OKir1Z8z9wQTmndBYiB-E,2557
+package/inverted_encoding.py,sha256=mfqr4LJPLtkNL-7BsAR6lsQMqvtBX8x_wostDuhSZEk,5507
+src/__init__.py,sha256=4CqzpkeO6N95lm59RSJecCaEg1IvIb9hVPmmlLWM8II,2503
+src/inverted_encoding.py,sha256=jP7KXb9fYmSoUVg79I_EBpbtrih1-lS1PEIljZV93jY,5585
+inverted_encoding-0.0.17.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+inverted_encoding-0.0.17.dist-info/METADATA,sha256=PXS1pOIvCpOcJVPLyvtEl9ix2M22U7X_rdeZwzixV3k,983
+inverted_encoding-0.0.17.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+inverted_encoding-0.0.17.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+inverted_encoding-0.0.17.dist-info/RECORD,,
