@@ -1,0 +1,11 @@
+wagtail_pdf_view/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_pdf_view/environment.py,sha256=lVOCvGr1g5GFNYpYJiRLiXLkxo32xayHXFKEcM0VlzE,4972
+wagtail_pdf_view/mixins.py,sha256=4gMRpQbgd9GHpDZAjSRvD-aXVdfbJ-OAa_lLTBbmBEY,9522
+wagtail_pdf_view/utils.py,sha256=KOnz0bDWh_7awib7oynO5eQ3704RrDpMXKvYuUAVabc,349
+wagtail_pdf_view/views.py,sha256=qW-lPavBkyf6aJmUFZv2hS-kxDfcDG9YdztmXvhyPqI,6806
+wagtail_pdf_view/templates/wagtail_preamble.tex,sha256=uZdPYOc4GL5RPa42dwQAH6bgD81ZAMmrZD0LKDhTIeg,1201
+wagtail_pdf_view-0.1.1.dist-info/LICENSE,sha256=1uDf8RZM9iWWgDk-IGVhL_4K16GWsc6wkSCQ5G_cUPw,11345
+wagtail_pdf_view-0.1.1.dist-info/METADATA,sha256=IqcZqdW1cPkeqp6Wa96bLsOER7dKAToKkDpgOtvNfhc,6123
+wagtail_pdf_view-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wagtail_pdf_view-0.1.1.dist-info/top_level.txt,sha256=_syXFy5eFyFtO-HC16nBxrEb_lly6lc2wIG6_dgNIcY,17
+wagtail_pdf_view-0.1.1.dist-info/RECORD,,
