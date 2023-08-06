@@ -1,0 +1,15 @@
+.gitignore
+README.rst
+setup.py
+docs/Makefile
+docs/api.rst
+docs/capabilities.rst
+docs/conf.py
+docs/index.rst
+docs/intro.rst
+subpop/__init__.py
+subpop/hub.py
+subpop.egg-info/PKG-INFO
+subpop.egg-info/SOURCES.txt
+subpop.egg-info/dependency_links.txt
+subpop.egg-info/top_level.txt
