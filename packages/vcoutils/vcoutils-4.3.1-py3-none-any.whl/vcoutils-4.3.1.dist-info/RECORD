@@ -1,0 +1,10 @@
+vcoutils/__init__.py,sha256=5HCYm9zZEIRalowngPepKhPSa61a691QsjMBawtpybY,300
+vcoutils/extrachecks.py,sha256=GX7F6RV_Duy0spiTczWjzBL2nRZPviAqFemwvEDkk-c,1684
+vcoutils/genid.py,sha256=NSusMVQzY93SvDJB4CTNAsO1bp7r-C_tp6Ip68Y17nM,555
+vcoutils/intents.py,sha256=QtD9M_6g-J6SpENaHfeqkL6TcLG2QhtBQ1uYe5XydZk,1345
+vcoutils/leakybucket.py,sha256=YtJWJ6R2m_FwQD0KqnTtlViPFDeIW_QCM2fPZc7SKm0,1212
+vcoutils-4.3.1.dist-info/LICENSE,sha256=H7dvHTxm3H18UoKypu9db_vkmtnXQMG5pV5fYbxiyfk,1052
+vcoutils-4.3.1.dist-info/METADATA,sha256=CRK4nV1lD_1z4YLIKuoPJWMq1079AY_Ar4-n4OSkrTk,782
+vcoutils-4.3.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+vcoutils-4.3.1.dist-info/top_level.txt,sha256=bRoL_RqG7KZX9d016gHYkTsXeUHgsUSrVzV_SxDzSrY,9
+vcoutils-4.3.1.dist-info/RECORD,,
