@@ -1,0 +1,9 @@
+README.md
+setup.py
+writer_cm/__init__.py
+writer_cm/writer_cm.py
+writer_cm.egg-info/PKG-INFO
+writer_cm.egg-info/SOURCES.txt
+writer_cm.egg-info/dependency_links.txt
+writer_cm.egg-info/requires.txt
+writer_cm.egg-info/top_level.txt
