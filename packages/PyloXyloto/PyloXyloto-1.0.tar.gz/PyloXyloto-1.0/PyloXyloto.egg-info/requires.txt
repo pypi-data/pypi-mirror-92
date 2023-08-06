@@ -1,0 +1,6 @@
+numpy
+matplotlib
+pandas
+
+[dev]
+pytest>=3.7
