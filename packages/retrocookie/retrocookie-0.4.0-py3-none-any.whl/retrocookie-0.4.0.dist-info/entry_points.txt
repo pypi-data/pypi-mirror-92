@@ -1,0 +1,4 @@
+[console_scripts]
+retrocookie=retrocookie.__main__:main
+retrocookie-pr=retrocookie.pr.__main__:main
+
