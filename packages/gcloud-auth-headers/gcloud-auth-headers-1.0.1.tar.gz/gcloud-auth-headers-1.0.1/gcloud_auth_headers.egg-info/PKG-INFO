@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gcloud-auth-headers
+Version: 1.0.1
+Summary: Token generator for cloud endpoints with Oauth2
+Home-page: https://github.com/btbuzzo/gcloud-oauth-headers
+Author: Bruno Tomas S Buzzo
+Author-email: bbuzzo_engineering@timbrasil.com.br
+License: MIT
+Description: # gcloud-oauth-headers
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

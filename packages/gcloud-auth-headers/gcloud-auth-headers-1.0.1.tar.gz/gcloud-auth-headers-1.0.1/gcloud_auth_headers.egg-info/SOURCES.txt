@@ -1,0 +1,11 @@
+README.md
+setup.py
+gcloud_auth_headers.egg-info/PKG-INFO
+gcloud_auth_headers.egg-info/SOURCES.txt
+gcloud_auth_headers.egg-info/dependency_links.txt
+gcloud_auth_headers.egg-info/entry_points.txt
+gcloud_auth_headers.egg-info/requires.txt
+gcloud_auth_headers.egg-info/top_level.txt
+gcloud_oauth_headers/__init__.py
+gcloud_oauth_headers/__main__.py
+gcloud_oauth_headers/auth.py
