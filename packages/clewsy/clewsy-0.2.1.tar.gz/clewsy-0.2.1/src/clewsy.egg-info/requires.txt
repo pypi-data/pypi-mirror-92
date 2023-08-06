@@ -1,0 +1,7 @@
+pyyaml
+pymongo
+colorama
+
+[testing]
+pytest
+pytest-cov
