@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: shocktube1dcalc
+Version: 0.0.3
+Summary: 1D shocktube caculator to provide analytic solutions
+License: BSD license
+Author: Taihsiang Ho (tai271828)
+Author-email: tai271828@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
