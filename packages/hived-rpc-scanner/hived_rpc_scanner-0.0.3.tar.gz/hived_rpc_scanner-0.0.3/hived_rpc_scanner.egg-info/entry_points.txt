@@ -1,0 +1,3 @@
+[console_scripts]
+hived_rpc_scanner = hived_rpc_scanner.runner:runner
+
