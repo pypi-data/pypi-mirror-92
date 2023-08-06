@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gcloud-functions-utils
+Version: 0.6.4
+Summary: UNKNOWN
+Home-page: https://github.com/vonNiklasson/gcloud-functions-utils
+Author: Johan Niklasson
+Author-email: johan@niklasson.me
+License: UNKNOWN
+Description: # gcloud-functions-utils
+        Parse event and context for Google Cloud Platform's Publisher/Subscriber event.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test-tools
