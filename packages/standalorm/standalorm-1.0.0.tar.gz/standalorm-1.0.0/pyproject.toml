@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "standalorm"
+version = "1.0.0"
+description = "A Python library that enables you to harness the power of Django's ORM in standalone Python scripts."
+authors = ["Jason Tolbert <jasonalantolbert@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/jasonalantolbert/standalorm"
+documentation = "https://standalorm.readthedocs.io"
+keywords = ["django", "orm", "standalone"]
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+Django = "^3.1.5"
+click = "^7.1.2"
+toml = "^0.10.2"
+pathvalidate = "^2.3.2"
+path = "^15.0.1"
+colorama = "^0.4.4"
+dj-database-url = "^0.5.0"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.4.3"
+sphinx-rtd-theme = "^0.5.1"
+sphinx-click = "^2.5.0"
+
+[tool.poetry.scripts]
+standalorm = "standalorm.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
