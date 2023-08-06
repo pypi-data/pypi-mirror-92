@@ -1,0 +1,6 @@
+[invenio_jsonschemas.schemas]
+oarepo_rdm_records = oarepo_rdm_records.jsonschemas
+
+[oarepo_mapping_includes]
+oarepo_rdm_records = oarepo_rdm_records.included_mappings
+
