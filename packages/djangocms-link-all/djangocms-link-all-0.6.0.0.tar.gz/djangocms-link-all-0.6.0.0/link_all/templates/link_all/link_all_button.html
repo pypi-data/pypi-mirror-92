@@ -1,0 +1,20 @@
+{% spaceless %}
+
+{% if not instance.is_link_empty %}
+    <a class="
+            link-all-plugin
+            {% if instance.link_is_button %}
+                btn
+                {% if instance.link_is_button_outlined %}
+                    btn-outline-{{ instance.link_button_color.value }}
+                {% else %}
+                    btn-{{ instance.link_button_color.value }}
+                {% endif %}
+                {% if instance.link_is_button_full_width %}btn-block{% endif %}
+            {% endif %}
+        "
+        href="{{ instance.get_link_url }}{{ instance.get_anchor }}"
+    >{{ instance.get_link_label }}</a>
+{% endif %}
+
+{% endspaceless %}
