@@ -1,0 +1,10 @@
+README.md
+setup.py
+objtreexml/__init__.py
+objtreexml/objtreexml.py
+objtreexml/test.py
+objtreexml.egg-info/PKG-INFO
+objtreexml.egg-info/SOURCES.txt
+objtreexml.egg-info/dependency_links.txt
+objtreexml.egg-info/requires.txt
+objtreexml.egg-info/top_level.txt

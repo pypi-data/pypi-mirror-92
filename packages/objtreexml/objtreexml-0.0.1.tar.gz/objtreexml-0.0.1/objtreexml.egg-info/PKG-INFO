@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: objtreexml
+Version: 0.0.1
+Summary: A package to convert object trees to xml and back
+Home-page: https://github.com/aver007/obj-tree-to-xml
+Author: a.v.e.r
+Author-email: a.v.e.r@mail.ru
+License: UNKNOWN
+Description: # obj-tree-to-xml
+        class-saver object trees to xml
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
