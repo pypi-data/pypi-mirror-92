@@ -1,0 +1,11 @@
+pdfminer.six>=20201018
+natsort<7.0,>=6.2.0
+schwifty>=2020.11.0
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
