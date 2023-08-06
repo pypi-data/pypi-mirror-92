@@ -1,0 +1,4 @@
+Faker<2,>=1
+
+[spacyAnonymizers]
+spacy<3,>=2

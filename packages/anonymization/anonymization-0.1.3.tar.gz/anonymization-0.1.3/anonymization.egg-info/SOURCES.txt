@@ -1,0 +1,17 @@
+README.md
+setup.py
+anonymization/Anonymization.py
+anonymization/__init__.py
+anonymization.egg-info/PKG-INFO
+anonymization.egg-info/SOURCES.txt
+anonymization.egg-info/dependency_links.txt
+anonymization.egg-info/requires.txt
+anonymization.egg-info/top_level.txt
+anonymization/anonymizers/__init__.py
+anonymization/anonymizers/bankingAnonymizers.py
+anonymization/anonymizers/dateAnonymizers.py
+anonymization/anonymizers/dictionaryAnonymizers.py
+anonymization/anonymizers/fileAnonymizers.py
+anonymization/anonymizers/internetAnonymizers.py
+anonymization/anonymizers/phoneNumberAnonymizers.py
+anonymization/anonymizers/spacyAnonymizers.py
