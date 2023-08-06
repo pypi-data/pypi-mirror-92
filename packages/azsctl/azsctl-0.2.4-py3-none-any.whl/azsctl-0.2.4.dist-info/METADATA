@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: azsctl
+Version: 0.2.4
+Summary: Simple tool that lets you work with Azure Sentinel
+Home-page: https://github.com/frodehus/azsctl
+Author: Frode Hus
+Author-email: frode.hus@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: knack
+Requires-Dist: msal
+Requires-Dist: alive-progress
+Requires-Dist: pyinquirer
+Requires-Dist: urwid
+
+UNKNOWN
+
+
