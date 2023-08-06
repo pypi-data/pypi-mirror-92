@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['flask_rest_glue']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['Flask>=1.1.2,<2.0.0',
+ 'mongoengine>=0.22.1,<0.23.0',
+ 'typer[all]>=0.3.2,<0.4.0']
+
+extras_require = \
+{':python_version < "3.8"': ['importlib_metadata>=1.6.0,<2.0.0']}
+
+setup_kwargs = {
+    'name': 'flask-restglue',
+    'version': '0.0.3',
+    'description': 'Flask-RestGlue integrates Flask, MongoDB, OpenAPI in a simple and elegant way',
+    'long_description': '\n\n<!-- PROJECT HEADER/LOGO -->\n<!-- <br /> -->\n\n<p align="center">\n  <!--\n  <a href="https://github.com/abassel/Flask-RestGlue">\n    <img src="images/logo.png" alt="Logo" width="80" height="80">\n  </a>\n  -->\n  <h1 align="center">Flask-RestGlue(ALPHA)</h1>\n\n  <p align="center">\n    Integrates <b>Flask + MongoDB + OpenAPI</b> in a simple and elegant way!\n    <br />\n    <a href="https://abassel.github.io/Flask-RestGlue/"><strong>Explore the docs »</strong></a>\n    <br />\n    <br />\n    <a href="https://github.com/abassel/Flask-RestGlue#example">View Demo</a>\n    ·\n    <a href="https://github.com/abassel/Flask-RestGlue/issues">Report Bug</a>\n    ·\n    <a href="https://github.com/abassel/Flask-RestGlue/issues">Request Feature</a>\n  </p>\n\n  <p align="center">\n      <a href="https://github.com/abassel/Flask-RestGlue/actions?query=workflow%3Abuild"><img src="https://github.com/abassel/Flask-RestGlue/workflows/build/badge.svg?branch=master&event=push" alt="Stars Badge"/></a>\n      <a href="https://github.com/abassel/Flask-RestGlue/pulls"><img src="https://img.shields.io/github/issues-pr/abassel/Flask-RestGlue" alt="Pull Requests Badge"/></a>\n      <a href="https://github.com/abassel/Flask-RestGlue/issues"><img src="https://img.shields.io/github/issues/abassel/Flask-RestGlue" alt="Issues Badge"/></a>\n  </p>\n\n  <p align="center">\n   <a href="https://pypi.org/project/Flask-RestGlue/"><img src="https://img.shields.io/pypi/pyversions/Flask-RestGlue.svg" alt="Python Version"/></a>\n   <a href="https://github.com/abassel/Flask-RestGlue/releases"><img src="https://img.shields.io/pypi/v/Flask-RestGlue?color=green&label=version" alt="Version"/></a>\n   <a href="https://github.com/abassel/Flask-RestGlue/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Aapp%2Fdependabot"><img src="https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg" alt="Dependencies Status"/></a>\n   <a href="https://github.com/PyCQA/bandit"><img src="https://img.shields.io/badge/security-bandit-green.svg" alt="Security: bandit"/></a>\n   <a href="https://github.com/abassel/Flask-RestGlue/blob/master/.pre-commit-config.yaml"><img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white" alt="Pre-commit"/></a>\n   <a href="https://github.com/abassel/Flask-RestGlue/blob/master/LICENSE"><img src="https://img.shields.io/github/license/abassel/Flask-RestGlue" alt="License"/></a>\n  </p></p>\n\n\n<!-- TABLE OF CONTENTS -->\n## Contents\n<details>\n  <summary>Table of Contents</summary>\n  <ol>\n    <!--\n    <li>\n      <a href="#about-the-project">About The Project</a>\n      <ul>\n        <li><a href="#built-with">Built With</a></li>\n      </ul>\n    </li>\n    <li>\n      <a href="#getting-started">Getting Started</a>\n      <ul>\n        <li><a href="#prerequisites">Prerequisites</a></li>\n        <li><a href="#installation">Installation</a></li>\n      </ul>\n    </li>\n    -->\n    <li><a href="#example">Example</a></li>\n    <li><a href="#quick-start">Quick Start</a></li>\n    <li><a href="#references-notebook">References</a></li>\n    <!--<li><a href="#roadmap">Roadmap</a></li>\n    <li><a href="#contributing">Contributing</a></li>\n    <li><a href="#license">License</a></li>\n    <li><a href="#contact">Contact</a></li>\n    <li><a href="#acknowledgements">Acknowledgements</a></li>-->\n  </ol>\n</details>\n\n\n\n# Example\n\nFor a fullstack boilerplate, visit [https://github.com/abassel/Flask_RestGlue_Svelte_Docker](https://github.com/abassel/Flask_RestGlue_Svelte_Docker)\n\n```python\nimport mongoengine as mongo\nfrom flask_rest_glue import FlaskRestGlue\n\nmongo.connect("pyglue", host=\'localhost:27017\')\n\napi = FlaskRestGlue()\n\n\n@api.rest_model()\nclass User(mongo.Document):\n  # id = mongo.StringField(primary_key=True)\n  email = mongo.StringField(primary_key=True)\n  password = mongo.StringField()\n\n\napi.run()\n\n```\n\nGo to [http://127.0.0.1:5000/spec_doc](http://127.0.0.1:5000/spec_doc) or [http://127.0.0.1:5000/spec_rdoc](http://127.0.0.1:5000/spec_rdoc) to see the documentation bellow:\n\n![Swagger UI](https://abassel.github.io/Flask-RestGlue/swagger.png)\n\n![ReText UI](https://abassel.github.io/Flask-RestGlue/rdoc.png)\n\n### Expected output:\n\n```bash\ncurl -v -d \'{"email":"a@b.com","password":"xyz"}\' \\\n     -H "Content-Type: application/json" http://localhost:5000/user\n\n#< HTTP/1.0 200 OK\n#< Content-Type: application/json\n#< Content-Length: 45\n#<\n#{\n#  "_id": "a@b.com",\n#  "password": "xyz"\n#}\n\n\ncurl -v http://localhost:5000/users\n#< HTTP/1.0 200 OK\n#< Content-Type: application/json\n#< Content-Length: 57\n#<\n#[\n#  {\n#    "_id": "a@b.com",\n#    "password": "xyz"\n#  }\n#]\n\n\ncurl -v http://localhost:5000/user/a@b.com\n#< HTTP/1.0 200 OK\n#< Content-Type: application/json\n#< Content-Length: 45\n#<\n#{\n#  "_id": "a@b.com",\n#  "password": "xyz"\n#}\n\n\ncurl -v -X PUT -d \'{"password":"new_pass"}\' \\\n     -H "Content-Type: application/json" http://localhost:5000/user/a@b.com\n#< HTTP/1.0 200 OK\n#< Content-Type: application/json\n#< Content-Length: 50\n#<\n#{\n#  "_id": "a@b.com",\n#  "password": "new_pass"\n#}\n\n\ncurl -v -X DELETE http://localhost:5000/user/a@b.com\n#< HTTP/1.0 200 OK\n#< Content-Type: application/json\n#< Content-Length: 45\n#<\n#{\n#  "_id": "a@b.com",\n#  "password": "xyz"\n#}\n```\n\n\n# Quick Start\n\nRequires **docker** and **python 3.9**\n\n### 1 - install local MongoDB\n```bash\nmkdir -p ~/mongodata\n\ndocker run -d --rm -p 27017:27017 -v ~/mongodata:/data/db --name mongodb mongo\n```\n\n### 2 - Install this library\n```bash\npip install Flask-RestGlue\n```\n\n### 3 - Pull the code\n```bash\ncurl -s -O -L  https://github.com/abassel/Flask-RestGlue/blob/master/example/tut01_hello_world.py\ncurl -s -O -L  https://github.com/abassel/Flask-RestGlue/blob/master/example/tut01_hello_world.sh\n```\n\n### 4 - Run the code\n```bash\npython tut01_hello_world.py\n```\nIn another terminal window\n\n```bash\nbash tut01_hello_world.sh\n```\n\n## References :notebook:\n- [Flask_RestGlue_Svelte_Docker boilerplate](https://github.com/abassel/Flask_RestGlue_Svelte_Docker)\n- [OpenAPI 3.0.3](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md)\n- [Flask](http://flask.pocoo.org)\n- [Mongoengine](https://github.com/MongoEngine/mongoengine)\n',
+    'author': 'Alexandre Bassel',
+    'author_email': 'abassel@abassel.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': 'https://github.com/abassel/Flask-RestGlue',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'extras_require': extras_require,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
