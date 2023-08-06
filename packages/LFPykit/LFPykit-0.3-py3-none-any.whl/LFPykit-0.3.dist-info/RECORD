@@ -1,0 +1,15 @@
+lfpykit/__init__.py,sha256=HZW-qkYaNQ2jnuz3cWv99V2WNc3GG9P4xsiviFcWrRc,2702
+lfpykit/cellgeometry.py,sha256=7IZGYifAQg_j-xFMGD4BwZOxEycw9ofSMBQcm3r61-0,3990
+lfpykit/eegmegcalc.py,sha256=u9l3-Z2PLM_T5L18sUlq2-MFetMi6bksVBG7o_aIvno,49441
+lfpykit/lfpcalc.py,sha256=XNPufXDkcKOR2H5sLgr6AAoDB2UHpu2Ba1YHsZxP44g,32054
+lfpykit/models.py,sha256=nC0IiRRFSapb5867mYmyqKtjQh7LkQmGnxYokSAg7KA,83553
+lfpykit/version.py,sha256=s2CwMRnBsKgH7g-08v1p5edYunQCylNsPDNBwFJn4y0,16
+lfpykit/tests/fem_mix_dip.npz,sha256=wHS09IqeVXhLzztajZdokAfFLj5wB_rWL_8hpUJgT_8,2044
+lfpykit/tests/test_eegmegcalc.py,sha256=wPRQW_X1JE-gej11DY8l_yJ_0vzo8KQY06RoNuvt4m8,26077
+lfpykit/tests/test_lfpcalc.py,sha256=gaJjXyAAEkLp2gXWV-dz0RdGh4QIPRcQCLEnKd9HF2M,26083
+lfpykit/tests/test_module.py,sha256=Tn2sc0OsRzJWsl9h5EHYCGNkwG6qYv6AgxpMdWS4su0,33960
+LFPykit-0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+LFPykit-0.3.dist-info/METADATA,sha256=db6YitbDVlt7bjLdVyD2EJdne1jHiZpsQ-iATi4UgBI,14888
+LFPykit-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+LFPykit-0.3.dist-info/top_level.txt,sha256=sy2Pa145rF940HiTSP5ZNY1MictlGgM82zSkvt75BWg,8
+LFPykit-0.3.dist-info/RECORD,,
