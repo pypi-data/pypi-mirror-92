@@ -1,0 +1,6 @@
+README.md
+setup.py
+thingsvision.egg-info/PKG-INFO
+thingsvision.egg-info/SOURCES.txt
+thingsvision.egg-info/dependency_links.txt
+thingsvision.egg-info/top_level.txt
