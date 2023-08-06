@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ripio
+Version: 0.20210122
+Summary: git repositories from command line
+Home-page: https://github.com/davidvilla/ripio
+Author: David Villa Alises
+Author-email: David.Villa@gmail.com
+License: GPL v2 or later
+Description: ripio is a CLI to manage hosted git repositories.
+        
+        * code repository: https://github.com/davidvilla/ripio
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
