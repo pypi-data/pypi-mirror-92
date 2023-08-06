@@ -1,0 +1,15 @@
+pandas
+nltk
+numpy
+matplotlib
+transformers
+tensorflow
+sklearn
+requests
+bs4
+PyMuPDF
+pyocr
+pdf2image
+pdfminer.six
+tqdm
+gensim
