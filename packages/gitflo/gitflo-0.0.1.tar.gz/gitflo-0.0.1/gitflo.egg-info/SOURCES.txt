@@ -1,0 +1,15 @@
+README.md
+setup.py
+gf/__init__.py
+gf/dialog.py
+gf/feature.py
+gf/hotfix.py
+gf/main.py
+gf/test.py
+gf/utils.py
+gitflo.egg-info/PKG-INFO
+gitflo.egg-info/SOURCES.txt
+gitflo.egg-info/dependency_links.txt
+gitflo.egg-info/entry_points.txt
+gitflo.egg-info/requires.txt
+gitflo.egg-info/top_level.txt
