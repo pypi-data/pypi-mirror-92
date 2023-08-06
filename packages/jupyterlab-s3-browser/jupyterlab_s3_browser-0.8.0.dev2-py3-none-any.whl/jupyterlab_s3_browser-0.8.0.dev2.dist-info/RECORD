@@ -1,0 +1,11 @@
+jupyterlab_s3_browser/__init__.py,sha256=fsTfYmQTi9SDc5zLf-go6Kdgq9iUo72Hu5INqfwVJUg,13063
+jupyterlab_s3_browser/auth_helpers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterlab_s3_browser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jupyterlab_s3_browser/tests/test_auth.py,sha256=URlIL0SWSVAwMnjqF_PsFzzwAEPamdRiWzy2W1nt_v4,458
+jupyterlab_s3_browser/tests/test_get_s3.py,sha256=rR6gLnIvOIhsiDnBnvTA4fSJdUqjAUphQvvtNFts_6E,1712
+jupyterlab_s3_browser-0.8.0.dev2.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab_s3_browser.json,sha256=u4MuZ3P2fAfNQlhMXUKLCWSRRzYCaIWycxFj19_IJAo,98
+jupyterlab_s3_browser-0.8.0.dev2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jupyterlab_s3_browser-0.8.0.dev2.dist-info/METADATA,sha256=I1dWcrtM1dhGir0SC6W-Y4DVY084EZcjQOalMWruBfw,937
+jupyterlab_s3_browser-0.8.0.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jupyterlab_s3_browser-0.8.0.dev2.dist-info/top_level.txt,sha256=kS4c6Am6zCb3hXqqhx96NAlK8UhK4VsXdRO-lzfdkII,22
+jupyterlab_s3_browser-0.8.0.dev2.dist-info/RECORD,,
