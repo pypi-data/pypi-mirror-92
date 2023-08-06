@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: mincfg
+Version: 0.7
+Summary: Minimal Application Configuration
+Home-page: http://github.com/pjz/mincfg
+Author: Paul Jimenez
+Author-email: pj@place.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Provides-Extra: all
+Requires-Dist: configobj ; extra == 'all'
+Requires-Dist: python-dotenv ; extra == 'all'
+Requires-Dist: pyyaml ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: configobj ; extra == 'dev'
+Requires-Dist: furo ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-pylint ; extra == 'dev'
+Requires-Dist: python-dotenv ; extra == 'dev'
+Requires-Dist: pyyaml ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: env
+Requires-Dist: python-dotenv ; extra == 'env'
+Provides-Extra: ini
+Requires-Dist: configobj ; extra == 'ini'
+Provides-Extra: yaml
+Requires-Dist: pyyaml ; extra == 'yaml'
+
+UNKNOWN
+
+
