@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+emotext/__init__.py
+emotext/clean.py
+emotext/text.py
+emotext.egg-info/PKG-INFO
+emotext.egg-info/SOURCES.txt
+emotext.egg-info/dependency_links.txt
+emotext.egg-info/top_level.txt
