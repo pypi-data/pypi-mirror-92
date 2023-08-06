@@ -1,0 +1,3 @@
+[console_scripts]
+ligo-proxy-init = ligo_proxy_utils.ligo_proxy_init:ligo_proxy_init
+

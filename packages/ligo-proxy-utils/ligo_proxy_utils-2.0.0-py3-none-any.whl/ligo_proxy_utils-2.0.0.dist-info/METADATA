@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ligo-proxy-utils
+Version: 2.0.0
+Summary: Utilities for obtaining short-lived proxy certificates for LIGO
+Home-page: https://wiki.ligo.org/AuthProject
+Author: Duncan Macleod
+Author-email: auth@ligo.org
+License: GPL-3.0-or-later
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: ciecplib
+
+UNKNOWN
+
+

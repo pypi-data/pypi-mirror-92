@@ -1,0 +1,47 @@
+.TH ligo-proxy-init "1" Manual
+.SH NAME
+ligo-proxy-init \- generate an X.509 credential
+.SH SYNOPSIS
+.B ligo-proxy-init
+[-h] [-d] [-v] [-i hostname] [-k] [-p] [-H h] [-X] [username]
+.SH DESCRIPTION
+Generate a LIGO.ORG X.509 credential using CIECPLib
+.SH OPTIONS
+.TP
+\fBusername\fR
+username (required if not using \-\-kerberos)
+
+.TP
+\fB\-d\fR, \fB\-\-debug\fR
+write debug output to stdout
+
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+write version information to stdout
+
+.TP
+\fB\-i\fR hostname, \fB\-\-idp\-host\fR hostname
+use alternative IdP host, e.g. 'login2.ligo.org', default tries each of: login.ligo.org, login2.ligo.org
+
+.TP
+\fB\-k\fR, \fB\-\-kerberos\fR
+enable kerberos negotiation, do not provide username
+
+.TP
+\fB\-p\fR, \fB\-\-proxy\fR
+create RFC 3820 compliant impersonation proxy
+
+.TP
+\fB\-H\fR h, \fB\-\-hours\fR h
+proxy is valid for h hours
+
+.TP
+\fB\-X\fR, \fB\-\-destroy\fR
+
+.SH AUTHORS
+.B ligo\-proxy\-utils
+was written by Duncan Macleod <auth@ligo.org>.
+.SH DISTRIBUTION
+The latest version of ligo\-proxy\-utils may be downloaded from
+.UR https://wiki.ligo.org/AuthProject
+.UE
