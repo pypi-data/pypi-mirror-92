@@ -1,0 +1,10 @@
+pyvirtualcam/__init__.py,sha256=qwfkTvBzS7Yv4zgx0VLR6LA9mvnZB54IWZngo6N6HM4,65
+pyvirtualcam/_native_windows.cp39-win_amd64.pyd,sha256=wzwsZoG3HltO_-nzyU7t6-4Gc2nhuVAnDgi3VKfNVog,112640
+pyvirtualcam/_version.py,sha256=1KhrBItVjTCR-Sumh0o09b_aKrjTTcJrpTBh5GBw6Lk,21
+pyvirtualcam/camera.py,sha256=TpDCjXtGa3XK-tFpVRgarbCYid1xM_o8bLyWbVXdm1Q,2885
+pyvirtualcam/util.py,sha256=dJ-KXL27rFFnnTiHbMrh7nBOSX6ge5I5GeN7r4Bylpc,497
+pyvirtualcam-0.2.0.dist-info/LICENSE,sha256=GJsa-V1mEVHgVM6hDJGz11Tk3k0_7PsHTB-ylHb3Fns,18431
+pyvirtualcam-0.2.0.dist-info/METADATA,sha256=it_VUBBm2_iGKZLZgcI6L-4wyHzvS8ByXbtL9lATfJA,2636
+pyvirtualcam-0.2.0.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+pyvirtualcam-0.2.0.dist-info/top_level.txt,sha256=KQx1d-fCmPSs6x5SfMnxPkS-3KbN8cd5DIyOQjgFAhI,13
+pyvirtualcam-0.2.0.dist-info/RECORD,,
