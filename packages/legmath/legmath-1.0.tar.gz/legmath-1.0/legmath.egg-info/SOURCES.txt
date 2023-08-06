@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+legmath.egg-info/PKG-INFO
+legmath.egg-info/SOURCES.txt
+legmath.egg-info/dependency_links.txt
+legmath.egg-info/top_level.txt
+xmath/__init__.py
+xmath/xmath.py
