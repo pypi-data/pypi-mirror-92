@@ -1,0 +1,12 @@
+cfde_submit/__init__.py,sha256=9YyNJC2xmMzinRu5Djukg4rvlSgBWu6ZBWro0lFj950,102
+cfde_submit/client.py,sha256=XFqxXjRbfBOQyVfeQ3rWr28xGQ0KmxL4dd2QDdN7jwY,32965
+cfde_submit/config.py,sha256=gQXczdD-eIUoFdLzgu4LtON5bEQIW1FSVLlpcyxdZy4,2324
+cfde_submit/exc.py,sha256=FESid82iWor9gkxjPPIT77WuzfkzCh8w30GbZ8RuBmo,743
+cfde_submit/main.py,sha256=srFG_FGXOjgkvdB_9Z_8iNJ-QiUJmPkCR0D1pOr_t1o,9463
+cfde_submit/version.py,sha256=RGTynxw63FYzxgYUDBdRn1L84bfdhiEPlzJ2iicPXD0,67
+cfde_submit-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cfde_submit-0.1.5.dist-info/METADATA,sha256=Eq46s7yAuk49-DzrRYUS1s-LDRydjIAr2w89zZpRmfk,4539
+cfde_submit-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cfde_submit-0.1.5.dist-info/entry_points.txt,sha256=omd5ARW3K0IFX0pWyhytYIcoiTRfIkksgfeIFUk-aSE,64
+cfde_submit-0.1.5.dist-info/top_level.txt,sha256=Yi16sFBJ6NjR_npldsnaCw1qvR-2tVVQr4fpe2E4ebQ,12
+cfde_submit-0.1.5.dist-info/RECORD,,
