@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:Unverified HTTPS request"
+]
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py36, py37, py38, py39
+
+[testenv]
+deps = 
+    pytest
+    -rrequirements.txt
+commands = 
+    pytest test/test_pebble.py
+
+[testenv:py36]
+basepython = {homedir}/miniconda3/envs/py36/bin/python
+
+[testenv:py37]
+basepython = {homedir}/miniconda3/envs/py37/bin/python
+
+[testenv:py38]
+basepython = {homedir}/miniconda3/envs/py38/bin/python
+
+[testenv:py39]
+basepython = {homedir}/miniconda3/envs/py39/bin/python
+"""
