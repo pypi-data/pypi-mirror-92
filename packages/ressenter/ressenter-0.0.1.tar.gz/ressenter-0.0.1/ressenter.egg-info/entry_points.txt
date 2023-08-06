@@ -1,0 +1,3 @@
+[console_scripts]
+rissenter = rissenter.cli:cli
+
