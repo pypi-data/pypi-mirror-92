@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+mbomb/MBomb.py
+mbomb/__init__.py
+mbomb.egg-info/PKG-INFO
+mbomb.egg-info/SOURCES.txt
+mbomb.egg-info/dependency_links.txt
+mbomb.egg-info/requires.txt
+mbomb.egg-info/top_level.txt
