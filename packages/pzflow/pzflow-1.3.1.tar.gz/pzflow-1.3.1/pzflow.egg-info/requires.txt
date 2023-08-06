@@ -1,0 +1,12 @@
+jax
+jaxlib
+pandas
+
+[dev]
+pytest
+black
+pylint
+
+[docs]
+sphinx
+sphinx-rtd-theme
