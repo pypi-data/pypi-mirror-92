@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: datemodule
+Version: 1.0
+Summary: Date Module gives date associated with given header for a table
+Home-page: UNKNOWN
+Author: Pendry Sahithi
+Author-email: sahithi.pendry@stockviews.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: dateparser
+Requires-Dist: regex
+
+'This Date Module gives date associated with given header for a table'
+
+
