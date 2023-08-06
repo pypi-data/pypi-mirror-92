@@ -1,0 +1,11 @@
+ailment/__init__.py,sha256=5djxIH3JYNVBh-xsyGpq_V20MoKmivbRw9W023Tjt34,295
+ailment/block.py,sha256=l4-XzjiKgScP9BmnHogL81yNAedyUVtL_lCMZIJe3n8,1618
+ailment/converter.py,sha256=DYyNM_Wea3TnoTQnFHXobtGAXa3e0ovYy41Ir8r_ek0,15007
+ailment/expression.py,sha256=A0gREdAJQWY4jke9tfP5EZPJHsI_9rQhnbVX4Unu01c,18474
+ailment/manager.py,sha256=Qja5U3AScgCT0juMgmZDv5KBrpgC3xZ9hr-WP6l_Y2E,702
+ailment/statement.py,sha256=6W2e2_oArsdY-QE_YoXl8Je78H9Kqw6glzwCrEfLe3c,13493
+ailment/tagged_object.py,sha256=AAKImsN6jE5ya4Ahb0XiW5GT4xuks39vX6_obFPVOhM,758
+ailment-9.0.5610.dist-info/METADATA,sha256=PlFaV1eHB_5r1n_vi3jIY35ZbzN7m2uZaxhTGNnQizU,207
+ailment-9.0.5610.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ailment-9.0.5610.dist-info/top_level.txt,sha256=umMYjBtkyUxaG8cNAFoLiaZZwvC2WMEI4K29_Yrg_6I,8
+ailment-9.0.5610.dist-info/RECORD,,
