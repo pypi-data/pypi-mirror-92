@@ -1,0 +1,3 @@
+[kpireport.datasource]
+mysql = kpireport_mysql:MySQLDatasource
+
