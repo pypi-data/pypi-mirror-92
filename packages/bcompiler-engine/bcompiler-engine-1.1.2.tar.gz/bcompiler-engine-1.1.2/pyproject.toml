@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.poetry]
+# poetry build will not work because this directory is not in project root
+name = "bcompiler-engine"
+version = "1.1.2"
+description = "A new, faster, more efficient, more modular back end for datamap tools and  interfaces."
+homepage = "https://github.com/hammerheadlemon/bcompiler-engine"
+repository = "https://github.com/hammerheadlemon/bcompiler-engine"
+license = "MIT"
+readme = "README.md"
+authors = ["Matthew Lemon"]
+packages = [
+    { include = "engine" },
+]
+
+[tool.poetry.urls]
+"Issue Tracker" = "https://github.com/hammerheadlemon/bcompiler-engine/issues"
+
+[tool.poetry.dependencies]
+python = "^3.7.0"
+openpyxl = "^3.0.3"
+appdirs = "^1.4.3"
+wheel = "^0.36.2"
+
+[tool.poetry.dev-dependencies]
+pdbpp = "^0.10.2"
+flake8 = "^3.8.2"
+black = "^19.10b0"
+pytest = "^5.4.1"
+pytest-cov = "^2.7.1"
+coverage = "^5.1"
+nox = "^2019.11.9"
+twine = "^3.1.1"
+wheel = "^0.36.2"
+mypy = "^0.790"
+isort = "^5.6.4"
+yapf = "^0.30.0"
+
+[tools.black]
+max-length-length=88
