@@ -1,0 +1,8 @@
+setup.py
+sortify/__init__.py
+sortify/sortingAlgos.py
+sortify.egg-info/PKG-INFO
+sortify.egg-info/SOURCES.txt
+sortify.egg-info/dependency_links.txt
+sortify.egg-info/not-zip-safe
+sortify.egg-info/top_level.txt
