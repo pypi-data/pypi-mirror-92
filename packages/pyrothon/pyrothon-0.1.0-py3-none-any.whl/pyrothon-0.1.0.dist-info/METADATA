@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyrothon
+Version: 0.1.0
+Summary: United. Forever.
+Home-page: https://github.com/Autogram/pyrothon
+License: MIT
+Author: JosXa
+Author-email: info@josxa.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pyrogram (>=1.1.13,<2.0.0)
+Requires-Dist: Telethon (>=1.19.0,<2.0.0)
+Project-URL: Bug Tracker, https://github.com/Autogram/pyrothon/issues
+Project-URL: Contact Author, https://t.me/PyrothonChat
+Project-URL: Repository, https://github.com/Autogram/pyrothon
+Project-URL: Support Chat, https://t.me/PyrothonChat
+Project-URL: Updates, https://t.me/Pyrothon
