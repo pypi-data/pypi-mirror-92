@@ -1,0 +1,23 @@
+LICENSE.txt
+Makefile
+README.md
+build-requirements.txt
+requirements.txt
+setup.cfg
+setup.py
+test-requirements.txt
+.github/workflows/tests.yml
+ortu/ __init__.py
+ortu/arguments.py
+ortu/main.py
+ortu/oci_auth.py
+ortu/oci_route_table.py
+ortu.egg-info/PKG-INFO
+ortu.egg-info/SOURCES.txt
+ortu.egg-info/dependency_links.txt
+ortu.egg-info/entry_points.txt
+ortu.egg-info/not-zip-safe
+ortu.egg-info/pbr.json
+ortu.egg-info/requires.txt
+ortu.egg-info/top_level.txt
+tests/test_check.py
