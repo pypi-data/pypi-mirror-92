@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "kanbanflow2wekan"
+version = "0.2.2"
+description = "This is a library to perform kanban migration from Kanbanflow to Wekan in an automated way."
+authors = ["mdiniz97 <marcosdinizpaulo@gmail.com>"]
+
+readme = "README.md"
+
+
+homepage = "https://github.com/mdiniz97/kanbanflow2wekan"
+repository = "https://github.com/mdiniz97/kanbanflow2wekan"
+
+keywords = ["kanbanflow2wekan", "kanbanflow", "wekan"]
+
+classifiers = [
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+python-dotenv = "^0.15.0"
+ipython = "^7.19.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
