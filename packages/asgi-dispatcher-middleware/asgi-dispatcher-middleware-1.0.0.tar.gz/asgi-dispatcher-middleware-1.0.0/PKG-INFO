@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: asgi-dispatcher-middleware
+Version: 1.0.0
+Summary: Middleware to Dispatch to multiple ASGI applications, extracted from hypercorn.
+Home-page: https://github.com/graingert/asgi-dispatcher-middleware
+Author: Thomas Grainger
+Author-email: asgi-dispatcher-middleware@graingert.co.uk
