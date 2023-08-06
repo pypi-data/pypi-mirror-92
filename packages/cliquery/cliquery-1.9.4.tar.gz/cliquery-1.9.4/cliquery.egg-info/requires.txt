@@ -1,0 +1,7 @@
+lxml
+requests
+requests-cache
+six
+
+[:python_version=="2.6"]
+ordereddict
