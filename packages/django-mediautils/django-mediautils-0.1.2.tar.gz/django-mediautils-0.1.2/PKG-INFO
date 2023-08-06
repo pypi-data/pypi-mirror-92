@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-mediautils
+Version: 0.1.2
+Summary: media utilities for django
+Home-page: https://github.com/gsteixeira/
+Author: Gustavo Selbach Teixeira
+Author-email: gsteixei@gmail.com
+License: GNU License
+Description: DJANGO MEDIA UTILS
+        ---------------------
+        
+        media utilities for django
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Description-Content-Type: text/x-rst

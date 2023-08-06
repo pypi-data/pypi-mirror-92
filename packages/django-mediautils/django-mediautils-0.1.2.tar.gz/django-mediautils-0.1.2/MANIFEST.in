@@ -1,0 +1,6 @@
+include LICENSE
+include README.rst
+recursive-include mediautils/ *
+recursive-include mediautils/static *
+recursive-include mediautils/templates *
+recursive-include docs *
