@@ -1,0 +1,9 @@
+pymarshaler/__init__.py,sha256=y4X9_szY9oXgbyqg-UJxJYoM-rNPblFv9KqfTKAICQo,220
+pymarshaler/arg_delegates.py,sha256=wUne36_7A62fk0t9bfA20eLOMNdr5dyqJHCbMvewzhg,3660
+pymarshaler/errors.py,sha256=JSKGScDvuwvvDrYpTazeUthJDH33vWfecI9ZSfYsmKc,261
+pymarshaler/marshal.py,sha256=T0DnJXAcg5qKW0kKkT98eEzOSJnnhpbdeNviFYXAcgc,6539
+pymarshaler/utils.py,sha256=IdbeSVDhK3Jhphp4iDqBFEr5iCX0ujKUw_akjqDPaSg,922
+pymarshaler-0.2.0.dist-info/METADATA,sha256=8CMAw06SpLWGRSBKHzRH4Tu-IIJPJv4gIEMjBv7lHiw,5336
+pymarshaler-0.2.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pymarshaler-0.2.0.dist-info/top_level.txt,sha256=pf_GqTc5XDwZHyxNEnqRRV6WVRbVpB-O5x3CHVUsg1s,12
+pymarshaler-0.2.0.dist-info/RECORD,,
