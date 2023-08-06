@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+#
+# A simple Python-based calculator for network engineers/researchers.
+# Copyright (c) 2018-2021, Hiroyuki Ohsaki.
+# All rights reserved.
+#
+# $Id: pycalc,v 1.10 2019/10/26 14:28:43 ohsaki Exp ohsaki $
+#
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+import re
+import readline
+import sys
+from math import *
+
+from perlcompat import die, warn, getopts
+
+PREFIXS = {
+    'n': 10**-9, 'u': 10**-6, 'm': 10**-3, 'k': 10**3, '': 1, 'K': 10**3, 'M':
+    10**6, 'G': 10**9, 'T': 10**12, 'P': 10**15
+}
+
+UNITS = {
+    's': 1,
+    'm': 1 / 300000000,
+    'bit': 1 / 8,
+    'bps': 1 / 8,
+    'byte': 1,
+    'B': 1,
+}
+
+UNIT_TBL = {}
+
+def usage():
+    die(f"""\
+usage: {sys.argv[0]}: [-p #]""")
+
+def unit_factor(unit):
+    """Return the multiplication factor for a unit UNIT.  For instance, 'k'
+    gives 1000 and 'M' gives 1000,000."""
+    if '/' in unit:
+        num, denom = unit.split('/')
+        return unit_factor(num) / unit_factor(denom)
+    if unit in UNIT_TBL:
+        return UNIT_TBL[unit]
+    return 1
+
+def print_value(v, count):
+    """Display a number V in several different formats."""
+    # convert V to binary format
+    binstr = '{:032b}'.format(int(v))
+    bingrouped = ' '.join([binstr[col:col + 8] for col in range(0, 32, 8)])
+
+    print('%{} = {}'.format(count, v))
+    print('{0:12x} hex   {0:12o} oct   {1}'.format(int(v), bingrouped))
+    for unit in ['bit/ms', 'bit/s', 'Kbit/s', 'Mbit/s']:
+        print('{:12.4g} {:6s}'.format(v / unit_factor(unit), unit), end='')
+    print()
+    for unit in ['B/ms', 'B/s', 'KB/s', 'MB/s']:
+        print('{:12.4g} {:6s}'.format(v / unit_factor(unit), unit), end='')
+    print()
+    for unit in ['pkt/ms', 'pkt/s', 'm', 'km']:
+        print('{:12.4g} {:6s}'.format(v / unit_factor(unit), unit), end='')
+    print()
+
+def main():
+    opt = getopts('p:') or usage()
+    packet_size = opt.p or 1500
+
+    global UNIT_TBL
+    UNIT_TBL['pkt'] = UNIT_TBL['packet'] = packet_size
+    # precompute all unit factors
+    for prefix in PREFIXS:
+        for unit in UNITS:
+            UNIT_TBL[prefix + unit] = PREFIXS[prefix] * UNITS[unit]
+
+    history = [0]
+    count = 1
+
+    def _expand_unit(match):
+        number, unit = match.groups()
+        return '{} * {}'.format(number, unit_factor(unit))
+
+    def _expand_history(match):
+        n = match.group(1)
+        if n:
+            return (str(history[int(n)]))
+        return str(history[count - 1])
+
+    while True:
+        # FIXME: support keyword completion
+        # FIXME: support online documentation
+        try:
+            expr = input('? ')
+        except EOFError:
+            # FIXME: save history on exit
+            exit()
+
+        # expand history reference
+        expr = re.sub(r'%(\d+)?', _expand_history, expr)
+        # expand units in arguments
+        expr = re.sub(r'([\d.]+)\s*\[(.+?)\]', _expand_unit, expr)
+
+        # FIXME: support variables assignemnt using exec()
+        val = eval(expr)
+        print_value(val, count)
+        history.append(val)
+        count += 1
+
+if __name__ == "__main__":
+    main()
