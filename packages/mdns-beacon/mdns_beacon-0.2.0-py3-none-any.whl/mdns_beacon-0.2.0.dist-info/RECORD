@@ -1,0 +1,13 @@
+mdns_beacon/__init__.py,sha256=7_R6l3BtqH-VSeslqNU1Jp7wTR7FPkOZEYoxNFbAxBw,231
+mdns_beacon/base.py,sha256=EVya6pEqubexXb-aG0jnKoNpXS-Be7nfAQETwd_w3A4,1645
+mdns_beacon/beacon.py,sha256=IFElmxlJLF7JdPBNv9OX2m0GoHgwczWGndUcZSQmrww,4114
+mdns_beacon/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdns_beacon/cli/layouts.py,sha256=PzVnC6RiG177-wcYDQ6X_Xrxmf0sQyIh5NUx-wss4nk,3800
+mdns_beacon/cli/main.py,sha256=q1OIwGietc3G_FweiytzO6ywsT2lKVr2w9F_H9xEN44,2667
+mdns_beacon/cli/types.py,sha256=sHQf1071yyYfpgEODwweEAyuekMFaB1fohZcnKVSvco,794
+mdns_beacon/listener.py,sha256=VVjXC6rk5Tbq7vuDE-5FzAk66fVaISRXZ1RFYAk5mP0,1954
+mdns_beacon-0.2.0.dist-info/entry_points.txt,sha256=KZ8O0DPF1T8ISfoIxMfXqeW_1OQ6LhPVLQqY9g7Npys,57
+mdns_beacon-0.2.0.dist-info/LICENSE.rst,sha256=1gETyqMkQFGoWQFiRAsmw0C65tqqPdqlMXCwkNM_N64,1092
+mdns_beacon-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mdns_beacon-0.2.0.dist-info/METADATA,sha256=G2KS4xWeDjMe7BUazjCOLQn6ozdaGnLNTZ3N46-DzE4,5564
+mdns_beacon-0.2.0.dist-info/RECORD,,
