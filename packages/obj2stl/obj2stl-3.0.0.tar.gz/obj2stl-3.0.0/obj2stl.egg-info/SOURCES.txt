@@ -1,0 +1,7 @@
+README.md
+setup.py
+obj2stl.egg-info/PKG-INFO
+obj2stl.egg-info/SOURCES.txt
+obj2stl.egg-info/dependency_links.txt
+obj2stl.egg-info/requires.txt
+obj2stl.egg-info/top_level.txt
