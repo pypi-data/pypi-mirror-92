@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: sme_contrib
+Version: 0.0.1
+Summary: Useful modules for use with sme (Spatial Model Editor)
+Home-page: http://github.com/spatial-model-editor/sme_contrib
+Author: Liam Keegan
+Author-email: liam@keegan.ch
+License: MIT
+Description: # sme-contrib
+        
+        A collection of useful modules for use with [sme](https://pypi.org/project/sme/)
+        
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
