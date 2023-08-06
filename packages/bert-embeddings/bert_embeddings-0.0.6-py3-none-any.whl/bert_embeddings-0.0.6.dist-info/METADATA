@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: bert-embeddings
+Version: 0.0.6
+Summary: Create positional embeddings based on TinyBERT or similar bert models
+Home-page: https://github.com/Sorcely/EmbeddingsLib
+Author: Marius J. Schlichtkrull
+Author-email: marius.schlichtkrull@gmail.com
+License: MIT
+Keywords: embeddings
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: filelock (==3.0.12)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==3.4.0)
+Requires-Dist: joblib (==1.0.0)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: packaging (==20.8)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: regex (==2020.11.13)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: sacremoses (==0.0.43)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tokenizers (==0.9.4)
+Requires-Dist: torch (==1.5.0+cpu)
+Requires-Dist: tqdm (==4.56.0)
+Requires-Dist: transformers (==4.2.2)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: urllib3 (==1.26.2)
+Requires-Dist: zipp (==3.4.0)
+
+Bert Embeddings
+ Use this library to really easily embed text using Bert Models.
+
+ Github: https://github.com/sorcely/BertEmbeddings 
+
+Change Log
+==========
+
+0.0.6 (23/01/2021)
+------------------
+- Changed ImportError to ModuleNotFoundError
+
+0.0.5 (23/01/2021)
+------------------
+- Assert error if torch is not installed. This is a non-permanent solution to error when installing PyTorch
+
+0.0.3 (23/01/2021)
+------------------
+- Fixed Installment issue
+
+0.0.2 (23/01/2021)
+------------------
+- Fixed not finding package
+
+0.0.1 (22/01/2021)
+------------------
+- First release
+
+
