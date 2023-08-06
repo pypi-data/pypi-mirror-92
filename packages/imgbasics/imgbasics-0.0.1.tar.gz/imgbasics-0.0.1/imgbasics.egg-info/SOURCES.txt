@@ -1,0 +1,17 @@
+.gitignore
+Examples_Basics.ipynb
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+data/example.png
+imgbasics/__init__.py
+imgbasics/contours.py
+imgbasics/imcrop.py
+imgbasics.egg-info/PKG-INFO
+imgbasics.egg-info/SOURCES.txt
+imgbasics.egg-info/dependency_links.txt
+imgbasics.egg-info/requires.txt
+imgbasics.egg-info/top_level.txt
+tests/test_basics.py
