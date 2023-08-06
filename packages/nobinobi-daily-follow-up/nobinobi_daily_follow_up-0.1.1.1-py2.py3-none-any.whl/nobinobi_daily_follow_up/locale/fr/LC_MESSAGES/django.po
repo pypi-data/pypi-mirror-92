@@ -1,0 +1,1258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-16 13:52+0200\n"
+"PO-Revision-Date: 2020-10-16 13:52+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: .\nobinobi_daily_follow_up\forms.py:81
+#: .\nobinobi_daily_follow_up\forms.py:412
+#: .\nobinobi_daily_follow_up\forms.py:440
+#: .\nobinobi_daily_follow_up\forms.py:484
+#: .\nobinobi_daily_follow_up\forms.py:523
+#: .\nobinobi_daily_follow_up\forms.py:571
+msgid "Submit"
+msgstr "Envoyer"
+
+#: .\nobinobi_daily_follow_up\forms.py:143
+msgid "Presence already exists."
+msgstr "La présence existe déjà."
+
+#: .\nobinobi_daily_follow_up\forms.py:175
+msgid "The departure time is less than the arrival time."
+msgstr "L’heure de départ est inférieure à l’heure d’arrivée."
+
+#: .\nobinobi_daily_follow_up\forms.py:331
+#: .\nobinobi_daily_follow_up\models.py:420
+msgid "Staff"
+msgstr "Personnel"
+
+#: .\nobinobi_daily_follow_up\forms.py:356
+msgid "Check"
+msgstr "Vérifier"
+
+#: .\nobinobi_daily_follow_up\forms.py:357
+msgid ""
+"By checking this box you confirm that you want to delay taking the "
+"medication."
+msgstr ""
+"En cochant cette case, vous confirmez que vous voulez retarder la prise du "
+"médicament."
+
+#: .\nobinobi_daily_follow_up\forms.py:379
+#: .\nobinobi_daily_follow_up\forms.py:540
+#: .\nobinobi_daily_follow_up\models.py:41
+#: .\nobinobi_daily_follow_up\models.py:312
+#: .\nobinobi_daily_follow_up\models.py:541
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_detail.html:14
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:38
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:190
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:35
+msgid "Child"
+msgstr "Enfant"
+
+#: .\nobinobi_daily_follow_up\forms.py:389
+#: .\nobinobi_daily_follow_up\forms.py:576
+#: .\nobinobi_daily_follow_up\models.py:46
+#: .\nobinobi_daily_follow_up\models.py:425
+#: .\nobinobi_daily_follow_up\models.py:545
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:115
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_detail.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:39
+msgid "Date"
+msgstr "Date"
+
+#: .\nobinobi_daily_follow_up\forms.py:430
+#: .\nobinobi_daily_follow_up\models.py:54
+msgid "Classroom"
+msgstr "Salle de classe"
+
+#: .\nobinobi_daily_follow_up\forms.py:452
+#: .\nobinobi_daily_follow_up\forms.py:496
+msgid "Name of children"
+msgstr "Nom des enfants"
+
+#: .\nobinobi_daily_follow_up\forms.py:455
+#: .\nobinobi_daily_follow_up\models.py:128
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:453
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:562
+msgid "Activity"
+msgstr "Activité"
+
+#: .\nobinobi_daily_follow_up\forms.py:460
+#: .\nobinobi_daily_follow_up\forms.py:498
+#: .\nobinobi_daily_follow_up\models.py:76
+#: .\nobinobi_daily_follow_up\models.py:124
+#: .\nobinobi_daily_follow_up\models.py:215
+#: .\nobinobi_daily_follow_up\models.py:315
+#: .\nobinobi_daily_follow_up\models.py:396
+#: .\nobinobi_daily_follow_up\models.py:480
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:233
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:309
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:411
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:455
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:511
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:544
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:343
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:418
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:520
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:564
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:618
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:649
+msgid "Comment"
+msgstr "Remarque"
+
+#: .\nobinobi_daily_follow_up\forms.py:499
+#: .\nobinobi_daily_follow_up\models.py:75
+msgid "Important"
+msgstr "Important"
+
+#: .\nobinobi_daily_follow_up\forms.py:527
+#: .\nobinobi_daily_follow_up\forms.py:528
+#: .\nobinobi_daily_follow_up\forms.py:530
+#: .\nobinobi_daily_follow_up\forms.py:532
+#: .\nobinobi_daily_follow_up\forms.py:534
+#: .\nobinobi_daily_follow_up\models.py:426
+msgid "Give hour"
+msgstr "Donner à"
+
+#: .\nobinobi_daily_follow_up\forms.py:596
+msgid "No valid period selected."
+msgstr "Aucune période valide sélectionnée."
+
+#: .\nobinobi_daily_follow_up\menus.py:23
+#: .\nobinobi_daily_follow_up\models.py:99
+#: .\nobinobi_daily_follow_up\models.py:112
+#: .\nobinobi_daily_follow_up\models.py:180
+#: .\nobinobi_daily_follow_up\models.py:203
+#: .\nobinobi_daily_follow_up\models.py:252
+#: .\nobinobi_daily_follow_up\models.py:273
+#: .\nobinobi_daily_follow_up\models.py:519
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\group_choice_classroom.html:24
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\group_daily_follow_up_update.html:34
+msgid "Daily follow-up"
+msgstr "Suivi journalier"
+
+#: .\nobinobi_daily_follow_up\menus.py:28
+msgid "Presences of the day"
+msgstr "Présences du jour"
+
+#: .\nobinobi_daily_follow_up\menus.py:32
+msgid "Presences of the week"
+msgstr "Présences de la semaine"
+
+#: .\nobinobi_daily_follow_up\menus.py:36
+msgid "Institution: Presences"
+msgstr "Institution: Présences"
+
+#: .\nobinobi_daily_follow_up\menus.py:41
+msgid "Summary by child"
+msgstr "Résumé par enfant"
+
+#: .\nobinobi_daily_follow_up\menus.py:45
+msgid "Stroll List"
+msgstr "Liste promenade"
+
+#: .\nobinobi_daily_follow_up\menus.py:49
+msgid "Group activities"
+msgstr "Activités de groupe"
+
+#: .\nobinobi_daily_follow_up\menus.py:53
+msgid "Group notes"
+msgstr "Remarques de groupe"
+
+#: .\nobinobi_daily_follow_up\menus.py:57
+msgid "Multiday medication"
+msgstr "Médicament sur plusieurs jours"
+
+#: .\nobinobi_daily_follow_up\menus.py:61
+msgid "Early troubleshooting"
+msgstr "Dépannage anticipé"
+
+#: .\nobinobi_daily_follow_up\models.py:47
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:174
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:286
+msgid "Arrival time"
+msgstr "Heure d'arrivée"
+
+#: .\nobinobi_daily_follow_up\models.py:48
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:174
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:286
+msgid "Departure time"
+msgstr "Heure de départ"
+
+#: .\nobinobi_daily_follow_up\models.py:49
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:178
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:290
+msgid "Intermediate departure time"
+msgstr "Heure de départ intermédiaire"
+
+#: .\nobinobi_daily_follow_up\models.py:50
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:178
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:290
+msgid "Intermediate arrival time"
+msgstr "Heure d’arrivée intermédiaire"
+
+#: .\nobinobi_daily_follow_up\models.py:63
+msgid "Presence"
+msgstr "Présence"
+
+#: .\nobinobi_daily_follow_up\models.py:64
+msgid "Presences"
+msgstr "Présences"
+
+#: .\nobinobi_daily_follow_up\models.py:67
+msgid "Presence: {} - {} - {}"
+msgstr "Présence: {} - {} - {}"
+
+#: .\nobinobi_daily_follow_up\models.py:80
+#: .\nobinobi_daily_follow_up\models.py:235
+msgid "Lotions"
+msgstr "Crèmes"
+
+#: .\nobinobi_daily_follow_up\models.py:86
+#: .\nobinobi_daily_follow_up\models.py:321
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:122
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:196
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:37
+msgid "Medications"
+msgstr "Médicaments"
+
+#: .\nobinobi_daily_follow_up\models.py:92
+#: .\nobinobi_daily_follow_up\models.py:129
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:121
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:195
+msgid "Activities"
+msgstr "Activités"
+
+#: .\nobinobi_daily_follow_up\models.py:100
+msgid "Daily follow-ups"
+msgstr "Suivis journaliers"
+
+#: .\nobinobi_daily_follow_up\models.py:103
+msgid "Daily follow-up: {} - {}"
+msgstr "Suivi journalier: {}-{}"
+
+#: .\nobinobi_daily_follow_up\models.py:119
+#: .\nobinobi_daily_follow_up\models.py:152
+msgid "Type activity"
+msgstr "Types d'activité"
+
+#: .\nobinobi_daily_follow_up\models.py:132
+msgid "Activity: {} - {} - {}"
+msgstr "Activité: {}-{}-{}"
+
+#: .\nobinobi_daily_follow_up\models.py:140
+#: .\nobinobi_daily_follow_up\models.py:163
+#: .\nobinobi_daily_follow_up\models.py:230
+#: .\nobinobi_daily_follow_up\models.py:331
+#: .\nobinobi_daily_follow_up\models.py:501
+msgid "Name"
+msgstr "Nom"
+
+#: .\nobinobi_daily_follow_up\models.py:143
+msgid "Group"
+msgstr "Groupe"
+
+#: .\nobinobi_daily_follow_up\models.py:148
+msgid "Order"
+msgstr "Ordre"
+
+#: .\nobinobi_daily_follow_up\models.py:153
+msgid "Types activities"
+msgstr "Types d’activités"
+
+#: .\nobinobi_daily_follow_up\models.py:167
+msgid "Activity group"
+msgstr "Groupe d’activités"
+
+#: .\nobinobi_daily_follow_up\models.py:168
+msgid "Activities groups"
+msgstr "Groupes d’activités"
+
+#: .\nobinobi_daily_follow_up\models.py:185
+msgid "Start time"
+msgstr "Heure de début"
+
+#: .\nobinobi_daily_follow_up\models.py:186
+msgid "End time"
+msgstr "Heure de fin"
+
+#: .\nobinobi_daily_follow_up\models.py:190
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:359
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:468
+msgid "Nap"
+msgstr "Sieste"
+
+#: .\nobinobi_daily_follow_up\models.py:191
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:119
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:193
+msgid "Naps"
+msgstr "Siestes"
+
+#: .\nobinobi_daily_follow_up\models.py:194
+msgid "Nap: {} - {} - {}"
+msgstr "Sieste: {} - {} - {}"
+
+#: .\nobinobi_daily_follow_up\models.py:210
+#: .\nobinobi_daily_follow_up\models.py:234
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:409
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:430
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:518
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:539
+msgid "Lotion"
+msgstr "Crème"
+
+#: .\nobinobi_daily_follow_up\models.py:219
+msgid "Lotion daily follow-up"
+msgstr "Suivi des crèmes"
+
+#: .\nobinobi_daily_follow_up\models.py:220
+msgid "Lotion daily follow-ups"
+msgstr "Suivis des crèmes"
+
+#: .\nobinobi_daily_follow_up\models.py:257
+msgid "Hour"
+msgstr "Heure"
+
+#: .\nobinobi_daily_follow_up\models.py:258
+msgid "Feces"
+msgstr "Selles"
+
+#: .\nobinobi_daily_follow_up\models.py:262
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:391
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:427
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:500
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:536
+msgid "Diaper change"
+msgstr "Changement de couche"
+
+#: .\nobinobi_daily_follow_up\models.py:263
+msgid "Diapers changes"
+msgstr "Changements de couches"
+
+#: .\nobinobi_daily_follow_up\models.py:266
+msgid "Diaper change: {} - {} - {}"
+msgstr "Changement de couche: {}-{}-{}"
+
+#: .\nobinobi_daily_follow_up\models.py:278
+#: .\nobinobi_daily_follow_up\models.py:320
+#: .\nobinobi_daily_follow_up\models.py:413
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:494
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:601
+msgid "Medication"
+msgstr "Médicament"
+
+#: .\nobinobi_daily_follow_up\models.py:284
+msgid "Daily Follow-up to Medication"
+msgstr "Suivi quotidien des médicaments"
+
+#: .\nobinobi_daily_follow_up\models.py:303
+#: .\nobinobi_daily_follow_up\models.py:335
+msgid "Type medication"
+msgstr "Type de médicament"
+
+#: .\nobinobi_daily_follow_up\models.py:308
+msgid "From date"
+msgstr "Date de début"
+
+#: .\nobinobi_daily_follow_up\models.py:309
+msgid "End date"
+msgstr "Date de fin"
+
+#: .\nobinobi_daily_follow_up\models.py:316
+msgid "Attachment"
+msgstr "Pièce jointe"
+
+#: .\nobinobi_daily_follow_up\models.py:324
+msgid "Medication: {} - {} | {}"
+msgstr "Médicament: {} - {} | {}"
+
+#: .\nobinobi_daily_follow_up\models.py:336
+msgid "Types medications"
+msgstr "Types de médicaments"
+
+#: .\nobinobi_daily_follow_up\models.py:363
+#: .\nobinobi_daily_follow_up\models.py:374
+msgid "No"
+msgstr "Non"
+
+#: .\nobinobi_daily_follow_up\models.py:375
+msgid "Gastroenteritis"
+msgstr "Gastro-entérite"
+
+#: .\nobinobi_daily_follow_up\models.py:376
+msgid "Conjunctivitis"
+msgstr "Conjonctivite"
+
+#: .\nobinobi_daily_follow_up\models.py:377
+msgid "Cough"
+msgstr "Toux"
+
+#: .\nobinobi_daily_follow_up\models.py:378
+msgid "Cold"
+msgstr "Rhume"
+
+#: .\nobinobi_daily_follow_up\models.py:381
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:194
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:304
+msgid "Wake up time"
+msgstr "Heure de réveil"
+
+#: .\nobinobi_daily_follow_up\models.py:383
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:198
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:200
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:202
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:308
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:310
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:312
+msgid "Sleep"
+msgstr "Sommeil"
+
+#: .\nobinobi_daily_follow_up\models.py:385
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:222
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:224
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:226
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:332
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:334
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:336
+msgid "Breakfast"
+msgstr "Petit-déjeuner"
+
+#: .\nobinobi_daily_follow_up\models.py:387
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:230
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:340
+msgid "Breakfast time"
+msgstr "Heure du petit-déjeuner"
+
+#: .\nobinobi_daily_follow_up\models.py:389
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:207
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:209
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:211
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:317
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:319
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:321
+msgid "Condition"
+msgstr "Etat de l'enfant"
+
+#: .\nobinobi_daily_follow_up\models.py:391
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:215
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:325
+msgid "Fever"
+msgstr "Fièvre"
+
+#: .\nobinobi_daily_follow_up\models.py:393
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:218
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:328
+msgid "Sick"
+msgstr "Malade"
+
+#: .\nobinobi_daily_follow_up\models.py:400
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:117
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:191
+msgid "Reception"
+msgstr "Accueil"
+
+#: .\nobinobi_daily_follow_up\models.py:401
+msgid "Receptions"
+msgstr "Accueils"
+
+#: .\nobinobi_daily_follow_up\models.py:404
+msgid "Reception: {}"
+msgstr "Accueil: {}"
+
+#: .\nobinobi_daily_follow_up\models.py:427
+msgid "Given hour"
+msgstr "Donné à"
+
+#: .\nobinobi_daily_follow_up\models.py:431
+#: .\nobinobi_daily_follow_up\signals.py:227
+msgid "Give medication"
+msgstr "Donner médicament"
+
+#: .\nobinobi_daily_follow_up\models.py:432
+msgid "Give medications"
+msgstr "Donner médicaments"
+
+#: .\nobinobi_daily_follow_up\models.py:438
+msgid "Give medication: {} - {} - {}"
+msgstr "Donner médicament: {} - {} - {}"
+
+#: .\nobinobi_daily_follow_up\models.py:454
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:267
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:376
+msgid "Snack meals"
+msgstr "Collation"
+
+#: .\nobinobi_daily_follow_up\models.py:458
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:255
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:273
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:364
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:382
+msgid "Snack time"
+msgstr "Heure de la collation"
+
+#: .\nobinobi_daily_follow_up\models.py:459
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:259
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:261
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:263
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:368
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:370
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:372
+msgid "Snack quality"
+msgstr "Bien mangé ?"
+
+#: .\nobinobi_daily_follow_up\models.py:463
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:285
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:394
+msgid "Lunch meals"
+msgstr "Diner"
+
+#: .\nobinobi_daily_follow_up\models.py:467
+msgid "Lunch time"
+msgstr "Heure du diner"
+
+#: .\nobinobi_daily_follow_up\models.py:468
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:277
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:279
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:281
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:386
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:388
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:390
+msgid "Lunch quality"
+msgstr "Bien mangé"
+
+#: .\nobinobi_daily_follow_up\models.py:472
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:303
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:412
+msgid "Afternoon snack meals"
+msgstr "Goûter"
+
+#: .\nobinobi_daily_follow_up\models.py:476
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:291
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:400
+msgid "Afternoon snack time"
+msgstr "Heure du goûter"
+
+#: .\nobinobi_daily_follow_up\models.py:477
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:295
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:297
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:299
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:404
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:406
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:408
+msgid "Afternoon snack quality"
+msgstr "Bien mangé ?"
+
+#: .\nobinobi_daily_follow_up\models.py:484
+msgid "Meal daily follow-up"
+msgstr "Suivi journalier des repas"
+
+#: .\nobinobi_daily_follow_up\models.py:485
+msgid "Meal daily follow-ups"
+msgstr "Suivi journalier des repas"
+
+#: .\nobinobi_daily_follow_up\models.py:488
+msgid "Meal: {}"
+msgstr "Repas: {}"
+
+#: .\nobinobi_daily_follow_up\models.py:502
+msgid "Image"
+msgstr "Image"
+
+#: .\nobinobi_daily_follow_up\models.py:506
+msgid "Meal"
+msgstr "Repas"
+
+#: .\nobinobi_daily_follow_up\models.py:507
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:118
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:192
+msgid "Meals"
+msgstr "Repas"
+
+#: .\nobinobi_daily_follow_up\models.py:524
+#: .\nobinobi_daily_follow_up\models.py:547
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_detail.html:22
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:40
+msgid "Periods"
+msgstr "Périodes"
+
+#: .\nobinobi_daily_follow_up\models.py:529
+#: .\nobinobi_daily_follow_up\models.py:530
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:163
+msgid "Troubleshooting"
+msgstr "Dépannage"
+
+#: .\nobinobi_daily_follow_up\models.py:533
+msgid "Troubleshooting: {}"
+msgstr "Dépannage : {}"
+
+#: .\nobinobi_daily_follow_up\models.py:553
+msgid "Early Troubleshooting"
+msgstr "Dépannage Anticipé"
+
+#: .\nobinobi_daily_follow_up\models.py:554
+msgid "Early Troubleshootings"
+msgstr "Dépannages anticipés"
+
+#: .\nobinobi_daily_follow_up\models.py:558
+msgid "Early Troubleshooting: {} - {}"
+msgstr "Dépannage Anticipé: {} - {}"
+
+#: .\nobinobi_daily_follow_up\signals.py:49
+#: .\nobinobi_daily_follow_up\signals.py:93
+msgid "Groups {} created successfully."
+msgstr "Groupes {} créés avec succès."
+
+#: .\nobinobi_daily_follow_up\signals.py:86
+#: .\nobinobi_daily_follow_up\signals.py:103
+msgid "Permission {} added to {} successfully.\n"
+msgstr "Permission {} ajoutée à {} avec succès.\n"
+
+#: .\nobinobi_daily_follow_up\signals.py:203
+msgid "Notification for give medication was deleted.\n"
+msgstr "La notification pour donner des médicaments a été supprimée.\n"
+
+#: .\nobinobi_daily_follow_up\signals.py:247
+msgid "Notification for give medication was created.\n"
+msgstr "La notification pour donner des médicaments a été créée.\n"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:21
+msgid "Medication Alerts"
+msgstr "Alertes médicaments"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:23
+msgid "unread messages"
+msgstr "messages non lus"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:63
+msgid "Give"
+msgstr "Donner"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:64
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_delay.html:45
+msgid "Delay"
+msgstr "Retarder"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:90
+msgid "Medication to give"
+msgstr "Médicaments à donner"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:91
+msgid "There are medicines to give to children"
+msgstr "Il y a des médicaments à donner aux enfants"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_child\base.html:93
+msgid "Ok"
+msgstr "Ok"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_choice_classroom.html:24
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\group_choice_classroom.html:29
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_choice_classroom.html:24
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_choice.html:24
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_choice_classroom.html:24
+msgid "Choice a Classroom"
+msgstr "Choisir une salle de classe"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_confirm_delete.html:7
+msgid "Delete Activity"
+msgstr "Supprimer l’activité"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_confirm_delete.html:14
+msgid "Are you sure you want to delete activity"
+msgstr "Êtes-vous sûr de vouloir supprimer l’activité"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_confirm_delete.html:18
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_confirm_delete.html:18
+msgid "Delete"
+msgstr "Supprimer"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_create.html:7
+msgid "Create Activity"
+msgstr "Créer une activité"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_create.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_create.html:38
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_create.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_create.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_create.html:38
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_create.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\meals\mealdailyfollowup_create.html:60
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_create.html:38
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_create.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_create.html:40
+msgid "Create"
+msgstr "Créer"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_update.html:7
+msgid "Update Activity"
+msgstr "Mise à jour de l'activité"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\activity_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\dailyfollowup_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_update.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\meals\mealdailyfollowup_update.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_update.html:40
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_update.html:39
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\reception\reception_update.html:40
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\activity\group_activity_update.html:36
+msgid "Select children and activities."
+msgstr "Sélectionnez les enfants et les activités."
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\dailyfollowup_update.html:7
+msgid "Update Daily follow-up"
+msgstr "Mise à jour du suivi journalier"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\group_daily_follow_up_update.html:39
+msgid "Select children and fill comment or/and important."
+msgstr ""
+"Sélectionnez les enfants et remplissez les commentaires ou/et importants."
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:64
+msgid "Week from"
+msgstr "Semaine du"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:64
+msgid "to"
+msgstr "au"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:120
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:194
+msgid "Cares"
+msgstr "Soins"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:123
+msgid "Daily"
+msgstr "Quotidien"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:158
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:279
+msgid "Departure"
+msgstr "Départ"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:165
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:268
+msgid "Intermediate departure"
+msgstr "Départ intermédiaire"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week.html:335
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:444
+msgid "No end time"
+msgstr "Aucune heure de fin"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowup\summary_week_choice.html:24
+msgid "Choice a child and a date"
+msgstr "Choix d'un enfant et d'une date"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_confirm_delete.html:7
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_confirm_delete.html:7
+msgid "Delete Medication"
+msgstr "Supprimer le médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_confirm_delete.html:14
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_confirm_delete.html:14
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_confirm_delete.html:14
+msgid "Are you sure you want to delete medication"
+msgstr "Êtes-vous sûr de vouloir supprimer les médicaments"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_create.html:7
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_create.html:7
+msgid "Create Medication"
+msgstr "Ajouter un médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\dailyfollowuptomedication\dailyfollowuptomedication_update.html:7
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_update.html:7
+msgid "Update Medication"
+msgstr "Mise à jour du médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_confirm_delete.html:7
+msgid "Delete diaper change"
+msgstr "Supprimer le changement de couche"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_confirm_delete.html:14
+msgid "Are you sure you want to delete diaper change"
+msgstr "Êtes-vous sûr de vouloir supprimer le changement de couche"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_create.html:8
+msgid "Create diaper change"
+msgstr "Créer un changement de couche"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\diaperchange\diaperchange_update.html:8
+msgid "Update diaper change"
+msgstr "Mise à jour du changement de couche"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_confirm_delete.html:7
+msgid "Delete Early troubleshooting"
+msgstr "Supprimer Dépannage anticipé"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_confirm_delete.html:14
+msgid "Are you sure you want to delete early troubleshooting:"
+msgstr "Êtes-vous sûr de vouloir supprimer le dépannage anticipé :"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_confirm_delete.html:14
+msgid "for child"
+msgstr "pour l'enfant"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_create.html:8
+msgid "Create Early troubleshooting"
+msgstr "Créer Dépannage anticipé"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_detail.html:4
+msgid "Early troubleshooting detail"
+msgstr "Détails du dépannage anticipé"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_detail.html:33
+msgid "Close"
+msgstr "Fermer"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:31
+msgid "Add"
+msgstr "Ajouter"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:41
+msgid "Actions"
+msgstr "Actions"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_list.html:152
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:710
+msgid "Your permission is insufficient."
+msgstr "Votre permission est insuffisante."
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\earlytroubleshooting\earlytroubleshooting_update.html:8
+msgid "Update Early troubleshooting"
+msgstr "Mise à jour du Dépannage anticipé"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_confirm_delete.html:7
+msgid "Delete medication"
+msgstr "Supprimer les médicaments"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_create.html:7
+msgid "Create Give Medication"
+msgstr "Créer une administration de médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_delay.html:7
+msgid "Delay Give Medication"
+msgstr "Retarder l'administration d'un médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\givemedication\givemedication_update.html:7
+msgid "Update Give Medication"
+msgstr "Mise à jour de l'administration du médicament"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_confirm_delete.html:7
+msgid "Delete lotion daily follow-up"
+msgstr "Supprimer le suivi quotidien de la crème"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_confirm_delete.html:14
+msgid "Are you sure you want to delete lotion daily follow-up"
+msgstr "Êtes-vous sûr de vouloir supprimer le suivi quotidien de la crème"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_create.html:8
+msgid "Create Lotion"
+msgstr "Créer une lotion"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\lotiondailyfollowup\lotiondailyfollowup_update.html:7
+msgid "Update lotion daily follow-up"
+msgstr "Mise à jour du suivi quotidien des crèmes"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\meals\mealdailyfollowup_create.html:28
+msgid "Create meals"
+msgstr "Créer des repas"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\meals\mealdailyfollowup_update.html:8
+msgid "Update meals"
+msgstr "Mise à jour des repas"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\medication\medication_multiday.html:28
+msgid "Fill out the form"
+msgstr "Remplissez le formulaire"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_confirm_delete.html:7
+msgid "Delete nap"
+msgstr "Supprimer la sieste"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_confirm_delete.html:14
+msgid "Are you sure you want to delete nap"
+msgstr "Êtes-vous sûr de vouloir supprimer la sieste"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_create.html:8
+msgid "Create Nap"
+msgstr "Créer une sieste"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\nap\nap_update.html:8
+msgid "Update Nap"
+msgstr "Mise à jour de la Sieste"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:92
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:212
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:344
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:96
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:241
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_list.html:87
+msgid "Day off"
+msgstr "Jour de congé"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:94
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:214
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:346
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:98
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:243
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_list.html:89
+msgid "Holiday"
+msgstr "Jour férié"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:96
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:216
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:348
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:100
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:245
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_list.html:91
+msgid "Closure"
+msgstr "Fermeture"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:125
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:253
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:386
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:140
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:284
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_list.html:127
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:158
+msgid "Expected"
+msgstr "Attendu"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:135
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:271
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\admin_presence_week_list.html:404
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:162
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_kindergarten_list.html:306
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_week_list.html:139
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:153
+msgid "Present"
+msgstr "Présent"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_create.html:8
+msgid "Create Presence"
+msgstr "Créer une présence"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence\presence_update.html:7
+msgid "Update presence"
+msgstr "Mise à jour d'une présence"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:168
+msgid "Missing"
+msgstr "Manquant"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:177
+msgid "Add presence"
+msgstr "Ajouter une présence"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:180
+msgid "Add absence"
+msgstr "Ajouter une absence"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:189
+msgid "Birth date"
+msgstr "Date de naissance"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:197
+msgid "Notes"
+msgstr "Remarques"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\presence_detail_list.html:614
+msgid "Add hour"
+msgstr "Ajouter une heure"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\reception\reception_update.html:8
+msgid "Update reception"
+msgstr "Mise à jour de la réception"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:10
+msgid "Stroll"
+msgstr "Promenade"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:36
+msgid "Phones"
+msgstr "Téléphones"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:36
+msgid "Main"
+msgstr "Principal"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:36
+msgid "Mobile"
+msgstr "Portable"
+
+#: .\nobinobi_daily_follow_up\templates\nobinobi_daily_follow_up\stroll\stroll_pdf.html:36
+msgid "Professional"
+msgstr "Professionnel"
+
+#: .\nobinobi_daily_follow_up\views.py:72
+msgid "Choice a classroom"
+msgstr "Choisir une salle de classe"
+
+#: .\nobinobi_daily_follow_up\views.py:84
+msgid "Success: Presence was created."
+msgstr "Succès : La présence a été créée."
+
+#: .\nobinobi_daily_follow_up\views.py:110
+#: .\nobinobi_daily_follow_up\views.py:144
+msgid "Success: Presence was updated."
+msgstr "Succès : La présence a été mise à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:198
+msgid "Presence of the day"
+msgstr "Présence du jour"
+
+#: .\nobinobi_daily_follow_up\views.py:497
+msgid "Classroom choice for presence week list"
+msgstr "Choix de salle de classe pour la liste de semaine de présence"
+
+#: .\nobinobi_daily_follow_up\views.py:533
+#: .\nobinobi_daily_follow_up\views.py:899
+msgid "Presence week list"
+msgstr "Liste de la semaine de présence"
+
+#: .\nobinobi_daily_follow_up\views.py:660
+#: .\nobinobi_daily_follow_up\views.py:1040
+msgid "The absence {} has a start date after the end date."
+msgstr "L’absence {} a une date de début après la date de fin."
+
+#: .\nobinobi_daily_follow_up\views.py:850
+msgid "Admin Presence week list"
+msgstr "Liste de la semaine de présence de l'administrateur"
+
+#: .\nobinobi_daily_follow_up\views.py:1243
+msgid "Success: Activity was created."
+msgstr "Succès : L'activité a été créée."
+
+#: .\nobinobi_daily_follow_up\views.py:1265
+msgid "Success: Activity was deleted."
+msgstr "Succès : L'activité a été supprimée."
+
+#: .\nobinobi_daily_follow_up\views.py:1288
+msgid "Success: Activity was updated."
+msgstr "Succès : L'activité a été mise à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1351
+msgid "Success: Nap was created."
+msgstr "Succès: La sieste a été créée."
+
+#: .\nobinobi_daily_follow_up\views.py:1373
+msgid "Success: Nap was deleted."
+msgstr "Succès: La sieste a été supprimée."
+
+#: .\nobinobi_daily_follow_up\views.py:1396
+msgid "Success: Nap was updated."
+msgstr "Succès: la sieste a été mise à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1431
+msgid "Success: Daily follow-up was updated."
+msgstr "Succès : Le suivi journalier a été mis à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1456
+msgid "Choice a summary for a week Daily follow-up"
+msgstr "Choix d'un résumé pour une semaine Suivi quotidien"
+
+#: .\nobinobi_daily_follow_up\views.py:1474
+msgid "Summary for a week Daily follow-up"
+msgstr "Résumé pour une semaine de Suivi Journalier"
+
+#: .\nobinobi_daily_follow_up\views.py:1485
+msgid "Success: Lotion was created."
+msgstr "Succès: La crème a été créée."
+
+#: .\nobinobi_daily_follow_up\views.py:1507
+msgid "Success: Lotion was deleted."
+msgstr "Succès: La crème a été supprimée."
+
+#: .\nobinobi_daily_follow_up\views.py:1530
+msgid "Success: Lotion was updated."
+msgstr "Succès: La crème a été mise à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1553
+msgid "Success: Diaper change was created."
+msgstr "Succès : Le changement de couche a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:1575
+msgid "Success: Diaper change was deleted."
+msgstr "Succès : Le changement de couche a été supprimé."
+
+#: .\nobinobi_daily_follow_up\views.py:1598
+msgid "Success: Diaper change was updated."
+msgstr "Succès : Le changement de couche a été mis à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1640
+msgid "Success: Daily Follow-Up to Medication was created."
+msgstr "Succès : Le suivi quotidien des médicaments a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:1662
+msgid "Success: DailyFollowUpToMedication was deleted."
+msgstr "Succès : Le suivi quotidien des médicaments a été suprimée."
+
+#: .\nobinobi_daily_follow_up\views.py:1685
+#: .\nobinobi_daily_follow_up\views.py:1754
+msgid "Success: Medication was updated."
+msgstr "Succès : Le médicament a été mis à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1707
+msgid "Success: Medication was created."
+msgstr "Succès : Le médicament a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:1731
+msgid "Success: Medication was deleted."
+msgstr "Succès : Le médicament a été supprimé."
+
+#: .\nobinobi_daily_follow_up\views.py:1815
+msgid "Success: Reception was updated."
+msgstr "Succès : La présence a été mise à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1838
+msgid "Success: Give Medication was created."
+msgstr "Succès : Donner des médicaments a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:1865
+msgid "Success: Give Medication was deleted."
+msgstr "Succès : Donner des médicaments a été supprimé."
+
+#: .\nobinobi_daily_follow_up\views.py:1888
+msgid "Success: Give Medication was updated."
+msgstr "Succès : Donner des médicaments a été mis à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:1911
+msgid "Success: Give Medication was delayed."
+msgstr "Succès : Administration des médicaments a été retardé."
+
+#: .\nobinobi_daily_follow_up\views.py:1960
+msgid "Success: Meals was created."
+msgstr "Succès : Les repas ont été créés."
+
+#: .\nobinobi_daily_follow_up\views.py:1993
+msgid "Success: Meals was updated."
+msgstr "Succès : Les repas ont été mis à jour."
+
+#: .\nobinobi_daily_follow_up\views.py:2058
+msgid "Classroom choice for stroll"
+msgstr "Choix de salle de classe pour la promenade"
+
+#: .\nobinobi_daily_follow_up\views.py:2094
+msgid "The classroom does not exist."
+msgstr "La salle de classe n'existe pas."
+
+#: .\nobinobi_daily_follow_up\views.py:2097
+msgid "There are several classrooms with this ID."
+msgstr "Il y a plusieurs salles de classe avec cette ID."
+
+#: .\nobinobi_daily_follow_up\views.py:2129
+msgid "Classroom choice for Group activity"
+msgstr "Choix de la salle de classe pour l'activité de groupe"
+
+#: .\nobinobi_daily_follow_up\views.py:2167
+#: .\nobinobi_daily_follow_up\views.py:2285
+msgid "Classroom is not found"
+msgstr "La salle de classe n'existe pas."
+
+#: .\nobinobi_daily_follow_up\views.py:2174
+msgid "Classroom activities"
+msgstr "Activités en classe"
+
+#: .\nobinobi_daily_follow_up\views.py:2205
+msgid "{} does not have a presence today."
+msgstr "{} n'a pas de présence aujourd'hui."
+
+#: .\nobinobi_daily_follow_up\views.py:2209
+msgid "There is no daily follow-up today."
+msgstr "Il n'y a pas de suivi journalier aujourd'hui."
+
+#: .\nobinobi_daily_follow_up\views.py:2212
+msgid "Activity (s) added"
+msgstr "Activité(s) ajoutée(s)"
+
+#: .\nobinobi_daily_follow_up\views.py:2246
+msgid "Classroom choice for Group daily follow-up"
+msgstr "Choix de salle de classe pour le suivi journalier de la classe"
+
+#: .\nobinobi_daily_follow_up\views.py:2292
+msgid "Classroom comment & important"
+msgstr "Commentaire & important pour la salle de classe"
+
+#: .\nobinobi_daily_follow_up\views.py:2309
+msgid "{} does not have a daily follow-up today."
+msgstr "{} n'a pas de suivi journalier aujourd'hui."
+
+#: .\nobinobi_daily_follow_up\views.py:2324
+msgid "Group comment or/and important (s) added"
+msgstr "Commentaire de groupe ou/et important (s) ajouté"
+
+#: .\nobinobi_daily_follow_up\views.py:2411
+msgid "Multi Day Medication"
+msgstr "Médicament sur plusieurs jours"
+
+#: .\nobinobi_daily_follow_up\views.py:2418
+msgid "The multi-day medication was created."
+msgstr "Le médicament de plusieurs jours a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:2460
+msgid "The give medication for {} was created at {}."
+msgstr "Le médicament pour {} a été créé à {}."
+
+#: .\nobinobi_daily_follow_up\views.py:2477
+msgid "Early Troubleshooting list"
+msgstr "Liste des dépannages anticipés"
+
+#: .\nobinobi_daily_follow_up\views.py:2487
+msgid "Success: Early Troubleshooting was created."
+msgstr "Le succès : Le dépannage anticipé a été créé."
+
+#: .\nobinobi_daily_follow_up\views.py:2494
+msgid "Success: Early Troubleshooting was deleted."
+msgstr "Succès : Le dépannage anticipé a été supprimé."
+
+#: .\nobinobi_daily_follow_up\views.py:2505
+msgid "Success: Early Troubleshooting was updated."
+msgstr "Succès : Le dépannage anticipé a été mis à jour."
+
+#, fuzzy
+#~| msgid "Departure time"
+#~ msgid "intermediate departure time"
+#~ msgstr "Heure de départ"
+
+#~ msgid "Admin Presences of the week"
+#~ msgstr "Admin Présences de la semaine"
+
+#~ msgid "Create lotion daily follow-up"
+#~ msgstr "Créer un suivi quotidien de la crème"
+
+#~ msgid "Presence week"
+#~ msgstr "Semaine de présence"
+
+#~ msgid "Summary week"
+#~ msgstr "Résumé de semaine"
+
+#~ msgid "Group comment/important"
+#~ msgstr "Commentaire de groupe/important"
