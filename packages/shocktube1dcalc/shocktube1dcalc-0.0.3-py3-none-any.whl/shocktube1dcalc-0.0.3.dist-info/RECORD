@@ -1,0 +1,13 @@
+shocktube1dcalc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shocktube1dcalc/generator_mesh.py,sha256=FH9rKdb4bdM82oo8w7MWzVIcOuNvkPuU1DUeUIprfY0,4186
+shocktube1dcalc/handler_data.py,sha256=gmZHn5X5d-y8gxuQ58raP46b336xKtFTubR3PgJNEfs,6683
+shocktube1dcalc/handler_plot.py,sha256=KEr6B7i1mE6oZzI1NVrVXIrGVFAP06YLbllA70f21jE,5850
+shocktube1dcalc/helper_plot.py,sha256=I6ke9n1bCrdanK-DdmveJdO-KUaUPyWdIQfKIVQIrKI,1375
+shocktube1dcalc/shocktube1dcalc.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shocktube1dcalc/solver_analytic.py,sha256=leym0VJRmQTDr99uxnd9mVnC15gKtR8cXG7VbNTd6mY,9672
+shocktube1dcalc/solver_cese.py,sha256=hNCUrRonPg7TCyH82bDffSYaqlzlvYOvTI1XtG1UUBY,14187
+shocktube1dcalc/solver_porting.py,sha256=1rY8jCk_JUWUnfrBG_uIwxcusSl0QFOkrJW-NQhNNYk,15346
+shocktube1dcalc-0.0.3.dist-info/LICENSE,sha256=HObBukTJMy5DBTawX1A5Dn6ybSc42BpNG_giwM9hScY,1518
+shocktube1dcalc-0.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+shocktube1dcalc-0.0.3.dist-info/METADATA,sha256=l3d6ZANduOocS9kDRqgWVLGC22m39bQrKb0FLpo-CxM,484
+shocktube1dcalc-0.0.3.dist-info/RECORD,,
