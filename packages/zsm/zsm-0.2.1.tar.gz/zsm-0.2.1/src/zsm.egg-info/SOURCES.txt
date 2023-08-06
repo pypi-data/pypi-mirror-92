@@ -1,0 +1,17 @@
+.coveragerc
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+tox.ini
+src/zsm/__init__.py
+src/zsm/cli.py
+src/zsm.egg-info/PKG-INFO
+src/zsm.egg-info/SOURCES.txt
+src/zsm.egg-info/dependency_links.txt
+src/zsm.egg-info/entry_points.txt
+src/zsm.egg-info/requires.txt
+src/zsm.egg-info/top_level.txt
+tests/test_cli.py
