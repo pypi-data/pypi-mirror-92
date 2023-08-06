@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-trino
+Version: 0.2.0
+Summary: Trino dialect for SQLAlchemy
+Home-page: https://github.com/dungdm93/sqlalchemy-trino
+Author: Dũng Đặng Minh
+Author-email: dungdm93@live.com
+License: Apache 2.0
+Description: sqlalchemy-trino
+        ================
+        _[Trino](https://trino.io/) (f.k.a PrestoSQL) dialect for SQLAlchemy._
+        
+        > !!! WARNING !!! This project is still alpha and under active development.
+        
+        The primary purpose of this is provide a dialect for Trino that can be used with [Apache Superset](https://superset.apache.org/).
+        But other use-cases should works as well.
+        
+        ## Installation
+        The driver can either be installed through PyPi or from the source code.
+        ### Through Python Package Index
+        ```bash
+        pip install sqlalchemy-trino
+        ```
+        
+        ### Latest from Source Code
+        ```bash
+        pip install git+https://github.com/dungdm93/sqlalchemy-trino
+        ```
+        
+        ## Usage
+        To connect from SQLAlchemy to Trino, use connection string (URL) following this pattern:
+        ```
+        trino://<username>:<password>@<host>:<port>/catalog/[schema]
+        ```
+        
+Keywords: sqlalchemy,trino
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
