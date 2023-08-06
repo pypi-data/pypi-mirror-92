@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: lifeguard-simple-dashboard
+Version: 0.0.2
+Summary: Implementation of a simple Lifeguard Dashboard
+Home-page: https://github.com/LifeguardSystem/lifeguard-simple-dashboard
+Author: Diego Rubin
+Author-email: contact@diegorubin.dev
+License: GPL2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
