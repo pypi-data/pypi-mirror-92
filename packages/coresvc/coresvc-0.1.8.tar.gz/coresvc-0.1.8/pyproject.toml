@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "coresvc"
+version = "0.1.8"
+description = "core services in microservice architecture"
+authors = ["MartinJ-Dev <29751536+MartinJ-Dev@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+aio-pika = "^6.7.1"
+aioredis = "^1.3.1"
+pydantic = "^1.7.3"
+SQLAlchemy = "^1.3.22"
+requests = "^2.25.1"
+psycopg2 = "^2.8.6"
+faust = "^1.10.4"
+fastapi = "^0.63.0"
+uvicorn = {extras = ["standard"], version = "^0.13.3"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.0"
+pytest-asyncio = "^0.14.0"
+tox = "^3.20.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
