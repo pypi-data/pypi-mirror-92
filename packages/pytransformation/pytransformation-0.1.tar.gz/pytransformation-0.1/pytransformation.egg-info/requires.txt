@@ -1,0 +1,8 @@
+astor>=0.8.1
+flake8
+pre-commit
+pytest
+pytest-cov
+pytest-html
+pytest-github-actions-annotate-failures
+pytest-mock
