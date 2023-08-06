@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: SUDP
+Version: 1.0.1
+Summary: Safely wrapper for UDP protocol. Python library
+Home-page: https://github.com/artegoser/sUDP
+Author: artegoser
+Author-email: artegoser@gmail.com
+License: MIT
+Description: # sUDP
+        Safely wrapper for UDP protocol. Python library
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

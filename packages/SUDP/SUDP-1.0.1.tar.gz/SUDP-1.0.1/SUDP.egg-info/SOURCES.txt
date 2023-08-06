@@ -1,0 +1,9 @@
+README.md
+setup.py
+SUDP/SUDP.py
+SUDP/__init__.py
+SUDP.egg-info/PKG-INFO
+SUDP.egg-info/SOURCES.txt
+SUDP.egg-info/dependency_links.txt
+SUDP.egg-info/not-zip-safe
+SUDP.egg-info/top_level.txt
