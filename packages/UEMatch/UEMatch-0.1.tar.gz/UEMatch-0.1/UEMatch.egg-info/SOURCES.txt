@@ -1,0 +1,8 @@
+README.md
+setup.py
+UEMatch.egg-info/PKG-INFO
+UEMatch.egg-info/SOURCES.txt
+UEMatch.egg-info/dependency_links.txt
+UEMatch.egg-info/top_level.txt
+UrlMatch/Match.py
+UrlMatch/__init__.py
