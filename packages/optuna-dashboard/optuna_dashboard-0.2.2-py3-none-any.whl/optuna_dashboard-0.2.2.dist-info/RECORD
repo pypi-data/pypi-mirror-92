@@ -1,0 +1,16 @@
+optuna_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optuna_dashboard/app.py,sha256=RVOqhrAGQ5SDBzvRXDXVTJKiP4CI4hg4ge0M0dYHp0o,6359
+optuna_dashboard/cli.py,sha256=jqXvnyRVubMpEWi7lWmkcTC5Hjsw6xJLQNxwqTIEO78,1023
+optuna_dashboard/serializer.py,sha256=DX-3rJph9mDdwfvdYhweQNpJYZgHqhJJicOoP4MPtG0,3180
+optuna_dashboard/version.py,sha256=m6kyaNpwBcP1XYcqrelX2oS3PJuOnElOcRdBa9pEb8c,22
+optuna_dashboard/public/bundle.js,sha256=clpB4-Jm863rMMhPh6XmSTLUNBT3SzTPyEPTrb_qXpc,3876590
+optuna_dashboard/public/bundle.js.LICENSE.txt,sha256=CnVMYYKPzViVXwsvBfT3VnDKE7_xmrYXxGT8b8gllIE,2434
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=Be_ruRlVw1TvQl67o5Wt1w1ytJbsoQx8YF5vsfFsF8w,4015
+tests/wsgi_client.py,sha256=M3UC2XpHQjnj1wUQ286hmtUm236VNx_5xr3WUZXmzWM,2189
+optuna_dashboard-0.2.2.dist-info/LICENSE,sha256=aw_lfBIK50109MMeOnwXF34IdWwST9FSvUR_Bv_eI2k,1077
+optuna_dashboard-0.2.2.dist-info/METADATA,sha256=2Wa6isBsxnmrPpUow99j_f4tN0NVqSApRKE-ikhFOaM,2807
+optuna_dashboard-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+optuna_dashboard-0.2.2.dist-info/entry_points.txt,sha256=6uLXbl4-iEZfGix6_-ESERm20K25y7obcNRZNRT5_zI,64
+optuna_dashboard-0.2.2.dist-info/top_level.txt,sha256=qf_ss2E5Y55ZOXXs3134RKc5xhSfRO2jZwOGqHucpWk,23
+optuna_dashboard-0.2.2.dist-info/RECORD,,
