@@ -1,0 +1,10 @@
+*.egg-info
+*__pycache__*
+.ipynb_checkpoints/
+_map.html
+*.pyc
+.eggs/
+*.geojson
+.vscode/
+build/
+dist/
