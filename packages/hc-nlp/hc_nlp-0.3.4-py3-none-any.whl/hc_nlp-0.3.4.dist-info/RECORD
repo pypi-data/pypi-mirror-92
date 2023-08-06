@@ -1,0 +1,12 @@
+hc_nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hc_nlp/constants.py,sha256=r-lPPUd4bhp1UyBrJq2FUJ7IYha-qMit8nEi5R86H_4,2791
+hc_nlp/errors.py,sha256=tjF8YeKO3GE56XwCfNGN7WjviysoNNPeBqacYLjjcqQ,268
+hc_nlp/io.py,sha256=YXaN4Z8BLabzDMhDbiZ_BPBAQAuqg_oDVG2PxPK9B5c,3027
+hc_nlp/logging.py,sha256=I5fTpJZ29rO0G88GDeJu-ZvB-z9D-4qITBc6YQ4zW8M,400
+hc_nlp/model_testing.py,sha256=dOwcErGJffrYqPnDOo8KuILUDOoifhR00HU2wRuOPpU,3322
+hc_nlp/pipeline.py,sha256=VsFfilSqTdVbWMllfVV0CBgQY5LpwOSLt3ht6X6mMDQ,12033
+hc_nlp/spacy_helpers.py,sha256=GclKGUF4LH7OURRyv43HzORVyDhAXlvvo69g2ahZD1w,3321
+hc_nlp-0.3.4.dist-info/METADATA,sha256=4IkspEInozSsPvCD1eN-sBGcVlYPB-TAnB3HZdeJcWA,1645
+hc_nlp-0.3.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hc_nlp-0.3.4.dist-info/top_level.txt,sha256=2Jy8guymi501VElpRsuzZiA8O7sfWw9C0NVFNJYOaEo,7
+hc_nlp-0.3.4.dist-info/RECORD,,
