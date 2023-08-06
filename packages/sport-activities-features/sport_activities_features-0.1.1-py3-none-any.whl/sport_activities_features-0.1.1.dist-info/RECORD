@@ -1,0 +1,12 @@
+sport_activities_features/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+sport_activities_features/classes.py,sha256=gsie-U9QKuV6EU9qstAxCTmPT1hT4HAq-kFID8-RY68,144
+sport_activities_features/hill_identification.py,sha256=3rbckGYfZ0og-TbmN_gleRDXjc57xNhoBY1Ux7-tWE4,3158
+sport_activities_features/plot_data.py,sha256=fH3_C0ZhQmfETaOQb5nLKIGgf_0w0o5dvekrqwDnadU,2056
+sport_activities_features/tcx_manipulation.py,sha256=NtQoNX-0_BLLt2cJl3qod-xhpneRddkXKgGHhQzmKkU,4033
+sport_activities_features/topographic_features.py,sha256=KvslAMqqSzMkOnN1nQ_3Us8_73YEznfkO_-J_bUbhro,4115
+sport_activities_features/training_loads.py,sha256=1cgH1kPMhdRliwgxfIJv_KGVFDhymEx2tyKAAPdhFR4,666
+sport_activities_features/weather_identification.py,sha256=Z97a8RvRTym8txR80PfhHoBsRRH8K70R0YDe7gM1j-A,5161
+sport_activities_features-0.1.1.dist-info/LICENSE,sha256=PwXQ_8qYyCmRggH1ouaGtYP0jhFIkGSysPjvIJTNH78,1068
+sport_activities_features-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sport_activities_features-0.1.1.dist-info/METADATA,sha256=rzdtFyfUqsgyGw9BJNB5riKE8eW9t2KhX2YByFxl9Wo,574
+sport_activities_features-0.1.1.dist-info/RECORD,,
