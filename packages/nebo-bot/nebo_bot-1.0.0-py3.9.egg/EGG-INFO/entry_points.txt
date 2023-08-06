@@ -1,0 +1,3 @@
+[console_scripts]
+nebo = nebo_bot.command_line:run
+
