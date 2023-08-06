@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+test_requirements.txt
+tox.ini
+version.txt
+shell_as_service/__init__.py
+shell_as_service/client.py
+shell_as_service/server.py
+shell_as_service.egg-info/PKG-INFO
+shell_as_service.egg-info/SOURCES.txt
+shell_as_service.egg-info/dependency_links.txt
+shell_as_service.egg-info/entry_points.txt
+shell_as_service.egg-info/requires.txt
+shell_as_service.egg-info/top_level.txt
