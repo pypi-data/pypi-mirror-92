@@ -1,0 +1,7 @@
+numpy>=1.5.0
+gensim
+dvc[s3]
+regex
+boto3
+cached-property
+progressbar
