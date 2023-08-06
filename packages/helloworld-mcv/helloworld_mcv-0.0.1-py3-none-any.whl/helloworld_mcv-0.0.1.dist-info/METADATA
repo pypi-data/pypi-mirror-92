@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: helloworld-mcv
+Version: 0.0.1
+Summary: Say hello!
+Home-page: https://github.com/mcvarer/pypi-hellow-word
+Author: Murat Can VARER
+Author-email: murat@visiosoft.com.tr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: blessings (~=1.7)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# pypi-hellow-word
+
+1. Ensure pipi, setuptools, and wheel are up to date
+```
+python -m pip install --upgrade pip setuptools wheel
+```
+
+```
+python setup.py sdist bdist_wheel
+```
+```
+python -m pip install --upgrade twine
+```
+```
+python -m twine upload --repository testpypi dist/*
+```
+
