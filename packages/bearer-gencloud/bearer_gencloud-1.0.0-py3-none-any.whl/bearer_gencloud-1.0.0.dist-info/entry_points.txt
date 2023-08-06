@@ -1,0 +1,3 @@
+[console_scripts]
+generate_headers = gcloudbearer.__main__:main
+
