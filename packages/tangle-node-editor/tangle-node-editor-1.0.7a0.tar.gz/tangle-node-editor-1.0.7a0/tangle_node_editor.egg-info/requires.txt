@@ -1,0 +1,7 @@
+ez-qt
+ez-settings
+ez-utils
+PySide2
+numpy
+pillow
+pyqtgraph
