@@ -1,0 +1,7 @@
+setup.py
+sortfolder.py
+sortfolder.egg-info/PKG-INFO
+sortfolder.egg-info/SOURCES.txt
+sortfolder.egg-info/dependency_links.txt
+sortfolder.egg-info/entry_points.txt
+sortfolder.egg-info/top_level.txt
