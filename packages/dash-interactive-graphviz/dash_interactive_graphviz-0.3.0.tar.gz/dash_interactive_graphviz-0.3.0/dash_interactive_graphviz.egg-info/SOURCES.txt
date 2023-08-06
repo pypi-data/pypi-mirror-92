@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_interactive_graphviz/DashInteractiveGraphviz.py
+dash_interactive_graphviz/__init__.py
+dash_interactive_graphviz/_imports_.py
+dash_interactive_graphviz/dash_interactive_graphviz.min.js
+dash_interactive_graphviz/dash_interactive_graphviz.min.js.map
+dash_interactive_graphviz/metadata.json
+dash_interactive_graphviz/package-info.json
+dash_interactive_graphviz.egg-info/PKG-INFO
+dash_interactive_graphviz.egg-info/SOURCES.txt
+dash_interactive_graphviz.egg-info/dependency_links.txt
+dash_interactive_graphviz.egg-info/top_level.txt
