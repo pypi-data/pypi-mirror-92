@@ -1,0 +1,12 @@
+README.md
+setup.py
+apstraGo/__init__.py
+apstraGo/apstraClass.py
+apstraGo/apstraGoAuto.py
+apstraGo/jclClass.py
+apstraGo.egg-info/PKG-INFO
+apstraGo.egg-info/SOURCES.txt
+apstraGo.egg-info/dependency_links.txt
+apstraGo.egg-info/entry_points.txt
+apstraGo.egg-info/requires.txt
+apstraGo.egg-info/top_level.txt

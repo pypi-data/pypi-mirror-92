@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: apstraGo
+Version: 1.0.0
+Summary: Python wrapper for Apstra OS
+Home-page: https://github.com/iamjarvs/apstraGo
+Author: Adam Jarvis
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: apstra juniper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
