@@ -1,0 +1,6 @@
+README.md
+setup.py
+gen_network.egg-info/PKG-INFO
+gen_network.egg-info/SOURCES.txt
+gen_network.egg-info/dependency_links.txt
+gen_network.egg-info/top_level.txt
