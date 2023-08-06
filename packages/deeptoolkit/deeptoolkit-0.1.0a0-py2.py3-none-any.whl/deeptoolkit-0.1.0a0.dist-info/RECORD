@@ -1,0 +1,16 @@
+deeptoolkit/__init__.py,sha256=21ARaGjyspA650LGeHv1nxpcNNUIM86JfDc-OJ0Me18,3081
+deeptoolkit/data.py,sha256=J32gMBgqpmHtcKwRhh3acgDP1vdQUgdLtWp_I5S5geA,5815
+deeptoolkit/evaluation.py,sha256=w7ssXN0CPDS_5Lbcw2Ht6qUFG1MRP47MA2Cof-C1lvc,1897
+deeptoolkit/losses.py,sha256=3jE9XXFJrotm9ExI2AeqP7iMU9dG2LgHME8c7o-N748,2747
+deeptoolkit/blocks/__init__.py,sha256=zrXVsqKy4zYWmmdevVHt0d5f_Atm9oGQ0yIKuargdhg,662
+deeptoolkit/blocks/applied.py,sha256=cLKHoTMTtsdKcn6oMXJFRyBzub6hvp0Wwcbre90hYOI,7480
+deeptoolkit/blocks/generic.py,sha256=xbcKoa1RkP71tIy-VQ_IAGO7vNAvTw_cu65NjwHzyLY,9268
+deeptoolkit/core/__init__.py,sha256=dE8ESdpSggjgOHOQVqJ6FwusGii4BDXVoZ5kgQ_dMpo,48
+deeptoolkit/core/functional.py,sha256=MFYzTtHOQzzhsiOw1POHj5pKyOrJPhWavZbQ0yVIMZ8,2358
+deeptoolkit/vision/__init__.py,sha256=Vv4HddQDpely0TbzTAUp0kAHLdR4PjQb0xsfEhSlamM,120
+deeptoolkit/vision/face_detector.py,sha256=xi28YTUHo8a6sScWNjK4iyLcFbxc00XAXKmr0iTSBZU,5939
+deeptoolkit-0.1.0a0.dist-info/LICENSE,sha256=p5GoYbuY7XE7fzsfnONFeDKi3VQxmNLXg7ValOgIuyc,1068
+deeptoolkit-0.1.0a0.dist-info/METADATA,sha256=rkf71sZJut2nRyjVywc67aC66nTn1kZlyVS1r0W0WKA,5469
+deeptoolkit-0.1.0a0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+deeptoolkit-0.1.0a0.dist-info/top_level.txt,sha256=5kCsDId-1rYC4LZxyACtXG8NRXCEAGKte6I-R0NcnjU,12
+deeptoolkit-0.1.0a0.dist-info/RECORD,,
