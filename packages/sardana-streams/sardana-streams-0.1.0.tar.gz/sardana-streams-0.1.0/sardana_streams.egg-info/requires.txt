@@ -1,0 +1,4 @@
+sardana
+redis
+msgpack
+msgpack_numpy
