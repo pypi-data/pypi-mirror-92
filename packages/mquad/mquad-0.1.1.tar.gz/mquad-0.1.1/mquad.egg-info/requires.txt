@@ -1,0 +1,12 @@
+numpy>=1.9.0
+scipy>=1.4.0
+matplotlib
+BBMix
+vireoSNP
+kneed
+pandas
+seaborn
+sklearn
+
+[docs]
+sphinx_bootstrap_theme
