@@ -1,0 +1,13 @@
+flask_vue_sfc/__init__.py,sha256=DjdollGmK1w6n-yI68OxvWt1jKV8ZfhKLddW7V1jnQk,3377
+flask_vue_sfc/helpers.py,sha256=30Y-GxArOjuWdxt75b0pFFLO8U85DW2S5rAJvR1quO0,1567
+flask_vue_sfc/utils.py,sha256=0qWsEUZPONnCx0-_VCVhJ2JAGFwg-77qRzXnnELpzV0,11650
+flask_vue_sfc/static/js/escodegen.js,sha256=niZcMTExxDCbFgcH8bo3S4tbLLGZ5LakaAl5yjy-HhM,208850
+flask_vue_sfc/static/js/vue-template-compiler.js,sha256=RyrR2-nvSxwBMMPtFPKGIBGVBPsVGEtlGDZe_Z6dabw,131552
+flask_vue_sfc/static/js/vue.js,sha256=FZ8KwMj1F6qnNgA7bhPryVm19xKduH5OVr8u7I1tAtc,342147
+flask_vue_sfc/static/js/vue.min.js,sha256=KSlsysqp7TXtFo_FHjb1T9b425x3hrvzjMWaJyKbpcI,93670
+flask_vue_sfc/templates/page.html,sha256=Qj8LBDhEPlgPp3FolnkLPoKmxjv8r7cvNO9xqcdl600,321
+Flask_VueSFC-0.1.1.dist-info/LICENSE,sha256=sLe9I3HgNFgq4l8Mba1sKkHJGM_ah_Tx3aqoL_c4I9c,2698
+Flask_VueSFC-0.1.1.dist-info/METADATA,sha256=09PZYLQAp07Vm30yaMgQM6qUES_34CVGybBr-w0By5Q,6987
+Flask_VueSFC-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Flask_VueSFC-0.1.1.dist-info/top_level.txt,sha256=FoFk8iQwU31mTREaIgnZ9rk6-jAcK3pSoc2cWoXA1BI,14
+Flask_VueSFC-0.1.1.dist-info/RECORD,,
