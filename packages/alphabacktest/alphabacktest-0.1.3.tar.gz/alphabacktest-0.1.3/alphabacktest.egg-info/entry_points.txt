@@ -1,0 +1,3 @@
+[console_scripts]
+alphabacktest = alphabacktest.cli:main
+
