@@ -1,0 +1,13 @@
+aiospamc/__init__.py,sha256=eDNAjPu2f57sZq96MrPP5oUjH8qJgG5Yb4PHOKQsCHA,502
+aiospamc/connections.py,sha256=XbI7Dn6Ak3xTDObl0KsuSaacLxkxbm6afaG6biWVaEM,9139
+aiospamc/exceptions.py,sha256=r4zOPEggFopPkhsy_kqyQypMCF7dMZRoMOIrSH8isbQ,4112
+aiospamc/frontend.py,sha256=IEtxMu1Xi4-BcVcFD09i0FqcTMCs1d_yZSoGy5UKVHk,25814
+aiospamc/header_values.py,sha256=uEIuw0T6zbWqStfqpqF2fqn04QIoJSUa3rSyzLfaBo8,7526
+aiospamc/incremental_parser.py,sha256=SSpKfj5MTk3FZoyEld87MhcBM5hIg3bvJowqKs7lb5I,15674
+aiospamc/options.py,sha256=od4Xpp83iVcIi8PeMq8vIhPHsS-NpRV0bIho5lDuxzY,580
+aiospamc/requests.py,sha256=40SxUcJAOFKLu7-n3VsynfEehoozcWI2u31_HZewaxs,2043
+aiospamc/responses.py,sha256=kQVx2s2reZQsq2x5E-few_yOMHzuyseuMoaijGfHK04,5235
+aiospamc-0.7.1.dist-info/LICENSE,sha256=q0sjbeWtSXkouG-s0NzkPtft30rVB4IfyboYpIArl5o,1074
+aiospamc-0.7.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aiospamc-0.7.1.dist-info/METADATA,sha256=GW1WuFq5ZoqUz8NaGH6irW6p-5jEAj5RyPuyUGrNI8I,3537
+aiospamc-0.7.1.dist-info/RECORD,,
