@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+coroapi/__init__.py
+coroapi/coroapi.py
+coroapi/countries.json
+covid19_api.egg-info/PKG-INFO
+covid19_api.egg-info/SOURCES.txt
+covid19_api.egg-info/dependency_links.txt
+covid19_api.egg-info/requires.txt
+covid19_api.egg-info/top_level.txt
