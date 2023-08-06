@@ -1,0 +1,5 @@
+[console_scripts]
+genercat = GenerIter.app.clep_categorise:main
+generinv = GenerIter.app.clep_inventory:main
+generiter = GenerIter.app.clep_generator:main
+
