@@ -1,0 +1,16 @@
+README.md
+setup.py
+ftx_python/__init__.py
+ftx_python.egg-info/PKG-INFO
+ftx_python.egg-info/SOURCES.txt
+ftx_python.egg-info/dependency_links.txt
+ftx_python.egg-info/requires.txt
+ftx_python.egg-info/top_level.txt
+ftx_python/rest/__init__.py
+ftx_python/rest/client.py
+ftx_python/rest/otc_client.py
+ftx_python/stream/__init__.py
+ftx_python/stream/channel.py
+ftx_python/stream/client.py
+ftx_python/stream/operations.py
+ftx_python/stream/subscription.py
