@@ -1,0 +1,14 @@
+pddns/__init__.py,sha256=fv8_ymEZkeqsj-L4afSoyTLs-_eDQ7Jg1vKoS19rSXg,156
+pddns/config.dist.conf,sha256=vBMhal7dZOaqcAL2BTGyk9U0QmHtpkr0iWQsK-sYaIs,1040
+pddns/pddns.py,sha256=ORXX1VKUAmH5QR6qA8yZbqAEb-_qJFkFvLiqIMZxTJA,4300
+pddns/providers/__init__.py,sha256=OAaR-zSpdeuQ07qB_QYY3uQBlUAPPeYlXtuqK90BUgQ,209
+pddns/providers/cloudflare.py,sha256=qo_kwzS0k-Rc52hJeZH_9kRSe0wdtgT3UfkNM6wUoEg,4614
+pddns/providers/hurricaneElectric.py,sha256=8fbQksh-CuJeT9fPwdLf-rm4MmTbrk3k6O5YCNdcZRg,1045
+pddns/providers/strato.py,sha256=2y6V0RskcAz862DxB3skWmd6eW1YfNFKCWeYLkEnQDQ,1006
+python_ddns-2.2.0.data/data/config.conf/config.dist.conf,sha256=vBMhal7dZOaqcAL2BTGyk9U0QmHtpkr0iWQsK-sYaIs,1040
+python_ddns-2.2.0.dist-info/LICENSE,sha256=eYFSvApkZke94LMsiXmT_RZ2b0z40pFahLZ-8MyCg0U,35149
+python_ddns-2.2.0.dist-info/METADATA,sha256=QqeOAnZan4NSVsqa_5wwcpgUNQ0qdMduEwxGsHw7q2I,3241
+python_ddns-2.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_ddns-2.2.0.dist-info/entry_points.txt,sha256=yh3nWXThEHdy5hFLbwyBwo-Mn6YQ452GVcOsxHaEva0,43
+python_ddns-2.2.0.dist-info/top_level.txt,sha256=M1E7ptbW5xgT-KqkgWaCiiJhw-Sps4sWqqJPNJT7u7s,6
+python_ddns-2.2.0.dist-info/RECORD,,
