@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SphEMpackage
+Version: 0.0.5
+Summary: Trying to package all Python codes with dependencies here
+Home-page: https://github.com/mhmodzoka/SphEM
+Author: Mahmoud Elzouka
+Author-email: mhmodzoka@gmail.com
+License: UNKNOWN
+Description: Trying to package all Python codes with dependencies here
+        
+        [Github-flavored Markdown](https://github.com/mhmodzoka/SphEM)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

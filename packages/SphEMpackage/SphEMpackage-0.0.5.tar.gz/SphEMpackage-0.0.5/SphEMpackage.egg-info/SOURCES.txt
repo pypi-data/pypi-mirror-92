@@ -1,0 +1,6 @@
+README.md
+setup.py
+SphEMpackage.egg-info/PKG-INFO
+SphEMpackage.egg-info/SOURCES.txt
+SphEMpackage.egg-info/dependency_links.txt
+SphEMpackage.egg-info/top_level.txt
