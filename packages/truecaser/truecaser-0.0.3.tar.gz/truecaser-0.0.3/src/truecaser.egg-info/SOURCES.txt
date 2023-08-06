@@ -1,0 +1,6 @@
+setup.py
+src/truecaser.py
+src/truecaser.egg-info/PKG-INFO
+src/truecaser.egg-info/SOURCES.txt
+src/truecaser.egg-info/dependency_links.txt
+src/truecaser.egg-info/top_level.txt
