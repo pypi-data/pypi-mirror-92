@@ -1,0 +1,8 @@
+kaigara/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+kaigara/base.py,sha256=VW0r82E3noB-JxipXbIV5mWNp-Zbf9t7paLb2NULuLQ,1219
+kaigara/model/__init__.py,sha256=zwIes1xYPAU8nYx0CKG9p4bxAP3PdKuQussdeuod9kY,239
+kaigara/model/_raup_model.py,sha256=BNvRcWWbYqisi33YULtUt5EqJoCd8B-9ZphLKuCBACM,4315
+kaigara-0.0.1a1.dist-info/LICENSE,sha256=aYMGxtMAgoDADUVV8rABbzoMxtSU65bnR-9YuRJcWMY,749
+kaigara-0.0.1a1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+kaigara-0.0.1a1.dist-info/METADATA,sha256=-RZwrdiknwkAPjrpmNmm_FZNj5mw-SBbLYlH170MCho,1296
+kaigara-0.0.1a1.dist-info/RECORD,,
