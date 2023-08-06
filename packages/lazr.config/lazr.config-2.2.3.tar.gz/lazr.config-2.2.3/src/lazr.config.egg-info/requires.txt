@@ -1,0 +1,3 @@
+lazr.delegates
+setuptools
+zope.interface
