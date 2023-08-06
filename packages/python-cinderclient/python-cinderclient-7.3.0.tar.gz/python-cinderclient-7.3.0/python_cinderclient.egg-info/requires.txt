@@ -1,0 +1,9 @@
+PrettyTable<0.8,>=0.7.2
+keystoneauth1>=4.2.1
+oslo.i18n>=5.0.1
+oslo.utils>=4.7.0
+pbr>=5.5.0
+requests>=2.23.0
+simplejson>=3.5.1
+six>=1.15.0
+stevedore>=3.2.2
