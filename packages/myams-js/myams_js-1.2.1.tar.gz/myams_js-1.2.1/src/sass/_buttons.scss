@@ -1,0 +1,17 @@
+
+
+@import 'variables';
+
+
+.btn {
+  &.btn-light {
+    border-color: $gray-400;
+  }
+}
+
+.btn-xs,
+.btn-group-xs > .btn {
+  padding: .2rem 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
