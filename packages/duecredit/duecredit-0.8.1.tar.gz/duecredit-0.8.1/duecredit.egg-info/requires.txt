@@ -1,0 +1,8 @@
+citeproc-py>=0.4
+requests
+six
+
+[tests]
+contextlib2
+pytest
+vcrpy
