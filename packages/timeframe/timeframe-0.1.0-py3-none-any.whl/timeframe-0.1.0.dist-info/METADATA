@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: timeframe
+Version: 0.1.0
+Summary: Time Frame
+Home-page: https://github.com/meysam81/timeframe
+Author: Meysam Azad
+Author-email: MeysamAzad81@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# TimeFrame
+
+
