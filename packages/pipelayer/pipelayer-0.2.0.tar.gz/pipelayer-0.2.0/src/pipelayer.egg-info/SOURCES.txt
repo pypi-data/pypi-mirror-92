@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/pipelayer/__init__.py
+src/pipelayer/context.py
+src/pipelayer/exception.py
+src/pipelayer/filter.py
+src/pipelayer/final.py
+src/pipelayer/manifest.py
+src/pipelayer/settings.py
+src/pipelayer/util.py
+src/pipelayer.egg-info/PKG-INFO
+src/pipelayer.egg-info/SOURCES.txt
+src/pipelayer.egg-info/dependency_links.txt
+src/pipelayer.egg-info/requires.txt
+src/pipelayer.egg-info/top_level.txt
