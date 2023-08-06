@@ -1,0 +1,3 @@
+[console_scripts]
+all-relative=all_relative.main:main
+
