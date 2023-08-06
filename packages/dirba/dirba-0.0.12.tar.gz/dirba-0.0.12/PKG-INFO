@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: dirba
+Version: 0.0.12
+Summary: Small ML boilerplate
+Home-page: http://git2.uriit.local/CIAS/dirba.git
+Author: Mansur Izert
+Author-email: izertmi@uriit.ru
+License: UNKNOWN
+Description: pip install git+http://git2.uriit.local/CIAS/dirba.git@master#egg=dirba
+        РњРёРЅРё Р±РёР±Р»РёРѕС‚РµС‡РєР° РґР»СЏ СѓРјРµРЅСЊС€РµРЅРёСЏ СЂСѓС‚РёРЅС‹ СЃРІСЏР·Р°РЅРЅРѕР№ СЃ РјРѕРґРµР»СЏРјРё.
+        
+        Р’РѕР·РјРѕР¶РЅРѕСЃС‚Рё:
+         - [ ] Р±Р°Р·РѕРІС‹Рµ РєР»Р°СЃСЃС‹ РґР»СЏ РјРѕРґРµР»РµР№
+         - [ ] Р·Р°РїСѓСЃРє РјРѕРґРµР»РµР№ РІ kafka
+         - [ ] Р·Р°РїСѓСЃРє РјРѕРґРµР»РµР№ РІ rest api
+         - [ ] РІР°Р»РёРґР°С†РёСЏ
+         
+        РџСЂРёРјРµСЂ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІР°Р»РёРґР°С†РёРё 
+        ```python
+        from dirba.models.dambo import DamboModel
+        from dirba.runners import APIRunner
+        from dirba.validation import ProhibitedTexValidationDataset
+        from dirba.validation import PrecisionMetric
+        from dirba.validation import Validator
+        
+        if __name__ == '__main__':
+            dataset = ProhibitedTexValidationDataset()
+            model = DamboModel()
+        
+            validator = Validator(dataset,model, [PrecisionMetric])
+            validator.describe()
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
