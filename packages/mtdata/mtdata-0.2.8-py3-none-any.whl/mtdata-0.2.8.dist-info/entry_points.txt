@@ -1,0 +1,4 @@
+[console_scripts]
+mtdata = mtdata.main:main
+mtdata-iso = mtdata.iso.__main__:main
+
