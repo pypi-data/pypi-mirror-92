@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pypsa-rd
+Version: 0.0.1
+Summary: Python for Power Systems Analysis Redispatch Analysis
+Home-page: https://github.com/WillemDafoe42/PyPSA-rd
+Author: Willem Laumen (ETH Zurich), Tom Brown (FIAS, KIT), Jonas Hoersch (FIAS, KIT), Fabian Hofmann (FIAS), Fabian Neumann (KIT), David Schlachtberger (FIAS)
+Author-email: willem.laumen@rwth-aachen.de
+License: GPLv3
+Description: Built with: Python for Power System Analysis
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
+Provides-Extra: cartopy
+Provides-Extra: docs
+Provides-Extra: gurobipy
