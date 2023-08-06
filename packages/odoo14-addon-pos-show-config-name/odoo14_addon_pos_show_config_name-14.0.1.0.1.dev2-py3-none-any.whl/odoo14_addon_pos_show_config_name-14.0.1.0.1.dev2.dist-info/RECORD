@@ -1,0 +1,12 @@
+odoo/addons/pos_show_config_name/README.rst,sha256=tDkGi6819AI4YWg81caAIOzkUx1l85gCU8X-FqO69mA,2510
+odoo/addons/pos_show_config_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/pos_show_config_name/__manifest__.py,sha256=oIVZosl0dIaWyZ83_1TnW9cqwP4fR2gtBR7f_eYU3xE,572
+odoo/addons/pos_show_config_name/i18n/pos_show_config_name.pot,sha256=AyzPzY6fvZoAIdVCppv0SiPLoR_D-HBQlYffHd1jWNE,341
+odoo/addons/pos_show_config_name/readme/DESCRIPTION.rst,sha256=6_c4IZSQ97dzFpGYmiBAY-s6VU9NDN20bEZ5Itjx54s,90
+odoo/addons/pos_show_config_name/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/pos_show_config_name/static/description/index.html,sha256=brmsg_Hujew_mOkicHyEsJZf9NKFy5xzU-xd3JFHv8w,11149
+odoo/addons/pos_show_config_name/static/src/xml/CashierName.xml,sha256=eYPep8778MAhgz_6SCCd3vuS7op-JtGoOQARYCluwCg,339
+odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2.dist-info/METADATA,sha256=k2DTuHR4MBrWbJnB8hbXFpwG4WeVVlpl-BY9Nghdae8,3010
+odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_pos_show_config_name-14.0.1.0.1.dev2.dist-info/RECORD,,
