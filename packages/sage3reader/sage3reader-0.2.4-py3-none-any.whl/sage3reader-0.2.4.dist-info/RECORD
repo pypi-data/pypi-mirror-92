@@ -1,0 +1,8 @@
+sage3reader/__init__.py,sha256=goZg_snv5FN3fCEQ6I3RqoxTjncSUjgLBdOR6q9Bu0E,162
+sage3reader/read_solar.py,sha256=3hgvvxeYLCW_NTtzkQ1FV3yobxipOEMTsd96XdJjCpY,107548
+sage3reader/sage3reader.py,sha256=DYa78NZ72s_kOe8G55fIeY260_5VAULlrFlgfsttAyA,35117
+sage3reader-0.2.4.dist-info/LICENSE,sha256=qfA6-o5Rhkn2E-lPl2PXBNZxzcYK1QLdynVxcg7NOww,1067
+sage3reader-0.2.4.dist-info/METADATA,sha256=l_bfeD0PsX7fx-MCzN3tBvtb7YYOBTMvP_vkdGl9Md8,1875
+sage3reader-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sage3reader-0.2.4.dist-info/top_level.txt,sha256=-UUDpVu-fNbsu4CZ7KU3B7UAyIdynoUpu2DxVMPAmVM,12
+sage3reader-0.2.4.dist-info/RECORD,,
