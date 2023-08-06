@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: GeologyUtils
+Version: 0.0.1
+Summary: Geographic pandas extensions
+Home-page: http://geopandas.org
+Author: GeoPandas contributors
+Author-email: kjordahl@alum.mit.edu
+License: BSD
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: fiona (>=1.8)
+Requires-Dist: pandas (>=0.24.0)
+Requires-Dist: pyproj (>=2.2.0)
+Requires-Dist: shapely (>=1.6)
+
+A copy of geopandas, that
+will be deleted once version 0.9.0 is released.
+
+Full credit to:
+geopandas: https://github.com/geopandas/geopandas
+pandas: http://pandas.pydata.org
+shapely: http://shapely.readthedocs.io/en/latest/
+
+
