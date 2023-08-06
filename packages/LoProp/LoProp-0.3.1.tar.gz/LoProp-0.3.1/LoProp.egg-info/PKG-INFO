@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: LoProp
+Version: 0.3.1
+Summary: LoProp implementation for Dalton
+Home-page: UNKNOWN
+Author: Olav Vahtras
+Author-email: vahtras@kth.se
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dalton
+Provides-Extra: vlx
