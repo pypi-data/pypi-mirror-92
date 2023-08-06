@@ -1,0 +1,15 @@
+anfrss/__init__.py,sha256=iKdk7G3rj84W_k_hREKPLXcTPwC24E1Ra_NwwIDFAI4,67
+anfrss/__main__.py,sha256=mnTCq82E-EfVlnKlJr2qUND6I9yV0mZCZQLIUZkdvqo,363
+anfrss/assets/anf.png,sha256=655Gj6JqXi1dMa1hkgkOmTOqu7HwDesfK2mOI3CfYIk,7896
+anfrss/gui/__init__.py,sha256=oqdng3NmU4LxFXl7zfPyq85iYUhQ3O0ckprv_G34aaE,24
+anfrss/gui/guiapp.py,sha256=6-rmIaRflccNs_FMuNtp8CTHjrINrgzaTP_nk42zN74,8150
+anfrss/parser/__init__.py,sha256=wjujJQefWbNrO7ECSmekHC8l-mzQYLbFtjiwZ-eiJ7Q,29
+anfrss/parser/anffeed.py,sha256=fBe8nb_oIqymhd8bJQE4bbQhL6dsCd5Hhd1_3xY4jhI,3617
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_anffeed.py,sha256=qNAoTYKo4XqGL465MYNRPz6AWonUCpW0kcIyYMjNdrM,1635
+ANF_Feed-0.0.1.dist-info/LICENSE,sha256=ZKgR9s3S12QdLj56UrpUDu57scWH5M-kTRxrpSOpVks,35804
+ANF_Feed-0.0.1.dist-info/METADATA,sha256=Jo74HRBMCKzXKR38d-AYps6pLJ2V01LgdpE2DIwqhFM,3098
+ANF_Feed-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ANF_Feed-0.0.1.dist-info/entry_points.txt,sha256=xWiUOZll1E7oUZYe-vwl2xdnEnOZQUk_eAMLzpUPrm4,50
+ANF_Feed-0.0.1.dist-info/top_level.txt,sha256=7HTj_xKw2cDss7bYuim9HeC3TPs5J3-zOLgc3VPXoIo,13
+ANF_Feed-0.0.1.dist-info/RECORD,,
