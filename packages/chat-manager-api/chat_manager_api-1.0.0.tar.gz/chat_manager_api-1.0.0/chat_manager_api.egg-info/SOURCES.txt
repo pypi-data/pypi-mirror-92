@@ -1,0 +1,17 @@
+README.md
+setup.py
+chat_manager_api/__init__.py
+chat_manager_api/abc.py
+chat_manager_api/api.py
+chat_manager_api/exceptions.py
+chat_manager_api.egg-info/PKG-INFO
+chat_manager_api.egg-info/SOURCES.txt
+chat_manager_api.egg-info/dependency_links.txt
+chat_manager_api.egg-info/requires.txt
+chat_manager_api.egg-info/top_level.txt
+chat_manager_api/categories/__init__.py
+chat_manager_api/categories/account.py
+chat_manager_api/categories/base.py
+chat_manager_api/categories/categories.py
+chat_manager_api/models/__init__.py
+chat_manager_api/models/account.py

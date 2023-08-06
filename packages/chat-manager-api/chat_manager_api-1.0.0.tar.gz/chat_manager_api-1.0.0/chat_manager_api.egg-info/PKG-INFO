@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: chat-manager-api
+Version: 1.0.0
+Summary: Chat Manager API wrapper
+Home-page: https://github.com/lordralinc/chat_manager_api
+Author: lordralinc
+License: MIT
+Description: # Chat Manager API wrapper
+        
+        ![PyPI](https://img.shields.io/pypi/v/chat-manager-api)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/chat-manager-api)
+        ![GitHub](https://img.shields.io/github/license/lordralinc/chat_manager_api)
+        
+        ## Установка 
+        ```shell
+        pip install -U https://github.com/lordralinc/chat_manager_api/archive/master.zip
+        ```
+        
+        или 
+        
+        ```shell
+        pip install chat_manager_api
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
