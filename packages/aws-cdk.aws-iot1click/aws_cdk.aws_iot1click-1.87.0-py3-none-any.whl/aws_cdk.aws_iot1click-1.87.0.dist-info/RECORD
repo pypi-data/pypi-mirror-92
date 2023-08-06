@@ -1,0 +1,8 @@
+aws_cdk/aws_iot1click/__init__.py,sha256=ElqXpPNy_sY-efKFFijf8Mxn2OBLE9uGgzImqpPOlaI,28723
+aws_cdk/aws_iot1click/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_iot1click/_jsii/__init__.py,sha256=i5UKCnpFwzhD1HtWZ72laGZoHl4h_9luceVVA5vaDNA,375
+aws_cdk/aws_iot1click/_jsii/aws-iot1click@1.87.0.jsii.tgz,sha256=kgNfwFY68uRkJh0GT7JPTgOtJ49jK8ZctooToHX0V2E,24956
+aws_cdk.aws_iot1click-1.87.0.dist-info/METADATA,sha256=5LsQ2QVxtljJxzgqj-k59f_P4V0oCFXPEu8rwzmRrbU,1610
+aws_cdk.aws_iot1click-1.87.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_iot1click-1.87.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_iot1click-1.87.0.dist-info/RECORD,,
