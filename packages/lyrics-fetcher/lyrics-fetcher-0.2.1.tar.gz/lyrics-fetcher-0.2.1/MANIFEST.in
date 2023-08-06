@@ -1,0 +1,4 @@
+include lyricsfetcher/*.conf
+include README.md
+include LICENSE.txt
+include setup.py
