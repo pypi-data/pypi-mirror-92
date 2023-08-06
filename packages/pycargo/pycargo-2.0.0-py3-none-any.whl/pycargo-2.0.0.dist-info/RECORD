@@ -1,0 +1,17 @@
+pycargo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycargo/containers.py,sha256=3NRK76T_R_wJcwfwnYa3LHbiAmiVJ8p3l9PjJzw65Ks,2407
+pycargo/exceptions.py,sha256=3qoWe1uVT3t96PQHSqwU3mJa04iu7-sk3q3f_op8KLI,257
+pycargo/fields.py,sha256=YwX-uX_ukdohXJ2zHT37ujJ4JSpuKtbEkH0i-mANgAg,4231
+pycargo/spreadsheet.py,sha256=tJ31w1MSnSCe-Jx_8RHa4SD2aHByhTTbBQm5X7OjrqU,7275
+pycargo/styles.py,sha256=d6VT93aDIsSTibLeCccAneTW_deMK0veFQx5Vi2mG_c,2242
+pycargo/types.py,sha256=J3UymPhp2XJTPLOeNIy7HVbQJ4T6t2JevaW3VoU99l4,113
+pycargo/utils.py,sha256=wm8FyOEobqE7rPtITcP2LG7mziNMq5Ib3zsbJpit050,402
+pycargo/validate.py,sha256=3LnlJO4FUL_JOtYQub-Vuqe6oRvGhsKgpHG-Z3Ztmc4,4990
+pycargo/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycargo/tests/test_containers.py,sha256=-Z9Ot0hOjTjqSgzmEtv0QKb3s_gtEclOkvYhu2Anrw8,3754
+pycargo/tests/test_validate.py,sha256=9yNbwHgmU0rPuxeugUsXPXtT51AdJhAVj03lkq88Cdw,6674
+pycargo-2.0.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+pycargo-2.0.0.dist-info/METADATA,sha256=Vj-lj9dZRm1bRt-AmwGfqZTSIfhe6KvgUKbSgQMUBhg,2112
+pycargo-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycargo-2.0.0.dist-info/top_level.txt,sha256=RcMeqjpB5RG-lqPYiwGzb_vQ56tsGI3Qy_hC56OP7XA,8
+pycargo-2.0.0.dist-info/RECORD,,
