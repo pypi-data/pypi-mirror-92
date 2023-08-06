@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pdfToJson
+Version: 0.0.1
+Summary: This is a package which converts pdf to json using GROBID
+Home-page: UNKNOWN
+Author: xjw
+Author-email: XiongJingWen_0629@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+### DATA FORMAT
+
+```
+{
+    "title": "title of a paper",
+ 	"authors": [
+        {
+            "firstName": "firstName of an author",
+            "lastName": "lastName of an author "
+        }
+    ],
+    "keywords":["keyword1","keyword2"],
+    "abstract": "abstract of a paper",
+    "paperContent":{
+        "text": "all content of a paper (This is also a concatenation of subtexts)",
+        "subtitles": ["Introduction", "Model"],
+        "subtexts": ["section1Content", "section2Content"]
+    },
+    "references":[
+        {
+            "refTitle": "title of a reference paper",
+            "refAuthors": [
+                {
+                    "firstName": "firstName of an author",
+                    "lastName": "lastName of an author "
+                }
+            ],
+            "refYear": "publised year of a reference paper",
+            "refPublisher": "publised journal of a reference paper"
+        }
+    ]
+}
+```
+
