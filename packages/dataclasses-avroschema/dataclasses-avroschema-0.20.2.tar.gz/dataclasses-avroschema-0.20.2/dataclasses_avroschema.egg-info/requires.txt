@@ -1,0 +1,5 @@
+inflect
+fastavro==1.3.0
+pytz
+dacite
+faker
