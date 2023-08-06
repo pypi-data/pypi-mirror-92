@@ -1,0 +1,12 @@
+itk/AdaptiveDenoisingPython.py,sha256=ahobMFPkmzNDqXTOUbKeBj99ARdTR9dKPPadDcqQpcc,2714
+itk/_AdaptiveDenoisingPython.pyd,sha256=O2J8f_mh82tovFQJbmKvs68r38DwOx3sIsyunrl_VnQ,2859008
+itk/itkAdaptiveNonLocalMeansDenoisingImageFilterPython.py,sha256=_fNLAfROWb7hgmQOnWZ7B9-p1Wv8_XiGc-tRs1m8iYI,103401
+itk/itkNonLocalPatchBasedImageFilterPython.py,sha256=yTmv6MrmW2rR8I6UYMOOMKEoB6nndZ8BR8iflY0ECIE,80874
+itk/itkVarianceImageFilterPython.py,sha256=-diEc1yyspV5kWktKsTMWTE8bL0Kd6TiqAKscGWYI68,41540
+itk/Configuration/AdaptiveDenoisingConfig.py,sha256=zsUWgVgXpWlHZGW01AhEkC-1vBjLTSuuLpfIa5i4Ku0,8466
+itk/Configuration/AdaptiveDenoising_snake_case.py,sha256=_OwOy-ZED8gWmqkFDm7LoMyBzRG1JPUr8PjcCTG3n7s,141
+itk_adaptivedenoising-0.2.0.dist-info/LICENSE,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+itk_adaptivedenoising-0.2.0.dist-info/METADATA,sha256=Y1PvHRS4wd0IXTBivJM3XyHyuCTJo3NBPkaDG_oohiE,1215
+itk_adaptivedenoising-0.2.0.dist-info/WHEEL,sha256=_FlFXbhdaFmz4SNyhakwa69Dsykp8qXdsLYWDQ2VOj0,94
+itk_adaptivedenoising-0.2.0.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_adaptivedenoising-0.2.0.dist-info/RECORD,,
