@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: typecode
+Version: 21.1.21
+Summary: Comprehensive filetype and mimetype detection using libmagic and Pygments.
+Home-page: https://github.com/nexB/typecode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: filetype,mimetype,libmagic,scancode-toolkit,typecode
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: attrs (!=20.1.0,>=18.1)
+Requires-Dist: binaryornot
+Requires-Dist: commoncode (>=21.1.21)
+Requires-Dist: pdfminer.six
+Requires-Dist: plugincode
+Provides-Extra: full
+Requires-Dist: typecode-libmagic ; extra == 'full'
+Provides-Extra: testing
+Requires-Dist: saneyaml ; extra == 'testing'
+Requires-Dist: pytest (>=4) ; extra == 'testing'
+Requires-Dist: pytest-xdist (>=1) ; extra == 'testing'
+
+TypeCode
+========
+
+- license: Apache-2.0
+- copyright: copyright (c) nexB. Inc. and others
+- homepage_url: https://github.com/nexB/typecode
+- keywords: filetype, mimetype, libmagic, scancode-toolkit, typecode
+
+TypeCode provides comprehensive filetype and mimetype detection using multiple
+detectors including libmagic (included as a dependency for Linux, Windows and
+macOS) and Pygments. It started as library in scancode-toolkit.
+Visit https://aboutcode.org and https://github.com/nexB/ for support and download.
+
+
+To install this package with its full capability (where the binaries for
+libmagic are installed), use the `full` option::
+
+    pip install typecode[full]
+
+If you want to use the version of libmagic (possibly) provided by your operating
+system, use the `minimal` option::
+
+    pip install typecode
+
+
+To set up the development environment::
+
+    source configure
+
+To run unit tests::
+
+    pytest -vvs -n 2
+
+To clean up development environment::
+
+    ./configure --clean
+
+
+
