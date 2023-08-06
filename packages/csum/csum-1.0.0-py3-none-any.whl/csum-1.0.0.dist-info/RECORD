@@ -1,0 +1,10 @@
+csum/__init__.py,sha256=gBFDtLFgkagrJxHHDzZrcRbBEcIDQ0XbIQakxA7cBLU,1268
+csum/__main__.py,sha256=gc7EbWHc4XB6clrMxGLnUyJpfqj43d4i1AT7V4GenQY,1180
+csum/argparsing.py,sha256=YlIwve_l2imLN5J4eB1nnSnCS6BqZWe4UKRNt7A2q94,1646
+csum/checksums.py,sha256=klFdIUzpKdy65VhiS5N4UU2bfDFhUInjfnZT9c0YrVc,4188
+csum-1.0.0.dist-info/LICENSE,sha256=HBGnJvGfBGvsHnQWg9ELL9OEtMG-f_oZ85sUdVTKNv8,1097
+csum-1.0.0.dist-info/METADATA,sha256=clEu4RA_kXiSK7XJcZwsUpOUs5HUoTjgo30q9rM7gOk,4406
+csum-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+csum-1.0.0.dist-info/entry_points.txt,sha256=o__4vudvOLgxCpXaNE-LTEsuL104KFldbYZ0zYLVwqY,36
+csum-1.0.0.dist-info/top_level.txt,sha256=QNacXtOAyHvemlYGK6nqNknGziQDqJQNFvtwHE24Nvs,5
+csum-1.0.0.dist-info/RECORD,,
