@@ -1,0 +1,11 @@
+README.md
+setup.py
+pce/__init__.py
+pce/pce.py
+pce/quad4pce.py
+pce/util4pce.py
+pce.egg-info/PKG-INFO
+pce.egg-info/SOURCES.txt
+pce.egg-info/dependency_links.txt
+pce.egg-info/requires.txt
+pce.egg-info/top_level.txt
