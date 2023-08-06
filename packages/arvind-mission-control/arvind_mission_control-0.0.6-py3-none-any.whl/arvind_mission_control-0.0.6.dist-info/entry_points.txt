@@ -1,0 +1,3 @@
+[console_scripts]
+mission_control = mission_control.cli:main
+
