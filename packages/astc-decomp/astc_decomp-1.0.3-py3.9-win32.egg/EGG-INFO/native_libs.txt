@@ -1,0 +1,1 @@
+astc_decomp.cp39-win32.pyd
