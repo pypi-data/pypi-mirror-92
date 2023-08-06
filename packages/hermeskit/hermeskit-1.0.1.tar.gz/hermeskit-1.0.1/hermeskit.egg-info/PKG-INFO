@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: hermeskit
+Version: 1.0.1
+Summary: Credit Scoring Python package
+Home-page: https://vinid-team.atlassian.net/wiki/spaces/1/pages/677551034/0.+About+Hermes
+Author: HuynhThanhQuan
+Author-email: quanht6@onemount.com
+Maintainer: HuynhThanhQuan
+Maintainer-email: quanht6@onemount.com
+License: MIT
+Description: UNKNOWN
+Keywords: CreditScoring,Hermes,1MG,CDO
+Platform: UNKNOWN
+Requires-Python: >=3.7
