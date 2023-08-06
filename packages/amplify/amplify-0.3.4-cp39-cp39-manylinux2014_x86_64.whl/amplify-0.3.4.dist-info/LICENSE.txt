@@ -1,0 +1,131 @@
+Service Terms of Use
+
+These Terms of Use set forth the conditions for provision of the quantum computing emulator service (the "Service") using middleware and GPU annealing machines and constitutes an agreement between the customer (whether an individual or corporation) and Fixstars Corporation ("Fixstars").
+Before using the Service, it is necessary that you carefully read and agree to the following Terms of Use. If you start using the Service, you will be deemed to have fully agreed to these Terms of Use.
+
+1. Application, etc.
+    (a) These Terms of Use are intended to set forth the conditions of provision of the Service and the rights and duties of Fixstars and you regarding use of the Service and apply to all relationships between Fixstars and you regarding use of the Service.
+    (b) Rules relating to use of the Service posted by Fixstars on its website constitute a part of these Terms of Use.
+    (c) If there is a discrepancy between the provisions of these Terms of Use and the rules specified in the preceding paragraph or explanations of the Service and the like other than these Terms of Use, unless otherwise agreed in writing by Fixstars and you, the provisions of these Terms of Use shall apply preferentially.
+    (d) In cases where it is determined by Fixstars to be necessary, Fixstars may revise these Terms of Use. If Fixstars revises these Terms of Use, Fixstars shall provide notice by posting the content of the revised Terms of Use and their effective date on the Fixstars website or by other appropriate means or shall provide notice to you. The revised Terms of Use shall come into effect on the effective date, and continued use of the Service by you after these Terms of Use are revised shall be deemed as your valid and irrevocable agreement to the revised Terms of Use.
+
+2. Application for a Service Use Agreement
+    (a) If you wish to use the Service, you make a request to Fixstars for a service use agreement ("Service Use Agreement") with consent to comply with these Terms of Use, providing to Fixstars certain information specified by Fixstars (the "Registration Information") by the method specified by Fixstars, and perform other procedures specified by Fixstars.
+    (b) Fixstars shall make a determination whether to accept the request for a Service Use Agreement pursuant to the preceding paragraph in accordance with criteria determined by Fixstars, and if Fixstars approves the request, you will be sent notice to that effect.
+    (c) At the time of the notice of approval specified in the preceding paragraph, the Service Use Agreement will be formed between Fixstars and you, and you will be able to use the Service in accordance with these Terms of Use upon the provision by Fixstars to you of a license key, API token, and other information necessary to log in (the "License Key etc.") relating to the Service.
+    (d) If you fall under any of the following items, Fixstars may reject your request or renewed request. Fixstars shall not be obligated to disclose the reasons for the rejection.
+        (1) If you make a misrepresentation, provide incorrect information, or fail to provide information relating to all or some of the Registration Information provided to Fixstars;
+        (2) If you are an individual, if you are a minor, adult ward, person under guardianship, or a person under assistance and have not obtained consent from your legal representative, guardian, or assistant;
+        (3) If Fixstars determines that you are an Anti-Social Force etc. (here and hereafter, meaning an organized crime group, member of an organized crime group, right-wing organization, anti-social force, or other comparable person) or have any interaction with or participate in an Anti-Social Force etc. including cooperation with or participation in the maintenance, operation, or management of an Anti-Social Force etc. through the provision of funds or otherwise;
+        (4) If Fixstars determines that you breached an agreement with Fixstars in the past or are associated with such a person;
+        (5) If you have been subject to the measures specified in Article 19; or
+        (6) If Fixstars otherwise determines that you are not suitable for execution of the Service Use Agreement.
+
+3. Revision of Registration Information
+    If any changes are made to your Registration Information, you shall without delay provide notice to Fixstars of the relevant Registration Information by the method specified by Fixstars.
+
+4. Term of Service Use Agreement
+    The term of the Service Use Agreement shall be the six-month period from the start date of use of the Service (the day that Fixstars approves the request for the Service Use Agreement or such other date agreed upon by Fixstars and you).
+
+5. User IDs
+    (a) You shall designate the users of the Service ("Users") and shall provide to the Users codes ("User IDs") for identification of Users by the method and in accordance with the use conditions specified separately by Fixstars.
+    (b) You may allow only your officers and employees (including persons who work for you in your offices) to use the Service and may not allow third parties to use the Service.
+    (c) You shall bear responsibility regarding the provision of User IDs and use of the Service by Users and shall take measures within the scope of your responsibility to prevent unauthorized use.
+
+6. Management of License Keys, etc.
+    (a) You shall rigorously manage and keep License Keys and User IDs under your own responsibility to prevent unauthorized use and may not disclose, allow the use of, lend, transfer, change the name of, or sell License Keys and User IDs to third parties.
+    (b) You shall bear all liability for damage arising from inadequate management, misuse, third-party use, and so on of License Keys or User IDs. Fixstars shall deem all use of the Service occurring after authentication of License Key or User ID to be your conduct and operations.
+
+7. Manager
+    (a) You shall designate a manager ("Manager") relating to use of the Service and provide notice to Fixstars by the method specified by Fixstars. All notices and the like to Fixstars shall be made via the Manager.
+    (b) If you change the Manager, you shall promptly provide notice to Fixstars.
+    (c) You shall cause the Manager to manage and supervise compliance with these Terms of Use and shall bear responsibility as the subscriber for decision making, notices, and all other conduct by the manager.
+
+8. Fees and Method of Payment
+    (a) You shall pay to Fixstars, by the method specified by Fixstars, the use fees specified separately by Fixstars and indicated on the Fixstars website as consideration for use of the Services for which a service use agreement has been established ("Use Fees").
+    (b) If you pay the Use Fees late, you shall pay to Fixstars a delay penalty at the rate agreed upon separately by you and Fixstars.
+    (c) At the time of termination or withdrawal pursuant to Article 19 or Article 20, Fixstars shall not perform a daily pro rata calculation of the use fees and shall not refund any use fees previously received from you.
+
+9. Ownership of Rights
+    (a) All copyrights, patent rights, utility model rights, design rights, trademarks, other intellectual property rights (including rights to acquire such rights and rights to apply for registration or to register such rights; referred to as "Intellectual Property Rights"), and all other rights to inventions, devices, industrial designs, marks, creations, image, videos, sounds, text, screens, programs, code, ideas, know-how, methods, plans, designs, specifications, formulas, algorithms, data, and all other outputs relating to the Service shall belong to Fixstars or the person who licensed their use. All rights not expressly provided for in these Terms of Use are reserved by Fixstars or the person who licensed their use.
+    (b) Fixstars grants a license regarding the Service under this Term of Use, and it does not mean that Fixstars sell a whole or a part of the Service.
+    (c) You represent and warrant to Fixstars that you lawfully own code that you input or otherwise transmit in relation to the Service ("Input Code") and that Input Code does not infringe on the rights of third parties.
+    (d) Intellectual Property Rights to Input Code belong to you or the person who licensed its use.
+    (e) Fixstars shall not bear a duty to keep or store your Input Code for backup or other purposes. Fixstars shall not bear any liability whatsoever for damage or lost profits arising from the non-existence of backup data and the like.
+    (f) Fixstars shall not bear any liability whatsoever in relation to disputes regarding the existence or ownership of Intellectual Property Rights, granting of use licenses to third parties, infringement of third-party rights, or otherwise in relation to data used when using the Service, and you shall resolve such matters under your own responsibility and at your own expense.
+
+10. Restrictions on Use
+    (a) You may not modify, alter, reverse engineer, reverse compile, or reverse assemble the program and copyrights notice of the Service in whole or in part or engage in other similar conduct, produce secondary works through such conduct, or cause a third party to engage in such conduct.
+    (b) You may not allow a third party to use the Service or loan, transfer or sell (including comparable conduct) the Service to a third party. Further, unless otherwise agreed between Fixstars and you separately in writing, you may not use the Service for commercial purposes (excluding corporate customers using the Service internally).
+    (c) You may not reproduce the Service for any purpose. Fixstars shall not bear any liability whatsoever for damage arising as a result of your attempt to reproduce the Service.
+    (d) You may not use the Service for conduct in violation of laws and regulations, conduct relating to criminal acts, conduct that infringes on the Intellectual Property Rights, rights to publicity, privacy rights, honor, or other rights and interests of Fixstars or third parties, conduct that causes disadvantage, damage, or inconvenience to Fixstars or third parties, other conduct that Fixstars determines to be improper, of conduct that Fixstars determines to be likely to constitute such conduct. Fixstars shall not bear any liability whatsoever for damage arising from use of the Service for these purposes.
+    (e) Fixstars shall provide support services according to the plan that you select. Support services shall include email support regarding the Service and products related to the Service and public release of information relating to such products on the Fixstars website. With respect to technical information provided by you to Fixstars as a part of support services, in cases where you consent, Fixstars may use that information for commercial purposes including product support and development.
+    (f) If Fixstars determines that you are using the Service in violation of these Terms of Use, Fixstars may, at its discretion, take measures that it determines to be necessary and appropriate including restriction, suspension, or termination of use.
+
+11. Service Use Environment
+    When using the Service, you shall prepare the computer terminals, networks, and other computer environment specified separately by Fixstars (the "Use Environment"), and in the case where middleware is used with the Service, shall download and use such middleware. Further, in the case where a GPU annealing machine is used with the Service, you shall connect to the computer facilities provided by Fixstars (the "Service Environment"), and the provision of GPU annealing shall be performed by connecting from the Use Environment via network to the Service Environment.
+
+12. Limitation of Warranty
+    (a) Fixstars shall not bear any liability whatsoever for warranties, whether expressed or implied: that the Service is suitable for a specific purpose of yours; that it has the expected functions, product value, accuracy, completeness, or availability; that the processing results and so on produced by the Service are accurate; that your use of the Service is in conformity with laws and regulations applicable to you or with internal rules and the like; that continuous use is possible, and that faults will not occur.
+    (b) Fixstars shall not bear any liability whatsoever for warranties relating to faults in the Service or hardware resulting from earthquake, lightning, fire, storm and flood damage, power outage, natural disaster, other force majeure, acts of third parties, other accidents, your deliberate action, negligence, or improper use, or use under any other abnormal conditions.
+
+13. Compliance with Export Regulations
+    You agree to comply with all domestic and international laws applicable to the Service. You shall comply with national laws, ordinances, regulations, and other rules applicable to the Service of Japan and other countries ("Export Regulations") and shall not use the Service in any manner that is inconsistent with Export Regulations.
+    Fixstars shall not bear any liability whatsoever if you receive any claims from or are subject to litigation by a third party and incur impediment or damage as a result of use of the Service contrary to Export Regulations.
+
+14. Suspension, etc. of the Service
+    (a) When Fixstars performs necessary inspection and maintenance work, after providing prior notice to that effect to you, Fixstars may suspend or discontinue the Service in whole or in part.
+    (b) Notwithstanding the preceding paragraph, in any of the following cases, Fixstars may suspend or discontinue the Service in whole or in part without providing prior notice to you.
+        (1) When performing urgent inspection or maintenance work on computer systems related to the Service;
+        (2) When provision of the Service is not possible due to fault of computers, communications lines, and so on, excessive concentration of access, unauthorized access, hacking, or other conduct by a third party or the like;
+        (3) When provision of the Service is not possible due to earthquake, lightning, fire, storm and flood damage, power outage, natural disaster, or other force majeure; or
+        (4) When Fixstars otherwise determines that suspension or discontinuation is necessary.
+
+15. Modification, Suspension, and Termination of the Service
+    (a) Fixstars may at its convenience modify the particulars of the Service.
+    (b) Fixstars may, at its sole discretion, after the provision of prior notice to you, temporarily suspend or terminate provision of the Service.
+    (c) If you violate these Terms of Use, Fixstars may terminate this license. In that case, you must immediately cease use of the Service.
+
+16. Limitation of Liability
+    (a) Except in the case of Fixstars' deliberate conduct or gross negligence, Fixstars shall not bear any liability whatsoever for any damage (including loss profits, loss of or damage to data, other financial damage, and damage caused to third parties) arising from use or inability to use the Service. The above shall apply even in the case where Fixstars knew in advance of the possibility of such damage occurring.
+    (b) In the case of Fixstars' deliberate conduct or gross negligence, Fixstars shall not be liable to pay compensation for damage incurred by you in relation to the Service in excess of the amount of consideration paid by you to Fixstars in the past six months. Further, Fixstars shall not be liable to pay compensation for incidental damage, indirect damage, special damage, future damage, damage relating to lost profits, or damage incurred by you as a result of the circumstances specified in Article 9.
+    (c) The preceding paragraphs shall not apply in the case where the agreement between Fixstars and you (including the service use agreement pursuant to these Terms of Use) constitutes a consumer contract ("Consumer Contract") under the Consumer Contracts Act; provided, however, that even if this paragraph applies, with regard to liability relating to its non-performance of obligations or unlawful conduct due to Fixstars' negligence (excluding gross negligence), regardless of foresight and foreseeability, Fixstars shall not be liable to pay compensation for damage arising from indirect damage, special damage, lost profit, or other special circumstances, but shall be liable to pay compensation for damage only to the extent of direct and ordinary damage, up to the amount of consideration paid by you to Fixstars in the past six months.
+
+17. Handling of Your Registered Information
+    (a) Fixstars shall handle your Registered information in accordance with the Fixstars Privacy Policy (see https://us.fixstars.com/privacy/), and you agree to Fixstars handling your Registered Information in accordance with this Privacy Policy.
+    (b) Fixstars may, at its discretion, use or publicly release information, data, and so on provided by you as statistical information in a format that does not enable identification of a specific person or corporation, and you consent to such use or release.
+
+18. Confidentiality
+    Fixstars and you shall manage technical, sales, and other business confidential information received from the other party with the due care of a prudent manager and shall not divulge to third parties or publicly release such confidential information without the prior written consent of the other party. The contractual terms of the Service shall also be confidential information; provided, however, that information falling under any of the following items shall not be included in confidential information.
+        (1) Information that was already in the public domain or that the receiving party already possessed at the time of disclosure;
+        (2) Information that entered the public domain after disclosure not at the fault of the receiving party;
+        (3) Information lawfully obtained from a third party; or
+        (4) Information independently developed by the receiving party without using confidential information.
+
+19. Termination, etc.
+    (a) If the grounds specified in any of the following items apply, Fixstars may temporarily suspend your use of the Service or terminate the service use agreement with you, without the need for any prior notification or warning.
+        (1) If you breach any provision of these Terms of Use;
+        (2) If it is discovered that your Registered Information includes misrepresentations of fact;
+        (3) If you suspend payments or become insolvent or a petition is filed for the commencement of bankruptcy proceedings, commencement of civil rehabilitation proceedings, commencement of corporate reorganization proceedings, commencement of special liquidation proceedings, or commencement of other similar proceedings;
+        (4) If you do not respond to an inquiry or other communication requesting a response for 30 days or longer;
+        (5) If you fall under any items of Article 2(d);
+        (6) If Fixstars otherwise determines that continued use of the Service of continuation of the Service Use Agreement is not appropriate.
+    (b) If the grounds specified in any of the items of the preceding paragraph apply, all obligations that you owe to Fixstars shall automatically be accelerated, and all obligations owed to Fixstars must immediately be paid.
+
+20. Termination by You
+    (a) You may terminate the Service Use Agreement by competing the procedures designated by Fixstars by the deadline designated by Fixstars.
+    (b) If you owe obligations to Fixstars when you terminate the Service Use Agreement, all obligations that you owe to Fixstars shall automatically be accelerated, and all obligations owed to Fixstars must immediately be paid.
+
+21. Assignment, etc. of Status under Service Use Agreement
+    (a) You may not assign or transfer to a third party, create security interests in, or otherwise dispose of your status under the Service Use Agreement or your rights and duties pursuant to the Service Use Agreement without Fixstars' prior written approval.
+    (b) If Fixstars assigns the business relating to the Service to another company, Fixstars may, in conjunction with the business assignment, transfer to the assignee of that business its status under the Service Use agreement, its rights and duties pursuant to these Terms of Use, your Registered Information, and your other information, and by this paragraph, you consent to this transfer in advance. A business assignment specified in this paragraph includes not just a conventional business assignment, but also a corporate split and other business transfers.
+
+22. Severability
+      Even if any provision of these Terms of Use or portion thereof is determined to be void or unenforceable under the Consumer Contracts Act or other laws and regulations, the remaining provisions of these Terms of Use and the remaining portions of the portion determined to be void or unenforceable shall survive and remain fully in effect.
+
+23. Other
+    (a) The official version of these Terms of Use shall be the Japanese version and English version of the Terms of Use is for reference purpose. In the event of any discrepancy or contradiction between a translation into another language and the Japanese version, the Japanese version shall take precedence.
+    (b) These Terms of Use shall be governed by the laws of Japan.
+    (c) The Tokyo District Court shall be the exclusive court of first instance with jurisdiction over all litigation arising in relation to the Service.
+
+Established September 1, 2020
