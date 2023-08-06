@@ -1,0 +1,9 @@
+dataset_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataset_utils/buffered_writer.py,sha256=h-NO9-MesTCIVldhWXpxJIk0wOGXN0vhwIA6BvUnGu0,3074
+dataset_utils/counters.py,sha256=zKVaBlGS_ft3CTnOgg99yOMK7pOq7cmCdx7UTNvYZ1I,1963
+dataset_utils/sqlite.py,sha256=PDD4bpcq9oyjv1jOSBhlbjSD6LeCRYPB7Ok2R5YB8vU,5353
+dataset_utils-0.0.9.dist-info/LICENSE,sha256=2MSYllo-QoIn9NRcOlASEy21SdcOJxVk4WNpWzL8Hj8,1069
+dataset_utils-0.0.9.dist-info/METADATA,sha256=a4q9YCx-c1X4DpKY86g_Zfe5AOzWEGE0xxrYvhl42mo,663
+dataset_utils-0.0.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dataset_utils-0.0.9.dist-info/top_level.txt,sha256=1HkyHffsbumsjtbupo9NYO2UznPoyMllRtHB9kmnuNI,14
+dataset_utils-0.0.9.dist-info/RECORD,,
