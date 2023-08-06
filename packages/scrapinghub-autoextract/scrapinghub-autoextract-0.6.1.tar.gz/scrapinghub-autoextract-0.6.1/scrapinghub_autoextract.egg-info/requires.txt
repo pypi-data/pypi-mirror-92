@@ -1,0 +1,8 @@
+requests
+attrs
+runstats
+
+[:python_version >= "3.6"]
+tenacity
+aiohttp>=3.6.0
+tqdm
