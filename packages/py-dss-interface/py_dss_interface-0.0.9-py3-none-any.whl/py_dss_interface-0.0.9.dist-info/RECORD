@@ -1,0 +1,16 @@
+py_dss_interface/DSS.py,sha256=3WQFbmtuXwCRe-JhMOVL3NxOAcuUbcOI8RaVT1va4L8,277699
+py_dss_interface/__init__.py,sha256=FHmmtIQQOzetSGVSiNnyAM9bI04Ufl0rQ2X5XEZLtt0,46
+py_dss_interface/DDLL/x64/DSSProgress.exe,sha256=8GR-RUlVEXu1VZA6ik4FJO0V4dBPIV5A4zBWbkghuPI,6075392
+py_dss_interface/DDLL/x64/DSSView.exe,sha256=QvEbbegS9oPLJX3Sr_QcOWtlAy2azffhDaCVYcRY5WA,608768
+py_dss_interface/DDLL/x64/KLUSolve.dll,sha256=7jTMPcF1ji_QNPSpwXqM734zHeIRw5FoGXjTC7ahPbE,207360
+py_dss_interface/DDLL/x64/OpenDSS.exe,sha256=WTMe8TsoDezeKDSvLREZWaWuwewLuEyrfUMYe3Bh_YM,11446272
+py_dss_interface/DDLL/x64/OpenDSSDirect.dll,sha256=n0-oPcrzyFK8xoOYGmyv9riyhaT3RDcCmRMnq06RBss,11321856
+py_dss_interface/DDLL/x86/DSSView.exe,sha256=QvEbbegS9oPLJX3Sr_QcOWtlAy2azffhDaCVYcRY5WA,608768
+py_dss_interface/DDLL/x86/KLUSolve.dll,sha256=ha792Iud0C4w37FsXbwb3Wfu_Gdyc3ILhTRQg02k5QA,970752
+py_dss_interface/DDLL/x86/OpenDSSDirect.dll,sha256=pzZ_I5bCmbrHorre75v0ORuWnsw3agksUqDJ0W5wSUk,7831040
+py_dss_interface-0.0.9.dist-info/AUTHORS.rst,sha256=-mW4cBfMna0AcwsTOyPCwU4gHlD5k54_mH-sTqbQmc4,108
+py_dss_interface-0.0.9.dist-info/LICENSE,sha256=CsBEiRup2w3zFac-yP9c1RLsSgL0jzMcUF8eJVnbd6A,1108
+py_dss_interface-0.0.9.dist-info/METADATA,sha256=zojoCFGSdt-MIVVZfuuYKF46Ep50oxAC-Q62Uk_y04k,3815
+py_dss_interface-0.0.9.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+py_dss_interface-0.0.9.dist-info/top_level.txt,sha256=228XtXyi1EJzn6-XvdFNu4eYeFM06udfokJMwO-oRbw,17
+py_dss_interface-0.0.9.dist-info/RECORD,,
