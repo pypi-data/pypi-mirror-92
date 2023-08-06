@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+advlog/__init__.py
+advlog.egg-info/PKG-INFO
+advlog.egg-info/SOURCES.txt
+advlog.egg-info/dependency_links.txt
+advlog.egg-info/top_level.txt
