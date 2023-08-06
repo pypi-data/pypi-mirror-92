@@ -1,0 +1,4 @@
+[mlblocks]
+pipelines = greenguard:MLBLOCKS_PIPELINES
+primitives = greenguard:MLBLOCKS_PRIMITIVES
+
