@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+masked_convolution/__init__.py
+masked_convolution/masked_convolution.py
+masked_convolution.egg-info/PKG-INFO
+masked_convolution.egg-info/SOURCES.txt
+masked_convolution.egg-info/dependency_links.txt
+masked_convolution.egg-info/not-zip-safe
+masked_convolution.egg-info/top_level.txt
