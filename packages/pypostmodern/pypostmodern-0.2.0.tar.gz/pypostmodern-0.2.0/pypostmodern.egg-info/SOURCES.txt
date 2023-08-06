@@ -1,0 +1,6 @@
+README.md
+setup.py
+pypostmodern.egg-info/PKG-INFO
+pypostmodern.egg-info/SOURCES.txt
+pypostmodern.egg-info/dependency_links.txt
+pypostmodern.egg-info/top_level.txt
