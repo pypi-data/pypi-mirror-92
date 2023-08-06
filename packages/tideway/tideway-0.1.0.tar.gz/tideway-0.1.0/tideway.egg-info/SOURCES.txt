@@ -1,0 +1,8 @@
+README.md
+setup.py
+tideway/__init__.py
+tideway.egg-info/PKG-INFO
+tideway.egg-info/SOURCES.txt
+tideway.egg-info/dependency_links.txt
+tideway.egg-info/requires.txt
+tideway.egg-info/top_level.txt
