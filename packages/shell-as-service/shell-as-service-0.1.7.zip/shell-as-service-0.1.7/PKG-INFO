@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: shell-as-service
+Version: 0.1.7
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Provides-Extra: client
+Provides-Extra: server
