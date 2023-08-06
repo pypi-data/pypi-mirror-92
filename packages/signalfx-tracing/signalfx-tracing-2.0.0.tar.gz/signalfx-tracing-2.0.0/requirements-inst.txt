@@ -1,0 +1,10 @@
+signalfx-instrumentation-celery
+signalfx-instrumentation-dbapi
+signalfx-instrumentation-django
+signalfx-instrumentation-elasticsearch
+signalfx-instrumentation-flask
+signalfx-instrumentation-pymongo
+signalfx-instrumentation-redis
+signalfx-instrumentation-requests
+signalfx-instrumentation-tornado
+sfx-jaeger-client>=3.13.1b0.dev5
