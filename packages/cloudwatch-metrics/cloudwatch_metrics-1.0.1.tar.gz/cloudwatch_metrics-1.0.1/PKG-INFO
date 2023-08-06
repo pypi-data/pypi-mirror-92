@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloudwatch_metrics
+Version: 1.0.1
+Summary: The Cloudwatch Metrics package enables Python developers to record and emit information from within their applications to the Cloudwatch service.
+Home-page: https://github.com/random1st/cloudwatch-metrics
+Author: Amazon Web Services
+License: GPLv3
+Description: AWS Cloudwatch Metrics 
+        
+        [![Build Status](https://travis-ci.com/random1st/cloudwatch-metrics.svg?branch=master)](https://travis-ci.com/random1st/cloudwatch-metrics)
+        [![PyPI version](https://badge.fury.io/py/cloudwatch-metrics.svg)](https://badge.fury.io/py/cloudwatch-metrics)
+Keywords: aws cloudwatch metrics
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
