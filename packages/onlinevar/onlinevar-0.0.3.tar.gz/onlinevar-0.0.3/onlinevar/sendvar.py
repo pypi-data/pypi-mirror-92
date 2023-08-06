@@ -1,0 +1,19 @@
+import json
+import os
+import https.server
+import socketserver
+import socket
+class SendVar:
+  def __init__(self,directory,filename='vars.json')
+    self.dir = directory
+    self.filename = filename
+
+  def host(port):
+    handler = https.server.SimpleHTTPRequestHandler
+    os.chdir('json')
+    with socketserver.TCPServer(('',port), handler) as https: #serve on port
+      https.serve_forever()
+
+  def send(self,id,value):
+    with open(f'{directory}/{filename}','w') as f:
+      f.write(json.dumps({id:value}))
