@@ -1,0 +1,14 @@
+README.md
+setup.py
+webshotapi/ApiClient.py
+webshotapi/ApiException.py
+webshotapi/Project.py
+webshotapi/RESTResponse.py
+webshotapi/RequestClient.py
+webshotapi/__init__.py
+webshotapi/version.py
+webshotapi.egg-info/PKG-INFO
+webshotapi.egg-info/SOURCES.txt
+webshotapi.egg-info/dependency_links.txt
+webshotapi.egg-info/requires.txt
+webshotapi.egg-info/top_level.txt
