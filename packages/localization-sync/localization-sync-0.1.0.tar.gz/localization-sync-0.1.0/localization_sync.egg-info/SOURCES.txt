@@ -1,0 +1,9 @@
+README.md
+setup.py
+Sources/__init__.py
+Sources/data_sync.py
+localization_sync.egg-info/PKG-INFO
+localization_sync.egg-info/SOURCES.txt
+localization_sync.egg-info/dependency_links.txt
+localization_sync.egg-info/entry_points.txt
+localization_sync.egg-info/top_level.txt
