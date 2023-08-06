@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pinttrs
+Version: 0.1.0.dev0
+Summary: Pint meets attrs
+Home-page: https://github.com/leroyvn/pinttrs
+Author: Vincent Leroy
+Maintainer: Vincent Leroy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: pint
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: click ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: conda-lock ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: ruamel.yaml ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx (>=3.1) ; extra == 'docs'
+Requires-Dist: furo ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+
+# Pinttrs
+
+*Pint meets attrs*
+
+## Motivation
+
+The amazing [`attrs`](https://www.attrs.org) library is a game-changer when it 
+comes to writing classes. Its initialisation sequence notably allows for 
+automated conversion and verification of attribute values. This package is an 
+attempt at designing a system to apply units automatically and reliably to 
+attributes with [Pint](https://pint.readthedocs.io).
+
+## Features
+
+- [x] Automatic attachment of predefined units to unitless values
+- [x] Verification of units compatibility for unit-ed values
+- [ ] Dynamic fetching of units from a registry
+- [ ] Unit-enabled dict-based initialisation of objects
+
+## License
+
+Pinttrs is distributed under the terms of the 
+[MIT license](https://choosealicense.com/licenses/mit/).
+
+## About
+
+Pinttrs is written and maintained by [Vincent Leroy](https://github.com/leroyvn).
+
+The development is supported by [Rayference](https://www.rayference.eu).
+
+Pinttrs is a component of the 
+[Eradiate radiative transfer model](https://www.eradiate.eu).
+
+The Pinttrs logo is based on 
+[Agus Nugroho](https://www.iconfinder.com/nugrohoagus)'s glass icon and parts of 
+the ``attrs`` logo.
+
+
