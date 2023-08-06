@@ -1,0 +1,9 @@
+{% extends 'project-detail.html' %}
+{% block tabbarlayout %}
+{{ tabbar('Info') }}
+{% endblock %}
+{% block tabcontent %}
+<div class=col-wide>
+  <p>{{ project.description }}</p>
+</div>
+{% endblock %}

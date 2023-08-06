@@ -1,0 +1,16 @@
+{
+  "db": {
+    "id": "fa469717-6544-4fb6-b0ec-a0bd35e7bc06",
+    "name": "test",
+    "type": "DB"
+  },
+  "doc_count_estimates": [
+    25
+  ],
+  "id": "e2286cd4-bcc0-4c15-bde9-d538a9bbf88c",
+  "indexes": [],
+  "name": "users",
+  "primary_key": "username",
+  "type": "TABLE",
+  "write_hook": null
+}
