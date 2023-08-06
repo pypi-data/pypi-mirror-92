@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: top.py
+Version: 0.1.1
+Summary: A new, modern API wrapper for top.gg
+Home-page: https://github.com/dragdev-studios/top.py
+Author: EEKIM10
+Author-email: eek@clicksminuteper.net
+License: MIT
+Description: # Top.py
+        A modern python module wrapper for the official [top.gg API](https://top.gg/api/docs).
+        
+        **THIS MODULE IS NOT ENDORSED BY TOP.GG.** Their official package is [here](https://pypi.org/project/dblpy).
+        
+        
+        ## Installation
+        ### Dev
+        *without pip*
+        ```shell
+        git clone https://github.com/dragdev-studios/top.py
+        cd top.py
+        python3 setup.py build && python3 setup.py install
+        ```
+        *with pip*
+        ```shell
+        pip install git+https://github.com/dragdev-studios/top.py
+        ```
+        
+        ### Stable
+        pip
+        ```shell
+        pip install top.py
+        ```
+        
+        git
+        ```shell
+        # replace curl with wget, or whatever you use to make web requests
+        curl https://github.com/dragdev-studios/top.py/archive/<version>.tar.gz > top.py.tar.gz
+        tar -xf top.py.tar.gz
+        cd top.py
+        python3 setup.py install
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: webhook_server
