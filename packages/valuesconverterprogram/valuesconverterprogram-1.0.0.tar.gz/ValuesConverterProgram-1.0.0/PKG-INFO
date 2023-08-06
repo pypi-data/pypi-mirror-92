@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: valuesconverterprogram
+Version: 1.0.0
+Summary: This module is able to convert any values!!!
+Author: FlexonaFFt
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
