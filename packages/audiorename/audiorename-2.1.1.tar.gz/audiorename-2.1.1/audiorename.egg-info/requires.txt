@@ -1,0 +1,5 @@
+phrydy>=2.0.0
+tmep>=2.0.2
+ansicolor
+six
+musicbrainzngs
