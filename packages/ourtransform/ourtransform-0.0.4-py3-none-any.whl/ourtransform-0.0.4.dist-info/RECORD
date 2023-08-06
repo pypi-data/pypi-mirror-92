@@ -1,0 +1,14 @@
+ourtransform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ourtransform/framework.py,sha256=voT8-p8dJTub5mSVqhhrHw1emaRZieNrpRo6r02aajg,16910
+ourtransform/utils.py,sha256=l8XKLVr2vOujzVo2sY1U2ohmMa6VfTKoq3VZEJftwD8,602
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/fake_logger.py,sha256=TQ7Sb784ytHb99bCilQZtDboiCq1JI8h5SrGbmBJsvU,820
+tests/test_framework.py,sha256=YgxhpHFOZyjZSLGw12JsJ1gmovGzATTZJ-fTlkkniNg,18803
+tests/test_framework_async.py,sha256=meBrTTjf2h1YfQi3doZ3XtFvmlOMVyu0hVmGsVjGzII,2139
+tests/test_special_cases.py,sha256=p7v0lXQd4vWnJyakS_p1x0XYkw7clbBdWsUel206Eqw,8871
+tests/test_transform_subclass.py,sha256=_Bj1i1TvxvSAMoxxACvX0Hal8pW8wWaqNXVaIB4Ntb4,11294
+ourtransform-0.0.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ourtransform-0.0.4.dist-info/METADATA,sha256=XlDliBmoVF5JyX-jamWyVhViD30ZY_e2hq49SmjHikE,290
+ourtransform-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ourtransform-0.0.4.dist-info/top_level.txt,sha256=zI2R-ZXeMhkTFHPgjIzpZ6-N3vI1QKZqCiUDUb0cprQ,19
+ourtransform-0.0.4.dist-info/RECORD,,
