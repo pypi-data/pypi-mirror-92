@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: shell-as-service
+Version: 0.1.7
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: jsonpickle
+Provides-Extra: client
+Requires-Dist: bcrypt (<3.2) ; extra == 'client'
+Requires-Dist: cryptography (<3.3) ; extra == 'client'
+Requires-Dist: paramiko (~=2.7.2) ; extra == 'client'
+Requires-Dist: requests ; extra == 'client'
+Requires-Dist: cloudshell-shell-core ; extra == 'client'
+Requires-Dist: docker ; extra == 'client'
+Provides-Extra: server
+Requires-Dist: flask ; extra == 'server'
+Requires-Dist: xmltodict ; extra == 'server'
+
+UNKNOWN
+
+
