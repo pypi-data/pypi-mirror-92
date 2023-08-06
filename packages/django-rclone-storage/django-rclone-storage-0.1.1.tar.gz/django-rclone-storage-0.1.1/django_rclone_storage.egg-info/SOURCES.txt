@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_rclone_storage.egg-info/PKG-INFO
+django_rclone_storage.egg-info/SOURCES.txt
+django_rclone_storage.egg-info/dependency_links.txt
+django_rclone_storage.egg-info/not-zip-safe
+django_rclone_storage.egg-info/requires.txt
+django_rclone_storage.egg-info/top_level.txt
+rclonestorage/__init__.py
+rclonestorage/rclone.py
+rclonestorage/rclone_remote.py
+tests/__init__.py
+tests/settings.py
+tests/test_rclone.py
