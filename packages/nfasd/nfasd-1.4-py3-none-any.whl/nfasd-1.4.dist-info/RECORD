@@ -1,0 +1,7 @@
+nfasd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nfasd-1.4.data/scripts/nfasd,sha256=sMa7tKweQ7f9Ij1Lzto7pQrwdyzLmUmie3sMGTqlJm8,11903
+nfasd-1.4.data/scripts/register-python-argcomplete-menu,sha256=jNuIc6wSvEZ3uuJSRyzMepPsi0YcMeLU7h0US8Fdrtc,4609
+nfasd-1.4.dist-info/METADATA,sha256=jwFSXphSKEb1TB3SYcHpnf3gbHr0Fnty6SFVZAPKbVg,2553
+nfasd-1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nfasd-1.4.dist-info/top_level.txt,sha256=E0_c1nwF3bqtD60sGYm5wDErAMiR6iygFhbmBTp-6mQ,6
+nfasd-1.4.dist-info/RECORD,,
