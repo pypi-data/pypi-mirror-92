@@ -1,0 +1,11 @@
+prune .run
+prune docs
+prune requirements
+prune scripts
+prune src
+graft src/ftrotta
+exclude .*
+exclude Dockerfile
+global-exclude *.py[cod]
+global-exclude .DS_Store
+global-exclude __pycache__
