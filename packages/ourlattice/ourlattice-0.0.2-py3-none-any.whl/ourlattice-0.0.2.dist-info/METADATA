@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ourlattice
+Version: 0.0.2
+Summary: Pandas accessors for dealing with polytopes and faces
+Home-page: UNKNOWN
+Author: Rikard Olsson
+Author-email: rikard@ourstudio.se
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas (==1.2.0)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: pyarrow (==2.0.0)
+
+UNKNOWN
+
+
