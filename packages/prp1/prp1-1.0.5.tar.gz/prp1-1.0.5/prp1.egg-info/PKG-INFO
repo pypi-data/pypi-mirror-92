@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: prp1
+Version: 1.0.5
+Summary: This package is a part of Dustico research process regarding issue #1884
+Home-page: https://github.com/dustico/pypi-research-package-1
+Author: Dustico Research
+Author-email: research@dusti.co
+License: Apache v2
+Description: This package is a part of Dustico research process regarding issue - [Don't run setup.py egg_info on pip download --no-deps #1884](https://github.com/pypa/pip/issues/1884) 
+        
+        Disclaimer - once being downloaded - attempts to ping back our servers.
+        
+        For questions, please contact us via email at [research@dusti.co](mailto:research@dusti.co)
+Keywords: prp1 dustico research
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2
+Description-Content-Type: text/markdown
