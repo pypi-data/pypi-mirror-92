@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: atu
+Version: 0.0.1
+Summary: This is description.
+Home-page: https://github.com/atutongxue/atu
+Author: atutongxue
+Author-email: atutongxue@example.com
+License: UNKNOWN
+Description: # atu
+        atu module
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
