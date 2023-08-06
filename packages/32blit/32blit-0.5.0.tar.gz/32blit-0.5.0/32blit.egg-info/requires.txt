@@ -1,0 +1,8 @@
+bitstring
+construct>=2.9
+freetype-py
+pillow
+pyelftools
+pyserial
+pyyaml
+tqdm
