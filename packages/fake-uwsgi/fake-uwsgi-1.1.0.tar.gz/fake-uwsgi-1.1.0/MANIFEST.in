@@ -1,0 +1,8 @@
+global-exclude *.py[co]
+global-exclude *.sw[a-z]
+global-exclude __pycache__
+graft src/
+graft tests/
+include README.md
+include setup.cfg
+include tox.ini

@@ -1,0 +1,16 @@
+
+[dev]
+pre-commit
+
+[lint]
+black
+flake8
+pylint
+yamllint
+
+[test]
+coverage
+pytest
+pytest-cov
+pytest-xdist
+safety
