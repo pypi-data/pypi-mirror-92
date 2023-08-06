@@ -1,0 +1,14 @@
+mosek/__init__.py,sha256=nfdldA7hVud5Y5I2Jpe5nwjR3qIsmt2bmSR80mObV20,567407
+mosek/_msk.so,sha256=4ounIHqkWjf_2PPkDAZCtO8tawAyDOyutt2mQmyTDOg,241488
+mosek/libcilkrts.5.dylib,sha256=NgG7gfk5y-TzMCjrTaeRPiNZ5SLa7kBH1HNSkSJ7nKU,549680
+mosek/libmosek64.9.2.dylib,sha256=W855y5uCK3j308el6UzYTTfz2PogCeR5sgY6gPjWMr4,21743384
+mosek/mosekorigin.py,sha256=lOR92jrJQeu5f7Yydx2b8htTbMab2k-8rxLdf-728lU,77
+mosek/fusion/Utils.py,sha256=znsPQuECtje_MONgiNnZ9ddQSW3AtXEKcnan_Fb-sfM,350
+mosek/fusion/__init__.py,sha256=ozB4dsscxjZVHxTZZENKW9b0sCMqhBdPrXMQ2nM4Zqk,11598
+mosek/fusion/impl/__init__.py,sha256=Bp0h3vVx8BM-V4aUX56cSgFdv3kjWevQ4BQstzfEHEA,34
+mosek/fusion/impl/_implementation.py,sha256=hPS8_RQkAIphK0acIK_ZhzFtXpnVIYhJS-U3pQbzfzk,2259980
+mosek/fusion/impl/fragments.so,sha256=4LNpEhvfvIVvVIy63j9kac7fLXQe_ebswKfXZmfYxeI,1136924
+Mosek-9.2.36.dist-info/METADATA,sha256=CpT-6QSsie_jXnhKidyLBs9BQKYPMsTB6r0WQ5mmMtc,776
+Mosek-9.2.36.dist-info/WHEEL,sha256=TEulmP8aESrlpOaeT7sHBEdRaXX7UOayRn19--7H3_Y,110
+Mosek-9.2.36.dist-info/top_level.txt,sha256=H-jE29OEVOzLw9G-O6O5ruUbXFREbXsj350F1Xa4Pc8,6
+Mosek-9.2.36.dist-info/RECORD,,
