@@ -1,0 +1,12 @@
+README.md
+setup.py
+atcociftogtfs/__init__.py
+atcociftogtfs/__main__.py
+atcociftogtfs/atcocif.py
+atcociftogtfs/loader.py
+atcociftogtfs.egg-info/PKG-INFO
+atcociftogtfs.egg-info/SOURCES.txt
+atcociftogtfs.egg-info/dependency_links.txt
+atcociftogtfs.egg-info/entry_points.txt
+atcociftogtfs.egg-info/requires.txt
+atcociftogtfs.egg-info/top_level.txt
