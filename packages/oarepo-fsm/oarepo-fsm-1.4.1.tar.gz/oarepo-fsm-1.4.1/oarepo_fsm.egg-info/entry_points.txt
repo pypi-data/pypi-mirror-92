@@ -1,0 +1,9 @@
+[invenio_base.api_apps]
+oarepo_fsm = oarepo_fsm.ext:OARepoFSM
+
+[invenio_base.apps]
+oarepo_fsm = oarepo_fsm.ext:OARepoFSM
+
+[invenio_db.models]
+oarepo_fsm = examples.models
+
