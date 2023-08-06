@@ -1,0 +1,8 @@
+README.md
+setup.py
+whitesource_common/__init__.py
+whitesource_common/protocol.py
+whitesource_common.egg-info/PKG-INFO
+whitesource_common.egg-info/SOURCES.txt
+whitesource_common.egg-info/dependency_links.txt
+whitesource_common.egg-info/top_level.txt
