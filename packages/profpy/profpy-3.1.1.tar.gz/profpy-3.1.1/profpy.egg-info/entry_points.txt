@@ -1,0 +1,3 @@
+[console_scripts]
+profpy = profpy.__main__:main
+
