@@ -1,0 +1,9 @@
+splink_data_generation/estimate_splink.py,sha256=jZYQKeXQ2qSJyUgtHkIv5VYQ2fnTkZMANWBhQvc3BwI,717
+splink_data_generation/generate_data_exact.py,sha256=hKcvwhXuIPdiAqzriltMB2CokvU63VsOu0C9yIRIOjg,4473
+splink_data_generation/generate_data_random.py,sha256=ymXfKb4m5405mJMBaqY75wAI-FDhN7zXKni09q7sw38,4543
+splink_data_generation/log_likelihood.py,sha256=cihs_tZsX4N9xzpp5L0vAgxuidPIKtqfVjgA8RIDQbg,1125
+splink_data_generation/match_prob.py,sha256=4NxzmAO-WnZOtTNhZYB7kBIZQV2GRVnMEAoBVKfFm8s,1590
+splink_data_generation-0.2.0.dist-info/LICENSE,sha256=X8O76ojGN2OmUCKFh_pgf3PMN938Hkg6lF5KlEDtRC8,1080
+splink_data_generation-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+splink_data_generation-0.2.0.dist-info/METADATA,sha256=c-OHwyyE4REMCntIRyH9ejRwD216NywscTkAXThDUfg,587
+splink_data_generation-0.2.0.dist-info/RECORD,,
