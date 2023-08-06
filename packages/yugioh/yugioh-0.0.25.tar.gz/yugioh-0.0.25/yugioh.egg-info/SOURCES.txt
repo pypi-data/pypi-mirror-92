@@ -1,0 +1,8 @@
+README.md
+setup.py
+yugioh/__init__.py
+yugioh/yugioh.py
+yugioh.egg-info/PKG-INFO
+yugioh.egg-info/SOURCES.txt
+yugioh.egg-info/dependency_links.txt
+yugioh.egg-info/top_level.txt
