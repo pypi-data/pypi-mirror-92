@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rdstation_client/__init__.py
+rdstation_client/errors.py
+rdstation_client/utils.py
+rdstation_client.egg-info/PKG-INFO
+rdstation_client.egg-info/SOURCES.txt
+rdstation_client.egg-info/dependency_links.txt
+rdstation_client.egg-info/top_level.txt
