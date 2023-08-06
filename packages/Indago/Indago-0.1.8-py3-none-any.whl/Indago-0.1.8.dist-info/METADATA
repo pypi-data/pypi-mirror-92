@@ -1,0 +1,240 @@
+Metadata-Version: 2.1
+Name: Indago
+Version: 0.1.8
+Summary: Numerical optimization framework
+Home-page: http://sim.riteh.hr/
+Author: sim.riteh.hr
+Author-email: stefan.ivic@riteh.hr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Indago
+
+Indago is a Python 3 module for numerical optimization.
+
+## Installation
+
+For easiest install use
+```
+pip3 install indago
+```
+In order to obtain Indago code, clone Gitlab repository by executing following command in the directory where you want to loacte Indago root directory:
+```
+git clone https://gitlab.com/sivic/indago.git
+```
+For building and installing Indago package into your Python environment
+```
+python setup.py build
+python setup.py install
+```
+Or for continous testing/developing:
+```
+python setup.py clean build install
+```
+
+## Dependencies
+
+A following packages should be installed using `aptitude`:
+* `python3`
+* `python3-pip`
+* `python3-tk`
+
+```
+sudo apt install python3 python3-pip python3-tk
+```
+After packages installation using above command, additional python packages should be installed using `pip` from `requirements.txt`
+```
+pip install -r requirements.txt
+```
+
+## Algorithms
+
+Indago is a Python module for numerical optimization of real fitness function over a real parameter domain. It was developed at the Department for Fluid Mechanics and Computational Engineering of the University of Rijeka, Faculty of Engineering, by Stefan Ivić, Siniša Družeta, and others. 
+
+Indago is developed for in-house research and teaching purposes and is not officially supported in any way, it is not properly documented and probably needs more testing. But hey, we use it, it works for us, and it's free! Anyway, proceed with caution, as you would with any other beta-level software.
+
+As of now, Indago consists of three stochastic swarm-based optimizers, namely Particle Swarm Optimization (PSO), Fireworks Algorithm (FWA) and Squirrel Search Algorithm (SSA). They are all available through the same API, which was designed to be as accessible as possible. Indago relies heavily on NumPy, so the inputs and outputs of the optimizers are mostly NumPy arrays. Besides NumPy and a couple of other stuff here and there (such as a few SciPy functions), Indago is pure Python. Indago optimizers also include some of our original research improvements, so feel free to try those as well. And don't forget to cite. :)
+
+### Particle Swarm Optimization
+
+Using Indago is easy. Let us use PSO as an example. First, we need to import NumPy and Indago PSO, and then initialize an optimizer object:
+```python
+import numpy as np
+from indago.pso import PSO
+pso = PSO()
+```
+Then, we must provide a goal function which needs to be minimized, say:
+```python
+def goalfun(x):	# must take 1d np.array
+    return np.sum(x**2) # must return scalar number
+pso.evaluation_function = goalfun
+```
+Now we can define optimizer inputs:
+```python
+pso.method = 'Vanilla' # we will use Standard PSO, the other available option is 'TVAC' [1]
+pso.dimensions = 20 # number of variables in the design vector (x)
+pso.swarm_size = 15 # number of PSO particles
+pso.iterations = int(1000 * pso.dimensions / pso.swarm_size) # any integer will do, but 10³D function calls is possibly a good choice
+pso.target_fitness = 10**-3 # optional fitness threshold; when reached, optimization is stopped (if it didn't already stop due to exhausted pso.iterations)
+pso.lb = np.ones(pso.dimensions) * -1 # 1d np.array of lower bound values
+pso.ub = np.ones(pso.dimensions) * 1 # 1d np.array of upper bound values
+```
+Also, we must provide optimization method parameters:
+```python
+pso.params['cognitive_rate'] = 1.0 # PSO parameter also known as c1 (ranges from 0.0 to 2.0)
+pso.params['social_rate'] = 1.0 # PSO parameter also known as c2 (ranges from 0.0 to 2.0)
+pso.params['inertia'] = 0.72 # PSO parameter known as inertia weight w (ranges from 0.5 to 1.0), the other available options are 'LDIW' (w linearly decreasing from 1.0 to 0.4) and 'anakatabatic'
+```
+If we want to use our novel adaptive inertia weight technique [2], we invoke it by:
+```python
+pso.params['inertia'] = 'anakatabatic'
+```
+then we need to also specify the anakatabatic model:
+```python
+pso.params['akb_model'] = 'Languid' # [3,4], other options are 'FlyingStork', 'MessyTie', 'RightwardPeaks', 'OrigamiSnake' [2]
+```
+
+Finally, we can start the optimization and get the results:
+```python
+result = pso.run()
+min_f = result.f # fitness at minimum, scalar number
+x_min = result.X # design vector at minimum, 1d np.array
+```
+And that's it!
+
+
+### Fireworks Algorithm
+
+If we want to use FWA [5], we just have to import it instead of PSO:
+```python
+from indago.fwa import FWA
+fwa = FWA()
+```
+Now we can proceed in the same manner as with PSO. For FWA, the only method available is basic FWA:
+```python
+fwa.method = 'Vanilla'
+```
+In FWA, we do not use the `swarm_size` parameter and we have to set the following method parameters:
+```python
+fwa.params['n'] = 20
+fwa.params['m1'] = 10
+fwa.params['m2'] = 10
+```
+
+### Squirrel Search Algorithm
+
+Lastly, if we want to try our luck with SSA [6], we initialize it like this:
+```python
+from indago.ssa import SSA
+ssa = SSA()
+```
+In SSA, the only available method is `'Vanilla'`, and we need to provide the `swarm_size` parameter. Also, there is only one mandatory method parameter:
+```python
+ssa.params['acorn_tree_attraction'] = 0.5 # ranges from 0.0 to 1.0
+```
+Optionally, we can define a few other SSA parameters:
+```python
+ssa.params['predator_presence_probability'] = 0.1
+ssa.params['gliding_constant'] = 1.9 
+ssa.params['gliding_distance_limits'] = [0.5, 1.11] 
+```
+
+### Multiple objectives and constraints handling
+
+The optimization algorithms implemented in Indago are able to consider nonlinear constraints defined as `c(x) <= 0`. The constraints handling is enabled by the multi-level comparison which is able to contrast a multi-constraint optimization candidates.
+A minimization multi-objective optimization problems can also be treated in Indago by setting weighted sum fitness and reducing the problem to single-objective. 
+
+The following example prepares PSO optimizer for an evaluation which returns two objectives and two constraints:
+```python
+pso.objectives = 2
+pso.objective_labels = ['Route length', 'Passing time']
+pso.objective_weights = [0.4, 0.6]
+pso.constraints = 2
+pso.constraint_labels = ['Obstacles intersection length', 'Curvature limit']
+```
+The evaluation function needs to be modified accordingly:
+```python
+def evaluate(x):
+        # Calculate minimization objectives o1 and o2
+        # Calculate constraints c1 and c2
+        # Constraints are defined as c1 <= 0 and c2 <= 0
+        return o1, o2, c1, c2
+```
+
+### Parallel evaluation
+
+Indago is able to evaluate a group of candidates (e.g. swarm in PSO) in parallel mode. This is especially useful for expensive (in terms of computational time) engineering problems which evaluation relies on simulations such as CFD or FEM.
+
+Indago utilizes the `multiprocessing` module for parallelization and it can be enabled by specifying the `number_of_processes` parameter available for each optimizer:
+```python
+pso = PSO()
+pso.number_of_processes = 4 # use 'maximum' for employing all available processors/cores
+```
+
+Note that it scales well only on relatively slow goal functions. Also keep in mind that Python multiprocessing sometimes does not work when initiated from imported code, so you need to have the optimization run call wrapped in `if __name__ == '__main__':`.
+
+When dealing with simulations, one mostly needs to specify input files and a directory in which the simulation runs. If execution is parallel, these file/directory names need to be unique to avoid possible conflicts in simulation files. In order to facilitate this, Indago offers the option of passing a unique string to evaluation function which enables execution of simulations without possibility of conflicts.
+
+To enable passing of a unique string to evaluation function, set `forward_unique_str` to `True`:
+```python
+pso.forward_unique_str = True
+```
+Additionaly, the evaluation function needs another argument trough which a unique string is received:
+```python
+def evaluation(X, unique_str=None):
+    # Prepare a simulation case in a new file and/or a new directory whose names are based on unique_str.
+    # Run simulation and extract results
+    return objective
+```
+
+### Results and convergence plot
+
+Some intermediate optimization results are stored in `optimizer.results` which can be explored/analyzed after the optimization if finished.
+
+There is also an utility function available for visualization of optimization convergence which plots the convergence for all defined objectives and constraints:
+```python
+pso.results.plot_convergence()
+```
+
+### CEC 2014
+
+Among other stuff, Indago also includes the CEC 2014 test suite [7], comprising 30 test functions for real optimization methods. You can use it by importing it like this:
+```python
+from indago.benchmarks import CEC2014
+```
+Then, you have to initialize it for a specific dimensionality of the test functions:
+```python
+test = CEC2014(20) # initialization od 20-dimension functions, you can also use 10, 50 and 100
+```
+Now you can use specific test functions (`test.F1()`, `test.F2()`, ...up to `test.F30()`), they all take 1d `np.array` of size 10/20/50/100 and return a scalar number. Alternatively, you can iterate through the built-in list of them all:
+```python
+test_results = []
+for f in test.functions:
+    optimizer.evaluation_function = f
+    test_results.append(optimizer.run().f)
+```
+
+Have fun!
+
+## References:
+
+1. Ratnaweera, A., Halgamuge, S. K., & Watson, H. C. (2004). Self-organizing hierarchical particle swarm optimizer with time-varying acceleration coefficients. IEEE Transactions on evolutionary computation, 8(3), 240-255.
+
+2. Družeta, S., & Ivić, S. (2020). Anakatabatic Inertia: Particle-wise Adaptive Inertia for PSO, arXiv:2008.00979 [cs.NE].
+
+3. Družeta, S., & Ivić, S. (2017). Examination of benefits of personal fitness improvement dependent inertia for Particle Swarm Optimization. Soft Computing, 21(12), 3387-3400.
+
+4. Družeta, S., Ivić, S., Grbčić, L., & Lučin, I. (2019). Introducing languid particle dynamics to a selection of PSO variants. Egyptian Informatics Journal, 21(2), 119-129.
+
+5. Tan, Y., & Zhu, Y. (2010, June). Fireworks algorithm for optimization. In International conference in swarm intelligence (pp. 355-364). Springer, Berlin, Heidelberg.
+
+6. Jain, M., Singh, V., & Rani, A. (2019). A novel nature-inspired algorithm for optimization: Squirrel search algorithm. Swarm and evolutionary computation, 44, 148-175.
+
+7. Liang, J. J., Qu, B. Y., & Suganthan, P. N. (2013). Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization. Computational Intelligence Laboratory, Zhengzhou University, Zhengzhou China and Technical Report, Nanyang Technological University, Singapore, 635.
+
+
