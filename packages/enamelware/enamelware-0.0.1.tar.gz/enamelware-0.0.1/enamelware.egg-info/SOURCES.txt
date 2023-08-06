@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+enamel/__init__.py
+enamel/enamel.py
+enamelware.egg-info/PKG-INFO
+enamelware.egg-info/SOURCES.txt
+enamelware.egg-info/dependency_links.txt
+enamelware.egg-info/top_level.txt

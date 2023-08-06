@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: enamelware
+Version: 0.0.1
+Summary: Enamelware - a simple application framework
+Home-page: https://github.com/sinoia
+Author: John Allen
+Author-email: allen.john.e@gmail.com
+License: UNKNOWN
+Description: # Enamelware - an application framework
+        
+        This is an application framework designed to be used to build small applications quickly and simply.
+        
+        (https://github.com/sinoia)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
