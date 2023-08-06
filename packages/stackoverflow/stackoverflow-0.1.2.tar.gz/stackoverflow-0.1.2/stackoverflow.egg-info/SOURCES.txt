@@ -1,0 +1,8 @@
+README.rst
+setup.py
+stackoverflow/__init__.py
+stackoverflow.egg-info/PKG-INFO
+stackoverflow.egg-info/SOURCES.txt
+stackoverflow.egg-info/dependency_links.txt
+stackoverflow.egg-info/requires.txt
+stackoverflow.egg-info/top_level.txt
