@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: weasel-pipeline
+Version: 1.1.2
+Summary: A minimalist pipelining framework for the WEASEL project.
+License: MIT
+Author: Fabian Marquardt
+Author-email: marquard@cs.uni-bonn.de
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aio-pika (>=6.7.1,<7.0.0)
+Requires-Dist: configargparse (>=1.2.3,<2.0.0)
+Requires-Dist: uvloop (>=0.14.0,<0.15.0)
