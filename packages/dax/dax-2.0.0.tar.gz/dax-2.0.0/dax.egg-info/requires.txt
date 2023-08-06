@@ -1,0 +1,14 @@
+pyxnat>=1.1.0.2
+pyyaml
+
+[bids]
+nibabel
+fpdf2
+
+[docs]
+Sphinx>=1.4
+
+[manager]
+pycap
+nibabel
+fpdf2
