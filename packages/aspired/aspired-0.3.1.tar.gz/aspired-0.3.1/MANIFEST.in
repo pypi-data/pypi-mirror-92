@@ -1,0 +1,2 @@
+recursive-include aspired/standards *
+recursive-include aspired/extinction *
