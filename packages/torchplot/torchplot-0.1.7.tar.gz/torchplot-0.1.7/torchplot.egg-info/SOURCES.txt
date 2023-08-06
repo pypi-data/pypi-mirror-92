@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+requirements_tests.txt
+setup.cfg
+setup.py
+torchplot/__init__.py
+torchplot/core.py
+torchplot.egg-info/PKG-INFO
+torchplot.egg-info/SOURCES.txt
+torchplot.egg-info/dependency_links.txt
+torchplot.egg-info/requires.txt
+torchplot.egg-info/top_level.txt
