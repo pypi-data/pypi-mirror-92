@@ -1,0 +1,7 @@
+README.md
+setup.py
+timsort.c
+customtimsort.egg-info/PKG-INFO
+customtimsort.egg-info/SOURCES.txt
+customtimsort.egg-info/dependency_links.txt
+customtimsort.egg-info/top_level.txt
