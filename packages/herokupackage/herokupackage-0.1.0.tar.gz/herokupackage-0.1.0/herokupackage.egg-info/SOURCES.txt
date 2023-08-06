@@ -1,0 +1,9 @@
+README.txt
+setup.py
+herokufordash/__init__.py
+herokufordash/modeling.py
+herokupackage.egg-info/PKG-INFO
+herokupackage.egg-info/SOURCES.txt
+herokupackage.egg-info/dependency_links.txt
+herokupackage.egg-info/requires.txt
+herokupackage.egg-info/top_level.txt
