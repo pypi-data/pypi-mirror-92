@@ -1,0 +1,12 @@
+odim/__init__.py,sha256=orLPJC1stwlxZQKvN41t58LbW01ta7ZglUu_w7fbOwA,4006
+odim/dependencies.py,sha256=VUuhyXSQtTrEKG18NdQxUGyR71fZk00usTmPJluEi7o,1448
+odim/helper.py,sha256=2ea-IOtCZsQ3riIpeXLV9seHM9elBGzN6I2WhU8bx70,2794
+odim/model_factory.py,sha256=eRq3mlDCINJODvKoYaQJi0uiAXnUV9DXSQDuescrbe4,3234
+odim/mongo.py,sha256=QxqeBxjvcZHk7pWST_l5pdrI2V7nxYw5zMmL7U7oNzw,5499
+odim/mysql.py,sha256=4J3_pTUU09oXCGObQ5uwSEw-obpwt9aPDqefdChe9Bs,6603
+odim/router.py,sha256=hLWnKn8N8RWeAVGjdGfomJHLP1O3jp1WwFP8ZdeXnNY,8562
+odim-0.1.1.dist-info/LICENSE,sha256=Xn-EW9s-uIIFXq6467Ix4MKboPpp_2s6rws4FqNTkLk,1074
+odim-0.1.1.dist-info/METADATA,sha256=BXDH0uzEA_Y5NWC0nzTYQPaCVgx455vK6X97-I7P0XY,1583
+odim-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odim-0.1.1.dist-info/top_level.txt,sha256=nc1uqdZoqDwtOuJ9MKLO7YvVXUJfNoBFk1eVqFdtz_o,5
+odim-0.1.1.dist-info/RECORD,,
