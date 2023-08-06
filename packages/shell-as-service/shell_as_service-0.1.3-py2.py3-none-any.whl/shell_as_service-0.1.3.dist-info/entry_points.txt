@@ -1,0 +1,3 @@
+[console_scripts]
+shell-as-service = shell_as_service.server:main
+
