@@ -1,0 +1,3 @@
+[console_scripts]
+neovim3.sh = neovim_sh.__main__:main
+
