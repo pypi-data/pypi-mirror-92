@@ -1,0 +1,8 @@
+stream_sea_client/__init__.py,sha256=gflIvA5EwXeNpw0ZXTSuaEHypHWFh5MsyQvdi8jfYXI,56
+stream_sea_client/api.py,sha256=AUh9H0-33z4BhmN2v8Tf1uUTKcb3zJwwabDEmDS3Dg8,2908
+stream_sea_client/stream_sea_connection.py,sha256=eu8jNlG5Ig_o7GRqfxswP8EPiVrCUKTqsbbTIupaSoE,5507
+stream_sea_client/stream_sea_schema_definition.py,sha256=9zsX06bVd6D1gSvm0sOiv4Jpyon5KuC9nCpGcg7_4A0,1965
+stream_sea_client-0.1.0.dist-info/METADATA,sha256=-rXTfdawld4WwPA5m9e2KkpCyVRk2Ea9aLUB3_pIhKI,506
+stream_sea_client-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stream_sea_client-0.1.0.dist-info/top_level.txt,sha256=IUdiQqAVEBdRiazeIrvq2_JZKaOImNPSBWUPccPUeew,18
+stream_sea_client-0.1.0.dist-info/RECORD,,
