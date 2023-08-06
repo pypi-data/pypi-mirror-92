@@ -1,0 +1,9 @@
+README.md
+setup.py
+navdeep/CODE1.py
+navdeep/CODE2.py
+navdeep/__init__.py
+navdeep.egg-info/PKG-INFO
+navdeep.egg-info/SOURCES.txt
+navdeep.egg-info/dependency_links.txt
+navdeep.egg-info/top_level.txt
