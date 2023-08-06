@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: WinMicro
+Version: 0.1
+Summary: Python module to record microphone
+Home-page: UNKNOWN
+Author: Lightman
+Author-email: L1ghtM3n@protonmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.8
