@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: mpbn
+Version: 1.4
+Summary: Simple implementation of Most Permissive Boolean networks
+Home-page: https://github.com/pauleve/mpbn
+Author: Loïc Paulevé
+Author-email: loic.pauleve@ens-cachan.org
+License: CeCILL
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Description-Content-Type: text/markdown
+Requires-Dist: boolean.py
+Requires-Dist: colomoto-jupyter (>=0.8.0)
+
+
+The `mpbn` Python module offers a simple implementation of reachability and attractor analysis in *Most Permissive Boolean Networks* ([doi:10.1038/s41467-020-18112-5](https://doi.org/10.1038/s41467-020-18112-5)).
+
+It is built on the `minibn` module from [colomoto-jupyter](https://github.com/colomoto/colomoto-jupyter) which allows importation of Boolean networks in many formats. See http://colomoto.org/notebook.
+
+## Installation
+
+### CoLoMoTo Notebook environment
+
+`mpbn` is distributed in the [CoLoMoTo docker](http://colomoto.org/notebook).
+
+### Using pip
+
+#### Extra requirements
+* [clingo](https://github.com/potassco/clingo) and its Python module
+
+```
+pip install mpbn
+```
+
+### Using conda
+```
+conda install -c colomoto -c potassco mpbn
+```
+
+## Documentation
+
+Documentation is available at https://mpbn.readthedocs.io.
+
+Example notebooks:
+* https://nbviewer.jupyter.org/github/pauleve/mpbn/tree/master/examples/
+* http://doi.org/10.5281/zenodo.3719097
+
+
+[1]: https://arxiv.org/abs/1808.10240
+
+
