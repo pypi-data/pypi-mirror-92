@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: mailosaur
+Version: 7.1.0
+Summary: The Mailosaur Python library lets you integrate email and SMS testing into your continuous integration process.
+Home-page: https://github.com/mailosaur/mailosaur-python
+Author: Mailosaur Ltd
+Author-email: code@mailosaur.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/mailosaur/mailosaur-python/issues
+Project-URL: Documentation, https://mailosaur.com/docs/email-testing/python/
+Project-URL: Source Code, https://github.com/mailosaur/mailosaur-python
+Description: # Mailosaur Python Client Library
+        
+        [Mailosaur](https://mailosaur.com) lets you automate email and SMS tests, like account verification and password resets, and integrate these into your CI/CD pipeline.
+        
+        [![](https://github.com/mailosaur/mailosaur-python/workflows/CI/badge.svg)](https://github.com/mailosaur/mailosaur-python/actions)
+        
+        ## Installation
+        
+        ```
+        pip install --upgrade mailosaur
+        ```
+        
+        ## Documentation
+        
+        Please see the [Python client reference](https://mailosaur.com/docs/email-testing/python/client-reference/) for the most up-to-date documentation.
+        
+        ## Usage
+        
+        example.py
+        
+        ```python
+        from mailosaur import MailosaurClient
+        mailosaur = MailosaurClient("YOUR_API_KEY")
+        
+        result = mailosaur.servers.list()
+        
+        print("You have a server called: " + result.items[0]["name"])
+        ```
+        
+        ## Development
+        
+        You must have the following prerequisites installed:
+        
+        * [pip](https://pip.pypa.io/en/stable/installing/)
+        * [nose](https://nose.readthedocs.io/en/latest/)
+        
+        Install all development dependencies:
+        
+        ```sh
+        pip install -r requirements.txt
+        ```
+        
+        The test suite requires the following environment variables to be set:
+        
+        ```sh
+        export MAILOSAUR_BASE_URL=https://mailosaur.com/
+        export MAILOSAUR_API_KEY=your_api_key
+        export MAILOSAUR_SERVER=server_id
+        ```
+        
+        Run all tests:
+        
+        ```sh
+        nosetests
+        ```
+        
+        ## Contacting us
+        
+        You can get us at [support@mailosaur.com](mailto:support@mailosaur.com)
+        
+Keywords: email sms testing automation selenium robot framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: requests
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
