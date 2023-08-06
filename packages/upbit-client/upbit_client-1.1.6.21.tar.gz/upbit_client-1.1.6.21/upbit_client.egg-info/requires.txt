@@ -1,0 +1,5 @@
+bravado>=11.0.2
+PyJWT>=2.0
+
+[fido]
+fido>=4.2.1
