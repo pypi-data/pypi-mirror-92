@@ -1,0 +1,33 @@
+[tool.poetry]
+name        = "sqss"
+version     = "0.1.3"
+description = "pyqt's simple qss."
+authors     = ["yijie <yijie4188@gmail.com>"]
+license     = "MIT"
+homepage    = "https://github.com/NWYLZW/sqss"
+repository  = "https://github.com/NWYLZW/sqss"
+keywords    = [
+  "compiler", "qss", "qt"
+]
+packages = [
+    { include = "sqss" },
+    { include = "sqss/**/*.py" },
+]
+
+  [[tool.poetry.source]]
+  name    = "aliyun"
+  url     = "https://mirrors.aliyun.com/pypi/simple"
+  default = true
+
+  [tool.poetry.scripts]
+  main = "sqss.util.cli.command:main"
+
+  [tool.poetry.dependencies]
+  python = "^3.9"
+  toml = "^0.10.2"
+
+  [tool.poetry.dev-dependencies]
+
+[build-system]
+requires      = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

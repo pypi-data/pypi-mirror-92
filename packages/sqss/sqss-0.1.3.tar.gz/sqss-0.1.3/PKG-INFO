@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sqss
+Version: 0.1.3
+Summary: pyqt's simple qss.
+Home-page: https://github.com/NWYLZW/sqss
+License: MIT
+Keywords: compiler,qss,qt
+Author: yijie
+Author-email: yijie4188@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Project-URL: Repository, https://github.com/NWYLZW/sqss
