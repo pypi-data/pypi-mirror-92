@@ -1,0 +1,3 @@
+[console_scripts]
+sapientacli=sapientacli:main
+
