@@ -1,0 +1,9 @@
+README.rst
+setup.py
+temppathlib/__init__.py
+temppathlib/py.typed
+temppathlib.egg-info/PKG-INFO
+temppathlib.egg-info/SOURCES.txt
+temppathlib.egg-info/dependency_links.txt
+temppathlib.egg-info/requires.txt
+temppathlib.egg-info/top_level.txt
