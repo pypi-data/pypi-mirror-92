@@ -1,0 +1,9 @@
+README.md
+setup.py
+multipass/__init__.py
+multipass/test_multipass.py
+shopify_multipass_login.egg-info/PKG-INFO
+shopify_multipass_login.egg-info/SOURCES.txt
+shopify_multipass_login.egg-info/dependency_links.txt
+shopify_multipass_login.egg-info/requires.txt
+shopify_multipass_login.egg-info/top_level.txt
