@@ -1,0 +1,3 @@
+[genice2_format]
+twist = genice2_twist.formats.twist
+

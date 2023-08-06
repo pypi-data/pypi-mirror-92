@@ -1,0 +1,4 @@
+genice2
+genice2-svg>=0.7
+twist-op>=0.2
+sklearn
