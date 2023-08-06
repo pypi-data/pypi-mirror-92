@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: saunadge
+Version: 0.2.1
+Summary: saunadge lets you to generate sakatsu(サ活/サウナ活動) badge. saunadge server aggregates from the data over
+Home-page: https://github.com/po3rin/saunadge
+License: Apache-2.0
+Author: po3rin
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Flask (>=1.1.2,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: gunicorn (>=20.0.4,<21.0.0)
+Requires-Dist: lxml (>=4.6.2,<5.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, https://github.com/po3rin/saunadge
