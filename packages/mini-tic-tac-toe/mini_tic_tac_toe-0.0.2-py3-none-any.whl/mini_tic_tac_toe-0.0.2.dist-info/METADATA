@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mini-tic-tac-toe
+Version: 0.0.2
+Summary: Library to play Tic Tac Toe
+Home-page: https://github.com/MesterLum/tic-tac-toe
+Author: Eduardo Cuauhtémoc Paez Palafox
+Author-email: mesterlum@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+---
+__ Mini Tic Tac Toe __
+
+A mini game written in Python
+
+___
+
+How to use:
+
+```python
+from game import TicTacToe
+
+game = TicTacToe()
+
+game.play()
+
+```
+
+
