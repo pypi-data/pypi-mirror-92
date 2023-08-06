@@ -1,0 +1,13 @@
+opentracing>=2.0
+requests>=2.0
+
+[integration_tests]
+mock
+pytest
+packaging
+docker
+
+[unit_tests]
+mock
+pytest
+packaging
