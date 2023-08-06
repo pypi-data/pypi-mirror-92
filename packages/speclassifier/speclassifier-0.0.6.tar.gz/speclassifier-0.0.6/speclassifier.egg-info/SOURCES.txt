@@ -1,0 +1,8 @@
+README.md
+setup.py
+speclassifier/__init__.py
+speclassifier/classifygame.py
+speclassifier.egg-info/PKG-INFO
+speclassifier.egg-info/SOURCES.txt
+speclassifier.egg-info/dependency_links.txt
+speclassifier.egg-info/top_level.txt
