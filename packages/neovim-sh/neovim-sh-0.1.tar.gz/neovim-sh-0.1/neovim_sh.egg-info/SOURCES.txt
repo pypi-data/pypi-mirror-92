@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+neovim_sh/__init__.py
+neovim_sh/__main__.py
+neovim_sh.egg-info/PKG-INFO
+neovim_sh.egg-info/SOURCES.txt
+neovim_sh.egg-info/dependency_links.txt
+neovim_sh.egg-info/entry_points.txt
+neovim_sh.egg-info/requires.txt
+neovim_sh.egg-info/top_level.txt
