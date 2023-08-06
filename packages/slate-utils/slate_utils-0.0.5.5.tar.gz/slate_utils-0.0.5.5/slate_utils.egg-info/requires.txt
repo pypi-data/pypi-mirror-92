@@ -1,0 +1,6 @@
+beautifulsoup4
+loguru
+lxml
+requests
+selenium
+umdriver
