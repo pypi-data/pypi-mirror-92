@@ -1,0 +1,16 @@
+ensure
+matplotlib
+pint
+
+[dev]
+pycodestyle
+pylint
+
+[doc]
+ipython
+nbsphinx
+sphinx>=3.0.4
+
+[release]
+setuptools
+twine
