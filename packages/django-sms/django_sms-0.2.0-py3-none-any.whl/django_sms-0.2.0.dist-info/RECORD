@@ -1,0 +1,15 @@
+sms/__init__.py,sha256=EYH7Kte8fyHJEyKdlsnDvj1ELZ1ottpt-GkyoXmccR4,1558
+sms/message.py,sha256=yNp-kZeowg1k4TFzI_f8wjodnMoQSJ_SW38mC32pank,1684
+sms/utils.py,sha256=ACOTq5U5uD_rUNoTtWxIJ3j7OTrc0Ez9YjlP5TT4dFA,1028
+sms/backends/__init__.py,sha256=_9LNKqknlOwv0nuv0I6vaOlfXejTDMbD2OOR3DDl7UU,39
+sms/backends/base.py,sha256=tWGeNTVmf4jdiaKWIUqxU818HnVCPp2Yu5np6w0zGOo,1937
+sms/backends/console.py,sha256=9e9r85MvPOB7gBQi3c03LLBMdJi41uAoWGfp3q2Pu_k,1567
+sms/backends/dummy.py,sha256=d6N1NG21SiXQakXvUkIFQcmme2T87wytc9jdm_kGvj8,279
+sms/backends/filebased.py,sha256=hV7bzwdJt5kwYBut5ky60s-tA0X4ve_43SHCtz-rBjU,2787
+sms/backends/locmem.py,sha256=bmzLioCHWavcFNMcNu5ynWqaAVgL3ARq321SSwcbE0E,908
+django_sms-0.2.0.dist-info/LICENSE,sha256=GWpsdfZOouM-UjjfJcFQEVmn8EpkxqFtYXhv7j8ya0I,1526
+django_sms-0.2.0.dist-info/LICENSE.django,sha256=rryL5GZe8mbhzaYBx2kNAWNkP711IW-4Nv__N5MfHIM,1890
+django_sms-0.2.0.dist-info/METADATA,sha256=TmcDqNXf3msmdE7EEYqMPJ5nwyJ1N1TLNCwNNXWS1ew,11320
+django_sms-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_sms-0.2.0.dist-info/top_level.txt,sha256=bGy2pOu7Jcsom9RUzqt2-gIloVUTFNcVleUeYh8_IwA,4
+django_sms-0.2.0.dist-info/RECORD,,
