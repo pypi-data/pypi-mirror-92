@@ -1,0 +1,17 @@
+Django>=2.0
+djangorestframework>=3.10
+huscy.projects
+
+[development]
+psycopg2-binary
+
+[docs]
+django-extensions
+pydot
+
+[release]
+twine
+
+[testing]
+tox
+watchdog==0.9
