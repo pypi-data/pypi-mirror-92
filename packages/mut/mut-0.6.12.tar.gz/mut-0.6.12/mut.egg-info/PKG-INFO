@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: mut
+Version: 0.6.12
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Andrew Aldridge
+Author-email: i80and@foxquill.com
+License: Apache
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Documentation
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.5
