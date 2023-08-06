@@ -1,0 +1,11 @@
+sigpropy/__init__.py,sha256=pSwHFYlPH1t1u20dgeCokgCojLvhIGpQCosPvmX4PYI,1100
+sigpropy/fouriertransform.py,sha256=_Yd20c1_34xVaDJeLMC2VXIGsg7Tko5cRdycXHi4Gng,14952
+sigpropy/fouriertransformsuite.py,sha256=t__gUP6CX9T71-9Mn1tvLFAjfeQtFFTQzu223RW3k44,6280
+sigpropy/meta.py,sha256=izK3aTKVzuy58yzGQzL73hXr7Ra-F04p8nkmSIU6OL0,890
+sigpropy/timeseries.py,sha256=ybA43wMGOA-O6KZKVj0yz5i2lSb8Ua57nTgwJ5UqZX4,13500
+sigpropy/windowedtimeseries.py,sha256=Dpia0EeiFXe54oFMbARm53qFDHsxiGKzf2xm-7u-kd0,9737
+sigpropy-0.3.0.dist-info/LICENSE.txt,sha256=7BylM7FK9eSKDDh4T689upJmrj4PkMLndBBWMMOS32c,33247
+sigpropy-0.3.0.dist-info/METADATA,sha256=BTHe-wGC_Lj3X9_J6SoFG7_GmIJSW5olBqTIt5p4oZ0,5175
+sigpropy-0.3.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+sigpropy-0.3.0.dist-info/top_level.txt,sha256=AzNSbMFTF0NTfAdZr_Q4LVtI8Lc43q5LTaNJq7c6rPY,9
+sigpropy-0.3.0.dist-info/RECORD,,
