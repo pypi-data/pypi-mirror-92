@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+ltspice2svg/__init__.py
+ltspice2svg.egg-info/PKG-INFO
+ltspice2svg.egg-info/SOURCES.txt
+ltspice2svg.egg-info/dependency_links.txt
+ltspice2svg.egg-info/requires.txt
+ltspice2svg.egg-info/top_level.txt

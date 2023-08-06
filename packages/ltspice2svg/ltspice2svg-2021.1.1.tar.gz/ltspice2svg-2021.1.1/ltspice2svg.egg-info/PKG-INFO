@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ltspice2svg
+Version: 2021.1.1
+Summary: Converting LTspice file to SVG
+Home-page: https://github.com/harshvinay752
+Author: Harsh Agarwal
+Author-email: harshvinay752@gmail.com
+License: MIT
+Download-URL: https://github.com/harshvinay752/ltspice2svg/archive/2021.01.tar.gz
+Description: UNKNOWN
+Keywords: LTspice,spice,SVG,vector,image,convert
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
