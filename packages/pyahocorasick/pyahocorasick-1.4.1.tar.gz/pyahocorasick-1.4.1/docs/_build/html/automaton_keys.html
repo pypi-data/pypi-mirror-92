@@ -1,0 +1,83 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>keys([prefix, [wildcard, [how]]]) &#8212; ahocorasick  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="keys-prefix-wildcard-how">
+<h1>keys([prefix, [wildcard, [how]]])<a class="headerlink" href="#keys-prefix-wildcard-how" title="Permalink to this headline">¶</a></h1>
+<p>Return an iterator on keys.
+If the optional <code class="docutils literal notranslate"><span class="pre">prefix</span></code> string is provided, only yield keys starting
+with this prefix.</p>
+<p>If the optional <code class="docutils literal notranslate"><span class="pre">wildcard</span></code> is provided as a single character string,
+then the prefix is treated as a simple pattern using this character
+as a wildcard.</p>
+<p>The optional <code class="docutils literal notranslate"><span class="pre">how</span></code> argument is used to control how strings are matched
+using one of these possible values:</p>
+<ul class="simple">
+<li><strong>ahocorasick.MATCH_EXACT_LENGTH</strong> (default)
+Yield matches that have the same exact length as the prefix length.</li>
+<li><strong>ahocorasick.MATCH_AT_LEAST_PREFIX</strong>
+Yield matches that have a length greater or equal to the prefix length.</li>
+<li><strong>ahocorasick.MATCH_AT_MOST_PREFIX</strong>
+Yield matches that have a length lesser or equal to the prefix length.</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Wojciech Muła.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1170 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pyahocorasick &#8212; ahocorasick  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="#">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pyahocorasick">
+<h1>pyahocorasick<a class="headerlink" href="#pyahocorasick" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://travis-ci.org/WojciechMula/pyahocorasick"><img alt="Linux Master branch tests status" src="https://travis-ci.org/WojciechMula/pyahocorasick.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://ci.appveyor.com/project/WojciechMula/pyahocorasick"><img alt="Windows Master branch tests status" src="https://ci.appveyor.com/api/projects/status/github/WojciechMula/pyahocorasick?branch=master&amp;svg=true" /></a>
+<p><strong>pyahocorasick</strong> is a fast and memory efficient library for exact or approximate
+multi-pattern string search meaning that you can find multiple key strings
+occurrences at once in some input text.  The library provides an <cite>ahocorasick</cite> Python
+module that you can use as a plain dict-like Trie or convert a Trie to an automaton
+for efficient Aho-Corasick search.</p>
+<p>It is implemented in C and tested on Python 2.7 and 3.4+. It works on Linux, Mac and
+Windows.</p>
+<p>The <a class="reference internal" href="#license">license</a> is BSD-3-clause. Some utilities, such as tests and the pure Python
+automaton are dedicated to the Public Domain.</p>
+<div class="section" id="download-and-source-code">
+<h2>Download and source code<a class="headerlink" href="#download-and-source-code" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>You can fetch <strong>pyahocorasick</strong> from:</dt>
+<dd><ul class="first last simple">
+<li>GitHub <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/">https://github.com/WojciechMula/pyahocorasick/</a></li>
+<li>Pypi <a class="reference external" href="https://pypi.python.org/pypi/pyahocorasick/">https://pypi.python.org/pypi/pyahocorasick/</a></li>
+<li>Conda-Forge <a class="reference external" href="https://github.com/conda-forge/pyahocorasick-feedstock/">https://github.com/conda-forge/pyahocorasick-feedstock/</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="quick-start">
+<h2>Quick start<a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<p>This module is written in C. You need a C compiler installed to compile native
+CPython extensions. To install:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pyahocorasick</span>
+</pre></div>
+</div>
+<p>Then create an Automaton:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You can use the Automaton class as a trie. Add some string keys and their associated
+value to this trie. Here we associate a tuple of (insertion index, original string)
+as a value to each key string we add to the trie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">key</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;he her hers she&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
+<span class="gp">... </span>  <span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Then check if some string exists in the trie:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;he&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;HER&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+<p>And play with the <code class="docutils literal notranslate"><span class="pre">get()</span></code> dict-like method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;he&#39;</span><span class="p">)</span>
+<span class="go">(0, &#39;he&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;she&#39;</span><span class="p">)</span>
+<span class="go">(3, &#39;she&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;not exists&#39;</span><span class="p">)</span>
+<span class="go">&#39;not exists&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>
+</pre></div>
+</div>
+<p>Now convert the trie to an Aho-Corasick automaton to enable Aho-Corasick search:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">make_automaton</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Then search all occurrences of the keys (the needles) in an input string (our haystack).</p>
+<p>Here we print the results and just check that they are correct. The
+<cite>Automaton.iter()</cite> method return the results as two-tuples of the <cite>end index</cite> where a
+trie key was found in the input string and the associated <cite>value</cite> for this key. Here
+we had stored as values a tuple with the original string and its trie insertion
+order:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">end_index</span><span class="p">,</span> <span class="p">(</span><span class="n">insert_order</span><span class="p">,</span> <span class="n">original_value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">A</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="n">haystack</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">start_index</span> <span class="o">=</span> <span class="n">end_index</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">original_value</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">((</span><span class="n">start_index</span><span class="p">,</span> <span class="n">end_index</span><span class="p">,</span> <span class="p">(</span><span class="n">insert_order</span><span class="p">,</span> <span class="n">original_value</span><span class="p">)))</span>
+<span class="gp">... </span>    <span class="k">assert</span> <span class="n">haystack</span><span class="p">[</span><span class="n">start_index</span><span class="p">:</span><span class="n">start_index</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">original_value</span><span class="p">)]</span> <span class="o">==</span> <span class="n">original_value</span>
+<span class="gp">...</span>
+<span class="go">(1, 2, (0, &#39;he&#39;))</span>
+<span class="go">(1, 3, (1, &#39;her&#39;))</span>
+<span class="go">(1, 4, (2, &#39;hers&#39;))</span>
+<span class="go">(4, 6, (3, &#39;she&#39;))</span>
+<span class="go">(5, 6, (0, &#39;he&#39;))</span>
+</pre></div>
+</div>
+<p>You can also create an eventually large automaton ahead of time and <cite>pickle</cite> it to
+re-load later. Here we just pickle to a string. You would typically pickle to a
+file instead:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">cPickle</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pickled</span> <span class="o">=</span> <span class="n">cPickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">cPickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">pickled</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;he&#39;</span><span class="p">)</span>
+<span class="go">(0, &#39;he&#39;)</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>See also:</dt>
+<dd><ul class="first last simple">
+<li>FAQ and Who is using pyahocorasick? <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/wiki/FAQ#who-is-using-pyahocorasick">https://github.com/WojciechMula/pyahocorasick/wiki/FAQ#who-is-using-pyahocorasick</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>The full documentation including the API overview and reference is published on
+<a class="reference external" href="http://pyahocorasick.readthedocs.io/">readthedocs</a>.</p>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>With an <a class="reference external" href="http://en.wikipedia.org/wiki/Aho-Corasick%20algorithm">Aho-Corasick automaton</a>
+you can efficiently search all occurrences of multiple strings (the needles) in an
+input string (the haystack) making a single pass over the input string. With
+pyahocorasick you can eventually build large automatons and pickle them to reuse
+them over and over as an indexed structure for fast multi pattern string matching.</p>
+<p>One of the advantages of an Aho-Corasick automaton is that the typical worst-case
+and best-case <strong>runtimes</strong> are about the same and depends primarily on the size
+of the input string and secondarily on the number of matches returned.  While
+this may not be the fastest string search algorithm in all cases, it can search
+for multiple strings at once and its runtime guarantees make it rather unique.
+Because pyahocorasick is based on a Trie, it stores redundant keys prefixes only
+once using memory efficiently.</p>
+<p>A drawback is that it needs to be constructed and “finalized” ahead of time
+before you can search strings. In several applications where you search for several
+pre-defined “needles” in a variable “haystacks” this is actually an advantage.</p>
+<p><strong>Aho-Corasick automatons</strong> are commonly used for fast multi-pattern matching
+in intrusion detection systems (such as snort), anti-viruses and many other
+applications that need fast matching against a pre-defined set of string keys.</p>
+<p>Internally an Aho-Corasick automaton is typically based on a Trie with extra
+data for failure links and an implementation of the Aho-Corasick search
+procedure.</p>
+<p>Behind the scenes the <strong>pyahocorasick</strong> Python library implements these two data
+structures:  a <a class="reference external" href="http://en.wikipedia.org/wiki/trie">Trie</a> and an Aho-Corasick string
+matching automaton. Both are exposed through the <cite>Automaton</cite> class.</p>
+<p>In addition to Trie-like and Aho-Corasick methods and data structures,
+<strong>pyahocorasick</strong> also implements dict-like methods: The pyahocorasick
+<strong>Automaton</strong> is a <strong>Trie</strong> a dict-like structure indexed by string keys each
+associated with a value object. You can use this to retrieve an associated value
+in a time proportional to a string key length.</p>
+<p>pyahocorasick is available in two flavors:</p>
+<ul class="simple">
+<li>a CPython <strong>C-based extension</strong>, compatible with Python 2 and 3.</li>
+<li>a simpler pure Python module, compatible with Python 2 and 3. This is only
+available in the source repository (not on Pypi) under the py/ directory and
+has a slightly different API.</li>
+</ul>
+<div class="section" id="unicode-and-bytes">
+<h3>Unicode and bytes<a class="headerlink" href="#unicode-and-bytes" title="Permalink to this headline">¶</a></h3>
+<p>The type of strings accepted and returned by <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> methods are either
+<strong>unicode</strong> or <strong>bytes</strong>, depending on a compile time settings (preprocessor
+definition of <code class="docutils literal notranslate"><span class="pre">AHOCORASICK_UNICODE</span></code> as set in <cite>setup.py</cite>).</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">Automaton.unicode</span></code> attributes can tell you how the library was built.
+On Python 3, unicode is the default. On Python 2, bytes is the default and only value.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>When the library is built with unicode support on Python 3, an Automaton will
+store 2 or 4 bytes per letter, depending on your Python installation. When built
+for bytes, only one byte per letter is needed.</p>
+<p class="last">Unicode is <strong>NOT supported</strong> on Python 2 for now.</p>
+</div>
+</div>
+</div>
+<div class="section" id="build-and-install-from-pypi">
+<h2>Build and install from PyPi<a class="headerlink" href="#build-and-install-from-pypi" title="Permalink to this headline">¶</a></h2>
+<p>To install for common operating systems, use pip. Pre-built wheels should be
+available on Pypi at some point in the future:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pyahocorasick</span>
+</pre></div>
+</div>
+<p>To build from sources you need to have a C compiler installed and configured which
+should be standard on Linux and easy to get on MacOSX.</p>
+<p>On Windows and Python 2.7 you need the <a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=44266">Microsoft Visual C++ Compiler for Python 2.7</a> (aka. Visual
+Studio 2008). There have been reports that <cite>pyahocorasick</cite> does not build yet with
+MinGW. It may build with cygwin but this has not been tested. If you get this working
+with these platforms, please report in a ticket!</p>
+<p>To build from sources, clone the git repository or download and extract the source
+archive.</p>
+<p>Install <cite>pip</cite> (and its <cite>setuptools</cite> companion) and then run (in a <cite>virtualenv</cite> of
+course!):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>If compilation succeeds, the module is ready to use.</p>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>Support is available through the <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/issues">GitHub issue tracker</a> to report bugs or ask
+questions.</p>
+</div>
+<div class="section" id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Permalink to this headline">¶</a></h2>
+<p>You can submit contributions through <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/pull">GitHub pull requests</a>.</p>
+</div>
+<div class="section" id="authors">
+<h2>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<p>The initial author and maintainer is Wojciech Muła. <a class="reference external" href="https://github.com/pombredanne">Philippe Ombredanne</a>, the current co-owner, rewrote
+documentation, setup CI servers and did a whole lot of work to make this module
+better accesible to end users.</p>
+<p>This library would not be possible without help of many people, who contributed in
+various ways.
+They created <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/pull">pull requests</a>,
+reported bugs as <a class="reference external" href="https://github.com/WojciechMula/pyahocorasick/issues">GitHub issues</a>
+or via direct messages, proposed fixes, or spent their valuable time on testing.</p>
+<p>Thank you.</p>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>This library is licensed under very liberal
+<a class="reference external" href="http://spdx.org/licenses/BSD-3-Clause.html">BSD-3-Clause</a> license. Some portions of
+the code are dedicated to the public domain such as the pure Python automaton and test
+code.</p>
+<p>Full text of license is available in LICENSE file.</p>
+</div>
+<div class="section" id="other-aho-corasick-implementations-for-python-you-can-consider">
+<h2>Other Aho-Corasick implementations for Python you can consider<a class="headerlink" href="#other-aho-corasick-implementations-for-python-you-can-consider" title="Permalink to this headline">¶</a></h2>
+<p>While <strong>pyahocorasick</strong> tries to be the finest and fastest Aho Corasick library
+for Python you may consider these other libraries:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/JanFan/py-aho-corasick">py_aho_corasick</a> by Jan</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Written in pure Python.</li>
+<li>Poor performance.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/abusix/ahocorapy">ahocorapy</a> by abusix</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Written in pure Python.</li>
+<li>Better performance than py-aho-corasick.</li>
+<li>Using pypy, ahocorapy’s search performance is only slightly worse than pyahocorasick’s.</li>
+<li>Performs additional suffix shortcutting (more setup overhead, less search overhead for suffix lookups).</li>
+<li>Includes visualization tool for resulting automaton (using pygraphviz).</li>
+<li>MIT-licensed, 100% test coverage, tested on all major python versions (+ pypy)</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/JDonner/NoAho">noaho</a> by Jeff Donner</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Written in C. Does not return overlapping matches.</li>
+<li>Does not compile on Windows (July 2016).</li>
+<li>No support for the pickle protocol.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/scoder/acora">acora</a> by Stefan Behnel</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Written in Cython.</li>
+<li>Large automaton may take a long time to build (July 2016)</li>
+<li>No support for a dict-like protocol to associate a value to a string key.</li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><a class="reference external" href="https://hkn.eecs.berkeley.edu/~dyoo/python/ahocorasick/">ahocorasick</a> by Danny Yoo</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Written in C.</li>
+<li>seems unmaintained (last update in 2005).</li>
+<li>GPL-licensed.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="api-overview">
+<h2>API Overview<a class="headerlink" href="#api-overview" title="Permalink to this headline">¶</a></h2>
+<p>This is a quick tour of the API for the C <strong>ahocorasick</strong> module.
+See the full API doc for more details. The pure Python module has a slightly different interface.</p>
+<p>The module <code class="docutils literal notranslate"><span class="pre">ahocorasick</span></code> contains a few constants and the main <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> class.</p>
+<div class="section" id="module-constants">
+<h3>Module constants<a class="headerlink" href="#module-constants" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">ahocorasick.unicode</span></code> — see <a class="reference internal" href="#unicode-and-bytes">Unicode and bytes</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_ANY</span></code>, <code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_INTS</span></code>,
+<code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_LENGTH</span></code> — see <a class="reference internal" href="#automaton-class">Automaton class</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">ahocorasick.KEY_STRING</span></code> <code class="docutils literal notranslate"><span class="pre">ahocorasick.KEY_SEQUENCE</span></code>
+— see <a class="reference internal" href="#automaton-class">Automaton class</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">ahocorasick.EMPTY</span></code>, <code class="docutils literal notranslate"><span class="pre">ahocorasick.TRIE</span></code>, <code class="docutils literal notranslate"><span class="pre">ahocorasick.AHOCORASICK</span></code>
+— see <a class="reference internal" href="#automaton-attributes">Automaton Attributes</a></li>
+<li><code class="docutils literal notranslate"><span class="pre">ahocorasick.MATCH_EXACT_LENGTH</span></code>, <code class="docutils literal notranslate"><span class="pre">ahocorasick.MATCH_AT_MOST_PREFIX</span></code>,
+<code class="docutils literal notranslate"><span class="pre">ahocorasick.MATCH_AT_LEAST_PREFIX</span></code> — see description of the keys method</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="automaton-class">
+<h3>Automaton class<a class="headerlink" href="#automaton-class" title="Permalink to this headline">¶</a></h3>
+<p>Note: <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> instances are <a class="reference external" href="https://docs.python.org/3/library/pickle.html">pickle-able</a>
+meaning that you can create ahead of time an eventually large automaton then save it to disk
+and re-load it later to reuse it over and over as a persistent multi-string search index.
+Internally, Automaton implements the <code class="docutils literal notranslate"><span class="pre">__reduce__()</span> <span class="pre">magic</span> <span class="pre">method</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Automaton([value_type],</span> <span class="pre">[key_type])</span></code></p>
+<blockquote>
+<div>Create a new empty Automaton optionally passing a <cite>value_type</cite> to indicate
+what is the type of associated values (default to any Python object type).
+It can be one of <code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_ANY</span></code>, <code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_INTS</span></code> or
+<code class="docutils literal notranslate"><span class="pre">ahocorasick.STORE_LENGTH</span></code>. In the last case the length of the key will
+be stored in the automaton. The optional argument <cite>key_type</cite> can be
+<code class="docutils literal notranslate"><span class="pre">ahocorasick.KEY_STRING</span></code> or <code class="docutils literal notranslate"><span class="pre">ahocorasick.KEY_SEQUENCE</span></code>. In the latter
+case keys will be tuples of integers. The size of integer depends on the
+version and platform Python is running on, but for versions of Python &gt;=
+3.3, it is guaranteed to be 32-bits.</div></blockquote>
+</div>
+<div class="section" id="automaton-trie-methods">
+<h3>Automaton Trie methods<a class="headerlink" href="#automaton-trie-methods" title="Permalink to this headline">¶</a></h3>
+<p>The Automaton class has the following main trie-like methods:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">add_word(key,</span> <span class="pre">[value])</span> <span class="pre">=&gt;</span> <span class="pre">bool</span></code></dt>
+<dd>Add a <code class="docutils literal notranslate"><span class="pre">key</span></code> string to the dict-like trie and associate this key with a <code class="docutils literal notranslate"><span class="pre">value</span></code>.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">remove_word(key)</span> <span class="pre">=&gt;</span> <span class="pre">bool</span></code></dt>
+<dd>Remove a <code class="docutils literal notranslate"><span class="pre">key</span></code> string from the dict-like trie.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">pop(key)</span> <span class="pre">=&gt;</span> <span class="pre">value</span></code></dt>
+<dd>Remove a <code class="docutils literal notranslate"><span class="pre">key</span></code> string from the dict-like trie and return the associated <code class="docutils literal notranslate"><span class="pre">value</span></code>.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">exists(key)</span> <span class="pre">=&gt;</span> <span class="pre">bool</span></code> or <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">in</span> <span class="pre">...</span></code></dt>
+<dd>Return True if the key is present in the trie.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">match(key)</span> <span class="pre">=&gt;</span> <span class="pre">bool</span></code></dt>
+<dd>Return True if there is a prefix (or key) equal to <code class="docutils literal notranslate"><span class="pre">key</span></code> present in the trie.</dd>
+</dl>
+</div>
+<div class="section" id="automaton-dictionary-like-methods">
+<h3>Automaton Dictionary-like methods<a class="headerlink" href="#automaton-dictionary-like-methods" title="Permalink to this headline">¶</a></h3>
+<p>A pyahocorasick Automaton trie behaves more or less like a Python dictionary and
+implements a subset of dict-like methods. Some of them are:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">get(key[,</span> <span class="pre">default])</span></code></dt>
+<dd>Return the value associated with the <code class="docutils literal notranslate"><span class="pre">key</span></code> string. Similar to <cite>dict.get()</cite>.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">keys([prefix,</span> <span class="pre">[wildcard,</span> <span class="pre">[how]]])</span> <span class="pre">=&gt;</span> <span class="pre">yield</span> <span class="pre">strings</span></code></dt>
+<dd>Return an iterator on keys.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">values([prefix,</span> <span class="pre">[wildcard,</span> <span class="pre">[how]]])</span> <span class="pre">=&gt;</span> <span class="pre">yield</span> <span class="pre">object</span></code></dt>
+<dd>Return an iterator on values associated with each keys.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">items([prefix,</span> <span class="pre">[wildcard,</span> <span class="pre">[how]]])</span> <span class="pre">=&gt;</span> <span class="pre">yield</span> <span class="pre">tuple</span> <span class="pre">(string,</span> <span class="pre">object)</span></code></dt>
+<dd>Return an iterator on tuples of (key, value).</dd>
+</dl>
+<div class="section" id="wildcard-search">
+<h4>Wildcard search<a class="headerlink" href="#wildcard-search" title="Permalink to this headline">¶</a></h4>
+<p>The methods <code class="docutils literal notranslate"><span class="pre">keys</span></code>, <code class="docutils literal notranslate"><span class="pre">values</span></code> and <code class="docutils literal notranslate"><span class="pre">items</span></code> can be called with an optional
+<strong>wildcard</strong>. A wildcard character is equivalent to a question mark used in glob
+patterns (?) or a dot (.) in regular expressions. You can use any character you
+like as a wildcard.</p>
+<p>Note that it is not possible to escape a wildcard to match it exactly.
+You need instead to select another wildcard character not present in the
+provided prefix. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">automaton</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s2">&quot;hi?&quot;</span><span class="p">,</span> <span class="s2">&quot;?&quot;</span><span class="p">)</span>  <span class="c1"># would match &quot;him&quot;, &quot;his&quot;</span>
+<span class="n">automaton</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s2">&quot;XX?&quot;</span><span class="p">,</span> <span class="s2">&quot;X&quot;</span><span class="p">)</span>  <span class="c1"># would match &quot;me?&quot;, &quot;he?&quot; or &quot;it?&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="aho-corasick-methods">
+<h3>Aho-Corasick methods<a class="headerlink" href="#aho-corasick-methods" title="Permalink to this headline">¶</a></h3>
+<p>The Automaton class has the following main Aho-Corasick methods:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">make_automaton()</span></code></dt>
+<dd>Finalize and create the Aho-Corasick automaton.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">iter(string,</span> <span class="pre">[start,</span> <span class="pre">[end]])</span></code></dt>
+<dd>Perform the Aho-Corasick search procedure using the provided input <code class="docutils literal notranslate"><span class="pre">string</span></code>.
+Return an iterator of tuples (end_index, value) for keys found in string.</dd>
+</dl>
+<div class="section" id="automatonsearchiter-class">
+<h4>AutomatonSearchIter class<a class="headerlink" href="#automatonsearchiter-class" title="Permalink to this headline">¶</a></h4>
+<p>Instances of this class are returned by the <code class="docutils literal notranslate"><span class="pre">iter</span></code> method of an <code class="docutils literal notranslate"><span class="pre">Automaton</span></code>.
+This iterator can be manipulated through its <cite>set()</cite> method.</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">set(string,</span> <span class="pre">[reset])</span> <span class="pre">=&gt;</span> <span class="pre">None</span></code></dt>
+<dd><p class="first">Set a new string to search eventually keeping the current Automaton state to
+continue searching for the next chunk of a string.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">it</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">buffer</span> <span class="o">=</span> <span class="n">receive</span><span class="p">(</span><span class="n">server_address</span><span class="p">,</span> <span class="mi">4096</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">if</span> <span class="ow">not</span> <span class="n">buffer</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="k">break</span>
+<span class="gp">... </span>    <span class="n">it</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">buffer</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;=&gt;&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>When <code class="docutils literal notranslate"><span class="pre">reset</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code> then processing is restarted. For example this code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">string_set</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">A</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;=&gt;&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>does the same job as:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">it</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="sa">b</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">string</span> <span class="ow">in</span> <span class="n">string_set</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">it</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">it</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;=&gt;&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="automaton-attributes">
+<h3>Automaton Attributes<a class="headerlink" href="#automaton-attributes" title="Permalink to this headline">¶</a></h3>
+<p>The Automaton class has the following attributes:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">kind</span></code> [readonly]</dt>
+<dd>Return the state of the <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> instance.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">store</span></code> [readonly]</dt>
+<dd>Return the type of values stored in the Automaton as specified at creation.</dd>
+</dl>
+</div>
+<div class="section" id="saving-and-loading-automaton">
+<h3>Saving and loading automaton<a class="headerlink" href="#saving-and-loading-automaton" title="Permalink to this headline">¶</a></h3>
+<p>There is support for two method of saving and loading an automaton:</p>
+<ul class="simple">
+<li>the standard <code class="docutils literal notranslate"><span class="pre">pickle</span></code> protocol,</li>
+<li>custom <code class="docutils literal notranslate"><span class="pre">save</span></code> and <code class="docutils literal notranslate"><span class="pre">load</span></code> methods.</li>
+</ul>
+<p>While pickling is more convenient to use, it has quite high memory
+requirements. The <code class="docutils literal notranslate"><span class="pre">save</span></code>/<code class="docutils literal notranslate"><span class="pre">load</span></code> method try to overcome this
+problem.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Neither format of pickle nor save are safe. Although there are
+a few sanity checks, they are not sufficient to detect all
+possible input errors.</p>
+</div>
+<div class="section" id="pickle">
+<h4>Pickle<a class="headerlink" href="#pickle" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="c1"># build automaton</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="c1"># ... A.add_data, A.make_automaton</span>
+
+<span class="c1"># save current state</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+
+<span class="c1"># load saved state</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">B</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="save-load-methods">
+<h4>Save/load methods<a class="headerlink" href="#save-load-methods" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="kn">import</span> <span class="nn">pickle</span>
+
+<span class="c1"># build automaton</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="c1"># ... A.add_data, A.make_automaton</span>
+
+<span class="c1"># save current state</span>
+<span class="n">A</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">)</span>
+
+<span class="c1"># load saved state</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Automaton method <code class="docutils literal notranslate"><span class="pre">save</span></code> requires <code class="docutils literal notranslate"><span class="pre">path</span></code> to the file which will store data.
+If the automaton type is <code class="docutils literal notranslate"><span class="pre">STORE_ANY</span></code>, i.e. values associated with words are
+any python objects, then <code class="docutils literal notranslate"><span class="pre">save</span></code> requires also another argument, a callable.
+The callable serializes python object into bytes; in the example above we
+use standard pickle <code class="docutils literal notranslate"><span class="pre">dumps</span></code> function.</p>
+<p>Module method <code class="docutils literal notranslate"><span class="pre">load</span></code> also requires <code class="docutils literal notranslate"><span class="pre">path</span></code> to file that has data previously
+saved. Because at the moment of loading data we don’t know what is the store
+attribute of automaton, the second argument - a callable - is required.  The
+callable must convert back given bytes object into python value, that will be
+stored in automaton. Similarly, standard <code class="docutils literal notranslate"><span class="pre">pickle.loads</span></code> function can be passed.</p>
+</div>
+</div>
+<div class="section" id="other-automaton-methods">
+<h3>Other Automaton methods<a class="headerlink" href="#other-automaton-methods" title="Permalink to this headline">¶</a></h3>
+<p>The Automaton class has a few other interesting methods:</p>
+<dl class="docutils">
+<dt><code class="docutils literal notranslate"><span class="pre">dump()</span> <span class="pre">=&gt;</span> <span class="pre">(list</span> <span class="pre">of</span> <span class="pre">nodes,</span> <span class="pre">list</span> <span class="pre">of</span> <span class="pre">edges,</span> <span class="pre">list</span> <span class="pre">of</span> <span class="pre">fail</span> <span class="pre">links)</span></code></dt>
+<dd>Return a three-tuple of lists describing the Automaton as a graph of
+(nodes, edges, failure links).
+The source repository and source package also contains the  <code class="docutils literal notranslate"><span class="pre">dump2dot.py</span></code>
+script that converts <code class="docutils literal notranslate"><span class="pre">dump()</span></code> results to a <a class="reference external" href="http://graphviz.org">graphviz</a> dot
+format for convenient visualization of the trie and Automaton data structure.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">get_stats()</span> <span class="pre">=&gt;</span> <span class="pre">dict</span></code></dt>
+<dd>Return a dictionary containing Automaton statistics.
+Note that the real size occupied by the data structure could be larger because
+of <a class="reference external" href="http://en.wikipedia.org/Memory%20fragmentation">internal memory fragmentation</a>
+that can occur in a memory manager.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">__sizeof__()</span> <span class="pre">=&gt;</span> <span class="pre">int</span></code></dt>
+<dd>Return the approximate size in bytes occupied by the Automaton instance.
+Also available by calling sys.getsizeof(automaton instance).</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add some key words to trie</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;he her hers she&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
+<span class="gp">... </span>  <span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">word</span><span class="p">))</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># test that these key words exists in the trie all right</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;he&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;HER&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;he&#39;</span><span class="p">)</span>
+<span class="go">(0, &#39;he&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;she&#39;</span><span class="p">)</span>
+<span class="go">(3, &#39;she&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;&lt;not exists&gt;&#39;</span><span class="p">)</span>
+<span class="go">&#39;&lt;not exists&gt;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s1">&#39;he&#39;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s1">&#39;he&#39;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;she&#39;</span><span class="p">)</span>
+<span class="go">(3, &#39;she&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;she&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">False</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># convert the trie in an Aho-Corasick automaton</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;he her hers she&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
+<span class="gp">... </span>  <span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">word</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">make_automaton</span><span class="p">()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># then find all occurrences of the stored keys in a string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">A</span><span class="o">.</span><span class="n">iter</span><span class="p">(</span><span class="s1">&#39;_hershe_&#39;</span><span class="p">):</span>
+<span class="gp">... </span> <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">(2, (0, &#39;he&#39;))</span>
+<span class="go">(3, (1, &#39;her&#39;))</span>
+<span class="go">(4, (2, &#39;hers&#39;))</span>
+<span class="go">(6, (3, &#39;she&#39;))</span>
+<span class="go">(6, (0, &#39;he&#39;))</span>
+</pre></div>
+</div>
+<div class="section" id="example-of-the-keys-method-behavior">
+<h3>Example of the keys method behavior<a class="headerlink" href="#example-of-the-keys-method-behavior" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add some key words to trie</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="s1">&#39;cat catastropha rat rate bat&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()):</span>
+<span class="gp">... </span>  <span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">word</span><span class="p">))</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Search some prefix</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s1">&#39;cat&#39;</span><span class="p">))</span>
+<span class="go">[&#39;cat&#39;, &#39;catastropha&#39;]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Search with a wildcard: here &#39;?&#39; is used as a wildcard. You can use any character you like.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s1">&#39;?at&#39;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">MATCH_EXACT_LENGTH</span><span class="p">))</span>
+<span class="go">[&#39;bat&#39;, &#39;cat&#39;, &#39;rat&#39;]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s1">&#39;?at?&#39;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">MATCH_AT_MOST_PREFIX</span><span class="p">))</span>
+<span class="go">[&#39;bat&#39;, &#39;cat&#39;, &#39;rat&#39;, &#39;rate&#39;]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">keys</span><span class="p">(</span><span class="s1">&#39;?at?&#39;</span><span class="p">,</span> <span class="s1">&#39;?&#39;</span><span class="p">,</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">MATCH_AT_LEAST_PREFIX</span><span class="p">))</span>
+<span class="go">[&#39;rate&#39;]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="automaton-value-type-ahocorasick-store-any-key-type">
+<h3>Automaton(value_type=ahocorasick.STORE_ANY, [key_type])<a class="headerlink" href="#automaton-value-type-ahocorasick-store-any-key-type" title="Permalink to this headline">¶</a></h3>
+<p>Create a new empty Automaton. Both <code class="docutils literal notranslate"><span class="pre">value_type</span></code> and <code class="docutils literal notranslate"><span class="pre">key_type</span></code> are optional.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value_type</span></code> is one of these constants:</p>
+<ul class="simple">
+<li>ahocorasick.STORE_ANY [<em>default</em>] : The associated value can be any Python object.</li>
+<li>ahocorasick.STORE_LENGTH : The length of an added string key is automatically
+used as the associated value stored in the trie for that key.</li>
+<li>ahocorasick.STORE_INTS : The associated value must be a 32-bit integer.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">key_type</span></code> defines the type of data that can be stored in an automaton; it is one of
+these constants and defines type of data might be stored:</p>
+<ul class="simple">
+<li>ahocorasick.KEY_STRING [<em>default</em>] : string</li>
+<li>ahocorasick.KEY_SEQUENCE : sequences of integers; The size of integer depends
+the version and platform Python, but for versions of Python &gt;= 3.3, it is
+guaranteed to be 32-bits.</li>
+</ul>
+<div class="section" id="id1">
+<h4>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1bdf7f0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_ANY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1bdf6c0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">C</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_INTS</span><span class="p">,</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">KEY_STRING</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">C</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1527f10&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="add-word-key-value-boolean">
+<h3>add_word(key, [value]) -&gt; boolean<a class="headerlink" href="#add-word-key-value-boolean" title="Permalink to this headline">¶</a></h3>
+<p>Add a key string to the dict-like trie and associate this key with a value.
+value is optional or mandatory depending how the <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> instance was
+created.  Return True if the word key is inserted and did not exists in the
+trie or False otherwise. The value associated with an existing word is replaced.</p>
+<p>The value is either mandatory or optional:</p>
+<ul class="simple">
+<li>If the Automaton was created without argument (the default) as <code class="docutils literal notranslate"><span class="pre">Automaton()</span></code>
+or with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_ANY)</span></code> then the value is required and can
+be any Python object.</li>
+<li>If the Automaton was created with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_INTS)</span></code> then the
+value is optional. If provided it must be an integer, otherwise it defaults to
+<code class="docutils literal notranslate"><span class="pre">len(automaton)</span></code> which is therefore the order index in which keys are added
+to the trie.</li>
+<li>If the Automaton was created with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_LENGTH)</span></code> then
+associating a value is not allowed - <code class="docutils literal notranslate"><span class="pre">len(word)</span></code> is saved automatically as
+a value instead.</li>
+</ul>
+<p>Calling add_word() invalidates all iterators only if the new key did not exist
+in the trie so far (i.e. the method returned True).</p>
+<div class="section" id="id2">
+<h4>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">ValueError</span>: <span class="n">A value object is required as second argument.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">))</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pyhocorasick&quot;</span><span class="p">)</span>
+<span class="go">(42, &#39;text&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pyhocorasick&quot;</span><span class="p">)</span>
+<span class="go">12</span>
+</pre></div>
+</div>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_INTS</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">IndexError</span>: <span class="n">tuple index out of range</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;tree&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tree&quot;</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">43</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">43</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="exists-key-boolean">
+<h3>exists(key) -&gt; boolean<a class="headerlink" href="#exists-key-boolean" title="Permalink to this headline">¶</a></h3>
+<p>Return True if the <code class="docutils literal notranslate"><span class="pre">key</span></code> is present in the trie. Same as using the ‘in’ keyword.</p>
+<div class="section" id="id3">
+<h4>Examples<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;elephant&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;cat&#39;</span> <span class="ow">in</span> <span class="n">A</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="get-key-default">
+<h3>get(key[, default])<a class="headerlink" href="#get-key-default" title="Permalink to this headline">¶</a></h3>
+<p>Return the value associated with the key string.</p>
+<p>Raise a <code class="docutils literal notranslate"><span class="pre">KeyError</span></code> exception if the key is not in the trie and no default is provided.</p>
+<p>Return the optional default value if provided and the key is not in the trie.</p>
+<div class="section" id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="s2">&quot;good dog&quot;</span><span class="p">)</span>
+<span class="go">&#39;good dog&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="longest-prefix-string-integer">
+<h3>longest_prefix(string) =&gt; integer<a class="headerlink" href="#longest-prefix-string-integer" title="Permalink to this headline">¶</a></h3>
+<p>Return the length of the longest prefix of string that exists in the trie.</p>
+<div class="section" id="id4">
+<h4>Examples<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;he&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;her&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;hers&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">longest_prefix</span><span class="p">(</span><span class="s2">&quot;she&quot;</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">longest_prefix</span><span class="p">(</span><span class="s2">&quot;herself&quot;</span><span class="p">)</span>
+<span class="go">4</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="match-key-bool">
+<h3>match(key) -&gt; bool<a class="headerlink" href="#match-key-bool" title="Permalink to this headline">¶</a></h3>
+<p>Return True if there is a prefix (or key) equal to key present in the trie.</p>
+<p>For example if the key ‘example’ has been added to the trie, then calls to
+match(‘e’), match(‘ex’), …, match(‘exampl’) or match(‘example’) all return
+True. But exists() is True only when calling exists(‘example’).</p>
+<div class="section" id="id5">
+<h4>Examples<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;example&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;e&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;ex&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;exa&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;exam&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;examp&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;exampl&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;example&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;examples&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;python&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="len-integer">
+<h3>len() -&gt; integer<a class="headerlink" href="#len-integer" title="Permalink to this headline">¶</a></h3>
+<p>Return the number of distinct keys added to the trie.</p>
+<div class="section" id="id6">
+<h4>Examples<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;python&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;elephant&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">2</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="remove-word-word-bool">
+<h3>remove_word(word) -&gt; bool<a class="headerlink" href="#remove-word-word-bool" title="Permalink to this headline">¶</a></h3>
+<p>Remove given word from a trie. Return True if words was found, False otherwise.</p>
+<div class="section" id="id7">
+<h4>Examples<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">remove_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="go">&gt;&gt;&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pop-word">
+<h3>pop(word)<a class="headerlink" href="#pop-word" title="Permalink to this headline">¶</a></h3>
+<p>Remove given word from a trie and return associated values. Raise a <code class="docutils literal notranslate"><span class="pre">KeyError</span></code>
+if the word was not found.</p>
+<div class="section" id="id8">
+<h4>Examples<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;elephant&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">KeyError</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="clear">
+<h3>clear()<a class="headerlink" href="#clear" title="Permalink to this headline">¶</a></h3>
+<p>Remove all keys from the trie. This method invalidates all iterators.</p>
+<div class="section" id="id9">
+<h4>Examples<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;elephant&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="keys-prefix-wildcard-how">
+<h3>keys([prefix, [wildcard, [how]]])<a class="headerlink" href="#keys-prefix-wildcard-how" title="Permalink to this headline">¶</a></h3>
+<p>Return an iterator on keys.
+If the optional <code class="docutils literal notranslate"><span class="pre">prefix</span></code> string is provided, only yield keys starting
+with this prefix.</p>
+<p>If the optional <code class="docutils literal notranslate"><span class="pre">wildcard</span></code> is provided as a single character string,
+then the prefix is treated as a simple pattern using this character
+as a wildcard.</p>
+<p>The optional <code class="docutils literal notranslate"><span class="pre">how</span></code> argument is used to control how strings are matched
+using one of these possible values:</p>
+<ul class="simple">
+<li><strong>ahocorasick.MATCH_EXACT_LENGTH</strong> (default)
+Yield matches that have the same exact length as the prefix length.</li>
+<li><strong>ahocorasick.MATCH_AT_LEAST_PREFIX</strong>
+Yield matches that have a length greater or equal to the prefix length.</li>
+<li><strong>ahocorasick.MATCH_AT_MOST_PREFIX</strong>
+Yield matches that have a length lesser or equal to the prefix length.</li>
+</ul>
+</div>
+<div class="section" id="items-prefix-wildcard-how">
+<h3>items([prefix, [wildcard, [how]]])<a class="headerlink" href="#items-prefix-wildcard-how" title="Permalink to this headline">¶</a></h3>
+<p>Return an iterator on tuples of (key, value).
+Keys are matched optionally to the prefix using the same logic
+and arguments as in the keys() method.</p>
+</div>
+<div class="section" id="values-prefix-wildcard-how">
+<h3>values([prefix, [wildcard, [how]]])<a class="headerlink" href="#values-prefix-wildcard-how" title="Permalink to this headline">¶</a></h3>
+<p>Return an iterator on values associated with each keys.
+Keys are matched optionally to the prefix using the same logic
+and arguments as in the keys() method.</p>
+</div>
+<div class="section" id="make-automaton">
+<h3>make_automaton()<a class="headerlink" href="#make-automaton" title="Permalink to this headline">¶</a></h3>
+<p>Finalize and create the Aho-Corasick automaton based on the keys already added
+to the trie. This does not require additional memory. After successful creation
+the <code class="docutils literal notranslate"><span class="pre">Automaton.kind</span></code> attribute is set to <code class="docutils literal notranslate"><span class="pre">ahocorasick.AHOCORASICK</span></code>.</p>
+</div>
+<div class="section" id="iter-string-start-end-ignore-white-space-false">
+<h3>iter(string, [start, [end]], ignore_white_space=False)<a class="headerlink" href="#iter-string-start-end-ignore-white-space-false" title="Permalink to this headline">¶</a></h3>
+<p>Perform the Aho-Corasick search procedure using the provided input string.</p>
+<p>Return an iterator of tuples (<code class="docutils literal notranslate"><span class="pre">end_index</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code>) for keys found in
+string where:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">end_index</span></code> is the end index in the input string where a trie key
+string was found.</li>
+<li><code class="docutils literal notranslate"><span class="pre">value</span></code> is the value associated with the found key string.</li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">end</span></code> optional arguments can be used to limit the search
+to an input string slice as in <code class="docutils literal notranslate"><span class="pre">string[start:end]</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">ignore_white_space</span></code> optional arguments can be used to ignore white
+spaces from input string.</p>
+</div>
+<div class="section" id="find-all-string-callback-start-end">
+<h3>find_all(string, callback, [start, [end]])<a class="headerlink" href="#find-all-string-callback-start-end" title="Permalink to this headline">¶</a></h3>
+<p>Perform the Aho-Corasick search procedure using the provided input <code class="docutils literal notranslate"><span class="pre">string</span></code>
+and iterate over the matching tuples (<code class="docutils literal notranslate"><span class="pre">end_index</span></code>, <code class="docutils literal notranslate"><span class="pre">value</span></code>) for keys found
+in string.  Invoke the <code class="docutils literal notranslate"><span class="pre">callback</span></code> callable for each matching tuple.</p>
+<p>The callback callable must accept two positional arguments:
+- end_index is the end index in the input string where a trie key string was found.
+- value is the value associated with the found key string.</p>
+<p>The start and end optional arguments can be used to limit the search to an
+input string slice as in string[start:end].</p>
+<p>Equivalent to a loop on iter() calling a callable at each iteration.</p>
+</div>
+<div class="section" id="reduce">
+<h3>__reduce__()<a class="headerlink" href="#reduce" title="Permalink to this headline">¶</a></h3>
+<p>Return pickle-able data for this automaton instance.</p>
+</div>
+<div class="section" id="save-path-serializer">
+<h3>save(path, serializer)<a class="headerlink" href="#save-path-serializer" title="Permalink to this headline">¶</a></h3>
+<p>Save content of automaton in an on-disc file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Serializer</span></code> is a callable object that is used when automaton store
+type is <code class="docutils literal notranslate"><span class="pre">STORE_ANY</span></code>. This method converts a python object into
+bytes; it can be <code class="docutils literal notranslate"><span class="pre">pickle.dumps</span></code>.</p>
+</div>
+<div class="section" id="load-path-deserializer-automaton">
+<h3>load(path, deserializer) =&gt; Automaton<a class="headerlink" href="#load-path-deserializer-automaton" title="Permalink to this headline">¶</a></h3>
+<p>Load automaton previously stored on disc using <code class="docutils literal notranslate"><span class="pre">save</span></code> method.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Deserializer</span></code> is a callable object which converts bytes back into
+python object; it can be <code class="docutils literal notranslate"><span class="pre">pickle.loads</span></code>.</p>
+<p>Return the approximate size in bytes occupied by the Automaton instance in
+memory excluding the size of associated objects when the Automaton is created
+with Automaton() or Automaton(ahocorasick.STORE_ANY).</p>
+</div>
+<div class="section" id="get-stats-dict">
+<h3>get_stats() -&gt; dict<a class="headerlink" href="#get-stats-dict" title="Permalink to this headline">¶</a></h3>
+<p>Return a dictionary containing Automaton statistics.</p>
+<ul class="simple">
+<li><em>nodes_count</em>  - total number of nodes</li>
+<li><em>words_count</em>  - number of distinct words (same as <code class="docutils literal notranslate"><span class="pre">len(automaton)</span></code>)</li>
+<li><em>longest_word</em> - length of the longest word</li>
+<li><em>links_count</em>  - number of edges</li>
+<li><em>sizeof_node</em>  - size of single node in bytes</li>
+<li><em>total_size</em>   - total size of trie in bytes (about
+nodes_count * size_of node + links_count * size of pointer).</li>
+</ul>
+<div class="section" id="id10">
+<h4>Examples<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;he&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;her&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;hers&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span>
+<span class="go">{&#39;nodes_count&#39;: 5, &#39;words_count&#39;: 3, &#39;longest_word&#39;: 4, &#39;links_count&#39;: 4, &#39;sizeof_node&#39;: 40, &#39;total_size&#39;: 232}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="dump">
+<h3>dump()<a class="headerlink" href="#dump" title="Permalink to this headline">¶</a></h3>
+<p>Return a three-tuple of lists describing the Automaton as a graph
+of <strong>nodes</strong>, <strong>edges</strong>, <strong>failure links</strong>.</p>
+<ul class="simple">
+<li>nodes: each item is a pair (node id, end of word marker)</li>
+<li>edges: each item is a triple (node id, label char, child node id)</li>
+<li>failure links: each item is a pair (source node id, node if connected
+by fail node)</li>
+</ul>
+<p>For each of these, the node id is a unique number and a label is
+a number.</p>
+</div>
+<div class="section" id="set-string-reset-false">
+<h3>set(string, reset=False)<a class="headerlink" href="#set-string-reset-false" title="Permalink to this headline">¶</a></h3>
+<p>Set a new string to search. When the reset argument is False (default)
+then the Aho-Corasick procedure is continued and the internal state of the
+Automaton and end index of the string being searched are not reset. This allow
+to search for large strings in multiple smaller chunks.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pyahocorasick</a><ul>
+<li><a class="reference internal" href="#download-and-source-code">Download and source code</a></li>
+<li><a class="reference internal" href="#quick-start">Quick start</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#unicode-and-bytes">Unicode and bytes</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#build-and-install-from-pypi">Build and install from PyPi</a></li>
+<li><a class="reference internal" href="#support">Support</a></li>
+<li><a class="reference internal" href="#contributing">Contributing</a></li>
+<li><a class="reference internal" href="#authors">Authors</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#other-aho-corasick-implementations-for-python-you-can-consider">Other Aho-Corasick implementations for Python you can consider</a></li>
+<li><a class="reference internal" href="#api-overview">API Overview</a><ul>
+<li><a class="reference internal" href="#module-constants">Module constants</a></li>
+<li><a class="reference internal" href="#automaton-class">Automaton class</a></li>
+<li><a class="reference internal" href="#automaton-trie-methods">Automaton Trie methods</a></li>
+<li><a class="reference internal" href="#automaton-dictionary-like-methods">Automaton Dictionary-like methods</a><ul>
+<li><a class="reference internal" href="#wildcard-search">Wildcard search</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#aho-corasick-methods">Aho-Corasick methods</a><ul>
+<li><a class="reference internal" href="#automatonsearchiter-class">AutomatonSearchIter class</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#automaton-attributes">Automaton Attributes</a></li>
+<li><a class="reference internal" href="#saving-and-loading-automaton">Saving and loading automaton</a><ul>
+<li><a class="reference internal" href="#pickle">Pickle</a></li>
+<li><a class="reference internal" href="#save-load-methods">Save/load methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-automaton-methods">Other Automaton methods</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples">Examples</a><ul>
+<li><a class="reference internal" href="#example-of-the-keys-method-behavior">Example of the keys method behavior</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li><a class="reference internal" href="#automaton-value-type-ahocorasick-store-any-key-type">Automaton(value_type=ahocorasick.STORE_ANY, [key_type])</a><ul>
+<li><a class="reference internal" href="#id1">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#add-word-key-value-boolean">add_word(key, [value]) -&gt; boolean</a><ul>
+<li><a class="reference internal" href="#id2">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exists-key-boolean">exists(key) -&gt; boolean</a><ul>
+<li><a class="reference internal" href="#id3">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#get-key-default">get(key[, default])</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#longest-prefix-string-integer">longest_prefix(string) =&gt; integer</a><ul>
+<li><a class="reference internal" href="#id4">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#match-key-bool">match(key) -&gt; bool</a><ul>
+<li><a class="reference internal" href="#id5">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#len-integer">len() -&gt; integer</a><ul>
+<li><a class="reference internal" href="#id6">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#remove-word-word-bool">remove_word(word) -&gt; bool</a><ul>
+<li><a class="reference internal" href="#id7">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#pop-word">pop(word)</a><ul>
+<li><a class="reference internal" href="#id8">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clear">clear()</a><ul>
+<li><a class="reference internal" href="#id9">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#keys-prefix-wildcard-how">keys([prefix, [wildcard, [how]]])</a></li>
+<li><a class="reference internal" href="#items-prefix-wildcard-how">items([prefix, [wildcard, [how]]])</a></li>
+<li><a class="reference internal" href="#values-prefix-wildcard-how">values([prefix, [wildcard, [how]]])</a></li>
+<li><a class="reference internal" href="#make-automaton">make_automaton()</a></li>
+<li><a class="reference internal" href="#iter-string-start-end-ignore-white-space-false">iter(string, [start, [end]], ignore_white_space=False)</a></li>
+<li><a class="reference internal" href="#find-all-string-callback-start-end">find_all(string, callback, [start, [end]])</a></li>
+<li><a class="reference internal" href="#reduce">__reduce__()</a></li>
+<li><a class="reference internal" href="#save-path-serializer">save(path, serializer)</a></li>
+<li><a class="reference internal" href="#load-path-deserializer-automaton">load(path, deserializer) =&gt; Automaton</a></li>
+<li><a class="reference internal" href="#get-stats-dict">get_stats() -&gt; dict</a><ul>
+<li><a class="reference internal" href="#id10">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dump">dump()</a></li>
+<li><a class="reference internal" href="#set-string-reset-false">set(string, reset=False)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="#">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Wojciech Muła.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>add_word(key, [value]) -&gt; boolean &#8212; ahocorasick  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="add-word-key-value-boolean">
+<h1>add_word(key, [value]) -&gt; boolean<a class="headerlink" href="#add-word-key-value-boolean" title="Permalink to this headline">¶</a></h1>
+<p>Add a key string to the dict-like trie and associate this key with a value.
+value is optional or mandatory depending how the <code class="docutils literal notranslate"><span class="pre">Automaton</span></code> instance was
+created.  Return True if the word key is inserted and did not exists in the
+trie or False otherwise. The value associated with an existing word is replaced.</p>
+<p>The value is either mandatory or optional:</p>
+<ul class="simple">
+<li>If the Automaton was created without argument (the default) as <code class="docutils literal notranslate"><span class="pre">Automaton()</span></code>
+or with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_ANY)</span></code> then the value is required and can
+be any Python object.</li>
+<li>If the Automaton was created with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_INTS)</span></code> then the
+value is optional. If provided it must be an integer, otherwise it defaults to
+<code class="docutils literal notranslate"><span class="pre">len(automaton)</span></code> which is therefore the order index in which keys are added
+to the trie.</li>
+<li>If the Automaton was created with <code class="docutils literal notranslate"><span class="pre">Automaton(ahocorasik.STORE_LENGTH)</span></code> then
+associating a value is not allowed - <code class="docutils literal notranslate"><span class="pre">len(word)</span></code> is saved automatically as
+a value instead.</li>
+</ul>
+<p>Calling add_word() invalidates all iterators only if the new key did not exist
+in the trie so far (i.e. the method returned True).</p>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">ValueError</span>: <span class="n">A value object is required as second argument.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">,</span> <span class="p">(</span><span class="mi">42</span><span class="p">,</span> <span class="s1">&#39;text&#39;</span><span class="p">))</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pyhocorasick&quot;</span><span class="p">)</span>
+<span class="go">(42, &#39;text&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;pyahocorasick&quot;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;pyhocorasick&quot;</span><span class="p">)</span>
+<span class="go">12</span>
+</pre></div>
+</div>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_INTS</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">IndexError</span>: <span class="n">tuple index out of range</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;dog&quot;</span><span class="p">)</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;tree&quot;</span><span class="p">,</span> <span class="mi">42</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tree&quot;</span><span class="p">)</span>
+<span class="go">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">add_word</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="mi">43</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;cat&quot;</span><span class="p">)</span>
+<span class="go">43</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">add_word(key, [value]) -&gt; boolean</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Wojciech Muła.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>

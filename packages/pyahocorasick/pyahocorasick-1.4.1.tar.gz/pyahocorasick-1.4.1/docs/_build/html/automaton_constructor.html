@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Automaton(value_type=ahocorasick.STORE_ANY, [key_type]) &#8212; ahocorasick  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="automaton-value-type-ahocorasick-store-any-key-type">
+<h1>Automaton(value_type=ahocorasick.STORE_ANY, [key_type])<a class="headerlink" href="#automaton-value-type-ahocorasick-store-any-key-type" title="Permalink to this headline">¶</a></h1>
+<p>Create a new empty Automaton. Both <code class="docutils literal notranslate"><span class="pre">value_type</span></code> and <code class="docutils literal notranslate"><span class="pre">key_type</span></code> are optional.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value_type</span></code> is one of these constants:</p>
+<ul class="simple">
+<li>ahocorasick.STORE_ANY [<em>default</em>] : The associated value can be any Python object.</li>
+<li>ahocorasick.STORE_LENGTH : The length of an added string key is automatically
+used as the associated value stored in the trie for that key.</li>
+<li>ahocorasick.STORE_INTS : The associated value must be a 32-bit integer.</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">key_type</span></code> defines the type of data that can be stored in an automaton; it is one of
+these constants and defines type of data might be stored:</p>
+<ul class="simple">
+<li>ahocorasick.KEY_STRING [<em>default</em>] : string</li>
+<li>ahocorasick.KEY_SEQUENCE : sequences of integers; The size of integer depends
+the version and platform Python, but for versions of Python &gt;= 3.3, it is
+guaranteed to be 32-bits.</li>
+</ul>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">ahocorasick</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1bdf7f0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_ANY</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">B</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1bdf6c0&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">C</span> <span class="o">=</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">Automaton</span><span class="p">(</span><span class="n">ahocorasick</span><span class="o">.</span><span class="n">STORE_INTS</span><span class="p">,</span> <span class="n">ahocorasick</span><span class="o">.</span><span class="n">KEY_STRING</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">C</span>
+<span class="go">&lt;ahocorasick.Automaton object at 0x7f1da1527f10&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Automaton(value_type=ahocorasick.STORE_ANY, [key_type])</a><ul>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="nav-item nav-item-0"><a href="index.html">ahocorasick  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Wojciech Muła.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.9.
+    </div>
+  </body>
+</html>
