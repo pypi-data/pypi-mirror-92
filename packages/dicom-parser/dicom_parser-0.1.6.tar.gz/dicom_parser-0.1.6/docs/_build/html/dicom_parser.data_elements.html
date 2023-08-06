@@ -1,0 +1,794 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>dicom_parser.data_elements package &mdash; dicom_parser 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> dicom_parser
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vendors.html">Vendor-specific Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/modules.html">Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_notes.html">Release Notes</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">dicom_parser</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>dicom_parser.data_elements package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/dicom_parser.data_elements.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dicom-parser-data-elements-package">
+<h1>dicom_parser.data_elements package<a class="headerlink" href="#dicom-parser-data-elements-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-dicom_parser.data_elements.age_string">
+<span id="dicom-parser-data-elements-age-string-module"></span><h2>dicom_parser.data_elements.age_string module<a class="headerlink" href="#module-dicom_parser.data_elements.age_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.age_string.AgeString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.age_string.</code><code class="sig-name descname">AgeString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.age_string.AgeString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.age_string.AgeString.N_IN_YEAR">
+<code class="sig-name descname">N_IN_YEAR</code><em class="property"> = {'D': 365.2422, 'M': 12, 'W': 52.1429, 'Y': 1}</em><a class="headerlink" href="#dicom_parser.data_elements.age_string.AgeString.N_IN_YEAR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.age_string.AgeString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Age String'</em><a class="headerlink" href="#dicom_parser.data_elements.age_string.AgeString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.age_string.AgeString.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)">float</a><a class="headerlink" href="#dicom_parser.data_elements.age_string.AgeString.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts an Age String element’s representation of age into a <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a>
+representing years.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></a>) – Age String value</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Age in years</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.9)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.application_entity">
+<span id="dicom-parser-data-elements-application-entity-module"></span><h2>dicom_parser.data_elements.application_entity module<a class="headerlink" href="#module-dicom_parser.data_elements.application_entity" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.application_entity.ApplicationEntity">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.application_entity.</code><code class="sig-name descname">ApplicationEntity</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.application_entity.ApplicationEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.application_entity.ApplicationEntity.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Application Entity'</em><a class="headerlink" href="#dicom_parser.data_elements.application_entity.ApplicationEntity.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.attribute_tag">
+<span id="dicom-parser-data-elements-attribute-tag-module"></span><h2>dicom_parser.data_elements.attribute_tag module<a class="headerlink" href="#module-dicom_parser.data_elements.attribute_tag" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.attribute_tag.AttributeTag">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.attribute_tag.</code><code class="sig-name descname">AttributeTag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.attribute_tag.AttributeTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.attribute_tag.AttributeTag.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Attribute Tag'</em><a class="headerlink" href="#dicom_parser.data_elements.attribute_tag.AttributeTag.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.code_string">
+<span id="dicom-parser-data-elements-code-string-module"></span><h2>dicom_parser.data_elements.code_string module<a class="headerlink" href="#module-dicom_parser.data_elements.code_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.code_string.CodeString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.code_string.</code><code class="sig-name descname">CodeString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.code_string.CodeString.TAG_TO_ENUM">
+<code class="sig-name descname">TAG_TO_ENUM</code><em class="property"> = {('0008', '0060'): &lt;enum 'Modality'&gt;, ('0010', '0040'): &lt;enum 'Sex'&gt;, ('0018', '0020'): &lt;enum 'ScanningSequence'&gt;, ('0018', '0021'): &lt;enum 'SequenceVariant'&gt;, ('0018', '5100'): &lt;enum 'PatientPosition'&gt;}</em><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString.TAG_TO_ENUM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.code_string.CodeString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Code String'</em><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.code_string.CodeString.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.code_string.CodeString.parse_with_enum">
+<code class="sig-name descname">parse_with_enum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em>, <em class="sig-param"><span class="n">enum</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.9)">enum.Enum</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString.parse_with_enum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.code_string.CodeString.warn_invalid_code_string_value">
+<code class="sig-name descname">warn_invalid_code_string_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">exception</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.9)">KeyError</a></span></em>, <em class="sig-param"><span class="n">enum</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.9)">enum.Enum</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a><a class="headerlink" href="#dicom_parser.data_elements.code_string.CodeString.warn_invalid_code_string_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays a warning for invalid Code String (CS) values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>exception</strong> (<a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.9)"><em>KeyError</em></a>) – The exception raised when trying to parse the invalid value</p></li>
+<li><p><strong>enum</strong> (<a class="reference external" href="https://docs.python.org/3/library/enum.html#enum.Enum" title="(in Python v3.9)"><em>enum.Enum</em></a>) – An Enum representing the element’s valid values</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.date">
+<span id="dicom-parser-data-elements-date-module"></span><h2>dicom_parser.data_elements.date module<a class="headerlink" href="#module-dicom_parser.data_elements.date" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.date.Date">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.date.</code><code class="sig-name descname">Date</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.date.Date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.date.Date.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Date'</em><a class="headerlink" href="#dicom_parser.data_elements.date.Date.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.date.Date.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span> &#x2192; None.datetime.date<a class="headerlink" href="#dicom_parser.data_elements.date.Date.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.date_time">
+<span id="dicom-parser-data-elements-date-time-module"></span><h2>dicom_parser.data_elements.date_time module<a class="headerlink" href="#module-dicom_parser.data_elements.date_time" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.date_time.DateTime">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.date_time.</code><code class="sig-name descname">DateTime</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.date_time.DateTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.date_time.DateTime.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Date Time'</em><a class="headerlink" href="#dicom_parser.data_elements.date_time.DateTime.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.decimal_string">
+<span id="dicom-parser-data-elements-decimal-string-module"></span><h2>dicom_parser.data_elements.decimal_string module<a class="headerlink" href="#module-dicom_parser.data_elements.decimal_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.decimal_string.DecimalString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.decimal_string.</code><code class="sig-name descname">DecimalString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.decimal_string.DecimalString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.decimal_string.DecimalString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Decimal String'</em><a class="headerlink" href="#dicom_parser.data_elements.decimal_string.DecimalString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.decimal_string.DecimalString.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.decimal_string.DecimalString.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.floating_point_double">
+<span id="dicom-parser-data-elements-floating-point-double-module"></span><h2>dicom_parser.data_elements.floating_point_double module<a class="headerlink" href="#module-dicom_parser.data_elements.floating_point_double" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.floating_point_double.FloatingPointDouble">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.floating_point_double.</code><code class="sig-name descname">FloatingPointDouble</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.floating_point_double.FloatingPointDouble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.floating_point_double.FloatingPointDouble.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Floating Point Double'</em><a class="headerlink" href="#dicom_parser.data_elements.floating_point_double.FloatingPointDouble.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.floating_point_single">
+<span id="dicom-parser-data-elements-floating-point-single-module"></span><h2>dicom_parser.data_elements.floating_point_single module<a class="headerlink" href="#module-dicom_parser.data_elements.floating_point_single" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.floating_point_single.FloatingPointSingle">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.floating_point_single.</code><code class="sig-name descname">FloatingPointSingle</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.floating_point_single.FloatingPointSingle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.floating_point_single.FloatingPointSingle.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Floating Point Single'</em><a class="headerlink" href="#dicom_parser.data_elements.floating_point_single.FloatingPointSingle.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.integer_string">
+<span id="dicom-parser-data-elements-integer-string-module"></span><h2>dicom_parser.data_elements.integer_string module<a class="headerlink" href="#module-dicom_parser.data_elements.integer_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.integer_string.IntegerString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.integer_string.</code><code class="sig-name descname">IntegerString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.integer_string.IntegerString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.integer_string.IntegerString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Integer String'</em><a class="headerlink" href="#dicom_parser.data_elements.integer_string.IntegerString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.integer_string.IntegerString.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.integer_string.IntegerString.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.long_string">
+<span id="dicom-parser-data-elements-long-string-module"></span><h2>dicom_parser.data_elements.long_string module<a class="headerlink" href="#module-dicom_parser.data_elements.long_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.long_string.LongString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.long_string.</code><code class="sig-name descname">LongString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.long_string.LongString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.long_string.LongString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Long String'</em><a class="headerlink" href="#dicom_parser.data_elements.long_string.LongString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.long_text">
+<span id="dicom-parser-data-elements-long-text-module"></span><h2>dicom_parser.data_elements.long_text module<a class="headerlink" href="#module-dicom_parser.data_elements.long_text" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.long_text.LongText">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.long_text.</code><code class="sig-name descname">LongText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.long_text.LongText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.long_text.LongText.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Long Text'</em><a class="headerlink" href="#dicom_parser.data_elements.long_text.LongText.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_64bit_very_long">
+<span id="dicom-parser-data-elements-other-64bit-very-long-module"></span><h2>dicom_parser.data_elements.other_64bit_very_long module<a class="headerlink" href="#module-dicom_parser.data_elements.other_64bit_very_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_64bit_very_long.Other64bitVeryLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_64bit_very_long.</code><code class="sig-name descname">Other64bitVeryLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_64bit_very_long.Other64bitVeryLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_64bit_very_long.Other64bitVeryLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other 64-bit Very Long'</em><a class="headerlink" href="#dicom_parser.data_elements.other_64bit_very_long.Other64bitVeryLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_byte">
+<span id="dicom-parser-data-elements-other-byte-module"></span><h2>dicom_parser.data_elements.other_byte module<a class="headerlink" href="#module-dicom_parser.data_elements.other_byte" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_byte.OtherByte">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_byte.</code><code class="sig-name descname">OtherByte</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_byte.OtherByte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_byte.OtherByte.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other Byte'</em><a class="headerlink" href="#dicom_parser.data_elements.other_byte.OtherByte.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_double">
+<span id="dicom-parser-data-elements-other-double-module"></span><h2>dicom_parser.data_elements.other_double module<a class="headerlink" href="#module-dicom_parser.data_elements.other_double" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_double.OtherDouble">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_double.</code><code class="sig-name descname">OtherDouble</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_double.OtherDouble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_double.OtherDouble.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other Double'</em><a class="headerlink" href="#dicom_parser.data_elements.other_double.OtherDouble.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_float">
+<span id="dicom-parser-data-elements-other-float-module"></span><h2>dicom_parser.data_elements.other_float module<a class="headerlink" href="#module-dicom_parser.data_elements.other_float" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_float.OtherFloat">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_float.</code><code class="sig-name descname">OtherFloat</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_float.OtherFloat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_float.OtherFloat.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other Float'</em><a class="headerlink" href="#dicom_parser.data_elements.other_float.OtherFloat.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_long">
+<span id="dicom-parser-data-elements-other-long-module"></span><h2>dicom_parser.data_elements.other_long module<a class="headerlink" href="#module-dicom_parser.data_elements.other_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_long.OtherLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_long.</code><code class="sig-name descname">OtherLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_long.OtherLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_long.OtherLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other Long'</em><a class="headerlink" href="#dicom_parser.data_elements.other_long.OtherLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.other_word">
+<span id="dicom-parser-data-elements-other-word-module"></span><h2>dicom_parser.data_elements.other_word module<a class="headerlink" href="#module-dicom_parser.data_elements.other_word" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.other_word.OtherWord">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.other_word.</code><code class="sig-name descname">OtherWord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.other_word.OtherWord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.other_word.OtherWord.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Other Word'</em><a class="headerlink" href="#dicom_parser.data_elements.other_word.OtherWord.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.other_word.OtherWord.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)">bytes</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a><a class="headerlink" href="#dicom_parser.data_elements.other_word.OtherWord.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.person_name">
+<span id="dicom-parser-data-elements-person-name-module"></span><h2>dicom_parser.data_elements.person_name module<a class="headerlink" href="#module-dicom_parser.data_elements.person_name" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.person_name.PersonName">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.person_name.</code><code class="sig-name descname">PersonName</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.person_name.PersonName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.person_name.PersonName.COMPONENTS">
+<code class="sig-name descname">COMPONENTS</code><em class="property"> = ('name_prefix', 'given_name', 'middle_name', 'family_name', 'name_suffix')</em><a class="headerlink" href="#dicom_parser.data_elements.person_name.PersonName.COMPONENTS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.person_name.PersonName.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Person Name'</em><a class="headerlink" href="#dicom_parser.data_elements.person_name.PersonName.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.person_name.PersonName.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.valuerep.PersonName.html#pydicom.valuerep.PersonName" title="(in pydicom v2.1.2)">pydicom.valuerep.PersonName</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.9)">dict</a><a class="headerlink" href="#dicom_parser.data_elements.person_name.PersonName.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.private_data_element">
+<span id="dicom-parser-data-elements-private-data-element-module"></span><h2>dicom_parser.data_elements.private_data_element module<a class="headerlink" href="#module-dicom_parser.data_elements.private_data_element" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.private_data_element.PrivateDataElement">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.private_data_element.</code><code class="sig-name descname">PrivateDataElement</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.private_data_element.PrivateDataElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.private_data_element.PrivateDataElement.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unknown'</em><a class="headerlink" href="#dicom_parser.data_elements.private_data_element.PrivateDataElement.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.private_data_element.PrivateDataElement.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#bytes" title="(in Python v3.9)">bytes</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.private_data_element.PrivateDataElement.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.private_data_element.PrivateDataElement.update_from_definition">
+<code class="sig-name descname">update_from_definition</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.9)">None</a><a class="headerlink" href="#dicom_parser.data_elements.private_data_element.PrivateDataElement.update_from_definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.sequence_of_items">
+<span id="dicom-parser-data-elements-sequence-of-items-module"></span><h2>dicom_parser.data_elements.sequence_of_items module<a class="headerlink" href="#module-dicom_parser.data_elements.sequence_of_items" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.sequence_of_items.SequenceOfItems">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.sequence_of_items.</code><code class="sig-name descname">SequenceOfItems</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.sequence_of_items.SequenceOfItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.sequence_of_items.SequenceOfItems.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Sequence of Items'</em><a class="headerlink" href="#dicom_parser.data_elements.sequence_of_items.SequenceOfItems.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.sequence_of_items.SequenceOfItems.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataset.Dataset.html#pydicom.dataset.Dataset" title="(in pydicom v2.1.2)">pydicom.dataset.Dataset</a></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.9)">list</a><a class="headerlink" href="#dicom_parser.data_elements.sequence_of_items.SequenceOfItems.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.sequence_of_items.SequenceOfItems.to_dataframe">
+<code class="sig-name descname">to_dataframe</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; pandas.core.frame.DataFrame<a class="headerlink" href="#dicom_parser.data_elements.sequence_of_items.SequenceOfItems.to_dataframe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.short_string">
+<span id="dicom-parser-data-elements-short-string-module"></span><h2>dicom_parser.data_elements.short_string module<a class="headerlink" href="#module-dicom_parser.data_elements.short_string" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.short_string.ShortString">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.short_string.</code><code class="sig-name descname">ShortString</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.short_string.ShortString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.short_string.ShortString.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Short String'</em><a class="headerlink" href="#dicom_parser.data_elements.short_string.ShortString.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.short_text">
+<span id="dicom-parser-data-elements-short-text-module"></span><h2>dicom_parser.data_elements.short_text module<a class="headerlink" href="#module-dicom_parser.data_elements.short_text" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.short_text.ShortText">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.short_text.</code><code class="sig-name descname">ShortText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.short_text.ShortText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.short_text.ShortText.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Short Text'</em><a class="headerlink" href="#dicom_parser.data_elements.short_text.ShortText.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.signed_64bit_very_long">
+<span id="dicom-parser-data-elements-signed-64bit-very-long-module"></span><h2>dicom_parser.data_elements.signed_64bit_very_long module<a class="headerlink" href="#module-dicom_parser.data_elements.signed_64bit_very_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.signed_64bit_very_long.Signed64bitVeryLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.signed_64bit_very_long.</code><code class="sig-name descname">Signed64bitVeryLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.signed_64bit_very_long.Signed64bitVeryLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.signed_64bit_very_long.Signed64bitVeryLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Signed 64-bit Very Long'</em><a class="headerlink" href="#dicom_parser.data_elements.signed_64bit_very_long.Signed64bitVeryLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.signed_long">
+<span id="dicom-parser-data-elements-signed-long-module"></span><h2>dicom_parser.data_elements.signed_long module<a class="headerlink" href="#module-dicom_parser.data_elements.signed_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.signed_long.SignedLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.signed_long.</code><code class="sig-name descname">SignedLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.signed_long.SignedLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.signed_long.SignedLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Signed Long'</em><a class="headerlink" href="#dicom_parser.data_elements.signed_long.SignedLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.signed_short">
+<span id="dicom-parser-data-elements-signed-short-module"></span><h2>dicom_parser.data_elements.signed_short module<a class="headerlink" href="#module-dicom_parser.data_elements.signed_short" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.signed_short.SignedShort">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.signed_short.</code><code class="sig-name descname">SignedShort</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.signed_short.SignedShort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.signed_short.SignedShort.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Signed Short'</em><a class="headerlink" href="#dicom_parser.data_elements.signed_short.SignedShort.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.time">
+<span id="dicom-parser-data-elements-time-module"></span><h2>dicom_parser.data_elements.time module<a class="headerlink" href="#module-dicom_parser.data_elements.time" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.time.Time">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.time.</code><code class="sig-name descname">Time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.time.Time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.time.Time.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Time'</em><a class="headerlink" href="#dicom_parser.data_elements.time.Time.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="dicom_parser.data_elements.time.Time.parse_value">
+<code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.9)">str</a></span></em><span class="sig-paren">)</span> &#x2192; None.datetime.time<a class="headerlink" href="#dicom_parser.data_elements.time.Time.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unique_identifier">
+<span id="dicom-parser-data-elements-unique-identifier-module"></span><h2>dicom_parser.data_elements.unique_identifier module<a class="headerlink" href="#module-dicom_parser.data_elements.unique_identifier" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unique_identifier.UniqueIdentifer">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unique_identifier.</code><code class="sig-name descname">UniqueIdentifer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unique_identifier.UniqueIdentifer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unique_identifier.UniqueIdentifer.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unique Identifer'</em><a class="headerlink" href="#dicom_parser.data_elements.unique_identifier.UniqueIdentifer.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unlimited_characters">
+<span id="dicom-parser-data-elements-unlimited-characters-module"></span><h2>dicom_parser.data_elements.unlimited_characters module<a class="headerlink" href="#module-dicom_parser.data_elements.unlimited_characters" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unlimited_characters.UnlimitedCharacters">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unlimited_characters.</code><code class="sig-name descname">UnlimitedCharacters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unlimited_characters.UnlimitedCharacters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unlimited_characters.UnlimitedCharacters.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unlimited Characters'</em><a class="headerlink" href="#dicom_parser.data_elements.unlimited_characters.UnlimitedCharacters.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unlimited_text">
+<span id="dicom-parser-data-elements-unlimited-text-module"></span><h2>dicom_parser.data_elements.unlimited_text module<a class="headerlink" href="#module-dicom_parser.data_elements.unlimited_text" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unlimited_text.UnlimitedText">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unlimited_text.</code><code class="sig-name descname">UnlimitedText</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unlimited_text.UnlimitedText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unlimited_text.UnlimitedText.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unlimited Text'</em><a class="headerlink" href="#dicom_parser.data_elements.unlimited_text.UnlimitedText.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unsigned_64bit_very_long">
+<span id="dicom-parser-data-elements-unsigned-64bit-very-long-module"></span><h2>dicom_parser.data_elements.unsigned_64bit_very_long module<a class="headerlink" href="#module-dicom_parser.data_elements.unsigned_64bit_very_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unsigned_64bit_very_long.Unsigned64bitVeryLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unsigned_64bit_very_long.</code><code class="sig-name descname">Unsigned64bitVeryLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unsigned_64bit_very_long.Unsigned64bitVeryLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unsigned_64bit_very_long.Unsigned64bitVeryLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unsigned 64-bit Very Long'</em><a class="headerlink" href="#dicom_parser.data_elements.unsigned_64bit_very_long.Unsigned64bitVeryLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unsigned_long">
+<span id="dicom-parser-data-elements-unsigned-long-module"></span><h2>dicom_parser.data_elements.unsigned_long module<a class="headerlink" href="#module-dicom_parser.data_elements.unsigned_long" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unsigned_long.UnsignedLong">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unsigned_long.</code><code class="sig-name descname">UnsignedLong</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unsigned_long.UnsignedLong" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unsigned_long.UnsignedLong.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unsigned Long'</em><a class="headerlink" href="#dicom_parser.data_elements.unsigned_long.UnsignedLong.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.unsigned_short">
+<span id="dicom-parser-data-elements-unsigned-short-module"></span><h2>dicom_parser.data_elements.unsigned_short module<a class="headerlink" href="#module-dicom_parser.data_elements.unsigned_short" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.unsigned_short.UnsignedShort">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.unsigned_short.</code><code class="sig-name descname">UnsignedShort</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.unsigned_short.UnsignedShort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.unsigned_short.UnsignedShort.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Unsigned Short'</em><a class="headerlink" href="#dicom_parser.data_elements.unsigned_short.UnsignedShort.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements.url">
+<span id="dicom-parser-data-elements-url-module"></span><h2>dicom_parser.data_elements.url module<a class="headerlink" href="#module-dicom_parser.data_elements.url" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="dicom_parser.data_elements.url.Url">
+<em class="property">class </em><code class="sig-prename descclassname">dicom_parser.data_elements.url.</code><code class="sig-name descname">Url</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw</span><span class="p">:</span> <span class="n"><a class="reference external" href="https://pydicom.github.io/pydicom/stable/reference/generated/pydicom.dataelem.DataElement.html#pydicom.dataelem.DataElement" title="(in pydicom v2.1.2)">pydicom.dataelem.DataElement</a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dicom_parser.data_elements.url.Url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dicom_parser.html#dicom_parser.data_element.DataElement" title="dicom_parser.data_element.DataElement"><code class="xref py py-class docutils literal notranslate"><span class="pre">dicom_parser.data_element.DataElement</span></code></a></p>
+<dl class="py attribute">
+<dt id="dicom_parser.data_elements.url.Url.VALUE_REPRESENTATION">
+<code class="sig-name descname">VALUE_REPRESENTATION</code><em class="property">: <a class="reference internal" href="dicom_parser.utils.html#dicom_parser.utils.value_representation.ValueRepresentation" title="dicom_parser.utils.value_representation.ValueRepresentation">dicom_parser.utils.value_representation.ValueRepresentation</a></em><em class="property"> = 'Universal Resource'</em><a class="headerlink" href="#dicom_parser.data_elements.url.Url.VALUE_REPRESENTATION" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-dicom_parser.data_elements">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dicom_parser.data_elements" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Zvi Baratz
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

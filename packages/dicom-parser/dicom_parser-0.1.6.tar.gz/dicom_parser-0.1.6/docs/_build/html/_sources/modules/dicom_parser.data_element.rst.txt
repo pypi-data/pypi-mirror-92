@@ -1,0 +1,11 @@
+data\_element
+==============
+
+Module contents
+---------------
+
+.. automodule:: dicom_parser.data_element
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

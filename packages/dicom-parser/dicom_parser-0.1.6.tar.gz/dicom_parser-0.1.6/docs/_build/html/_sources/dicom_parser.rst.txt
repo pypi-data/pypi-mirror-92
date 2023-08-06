@@ -1,0 +1,62 @@
+dicom\_parser package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   dicom_parser.data_elements
+   dicom_parser.utils
+
+Submodules
+----------
+
+dicom\_parser.data\_element module
+----------------------------------
+
+.. automodule:: dicom_parser.data_element
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dicom\_parser.header module
+---------------------------
+
+.. automodule:: dicom_parser.header
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dicom\_parser.image module
+--------------------------
+
+.. automodule:: dicom_parser.image
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dicom\_parser.messages module
+-----------------------------
+
+.. automodule:: dicom_parser.messages
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+dicom\_parser.series module
+---------------------------
+
+.. automodule:: dicom_parser.series
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: dicom_parser
+   :members:
+   :undoc-members:
+   :show-inheritance:
