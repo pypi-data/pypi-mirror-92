@@ -1,0 +1,22 @@
+#!/usr/bin/env python
+
+"""route53-recordset-converter
+Converts an input CSV file from route53-transfer to a JSON file which can be
+then used in a Terraform google_dns_record_set
+
+Usage:
+  route53-recordset-converter [] load <input_csv_file> <output_json_file>
+  route53-recordset-converter -h | --help
+  route53-recordset-converter -v | --version
+Options:
+  -h --help                               Show this screen.
+  -v --version                            Show the version.
+  -n --no-headers-skip                    Consider first row of the CSV file as record (by default first row is skipped).
+"""
+
+from docopt import docopt
+
+from route53_recordset_converter import __version__, app
+
+params = docopt(__doc__, version='route53-recordset-converter %s' % __version__)
+app.run(params)
