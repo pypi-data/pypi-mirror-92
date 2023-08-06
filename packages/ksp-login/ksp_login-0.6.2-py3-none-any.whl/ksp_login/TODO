@@ -1,0 +1,30 @@
+- make the whole package i18n-friendly
+- generalize templates, possibly factor out some things (base template
+  etc) into settings
+- make the views and templates AJAX-friendly
+- user merging
+- implement a password reset facility (use the one in d.c.auth)
+- use namespaced URL patterns
+- only include those URLs from social_auth that we need
+- wrap the backend list images in an anchor
+- get rid of mandatory context processors in favor of template tags
+- rework the way UI-related stuff is defined for backends to avoid
+  monkeypatching and to make it simple to reuse icons
+- tests
+  - javascript
+  - account associations vs passwords
+  - connecting / disconnecting accounts
+
+
+- docs:
+  - add ksp_login, PSA to INSTALLED_APPS
+  - include templates
+    - login_box
+    - CSS
+    - javascript
+    - override base
+  - context processors
+  - LOGIN_URL et al.
+  - enable social auth backends
+  - pickle session serializer (pipeline state)
+  - pipeline

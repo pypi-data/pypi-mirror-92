@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ksp-login
+Version: 0.6.2
+Summary: KSP Login is an app for easy authentication management with support for
+License: BSD-4-Clause
+Author: Michal Petrucha
+Author-email: michal.petrucha@koniiiik.org
+Requires-Python: >=3.5,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django (>=1.11)
+Requires-Dist: social-auth-app-django (>=3.1)
+Requires-Dist: social-auth-core (>=3.0)
