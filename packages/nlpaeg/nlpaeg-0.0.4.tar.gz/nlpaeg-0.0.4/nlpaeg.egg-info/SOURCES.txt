@@ -1,0 +1,12 @@
+setup.py
+nlpaeg/__init__.py
+nlpaeg/__main__.py
+nlpaeg/error_generator.py
+nlpaeg/helper_functions.py
+nlpaeg/helper_variables.py
+nlpaeg.egg-info/PKG-INFO
+nlpaeg.egg-info/SOURCES.txt
+nlpaeg.egg-info/dependency_links.txt
+nlpaeg.egg-info/entry_points.txt
+nlpaeg.egg-info/requires.txt
+nlpaeg.egg-info/top_level.txt
