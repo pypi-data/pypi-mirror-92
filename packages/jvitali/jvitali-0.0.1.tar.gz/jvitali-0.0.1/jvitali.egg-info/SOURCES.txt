@@ -1,0 +1,9 @@
+README.md
+setup.py
+jvitali/BasicMath.py
+jvitali/ListFunctions.py
+jvitali/__init__.py
+jvitali.egg-info/PKG-INFO
+jvitali.egg-info/SOURCES.txt
+jvitali.egg-info/dependency_links.txt
+jvitali.egg-info/top_level.txt
