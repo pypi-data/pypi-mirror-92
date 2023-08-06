@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: finitefloat
+Version: 0.1.1
+Summary: Finite (non-nan, non-inf) float
+Home-page: https://github.com/nekonoshiri/finitefloat
+License: MIT
+Keywords: float
+Author: Shiri Nekono
+Author-email: gexira.halen.toms@gmail.com
+Maintainer: Shiri Nekono
+Maintainer-email: gexira.halen.toms@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Project-URL: Documentation, https://github.com/nekonoshiri/finitefloat
+Project-URL: Repository, https://github.com/nekonoshiri/finitefloat
+Description-Content-Type: text/markdown
+
+# finitefloat
+
+[![PyPI](https://img.shields.io/pypi/v/finitefloat)](https://pypi.org/project/finitefloat/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/finitefloat)](https://pypi.org/project/finitefloat/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![license](https://img.shields.io/github/license/nekonoshiri/finitefloat)](https://github.com/nekonoshiri/finitefloat/blob/main/LICENSE)
+
+Finite (non-nan, non-inf) float.
+
+## Usage
+
+```Python
+import math
+
+from finitefloat import NotFinite, finitefloat
+
+value: finitefloat = finitefloat(0.1)
+
+try:
+    value = finitefloat(math.nan)
+except NotFinite:
+    print("The value is not finite.")
+```
+
+## API
+
+### Module `finitefloat`
+
+#### *class* `finitefloat(x: Union[SupportsFloat, SupportsIndex, str, bytes, bytearray])`
+
+Subclass of `float`.
+Raise `NotFinite` exception if `float(x)` is nan or ±inf.
+
+#### *class* `NotFinite`
+
+Subclass of `ValueError`.
+
+

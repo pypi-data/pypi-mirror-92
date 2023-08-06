@@ -1,0 +1,2 @@
+class NotFinite(ValueError):
+    pass
