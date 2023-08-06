@@ -1,0 +1,7 @@
+message_channel/__init__.py,sha256=05G9PGnXph_E2D2jApzPX6I0HdP7-bOgl2aKVYLfcyQ,154
+message_channel/channel.py,sha256=IWOL1dVPlskwt-uehDo8YSkQJ98OjVpa5lc6oFfUc9E,3057
+message_channel/router.py,sha256=xKuPJM-OGM0pW__Zp97UlG3GyU4s4gEs3aItJEyRVM4,908
+python_message_channel-0.1.0.dist-info/LICENSE,sha256=UJ0uBDyR1oJCWTFc2FSWXmgWHd_qpGMyi_sGaIYpVF4,1099
+python_message_channel-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+python_message_channel-0.1.0.dist-info/METADATA,sha256=VAtQ_B_bF5FrtM2yTbXR9pI3_a1UYgtj0IlCt9kLtqk,913
+python_message_channel-0.1.0.dist-info/RECORD,,
