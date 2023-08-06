@@ -1,0 +1,13 @@
+motorisedcameratracking/Cameras.py,sha256=BVSNqMrVSiHMF4a87VpBz6TarKOLg9Yko0NcVOEF6Ok,3734
+motorisedcameratracking/Config.py,sha256=8B73_faH0khaomu2YVv9zTQbpz20d0ebo5YwWAb6mYs,624
+motorisedcameratracking/Imaging.cpython-37m-arm-linux-gnueabihf.so,sha256=wcRt1-gI3TI2hIdMl2xOvO3PSlEGFcpDg30fIz4X6zA,1218724
+motorisedcameratracking/Imaging.py,sha256=XiylZlJ4GkH-4-2Laaz47AosiCWz0enODsEe6XMnUYE,23667
+motorisedcameratracking/MotorControl.py,sha256=ExrTCs9z6xRjjR8G6WTLwh8tEfr-LNBYURTx9c0TvAE,11206
+motorisedcameratracking/MotorisedCameraTracking.py,sha256=uE7JJhdCGbPk92b4YOnv52RrgQXbFrnP1lQjoBYanJk,17650
+motorisedcameratracking/__init__.py,sha256=m846hKG54Wgq7GmJNVPvii7jVKiW2hl_lhwmlEbuyLE,84
+motorisedcameratracking/errors.py,sha256=22bQuMBNs1drGY3KlHhrYPCfybV3o1WMyadcBLQh20U,1034
+motorisedcameratracking-0.5.0.dev9.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+motorisedcameratracking-0.5.0.dev9.dist-info/METADATA,sha256=oO2jWMyvny7xN30gNxnmInpUQlT0aKKv8FEUhYAWMA4,1135
+motorisedcameratracking-0.5.0.dev9.dist-info/WHEEL,sha256=GMu0CcHnECe7JSPnzBUPyOsrcZoHb7dOBGXgpe8vHSQ,104
+motorisedcameratracking-0.5.0.dev9.dist-info/top_level.txt,sha256=s0xgFS_vK1xj9uqaCW0yHAC1lQC1gD1gKqOSEImoQu4,24
+motorisedcameratracking-0.5.0.dev9.dist-info/RECORD,,
