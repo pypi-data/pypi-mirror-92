@@ -1,0 +1,8 @@
+setup.py
+availabledatasource/__init__.py
+availabledatasource/fetch_data.py
+availabledatasource.egg-info/PKG-INFO
+availabledatasource.egg-info/SOURCES.txt
+availabledatasource.egg-info/dependency_links.txt
+availabledatasource.egg-info/not-zip-safe
+availabledatasource.egg-info/top_level.txt
