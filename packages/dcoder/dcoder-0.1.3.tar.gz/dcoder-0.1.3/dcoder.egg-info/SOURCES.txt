@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+dcoder/__init__.py
+dcoder/dcodefuncs.py
+dcoder.egg-info/PKG-INFO
+dcoder.egg-info/SOURCES.txt
+dcoder.egg-info/dependency_links.txt
+dcoder.egg-info/top_level.txt
