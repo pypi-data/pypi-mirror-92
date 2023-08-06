@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+configya/__init__.py
+configya/_version.py
+configya/file_utils.py
+configya/tree.py
+configya/yaml_config.py
+configya.egg-info/PKG-INFO
+configya.egg-info/SOURCES.txt
+configya.egg-info/dependency_links.txt
+configya.egg-info/requires.txt
+configya.egg-info/top_level.txt
