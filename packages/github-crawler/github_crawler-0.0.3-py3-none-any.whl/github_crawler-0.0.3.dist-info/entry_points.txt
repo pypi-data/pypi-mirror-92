@@ -1,0 +1,3 @@
+[console_scripts]
+my-command = github_parser_pkg.main:main
+
