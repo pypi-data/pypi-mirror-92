@@ -1,0 +1,23 @@
+#!python
+
+"""route53-recordset-converter
+
+Usage:
+  route53-recordset-converter [options] <input_csv_file> <output_json_file>
+  route53-recordset-converter -h | --help
+  route53-recordset-converter -v | --version
+
+Options:
+  -h --help                               Show this screen.
+  -v --version                            Show the version.
+  -n --no-headers-skip                    Consider first row of the CSV file as record (by default first row is skipped).
+  -f --csv-format=CSV_FORMAT              Type of input CSV. Possible values: aws, register.it (aws is default).
+"""
+
+from docopt import docopt
+
+from route53_recordset_converter import __version__, app
+
+params = docopt(
+    __doc__, version='route53-recordset-converter %s' % __version__)
+app.main(params)
