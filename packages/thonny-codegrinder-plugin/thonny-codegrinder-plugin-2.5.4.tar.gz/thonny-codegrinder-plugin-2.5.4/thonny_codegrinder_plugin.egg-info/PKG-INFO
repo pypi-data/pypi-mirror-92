@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: thonny-codegrinder-plugin
+Version: 2.5.4
+Summary: Thonny plugin to integrate with CodeGrinder for coding practice
+Home-page: https://github.com/russross/codegrinder/
+Author: Russ Ross
+Author-email: russ@russross.com
+License: AGPL
+Description: Thonny plugin to integrate with CodeGrinder.
+            This is for students enrolled in Python programming classes
+            that use CodeGrinder for automatic testing and grading.
+Keywords: Thonny CodeGrinder eduction
+Platform: Windows
+Platform: macOS
+Platform: Linux
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Requires-Python: >=3.6

@@ -1,0 +1,4 @@
+requests>=2.21
+thonny>=3.0
+tkinterhtml>=0.7
+websocket-client>=0.57

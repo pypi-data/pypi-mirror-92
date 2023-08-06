@@ -1,0 +1,7 @@
+setup.py
+thonny_codegrinder_plugin.egg-info/PKG-INFO
+thonny_codegrinder_plugin.egg-info/SOURCES.txt
+thonny_codegrinder_plugin.egg-info/dependency_links.txt
+thonny_codegrinder_plugin.egg-info/requires.txt
+thonny_codegrinder_plugin.egg-info/top_level.txt
+thonnycontrib/thonny_codegrinder_plugin/__init__.py
