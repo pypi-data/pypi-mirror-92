@@ -1,0 +1,8 @@
+README.md
+setup.py
+my_happy_flow.egg-info/PKG-INFO
+my_happy_flow.egg-info/SOURCES.txt
+my_happy_flow.egg-info/dependency_links.txt
+my_happy_flow.egg-info/not-zip-safe
+my_happy_flow.egg-info/requires.txt
+my_happy_flow.egg-info/top_level.txt
