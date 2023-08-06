@@ -1,0 +1,6 @@
+PIL
+colorama
+matplotlib
+numpy
+pandas
+scipy
