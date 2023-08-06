@@ -1,0 +1,7 @@
+README.md
+pysignalfd.py
+setup.py
+pysignalfd.egg-info/PKG-INFO
+pysignalfd.egg-info/SOURCES.txt
+pysignalfd.egg-info/dependency_links.txt
+pysignalfd.egg-info/top_level.txt
