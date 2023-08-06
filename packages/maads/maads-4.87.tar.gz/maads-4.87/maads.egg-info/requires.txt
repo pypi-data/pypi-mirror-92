@@ -1,0 +1,4 @@
+aiohttp==3.6.2
+requests==2.22.0
+statsmodels==0.10.1
+validators==0.14.2
