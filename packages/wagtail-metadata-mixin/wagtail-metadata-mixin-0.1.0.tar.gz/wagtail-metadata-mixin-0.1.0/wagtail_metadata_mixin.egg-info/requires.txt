@@ -1,0 +1,13 @@
+django-meta>1.7.0
+wagtail<3.0,>1.4
+
+[develop]
+tox
+django
+pytest-django
+pytest
+
+[test]
+pytest-django
+pytest-cov
+pytest
