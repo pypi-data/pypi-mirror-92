@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+torque/__init__.py
+torque/torque.py
+torque/torque_user.py
+torque/version.py
+torque_python.egg-info/PKG-INFO
+torque_python.egg-info/SOURCES.txt
+torque_python.egg-info/dependency_links.txt
+torque_python.egg-info/top_level.txt
