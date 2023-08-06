@@ -1,0 +1,6 @@
+jaydebeapi
+pexpect
+psutil
+pyyaml
+texttable
+wcwidth
