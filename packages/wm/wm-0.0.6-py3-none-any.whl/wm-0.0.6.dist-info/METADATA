@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: wm
+Version: 0.0.6
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: kafka-python (==2.0.2)
+Requires-Dist: psycopg2 (==2.8.6)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: click (==7.1.2)
+
+UNKNOWN
+
+

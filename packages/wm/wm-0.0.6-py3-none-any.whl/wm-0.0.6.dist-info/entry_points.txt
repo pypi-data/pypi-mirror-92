@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        wm=website_monitor.cli:wm
+    
