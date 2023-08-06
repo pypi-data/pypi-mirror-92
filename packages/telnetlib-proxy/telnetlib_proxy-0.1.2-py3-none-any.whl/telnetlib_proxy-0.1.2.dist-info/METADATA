@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: telnetlib-proxy
+Version: 0.1.2
+Summary: Python telnetlib with SOCKS proxy support
+Home-page: https://github.com/dwapstra/telnetlib-proxy/
+Author: Dave Wapstra
+Author-email: dwapstra@cisco.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pysocks
+
+UNKNOWN
+
+
