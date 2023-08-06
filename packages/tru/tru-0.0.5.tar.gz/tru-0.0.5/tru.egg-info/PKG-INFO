@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: tru
+Version: 0.0.5
+Summary: https://github.com/TroyRetter/TRU
+Home-page: UNKNOWN
+Author: Troy Retter
+Author-email: troyretter@gmail.com
+License: UNKNOWN
+Description: 
+        Wraps some standard python commands for brevity.
+        
+        see: https://github.com/TroyRetter/TRU
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
