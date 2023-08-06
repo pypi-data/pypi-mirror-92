@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: torch-gauge
+Version: 0.0.3rc1
+Summary: A light-weight PyTorch extension for gauge-equivariant geometric learning
+Home-page: UNKNOWN
+Author: Zhuoran Qiao
+Author-email: zqiao@caltech.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
