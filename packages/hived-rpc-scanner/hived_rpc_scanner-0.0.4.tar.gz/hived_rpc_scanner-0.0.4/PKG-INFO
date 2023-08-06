@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hived_rpc_scanner
+Version: 0.0.4
+Summary: A tool to check status of certain endpoints on Hived RPC
+Home-page: https://github.com/emre/hived-rpc-scanner
+Author: emre yilmaz
+Author-email: mail@emreyilmaz.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
