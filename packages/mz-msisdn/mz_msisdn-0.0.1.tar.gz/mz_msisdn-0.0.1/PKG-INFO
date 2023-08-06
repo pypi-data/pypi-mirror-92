@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: mz_msisdn
+Version: 0.0.1
+Summary: A small package to validate if a mozambican number is formated properly.
+Home-page: https://github.com/paulocuambe/mz_msisdn
+Author: Paulo Amosse Cuambe
+Author-email: pamossecuambe@gmail.com
+License: UNKNOWN
+Description: Validate Mozambican MSISDNs
+        
+        ## Installation
+        
+        `pip install mz_msisdn`
+        
+        ## Validating Numbers
+        
+        By default the validation function is setup to validate numbers in the international format.
+        
+        ```py
+        from mz_msisdn import mz_validator
+        
+        # If the number is valid an empty array will be returned
+        mz_validator("258844245708") # []
+        
+        # If the number is invalid an error bag containing all errors will be returned
+        errors = mz_validator("25889424570")
+        print(errors)
+        # ['The phone number must be 12 characters long. currently with 11.',
+        # "Invalid network code. Valid codes: ['82', '83', '84', '85', '86', '87']."]
+        
+        ```
+        
+        If you want to validate numbers considering that you will only receive mozambican numbers, you can enable national formation as shown below:
+        
+        ```py
+        errors = mz_validator("89424570", nr_format="national")
+        # ['The phone number must be 9 characters long. currently with 8.',
+        # "Invalid network code. Valid codes: ['82', '83', '84', '85', '86', '87']."]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

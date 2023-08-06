@@ -1,0 +1,7 @@
+README.md
+setup.py
+mz_msisdn/__init__.py
+mz_msisdn.egg-info/PKG-INFO
+mz_msisdn.egg-info/SOURCES.txt
+mz_msisdn.egg-info/dependency_links.txt
+mz_msisdn.egg-info/top_level.txt
