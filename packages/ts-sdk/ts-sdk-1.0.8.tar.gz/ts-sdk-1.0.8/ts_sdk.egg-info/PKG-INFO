@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ts-sdk
+Version: 1.0.8
+Summary: Tetrascience Python SDK
+Home-page: https://developers.tetrascience.com
+Author: tetrascience
+Author-email: developers@tetrascience.com
+License: Apache License 2.0
+Description: # ts-sdk
+        Tetrascience Python SDK for task scripts run and test
+        
+        ## Dockerfile ENTRYPOINT
+        
+        ```
+        ENTRYPOINT [ "<python-bin>", "-u", "-m", "ts_sdk.task.run" ]
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
