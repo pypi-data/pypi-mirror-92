@@ -1,0 +1,6 @@
+click
+SecretStorage
+
+[dev]
+black
+pip-tools
