@@ -1,0 +1,47 @@
+[build-system]
+requires = [ "poetry>=1.0.0",]
+build-backend = "poetry.masonry.api"
+
+[tool.versionup]
+files = [ "camphr_allennlp/VERSION.py",]
+commit = true
+tag = true
+
+[tool.poetry]
+name = "camphr_allennlp"
+version = "0.1.3"
+description = "AllenNLP plugin for camphr"
+authors = [ "Yohei Tamura <tamuhey@gmail.com>",]
+repository = "https://github.com/PKSHATechnology-Research/camphr-allennlp"
+license = "Apache-2.0"
+readme = "README.md"
+keywords = [ "spaCy", "nlp", "natural language processing", "udify", "allennlp",]
+
+[tool.isort]
+skip = ".venv/**/*.py"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_first_party = "camphr"
+
+[tool.poetry.dependencies]
+python = ">=3.6.1"
+camphr = ">=0.7.0,<0.8"
+allennlp = ">=1.0.0,<=1.0.1"
+boto3 = "^1.14.44"
+unofficial-udify = "==0.2.1"
+
+[tool.poetry.dev-dependencies]
+pylint = "*"
+pytest = "<5.4.4"
+flake8 = "*"
+pre-commit = "*"
+toml = "^0.10.0"
+sphinx = "*"
+doc8 = "*"
+mypy = "*"
+black = "^19.10b0"
+
+[tool.poetry.plugins.spacy_factories]
+udify = "camphr_allennlp:Udify.from_nlp"
+elmo = "camphr_allennlp:Elmo.from_nlp"
