@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+PyEasyDownloader/__init__.py
+PyEasyDownloader.egg-info/PKG-INFO
+PyEasyDownloader.egg-info/SOURCES.txt
+PyEasyDownloader.egg-info/dependency_links.txt
+PyEasyDownloader.egg-info/top_level.txt
