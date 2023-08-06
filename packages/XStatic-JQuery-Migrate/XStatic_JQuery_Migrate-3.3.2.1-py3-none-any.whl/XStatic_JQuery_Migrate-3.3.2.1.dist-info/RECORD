@@ -1,0 +1,9 @@
+XStatic_JQuery_Migrate-3.3.2.1-nspkg.pth,sha256=Jg1EYGn2w189IVnAa-t21OTyYNlR3RWEz9Kf09KN--g,1702
+xstatic/pkg/jquery_migrate/__init__.py,sha256=QbAO9dqCmmdvaRT1gw4oiLSVhDBogc5gsCBE2CU_uZA,1842
+xstatic/pkg/jquery_migrate/data/jquery-migrate.js,sha256=BDmtN-79VRrkfamzD16UnAoJP8zMitAz093tvZATdiE,25300
+xstatic/pkg/jquery_migrate/data/jquery-migrate.min.js,sha256=Ap4KLoCf1rXb52q-i3p0k2vjBsmownyBTE1EqlRiMwA,11224
+XStatic_JQuery_Migrate-3.3.2.1.dist-info/METADATA,sha256=JaFhXy7-bJMLfEqqhDdOmTktt4GHXLU2FILLn2y_RyU,819
+XStatic_JQuery_Migrate-3.3.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+XStatic_JQuery_Migrate-3.3.2.1.dist-info/namespace_packages.txt,sha256=oP6kTUKNrWkfPGcNNMQWOlBu3vuiEsAVYT4dUN1V4Hg,20
+XStatic_JQuery_Migrate-3.3.2.1.dist-info/top_level.txt,sha256=tDpXyaHF81JGnzDNskkXZNoFrs3YW_a1ueuzoAmLNas,8
+XStatic_JQuery_Migrate-3.3.2.1.dist-info/RECORD,,
