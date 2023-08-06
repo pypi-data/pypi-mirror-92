@@ -1,0 +1,9 @@
+mathmod/__init__.py,sha256=3YBulIg5wTxlS6toIQKdQCtT0gJHOLsPVRi3YFqu9kI,6865
+mathmod/area.py,sha256=Lvwv-TLKceEsYPYfmVQabFdxR3HUz9kKnz_iIH_eTSQ,9467
+mathmod/fibonacci.py,sha256=nxBRO51KD0a-vOctaO_W9tlcoMPYUkt78Atv0lBDyrQ,2448
+mathmod/volume.py,sha256=tveFVt-ya_0AjJvGGdYB_5UonAZhEFfqXBga0ZYotdE,4660
+mathmod-0.10.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+mathmod-0.10.2.dist-info/METADATA,sha256=jXj539iV8nhR3_OqQel5eS69rGrpApFKNfR_aL4C4tk,1213
+mathmod-0.10.2.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+mathmod-0.10.2.dist-info/top_level.txt,sha256=1vXbXJOBjSVeCytOk7EUGeIPCqvuIa62c4ywR8F4D48,8
+mathmod-0.10.2.dist-info/RECORD,,
