@@ -1,0 +1,35 @@
+# vim: ft=python
+
+CACHE_CONTROL = (
+STRING_EVAL_FUNCTIONS_IN_CFG
+get_endvalue('LambdaAtEdgeAddHeadersCacheControl')
+STRING_EVAL_FUNCTIONS_IN_CFG
+)
+
+HEADER_CACHE_CONTROL = [{
+    'key': 'cache-control',
+    'value': f'max-age={CACHE_CONTROL}'
+}]
+
+HEADER_XROBOTS_TAG = [{
+    'key': 'x-robots-tag',
+    'value': 'noindex, follow',
+}]
+
+
+def lambda_handler(event, context):
+    response = event['Records'][0]['cf']['response']
+    request = event['Records'][0]['cf']['request']
+
+    headers = response['headers']
+
+    if response['status'].startswith('2'):
+        if request['uri'].startswith('/sitemap/'):
+            headers['x-robots-tag'] = HEADER_XROBOTS_TAG
+        else:
+            headers['cache-control'] = HEADER_CACHE_CONTROL
+
+    if response['status'] == '403':
+        response['status'] = '404'
+
+    return response

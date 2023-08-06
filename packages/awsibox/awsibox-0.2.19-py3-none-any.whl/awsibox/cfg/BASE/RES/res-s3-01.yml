@@ -1,0 +1,3 @@
+res-s3-01:
+  StackType: res
+  StackName: r-s3-01
