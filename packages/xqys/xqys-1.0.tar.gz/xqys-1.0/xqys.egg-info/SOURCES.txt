@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+xqys/__init__.py
+xqys/activation_functions.py
+xqys/cost_functions.py
+xqys/initializers.py
+xqys/metrics.py
+xqys/neural_network.py
+xqys/optimizations.py
+xqys/preprocessing.py
+xqys.egg-info/PKG-INFO
+xqys.egg-info/SOURCES.txt
+xqys.egg-info/dependency_links.txt
+xqys.egg-info/top_level.txt
