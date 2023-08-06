@@ -1,0 +1,11 @@
+Activations.py,sha256=7GGz8cfuu40tJsqsqCoh7cJBvdcSX23W7SL9ON2p16I,5220
+DataPreProcessing.py,sha256=gby3rN6aYoU3SWxi4w0HHARjxduWyQRXhweDIzX-xPY,3934
+Losses.py,sha256=UkXaMmSCKnvYuA2EOGn4Np1Phe4IyczlX6yh8JikZp8,4607
+nn.py,sha256=maBUItX4iFSTC5irnUyVWUg2NOohdUPMohwNeJmXi-E,16060
+optimization.py,sha256=gHVSnnKxMnFjJ83_wKXM8I2oEVREE3-T7Mvv9ODpTas,6957
+save_load.py,sha256=SE7prYheXpLy9v8lJZkJUvNhj4YoXingpVFBC3Cvg8I,1334
+visualization.py,sha256=LEraOiPlMXLkbBnxeF-_32qLp78Xf6LX2aHtB8fQbnc,2937
+nn_for_dummies-0.0.42.dist-info/METADATA,sha256=Mft0TLL1jF0XY2KZKcdL2rak_yiRVEPgrr3qkU0bId4,1552
+nn_for_dummies-0.0.42.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+nn_for_dummies-0.0.42.dist-info/top_level.txt,sha256=XPuEhl6hUtn6GvOFwcUjfc7hkh26MvMn2GBPRfGM8Rw,77
+nn_for_dummies-0.0.42.dist-info/RECORD,,
