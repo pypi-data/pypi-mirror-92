@@ -1,0 +1,25 @@
+$schema: http://json-schema.org/draft-07/schema#
+definitions:
+  task:
+    type: object
+    properties:
+      name:
+        type: string
+      log_to_console:
+        type: boolean
+      stop_on_errors:
+        type: boolean
+type: object
+properties:
+  name:
+    type: string
+  log_to_console:
+    type: boolean
+  stop_on_errors:
+    type: boolean
+  tasks:
+    type: array
+    items:
+      $ref: "#/definitions/task"
+required:
+- tasks
