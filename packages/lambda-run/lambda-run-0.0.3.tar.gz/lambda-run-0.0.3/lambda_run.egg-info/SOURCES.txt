@@ -1,0 +1,11 @@
+README.md
+setup.py
+lambda_run/__init__.py
+lambda_run/__main__.py
+lambda_run/cli.py
+lambda_run.egg-info/PKG-INFO
+lambda_run.egg-info/SOURCES.txt
+lambda_run.egg-info/dependency_links.txt
+lambda_run.egg-info/entry_points.txt
+lambda_run.egg-info/requires.txt
+lambda_run.egg-info/top_level.txt
