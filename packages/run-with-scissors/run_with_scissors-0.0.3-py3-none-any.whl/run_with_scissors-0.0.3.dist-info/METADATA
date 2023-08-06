@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: run-with-scissors
+Version: 0.0.3
+Summary: SVG builder
+Home-page: UNKNOWN
+Author: Takaaki Yoneda
+Author-email: UNKNOWN
+License: MIT
+Keywords: SVG
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: copy
+
+This library exports SVG file.
+Its capabilities are:
+- Draw lines, Paths, Shapes, etc.,
+- Calculate Vector
+
+It was made by a graphic designer who desired to do more than GUI based applications.
+
+
+
+Change Log
+==========
+
+0.0.1(21/01/2021)
+-----------------
+- First Release
+
