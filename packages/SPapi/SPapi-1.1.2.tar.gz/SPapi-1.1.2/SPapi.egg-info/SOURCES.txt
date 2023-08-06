@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+SPapi/__init__.py
+SPapi.egg-info/PKG-INFO
+SPapi.egg-info/SOURCES.txt
+SPapi.egg-info/dependency_links.txt
+SPapi.egg-info/requires.txt
+SPapi.egg-info/top_level.txt
