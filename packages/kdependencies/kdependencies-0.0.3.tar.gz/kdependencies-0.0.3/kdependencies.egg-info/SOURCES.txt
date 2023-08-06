@@ -1,0 +1,14 @@
+README.md
+setup.py
+kdependencies/__init__.py
+kdependencies/dependencies.py
+kdependencies.egg-info/PKG-INFO
+kdependencies.egg-info/SOURCES.txt
+kdependencies.egg-info/dependency_links.txt
+kdependencies.egg-info/requires.txt
+kdependencies.egg-info/top_level.txt
+kdependencies/models/__init__.py
+kdependencies/models/installed_package.py
+kdependencies/models/package.py
+kdependencies/models/core/__init__.py
+kdependencies/models/core/utils.py
