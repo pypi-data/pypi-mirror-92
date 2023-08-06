@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TensorFlow-El-8lbah
+Version: 0.0.1
+Summary: DL FrameWork to train and test on mnist and cifar10
+Home-page: https://github.com/Mina93178/Deep_learning_frame_work
+Author: MinaZ
+Author-email: mwagdy64@gmail.com
+License: UNKNOWN
+Keywords: Deep_learning_frame_work
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: texttable
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
