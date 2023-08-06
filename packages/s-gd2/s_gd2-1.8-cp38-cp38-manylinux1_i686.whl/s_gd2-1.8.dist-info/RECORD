@@ -1,0 +1,11 @@
+_layout.cpython-38-i386-linux-gnu.so,sha256=6dzSXsIOh54z99bfqrgU7ErjQv7cOvmX1L7hsewYf3k,1131583
+s_gd2/version.py,sha256=Vcwe2W6G2D8Y_HGBLkow_oI9c3gglSdaWqYeDN2pko0,20
+s_gd2/s_gd2.py,sha256=2csaezKAEfP2OqRSgtJFS0mHph5Ixp7AIWrjK5R1H-o,12937
+s_gd2/__init__.py,sha256=LHWpeUCnpxYoRrMeJgZGXCaQAZ_WlwRzdeh9L-4dMQ4,54
+s_gd2/swig/layout.py,sha256=YCyLIlQtstAItiC_GPCbaYbqstlzWaLgNiXHTmHK-2s,4773
+s_gd2/swig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s_gd2-1.8.dist-info/WHEEL,sha256=kIr6kRnpf6MOy5xj439XBcyXX8cXttYXlcbCfJGcZ2w,106
+s_gd2-1.8.dist-info/METADATA,sha256=9paP6gnuCmvyJWfyduW3L2NrjDQXgEdveAe9rWrz7Qc,418
+s_gd2-1.8.dist-info/top_level.txt,sha256=XVFHEQKC5N5mn8yGKEQakWIC_oVywlNQV5QXFpdr4OI,14
+s_gd2-1.8.dist-info/RECORD,,
+s_gd2-1.8.dist-info/LICENSE,sha256=Xggu6-TvuEYFIQNOe9qC_20oFx_QsEiI5O4z5E1VRHM,1077
