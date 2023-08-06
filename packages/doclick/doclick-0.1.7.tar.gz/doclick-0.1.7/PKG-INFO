@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: doclick
+Version: 0.1.7
+Summary: Programmable pseudo-language simulating desktop actions such as clicking
+Home-page: https://github.com/DovaX/doclick
+Author: DovaX
+Author-email: dovax.ai@gmail.com
+License: UNKNOWN
+Description: # doclick
+        
+        doclick is a Python library working as a programmable pseudo-language simulating desktop actions such as clicking, sending keys etc.
+        
+        ## Installation
+        
+        Use the package manager [pip](https://pip.pypa.io/en/stable/) to install doclick.
+        
+        ```bash
+        pip install doclick
+        ```
+        
+        ## Usage
+        
+        ```python
+        import doclick.doclick_core as dc
+        
+        dc.execute_script("script.txt")
+        ```
+        script.txt contains:
+        ```
+        Click(100,100)
+        ```
+        
+        ## Contributing
+        Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+        
+        ## License
+        [MIT](https://choosealicense.com/licenses/mit/)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
