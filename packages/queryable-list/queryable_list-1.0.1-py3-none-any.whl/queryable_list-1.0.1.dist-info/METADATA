@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: queryable-list
+Version: 1.0.1
+Summary: Forget classical list filtering and enjoy yourself by generating flexible and fluent list queries with QueryableList.
+Home-page: https://github.com/cinarizasyon/python-queryable-list
+Author: cinarizasyon
+Author-email: cancinar57@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: six (==1.15)
+Provides-Extra: dev
+Requires-Dist: mock (==3.0.5) ; extra == 'dev'
+
+# python-queryable-list
+
+Forget classical list filtering and enjoy yourself by generating flexible and 
+fluent list queries with QueryableList.
+
+## What is the purpose?
+
+List filtering sometimes may be difficult and boring especially when you 
+need to apply consecutive filters. This library is inspired by flexibility 
+of Django ORM and LinQ. I also believe it looks more readable to write 
+all filters in the same context.
+
+Let's assume we have a list named numbers that contains duplicated numbers,
+and we need to use a filter that is so:
+``` python
+max(list(set(filter(lambda x: x > 20, numbers)))[11:])
+```
+
+Maybe you think I exaggerated but real life problems can even be more confusing.
+
+Let's assume the number is a QueryableList. 
+The above filter can be rewritten readable such that with QueryableList:
+
+``` python
+numbers.filter(lambda x: x > 20).distinct().skip(11).max()
+```
+Also your queries will be reusable because QueryableList works lazy:
+
+``` python
+persons = [{'first_name': 'John', 'last_name': 'Doe', 'age': 22}, 
+           {'first_name': 'John', 'last_name': 'Smith', 'age': 33}, ...]
+query = QueryableList(persons).select('last_name', 'age')
+query2 = query.select_list('age', flat=True)
+query3 = query.select_list('last_name')
+
+print(list(query))
+print(list(query2))
+print(list(query3))
+
+# Outputs
+# [{'last_name': 'Doe', 'age': 22}, {'last_name': 'Smith', 'age': 33}]
+# [22, 33]
+# [['Doe'], ['Smith']]
+
+```
+
+All the queries don't work in their building step as you can see . They 
+worked at the time they were called via list(). In this way `query` could 
+be used to build `query2` and `query3` queries.
+
+## Which Python versions are supported?
+
+Python 2.7 and Python 3.5+ versions are supported. A lot of unit tests are 
+written to consider all the cases on different Python versions.
+
+## Installation
+
+``` bash
+pip install queryable-list
+```
+
+## Running Tests
+
+Run this command by using your virtual environment.
+
+``` bash
+python -m unittest discover tests
+```
+
+
