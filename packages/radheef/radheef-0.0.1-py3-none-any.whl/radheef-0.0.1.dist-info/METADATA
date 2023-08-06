@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: radheef
+Version: 0.0.1
+Summary: A python library for getting the meaning/s of a dhivehi word and other related information
+Home-page: UNKNOWN
+Author: Moots
+Author-email: moothymycom@gmail.com
+License: MIT License
+Keywords: radheef,dhivehi dictionary
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+# Radheef
+Python library for getting the meaning of a dhivehi word and other related information
+
+## installation
+```
+pip install radheef
+```
+
+## Usage example
+```py
+from radheef import radheef 
+print(radheef("ބަރު"))
+```
+returns
+```
+ނ. 1 ލުއިގެ އިދިކޮޅު. 2 ވަޒަނުން އިތުރު. 3 ބައެއް ގަޑި ހިނގާއިރު އެލިފައި ހުރެގެން ދެފަރާތަށް ހެލިހެލި ހުންނަ އެތި. 4 ކަރުދާސް ވަޔާ ހިނގައިދާނެތީ އޭގެ މަތީ ބަހައްޓާން ގެންގުޅޭ ތަކެތި. 5 ސަންޑޯކުރާ ބަރު އުފުލަން ގެންގުޅޭ އެކި ވަރުގެ އާލާތް. 6 ނއ. މަސައްކަތް ބޮޑު.
+```
+
