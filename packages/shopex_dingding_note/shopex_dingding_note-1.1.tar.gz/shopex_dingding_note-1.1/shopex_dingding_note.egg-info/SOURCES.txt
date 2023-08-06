@@ -1,0 +1,15 @@
+README.md
+setup.py
+conf/__init__.py
+conf/config.py
+dingding_client/__init__.py
+dingding_client/notice_client.py
+lib/__init__.py
+lib/func_ext.py
+lib/log.py
+shopex_dingding_note.egg-info/PKG-INFO
+shopex_dingding_note.egg-info/SOURCES.txt
+shopex_dingding_note.egg-info/dependency_links.txt
+shopex_dingding_note.egg-info/top_level.txt
+test/SendMessageToDingDingTestCase.py
+test/__init__.py
