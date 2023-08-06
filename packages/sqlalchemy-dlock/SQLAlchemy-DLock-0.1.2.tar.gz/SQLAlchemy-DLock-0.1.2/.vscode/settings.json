@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "venv/bin/python3",
+    "python.testing.unittestEnabled": true,
+    "restructuredtext.confPath": "${workspaceFolder}/docs",
+}
