@@ -1,0 +1,7 @@
+README.md
+setup.py
+spec_classifier/__init__.py
+speclassifier.egg-info/PKG-INFO
+speclassifier.egg-info/SOURCES.txt
+speclassifier.egg-info/dependency_links.txt
+speclassifier.egg-info/top_level.txt
