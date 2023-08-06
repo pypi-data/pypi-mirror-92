@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: moon-coverage
+Version: 0.2.0
+Summary: Moon Coverage toolbox
+Home-page: https://gitlab.univ-nantes.fr/esa-juice/moon-coverage
+Author: Benoit Seignovert, Rozenn Robidel
+Author-email: benoit.seignovert@univ-nantes.fr
+License: BSD
+Keywords: moon,coverage,esa,juice
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.19)
+Requires-Dist: matplotlib (>=3.3)
+Requires-Dist: spiceypy (>=3.1)
+Requires-Dist: Pillow (>=8.0)
+
+UNKNOWN
+
+
