@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: symfem
+Version: 2021.1.12
+Summary: Finite Element Automated Symbolic Tabulator
+Home-page: https://github.com/mscroggs/symfem
+Author: Matthew Scroggs
+Author-email: symfem@mscroggs.co.uk
+Maintainer-email: symfem@mscroggs.co.uk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: sympy
+
+UNKNOWN
+
+
