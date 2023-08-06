@@ -1,0 +1,18 @@
+source:
+  jdbc:
+    host: <host>              # jdbc:mysql://localhost
+    port: <port>              # 3306
+    database: <database_name>
+    user: <username>
+    password: <password>
+    jar_file: <jar_file_path> # Example: Users/user/mysql-connector-java-8.0.23/mysql-connector-java-8.0.23.jar
+    driver: <driver_name>     # Example: com.mysql.cj.jdbc.Driver
+sink:
+  snowflake:
+    username: <snowflake_username>
+    password: <snowflake_password>
+    account: <snowflake_account>
+    database: <snowflake_database>
+    schema: <snowflake_schema>
+    role: <snowflake_role>
+    warehouse: <snowflake_warehouse>
