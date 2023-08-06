@@ -1,0 +1,125 @@
+appdirs==1.4.4
+    # via black
+astroid==2.4.2
+    # via pylint
+attrs==20.3.0
+    # via
+    #   pytest
+    #   pytest-mypy
+black==20.8b1
+    # via -r test_requirements.in
+click==7.1.2
+    # via
+    #   black
+    #   pip-tools
+colorama==0.4.4
+    # via -r test_requirements.in
+colored-traceback==0.3.0
+    # via -r requirements.in
+colorlog==4.7.2
+    # via -r requirements.in
+coverage==5.3.1
+    # via pytest-cov
+filelock==3.0.12
+    # via pytest-mypy
+flake8==3.8.4
+    # via -r test_requirements.in
+importlib-metadata==3.4.0
+    # via
+    #   flake8
+    #   pluggy
+    #   pytest
+iniconfig==1.1.1
+    # via pytest
+isort==5.7.0
+    # via pylint
+lazy-object-proxy==1.4.3
+    # via astroid
+libsass==0.20.1
+    # via -r requirements.in
+mccabe==0.6.1
+    # via
+    #   flake8
+    #   pylint
+mock==4.0.3
+    # via -r test_requirements.in
+mypy-extensions==0.4.3
+    # via
+    #   black
+    #   mypy
+mypy==0.790
+    # via
+    #   -r test_requirements.in
+    #   pytest-mypy
+packaging==20.8
+    # via pytest
+pathspec==0.8.1
+    # via black
+pip-tools==5.5.0
+    # via -r test_requirements.in
+pluggy==0.13.1
+    # via pytest
+py==1.10.0
+    # via pytest
+pycodestyle==2.6.0
+    # via flake8
+pyflakes==2.2.0
+    # via
+    #   flake8
+    #   pytest-flakes
+pygments==2.7.4
+    # via colored-traceback
+pylint==2.6.0
+    # via -r test_requirements.in
+pyparsing==2.4.7
+    # via packaging
+pytest-asyncio==0.14.0
+    # via -r test_requirements.in
+pytest-cov==2.11.0
+    # via -r test_requirements.in
+pytest-flakes==4.0.3
+    # via -r test_requirements.in
+pytest-mock==3.5.1
+    # via -r test_requirements.in
+pytest-mypy==0.8.0
+    # via -r test_requirements.in
+pytest-timeout==1.4.2
+    # via -r test_requirements.in
+pytest==6.2.1
+    # via
+    #   -r test_requirements.in
+    #   pytest-asyncio
+    #   pytest-cov
+    #   pytest-flakes
+    #   pytest-mock
+    #   pytest-mypy
+    #   pytest-timeout
+regex==2020.11.13
+    # via black
+six==1.15.0
+    # via
+    #   -r requirements.in
+    #   astroid
+    #   libsass
+toml==0.10.2
+    # via
+    #   black
+    #   pylint
+    #   pytest
+typed-ast==1.4.2
+    # via
+    #   astroid
+    #   black
+    #   mypy
+typing-extensions==3.7.4.3
+    # via
+    #   black
+    #   importlib-metadata
+    #   mypy
+wrapt==1.12.1
+    # via astroid
+zipp==3.4.0
+    # via importlib-metadata
+
+# The following packages are considered to be unsafe in a requirements file:
+# pip
