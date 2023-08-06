@@ -1,0 +1,10 @@
+COPYING
+MANIFEST.in
+eudist.cpp
+eudist_cpp.cxx
+setup.py
+eudist.egg-info/PKG-INFO
+eudist.egg-info/SOURCES.txt
+eudist.egg-info/dependency_links.txt
+eudist.egg-info/requires.txt
+eudist.egg-info/top_level.txt
