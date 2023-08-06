@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+src/mcot/__init__.py
+src/mcot.maths.egg-info/PKG-INFO
+src/mcot.maths.egg-info/SOURCES.txt
+src/mcot.maths.egg-info/dependency_links.txt
+src/mcot.maths.egg-info/namespace_packages.txt
+src/mcot.maths.egg-info/requires.txt
+src/mcot.maths.egg-info/top_level.txt
+src/mcot/maths/README.rst
+src/mcot/maths/VERSION
+src/mcot/maths/__init__.py
+src/mcot/maths/spherical.py
