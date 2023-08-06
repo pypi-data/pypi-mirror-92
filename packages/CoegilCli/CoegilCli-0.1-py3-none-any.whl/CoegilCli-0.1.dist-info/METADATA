@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: CoegilCli
+Version: 0.1
+Summary: Coegil Command Line Interface
+Home-page: UNKNOWN
+Author: Mike Levine
+Author-email: mike@coegil.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: click (==7.1.2)
+Requires-Dist: wheel
+Requires-Dist: boto3 (==1.13.22)
+Requires-Dist: requests (==2.5.1)
+
+UNKNOWN
+
+
