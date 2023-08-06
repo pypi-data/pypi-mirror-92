@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: pyhdbsql
+Version: 0.0.1
+Summary: Python based sql console
+Home-page: https://github.com/thhapke/pyhdbsql
+Author: Thorsten Hapke
+Author-email: thorsten.hapke@sap.com
+License: UNKNOWN
+Description: # pyhdbsql
+        
+        Command line app that connects to a HANA database and call an sql statement. The credentials of the database are stored in the config.yaml.
+        
+        ## Example
+        ```hyhdbsql --sql "<sql-statement>"``` like ``
+        `hyhdbsql --sql "SELECT * FROM TESTTABLE;"```
+        
+        ## config.yaml
+        
+        ```
+        ###### HANA DB
+        HDB_HOST : db.com
+        HDB_USER : 'dbuser'
+        HDB_PWD : 'pwd123!'
+        HDB_PORT : 443
+        
+        ```
+        
+        
+        
+Keywords: hana, hdbcli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
