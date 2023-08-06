@@ -1,0 +1,15 @@
+pytest>=6
+
+[:python_version < "3.8"]
+typing-extensions
+
+[documentation]
+pallets-sphinx-themes
+pygments-pytest
+sphinx
+
+[testing]
+black
+flake8
+isort
+pylint
