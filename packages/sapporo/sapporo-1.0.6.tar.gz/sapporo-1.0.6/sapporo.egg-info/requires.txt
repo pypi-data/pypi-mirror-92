@@ -1,0 +1,9 @@
+flake8
+Flask
+isort
+jsonschema
+mypy
+pytest
+requests
+typing-extensions
+yq
