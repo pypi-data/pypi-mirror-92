@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+hyrule_compendium.egg-info/PKG-INFO
+hyrule_compendium.egg-info/SOURCES.txt
+hyrule_compendium.egg-info/dependency_links.txt
+hyrule_compendium.egg-info/requires.txt
+hyrule_compendium.egg-info/top_level.txt
