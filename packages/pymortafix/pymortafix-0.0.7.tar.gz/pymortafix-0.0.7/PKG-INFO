@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pymortafix
+Version: 0.0.7
+Summary: A python module to collect some usefull stuff
+Home-page: https://github.com/mortafix/PyMortafix
+Author: Moris Doratiotto
+Author-email: moris.doratiotto@gmail.com
+License: UNKNOWN
+Description: # Setup
+        You can find the package, [here](https://pypi.org/project/pymortafix/).
+        ```
+        pip3 install pymortafix
+        ```
+        
+Keywords: telegram,bot,utils
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
