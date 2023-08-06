@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: sealion
+Version: 2.6.4
+Summary: SeaLion is a simple machine learning and data science library for beginners and ml-engineers alike.
+Home-page: https://github.com/anish-lakkapragada/SeaLion
+Author: Anish Lakkapragada
+Author-email: anish.lakkapragada@gmail.com
+License: MIT
+Download-URL: https://github.com/anish-lakkapragada/SeaLion/archive/v2.6.4.tar.gz
+Description: # SeaLion
+        
+        SeaLion was designed to teach programmers the popular machine learning concepts of today in a way that gives both intution and ways of application. 
+        We do this through documentation that explains the models, how they work, and how to use them with examples on familiar datasets like iris, breast cancer, MNIST, etc. 
+        Through this library we newer students will learn common algorithms and those more experienced will appreciate the functionality. 
+        
+        ## Installation
+        The package is available on PyPi. 
+        Install like such : 
+        ```shell
+        pip install sealion
+        ```
+        
+        
+        
+        
+        
+        
+        
+Keywords: Machine Learning,Data Science,Python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
