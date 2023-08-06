@@ -1,0 +1,3 @@
+[console_scripts]
+dwc = cli.__main__:main
+
