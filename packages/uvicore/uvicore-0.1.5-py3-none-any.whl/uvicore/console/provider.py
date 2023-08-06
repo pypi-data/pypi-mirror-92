@@ -1,0 +1,36 @@
+from uvicore.support.dumper import dump, dd
+from uvicore.typing import Dict, List
+from uvicore.support.module import location
+from uvicore.database import Connection
+
+
+class Cli:
+    """CLI Service Provider Mixin"""
+
+    def commands(self, items: Dict = None, *, group: str = None, help: str = None, commands: Dict = None):
+        """Add commands as a dictionary or kwargs"""
+
+        # Default registration
+        self.package.registers.defaults({'commands': True})
+
+        # Register commands only if allowed
+        if not self.package.registers.commands: return
+
+        if items:
+            # Add as dictionary
+            self.package.console.groups.merge(items)
+        else:
+            # Add as kwargs
+            if help:
+                self.package.console.groups.merge({
+                    group: {
+                        'help': help,
+                        'commands': commands
+                    }
+                })
+            else:
+                self.package.console.groups.merge({
+                    group: {
+                        'commands': commands
+                    }
+                })
