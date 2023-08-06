@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: cryptorandom
+Version: 0.3rc1
+Summary: Pseudorandom number generator and random sampling using cryptographic hash functions
+Home-page: http://www.github.com/statlab/cryptorandom
+Author: Kellie Ottoboni and Philip B. Stark
+Author-email: kellieotto@berkeley.edu
+License: BSD License
+Download-URL: http://www.github.com/statlab/cryptorandom
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: scipy (>=1.5.4)
+
+# cryptorandom
+
+[![PyPI](https://img.shields.io/pypi/v/cryptorandom.svg)](https://pypi.org/project/cryptorandom/)
+[![Build Status](https://github.com/statlab/cryptorandom/workflows/test/badge.svg?branch=master)](https://github.com/statlab/cryptorandom/actions?query=workflow%3A%22test%22)
+[![Coverage Status](https://codecov.io/gh/statlab/cryptorandom/branch/master/graph/badge.svg)](https://app.codecov.io/gh/statlab/cryptorandom/branch/master)
+
+Pseudorandom number generator and random sampling using cryptographic hash functions.
+The prototype generator is built on SHA-256.
+
+- **Website:** [https://statlab.github.io/cryptorandom](https://statlab.github.io/cryptorandom)
+- **Source:** [https://github.com/statlab/cryptorandom](https://github.com/statlab/cryptorandom)
+- **Bug reports:** [https://github.com/statlab/cryptorandom/issues](https://github.com/statlab/cryptorandom/issues)
+
+## Installation from binaries
+
+```
+$ pip install cryptorandom
+```
+
+## Installation from source
+
+Install dependencies using:
+
+```
+$ pip install -r requirements.txt
+```
+
+Then, install cryptorandom using:
+
+```
+$ pip install .
+```
+
+If you plan to develop the package, you may run it directly from source:
+
+```
+$ pip install -e .       # Do this once to add pkg to Python path
+```
+
+## License information
+
+See the file LICENSE for information on the history of this software, terms
+& conditions for usage, and a DISCLAIMER OF ALL WARRANTIES.
+
+

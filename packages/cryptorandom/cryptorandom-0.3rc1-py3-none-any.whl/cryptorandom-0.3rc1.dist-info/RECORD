@@ -1,0 +1,11 @@
+cryptorandom/__init__.py,sha256=WuTLmaD6b_WHQU2E-48Fm7lv5IHL1ZmjU-3j-5ShjII,335
+cryptorandom/cryptorandom.py,sha256=YwRNW6MI86aI_xtmdjbxALoxXaYXxtWvg7WdNxVxQ54,10802
+cryptorandom/sample.py,sha256=9NjJFyj4n3C_l66TP7jTGaVZtZqfHJ5R4UBYLxtX-Dg,20701
+cryptorandom/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cryptorandom/tests/test_cryptorandom.py,sha256=gP9-n7FTTWw4F_BJDt7HdcA_-_Nh5h-_grdJDMlTZ0g,3171
+cryptorandom/tests/test_sample.py,sha256=3Mbk6aux1JogQkDhj9QF9LszHoRM-bweeTB_q-IWsdk,8994
+cryptorandom-0.3rc1.dist-info/LICENSE,sha256=-hBSf6eTZcZUS3AR9VtqpPwYJWbMHyQ802D6ofXCX8M,1315
+cryptorandom-0.3rc1.dist-info/METADATA,sha256=-2tukB1nugm4W_CQNjMRqAo1GDnWwss5Mub8nRWzOVI,2502
+cryptorandom-0.3rc1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+cryptorandom-0.3rc1.dist-info/top_level.txt,sha256=4BjQVTDoIyIPwxLIABz7m7NFqq-n5WhEVDR84i7RrPw,13
+cryptorandom-0.3rc1.dist-info/RECORD,,
