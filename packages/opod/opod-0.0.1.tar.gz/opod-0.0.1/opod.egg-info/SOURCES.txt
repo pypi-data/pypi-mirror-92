@@ -1,0 +1,16 @@
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+opod/__init__.py
+opod/__version__.py
+opod/api.py
+opod/cli.py
+opod/core.py
+opod.egg-info/PKG-INFO
+opod.egg-info/SOURCES.txt
+opod.egg-info/dependency_links.txt
+opod.egg-info/entry_points.txt
+opod.egg-info/not-zip-safe
+opod.egg-info/top_level.txt

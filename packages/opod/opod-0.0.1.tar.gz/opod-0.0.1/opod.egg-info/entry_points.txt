@@ -1,0 +1,3 @@
+[console_scripts]
+opod = opod:main
+
