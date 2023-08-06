@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py_headless_daw
+Version: 0.0.4
+Summary: A GUI-less DAW (Digital Audio Workstation) for producing electronic music using python
+Home-page: https://github.com/hq9000/py_headless_daw
+Author: Sergey Grechin
+Author-email: grechin.sergey@gmail.com
+License: UNKNOWN
+Description: for documentation, please refer to [the project's page at github](https://github.com/hq9000/py_headless_daw)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
