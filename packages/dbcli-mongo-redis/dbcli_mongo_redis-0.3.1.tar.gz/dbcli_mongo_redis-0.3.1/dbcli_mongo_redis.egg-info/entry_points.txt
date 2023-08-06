@@ -1,0 +1,4 @@
+[console_scripts]
+mcli = dbcli_mongo_redis.mcli.mcli:_main
+rcli = dbcli_mongo_redis.rcli.rcli:_main
+
