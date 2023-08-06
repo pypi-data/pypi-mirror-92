@@ -1,0 +1,8 @@
+asyncpg
+click
+inmanta
+pyformance
+pytest-asyncio
+pytest-env
+pytest-postgresql
+tornado
