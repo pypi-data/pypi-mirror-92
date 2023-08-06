@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pwspy
+Version: 0.2.1
+Summary: A framework for working with Partial Wave Spectroscopy files.
+Home-page: https://bitbucket.org/backmanlab/pwspython/src/master/
+Author: Nick Anthony
+Author-email: nicholas.anthony@northwestern.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
