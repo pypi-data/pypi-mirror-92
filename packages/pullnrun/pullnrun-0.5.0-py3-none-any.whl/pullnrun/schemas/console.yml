@@ -1,0 +1,23 @@
+$schema: http://json-schema.org/draft-07/schema#
+definitions:
+  line:
+    type: object
+    properties:
+      stream:
+        enum:
+        - stderr
+        - stdin
+        - stdout
+      timestamp:
+        type: string
+      text:
+        type: string
+    required:
+    - stream
+    - timestamp
+    - text
+    additionalProperties: no
+type: array
+items:
+  $ref: "#/definitions/line"
+additionalProperties: no

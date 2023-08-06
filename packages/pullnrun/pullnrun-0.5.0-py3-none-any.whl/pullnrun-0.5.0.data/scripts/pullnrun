@@ -1,0 +1,4 @@
+#!python
+
+from pullnrun.main import entrypoint
+entrypoint()
