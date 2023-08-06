@@ -1,0 +1,12 @@
+surfgraph/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surfgraph/chemical_environment.py,sha256=aiP1LkFR17C_mLQLDZ-prD-yIWIxQH5wkzuR-hz-m0I,13368
+surfgraph/helpers.py,sha256=3O0mEjjNB6pKCIhZkzzDX7mIJ4xtWw5bHBoE2KpXkTw,3306
+surfgraph/populate_folders.py,sha256=sLv3bUk1wsQNUz9rTyUzvK66OBbdrlDghDnMPrehVj4,2909
+surfgraph/site_detection.py,sha256=iZEr55sgVZjzN1_l-kAGOMAO6PuvggFFlKzF_KON7yY,5004
+surfgraph/test.py,sha256=K2BIikIyIz2LKY1K_yWkdiPfJyLksN6cOavbjihWnBM,571
+surfgraph-0.1.data/scripts/analyze_chem_env.py,sha256=oTJTsjV1TuglmSJPFluaMqv_sJlDwpy3cCT0HaOWBn4,4865
+surfgraph-0.1.data/scripts/generate_sites.py,sha256=VUzbQ7gs9TWgK5UtI2U03k_eHYUNRbn8kluiSZYM7MM,5878
+surfgraph-0.1.dist-info/METADATA,sha256=z2hibOhK4DySABp569pkoMLcjzp2ihugvsyVXgU43vI,2784
+surfgraph-0.1.dist-info/RECORD,,
+surfgraph-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+surfgraph-0.1.dist-info/top_level.txt,sha256=9ydysY4LWj0nlRfvqQaJxAlx1PuA2ddqr-Qh2i1wkqY,10
