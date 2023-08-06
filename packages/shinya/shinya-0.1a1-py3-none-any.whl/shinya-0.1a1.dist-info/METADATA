@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shinya
+Version: 0.1a1
+Summary: A Python package to edit BDMV components like MPLS, CLPI, etc.
+Home-page: http://github.com/shimamura-hougetsu/shinya
+Author: Shimamura Hougetsu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: lxml (>=4.6)
+
+UNKNOWN
+
+
