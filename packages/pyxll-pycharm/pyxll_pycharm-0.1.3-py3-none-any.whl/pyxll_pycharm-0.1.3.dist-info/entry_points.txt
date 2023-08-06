@@ -1,0 +1,4 @@
+[pyxll]
+modules = pyxll_pycharm:modules
+ribbon = pyxll_pycharm:ribbon
+
