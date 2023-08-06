@@ -1,0 +1,7 @@
+README.md
+setup.py
+supress/__init__.py
+supress.egg-info/PKG-INFO
+supress.egg-info/SOURCES.txt
+supress.egg-info/dependency_links.txt
+supress.egg-info/top_level.txt
