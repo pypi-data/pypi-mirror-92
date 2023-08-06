@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+asyncgTTS/__init__.py
+asyncgTTS/_decos.py
+asyncgTTS/asyncgTTS.py
+asyncgTTS/easygTTS.py
+asyncgTTS/gtts.py
+asyncgTTS.egg-info/PKG-INFO
+asyncgTTS.egg-info/SOURCES.txt
+asyncgTTS.egg-info/dependency_links.txt
+asyncgTTS.egg-info/requires.txt
+asyncgTTS.egg-info/top_level.txt
