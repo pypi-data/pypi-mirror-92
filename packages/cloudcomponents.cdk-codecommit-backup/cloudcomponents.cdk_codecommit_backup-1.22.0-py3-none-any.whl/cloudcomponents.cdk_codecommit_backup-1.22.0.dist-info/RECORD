@@ -1,0 +1,8 @@
+cloudcomponents/cdk_codecommit_backup/__init__.py,sha256=Lr20PDhIzKN5d6baUjT8UPd4UiJmuv06owi7F_WVyyA,46432
+cloudcomponents/cdk_codecommit_backup/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_codecommit_backup/_jsii/__init__.py,sha256=1rl_5qmghX6PBGFgy7ghtrhiAyfIDbuV1GGqGcYMyZc,647
+cloudcomponents/cdk_codecommit_backup/_jsii/cdk-codecommit-backup@1.22.0.jsii.tgz,sha256=S2HuouvU8wRqcAEExk7ULsRz8m3yR8eIw3Dmv18a0yw,15691
+cloudcomponents.cdk_codecommit_backup-1.22.0.dist-info/METADATA,sha256=3UYW5fS7bkbQY5oVNfteRNBD_o-2zvDtHPsBjaqQQKU,4608
+cloudcomponents.cdk_codecommit_backup-1.22.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudcomponents.cdk_codecommit_backup-1.22.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_codecommit_backup-1.22.0.dist-info/RECORD,,
