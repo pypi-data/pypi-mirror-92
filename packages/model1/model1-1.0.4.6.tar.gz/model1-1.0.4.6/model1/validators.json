@@ -1,0 +1,36 @@
+[
+    {
+        "action": "GoodsAction",
+        "methods": [{
+                "name": "get",
+                "fields": [
+                    {
+                        "name": "id",
+                        "type": "number",
+                        "validators": [
+                            {
+                                "type": "required",
+                                "default": 0,
+                                "message": "id为必填项"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "post",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": "string",
+                        "validators": [
+                            {
+                                "type": "required",
+                                "message": "name为必填项"
+                            }
+                        ]
+                    }
+                ]
+            }]
+    }
+]
