@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: redeye-grablib
+Version: 0.0.2
+Summary: A library for retrieving files from HTTP servers.
+Home-page: https://github.com/RedEyeApp/grablib
+Author: CMSteffen
+Author-email: cmsteffen@haxys.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# GrabLib
+
+A library for retrieving files from HTTP servers.
+
+## Installation
+
+```
+pip install redeye-grablib
+```
+
+## Usage
+
+```
+>>> import grablib
+>>> import asyncio
+>>>
+>>> grabber = grablib.GrabLib()
+>>> asyncio.run(grabber.get("https://picsum.photos/20/30"))
+{
+  'url': 'https://picsum.photos/20/30',
+  'sha256': '91aa5c45c2d5709e46631caa743bec9461a4e97df87d60038c126078876add02',
+  'data': b'[image binary]'
+}
+```
+
+
