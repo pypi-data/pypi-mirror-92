@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: bert-embeddings
+Version: 0.0.2
+Summary: Create positional embeddings based on TinyBERT or similar bert models
+Home-page: https://github.com/Sorcely/EmbeddingsLib
+Author: Marius J. Schlichtkrull
+Author-email: marius.schlichtkrull@gmail.com
+License: MIT
+Description: Bert Embeddings
+         Use this library to really easily embed text using Bert Models.
+        
+         Github: https://github.com/sorcely/BertEmbeddings 
+        
+        Change Log
+        ==========
+        
+        0.0.1 (22/01/2021)
+        ------------------
+        - First release
+Keywords: embeddings
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
