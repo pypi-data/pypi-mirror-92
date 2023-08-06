@@ -1,0 +1,2 @@
+lyricsgenius>=2.0.2
+docopt>=0.6
