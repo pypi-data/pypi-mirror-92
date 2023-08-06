@@ -1,0 +1,10 @@
+environs>=8.0.0
+opentelemetry-api==0.17b0
+opentelemetry-sdk==0.17b0
+opentelemetry-exporter-otlp==0.17b0
+opentelemetry-propagator-b3==0.17b0
+opentelemetry-instrumentation==0.17b0
+opentelemetry-instrumentation-system-metrics==0.17b0
+
+[test]
+httpretty~=1.0.2
