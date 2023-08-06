@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: commondtools
+Version: 0.0.24
+Summary: Common D-tools.
+Home-page: https://github.com/M0Rph3U56031769/commondtools
+Author: Daniel Nagy
+Author-email: nagydaniel1337@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: astroid (==2.4.2)
+Requires-Dist: bleach (==3.2.1)
+Requires-Dist: bump2version (==1.0.1)
+Requires-Dist: bumpversion (==0.6.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.4)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: coverage (==5.3)
+Requires-Dist: cryptography (==3.2.1)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: idna (>=2.5)
+Requires-Dist: importlib-metadata (==3.1.0)
+Requires-Dist: isort (==5.6.4)
+Requires-Dist: jeepney (==0.6.0)
+Requires-Dist: keyring (==21.5.0)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: packaging (==20.7)
+Requires-Dist: pandas (==1.1.4)
+Requires-Dist: pkginfo (==1.6.1)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: Pygments (==2.7.2)
+Requires-Dist: pylint (==2.6.0)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.4)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: readme-renderer (==28.0)
+Requires-Dist: requests (==2.25.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.4.0)
+Requires-Dist: SecretStorage (==3.3.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: tqdm (==4.54.0)
+Requires-Dist: twine (==3.2.0)
+Requires-Dist: urllib3 (==1.26.2)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: zipp (==3.4.0)
+
+# Common D-Tools
+![CodeQL](https://github.com/M0Rph3U56031769/commondtools/workflows/CodeQL/badge.svg)
+
+![Lines of code](https://img.shields.io/tokei/lines/github/M0Rph3U56031769/commondtools)
+
+![GitHub top language](https://img.shields.io/github/languages/top/M0Rph3U56031769/commondtools)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/M0Rph3U56031769/commondtools)
+![GitHub all releases](https://img.shields.io/github/downloads/M0Rph3U56031769/commondtools/total)
+![GitHub](https://img.shields.io/github/license/M0Rph3U56031769/commondtools)
+![GitHub Repo stars](https://img.shields.io/github/stars/M0Rph3U56031769/commondtools?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/M0Rph3U56031769/commondtools?style=social)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/M0Rph3U56031769/commondtools)
+![GitHub last commit](https://img.shields.io/github/last-commit/M0Rph3U56031769/commondtools)
+
+![PyPI - Downloads](https://img.shields.io/pypi/dm/commondtools)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/commondtools)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/commondtools)
+![PyPI - Format](https://img.shields.io/pypi/format/commondtools)
+
+Hit counters:
+
+![GitHub search hit counter](https://img.shields.io/github/search/M0Rph3U56031769/commondtools/csv)
+![GitHub search hit counter](https://img.shields.io/github/search/M0Rph3U56031769/commondtools/commondtools)
+![GitHub search hit counter](https://img.shields.io/github/search/M0Rph3U56031769/commondtools/network)
+
+
+This is a simple package for common usage. 
+
+network, file handling and parallel functions
+
+https://m0rph3u56031769.github.io/commondtools/
+
+https://pypi.org/project/commondtools/
+
+https://github.com/M0Rph3U56031769/commondtools
+
+
