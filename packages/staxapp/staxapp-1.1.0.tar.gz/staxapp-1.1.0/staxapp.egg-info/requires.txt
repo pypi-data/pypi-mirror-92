@@ -1,0 +1,5 @@
+boto3
+prance
+requests
+aws_requests_auth
+openapi-spec-validator
