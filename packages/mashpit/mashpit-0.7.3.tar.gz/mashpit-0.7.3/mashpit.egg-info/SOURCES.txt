@@ -1,0 +1,12 @@
+README.md
+setup.py
+mashpit.egg-info/PKG-INFO
+mashpit.egg-info/SOURCES.txt
+mashpit.egg-info/dependency_links.txt
+mashpit.egg-info/requires.txt
+mashpit.egg-info/top_level.txt
+scripts/__init__.py
+scripts/create_db.py
+scripts/metadata_sra_db.py
+scripts/query_against_db.py
+scripts/sketch_db.py
