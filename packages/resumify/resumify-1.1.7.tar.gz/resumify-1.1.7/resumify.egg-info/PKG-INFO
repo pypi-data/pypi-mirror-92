@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: resumify
+Version: 1.1.7
+Summary: A Python package which uses fpdf library to create Resume.
+Home-page: https://github.com/devansh-07/resumify
+Author: Devansh Soni
+Author-email: sonidev0201@gmail.com
+License: MIT
+Description: # resumify
+        A Python package which uses fpdf library to create Resumes.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.5

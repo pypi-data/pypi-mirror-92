@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+resumify/__init__.py
+resumify/resume.py
+resumify.egg-info/PKG-INFO
+resumify.egg-info/SOURCES.txt
+resumify.egg-info/dependency_links.txt
+resumify.egg-info/requires.txt
+resumify.egg-info/top_level.txt
