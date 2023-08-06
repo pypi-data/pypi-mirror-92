@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: hello2colewilson
+Version: 0.0.1
+Summary: test
+Home-page: https://google.com
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: none
+Keywords: kw1 kw2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# HelloWorld
+test
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
