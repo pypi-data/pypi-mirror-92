@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: thebase
+Version: 0.0.1
+Summary: generic stuff i am using
+Home-page: UNKNOWN
+Author: Osman Taskin
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: generic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

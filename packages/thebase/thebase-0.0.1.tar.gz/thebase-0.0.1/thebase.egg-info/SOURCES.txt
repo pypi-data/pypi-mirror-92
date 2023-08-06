@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+pybase.egg-info/SOURCES.txt
+pybase.egg-info/dependency_links.txt
+pybase.egg-info/top_level.txt
+thebase/__init__.py
+thebase.egg-info/PKG-INFO
+thebase.egg-info/SOURCES.txt
+thebase.egg-info/dependency_links.txt
+thebase.egg-info/top_level.txt
