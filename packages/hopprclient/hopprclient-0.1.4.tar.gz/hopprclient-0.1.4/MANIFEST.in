@@ -1,0 +1,4 @@
+include Pipfile
+include Pipfile.lock
+include install_requires.py
+include LICENSE
