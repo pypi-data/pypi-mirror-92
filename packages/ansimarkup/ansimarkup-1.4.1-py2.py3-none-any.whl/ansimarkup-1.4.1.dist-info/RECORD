@@ -1,0 +1,13 @@
+ansimarkup/__init__.py,sha256=e7V2ZG8eNmMkr9Dj2uHmcsF9Us1VPpi5AccO35RxgWU,353
+ansimarkup/__main__.py,sha256=kRssV31xOaxVcl2VTIwbFo0iLTTMiMV2r5q_Kro64AQ,381
+ansimarkup/ansi.py,sha256=uBcVwgD7XIbjeUjBQXZF_WR0NG2tLg46Tf6DLdOQGkc,259
+ansimarkup/compat.py,sha256=OWLwzzaJSjQjxNTmjMXzgwoLrUHOSElgoilgH5NFJ0k,111
+ansimarkup/logformatter.py,sha256=5jzsvKXiLAzgg5D3n4cHfhH92CD6cldl-AcXjUMhAWM,491
+ansimarkup/markup.py,sha256=H0FFhbK-Dnu_GWm3284IkEjLkcmq5TIuMkvJB3EHj54,7622
+ansimarkup/tags.py,sha256=wzxIFkDuDMAZ36xbNQqSrlweKm2TlLfN-LNJilCTOXY,2804
+ansimarkup-1.4.1.dist-info/LICENSE,sha256=w3UA_iswzxboSj25sfulnmhBhEUvPwC8BB9LEsOR9L8,1514
+ansimarkup-1.4.1.dist-info/METADATA,sha256=fgOAgBncomkoBpQtoiWKFmNiGBn9qPOVt8dBSeIhFs8,9831
+ansimarkup-1.4.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ansimarkup-1.4.1.dist-info/top_level.txt,sha256=e5ljJWhyysPe1wV8Q_tkxbnY5qAStS8JqufC7_rN5Qg,11
+ansimarkup-1.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ansimarkup-1.4.1.dist-info/RECORD,,
