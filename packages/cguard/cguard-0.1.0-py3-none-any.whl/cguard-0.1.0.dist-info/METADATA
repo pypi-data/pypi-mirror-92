@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cguard
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/cased/guard-client
+Author: Cased
+Author-email: support@cased.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/cased/guard/issues
+Project-URL: Documentation, https://docs.cased.com/guard
+Project-URL: Source Code, https://github.com/cased/guard
+Keywords: cased api
+Platform: UNKNOWN
+Requires-Python: >3.5
+Requires-Dist: cased (>=0.3.8)
+Requires-Dist: requests
+Requires-Dist: responses
+Requires-Dist: mock
+Requires-Dist: pytest (>=4.0c0)
+Requires-Dist: pytest-mock
+Requires-Dist: pytest-xdist
+Requires-Dist: flask
+Requires-Dist: yaspin
+
+UNKNOWN
+
+
