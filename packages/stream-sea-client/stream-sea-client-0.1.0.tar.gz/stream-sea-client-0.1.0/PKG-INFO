@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: stream-sea-client
+Version: 0.1.0
+Summary: Stream-sea client
+Home-page: https://github.com/Portchain/stream-sea-client-python
+Author: Sergei Patiakin
+Author-email: sergei@portchain.com
+License: Proprietary
+Description: # stream-sea-client-python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
