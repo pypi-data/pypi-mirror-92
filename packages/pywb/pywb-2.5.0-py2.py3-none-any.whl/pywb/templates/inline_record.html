@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+<script>
+window.wb_prefix = "{{ wb_prefix }}";
+/*
+$(function() {
+    $("#text-form").submit(function(event) {
+      var template = document.createElement("template");
+      template.innerHTML = $("#text")[0].value;
+      $("#text")[0].value = template.innerHTML;
+    });
+
+    $("#text-form").change(function(event) {
+      var template = document.createElement("template");
+      template.innerHTML = $("#text")[0].value;
+      $("#text")[0].value = template.innerHTML;
+    });
+});
+*/
+</script>
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <form name="text-form" id="text-form" action="/{{ coll }}/record" method="post">
+        <div class="form-row">
+            <div class="col-12">
+                <label for="text" class="lead" aria-label="Capture HTML">Enter Embed to Capture</label>
+                <textarea name="text" id="text" aria-required="true" class="form-control form-control-lg" style="height: 400px"></textarea>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock body %}
+ 
