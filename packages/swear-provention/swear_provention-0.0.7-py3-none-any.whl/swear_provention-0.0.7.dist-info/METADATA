@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: swear-provention
+Version: 0.0.7
+Summary: a library that removes swear words from strings
+Home-page: https://github.com/Dragon445/swear_provention
+Author: Ethan Brammah
+Author-email: 
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+# swear_provention
+
+
