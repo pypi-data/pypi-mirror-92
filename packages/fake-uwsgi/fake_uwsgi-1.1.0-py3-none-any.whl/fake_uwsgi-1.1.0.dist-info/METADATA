@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: fake-uwsgi
+Version: 1.1.0
+Summary: A Python module that attempts to fake out the uwsgi module exposed to uWSGI application. When testing applications outside uWSGI, for example Flask, this module can provide some functionality of the uwsgi module.
+Home-page: https://github.com/digimach/fake-uwsgi
+Author: Digimach
+Author-email: kkanjee@digimach.com
+Maintainer: Digimach
+Maintainer-email: kkanjee@digimach.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://github.com/digimach/fake-uwsgi/blob/master/README.rst
+Project-URL: Source, https://github.com/digimach/fake-uwsgi
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Server
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Requires-Dist: pre-commit ; extra == 'dev'
+Provides-Extra: lint
+Requires-Dist: black ; extra == 'lint'
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: pylint ; extra == 'lint'
+Requires-Dist: yamllint ; extra == 'lint'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: safety ; extra == 'test'
+
+########################
+Fake uWSGI
+########################
+
+.. image:: https://img.shields.io/pypi/pyversions/fake-uwsgi.svg
+    :target: https://pypi.org/project/fake-uwsgi
+    :alt: Python Versions
+
+.. image:: https://github.com/digimach/fake-uwsgi/workflows/tests/badge.svg?branch=master
+    :target: https://github.com/digimach/fake-uwsgi/actions?query=workflow%3Atests+event%3Apush+branch%3Amaster
+    :alt: Test Status
+
+.. image:: https://readthedocs.org/projects/fake-uwsgi/badge/?version=latest
+    :target: https://github.com/digimach/fake-uwsgi/blob/master/README.rst
+    :alt: Documentation Status
+
+..
+    GARNISH: Add any CI badges for example Code Factor, Deep Source, etc
+
+.. image:: https://img.shields.io/pypi/l/cookiecutter-python-package
+   :target: https://github.com/digimach/fake-uwsgi/blob/master/LICENSE.rst
+   :alt: License
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :alt: Code Style
+
+
+A Python module that attempts to fake out the uwsgi module exposed to uWSGI application. When testing applications outside uWSGI, for example Flask, this module can provide some functionality of the uwsgi module
+
+* GitHub repo: https://github.com/digimach/fake-uwsgi
+* Documentation: https://github.com/digimach/fake-uwsgi/blob/master/README.rst
+
+.. contents::
+
+Features
+========
+..
+    GARNISH: Add features of this project
+
+Quickstart
+==========
+
+..
+    GARNISH: Add quickstart information
+
+
