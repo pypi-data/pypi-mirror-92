@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: micropython-mojogzip
+Version: 0.1.1
+Summary: gzip module for MicroPython
+Home-page: https://github.com/micropython/micropython-lib
+Author: rorokoko
+Author-email: rohit515000@gmail.com
+Maintainer: rorokoko
+Maintainer-email: rohit515000@gmail.com
+License: MIT
+Description: This is a module reimplemented specifically for MicroPython standard library,
+        with efficient and lean design in mind. Note that this module is likely work
+        in progress and likely supports just a subset of CPython's corresponding
+        module. Please help with the development if you are interested in this
+        module.
+Platform: UNKNOWN
