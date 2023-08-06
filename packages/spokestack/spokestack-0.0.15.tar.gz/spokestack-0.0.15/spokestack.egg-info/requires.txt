@@ -1,0 +1,8 @@
+numpy
+pyaudio
+webrtcvad
+websocket_client
+tokenizers
+requests
+streamp3
+cython
