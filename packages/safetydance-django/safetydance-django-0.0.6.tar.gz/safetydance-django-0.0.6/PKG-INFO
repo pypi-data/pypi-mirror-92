@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: safetydance-django
+Version: 0.0.6
+Summary: A collection of safetydance_test steps for BDD testing of Django REST Framework applications.
+License: MIT
+Author: David Charboneau
+Author-email: david@adadabase.com
+Requires-Python: >=3.7.6,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: djangorestframework (>=3.12.2,<4.0.0)

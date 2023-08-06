@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "safetydance-django"
+version = "0.0.6"
+description = "A collection of safetydance_test steps for BDD testing of Django REST Framework applications."
+authors = ["David Charboneau <david@adadabase.com>"]
+license = "mit"
+
+[tool.poetry.dependencies]
+python = "^3.7.6"
+djangorestframework = "^3.12.2"
+
+[tool.poetry.dev-dependencies]
+astor = { git="https://github.com/Quansight/astor.git", branch="issue-174" }
+pytest = "^6.2.2"
+pytest-cov = "^2.11.1"
+pytest-django = "^4.1.0"
+# safetydance = "^0.2.1"
+safetydance = { git="https://gitlab.com/openteams/safetydance.git", branch="python38" }
+safetydance-test = "^0.1.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
