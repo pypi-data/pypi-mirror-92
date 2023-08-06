@@ -1,0 +1,21 @@
+[package]
+name = "crfsuite-sys"
+version = "0.3.1"
+authors = ["Messense Lv <messense@icloud.com>"]
+description = "Rust binding to crfsuite"
+license = "MIT"
+repository = "https://github.com/bosondata/crfsuite-rs"
+categories = ["external-ffi-bindings"]
+keywords = ["crf", "crfsuite"]
+build = "build.rs"
+links = "crfsuite"
+edition = "2018"
+
+[dependencies]
+libc = "0.2"
+liblbfgs-sys = "0.1.0"
+cqdb-sys = "0.1.0"
+
+[build-dependencies]
+cc = "1.0"
+cmake = "0.1"
