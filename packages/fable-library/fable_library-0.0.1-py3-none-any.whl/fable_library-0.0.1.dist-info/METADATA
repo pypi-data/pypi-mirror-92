@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: fable-library
+Version: 0.0.1
+Summary: Fable library for Python
+Home-page: https://github.com/dbrattli/fablelib
+Author: Dag Brattli
+Author-email: dag@brattli.net
+License: MIT License
+Download-URL: https://github.com/dbrattli/fablelib
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: expression
+
+# Fable Library for Python
+
+This module is used as the [Fable](https://fable.io/) library for
+Python. It creates a single endpoint to make it easier to import Python
+functionality from Fable.
+

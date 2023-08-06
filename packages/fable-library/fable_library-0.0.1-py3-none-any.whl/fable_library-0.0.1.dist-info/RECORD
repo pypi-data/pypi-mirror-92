@@ -1,0 +1,16 @@
+fable/__init__.py,sha256=xQ3sF5tJCJDOO1xMcwDk30hRnfVQbpROgp2nRNM9e3w,73
+fable/_version.py,sha256=P7sKy0GeisBloTItgahpoqQN2F2C0k1IMMHo4N_27Wg,497
+fable/list.py,sha256=e9FBrhMz4ofx3tc5-3fCJQcZSKiGojY9PcpRnIgwGQE,562
+fable/numeric.py,sha256=qZ2xyynbkkA7j46BThfHuiJfdtrM1PRHgQoKCTeobvo,1929
+fable/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fable/reflection.py,sha256=9dynRMs-kQM6Yy3e9OU0Y5YZl4m-eFkmTQc9WZMORqk,2678
+fable/seq.py,sha256=siIzPc4AUL9l9Wt-cCh-XZAwzupxFlGk1zB5KRJ503E,328
+fable/string.py,sha256=GWuTl6Ifp4ty7pxPVbe-6UAEevsiWlM77qUTQB4evGE,16076
+fable/types.py,sha256=4EoHJLWCfzSlF1FLh9H6m_0pYUNFP1ws7JXQkTiv8sU,1764
+fable/util.py,sha256=wFMVyUzC2hEgHzOY2pWGjBSxn0UCoCJdCqLda_AiL9A,402
+fable_library-0.0.1.dist-info/LICENSE,sha256=6cICas9RlrmlfIcUSTt9rvLM5tt3bsshukM5y8RXngM,1068
+fable_library-0.0.1.dist-info/METADATA,sha256=yM2_ANJxbAjKJljr3Go_k6AUJvbUmtKV2Tp90BR9YO4,916
+fable_library-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fable_library-0.0.1.dist-info/top_level.txt,sha256=EIjmoxQG-X7jAYm9iXUrOrc9jCd1RhrCTcYmYaSjxqQ,6
+fable_library-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fable_library-0.0.1.dist-info/RECORD,,
