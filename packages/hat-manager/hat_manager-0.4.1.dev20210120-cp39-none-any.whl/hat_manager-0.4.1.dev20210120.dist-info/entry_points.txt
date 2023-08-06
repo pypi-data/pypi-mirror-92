@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[gui_scripts]
+hat-manager-hue = hat.manager.hue.main:main
+
