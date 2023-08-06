@@ -1,0 +1,10 @@
+improvisers/__init__.py,sha256=jqVBwQ55bf6eSWpOjIFCPtWFdU6_N87dI3_GrhMWo1A,154
+improvisers/critic.py,sha256=8PCN37y0lKyQCZ6HM4yvB4IwvvYwTUmvXvFoWfA-jcc,1881
+improvisers/explicit.py,sha256=NjtnjRzB_YkyYDJb6Ob0xQoHrpaQDcOD4GNfnmJmlCg,959
+improvisers/game_graph.py,sha256=lhGwz0AITg_REd3gF_N877XX7DPCFdJgLwyBmb0-ZHI,1605
+improvisers/policy.py,sha256=2yDSii9fYWHd4p7wzxBerhM7kKfghCnW8mxJe0BQeaY,2780
+improvisers/tabular.py,sha256=lpc9gsiYQj5B0fsWP6PF9VMyfTPIfjxBU3_kh1TWtF4,11540
+improvisers-0.1.0.dist-info/LICENSE,sha256=jEKY2ty3xNTu8AWYGVOoJCqCwJoap-EzVMycErqZLyA,1082
+improvisers-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+improvisers-0.1.0.dist-info/METADATA,sha256=zsblNXGHpesNIV8olog0b8ZjhPLRIS962WKr2vEtCWg,471
+improvisers-0.1.0.dist-info/RECORD,,
