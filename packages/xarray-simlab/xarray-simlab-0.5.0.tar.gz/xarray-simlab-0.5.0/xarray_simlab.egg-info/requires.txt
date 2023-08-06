@@ -1,0 +1,5 @@
+attrs>=18.1.0
+dask
+numpy
+xarray>=0.10.0
+zarr>=2.3.0
