@@ -1,0 +1,6 @@
+jsonschema~=3.0
+requests~=2.0
+pyyaml~=5.0
+
+[:python_version < "3.7"]
+importlib_resources
