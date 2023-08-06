@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kds
+Version: 0.1.0
+Summary: An intuitive library to plot evaluation metrics.
+Home-page: https://github.com/tensorbored/kds
+Author: Prateek Sharma
+Author-email: s.prateek3080@gmail.com
+License: MIT License
+Keywords: keytodatascience
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: matplotlib (>=1.4.0)
+Requires-Dist: pandas (>=0.20.0)
+Requires-Dist: numpy (>=1.12.0)
+
+Simple library for lift chart, gain chart and KS chart/table library.
+
+Change Log
+
+================
+
+0.0.1 (26/01/2021)
+------------------------
+- First Release
+
