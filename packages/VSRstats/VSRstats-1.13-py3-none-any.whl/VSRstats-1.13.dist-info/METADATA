@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: VSRstats
+Version: 1.13
+Summary: VSR statstics compute util
+Home-page: http://bsu.ru/
+Author: Dmitry
+Author-email: semenov.da17@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyhrv
+Requires-Dist: numpy
+Requires-Dist: pandas (==0.25.3)
+Requires-Dist: peakutils
+Requires-Dist: matplotlib
+Requires-Dist: xlrd
+
+UNKNOWN
+
+
