@@ -1,0 +1,3 @@
+[console_scripts]
+datacker=datacker.cli:app
+
