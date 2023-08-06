@@ -1,0 +1,3 @@
+[console_scripts]
+paci = paci.cli:main
+
