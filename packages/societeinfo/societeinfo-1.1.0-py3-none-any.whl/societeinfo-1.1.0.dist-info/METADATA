@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: societeinfo
+Version: 1.1.0
+Summary: Python wrapper to SOCIETE INFO api.
+Home-page: https://gitlab.com/PierreKephas/societeinfo-python
+Author: Pierre Kephas
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (<3,>=2)
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: flake8-import-order ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: requests-mock ; extra == 'dev'
+
+Python wrapper to SOCIETE INFO api. See https://gitlab.com/PierreKephas/societeinfo-python.
+
+
