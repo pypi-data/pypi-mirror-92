@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Section Articles
+{% endblock %}
+
+{% block content %}
+<h1>Articles</h1>
+<p>
+	{% trans %}
+	Cette section explore la stratégie de <strong>Magic: the Gathering</strong>.
+	{% endtrans %}
+</p>
+
+<div class="align-left">
+	<table class="wide-column">
+		<tbody>
+			<tr>
+				<td>{{ link("/articles/lart-de-classifier-les-decks") }}</td>
+				<td>(<em>Metagame</em>)</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="wide-column">
+		<tbody>
+			<tr>
+				<td>{{ link("/articles/lart-de-bien-melanger-un-deck") }}</td>
+				<td>(<em>{{ _("Mélange")}}</em>)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p>
+	<em>D'autres articles à venir ...</em>
+</p>
+{% endblock %}
