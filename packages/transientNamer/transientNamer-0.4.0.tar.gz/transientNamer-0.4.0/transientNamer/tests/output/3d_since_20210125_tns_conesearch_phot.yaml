@@ -1,0 +1,7000 @@
+- TNSId: 2021bdd
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.02'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21ql
+  obsdate: '2021-01-08 05:13:55'
+  reportAddedDate: '2021-01-25 12:20:11'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bdc
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.8'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: PS21qk
+  obsdate: '2021-01-16 09:12:58'
+  reportAddedDate: '2021-01-25 12:19:28'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bdb
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.83'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21qj
+  obsdate: '2021-01-05 07:52:19'
+  reportAddedDate: '2021-01-25 12:18:27'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bda
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.1'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21qi
+  obsdate: '2021-01-15 10:42:14'
+  reportAddedDate: '2021-01-25 12:17:31'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.5'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21qh
+  obsdate: '2021-01-15 14:21:07'
+  reportAddedDate: '2021-01-25 12:16:55'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcy
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.26'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21qg
+  obsdate: '2021-01-06 06:53:17'
+  reportAddedDate: '2021-01-25 12:15:45'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcx
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.2'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21qf
+  obsdate: '2021-01-16 09:12:58'
+  reportAddedDate: '2021-01-25 12:14:13'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcw
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.17'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21qe
+  obsdate: '2021-01-07 06:44:38'
+  reportAddedDate: '2021-01-25 12:13:40'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.83'
+  magErr: '0.27'
+  magUnit: ABMag
+  objectName: PS21qc
+  obsdate: '2021-01-16 07:56:38'
+  reportAddedDate: '2021-01-25 12:08:40'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcu
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.73'
+  magErr: '0.3'
+  magUnit: ABMag
+  objectName: PS21qb
+  obsdate: '2021-01-14 15:31:41'
+  reportAddedDate: '2021-01-25 12:07:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bct
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.14'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21qa
+  obsdate: '2021-01-16 06:59:02'
+  reportAddedDate: '2021-01-25 12:05:53'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcs
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.56'
+  magErr: '0.06'
+  magUnit: ABMag
+  objectName: PS21pu
+  obsdate: '2021-01-12 10:59:31'
+  reportAddedDate: '2021-01-25 11:56:54'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcr
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.46'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21pt
+  obsdate: '2021-01-12 15:25:55'
+  reportAddedDate: '2021-01-25 11:56:08'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcq
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.52'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21ps
+  obsdate: '2021-01-12 09:40:19'
+  reportAddedDate: '2021-01-25 11:55:34'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcp
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.8'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21pr
+  obsdate: '2021-01-17 07:55:12'
+  reportAddedDate: '2021-01-25 11:51:38'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bco
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.53'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21pq
+  obsdate: '2021-01-05 06:38:53'
+  reportAddedDate: '2021-01-25 11:47:14'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcn
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.76'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21pp
+  obsdate: '2021-01-17 15:07:12'
+  reportAddedDate: '2021-01-25 10:59:36'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcm
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.18'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21po
+  obsdate: '2021-01-14 15:25:55'
+  reportAddedDate: '2021-01-25 10:57:47'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcl
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.97'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21pn
+  obsdate: '2021-01-21 11:34:05'
+  reportAddedDate: '2021-01-25 10:56:51'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bck
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.53'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21pm
+  obsdate: '2021-01-15 14:21:07'
+  reportAddedDate: '2021-01-25 10:55:48'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcj
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.98'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21pl
+  obsdate: '2021-01-11 06:47:31'
+  reportAddedDate: '2021-01-25 10:55:04'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bci
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.11'
+  magErr: '0.17'
+  magUnit: ABMag
+  objectName: PS21pk
+  obsdate: '2021-01-15 11:52:48'
+  reportAddedDate: '2021-01-25 10:54:21'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bch
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.05'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21pj
+  obsdate: '2021-01-12 06:00:00'
+  reportAddedDate: '2021-01-25 10:53:39'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcg
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.03'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21pi
+  obsdate: '2021-01-16 09:47:31'
+  reportAddedDate: '2021-01-25 10:52:53'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcf
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.58'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: PS21ph
+  obsdate: '2021-01-16 06:46:05'
+  reportAddedDate: '2021-01-25 10:52:13'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bce
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.9'
+  magErr: '0.23'
+  magUnit: ABMag
+  objectName: PS21pg
+  obsdate: '2021-01-09 10:33:36'
+  reportAddedDate: '2021-01-25 10:50:34'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcd
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.01'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: PS21pd
+  obsdate: '2021-01-24 15:30:14'
+  reportAddedDate: '2021-01-25 10:39:43'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcc
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.31'
+  magErr: '0.25'
+  magUnit: ABMag
+  objectName: PS21oy
+  obsdate: '2021-01-11 12:43:12'
+  reportAddedDate: '2021-01-25 10:35:50'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bcb
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.7'
+  magErr: '0.29'
+  magUnit: ABMag
+  objectName: PS21ox
+  obsdate: '2021-01-11 07:00:29'
+  reportAddedDate: '2021-01-25 10:33:59'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bca
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.62'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21ov
+  obsdate: '2021-01-21 11:28:19'
+  reportAddedDate: '2021-01-25 10:29:46'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbz
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.86'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21alc
+  obsdate: '2021-01-23 05:45:36'
+  reportAddedDate: '2021-01-25 09:12:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbz
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21alc
+  obsdate: '2021-01-12 05:36:58'
+  reportAddedDate: '2021-01-25 09:12:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bby
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '19.68'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ala
+  obsdate: '2021-01-23 21:34:34'
+  reportAddedDate: '2021-01-25 06:35:17'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bby
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ala
+  obsdate: '2020-11-13 03:01:26'
+  reportAddedDate: '2021-01-25 06:35:17'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbx
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.32'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akz
+  obsdate: '2021-01-24 00:56:10'
+  reportAddedDate: '2021-01-25 06:34:55'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbx
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akz
+  obsdate: '2020-06-30 16:50:53'
+  reportAddedDate: '2021-01-25 06:34:55'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbw
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.75'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aky
+  obsdate: '2021-01-23 17:15:22'
+  reportAddedDate: '2021-01-25 06:34:27'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbw
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aky
+  obsdate: '2019-02-18 11:16:48'
+  reportAddedDate: '2021-01-25 06:34:27'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbv
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.7'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akw
+  obsdate: '2021-01-23 23:57:07'
+  reportAddedDate: '2021-01-25 06:33:51'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbv
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akw
+  obsdate: '2021-01-14 23:49:55'
+  reportAddedDate: '2021-01-25 06:33:51'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbu
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.98'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akv
+  obsdate: '2021-01-23 05:38:24'
+  reportAddedDate: '2021-01-25 06:33:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbu
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akv
+  obsdate: '2020-12-26 13:40:47'
+  reportAddedDate: '2021-01-25 06:33:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbt
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.66'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akt
+  obsdate: '2021-01-23 13:59:31'
+  reportAddedDate: '2021-01-25 06:32:52'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbt
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akt
+  obsdate: '2020-11-15 10:55:12'
+  reportAddedDate: '2021-01-25 06:32:52'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbs
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.53'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aks
+  obsdate: '2021-01-23 17:49:55'
+  reportAddedDate: '2021-01-25 06:32:18'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbs
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aks
+  obsdate: '2018-07-11 09:46:05'
+  reportAddedDate: '2021-01-25 06:32:18'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbr
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '21.25'
+  magErr: '0.18'
+  magUnit: ABMag
+  objectName: PS21ot
+  obsdate: '2021-01-15 15:27:22'
+  reportAddedDate: '2021-01-24 19:46:45'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbq
+  exptime: '27'
+  filter: r-Sloan
+  limitingMag: 0
+  mag: '21'
+  magErr: '0.24'
+  magUnit: ABMag
+  objectName: PS21os
+  obsdate: '2021-01-16 13:06:14'
+  reportAddedDate: '2021-01-24 19:44:08'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbp
+  exptime: '27'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '20.59'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS21or
+  obsdate: '2021-01-13 05:19:41'
+  reportAddedDate: '2021-01-24 19:39:26'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbo
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '12.8'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J160455.05-722320.6
+  obsdate: '2021-01-20 23:05:20'
+  reportAddedDate: '2021-01-24 17:03:23'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbo
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '12.9'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J160455.05-722320.6
+  obsdate: '2021-01-20 22:10:41'
+  reportAddedDate: '2021-01-24 17:03:23'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbo
+  exptime: '180'
+  filter: Clear-
+  limitingMag: 1
+  mag: '20'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J160455.05-722320.6
+  obsdate: '2020-05-16 23:29:20'
+  reportAddedDate: '2021-01-24 17:03:23'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbn
+  exptime: '180'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.9'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J104946.32+142938.5
+  obsdate: '2021-01-24 00:37:08'
+  reportAddedDate: '2021-01-24 16:32:04'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbn
+  exptime: '180'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.9'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J104946.32+142938.5
+  obsdate: '2021-01-24 00:32:30'
+  reportAddedDate: '2021-01-24 16:32:04'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbn
+  exptime: '180'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.9'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J104946.32+142938.5
+  obsdate: '2020-03-01 19:30:36'
+  reportAddedDate: '2021-01-24 16:32:04'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbm
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '17.412'
+  magErr: '0.099'
+  magUnit: ABMag
+  objectName: ATLAS21dao
+  obsdate: '2021-01-24 10:20:38'
+  reportAddedDate: '2021-01-24 14:30:03'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021bbm
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.78'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21dao
+  obsdate: '2021-01-16 11:57:07'
+  reportAddedDate: '2021-01-24 14:30:03'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021bbl
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.4'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akr
+  obsdate: '2021-01-22 17:21:07'
+  reportAddedDate: '2021-01-24 13:54:42'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbl
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akr
+  obsdate: '2020-07-04 21:07:12'
+  reportAddedDate: '2021-01-24 13:54:42'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbk
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '13.58'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akq
+  obsdate: '2021-01-22 19:40:48'
+  reportAddedDate: '2021-01-24 10:46:29'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbk
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akq
+  obsdate: '2020-11-11 15:00:00'
+  reportAddedDate: '2021-01-24 10:46:29'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbj
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.41'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akp
+  obsdate: '2021-01-22 21:57:36'
+  reportAddedDate: '2021-01-24 10:45:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbj
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akp
+  obsdate: '2019-08-24 09:47:31'
+  reportAddedDate: '2021-01-24 10:45:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbi
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '16.43'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ako
+  obsdate: '2021-01-23 02:15:22'
+  reportAddedDate: '2021-01-24 10:44:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbi
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ako
+  obsdate: '2020-12-22 08:38:24'
+  reportAddedDate: '2021-01-24 10:44:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbh
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.82'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akm
+  obsdate: '2021-01-22 17:54:14'
+  reportAddedDate: '2021-01-24 10:41:06'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbh
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akm
+  obsdate: '2020-12-30 18:02:53'
+  reportAddedDate: '2021-01-24 10:41:06'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbg
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.17'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akl
+  obsdate: '2021-01-22 23:41:17'
+  reportAddedDate: '2021-01-24 10:39:47'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbg
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akl
+  obsdate: '2020-06-04 01:20:38'
+  reportAddedDate: '2021-01-24 10:39:47'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.3'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.82-650146.3
+  obsdate: '2021-01-23 07:57:25'
+  reportAddedDate: '2021-01-24 09:07:02'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.3'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.82-650146.3
+  obsdate: '2021-01-23 07:50:48'
+  reportAddedDate: '2021-01-24 09:07:02'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '540'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.8'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.82-650146.3
+  obsdate: '2017-01-27 07:21:29'
+  reportAddedDate: '2021-01-24 09:07:02'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.4'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.85-650146.5
+  obsdate: '2021-01-23 08:08:03'
+  reportAddedDate: '2021-01-24 09:06:43'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.3'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.85-650146.5
+  obsdate: '2021-01-23 07:57:25'
+  reportAddedDate: '2021-01-24 09:06:43'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '540'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.8'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.85-650146.5
+  obsdate: '2017-01-27 07:21:29'
+  reportAddedDate: '2021-01-24 09:06:43'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.6'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.84-650146.7
+  obsdate: '2021-01-23 08:09:22'
+  reportAddedDate: '2021-01-24 09:06:14'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '16.5'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.84-650146.7
+  obsdate: '2021-01-23 07:58:45'
+  reportAddedDate: '2021-01-24 09:06:14'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbf
+  exptime: '540'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.8'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J173617.84-650146.7
+  obsdate: '2017-01-27 07:21:29'
+  reportAddedDate: '2021-01-24 09:06:14'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2021bbe
+  exptime: '600'
+  filter: Clear-
+  limitingMag: 0
+  mag: '20'
+  magErr: '0.355'
+  magUnit: ABMag
+  objectName: GSNST-21ak
+  obsdate: '2021-01-23 02:38:56'
+  reportAddedDate: '2021-01-24 03:53:24'
+  reportingGroup: GSNST
+  suggestedType: PSN
+  survey: GSNST
+  telescope: Other_Other
+- TNSId: 2021bbe
+  exptime: '300'
+  filter: Clear-
+  limitingMag: 1
+  mag: '21'
+  magErr: ''
+  magUnit: ABMag
+  objectName: GSNST-21ak
+  obsdate: '2020-12-30 04:22:03'
+  reportAddedDate: '2021-01-24 03:53:24'
+  reportingGroup: GSNST
+  suggestedType: PSN
+  survey: GSNST
+  telescope: Other_Other
+- TNSId: 2021bbd
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '20.73'
+  magErr: '0.3'
+  magUnit: ABMag
+  objectName: PS21oq
+  obsdate: '2021-01-17 14:36:58'
+  reportAddedDate: '2021-01-23 20:43:19'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbc
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '20.94'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21op
+  obsdate: '2021-01-15 14:05:17'
+  reportAddedDate: '2021-01-23 20:38:08'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bbb
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '20.56'
+  magErr: '0.17'
+  magUnit: ABMag
+  objectName: PS21oo
+  obsdate: '2021-01-15 14:05:17'
+  reportAddedDate: '2021-01-23 20:36:28'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bba
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.53'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: PS21on
+  obsdate: '2020-12-23 14:47:02'
+  reportAddedDate: '2021-01-23 17:24:19'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bba
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.29'
+  magErr: '0.21'
+  magUnit: ABMag
+  objectName: PS21on
+  obsdate: '2021-01-15 11:52:48'
+  reportAddedDate: '2021-01-23 17:24:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021baz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.91'
+  magErr: '0.3'
+  magUnit: ABMag
+  objectName: PS21om
+  obsdate: '2021-01-12 08:26:53'
+  reportAddedDate: '2021-01-23 17:19:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bay
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.82'
+  magErr: '0.3'
+  magUnit: ABMag
+  objectName: PS21ol
+  obsdate: '2021-01-14 15:36:00'
+  reportAddedDate: '2021-01-23 17:16:02'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bax
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.8'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21oj
+  obsdate: '2021-01-15 14:21:07'
+  reportAddedDate: '2021-01-23 17:10:36'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021baw
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.85'
+  magErr: '0.22'
+  magUnit: ABMag
+  objectName: PS21oi
+  obsdate: '2021-01-15 11:41:17'
+  reportAddedDate: '2021-01-23 17:09:12'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bav
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.64'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21oh
+  obsdate: '2021-01-16 05:44:10'
+  reportAddedDate: '2021-01-23 17:07:31'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bau
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.47'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21of
+  obsdate: '2021-01-12 09:15:50'
+  reportAddedDate: '2021-01-23 17:03:14'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bat
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.82'
+  magErr: '0.16'
+  magUnit: ABMag
+  objectName: PS21oe
+  obsdate: '2021-01-16 06:57:36'
+  reportAddedDate: '2021-01-23 17:01:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bas
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '21.83'
+  magErr: '0.29'
+  magUnit: ABMag
+  objectName: PS21od
+  obsdate: '2021-01-07 15:33:07'
+  reportAddedDate: '2021-01-23 16:58:14'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bar
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.19'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21oc
+  obsdate: '2021-01-16 09:14:24'
+  reportAddedDate: '2021-01-23 16:57:28'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021baq
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.41'
+  magErr: '0.21'
+  magUnit: ABMag
+  objectName: PS21ob
+  obsdate: '2021-01-17 14:58:34'
+  reportAddedDate: '2021-01-23 16:56:43'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bap
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.39'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21nz
+  obsdate: '2021-01-17 15:01:26'
+  reportAddedDate: '2021-01-23 16:54:45'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bao
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.05'
+  magErr: '0.22'
+  magUnit: ABMag
+  objectName: PS21ny
+  obsdate: '2021-01-14 15:21:36'
+  reportAddedDate: '2021-01-23 16:46:02'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ban
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.69'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21nx
+  obsdate: '2021-01-16 06:46:05'
+  reportAddedDate: '2021-01-23 16:44:53'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bam
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.76'
+  magErr: '0.23'
+  magUnit: ABMag
+  objectName: PS21nv
+  obsdate: '2021-01-12 08:22:34'
+  reportAddedDate: '2021-01-23 16:42:40'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bal
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.99'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21nu
+  obsdate: '2021-01-16 06:54:43'
+  reportAddedDate: '2021-01-23 16:41:18'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bak
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.05'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21ns
+  obsdate: '2021-01-12 09:28:48'
+  reportAddedDate: '2021-01-23 16:39:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021baj
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.39'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21nq
+  obsdate: '2021-01-16 10:32:10'
+  reportAddedDate: '2021-01-23 16:36:38'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bai
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.78'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21np
+  obsdate: '2021-01-17 15:07:12'
+  reportAddedDate: '2021-01-23 16:36:07'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bah
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.34'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akk
+  obsdate: '2021-01-21 23:16:48'
+  reportAddedDate: '2021-01-23 13:05:33'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bah
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akk
+  obsdate: '2020-12-22 17:35:31'
+  reportAddedDate: '2021-01-23 13:05:33'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bag
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '12.06'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akj
+  obsdate: '2021-01-21 15:41:46'
+  reportAddedDate: '2021-01-23 13:05:17'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bag
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akj
+  obsdate: '2020-10-27 15:11:31'
+  reportAddedDate: '2021-01-23 13:05:17'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021baf
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '12.2'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aki
+  obsdate: '2021-01-22 03:37:26'
+  reportAddedDate: '2021-01-23 13:04:55'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021baf
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aki
+  obsdate: '2021-01-07 23:16:48'
+  reportAddedDate: '2021-01-23 13:04:55'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bae
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '16.67'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akg
+  obsdate: '2021-01-22 11:44:10'
+  reportAddedDate: '2021-01-23 13:04:21'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bae
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akg
+  obsdate: '2019-05-26 23:42:43'
+  reportAddedDate: '2021-01-23 13:04:21'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bad
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.42'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akf
+  obsdate: '2021-01-22 11:03:50'
+  reportAddedDate: '2021-01-23 13:04:02'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bad
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akf
+  obsdate: '2020-12-19 11:26:53'
+  reportAddedDate: '2021-01-23 13:04:02'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bac
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '19.84'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ake
+  obsdate: '2021-01-04 06:10:05'
+  reportAddedDate: '2021-01-23 13:03:46'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bac
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ake
+  obsdate: '2020-11-29 20:48:29'
+  reportAddedDate: '2021-01-23 13:03:46'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bab
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '19.62'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akc
+  obsdate: '2021-01-22 05:21:07'
+  reportAddedDate: '2021-01-23 13:02:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021bab
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akc
+  obsdate: '2021-01-07 09:30:14'
+  reportAddedDate: '2021-01-23 13:02:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021baa
+  exptime: '27'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '20.35'
+  magErr: '0.22'
+  magUnit: ABMag
+  objectName: PS21no
+  obsdate: '2021-01-03 15:23:02'
+  reportAddedDate: '2021-01-22 13:15:04'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.55'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS21nn
+  obsdate: '2021-01-15 10:45:07'
+  reportAddedDate: '2021-01-22 11:46:55'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azy
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.17'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21nm
+  obsdate: '2021-01-15 14:24:00'
+  reportAddedDate: '2021-01-22 11:43:56'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azx
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.54'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21nl
+  obsdate: '2021-01-16 06:46:05'
+  reportAddedDate: '2021-01-22 11:42:43'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azw
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.99'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21nk
+  obsdate: '2021-01-05 06:44:38'
+  reportAddedDate: '2021-01-22 11:42:09'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.71'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS21nf
+  obsdate: '2021-01-16 10:22:05'
+  reportAddedDate: '2021-01-22 11:35:51'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azu
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.37'
+  magErr: '0.27'
+  magUnit: ABMag
+  objectName: PS21nd
+  obsdate: '2021-01-14 07:17:46'
+  reportAddedDate: '2021-01-22 11:33:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azt
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.18'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21nc
+  obsdate: '2021-01-12 06:54:43'
+  reportAddedDate: '2021-01-22 11:32:23'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azs
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.93'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: PS21nb
+  obsdate: '2021-01-06 05:36:58'
+  reportAddedDate: '2021-01-22 11:31:52'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azr
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.24'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21my
+  obsdate: '2021-01-15 14:28:19'
+  reportAddedDate: '2021-01-22 11:22:37'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azq
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.92'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21mx
+  obsdate: '2021-01-07 07:49:26'
+  reportAddedDate: '2021-01-22 11:21:19'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azp
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.07'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21mw
+  obsdate: '2021-01-12 08:29:46'
+  reportAddedDate: '2021-01-22 11:20:05'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021azo
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '17.98'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aagkfgh
+  obsdate: '2021-01-20 10:33:36'
+  reportAddedDate: '2021-01-22 09:59:24'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021azo
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.39'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aagkfgh
+  obsdate: '2021-01-07 11:32:38'
+  reportAddedDate: '2021-01-22 09:59:24'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021azo
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.27'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aagkfgh
+  obsdate: '2021-01-05 12:36:00'
+  reportAddedDate: '2021-01-22 09:59:24'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021azn
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '19.31'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aka
+  obsdate: '2021-01-20 20:12:29'
+  reportAddedDate: '2021-01-22 09:04:33'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azn
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aka
+  obsdate: '2020-11-17 05:11:02'
+  reportAddedDate: '2021-01-22 09:04:33'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azm
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '16.47'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajz
+  obsdate: '2021-01-21 05:22:34'
+  reportAddedDate: '2021-01-22 09:04:06'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azm
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajz
+  obsdate: '2020-11-18 18:24:29'
+  reportAddedDate: '2021-01-22 09:04:06'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azl
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.13'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajy
+  obsdate: '2021-01-21 01:55:12'
+  reportAddedDate: '2021-01-22 09:03:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azl
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajy
+  obsdate: '2020-09-04 04:39:22'
+  reportAddedDate: '2021-01-22 09:03:31'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azk
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.75'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajx
+  obsdate: '2021-01-20 10:20:38'
+  reportAddedDate: '2021-01-22 09:03:09'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azk
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajx
+  obsdate: '2020-10-29 05:32:38'
+  reportAddedDate: '2021-01-22 09:03:09'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azj
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.46'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajt
+  obsdate: '2021-01-21 00:18:43'
+  reportAddedDate: '2021-01-22 08:59:44'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azj
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajt
+  obsdate: '2021-01-06 14:00:58'
+  reportAddedDate: '2021-01-22 08:59:44'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azi
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.91'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajr
+  obsdate: '2021-01-20 21:18:43'
+  reportAddedDate: '2021-01-22 08:59:03'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azi
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajr
+  obsdate: '2021-01-04 23:02:24'
+  reportAddedDate: '2021-01-22 08:59:03'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azh
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.61'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajp
+  obsdate: '2021-01-21 08:15:22'
+  reportAddedDate: '2021-01-22 08:58:05'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azh
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajp
+  obsdate: '2020-10-28 03:27:22'
+  reportAddedDate: '2021-01-22 08:58:05'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azg
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.66'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajo
+  obsdate: '2021-01-21 06:01:26'
+  reportAddedDate: '2021-01-22 08:57:45'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azg
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajo
+  obsdate: '2020-10-28 21:01:26'
+  reportAddedDate: '2021-01-22 08:57:45'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azf
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.96'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajn
+  obsdate: '2021-01-20 16:43:41'
+  reportAddedDate: '2021-01-22 08:57:21'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azf
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajn
+  obsdate: '2019-04-18 18:59:02'
+  reportAddedDate: '2021-01-22 08:57:21'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021aze
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.53'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajm
+  obsdate: '2021-01-20 15:46:05'
+  reportAddedDate: '2021-01-22 08:56:46'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021aze
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajm
+  obsdate: '2020-10-30 10:48:00'
+  reportAddedDate: '2021-01-22 08:56:46'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azd
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '14.74'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajl
+  obsdate: '2021-01-19 19:49:26'
+  reportAddedDate: '2021-01-22 08:56:09'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azd
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajl
+  obsdate: '2019-10-30 19:53:46'
+  reportAddedDate: '2021-01-22 08:56:09'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021azc
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.919'
+  magErr: '0.127'
+  magUnit: ABMag
+  objectName: ATLAS21dan
+  obsdate: '2021-01-21 14:39:50'
+  reportAddedDate: '2021-01-22 01:20:08'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021azc
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.45'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21dan
+  obsdate: '2021-01-17 12:08:38'
+  reportAddedDate: '2021-01-22 01:20:08'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021azb
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.376'
+  magErr: '0.154'
+  magUnit: ABMag
+  objectName: ATLAS21dal
+  obsdate: '2021-01-21 15:04:19'
+  reportAddedDate: '2021-01-22 01:18:08'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021azb
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.63'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21dal
+  obsdate: '2021-01-17 12:53:17'
+  reportAddedDate: '2021-01-22 01:18:08'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aza
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.326'
+  magErr: '0.175'
+  magUnit: ABMag
+  objectName: ATLAS21dak
+  obsdate: '2021-01-21 14:47:02'
+  reportAddedDate: '2021-01-22 01:17:07'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aza
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.71'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21dak
+  obsdate: '2021-01-17 12:02:53'
+  reportAddedDate: '2021-01-22 01:17:07'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ayz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.47'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21mt
+  obsdate: '2021-01-05 07:49:26'
+  reportAddedDate: '2021-01-22 00:02:45'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021avg
+  exptime: ''
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.64'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: ZTF21aafkktu
+  obsdate: '2021-01-17 10:05:23'
+  reportAddedDate: '2021-01-25 09:44:18'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021avg
+  exptime: ''
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.79'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aafkktu
+  obsdate: '2021-01-15 10:28:08'
+  reportAddedDate: '2021-01-25 09:44:18'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021avg
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.41'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aku
+  obsdate: '2021-01-23 22:04:48'
+  reportAddedDate: '2021-01-25 06:33:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021avg
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aku
+  obsdate: '2021-01-13 11:44:10'
+  reportAddedDate: '2021-01-25 06:33:15'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021avg
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.4'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aafkktu
+  obsdate: '2021-01-20 10:52:19'
+  reportAddedDate: '2021-01-20 19:59:28'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021avg
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.64'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aafkktu
+  obsdate: '2021-01-17 10:04:48'
+  reportAddedDate: '2021-01-20 19:59:28'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021avg
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.79'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aafkktu
+  obsdate: '2021-01-15 10:27:50'
+  reportAddedDate: '2021-01-20 19:59:28'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021avg
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.499'
+  magErr: '0.158'
+  magUnit: ABMag
+  objectName: ATLAS21cux
+  obsdate: '2021-01-17 12:25:55'
+  reportAddedDate: '2021-01-19 00:41:43'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021avg
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.89'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21cux
+  obsdate: '2021-01-15 15:43:12'
+  reportAddedDate: '2021-01-19 00:41:43'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aul
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.06'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21ou
+  obsdate: '2021-01-21 13:07:41'
+  reportAddedDate: '2021-01-24 23:36:30'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aul
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.888'
+  magErr: '0.143'
+  magUnit: ABMag
+  objectName: ATLAS21cvb
+  obsdate: '2021-01-18 10:10:34'
+  reportAddedDate: '2021-01-19 00:45:59'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aul
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.62'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21cvb
+  obsdate: '2021-01-16 09:23:02'
+  reportAddedDate: '2021-01-19 00:45:59'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aul
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.9834'
+  magErr: '0.0761957'
+  magUnit: ABMag
+  objectName: ZTF21aagbeah
+  obsdate: '2021-01-18 10:29:49'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aul
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.6416'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aagbeah
+  obsdate: '2021-01-16 11:12:03'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021atv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.7'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21nj
+  obsdate: '2021-01-15 13:01:55'
+  reportAddedDate: '2021-01-22 11:41:43'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021atv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1754'
+  magErr: '0.209486'
+  magUnit: ABMag
+  objectName: ZTF21aagclzp
+  obsdate: '2021-01-18 11:26:56'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021atv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.3222'
+  magErr: '0.271685'
+  magUnit: ABMag
+  objectName: ZTF21aagclzp
+  obsdate: '2021-01-16 10:35:42'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021atv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.7315'
+  magErr: '0.373217'
+  magUnit: ABMag
+  objectName: ZTF21aagclzp
+  obsdate: '2021-01-14 10:51:43'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021atv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.1897'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aagclzp
+  obsdate: '2021-01-12 12:59:28'
+  reportAddedDate: '2021-01-18 18:27:34'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aqq
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '18.31'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21pf
+  obsdate: '2021-01-23 11:05:17'
+  reportAddedDate: '2021-01-25 10:41:03'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aqq
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.4922'
+  magErr: '0.113842'
+  magUnit: ABMag
+  objectName: ZTF21aafjjee
+  obsdate: '2021-01-17 10:24:06'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aqq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.4754'
+  magErr: '0.112558'
+  magUnit: ABMag
+  objectName: ZTF21aafjjee
+  obsdate: '2021-01-17 08:53:49'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aqq
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.5625'
+  magErr: '0.320833'
+  magUnit: ABMag
+  objectName: ZTF21aafjjee
+  obsdate: '2021-01-15 10:41:33'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aqq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.8791'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aafjjee
+  obsdate: '2021-01-15 10:13:32'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.88'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akh
+  obsdate: '2021-01-22 03:33:07'
+  reportAddedDate: '2021-01-23 13:04:34'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021apj
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akh
+  obsdate: '2021-01-07 03:27:22'
+  reportAddedDate: '2021-01-23 13:04:34'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021apj
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.0609'
+  magErr: '0.0979604'
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-17 11:45:03'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.0857'
+  magErr: '0.0883689'
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-17 10:21:20'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.7052'
+  magErr: '0.145869'
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-13 10:39:14'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.2393'
+  magErr: '0.417583'
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-11 11:27:37'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1114'
+  magErr: '0.269939'
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-11 09:48:05'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apj
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.2474'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaeolfd
+  obsdate: '2021-01-09 11:21:25'
+  reportAddedDate: '2021-01-17 19:17:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021apd
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.95'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21iw
+  obsdate: '2021-01-12 05:15:22'
+  reportAddedDate: '2021-01-23 16:37:08'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021apd
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.267'
+  magErr: '0.177'
+  magUnit: ABMag
+  objectName: ATLAS21crg
+  obsdate: '2021-01-16 05:24:00'
+  reportAddedDate: '2021-01-18 00:38:26'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021apd
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.56'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21crg
+  obsdate: '2021-01-12 07:03:22'
+  reportAddedDate: '2021-01-18 00:38:26'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021apd
+  exptime: '27'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.77'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21iw
+  obsdate: '2021-01-13 05:24:00'
+  reportAddedDate: '2021-01-17 14:59:52'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aog
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.74'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajw
+  obsdate: '2021-01-20 09:08:38'
+  reportAddedDate: '2021-01-22 09:02:32'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021aog
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajw
+  obsdate: '2020-12-13 19:59:31'
+  reportAddedDate: '2021-01-22 09:02:32'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021aog
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.99'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF18abxptoa
+  obsdate: '2021-01-15 02:41:17'
+  reportAddedDate: '2021-01-16 22:00:29'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aog
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.52'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF18abxptoa
+  obsdate: '2021-01-09 02:55:41'
+  reportAddedDate: '2021-01-16 22:00:29'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aog
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '18.92'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF18abxptoa
+  obsdate: '2021-01-07 03:28:48'
+  reportAddedDate: '2021-01-16 22:00:29'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ajh
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.22'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21aju
+  obsdate: '2021-01-20 17:11:02'
+  reportAddedDate: '2021-01-22 09:00:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ajh
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21aju
+  obsdate: '2021-01-06 05:06:43'
+  reportAddedDate: '2021-01-22 09:00:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ajh
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.222'
+  magErr: '0.132'
+  magUnit: ABMag
+  objectName: ATLAS21bto
+  obsdate: '2021-01-14 13:47:59'
+  reportAddedDate: '2021-01-15 03:11:51'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ajh
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.64'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21bto
+  obsdate: '2021-01-12 14:02:24'
+  reportAddedDate: '2021-01-15 03:11:51'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aii
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.83'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21nt
+  obsdate: '2021-01-15 09:41:46'
+  reportAddedDate: '2021-01-23 16:40:31'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aii
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.4813'
+  magErr: '0.187299'
+  magUnit: ABMag
+  objectName: ZTF21aaefmlt
+  obsdate: '2021-01-14 07:53:21'
+  reportAddedDate: '2021-01-14 20:56:19'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aii
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.7638'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaefmlt
+  obsdate: '2021-01-14 06:19:10'
+  reportAddedDate: '2021-01-14 20:56:19'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aib
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '18.88'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21pe
+  obsdate: '2021-01-24 15:27:22'
+  reportAddedDate: '2021-01-25 10:40:10'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aib
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.044'
+  magErr: '0.154'
+  magUnit: ABMag
+  objectName: ATLAS21csf
+  obsdate: '2021-01-17 14:18:14'
+  reportAddedDate: '2021-01-18 19:53:34'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aib
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.48'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21csf
+  obsdate: '2021-01-16 15:00:00'
+  reportAddedDate: '2021-01-18 19:53:34'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aib
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.7345'
+  magErr: '0.167711'
+  magUnit: ABMag
+  objectName: ZTF21aaeknki
+  obsdate: '2021-01-14 12:30:11'
+  reportAddedDate: '2021-01-14 20:56:19'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aib
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1539'
+  magErr: '0.239455'
+  magUnit: ABMag
+  objectName: ZTF21aaeknki
+  obsdate: '2021-01-12 13:01:05'
+  reportAddedDate: '2021-01-14 20:56:19'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aib
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.8127'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaeknki
+  obsdate: '2021-01-12 12:28:57'
+  reportAddedDate: '2021-01-14 20:56:19'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021aew
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.66'
+  magErr: '0.03'
+  magUnit: ABMag
+  objectName: PS21qm
+  obsdate: '2021-01-16 06:46:05'
+  reportAddedDate: '2021-01-25 12:21:05'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aew
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.707'
+  magErr: '0.183'
+  magUnit: ABMag
+  objectName: ATLAS21brr
+  obsdate: '2021-01-13 08:31:12'
+  reportAddedDate: '2021-01-13 22:44:56'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aew
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '18.65'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21brr
+  obsdate: '2021-01-09 08:49:55'
+  reportAddedDate: '2021-01-13 22:44:56'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aaj
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '18.06'
+  magErr: '0.02'
+  magUnit: ABMag
+  objectName: PS21oz
+  obsdate: '2021-01-16 05:45:36'
+  reportAddedDate: '2021-01-25 10:36:55'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021aaj
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.346'
+  magErr: '0.139'
+  magUnit: ABMag
+  objectName: ATLAS21bgq
+  obsdate: '2021-01-12 07:30:43'
+  reportAddedDate: '2021-01-12 15:24:45'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021aaj
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.97'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21bgq
+  obsdate: '2021-01-07 07:17:46'
+  reportAddedDate: '2021-01-12 15:24:45'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021yk
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '18.86'
+  magErr: '0.02'
+  magUnit: ABMag
+  objectName: PS21nr
+  obsdate: '2021-01-17 10:13:26'
+  reportAddedDate: '2021-01-23 16:37:36'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021yk
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.118'
+  magErr: '0.125'
+  magUnit: ABMag
+  objectName: ATLAS21bdw
+  obsdate: '2021-01-10 11:24:00'
+  reportAddedDate: '2021-01-10 21:40:52'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021yk
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '15.83'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21bdw
+  obsdate: '2021-01-09 13:36:29'
+  reportAddedDate: '2021-01-10 21:40:52'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021xv
+  exptime: ''
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.93'
+  magErr: '0.17'
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-10 12:23:28'
+  reportAddedDate: '2021-01-25 09:38:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: ''
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.52'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-07 13:14:44'
+  reportAddedDate: '2021-01-25 09:38:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.9349'
+  magErr: '0.170379'
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-10 12:23:35'
+  reportAddedDate: '2021-01-18 20:19:04'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.5207'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-07 13:14:51'
+  reportAddedDate: '2021-01-18 20:19:04'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.266'
+  magErr: '0.066'
+  magUnit: ABMag
+  objectName: ATLAS21cmb
+  obsdate: '2021-01-16 15:23:02'
+  reportAddedDate: '2021-01-17 19:30:29'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021xv
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.79'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21cmb
+  obsdate: '2021-01-08 16:03:22'
+  reportAddedDate: '2021-01-17 19:30:29'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021xv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.897'
+  magErr: '0.212239'
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-10 13:08:33'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.9349'
+  magErr: '0.170379'
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-10 12:23:35'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.5207'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aadatfg
+  obsdate: '2021-01-07 13:14:51'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xh
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.74'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21ng
+  obsdate: '2021-01-06 06:44:38'
+  reportAddedDate: '2021-01-22 11:38:42'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021xh
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1593'
+  magErr: '0.198573'
+  magUnit: ABMag
+  objectName: ZTF21aacvfed
+  obsdate: '2021-01-10 03:27:20'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xh
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.0733'
+  magErr: '0.291302'
+  magUnit: ABMag
+  objectName: ZTF21aacvfed
+  obsdate: '2021-01-08 05:59:40'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xh
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.7293'
+  magErr: '0.258665'
+  magUnit: ABMag
+  objectName: ZTF21aacvfed
+  obsdate: '2021-01-06 03:51:58'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xh
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.7024'
+  magErr: '0.2512'
+  magUnit: ABMag
+  objectName: ZTF21aacvfed
+  obsdate: '2021-01-06 02:48:50'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021xh
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.1743'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aacvfed
+  obsdate: '2021-01-04 03:49:52'
+  reportAddedDate: '2021-01-10 17:09:20'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.98'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akx
+  obsdate: '2021-01-11 21:51:50'
+  reportAddedDate: '2021-01-25 06:34:08'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021us
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akx
+  obsdate: '2020-12-07 22:27:50'
+  reportAddedDate: '2021-01-25 06:34:08'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021us
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1995'
+  magErr: '0.254255'
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-07 10:43:51'
+  reportAddedDate: '2021-01-17 20:17:11'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.7931'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-03 11:24:53'
+  reportAddedDate: '2021-01-17 20:17:11'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.513'
+  magErr: '0.104'
+  magUnit: ABMag
+  objectName: ATLAS21chc
+  obsdate: '2021-01-15 14:42:43'
+  reportAddedDate: '2021-01-16 11:20:39'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021us
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.56'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21chc
+  obsdate: '2021-01-07 13:56:38'
+  reportAddedDate: '2021-01-16 11:20:39'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021us
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '19.62'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: PS21gd
+  obsdate: '2021-01-08 13:49:26'
+  reportAddedDate: '2021-01-14 01:41:48'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021us
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.4581'
+  magErr: '0.140732'
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-09 11:15:15'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.4541'
+  magErr: '0.128974'
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-09 09:39:35'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1828'
+  magErr: '0.329653'
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-07 11:07:14'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1995'
+  magErr: '0.254255'
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-07 10:43:51'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021us
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.7931'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aacsuwx
+  obsdate: '2021-01-03 11:24:53'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021tz
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.25'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akn
+  obsdate: '2021-01-22 19:50:53'
+  reportAddedDate: '2021-01-24 10:43:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021tz
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akn
+  obsdate: '2020-12-17 22:06:14'
+  reportAddedDate: '2021-01-24 10:43:39'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021tz
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.228'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: ATLAS21btd
+  obsdate: '2021-01-14 05:03:50'
+  reportAddedDate: '2021-01-14 16:45:24'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021tz
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.55'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21btd
+  obsdate: '2021-01-04 05:54:14'
+  reportAddedDate: '2021-01-14 16:45:24'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021tz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.3053'
+  magErr: '0.136341'
+  magUnit: ABMag
+  objectName: ZTF21aacndur
+  obsdate: '2021-01-09 03:22:18'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021tz
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.4773'
+  magErr: '0.157706'
+  magUnit: ABMag
+  objectName: ZTF21aacndur
+  obsdate: '2021-01-09 02:52:36'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021tz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.7802'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aacndur
+  obsdate: '2021-01-07 03:18:57'
+  reportAddedDate: '2021-01-09 19:24:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021sl
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.45'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21nh
+  obsdate: '2021-01-11 12:07:12'
+  reportAddedDate: '2021-01-22 11:39:22'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021sl
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '19.443'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: ATLAS21azo
+  obsdate: '2021-01-08 12:56:10'
+  reportAddedDate: '2021-01-08 22:22:56'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021sl
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.62'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21azo
+  obsdate: '2021-01-07 12:41:46'
+  reportAddedDate: '2021-01-08 22:22:56'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021sl
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.3413'
+  magErr: '0.100708'
+  magUnit: ABMag
+  objectName: ZTF21aachbpq
+  obsdate: '2021-01-08 09:03:20'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021sl
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.6895'
+  magErr: '0.139196'
+  magUnit: ABMag
+  objectName: ZTF21aachbpq
+  obsdate: '2021-01-08 08:30:26'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021sl
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.2164'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aachbpq
+  obsdate: '2021-01-06 10:34:43'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021rz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.22'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS21ow
+  obsdate: '2021-01-16 09:02:53'
+  reportAddedDate: '2021-01-25 10:32:36'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021rz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.6902'
+  magErr: '0.193327'
+  magUnit: ABMag
+  objectName: ZTF21aacizpp
+  obsdate: '2021-01-08 09:57:25'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021rz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.2783'
+  magErr: '0.222483'
+  magUnit: ABMag
+  objectName: ZTF21aacizpp
+  obsdate: '2021-01-08 09:09:26'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021rz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1781'
+  magErr: '0.273152'
+  magUnit: ABMag
+  objectName: ZTF21aacizpp
+  obsdate: '2021-01-06 08:14:08'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021rz
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.4518'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aacizpp
+  obsdate: '2021-01-06 07:53:27'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ry
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.52'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS21mz
+  obsdate: '2021-01-16 09:08:38'
+  reportAddedDate: '2021-01-22 11:29:03'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ry
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1461'
+  magErr: '0.170743'
+  magUnit: ABMag
+  objectName: ZTF21aablerm
+  obsdate: '2021-01-08 09:09:26'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ry
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.2656'
+  magErr: '0.24141'
+  magUnit: ABMag
+  objectName: ZTF21aablerm
+  obsdate: '2021-01-06 08:14:08'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ry
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.3022'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aablerm
+  obsdate: '2021-01-06 07:08:11'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021qd
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.94'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: PS21ni
+  obsdate: '2021-01-09 09:04:19'
+  reportAddedDate: '2021-01-22 11:40:10'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021qd
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.558'
+  magErr: '0.147'
+  magUnit: ABMag
+  objectName: ATLAS21cjt
+  obsdate: '2021-01-15 12:04:19'
+  reportAddedDate: '2021-01-16 14:19:46'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021qd
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.49'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21cjt
+  obsdate: '2021-01-13 15:14:24'
+  reportAddedDate: '2021-01-16 14:19:46'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021qd
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.9633'
+  magErr: '0.150152'
+  magUnit: ABMag
+  objectName: ZTF21aabvkkk
+  obsdate: '2021-01-07 08:38:56'
+  reportAddedDate: '2021-01-07 22:24:13'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021qd
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1339'
+  magErr: '0.19225'
+  magUnit: ABMag
+  objectName: ZTF21aabvkkk
+  obsdate: '2021-01-07 08:08:10'
+  reportAddedDate: '2021-01-07 22:24:13'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021qd
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.3475'
+  magErr: '0.309821'
+  magUnit: ABMag
+  objectName: ZTF21aabvkkk
+  obsdate: '2021-01-05 08:05:39'
+  reportAddedDate: '2021-01-07 22:24:13'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021qd
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.7885'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aabvkkk
+  obsdate: '2021-01-03 10:10:15'
+  reportAddedDate: '2021-01-07 22:24:13'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ov
+  exptime: '120'
+  filter: z-Sloan
+  limitingMag: 0
+  mag: '19.65'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21ci
+  obsdate: '2021-01-03 16:01:55'
+  reportAddedDate: '2021-01-22 11:34:17'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ov
+  exptime: '120'
+  filter: z-Sloan
+  limitingMag: 0
+  mag: '19.62'
+  magErr: '0.16'
+  magUnit: ABMag
+  objectName: PS21ci
+  obsdate: '2021-01-04 15:46:05'
+  reportAddedDate: '2021-01-07 14:28:12'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ne
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.5'
+  magErr: '0.04'
+  magUnit: ABMag
+  objectName: PS21pa
+  obsdate: '2021-01-15 07:13:26'
+  reportAddedDate: '2021-01-25 10:37:29'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ne
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.31'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaelsm
+  obsdate: '2021-01-08 05:06:43'
+  reportAddedDate: '2021-01-09 01:59:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ne
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.51'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaelsm
+  obsdate: '2021-01-02 05:36:58'
+  reportAddedDate: '2021-01-09 01:59:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ne
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.25'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaelsm
+  obsdate: '2020-12-27 07:17:46'
+  reportAddedDate: '2021-01-09 01:59:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ne
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.224'
+  magErr: '0.127'
+  magUnit: ABMag
+  objectName: ATLAS21amu
+  obsdate: '2021-01-05 07:52:19'
+  reportAddedDate: '2021-01-07 02:10:13'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ne
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.2'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21amu
+  obsdate: '2021-01-04 09:27:22'
+  reportAddedDate: '2021-01-07 02:10:13'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021jv
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '20.57'
+  magErr: '0.23'
+  magUnit: ABMag
+  objectName: PS21af
+  obsdate: '2020-12-22 08:29:46'
+  reportAddedDate: '2021-01-25 10:49:32'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021jv
+  exptime: '27'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '21.17'
+  magErr: '0.23'
+  magUnit: ABMag
+  objectName: PS21af
+  obsdate: '2021-01-03 07:49:26'
+  reportAddedDate: '2021-01-06 17:17:20'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ik
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.93'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajs
+  obsdate: '2021-01-20 13:36:29'
+  reportAddedDate: '2021-01-22 08:59:24'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ik
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajs
+  obsdate: '2020-12-16 09:54:43'
+  reportAddedDate: '2021-01-22 08:59:24'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ik
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.6578'
+  magErr: '0.123122'
+  magUnit: ABMag
+  objectName: ZTF21aaazjia
+  obsdate: '2021-01-05 02:44:26'
+  reportAddedDate: '2021-01-17 20:17:11'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ik
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.0608'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaazjia
+  obsdate: '2021-01-01 02:18:29'
+  reportAddedDate: '2021-01-17 20:17:11'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ik
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.032'
+  magErr: '0.068'
+  magUnit: ABMag
+  objectName: ATLAS21bod
+  obsdate: '2021-01-13 05:26:53'
+  reportAddedDate: '2021-01-13 17:10:27'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ik
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.51'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21bod
+  obsdate: '2021-01-05 06:24:29'
+  reportAddedDate: '2021-01-13 17:10:27'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ik
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.7407'
+  magErr: '0.16417'
+  magUnit: ABMag
+  objectName: ZTF21aaazjia
+  obsdate: '2021-01-05 03:15:57'
+  reportAddedDate: '2021-01-05 20:13:17'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ik
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.6578'
+  magErr: '0.123122'
+  magUnit: ABMag
+  objectName: ZTF21aaazjia
+  obsdate: '2021-01-05 02:44:26'
+  reportAddedDate: '2021-01-05 20:13:17'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ik
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.4787'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaazjia
+  obsdate: '2021-01-01 02:58:20'
+  reportAddedDate: '2021-01-05 20:13:17'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021gl
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.43'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajq
+  obsdate: '2021-01-20 22:26:24'
+  reportAddedDate: '2021-01-22 08:58:40'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021gl
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajq
+  obsdate: '2020-12-12 06:41:46'
+  reportAddedDate: '2021-01-22 08:58:40'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021gl
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.7318'
+  magErr: '0.203732'
+  magUnit: ABMag
+  objectName: ZTF21aaagzee
+  obsdate: '2021-01-02 09:43:33'
+  reportAddedDate: '2021-01-12 20:19:24'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021gl
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '18.6913'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaagzee
+  obsdate: '2020-12-27 10:10:07'
+  reportAddedDate: '2021-01-12 20:19:24'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021gl
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.397'
+  magErr: '0.114'
+  magUnit: ABMag
+  objectName: ATLAS21ahk
+  obsdate: '2021-01-06 12:46:05'
+  reportAddedDate: '2021-01-06 21:00:01'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021gl
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.73'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21ahk
+  obsdate: '2021-01-02 13:39:22'
+  reportAddedDate: '2021-01-06 21:00:01'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021gl
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.35'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaagzee
+  obsdate: '2021-01-05 10:03:22'
+  reportAddedDate: '2021-01-05 20:01:57'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021gl
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.73'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaagzee
+  obsdate: '2021-01-02 09:43:12'
+  reportAddedDate: '2021-01-05 20:01:57'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021gl
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '18.69'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaagzee
+  obsdate: '2020-12-27 10:10:34'
+  reportAddedDate: '2021-01-05 20:01:57'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ff
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.4'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS21pv
+  obsdate: '2021-01-15 09:34:34'
+  reportAddedDate: '2021-01-25 11:57:33'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ff
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.4224'
+  magErr: '0.201932'
+  magUnit: ABMag
+  objectName: ZTF21aaaszmu
+  obsdate: '2021-01-04 06:23:29'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ff
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.4654'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaszmu
+  obsdate: '2021-01-02 10:13:15'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.28'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21na
+  obsdate: '2021-01-16 05:49:55'
+  reportAddedDate: '2021-01-22 11:31:33'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021eq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.4039'
+  magErr: '0.262176'
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2021-01-02 05:42:28'
+  reportAddedDate: '2021-01-12 20:19:24'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.7074'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2020-12-27 07:14:36'
+  reportAddedDate: '2021-01-12 20:19:24'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.625'
+  magErr: '0.176'
+  magUnit: ABMag
+  objectName: ATLAS21bgp
+  obsdate: '2021-01-12 07:33:36'
+  reportAddedDate: '2021-01-12 14:39:23'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021eq
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.84'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21bgp
+  obsdate: '2021-01-08 07:22:05'
+  reportAddedDate: '2021-01-12 14:39:23'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021eq
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.4614'
+  magErr: '0.185913'
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2021-01-04 05:25:37'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1376'
+  magErr: '0.225845'
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2021-01-04 04:27:53'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.4039'
+  magErr: '0.262176'
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2021-01-02 05:42:28'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021eq
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.7074'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaseqt
+  obsdate: '2020-12-27 07:14:36'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021em
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.13'
+  magErr: '0.06'
+  magUnit: ABMag
+  objectName: PS21px
+  obsdate: '2021-01-15 07:17:46'
+  reportAddedDate: '2021-01-25 11:58:53'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021em
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.1571'
+  magErr: '0.180215'
+  magUnit: ABMag
+  objectName: ZTF21aaarnna
+  obsdate: '2021-01-04 05:36:39'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021em
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.8762'
+  magErr: '0.193414'
+  magUnit: ABMag
+  objectName: ZTF21aaarnna
+  obsdate: '2021-01-04 04:11:47'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021em
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.1803'
+  magErr: '0.332423'
+  magUnit: ABMag
+  objectName: ZTF21aaarnna
+  obsdate: '2021-01-02 05:36:18'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021em
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.2124'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaarnna
+  obsdate: '2020-12-28 05:06:20'
+  reportAddedDate: '2021-01-04 21:44:30'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021dc
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.57'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ald
+  obsdate: '2021-01-02 23:05:17'
+  reportAddedDate: '2021-01-25 09:13:58'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021dc
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ald
+  obsdate: '2020-11-30 03:54:43'
+  reportAddedDate: '2021-01-25 09:13:58'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021dc
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.8337'
+  magErr: '0.13044'
+  magUnit: ABMag
+  objectName: ZTF21aaaollj
+  obsdate: '2021-01-03 10:44:26'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021dc
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.6897'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaollj
+  obsdate: '2021-01-03 09:21:05'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021bv
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.43'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: PS21ne
+  obsdate: '2021-01-02 12:37:26'
+  reportAddedDate: '2021-01-22 11:35:10'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bv
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.059'
+  magErr: '0.119'
+  magUnit: ABMag
+  objectName: ATLAS21azi
+  obsdate: '2021-01-08 10:30:43'
+  reportAddedDate: '2021-01-08 22:17:32'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021bv
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.33'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21azi
+  obsdate: '2021-01-06 13:04:48'
+  reportAddedDate: '2021-01-08 22:17:32'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021bv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.3135'
+  magErr: '0.136412'
+  magUnit: ABMag
+  objectName: ZTF21aaahhso
+  obsdate: '2021-01-03 08:18:34'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021bv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.2769'
+  magErr: '0.160696'
+  magUnit: ABMag
+  objectName: ZTF21aaahhso
+  obsdate: '2021-01-03 06:22:59'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021bv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.3326'
+  magErr: '0.326802'
+  magUnit: ABMag
+  objectName: ZTF21aaahhso
+  obsdate: '2021-01-01 10:15:18'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021bv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '18.5308'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaahhso
+  obsdate: '2021-01-01 09:39:00'
+  reportAddedDate: '2021-01-03 20:12:24'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021bg
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.82'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: PS21h
+  obsdate: '2021-01-12 05:18:14'
+  reportAddedDate: '2021-01-25 12:03:34'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021bg
+  exptime: '27'
+  filter: z-Sloan
+  limitingMag: 0
+  mag: '21.11'
+  magErr: '0.26'
+  magUnit: ABMag
+  objectName: PS21h
+  obsdate: '2021-01-03 05:12:29'
+  reportAddedDate: '2021-01-03 15:27:50'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ab
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.78'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akd
+  obsdate: '2021-01-22 10:48:00'
+  reportAddedDate: '2021-01-23 13:02:59'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ab
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akd
+  obsdate: '2020-12-15 23:12:29'
+  reportAddedDate: '2021-01-23 13:02:59'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021ab
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '18.84'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21ex
+  obsdate: '2021-01-03 13:42:14'
+  reportAddedDate: '2021-01-11 02:49:08'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021ab
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.445'
+  magErr: '0.132'
+  magUnit: ABMag
+  objectName: ATLAS21akd
+  obsdate: '2021-01-05 12:46:05'
+  reportAddedDate: '2021-01-07 00:24:13'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ab
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.93'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21akd
+  obsdate: '2021-01-03 13:22:05'
+  reportAddedDate: '2021-01-07 00:24:13'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021ab
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.6056'
+  magErr: '0.130692'
+  magUnit: ABMag
+  objectName: ZTF21aaabuoj
+  obsdate: '2021-01-02 12:29:51'
+  reportAddedDate: '2021-01-02 18:34:12'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ab
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.5213'
+  magErr: '0.144498'
+  magUnit: ABMag
+  objectName: ZTF21aaabuoj
+  obsdate: '2021-01-02 10:33:31'
+  reportAddedDate: '2021-01-02 18:34:12'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ab
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.7325'
+  magErr: '0.193327'
+  magUnit: ABMag
+  objectName: ZTF21aaabuoj
+  obsdate: '2021-01-01 11:33:32'
+  reportAddedDate: '2021-01-02 18:34:12'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021ab
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.0535'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaabuoj
+  obsdate: '2020-12-21 12:04:03'
+  reportAddedDate: '2021-01-02 18:34:12'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021G
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '18.66'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: PS21pc
+  obsdate: '2021-01-24 13:32:10'
+  reportAddedDate: '2021-01-25 10:39:07'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2021G
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.22'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21adl
+  obsdate: '2021-01-08 15:27:22'
+  reportAddedDate: '2021-01-10 18:29:10'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021G
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21adl
+  obsdate: '2020-12-02 10:16:19'
+  reportAddedDate: '2021-01-10 18:29:10'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2021G
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.1914'
+  magErr: '0.260618'
+  magUnit: ABMag
+  objectName: ZTF21aaabtyq
+  obsdate: '2021-01-01 10:28:53'
+  reportAddedDate: '2021-01-07 20:19:35'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021G
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.1045'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaabtyq
+  obsdate: '2020-12-23 09:54:38'
+  reportAddedDate: '2021-01-07 20:19:35'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021G
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.761'
+  magErr: '0.133'
+  magUnit: ABMag
+  objectName: ATLAS21aar
+  obsdate: '2021-01-04 14:08:10'
+  reportAddedDate: '2021-01-05 03:13:45'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021G
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.41'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21aar
+  obsdate: '2021-01-02 12:57:36'
+  reportAddedDate: '2021-01-05 03:13:45'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2021G
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.9378'
+  magErr: '0.154732'
+  magUnit: ABMag
+  objectName: ZTF21aaabtyq
+  obsdate: '2021-01-01 11:14:58'
+  reportAddedDate: '2021-01-01 16:43:48'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021G
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.1914'
+  magErr: '0.260618'
+  magUnit: ABMag
+  objectName: ZTF21aaabtyq
+  obsdate: '2021-01-01 10:28:53'
+  reportAddedDate: '2021-01-01 16:43:48'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2021G
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '18.1893'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaabtyq
+  obsdate: '2020-12-23 11:42:07'
+  reportAddedDate: '2021-01-01 16:43:48'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aewd
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.5'
+  magErr: '0.23'
+  magUnit: ABMag
+  objectName: PS21py
+  obsdate: '2020-12-12 11:42:43'
+  reportAddedDate: '2021-01-25 12:00:52'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aewc
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '17.27'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21alb
+  obsdate: '2020-12-20 20:35:31'
+  reportAddedDate: '2021-01-25 06:35:38'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020aewc
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21alb
+  obsdate: '2020-09-15 16:33:35'
+  reportAddedDate: '2021-01-25 06:35:38'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020aewb
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.94'
+  magErr: '0.24'
+  magUnit: ABMag
+  objectName: PS21ok
+  obsdate: '2020-12-17 10:13:26'
+  reportAddedDate: '2021-01-23 17:12:19'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aeuv
+  exptime: ''
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.69'
+  magErr: '0.17'
+  magUnit: ABMag
+  objectName: ZTF20aczgmai
+  obsdate: '2020-12-21 12:11:31'
+  reportAddedDate: '2021-01-25 09:41:44'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeuv
+  exptime: ''
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.27'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20aczgmai
+  obsdate: '2020-12-21 11:18:14'
+  reportAddedDate: '2021-01-25 09:41:44'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeuv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '18.81'
+  magErr: '0.01'
+  magUnit: ABMag
+  objectName: PS21jn
+  obsdate: '2021-01-15 14:24:00'
+  reportAddedDate: '2021-01-18 20:01:24'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aeuv
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.73'
+  magErr: '0.107'
+  magUnit: ABMag
+  objectName: ATLAS21cjj
+  obsdate: '2021-01-15 14:02:24'
+  reportAddedDate: '2021-01-16 14:13:38'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aeuv
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.27'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21cjj
+  obsdate: '2021-01-07 16:07:41'
+  reportAddedDate: '2021-01-16 14:13:38'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aeuv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.12'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20aczgmai
+  obsdate: '2021-01-09 12:57:36'
+  reportAddedDate: '2021-01-09 19:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeuv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.69'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20aczgmai
+  obsdate: '2020-12-21 12:11:31'
+  reportAddedDate: '2021-01-09 19:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeuv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.27'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20aczgmai
+  obsdate: '2020-12-21 11:18:14'
+  reportAddedDate: '2021-01-09 19:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeuh
+  exptime: '120'
+  filter: z-Sloan
+  limitingMag: 0
+  mag: '20.54'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: PS21pz
+  obsdate: '2021-01-14 16:04:48'
+  reportAddedDate: '2021-01-25 12:04:54'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aeuh
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.268'
+  magErr: '0.138'
+  magUnit: ABMag
+  objectName: ATLAS20bkbb
+  obsdate: '2020-12-25 14:42:43'
+  reportAddedDate: '2021-01-07 00:43:11'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aeuh
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.74'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bkbb
+  obsdate: '2020-12-23 14:38:24'
+  reportAddedDate: '2021-01-07 00:43:11'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aetm
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.94'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS21nw
+  obsdate: '2021-01-15 09:36:00'
+  reportAddedDate: '2021-01-23 16:43:22'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aetm
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.7676'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaszmm
+  obsdate: '2020-12-22 07:17:29'
+  reportAddedDate: '2021-01-06 19:00:40'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aetm
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.1117'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaaszmm
+  obsdate: '2020-12-20 10:23:42'
+  reportAddedDate: '2021-01-06 19:00:40'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aeqo
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '18.22'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: PS21mv
+  obsdate: '2020-12-28 08:44:10'
+  reportAddedDate: '2021-01-22 11:18:59'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aeqo
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21abc
+  obsdate: '2020-12-31 07:01:55'
+  reportAddedDate: '2021-01-02 14:15:40'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020aeqo
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21abc
+  obsdate: '2020-12-14 14:42:43'
+  reportAddedDate: '2021-01-02 14:15:40'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020aeqo
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.198'
+  magErr: '0.108'
+  magUnit: ABMag
+  objectName: ATLAS20bjua
+  obsdate: '2020-12-29 07:35:02'
+  reportAddedDate: '2020-12-31 01:34:06'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aeqo
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.29'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bjua
+  obsdate: '2020-12-23 06:33:07'
+  reportAddedDate: '2020-12-31 01:34:06'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020aenl
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.86'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS20ntv
+  obsdate: '2021-01-16 09:17:17'
+  reportAddedDate: '2021-01-23 16:35:27'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aenl
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.47'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS20ntv
+  obsdate: '2020-12-10 10:39:22'
+  reportAddedDate: '2020-12-29 17:36:01'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aenf
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.35'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS20nti
+  obsdate: '2021-01-16 10:24:58'
+  reportAddedDate: '2021-01-22 11:23:24'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aenf
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.0738'
+  magErr: '0.179458'
+  magUnit: ABMag
+  objectName: ZTF21aaciiuk
+  obsdate: '2021-01-08 10:49:04'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aenf
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.0867'
+  magErr: '0.202226'
+  magUnit: ABMag
+  objectName: ZTF21aaciiuk
+  obsdate: '2021-01-08 09:34:26'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aenf
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '17.5857'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF21aaciiuk
+  obsdate: '2021-01-06 10:42:50'
+  reportAddedDate: '2021-01-08 19:18:22'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aenf
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.95'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: PS20nti
+  obsdate: '2020-12-23 11:47:02'
+  reportAddedDate: '2020-12-29 17:25:50'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adlz
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.47'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS20mmp
+  obsdate: '2021-01-12 14:03:50'
+  reportAddedDate: '2021-01-25 11:59:50'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adlz
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.206'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: ATLAS20bjwy
+  obsdate: '2020-12-25 13:09:07'
+  reportAddedDate: '2020-12-31 23:38:23'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adlz
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.74'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bjwy
+  obsdate: '2020-12-23 12:59:02'
+  reportAddedDate: '2020-12-31 23:38:23'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adlz
+  exptime: '27'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.68'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: PS20mmp
+  obsdate: '2020-12-10 15:11:31'
+  reportAddedDate: '2020-12-22 23:03:29'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adlp
+  exptime: '27'
+  filter: g-Sloan
+  limitingMag: 0
+  mag: '18.37'
+  magErr: '0.03'
+  magUnit: ABMag
+  objectName: PS20ntd
+  obsdate: '2021-01-12 10:46:34'
+  reportAddedDate: '2021-01-24 11:08:31'
+  reportingGroup: YSE
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.168'
+  magErr: '0.128'
+  magUnit: ABMag
+  objectName: ATLAS21alk
+  obsdate: '2021-01-02 10:26:24'
+  reportAddedDate: '2021-01-07 01:30:37'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.32'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS21alk
+  obsdate: '2020-12-26 12:11:31'
+  reportAddedDate: '2021-01-07 01:30:37'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adlp
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.59'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: PS20ntd
+  obsdate: '2020-12-24 11:24:00'
+  reportAddedDate: '2020-12-29 17:24:05'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.64'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-27 06:17:06'
+  reportAddedDate: '2020-12-27 07:22:23'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.86'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-22 09:16:03'
+  reportAddedDate: '2020-12-27 07:22:23'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.1758'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-20 10:46:18'
+  reportAddedDate: '2020-12-27 07:22:23'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.8579'
+  magErr: '0.130022'
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-22 09:16:03'
+  reportAddedDate: '2020-12-22 21:41:11'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '20.3126'
+  magErr: '0.219415'
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-20 09:28:50'
+  reportAddedDate: '2020-12-22 21:41:11'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adlp
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.0988'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acyvbhj
+  obsdate: '2020-12-17 09:48:21'
+  reportAddedDate: '2020-12-22 21:41:11'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '120'
+  filter: z-Sloan
+  limitingMag: 0
+  mag: '20.35'
+  magErr: '0.24'
+  magUnit: ABMag
+  objectName: PS20ntl
+  obsdate: '2021-01-08 15:31:41'
+  reportAddedDate: '2021-01-22 11:43:22'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '18.954'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: ATLAS20bjxj
+  obsdate: '2020-12-22 11:25:26'
+  reportAddedDate: '2020-12-31 23:47:49'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.88'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bjxj
+  obsdate: '2020-12-14 11:51:22'
+  reportAddedDate: '2020-12-31 23:47:49'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020adbk
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.11'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: PS20ntl
+  obsdate: '2020-12-11 11:32:38'
+  reportAddedDate: '2020-12-29 17:31:25'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.79'
+  magErr: '0.18'
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-16 09:46:24'
+  reportAddedDate: '2020-12-20 09:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.88'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-16 08:35:39'
+  reportAddedDate: '2020-12-20 09:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.1751'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-13 11:23:32'
+  reportAddedDate: '2020-12-20 09:59:21'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.5041'
+  magErr: '0.111692'
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-18 10:03:24'
+  reportAddedDate: '2020-12-18 21:09:36'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.792'
+  magErr: '0.175306'
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-16 09:46:24'
+  reportAddedDate: '2020-12-18 21:09:36'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.8786'
+  magErr: '0.132383'
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-16 08:35:39'
+  reportAddedDate: '2020-12-18 21:09:36'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020adbk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '20.1751'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxqnhn
+  obsdate: '2020-12-13 11:23:32'
+  reportAddedDate: '2020-12-18 21:09:36'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acuc
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.9'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21og
+  obsdate: '2021-01-15 14:26:53'
+  reportAddedDate: '2021-01-23 17:04:26'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020acuc
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.49'
+  magErr: '0.16'
+  magUnit: ABMag
+  objectName: ZTF20acxsxbc
+  obsdate: '2020-12-20 12:25:46'
+  reportAddedDate: '2020-12-20 13:00:11'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acuc
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.16'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: ZTF20acxsxbc
+  obsdate: '2020-12-17 13:03:30'
+  reportAddedDate: '2020-12-20 13:00:11'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acuc
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.2776'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxsxbc
+  obsdate: '2020-12-15 13:03:51'
+  reportAddedDate: '2020-12-20 13:00:11'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acuc
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.5295'
+  magErr: '0.190354'
+  magUnit: ABMag
+  objectName: ZTF20acxsxbc
+  obsdate: '2020-12-15 11:59:03'
+  reportAddedDate: '2020-12-15 22:17:31'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acuc
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '19.9541'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxsxbc
+  obsdate: '2020-12-11 13:02:39'
+  reportAddedDate: '2020-12-15 22:17:31'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acma
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '15.89'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21ajv
+  obsdate: '2020-12-16 17:09:36'
+  reportAddedDate: '2021-01-22 09:01:24'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020acma
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21ajv
+  obsdate: '2020-11-10 11:54:14'
+  reportAddedDate: '2021-01-22 09:01:24'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020acma
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '15.98'
+  magErr: ''
+  magUnit: ABMag
+  objectName: PS21u
+  obsdate: '2021-01-03 13:23:31'
+  reportAddedDate: '2021-01-05 18:32:04'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020acma
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '17.99'
+  magErr: '0.061'
+  magUnit: ABMag
+  objectName: ATLAS20bhnw
+  obsdate: '2020-12-12 14:12:29'
+  reportAddedDate: '2020-12-12 21:50:41'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020acma
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.53'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bhnw
+  obsdate: '2020-12-10 14:49:55'
+  reportAddedDate: '2020-12-12 21:50:41'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020achf
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.7'
+  magErr: '0.04'
+  magUnit: ABMag
+  objectName: PS21pw
+  obsdate: '2021-01-15 14:21:07'
+  reportAddedDate: '2021-01-25 11:58:17'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020achf
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.709'
+  magErr: '0.187'
+  magUnit: ABMag
+  objectName: ATLAS20bjzm
+  obsdate: '2020-12-21 15:23:02'
+  reportAddedDate: '2021-01-06 23:58:41'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020achf
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '19.1'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bjzm
+  obsdate: '2020-12-07 15:31:41'
+  reportAddedDate: '2021-01-06 23:58:41'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020achf
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.29'
+  magErr: '0.18'
+  magUnit: ABMag
+  objectName: ZTF20acvewsv
+  obsdate: '2020-12-11 12:19:08'
+  reportAddedDate: '2020-12-11 12:54:59'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020achf
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.06'
+  magErr: '0.16'
+  magUnit: ABMag
+  objectName: ZTF20acvewsv
+  obsdate: '2020-12-05 12:19:28'
+  reportAddedDate: '2020-12-11 12:54:59'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acew
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.18'
+  magErr: '0.04'
+  magUnit: ABMag
+  objectName: PS21mu
+  obsdate: '2021-01-03 13:13:26'
+  reportAddedDate: '2021-01-22 11:18:03'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020acew
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.4'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: ZTF20acwqjaw
+  obsdate: '2020-12-12 11:31:49'
+  reportAddedDate: '2020-12-15 11:56:42'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acew
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.28'
+  magErr: '0.08'
+  magUnit: ABMag
+  objectName: ZTF20acwqjaw
+  obsdate: '2020-12-10 12:28:14'
+  reportAddedDate: '2020-12-15 11:56:42'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acew
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.2807'
+  magErr: '0.0805035'
+  magUnit: ABMag
+  objectName: ZTF20acwqjaw
+  obsdate: '2020-12-10 12:28:14'
+  reportAddedDate: '2020-12-10 18:51:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acew
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.2169'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acwqjaw
+  obsdate: '2020-12-05 12:05:47'
+  reportAddedDate: '2020-12-10 18:51:35'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acau
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.76'
+  magErr: '0.04'
+  magUnit: ABMag
+  objectName: PS21qd
+  obsdate: '2021-01-15 14:29:46'
+  reportAddedDate: '2021-01-25 12:11:46'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020acau
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.091'
+  magErr: '0.133'
+  magUnit: ABMag
+  objectName: ATLAS20bikb
+  obsdate: '2020-12-14 15:12:58'
+  reportAddedDate: '2020-12-15 20:35:39'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020acau
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.58'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bikb
+  obsdate: '2020-12-07 15:51:50'
+  reportAddedDate: '2020-12-15 20:35:39'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020acau
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.89'
+  magErr: '0.11'
+  magUnit: ABMag
+  objectName: ZTF20actoerz
+  obsdate: '2020-12-11 12:17:47'
+  reportAddedDate: '2020-12-11 12:54:59'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acau
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.72'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: ZTF20actoerz
+  obsdate: '2020-12-05 12:53:41'
+  reportAddedDate: '2020-12-11 12:54:59'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acau
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.72'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20actoerz
+  obsdate: '2020-12-05 12:53:17'
+  reportAddedDate: '2020-12-10 06:43:50'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020acau
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.75'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20actoerz
+  obsdate: '2020-12-03 12:37:26'
+  reportAddedDate: '2020-12-10 06:43:50'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abwa
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.55'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: PS20nuu
+  obsdate: '2021-01-14 12:00:00'
+  reportAddedDate: '2021-01-25 12:10:25'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 0
+  mag: '19.409'
+  magErr: '0.135'
+  magUnit: ABMag
+  objectName: ATLAS20bjto
+  obsdate: '2020-12-22 11:28:19'
+  reportAddedDate: '2020-12-31 01:20:49'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.87'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bjto
+  obsdate: '2020-12-14 11:12:29'
+  reportAddedDate: '2020-12-31 01:20:49'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020abwa
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.16'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS20nuu
+  obsdate: '2020-12-11 13:53:46'
+  reportAddedDate: '2020-12-29 17:48:22'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.2'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: ZTF20acveyal
+  obsdate: '2020-12-10 11:58:49'
+  reportAddedDate: '2020-12-10 12:37:03'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.25'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: ZTF20acveyal
+  obsdate: '2020-12-10 08:34:23'
+  reportAddedDate: '2020-12-10 12:37:03'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.583'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acveyal
+  obsdate: '2020-12-01 11:08:41'
+  reportAddedDate: '2020-12-10 12:37:03'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.6169'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acveyal
+  obsdate: '2020-12-05 10:41:58'
+  reportAddedDate: '2020-12-07 09:30:25'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abwa
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.583'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acveyal
+  obsdate: '2020-12-01 11:08:41'
+  reportAddedDate: '2020-12-07 09:30:25'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abey
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '16.72'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia21akb
+  obsdate: '2021-01-22 00:50:24'
+  reportAddedDate: '2021-01-23 13:01:20'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020abey
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia21akb
+  obsdate: '2020-10-30 09:59:02'
+  reportAddedDate: '2021-01-23 13:01:20'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020abey
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '18.92'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acqpkxj
+  obsdate: '2020-11-30 03:05:46'
+  reportAddedDate: '2020-11-30 03:40:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abey
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.89'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acqpkxj
+  obsdate: '2020-11-15 04:13:26'
+  reportAddedDate: '2020-11-30 03:40:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020abey
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.59'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acqpkxj
+  obsdate: '2020-11-14 05:58:34'
+  reportAddedDate: '2020-11-30 03:40:36'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aaqv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '21.18'
+  magErr: '0.18'
+  magUnit: ABMag
+  objectName: PS21pb
+  obsdate: '2021-01-16 09:04:19'
+  reportAddedDate: '2021-01-25 10:45:00'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aaqv
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.4'
+  magErr: '0.24'
+  magUnit: ABMag
+  objectName: PS21pb
+  obsdate: '2020-11-14 12:15:50'
+  reportAddedDate: '2021-01-25 10:38:36'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020aaqv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.48'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: ZTF20acrachm
+  obsdate: '2020-11-20 10:38:48'
+  reportAddedDate: '2020-11-21 00:17:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aaqv
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '20.2'
+  magErr: '0.19'
+  magUnit: ABMag
+  objectName: ZTF20acrachm
+  obsdate: '2020-11-17 12:09:05'
+  reportAddedDate: '2020-11-21 00:17:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020aaqv
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.7476'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acrachm
+  obsdate: '2020-11-17 10:37:41'
+  reportAddedDate: '2020-11-21 00:17:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '20.19'
+  magErr: '0.07'
+  magUnit: ABMag
+  objectName: PS20nsu
+  obsdate: '2021-01-17 15:07:12'
+  reportAddedDate: '2021-01-23 16:44:05'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020zko
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '18.62'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: PS20nsu
+  obsdate: '2020-12-02 14:28:19'
+  reportAddedDate: '2020-12-29 17:17:40'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020zko
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '17.903'
+  magErr: '0.094'
+  magUnit: ABMag
+  objectName: ATLAS20bggs
+  obsdate: '2020-11-29 13:22:05'
+  reportAddedDate: '2020-11-30 15:12:24'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020zko
+  exptime: '30'
+  filter: cyan-ATLAS
+  limitingMag: 1
+  mag: '19.49'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bggs
+  obsdate: '2020-07-18 06:31:41'
+  reportAddedDate: '2020-11-30 15:12:24'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.1696'
+  magErr: '0.115976'
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-12 11:23:36'
+  reportAddedDate: '2020-11-25 06:23:50'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.848'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-06 11:51:19'
+  reportAddedDate: '2020-11-25 06:23:50'
+  reportingGroup: Fink
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.06'
+  magErr: '0.14'
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-12 12:21:02'
+  reportAddedDate: '2020-11-17 12:19:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.17'
+  magErr: '0.12'
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-12 11:23:36'
+  reportAddedDate: '2020-11-17 12:19:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.848'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-06 11:51:19'
+  reportAddedDate: '2020-11-17 12:19:15'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.056'
+  magErr: '0.142282'
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-12 12:21:02'
+  reportAddedDate: '2020-11-12 21:03:09'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.1696'
+  magErr: '0.115976'
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-12 11:23:36'
+  reportAddedDate: '2020-11-12 21:03:09'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020zko
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.848'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acpxvez
+  obsdate: '2020-11-06 11:51:19'
+  reportAddedDate: '2020-11-12 21:03:09'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.92'
+  magErr: '0.06'
+  magUnit: ABMag
+  objectName: PS20kvz
+  obsdate: '2021-01-07 05:45:36'
+  reportAddedDate: '2021-01-22 11:20:40'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.59'
+  magErr: '0.16'
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-11-02 06:22:50'
+  reportAddedDate: '2020-11-11 07:01:55'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.27'
+  magErr: '0.22'
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-11-02 05:03:33'
+  reportAddedDate: '2020-11-11 07:01:55'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.9796'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-10-22 07:36:08'
+  reportAddedDate: '2020-11-11 07:01:55'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '45'
+  filter: i-Sloan
+  limitingMag: 0
+  mag: '19.55'
+  magErr: '0.13'
+  magUnit: ABMag
+  objectName: PS20kvz
+  obsdate: '2020-11-04 07:33:36'
+  reportAddedDate: '2020-11-08 13:51:32'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '19.021'
+  magErr: '0.136'
+  magUnit: ABMag
+  objectName: ATLAS20beyi
+  obsdate: '2020-11-07 09:08:38'
+  reportAddedDate: '2020-11-07 23:57:31'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '17.29'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20beyi
+  obsdate: '2020-11-05 10:12:00'
+  reportAddedDate: '2020-11-07 23:57:31'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '19.5937'
+  magErr: '0.156014'
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-11-02 06:22:50'
+  reportAddedDate: '2020-11-02 19:19:58'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.2657'
+  magErr: '0.21729'
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-11-02 05:03:33'
+  reportAddedDate: '2020-11-02 19:19:58'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020ytk
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '19.0863'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acorjop
+  obsdate: '2020-10-31 07:52:50'
+  reportAddedDate: '2020-11-02 19:19:58'
+  reportingGroup: ALeRCE
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '45'
+  filter: w-PS1
+  limitingMag: 0
+  mag: '19.34'
+  magErr: '0.05'
+  magUnit: ABMag
+  objectName: PS21oa
+  obsdate: '2021-01-16 13:24:58'
+  reportAddedDate: '2021-01-23 16:55:16'
+  reportingGroup: Pan-STARRS1
+  suggestedType: PSN
+  survey: Pan-STARRS1
+  telescope: PS1_GPC1
+- TNSId: 2020pub
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.89'
+  magErr: '0.09'
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-21 12:04:43'
+  reportAddedDate: '2020-12-21 12:18:53'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.79'
+  magErr: '0.1'
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-21 12:04:03'
+  reportAddedDate: '2020-12-21 12:18:53'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 1
+  mag: '20.0634'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-21 11:02:48'
+  reportAddedDate: '2020-12-21 12:18:53'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 0
+  mag: '18.67'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-13 12:04:19'
+  reportAddedDate: '2020-12-14 06:37:51'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: g-ZTF
+  limitingMag: 0
+  mag: '19.92'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-11 12:33:07'
+  reportAddedDate: '2020-12-14 06:37:51'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: r-ZTF
+  limitingMag: 1
+  mag: '16.58'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ZTF20acxkfrm
+  obsdate: '2020-12-09 12:02:53'
+  reportAddedDate: '2020-12-14 06:37:51'
+  reportingGroup: ZTF
+  suggestedType: PSN
+  survey: ZTF
+  telescope: P48_ZTF-Cam
+- TNSId: 2020pub
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 0
+  mag: '18.616'
+  magErr: '0.15'
+  magUnit: ABMag
+  objectName: ATLAS20bglm
+  obsdate: '2020-12-02 14:11:02'
+  reportAddedDate: '2020-12-03 01:11:33'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020pub
+  exptime: '30'
+  filter: orange-ATLAS
+  limitingMag: 1
+  mag: '18.84'
+  magErr: ''
+  magUnit: ABMag
+  objectName: ATLAS20bglm
+  obsdate: '2020-11-30 15:25:55'
+  reportAddedDate: '2020-12-03 01:11:33'
+  reportingGroup: ATLAS
+  suggestedType: PSN
+  survey: ATLAS
+  telescope: ATLAS1_ACAM1
+- TNSId: 2020pub
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '18.63'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia20ezg
+  obsdate: '2020-10-27 05:39:50'
+  reportAddedDate: '2020-10-29 09:28:11'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020pub
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia20ezg
+  obsdate: '2020-06-25 05:05:17'
+  reportAddedDate: '2020-10-29 09:28:11'
+  reportingGroup: GaiaAlerts
+  suggestedType: PSN
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2020pub
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '15.5'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J103735.45-224219.8
+  obsdate: '2020-07-19 17:39:18'
+  reportAddedDate: '2020-07-20 16:42:00'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2020pub
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '15.4'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J103735.45-224219.8
+  obsdate: '2020-07-19 17:33:56'
+  reportAddedDate: '2020-07-20 16:42:00'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2020pub
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.7'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J103735.45-224219.8
+  obsdate: '2015-01-21 21:50:55'
+  reportAddedDate: '2020-07-20 16:42:00'
+  reportingGroup: MASTER
+  suggestedType: PSN
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2016dre
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '15'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J005421.68-475146.7
+  obsdate: '2021-01-24 02:05:00'
+  reportAddedDate: '2021-01-24 17:22:57'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2016dre
+  exptime: '60'
+  filter: Clear-
+  limitingMag: 0
+  mag: '15'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J005421.68-475146.7
+  obsdate: '2021-01-24 01:50:16'
+  reportAddedDate: '2021-01-24 17:22:57'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2016dre
+  exptime: '180'
+  filter: Clear-
+  limitingMag: 1
+  mag: '19.9'
+  magErr: ''
+  magUnit: VegaMag
+  objectName: MASTER OT J005421.68-475146.7
+  obsdate: '2016-11-01 03:33:29'
+  reportAddedDate: '2021-01-24 17:22:57'
+  reportingGroup: MASTER
+  suggestedType: Other
+  survey: MASTER
+  telescope: Other_Other
+- TNSId: 2016dre
+  exptime: '60'
+  filter: G-Gaia
+  limitingMag: 0
+  mag: '15.17'
+  magErr: '0.2'
+  magUnit: ABMag
+  objectName: Gaia16adj
+  obsdate: '2016-02-11 12:47:31'
+  reportAddedDate: '2016-07-22 10:56:32'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric
+- TNSId: 2016dre
+  exptime: ''
+  filter: G-Gaia
+  limitingMag: 1
+  mag: '21.5'
+  magErr: ''
+  magUnit: ABMag
+  objectName: Gaia16adj
+  obsdate: '2016-01-30 12:41:45'
+  reportAddedDate: '2016-07-22 10:56:32'
+  reportingGroup: GaiaAlerts
+  suggestedType: Other
+  survey: GaiaAlerts
+  telescope: Gaia_Gaia-photometric

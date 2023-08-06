@@ -1,0 +1,7 @@
+| TNSId    | survey       | obsdate              | filter  | limitingMag  | mag      | magErr  | magUnit  | suggestedType  | telescope              | exptime  | reportAddedDate      | reportingGroup  | objectName  |
+|:---------|:-------------|:---------------------|:--------|:-------------|:---------|:--------|:---------|:---------------|:-----------------------|:---------|:---------------------|:----------------|:------------|
+| 2016fbz  | Pan-STARRS1  | 2016-08-30 13:19:12  | w-PS1   | 0            | 17.8     | 0.02    | ABMag    | PSN            | PS1_GPC1               | 45       | 2016-09-02 15:54:03  | Pan-STARRS1     | PS16ebg     |
+| 2016fbz  | iPTF         | 2016-08-25 12:00:00  | g-PTF   | 0            | 17.2823  |         | ABMag    | PSN            | P48_CFH12k             | 60       | 2016-08-25 12:34:00  | iPTF            | iPTF16fbz   |
+| 2016fbz  | iPTF         | 2009-01-01 00:00:00  | R-PTF   | 1            | 21.5     |         | ABMag    | PSN            | P48_CFH12k             | 60       | 2016-08-25 12:34:00  | iPTF            | iPTF16fbz   |
+| 2016fbz  | GaiaAlerts   | 2016-08-16 19:59:31  | G-Gaia  | 0            | 17.4     | 0.2     | ABMag    | PSN            | Gaia_Gaia-photometric  | 60       | 2016-08-19 09:13:29  | GaiaAlerts      | Gaia16bbi   |
+| 2016fbz  | GaiaAlerts   | 2016-07-05 02:38:24  | G-Gaia  | 1            | 21.5     |         | ABMag    | PSN            | Gaia_Gaia-photometric  |          | 2016-08-19 09:13:29  | GaiaAlerts      | Gaia16bbi   |
