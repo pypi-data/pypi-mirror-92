@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+microsoftvision/__init__.py
+microsoftvision.egg-info/PKG-INFO
+microsoftvision.egg-info/SOURCES.txt
+microsoftvision.egg-info/dependency_links.txt
+microsoftvision.egg-info/requires.txt
+microsoftvision.egg-info/top_level.txt
+microsoftvision/models/__init__.py
+microsoftvision/models/resnext.py
+microsoftvision/models/utils.py
