@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: conjugate_prior
+Version: 0.56
+Summary: Bayesian Statistics conjugate prior distributions
+Home-page: https://github.com/urigoren/conjugate_prior
+Author: Uri Goren
+Author-email: uri@goren.ml
+License: UNKNOWN
+Description: https://github.com/urigoren/conjugate_prior/blob/master/README.md
+Keywords: conjugate,bayesian,stats,statistics,bayes,distribution,probability,hypothesis,modelling
+Platform: UNKNOWN
