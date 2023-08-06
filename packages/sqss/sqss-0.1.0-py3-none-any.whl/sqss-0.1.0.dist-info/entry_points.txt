@@ -1,0 +1,4 @@
+[console_scripts]
+main=src.util.cli.command:main
+test=src.test:main
+
