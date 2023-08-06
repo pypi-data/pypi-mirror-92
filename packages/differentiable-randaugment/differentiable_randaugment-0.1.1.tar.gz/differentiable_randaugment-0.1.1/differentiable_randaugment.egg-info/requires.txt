@@ -1,0 +1,7 @@
+opencv_python
+torch>=1.7
+albumentations
+numpy
+
+[tests]
+pytest
