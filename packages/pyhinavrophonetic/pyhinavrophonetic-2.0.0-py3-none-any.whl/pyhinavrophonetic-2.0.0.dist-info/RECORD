@@ -1,0 +1,13 @@
+pyhinavrophonetic/__init__.py,sha256=dLIqrgqPMwRrxySMNlLzzeIzsTSf9l47m7gpxsB8ZKI,1176
+pyhinavrophonetic/config.py,sha256=k1sgFrIOfqm0O34_yHoE5OMqnPXYnrI1dvwXpdBY5nY,1830
+pyhinavrophonetic/hinavro.py,sha256=w5QlmoMSUb5IHXY1e2Cle-KfaU2oiLcvbaqazozZHtg,9767
+pyhinavrophonetic/resources/__init__.py,sha256=T8kZGLcVP0uScjhHYJBuzuq8dfhF64eYWWJk6vHlkaU,1106
+pyhinavrophonetic/resources/avrodict.json,sha256=26lJ3hGAchy9EbZvzZrnQz_Xmc5Xc65Q-YrNVBFKOJc,39000
+pyhinavrophonetic/utils/__init__.py,sha256=jdcrEpurmmT6KNdLEmVbQRdEkCyS9VOKQVrmkQa3Vj8,1482
+pyhinavrophonetic/utils/count.py,sha256=tXDGJvMP_mCku0lpsacjETG9Z6TLW2ofiaLixzWT6xY,1593
+pyhinavrophonetic/utils/validate.py,sha256=guf5lj7wUWB4LLFViUOZ24bSfxdNAAXrYHMKIYqwifo,2609
+pyhinavrophonetic-2.0.0.dist-info/LICENSE,sha256=V9jvQLclae9MJ4Kzzc4wViFeBVYtV8PTlq4Ii5nM89Q,33091
+pyhinavrophonetic-2.0.0.dist-info/METADATA,sha256=fUNO1k44y8r5Uk5xG4E0lZARIX5u9p1aHXLHu-VLOsw,5819
+pyhinavrophonetic-2.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pyhinavrophonetic-2.0.0.dist-info/top_level.txt,sha256=v4sWwYIQPPtjjeAXfbtGI6kJJta1HEyoRRXUjItz-H0,18
+pyhinavrophonetic-2.0.0.dist-info/RECORD,,
