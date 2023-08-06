@@ -1,0 +1,4 @@
+m-singleton
+pymongo
+confluent-kafka==1.2.0
+pandas==0.24.2
