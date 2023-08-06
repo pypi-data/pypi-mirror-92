@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bitblaster
+Version: 0.0.5
+Summary: A library for expressing and solving things in propositional logic.
+Home-page: https://github.com/mxklabs/mxklabs-bitblaster
+Author: Mark Kattenbelt
+Author-email: mark@mxklabs.co.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
