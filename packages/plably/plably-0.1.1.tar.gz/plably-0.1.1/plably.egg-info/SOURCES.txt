@@ -1,0 +1,12 @@
+README.md
+setup.py
+plably/__init__.py
+plably/__main__.py
+plably/plot.py
+plably/props.py
+plably.egg-info/PKG-INFO
+plably.egg-info/SOURCES.txt
+plably.egg-info/dependency_links.txt
+plably.egg-info/not-zip-safe
+plably.egg-info/requires.txt
+plably.egg-info/top_level.txt
