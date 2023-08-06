@@ -1,0 +1,8 @@
+code-annotations>=1.0.1
+click>=6.0
+Django<2.3,>=2.2
+pylint==2.6.0
+pylint-celery==0.3
+click-log==0.3.2
+six<2.0.0,>=1.10.0
+pylint-django==2.3.0
