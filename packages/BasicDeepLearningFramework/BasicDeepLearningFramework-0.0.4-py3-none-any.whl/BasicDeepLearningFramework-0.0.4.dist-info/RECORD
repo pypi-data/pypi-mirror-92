@@ -1,0 +1,17 @@
+Deep_Learning_Framework/Activation.py,sha256=4ACgMXV7WdbN4kzC-rnJGVBDM0vkUdJqaLuuBJzDHYY,1830
+Deep_Learning_Framework/Evaluation.py,sha256=Hv161uc71juS8RUiGQmlnxcx7lsthD6U94LZMCdqaoc,3873
+Deep_Learning_Framework/Load.py,sha256=duhsUxZo-9LiD-k96l5GGa5aoTyIC8SZ47wjGeLbeOI,2813
+Deep_Learning_Framework/activations.py,sha256=QU2ymbRy5-PFltJ6XbDIi-V2oL4VaaXlJFyloUIOvnI,2135
+Deep_Learning_Framework/layer.py,sha256=D7m6pXv5LqRydaXoYH7tAK0Z60eP3GDdBXLFmXD8oV8,12063
+Deep_Learning_Framework/loss.py,sha256=cCvHXMWwYHAlWoxZ7sM6zup6gvOH6HBL_XaUTY50pxs,6592
+Deep_Learning_Framework/main.py,sha256=Wx90NKR-DAd8AH6x-cSthMrfZhctLK8H8xwgwCDohZg,702
+Deep_Learning_Framework/model.py,sha256=IsXVQhHRsFWWlsYQN8xbffyN1ZH5wz1gMntE2KRH3W4,4730
+Deep_Learning_Framework/save_and_load.py,sha256=fUDeb4UerQY7X-mLTqgaJb78e7MCH4IEDmsx2strYUA,396
+Deep_Learning_Framework/test.py,sha256=JcPy3QLUnFFXIt-91yh3GG9zX2dhKqou8X9Ps3M2OEQ,512
+Deep_Learning_Framework/utils.py,sha256=77ZIzqHHbSsmRekAfd9br6eKgPr8I-PZLtBozTe7o-8,2646
+Deep_Learning_Framework/visualization.py,sha256=d3Eioinkl31NyODy0Be-NPnXpfuqFgOerUbS7BL4ttc,371
+BasicDeepLearningFramework-0.0.4.dist-info/LICENSE.txt,sha256=dF3NlcFB3NvrvURejjJaJeLCEg8TrfOsFt5FjfDJEzI,1055
+BasicDeepLearningFramework-0.0.4.dist-info/METADATA,sha256=9FPXTR2twEv2kca2N_e-JWUkVUYKzwTZ4_gLk7ahPBQ,948
+BasicDeepLearningFramework-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+BasicDeepLearningFramework-0.0.4.dist-info/top_level.txt,sha256=15wZjKFkSyG36yheGnJdsbzbU4hDVy4inqYTdIvXtvk,24
+BasicDeepLearningFramework-0.0.4.dist-info/RECORD,,
