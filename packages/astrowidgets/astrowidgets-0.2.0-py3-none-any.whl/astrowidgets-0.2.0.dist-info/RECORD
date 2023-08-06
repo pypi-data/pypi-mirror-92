@@ -1,0 +1,13 @@
+astrowidgets/__init__.py,sha256=N2qzqMVF1bEboiFIlMEYgzToGF7jVDBYnj1wNwzsf88,368
+astrowidgets/_astropy_init.py,sha256=ctQ5F1k5g3m9NOTSD5fxrMYdTy40miNXBLwFXjUTxZM,1480
+astrowidgets/conftest.py,sha256=h7vZQj345h2HSywzg7aADfEhtGPffo0M4p_CJUNk9XU,1301
+astrowidgets/core.py,sha256=gO7T9WbAjGZFJH__Y_QnVe9xSYZEuqzfJgP2nSZ12y0,32737
+astrowidgets/version.py,sha256=g0RU_Fiae76hPEUjU6lGnapa9IZoqGcB4oFcTnsoMbM,142
+astrowidgets/tests/__init__.py,sha256=1D-l3TVbwIZHY78A-sB7kc4ldldX8ZaEq-Ntph51WVw,108
+astrowidgets/tests/test_api.py,sha256=Sk6_WXg4IghgNHNpE6BY_xCIye9mk8AT9fpRsVYwy8E,7292
+astrowidgets/tests/test_image_widget.py,sha256=KzcbukQ1JgmtlR1qrS3YvvfTUW2Gj-NTb5cM7YxhxhQ,10973
+astrowidgets-0.2.0.dist-info/LICENSE.rst,sha256=XZlwV-q1N-oVU0IvNLuuInv39SZcmcoHUHm3p1qI2dg,1490
+astrowidgets-0.2.0.dist-info/METADATA,sha256=6d7XeCfZv9v6lPdxkrDzYKhaW2Yc4lCyLMrNLffqOjg,2124
+astrowidgets-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+astrowidgets-0.2.0.dist-info/top_level.txt,sha256=dlbjEO8vWAqqLyd3GMFOCEbi107lbo0o6DMoo4OqlS8,13
+astrowidgets-0.2.0.dist-info/RECORD,,
