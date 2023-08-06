@@ -1,0 +1,6 @@
+pysolnp.egg-info/PKG-INFO
+pysolnp.egg-info/SOURCES.txt
+pysolnp.egg-info/dependency_links.txt
+pysolnp.egg-info/not-zip-safe
+pysolnp.egg-info/requires.txt
+pysolnp.egg-info/top_level.txt
