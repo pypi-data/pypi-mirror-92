@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: deepfakebody
+Version: 1.0.0
+Summary: Unlimited medical data generators.
+Home-page: https://github.com/vlbthambawita/deepfakebody
+Author: Vajira Thambawita
+Author-email: vlbthambawita@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: deepfake-gitract
+
+# deepfakebody
+This is the official repository for deepfakebody concept.
+
+More details will be updated here: www.deepfakebody.org
+
+## Do you want to join with this project:
+
+Please contact us:
+
+vajira@simula.no or
+michael@simula.no
+
+

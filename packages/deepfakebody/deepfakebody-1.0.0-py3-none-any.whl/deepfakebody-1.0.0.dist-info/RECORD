@@ -1,0 +1,12 @@
+deepfakebody/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepfakebody/cardiovascular/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepfakebody/cardiovascular/deepfakeecg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepfakebody/cardiovascular/deepfakeecg/deepfakeecg.py,sha256=KCZ_LWVLm_ageuWiV6fvOZge82evHoTV7nQmQXnuNMs,1056
+deepfakebody/digestive/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepfakebody/digestive/gitract/__init__.py,sha256=NGPnt-qwf7ZUbkQR5AOfssh8ntIMLBLzSzOFw5cnXEQ,137
+deepfakebody/digestive/gitract/functions.py,sha256=-WDfnL0vxGO4YIDnJfi19bkjfTUWzMnllFVgaAbffpo,1616
+deepfakebody-1.0.0.dist-info/LICENSE,sha256=SHWsukGUKVeyAMEJn7_P_nhgOCHPRYvcr9ckjXEOM_A,1074
+deepfakebody-1.0.0.dist-info/METADATA,sha256=fto0OKLxoIRHALoOLVuULgyk_Ulf7WzBGe-POUEifak,732
+deepfakebody-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+deepfakebody-1.0.0.dist-info/top_level.txt,sha256=a1u0I3tgA_FJA2SWD-7ejWBCkfV5M_qrOe3tCi9T1oE,13
+deepfakebody-1.0.0.dist-info/RECORD,,
