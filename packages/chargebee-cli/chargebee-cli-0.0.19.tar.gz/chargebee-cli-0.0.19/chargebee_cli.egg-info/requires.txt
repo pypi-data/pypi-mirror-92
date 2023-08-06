@@ -1,0 +1,9 @@
+click
+pyfiglet
+colorama
+configparser
+tqdm
+tabulate
+requests
+pandas
+openpyxl
