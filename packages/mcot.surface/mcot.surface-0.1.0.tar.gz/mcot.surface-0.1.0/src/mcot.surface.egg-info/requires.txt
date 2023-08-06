@@ -1,0 +1,10 @@
+colorcet
+fslpy
+loguru
+mcot.utils~=0.1.0
+nibabel
+numba
+numpy
+scikit-image
+scipy
+six

@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: mcot.surface
+Version: 0.1.0
+Summary: surface interface
+Home-page: https://git.fmrib.ox.ac.uk/ndcn0236/mcot
+Author: Michiel Cottaar
+Author-email: Michiel.Cottaar@ndcn.ox.ac.uk
+License: MIT license
+Description: Utilities for working with cortical meshes
+        
+        To calculate the gyral coordinate system see `mcot.gcoord`.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
