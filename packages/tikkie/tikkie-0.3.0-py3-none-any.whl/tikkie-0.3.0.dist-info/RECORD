@@ -1,0 +1,12 @@
+tikkie/__init__.py,sha256=mrZXRwPgtYw25Fi5ECNnTSx5yopFHVkrN0L78svDRrc,323
+tikkie/_api.py,sha256=5_CqfqYththE4VrCw1cQrcMFKbLUHcgY9JyhOJ3s2Lw,5926
+tikkie/_session.py,sha256=6duoFjnl3fasYa0GFL51i6rt7-c6Eo0d0f9bJpt0IIU,4668
+tikkie/_utils.py,sha256=TbhHPWS-mNKERYk1MXBbfBC-EMzcPA95CjheaAWwsoU,1285
+tikkie/exceptions.py,sha256=PKr9_5Iagx8ybetiJe5UEBuvb8s0dYP39XJaUD9LP54,5373
+tikkie/types.py,sha256=mIM1pGQXaZriiYCS2NihGiaTdOcGPXNrwWhX8I5vnKU,5522
+tikkie/utils.py,sha256=uKur7Ma4w3ZBYjyV7ymLNLig37LqUayDCwV9MP3-EBU,940
+tikkie-0.3.0.dist-info/LICENSE,sha256=v7TiGuiZ4o8yTDKsm8kHE06vaRKWtzrspietXo2-c6o,1066
+tikkie-0.3.0.dist-info/METADATA,sha256=hsrD0W_8QgI-k2KHdMhD2isQ2ew7b_DymXky7mieUUU,2048
+tikkie-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tikkie-0.3.0.dist-info/top_level.txt,sha256=GyTWKaKqwAzdVaUaa1dBJp_BFnsC57hjyKkGnjtVpYw,7
+tikkie-0.3.0.dist-info/RECORD,,
