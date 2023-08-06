@@ -1,0 +1,13 @@
+version: -v
+bottom: -b
+grab: -f
+ignorecase: -i
+lines: -l
+monitor: -m
+prompt: -p
+font: -fn
+normal_background: -nb
+normal_foreground: -nf
+selected_background: -sb
+selected_foreground: -sf
+windowid: -w
