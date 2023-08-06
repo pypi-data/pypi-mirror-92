@@ -1,0 +1,6 @@
+fastapi_health/__init__.py,sha256=LGhBI6yehL63zZMloHzizsjeQqEDQFicRG2WsPpYDAw,95
+fastapi_health/route.py,sha256=4hS-9_QxZs4mX02afOP4G8E7rsGaecxN_ONlP3xmTnw,244
+fastapi_health-0.1.0.dist-info/LICENSE,sha256=WuP0075RlcRwSf5ZB7P8D-zk9dGfUBfkpP7yUnSsNlQ,1076
+fastapi_health-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastapi_health-0.1.0.dist-info/METADATA,sha256=oWxfWKCYSOjoHLVZnWea0s-yga8n1_c7Vs5urQCRLu0,1896
+fastapi_health-0.1.0.dist-info/RECORD,,
