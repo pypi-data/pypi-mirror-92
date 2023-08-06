@@ -1,0 +1,14 @@
+##### Requirements for signalcli #####
+python-i18n
+
+###### Requirements for transbot #####
+python-i18n
+# https://requests.readthedocs.io/en/master/
+requests
+# https://github.com/cvzi/flag
+emoji-country-flag
+# https://pyyaml.org/wiki/PyYAMLDocumentation
+pyyaml
+
+##### Requirements for jabber #####
+slixmpp-omemo

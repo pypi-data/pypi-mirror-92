@@ -1,0 +1,4 @@
+[console_scripts]
+askbot = nicobot.askbot:run
+transbot = nicobot.transbot:run
+

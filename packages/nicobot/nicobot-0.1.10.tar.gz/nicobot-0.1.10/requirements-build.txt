@@ -1,0 +1,5 @@
+##### Requirements for building only #####
+setuptools
+wheel
+twine
+setuptools_scm

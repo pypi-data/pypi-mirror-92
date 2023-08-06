@@ -1,0 +1,24 @@
+language: python
+python:               # this works for Linux but is ignored on macOS or Windows
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9"
+# See https://docs.travis-ci.com/user/languages/python/#running-python-tests-on-multiple-operating-systems
+jobs:
+  include:
+    - name: "Python 3.7 on macOS"
+      os: osx
+      osx_image: xcode11.2  # Python 3.7.4 running on macOS 10.14.4
+      language: shell       # 'language: python' is an error on Travis CI macOS
+install:
+  # Generates nicobot/version.py
+  # 'python' points to Python 2.7 on macOS but points to Python 3.8 on Linux and Windows
+  # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
+  - python3 setup.py build || python setup.py build
+  - pip3 install -r requirements-build.txt -r requirements-runtime.txt
+script:
+  # 'python' points to Python 2.7 on macOS but points to Python 3.8 on Linux and Windows
+  # 'python3' is a 'command not found' error on Windows but 'py' works on Windows only
+  - python3 -m unittest discover -s tests || python -m unittest discover -s tests
