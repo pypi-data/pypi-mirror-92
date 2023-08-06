@@ -1,0 +1,4 @@
+setuptools
+PyYAML
+circlify
+f90nml
