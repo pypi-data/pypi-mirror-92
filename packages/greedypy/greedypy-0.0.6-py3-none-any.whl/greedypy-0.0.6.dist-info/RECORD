@@ -1,0 +1,14 @@
+greedypy/__init__.py,sha256=r12KIYWPQoCMm8wXASt3vML9arOwcdvUoF8T9BBHBUE,5
+greedypy/fileio.py,sha256=rHiwX4P38pd7lPXX4dwW53QGgKZzba2OtjKqcAys2vM,2891
+greedypy/greedypy.py,sha256=cCjtzUuPHIPSGbjiZHUD-hIrkuzsvuJ_Pd0OuYKf2Fk,2390
+greedypy/greedypy_registration_method.py,sha256=YuV14XdQnu9jlCftBLcM4K9hsZh8y93XiRymf-MJdCA,7040
+greedypy/interface.py,sha256=Oxfdh1ESnN1Bap7NKHgN1agObLcoeU3S2gWFJ9BG93M,3222
+greedypy/metrics.py,sha256=SMo3utJIKtKS80FEqG_kHo9Y8Dpiwd83mDKq3mP2xqw,4311
+greedypy/optimizer.py,sha256=I1CRhvS9XuJUcK8dSbbsRmssVLMacxonVDsXmPUrpOs,10572
+greedypy/regularizers.py,sha256=QePYO8ReBTGVFO_rpm0WqXtDB4vYqP3-FGfU4Nmnzz4,5526
+greedypy/transformer.py,sha256=DnOOQ8gAyj0Kp9GuTCQLj9rzZNtT6LzqqAveCB3a7EY,3763
+greedypy-0.0.6.dist-info/LICENSE.txt,sha256=gLSiHgmSxpmpOOS2MALG_gXpmHEln9RHWEYR93-sAb4,1083
+greedypy-0.0.6.dist-info/METADATA,sha256=fKwRievKUiWIkUd7EmQIpIvJ0Vi4p2YzWxgAJCoGZQY,433
+greedypy-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+greedypy-0.0.6.dist-info/top_level.txt,sha256=TwLwahIG4gSZmZQbVYAm-2Zzy_tOuW7FL75FlBdaQpU,9
+greedypy-0.0.6.dist-info/RECORD,,
