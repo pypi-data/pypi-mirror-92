@@ -1,0 +1,15 @@
+stolgo/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+stolgo/breakout.py,sha256=qdPhOo0q1pEkG_WjmDB8FMDfAzq93zllEZFwuzX8MJQ,3242
+stolgo/candlestick.py,sha256=e7WAFe9-ldwujChyFb9hsNmzZOyeKXCaPOrv4gMpRNk,4026
+stolgo/common.py,sha256=vZ-Ab_TdRYMNA_jD9Iu6eWoSVZnFLmhE8RbFcR8bei8,1119
+stolgo/exception.py,sha256=p4jRPazzr1w6iG8WW7GwOY2Ka1N4uHkdMEMKahBOuIg,117
+stolgo/helper.py,sha256=D6b3fGcS7UB3u3yPeFyJVzAK-_B-nBq1UDInRyIGk_k,2819
+stolgo/nasdaq.py,sha256=UvtJHGDwIFH9secEcxIcyLS6lAHl6yud1lEOmyKwit0,6034
+stolgo/request.py,sha256=0vBx2tt6k9WHAdZXkwZQ05ufc--QhpIO4xqF6HEkWa0,3658
+stolgo/samco.py,sha256=qb-Emv3t3L0zvX1YYUfpdZuvvS1Zeah-W1TE3vZzHy8,8023
+stolgo/trend.py,sha256=-39Z1l4cXLBlmj-dKoVM5303cktViuQxMAvfWfDQW0Q,3037
+stolgo-0.1.0.dist-info/LICENSE,sha256=cDPA9Y4RFxup52cWrRXqV4GGan1Ar3dt83K2M947mhw,1104
+stolgo-0.1.0.dist-info/METADATA,sha256=opdmT2Wm2sDyV3rywEyu8pEc4DVGvr2cZoEZ8KeaSnA,2582
+stolgo-0.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+stolgo-0.1.0.dist-info/top_level.txt,sha256=eqH4HrlpJZ1FlCZnFfdiJzJXz8YckL8EBI_--mmui9k,7
+stolgo-0.1.0.dist-info/RECORD,,
