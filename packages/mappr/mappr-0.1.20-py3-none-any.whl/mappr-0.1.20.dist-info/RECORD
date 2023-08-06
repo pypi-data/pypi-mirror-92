@@ -1,0 +1,17 @@
+AUTHORS,sha256=AuR0kjxuyijTfw0hI-s1e5uHdG-SPT0fQEBDfEyuOsY,239
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.rst,sha256=EsXfD_J2PCy3aVNS-lkJffGUYhHcDNWiX0H91rEPXS0,3862
+mappr/__init__.py,sha256=kuaSwZtjxaYTIWm1mbZaceqkPNupYYT2NwEtxVyb0Yc,543
+mappr/conversion.py,sha256=v_uBao-1jzO_RhfNytHA4fW6ka9O3MUKkw-Opaa1N78,2995
+mappr/exc.py,sha256=rpr4qlHxkzgXyovTPjCGrn8n6N2ZDvcHKlJl0tdVjk0,611
+mappr/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mappr/integrations/dataclasses.py,sha256=TUU1o00nA8NPi0LSsC500ImoRvdfT9Oih_LaT-EsVYY,317
+mappr/integrations/pydantic.py,sha256=CD8ydo4k6ZvZ54nQo648pnCgT43gufRyAyb26q408SU,358
+mappr/integrations/sqlalchemy.py,sha256=iS8gkp0Cgunny0LP0-VDxWdtT68M-6P3sPc9CJzHAM4,270
+mappr/iterators.py,sha256=kbNEtqNfelwKc0adzGHWlmkNPChXczENrFwWQtEc9kE,1035
+mappr/mappers.py,sha256=VgjGSsY6mEQzFcCyaMnAv9VHk01PjTfS2WBwX40VDw4,3404
+mappr/types.py,sha256=19dEAfs9jGSa__hjCBGHsACNnzpc8tELkxfMg7aXN5k,821
+mappr-0.1.20.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mappr-0.1.20.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mappr-0.1.20.dist-info/METADATA,sha256=QspRKk15hn_WW9mV-2hNOaco46xOtQyYHoqZ_vvw4B8,566
+mappr-0.1.20.dist-info/RECORD,,
