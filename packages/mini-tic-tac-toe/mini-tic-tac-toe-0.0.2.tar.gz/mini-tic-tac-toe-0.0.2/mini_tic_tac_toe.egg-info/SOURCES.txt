@@ -1,0 +1,8 @@
+README.md
+setup.py
+game/__init__.py
+game/game.py
+mini_tic_tac_toe.egg-info/PKG-INFO
+mini_tic_tac_toe.egg-info/SOURCES.txt
+mini_tic_tac_toe.egg-info/dependency_links.txt
+mini_tic_tac_toe.egg-info/top_level.txt
