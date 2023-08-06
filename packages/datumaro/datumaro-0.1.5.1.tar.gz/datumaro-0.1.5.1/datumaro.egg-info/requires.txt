@@ -1,0 +1,23 @@
+attrs>=19.3.0
+defusedxml
+GitPython
+lxml
+matplotlib
+numpy>=1.17.3
+Pillow
+PyYAML
+scikit-image
+tensorboardX
+opencv-python
+
+[:platform_system != "Windows"]
+pycocotools
+
+[:platform_system == "Windows"]
+pycocotools-windows
+
+[tf]
+tensorflow
+
+[tf-gpu]
+tensorflow-gpu
