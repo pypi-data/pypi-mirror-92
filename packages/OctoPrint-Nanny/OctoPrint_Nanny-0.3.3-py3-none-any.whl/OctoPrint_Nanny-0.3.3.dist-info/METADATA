@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: OctoPrint-Nanny
+Version: 0.3.3
+Summary: Get notified when defects are detected in your print.
+Home-page: https://github.com/bitsy-ai/octoprint-nanny-plugin
+Author: Leigh Johnson
+Author-email: leigh@bitsy.ai
+License: AGPL
+Platform: UNKNOWN
+Requires-Python: >=3,<4
+Requires-Dist: OctoPrint
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: bravado
+Requires-Dist: pytz
+Requires-Dist: aiohttp
+Requires-Dist: print-nanny-client (~=0.3.1)
+Requires-Dist: websockets
+Requires-Dist: backoff (==1.10.0)
+Requires-Dist: aioprocessing (==1.1.0)
+Requires-Dist: multiprocessing-logging (==0.3.1)
+Requires-Dist: jwt
+Requires-Dist: paho-mqtt (==1.5.1)
+Requires-Dist: honeycomb-beeline
+Requires-Dist: typing-extensions ; python_version < "3.8"
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
+
