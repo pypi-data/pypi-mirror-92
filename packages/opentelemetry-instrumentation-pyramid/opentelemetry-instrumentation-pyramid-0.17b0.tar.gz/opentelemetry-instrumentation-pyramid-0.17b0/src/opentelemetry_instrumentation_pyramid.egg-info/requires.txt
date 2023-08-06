@@ -1,0 +1,9 @@
+pyramid>=1.7
+opentelemetry-instrumentation==0.17b0
+opentelemetry-api==0.17b0
+opentelemetry-instrumentation-wsgi==0.17b0
+wrapt<2.0.0,>=1.0.0
+
+[test]
+werkzeug==0.16.1
+opentelemetry-test==0.17b0
