@@ -1,0 +1,14 @@
+mcot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcot/dippi/README.rst,sha256=IEr_ciozN6-2yAcakUBni99Ox4u-PpPhQQBPFdye7vE,169
+mcot/dippi/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+mcot/dippi/__init__.py,sha256=-dBx8QqDk_FbIOZ1g4p4BxtRt3NbffbpAnyDTfI98Yw,95
+mcot/dippi/model.py,sha256=bd94SUjjYohnFDEJ0pIMdu3-ui0f6uXghq9OmMK5eWg,40612
+mcot/dippi/scan.py,sha256=yDCbqjFZXsAHqK8Ys3F-itDfWm5E9srZS5uILeRXqlM,13017
+mcot/dippi/simulator.py,sha256=Xv7cPz7ezELhbAD4KhwKZYOkvFV0MBhNirfyUXhYTVs,13964
+mcot/dippi/geometry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcot/dippi/geometry/cylinders.py,sha256=v80YCWR38lR3j9cWJYzGEOi4JTdKdDsM28g8vmcgZaE,6154
+mcot.dippi-0.1.0.dist-info/METADATA,sha256=P50uNl_v_P0xO_Y0nSVi5U6lOYID7wbXGZnX4pDjmnM,858
+mcot.dippi-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mcot.dippi-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mcot.dippi-0.1.0.dist-info/top_level.txt,sha256=3hHIBIGOzpCbfIgQ2yLHGIKL_OeSrL9ss_Jwr2SXVgM,5
+mcot.dippi-0.1.0.dist-info/RECORD,,
