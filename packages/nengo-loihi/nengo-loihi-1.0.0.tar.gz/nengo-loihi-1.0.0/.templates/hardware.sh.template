@@ -1,0 +1,26 @@
+{% extends "templates/remote.sh.template" %}
+
+{% block remote_install %}
+{{ super() }}
+        export PIP_USE_FEATURE="$PIP_USE_FEATURE"
+
+        # NxSDK has a number of specific versions it "requires". However, these
+        # requirements do not seem necessary, and they don't play nice with pytest,
+        # so we install NxSDK first and then overwrite these requirements as necessary.
+        cp /nfs/ncl/releases/$NXSDK_VERSION/nxsdk-$NXSDK_VERSION.tar.gz .
+        pip install nxsdk-$NXSDK_VERSION.tar.gz
+
+        pip install $NENGO_VERSION $NENGO_DL_VERSION jupyter "tensorflow<2.4"
+        pip install -e .[tests]
+{% endblock %}
+
+{% block remote_script %}
+{{ super() }}
+        SLURM=1 pytest nengo_loihi --target loihi --no-hang -v --durations 50 --color=yes -n 2 --cov=nengo_loihi --cov-report=xml --cov-report=term-missing || REMOTE_STATUS=1
+{% endblock %}
+
+{% block after_script %}
+    exe scp "{{ host }}:./tmp/{{ pkg }}-$TRAVIS_JOB_NUMBER/{{ pkg }}/coverage.xml" coverage.xml
+    eval "bash <(curl -s https://codecov.io/bash)"
+{{ super() }}
+{% endblock %}
