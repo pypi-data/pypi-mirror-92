@@ -1,0 +1,9 @@
+unhashlib/__init__.py,sha256=23cQxTRISWHX4eeC7WgtkIGto49sGER-o1GQR0Evkd0,72
+unhashlib/unhashlib.py,sha256=CMDqtrmaCmlOmqHTKHB92VqdBgpkwe5RQYxEEUpEyrQ,2608
+unhashlib/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unhashlib/tests/test_unhashlib.py,sha256=1mTHQa7V6uBOQ_Tvu6TpcQ8DXkLEc165jNAOd7dvtu0,272
+unhashlib-0.0.1.dist-info/LICENSE.txt,sha256=xHf3HMu-gkcJyVIlSCK5SmFXFQ5_PWCSJerHzxuP5Ao,1073
+unhashlib-0.0.1.dist-info/METADATA,sha256=UbOHeJskD7dW_OzCEgSYI11kXdLEZNL4QkWTbx3DzOQ,1007
+unhashlib-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+unhashlib-0.0.1.dist-info/top_level.txt,sha256=oNZiJ5NuRwUNYL6u_Z0fFlfJZdCeNOGynueHTyzltr0,10
+unhashlib-0.0.1.dist-info/RECORD,,
