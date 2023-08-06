@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: pictureshow
+Version: 0.1.0
+Summary: Save pictures to PDF
+Home-page: https://github.com/myrmica-habilis/pictureshow.git
+Author: Michal Porteš
+Author-email: michalportes1@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: reportlab
+
+Save pictures to PDF either from a command line, or in your Python programs.
+
+As a command line tool
+----------------------
+
+Usage:
+
+.. code::
+
+    $ python -m pictureshow -h
+    usage: pictureshow [-h] -i PICTURE -o PDF
+
+    optional arguments:
+      -h, --help            show this help message and exit
+      -i PICTURE, --input PICTURE, --picture PICTURE
+                            input file path
+      -o PDF, --output PDF, --pdf PDF
+                            output file path
+
+Example:
+
+.. code::
+
+    $ python -m pictureshow --picture picture.png --pdf output_file.pdf
+    Saved to file: /.../output_file.pdf
+
+.. code::
+
+    $ python -m pictureshow -i picture.png -o output_file.pdf
+    Saved to file: /.../output_file.pdf
+
+
+As a Python library
+-------------------
+
+Using the ``PictureShow`` class:
+
+.. code-block:: python
+
+    from pictureshow import PictureShow
+
+    ps = PictureShow('picture.jpg')
+    ps.picture_to_pdf('output_file.pdf')
+
+Using the ``picture_to_pdf`` shortcut function:
+
+.. code-block:: python
+
+    from pictureshow import picture_to_pdf
+
+    picture_to_pdf('picture.png', 'output_file.pdf')
+
+
