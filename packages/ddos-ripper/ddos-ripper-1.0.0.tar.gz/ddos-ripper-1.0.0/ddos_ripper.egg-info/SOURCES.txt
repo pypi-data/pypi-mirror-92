@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+ddos-ripper/DRipper.py
+ddos-ripper/__init__.py
+ddos_ripper.egg-info/PKG-INFO
+ddos_ripper.egg-info/SOURCES.txt
+ddos_ripper.egg-info/dependency_links.txt
+ddos_ripper.egg-info/requires.txt
+ddos_ripper.egg-info/top_level.txt
