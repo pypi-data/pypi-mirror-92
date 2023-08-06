@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+DGraphics/DGraphics.py
+DGraphics/__init__.py
+DGraphics/locimg.bmp
+DGraphics.egg-info/PKG-INFO
+DGraphics.egg-info/SOURCES.txt
+DGraphics.egg-info/dependency_links.txt
+DGraphics.egg-info/requires.txt
+DGraphics.egg-info/top_level.txt
