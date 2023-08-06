@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mathmod
+Version: 0.10.4
+Summary: yet another Python math module
+Home-page: https://github.com/TheTechRobo/python-text-calculator
+Author: TheTechRobo
+Author-email: thetechrobo@outlook.com
+License: GNU GPL 3.0
+Project-URL: Source, https://github.com/thetechrobo/python-text-calculator
+Project-URL: Tracker, https://github.com/thetechrobo/python-text-calculator/issues
+Keywords: math,easy,thetechrobo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Description-Content-Type: text/markdown
+
+# Mathmod
+Have you ever looked for a complete, simple calculator module? Well here you go!
+
+Mathmod has logarithm, fibonacci, arithmetic, tax, interest, and other calculators! It's the core of Palc. (Palc is an amazing calculator that strives to be simple while having many features.
+
+Try it now - there are no fees, no risks, nothing! If you don't believe me, you can install from the source code manually. The code is available at https://github.com/thetechrobo/python-text-calculator/tree/master/mathmod.
+
+Anyway, have a great day! Bye :D
+
+
