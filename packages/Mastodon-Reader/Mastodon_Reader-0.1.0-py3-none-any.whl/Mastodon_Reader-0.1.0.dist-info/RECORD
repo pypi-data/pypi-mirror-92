@@ -1,0 +1,8 @@
+Mastodon_Reader-0.1.0.dist-info/METADATA,sha256=6dbxvWGupgV0_BC5ReoFQfSxvqPM5p_2vNUffqqzMJo,1733
+Mastodon_Reader-0.1.0.dist-info/RECORD,,
+Mastodon_Reader-0.1.0.dist-info/WHEEL,sha256=pZyAqgNAylOf0KG_hPHMtuuY08rV3WzWwZu2OTsNnnw,97
+Mastodon_Reader-0.1.0.dist-info/top_level.txt,sha256=LvojOi7Dx6uzv4p-pEx81D1NrRSbsu3UjQRBq0TxM3o,16
+mastodon_reader/__init__.py,sha256=MCm8UArF5NJmoiSNbgPdYRIf-GvFGf9sx7R-kvONTeM,45
+mastodon_reader/mastodon_reader.py,sha256=vsYVZRSpendL6bNvEje7xYjfe5ynvfN_nblQ-nGZfQ0,22340
+mastodon_reader/utils.py,sha256=Df_Zo61zxnPkXYW2jtAqMCodvk0sUHQe4xY4MoLaJiE,5282
+mastodon_reader/version.py,sha256=QTYqXqSTHFRkM9TEgpDFcHvwLbvqHDqvqfQ9EiXkcAM,23
