@@ -1,0 +1,13 @@
+pbr>=4.1.0
+six>=1.9.0
+PyOpenSSL
+lxml>=4.6.2
+oslo.config>=2.3.0
+oslo.log
+PyYAML
+requests
+prettytable
+python-dateutil
+python-keystoneclient
+python-glanceclient
+keystoneauth1

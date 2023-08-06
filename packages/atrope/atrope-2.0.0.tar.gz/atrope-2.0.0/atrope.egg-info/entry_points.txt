@@ -1,0 +1,6 @@
+[console_scripts]
+atrope = atrope.cmd.cli:main
+
+[oslo.config.opts]
+atrope = atrope.opts:list_opts
+
