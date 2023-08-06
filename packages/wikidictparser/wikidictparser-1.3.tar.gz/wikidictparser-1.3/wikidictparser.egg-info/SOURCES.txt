@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+wikidictparser/__init__.py
+wikidictparser/base.py
+wikidictparser/english.py
+wikidictparser/polish.py
+wikidictparser/router.py
+wikidictparser.egg-info/PKG-INFO
+wikidictparser.egg-info/SOURCES.txt
+wikidictparser.egg-info/dependency_links.txt
+wikidictparser.egg-info/requires.txt
+wikidictparser.egg-info/top_level.txt
