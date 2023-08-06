@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+srv/__init__.py
+srv/__main__.py
+srv/srv.py
+srv.egg-info/PKG-INFO
+srv.egg-info/SOURCES.txt
+srv.egg-info/dependency_links.txt
+srv.egg-info/entry_points.txt
+srv.egg-info/requires.txt
+srv.egg-info/top_level.txt
+srv/templates/directory.html
