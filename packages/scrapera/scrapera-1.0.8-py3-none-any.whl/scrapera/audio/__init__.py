@@ -1,0 +1,2 @@
+from __future__ import absolute_import
+from .youtube_playlist_scraper import PlaylistScraper
