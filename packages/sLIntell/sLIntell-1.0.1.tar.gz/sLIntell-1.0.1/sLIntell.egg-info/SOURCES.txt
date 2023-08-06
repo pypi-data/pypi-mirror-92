@@ -1,0 +1,7 @@
+setup.py
+sLIntell/__init__.py
+sLIntell.egg-info/PKG-INFO
+sLIntell.egg-info/SOURCES.txt
+sLIntell.egg-info/dependency_links.txt
+sLIntell.egg-info/requires.txt
+sLIntell.egg-info/top_level.txt
