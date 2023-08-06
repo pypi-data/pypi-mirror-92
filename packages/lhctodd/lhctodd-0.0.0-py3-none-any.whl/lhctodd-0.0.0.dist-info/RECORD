@@ -1,0 +1,11 @@
+lhctodd/__init__.py,sha256=egG87J1zCV1QkUNHLIF1dXPIx5hM8wQyh567lw4p2Ms,1261
+lhctodd/model.py,sha256=7bKPn8wIOiSY74ZoueqgBNaeJAJ7blTGUKqH38K55SQ,6360
+lhctodd/theory.py,sha256=3RufhesnjGA-kXdyt65X1jWPxOHSnUqhBc4ezyBWzmQ,3585
+lhctodd/tools.py,sha256=CxBFfdyDu0pjOnpX5c6IlPCPamAiuIYwEny7eLoLcHI,766
+lhctodd/data/darkmatter-data/data.mdb,sha256=93x-pAzgxWXaU5ZjQfropRPCUDubbjj_vY1TqgKQ6xQ,36864
+lhctodd/data/darkmatter-data/lock.mdb,sha256=HEgtO_xSQTTucpWlxx2SNNDswtgH9yvXmLuTBNRtHUI,8192
+lhctodd-0.0.0.dist-info/LICENSE,sha256=lEAte1RTFc3Od8MvhmdCNH8YNJzddjG8rQL0XTW2xZ0,1523
+lhctodd-0.0.0.dist-info/METADATA,sha256=H8sP4Sn8GVy4NE7M93UbDbc9bsFL7y8SsG74OkYNYMs,2049
+lhctodd-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lhctodd-0.0.0.dist-info/top_level.txt,sha256=GpzoXM56O-_RU2ei56F2wfhL5ktSzG_uucPCBUv2Bf0,8
+lhctodd-0.0.0.dist-info/RECORD,,
