@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: amqp-client-cli
+Version: 0.4
+Summary: A command line interface for interacting with amqp exchanges.
+Home-page: https://github.com/ownaginatious/amqp-client-cli
+Author: Dillon Dixon
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: amqp,cli,client,rabbitmq,amq
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
