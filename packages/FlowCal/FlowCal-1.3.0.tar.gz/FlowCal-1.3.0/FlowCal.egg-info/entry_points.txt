@@ -1,0 +1,3 @@
+[console_scripts]
+flowcal = FlowCal.excel_ui:run_command_line
+
