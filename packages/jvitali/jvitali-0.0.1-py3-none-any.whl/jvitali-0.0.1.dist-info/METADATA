@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: jvitali
+Version: 0.0.1
+Summary: Displaying my first python lib, have fun using it!
+Home-page: https://github.com/JV39/jvitali
+Author: Jean Vitali
+Author-email: vitali.jean.03@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+It is the package for a few functions, still to be updated,
+It has two classes inside 
+class BasicMath
+    methods add(a, b), sub(a, b), isPrime(num)
+class ListFunctions
+    methods colMatch(list1, list2, print=False)
+
+
