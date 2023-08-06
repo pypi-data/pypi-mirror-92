@@ -1,0 +1,10 @@
+torchvision
+numpy
+matplotlib
+torch
+pandas
+Pillow
+scikit_learn
+
+[test]
+pytest
