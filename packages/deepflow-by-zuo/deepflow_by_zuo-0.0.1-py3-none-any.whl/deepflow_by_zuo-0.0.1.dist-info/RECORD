@@ -1,0 +1,11 @@
+deepflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepflow/nn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepflow/nn/core.py,sha256=aqSa-7dvyRHt_juCyHzEYefetpbxNIBPUotO6LeOyiE,3359
+deepflow/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepflow/utils/run.py,sha256=QptpE8ui0EZ73gvOLk0CNL43ODLozUsNdBggun-JhRI,2726
+deepflow/utils/utilities.py,sha256=pSrqW7WtWbsFdsaacNz76Qv8QONPCxFiEl6pDz53PN4,7552
+deepflow_by_zuo-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+deepflow_by_zuo-0.0.1.dist-info/METADATA,sha256=opM6b7nsiaty-IBXwagVZtj_zLY_Onh35O3pOstVAvo,811
+deepflow_by_zuo-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+deepflow_by_zuo-0.0.1.dist-info/top_level.txt,sha256=64e1Oj0OwLn2jVIywkcaBSgbUAktLbAjf1yff8fDO_s,9
+deepflow_by_zuo-0.0.1.dist-info/RECORD,,
