@@ -1,0 +1,16 @@
+cVQE/__init__.py,sha256=j2FgUNtX3DXN-o-TRD1bMtLsYudIy4BnCw16ehSXhp8,583
+cVQE/initial_states/__init__.py,sha256=8B2QyliWjryoYu9e0wAC1SJ-UW5N-aM0tR_TJviJr9s,658
+cVQE/initial_states/compressed_zero.py,sha256=kOY5s9rWf-qvS9kcq8qv8fkBtWiqKBEHxPe92FpzfLQ,3055
+cVQE/operators/__init__.py,sha256=88hTf2GayZ2YBTQzog-EL69rs5UKCddpc4MbS1b5t0Y,673
+cVQE/operators/converters/__init__.py,sha256=QPR7aAOCzl2Zr82PY_bEBhwJqcY8mrneLeqcs9n-vSw,838
+cVQE/operators/converters/quadratic_operator_reducer.py,sha256=B05gpnB5FjBvsF4qPQmnBOqzRnouH6oG1Jj1ph5G7S8,8183
+cVQE/operators/converters/quadratric_operator_reducer.py,sha256=B05gpnB5FjBvsF4qPQmnBOqzRnouH6oG1Jj1ph5G7S8,8183
+cVQE/operators/converters/tensoredop_distributor.py,sha256=bC3JePPKW09KtspF3-sdbW6I9ITkQcNb4wqdV-tuYXU,3696
+cVQE/operators/converters/zero_coeff_nuller.py,sha256=JaiVtEOoaHdIPp6SV2CJydf-YXv68gnxrIxHixFOZjU,1844
+cVQE/variational_forms/__init__.py,sha256=aMEK9xRQ61X92K0YVCcNIN35QL4IFyruLC3cYHosWXw,682
+cVQE/variational_forms/cfgs.py,sha256=l2I0_DLClPwxaZOUYbL4wx4_gynWjjbc8_m503eAuvY,9739
+cVQE-0.0.2.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+cVQE-0.0.2.dist-info/METADATA,sha256=X6LlEsgTj_pH3Yn39YavIyCGKG3fvRgZT_4vHIq2tek,1177
+cVQE-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cVQE-0.0.2.dist-info/top_level.txt,sha256=FADAgKqleTlkv5U8FVfiXOtQdaJDZueyPjv4Y6Pagvw,5
+cVQE-0.0.2.dist-info/RECORD,,
