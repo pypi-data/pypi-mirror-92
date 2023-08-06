@@ -1,0 +1,8 @@
+README.md
+setup.py
+ppropie/__init__.py
+ppropie/utils.py
+ppropie.egg-info/PKG-INFO
+ppropie.egg-info/SOURCES.txt
+ppropie.egg-info/dependency_links.txt
+ppropie.egg-info/top_level.txt
