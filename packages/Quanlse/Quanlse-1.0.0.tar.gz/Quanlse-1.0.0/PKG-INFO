@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: Quanlse
+Version: 1.0.0
+Summary: A cloud-based platform for quantum control.
+Home-page: UNKNOWN
+Author: Baidu Quantum
+Author-email: quantum@baidu.com
+License: Apache 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <4
