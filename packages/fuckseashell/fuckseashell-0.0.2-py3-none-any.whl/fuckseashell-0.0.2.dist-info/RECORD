@@ -1,0 +1,12 @@
+fuckseashell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fuckseashell/download_assignment.py,sha256=5uSt23e2u6KZcU7CawMqM6wc8kVKgcAHtAIO8CCPUYo,1543
+fuckseashell/env.py,sha256=EPqBSlx_OeGszBWii5G27t_-UYtIH7QRBFyOcTRdGPQ,676
+fuckseashell/extract_assignment.py,sha256=XZxpOfQmkmN2OBkRpfEByPTPej9azwri8XkGZGUi83M,1288
+fuckseashell/fsrun.py,sha256=HofFCAM-lgBMwzDQY0ZcEzQwBTNmSKb0y_1nag4byH4,2000
+fuckseashell/fstest.py,sha256=tqTtvW_abFgtUrpM9Qb3Vl3zJs3bZtPlSh9tFBhCidM,3836
+fuckseashell-0.0.2.dist-info/LICENSE,sha256=N8Tpx9IXh2F9kuuCgWaUm2fho1UWzC7osxGOJT0u27g,1062
+fuckseashell-0.0.2.dist-info/METADATA,sha256=E-LA5AJ-eDvIosaoh8aXj224_if9Vzs1TFsNPFqQd1Y,917
+fuckseashell-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fuckseashell-0.0.2.dist-info/entry_points.txt,sha256=MJQfWK6Ji4jP-f87EsR79GFnXn2udk0ZqQjKFPATOrQ,203
+fuckseashell-0.0.2.dist-info/top_level.txt,sha256=JGCsEijEPZMb3ZX8ZnuVIxBl8MeyEkyJa9AO2ovnKew,13
+fuckseashell-0.0.2.dist-info/RECORD,,
