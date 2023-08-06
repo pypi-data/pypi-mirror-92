@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+simplified_keras/__init__.py
+simplified_keras/default_callbacks.py
+simplified_keras/dir_flow_generators.py
+simplified_keras.egg-info/PKG-INFO
+simplified_keras.egg-info/SOURCES.txt
+simplified_keras.egg-info/dependency_links.txt
+simplified_keras.egg-info/requires.txt
+simplified_keras.egg-info/top_level.txt
+simplified_keras/metrics/__init__.py
+simplified_keras/plots/__init__.py
+simplified_keras/plots/history_plots.py
+simplified_keras/transformations/__init__.py
