@@ -1,0 +1,90 @@
+{
+    "service": "model1.order.action.OrderAction",
+    "methods": [
+        {
+            "name": "get",
+            "api_method": "GET",
+            "api_path": "/model1/order/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "default": 0,
+                            "message": "此{}为必填项"
+                        },
+                        {
+                            "type": "range",
+                            "min": 1,
+                            "max": 10,
+                            "message": "数值范围 0~10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "post",
+            "api_method": "POST",
+            "api_path": "/model1/order/",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "此{}为必填项"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "delete",
+            "api_method": "DELETE",
+            "api_path": "/model1/order/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "id为必填项"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "put",
+            "api_method": "PUT",
+            "api_path": "/model1/order/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "id为必填项"
+                        }
+                    ]
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "name为必填项"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
