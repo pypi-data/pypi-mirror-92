@@ -1,0 +1,3 @@
+[console_scripts]
+atcociftogtfs = atcociftogtfs.__main__:main
+
