@@ -1,0 +1,10 @@
+README.md
+setup.py
+MayReader/MayReader.py
+MayReader/__init__.py
+MayReader/simple_example.py
+MayReader/test_MayReader.py
+MayReader.egg-info/PKG-INFO
+MayReader.egg-info/SOURCES.txt
+MayReader.egg-info/dependency_links.txt
+MayReader.egg-info/top_level.txt

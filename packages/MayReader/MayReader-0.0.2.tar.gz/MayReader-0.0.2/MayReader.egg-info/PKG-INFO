@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: MayReader
+Version: 0.0.2
+Summary: Reader for maya ascii files
+Home-page: UNKNOWN
+Author: Milan Mitrovic
+Author-email: milan.mitrovic2111@gmail.com
+License: MIT
+Description: This package contains class for getting inforamtions about mesh objects from maya ascii files.
+        Path to class is given throw constructor. Class is names MayReader, methot for getting list of dictoneries is getMeshObjects()
+        
+Keywords: Reader
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
