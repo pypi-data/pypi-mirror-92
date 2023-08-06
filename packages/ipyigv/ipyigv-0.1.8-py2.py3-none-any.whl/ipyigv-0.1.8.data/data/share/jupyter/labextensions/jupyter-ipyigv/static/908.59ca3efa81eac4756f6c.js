@@ -1,0 +1,1 @@
+(self.webpackChunkjupyter_ipyigv=self.webpackChunkjupyter_ipyigv||[]).push([[908],{908:(e,i,t)=>{var r=t(138),p=t(335);e.exports={id:"ipyigv",requires:[p.IJupyterWidgetRegistry],activate:function(e,i){i.registerWidget({name:"ipyigv",version:r.version,exports:r})},autoStart:!0}}}]);
