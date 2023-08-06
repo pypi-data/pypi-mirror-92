@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "download_canadian_stations"
+author = "Tim Laurence"
+author-email = "timdaman@gmail.com"
+home-page = "https://github.com/timdaman/download_stations"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+description-file = "README.md"
+requires = [
+    "requests",
+    "beautifulsoup4",
+]
+
+[tool.flit.scripts]
+download_canadian_stations = "download_canadian_stations:main"
+
+[tool.flit.sdist]
+exclude = [".github"]

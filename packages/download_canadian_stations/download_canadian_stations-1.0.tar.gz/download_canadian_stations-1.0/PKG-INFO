@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: download_canadian_stations
+Version: 1.0
+Summary: Download data about all active Environment Canada weather stations
+Home-page: https://github.com/timdaman/download_stations
+Author: Tim Laurence
+Author-email: timdaman@gmail.com
