@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "dbuanime"
+version = "0.0.1"
+description = "Поиск Аниме/Манги по: Жанру,Рандому,Топу по годам."
+authors = ["DarsoX <darsox.anime@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
