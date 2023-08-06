@@ -1,0 +1,8 @@
+folderbrowser/__init__.py,sha256=qJhQAN8gN6RYhrizj6iKPoO1zAODledaHN79cjZ4Zz0,44
+folderbrowser/__main__.py,sha256=bo8qaBt9BIo-pLlq0voZxEFU4wQwQg8OhABxFhW7moI,1080
+folderbrowser/server.py,sha256=Z-JaUepPkxBE0o1gNdhJQPCoDHe1DLLjq7dBAqkJNXg,10356
+poetry.lock,sha256=38Gd1brXXi2fK-ySmgb0brDT5eCSSW_GSYYfj_-1NBc,61054
+folderbrowser-0.1.0.dist-info/LICENSE.txt,sha256=JYtCWEjYPX0pXQndWU3XnBGtmAkW6n2pFwuIq7NtUUQ,1082
+folderbrowser-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+folderbrowser-0.1.0.dist-info/METADATA,sha256=jVQTEFqTltls-1UA1LzOexQzHheZmJGaPvrOzz4Z12A,5662
+folderbrowser-0.1.0.dist-info/RECORD,,
