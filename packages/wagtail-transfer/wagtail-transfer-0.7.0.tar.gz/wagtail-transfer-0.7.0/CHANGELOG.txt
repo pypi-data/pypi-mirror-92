@@ -1,0 +1,80 @@
+Changelog
+=========
+
+0.7 (20.01.2021)
+~~~~~~~~~~~~~~~~~~
+
+ * Remove links and streamfield blocks when the linked objects are not imported (Jacob Topp-Mugglestone)
+ * Add Locale to default LOOKUP_FIELDS setting for 2.11 compatibility (Jacob Topp-Mugglestone)
+ * Add support for registering custom serializers (Steve Jalim)
+ * Convert field data to correct python types before saving (Daniel Kirkham)
+ * Add Tag to default LOOKUP_FIELDS setting (Steve Jalim)
+
+0.6 (6.11.2020)
+~~~~~~~~~~~~~~~~~~
+
+ * Automatically import child models when models use multi table inheritance (Jacob Topp-Mugglestone)
+ * Fix import of page tags and other child models (Jacob Topp-Mugglestone)
+ * Add setting for optionally following reverse relations when importing models (Jacob Topp-Mugglestone)
+ * Add support for GenericForeignKey (Jacob Topp-Mugglestone)
+ * Support a configurable timeout for the API chooser proxy (Steve Jalim)
+
+0.5.1 (24.09.2020)
+~~~~~~~~~~~~~~~~~~
+
+ * Fix handling of nullable FileFields (Jacob Topp-Mugglestone)
+
+
+0.5 (10.09.2020)
+~~~~~~~~~~~~~~~~
+
+ * Add support for registering custom field adapters (Jacob Topp-Mugglestone)
+
+
+0.4 (03.08.2020)
+~~~~~~~~~~~~~~~~
+
+ * Add recursive option to pages_for_export view (Jacob Topp-Mugglestone)
+
+
+0.3.1 (08.06.2020)
+~~~~~~~~~~~~~~~~~~
+
+ * Fix missing source when importing objects (Kalob Taulien)
+ * Fix updated request.site to use Site.find_for_request() (Kalob Taulien)
+
+
+0.3 (02.06.2020)
+~~~~~~~~~~~~~~~~
+
+ * Add support for transferring snippet models (Kalob Taulien)
+
+
+0.2.2 (30.03.2020)
+~~~~~~~~~~~~~~~~~~
+
+ * Fix missing mappings to parent IDs in the export API for tree-based models
+ * Fix handling of null RichTextFields (Kalob Taulien)
+
+
+0.2.1 (26.03.2020)
+~~~~~~~~~~~~~~~~~~
+
+ * Fix error when exporting empty non-required ChooserBlocks (Kalob Taulien, Jacob Topp-Mugglestone)
+ * Fix handling of embeds in rich text (Kalob Taulien, Jacob Topp-Mugglestone)
+ * Ensure that file URLs are always absolute by falling back on BASE_URL when MEDIA_URL is local (Kalob Taulinen)
+
+
+0.2 (17.03.2020)
+~~~~~~~~~~~~~~~~
+
+ * Add preseed_transfer_table management command
+ * Django 3.0 compatibility (Kalob Taulien)
+ * Fix handling of FileFields with non-callable upload_to parameters
+ * Pre-select source site if there is only one option
+
+
+0.1 (13.01.2020)
+~~~~~~~~~~~~~~~~
+
+ * Initial release
