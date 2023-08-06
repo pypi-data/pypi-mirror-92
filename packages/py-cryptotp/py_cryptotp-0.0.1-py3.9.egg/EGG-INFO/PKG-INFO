@@ -1,0 +1,54 @@
+Metadata-Version: 1.2
+Name: py-cryptotp
+Version: 0.0.1
+Summary: Handle OTP verification without database or session using cryptography
+Home-page: https://github.com/shamimferdous/py_cryptotp
+Author: Shamim Ferdous
+Author-email: shamimferdous5@gmail.com
+License: MIT license
+Description: ===========
+        py-cryptotp
+        ===========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/py_cryptotp.svg
+                :target: https://pypi.python.org/pypi/py_cryptotp
+        
+        .. image:: https://img.shields.io/travis/shamimferdous/py_cryptotp.svg
+                :target: https://travis-ci.com/shamimferdous/py_cryptotp
+        
+        .. image:: https://readthedocs.org/projects/py-cryptotp/badge/?version=latest
+                :target: https://py-cryptotp.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Handle OTP verification without database or session using cryptography
+        
+        
+        * Free software: MIT license
+        * Documentation: https://py-cryptotp.readthedocs.io.
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2021-01-21)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: py_cryptotp
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
