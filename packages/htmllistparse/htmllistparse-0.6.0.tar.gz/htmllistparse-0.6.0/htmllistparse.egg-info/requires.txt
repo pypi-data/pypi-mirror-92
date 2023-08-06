@@ -1,0 +1,4 @@
+beautifulsoup4
+fusepy
+html5lib
+requests
