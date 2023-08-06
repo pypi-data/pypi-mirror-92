@@ -1,0 +1,13 @@
+gf/__init__.py,sha256=naX7qQe1n08r7K3sTLnk0nq21k7IpVUZVhSuNSFXri4,21
+gf/dialog.py,sha256=XDWbCuflwYZK74kcjcXUCN_7ZQGwrBa1q6kijWNuc5E,10845
+gf/feature.py,sha256=iOghMerwJZnMdeQtaLxtnrPt4DOFvt3uyvzgp3PFHsw,1575
+gf/hotfix.py,sha256=pM01fwkhkOr_VSTFp_B8JfHNmYwSJIaTWXM7Dn7RhAk,1009
+gf/main.py,sha256=ITdlqslmgvG_RMHRSRZRN8NoYV-ksY7lHkh7B8zUXRE,5389
+gf/test.py,sha256=dFPjWydhI49l1vO2AzWdz3htdOv5P2UxR66zQ0P3OlA,515
+gf/utils.py,sha256=3RhawwOmtGE2-eAnymaGPClINfhzfBc7fcFP_cgBCgk,911
+gitflo-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+gitflo-0.0.1.dist-info/METADATA,sha256=4HJSjIo-VqRgavB8XMbEmWAotswBKA5eBUpVy9C3adY,2058
+gitflo-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+gitflo-0.0.1.dist-info/entry_points.txt,sha256=i5K09wnE_LvaQPE3NhjesYMCXXMVi_EnkPY7L1Xefw8,36
+gitflo-0.0.1.dist-info/top_level.txt,sha256=OI4gwOB2zyeCtz105qgwLZGBjsgvDXlZKTJK9P_OfpA,3
+gitflo-0.0.1.dist-info/RECORD,,
