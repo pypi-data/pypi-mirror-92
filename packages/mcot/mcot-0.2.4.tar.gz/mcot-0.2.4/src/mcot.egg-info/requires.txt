@@ -1,0 +1,7 @@
+mcot.bibtex~=0.1.2
+mcot.cifti~=0.1.0
+mcot.dippi~=0.1.0
+mcot.gcoord~=0.1.0
+mcot.maths~=0.1.0
+mcot.surface~=0.1.0
+mcot.utils~=0.1.0
