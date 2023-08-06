@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: clean-architecture-basic-classes
+Version: 0.1.0
+Summary: Classes to implement a Clean Architecture Python Framework
+Home-page: https://github.com/aberriel/clean_architecture_basic_classes
+Author: Anselmo Lira (https://github.com/aberriel)
+Author-email: anselmo.lira1@gmail.com
+License: UNKNOWN
+Description: =================================================
+        Clean Architecture Python Framework Basic Classes
+        =================================================
+        
+        
+        Classes to implement a Clean Architecure Python Framework
+        
+        Features
+        --------
+        
+        * TODO
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-07)
+        ------------------
+        
+        0.5.0 (2020-08-19)
+        ------------------
+        + Classe `BasicTaskScheduler`
+        + Classe `TaskSchedulerPort` (mixin)
+        
+Keywords: clean_architecture_basic_classes
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
