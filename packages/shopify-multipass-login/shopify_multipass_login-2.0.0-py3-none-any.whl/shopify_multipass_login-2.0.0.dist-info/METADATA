@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: shopify-multipass-login
+Version: 2.0.0
+Summary: Shopify Multipass module for Python
+Home-page: https://github.com/dylantack/shopify-multipass
+Author: dylantack
+Author-email: UNKNOWN
+License: Apache 2.0 License
+Platform: UNKNOWN
+Requires-Dist: M2Crypto (>=0.35.2)
+
+UNKNOWN
+
+
