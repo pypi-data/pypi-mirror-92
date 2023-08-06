@@ -1,0 +1,3 @@
+[tox]
+bindep = tox_bindep.hooks
+

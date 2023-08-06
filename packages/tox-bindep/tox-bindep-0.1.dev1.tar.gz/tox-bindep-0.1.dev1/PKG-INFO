@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: tox-bindep
+Version: 0.1.dev1
+Summary: Performs bindep checks before running
+Home-page: https://github.com/ssbarnea/tox-bindep
+Author: Sorin Sbarnea
+Author-email: sorin.sbarnea@gmail.com
+Maintainer: Sorin Sbarnea
+Maintainer-email: sorin.sbarnea@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/ssbarnea/tox-bindep/issues
+Project-URL: Release Management, https://github.com/ssbarnea/tox-bindep/releases
+Project-URL: CI, https://github.com/ssbarnea/tox-bindep/actions
+Project-URL: Source Code, https://github.com/ssbarnea/tox-bindep
+Description: # tox-bindep
+        
+        Tox plugin runs bindep checks before tests in order to avoid confusing
+        errors if user forgot to install system level requirements.
+        
+        This plugin looks at existing profiles and adds "test" profile if available.
+        
+        To make use of this plugin just add it to requires plugin list:
+        
+        ```ini
+        # tox.ini
+        [tox]
+        requires =
+            tox-bindep
+        ```
+        
+Keywords: bindep,tox,tox-plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: tox
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
