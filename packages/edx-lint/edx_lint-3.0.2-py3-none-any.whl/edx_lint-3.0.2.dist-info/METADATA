@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: edx-lint
+Version: 3.0.2
+Summary: edX-authored pylint checkers
+Home-page: https://github.com/edx/edx-lint
+Author: edX
+Author-email: oscm@edx.org
+License: Apache
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: click
+Requires-Dist: pylint
+Requires-Dist: pylint-django
+Requires-Dist: code-annotations
+Requires-Dist: Django
+Requires-Dist: six
+Requires-Dist: click-log
+Requires-Dist: pylint-celery
+
+UNKNOWN
+
+
