@@ -1,0 +1,14 @@
+<div class="page-modal" *ngIf="showSearch">
+  <div class="page-modal-background" (click)="closeModal()"></div>
+  <div class="page-modal-card">
+    <div class="page-modal-header">
+      <div class="header-title">Search Peek</div>
+      <button (click)="closeModal()">
+        <i nz-icon nzType="close" nzTheme="outline"></i>
+      </button>
+    </div>
+    <div class="page-modal-body">
+      <plugin-search-find></plugin-search-find>
+    </div>
+  </div>
+</div>

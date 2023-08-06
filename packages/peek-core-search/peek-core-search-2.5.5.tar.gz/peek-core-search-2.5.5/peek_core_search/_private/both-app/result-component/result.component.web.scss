@@ -1,0 +1,14 @@
+:host {
+  .results {
+    margin-top: 16px;
+  }
+
+  .result-table {
+    max-height: 60vh;
+    overflow-y: scroll;
+  }
+
+  .result-row {
+    cursor: pointer;
+  }
+}

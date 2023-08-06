@@ -1,0 +1,32 @@
+<div class="results" *ngIf="(resultObjectTypes$ | async)?.length">
+  <nz-tabset>
+    <nz-tab
+      [nzTitle]="typeResult.type.title"
+      *ngFor="let typeResult of resultObjectTypes$ | async"
+    >
+      <div class="result-table">
+        <nz-table
+          nzTemplateMode
+          ngSize="small"
+        >
+          <tbody>
+          <tr
+            class="result-row"
+            (click)="showSummaryPopup($event, result)"
+            *ngFor="let result of typeResult.results"
+          >
+            <td>
+              <span nz-text><strong>{{result.header}}</strong></span>
+              <span
+                nz-text
+                nzDisabled
+                *ngFor="let prop of result.bodyProps"
+              >, {{prop.value}}</span>
+            </td>
+          </tr>
+          </tbody>
+        </nz-table>
+      </div>
+    </nz-tab>
+  </nz-tabset>
+</div>
