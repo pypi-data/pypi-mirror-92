@@ -1,0 +1,16 @@
+tls/__init__.py,sha256=0ig5vNVwagKtBYTPk5muRp05Z2W915WYPfZOVCgWRGQ,32
+tls/messaging/__init__.py,sha256=NzdGKI9lkyXsj1lbyOBtCa7M-r6F4bMqmK2riamj2VQ,56
+tls/messaging/bnum.py,sha256=jP7wkfg-gkgzTaYX8nEf3Y8_6BrM-q-PTttGYYJKVhk,2594
+tls/messaging/exceptions.py,sha256=_xPFvmEBiAYfjMqqrEh7uftbl5PRUBOh8K_IG4D4vQY,496
+tls/messaging/oauth.py,sha256=gcVzVem0ElAD8fdHWxYXgS2UFnfoDu8dpRSO2V2dH7M,2484
+tls/messaging/sms.py,sha256=SPrkx6FDN7XAmW3t83_okovm-7FSPcYTNQ_MbFtwDew,12617
+tls/messaging/subscription.py,sha256=bR_r2KiA1HAZbc93YoWDkPEP4VPB1JHlBIEhILIszsc,4462
+tls/messaging/types.py,sha256=XeIb4HG2ARB0MBM7t8LtBvKKYBu_iI7yilzUTlZ8mwc,239
+tls/messaging/utils/__init__.py,sha256=H1GBUT2KwF1TryKfbosE_LSU01_7CRxEBwQIHT0CAw8,38
+tls/messaging/utils/config.py,sha256=ZcgqrWoa3dzsgVb2nJWefKg6TtJBcadfdGyOb0nSoYw,3820
+tls/messaging/utils/notify_url.py,sha256=9K_YaBo9aIa0ULPbdxadV6EMzARCHv3-YtipV7z9hDI,716
+tls/messaging/utils/phone_number.py,sha256=jtNSB8pYq9swDkIZNXtpi1tck6wKu3uIwfo5q0zieoA,2001
+tls.messaging-0.6.3.dist-info/LICENSE,sha256=PSVF2eWqyXh1UdjNgsBmXtYsnUgaz4Fqd-BWjwe6kbg,11378
+tls.messaging-0.6.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+tls.messaging-0.6.3.dist-info/METADATA,sha256=6ce7iIx0b1DcHYh4zrgzQ-5FhdJZKNS8qffWv4piGmw,9135
+tls.messaging-0.6.3.dist-info/RECORD,,
