@@ -1,0 +1,12 @@
+README.md
+setup.py
+djqscrip.egg-info/PKG-INFO
+djqscrip.egg-info/SOURCES.txt
+djqscrip.egg-info/dependency_links.txt
+djqscrip.egg-info/entry_points.txt
+djqscrip.egg-info/top_level.txt
+djqscrips/__init__.py
+djqscrips/bash/__init__.py
+djqscrips/python/__init__.py
+djqscrips/python/funcs.py
+djqscrips/python/scrips.py
