@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: tky
+Version: 1.1.0
+Summary: tang kai yue 个人方法集合
+Home-page: UNKNOWN
+Author: Tang kai yue
+Author-email: tky_1314@163.com
+Maintainer: Tang kai yue
+Maintainer-email: tky_1314@163.com
+License: UNKNOWN
+Description: ## **项目信息**
+        ###### （项目介绍：个人使用的python方法类汇总）2021
+        
+        本项目是用于记录个人使用的一些Python方法类汇总合集，以方便后续在使用的时候借鉴或复用；
+        类似笔记形式，减少后续查找的成本和提高类工作生产力，如对本内容感兴趣的欢迎一起来添砖加瓦；
+        
+        **文件释义如下：**
+        ````
+        __init__.py     |  入口文件
+        t_sql.py        |  SQL类集合
+        t_jde.py        |  判断类集合
+        t_gui.py        |  GUI类集合
+        t_msg.py        |  消息类集合
+        t_file.py       |  文件类集合
+        t_dev.py        |  DEV类集合
+        ````
+        
+        
+        
+        ###### -————————--——————————————--—————-
+        
+        模块依赖清单：
+        ````
+        import re, os
+        import json
+        import urllib.request
+        import cx_Oracle
+        import datetime
+        import xlrd
+        import selenium.webdriver.support.ui as ui
+        from appium import webdriver
+        from selenium import webdriver
+        from xml.dom import minidom
+        from setuptools import find_packages, setup
+        from elasticsearch import Elasticsearch, helpers
+        ````
+        
+        PIP安装指令：
+        ````
+        pip install re
+        pip install os
+        pip install json
+        pip install urllib
+        pip install cx_Oracle
+        pip install datetime
+        pip install xlrd
+        pip install selenium
+        pip install appium
+        pip install xml.dom
+        pip install setuptools
+        pip install elasticsearch
+        ````
+        
+        
+        第一次做文件集合，内容质量可能会很差，后续有时间继续优化；
+        
+        ###### -————————--———————————————--————-
+        
+        ````
+        ~~ 【 联 系 方 式 】 ~~
+        作者：Tang kai yue
+        企鹅：237736403
+        主页：tangkaiyue.cn
+        邮箱：tky_1314@163.com
+        ````
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
