@@ -1,0 +1,11 @@
+ffcount-0.1.8.dist-info/WHEEL,sha256=o52gvP1-IFo9Rq84Qujz04kczDTUGGtenAr20dNTNAg,107
+ffcount-0.1.8.dist-info/METADATA,sha256=avrREFvqrzedPbTfouVP2Z7EzHjSvFaVhOptCcESu5o,2368
+ffcount-0.1.8.dist-info/top_level.txt,sha256=MuXaiMWmhQn1JRmmIj2FaXUROEAnXYfRYgWvDDecEak,8
+ffcount-0.1.8.dist-info/entry_points.txt,sha256=u4XaPNskLjbxLI7GRlMWa17w-T-nNDWlV-y1kkxoaio,51
+ffcount-0.1.8.dist-info/RECORD,,
+ffcount-0.1.8.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+ffcount/count.cpython-37m-i386-linux-gnu.so,sha256=1PI_9lf6W4-ywi2Mbo3zdOZLl4kqdq-1zfUB2KS5a5E,112584
+ffcount/__main__.py,sha256=Ha050ki-IMX-Q_IPh2CrDkFiDiPV7Hc7Ro7FpzNvQdU,2007
+ffcount/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffcount/__version__.py,sha256=f80le0a9fXDPz9iaLqnwabNRRPTGaPIyo_qeI1GPPQE,89
+ffcount/__init__.py,sha256=CnlXhPqZ43nguagPqN-OzmC8o-sOsnJ1O4UUNba12Ow,1492
