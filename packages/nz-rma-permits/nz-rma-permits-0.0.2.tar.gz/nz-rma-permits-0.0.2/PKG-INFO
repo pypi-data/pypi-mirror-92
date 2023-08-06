@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: nz-rma-permits
+Version: 0.0.2
+Summary: Functions to process NZ RMA permiting data
+Home-page: https://github.com/mullenkamp/nz-rma-permits
+Author: Mike Kittridge
+Author-email: mullenkamp1@gmail.com
+License: Apache
+Description: UNKNOWN
+Keywords: nz permits rma
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

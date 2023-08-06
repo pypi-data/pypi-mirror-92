@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+nz_rma_permits.egg-info/PKG-INFO
+nz_rma_permits.egg-info/SOURCES.txt
+nz_rma_permits.egg-info/dependency_links.txt
+nz_rma_permits.egg-info/requires.txt
+nz_rma_permits.egg-info/top_level.txt
+nzpermits/__init__.py
+nzpermits/data_models.py
+nzpermits/iris.py
+nzpermits/utils.py
+nzpermits/datasets/__init__.py
