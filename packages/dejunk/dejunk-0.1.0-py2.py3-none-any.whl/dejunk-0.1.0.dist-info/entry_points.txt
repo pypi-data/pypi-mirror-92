@@ -1,0 +1,3 @@
+[console_scripts]
+dejunk = dejunk.cli:main
+
