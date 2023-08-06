@@ -1,0 +1,11 @@
+dynaport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynaport/dynaport.py,sha256=TOtiU3C9mKpKqrdiew3A-O5N4sJ44I8wRCAA2DiLLjU,2000
+dynaport/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynaport/util/get_module2.py,sha256=m7QUClXtFcFRm0QeVf1IiABfaaKjFY6UfsrPe8dINyk,110
+dynaport/util/get_module3334.py,sha256=TfS7rXXUH6u_1Xobq5Suwp2idzHQBYDXqdQvdGRC-gw,163
+dynaport/util/get_module35.py,sha256=r1qzrmTG5VBipnN-6JlroJRCS5usIemnqzUtgVKscjw,221
+dynaport-0.0.5.dist-info/LICENSE,sha256=nSXfKNjj736W9vcjb6UxKFk4sKHvWRn4GVJJw4_nr4w,11348
+dynaport-0.0.5.dist-info/METADATA,sha256=Q2kDUCOsvrDuPpu1genb5cyr-cKlxSJLuvJbhU7gYeo,2037
+dynaport-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dynaport-0.0.5.dist-info/top_level.txt,sha256=JD-08wl8XYI2S8AP1uQ2SDRwiQKZXDLnjf21eVOVabs,9
+dynaport-0.0.5.dist-info/RECORD,,
