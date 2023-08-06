@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lesting.api.client
+Version: 0.1.1
+Summary: Lesting API Client Libraray
+Home-page: https://github.com/LESTINGX/API.CLIENT
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: httplib2
+
+UNKNOWN
+
+

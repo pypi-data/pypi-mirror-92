@@ -1,0 +1,11 @@
+lesting.api.client-0.1.1-py3.9-nspkg.pth,sha256=-qpuXu8crNslSJ5wq-Nq8vZqeSC3-yscbP9bVQLs_fI,1160
+lesting/api/client/__init__.py,sha256=cA7BpHabgqO5JL9pWj_9aUiaBOaFISEuBuyLO8EAan4,59
+lesting/api/client/discovery.py,sha256=38PyT2zJOJU1MyGcxYzrNFJAZEE9hEEh_jxVf93GbRM,435
+lesting/api/client/resources.py,sha256=ndN0v6bPcaMpa4GMtV9QVSfFHmCppDnV2NHiGVR1gNM,5342
+lesting/api/client/schemas.py,sha256=JX_IaSZAdpooOqS-D_cBgumjAydhCVLd3xx2qXxMw6I,8469
+lesting.api.client-0.1.1.dist-info/LICENSE,sha256=WtjCEwlcVzkh1ziO35P2qfVEkLjr87Flro7xlHz3CEY,11556
+lesting.api.client-0.1.1.dist-info/METADATA,sha256=iOYz4CF3al8AS0yIc_rEjLsLCInTkMrYMgFvQ9xPKGc,257
+lesting.api.client-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lesting.api.client-0.1.1.dist-info/namespace_packages.txt,sha256=D8JMQy4U211Haf33yUnhGAJm5IOyeWd93rm9D6nNUY8,12
+lesting.api.client-0.1.1.dist-info/top_level.txt,sha256=HIBQ5WTX7b7d-0i2JF_Rdkug7sy9kolK5igT0OToOio,8
+lesting.api.client-0.1.1.dist-info/RECORD,,
