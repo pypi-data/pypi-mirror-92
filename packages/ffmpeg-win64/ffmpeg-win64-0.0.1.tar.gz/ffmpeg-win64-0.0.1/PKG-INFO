@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: ffmpeg-win64
+Version: 0.0.1
+Summary: add ffmpeg 64bit exe builds to os.environ['PATH']
+Home-page: https://github.com/r-cute/ffmpeg-win64
+Author: Huang Yan
+Author-email: hyansuper@foxmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows 
