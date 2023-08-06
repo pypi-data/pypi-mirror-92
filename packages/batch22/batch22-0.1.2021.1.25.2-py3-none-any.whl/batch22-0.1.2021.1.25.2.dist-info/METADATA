@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: batch22
+Version: 0.1.2021.1.25.2
+Summary: batch22 (b22)
+Home-page: https://github.com/EbenMoss/batch22
+Author: Eben Moss
+Author-email: EbenMoss@protonmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/EbenMoss/batch22/releases/download/0.1.2021.1.1.0/batch22-0.1.2021.1.1.0-py3-none-any.whl
+Keywords: batch22,mne,bids,datalad,comint
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: argparse (>=1.1)
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: scipy (>=1.4.1)
+Requires-Dist: colorama (>=0.4.3)
+Requires-Dist: mne (>=0.21.0)
+
+# Project <insert name>
+
+## Dataset structure
+
+- All inputs (i.e. building blocks from other sources) are located in
+  `inputs/`.
+- All custom code is located in `code/`.
+
+
