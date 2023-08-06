@@ -1,0 +1,11 @@
+repo_helper_github/__init__.py,sha256=dB5uzL1YihA0c3ZeKSiCQql0QWkqycZLnDBN8Isb5JE,16400
+repo_helper_github/_github.py,sha256=qVUeqlXpcLrJoENZqrZaO1E7HIgKaf0Y5GCOo6vw914,1313
+repo_helper_github/_types.py,sha256=pNRMM7x_4jWyzk0-augePA6izMPXqMBoUfw0-df4_i0,1539
+repo_helper_github/cli.py,sha256=hJvoUffa78A1grD3cbYuOsLUubat42GjfvHVdbJ-N3w,4444
+repo_helper_github/options.py,sha256=azLOFhh10LGez0Bqd08Loa9U-WCiGvy0qbNGmaQJc18,2278
+repo_helper_github-0.5.0.dist-info/LICENSE,sha256=BigaIaJbg4wCjk6MjLC_5kuevxdEotWApzfvN8Y9LMM,1064
+repo_helper_github-0.5.0.dist-info/METADATA,sha256=xBjoWi2VTdMVmRbCuhlewtbMSDkAU_YuLCpMIvzHhRw,6580
+repo_helper_github-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+repo_helper_github-0.5.0.dist-info/entry_points.txt,sha256=GdQ2isT9zA_t6qE25f-0pOUF8jEO-IMPIwy7cu-SPRE,74
+repo_helper_github-0.5.0.dist-info/top_level.txt,sha256=YaR2ZjSOG1TLVAmIyuNpIryqkMrdh50NWUAB-9NJLnQ,19
+repo_helper_github-0.5.0.dist-info/RECORD,,
