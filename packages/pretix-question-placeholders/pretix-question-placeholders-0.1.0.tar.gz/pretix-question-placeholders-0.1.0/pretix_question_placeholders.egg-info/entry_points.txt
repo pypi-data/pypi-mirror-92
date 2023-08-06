@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_question_placeholders=pretix_question_placeholders:PretixPluginMeta
