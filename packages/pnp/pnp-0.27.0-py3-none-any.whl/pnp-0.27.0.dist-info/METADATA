@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: pnp
+Version: 0.27.0
+Summary: Pull 'n' Push
+Home-page: https://pnp.readthedocs.io/
+License: MIT
+Keywords: push,pull,data,pipeline
+Author: Dennis Muth
+Author-email: d.muth@gmx.net
+Maintainer: Dennis Muth
+Maintainer-email: d.muth@gmx.net
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Home Automation
+Provides-Extra: dht
+Provides-Extra: dropbox
+Provides-Extra: faceR
+Provides-Extra: fitbit
+Provides-Extra: fritz
+Provides-Extra: fswatcher
+Provides-Extra: ftp
+Provides-Extra: gpio
+Provides-Extra: miflora
+Provides-Extra: sound
+Provides-Extra: speedtest
+Requires-Dist: Adafruit_DHT (>=1.3.2,<2.0.0); extra == "dht"
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: PyAudio (>=0.2.11,<0.3.0); extra == "sound"
+Requires-Dist: RPi.GPIO (>=0.6.5,<0.7.0); extra == "gpio"
+Requires-Dist: aiohttp (>=3.6.2,<4.0.0)
+Requires-Dist: async_generator (>=1.10,<2.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: asyncws (>=0.1,<0.2)
+Requires-Dist: binaryornot (>=0.4.4,<0.5.0)
+Requires-Dist: cachetools (>=4.1.0,<5.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: coloredlogs (>=14.0,<15.0)
+Requires-Dist: cronex (>=0.1.3,<0.2.0)
+Requires-Dist: dictmentor (>=0.2.2,<0.3.0)
+Requires-Dist: dropbox (>=9.0.0,<10.0.0); extra == "dropbox"
+Requires-Dist: face-recognition (>=1.2.2,<2.0.0); extra == "faceR"
+Requires-Dist: fastapi (>=0.61.2,<0.62.0)
+Requires-Dist: fastcore (>=1.3.13,<2.0.0)
+Requires-Dist: fitbit (>=0.3.0,<0.4.0); extra == "fitbit"
+Requires-Dist: fritzconnection (>=1.2.0,<2.0.0); (python_version >= "3.6" and python_version < "4.0") and (extra == "fritz")
+Requires-Dist: glom (>=19.10.0,<20.0.0)
+Requires-Dist: image (>=1.5.24,<2.0.0); extra == "faceR"
+Requires-Dist: influxdb (>=5.3.0,<6.0.0)
+Requires-Dist: miflora (>=0.4.0,<0.5.0); extra == "miflora"
+Requires-Dist: numpy (>=1.16.0,<2.0.0); extra == "sound"
+Requires-Dist: paho-mqtt (>=1.5.0,<2.0.0)
+Requires-Dist: pathspec (>=0.8.0,<0.9.0)
+Requires-Dist: psutil (>=5.7.0,<6.0.0)
+Requires-Dist: pyftpdlib (>=1.5.0,<2.0.0); extra == "ftp"
+Requires-Dist: pytest-mock (>=3.3.1,<4.0.0)
+Requires-Dist: python-box (<=3.4.6)
+Requires-Dist: pytz (>=2020.1,<2021.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.10,<0.17.0)
+Requires-Dist: schedule (>=0.6.0,<0.7.0)
+Requires-Dist: schema (>=0.7.2,<0.8.0)
+Requires-Dist: scipy (>=1.2.0,<2.0.0); extra == "sound"
+Requires-Dist: slacker (>=0.14.0,<0.15.0)
+Requires-Dist: speedtest-cli (>=2.1.0,<3.0.0); extra == "speedtest"
+Requires-Dist: starlette_exporter (>=0.6.0,<0.7.0)
+Requires-Dist: sty (>=1.0.0-beta.12,<2.0.0)
+Requires-Dist: syncasync (>=20180812,<20180813)
+Requires-Dist: typeguard (>=2.7.1,<3.0.0)
+Requires-Dist: typing-extensions (>=3.7.4,<4.0.0)
+Requires-Dist: tzlocal (>=2.0.0,<3.0.0)
+Requires-Dist: urllib3 (>=1.20,<2.0); extra == "dropbox"
+Requires-Dist: uvicorn (>=0.12.2,<0.13.0)
+Requires-Dist: watchdog (>=0.8.3,<0.9.0); extra == "fswatcher"
+Project-URL: Documentation, https://pnp.readthedocs.io/
+Project-URL: Repository, https://github.com/HazardDede/pnp
+Description-Content-Type: text/markdown
+
+# Pull 'n' Push
+
+[![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8-green.svg)](https://www.python.org/)
+[![PyPI version](https://badge.fury.io/py/pnp.svg)](https://badge.fury.io/py/pnp)
+[![Docs](https://readthedocs.org/projects/pnp/badge/?version=stable)](https://pnp.readthedocs.io/en/stable/?badge=stable)
+[![GitHub Activity](https://img.shields.io/github/commit-activity/y/HazardDede/pnp.svg)](https://github.com/HazardDede/pnp/commits/master)
+[![Build Status](https://travis-ci.org/HazardDede/pnp.svg?branch=master)](https://travis-ci.org/HazardDede/pnp)
+[![Coverage Status](https://coveralls.io/repos/github/HazardDede/pnp/badge.svg?branch=master)](https://coveralls.io/github/HazardDede/pnp?branch=master)
+[![Docker: hub](https://img.shields.io/badge/docker-hub-brightgreen.svg)](https://cloud.docker.com/u/hazard/repository/docker/hazard/pnp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Project Maintenance](https://img.shields.io/badge/maintainer-Dennis%20Muth%20%40HazardDede-blue.svg)
+
+> Pulls data from sources and pushes it to sinks with optional transformations in between.
+
+## Installation
+
+    pip install pnp
+
+Installation with extras:
+    
+    pip install pnp[fswatcher,faceR]
+
+Please consult the [component documentation](https://pnp.readthedocs.io/en/stable/plugins/index.html) to see if a
+component requires an extra or not.
+
+## Getting started
+
+Define `pulls` to fetch / pull data from source systems.
+Define one `push` or multiple `pushes` per pull to transfer the pulled data anywhere else (you only need a plugin that 
+knows how to handle the target). You configure your pipeline in `yaml`:
+
+```yaml
+tasks:
+  - name: hello-world
+    pull:
+      plugin: pnp.plugins.pull.simple.Repeat
+      args:
+        interval: 1s
+        repeat: "Hello World"
+    push:
+      - plugin: pnp.plugins.push.simple.Echo
+```
+        
+Copy this configuration and create the file `helloworld.yaml`. Run it:
+
+    pnp helloworld.yaml
+
+This example yields the string `Hello World` every second.
+
+**Hint**: You can validate your config without actually executing it with
+
+```bash
+   pnp --check helloworld.yaml
+```
+
+If you want to learn more please see the documentation at [Read the Docs](https://pnp.readthedocs.io/en/stable/).
+

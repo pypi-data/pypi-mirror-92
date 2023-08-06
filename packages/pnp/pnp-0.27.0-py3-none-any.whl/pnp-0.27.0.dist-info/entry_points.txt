@@ -1,0 +1,5 @@
+[console_scripts]
+pnp=pnp.console.pnp:main
+pnp_gmail_tokens=pnp.console.pnp_gmail_tokens:main
+pnp_record_sound=pnp.console.pnp_record_sound:main
+
