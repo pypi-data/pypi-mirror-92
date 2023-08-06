@@ -1,0 +1,16 @@
+[build-system]
+requires = [
+  "pip<19",
+  "setuptools>=30.3.0",
+  "wheel"
+]
+
+[tool.black]
+line-length = 80
+python-version = ['py36']
+exclude = '''
+(
+    _version.py
+    | __init__.py
+)
+'''

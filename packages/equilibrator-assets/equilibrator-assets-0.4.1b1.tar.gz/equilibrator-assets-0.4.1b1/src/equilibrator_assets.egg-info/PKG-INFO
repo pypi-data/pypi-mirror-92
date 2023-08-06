@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: equilibrator-assets
+Version: 0.4.1b1
+Summary: Generate cache assets from MetaNetX content.
+Home-page: https://gitlab.com/elad.noor/equilibrator-assets
+Author: 
+Elad Noor
+Moritz E. Beber
+Author-email: 
+noor@imsb.biol.ethz.ch
+morbeb@biosustain.dtu.dk
+License: MIT License
+Download-URL: https://pypi.org/project/equilibrator-assets
+Description: UNKNOWN
+Keywords: component contribution,Gibbs energy,biochemical reaction,eQuilibrator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Provides-Extra: development
+Provides-Extra: deployment

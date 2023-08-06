@@ -1,0 +1,2 @@
+include versioneer.py
+include src/equilibrator_assets/_version.py
