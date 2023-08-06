@@ -1,0 +1,14 @@
+__major_version__=0
+__minor_version__=1
+__patch_version__=9
+is_beta=False
+__version__ = '0.1.9'
+version=__version__
+version_long = '0.1.9:fav_0.1.9'
+description = 'fav_0.1.9'
+commit = '429fa3678aa5619eac14c93c21621879511ffbf6'
+branch = 'release/borrow_calibration'
+is_dirty = False
+email ='c.menn@frontmark.de'
+author ='Christian Menn'
+prefix='fav'
