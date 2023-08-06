@@ -1,0 +1,12 @@
+appdirs>=1.4.3
+numpy>=1.18
+treelib>=1.5.5
+
+[classic]
+ckip-classic>=1.1.2
+
+[tagger]
+ckiptagger[tf]>=0.2.1
+
+[tagger-gpu]
+ckiptagger[tfgpu]>=0.2.1
