@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: kimdb
+Version: 0.0.14
+Summary: kimdb
+Home-page: UNKNOWN
+Author: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# kimdb
+
+![GitHub - last commit](https://img.shields.io/github/last-commit/kkristof200/py_imdb?style=flat-square) ![GitHub - commit activity](https://img.shields.io/github/commit-activity/m/kkristof200/py_imdb?style=flat-square) ![GitHub - code size in bytes](https://img.shields.io/github/languages/code-size/kkristof200/py_imdb?style=flat-square) ![GitHub - repo size](https://img.shields.io/github/repo-size/kkristof200/py_imdb?style=flat-square) ![GitHub - lines of code](https://img.shields.io/tokei/lines/github/kkristof200/py_imdb?style=flat-square) ![GitHub - license](https://img.shields.io/github/license/kkristof200/py_imdb?style=flat-square) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kimdb?logo=pypi&style=flat-square) ![PyPI - Downloads](https://img.shields.io/pypi/dm/kimdb?logo=pypi&style=flat-square)
+
+## Description
+
+IMDB scraper
+
+## Install
+
+~~~~bash
+pip install kimdb
+# or
+pip3 install kimdb
+~~~~
+
+## Usage
+
+~~~~python
+from kimdb import IMDB
+
+imdb = IMDB(debug=True)
+
+top_movies = imdb.top_movies()
+top_movies[0].jsonprint()
+
+top_series = imdb.top_series()
+top_series[0].jsonprint()
+
+most_popular_movies = imdb.most_popular_movies()
+most_popular_movies[0].jsonprint()
+
+most_popular_series = imdb.most_popular_movies()
+most_popular_series[0].jsonprint()
+
+title = imdb.get_title(top_movies[0].id)
+title.jsonprint()
+
+list = imdb.get_list(title.lists[0].id)
+list.jsonprint()
+
+user = imdb.get_user(list.owner.id)
+user.jsonprint()
+
+name = imdb.get_name(title.actors[0].id)
+name.jsonprint()
+~~~~ 
+
+## Dependencies
+
+[beautifulsoup4](https://pypi.org/project/beautifulsoup4), [jsoncodable](https://pypi.org/project/jsoncodable), [kcu](https://pypi.org/project/kcu), [ksimpleapi](https://pypi.org/project/ksimpleapi), [noraise](https://pypi.org/project/noraise), [requests](https://pypi.org/project/requests)
+
