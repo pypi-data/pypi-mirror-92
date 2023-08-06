@@ -1,0 +1,3 @@
+[console_scripts]
+my-command = github_crawler.main:main
+

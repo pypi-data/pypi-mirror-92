@@ -1,0 +1,12 @@
+README.md
+setup.py
+github_crawler/__init__.py
+github_crawler/main.py
+github_crawler/user_profile_main.py
+github_crawler/user_repos_main.py
+github_crawler.egg-info/PKG-INFO
+github_crawler.egg-info/SOURCES.txt
+github_crawler.egg-info/dependency_links.txt
+github_crawler.egg-info/entry_points.txt
+github_crawler.egg-info/requires.txt
+github_crawler.egg-info/top_level.txt
