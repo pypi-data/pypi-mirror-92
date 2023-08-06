@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mehulPip.egg-info/PKG-INFO
+mehulPip.egg-info/SOURCES.txt
+mehulPip.egg-info/dependency_links.txt
+mehulPip.egg-info/requires.txt
+mehulPip.egg-info/top_level.txt
+metallex_sample/__init__.py
+metallex_sample/apiSDK.py
