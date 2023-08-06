@@ -1,0 +1,3 @@
+[console_scripts]
+plably = plably.__main__:main
+
