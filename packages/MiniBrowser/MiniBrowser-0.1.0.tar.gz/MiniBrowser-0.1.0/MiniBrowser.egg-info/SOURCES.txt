@@ -1,0 +1,8 @@
+README.md
+setup.py
+MiniBrowser/__init__.py
+MiniBrowser.egg-info/PKG-INFO
+MiniBrowser.egg-info/SOURCES.txt
+MiniBrowser.egg-info/dependency_links.txt
+MiniBrowser.egg-info/requires.txt
+MiniBrowser.egg-info/top_level.txt

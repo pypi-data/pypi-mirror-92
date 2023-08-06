@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MiniBrowser
+Version: 0.1.0
+Summary: An easy-to-use pygame User Interface Library
+Home-page: https://github.com/Hugo4IT/PythonEventSystem
+Author: Hugo van de Kuilen from Hugo4IT.com
+Author-email: hugo.vandekuilen1234567890@gmail.com
+License: UNKNOWN
+Description: ## WIP Mini Browser for python
+        
+        ##### Dependencies
+        - [PygameUILib](https://github.com/Hugo4IT/PygameUILib)
+        - [PygameAnimationLib](https://github.com/Hugo4IT/PygameUILib)
+        - [Pygame](https://pygame.org)
+        
+        #### Installation
+        ```bash
+        pip install --upgrade PygameUILib Pygame
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
