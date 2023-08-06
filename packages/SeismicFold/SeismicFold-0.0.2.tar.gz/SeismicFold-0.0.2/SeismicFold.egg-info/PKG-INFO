@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: SeismicFold
+Version: 0.0.2
+Summary: Calculates fold from SPS data
+Home-page: https://github.com/mysiar/seismic-fold-python-package
+Author: Piotr Synowiec
+Author-email: psynowiec@gmail.com
+License: UNKNOWN
+Description: # Seismic Fold
+        
+        ### module to calculate fold from SPS data
+        
+        
+        #### TODO
+        * test data
+        * tests
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
