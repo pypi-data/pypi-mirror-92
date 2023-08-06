@@ -1,0 +1,12 @@
+README.rst
+setup.py
+autoextract_poet/__init__.py
+autoextract_poet/items.py
+autoextract_poet/page_inputs.py
+autoextract_poet/pages.py
+autoextract_poet/util.py
+autoextract_poet.egg-info/PKG-INFO
+autoextract_poet.egg-info/SOURCES.txt
+autoextract_poet.egg-info/dependency_links.txt
+autoextract_poet.egg-info/requires.txt
+autoextract_poet.egg-info/top_level.txt
