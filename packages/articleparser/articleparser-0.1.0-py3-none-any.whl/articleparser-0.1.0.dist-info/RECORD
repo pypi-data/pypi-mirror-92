@@ -1,0 +1,13 @@
+articleparser/__init__.py,sha256=J6i31HaYGe8ucu7HEmjkQ2IwgK22rbpiIS0CH2nwzcM,106
+articleparser/article.py,sha256=zQXK010CMyIy65Z3ULtnQD3bpDNIZMt3EJNuCxW8pIU,11456
+articleparser/cleaner.py,sha256=DTQ88G7v8mM4od3fCr_HiDHeIQrxAIrT1v6nSsB1o4w,23169
+articleparser/config.py,sha256=P0K5L5D0ZiJzlA9rDpXP88w74BFB3ntwKF0Gbs9KFEg,741
+articleparser/extractor.py,sha256=Wkd3nXX4S-_lHN2xjZulp7LrC6MD92Z2TqqMwr8pkCY,120105
+articleparser/metadata.py,sha256=AwIAZL4bYgw037uiCdsmUS_whoXh2FuL_eY9bMh7WBE,22563
+articleparser/settings.py,sha256=9LJDlfRLTIimi-fayvmQXpPt6N7-w2mvHS64DxdL2Vg,23029
+articleparser/util.py,sha256=c29YCfISUAP2A1t0W2F4geuA_Bh6UgwbdSL_NQAODg0,9781
+articleparser-0.1.0.dist-info/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+articleparser-0.1.0.dist-info/METADATA,sha256=TLT2p7rgC-7DxzheV5UrogCi_3K1loeOgam64JSTwf8,1632
+articleparser-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+articleparser-0.1.0.dist-info/top_level.txt,sha256=oJSbPyCAIm-5NlwYfuB-Q_e1_ztSdhCNIBF1D6__STo,14
+articleparser-0.1.0.dist-info/RECORD,,
