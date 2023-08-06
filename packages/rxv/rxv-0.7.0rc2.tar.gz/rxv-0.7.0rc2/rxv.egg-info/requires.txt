@@ -1,0 +1,13 @@
+requests
+defusedxml
+
+[testing]
+black
+flake8
+mock
+pytest
+pytest-cov
+pytest-timeout
+pytest-vcr
+requests-mock
+tox
