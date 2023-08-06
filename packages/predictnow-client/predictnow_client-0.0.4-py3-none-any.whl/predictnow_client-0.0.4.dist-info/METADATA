@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: predictnow-client
+Version: 0.0.4
+Summary: A restful client library, designed to access predictnow restful api.
+Home-page: UNKNOWN
+Author: Radu Ciobanu
+Author-email: radu@predictnow.ai
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: gunicorn (==20.0.4)
+Requires-Dist: pandas (==1.1.3)
+Requires-Dist: honeycomb-beeline (==2.13.1)
+Requires-Dist: libhoney (==1.10.0)
+Requires-Dist: lightgbm (==2.3.0)
+Requires-Dist: pyfcm (==1.4.7)
+Requires-Dist: ray (==1.0.0)
+Requires-Dist: shap (==0.33.0)
+Requires-Dist: PyJWT (==1.7.1)
+Requires-Dist: flask-login (==0.5.0)
+Requires-Dist: flask-mail (==0.9.1)
+Requires-Dist: matplotlib (==3.3.2)
+Requires-Dist: email-validator (==1.1.2)
+Requires-Dist: paypalrestsdk (==1.13.1)
+Requires-Dist: xlrd (==1.2.0)
+Requires-Dist: redis (==3.4.1)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: Flask-Bootstrap4 (==4.0.2)
+Requires-Dist: firebase-admin (==4.4.0)
+Requires-Dist: wtforms (==2.3.3)
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: joblib (==0.17.0)
+Requires-Dist: werkzeug (==1.0.1)
+Requires-Dist: statsmodels (==0.12.0)
+Requires-Dist: tqdm (==4.50.2)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: setuptools (==50.3.0)
+Requires-Dist: jinja2 (==2.11.2)
+Requires-Dist: stripe (==2.55.1)
+Requires-Dist: jsons (==1.3.0)
+Requires-Dist: pyarrow (==2.0.0)
+Requires-Dist: openpyxl (==3.0.5)
+
+Project description
+============================
+
+Usage:
+================
+from predictnow.pdapi import PredictNowClient1
+
+Setup client along with its api key
+api_key = "<YOUR_API_KEY>" client = PredictNowClient1(api_key)
+
+Train demo
+=================================================
+
+train_input_path = 'C:/Users/devstack/Documents/example_input_train.csv' train_params = { "username": "welly", "email": "welly@predictnow.ai", "label": "futreturn", "timeseries": "yes", "type": "classification", "feature_selection": "shap", "analysis": "small", "boost": "gbdt", "mode": "train", "testsize": "0.2", "weights": "no", "prob_calib": "no", "suffix": "myfirstsuffix", "eda": "no", }
+
+response = client.train(train_input_path, train_params) print(response)
+
+Predict demo
+================================
+live_input_path = 'C:/Users/devstack/Documents/example_input_live.csv' username = train_params["username"] suffix = train_params["suffix"] path = "../" + train_params["username"] predict_params = { "username": username, "model_name": "saved_model_" + suffix + ".pkl", # TODO proper model name "eda": "no", } response = client.predict(live_input_path, params=predict_params) print(response)
+
+Save Result demo
+================================
+
+response = client.save_to_output({"username": "welly", "output": "C:/Users/devstack/Documents"}) print(response)
+

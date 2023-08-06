@@ -1,0 +1,11 @@
+predictnow/__init__.py,sha256=AGqQZeOV0lDikCJA6dUVSO-GoUS3UARMOFt2UU6w00w,2405
+predictnow/find_files_with_specific_extensions.py,sha256=Poib6XApPTwS0Sy50l5n_T6TyQ5fhDBuvMkOCjVILQQ,554
+predictnow/notifier.py,sha256=IOtmTdtWO4w-SNx_PctZKziQSE7r-zp9v0TMO4FfdBQ,1308
+predictnow/pdapi.py,sha256=zO06CuJnEymo8lGTla3TErKEQev17M5EJl4xvA95oNo,14519
+predictnow/predict_result.py,sha256=HqmUSU1by1R2bs_g_KUcKkurtLCq_Sjc__0rLMd1fzs,623
+predictnow/training_result.py,sha256=uAzkBYBCicB_BwnKu_sAdYtZOjstm0MlZmhf3-jeVDg,2032
+predictnow_client-0.0.4.dist-info/LICENSE,sha256=2MduE8VGoc75bBo_8fgPmsUeh9OS9a1vufE5H3bZY18,54
+predictnow_client-0.0.4.dist-info/METADATA,sha256=u0p9FF0iNWKTkFT_Q7JxbSUaaUz5plEfLITE6sFHNE8,2987
+predictnow_client-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+predictnow_client-0.0.4.dist-info/top_level.txt,sha256=M7eh0bNs2WSJzEekxDtwW-FGycM_iSkOB-aDX6Ceivo,11
+predictnow_client-0.0.4.dist-info/RECORD,,
