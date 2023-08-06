@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: transpak
+Version: 0.2.0
+Summary: Binary packaging and compression library for PQM-800 transient data 
+Home-page: None
+Author: Christoph Kattmann
+Author-email: christoph.kattmann@bss-hs.de
