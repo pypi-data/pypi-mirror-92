@@ -1,0 +1,60 @@
+Metadata-Version: 1.2
+Name: unfccc_di_api
+Version: 0.1.0
+Summary: Python wrapper around the Flexible Query API of the UNFCCC.
+Home-page: https://github.com/pik-primap/unfccc_di_api
+Author: Mika Pflüger
+Author-email: mika.pflueger@pik-potsdam.de
+License: Apache Software License 2.0
+Description: =============
+        UNFCCC DI API
+        =============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/unfccc_di_api.svg
+                :target: https://pypi.python.org/pypi/unfccc_di_api
+        
+        .. image:: https://readthedocs.org/projects/unfccc-di-api/badge/?version=latest
+                :target: https://unfccc-di-api.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Python wrapper around the `Flexible Query API <https://di.unfccc.int/flex_annex1>`_ of
+        the UNFCCC.
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://unfccc-di-api.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * High-level API to query all information for a given party.
+        * Low-level API to selectively query information with the same resolution as in the
+          UNFCCC web query tool.
+        
+        
+        =========
+        Changelog
+        =========
+        
+        0.1.0 (2021-01-22)
+        ------------------
+        
+        * First release on PyPI.
+        * Convert API wrapper into standalone Python package.
+        
+Keywords: unfccc_di_api
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
