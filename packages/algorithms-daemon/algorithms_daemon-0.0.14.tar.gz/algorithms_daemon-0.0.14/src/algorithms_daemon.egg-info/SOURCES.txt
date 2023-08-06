@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/algorithms_daemon/WorkerBroker_pb2.py
+src/algorithms_daemon/WorkerBroker_pb2_grpc.py
+src/algorithms_daemon/__init__.py
+src/algorithms_daemon/auth.py
+src/algorithms_daemon/config.py
+src/algorithms_daemon/daemon.py
+src/algorithms_daemon/redis_cache.py
+src/algorithms_daemon/slide_source.py
+src/algorithms_daemon.egg-info/PKG-INFO
+src/algorithms_daemon.egg-info/SOURCES.txt
+src/algorithms_daemon.egg-info/dependency_links.txt
+src/algorithms_daemon.egg-info/requires.txt
+src/algorithms_daemon.egg-info/top_level.txt

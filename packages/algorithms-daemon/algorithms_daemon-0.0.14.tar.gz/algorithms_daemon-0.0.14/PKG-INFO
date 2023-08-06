@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: algorithms_daemon
+Version: 0.0.14
+Summary: A daemon of conriander python algorithm, communicate progress or stauts to AgentService. 
+Home-page: https://github.com/pypa/sampleproject
+Author: rwecho
+Author-email: rwecho@live.com
+License: UNKNOWN
+Description: # Algorithm daemon package of Coriander
+        
+        # build grpc python
+        
+        ```python
+        python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=.  .\WorkerBroker.proto
+        ## caution: evething generate protos to check the reference path of 'WorkerBroker_pb2_grpc'.
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
