@@ -1,0 +1,9 @@
+pce/__init__.py,sha256=4GC0D4dnhtF-TIGU0SIRbPvk4FRNXBurnzY5LwTPhJw,69
+pce/pce.py,sha256=e6D7sxIaXCURu77j1bQkZm8WRqbFqvlgkr4ovYzpcfA,14993
+pce/quad4pce.py,sha256=8IYGQY-DECSL9qSn-DORVQGExd_jl99VzNe1b5c4Vus,10031
+pce/util4pce.py,sha256=q-ApB4-yn9exWGoE3dEdyVnxIAQdGyCbwrSKN60LtHk,2159
+pce-0.1.1.dist-info/LICENSE,sha256=roa7t-zjSLkiVYzQ-HhtwZ-3nvDrcdvTezWhLT2uBGM,1070
+pce-0.1.1.dist-info/METADATA,sha256=tsrvAnj4d-NY5NTrQ6itU4vZvr2serQv00aQrgds4lg,2137
+pce-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pce-0.1.1.dist-info/top_level.txt,sha256=ryllKhPqoA00Fnpcve5r4f4gWxD34bQdPw4RqHZaRhE,4
+pce-0.1.1.dist-info/RECORD,,
