@@ -1,0 +1,16 @@
+tap_file/__init__.py,sha256=Q_kydqApj_UW1bTSpbZu5H-wswuk_Dji4A4D67CJqzw,313
+tap_file/data_stream.py,sha256=859NOE6_cdDYFKe5K2emYkdGMIUUsLMvocYjuf2MV_U,2903
+tap_file/dipole.py,sha256=AasDopuasPoTu1I-9805qLweUOZA57cVKGy8-o1Ejzg,1037
+tap_file/header_type.py,sha256=DMKYXxjx6sikRgUYFAEbMqi_wA9JbNh-7eRhnAG2b_U,121
+tap_file/profile.py,sha256=V8WTUk2qFil7V6vtokN4-fPydyO1Ql-z56yMCIVpPqc,353
+tap_file/tap_file_reader.py,sha256=ILWcpsrJmCgGs9Q9aqY7pUa8szdE-lfmURaC3kppuWc,5831
+tap_file/tap_file_writer.py,sha256=4dXUa4-gJsdeZwF-v7tEwLd7MSyd6jycVE9aWG32HN4,4406
+tap_file/tap_header.py,sha256=Bh8-0YcTnxUFJ1VQrXayH1rRQzVEXoDKk00jwVV4L3Y,1996
+tap_file/tap_object.py,sha256=zkp3puYEC9SWma2mWa-eVCwLpJGoqLoMyw7pBuenWL4,1117
+tap_file/tap_program.py,sha256=gJ2CauYWtFq755K3MACExyodinGQ3NBQOU7klQMhVfY,626
+tap_file/tap_seq_data.py,sha256=Hce3sV_vQDHyqTBGd_Zc1ymBmyVAUU-2E_azWt1kmac,1094
+tapfile-0.6.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+tapfile-0.6.dist-info/METADATA,sha256=UetCPXzpG1ywrGAMLHvvg09YYITZ6X52juzSWjfSl-g,830
+tapfile-0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tapfile-0.6.dist-info/top_level.txt,sha256=hsiiOZVkFfH7Qk5qnBqsEvMU4UnxlWcML1jdff1GceU,9
+tapfile-0.6.dist-info/RECORD,,
