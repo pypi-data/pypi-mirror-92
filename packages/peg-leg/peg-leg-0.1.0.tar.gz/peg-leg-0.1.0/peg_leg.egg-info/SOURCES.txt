@@ -1,0 +1,10 @@
+README.md
+setup.py
+peg-leg/__init__.py
+peg-leg/ast.py
+peg-leg/parser.py
+peg-leg/peg.py
+peg_leg.egg-info/PKG-INFO
+peg_leg.egg-info/SOURCES.txt
+peg_leg.egg-info/dependency_links.txt
+peg_leg.egg-info/top_level.txt
