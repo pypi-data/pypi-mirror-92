@@ -1,0 +1,90 @@
+#!python
+# -*- coding: utf-8 -*-
+# Author: Stefan Agner
+
+import argparse
+import os
+import sys
+import time
+import usb
+
+
+BITMODE_CBUS = 0x20
+
+SIO_SET_BITMODE_REQUEST = 0x0b
+
+# FTDIs CBUS bitmode expect the following value:
+# CBUS Bits
+# 3210 3210
+#      |------ Output Control 0->LO, 1->HI
+# |----------- Input/Output   0->Input, 1->Output
+
+# PyUSB control endpoint communication, see also:
+# https://github.com/pyusb/pyusb/blob/master/docs/tutorial.rst
+
+def ftdi_set_bitmode(dev, bitmask):
+    bmRequestType = usb.util.build_request_type(usb.util.CTRL_OUT,
+                                                usb.util.CTRL_TYPE_VENDOR,
+                                                usb.util.CTRL_RECIPIENT_DEVICE)
+
+    wValue = bitmask | (BITMODE_CBUS << 8)
+    dev.ctrl_transfer(bmRequestType, SIO_SET_BITMODE_REQUEST, wValue)
+
+def ftdi_find_sdremux(serial=None):
+    devs = usb.core.find(find_all=True, custom_match = \
+            lambda d: \
+                d.idVendor==0x0403 and \
+                d.idProduct==0x6015 and \
+                (d.serial_number==serial if serial else True))
+
+    devs_list = list(devs)
+    if len(devs_list) > 1:
+        print("Found the following devices:")
+        for dev in sorted(devs_list, key=lambda dev: dev.address):
+            print(f"Device: {dev.address:03d} {dev.manufacturer}, Serial: {dev.serial_number}")
+        print()
+        print("Please use --serial argument to select a device.")
+        sys.exit(1)
+
+    if len(devs_list) == 0:
+        print("No device found.")
+        sys.exit(1)
+
+    return devs_list[0]
+
+def sdmux(args):
+    dev = ftdi_find_sdremux(args.serial)
+
+    mode = args.MODE[0]
+
+    if mode == "ts":
+        ftdi_set_bitmode(dev, 0x88)
+    elif mode == "dut":
+        ftdi_set_bitmode(dev, 0x80)
+    else:
+        print("Invalid mode.")
+
+parser = argparse.ArgumentParser(description='SDReWire control utility.')
+parser.add_argument('--serial', type=str)
+
+subparsers = parser.add_subparsers(title='Sub-commands')
+
+parser_sdmux = subparsers.add_parser('sdmux', help='Commands related to SD card muxing')
+parser_sdmux.add_argument('MODE', help='Mux to ts (test system) or dut (device under test)',
+                          choices=('ts', 'dut'), nargs=1)
+parser_sdmux.set_defaults(func=sdmux)
+
+
+def main():
+    """Main program"""
+    args = parser.parse_args()
+
+    if not hasattr(args, 'func'):
+        parser.print_help()
+        sys.exit(1)
+
+    args.func(args)
+
+if __name__ == "__main__":
+    main()
+

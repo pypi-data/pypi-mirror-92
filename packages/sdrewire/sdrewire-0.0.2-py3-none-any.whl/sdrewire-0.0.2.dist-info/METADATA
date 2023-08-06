@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: sdrewire
+Version: 0.0.2
+Summary: Tool to control SDReWire, a modern SD card muxer.
+Home-page: https://github.com/agners/python-sdrewire
+Author: Stefan Agner
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: pyusb
+
+# Python tools for SDReWire
+
+This repository contains Python tools for [SDReWire](https://github.com/randomplum/sdrewire).
+Currently the command line utility `sdrewirectl` is the only utility.
+
+Muxing can be controlled using:
+```
+sdrewire sdmux ts
+sdrewire sdmux dut
+```
+
+
