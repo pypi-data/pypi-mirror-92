@@ -1,0 +1,193 @@
+Metadata-Version: 2.1
+Name: fisbar
+Version: 2.1
+Summary: Python implementation of BARFIT routine by A Sierk
+Home-page: https://gitlab.in2p3.fr/gregoire.henning/fisbar-python
+Author: Greg Henning
+Author-email: ghenning@iphc.cnrs.fr
+License: UNKNOWN
+Description: # Python implementation of A. Sierk's `BARFIT`
+        
+        Read online version: https://gitlab.in2p3.fr/gregoire.henning/fisbar-python/
+        
+        ![Version 002](badges/version.svg)
+        ![](badges/pytest.svg)
+        ![](badges/coverage.svg)
+        ![](badges/profile.svg)
+        ![](badges/mypy.svg)
+        ![](badges/pylint.svg)
+        ![](badges/flake8.w.svg)
+        ![](badges/flake8.e.svg)
+        ![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)
+        ![License CeCILL](https://img.shields.io/badge/License-CeCILL-blue)
+        
+        ## History
+        
+        Between 1984 and 2986, A. J. Sierk developped the `BARFIT` (also refered as `fisbar`) routine to compute fission barrier, ground state energy and maximum angular momentum a nucleus can sustain in the framework of the liquid drop model. 
+        
+        The routine used fitted value over a wide range of A, Z and L. 
+        In fact, it is an impressive piece of code that performs a global fit, where we would use today some kind of machine learning model.
+        The full calculation and routine is described in [*A. Sierk, Phys. Rev. C33 (1986) 2039.*](https://journals.aps.org/prc/abstract/10.1103/PhysRevC.33.2039).
+        
+        
+        The [routine](https://www-nds.iaea.org/RIPL-3/fission/fis-barrier-liquiddrop.for) is still available today from the [RIPL-3 website](https://www-nds.iaea.org/RIPL-3/) ([Readme of original routine](https://www-nds.iaea.org/RIPL-3/fission/fis-barrier-liquiddrop.readme)).
+        
+        ![Version 002](badges/version.svg)'s implementation is a transcription of a 1996 version by A. Sierk, with improved Lmax parameters and calculation of moments of inertia, communicated by T. L. Khoo.
+        
+        ## Python implementation
+        
+        The 1986 Fortran routine is old and may not compile on modern computers. However, the routine is still of great interest, as it is able to provide an estimate for a fission barrier for light elements (For heavy ones, one can find the predicted values by P.&nbsp;Moeller, A.&nbsp;J.&nbsp;Sierk, *et&nbsp;al* : "**[HEAVY-ELEMENT FISSION BARRIERS](https://t2.lanl.gov/nis/molleretal/publications/PRCFIS-2009.html)**").
+        
+        The code of is quite straightforward, so it's not too hard to translate it into python. 
+        
+        This is one implementation in python 3.6. The code is almost a line-for-line translation of the original fortran routine. As is, it is quite un-pythonic, but it makes the working, testing and checking easier when writing from the orginal code.
+        
+        
+        ### Accuracy
+        
+        The output of the code is compared to the references values given by A. Sierk in the [original Fortran file](https://www-nds.iaea.org/RIPL-3/fission/fis-barrier-liquiddrop.for). 
+        The python module was tested against theses values (`-` lines are for Fortran, `+` for python results): 
+        ```diff
+           Z,    A,    L    Egnd st  Fiss Bar  Moments of inertia   Lmax
+        -  28,  58,    0     0.00     33.14    0.816 3.603 3.608    46.1
+        +  28,  58,    0     0.00     33.14    0.816 3.603 3.603    45.69
+        -  28,  58,   25    21.36     19.50    0.778 3.662 3.662    46.1
+        +  28,  58,   25    21.36     18.41    0.778 3.663 3.663    45.69
+        -  28,  58,   40    49.66      2.97    0.724 3.648 3.650    46.1
+        +  28,  58,   40    49.66      2.23    0.723 3.646 3.647    45.69
+        -  28,  58, 46.1    59.14      0.00    0.746 3.160 3.160    46.1
+        +  28,  58, 46.1    59.11      0.01    ::nan ::nan ::nan    45.69
+        -  65, 153,    0     0.00     28.88    0.621 3.698 3.698    82.3
+        +  65, 153,    0     0.00     28.88    0.621 3.698 3.698    82.76
+        -  65, 153,   50    19.00     16.16    0.615 3.639 3.639    82.3
+        +  65, 153,   50    19.00     14.25    0.615 3.641 3.641    82.76
+        -  65, 153,   80    45.24      0.26    0.616 2.765 2.788    82.3
+        +  65, 153,   80    45.24      0.17    0.611 2.864 2.864    82.76
+        -  65, 153, 82.3    47.04      0.00    0.682 2.231 2.276    82.3
+        +  65, 153, 82.3    47.06      0.00    0.660 2.391 2.391    82.76
+        -  93, 229,    0     0.00      3.76    0.715 1.747 1.747    68.1
+        +  93, 229,    0     0.00      3.76    0.715 1.747 1.747    68.26
+        -  93, 229,   45     8.21      1.26    0.765 1.578 1.578    68.1
+        +  93, 229,   45     8.21      1.22    0.765 1.579 1.579    68.26
+        -  93, 229, 68.1    17.96      0.00    1.053 1.053 1.236    68.1
+        +  93, 229, 68.1    17.94      0.00    1.034 1.059 1.239    68.26
+        ```
+        ⚠ We notice significant differences. This is probably due to floating point precision between today's python and the Fortran used by A. Sierk to perform the fits in 1986. Therefore, the values should be not be taken at face value, but they are a good first approximation. 
+        
+        
+        ### Online version
+        
+        An online [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.in2p3.fr%2Fgregoire.henning%2Ffisbar-python/HEAD?filepath=online.ipynb)  notebook has been created to allow the execution of the code online.
+        
+        Click on the [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/git/https%3A%2F%2Fgitlab.in2p3.fr%2Fgregoire.henning%2Ffisbar-python/HEAD?filepath=online.ipynb) link sand once the notebook is started, run the only cell on the top with the `Execute` ▶ button (or the `Cell` menu and `Execute All`). The interface to enter your input Z, A and L will appear. Put in your parameters of interest and click the **Go** button. The result will appear below. If the calculation failed, the shown values will be **0**, **NaN** or **"\*\*"**
+        
+        ### Running Locally
+        
+        You can also install and run the routine on your local computer.
+        
+        #### Installation
+        
+        ##### Via pip
+        
+        The prefered way of installing the library is via `pip` by running the following command:
+        
+        ```shell
+        $ pip install fisbar
+        ```
+        
+        
+        ##### Using the `.whl` file
+        
+        Installation can be perfomed using the [dist/fisbar-2-py3-none-any.whl](dist/fisbar-2-py3-none-any.whl) file, that contain the module installation files, to be installed via :
+        ```shell
+        $ pip install dist/fisbar-2-py3-none-any.whl
+        ```
+        
+        This is useful if you need to install the software on a computer not connected to the internet, or to install a version that is not the in the PyPi registry yet.
+        
+        ##### 
+        
+        Additionnally, you can install the package by [downloading the files](dist/fisbar_002_hal.tar.gz) from gitlab and install them *by hand*. Use this method at your own risk.
+        
+        #### Running
+        
+        ##### As a standalone program
+        
+        Once installed, the module can be used as a standalone software.
+        
+        Usage:
+        
+        ```shell
+        $ python -m fisbar [-h] [--style {columns,human,dict,yaml}] Z A [L]
+        ```
+        
+        This runs the module at stand alone program. 
+        
+        Arguments are `Z`, `A` (both mandatory), `L` (default = 0) and output style.
+        
+        The style can be `columns`, `human`, `dict` (default) or `yaml`. 
+        When using `columns` output style, the results are outputed as columns following : `Z A L bfis Egs Lmax`.
+        `human` outputs the results in a readable format. `yaml` as a Yaml formated dictionnary and `dict` as a python dictionnary (also compatible with json). When a value is not computed (because the code failed), it appears either as 0 or `***`.
+        
+        
+        ##### As a python module
+        
+        The `barfit` routine can be used in a python code by importing it inside your program. For example
+        
+        ```python
+        import fisbar
+        
+        Z = 92
+        A = 238
+        L = 0
+        
+        print(fisbar.barfit(Z, A, L))
+        ```
+        
+        will output the following :
+        > `{'Z': 92, 'A': 238, 'L': 0, 'bfis': 5.025724362115567, 'elmax': 74.67630915590068, 'egs': 0.0, 'imin': 0.6824339862331981, 'imid': 1.8675734187023139, 'imax': 1.8675734187023139}`
+        > 
+        
+        The routine returns a `dict` with 
+        
+        - `Z`, `A`, and `L`: the input parameters
+        - `bfis`, `egs`, and `elmax` the computed values of Bf, Egs and Lmax.
+        - `imin`, `imid` and `imax` the computed Moments of Inertia.
+        
+        If a value is not available, or an error occured, the values returned are `NaN`.
+        
+        
+        ## Versions
+        
+        - Current: ![](badges/version.svg)
+        - 20210110: pre-version 2, developpement branch
+        - [![V001](https://img.shields.io/badge/version-001-blue.svg)](https://gitlab.in2p3.fr/gregoire.henning/fisbar-python/-/tree/version-001)
+        - [20201120](https://gitlab.in2p3.fr/gregoire.henning/fisbar-python/-/commits/dev-20201120) developpment branch. (pre-version 1)
+        
+        ## Authors
+        
+        - Greg Henning
+        
+        ## Licence 
+        
+        - [CeCILL FREE SOFTWARE LICENSE AGREEMENT](LICENSE)
+        - [Original file](https://www-nds.iaea.org/RIPL-3/fission/fis-barrier-liquiddrop.for) license :
+        ```
+        Copyright, 1986,  The Regents of the University of California.
+        This software was produced under a U. S. Government contract
+        (W-7405-ENG-36) by the Los Alamos National Laboratory, which is
+        operated by the University of California for the U. S. Department
+        of Energy.  The U. S. Government is licensed to use, reproduce,
+        and distribute this software.  Permission is granted to the public
+        to copy and use this software without charge, provided that this
+        notice and any statement of authorship are reproduced on all
+        copies.  Neither the Government nor the University makes any
+        warranty, expressed or implied, or assumes any liability
+        or responsibility for the use of this software.
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
