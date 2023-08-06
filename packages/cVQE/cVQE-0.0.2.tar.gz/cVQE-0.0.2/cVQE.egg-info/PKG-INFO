@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cVQE
+Version: 0.0.2
+Summary: A package to run Variational Quantum Eigensolvers on compressed space in Qiskit
+Home-page: https://github.com/gblazq/cVQE
+Author: Guillermo Blázquez
+License: Apache-2.0
+Description: cVQE is a collection of classes to run Variational Quantum Eigensolvers
+        with quadratic Hamiltonians on compressed space.
+        It provides variational forms, converters and initial states to be used with Qiskit Aqua's
+        algorithms.
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
