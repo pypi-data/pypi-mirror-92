@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyinfura
+Version: 0.0.2
+Summary: easy to use infura api for eth
+Home-page: https://github.com/LingNetCn/pyinfura.git
+Author: zhaofan
+Author-email: damo120@vip.qq.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,infura,pyinfura,infurapi,pyinfurapi,eth
+Platform: any

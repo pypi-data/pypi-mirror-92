@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyinfura/__init__.py
+pyinfura/infura_client.py
+pyinfura.egg-info/PKG-INFO
+pyinfura.egg-info/SOURCES.txt
+pyinfura.egg-info/dependency_links.txt
+pyinfura.egg-info/top_level.txt
