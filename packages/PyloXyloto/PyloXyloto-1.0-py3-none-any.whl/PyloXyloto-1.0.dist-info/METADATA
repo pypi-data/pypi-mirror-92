@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: PyloXyloto
+Version: 1.0
+Summary: PyloXyloto is a simple Deep learning framework built from scratch with python
+Home-page: https://github.com/am305949/PyloXyloto
+Author: Ahmed Mohamed : AinShams University
+Author-email: myloxyloto2511@gmail.com
+License: MIT
+Keywords: DeepLearning,FrameWork,NeuralNetworks,TensorFlow,Pytorch,Python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# PyloXyloto
+PyloXyloto is a simple Deep learning framework built from scratch with python that supports the main functionalities needed for a deep learning project
+## Design:
+![Design](https://user-images.githubusercontent.com/35659429/105618653-83d25300-5df2-11eb-97c6-0d5df8f1a114.png)
+
+
+
+
+
+

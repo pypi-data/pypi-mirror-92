@@ -1,0 +1,15 @@
+PyloXyloto/__init__.py,sha256=VnqxN-lLwv_de_KWx6pZt18rKtgD8hkP2Rlltkefam8,338
+PyloXyloto/activations.py,sha256=Apy0aIf_UJVo_Bx-0IpLJwTzZhpvkrPtzEkZLax6KYk,759
+PyloXyloto/data.py,sha256=POYI1BJVGmyvL5RNa-Yu01D8oiVaW0PCnFeqDw6NtIE,1743
+PyloXyloto/layers.py,sha256=J5BzMwpGRzBV-bvPtCwWPa2ovQGS7awqSXpHGmO-z9o,6718
+PyloXyloto/losses.py,sha256=OukHLOClHFw3rgR1bMAZ82EKsuE2GiVs_vQwbHbfO3E,1969
+PyloXyloto/metrics.py,sha256=IIKrCBJwqIO2B4LdgbOfunvsMB9Ht0rbhO2FwYXsd1k,2836
+PyloXyloto/model.py,sha256=jK7NdNo4BwI7CekS_SNatYYBQRjYe8Sy8NfozuPC710,682
+PyloXyloto/net.py,sha256=1k0tTOY2u8JCoPVn7RORmputdQfSmVg8n4U1ALlQzds,2817
+PyloXyloto/utils.py,sha256=4wYfrJoqKYmtdSgTsMUtGESysJbQcps21uhAq4FCrAQ,3423
+PyloXyloto/visualization.py,sha256=38lkuljD-E3xfqHVXas8s7V9-UHJ2E9MvgLBgphVqgU,2328
+PyloXyloto-1.0.dist-info/LICENSE.txt,sha256=ym4cwXLlsTNN239xBbnZK8Ygl7VObgqzlp8ZLPXq-f4,1095
+PyloXyloto-1.0.dist-info/METADATA,sha256=h-XAVWEX4UJLuQ5bgS3pjCgUvjAQ8OTOSYIMnlVWEes,1238
+PyloXyloto-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyloXyloto-1.0.dist-info/top_level.txt,sha256=rLyCg7e4uSQ3L2Ux2kbS00Dc6rO0-8BlsCra0IwViTo,11
+PyloXyloto-1.0.dist-info/RECORD,,
