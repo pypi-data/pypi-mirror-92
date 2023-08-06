@@ -1,0 +1,17 @@
+threema.gateway-4.0.0-py3.9-nspkg.pth,sha256=qd1UzxmNpr3JD62FTKnKzJgGyR11xyvunFpW_DfzpEM,544
+threema/gateway/__init__.py,sha256=Pja0u9bWaK5JkkKFXEjgDIEKjv9hiYtCxiDxq_ycDTY,1266
+threema/gateway/_gateway.py,sha256=ZamTIPtqE7e59ZrRkl8nWCApuBJbGP47fUiVdIDr8qY,11913
+threema/gateway/e2e.py,sha256=j3DVBaNQe59Txuz2-EcS9NwnrMLZaSSyy8-3Fv4TWv4,45194
+threema/gateway/exception.py,sha256=CAe035euIq9Iu2hhIc2nC_pFTBVF7XGcifBKikSF3zQ,5888
+threema/gateway/key.py,sha256=IZuRf8ijs_F2xgcnVvYQJJGJJAyQs1ws4IFL4fHmPN8,4302
+threema/gateway/simple.py,sha256=tXH6mgSxjWnQaZzd-qbHBWlBrRQy4s0Gnq5z3a1rFXI,2559
+threema/gateway/util.py,sha256=YW6hVQ5NlYsVO0MAhhi-YgCoW_WwH8mDZKAPwFbMhcA,13741
+threema/gateway/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+threema/gateway/bin/gateway_client.py,sha256=ms4b5ZFkVJ0eyB6Ua1kYSUiRbgno84N78UEyAtF6lsQ,17383
+threema.gateway-4.0.0.dist-info/LICENSE,sha256=W6UxClWQujrsXUjFAW4PqH3DZWt1ow9oeiQfiPihZpg,1080
+threema.gateway-4.0.0.dist-info/METADATA,sha256=OMeOcBYu_fye145NJuLdgdOCj5Bdc28tRXwpnJj_3cs,9544
+threema.gateway-4.0.0.dist-info/WHEEL,sha256=B09NsdGOdZiI32_KrgwK1MnCL-cG6x4ZOqzCPF_xWRI,150
+threema.gateway-4.0.0.dist-info/entry_points.txt,sha256=AxKT9Kf_8q1Cuumr7uIHSpR0MRVspUyxdY-NRCSoKQo,77
+threema.gateway-4.0.0.dist-info/namespace_packages.txt,sha256=jCLePQNggSbSbR7bikgwgkwXcRR3dJeZ-usqY0x-gBg,8
+threema.gateway-4.0.0.dist-info/top_level.txt,sha256=jCLePQNggSbSbR7bikgwgkwXcRR3dJeZ-usqY0x-gBg,8
+threema.gateway-4.0.0.dist-info/RECORD,,
