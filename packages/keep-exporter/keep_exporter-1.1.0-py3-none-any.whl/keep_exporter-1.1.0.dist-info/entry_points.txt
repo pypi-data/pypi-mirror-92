@@ -1,0 +1,3 @@
+[console_scripts]
+keep_export=keep_exporter.export:main
+
