@@ -1,0 +1,10 @@
+#!/Users/subho/ENV/syntribos/bin/python
+# PBR Generated from 'console_scripts'
+
+import sys
+
+from syntribos.runner import entry_point
+
+
+if __name__ == "__main__":
+    sys.exit(entry_point())
