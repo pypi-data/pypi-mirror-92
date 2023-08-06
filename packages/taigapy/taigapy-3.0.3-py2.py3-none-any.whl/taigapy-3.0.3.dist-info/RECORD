@@ -1,0 +1,12 @@
+taigapy/__init__.py,sha256=lsQXerLvLHcTZnJalawnSZs9oMrNXjNjFeYEN34CEUI,35227
+taigapy/custom_exceptions.py,sha256=jBA0Poz64sjxCOOxWvgzOhAYJsggM7D40-j-4cDAv5g,1331
+taigapy/figshare.py,sha256=nDbHT9IQw7-9D0nds0P1C5FmWKCquuSoQjLRNfhLNgM,1565
+taigapy/taiga_api.py,sha256=IDW5xjhFjW5BjVA7RGnKfsyAIfa6rB5_9ID4okRqetg,11091
+taigapy/taiga_cache.py,sha256=l0TfrGPc0NrqCbsCWn5JK6xjKUFXHM1Ms2Zfc_uIfrI,13125
+taigapy/types.py,sha256=ScAjs2h7it0Md_ay9h-Ah2K5yTEWfAaCe8s2csYNezU,7644
+taigapy/utils.py,sha256=xghpTCuYrrTdl7N9KIH86Hv1FCq7lOwvPzW_jDjJBoA,3610
+taigapy-3.0.3.data/scripts/taigaclient,sha256=gLqKkP4yypszbtbk7p3UEdg3IOFl0K0-E__kW7uI038,4393
+taigapy-3.0.3.dist-info/METADATA,sha256=f45SGnd1kpPD8UvDcaIuFfpZkLnatZ2w-lQObK97Mqw,6000
+taigapy-3.0.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+taigapy-3.0.3.dist-info/top_level.txt,sha256=zFScc_q5kdtKCrQudkLQr9dVrC9hSZ9BVZvGFpCWw5c,8
+taigapy-3.0.3.dist-info/RECORD,,
