@@ -1,0 +1,13 @@
+tru/__init__.py,sha256=fXkkeVJyc4r0R_8ri_MScQJNHb8uX0Cvrrw6wAV4BPg,149
+tru/cache_exec.py,sha256=l6Ob56_CEd_ZRKzTw0qZW7URl47LpnCYreP_ljs9R9o,1095
+tru/global_vars.py,sha256=gecqiNJSs_ftLEaYFkDBm8-o7WSlu-_hDexswYUV6pc,41
+tru/io.py,sha256=XhrKV6N2DBYqMm5-SN1kEHucTr30sqpPX1wAJ3ZTs3k,1805
+tru/math.py,sha256=TCQ0qyosoVuGJAg0WhZl-4-DlbdX_LFhIa6iXXfl2Hg,234
+tru/shell.py,sha256=vI04KT-SnAsrpLEgnqFL56LTAXfSKDDOyPLwzacbTYM,1810
+tru/tru.py,sha256=qzs4W1Mk43bwjMIjKogURAMJkGwVvoeTilJfa2FLIHQ,97
+tru-0.0.5.dist-info/LICENSE.txt,sha256=MFn_2j4rSHK23jCOB8m0A_4drg5Rdd2DsmZBjL2--ZE,1068
+tru-0.0.5.dist-info/METADATA,sha256=8c_GWMKKz_PQjGRLi7P3E3UFv4qX5ArmUpkJB7krkB0,386
+tru-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tru-0.0.5.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+tru-0.0.5.dist-info/top_level.txt,sha256=T4KNbsAnJr4bHJ9KkPJHPsUUH7_9J4S34cb3G_m2z30,4
+tru-0.0.5.dist-info/RECORD,,
