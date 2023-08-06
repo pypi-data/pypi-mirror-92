@@ -1,0 +1,6 @@
+humon
+pygccxml>=2.0.1
+
+[dev]
+check-manifest
+twine
