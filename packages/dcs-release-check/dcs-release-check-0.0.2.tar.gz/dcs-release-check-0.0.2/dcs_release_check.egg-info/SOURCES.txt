@@ -1,0 +1,13 @@
+pyproject.toml
+setup.cfg
+setup.py
+dcs_release_check.egg-info/PKG-INFO
+dcs_release_check.egg-info/SOURCES.txt
+dcs_release_check.egg-info/dependency_links.txt
+dcs_release_check.egg-info/entry_points.txt
+dcs_release_check.egg-info/requires.txt
+dcs_release_check.egg-info/top_level.txt
+release_check/__init__.py
+release_check/cli.py
+release_check/constants.py
+release_check/utils.py

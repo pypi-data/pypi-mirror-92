@@ -1,0 +1,10 @@
+beautifulsoup4
+python-dateutil
+requests
+tabulate
+toml
+
+[develop]
+black
+pep517
+twine
