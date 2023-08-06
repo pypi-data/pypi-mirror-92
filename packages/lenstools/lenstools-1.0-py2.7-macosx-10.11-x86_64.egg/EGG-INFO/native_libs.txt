@@ -1,0 +1,6 @@
+lenstools/extern/_design.so
+lenstools/extern/_gadget2.so
+lenstools/extern/_nbody.so
+lenstools/extern/_nicaea.so
+lenstools/extern/_pixelize.so
+lenstools/extern/_topology.so
