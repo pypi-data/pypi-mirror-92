@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: python_llk_model
+Version: 0.0.2
+Summary: it is a test!
+Home-page: http://iwhynot.com
+Maintainer: llk
+Maintainer-email: 2838132019@qq.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
