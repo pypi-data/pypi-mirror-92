@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: beta-beam
+Version: 0.0.1
+Summary: My last hope to get a degree
+Home-page: https://github.com/patod01/beta-beam
+Author: patod01
+Author-email: patod01@telegmail.com
+License: WTFPL
+Description: this is __β-beam__ stuff and like that...
+        
+            pip install beta-beam
+        
+        ojala funionarac
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
