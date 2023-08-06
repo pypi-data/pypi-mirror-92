@@ -1,0 +1,3 @@
+[console_scripts]
+asterisk_exporter = asterisk_exporter.app:cli
+
