@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pyncentral
+Version: 0.0.0.2
+Summary: Python api to access Solarwinds NCentral SOAP API
+Home-page: https://github.com/RenierM26/pyncentral
+Author: Renier Moorcroft
+Author-email: RenierM26@users.github.com
+License: GPL-3.0 License
+Description: This package allows access to Solarwinds NCentral API. Please view readme on github
+Platform: UNKNOWN
+Requires-Python: >=3.6
