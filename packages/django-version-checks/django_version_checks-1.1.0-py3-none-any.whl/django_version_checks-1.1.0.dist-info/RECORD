@@ -1,0 +1,9 @@
+django_version_checks/__init__.py,sha256=6n7U3XRbI5-pAA9ByRXckEqWn6Lyi2vgIcO8jQ_SkX8,126
+django_version_checks/apps.py,sha256=DkRREj0Uf0DI-S2LwGWGAfIuAhgTjY5ndsRyv1r50N8,581
+django_version_checks/checks.py,sha256=6C8HmGK7T6E5X8wFAB30lBX5GGf6oArnxloxk5_u6V0,7637
+django_version_checks/compat.py,sha256=qZETrtIDAYagoeo_xwV4ZEaDRoE6sgrhWL9oYyUoyh8,383
+django_version_checks-1.1.0.dist-info/LICENSE,sha256=SCABx5luXM0TahLbPpAy3dMBDkRxqzPKsabkfA7m3_Y,1074
+django_version_checks-1.1.0.dist-info/METADATA,sha256=FJFYGny5vxuIx_0weDszdAZ_zH4dRYhXisZ_l7Cygsw,8690
+django_version_checks-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_version_checks-1.1.0.dist-info/top_level.txt,sha256=vdpJjeml8R7o3oFjivoIWnGXNZLlNQ8t8KMpf8P7Qyc,22
+django_version_checks-1.1.0.dist-info/RECORD,,
