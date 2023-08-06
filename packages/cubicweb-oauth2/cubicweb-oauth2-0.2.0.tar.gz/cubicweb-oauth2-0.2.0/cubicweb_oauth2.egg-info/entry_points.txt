@@ -1,0 +1,3 @@
+[cubicweb.cubes]
+oauth2 = cubicweb_oauth2
+

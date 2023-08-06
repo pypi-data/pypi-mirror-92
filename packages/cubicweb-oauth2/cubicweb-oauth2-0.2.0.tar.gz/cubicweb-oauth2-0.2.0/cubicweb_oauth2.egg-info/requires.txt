@@ -1,0 +1,3 @@
+cubicweb[pyramid]>=3.28.2
+authlib
+requests
