@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+event/__init__.py
+event/key.py
+event/mouse.py
+event/examples/__init__.py
+event/examples/mouseController.py
+event_simulate.egg-info/PKG-INFO
+event_simulate.egg-info/SOURCES.txt
+event_simulate.egg-info/dependency_links.txt
+event_simulate.egg-info/top_level.txt

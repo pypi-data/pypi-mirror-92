@@ -1,0 +1,78 @@
+模块名称: event - 切勿使用import userevent !
+
+新增功能: 增加了示例:鼠标控制器(examples\mouseController.py)
+所包含模块 Included modules: 
+============================
+
+key.py - 模拟键盘事件
+"""""""""""""""""""""
+包含的函数 Functions:
+
+keydown(keycode_or_keyname)::
+
+    模拟键按下。
+    keycode_or_keyname:按键名称或该按键的键码值
+
+keypress(keycode_or_keyname, delay=0.05)::
+
+    模拟按键。
+    keycode_or_keyname:按键名称或该按键的键码值
+    delay:键按下与释放之间的的间隔时间,间隔时间越小,按键速度越快。
+
+keyup(keycode_or_keyname)::
+
+    模拟键释放。
+    keycode_or_keyname:按键名称或该按键的键码值
+
+
+mouse.py - 模拟鼠标事件
+"""""""""""""""""""""""
+包含的函数 Functions:
+
+click()::
+
+    模拟鼠标左键单击
+
+dblclick(delay=0.25)::
+
+    模拟鼠标左键双击
+
+get_screensize()::
+
+    获取当前屏幕分辨率。
+
+getpos()::
+
+    获取当前鼠标位置。
+    返回值为一个元组,以(x,y)形式表示。
+
+move(x, y)::
+
+    模拟移动鼠标。
+    与goto不同,move()*产生*一个鼠标事件。
+
+right_click()::
+
+    模拟鼠标右键单击。
+
+示例代码1:
+.. code-block:: python
+
+    #模拟按键Alt+F4关闭当前窗口
+    from event.key import *
+    keydown("Alt")
+    keydown("f4")
+    keyup("f4")
+    keyup("alt")
+
+示例代码2:
+.. code-block:: python
+
+    #使用Aero Peek预览桌面。(Win7及以上系统)
+    from event import mouse
+    x,y=mouse.get_screensize()
+    mouse.move(x,y) #将鼠标移至屏幕右下角
+    mouse.click() #模拟鼠标点击
+
+作者 Author:
+*七分诚意 qq:3076711200 邮箱:3416445406@qq.com*
