@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: LoProp
+Version: 0.3.1
+Summary: LoProp implementation for Dalton
+Home-page: UNKNOWN
+Author: Olav Vahtras
+Author-email: vahtras@kth.se
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: blocked-matrix-utils
+Provides-Extra: dalton
+Requires-Dist: daltools ; extra == 'dalton'
+Provides-Extra: vlx
+Requires-Dist: h5py ; extra == 'vlx'
+
+UNKNOWN
+
+

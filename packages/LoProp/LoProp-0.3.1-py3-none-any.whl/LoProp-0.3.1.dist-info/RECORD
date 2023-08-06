@@ -1,0 +1,11 @@
+loprop/__init__.py,sha256=7hLSYnGEe_ePOO5oUEr5zWEAXWsqDb-50G_CfpcI51o,21
+loprop/__main__.py,sha256=OiRThaumB3w3L8BjfKebGi0fuKPldqq9TbPMvmLR1W4,7037
+loprop/core.py,sha256=iuSWE2zZ38S-Gu1vZDHcZhdfy85e6V0cNcVMl79MznE,51777
+loprop/dalton.py,sha256=nurFTECmywbQFSdO19s9tUq4UdAsW-1mbd_ckamAl84,4975
+loprop/veloxchem.py,sha256=WGBsHGE_IQ59FWM3sCuODqX8SoqF6vgvSRa3xnNeHb4,3653
+LoProp-0.3.1.dist-info/LICENSE,sha256=1i8GWDCqNznMAxFWuWkIBcey6BG0oXjItKzYcl1WHJQ,35142
+LoProp-0.3.1.dist-info/METADATA,sha256=d46d-xooSoh8fTWg28WePgMjWUBSYIysvHLLBlwBqrY,367
+LoProp-0.3.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+LoProp-0.3.1.dist-info/entry_points.txt,sha256=hhNZ-kUd4HDEHQCRf1s6E8jn2KE7YzbYw-hvYYOb1yw,49
+LoProp-0.3.1.dist-info/top_level.txt,sha256=-mGaBL0RMPCRUhp9ev4lJXIWXrOufYujYIgDA6pEx7g,7
+LoProp-0.3.1.dist-info/RECORD,,
