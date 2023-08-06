@@ -1,0 +1,15 @@
+simple_mailer/captcha.py,sha256=ITfVqRniRexiw4KJG7fn3GvnMx-ysdUcXT2qyGh4iNw,4308
+simple_mailer/checks.py,sha256=VYGhPvxzAC4zVx3fpT-HGrT5mEV6fgss4dGlD-U8ebc,1026
+simple_mailer/config.py,sha256=_mNItE0pRHzE2LE5D_XbNH3y6mk-CKeCV7u3Jh9icLQ,5157
+simple_mailer/dispatcher.py,sha256=6NGtWCKtQ2A7VIbjW6EUsf9trPw1efW485O4JjOCMvQ,6019
+simple_mailer/exceptions.py,sha256=R4VGIbaqq06nWeauxM5hY-EqaPuUH8VlM435jICSKl0,1237
+simple_mailer/http.py,sha256=-n-mJbyaaBCd-rUIXMQymAq1Wjp2FuVfJUzzReQ_SHE,206
+simple_mailer/mailer.py,sha256=YrRyiyxEmtbHLF17aOHbpjbbGi5gcmIiJqupxwotLbQ,2904
+simple_mailer/utils.py,sha256=8EqNTcru7LqeGvLdRK6sGiJ5rVy6yP1Vo1ecrkIlJ6c,697
+simple_mailer/web.py,sha256=RXJFUPNHxKzjDtW8pPPnE5Ehh0GCWGSA0vqJvJ6AqGQ,2443
+simple_mailer-1.1.1.dist-info/LICENSE,sha256=l4ciPGU_rAgyEWJ4n9sWAPLO_wG4LJj0s4wXurrh7HI,1058
+simple_mailer-1.1.1.dist-info/METADATA,sha256=n1FbkTGIcYqpbMLsGKfSrPG-2BVed68lN0dHGaGKkc8,6865
+simple_mailer-1.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+simple_mailer-1.1.1.dist-info/entry_points.txt,sha256=V3sI7b5tXu2gN6l9l-hLS9PNAoBESOboS53V5nSYtZ4,58
+simple_mailer-1.1.1.dist-info/top_level.txt,sha256=ELKbXKnCGQ2NhEKW4LeXeHXLaDDEGK69M30YA9wdP6U,14
+simple_mailer-1.1.1.dist-info/RECORD,,
