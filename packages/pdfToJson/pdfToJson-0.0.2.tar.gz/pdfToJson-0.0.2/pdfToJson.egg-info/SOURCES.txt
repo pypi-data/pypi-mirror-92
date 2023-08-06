@@ -1,0 +1,10 @@
+README.md
+setup.py
+pdfToJson/__init__.py
+pdfToJson/client.py
+pdfToJson/pdfClient.py
+pdfToJson/xmlToJson.py
+pdfToJson.egg-info/PKG-INFO
+pdfToJson.egg-info/SOURCES.txt
+pdfToJson.egg-info/dependency_links.txt
+pdfToJson.egg-info/top_level.txt
