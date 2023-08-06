@@ -1,0 +1,3 @@
+[console_scripts]
+pycmdtf=pycmdtf.cli:cli_main
+
