@@ -1,0 +1,12 @@
+README.md
+setup.py
+datasette_leaflet/__init__.py
+datasette_leaflet.egg-info/PKG-INFO
+datasette_leaflet.egg-info/SOURCES.txt
+datasette_leaflet.egg-info/dependency_links.txt
+datasette_leaflet.egg-info/entry_points.txt
+datasette_leaflet.egg-info/requires.txt
+datasette_leaflet.egg-info/top_level.txt
+datasette_leaflet/static/leaflet-v1.7.1.css
+datasette_leaflet/static/leaflet-v1.7.1.js
+datasette_leaflet/static/leaflet-v1.7.1.min.js
