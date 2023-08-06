@@ -1,0 +1,10 @@
+aifig/__init__.py,sha256=JSQQfc18e_6iAdb17piv65_Zam-0xE0sbjY5UpyuYAo,374
+aifig/draw.py,sha256=KPvFpl5kho5PLUT74vUNsZ4Gba5s83Jmf59y4a98T3E,2561
+aifig/element.py,sha256=sQbGFuavSdH9i2G5QjrLi2BKyMvt_FnVAh6_ZjSmOAE,10379
+aifig/figure.py,sha256=0seP4BRps3TXxIHuYOcnJ0JQV5a5KOPajAjHR8V8Q0k,7829
+aifig/graph.py,sha256=Ydv95_v68Ek1ODLEmXdYv-HfMEZ4ZlTpY9GOhj77z2U,1720
+aifig-0.1.7.dist-info/LICENSE,sha256=ZXgRke7XnQp__FU3YKeNXSM8lEHA-ma7V_yKFOA_aK8,1069
+aifig-0.1.7.dist-info/METADATA,sha256=00SXTsQ5J1ke7aJBT8lq-vezfU-Lte8G_eSrnP09PPQ,6107
+aifig-0.1.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aifig-0.1.7.dist-info/top_level.txt,sha256=8rzk4GiBQRdM_OudQHiqfosIepwEhMiSiIIP29l0yvs,6
+aifig-0.1.7.dist-info/RECORD,,
