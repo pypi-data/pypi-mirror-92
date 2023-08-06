@@ -1,0 +1,11 @@
+flyvec/__init__.py,sha256=Wqh_zM6TRgvtf7j90JofE4zlFUWPZ2hLUdrYou0RB1A,128
+flyvec/_nbdev.py,sha256=JIIhuVFVNjFx2Izo9tk1BRClYkxe59qgsLc25l25tSw,1248
+flyvec/core.py,sha256=N9Fyr72PCUvD6SDgTLn-1aEz-MtWY1s-Te5HEN43zvo,6288
+flyvec/downloader.py,sha256=fmonUnFdWuYfvK7U_tQ2Es9Lrn52Wl3Gmv8KywlREUo,2932
+flyvec/tokenizer.py,sha256=CI3i74lvfjqHQwe3UJbfK7saG4mghsFZzfNwXAls6gc,7522
+flyvec-0.0.14.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flyvec-0.0.14.dist-info/METADATA,sha256=w9qVqzIqpFQX5Z86q1gCOvkZCXhZQTbBOj8uWXBLdnQ,5312
+flyvec-0.0.14.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flyvec-0.0.14.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+flyvec-0.0.14.dist-info/top_level.txt,sha256=_URl4dWN5wpJw8kLlKXxUbCCwerWJBBGEVkmtHIRPdY,7
+flyvec-0.0.14.dist-info/RECORD,,
