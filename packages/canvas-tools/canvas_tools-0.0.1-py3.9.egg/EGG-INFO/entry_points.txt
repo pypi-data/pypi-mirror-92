@@ -1,0 +1,3 @@
+[console_scripts]
+canvas_group_csv = canvas_tools.canvas_group_csv:main
+
