@@ -1,0 +1,6 @@
+jax==0.2.9
+jaxlib==0.1.59
+tensorflow_probability[jax]
+
+[:python_version < "3.7"]
+dataclasses
