@@ -1,0 +1,13 @@
+git_annex_remote_googledrive/__init__.py,sha256=QY2PCzzdkWU-b43-5vyx1DIp7dfFef2cNNm5I58tLjQ,714
+git_annex_remote_googledrive/__main__.py,sha256=o7qQpWy9GjkjfFFuh5NYW9Wvrv6GH6RRBo7LHPrrsmI,503
+git_annex_remote_googledrive/_version.py,sha256=ECw3TjfjupoUx8a-lgqHR5MQZiLQvc3pP0PLe_xGbWk,497
+git_annex_remote_googledrive/google_remote.py,sha256=87hJU6EvU0rXaXizVaoJC8pcqTmCE4MKmV0CxCt9Xk0,15740
+git_annex_remote_googledrive/keys.py,sha256=g2KOBGtrDMPWuDz-TJe6UxBT-h6HNgKzkItNzoVjmko,10392
+git_annex_remote_googledrive/repository_layout.py,sha256=wNoHuHPjBr7TWeN69nETlVU2cxF-XvycEihiiPjwrPA,242
+git_annex_remote_googledrive/run.py,sha256=52Q9pGKsbdTmc_NXeLcUitp_-ZsL25Yffy78J3zhv5M,7693
+git_annex_remote_googledrive-1.2.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+git_annex_remote_googledrive-1.2.4.dist-info/METADATA,sha256=idI5yKW18QhGcgkH0v9yRct77FRpXbilxHoFPctDaxA,9051
+git_annex_remote_googledrive-1.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+git_annex_remote_googledrive-1.2.4.dist-info/entry_points.txt,sha256=X62MGisavHwEt95TW7nikXRPAeRhiwvlT-x-qyuxrAo,88
+git_annex_remote_googledrive-1.2.4.dist-info/top_level.txt,sha256=EstGJ9PasSQPTyUL3amG3CNvRLmUdxQLlLssY5mPHfI,29
+git_annex_remote_googledrive-1.2.4.dist-info/RECORD,,
