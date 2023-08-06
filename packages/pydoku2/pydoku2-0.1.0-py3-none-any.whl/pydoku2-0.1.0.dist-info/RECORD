@@ -1,0 +1,8 @@
+pydoku2/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pydoku2/image.py,sha256=e8Mi67ecEMWwdF-iYO2nalzCQa_HUwd5RwfYiEJE0hw,8020
+pydoku2/solver.py,sha256=P9-NoH0TTFFqCAZfFi2zFzXRcARYLzCGEuzrjoJDSwE,2188
+pydoku2/sudoku-solver.py,sha256=OSID-6eWZ4iTVHGiMxMESaFydWrofrtjAbGXQ6qX_K0,6339
+pydoku2/trainer.py,sha256=aimSt3dD2YB-W1G9eIdAFzMSCauga4hn32jn6kCDTnk,2416
+pydoku2-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydoku2-0.1.0.dist-info/METADATA,sha256=kaDRFxbZdzG7R4fXaSNNliGl1zlX29bitBy5ESV67eM,511
+pydoku2-0.1.0.dist-info/RECORD,,
