@@ -1,0 +1,8 @@
+README.md
+setup.py
+matrixObj/Matrix.py
+matrixObj/__init__.py
+matrixObj.egg-info/PKG-INFO
+matrixObj.egg-info/SOURCES.txt
+matrixObj.egg-info/dependency_links.txt
+matrixObj.egg-info/top_level.txt
