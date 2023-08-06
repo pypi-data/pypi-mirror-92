@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: eyecu-good-guys
+Version: 0.2.11
+Summary: 
+Author: Oguz Vuruskaner
+Author-email: ovuruska@outlook.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: torch (==1.7.1)
