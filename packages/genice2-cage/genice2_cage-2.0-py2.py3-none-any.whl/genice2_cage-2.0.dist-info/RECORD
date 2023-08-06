@@ -1,0 +1,8 @@
+genice2_cage/__init__.py,sha256=h5e9twGJ83qmo-hsJYG26v5IvIINw4VIdz7h_FlFN8o,59
+genice2_cage/formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genice2_cage/formats/cage.py,sha256=ZkacygnqXZEM36dxEObLaodHGvmFeTY5GjlVGWDPsy0,12383
+genice2_cage-2.0.dist-info/METADATA,sha256=370B30LaYE44MevJugXBBcR_OWdhzsAgkcLoXLicjJc,3002
+genice2_cage-2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+genice2_cage-2.0.dist-info/entry_points.txt,sha256=wlD1CMus4kAaC52R6PaCkMowa-sFZq1BXYj8dVDBYhs,51
+genice2_cage-2.0.dist-info/top_level.txt,sha256=vXpPEQ3SJQJ4VVaqOKA9I0RcaQH5VU_4Q7DYz8AkQJ8,13
+genice2_cage-2.0.dist-info/RECORD,,
