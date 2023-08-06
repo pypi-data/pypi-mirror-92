@@ -1,0 +1,10 @@
+persistent
+setuptools
+six
+zope.exceptions
+zope.interface
+zope.location
+
+[test]
+zope.testing>=3.8
+zope.testrunner
