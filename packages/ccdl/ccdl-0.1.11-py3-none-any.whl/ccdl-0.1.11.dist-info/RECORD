@@ -1,0 +1,13 @@
+ccdl/__init__.py,sha256=YPmiuaYkFyiZBWg1jJUMJ1fq8slSj8JILvOv482_uR8,554
+ccdl/binb.py,sha256=iqhHX8erVOiQPqNbAsVCgQbHT-6-R3yUJ82UY2k6r1c,24837
+ccdl/comic_action.py,sha256=tgbqKe6-WWT6dV4UF-rpyPy_nq2Z0og6TMY3olXTipY,4875
+ccdl/comic_earthstar.py,sha256=KpF9Lg6c1b-4HrhhSVgLO4oPEPpd-39qAP91IC-0Z5Y,6386
+ccdl/comic_walker.py,sha256=dq0Mst6bdbqpv_-TA3SeFvwzlzyMxzr8AFLCxnE0WhM,2799
+ccdl/ganma.py,sha256=VZiNzl-3yCg1NtL6vh9KGUKtQqWJEwQ1n-AJ_nsXwXY,6714
+ccdl/urasunday.py,sha256=fMJ_HnvO-2uI25suRSfIR541OecqPeOtXMwNnPdm3vI,2108
+ccdl/utils.py,sha256=aoDwhFJwt2nFH8RlMwnM8MRWt4djKR4WuEIUtBDZ9XM,8454
+ccdl-0.1.11.dist-info/LICENSE,sha256=8FENO50SI8Rej90rSScOyHNP_0kcf30blI7nAWLhzv8,1210
+ccdl-0.1.11.dist-info/METADATA,sha256=jZsDkCS1JJj2dq6OqI5xkwbj8Kt-8D3wywx9GHgq3hc,1389
+ccdl-0.1.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ccdl-0.1.11.dist-info/top_level.txt,sha256=xyhOLXBURgvWXnS3odvthabbhTfQxM6S2_MoG84TFBA,5
+ccdl-0.1.11.dist-info/RECORD,,
