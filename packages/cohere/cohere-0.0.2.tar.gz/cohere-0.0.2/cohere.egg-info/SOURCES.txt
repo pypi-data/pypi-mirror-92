@@ -1,0 +1,8 @@
+README.md
+setup.py
+cohere/__init__.py
+cohere/client.py
+cohere.egg-info/PKG-INFO
+cohere.egg-info/SOURCES.txt
+cohere.egg-info/dependency_links.txt
+cohere.egg-info/top_level.txt
