@@ -1,0 +1,5 @@
+[console_scripts]
+make-changelog = sql_formatter.release:make_changelog
+make-git-release = sql_formatter.release:make_git_release
+sql-formatter = sql_formatter.format_file:format_sql_files
+
