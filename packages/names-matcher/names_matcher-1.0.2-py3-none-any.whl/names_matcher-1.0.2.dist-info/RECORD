@@ -1,0 +1,12 @@
+requirements.txt,sha256=qcZB3dhhXjHLGCWCBAI2haN5lA33RS6yQJ6WmmS9gG0,60
+names_matcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+names_matcher/__main__.py,sha256=zVmj4tgaGotaXuxwEs-RgzNOxbDXTG4J0Ndh8ahLVy0,161
+names_matcher/algorithm.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+names_matcher/metadata.py,sha256=ziC5wMgIwTxZGEYLoSvoHQ9iFtHnaz3qXPS4gxD9aNE,119
+names_matcher/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+names_matcher/tests/test_algorithm.py,sha256=6mFXcqhWvOJzUnhGimOYlR2L-0pgzj-66NAD9lGHWcI,27
+names_matcher-1.0.2.dist-info/LICENSE,sha256=TMoWkMMrEHvLNV1yvP0lAmisdJhEsskiSByX5StiIxM,11342
+names_matcher-1.0.2.dist-info/METADATA,sha256=2mRNhFg8JCYEJSfXaX38ShckCi90MZMZeZ0VGKdf2-8,1128
+names_matcher-1.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+names_matcher-1.0.2.dist-info/top_level.txt,sha256=w9aH5TJEmkrNYJtQIW1AF187VOZ1Sg1iVOw3tfk_M6s,14
+names_matcher-1.0.2.dist-info/RECORD,,
