@@ -1,0 +1,16 @@
+vikingzero/__init__.py,sha256=gghNvffTZNAMZSGnRJYuAOKWhwB90k3XwLjAMuyzBLI,51
+vikingzero/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vikingzero/agents/alphago.py,sha256=W1e3jd1DvckU0lnXlut8g-jqUurQbFC2UjWcUXx-Xyo,25040
+vikingzero/agents/connect4_agent.py,sha256=XSLZkp7fB9U75RKbHnsmoyhGu9ud3-6Ui-lnq5mIVXY,9260
+vikingzero/agents/tictactoe_agents.py,sha256=LBcqykyBWFmf3Hu8K4bVqHh0V8P9Td8F7q0LnzI-j3U,11601
+vikingzero/connect4_uci_test.py,sha256=4TIQTBnnDu8RZCkkN4Bur907-PqJ75B3AM4akY3R2Fg,2718
+vikingzero/designer.py,sha256=fra8AqVmVmDM21ECanJoDGuEgPyQlzmO4TGMv2fCGWQ,13778
+vikingzero/environments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vikingzero/environments/connect4_env.py,sha256=P8YMU3YCxit7fdWAzWLMrR_1Ip27mQAuFe1scnnbf5Q,5255
+vikingzero/environments/tictactoe_env.py,sha256=KF6gDTBPlOZlcfriYklKsbtAESCzg1lBnmUykIQr0yo,6034
+vikingzero/run_agent.py,sha256=8iARF45_RiWiaUD5mYOatWlSv6ytM2FOXfZNFpJdHl0,1567
+vikingzero/search.py,sha256=gLa3KORNVRhcwH84bNTqLRO__5cEqPkNPsl2lG7FSb0,21848
+vikingzero/utils.py,sha256=yzz3L6eR8iBi2bkWyknsIX71jhli4lmw_FAjYRrXAVI,2521
+vikingzero-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+vikingzero-0.1.3.dist-info/METADATA,sha256=xcjdajQRribwaeqfzM-9HIh5dTKgQiXpTm4Ky_33a78,561
+vikingzero-0.1.3.dist-info/RECORD,,
