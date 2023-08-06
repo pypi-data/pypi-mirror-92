@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: MySQL-Tool
+Version: 1.0.6
+Summary: pymysql module use.
+Home-page: https://github.com/happyshi0402/mysql_tool.git
+Author: Wang Shifeng
+Author-email: wsf121116@163.com
+Maintainer: Wang Shifeng
+Maintainer-email: wsf121116@163.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=2.7
