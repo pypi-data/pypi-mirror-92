@@ -1,0 +1,7 @@
+pyramid
+skosprovider>=0.7.0
+
+[testing]
+pytest
+pytest-cov
+webtest
