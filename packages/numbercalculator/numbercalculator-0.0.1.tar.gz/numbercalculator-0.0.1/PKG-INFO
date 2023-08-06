@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: numbercalculator
+Version: 0.0.1
+Summary: To calculate numbers
+Home-page: UNKNOWN
+Author: Chayan Mitra
+Author-email: vectorchayanmitra@gmail.com
+License: MIT
+Description: Hi , I am Chayan and I have created this simple libary that can calculate numbers . Hope this libary will help you
+        
+        How to use it :
+        for adding - print(add(number1,number2))
+        for subtract - print(subtract(number1,number2))
+        for multiply - print(multiply(number1, number2))
+        for divide - print(number1, number2)
+        
+        
+        Change Log
+        ===================
+        
+        0.0.1 (21/01/2021)
+        ---------------------
+        - First Release
+Keywords: numbercalculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
