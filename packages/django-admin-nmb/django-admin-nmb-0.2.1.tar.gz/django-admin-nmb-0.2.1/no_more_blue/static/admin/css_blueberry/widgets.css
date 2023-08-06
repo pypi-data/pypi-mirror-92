@@ -1,0 +1,133 @@
+.selector-available h2, .selector-chosen h2 {
+    border: 1px solid #cccccc;
+}
+
+.selector-chosen h2 {
+    background: #6486c7;
+    color: #ffffff;
+}
+
+.selector .selector-available h2 {
+    background: #f8f8f8;
+    color: #666666;
+}
+
+.selector .selector-filter {
+    background: white;
+    border: 1px solid #cccccc;
+    color: #999999;
+}
+
+.selector ul.selector-chooser {
+    background-color: #ededed;
+}
+
+a.selector-chooseall, a.selector-clearall {
+    color: #666666;
+}
+
+a.active.selector-chooseall:focus, a.active.selector-clearall:focus,
+a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
+    color: #34569b;
+}
+
+.stacked ul.selector-chooser {
+    background-color: #ededed;
+}
+
+p.datetime {
+    color: #666666;
+}
+
+.datetime span {
+    color: #cccccc;
+}
+
+.timezonewarning {
+    color: #999999;
+}
+
+p.url {
+    color: #666666;
+}
+
+p.file-upload {
+    color: #666666;
+}
+
+span.clearable-file-input label {
+    color: #333333;
+}
+
+.calendarbox, .clockbox {
+    background: white;
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.calendar table {
+    background: white;
+}
+
+.calendar caption, .calendarbox h2 {
+    background: #f5dd5d;
+}
+
+.calendar th {
+    background: #f8f8f8;
+    border-bottom: 1px solid #dddddd;
+    color: #666666;
+}
+
+.calendar td {
+    border-top: 1px solid #ededed;
+}
+
+.calendar td.selected a {
+    background: #6486c7;
+    color: #ffffff;
+}
+
+.calendar td.nonday {
+    background: #f8f8f8;
+}
+
+.calendar td a:focus, .timelist a:focus,
+.calendar td a:hover, .timelist a:hover {
+    background: #6486c7;
+    color: white;
+}
+
+.calendar td a:active, .timelist a:active {
+    background: #325290;
+    color: white;
+}
+
+.calendarnav {
+    color: #cccccc;
+}
+
+.calendarnav a:link, #calendarnav a:visited,
+#calendarnav a:focus, #calendarnav a:hover {
+    color: #999999;
+}
+
+.calendar-shortcuts {
+    background: white;
+    border-top: 1px solid #ededed;
+    color: #cccccc;
+}
+
+.calendar-cancel {
+    background: #ededed;
+    border-top: 1px solid #dddddd;
+    color: #333333;
+}
+
+.calendar-cancel:focus, .calendar-cancel:hover {
+    background: #dddddd;
+}
+
+.calendar-cancel a {
+    color: black;
+}

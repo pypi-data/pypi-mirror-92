@@ -1,0 +1,15 @@
+
+.login {
+    background: #f8f8f8;
+}
+
+.login #header h1 a {
+    color: #fff;
+}
+
+
+.login #container {
+    background: #fff;
+    border: 1px solid #eaeaea;
+}
+

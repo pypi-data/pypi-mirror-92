@@ -1,0 +1,34 @@
+
+.toggle-nav-sidebar {
+    border-right: 1px solid #eaeaea;
+    background-color: #ffffff;
+    color: #447e9b;
+}
+
+[dir="rtl"] .toggle-nav-sidebar {
+    border-left: 1px solid #eaeaea;
+}
+
+.toggle-nav-sidebar:hover,
+.toggle-nav-sidebar:focus {
+    background-color: #f6f6f6;
+}
+
+#nav-sidebar {
+    border-right: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+
+[dir="rtl"] #nav-sidebar {
+    border-left: 1px solid #eaeaea;
+}
+
+#nav-sidebar .current-app .section:link,
+#nav-sidebar .current-app .section:visited {
+    color: #ffc;
+}
+
+#nav-sidebar .current-model {
+    background: #ffc;
+}
+

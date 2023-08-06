@@ -1,0 +1,133 @@
+.selector-available h2, .selector-chosen h2 {
+    border: 1px solid #ccc;
+}
+
+.selector-chosen h2 {
+    background: #79aec8;
+    color: #fff;
+}
+
+.selector .selector-available h2 {
+    background: #f8f8f8;
+    color: #666;
+}
+
+.selector .selector-filter {
+    background: white;
+    border: 1px solid #ccc;
+    color: #999;
+}
+
+.selector ul.selector-chooser {
+    background-color: #eee;
+}
+
+a.selector-chooseall, a.selector-clearall {
+    color: #666;
+}
+
+a.active.selector-chooseall:focus, a.active.selector-clearall:focus,
+a.active.selector-chooseall:hover, a.active.selector-clearall:hover {
+    color: #447e9b;
+}
+
+.stacked ul.selector-chooser {
+    background-color: #eee;
+}
+
+p.datetime {
+    color: #666;
+}
+
+.datetime span {
+    color: #ccc;
+}
+
+.timezonewarning {
+    color: #999;
+}
+
+p.url {
+    color: #666;
+}
+
+p.file-upload {
+    color: #666;
+}
+
+span.clearable-file-input label {
+    color: #333;
+}
+
+.calendarbox, .clockbox {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.calendar table {
+    background: white;
+}
+
+.calendar caption, .calendarbox h2 {
+    background: #f5dd5d;
+}
+
+.calendar th {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    color: #666;
+}
+
+.calendar td {
+    border-top: 1px solid #eee;
+}
+
+.calendar td.selected a {
+    background: #79aec8;
+    color: #fff;
+}
+
+.calendar td.nonday {
+    background: #f8f8f8;
+}
+
+.calendar td a:focus, .timelist a:focus,
+.calendar td a:hover, .timelist a:hover {
+    background: #79aec8;
+    color: white;
+}
+
+.calendar td a:active, .timelist a:active {
+    background: #417690;
+    color: white;
+}
+
+.calendarnav {
+    color: #ccc;
+}
+
+.calendarnav a:link, #calendarnav a:visited,
+#calendarnav a:focus, #calendarnav a:hover {
+    color: #999;
+}
+
+.calendar-shortcuts {
+    background: white;
+    border-top: 1px solid #eee;
+    color: #ccc;
+}
+
+.calendar-cancel {
+    background: #eee;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
+
+.calendar-cancel:focus, .calendar-cancel:hover {
+    background: #ddd;
+}
+
+.calendar-cancel a {
+    color: black;
+}

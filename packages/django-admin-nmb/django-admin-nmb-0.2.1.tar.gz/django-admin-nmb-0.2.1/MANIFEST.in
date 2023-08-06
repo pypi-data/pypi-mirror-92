@@ -1,0 +1,5 @@
+include LICENSE
+include README.rst
+recursive-include no_more_blue/static *
+recursive-include no_more_blue/templates *
+recursive-include docs *

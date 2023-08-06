@@ -1,0 +1,145 @@
+#changelist .toplinks {
+    border-bottom: 1px solid #dddddd;
+}
+
+#changelist .paginator {
+    color: #666666;
+    border-bottom: 1px solid #ededed;
+    background: #ffffff;
+}
+
+
+#changelist table tfoot {
+    color: #666666;
+}
+
+
+#toolbar {
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    background: #f8f8f8;
+    color: #666666;
+}
+
+#toolbar form input {
+    color: #333333;
+}
+
+#toolbar #searchbar {
+    border: 1px solid #cccccc;
+}
+
+#toolbar #searchbar:focus {
+    border-color: #999999;
+}
+
+#toolbar form input[type="submit"] {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
+    color: #333333;
+}
+
+#toolbar form input[type="submit"]:focus,
+#toolbar form input[type="submit"]:hover {
+    border-color: #999999;
+}
+
+#changelist-filter {
+    background: #f8f8f8;
+}
+
+#changelist-filter ul {
+    border-bottom: 1px solid #eaeaea;
+}
+
+#changelist-filter a {
+    color: #999999;
+}
+
+#changelist-filter li.selected {
+    border-left: 5px solid #eaeaea;
+}
+
+#changelist-filter li.selected a {
+    color: #4952b1;
+}
+
+#changelist-filter a:focus, #changelist-filter a:hover,
+#changelist-filter li.selected a:focus,
+#changelist-filter li.selected a:hover {
+    color: #001166;
+}
+
+#changelist-filter #changelist-filter-clear a {
+    border-bottom: 1px solid #eaeaea;
+}
+
+
+.change-list ul.toplinks .date-back a {
+    color: #999999;
+}
+
+.change-list ul.toplinks .date-back a:focus,
+.change-list ul.toplinks .date-back a:hover {
+    color: #001166;
+}
+
+/* PAGINATOR */
+
+.paginator {
+    border-top: 1px solid #dddddd;
+}
+
+.paginator a:link, .paginator a:visited {
+    background: #6486c7;
+    color: #ffffff;
+}
+
+.paginator a.showall {
+    color: #4952b1;
+}
+
+.paginator a.showall:focus, .paginator a.showall:hover {
+    color: #001166;
+}
+
+.paginator a:focus, .paginator a:hover {
+    color: white;
+    background: #001166;
+}
+
+#changelist table tbody tr.selected {
+    background-color: #ffffcc;
+}
+
+#changelist .actions {
+    background: #ffffff;
+    color: #999999;
+}
+
+#changelist .actions.selected {
+    background: #fffccf;
+    border-top: 1px solid #fffee8;
+    border-bottom: 1px solid #ecebd5;
+}
+
+
+#changelist .actions select {
+    color: #000000;
+    border: 1px solid #cccccc;
+}
+
+#changelist .actions select:focus {
+    border-color: #999999;
+}
+
+#changelist .actions .button {
+    border: 1px solid #cccccc;
+    background: #ffffff;
+    box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset;
+}
+
+#changelist .actions .button:focus, #changelist .actions .button:hover {
+    border-color: #999999;
+}

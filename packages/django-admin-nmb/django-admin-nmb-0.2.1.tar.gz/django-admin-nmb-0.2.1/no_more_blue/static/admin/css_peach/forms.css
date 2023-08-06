@@ -1,0 +1,91 @@
+
+.form-row {
+    border-bottom: 1px solid #ededed;
+}
+
+label {
+    color: #666666;
+}
+
+.required label, label.required {
+    color: #333333;
+}
+
+
+fieldset.collapsed {
+    border: 1px solid #ededed;
+}
+
+fieldset.collapsed h2 {
+    background: #f8f8f8;
+    color: #666666;
+}
+
+fieldset .collapse-toggle {
+    color: #ffffff;
+}
+
+fieldset.collapsed .collapse-toggle {
+    color: #b4862b;
+}
+
+.submit-row {
+    background: #f8f8f8;
+    border: 1px solid #ededed;
+}
+
+.submit-row a.deletelink {
+    background: #b92020;
+    color: #ffffff;
+}
+
+.submit-row a.closelink {
+    background: #bababa;
+    color: #ffffff;
+}
+
+.submit-row a.deletelink:focus,
+.submit-row a.deletelink:hover,
+.submit-row a.deletelink:active {
+    background: #a31414;
+}
+
+.submit-row a.closelink:focus,
+.submit-row a.closelink:hover,
+.submit-row a.closelink:active {
+    background: #aaaaaa;
+}
+
+.inline-related h3 {
+    color: #666666;
+    background: #f8f8f8;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+
+.inline-related fieldset {
+    background: #ffffff;
+}
+
+.inline-related fieldset.module h3 {
+    background: #f6e89f;
+    color: #ffffff;
+}
+
+.inline-group .tabular td.original p {
+    color: #666666;
+}
+
+
+.inline-group div.add-row,
+.inline-group .tabular tr.add-row td {
+    color: #666666;
+    background: #f8f8f8;
+    border-bottom: 1px solid #ededed;
+}
+
+.inline-group .tabular tr.add-row td {
+    border-bottom: 1px solid #ededed;
+}
+
