@@ -1,0 +1,6 @@
+opentelemetry-api==0.17b0
+opentelemetry-instrumentation==0.17b0
+asgiref~=3.0
+
+[test]
+opentelemetry-test
