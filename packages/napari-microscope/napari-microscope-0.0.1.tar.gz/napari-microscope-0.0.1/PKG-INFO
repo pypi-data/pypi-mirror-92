@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: napari-microscope
+Version: 0.0.1
+Summary: Napari plugin for Microscope.
+Home-page: UNKNOWN
+Author: David Miguel Susano Pinto
+Author-email: david.pinto@bioch.ox.ac.uk
+License: GPL-3.0+
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
