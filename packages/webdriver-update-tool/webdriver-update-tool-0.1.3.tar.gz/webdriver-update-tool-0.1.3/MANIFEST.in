@@ -1,0 +1,2 @@
+exclude README.md
+include webdriver_update_tool/config.ini
