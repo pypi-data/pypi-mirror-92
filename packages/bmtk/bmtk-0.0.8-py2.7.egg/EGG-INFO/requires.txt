@@ -1,0 +1,22 @@
+jsonschema
+pandas
+numpy
+six
+h5py
+matplotlib
+scipy
+
+[:python_version <= "2.7"]
+enum
+
+[bionet]
+NEURON
+
+[mintnet]
+tensorflow
+
+[pointnet]
+NEST
+
+[popnet]
+DiPDE
