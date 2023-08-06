@@ -1,0 +1,3 @@
+[console_scripts]
+cylinter = cylinter.src.cylinter:main
+
