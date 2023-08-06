@@ -1,0 +1,8 @@
+PythonSafeEval/Dockerfile_template.txt,sha256=-8P2oOiIY-da67bqM2-Psm3NreAMwXX2WHTl4ow9CGM,422
+PythonSafeEval/__init__.py,sha256=kX1wisAEgtVHPC9GGZER5ElTtPIgcevbIBLL-jvc32Q,31
+PythonSafeEval/safe_eval.py,sha256=7oUYea10WA2jN5UDOHj1pxtIoQYWczfyjq7yZdv1rGk,5306
+PythonSafeEval-0.0.1.dist-info/LICENSE,sha256=FfDtfq18Z9OPnyu5SJZYk_Q-lOkTljdjgNirLD86YEk,1067
+PythonSafeEval-0.0.1.dist-info/METADATA,sha256=JFTrQqOYgXPDU4AWQpkEigjIhYZy-Ffq4kTyT6K7PAs,4632
+PythonSafeEval-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PythonSafeEval-0.0.1.dist-info/top_level.txt,sha256=P9JzqEzAq0Ml-EZ9KcvmR4lizL0i_O69lt67H-MTYgo,15
+PythonSafeEval-0.0.1.dist-info/RECORD,,
