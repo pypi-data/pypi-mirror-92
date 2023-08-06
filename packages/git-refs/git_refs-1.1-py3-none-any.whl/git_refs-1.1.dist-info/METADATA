@@ -1,0 +1,44 @@
+Metadata-Version: 2.0
+Name: git-refs
+Version: 1.1
+Summary: list git references(branches, tags) on local and remote repositories
+Home-page: https://github.com/weaming/git-refs
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/weaming/git-refs
+Project-URL: Source, https://github.com/weaming/git-refs
+Keywords: git,cli,develop
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython
+
+# git refs
+
+list git references(branches, tags) on local and remote repositories.
+
+## Install
+
+    pip3 install -U git-refs
+
+## Example
+
+```bash
+$ git-refs
+local branch master 5a4344acd93627b7e20d5c86aa18a587c90a17d9 -> origin/master
+remote reference master 5a4344acd93627b7e20d5c86aa18a587c90a17d9 origin
+```
+
+### CSV output format
+
+```bash
+$ CSV=1 git-refs
+where,type,name,sha,remote
+local,branch,master,5a4344acd93627b7e20d5c86aa18a587c90a17d9,origin/master
+remote,reference,master,5a4344acd93627b7e20d5c86aa18a587c90a17d9,origin
+```
+
+You can use [`printable`](https://github.com/weaming/printable) to view csv in terminal:
+
+    CSV=1 git-refs | printable -t csv -f /dev/stdin
+
