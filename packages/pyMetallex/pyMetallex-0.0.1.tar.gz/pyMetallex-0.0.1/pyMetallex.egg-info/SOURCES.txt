@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+metallex_sample/__init__.py
+metallex_sample/apiSDK.py
+pyMetallex.egg-info/PKG-INFO
+pyMetallex.egg-info/SOURCES.txt
+pyMetallex.egg-info/dependency_links.txt
+pyMetallex.egg-info/requires.txt
+pyMetallex.egg-info/top_level.txt
