@@ -1,0 +1,13 @@
+numpy
+netcdf4
+matplotlib
+proj
+pyproj
+geos
+cython
+pyshp
+six
+shapely
+pillow
+pykdtree
+cartopy
