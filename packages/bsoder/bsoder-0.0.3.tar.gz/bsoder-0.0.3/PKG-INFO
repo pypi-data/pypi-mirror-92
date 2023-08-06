@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bsoder
+Version: 0.0.3
+Summary: A small example package for cause BSOD`s on Windows PC
+Home-page: https://github.com/alex5250/bsoder
+Author: Alex Zaslavskis
+Author-email: sahsariga111@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/alex5250/bsoder/releases/download/v0.0.1/bsoder.tar
+Description: 
+        # Bsoder
+        Simple Lib that will cause bsod on you pc 
+        
+        [Docs](https://alex5250.github.io/bsoder/)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

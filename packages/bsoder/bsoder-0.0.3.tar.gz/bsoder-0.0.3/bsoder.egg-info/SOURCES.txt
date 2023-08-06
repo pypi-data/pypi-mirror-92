@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+bsoder.egg-info/PKG-INFO
+bsoder.egg-info/SOURCES.txt
+bsoder.egg-info/dependency_links.txt
+bsoder.egg-info/top_level.txt
