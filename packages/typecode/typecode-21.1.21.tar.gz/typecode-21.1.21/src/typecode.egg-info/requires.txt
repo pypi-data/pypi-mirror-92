@@ -1,0 +1,13 @@
+attrs!=20.1.0,>=18.1
+binaryornot
+commoncode>=21.1.21
+pdfminer.six
+plugincode
+
+[full]
+typecode_libmagic
+
+[testing]
+saneyaml
+pytest>=4
+pytest-xdist>=1
