@@ -1,0 +1,11 @@
+README.md
+setup.py
+csum/__init__.py
+csum/__main__.py
+csum/argparsing.py
+csum/checksums.py
+csum.egg-info/PKG-INFO
+csum.egg-info/SOURCES.txt
+csum.egg-info/dependency_links.txt
+csum.egg-info/entry_points.txt
+csum.egg-info/top_level.txt
