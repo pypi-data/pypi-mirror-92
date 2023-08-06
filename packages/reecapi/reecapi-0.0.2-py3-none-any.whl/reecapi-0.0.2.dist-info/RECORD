@@ -1,0 +1,9 @@
+reecapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reecapi/constants.py,sha256=u79hCdRrMO8usFOt9JO-zkaicyKWjDZZ1ZXel8Wcumk,750
+reecapi/getters.py,sha256=ZBZ6eyZUqWBCWGbJ4SGDvNJuQfT2EeQWgixu_w0kvYw,2951
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_getters.py,sha256=0v_R6iIk_UMYL6933JVCVwhoafMDgmGlddmQfUxd3l0,304
+reecapi-0.0.2.dist-info/METADATA,sha256=RVjWdQoALB8u3rW1korj-FBb5hz24ZRTmJ9AE-FFiT8,4637
+reecapi-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+reecapi-0.0.2.dist-info/top_level.txt,sha256=A28Ll5DaaV3pOVYHmp5YLO_I1g1qPrVEmCBSDEc_HD0,14
+reecapi-0.0.2.dist-info/RECORD,,
