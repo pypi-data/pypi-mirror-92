@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+bijansgithubactionstest/__init__.py
+bijansgithubactionstest.egg-info/PKG-INFO
+bijansgithubactionstest.egg-info/SOURCES.txt
+bijansgithubactionstest.egg-info/dependency_links.txt
+bijansgithubactionstest.egg-info/requires.txt
+bijansgithubactionstest.egg-info/top_level.txt
