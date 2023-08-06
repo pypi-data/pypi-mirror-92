@@ -1,0 +1,4 @@
+[gui_scripts]
+func_viewer = simple_3dviz.scripts.func_viewer:main
+mesh_viewer = simple_3dviz.scripts.mesh_viewer:main
+
