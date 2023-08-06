@@ -1,0 +1,4 @@
+[console_scripts]
+aviv-aws = aviv_cdk.bin.aws_local:cli
+aviv-cdk-sfn-extract = aviv_cdk.bin.sfn_extract:cli
+

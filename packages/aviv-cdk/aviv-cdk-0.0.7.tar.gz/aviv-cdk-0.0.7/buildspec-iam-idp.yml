@@ -1,0 +1,47 @@
+version: 0.2
+
+env:
+  git-credential-helper: yes
+  variables:
+    ENV: test
+    PIP_FLAGS: --disable-pip-version-check --quiet --no-warn-conflicts
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+      nodejs: 12
+    commands:
+      - npm install -g aws-cdk
+      # - pip install ${PIP_FLAGS} --upgrade pip aws-sam-cli awscli
+      - TAG=$(git name-rev --name-only HEAD | cut -d/ -f2)
+  pre_build:
+    commands:
+      # Install Aviv CDK
+      - pip install ${PIP_FLAGS} .
+      - |
+        # Build cfn_resources layer and zip it
+        cfnreqpath=$(python3 -c 'import sys; print(sys.prefix)')/share/aviv-cdk/cfn-resources/
+        pip install ${PIP_FLAGS} -r ${cfnreqpath}requirements.txt -t build/cfn_resources/
+        (cd build/cfn_resources/ &&  zip -q -r ../artifacts-cfn_resources.zip .)
+  build:
+    commands:
+      - cdk -a 'python3 app_idp.py' synth
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: cdk.out/
+  discard-paths: no
+  # Artifact for cfn_resources layer
+  secondary-artifacts:
+    cfn_resources:
+      files:
+        - '**/*'
+      name: cfn_resources-$(date +%Y-%m-%d)
+      base-directory: build/cfn_resources/
+      discard-paths: no
+
+cache:
+  paths:
+    - '/root/.cache/**/*'
