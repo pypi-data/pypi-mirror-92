@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: airflow-livy-operators-sexy
+Version: 0.3.1
+Summary: Lets Airflow DAGs run Spark jobs via Livy: sessions and/or batches. Forked from panovvv/airflow-livy-operators and changed python to 3.5
+Home-page: https://github.com/ssheremeta/airflow-livy-operators
+Author: Sergei Sheremeta
+Author-email: s.w.sheremeta@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
