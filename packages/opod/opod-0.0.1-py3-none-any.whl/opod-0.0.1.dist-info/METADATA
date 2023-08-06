@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: opod
+Version: 0.0.1
+Summary: Use opod orchestrate Podman
+Home-page: https://pypi.org/project/opod/
+Author: Brian Farrell
+Author-email: brian.farrell@me.com
+License: AGPLv3
+Keywords: Podman docker-compose orchestration
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.6.0
+Description-Content-Type: text/x-rst
+
+
+============
+Introduction
+============
+
+opod is a an orhestrator for Podman.
+
+
+Objectives
+----------
+
+#. Provide a replacement for docker-compose/podman-compose.
+#. Provide as close to 100% Test Coverage as possible
+#. Provide clear documentation with full coverage of the API and example code.
+
+
+Installing
+----------
+
+Install and update using `pipenv`:
+
+.. code-block:: bash
+
+   pipenv install opod
+
+
+A Simple Example
+----------------
+
+.. code-block:: bash
+
+   opod up -d
+
+
+Links
+-----
+
+* Website: https://pypi.org/project/opod/
+* Documentation: https://brianfarrell.gitlab.io/opod/
+* License: https://www.gnu.org/licenses/agpl.html
+* Releases: https://pypi.org/project/opod/
+* Code: https://gitlab.com/brianfarrell/opod/
+* Issue tracker:
+* Test status:
+* Test coverage:
+
+
