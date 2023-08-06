@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: lightning-data
+Version: 0.1.0
+Summary: PyTorch Lightning Sample project.
+Home-page: https://github.com/PyTorchLightning/lightning-data
+Author: PyTorchLightning et al.
+Author-email: name@pytorchlightning.ai
+License: TBD
+Download-URL: https://github.com/PyTorchLightning/lightning-data
+Project-URL: Bug Tracker, https://github.com/PyTorchLightning/lightning-data/issues
+Project-URL: Documentation, https://pt-lightning-data.rtfd.io/en/latest/
+Project-URL: Source Code, https://github.com/PyTorchLightning/lightning-data
+Description: # pytorch-lightning DATA
+        
+        [![CI full testing](https://github.com/PyTorchLightning/lightning-data/workflows/CI%20full%20testing/badge.svg?tag=0.1.0)](https://github.com/PyTorchLightning/lightning-data/actions?query=workflow%3A%22CI+testing%22)
+        ![Check Code formatting](https://github.com/PyTorchLightning/lightning-data/workflows/Check%20Code%20formatting/badge.svg?tag=0.1.0)
+        ![Docs check](https://github.com/PyTorchLightning/lightning-data/workflows/Docs%20check/badge.svg?tag=0.1.0)
+        [![Documentation Status](https://readthedocs.org/projects/pt-lightning-data/badge/?version=latest)](https://pt-lightning-data.readthedocs.io/en/latest/?badge=latest)
+        
+        ## Tests / Docs notes
+        
+        * We are using [Napoleon style](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html) and we shall use static types...
+        * It is nice to se [doctest](https://docs.python.org/3/library/doctest.html) as they are also generated as examples in documentation
+        * For wider and edge cases testing use [pytest parametrization](https://docs.pytest.org/en/stable/parametrize.html) :]
+        
+Keywords: deep learning,pytorch,AI,data,datasets
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
