@@ -1,0 +1,7 @@
+README.md
+setup.py
+vtt2text/__init__.py
+vtt2text.egg-info/PKG-INFO
+vtt2text.egg-info/SOURCES.txt
+vtt2text.egg-info/dependency_links.txt
+vtt2text.egg-info/top_level.txt
