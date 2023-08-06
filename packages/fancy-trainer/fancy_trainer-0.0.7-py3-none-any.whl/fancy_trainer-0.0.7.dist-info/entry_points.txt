@@ -1,0 +1,3 @@
+[console_scripts]
+ftrain = fancy.trainer.scripts.train.__main__:main
+

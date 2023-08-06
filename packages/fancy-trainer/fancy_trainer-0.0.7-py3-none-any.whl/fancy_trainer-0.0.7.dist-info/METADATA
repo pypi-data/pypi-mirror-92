@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: fancy-trainer
+Version: 0.0.7
+Summary: a simple configurable DL trainer made by Pytorch
+Home-page: UNKNOWN
+Author: su-rin
+Author-email: susautw@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/susautw/fancy-trainer
+Keywords: deep learning,training
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: cached-property (==1.5.2)
+Requires-Dist: fancy-config (>=0.7.1)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: PyYAML
+Requires-Dist: torch (>=1.5.1)
+Requires-Dist: torchvision (>=0.6.1)
+
+# fancy-trainer
+
+
