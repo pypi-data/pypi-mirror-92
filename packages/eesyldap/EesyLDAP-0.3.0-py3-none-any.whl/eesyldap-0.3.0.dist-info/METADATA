@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: eesyldap
+Version: 0.3.0
+Summary: Simple LDAP Objects mapper
+Home-page: https://gitlab.easter-eggs.com/brenard/eesyldap
+Author: Benjamin Renard
+Author-email: brenard@easter-eggs.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: beaker (>=1.11.0,<2.0.0)
+Requires-Dist: passlib (>=1.7.2,<2.0.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: python-ldap
+Requires-Dist: pytz (>=2019.3,<2020.0)
+Requires-Dist: unidecode (>=1.1.1,<2.0.0)
+Project-URL: Repository, https://gitlab.easter-eggs.com/brenard/eesyldap
+Description-Content-Type: text/markdown
+
+# EesyLDAP
+
+This library offer an easy way to manipulate LDAP objects.
+
+## Getting Started
+
+    git clone https://gitlab.easter-eggs.com/brenard/eesyldap.git
+    cd eesyldap
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install poetry
+    poetry install
+
+See ```doc/quickstart.md``` to learn how to use this library.
+
+## Run tests
+
+To run tests, you need to install eesyldap (see _Getting Started_ section) and run the following command being in the root folder of the project : `pytest --disable-warnings --verbose`
+
+## License
+EesyLDAP is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+EesyLDAP is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
