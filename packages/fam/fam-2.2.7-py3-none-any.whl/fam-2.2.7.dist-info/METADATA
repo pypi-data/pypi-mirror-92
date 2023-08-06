@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fam
+Version: 2.2.7
+Summary: Simple Python ORM for CouchDB, Firebase and Sync Gateway
+Home-page: https://github.com/paulharter/fam
+Author: Paul Harter
+Author-email: paul@glowinthedark.co.uk
+License: LICENSE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: js2py
+Requires-Dist: requests
+Requires-Dist: simplejson
+Requires-Dist: jsonschema
+Requires-Dist: mock
+Requires-Dist: pytz
+Requires-Dist: slimit
+Requires-Dist: ply (==3.4)
+Requires-Dist: firebase-admin
+Requires-Dist: six
+Requires-Dist: grpcio
+
+UNKNOWN
+
+
