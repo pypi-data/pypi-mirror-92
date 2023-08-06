@@ -1,0 +1,9 @@
+aioipfs/__init__.py,sha256=nj-JZGzyDKzlTr1AbjINh96OFTvVY_AW1EG0tyqGjrU,5638
+aioipfs/api.py,sha256=0DlS-nx25VYlCm702w5Vq_JCbwUBFV1mv_fT7Vhp7Mk,65091
+aioipfs/gitignore_parser.py,sha256=8o30PrKI_mpl5pvbDQ0uWYmdb_uwqQms7GJCexVy_EM,6929
+aioipfs/multi.py,sha256=Muuz2ZFagdu5RsI_cn5Kqjc395R1WgSD4ldOJP7qTVA,10626
+aioipfs-0.5.3.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+aioipfs-0.5.3.dist-info/METADATA,sha256=RX1vb3Tt_6HR3SBsc7Ady63QMNo1M1ajn3-zD3hNh5w,3306
+aioipfs-0.5.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aioipfs-0.5.3.dist-info/top_level.txt,sha256=rQ6TSZJwiC_ZuCC_BASj-mqFZj08Y0nE7b3WI6mt4mc,8
+aioipfs-0.5.3.dist-info/RECORD,,
