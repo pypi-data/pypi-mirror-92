@@ -1,0 +1,10 @@
+snvoter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snvoter/__main__.py,sha256=iUFo5JCfxnfe-2FgDCkhVPoLA5zP1WWs-uLFwaOqtiI,30578
+snvoter/model/NA12878_20FC_model.h5,sha256=2N5n66a5aZyYMwD7HGlT_odETggmtyN1qcfUqEGpPV8,2401040
+snvoter/model/NA12878_20FC_model.h5.pkl,sha256=DnNrvICDnLwn7GNyMnEVkrTp59DCZ3RBaE78_ml6uik,1701
+snvoter-1.0.dist-info/LICENSE,sha256=fRJaop2TAowxyT-RDn84wEFOpGxxoYy886aJoGjYJcc,33405
+snvoter-1.0.dist-info/METADATA,sha256=1UbMRW292HKiINlrJcX5DkHjIvUaBIJ6EF5RShJLlSc,11548
+snvoter-1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+snvoter-1.0.dist-info/entry_points.txt,sha256=wUaJIJbWgA3HjF3myI07_uOa8donxNEROjPw3PoqfdY,51
+snvoter-1.0.dist-info/top_level.txt,sha256=UARkhvllMJP_In9bhU3rml6GS1URKi9FNtRmxv_HnX0,8
+snvoter-1.0.dist-info/RECORD,,

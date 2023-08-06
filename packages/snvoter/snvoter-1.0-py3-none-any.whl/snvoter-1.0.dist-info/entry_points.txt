@@ -1,0 +1,3 @@
+[console_scripts]
+snvoter = snvoter.__main__:main
+
