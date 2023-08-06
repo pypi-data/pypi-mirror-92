@@ -1,0 +1,6 @@
+urllib3>=1.26
+requests
+backports-datetime-fromisoformat
+
+[:python_version < "3.9"]
+backports.zoneinfo
