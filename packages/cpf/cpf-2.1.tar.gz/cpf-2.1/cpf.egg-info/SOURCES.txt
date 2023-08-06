@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+README.txt
+exec.py
+setup.py
+cpf/__init__.py
+cpf.egg-info/PKG-INFO
+cpf.egg-info/SOURCES.txt
+cpf.egg-info/dependency_links.txt
+cpf.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+Checa e gera CPFs de acordo com o padrão brasileiro. Disponivel tambem funcoes como a de checar a regiao do CPF e tambem gerar com regioes especificas. Acesse https://github.com/pedrokpp/gerador-e-checker-de-cpf para mais informacoes.
