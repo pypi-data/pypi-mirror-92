@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: badgegen
+Version: 0.1
+Summary: CI/CD Badge Generator
+Home-page: https://github.com/alexhagen/badgegen
+Author: Alex Hagen
+Author-email: alexander.hagen@pnnl.gov
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: svgwrite
+
+# badgegen
+Python svg badge generator for CI/CD
+
+

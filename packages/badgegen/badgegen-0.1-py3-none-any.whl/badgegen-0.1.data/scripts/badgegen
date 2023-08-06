@@ -1,0 +1,4 @@
+#!python
+
+import badgegen
+badgegen._run_cli()
