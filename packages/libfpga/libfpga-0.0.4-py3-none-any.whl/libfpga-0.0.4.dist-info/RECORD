@@ -1,0 +1,8 @@
+libfpga/__init__.py,sha256=KsLKf4pJNVm-YmTfqfF5hVmTJV3rpYkh8sJCagObWJ4,638
+libfpga/mpsoc.py,sha256=4MRJ81GgPyPBVh7vLLPZKAzhfbdWgHnIUiwHH9zRta4,15633
+libfpga/xdma.py,sha256=k17km0bG0-EiBWRwuXDwKpncatQFSHGxopyv1z_NTyM,6935
+libfpga-0.0.4.dist-info/LICENSE,sha256=t6SFVI_7M_Q9I8kYobTa5dlHrgQZHIuIA2E8zY2t1WA,1070
+libfpga-0.0.4.dist-info/METADATA,sha256=B8bYk03FJGvoTEsm9B8v1VTQL-zIt2PCCGdmbWwuNZQ,595
+libfpga-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+libfpga-0.0.4.dist-info/top_level.txt,sha256=qyZvYcxlblX-Phv5bYt7dYo7GEPmvsxa879NoCe4W44,8
+libfpga-0.0.4.dist-info/RECORD,,
