@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: github_crawler
+Version: 0.0.3
+Summary: A web spider to crawl public github repositories
+Home-page: https://github.com/karthikhosur/Github-Crawler
+Author: Karthik Hosur
+Author-email: karthikhosur15@gmail.com
+License: UNKNOWN
+Description: A web spider to crawl public github repositories to collect data of github user profiles,repositories and user social counts for educational purpose only. The project was earlier built to collect data from github for academic data analysis project.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
