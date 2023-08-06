@@ -1,0 +1,13 @@
+spider/__init__.py,sha256=hsNGhQrsHEgNC5fSgUM_XdvlgLtykAffpc8Jr9DCUA4,112
+spider/__main__.py,sha256=3sbcK5KfYIaM7TKc3ImeZLdfTfEDBcRkQX7SLW4Sp_g,48
+spider/_server.py,sha256=PnJKHM_XVuRr_xuo6eSbqi6qmYcrgvaJKExmYoEkCLg,1753
+spider/web/__init__.py,sha256=BfxIMg2x7gXQkgXJQPPNZdVLOtNp3MHeuEKZtj4XXJM,232
+spider/web/_http.py,sha256=3e5Y_k0kCvFxTqgu4ojX2KGaUhL51C2cxl-fIprKJjg,5149
+spider/web/_service.py,sha256=fXc2YoyCplGKg5yZF_qhszHQP_z_Sk9MoJvJfWlQlrI,2710
+spider/web/_static.py,sha256=12P-dC3E43ur_XQh6t8EaiV2ycXDyzsv1S9NsMysH4Y,1141
+spider/web/responses/__init__.py,sha256=3ibXsW-AF8bIVQWPJ7YPeuQ297Rji5PnVoEqGNmhNw4,110
+spider/web/responses/_responses.py,sha256=5KTVgRmpswD0rUcPjoHmniJ3F26MkFFiHlNY6dGKedE,1541
+Spiders-0.1.1.dist-info/METADATA,sha256=DrYwA0H55sDKPf_Ucx657ipWFqRGRGr3Q6044zE9TE4,1384
+Spiders-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Spiders-0.1.1.dist-info/top_level.txt,sha256=-omgKN_8Zv_sz8Nh9RKvMeKEgG6ssFAFraIRpgIn8zA,7
+Spiders-0.1.1.dist-info/RECORD,,
