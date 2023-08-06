@@ -1,0 +1,3 @@
+[console_scripts]
+omnibus = omnibus.cli:main
+
