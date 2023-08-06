@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyroll20.egg-info/PKG-INFO
+pyroll20.egg-info/SOURCES.txt
+pyroll20.egg-info/dependency_links.txt
+pyroll20.egg-info/top_level.txt
