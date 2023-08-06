@@ -1,0 +1,9 @@
+brotlicffi/__init__.py,sha256=ZScFHIiJBqBXHyOzUbcYdJSPDIW7xb-ivPIPApToWpc,232
+brotlicffi/_api.py,sha256=RcTz80yhW06a_-HDUhsV8Q34DuuQOwwaNhNZlzBDNEM,15967
+brotlicffi/_brotlicffi.pypy-73.pyd,sha256=FtlB0AZOa4bX6fAy4ZVCGyLEdRXubGLUR-1z1JviDhQ,3294208
+brotlicffi/_build.py,sha256=tPdonqguDJj2s0IQegkaPMBD9Eqz4Rs_st3lAM_ze5A,9527
+brotlicffi-1.0.9.0.dist-info/LICENSE,sha256=V4-EpX9NnSd-r-KAz4ccQbgtopzjDJ7yo50MbUNUu44,1074
+brotlicffi-1.0.9.0.dist-info/METADATA,sha256=KNrkGVdCkIN4sFzEGgJBg85P23xvUcDSslW_7eDLZ_s,5452
+brotlicffi-1.0.9.0.dist-info/WHEEL,sha256=7wyjBc-dOOImwqrpT4mF4lPHb25-NBi32PETF2wv_ww,99
+brotlicffi-1.0.9.0.dist-info/top_level.txt,sha256=QNsXaBb1b7FFDoROgMBoHTDwfsWia7dX5GLRhUDPyXM,23
+brotlicffi-1.0.9.0.dist-info/RECORD,,
