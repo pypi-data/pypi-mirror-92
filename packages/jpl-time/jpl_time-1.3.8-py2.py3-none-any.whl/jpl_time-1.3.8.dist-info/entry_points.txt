@@ -1,0 +1,3 @@
+[console_scripts]
+jpl_time = jpl_time.jpl_time:main
+
