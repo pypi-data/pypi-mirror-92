@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: launcher-menus
+Version: 21.1.22
+Summary: Subprocess-driven API for launcher menus: dmenu, bemenu
+Home-page: https://github.com/pradyparanjpe/launcher-menus
+Author: Pradyumna Paranjape
+Author-email: pradyparanjpe@rediffmail.com
+License: GPLv3
+Platform: linux
+Requires-Python: >=3.7
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+

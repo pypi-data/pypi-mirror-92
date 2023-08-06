@@ -1,0 +1,14 @@
+launcher_menus/__init__.py,sha256=1EYdEktv77Dwy_kRCR-2xFQeyMTThgd5qAH6clzjSzc,2544
+launcher_menus/__main__.py,sha256=TJB6p9Sd35aK_uaFITpo6MsRGiF8KuaN4NKlNhm6rFI,955
+launcher_menus/errors.py,sha256=OmPvjkOcJg1StcqAxNMRfAtWeDtz8Gqlw0uZF2cSMI8,2311
+launcher_menus/functions.py,sha256=L-siLB7gJiugioi9fTWoNwKymYp8gHKAYUMZX79XH-E,7286
+launcher_menus/read_config.py,sha256=cXzSk0o2To240uImAzKsvSUKwtMd3qqDt50ikC_v94A,1730
+launcher_menus/menu-cfgs/bemenu.yml,sha256=JufgVpdgrBm5wYwZtqr720eUaJpOecV0SOAlCnQrFl4,550
+launcher_menus/menu-cfgs/dmenu.yml,sha256=GbKKypukrDPEC9icsqLBkxqwEN3h3tga5ruu6aBhT8Q,199
+launcher_menus/menu-cfgs/template.yml,sha256=ThZtNL3ddnnW-5bWURbEWCzaZLzI_aU1SnakGpvVcBs,358
+launcher_menus-21.1.22.dist-info/LICENSE,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+launcher_menus-21.1.22.dist-info/METADATA,sha256=5MJBrTY3xWxx9jqhF0EQ_Wkx93W9dLHGhVSwdZ6Hezo,342
+launcher_menus-21.1.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+launcher_menus-21.1.22.dist-info/entry_points.txt,sha256=jjp_IkgulGVbPkm2iiZkKtNd9yo6VjR9cbKtiBr9CAc,61
+launcher_menus-21.1.22.dist-info/top_level.txt,sha256=hJrFkp5AgWBHIjfchi5K5jqB1G2CpuhARl6QtsSAbwY,15
+launcher_menus-21.1.22.dist-info/RECORD,,
