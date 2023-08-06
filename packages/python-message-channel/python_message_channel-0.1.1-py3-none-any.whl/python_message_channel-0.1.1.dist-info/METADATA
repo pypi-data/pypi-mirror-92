@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: python-message-channel
+Version: 0.1.1
+Summary: Generic asynchronous message channel with routing by predicators
+Home-page: https://github.com/fixpoint/python-message-channel
+License: MIT
+Author: Alisue
+Author-email: lambdalisue@hashnote.net
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/fixpoint/python-message-channel
+Description-Content-Type: text/markdown
+
+# message-channel
+
+![PyPI](https://img.shields.io/pypi/v/python-message-channel)
+![PyPI - License](https://img.shields.io/pypi/l/python-message-channel)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/python-message-channel)
+![Test](https://github.com/fixpoint/python-message-channel/workflows/Test/badge.svg)
+
+**UNDER DEVELOPMENT**
+
