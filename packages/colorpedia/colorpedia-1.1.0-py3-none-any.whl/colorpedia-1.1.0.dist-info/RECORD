@@ -1,0 +1,17 @@
+colorpedia/__init__.py,sha256=nrjH_j1Rd3BFa0CiTofPgF7PcUCHiE6dE2TUPySoMQk,282
+colorpedia/cli.py,sha256=NciYjdSNULsJ-OhkOTn9BFLkmtjqj_TmuTsDitvBQNE,14689
+colorpedia/color.py,sha256=8xpGMkyG9a5U-0cUz1JZojW4hxStB157z_kRScNl_d4,1423
+colorpedia/config.py,sha256=bwVkGfr5117jlfVblRPFfLXplAdbg1Irtzm6YXlWbnQ,6861
+colorpedia/converters.py,sha256=nKTw1UIoaKxhgJOonAdFECPSxbiSSmUFd71KVuZifsU,6011
+colorpedia/exceptions.py,sha256=jp0qtvq5cJWuRyYNgW5374jbvaPvrhRNz8c6OVjBIro,1101
+colorpedia/formatters.py,sha256=Hhd0KMocF45QC-SBUvHmApj-y5UBiPfWid2YdzovOyY,3871
+colorpedia/hexcodes.py,sha256=buIFdbjXSJtgr8K1zgybwdMujnhef7THxkEF-sI5u0c,4298
+colorpedia/inputs.py,sha256=DH8d8nwZvis6UyuG_O5ADVD1YYQSBTwZqxwzTk51eZI,1849
+colorpedia/palettes.py,sha256=kTxmgcFU9LMxJDl8YvCEAXw0RvwUWxHP1HK_czkuK7g,5262
+colorpedia/version.py,sha256=2r7o2DjizNkDQwXrByFUQtdb6p118mMJM9ZBfHhjCjg,142
+colorpedia-1.1.0.dist-info/LICENSE,sha256=XawKUBjdyssVsSNk_33Pfn6R7MbU3XUzmXGvBLGVz7Y,1067
+colorpedia-1.1.0.dist-info/METADATA,sha256=APRwXy794zADGDwKk_q5HIGJex2wpItKMRghyTMwTLE,5651
+colorpedia-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+colorpedia-1.1.0.dist-info/entry_points.txt,sha256=E8vKIXqoGJ4g2d64SslHBT-PjTLH5hQz_ZwnxANLa7k,94
+colorpedia-1.1.0.dist-info/top_level.txt,sha256=aDR8IPFut5As1wTxuaeGwudSNi8MJyk260HqMcvwsww,11
+colorpedia-1.1.0.dist-info/RECORD,,
