@@ -1,0 +1,17 @@
+bot_config/__init__.py,sha256=9rCJ3VysX0OUg07-oWiaFzziNiQ4RXWiQlFyZpyBALg,87
+bot_config/config.py,sha256=YgtSMzNR8wsEQiUwKECiv-moVjeRwUdQjxXT4ZWIpAE,11881
+bot_config/models/__init__.py,sha256=ST9TMxskYgHqI6IhbqjXtx7jmwHo9FRZHs7yqo0JUpM,396
+bot_config/models/acc.py,sha256=bDvbYlvw2mrsoQelJeekKlBzSlYO-mZglndxAhp-424,3824
+bot_config/models/amazon_settings.py,sha256=F0YYtO_SPHr-z1Ho0LKj8b4g2UPY43Rfoa_dIUXC6T8,1582
+bot_config/models/constants.py,sha256=qyWRfLg334Q97HPxg3P3A5q8sSxuvcO17lC4pyYLuyU,1342
+bot_config/models/facebook_acc.py,sha256=n_SMX2_f614S3Sir4C3xTpERBDunirSiOuHbOCoACCA,966
+bot_config/models/login_details.py,sha256=u9EsWKXnI7KWWjIU5H6DAWJKIEQTXDuYzy9jKwfr4YE,604
+bot_config/models/product_category.py,sha256=uO2Pgu623ef8kLZ-KtQYlTS1t87r-mc8Oemr6BSO4Y4,2034
+bot_config/models/product_details.py,sha256=pVFzPdP2-s4JiO275unzn64I0R8FoX_X7hGCD3PiYIo,1378
+bot_config/models/proxy_details.py,sha256=Ujd1vCn31y9HevoRl9bZozPY4PIE3hrFjz3DcZv_VyU,648
+bot_config/models/enums/__init__.py,sha256=pxYGZnl_JeAzE7UUrugGuOcdm4XcEc6maH3UTLYLWCI,54
+bot_config/models/enums/product_category_type.py,sha256=oyeUPf7puhCM663L9cobUyuGSkEeUnrcRm-OSfc28cc,1060
+bot_config-0.2.18.dist-info/METADATA,sha256=a9I2ceT28L0sNDwUSXH4JRfTJuELM6y3eWn11Uwh0IU,1109
+bot_config-0.2.18.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bot_config-0.2.18.dist-info/top_level.txt,sha256=LhKx-DH2CJ1Y4FXZTvnUVTm_6FRTWF48xWcge4jzhUs,11
+bot_config-0.2.18.dist-info/RECORD,,
