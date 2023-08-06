@@ -1,0 +1,4 @@
+include *.txt
+global-include *.csv
+global-include *.ini
+prune .tox
