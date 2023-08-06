@@ -1,0 +1,10 @@
+numpy>=1.17.3
+requests
+pytz
+pyjwt
+msrestazure
+cryptography
+google-api-python-client
+google-auth-oauthlib
+google-auth
+adal
