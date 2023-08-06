@@ -1,0 +1,12 @@
+README.md
+setup.py
+pybungie/BungieAPI.py
+pybungie/OAuth2.py
+pybungie/__init__.py
+pybungie/destiny_enums.py
+pybungie.egg-info/PKG-INFO
+pybungie.egg-info/SOURCES.txt
+pybungie.egg-info/dependency_links.txt
+pybungie.egg-info/requires.txt
+pybungie.egg-info/top_level.txt
+pybungie/config/pybungie.ini
