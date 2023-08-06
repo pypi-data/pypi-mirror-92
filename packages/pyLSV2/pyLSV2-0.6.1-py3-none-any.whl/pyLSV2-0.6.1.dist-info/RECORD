@@ -1,0 +1,12 @@
+pyLSV2/__init__.py,sha256=6pBLc_n5Vz_MWyXIY09W4YVljerB9IxDoCtawyGxQ30,152
+pyLSV2/client.py,sha256=beI83GiPfv2b-qJjxfLgY0IIKJenVgIBO95WEY24uVs,60467
+pyLSV2/low_level_com.py,sha256=5QQ_UCY0EvbX0xEFjR61YOBOX89xzRyi7WoqM_iDRqI,5349
+pyLSV2/translate_error.py,sha256=SCiRvz3xO_3HRwsqLIViLOq6q6ynEehD4FdEy3wUL3w,9179
+pyLSV2-0.6.1.data/scripts/check_for_LSV2_commands.py,sha256=Z_ZeeQwzBmI153yackOSIKGFKo9rNDCKiGiKJTvbTNE,1350
+pyLSV2-0.6.1.data/scripts/lsv2_demo.py,sha256=Qa4Q6wgxHJqU0l-DDnZfEg8xgyUr6s4YGXfB-NzQ9cw,1473
+pyLSV2-0.6.1.dist-info/LICENSE,sha256=nvStEZQTWLlFSO0nr_8fS3PEpFBRQzObqLmQT8ZGggg,1065
+pyLSV2-0.6.1.dist-info/METADATA,sha256=iMIEhijrELSWJabGER8TD1OCk1lCaHOZljch-2XwLXw,7659
+pyLSV2-0.6.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyLSV2-0.6.1.dist-info/top_level.txt,sha256=QfTBfKHVdK3tnbWmBnBrs4HtYrsY643ehL7VTq4QcdA,7
+pyLSV2-0.6.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyLSV2-0.6.1.dist-info/RECORD,,
