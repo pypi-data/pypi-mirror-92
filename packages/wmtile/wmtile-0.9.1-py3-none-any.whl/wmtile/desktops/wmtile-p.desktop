@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=wmtile -p
+Exec=/home/xxxx/.local/bin/wmtile -p
+Comment=reshape as Portraits all windows in current workspace
+Icon=/home/xxxx/.local/lib/python3.8/site-packages/wmtile/icons/wmtile-p.ico
+Terminal=false
+Type=Application
+StartupNotify=false
+MimeType=text/plain;
+Categories=Utility;
