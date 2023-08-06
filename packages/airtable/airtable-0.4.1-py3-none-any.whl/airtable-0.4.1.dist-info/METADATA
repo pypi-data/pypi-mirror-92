@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: airtable
+Version: 0.4.1
+Summary: Python client library for AirTable
+Home-page: https://github.com/josephbestjames/airtable.py
+Author: Joseph Best-James, Nicolo Canali De Rossi, Pascal Corpet
+Author-email: UNKNOWN
+License: The MIT License (MIT)
+Keywords: airtable,api
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.20.0)
+Requires-Dist: six
+
+UNKNOWN
+
+
