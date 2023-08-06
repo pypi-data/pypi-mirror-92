@@ -1,0 +1,16 @@
+cobcom_talon-0.3.0.post0.data/scripts/talon,sha256=TCBniSks7RqgIVuwiaxr7ARGiMCRWUr0rHl3LhY73S4,1207
+talon/__init__.py,sha256=FqJMznL2U6-M0XT-J0BZsFke-ZGOB08pOzCb57eOWzo,3399
+talon/core.py,sha256=oWAUK357MXe2pL-9FIhV3gjMH3KkwIoT6IsoVxY4kWI,19921
+talon/fast.py,sha256=yjjtpQ43NSDrmCuNJ-3AoGSoAzmI9of0XwBxbH0_Me4,4855
+talon/opencl.py,sha256=_fcfBeStA1TvWS5EJ0WYi1JMszwUJX2eqYiVH7abM5c,20132
+talon/optimization.py,sha256=Hp9PY5ikadAfbbAZZH5QIIgM804-25qsoe4Pe5pNWj8,14041
+talon/utils.py,sha256=MuR62ChjIVOlz3JyJ2Ax6h5CvsiY9z3qowY4DlpaPeE,5365
+talon/voxelization.py,sha256=GAg13vIFYI8yzFz7gE98OFGZGj1TcXC0-Q-71oXF0Jk,10207
+talon/cli/__init__.py,sha256=phcGOdl1oRxp18JS1txgxFUQ11AoGiIbnYMrNNzyuVE,22
+talon/cli/parser.py,sha256=dMNQe7OcwuofVSZrswyI5BbOACKW3MRFYGpbXQvU5ys,4477
+talon/cli/utils.py,sha256=daRfENHn4vRfxCwZrTi_LGogydlDFwUh2NT7zkXqDXY,7769
+cobcom_talon-0.3.0.post0.dist-info/LICENSE,sha256=g6prsUE6weeI4Pwq3_s0eW6SGdaMP4yQhwpYN_AWw2s,1063
+cobcom_talon-0.3.0.post0.dist-info/METADATA,sha256=UdkA0gudTAMdWK_AIE_BNZbJSUHFOy4HRMrrvKikync,3207
+cobcom_talon-0.3.0.post0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cobcom_talon-0.3.0.post0.dist-info/top_level.txt,sha256=nVMeLF9fDxGrukATqEftmeJGFsK_aKL5iPDLw_ibZiQ,6
+cobcom_talon-0.3.0.post0.dist-info/RECORD,,
