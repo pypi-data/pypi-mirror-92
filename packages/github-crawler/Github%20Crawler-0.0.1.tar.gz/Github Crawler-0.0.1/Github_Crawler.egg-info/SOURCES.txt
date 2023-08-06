@@ -1,0 +1,12 @@
+README.md
+setup.py
+Github_Crawler.egg-info/PKG-INFO
+Github_Crawler.egg-info/SOURCES.txt
+Github_Crawler.egg-info/dependency_links.txt
+Github_Crawler.egg-info/entry_points.txt
+Github_Crawler.egg-info/requires.txt
+Github_Crawler.egg-info/top_level.txt
+github_parser_pkg/__init__.py
+github_parser_pkg/main.py
+github_parser_pkg/user_profile.py
+github_parser_pkg/user_repos.py
