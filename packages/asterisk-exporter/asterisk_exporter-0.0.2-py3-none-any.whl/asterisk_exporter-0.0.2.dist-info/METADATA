@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: asterisk-exporter
+Version: 0.0.2
+Summary: Prometheus exporter for Asterisk.
+Home-page: https://github.com/sensorberg/asterisk-exporter
+Author: sensorberg-infra
+Author-email: infrastucture@sensorberg.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: prometheus-client
+Requires-Dist: panoramisk
+Requires-Dist: click
+Requires-Dist: sentry-sdk
+
+
+# asterisk_exporter
+
+This package is loosely based on https://github.com/litnimax/asterisk-stats.
+
+## What is this for?
+
+This app creates a Prometheus scrape endpoint that exposes information about peers (ie connections) and channels (ie active "calls").
+
+
