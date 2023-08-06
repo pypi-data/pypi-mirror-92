@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+dnstemple/__init__.py
+dnstemple/version.py
+dnstemple.egg-info/PKG-INFO
+dnstemple.egg-info/SOURCES.txt
+dnstemple.egg-info/dependency_links.txt
+dnstemple.egg-info/entry_points.txt
+dnstemple.egg-info/requires.txt
+dnstemple.egg-info/top_level.txt
