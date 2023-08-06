@@ -1,0 +1,56 @@
+{
+    "service": "model1.goods.main.Service",
+    "methods": [
+        {
+            "name": "_api_get",
+            "api_method": "GET",
+            "api_path": "/model1/goods/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "default": 0,
+                            "message": "此{}为必填项"
+                        },
+                        {
+                            "type": "range",
+                            "min": 0,
+                            "max": 10,
+                            "message": "数值范围 0~10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "_api_post",
+            "api_method": "POST",
+            "api_path": "/model1/goods/",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "此{}为必填项"
+                        },
+                        {
+                            "type": "length",
+                            "min": 6,
+                            "max": 10,
+                            "message": "长度必须大于6<10"
+                        },
+                        {
+                            "type": "email",
+                            "message": "不符合邮箱格式"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
