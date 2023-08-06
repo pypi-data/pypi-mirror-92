@@ -1,0 +1,7 @@
+README.md
+setup.py
+cli-chess/info.py
+cli-chess/cli_chess.egg-info/PKG-INFO
+cli-chess/cli_chess.egg-info/SOURCES.txt
+cli-chess/cli_chess.egg-info/dependency_links.txt
+cli-chess/cli_chess.egg-info/top_level.txt
