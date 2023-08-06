@@ -1,0 +1,3 @@
+[console_scripts]
+sonicgenerator = sonic.__main__:main
+
