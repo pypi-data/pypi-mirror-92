@@ -1,0 +1,13 @@
+README.md
+setup.py
+biostudies_client.egg-info/PKG-INFO
+biostudies_client.egg-info/SOURCES.txt
+biostudies_client.egg-info/dependency_links.txt
+biostudies_client.egg-info/requires.txt
+biostudies_client.egg-info/top_level.txt
+biostudiesclient/__init__.py
+biostudiesclient/api.py
+biostudiesclient/auth.py
+biostudiesclient/config.py
+biostudiesclient/exceptions.py
+biostudiesclient/response_utils.py
