@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: helloworld-mcv
+Version: 0.0.3
+Summary: Say hello!
+Home-page: https://github.com/mcvarer/pypi-hellow-word
+Author: Murat Can VARER
+Author-email: murat@visiosoft.com.tr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: blessings (~=1.7)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+Requires-Dist: check-manifest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# Hello World
+
+## 1. Ensure pip, setuptools, and wheel are up to date
+```
+python -m pip install --upgrade pip setuptools wheel
+```
+## 2. Build and Push it
+```
+python setup.py sdist bdist_wheel
+```
+```
+pip install -e .
+```
+```
+python -m pip install --upgrade twine
+```
+
+```
+twine upload dist/*
+```
+## 3. Auth your account
+- **username**: mcanv
+- **password**: **********
+
+
+
+This is an example project demonstrating how to publish a python module to PyPI.
+
+## Installation
+
+Run the following to install:
+
+```
+python pip install helloworld-mcv
+```
+
+## Usage
+
+```
+from helloworld import say_hello
+
+# Generate "Hello, World!"
+say_hello()
+
+# Generate "Hello, Everybody!"
+say_hello("Everybody")
+```
+
