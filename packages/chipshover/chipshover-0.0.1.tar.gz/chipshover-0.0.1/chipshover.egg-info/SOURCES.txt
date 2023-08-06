@@ -1,0 +1,11 @@
+README.md
+setup.py
+chipshover/__init__.py
+chipshover/cs.py
+chipshover/firmware.py
+chipshover/samba.py
+chipshover.egg-info/PKG-INFO
+chipshover.egg-info/SOURCES.txt
+chipshover.egg-info/dependency_links.txt
+chipshover.egg-info/requires.txt
+chipshover.egg-info/top_level.txt
