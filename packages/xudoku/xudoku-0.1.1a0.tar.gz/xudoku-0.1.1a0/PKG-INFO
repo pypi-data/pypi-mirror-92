@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: xudoku
+Version: 0.1.1a0
+Summary: Solve sudoku using an 'exact cover' algorithm.
+License: GNU GPL v2.0
+Author: Moy Easwaran
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: exact-cover (>=0.4.1,<0.5.0)
