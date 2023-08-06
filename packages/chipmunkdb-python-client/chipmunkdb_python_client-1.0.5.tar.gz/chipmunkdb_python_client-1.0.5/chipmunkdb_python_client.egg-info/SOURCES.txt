@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+chipmunkdb/ChipmunkDb.py
+chipmunkdb/__init__.py
+chipmunkdb/config.cfg
+chipmunkdb_python_client.egg-info/PKG-INFO
+chipmunkdb_python_client.egg-info/SOURCES.txt
+chipmunkdb_python_client.egg-info/dependency_links.txt
+chipmunkdb_python_client.egg-info/entry_points.txt
+chipmunkdb_python_client.egg-info/requires.txt
+chipmunkdb_python_client.egg-info/top_level.txt
+test/test.py
+test/testDelete.py
+test/testDomain.py
