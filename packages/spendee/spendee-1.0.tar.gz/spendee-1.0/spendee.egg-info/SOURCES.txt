@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+spendee/__init__.py
+spendee/exceptions.py
+spendee/spendee.py
+spendee.egg-info/PKG-INFO
+spendee.egg-info/SOURCES.txt
+spendee.egg-info/dependency_links.txt
+spendee.egg-info/requires.txt
+spendee.egg-info/top_level.txt
