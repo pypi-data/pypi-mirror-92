@@ -1,0 +1,10 @@
+README.md
+setup.py
+sqlalchemy_basemodel/__init__.py
+sqlalchemy_basemodel/base_model.py
+sqlalchemy_basemodel/utils.py
+sqlalchemy_basemodel.egg-info/PKG-INFO
+sqlalchemy_basemodel.egg-info/SOURCES.txt
+sqlalchemy_basemodel.egg-info/dependency_links.txt
+sqlalchemy_basemodel.egg-info/requires.txt
+sqlalchemy_basemodel.egg-info/top_level.txt
