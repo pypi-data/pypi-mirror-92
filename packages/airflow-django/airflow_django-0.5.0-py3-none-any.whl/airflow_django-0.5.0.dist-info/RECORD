@@ -1,0 +1,5 @@
+airflow_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_django/operators.py,sha256=Lez3m3B_rq204iN7nM8_Ot5CyzIzz5yA61t0kIs_HH8,838
+airflow_django-0.5.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+airflow_django-0.5.0.dist-info/METADATA,sha256=Cz999UFB-cR0bqAG5RdVMmCjYF6PBBLkQQomh_D68QI,595
+airflow_django-0.5.0.dist-info/RECORD,,
