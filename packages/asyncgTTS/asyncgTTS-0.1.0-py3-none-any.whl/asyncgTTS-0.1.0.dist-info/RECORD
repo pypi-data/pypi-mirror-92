@@ -1,0 +1,10 @@
+asyncgTTS/__init__.py,sha256=nhpJHbRQbdDeJcZYocy9zbDCAs1Wyi61ljsxBkhr0Bo,351
+asyncgTTS/_decos.py,sha256=uSW7M8DIZLlVwZdqN1IPyS6ITODM5tIuGS3KWdN7h6Y,345
+asyncgTTS/asyncgTTS.py,sha256=BmM_g38nj0Vg06S65LD6GI1fK1jUZrBhh233v3XkD9o,1811
+asyncgTTS/easygTTS.py,sha256=xSNmCfm7im3HjFKn5CrRdemil8H0WnhW_RAeY9N6VgU,1080
+asyncgTTS/gtts.py,sha256=xGio7tCluXDlBI1sVkzkepLDWEntGaeEU2n7xW3pk2Q,768
+asyncgTTS-0.1.0.dist-info/LICENCE.txt,sha256=ClKOhd3E7iAE0u44UD_SZgbOhdpO1OoAHmi9U04cqYc,1053
+asyncgTTS-0.1.0.dist-info/METADATA,sha256=FdgJ6UM-ZIIwTlLneannENn5RilesKdiu4SL9vVe73k,2009
+asyncgTTS-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+asyncgTTS-0.1.0.dist-info/top_level.txt,sha256=5mArf9cGzWHHcQuVbtZ4vVXsIkGMlht7O-CtAK_ZbgI,10
+asyncgTTS-0.1.0.dist-info/RECORD,,
