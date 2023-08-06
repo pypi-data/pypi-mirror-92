@@ -1,0 +1,9 @@
+dispatch/__init__.py,sha256=CUyAiZpCvqwmbj3ZRZIz06YHx99m0BUif8Zjb_M7hJA,530
+dispatch/bot.py,sha256=wSQoJjyyPrNFDblEKvXHsuwAX-gAWSXexzakJrzVE6o,1812
+dispatch/context.py,sha256=9MHV4C3PSEVGFdDD1zEfMq_W9qJcihu_JjH6rxxeiSM,2320
+dispatch/paginator.py,sha256=K6gpVrrRVqi1B_ooTkSpDTuCaUZ8L6aclcXIEKYBT0U,4261
+dispatch/settings.py,sha256=LQ86XSEG5W0v9Q7hfUOHJ1oOpliNuSRXIOzNAzyCuFk,221
+dis.patch-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dis.patch-0.2.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dis.patch-0.2.4.dist-info/METADATA,sha256=qWznA1H23SvNr1TCU_6d8bmdPoGxJokzTx_AcX_rDUg,2103
+dis.patch-0.2.4.dist-info/RECORD,,
