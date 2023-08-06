@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mach4
+Version: 0.0.1
+Summary: Mach4 is a Python3 API framework based on Flask. 
+Home-page: https://github.com/alph4ice/Mach4
+Author: Cyriaque Perier
+License: UNKNOWN
+Description: Mach4 is a Python3 API framework based on Flask. Docs comming soon!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
