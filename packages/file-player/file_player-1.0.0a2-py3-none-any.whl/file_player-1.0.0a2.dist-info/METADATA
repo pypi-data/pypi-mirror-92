@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: file-player
+Version: 1.0.0a2
+Summary: A music and audio player which uses the file system rather than tags to order files
+Home-page: https://gitlab.com/SunyataZero/file-player
+Author: Tord Dellsén
+Author-email: tord.dellsen@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: PyQt5 (>=5.15.2)
+
+A music and audio player which uses the file system rather than tags to order files. Support for m3u playlists
+
+
