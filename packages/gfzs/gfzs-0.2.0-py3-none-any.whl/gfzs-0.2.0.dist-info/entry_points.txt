@@ -1,0 +1,3 @@
+[console_scripts]
+gfzs=gfzs.cli:main
+
