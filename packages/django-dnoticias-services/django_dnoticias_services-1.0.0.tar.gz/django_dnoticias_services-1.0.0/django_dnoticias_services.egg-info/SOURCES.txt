@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+django_dnoticias_services.egg-info/PKG-INFO
+django_dnoticias_services.egg-info/SOURCES.txt
+django_dnoticias_services.egg-info/dependency_links.txt
+django_dnoticias_services.egg-info/requires.txt
+django_dnoticias_services.egg-info/top_level.txt
+dnoticias_services/__init__.py
+dnoticias_services/apps.py
+dnoticias_services/mail/__init__.py
+dnoticias_services/mail/base.py
+dnoticias_services/mail/campaign.py
+dnoticias_services/mail/mail.py
+dnoticias_services/migrations/__init__.py
