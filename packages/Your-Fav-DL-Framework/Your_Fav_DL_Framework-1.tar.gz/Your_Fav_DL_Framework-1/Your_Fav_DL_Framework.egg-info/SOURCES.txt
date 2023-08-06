@@ -1,0 +1,12 @@
+setup.py
+Your_Fav_DL_Framework/__init__.py
+Your_Fav_DL_Framework/activations.py
+Your_Fav_DL_Framework/data.py
+Your_Fav_DL_Framework/eval.py
+Your_Fav_DL_Framework/frame.py
+Your_Fav_DL_Framework/loss.py
+Your_Fav_DL_Framework/optmizers.py
+Your_Fav_DL_Framework.egg-info/PKG-INFO
+Your_Fav_DL_Framework.egg-info/SOURCES.txt
+Your_Fav_DL_Framework.egg-info/dependency_links.txt
+Your_Fav_DL_Framework.egg-info/top_level.txt
