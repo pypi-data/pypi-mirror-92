@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: workbench-crm
+Version: 0.0.20210124
+Summary: Django-based Agency Software (time tracking, project management, addressbook, offering and invoicing)
+Home-page: https://github.com/matthiask/workbench/
+Author: Matthias Kestenholz
+Author-email: mk@feinheit.ch
+License: MIT
+Description: =========
+        Workbench
+        =========
+        
+        .. image:: https://travis-ci.org/matthiask/workbench.svg?branch=main
+            :target: https://travis-ci.org/matthiask/workbench
+        
+        Recommended contents of ``.env`` (add some random value for
+        ``SECRET_KEY`` and copy the ``OAUTH2_CLIENT_*`` values from the ``.env``
+        file on the production server)::
+        
+            DATABASE_URL=postgres://localhost:5432/workbench
+            CACHE_URL=hiredis://localhost:6379/1/?key_prefix=workbench
+            SECRET_KEY=...
+            SENTRY_DSN=
+            ALLOWED_HOSTS=["*"]
+            DEBUG=True
+            NAMESPACE=feinheit
+            OAUTH2_CLIENT_ID=...
+            OAUTH2_CLIENT_SECRET=...
+        
+        Local setup::
+        
+            fab setup
+            fab pull_db:fh
+        
+        Development::
+        
+            fab dev
+        
+        Code style & prettification::
+        
+            tox
+            yarn prettier
+            yarn eslint
+        
+        Compile the bootstrap library::
+        
+            yarn build-bootstrap
+        
+Platform: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
