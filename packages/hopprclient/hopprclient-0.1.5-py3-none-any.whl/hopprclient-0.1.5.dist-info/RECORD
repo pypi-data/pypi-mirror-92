@@ -1,0 +1,12 @@
+hopprclient/__init__.py,sha256=hKRQVlJYTnOY5crhfSfYks5yjfAXUgl1elxLSlemlJs,15
+hopprclient/__main__.py,sha256=RCXlG_oaI7KXd261KGKO3K29EjeVRspe4NgvcxrvDUk,3193
+hopprclient/hoppr_client.py,sha256=7Y7VyW0fiK-ZVYtddASkSkC8PLJEOecPbdX43Rszt-g,9282
+hopprclient/service_clients/__init__.py,sha256=FbyMt9mvxsbHCVbDjnUc1orBr7efzHTVk2L8TCOsR04,55
+hopprclient/service_clients/files_service_client.py,sha256=OgO6WC-QDfLGPXL3Rd15xF9iD86Rcc-MnaZkEy2dvwg,3345
+hopprclient/service_clients/http_service_client.py,sha256=0cDcKrBHC_wehza50jXMCxYyHaxODbkqryrQeYU2o2M,1027
+hopprclient-0.1.5.dist-info/LICENSE,sha256=Tj_jRJAv-gOXIbDxX5qg9jDlDnuH3I7Ji87NxBqpUcs,1070
+hopprclient-0.1.5.dist-info/METADATA,sha256=VP-D5Iu8fFv84TSBN6AODDvDnsoqgw2dYxJFSMdOOsA,2784
+hopprclient-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hopprclient-0.1.5.dist-info/entry_points.txt,sha256=eAQnVP8lmo9Rd0K0sPg66H7pb74a1slK7_SAC4uo28k,59
+hopprclient-0.1.5.dist-info/top_level.txt,sha256=O5Uzh-ew34EE4UX4r1qi9IgqzqYFZ07-3LlOzZxkzaI,12
+hopprclient-0.1.5.dist-info/RECORD,,
