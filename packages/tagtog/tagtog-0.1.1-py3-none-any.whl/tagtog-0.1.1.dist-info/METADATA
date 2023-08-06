@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tagtog
+Version: 0.1.1
+Summary: Python library & CLI to interact with tagtog APIs & datasets
+Home-page: https://github.com/tagtog/pytagtog
+Author: tagtog team
+Author-email: info@tagtog.net
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+Just getting started ;-)
+
+More info at [tagtog.net](https://www.tagtog.net)
+
