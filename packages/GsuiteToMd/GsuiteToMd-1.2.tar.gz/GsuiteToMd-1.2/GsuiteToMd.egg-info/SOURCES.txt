@@ -1,0 +1,17 @@
+README.rst
+pyproject.toml
+setup.py
+GsuiteToMd.egg-info/PKG-INFO
+GsuiteToMd.egg-info/SOURCES.txt
+GsuiteToMd.egg-info/dependency_links.txt
+GsuiteToMd.egg-info/requires.txt
+GsuiteToMd.egg-info/top_level.txt
+gstomd/__init__.py
+gstomd/__main__.py
+gstomd/convert.py
+gstomd/gdoc.py
+gstomd/gfolder.py
+gstomd/node.py
+gstomd/utils.py
+gstomd/test/__init__.py
+gstomd/test/test_corpus.py
