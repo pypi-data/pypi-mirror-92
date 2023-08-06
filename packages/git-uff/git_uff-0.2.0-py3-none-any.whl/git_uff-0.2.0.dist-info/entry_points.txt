@@ -1,0 +1,3 @@
+[console_scripts]
+git-uff=git_uff.main:main
+
