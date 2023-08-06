@@ -1,0 +1,15 @@
+datalad_ukbiobank/__init__.py,sha256=sFkGs36_DHEEnR-QTTY2DiBZ9uJWLyVPi6X4bL2vGMk,529
+datalad_ukbiobank/_version.py,sha256=Ep0dU8inrbPWbusOFVEu1XfP8rtFF6pVuzuUIWzUJV4,497
+datalad_ukbiobank/init.py,sha256=SmGzpT6ZvNsvbw2xOl0fFMGfmhnO8wQCO1DSmtEpv4A,6812
+datalad_ukbiobank/ukb2bids.py,sha256=vgHcTTpj1v9-5WutID4m7PKZfjDOW7AC1KXqNQltxf4,4601
+datalad_ukbiobank/ukb2bids_map.py,sha256=fKr8pdaMGuQYqW5GoZvPCTWsNO1d-6hiD7yrgtGrzDE,19627
+datalad_ukbiobank/update.py,sha256=HkyQrZUbx0MZtXkWJvUcqmW21GNZkMrlSAD2T-6ZqqM,12077
+datalad_ukbiobank/tests/__init__.py,sha256=TtwX4mAv74kyd6_V4N_v43KzQjkDXTVeG4B3I8Wdysk,1434
+datalad_ukbiobank/tests/test_init.py,sha256=rEAXjedeg9VZGJ-1yRuxgo6YYt12bafLsFecPjy2Y8o,1988
+datalad_ukbiobank/tests/test_update.py,sha256=EMEMo-FBim-i3MJM9sXURHQLsuD1PXcQ5yU-4Ljv-_8,6651
+datalad_ukbiobank-0.3.1.dist-info/LICENSE,sha256=z9r9noIY4fZXpSN9TRbplf6oRbLk4qgqMRNwyha-urw,1064
+datalad_ukbiobank-0.3.1.dist-info/METADATA,sha256=Ez0DrDI2BOSevDv_0bl-YljOLV5GewySQZ4Qp744EGw,5801
+datalad_ukbiobank-0.3.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+datalad_ukbiobank-0.3.1.dist-info/entry_points.txt,sha256=rju2jgKqy0nvpjlgJjSDTRBbSF1jk3XWThJ6BkYwec4,66
+datalad_ukbiobank-0.3.1.dist-info/top_level.txt,sha256=4nmzEGhIXfpOYLUyWLSlOX3uuWhO_g3vYLMCRoB8OQk,18
+datalad_ukbiobank-0.3.1.dist-info/RECORD,,
