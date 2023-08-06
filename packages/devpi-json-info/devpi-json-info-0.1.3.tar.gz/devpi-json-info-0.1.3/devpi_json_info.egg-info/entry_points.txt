@@ -1,0 +1,3 @@
+[devpi_server]
+devpi-json-info = devpi_json_info.devpi_json_info
+

@@ -1,0 +1,10 @@
+README.md
+setup.py
+devpi_json_info/__init__.py
+devpi_json_info/devpi_json_info.py
+devpi_json_info.egg-info/PKG-INFO
+devpi_json_info.egg-info/SOURCES.txt
+devpi_json_info.egg-info/dependency_links.txt
+devpi_json_info.egg-info/entry_points.txt
+devpi_json_info.egg-info/requires.txt
+devpi_json_info.egg-info/top_level.txt
