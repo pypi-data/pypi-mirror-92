@@ -1,0 +1,13 @@
+phreeqpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phreeqpy/iphreeqc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phreeqpy/iphreeqc/iphreeqc.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phreeqpy/iphreeqc/libiphreeqc.0.dylib,sha256=W2D0taaXOQRJyOhesii3l1Z8kcNNQ6j7E7nyzRrv6Pw,1942376
+phreeqpy/iphreeqc/libiphreeqc.so.0.0.0,sha256=YaIPuq7okFq72_8YN_-VTI_ARcuix5mk3o8BhROusBI,10992636
+phreeqpy/iphreeqc/phreeqc_com.py,sha256=6tXLfPvtIXOzkmNwBAz-9hUlQdMFpL_G1hYQWV4ySNw,1589
+phreeqpy/iphreeqc/phreeqc_dll.py,sha256=vyhpZ9iT0T7BgPkaEMwPvhlod5ywq2ZSalJfj14fLPA,11549
+phreeqpy-0.4.0.dist-info/AUTHORS,sha256=40Gu-wlUBqEiRm6oem-z8RM2lHlcGqDoGKnQ3Dhl5KQ,288
+phreeqpy-0.4.0.dist-info/LICENSE,sha256=SQTX7igR2OERAC6YX_mokcVPct4zY0Ur__HXtNYlZTY,1589
+phreeqpy-0.4.0.dist-info/METADATA,sha256=nKG_mKjSMqd1A29klYp12fGTsbJwyOyCu6VL-FIi9rY,2031
+phreeqpy-0.4.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+phreeqpy-0.4.0.dist-info/top_level.txt,sha256=ubBukHWBqU7ul59HLL19vsdxPYGCIJFvLbSyHmF2GG0,9
+phreeqpy-0.4.0.dist-info/RECORD,,
