@@ -1,0 +1,10 @@
+mopinion/__init__.py,sha256=JTufwa9RLw_crvOwh8zVSGNE-Ukuej747UGv6KhxhEM,43
+mopinion/client.py,sha256=zYF2hjM9Spd8iv4GcS4307XF2LaXTtDCsvxk6W25yuc,14417
+mopinion/dataclasses.py,sha256=nJRxvg5iUc20B4tUPIKQsKDOP35R9-I2HceoRSG9sCc,4588
+mopinion/settings.py,sha256=SN9wBTMkOmK6ZbkRZfGbyp3NchA86-NSn67uCpCRRq8,389
+mopinion-0.0.5.dist-info/LICENSE,sha256=h96s3AqBIvNJwmacVvaTE3EWTK6JIixlKZOHSPI4PyY,1075
+mopinion-0.0.5.dist-info/METADATA,sha256=iV3LrK83wiTolZtWTRnQnXzn3O6kv9xh7wz-ubf2ba8,3474
+mopinion-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mopinion-0.0.5.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mopinion-0.0.5.dist-info/top_level.txt,sha256=FpDlC30X88J5Cfe4nZiWALOjWoggl3OG8y-jOfzS-WM,9
+mopinion-0.0.5.dist-info/RECORD,,
