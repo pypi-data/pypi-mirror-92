@@ -1,0 +1,8 @@
+README.md
+crontzconvert.py
+setup.py
+crontzconvert.egg-info/PKG-INFO
+crontzconvert.egg-info/SOURCES.txt
+crontzconvert.egg-info/dependency_links.txt
+crontzconvert.egg-info/requires.txt
+crontzconvert.egg-info/top_level.txt
