@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: SQLAlchemy-DLock
+Version: 0.1.1.post2
+Summary: A distributed lock implementation based on SQLAlchemy
+Home-page: https://github.com/tanbro/sqlalchemy-dlock
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: SQLAlchemy (<2.0,>=1.3)
+Requires-Dist: libscrc (<2.0,>=1.5)
+
+# SQLAlchemy-DLock
+
+Distributed lock based on Database and SQLAlchemy.
+
+It currently supports locks of:
+
+- MySQL: <https://dev.mysql.com/doc/refman/8.0/en/locking-functions.html>
+- PostgreSQL: <https://www.postgresql.org/docs/current/explicit-locking.html#ADVISORY-LOCKS>
+
+It's not stable and **DO NOT** use it in production.
+
+## Usages
+
+Basic usage:
+
+```python
+# ...
+from sqlalchemy import create_engine
+from sqlalchemy_dlock import make_sa_dlock
+
+# ...
+
+lock_key = 'user/001'
+
+# ...
+
+engine = create_engine('postgresql://scott:tiger@localhost/')
+
+# ...
+
+with engine.connect() as conn:
+    with make_sa_dlock(conn, lock_key):
+        # do sth...
+        pass
+# ...
+```
+
+Work with SQLAlchemy's Session:
+
+```python
+# ...
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy_dlock import make_sa_dlock
+# ...
+
+lock_key = 'user/001'
+
+# ...
+
+engine = create_engine('postgresql://scott:tiger@localhost/')
+Session = sessionmaker(bind=engine)
+
+# ...
+
+session = Session()
+
+# ...
+
+with session.bind.connect() as conn:
+    with make_sa_dlock(conn, lock_key):
+        # ...
+        user = session.query('User').filter(id='001').one()
+        user.password = 'new password'
+        session.commit()
+        # ...
+# ...
+```
+
+# CHANGELOG
+
+## v0.1.1
+
+- An early version, maybe not stable enough.
+- Replace black2b with crc64-iso in PostgreSQL key convert function
+- Only named arguments as extra parameters allowed in Lock's implementation class
+
+# AUTHORS
+
+* Liu Xue Yan (<liu_xue_yan@foxmail.com>)
+
+  [![liu_xue_yan@foxmail.com](https://www.gravatar.com/avatar/049d2fae1fd2df6439e87d1383d0276b)](mailto:liu_xue_yan@foxmail.com)
+
+
