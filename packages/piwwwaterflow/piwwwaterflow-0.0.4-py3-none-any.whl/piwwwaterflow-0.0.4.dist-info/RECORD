@@ -1,0 +1,7 @@
+piwwwaterflow/__init__.py,sha256=V6Nw_OuMBO08BJXKRPbqPmD7NGxed8ihtJWNZe7TNpQ,25
+piwwwaterflow/webservice.py,sha256=kg3TvXCs91vjbRZpKGklJw_zhH_NB3ui07WEvRth_Pw,6252
+piwwwaterflow/wsgi.py,sha256=9u5fdRhjQGI7wD1BItMPGYsB7f9HsvkKq7NGcb1_dDs,73
+piwwwaterflow-0.0.4.dist-info/METADATA,sha256=zlU7lJD1oJL396xh3cdpi3fH7b_qOOoCm1BR1rKOwT0,624
+piwwwaterflow-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+piwwwaterflow-0.0.4.dist-info/top_level.txt,sha256=n5aGYmM7HHKO2-4BiI8jxmiWKxkjSS86aNhONedP6a8,14
+piwwwaterflow-0.0.4.dist-info/RECORD,,
