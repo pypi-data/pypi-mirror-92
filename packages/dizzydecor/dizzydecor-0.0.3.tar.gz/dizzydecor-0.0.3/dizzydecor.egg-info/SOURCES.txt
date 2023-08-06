@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+dizzydecor/__init__.py
+dizzydecor.egg-info/PKG-INFO
+dizzydecor.egg-info/SOURCES.txt
+dizzydecor.egg-info/dependency_links.txt
+dizzydecor.egg-info/requires.txt
+dizzydecor.egg-info/top_level.txt
