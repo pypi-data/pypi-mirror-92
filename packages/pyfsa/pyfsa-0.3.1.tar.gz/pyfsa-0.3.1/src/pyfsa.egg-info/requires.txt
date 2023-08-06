@@ -1,0 +1,8 @@
+click
+pygraphviz
+
+[tests]
+mypy
+pytest-cov
+pytest
+flake8

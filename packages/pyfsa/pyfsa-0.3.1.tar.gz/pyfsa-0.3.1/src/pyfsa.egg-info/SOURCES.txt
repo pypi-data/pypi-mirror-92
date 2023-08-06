@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/pyfsa/__init__.py
+src/pyfsa/main.py
+src/pyfsa.egg-info/PKG-INFO
+src/pyfsa.egg-info/SOURCES.txt
+src/pyfsa.egg-info/dependency_links.txt
+src/pyfsa.egg-info/entry_points.txt
+src/pyfsa.egg-info/requires.txt
+src/pyfsa.egg-info/top_level.txt
+src/pyfsa/lib/__init__.py
+src/pyfsa/lib/csv_convert.py
+src/pyfsa/lib/fsa.py
+src/pyfsa/lib/types.py
