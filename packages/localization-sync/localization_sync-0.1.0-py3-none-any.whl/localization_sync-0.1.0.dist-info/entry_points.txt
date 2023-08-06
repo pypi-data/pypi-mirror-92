@@ -1,0 +1,3 @@
+[console_scripts]
+l10n_sync = Sources.data_sync:main
+
