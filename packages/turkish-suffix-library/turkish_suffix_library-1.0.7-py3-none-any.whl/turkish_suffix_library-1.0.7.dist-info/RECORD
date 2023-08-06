@@ -1,0 +1,13 @@
+turkish_suffix_library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turkish_suffix_library/consonants.py,sha256=PrR8ofk9F5j1KHf8kxdUO8DoP4ROKj_0zw-ijvEjL4Q,5982
+turkish_suffix_library/database.db,sha256=QjQ7zcjI1majv4fTctF7oF0qg5xKZ_c2YcjL6FIVWuw,3813376
+turkish_suffix_library/sample_verbs_list.py,sha256=lLT0cA3XAXbgcLaYTOltQENzTDnvdYRh4siGgl67cC0,2341
+turkish_suffix_library/test_verbs.py,sha256=TSR3X5y6d0k7YT7ugel2nrRfptAOlxkCNTna9tt4GLw,3688
+turkish_suffix_library/turkish.py,sha256=dz-1OwAAc4NLvsYh7uBvcwiAApl5tvtz71uE3jgJxVc,53662
+turkish_suffix_library/turkish_class.py,sha256=U4YTOnokJDFOZKmZVSbETMyjCb5N0OvXdnYU5HQfFDk,5280
+turkish_suffix_library/turkish_string.py,sha256=lYfZquS_MzmkTvyumKtVkFZjOyx04fJnhpALVGlXaKk,5191
+turkish_suffix_library-1.0.7.dist-info/LICENCE,sha256=3gSO9LxWnT9CtV71m94EjoEM2gX4gEIS3dpZTxOWJHo,612
+turkish_suffix_library-1.0.7.dist-info/METADATA,sha256=GzS16vvdTHewEUqk19t58iUDXfkYksGi1-fQdlAwrr4,3012
+turkish_suffix_library-1.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+turkish_suffix_library-1.0.7.dist-info/top_level.txt,sha256=mmvAAYHsxVdDC1Ru-f4VSA_iEbUalRRoWmigCr6irZA,23
+turkish_suffix_library-1.0.7.dist-info/RECORD,,
