@@ -1,0 +1,5 @@
+pymongo<4.0.0,>=2.7.2
+django
+celery
+six
+pytz
