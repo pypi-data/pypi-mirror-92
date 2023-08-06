@@ -1,0 +1,14 @@
+fenci/__init__.py,sha256=dDBWtRij9innYI1-PPeWe8qYboqFkvmzD_cDO6MQKfE,120
+fenci/base.py,sha256=a3p8SwSqg7JT6P8kUW1uanja0rDvPiWyn7sBoDELkDk,545
+fenci/const.py,sha256=wTIqr37B9_fUx6EDyPCpedTDStnmjUpTWMrtr174b-Y,206
+fenci/dict_small.txt,sha256=ZmVQ_eH04aRDywJ-x0n0oRGXzh2HbrdX1jwpUWG56nM,1403759
+fenci/hmm_data.json,sha256=kauNxcblXiv3g9KXiVTDI1T_8Xk_Y-E1MInWAN4rjuo,389318
+fenci/hmm_segment.py,sha256=8F_u6GMvNyu3jgyINtB2BaqFelHdxkZAEFmtw3fBNRE,9493
+fenci/segment.py,sha256=zS-kC93SV_Otsq9uYWzDUSKzyd_7tLpb3qlPzA-9ye8,9574
+fenci/train_hmm.py,sha256=jj7kF4AXKrIB1J6Y2gj0L3Orv6ZxfW-4FOyMubHKnm0,3806
+fenci/utils.py,sha256=Hx3dQ2bPqPdVhdX7neBVkliWFdfwowlu4SxUstHAodA,3114
+fenci-0.2.2.dist-info/LICENSE,sha256=atS1NJoHcu9UUIAu4QST1CTuIt4q8JJjOu4IiM8cp6M,1062
+fenci-0.2.2.dist-info/METADATA,sha256=WzRftnLJgQ4Knz-jZKxPLkSIWFkiTNhWhX0Y8CEXNAA,3801
+fenci-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fenci-0.2.2.dist-info/top_level.txt,sha256=k7BsaWuZrU4A1-FsKkg3PTxF52DdjwO29VvwgMhaXhI,6
+fenci-0.2.2.dist-info/RECORD,,
