@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: darkai
+Version: 0.5.1
+Summary: DarkAI is a Machine Learning Framework, designed from the core to be simple, versatile and highly performant
+Home-page: https://github.com/thomasb892/darkai
+Author: Thomas Sudeep Benardo
+Author-email: contact@codewithzeal.com
+License: MIT
+Download-URL: https://github.com/user/reponame/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: machine learning,deep learning,supervised learning,unsupervised learning,reinforcement learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
