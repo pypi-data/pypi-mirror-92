@@ -1,0 +1,14 @@
+webflow_aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webflow_aws/app.py,sha256=XH_DN1hDa_IMgUfOa-SBS_N-xLAvRvA1or_o0eBgiKw,1052
+webflow_aws/create_cloudformation_template.py,sha256=hUIbUSwFx13_U9gSDBTh0lfvnsoRVgRx6HEGSPD5iXc,14323
+webflow_aws/utils.py,sha256=FzUkfgmRIj40JrgknsrtB_-QKvtTAjSsTCMYiQNY-Cg,1365
+webflow_aws/webflow_aws_tool.py,sha256=RfyLd0lQl7mjUjQHNUNUpAsFTB5IiFHzY_CCnx-nInI,5172
+webflow_aws/lambda_function/cloudfront_www_edit_path_for_origin/cloudfront_www_edit_path_for_origin.zip,sha256=4jusT_PVLWuxauIN3B13ekzs30SQDR5D7DJOLMn8i9k,453
+webflow_aws/lambda_function/s3_trigger_artifacts_upload/s3_trigger_upload_artifacts.zip,sha256=AuE-xetpa98wZZPMrQBiIeZ7wbuk4G-v9X22nD9wPtw,28076
+webflow_aws/templates/template_setup.yaml,sha256=R05GbHrWsifFD3dmxvdUdkzoBskBr-UAWSz8zNOj2vU,459
+webflow_aws-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+webflow_aws-0.0.1.dist-info/METADATA,sha256=yE9zCnO6PL3E08_Kcxs1G7ija28W5GkrLmcUeUmKM7c,6487
+webflow_aws-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+webflow_aws-0.0.1.dist-info/entry_points.txt,sha256=Wvyrr78ODD7LQogExBNHTMAEuFSv4I-G0hY_VtMcxe4,84
+webflow_aws-0.0.1.dist-info/top_level.txt,sha256=iywbF0t7Hwtjj86v0R2PWKFYSDlfATFmJ40l5b_45Jw,12
+webflow_aws-0.0.1.dist-info/RECORD,,
