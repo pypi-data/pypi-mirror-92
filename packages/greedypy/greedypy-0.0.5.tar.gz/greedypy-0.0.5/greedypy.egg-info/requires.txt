@@ -1,0 +1,8 @@
+argparse
+numpy
+scipy
+nibabel
+pynrrd
+pyfftw
+zarr
+numcodecs
