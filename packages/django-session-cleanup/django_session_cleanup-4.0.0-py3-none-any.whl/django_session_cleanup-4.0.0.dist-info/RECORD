@@ -1,0 +1,9 @@
+session_cleanup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+session_cleanup/models.py,sha256=o9OLSqCjxl-f58x1NghptLZ54jnJelBqJUiOVQBmwuQ,27
+session_cleanup/settings.py,sha256=AmwgsWZrmXJSQFeZypw5PTLOua13ZVAu6Gc-xGbR6nc,284
+session_cleanup/tasks.py,sha256=fX81HG5PLE46u5UqdS5NmvC0EY5HDRFP6U28mBU7QNU,225
+django_session_cleanup-4.0.0.dist-info/LICENSE,sha256=4-K9QExprEWOIsjT3eSCL0I-i16TRNoNWGN5a48u9gU,1323
+django_session_cleanup-4.0.0.dist-info/METADATA,sha256=Cxz9TSxTqEzngZvbA_8xS0CFNrqoy7lbO8KyWQRx5K0,1675
+django_session_cleanup-4.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_session_cleanup-4.0.0.dist-info/top_level.txt,sha256=5f0IlKdcYszGn5qqMx-nro-eopVeyTeuYp8NTokv8FI,16
+django_session_cleanup-4.0.0.dist-info/RECORD,,
