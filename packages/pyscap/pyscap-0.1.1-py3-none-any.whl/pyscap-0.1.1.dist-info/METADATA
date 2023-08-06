@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyscap
+Version: 0.1.1
+Summary: Python package for handling Security Content Automation Protocol.
+Home-page: https://github.com/Little-Tetra/pyscap
+Author: Kevin Ju
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: xsdata
+
+UNKNOWN
+
+
