@@ -1,0 +1,14 @@
+protobuf
+requests
+numpy
+configparser
+dill
+appdirs
+filelock
+grpcio
+zipp
+acumos
+acumos_model_runner
+onnx
+onnxruntime
+typing_inspect
