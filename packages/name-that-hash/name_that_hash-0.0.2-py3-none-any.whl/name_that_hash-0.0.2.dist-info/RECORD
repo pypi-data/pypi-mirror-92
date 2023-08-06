@@ -1,0 +1,9 @@
+name_that_hash/__init__.py,sha256=bLyiDfL60Aa88V128bTZ-k8ylZmQ2txTL3XvpaKMnv8,157
+name_that_hash/__main__.py,sha256=Rytc0DZcyUGO0ghSCS5h-ttg6q-L79iriKNubyvUQ40,592
+name_that_hash/hash_namer.py,sha256=T4gNUmh2h_wPNp6_xZ_Lu8S6h9SOxRR2AaThGNPL_t4,422
+name_that_hash/hashes.py,sha256=tfwvD2ZpaAu7FK_8ClBNr-otK9N_S3520Jry4WJZrOg,51401
+name_that_hash/runner.py,sha256=MiBEFa-UL9gzix51HI2U55U5j9RUtg0RN7bBJLSKkTg,7945
+name_that_hash-0.0.2.dist-info/entry_points.txt,sha256=3qkKU9zd6vX02GWd8-EejhnqAiJkgtumgAFCgd8JdGI,45
+name_that_hash-0.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+name_that_hash-0.0.2.dist-info/METADATA,sha256=9llU0eFcumnnf1lk2Pzdvy6kUK5Obj2mKSu273ZRD_M,458
+name_that_hash-0.0.2.dist-info/RECORD,,
