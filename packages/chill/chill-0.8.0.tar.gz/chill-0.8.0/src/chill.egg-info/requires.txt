@@ -1,0 +1,14 @@
+setuptools
+docutils
+Flask==1.0
+Jinja2
+Flask-Caching
+Frozen-Flask
+Flask-Markdown
+future
+sqlalchemy
+PyYAML
+gevent==1.4.0
+docopt
+MarkupSafe
+babel
