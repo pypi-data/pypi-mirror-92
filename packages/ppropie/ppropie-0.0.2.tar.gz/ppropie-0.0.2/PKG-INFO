@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ppropie
+Version: 0.0.2
+Summary: A Pre-Processing package for NLP data
+Home-page: https://github.com/chinmaykurade/ppropie
+Author: Chinmay Kurade
+Author-email: chinmay.v.kurade@gmail.com
+License: UNKNOWN
+Description: A Pre-Processing package for NLP data
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
