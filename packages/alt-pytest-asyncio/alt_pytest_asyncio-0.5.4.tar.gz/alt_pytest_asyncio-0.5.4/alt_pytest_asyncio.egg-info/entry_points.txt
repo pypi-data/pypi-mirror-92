@@ -1,0 +1,3 @@
+[pytest11]
+alt_pytest_asyncio = alt_pytest_asyncio
+
