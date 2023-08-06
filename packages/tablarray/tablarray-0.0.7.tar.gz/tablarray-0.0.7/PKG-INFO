@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: tablarray
+Version: 0.0.7
+Summary: Extend broadcasting rules of numpy to abstract tabularshape of data from cellular shape
+Home-page: https://github.com/chriscannon9001/tablarray
+Author: Chris Cannon
+Author-email: chris.cannon.9001@gmail.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.2
