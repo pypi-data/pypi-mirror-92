@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: ANF-Feed
+Version: 0.0.1.dev3
+Summary: Read ANF Feeds
+Home-page: https://github.com/m1ghtfr3e/ANF-Feed-Reader
+Author: m1ghtfr3e
+License: GPLv3
+Project-URL: Source, https://github.com/m1ghtfr3e/ANF-Feed-Reader
+Project-URL: Bug Reports, https://github.com/m1ghtfr3e/ANF-Feed-Reader/issues
+Keywords: anf,feed,rss
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: News/Diary
+Requires-Python: >=3
+Requires-Dist: astroid (==2.4.2)
+Requires-Dist: autopep8 (==1.5.4)
+Requires-Dist: feedparser (==6.0.2)
+Requires-Dist: flake8 (==3.8.4)
+Requires-Dist: helpdev (==0.7.1)
+Requires-Dist: isort (==5.7.0)
+Requires-Dist: jedi (==0.17.2)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: parso (==0.7.1)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: pycodestyle (==2.6.0)
+Requires-Dist: pydocstyle (==5.1.1)
+Requires-Dist: pyflakes (==2.2.0)
+Requires-Dist: pylint (==2.6.0)
+Requires-Dist: PyQt5 (==5.15.2)
+Requires-Dist: PyQt5-sip (==12.8.1)
+Requires-Dist: python-jsonrpc-server (==0.4.0)
+Requires-Dist: python-language-server (==0.36.2)
+Requires-Dist: QDarkStyle (==2.8.1)
+Requires-Dist: QtPy (==1.9.0)
+Requires-Dist: rope (==0.18.0)
+Requires-Dist: sgmllib3k (==1.0.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: snowballstemmer (==2.0.0)
+Requires-Dist: toml (==0.10.2)
+Requires-Dist: ujson (==4.0.1)
+Requires-Dist: wrapt (==1.12.1)
+Requires-Dist: yapf (==0.30.0)
+
+.. image:: https://travis-ci.com/m1ghtfr3e/ANF-Feed.svg?branch=main
+    :target: https://travis-ci.com/m1ghtfr3e/ANF-Feed
+
+.. image:: https://img.shields.io/github/license/m1ghtfr3e/ANF-Feed?style=plastic
+
+===============
+ANF Feed Reader
+===============
+
+This is an Application to get and read RSS Feeds
+from `ANFNews <https://anfenglishmobile.com>`__
+
+Currently following languages are supported:
+  - English (default)
+  - German
+  - Kurmanjî
+  - Spanish
+  - Arab
+
+  *Languages can be changed during usage in the Menu Bar
+  (left upper corner of the window)*
+
+Installation
+------------
+
+- Via PyPi
+
+The easiest installation would be over PyPi, via ``pip``
+which is unfortunately not available right now,
+but very soon::
+
+  $ pip install anffeed
+
+- Alternative
+
+You can also install it with cloning this repository::
+
+  $ git clone https://github.com/m1ghtfr3e/ANF-Feed-Reader.git
+  $ cd ANF-Feed-Reader
+  $ pip install -r requirements.txt
+
+Optionally you can pip install it locally::
+
+  $ pip install .
+
+
+
+Usage
+-----
+After installation you have two options to start:
+
+- Calling the __main__ of the package::
+
+  $ python3 -m anfrss
+
+- Or using the entry point. In this case you can
+  just enter::
+
+  $ anfrss
+
+
+
+
+Meta
+----
+:Authors:
+  m1ghtfr3e
+:Version:
+  0.0.1.dev1
+
+
