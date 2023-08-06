@@ -1,0 +1,16 @@
+savify/__init__.py,sha256=xM1-m0zmzU0RO8mIeaR8lIH3S-_BGvz-DF0UM3uijkQ,467
+savify/__main__.py,sha256=xDH_chQIMi62gIpN8eP9SrmFvwiUM-XIGvsxnu2ULK0,263
+savify/cli.py,sha256=_3X6b8B_SVpCkIbDcGNVMb9EVqn-jkwyCGPqQIRmHIc,4704
+savify/logger.py,sha256=U4tHWm2o6o37p75d8v_mbddc9zzpykLE0xzyEtjyMqY,548
+savify/savify.py,sha256=cftzWBVTE6rMq3DZyjN3tAuE777iibna8ei6uu-sKRk,8604
+savify/spotify.py,sha256=GWPk_OxkfIU8_h_GODRn9cHM8j1QwdiRrRHpbT9Vwqs,2528
+savify/track.py,sha256=n2YNzUytgb4vAM-r0iAjx8hDUWjit_QE6ok-ns5BlV8,2163
+savify/types.py,sha256=_hAXVIvEMD-xbUtgeigvKHSNQn1jTo4qowmr2BvOy_s,489
+savify/utils.py,sha256=KA7nSPyJQAX4XFGpU_GCGgfyZDhN4xN6VcO4CXSktsk,2735
+savify-2.1.1.dist-info/AUTHORS.rst,sha256=aA68vlHxe9xsrEnMXKq2EdlOaeU54USqUt32Ic5lqdo,171
+savify-2.1.1.dist-info/LICENSE,sha256=v6gvr-gvjZiq5m_HNcDm1NBg_P_L20Nyg7cWCidzRgw,1076
+savify-2.1.1.dist-info/METADATA,sha256=UcbMbJ6himh827tw2mYy4GYq2N5LPmMH3wxfJGmvp7Q,10309
+savify-2.1.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+savify-2.1.1.dist-info/entry_points.txt,sha256=DgCULXrfNtkEkh-WfRfixkOX-Kxii0Cd1u1nHLTa2c0,44
+savify-2.1.1.dist-info/top_level.txt,sha256=FUP_BnPHk7GCo6dJ66yP7qJFQSBrLI_yzi7xnrdZNpY,7
+savify-2.1.1.dist-info/RECORD,,
