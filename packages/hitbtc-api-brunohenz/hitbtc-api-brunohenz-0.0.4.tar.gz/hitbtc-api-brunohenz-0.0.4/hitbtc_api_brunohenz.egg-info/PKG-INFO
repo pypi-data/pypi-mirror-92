@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hitbtc-api-brunohenz
+Version: 0.0.4
+Summary: Client to HitBtc API
+Home-page: https://github.com/brunohenz/hitbtc-client-api
+Author: Bruno Henz
+Author-email: brunohzsalomao@gmail.com
+License: UNKNOWN
+Description: # HitBTC Client API 
+        
+        This is a client to connect in HitBtc Exchange API.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
