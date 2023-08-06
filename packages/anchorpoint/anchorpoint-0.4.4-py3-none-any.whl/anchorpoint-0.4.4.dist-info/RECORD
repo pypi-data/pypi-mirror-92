@@ -1,0 +1,14 @@
+anchorpoint/__init__.py,sha256=33ca0WxT29F2Nw6mJs8ZWtj6B4U_zoQw5jiQx3SKBXg,138
+anchorpoint/schemas.py,sha256=uwIY_ojnTXRBFtfSaMF8IM6QCYCFVfWXcSkllZRLPxo,6274
+anchorpoint/textselectors.py,sha256=Hbnw3uCs-avxKWwl7e5D1xdzAnzlAF6eRcr1jU6jeAE,17289
+anchorpoint/textsequences.py,sha256=sRp-JlEOVs5sUUM-JS6zaZXNk6-3TCDn6tGaUQ9FW0c,4955
+anchorpoint/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anchorpoint/utils/_helper.py,sha256=9Vypm7QaxviX77cLqN3hBnaMig-DWw1ZfeoB8NYqO-k,14143
+anchorpoint/utils/ranges.py,sha256=pYbT4_1WrS5nFFjisy54TvTEJxQBuw9f5jiwUEtIaYE,78914
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=0zgzgJ7JETBxL0DEBjps_EAaawuy6grlh2rmomT_uj8,1194
+tests/test_selectors.py,sha256=417BeBrlmfVyyM-uS5zBo-f6Exf7kRIvGi8vwAD73BQ,8579
+anchorpoint-0.4.4.dist-info/METADATA,sha256=X6UCJNRtU_RgMzu89MNoLeKq_y7g5N8aic0_R58jFbE,1952
+anchorpoint-0.4.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+anchorpoint-0.4.4.dist-info/top_level.txt,sha256=DbFVaQcXFg3yXJCsrkuJxLpPJpyZOxDkP8KYs62M3rM,12
+anchorpoint-0.4.4.dist-info/RECORD,,
