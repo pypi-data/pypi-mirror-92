@@ -1,0 +1,7 @@
+grpcio==1.33.2
+grpcio-tools==1.33.2
+aiortc==1.0.0
+python-socketio==4.6.0
+python-engineio==3.14.2
+requests==2.25.0
+numpy==1.19.5
