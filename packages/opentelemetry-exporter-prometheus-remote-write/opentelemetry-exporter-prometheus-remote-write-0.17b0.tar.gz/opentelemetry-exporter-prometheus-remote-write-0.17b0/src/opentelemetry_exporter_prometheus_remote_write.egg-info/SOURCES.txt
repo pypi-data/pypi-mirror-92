@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+src/opentelemetry/exporter/prometheus_remote_write/__init__.py
+src/opentelemetry/exporter/prometheus_remote_write/version.py
+src/opentelemetry/exporter/prometheus_remote_write/gen/remote_pb2.py
+src/opentelemetry/exporter/prometheus_remote_write/gen/types_pb2.py
+src/opentelemetry/exporter/prometheus_remote_write/gen/gogoproto/gogo_pb2.py
+src/opentelemetry_exporter_prometheus_remote_write.egg-info/PKG-INFO
+src/opentelemetry_exporter_prometheus_remote_write.egg-info/SOURCES.txt
+src/opentelemetry_exporter_prometheus_remote_write.egg-info/dependency_links.txt
+src/opentelemetry_exporter_prometheus_remote_write.egg-info/requires.txt
+src/opentelemetry_exporter_prometheus_remote_write.egg-info/top_level.txt
