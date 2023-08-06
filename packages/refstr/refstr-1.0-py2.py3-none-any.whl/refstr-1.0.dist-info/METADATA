@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: refstr
+Version: 1.0
+Summary: Referenceable String
+Home-page: https://github.com/EcmaXp/refstr
+Author: EcmaXp
+Author-email: ecmaxp+refstr@ecmaxp.pe.kr
+License: UNKNOWN
+Keywords: typing,reference,string
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Python: >=2.7, >=3
+Description-Content-Type: text/markdown
+
+refstr
+======
+
+This module provides string that can be referenced.
+
+## Example
+
+### refstr[...]
+
+```python
+from typing import Union
+
+from refstr import refstr
+
+
+def import_string(name: Union[str, refstr[...]]):
+    module, sep, attr = name.replace(':', '.').rpartition('.')
+    return getattr(__import__(module), attr)
+
+print(import_string("sys.version") == import_string("sys:version"))
+```
+
+### refstr[T]
+
+```python
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Any, TypeVar, Union
+
+from refstr import refstr
+
+
+T = TypeVar("T")
+
+
+def generic_get(obj: T, name: Union[str, refstr[T]]) -> Any:
+    return getattr(obj, name)
+
+
+@dataclass(frozen=True)
+class Pos:
+    x: int
+    y: int
+    z: int
+
+    def get(self, name: Union[str, refstr[Pos]]) -> int:
+        return generic_get(self, name)
+
+
+pos = Pos(x=100, y=49, z=0)
+
+print("x", generic_get(pos, "x"))
+print("y", pos.get("y"))
+print("z", pos.z)
+```
+
+
