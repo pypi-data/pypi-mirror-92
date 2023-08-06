@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html tal:define="zmi tales:zmi.configuration"
+	  lang="${request.locale_name}" i18n:domain="pyams_zmi">
+	<head>
+		<i tal:omit-tag="">${structure:tales:metas}</i>
+		<i tal:omit-tag="">${tales:resources}</i>
+	</head>
+	<body class="${zmi.body_css_class}" data-ams-modules="skin">
+		${structure:provider:pyams.page_header}
+		<tal:if condition="zmi.include_menus">
+			${structure:provider:pyams.page_aside}
+		</tal:if>
+		<div id="main" role="main">
+			<tal:if condition="zmi.include_ribbon">
+				${structure:provider:pyams.page_ribbon}
+			</tal:if>
+			<div id="content">
+				${structure:provider:pagelet}
+			</div>
+		</div>
+	</body>
+</html>

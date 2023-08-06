@@ -1,0 +1,32 @@
+Changelog
+=========
+
+1.3.0
+-----
+ - added favicon settings and metas headers
+ - included metas headers in ZMI layout
+
+1.2.0
+-----
+ - forms and tables templates updates
+ - added inner table mixin class
+ - included breadcrumbs content provider
+ - updated control panel permissions
+
+1.1.2
+-----
+ - updated Gitlab-CI configuration
+
+1.1.1
+-----
+ - updated forms legend display condition
+
+1.1.0
+-----
+ - added support for IObjectData interface in tables
+ - updated forms templates
+ - added missing IDs in inner tabs sub-forms
+
+1.0.0
+-----
+ - initial release
