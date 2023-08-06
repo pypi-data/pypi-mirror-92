@@ -1,0 +1,10 @@
+fcsparser>=0.1.2
+joblib
+networkx>=2.1
+nmslib
+numpy>=1.14.2
+pandas>=0.22.0
+scikit-learn
+scipy>=1.0.1
+tables>=3.4.2
+umap-learn
