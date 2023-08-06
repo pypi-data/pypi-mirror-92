@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: devops-requests
+Version: 0.0.2
+Summary: REST API wrapper for various DevOps related tools
+Home-page: https://gitlab.com/technology-innovations-lab/open-source/devops-requests
+Author: SimonComputing, Inc.
+Author-email: simon@simoncomputing.com
+License: MIT
+Description: # devops-requests
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
