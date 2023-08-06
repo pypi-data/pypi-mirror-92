@@ -1,0 +1,3 @@
+[console_scripts]
+jeejuh-dl=jeejuh_dl.main:app
+
