@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: coveo-example-library
+Version: 0.0.6
+Summary: coveo-python-oss example library
+Author: Jonathan Piché
+Author-email: jpiche@coveo.com
+Requires-Python: >=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
