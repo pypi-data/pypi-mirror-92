@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: noimport
+Version: 0.0.1
+Summary: A simple package to prevent the abusive use of 'import' statement in Python.
+Home-page: https://github.com/AndyKhang404/noimport
+Author: Andy Khang
+Author-email: andykhang404@gmail.com
+License: MIT
+Keywords: no import noimport suicide
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+# noimport v0.0.1
+A simple package to prevent the abusive use of the `import` statement in Python.
+### Installation
+To install, just run:
+```
+pip install noimport
+```
+### Usage
+After importing the `noimport` package, any attempts of importation would result in an error
+```python
+>>> import noimport
+>>> import time			# Built in modules won't work, ...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: import of time halted; None in sys.modules
+
+>>> import foo			# ... nor local modules, ...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'foo'
+
+>>> import PIL			# ... nor pip installed packages
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'PIL'
+```
+### License
+This project is licensed under the [MIT license](https://github.com/AndyKhang404/noimport/blob/main/LICENSE)\
+\
+\
+***Python without modules and packages, how bad can it be?***
+
