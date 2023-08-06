@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: py-spm
+Version: 0.0.3
+Summary: A Python package for managing SPM MEEG objects.
+Home-page: https://github.com/evanr70/py_spm/
+Author: Evan Roberts
+Author-email: evanr70@gmail.com
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+======
+py_spm
+======
+
+
+A Python package for managing SPM MEEG objects.
+
+
+Description
+===========
+
+This package aims to make processes which would typically require
+some combination of SPM and OSL possible in native Python.
+
+
+

@@ -1,0 +1,14 @@
+py_spm/__init__.py,sha256=D4m70cHkjLvS9QxEr-EHpnLph8gA-GknGWXEtIKJLnQ,539
+py_spm/_channel.py,sha256=GngyD9oI4tvsxwkNZL_d4I3-fRyufhk2qwhhYsV-CBk,1457
+py_spm/_data.py,sha256=AZ_IIuaPziAMuUlW5TplEywxoscvqBl84pgjj4sY1Zo,944
+py_spm/_event.py,sha256=RdKDLDYixbGudvUoHNUT-fmhBG4kPDQ852MA30lKd0g,1244
+py_spm/_meeg.py,sha256=Vli9bxCnyZEe9TRZrdHrkWPvGUaz2GcABkSRdQVC0ys,3686
+py_spm/_trial.py,sha256=5KXU7ht-MNy2TQnvbYNxJDO1Rk6XjGe6o4L8nuKmFMA,2432
+py_spm/skeleton.py,sha256=1wwMi6HbV-OKj0stQCZlGiWxnHv-TJFoYfgAtHLOotM,2722
+py_spm/utils.py,sha256=c4pImsYt0Z4YKmTCAULPpgDiId7xvGo4fV9T7-ivOcQ,373
+py_spm-0.0.3.dist-info/AUTHORS.rst,sha256=0NDKTx4tbRiZbsdS7oOZ9bzaQDLDSdYrWmRyA_Ds0Fc,75
+py_spm-0.0.3.dist-info/LICENSE.txt,sha256=-kuLjuyJoZyuEWsp7bOGOl_uKjHNRjTogCBjCON8N_M,1071
+py_spm-0.0.3.dist-info/METADATA,sha256=buNXR3_ijgI1RfxLkpVWg2487TW418Z7W9Q03TPSACA,777
+py_spm-0.0.3.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+py_spm-0.0.3.dist-info/top_level.txt,sha256=I3X6bhzGcVd1TMXswhYKTwxtRMIMmJGPtehHZRnKQKc,7
+py_spm-0.0.3.dist-info/RECORD,,
