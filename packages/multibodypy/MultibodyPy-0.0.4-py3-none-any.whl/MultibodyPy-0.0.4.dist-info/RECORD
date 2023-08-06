@@ -1,0 +1,11 @@
+MultibodyPy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MultibodyPy/bodies.py,sha256=3QQYlRccSnxcMie4eFi1BwOi1TkzFsj0vLhLkhUH8Ek,13398
+MultibodyPy/constraints.py,sha256=sM4GJmsRdO_XJfFLgOMsKvcE1r-TAfqCWC608cxvkPg,47107
+MultibodyPy/forces.py,sha256=Bve71i6bOerjTtnCDL6HT2jV-znL3SgBHeAt3A4ST_A,17957
+MultibodyPy/group.py,sha256=pWf8C3Ud9Q6oVughvIpFF-OVTfEnE4faigooV_my2JY,23036
+MultibodyPy/solver.py,sha256=XcRr99C1CbOtiusomjSiuQ-VFOxvd2ny6uThr5GzSjA,6896
+MultibodyPy-0.0.4.dist-info/LICENSE,sha256=f16j825z7LjEkCZXCydD4TrXlzlyab98V0WJHS8O7NA,1070
+MultibodyPy-0.0.4.dist-info/METADATA,sha256=muIAdl5_gO031FqxZbiEPoBZBSzv4hoJuxZrnMbi7nI,613
+MultibodyPy-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+MultibodyPy-0.0.4.dist-info/top_level.txt,sha256=PqhemFwXwfl8Nl6vb_htuHmRnu1KzJGkzQPiOi6pOWk,12
+MultibodyPy-0.0.4.dist-info/RECORD,,
