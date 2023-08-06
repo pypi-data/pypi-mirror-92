@@ -1,0 +1,14 @@
+ftx_python/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftx_python/rest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftx_python/rest/client.py,sha256=V_Je6nf_fVUn-ajv0G1gr4MZVEiHyiBEV0cLGeRybrU,8504
+ftx_python/rest/otc_client.py,sha256=DETCB38IF2OnYBXGIAhvNf20jxmz10WpMDJ9E_NtXVU,2614
+ftx_python/stream/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftx_python/stream/channel.py,sha256=oba_ZAJ1NtXEDE-bwpvhUlp8xU-MmjKi8t0WAwDINoc,153
+ftx_python/stream/client.py,sha256=kujazTBhR4iFaDJESA7vPjPLIZslIb3XIRw3oRGFktM,5189
+ftx_python/stream/operations.py,sha256=NszjBZR7PUKYIUGXmtTDlruoNK2XnM0hbUSo7JgsFvc,102
+ftx_python/stream/subscription.py,sha256=YZwG1rConkImaggARNttuLbheNm1u2hbDQGoFQ-QEbM,227
+ftx_python-0.0.4.dist-info/LICENSE.md,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+ftx_python-0.0.4.dist-info/METADATA,sha256=p0vasOdV7nZLrtiz9qo9RJ5R3y51wb-S1UpmAysp1MA,536
+ftx_python-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ftx_python-0.0.4.dist-info/top_level.txt,sha256=2jAxPtLw0V-1kULbKnU3jKA04m-oyKJ3lPO0sSRK03A,11
+ftx_python-0.0.4.dist-info/RECORD,,

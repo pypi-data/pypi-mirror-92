@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ftx-python
+Version: 0.0.4
+Summary: A python client for the FTX exchange
+Home-page: https://github.com/BenAlheit/ftx_python
+Author: Ben Alheit
+Author-email: alheitb@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: ciso8601
+
+# FTX Python
+
+This is still in alpha
+
+
