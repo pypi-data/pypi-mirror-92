@@ -1,0 +1,5 @@
+click~=7.0
+PyYAML>=5.1.2
+six>=1.11
+attrs>=18.2
+jinja2>=2.10.3pygments>=2.3.1
