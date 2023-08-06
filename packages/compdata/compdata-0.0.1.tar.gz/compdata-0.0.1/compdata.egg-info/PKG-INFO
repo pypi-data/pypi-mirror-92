@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: compdata
+Version: 0.0.1
+Summary: The compdata package provides access to the
+                   financial comparables data provided by Aswath
+                   Damodaran via his website.
+Home-page: https://github.com/julianmarx/compdata
+Author: Julian Marx
+Author-email: jhw.marx@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: finance,stocks,comparables data
+Platform: UNKNOWN

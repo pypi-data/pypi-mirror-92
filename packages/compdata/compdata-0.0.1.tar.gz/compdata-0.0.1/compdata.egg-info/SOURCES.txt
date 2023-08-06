@@ -1,0 +1,7 @@
+setup.py
+compdata/__init__.py
+compdata/comp_data.py
+compdata.egg-info/PKG-INFO
+compdata.egg-info/SOURCES.txt
+compdata.egg-info/dependency_links.txt
+compdata.egg-info/top_level.txt
