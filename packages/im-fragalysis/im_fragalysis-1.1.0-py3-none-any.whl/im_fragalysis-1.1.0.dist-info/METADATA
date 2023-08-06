@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: im-fragalysis
+Version: 1.1.0
+Summary: Library for fragment based analysis
+Home-page: https://github.com/xchem/fragalysis.git
+Author: Rachael Skyner
+Author-email: rachael.skyner@diamond.ac.uk
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: ipython (==5.4.1)
+Requires-Dist: tqdm (==4.48.2)
+Requires-Dist: neo4j-driver (==1.7.6)
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: nose (==1.3.7)
+Requires-Dist: coveralls (==2.1.1)
+Requires-Dist: requests (==2.24.0)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+Fragalysis
+==========
+
+Basic RDKit based Python tools for analysis of protein-ligand interactions.
+
+Currently contains the following: -
+
+1.  Clustering - based on WONKA method - but separated from that code-base.
+    Cluster waters, residues, ligands and pharmacophores. (Under development)
+2.  Astex Fragment Network - implementation on the basis of their recent paper
+3.  Conformer generation code - based on known X-ray structures
+
+
