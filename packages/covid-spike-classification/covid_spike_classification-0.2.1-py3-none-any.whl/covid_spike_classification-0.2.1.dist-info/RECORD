@@ -1,0 +1,10 @@
+covid_spike_classification/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+covid_spike_classification/__main__.py,sha256=rlLx9k7M-vKgj3SSWW7LYaGAWZflmw0Ro-JGf8eWzCY,1991
+covid_spike_classification/config.py,sha256=_xoYychKkBOviaTS7yyxMea7XLk89PO0gS3DQH_xkhA,570
+covid_spike_classification/core.py,sha256=4w8rDFV_9EdBrQBtZD88eyzpg7HodPPkRGT_bsf3VL8,4996
+covid_spike_classification-0.2.1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+covid_spike_classification-0.2.1.dist-info/METADATA,sha256=vTeo2uXcv-_WjHvP6OdkJf2TqWBTsrdkAc69zDTvLqU,2679
+covid_spike_classification-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+covid_spike_classification-0.2.1.dist-info/entry_points.txt,sha256=6JZ6wE1teswSiI6LBbij5Mtgybi9wSRTiE9gDYGeyh8,89
+covid_spike_classification-0.2.1.dist-info/top_level.txt,sha256=xc-G0yiPepOtq8ndv4dfqDF5c4CSWrj3sPX1uczwnTw,27
+covid_spike_classification-0.2.1.dist-info/RECORD,,
