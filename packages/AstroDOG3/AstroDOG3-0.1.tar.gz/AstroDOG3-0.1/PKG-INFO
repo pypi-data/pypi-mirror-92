@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: AstroDOG3
+Version: 0.1
+Summary: OOP School Learning by Paramet Kitchanwit
+Home-page: https://github.com/AstroDOG3/AstroDOG3
+Author: Paramet Kitchanwit
+Author-email: paramet.kitchanwit@gmail.com
+License: MIT
+Download-URL: https://github.com/AstroDOG3/AstroDOG3/archive/v_0.1.zip
+Description: UNKNOWN
+Keywords: OOP,School,AstroDOG3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
