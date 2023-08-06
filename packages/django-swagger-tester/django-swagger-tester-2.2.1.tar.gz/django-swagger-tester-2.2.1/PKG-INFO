@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-swagger-tester
+Version: 2.2.1
+Summary: Django test utility for validating Swagger documentation
+Home-page: https://github.com/snok/django-swagger-tester
+License: BSD-4-Clause
+Keywords: openapi,swagger,api,testing,django
+Author: Sondre Lillebø Gundersen
+Author-email: sondrelg@live.no
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Unit
+Requires-Dist: django (>=2.2,<4.0)
+Requires-Dist: djangorestframework
+Project-URL: Documentation, https://django-swagger-tester.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/snok/django-swagger-tester
+Description-Content-Type: text/x-rst
+
+Django Swagger Tester has been renamed to ``drf-openapi-tester``.
+
+Please migrate for updates.
+
+Github: https://github.com/snok/drf-openapi-tester
+
+PyPi: https://pypi.org/project/drf-openapi-tester
