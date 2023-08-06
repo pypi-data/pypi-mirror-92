@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: playback-studio
+Version: 0.2.5
+Summary: Record your service operations in production and replay them locally at any time in a sandbox
+Home-page: https://github.com/Optibus/playback
+Author: Optibus
+Author-email: eitan@optibus.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: parse (==1.6.6)
+Requires-Dist: jsonpickle (==0.9.3)
+Provides-Extra: dev
+Requires-Dist: mock (==2.0.0) ; extra == 'dev'
+Requires-Dist: moto (==1.3.13) ; extra == 'dev'
+Requires-Dist: nose (==1.3.7) ; extra == 'dev'
+
+# playback
+Record your service operations in production and replay them locally at any time in a sandbox
+
+
