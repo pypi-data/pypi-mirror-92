@@ -1,0 +1,15 @@
+bugout/__init__.py,sha256=x12fjOliKehEs8HzdSgiQPOX2Y3k6V_whvwZvotkv_U,323
+bugout/__main__.py,sha256=MgW4PypwbVDW6tayOISTgd3DZ_sddPm7IED99vgm0CY,887
+bugout/app.py,sha256=3vuXY79G2srEuF8UeAvEtL6yggGQzlS1M0gc-Pelg_g,12986
+bugout/calls.py,sha256=T43fB18JC0j2v8Zl6edAauSXCmOpz_FiX7tmTpJwddo,778
+bugout/data.py,sha256=lE2cX1o75oq5vt-gQ8886G6j5C5Fq0EYCXgEmg4pPyA,3394
+bugout/group.py,sha256=HjXyubMPKSHW5QLcO4FJUKjNNQUNoSDwSeExA-pf2n4,5332
+bugout/journal.py,sha256=Ww9WAXEeRpj3WH6qxe24fc9nWTvVnOlNGl07CB3NOy8,12274
+bugout/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bugout/user.py,sha256=SzB7Z37JJEe3-2xy4qqsknmu56WfqoGmob0EDhMKoUk,7637
+bugout-0.0.7.dist-info/LICENSE,sha256=jD2vqCwU32YG6CclyArJVCVR4iETYKxKiM00zwZ6LqM,1067
+bugout-0.0.7.dist-info/METADATA,sha256=se--zaQsPz7jV5svqhYoL5TuwzLBDoBBbMmlHJQ2S_I,2139
+bugout-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bugout-0.0.7.dist-info/entry_points.txt,sha256=0GAtOk_ztKV5DJO4JkQure3sovOEP6flPwOMfMmKhgw,49
+bugout-0.0.7.dist-info/top_level.txt,sha256=S_RjfYCfn_cxEcDSvnxq0rLdbD-ZdB3X3ATe41nnXv4,7
+bugout-0.0.7.dist-info/RECORD,,
