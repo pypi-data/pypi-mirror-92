@@ -1,0 +1,10 @@
+nzpy/__init__.py,sha256=Wim8t9TzMpWYRomuHyg0M5ILiKVhdzac7__t9kZngHI,4254
+nzpy/_version.py,sha256=GTABEv9mgIXtu36bSl_VuWtQYIQUIwELThYgQL5z_Rg,15791
+nzpy/core.py,sha256=ykQSESDumaADpd1jLyIl-IM2726oKu2UXsk6Jyt8LSE,108182
+nzpy/handshake.py,sha256=8_bP6axIQQIT9ulsZZCmGxHwriB97y6QwNmmFebVgv4,22117
+nzpy/numeric.py,sha256=4ov581BA0GJw5-n6gj6CLWr0_2ZQ2tzh4nwpI9FT6WM,21734
+nzpy-1.13.dist-info/LICENSE,sha256=ywA6ciffZPn4OTrrIz8Jrw2UkSZ4xB2pVKuj8l8tajs,11444
+nzpy-1.13.dist-info/METADATA,sha256=mcKx7x1w945TpHgUZEtPj332mH8EczsmnpPAbC7kuwA,15593
+nzpy-1.13.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nzpy-1.13.dist-info/top_level.txt,sha256=qAKBG-U4DnYMR2y2ERlPi_mbfwkgomXLGbL87FYpuAM,5
+nzpy-1.13.dist-info/RECORD,,
