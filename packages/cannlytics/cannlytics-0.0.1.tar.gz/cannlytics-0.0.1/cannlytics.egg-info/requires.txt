@@ -1,0 +1,5 @@
+bs4
+django
+firebase_admin
+googlemaps
+pandas
