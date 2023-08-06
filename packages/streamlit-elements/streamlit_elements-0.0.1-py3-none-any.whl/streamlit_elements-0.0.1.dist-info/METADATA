@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: streamlit-elements
+Version: 0.0.1
+Summary: React Components for Streamlit.
+Home-page: https://share.streamlit.io/okld/streamlit-elements-demo/main/app.py
+Author: okld
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: streamlit (>=0.73)
+
+Coming soon™
+
+

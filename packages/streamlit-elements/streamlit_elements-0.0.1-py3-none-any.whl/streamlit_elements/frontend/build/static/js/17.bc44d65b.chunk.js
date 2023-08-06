@@ -1,0 +1,1 @@
+(this.webpackJsonpstreamlit_elements=this.webpackJsonpstreamlit_elements||[]).push([[17],{1202:function(t,e,s){"use strict";s.r(e);var n=s(13),a=s(20),i=s(982),r=s.n(i),c=(s(992),{QuillEditor:function(t){var e=Object.assign({},t);return Object(a.jsx)(r.a,Object(n.a)({theme:"snow"},e))}});e.default=c}}]);
