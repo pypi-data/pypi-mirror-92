@@ -1,0 +1,8 @@
+README.md
+brws
+setup.py
+brws.egg-info/PKG-INFO
+brws.egg-info/SOURCES.txt
+brws.egg-info/dependency_links.txt
+brws.egg-info/requires.txt
+brws.egg-info/top_level.txt

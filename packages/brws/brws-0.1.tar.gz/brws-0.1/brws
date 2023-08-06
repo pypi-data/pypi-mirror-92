@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""
+Usage:
+    brws [options]
+
+Options:
+    -f <folder>, --folder=<folder>
+        Folder to search for files [Default: .]
+    -e <embedding_name>, --embedding=<embedding_name>
+        Embedding name to use. [Default: en_core_web_sm]
+    -a <anchor_file>, --anchors=<anchor_file>
+        Read anchors from file. The file should be a simple text file with one
+        "anchor" per line. Anchors can be single words or short sentences and
+        they will be printed in the approximate position that they describe
+        best. [Default: .anchors]
+"""
+from docopt import docopt
+import os
+import sys
+import glob
+from tqdm import tqdm
+import textract
+import numpy as np
+from sklearn.manifold import TSNE
+import spacy
+import pandas as pd
+import pylab as plt
+
+
+class Vectorizer:
+    def __init__(self, embedding_name='en_core_web_sm'):
+        try:
+            self.embed = spacy.load(embedding_name)
+        except OSError:
+            sys.stderr.write('\n'.join([
+                f'Could not find spacy model "{embedding_name}"',
+                'Download it by running the following command',
+                '',
+                f'   python -m spacy download {embedding_name}',
+                ''
+            ]))
+            sys.exit(1)
+
+    def process(self, text):
+        return self.embed(text).vector
+
+
+def display(data_source, anchors):
+    fig, ax = plt.subplots()
+
+    data_source['extension'] = to_cols(data_source['extension'])
+
+    anchor_data = data_source.iloc[:len(anchors)]
+    data_source = data_source.iloc[len(anchors):]
+
+    ax.scatter(x='x', y='y', c='extension', data=data_source)
+    ax.scatter(x='x', y='y', s=0, data=anchor_data)
+    for i in range(len(anchors)):
+        ax.text(
+            anchor_data.x.values[i], anchor_data.y.values[i], anchors[i],
+            horizontalalignment='center',
+            verticalalignment='center',
+        )
+    ax.set_title('Each dot represents one file, open by clicking')
+
+    def onclick(event):
+        d = (event.xdata - data_source.x)**2 + (event.ydata - data_source.y)**2
+        i = np.argmin(d)
+        print('Opening file:', data_source.filename.iloc[i])
+        open_file(data_source.filename.iloc[i])
+
+    def quit(event):
+        if event.key.lower() in ['q', 'escape']:
+            sys.exit(0)
+        else:
+            print('Received key', event.key)
+
+    fig.canvas.mpl_connect('button_press_event', onclick)
+    fig.canvas.mpl_connect('key_press_event', quit)
+
+    plt.show()
+
+
+def to_cols(strings):
+    v = list(set(strings))
+    c = [None,
+         ('#1b9e77',),
+         ('#1b9e77', '#7570b3'),
+         ('#1b9e77', '#d95f02', '#7570b3'),
+         ('#1b9e77', '#d95f02', '#7570b3', '#e7298a'),
+         ('#1b9e77', '#d95f02', '#7570b3', '#e7298a', '#66a61e'),
+         ]
+    c = c[len(v)]
+    return [c[v.index(s)] for s in strings]
+
+
+def open_file(fname):
+    if sys.platform.startswith('linux'):
+        os.system(f'xdg-open {fname}')
+    elif sys.platform.startswith('darwin'):
+        os.system(f'open {fname}')
+    elif sys.platform.startswith('win32'):
+        os.system(f'start {fname}')
+    else:
+        raise OSError('Invalid platform')
+
+
+def read_anchors(anchorfile):
+    print(anchorfile)
+    if os.path.exists(anchorfile):
+        with open(anchorfile) as f:
+            return f.readlines()
+    else:
+        return []
+
+
+def parse_file(fname):
+    text = textract.process(fname, method='pdfminer')
+    return text.decode('utf-8')
+
+
+if __name__ == '__main__':
+    args = docopt(__doc__)
+    folder = args['--folder']
+    anchors = read_anchors(os.path.join(folder, args['--anchors']))
+
+    vec = Vectorizer(args['--embedding'])
+    files = glob.glob(os.path.join(folder, '*'))
+    extensions = [os.path.splitext(fname)[1] for fname in files]
+    embeddings = np.array(
+        [
+            vec.process(anchor) for anchor in anchors
+        ] +
+        [
+            vec.process(parse_file(fname)) for fname in tqdm(files)
+        ]
+    )
+    vis = TSNE(init='pca', random_state=1).fit_transform(embeddings)
+
+    display(pd.DataFrame({
+        'filename': [None]*len(anchors) + files,
+        'extension': [None]*len(anchors) + extensions,
+        'x': vis[:, 0],
+        'y': vis[:, 1],
+    }), anchors)
