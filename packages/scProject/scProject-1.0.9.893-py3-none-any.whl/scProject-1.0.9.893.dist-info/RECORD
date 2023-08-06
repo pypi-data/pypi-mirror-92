@@ -1,0 +1,15 @@
+scProject/__init__.py,sha256=iGliYcT9S-TAsSw2FDq0G2zSbSTniztZbVXyRdNjIlU,76
+scProject/matcher.py,sha256=8nfxU7VpY-r7BFsY66Arpeb7NKR2JjMkUp37GZmy3AI,5903
+scProject/rg.py,sha256=ShmuukkGm-NW-3CNYI76ro7ev4wzwe4tBdEfnWDykVw,4481
+scProject/stats.py,sha256=Tr_ivnKY4zugUL_Ntn9qeK88wHXJnE8sKzjrA2AjScI,16266
+scProject/viz.py,sha256=TLec1Vw2zgr-nZ4kYFQvAW4ND-wtl0lNgvOSe22vsaM,14552
+scProject/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scProject/test/projection_object_test.py,sha256=iOt4qI9bktYd5KBgvS2prlxTSUeM4TPF8gZtd_xk9tU,171
+scProject/test/projection_test.py,sha256=Kp39IjYFG5gKNs7izNF4JqBPI5LbBzWAWOFWyOLhLiQ,2183
+scProject/test/test_projection.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scProject-1.0.9.893.dist-info/LICENSE,sha256=IOSXIMwl9UR3HACOU-Ya7XSrzg3M9JSox0gFRZVKtA0,1065
+scProject-1.0.9.893.dist-info/LICENSE.txt,sha256=q7KJbcPCqUAvkBuI1QNc8Kg9XPfBfnNkLN9WKwudO8U,11
+scProject-1.0.9.893.dist-info/METADATA,sha256=sgZrMzpnLsr15Vi3HZUqZYeR4G-OHYY9foWKJ8J7euM,570
+scProject-1.0.9.893.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scProject-1.0.9.893.dist-info/top_level.txt,sha256=PbLGSamvqxexRWYc-tn5XihYrywxUy1t8WSLeG1klZg,10
+scProject-1.0.9.893.dist-info/RECORD,,
