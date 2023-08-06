@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mcot.surface
+Version: 0.1.0
+Summary: surface interface
+Home-page: https://git.fmrib.ox.ac.uk/ndcn0236/mcot
+Author: Michiel Cottaar
+Author-email: Michiel.Cottaar@ndcn.ox.ac.uk
+License: MIT license
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: colorcet
+Requires-Dist: fslpy
+Requires-Dist: loguru
+Requires-Dist: mcot.utils (~=0.1.0)
+Requires-Dist: nibabel
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scikit-image
+Requires-Dist: scipy
+Requires-Dist: six
+
+Utilities for working with cortical meshes
+
+To calculate the gyral coordinate system see `mcot.gcoord`.
+
