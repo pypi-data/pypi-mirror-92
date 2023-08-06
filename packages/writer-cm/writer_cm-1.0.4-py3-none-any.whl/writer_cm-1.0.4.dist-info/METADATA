@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: writer-cm
+Version: 1.0.4
+Summary: `writer-cm` is a context manager allowing you to atomically write files given a
+Home-page: https://github.com/dycw/writer-cm/
+Author: Derek Wan
+Author-email: d.wan@icloud.com
+License: MIT
+Download-URL: https://pypi.org/project/writer-cm/
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: atomicwrites (==1.4)
+
+# writer-cm
+
+`writer-cm` is a context manager allowing you to atomically write files given a
+file path.
+
+## Features
+
+- Cross-platform atomic file writes powered by
+  [python-atomicwrites](https://github.com/untitaker/python-atomicwrites).
+- Interface using a file path instead of a file handle, for more compatibility
+  with external libraries (e.g. `pandas.to_pickle`).
+- Automatically create missing directories and set their permissions.
+- Automatically set the file permissions.
+
+## How?
+
+```python
+from writer_cm import writer_cm
+
+with writer_cm("file.txt") as temp:
+    with open(temp, mode="w") as fh:
+        fh.write("foo")
+
+with open("file.txt") as fh:
+    assert fh.read() == "foo"
+
+# Specify overwrite=True
+
+with writer_cm("file.txt", overwrite=True) as temp:
+    with open(temp, mode="w") as fh:
+        fh.write("bar")
+
+with open("file.txt") as fh:
+    assert fh.read() == "bar"
+```
+
+
