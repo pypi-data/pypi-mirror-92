@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: listensay
+Version: 0.0.1
+Summary: LS_Convert().say(text = "Hello, world!")
+Author: MadRock2
+Author-email: MadRock2@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
