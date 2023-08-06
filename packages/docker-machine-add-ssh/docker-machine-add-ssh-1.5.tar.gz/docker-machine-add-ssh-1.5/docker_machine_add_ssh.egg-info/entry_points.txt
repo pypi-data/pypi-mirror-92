@@ -1,0 +1,3 @@
+[console_scripts]
+docker-machine-add-ssh = docker_machine_add_ssh:main
+
