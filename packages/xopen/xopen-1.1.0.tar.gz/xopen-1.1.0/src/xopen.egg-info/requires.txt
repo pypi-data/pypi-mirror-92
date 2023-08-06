@@ -1,0 +1,6 @@
+
+[:sys_platform=="linux" and python_implementation != "PyPy"]
+isal>=0.3.0
+
+[dev]
+pytest
