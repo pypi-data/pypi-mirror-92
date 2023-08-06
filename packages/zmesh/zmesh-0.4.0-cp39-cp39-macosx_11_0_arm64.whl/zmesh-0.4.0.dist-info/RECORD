@@ -1,0 +1,12 @@
+zmesh/__init__.py,sha256=s4gscuaetbz07iNZXgxJO8hPcGxbS3lWNKDganLR3sY,78
+zmesh/_zmesh.cpp,sha256=Hz69mNth6B6inVzpW43QysefGFiq5tXPvd-bc77za2M,658961
+zmesh/_zmesh.cpython-39-darwin.so,sha256=AnILybboPBPLpNi0en2I7onqOan7sHO2TuwMgTbiCtM,432056
+zmesh/_zmesh.pyx,sha256=xWk2LrB4o8f30SooNYTeJ_F9JQhb-KgJl6MxGJbwQGg,8448
+zmesh/mesh.py,sha256=hTehHoQhIcoKaH1kKsykDy2HnUxCIK3Oj8q7GzGgIPk,6607
+zmesh-0.4.0.dist-info/AUTHORS,sha256=ZoFVZWLkBQVEqYwyI9HTcInhCMbS0fx8WzwJaUGJTig,88
+zmesh-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+zmesh-0.4.0.dist-info/METADATA,sha256=nk488wE5LrAeAJIu9BoCZzdH7V1mNYAIm_cHv86nv9c,3927
+zmesh-0.4.0.dist-info/WHEEL,sha256=CqvrpOeJpM3YcgYqrtVyMp6efj4NqM4rkxkSLcu7BcI,108
+zmesh-0.4.0.dist-info/pbr.json,sha256=PEdd-H9glMmxQsZrL3pV08zkjY32duDj2oCILlNpKqg,46
+zmesh-0.4.0.dist-info/top_level.txt,sha256=nI43ZuTLu-QmoPDDGO5U-Wflyq_6Ec4Bhv-VAMjCPeY,6
+zmesh-0.4.0.dist-info/RECORD,,
