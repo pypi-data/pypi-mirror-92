@@ -1,0 +1,11 @@
+CHANGELOG.md
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+NAnPack.egg-info/PKG-INFO
+NAnPack.egg-info/SOURCES.txt
+NAnPack.egg-info/dependency_links.txt
+NAnPack.egg-info/top_level.txt
+nanpack/input/bc.ini
+nanpack/input/config.ini
