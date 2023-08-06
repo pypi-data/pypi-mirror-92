@@ -1,0 +1,9 @@
+README.md
+setup.py
+ep_logging/__init__.py
+micropython_eydam_prototyping_logging.egg-info/PKG-INFO
+micropython_eydam_prototyping_logging.egg-info/SOURCES.txt
+micropython_eydam_prototyping_logging.egg-info/dependency_links.txt
+micropython_eydam_prototyping_logging.egg-info/top_level.txt
+test/test_logger.py
+test/test_message.py
