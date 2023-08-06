@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: mindstorm
+Version: 0.3.0
+Summary: Mindstorm: Advanced analysis of neuroimaging data
+Home-page: https://github.com/mortonne/mindstorm
+License: GPL-3.0-or-later
+Author: Neal Morton
+Author-email: mortonne@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.18,<2.0)
+Requires-Dist: scipy (>=1.4,<2.0)
+Project-URL: Repository, https://github.com/mortonne/mindstorm
+Description-Content-Type: text/markdown
+
+# mindstorm
+[![PyPI version](https://badge.fury.io/py/mindstorm.svg)](https://badge.fury.io/py/mindstorm)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4248136.svg)](https://doi.org/10.5281/zenodo.4248136)
+
+Package for advanced neuroimaging analysis tools.
+
