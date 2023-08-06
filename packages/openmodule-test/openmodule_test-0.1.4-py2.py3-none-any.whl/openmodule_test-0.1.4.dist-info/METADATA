@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: openmodule-test
+Version: 0.1.4
+Summary: Libraries for testing openmodule services
+Home-page: https://gitlab.com/arivo-device/openmodule-test.git
+Author: ARIVO
+Author-email: support@arivo.co
+License: MIT
+Keywords: arivo openmodule test
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: pydantic (<2,>=1.7)
+Requires-Dist: pyzmq (==21.0.1)
+Requires-Dist: arivo.om
+Requires-Dist: orjson
+
+# ARIVO Python SDK
+
+
+
