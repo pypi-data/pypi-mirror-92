@@ -1,0 +1,14 @@
+fluxo_aws/__init__.py,sha256=7RuvSxbYXpx93VLhh0aXfM8GNjchkeKfmURhuL3sPDo,678
+fluxo_aws/async_dynamodb_table.py,sha256=wu767ZsFAdGp-DCQw4vPF6PLE8pUOAD3kR9w7-F7uLU,8553
+fluxo_aws/async_s3_bucket.py,sha256=aPcPBqbbST9-KpdbXr7jWkyWDfApBPlL2IQTs6DIDp4,3394
+fluxo_aws/auth.py,sha256=2pdzi0IVNwG5ifdlhCNhf-bRYbDpz0Hs9FeMYcoKejY,2962
+fluxo_aws/dynamodb_table.py,sha256=19V-wwtKHWCB53rqmhSyrJl8DpVBlGeM9x8Cgf2jWPw,7090
+fluxo_aws/event_parser.py,sha256=q3Idx0aNxDW3899Cx07dy1JmPmjB9friwy131hXHb5I,1848
+fluxo_aws/json_encoder.py,sha256=Hp1BDisoQ1envtAz5L6fsVMsmbmGhsVmrqpx13mUuIs,285
+fluxo_aws/prepare_response.py,sha256=KPHSFIRS0DHKFzg9g1q_lr-Ss9zc0QmO_0VZOsJ5lUw,1561
+fluxo_aws/s3_bucket.py,sha256=rOe-UXZQIsLatMpaxaunZUofnQi0Z6-SOznkiZ1HuGU,3340
+fluxo_aws-0.2.5.dist-info/LICENSE,sha256=cyoP1KA4FPbhgInrCzVzRlXpSutdetTMdT6CFzAatIo,1065
+fluxo_aws-0.2.5.dist-info/METADATA,sha256=OMF6ix-mzsVCCtpLJID0XwjYodVI7Jq0skYMnnPziOY,4596
+fluxo_aws-0.2.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fluxo_aws-0.2.5.dist-info/top_level.txt,sha256=xZBfIxj4IMpWExLx2rD4pNDhj7s70xril3MxxWU2W5s,10
+fluxo_aws-0.2.5.dist-info/RECORD,,
