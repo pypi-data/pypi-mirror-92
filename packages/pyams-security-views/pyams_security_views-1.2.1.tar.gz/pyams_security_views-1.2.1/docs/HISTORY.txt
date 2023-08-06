@@ -1,0 +1,29 @@
+Changelog
+=========
+
+1.2.1
+-----
+ - updated Gitlab-CI configuration
+ - removed Travis-CI configuration
+
+1.2.0
+-----
+ - added CSRF token in login view
+ - added permission check in security manager table element editor factory
+
+1.1.0
+-----
+ - updated security manager properties edit form to display credentials plug-ins
+ - updated doctests
+
+1.0.2
+-----
+ - updated translation strings
+
+1.0.1
+-----
+ - small update in protected object roles edit form
+
+1.0.0
+-----
+ - initial release
