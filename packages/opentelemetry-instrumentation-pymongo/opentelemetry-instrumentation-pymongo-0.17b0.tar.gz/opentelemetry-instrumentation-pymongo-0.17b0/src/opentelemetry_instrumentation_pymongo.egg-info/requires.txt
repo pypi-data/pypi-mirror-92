@@ -1,0 +1,6 @@
+opentelemetry-api==0.17b0
+opentelemetry-instrumentation==0.17b0
+pymongo~=3.1
+
+[test]
+opentelemetry-test==0.17b0
