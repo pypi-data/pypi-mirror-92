@@ -1,0 +1,8 @@
+muffin>=0.46
+asgi-sessions>=0.5.0
+
+[tests]
+anyio
+trio
+pytest
+mypy
