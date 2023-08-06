@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+wagtail_link_block/__init__.py
+wagtail_link_block/blocks.py
+wagtail_link_block/wagtail_hooks.py
+wagtail_link_block.egg-info/PKG-INFO
+wagtail_link_block.egg-info/SOURCES.txt
+wagtail_link_block.egg-info/dependency_links.txt
+wagtail_link_block.egg-info/requires.txt
+wagtail_link_block.egg-info/top_level.txt
+wagtail_link_block/static/link_block/link_block.css
+wagtail_link_block/static/link_block/link_block.js
+wagtail_link_block/templates/wagtailadmin/block_forms/link_block.html
