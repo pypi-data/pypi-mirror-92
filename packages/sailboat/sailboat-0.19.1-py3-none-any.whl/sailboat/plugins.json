@@ -1,0 +1,154 @@
+{
+  "build": {
+    "homebrew": {
+      "default_os": "linux",
+      "description": "<no description provided>",
+      "dist": "sailboat",
+      "order": 200,
+      "release": true,
+      "show": true,
+      "type": "build"
+    },
+    "pyinstaller": {
+      "default_os": "windows mac linux",
+      "description": "<no description provided>",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "build"
+    },
+    "pypi": {
+      "default_os": "linux",
+      "description": "<no description provided>",
+      "dist": "sailboat",
+      "order": 0,
+      "release": true,
+      "show": true,
+      "type": "build"
+    }
+  },
+  "command": {
+    "tasks": {
+      "default_os": "linux",
+      "description": "Manage 'TODO:' comments",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "command"
+    }
+  },
+  "core": {
+    "add": {
+      "default_os": "linux",
+      "description": "add a plugin to your project.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "build": {
+      "default_os": "linux",
+      "description": "build your project for release.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "dev": {
+      "default_os": "linux",
+      "description": "run your project without building it.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "git": {
+      "default_os": "linux",
+      "description": "Manage Git for your project.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "github": {
+      "default_os": "linux",
+      "description": "Manage Git for your project.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "plugins": {
+      "default_os": "linux",
+      "description": "plugin manager.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "quickstart": {
+      "default_os": "linux",
+      "description": "Get your project up and running.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "release": {
+      "default_os": "linux",
+      "description": "Release your project.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "remove": {
+      "default_os": "linux",
+      "description": "remove a plugin from you project.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "wizard": {
+      "default_os": "linux",
+      "description": "configure you project or a plugin.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    },
+    "workflow": {
+      "default_os": "linux",
+      "description": "Generate a GH Actions workflow file.",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "core"
+    }
+  },
+  "release": {
+    "github_release": {
+      "default_os": "linux",
+      "description": "GitHub Tagged Release",
+      "dist": "sailboat",
+      "order": 0,
+      "release": false,
+      "show": true,
+      "type": "release"
+    }
+  }
+}
