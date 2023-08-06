@@ -1,0 +1,72 @@
+Burrows Delta
+=============
+
+By Thomas Wood, https://freelancedatascientist.net, Fast Data Science https://fastdatascience.com
+
+
+Source code at https://github.com/woodthom2/faststylometry
+
+Python library for calculating the Burrows Delta.
+
+Burrows' Delta is an algorithm for comparing the similarity of the writing styles of documents, known as forensic stylometry https://fastdatascience.com/how-you-can-identify-the-author-of-a-document
+
+* A useful explanation of the maths and thinking behind Burrows' Delta and how it works: https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python#third-stylometric-test-john-burrows-delta-method-advanced
+
+
+
+Requirements
+============
+
+Python 3.6 and above
+
+Installation
+============
+
+::
+
+  pip install localspelling
+
+Usage examples
+==============
+
+Demonstration of Burrows' Delta on a small corpus downloaded from Project Gutenberg.
+
+We will test the Burrows' Delta code on two "unknown" texts: Sense and Sensibility by Jane Austen, and Villette by Charlotte Bronte. Both authors are in our training corpus.
+
+You can get the training corpus by cloning https://github.com/woodthom2/faststylometry, the data is in faststylometry/data.
+
+Example 1
+
+.. code:: python
+
+  from faststylometry.util import load_corpus_from_folder
+  from faststylometry.en import tokenise_remove_pronouns_en
+  from faststylometry.burrows_delta import calculate_burrows_delta
+
+  train_corpus = load_corpus_from_folder("faststylometry/data/train")
+
+  train_corpus.tokenise(tokenise_remove_pronouns_en)
+
+  test_corpus_sense_and_sensibility = load_corpus_from_folder("faststylometry/data/test", pattern="sense")
+
+  test_corpus_sense_and_sensibility.tokenise(tokenise_remove_pronouns_en)
+
+  calculate_burrows_delta(train_corpus, test_corpus_sense_and_sensibility)
+
+returns a Pandas dataframe of Burrows' Delta scores
+
+Example 2: using the probability calibration functionality, you can calculate the probability of two books being by the same author.
+
+.. code:: python
+
+  from faststylometry.probability import predict_proba, calibrate
+  calibrate(train_corpus)
+  predict_proba(train_corpus, test_corpus_sense_and_sensibility)
+
+outputs a Pandas dataframe of probabilities.
+
+Who to contact
+==============
+
+Thomas Wood at Fast Data Science https://fastdatascience.com
+
