@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: piwwwaterflow
+Version: 0.0.3
+Summary: Raspberry Pi Waterflow Web interface
+Home-page: https://github.com/Phornee/piwwwaterflow
+Author: Ismael Raya
+Author-email: phornee@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: piwaterflow (>=0.0.5)
+Requires-Dist: Flask (>=1.1.2)
+
+# piwwwaterflow
+Flask/Gunicorn Webservice for piwaterflow system
+
+
