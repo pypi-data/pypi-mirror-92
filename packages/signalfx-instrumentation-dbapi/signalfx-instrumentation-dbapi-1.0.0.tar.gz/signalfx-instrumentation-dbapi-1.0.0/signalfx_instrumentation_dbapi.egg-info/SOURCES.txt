@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+dbapi_opentracing/__init__.py
+dbapi_opentracing/psycopg2_tracing.py
+dbapi_opentracing/tracing.py
+signalfx_instrumentation_dbapi.egg-info/PKG-INFO
+signalfx_instrumentation_dbapi.egg-info/SOURCES.txt
+signalfx_instrumentation_dbapi.egg-info/dependency_links.txt
+signalfx_instrumentation_dbapi.egg-info/requires.txt
+signalfx_instrumentation_dbapi.egg-info/top_level.txt
