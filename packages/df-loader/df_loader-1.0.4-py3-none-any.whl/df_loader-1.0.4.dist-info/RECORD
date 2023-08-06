@@ -1,0 +1,16 @@
+df_loader/__init__.py,sha256=NBBKHQQnPUWYvjseEx_mFw0l2v0CxEBDi5NVANXBdSM,67
+df_loader/read_sql.py,sha256=c3ng8ANRQ7mD8VdyvXZxduwhg3H5_oXz6tDFg_WfDNw,8834
+df_loader/pandas_sql_loader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df_loader/pandas_sql_loader/downcast.py,sha256=7w0tmJL1H5WtHa3TfNu1W1KHIbj3sv7OS8Uc2_Puaug,2491
+df_loader/pandas_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df_loader/pandas_wrapper/from_records.py,sha256=46Qnrk_5Px0HGKW8Po_7ZNM0GAPnaqNzDUtb02GA76U,1954
+df_loader/pandas_wrapper/read_db.py,sha256=t34s-buLMKcg6ryCLQEZn0U7F5w3Ib1bq7jcxfNUpoo,3805
+df_loader/pandas_wrapper/read_sql.py,sha256=UzwQJ5D1ZsDEG_uWRjbOPIWfvMcymTohx2kQI_PW0p8,4828
+df_loader/pandas_wrapper/read_sqlite.py,sha256=w9GLEXwCFKOGSCRAa31dysETkHULImSSKy_gKH4_bVI,2177
+df_loader/pandas_wrapper/read_table.py,sha256=lYHaUJb_dl_JS1vOd1o2NT_8vQxdLoPOtABTHPUQSOc,4559
+df_loader/pandas_wrapper/to_arrays.py,sha256=UGTI-EF4AaX44Ev69RQbAFIprKH66oA5FeNOnlZcDsM,3042
+df_loader/pandas_wrapper/wrap_result.py,sha256=8ZSLbQkgxa8qBjc8tRz8sm4JXqHrMlzEQc7USMVQvFI,1217
+df_loader-1.0.4.dist-info/METADATA,sha256=sDvoLubTyB5y2_no3n8p4oUKNJdxSEVhSv4b6qCWLLg,6503
+df_loader-1.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+df_loader-1.0.4.dist-info/top_level.txt,sha256=kfeiTG9oG5PS201GVSMKpHzqZGHf-e-sn4OjEOIORxc,10
+df_loader-1.0.4.dist-info/RECORD,,
