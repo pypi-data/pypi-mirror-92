@@ -1,0 +1,9 @@
+README.md
+setup.py
+badgegen/__init__.py
+badgegen.egg-info/PKG-INFO
+badgegen.egg-info/SOURCES.txt
+badgegen.egg-info/dependency_links.txt
+badgegen.egg-info/requires.txt
+badgegen.egg-info/top_level.txt
+bin/badgegen
