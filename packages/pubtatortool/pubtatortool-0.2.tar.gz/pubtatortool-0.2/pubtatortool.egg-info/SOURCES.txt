@@ -1,0 +1,10 @@
+README.md
+setup.py
+pubtatortool/__init__.py
+pubtatortool/pubtator_corpus.py
+pubtatortool/pubtator_document.py
+pubtatortool/tokenization.py
+pubtatortool.egg-info/PKG-INFO
+pubtatortool.egg-info/SOURCES.txt
+pubtatortool.egg-info/dependency_links.txt
+pubtatortool.egg-info/top_level.txt
