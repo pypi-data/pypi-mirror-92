@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: easypyplot
+Version: 1.2.0
+Summary: Lightweight utilities and wrappers for Python matplotlib.
+Home-page: https://github.com/gaomy3832/easypyplot
+Author: Mingyu Gao
+Author-email: gaomy@tsinghua.edu.cn
+License: BSD 3-clause
+Keywords: matplotlib python-plot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Utilities
+Requires-Dist: coverage (>=4)
+Requires-Dist: matplotlib (>=1.3)
+Requires-Dist: cycler (>=0.10)
+Requires-Dist: nose (>=1.3)
+Requires-Dist: pytest (>=3)
+Requires-Dist: pytest-cov (>=2)
+Requires-Dist: pytest-xdist (>=1)
+
+easypyplot
+==========
+
+:Version info:
+    .. image:: https://img.shields.io/pypi/v/easypyplot
+        :target: https://pypi.org/project/easypyplot/
+
+:Compatibility:
+    .. image:: https://img.shields.io/pypi/pyversions/easypyplot
+        :target: https://pypi.org/project/easypyplot/
+
+:Test status:
+    .. image:: https://github.com/gaomy3832/easypyplot/workflows/test/badge.svg?branch=master
+        :target: https://travis-ci.org/gaomy3832/easypyplot
+
+    .. image:: https://codecov.io/gh/gaomy3832/easypyplot/branch/master/graph/badge.svg?token=g5JSQoYF06
+        :target: https://codecov.io/gh/gaomy3832/easypyplot
+
+    .. image:: https://img.shields.io/lgtm/grade/python/g/gaomy3832/easypyplot.svg?logo=lgtm&logoWidth=18
+        :target: https://lgtm.com/projects/g/gaomy3832/easypyplot
+
+Lightweight utilities and wrappers for Python matplotlib to make plot easier.
+
+by *Mingyu Gao*
+
+
+
