@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: plugp100
+Version: 2.0b0
+Summary: Controller for TP-Link Tapo P100
+Home-page: https://github.com/petretiandrea/plugp100
+Author: @petretiandrea
+Author-email: petretiandrea@gmail.com
+License: GPL3
+Download-URL: https://github.com/petretiandrea/plugp100
+Keywords: Tapo,P100
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.10)
+Requires-Dist: jsons (==1.3.0)
+Requires-Dist: pkcs7 (==0.1.2)
+Requires-Dist: pycryptodome (==3.9.8)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: typish (==1.9.1)
+Requires-Dist: urllib3 (==1.25.10)
+
+# Plug P100
+This is a fork of original work of [@K4CZP3R](https://github.com/K4CZP3R/tapo-p100-python)
+
+The purpose of this fork is to provide the library as PyPi package. 
+
+# How to install
+```pip install plugp100```
+
+# Code example
+```python
+from plugp100 import p100
+
+switch = p100.P100("<ip_address>")
+switch.handshake()
+switch.login_request("<username>", "<password>")
+
+# change state of plug
+switch.change_state(1, "88-00-DE-AD-52-E1") # (0 -> off, 1 -> on)
+
+# retrieve the state of plug
+is_on = switch.is_on()
+state = switch.get_state() # this retrieve a complete status
+```
+
+
+
