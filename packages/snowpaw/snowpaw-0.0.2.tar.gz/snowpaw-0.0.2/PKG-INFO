@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: snowpaw
+Version: 0.0.2
+Summary: A useful python package
+Home-page: https://lttpp.github.io/snowpaw/
+Author: Liu Jianwei
+Author-email: tungliu@126.com
+License: UNKNOWN
+Description: # snowpaw
+        
+        A useful python package.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
