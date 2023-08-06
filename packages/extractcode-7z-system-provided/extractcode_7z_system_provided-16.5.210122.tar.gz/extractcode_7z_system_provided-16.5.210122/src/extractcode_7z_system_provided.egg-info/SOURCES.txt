@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/extractcode_7z/__init__.py
+src/extractcode_7z_system_provided.egg-info/PKG-INFO
+src/extractcode_7z_system_provided.egg-info/SOURCES.txt
+src/extractcode_7z_system_provided.egg-info/dependency_links.txt
+src/extractcode_7z_system_provided.egg-info/entry_points.txt
+src/extractcode_7z_system_provided.egg-info/not-zip-safe
+src/extractcode_7z_system_provided.egg-info/top_level.txt
