@@ -1,0 +1,9 @@
+beautifulsoup4
+click
+
+[dev]
+black
+icdiff
+pip-tools
+prettyprinter
+pytest
