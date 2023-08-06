@@ -1,0 +1,10 @@
+osometweet/__init__.py,sha256=dZF78m4GuW4BXGdlQgIoAZZhvZD4LSn8lz3v0ndswLU,264
+osometweet/api.py,sha256=uGmRLMIzP2KFySOkLqHSN61J-OB7lKpDOiHFKMrjTpM,15006
+osometweet/expansions.py,sha256=_EEKPOYb2gwl_ZhI_TmHx2urQWxMQ6OfvnIcL_9Mu2M,1689
+osometweet/fields.py,sha256=6yM1YmfslQEvbmt1g5rG-Llu8sFE6F9tw3KR3civxMA,4490
+osometweet/oauth.py,sha256=uFE75_21UF0TgnZenIAHbPM7FAJp-QmxVf05GTU4cos,3184
+osometweet/utils.py,sha256=JqF4j2qXW4TprI4c47SeiuYxG2Ami-cDK8xq_3uAwx4,2456
+osometweet-0.2.dist-info/METADATA,sha256=OIRBXA6RhOSGOPNLXBVFHd1qEPdM1IZcyXNOSpMYcP0,3032
+osometweet-0.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+osometweet-0.2.dist-info/top_level.txt,sha256=N0mZMfkud7QMlct8jAXYpPKZQ_w1lC3ajD3CuXsEcRs,11
+osometweet-0.2.dist-info/RECORD,,
