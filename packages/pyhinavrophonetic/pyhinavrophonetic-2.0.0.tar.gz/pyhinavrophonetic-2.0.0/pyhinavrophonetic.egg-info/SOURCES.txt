@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pyhinavrophonetic/__init__.py
+pyhinavrophonetic/config.py
+pyhinavrophonetic/hinavro.py
+pyhinavrophonetic.egg-info/PKG-INFO
+pyhinavrophonetic.egg-info/SOURCES.txt
+pyhinavrophonetic.egg-info/dependency_links.txt
+pyhinavrophonetic.egg-info/top_level.txt
+pyhinavrophonetic/resources/__init__.py
+pyhinavrophonetic/resources/avrodict.json
+pyhinavrophonetic/utils/__init__.py
+pyhinavrophonetic/utils/count.py
+pyhinavrophonetic/utils/validate.py
