@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+djitellopy2.egg-info/PKG-INFO
+djitellopy2.egg-info/SOURCES.txt
+djitellopy2.egg-info/dependency_links.txt
+djitellopy2.egg-info/requires.txt
+djitellopy2.egg-info/top_level.txt
