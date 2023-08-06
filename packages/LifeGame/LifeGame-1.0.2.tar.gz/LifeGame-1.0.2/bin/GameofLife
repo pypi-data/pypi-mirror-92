@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+from GameofLife.LifeGame import LifeGame
+
+LifeGame().run()
