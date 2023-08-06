@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: function-error-handling
+Version: 1.2
+Summary: Wrap functions that might fail some time, so it will retry to execute that function n times
+Home-page: UNKNOWN
+Author: Cheskel Twersky
+Author-email: yoursn21@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Installation
+
+`pip3 install function_error_handling`
+
+# Usage
+
+```python
+def function_that_might_throw_error():
+    # stuff that is questionable
+    pass
+
+imoprt function_error_handling
+
+function_that_might_throw_error = function_error_handling.wrap(function_that_might_throw_error)
+
+function_that_might_throw_error()
+```
+
