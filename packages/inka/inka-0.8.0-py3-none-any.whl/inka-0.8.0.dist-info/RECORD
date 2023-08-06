@@ -1,0 +1,14 @@
+inka/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inka/__main__.py,sha256=9RE9ctefSbiQNAxR9a9bjmghjes5SF2OXqvwpZHBuOg,62
+inka/anki_api.py,sha256=MvpqK2vI5S5YDhGUk0Z2cSNT4j1NjxYydxBgnm3esUc,1710
+inka/card.py,sha256=Wy_M67Bfqu4cbZwKbG6c_xmILlLQVK82TSaCJjjqDmw,881
+inka/converter.py,sha256=NmFYN-12JMkCs18Z-bgfs0U2qwPcvrGnYIPmmhOp25E,433
+inka/image.py,sha256=uQI0yi1Sa97IBLgcw8rNUneHRR2wsajMqqsyh3sEDRk,1487
+inka/inka.py,sha256=DLTy6Rzs9nf2ogPBA9uW6yTlFUt3_zuWBggbZCXkgjw,1801
+inka/parser.py,sha256=y125TIUxcNfpnXDTDC6fF7dvo9lgk0ojuiemq8h-kLE,5905
+inka-0.8.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+inka-0.8.0.dist-info/METADATA,sha256=OrJXXpxJmXWDpokl6S60onhF0SRuyNoa-Wxmx5JnXYs,3091
+inka-0.8.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+inka-0.8.0.dist-info/entry_points.txt,sha256=p6pknuP1Qxumdn4C-yFFY7lu6uZ37vNJYi0vEApkiys,41
+inka-0.8.0.dist-info/top_level.txt,sha256=rYqNxxa5AONDWMmlvKjVgthg4nVLLQRk70pcISB7KOA,5
+inka-0.8.0.dist-info/RECORD,,
