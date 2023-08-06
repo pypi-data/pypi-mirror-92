@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: proxyport
+Version: 1.0.0
+Summary: Proxy Port SDK package.
+Home-page: https://github.com/proxyport/py-proxyport
+Author: Proxy Port
+Author-email: proxyportcom@gmail.com
+License: MIT
+Description: 
+        # Proxy Port SDK
+        Proxyport is a Python package that provides interfaces to the [Proxy Port](https://proxy-port.com) API.
+        ## Installation
+        Install via [pip](https://pip.pypa.io/):
+        ```shell
+        $ pip install proxyport
+        ```
+        ## Getting Started
+        Package can be used as module:
+        ```shell
+        $ python -m proxyport
+        
+        AR 181.119.301.272:3128
+        ...
+        UA 194.242.310.289:3128
+        US 162.144.277.318:3838
+        
+        ```
+        
+        Example:
+        ```python
+        from proxyport import get_random_proxy
+        
+        print(get_random_proxy())
+        
+        http://139.180.281.313:3128
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
