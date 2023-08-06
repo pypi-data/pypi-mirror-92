@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+stockio.egg-info/PKG-INFO
+stockio.egg-info/SOURCES.txt
+stockio.egg-info/dependency_links.txt
+stockio.egg-info/top_level.txt

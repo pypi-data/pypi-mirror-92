@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: stockio
+Version: 0.0.1
+Summary: Stock Market Data Lake
+Home-page: UNKNOWN
+Author: Christopher Bradley
+Author-email: declarationcb@gmail.com
+License: UNKNOWN
+Description: Combines Deep Learning and Apis
+Keywords: python,deep learning,stocks,ai
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3
