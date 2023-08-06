@@ -1,0 +1,57 @@
+CHANGES
+=======
+
+v0.1.6
+------
+
+* alert tests fixed and assertSubscription for mixins
+* alert testing
+* health test mixin [skip ci]
+* even cleaner shutdown? run in ci plz
+* removed om.utils dependency
+
+v0.1.5
+------
+
+* better shutdown via destroy(linger=)
+* this allows to switch the protocol of the zmq test mixin
+* readme and rpc test server mixin
+
+v0.1.4
+------
+
+* added orjson to requirements
+
+v0.1.3
+------
+
+* removes the dependency on openmodule
+
+v0.1.2
+------
+
+* fixes issues regarding with broker pub and sub confusion, support for sending BaseModel instances
+
+v0.1.1
+------
+
+* retry job
+
+v0.1.0
+------
+
+* tighter timeouts
+* fixes a issue where the test client would connect to a wrong broker
+* fixes a race condition in test client startup
+* pretty please?
+* more stable please?
+* more robust startup maybe?
+* fixed testcases
+* fixed testsetup
+* zmq test utils
+* initial commit
+* fixes in test setup, repo cleanup and identical layout to the other packages, added htmlcov artifacts
+* change api\_key to api\_token
+* cleanup repository
+* added webhook secret [skip ci]
+* initial commit
