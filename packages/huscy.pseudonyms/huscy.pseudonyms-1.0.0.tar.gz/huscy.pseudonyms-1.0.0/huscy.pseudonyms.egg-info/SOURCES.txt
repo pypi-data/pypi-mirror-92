@@ -1,0 +1,12 @@
+README.md
+setup.py
+huscy.pseudonyms.egg-info/PKG-INFO
+huscy.pseudonyms.egg-info/SOURCES.txt
+huscy.pseudonyms.egg-info/dependency_links.txt
+huscy.pseudonyms.egg-info/requires.txt
+huscy.pseudonyms.egg-info/top_level.txt
+huscy/pseudonyms/__init__.py
+huscy/pseudonyms/models.py
+huscy/pseudonyms/services.py
+huscy/pseudonyms/migrations/0001_initial.py
+huscy/pseudonyms/migrations/__init__.py
