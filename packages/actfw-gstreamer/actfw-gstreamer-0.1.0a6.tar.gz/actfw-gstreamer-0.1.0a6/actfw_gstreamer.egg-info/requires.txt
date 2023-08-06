@@ -1,0 +1,2 @@
+actfw-core
+PyGObject
