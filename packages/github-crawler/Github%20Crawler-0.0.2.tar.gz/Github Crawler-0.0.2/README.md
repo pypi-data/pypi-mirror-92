@@ -1,0 +1,1 @@
+A web spider to crawl public github repositories to collect data of github user profiles,repositories and user social counts for educational purpose only. The project was earlier built to collect data from github for academic data analysis project.
