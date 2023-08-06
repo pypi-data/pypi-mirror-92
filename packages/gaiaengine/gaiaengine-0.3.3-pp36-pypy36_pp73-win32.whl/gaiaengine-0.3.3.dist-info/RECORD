@@ -1,0 +1,10 @@
+gaiaengine/SDL2.dll,sha256=rbZyzat-vxHhnrMFtzw4nFkI9pk9byTKFpTyzXD_I90,1028096
+gaiaengine/SDL2_image.dll,sha256=CH3bQZzcLmO3SzpNlIoiOccq2jEsDZARd7FVQ6Er3c0,61952
+gaiaengine/__init__.py,sha256=wtj7znCqD_DcpnVIkwmK54vma9gd1GuBgTO8o-PH4yI,25
+gaiaengine/gaiaengineNone,sha256=3RNm0up8gt-gZfKKthUgvDHAO1ngEdPKM0JhMCL0hDo,924160
+gaiaengine/libpng16.dll,sha256=Ba95Jw7W4D7-utz7y12RJdIvx5FaCkgD7VvSsuL-bLE,301056
+gaiaengine/zlib1.dll,sha256=Pv0u9djmZ_NhcvIWqt5e6bmGMDKqeaT9cMAnHAwGucE,178176
+gaiaengine-0.3.3.dist-info/METADATA,sha256=K81gDWKvNxtPxM6bS6jMBxaTnvQxM03LX1NbfMXtStE,439
+gaiaengine-0.3.3.dist-info/WHEEL,sha256=l3hqMu9D_I4y3vEEGWvxr0ZvoBtyViBdMpBHwmMIxGI,108
+gaiaengine-0.3.3.dist-info/top_level.txt,sha256=5ZQVHC1v0EZlrf8Qad2S3TmNBellD4KB040qFJBjq7s,11
+gaiaengine-0.3.3.dist-info/RECORD,,
