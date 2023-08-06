@@ -1,0 +1,14 @@
+giup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+giup/__main__.py,sha256=DO_I2nf_9Wpa_x2B38u4IiHKnBGdQY6XuSuWL7jGpkM,1950
+giup/__version__.py,sha256=NYyLzk3pnqH0G7eSyP54U_GN_bPb_cqT5mMvQHdA3N0,26
+giup/command.py,sha256=dHmzHc-lMELE4ckrSNV19YhMmsI48cQhnTsOEofoETM,4474
+giup/git.py,sha256=NqgTiVjeaOw7vJfxH9qx_9W5SislK-ZQ3U1Co0zYqEY,1801
+giup/project.py,sha256=HcFOg4Hci71rJAw03VSzoxwyyqiQfbZOOOf3w6bKR1U,6064
+giup/util.py,sha256=epK3TkxRXA6Kzfq_ou5f4UJkY8aU4JkDJ5n6e9B7_fM,1652
+GIUP-1.0.0rc0.dist-info/LICENSE,sha256=vnTnfWiRjMh66mb9H1Zu6ras6Gs3IRNwP2SG0FXYJwE,11539
+GIUP-1.0.0rc0.dist-info/METADATA,sha256=Um1d-nSZV3KObgBtLoSqIE3OQT_D4NPjUBOPfFbbm6I,3045
+GIUP-1.0.0rc0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+GIUP-1.0.0rc0.dist-info/entry_points.txt,sha256=jqngLPxgAVJBdexNwioVITC52urhZc005vdY2uKoX4I,45
+GIUP-1.0.0rc0.dist-info/license-headers.sh,sha256=4TVqKRos0WOy2VE3bN2VjHks_jHHri2W7_2YTtM2zBc,81
+GIUP-1.0.0rc0.dist-info/top_level.txt,sha256=jSiGajwVlbE11XBCQGH_9d9jfv8cHH7jVIKxQJvtYz8,5
+GIUP-1.0.0rc0.dist-info/RECORD,,
