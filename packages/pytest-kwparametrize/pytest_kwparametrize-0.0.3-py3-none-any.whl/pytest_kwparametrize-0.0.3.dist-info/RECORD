@@ -1,0 +1,9 @@
+pytest_kwparametrize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_kwparametrize/plugin.py,sha256=0cPKCqNjlejxQoBBzTCTfSIM-aiLS5kuc7JfDG9hs5A,8327
+pytest_kwparametrize/version.py,sha256=TdaMBFGZyW4mVE5K9SJmkz8KtmGiXIlGjm8_pLZqprE,85
+pytest_kwparametrize-0.0.3.dist-info/LICENSE,sha256=WV_3w9F_B-__n-5_ZmScJSLBrogMIUk8umvkjV0AFAU,1070
+pytest_kwparametrize-0.0.3.dist-info/METADATA,sha256=hgG9TSFx1EONsBA-dLEEPlz3UnV3aAvjiskllt8t11M,4934
+pytest_kwparametrize-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_kwparametrize-0.0.3.dist-info/entry_points.txt,sha256=rAq9kaVAuTXsTXpnHRwBVscZQauncjKAO2N_J65qxtc,63
+pytest_kwparametrize-0.0.3.dist-info/top_level.txt,sha256=Yly68YZVWg4jZjsXx9kjR3R60gLU6zndl0217vdyw7c,21
+pytest_kwparametrize-0.0.3.dist-info/RECORD,,
