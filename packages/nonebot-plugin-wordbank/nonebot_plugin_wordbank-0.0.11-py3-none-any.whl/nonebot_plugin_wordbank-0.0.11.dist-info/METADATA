@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-wordbank
+Version: 0.0.11
+Summary: 基于nonebot2的无数据库的轻量问答插件
+Home-page: https://github.com/Joenothing-lst/word-bank
+Author: Joenothing
+Author-email: 912871833@qq.com
+License: GPL-3.0 License
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+
+# word_bank
+
+- 基于[nonebot2](https://github.com/nonebot/nonebot2)
+
+## 功能
+
+- 无数据库的轻量问答插件
+- 支持模糊问答
+
+## 开始使用
+
+必须使用 pip
+
+- 通过 pip 从 [PyPI](https://pypi.org/project/nonebot_plugin_wordbank/) 安装
+
+``` {.sourceCode .bash}
+pip install nonebot-plugin-wordbank
+```
+
+## 配置项
+
+## 导出给其他插件
+
+## 更新记录
+
+## 特别感谢
+
+- [Mrs4s / go-cqhttp](https://github.com/Mrs4s/go-cqhttp)
+- [nonebot / nonebot2](https://github.com/nonebot/nonebot2)
+
+## 优化建议
+- 请提交issue或者pr
+
