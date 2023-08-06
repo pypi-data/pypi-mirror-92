@@ -1,0 +1,13 @@
+README.md
+setup.py
+MultibodyPy/__init__.py
+MultibodyPy/bodies.py
+MultibodyPy/constraints.py
+MultibodyPy/forces.py
+MultibodyPy/group.py
+MultibodyPy/solver.py
+MultibodyPy.egg-info/PKG-INFO
+MultibodyPy.egg-info/SOURCES.txt
+MultibodyPy.egg-info/dependency_links.txt
+MultibodyPy.egg-info/requires.txt
+MultibodyPy.egg-info/top_level.txt
