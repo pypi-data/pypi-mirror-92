@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sha256sumf
+Version: 1.0.0
+Summary: sha256sum for folders
+Home-page: https://github.com/bimbashrestha/sha256sumf
+Author: Bimba Shrestha
+License: UNKNOWN
+Description: # sha256sumf
+        
+        A simple command line utility for producing recursive SHA 256 checksums of folders using:
+        
+        * Inner file contents
+        * Inner file paths 
+        * Inner folder paths
+        
+        Produces the same output as sha256sum when used with a single file.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
