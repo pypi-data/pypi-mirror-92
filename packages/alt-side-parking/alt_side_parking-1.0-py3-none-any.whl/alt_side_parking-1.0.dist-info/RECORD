@@ -1,0 +1,14 @@
+alt_side_parking/__init__.py,sha256=Zr9AZtI0uDTT_Tg_hSW9Rf7Qt05Luh-DPZ5St2seDh4,166
+alt_side_parking/config.py,sha256=n4y4zejgkQlGvUcawtzNFQYCCaDTTshiQYLT_L7D09I,578
+alt_side_parking/feed.py,sha256=oQ6-4lscNKookLsMi_U_Q_OHRQOqBQ2xIyHoRqDUxOk,1328
+alt_side_parking/sms.py,sha256=_XUKa9OZaKyGkwuvuARk7q50mnwwdS_M9fIlVncc-Hk,759
+alt_side_parking/test_mocks.py,sha256=obFcmLl_iRIGWBiw00k-zx9XXQ7qlA5ukeEGyjl9SI0,4642
+alt_side_parking/__pycache__/__init__.cpython-37.pyc,sha256=BQCUHudscozkKUFSb1RCt7T7HkpYBvl99r7vQRai3fo,392
+alt_side_parking/__pycache__/config.cpython-37.pyc,sha256=EQuO8sY9XAlhCqN9p7v6inF06JtC8Mi3Sd-JIuNegyQ,610
+alt_side_parking/__pycache__/feed.cpython-37.pyc,sha256=6f7VOukHsOmwBhka-De5HmHYoXsZ2R_aMju_6us-qLE,1690
+alt_side_parking/scripts/reminder.py,sha256=Zj6mgsN25JDLd-e08-6jeHENZHQnfTD1eqzzMs_qXBc,118
+alt_side_parking-1.0.dist-info/METADATA,sha256=4uqgp_ES0U0ivUPnP7GpqBe0keAqFVqNxDMOOHL3_JU,1432
+alt_side_parking-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alt_side_parking-1.0.dist-info/entry_points.txt,sha256=aQLEzdxa-_2EHYvePaGk6-jaHQXHlrMSbuBMHFBrY7I,69
+alt_side_parking-1.0.dist-info/top_level.txt,sha256=FEzbCWxNFNYGYIoMwMtAo_7pcTuWN_h1HEHwANvKBmw,17
+alt_side_parking-1.0.dist-info/RECORD,,
