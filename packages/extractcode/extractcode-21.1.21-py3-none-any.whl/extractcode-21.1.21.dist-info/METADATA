@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: extractcode
+Version: 21.1.21
+Summary: A mostly universal archive extractor using z7zip, libarchve, other libraries and the Python standard library for reliable archive extraction.
+Home-page: https://github.com/nexB/extractcode
+Author: nexB. Inc. and others
+Author-email: info@aboutcode.org
+License: Apache-2.0
+Keywords: utilities,archive,extraction,libarchive,7zip,scancode-toolkit
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: commoncode (>=21.1.21)
+Requires-Dist: plugincode (>=21.1.21)
+Requires-Dist: typecode (>=21.1.21)
+Requires-Dist: patch (>=1.16)
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=3.3.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (>=0.5.0) ; extra == 'docs'
+Requires-Dist: doc8 (>=0.8.1) ; extra == 'docs'
+Provides-Extra: full
+Requires-Dist: extractcode-7z (>=16.5.210122) ; extra == 'full'
+Requires-Dist: extractcode-libarchive (>=3.5.1.210122) ; extra == 'full'
+Requires-Dist: typecode[full] (>=21.1.21) ; extra == 'full'
+Provides-Extra: testing
+Requires-Dist: pytest (>=6) ; extra == 'testing'
+Requires-Dist: pytest-xdist (>=2) ; extra == 'testing'
+
+ExtractCode
+===========
+
+- license: Apache-2.0
+- copyright: copyright (c) nexB. Inc. and others
+- homepage_url: https://github.com/nexB/extractode
+- keywords: archive, extraction, libarchive, 7zip, scancode-toolkit
+
+
+ExtractCode is a universal archive extractor. It uses behind the scenes 
+the Python standard library, a custom ctypes binding to libarchive and
+the 7zip command line to extract a large number of common and
+less common archives and compressed files. It tries to extract things
+in the same way on all OSes, including auto-renaming files that would
+not have valid names on certain filesystems or when there are multiple
+copies of the same path in a given archive.
+The extraction is driven from  a "voting" system that considers the
+file extension(s) and name, the file type and mime type (using a ctypes
+binding to libmagic) to select the most appropriate extractor or
+uncompressor function. It can handle multi-level archives such as tar.gz.
+
+
+
+Visit https://aboutcode.org and https://github.com/nexB/ for support and download.
+
+To set up the development environment::
+
+    source configure
+
+To run unit tests::
+
+    pytest -vvs -n 2
+
+To clean up development environment::
+
+    ./configure --clean
+
+
+
+
