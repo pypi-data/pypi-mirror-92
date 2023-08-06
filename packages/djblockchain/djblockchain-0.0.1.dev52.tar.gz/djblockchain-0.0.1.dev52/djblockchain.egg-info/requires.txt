@@ -1,0 +1,13 @@
+django-model-utils
+cryptography
+djcall
+
+[test]
+django
+djangorestframework
+freezegun
+httpx
+pytest
+pytest-cov
+pytest-django
+pytest-asyncio
