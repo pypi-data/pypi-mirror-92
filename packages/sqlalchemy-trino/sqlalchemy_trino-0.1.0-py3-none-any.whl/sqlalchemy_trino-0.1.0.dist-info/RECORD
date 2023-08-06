@@ -1,0 +1,13 @@
+sqlalchemy_trino/__init__.py,sha256=C44QD0SdxybJX3Hs_MVCtbS_mdq0gfrDUp9Y6jXSl60,135
+sqlalchemy_trino/compiler.py,sha256=vtA0HY7pQcwE-75u5HrgkjwsN1zy72ySp0cLHSpW3Sc,3626
+sqlalchemy_trino/dbapi.py,sha256=8V6YnR3jFk5pp4N5fg6X-qHWParLjKzUYbC63WRxJmY,592
+sqlalchemy_trino/dialect.py,sha256=-gD0Ht6eSE5yPpSJN7A2JQKSczeZnQofzK4zJw8SZx0,10470
+sqlalchemy_trino/error.py,sha256=H8azRT4FElLWeebrZA1tqendsKnxsem7CJmqLAsoN74,176
+sqlalchemy_trino/result.py,sha256=Vw4mVNcj5ytrKslN2Jy8qj7q_pRgjXHUXt-SJmJszLo,1827
+sqlalchemy_trino/types.py,sha256=td2rhrIGnqxJREQ8uWE5gwGFJJjNG1PBeKqIysjQyBU,1061
+sqlalchemy_trino-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sqlalchemy_trino-0.1.0.dist-info/METADATA,sha256=1ci0rM-H8mmv157uEtYZHE2bLRV4sE-FL9jDrulLlqY,1727
+sqlalchemy_trino-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+sqlalchemy_trino-0.1.0.dist-info/entry_points.txt,sha256=jUPk8tbUcrKP7MLi4RJ98XLrflIeY1EcKNS9r2Xehi4,69
+sqlalchemy_trino-0.1.0.dist-info/top_level.txt,sha256=DZS_v8EEGg25NE-kYgi4YMpcIBUP9A0-G1WChtiGGUc,17
+sqlalchemy_trino-0.1.0.dist-info/RECORD,,
