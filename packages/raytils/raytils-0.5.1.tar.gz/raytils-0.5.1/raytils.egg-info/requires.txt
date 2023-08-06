@@ -1,0 +1,12 @@
+Cython
+numpy
+scikit-image
+scipy
+opencv-python
+Pillow
+tqdm
+rays_pycocotools
+imagesize
+pandas
+scikit-learn
+plotly
