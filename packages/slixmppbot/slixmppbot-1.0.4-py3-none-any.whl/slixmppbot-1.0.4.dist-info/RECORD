@@ -1,0 +1,11 @@
+xmppbot/__init__.py,sha256=7H-DpRhAF6vL4bnYo9bi3rgI2Chr6I0UmEZjJAtkJXc,66
+xmppbot/basebot.py,sha256=zuWBP1orjYsnPOGSOJqRGWFpL1pgbsEg50ydMP1i8qw,811
+xmppbot/common.py,sha256=2JEfsZpeYo2v7S5U0DG5MSrEym_pwzdUMnXfMLC6aEA,2578
+xmppbot/timeout.py,sha256=FzSH7pgWKbBm7NjSqYaFq26WFGG9pRoXBJ3JNsXv8_g,451
+xmppbot/xmppbot.py,sha256=jlp9CXKZw4f-4xtpuChTorTyn5-g21vXsTeCWGbXf-M,9194
+xmppbot/xmppmsg.py,sha256=R_Ql_zvlXmfOBM971l1Ro6LZtDWAzJ1BDh6sXOhVMOU,2828
+slixmppbot-1.0.4.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+slixmppbot-1.0.4.dist-info/METADATA,sha256=cl0F67miUNAKhZFhtjH0RAIMqCPnJdlF0zZw-tyQ4lk,1198
+slixmppbot-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+slixmppbot-1.0.4.dist-info/top_level.txt,sha256=LNnBXALwK9qUXTwlLz2smyaFQVhc0kokPfOlETdo4LU,8
+slixmppbot-1.0.4.dist-info/RECORD,,
