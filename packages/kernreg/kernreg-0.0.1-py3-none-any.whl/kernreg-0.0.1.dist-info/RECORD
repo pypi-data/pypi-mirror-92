@@ -1,0 +1,10 @@
+kernreg/__init__.py,sha256=1cu7PEQgkYtxUMOHYTotksrF1GABSrz9_C1y9dRTP4g,49
+kernreg/bandwidth_selection.py,sha256=7Y_9ajJvW8siOw12KGEQlgleXyWb8SfDp8BXoe6WgCI,6812
+kernreg/funcs_to_jit.py,sha256=1fEo_E7xPVEy_ZWIYPEFDb3tba9IVnkF__ho3NmLUak,4152
+kernreg/linear_binning.py,sha256=Xd-v-UiCT0ltuOx1frCSi1pdHOc-3vvLzeFiRBiW38Q,3294
+kernreg/locpoly.py,sha256=SsPETG6hIp418ucxFYesb-RXep5uKDW903ULw1CiesI,8770
+kernreg/plot.py,sha256=s8ZjBRjKibpXcHd9tsQJ1gpKX_8rAcJddxb0kGyCVIc,1239
+kernreg-0.0.1.dist-info/LICENSE,sha256=Z_288LfxngQIWnnoCB1V9PzXQ6hGQcmRJgnxFQhWekw,1072
+kernreg-0.0.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+kernreg-0.0.1.dist-info/METADATA,sha256=FGOjsKWV-9Wp23NpsI5CEVKBfBivorGSixfuHKupsjo,527
+kernreg-0.0.1.dist-info/RECORD,,
