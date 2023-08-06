@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Settings</title>
+
+    <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none}
+    </style>
+  </head>
+
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+              aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://gitlab.com/ita-ml/graphene" target="_blank">Repository
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://gitlab.com/ita-ml/instance-hardness" target="_blank">PyHard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://matilda.unimelb.edu.au/matilda/" target="_blank">
+              Matilda
+            </a>
+          </li>
+        </ul>
+        <span class="navbar-text disabled">
+          <a class="nav-link" href="mailto:contact@pytech.eng.br">contact us</a>
+        </span>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-5 mt-3">
+      <form action="/-/config" method="POST" enctype="multipart/form-data" autocomplete="on">
+<!--        <div class="form-group">-->
+<!--            <label for="csvFile">Example file input</label>-->
+<!--            <input type="file" class="form-control-file" id="csvFile" name="file" accept="text/csv">-->
+<!--        </div>-->
+        <div><h1>Settings</h1></div>
+
+        <br>
+
+        <div class="form-group accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <big>General</big>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="row pl-3">
+                  <div class="form-group col-md-6">
+                    <label for="valueInputId"><b>Number of folds</b>: </label>
+                    <output name="valueOutput" id="valueOutputId">{{state.n_folds}}</output>
+                    <input type="range" class="form-control-range w-75" id="valueInputId" name="n_folds"
+                           min="3" max="10" step="1" value="{{state.n_folds}}" oninput="valueOutputId.value = valueInputId.value">
+                    <br>
+                    <label for="valueInputId2"><b>Number of iterations</b>: </label>
+                    <output name="valueOutput2" id="valueOutputId2">{{state.n_iter}}</output>
+                    <input type="range" class="form-control-range w-75" id="valueInputId2" name="n_iter"
+                           min="1" max="10" step="1" value="{{state.n_iter}}" oninput="valueOutputId2.value = valueInputId2.value">
+                    <br>
+                    <div class="pt-2">
+                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalGeneral">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6 px-5">
+                    <div><p><b>Algorithm performance metric</b></p></div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline1" name="metric" class="custom-control-input"
+                             value="logloss" {{state.logloss}}>
+                      <label class="custom-control-label" for="customRadioInline1">Logloss</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="customRadioInline2" name="metric" class="custom-control-input"
+                             value="brier" {{state.brier}}>
+                      <label class="custom-control-label" for="customRadioInline2">Brier</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingAlgo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseAlgo" aria-expanded="false" aria-controls="collapseAlgo">
+                  <big>Algorithms</big>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseAlgo" class="collapse" aria-labelledby="headingAlgo" data-parent="#accordionExample">
+              <div class="card-body">
+                  <div class="form-group pl-3">
+
+                    <h5 class="mb-3">Classification</h5>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check1" {{state.svc_linear}} name="svc_linear">
+                        <label class="form-check-label" for="Check1">
+                            Linear SVM
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check2" {{state.svc_rbf}} name="svc_rbf">
+                        <label class="form-check-label" for="Check2">
+                            RBF SVM
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check3" {{state.random_forest}} name="random_forest">
+                        <label class="form-check-label" for="Check3">
+                            Random Forest
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check4" {{state.gradient_boosting}} name="gradient_boosting">
+                        <label class="form-check-label" for="Check4">
+                            Gradient Boosting
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check5" {{state.bagging}} name="bagging">
+                        <label class="form-check-label" for="Check5">
+                            Bagging
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check6" {{state.gaussian_nb}} name="gaussian_nb">
+                        <label class="form-check-label" for="Check6">
+                            Naive Bayes
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check7" {{state.logistic_regression}} name="logistic_regression">
+                        <label class="form-check-label" for="Check7">
+                            Logistic Regression
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check8" {{state.mlp}} name="mlp">
+                        <label class="form-check-label" for="Check8">
+                            Multi-layer Perceptron
+                        </label>
+                    </div>
+
+<!--                    <div class="pt-4">-->
+<!--                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalAlgorithm">-->
+<!--                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
+<!--                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"></path>-->
+<!--                        </svg>-->
+<!--                      </button>-->
+<!--                    </div>-->
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingMeasure">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseMeasure" aria-expanded="false" aria-controls="collapseMeasure">
+                  <big>Hardness Measures</big>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseMeasure" class="collapse" aria-labelledby="headingMeasure" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="row pl-3 mb-0">
+                  <div class="form-group col-md-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" {{state.kDN}} name="kDN">
+                      <label class="form-check-label" for="defaultCheck1">
+                        k-Disagreeing Neighbors (kDN)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" {{state.DS}} name="DS">
+                      <label class="form-check-label" for="defaultCheck2">
+                        Disjunct Size (DS)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" {{state.DCP}} name="DCP">
+                      <label class="form-check-label" for="defaultCheck3">
+                        Disjunct Class Percentage (DCP)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck4" {{state.TD_P}} name="TD_P">
+                      <label class="form-check-label" for="defaultCheck4">
+                        Tree Depth Pruned (TD_P)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" {{state.TD_U}} name="TD_U">
+                      <label class="form-check-label" for="defaultCheck5">
+                        Tree Depth Unpruned (TD_U)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck6" {{state.CL}} name="CL">
+                      <label class="form-check-label" for="defaultCheck6">
+                        Class Likelihood (CL)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" {{state.CLD}} name="CLD">
+                      <label class="form-check-label" for="defaultCheck7">
+                        Class Likelihood Difference (CLD)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck8" {{state.MV}} name="MV">
+                      <label class="form-check-label" for="defaultCheck8">
+                        Minority Value (MV)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck9" {{state.CB}} name="CB">
+                      <label class="form-check-label" for="defaultCheck9">
+                        Class Balance (CB)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck10" {{state.N1}} name="N1">
+                      <label class="form-check-label" for="defaultCheck10">
+                        Number of nearby instances of different classes (N1)
+                      </label>
+                    </div>
+
+<!--                    <div class="pt-4">-->
+<!--                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalMeasures">-->
+<!--                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
+<!--                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"></path>-->
+<!--                        </svg>-->
+<!--                      </button>-->
+<!--                    </div>-->
+                  </div>
+
+
+                  <div class="form-group col-md-6">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck11" {{state.N2}} name="N2">
+                      <label class="form-check-label" for="defaultCheck11">
+                        Ratio of the intra-class and extra-class distances (N2)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck12" {{state.LSC}} name="LSC">
+                      <label class="form-check-label" for="defaultCheck12">
+                        Local Set Cardinality (LSC)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck13" {{state.LSR}} name="LSR">
+                      <label class="form-check-label" for="defaultCheck13">
+                        Local Set Radius (LSR)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck14" {{state.Usefulness}} name="Usefulness">
+                      <label class="form-check-label" for="defaultCheck14">
+                        Usefulness (U)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck15" {{state.Harmfulness}} name="Harmfulness">
+                      <label class="form-check-label" for="defaultCheck15">
+                        Harmfulness (H)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck16" {{state.F1}} name="F1">
+                      <label class="form-check-label" for="defaultCheck16">
+                        Number of features in overlapping (F1)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck17" {{state.F2}} name="F2">
+                      <label class="form-check-label" for="defaultCheck17">
+                        Minimum distance to overlapping region (F2)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck18" {{state.F3}} name="F3">
+                      <label class="form-check-label" for="defaultCheck18">
+                        Average distance to overlapping region (F3)
+                      </label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="defaultCheck19" {{state.F4}} name="F4">
+                      <label class="form-check-label" for="defaultCheck19">
+                        Maximum distance to overlapping region (F4)
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <big>Hyper-parameter Optimization</big>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-group pl-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" name="hyper_param_optm" class="custom-control-input"
+                           value="on" {{state.hpo_on}}>
+                    <label class="custom-control-label" for="customRadioInline3">ON</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline4" name="hyper_param_optm" class="custom-control-input"
+                           value="off" {{state.hpo_off}}>
+                    <label class="custom-control-label" for="customRadioInline4">OFF</label>
+                  </div>
+                  <br>
+                  <div class="mt-4">
+                    <label for="valueInputIdEval"><b>Evaluations</b>: </label>
+                    <output name="valueOutputEval" id="valueOutputIdEval">{{state.hpo_evals}}</output>
+                    <input type="range" class="form-control-range w-25" id="valueInputIdEval" name="hpo_evals"
+                           min="10" max="200" step="5" value="{{state.hpo_evals}}"
+                           oninput="valueOutputIdEval.value = valueInputIdEval.value">
+                  </div>
+
+                  <br>
+                  <div class="pt-2">
+                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalHPO">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"></path>
+                        </svg>
+                      </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <big>Feature Selection</big>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="form-group pl-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline5" name="feat_select" class="custom-control-input"
+                           value="on" {{state.fs_on}}>
+                    <label class="custom-control-label" for="customRadioInline5">ON</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline6" name="feat_select" class="custom-control-input"
+                           value="off" {{state.fs_off}}>
+                    <label class="custom-control-label" for="customRadioInline6">OFF</label>
+                  </div>
+                  <br>
+                  <div class="mt-4">
+                    <label for="valueInputIdFeat"><b>Number of selected features</b>: </label>
+                    <output name="valueOutputFeat" id="valueOutputIdFeat">{{state.max_n_features}}</output>
+                    <input type="range" class="form-control-range w-25" id="valueInputIdFeat" name="max_n_features" min="4" max="10"
+                           step="1" value="{{state.max_n_features}}" oninput="valueOutputIdFeat.value = valueInputIdFeat.value">
+                  </div>
+
+                  <div class="mt-4 w-25">
+                    <label><b>Method</b></label>
+                    <select class="custom-select" name="method">
+                      <option {{state.cife}}>CIFE</option>
+                      <option {{state.cmim}}>CMIM</option>
+                      <option {{state.disr}}>DISR</option>
+                      <option {{state.icap}}>ICAP</option>
+                      <option {{state.jmi}}>JMI</option>
+                      <option {{state.mifs}}>MIFS</option>
+                      <option {{state.mim}}>MIM</option>
+                      <option {{state.mrmr}}>MRMR</option>
+                    </select>
+                  </div>
+
+                  <br>
+                  <div class="pt-2">
+                      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#modalSelection">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-question-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"></path>
+                        </svg>
+                      </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mb-5 mt-4">
+          <button type="submit" class="btn btn-primary btn-lg mr-2" data-toggle="tooltip" data-placement="top" title="save">
+            Save
+          </button>
+          <a href="/" class="btn btn-secondary btn-lg ml-2" data-toggle="tooltip" data-placement="top" title="cancel">
+            Cancel
+          </a>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- Modal General -->
+    <div class="modal fade" id="modalGeneral" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel1">Help General</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <dl class="row">
+              <dt class="col-sm-3">Folds</dt>
+              <dd class="col-sm-9">Cross validation folds used to evaluate algorithm performance.</dd>
+
+              <dt class="col-sm-3">Iterations</dt>
+              <dd class="col-sm-9">Number of times each instance participates in the test fold. Each iteration demands
+              the repetition of the whole process, including hyper-parameter optimization, if enabled.</dd>
+
+              <dt class="col-sm-3">Metric</dt>
+              <dd class="col-sm-9">Metric used to evaluate algorithm performance.</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Algorithms -->
+    <div class="modal fade" id="modalAlgorithm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel2">Help Algorithms</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select which classification algorithms will be evaluated.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Algorithms -->
+    <div class="modal fade" id="modalMeasures" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel3">Help Measures</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select which hardness measures will serve as meta-features for instance space analysis input.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Algorithms -->
+    <div class="modal fade" id="modalHPO" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel4">Help Hyper-parameter optimization</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <dl class="row">
+              <dt class="col-sm-3">Evaluations</dt>
+              <dd class="col-sm-9">Number of iterations in Bayesian optimization process.</dd>
+            </dl>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Algorithms -->
+    <div class="modal fade" id="modalSelection" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ModalLabel5">Help Feature Selection</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <dl class="row">
+              <dt class="col-sm-3">CIFE</dt>
+              <dd class="col-sm-9">Conditional Infomax Feature Extraction.</dd>
+
+              <dt class="col-sm-3">CMIM</dt>
+              <dd class="col-sm-9">Conditional Mutual Information Maximization.</dd>
+
+              <dt class="col-sm-3">DISR</dt>
+              <dd class="col-sm-9">Double Input Symmetrical Relevance.</dd>
+
+              <dt class="col-sm-3">ICAP</dt>
+              <dd class="col-sm-9">Interaction Capping.</dd>
+
+              <dt class="col-sm-3">JMI</dt>
+              <dd class="col-sm-9">Joint Mutual Information.</dd>
+
+              <dt class="col-sm-3">MIFS</dt>
+              <dd class="col-sm-9">Mutual Information Feature Selection.</dd>
+
+              <dt class="col-sm-3">MIM</dt>
+              <dd class="col-sm-9">Mutual Information Maximization.</dd>
+
+              <dt class="col-sm-3">MRMR</dt>
+              <dd class="col-sm-9">Minimum Redundancy Maximum Relevance.</dd>
+            </dl>
+
+            Reference: <br><small>Jundong Li, Kewei Cheng, Suhang Wang, Fred Morstatter, Robert P. Trevino, Jiliang Tang,
+            and Huan Liu. 2017. <strong>Feature Selection: A Data Perspective</strong>. ACM Comput. Surv. 50, 6,
+            Article 94 (January 2018), 45 pages</small>.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </body>
+</html>

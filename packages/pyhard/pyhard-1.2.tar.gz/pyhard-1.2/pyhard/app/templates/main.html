@@ -1,0 +1,73 @@
+{% extends base %}
+
+<!-- goes in body -->
+{% block postamble %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+{% endblock %}
+
+<!-- goes in body -->
+{% block contents %}
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Home</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="log#b" target="_blank">Log</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="-/config">Settings</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h4 class="display-4 mb-4">Uncovering hard instances</h4>
+
+    <p class="lead">Guidelines:</p>
+    <ul class="lead">
+        <li>The dataset should be in the format (<small><i>n_instances</i>, <i>n_features</i></small>)</li>
+        <li><strong>Do not</strong> include any index column. Instances will be indexed in order, starting from
+            <strong>1</strong></li>
+        <li><strong>The last column</strong> must contain the classes of the instances</li>
+        <li>Categorical features should be handled previously</li>
+        <li>The only accepted file format is <mark>csv</mark></li>
+        <li>Do not reload the page after the analysis has started</li>
+    </ul>
+
+    <div class="row justify-content-md-start mb-4 mt-4">
+        <div class="col-md-auto">
+            {{ embed(roots.load) }}
+        </div>
+        <div class="col-md-auto invisible">
+            {{ embed(roots.hidden) }}
+        </div>
+    </div>
+
+    <div class="row justify-content-md-start">
+        <div class="col-md-auto mr-5">
+            {{ embed(roots.run) }}
+        </div>
+        <div class="col-md-auto">
+            {{ embed(roots.stop) }}
+        </div>
+    </div>
+
+    <div class="row justify-content-md-start lead mt-2">
+        <p class="col-lg-auto">
+            {{ embed(roots.info) }}
+        </p>
+    </div>
+</div>
+
+{% endblock %}
