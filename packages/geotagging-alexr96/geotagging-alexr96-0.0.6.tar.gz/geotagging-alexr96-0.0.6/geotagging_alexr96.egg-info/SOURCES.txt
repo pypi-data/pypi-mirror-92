@@ -1,0 +1,11 @@
+README.md
+setup.py
+devpipeline_geotag_tools/__init__.py
+devpipeline_geotag_tools/geo_ops.py
+devpipeline_geotag_tools/picture_reference.py
+devpipeline_geotag_tools/static/__init__.py
+geotagging_alexr96.egg-info/PKG-INFO
+geotagging_alexr96.egg-info/SOURCES.txt
+geotagging_alexr96.egg-info/dependency_links.txt
+geotagging_alexr96.egg-info/requires.txt
+geotagging_alexr96.egg-info/top_level.txt
