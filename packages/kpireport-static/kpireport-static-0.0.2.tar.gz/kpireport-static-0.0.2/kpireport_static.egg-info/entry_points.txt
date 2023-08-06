@@ -1,0 +1,3 @@
+[kpireport.output]
+static = kpireport_static:StaticOutputDriver
+
