@@ -1,0 +1,58 @@
+{#
+ # Project presentation slides revisions and evaluation
+ # Copyright (C) 2021  Nguyễn Gia Phong
+ #
+ # This file is part of Acanban.
+ #
+ # Acanban is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU Affero General Public License as published
+ # by the Free Software Foundation, either version 3 of the License, or
+ # (at your option) any later version.
+ #
+ # Acanban is distributed in the hope that it will be useful,
+ # but WITHOUT ANY WARRANTY; without even the implied warranty of
+ # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ # GNU Affero General Public License for more details.
+ #
+ # You should have received a copy of the GNU Affero General Public License
+ # along with Acanban.  If not, see <https://www.gnu.org/licenses/>.
+ #}
+
+{% extends 'project-detail.html' %}
+{% block tabbarlayout %}
+{{ tabbar('Slides') }}
+{% endblock %}
+{% block tabcontent %}
+<div class=col-wide>
+  <h2>Presentation evaluation</h2>
+  <form action=/p/{{ project.id }}/slides/eval method=POST>
+    <label for=grade>Grade</label>
+    <input {% if for_student %}readonly{% endif %}
+           type=text name=grade id=grade value={{ slides.grade }}>
+    <label for=comment>Comment</label>
+    <textarea {% if for_student %}readonly{% endif %}
+              name=comment id=comment>{{ slides.comment }}</textarea>
+    {% if not for_student %}<button>Save evaluation</button>{% endif %}
+  </form>
+
+  <h2>Slides revisions</h2>
+  {% if for_student %}
+  <form action=/p/{{ project.id }}/slides/upload method=POST
+        enctype=multipart/form-data>
+    <input type=file name=file id=file>
+    <button>Upload new slides</button>
+  </form>
+  {% endif %}
+
+  {% for file in revisions %}
+  <dl>
+    <dt>File</dt>
+    <dd><a href=/ipfs/{{ file.cid }}>{{ file.name }}</a></dd>
+    <dt>Uploader</dt>
+    <dd><a href=/u/{{ file.user }}>{{ file.user }}</a></dd>
+    <dt>Revision</dt>
+    <dd>{{ file.time }}</a></dd>
+  </dl>
+  {% endfor %}
+</div>
+{% endblock %}
