@@ -1,0 +1,156 @@
+Metadata-Version: 2.1
+Name: rest-filter
+Version: 0.0.7
+Summary: A query string parsing library for REST server queries
+Home-page: https://gitlab.com/sagbot/odata_parser
+Author: Sagiv Oulu
+Author-email: sagiv.oulu@gmail.com
+License: MIT
+Description: # pyquery
+        
+        Pyquery aims to ba a light weight fast parser written in pure Python, meant for use in REST API servers.
+        It was inspired by the [OData standard](https://www.odata.org/), but this query is a bit simpler and less feature rich.
+        
+        ## Goals
+        * An easily extendable querying syntax
+        * Be able to query any data source by writing a simple translator
+        * Usable in any Python REST framework
+        
+        
+        ## Example usage
+        
+        Here is an example of the most basic usage
+        ```python
+        from pyquery.encoder.common import encoder
+        from pyquery.translator import mongo_translator
+        
+        # The raw input expression
+        expression = r"((age gt 20) and (age ge 10))"
+        
+        # Generate the encoded expression
+        encoded_expression = encoder.encode_expression(expression)
+        print(encoded_expression)
+        
+        # Translate into a mongo query
+        mongo_query = mongo_translator.translate(encoded_expression)
+        print(mongo_query)
+        ```
+        
+        This uses the default pre built expression encoding elements & the pre build
+        translation elements. you can add additional elements like this:
+        ```python
+        from pyquery.encoder.common import encoder
+        from pyquery.encoder import BooleanOperation, BinaryOperation
+        from pyquery.translator import mongo_translator
+        
+        
+        @encoder.register_binary_logical_operator('xor')
+        class Xor(BooleanOperation):
+            pass
+        
+        
+        @encoder.register_ratio('contains')
+        class Contains(BinaryOperation):
+            pass
+        
+        
+        # The raw input expression
+        expression = r"((age gt 20) xor (name contains 'subtext'))"
+        
+        # Generate the encoded expression
+        encoded_expression = encoder.encode_expression(expression)
+        print(encoded_expression)
+        
+        # Translate into a mongo query
+        mongo_query = mongo_translator.translate(encoded_expression)
+        print(mongo_query)
+        ```
+        
+        If you want you can forgo the pre loaded encoder & translator objects and create ones of your one with completely custom elements:
+        
+        ```python
+        from pyquery.encoder import Encoder
+        from pyquery.encoder import BooleanOperation, BinaryOperation
+        
+        from pyquery.translator import MongoTranslator
+        
+        encoder = Encoder()
+        
+        
+        # Register encoders
+        @encoder.register_binary_logical_operator('and')
+        class And(BooleanOperation):
+            pass
+        
+        
+        @encoder.register_ratio('eq')
+        class Equals(BinaryOperation):
+            pass
+        
+        
+        mongo_translator = MongoTranslator()
+        
+        # Register translators
+        @mongo_translator.register_boolean_operation_translator(And)
+        def translate_and(operation: And, translator: MongoTranslator):
+            return {
+                '$and': [
+                    translator.translate(operand) for operand in operation.operands
+                ]
+            }
+        
+        
+        @mongo_translator.register_binary_operation_translator(Equals)
+        def translate_equals(operation: Equals):
+            return {
+                operation.field.name: {
+                    '$eq': operation.value
+                }
+            }
+        
+        expression = '((name eq "eric") and (age eq 18))'
+        
+        # Generate the encoded expression
+        encoded_expression = encoder.encode_expression(expression)
+        print(encoded_expression)
+        
+        # Translate into a mongo query
+        mongo_query = mongo_translator.translate(encoded_expression)
+        print(mongo_query)
+        ```
+        
+        ## Limitations
+        * Expressions can only be parentheses complete (for now).
+        For example, these expressions are not allowed:
+        * ```age gt 10 and name eq "eric" and city eq "tlv"```
+        * ```(age gt 10 and name eq "eric" and city eq "tlv")```
+        * ```(age gt 10) and (name eq "eric") and (city eq "tlv")```\
+        But this expression is valid:\
+        ```(((age gt 10) and (name eq "eric")) and (city eq "tlv"))```
+        * You cannot register new value types (for now), you must use the prebuilt boolean, string or number values
+        
+        ## Encoder Translator design
+        This utility is seperated into two parts: Encoder & Translator
+        
+        ### Encoder
+        The encoder is responsible for parsing the input string into a structured expression object, 
+        that can be easily read & parsed by code
+        
+        The encoder can encodes grammar elements that are registered to it. each registered grammar is a 
+        ratio between a field & a value, or a logical operation between two logical values or expressions 
+        
+        ### Translator
+        The translator translates the generic expression format given from the encoder into a target language.\
+        There is a basic mongo translator built into this package (more yet to come), but you can easily write 
+        a translator of your own.
+        
+        ## Contributors
+        * Sagiv Oulu
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
