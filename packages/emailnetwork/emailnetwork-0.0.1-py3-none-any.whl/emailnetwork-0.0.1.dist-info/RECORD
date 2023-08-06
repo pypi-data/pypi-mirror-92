@@ -1,0 +1,17 @@
+emailnetwork/__init__.py,sha256=qRTJyScqecvWB8Z2QmNicgpAuqts43xpUX3kk8hhYwE,482
+emailnetwork/emails.py,sha256=PejKEUIrZ62JU8__fh8bgdp09-k-QA3anHFK7mVtuq8,1833
+emailnetwork/extract.py,sha256=dRGf3KY1NDy_VixTQcCJZnXkbTkKVM84B7v80cWMWC8,3198
+emailnetwork/graph.py,sha256=It3GKyv5hPIsu8D7aQCbVBpH0DqT3T8B8F6g_9074Rg,8619
+emailnetwork/network.py,sha256=0iG0e6ecg_BDTkEpvrPiaSxA_Udzjg04o_8NTss7Avg,588
+emailnetwork/utils.py,sha256=TVhINpfZzEoW36xjPdvljbNhu98OSTJxGIG6utOlNy4,613
+emailnetwork/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+emailnetwork/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emailnetwork/tests/test.mbox,sha256=oLHzLO_Fc-Ymka_Fm1OhBR7vgdVO2bnt-0ag-KDFrt0,937486
+emailnetwork/tests/test_extract.py,sha256=RlGVi1wkAAG3QGeRr2Vq3JaAu8KFEHgsF_voK6ruXHw,2385
+emailnetwork/tests/test_graph.py,sha256=KV_NO0UULuLOkjK11kt4oNu9YBII0B7QmEYEgxZZpgE,836
+emailnetwork/tests/test_utils.py,sha256=vA33KhAm5lA79pey1b3qtz41nY_fOIxG8SbJCxrJVOQ,326
+emailnetwork-0.0.1.dist-info/LICENSE,sha256=DJ2bQtygnBVIINUPPMFaiWlVGUC-FLV4mLuba9jvSrs,1084
+emailnetwork-0.0.1.dist-info/METADATA,sha256=V2bPaLJuP5XVr-zqr_T5WkNKhOMhzHg2Imx3rEtRKN4,5433
+emailnetwork-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+emailnetwork-0.0.1.dist-info/top_level.txt,sha256=5s7dGHZwqZzz558UFEEK6iX6Z0PU9ypLUk96D2N8RLE,13
+emailnetwork-0.0.1.dist-info/RECORD,,
