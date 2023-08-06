@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+/django_simplecms.egg-info/
+/dist/

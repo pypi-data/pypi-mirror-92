@@ -1,0 +1,3 @@
+[console_scripts]
+simplecms = cms.__main__:main
+
