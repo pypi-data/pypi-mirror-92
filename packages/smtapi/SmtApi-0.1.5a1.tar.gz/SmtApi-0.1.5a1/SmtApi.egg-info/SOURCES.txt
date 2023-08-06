@@ -1,0 +1,6 @@
+README.md
+setup.py
+SmtApi.egg-info/PKG-INFO
+SmtApi.egg-info/SOURCES.txt
+SmtApi.egg-info/dependency_links.txt
+SmtApi.egg-info/top_level.txt
