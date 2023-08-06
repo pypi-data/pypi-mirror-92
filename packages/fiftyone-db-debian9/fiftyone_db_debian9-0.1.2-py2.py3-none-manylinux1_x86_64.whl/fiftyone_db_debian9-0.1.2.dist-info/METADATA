@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fiftyone-db-debian9
+Version: 0.1.2
+Summary: Project FiftyOne database
+Home-page: https://github.com/voxel51/fiftyone
+Author: Voxel51, Inc.
+Author-email: info@voxel51.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7
+
+UNKNOWN
+
+
