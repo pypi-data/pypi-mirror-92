@@ -1,0 +1,8 @@
+setup.py
+ajchocobo/BasicMath.py
+ajchocobo/Numbers.py
+ajchocobo/__init__.py
+ajchocobo.egg-info/PKG-INFO
+ajchocobo.egg-info/SOURCES.txt
+ajchocobo.egg-info/dependency_links.txt
+ajchocobo.egg-info/top_level.txt
