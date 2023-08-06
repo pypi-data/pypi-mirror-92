@@ -1,0 +1,11 @@
+
+[devel]
+pytest
+pytest-cov
+flake8
+gitpython
+pylint
+mypy==0.790
+
+[git]
+gitpython
