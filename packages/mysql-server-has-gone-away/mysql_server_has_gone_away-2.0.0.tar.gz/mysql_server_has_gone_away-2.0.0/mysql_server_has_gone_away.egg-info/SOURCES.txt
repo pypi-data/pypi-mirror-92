@@ -1,0 +1,8 @@
+README.md
+setup.py
+mysql_server_has_gone_away/__init__.py
+mysql_server_has_gone_away/base.py
+mysql_server_has_gone_away.egg-info/PKG-INFO
+mysql_server_has_gone_away.egg-info/SOURCES.txt
+mysql_server_has_gone_away.egg-info/dependency_links.txt
+mysql_server_has_gone_away.egg-info/top_level.txt
