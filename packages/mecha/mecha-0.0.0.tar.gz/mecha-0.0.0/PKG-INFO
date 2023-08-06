@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mecha
+Version: 0.0.0
+Summary: A bulletproof Minecraft command generation library
+Home-page: https://github.com/vberlier/mecha
+License: MIT
+Keywords: beet,minecraft,datapack,minecraft-commands,mcfunction
+Author: Valentin Berlier
+Author-email: berlier.v@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beet (>=0.5.1,<0.6.0)
+Project-URL: Documentation, https://github.com/vberlier/mecha
+Project-URL: Repository, https://github.com/vberlier/mecha
+Description-Content-Type: text/markdown
+
+# Mecha
+
+[![GitHub Actions](https://github.com/vberlier/mecha/workflows/CI/badge.svg)](https://github.com/vberlier/mecha/actions)
+[![PyPI](https://img.shields.io/pypi/v/mecha.svg)](https://pypi.org/project/mecha/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mecha.svg)](https://pypi.org/project/mecha/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+> A bulletproof Minecraft command generation library.
+
+## Installation
+
+The package can be installed with `pip`.
+
+```bash
+$ pip install mecha
+```
+
+---
+
+License - [MIT](https://github.com/vberlier/mecha/blob/main/LICENSE)
+
