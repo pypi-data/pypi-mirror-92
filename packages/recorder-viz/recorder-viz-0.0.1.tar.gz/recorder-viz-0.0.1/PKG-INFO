@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: recorder-viz
+Version: 0.0.1
+Summary: Utilities for processing Recorder traces
+Home-page: https://github.com/wangvsa/recorder-viz
+Author: Chen Wang
+Author-email: wangvsa@gmail.com
+License: UNKNOWN
+Description: This project contains tools for processing Recorder traces.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: University of Illinois/NCSA Open Source License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
