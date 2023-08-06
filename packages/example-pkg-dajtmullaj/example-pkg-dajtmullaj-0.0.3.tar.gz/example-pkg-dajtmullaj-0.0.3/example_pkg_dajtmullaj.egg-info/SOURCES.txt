@@ -1,0 +1,8 @@
+README.md
+setup.py
+example_conda_pkg/__init__.py
+example_conda_pkg/example_project.py
+example_pkg_dajtmullaj.egg-info/PKG-INFO
+example_pkg_dajtmullaj.egg-info/SOURCES.txt
+example_pkg_dajtmullaj.egg-info/dependency_links.txt
+example_pkg_dajtmullaj.egg-info/top_level.txt
