@@ -1,0 +1,10 @@
+
+[dev]
+tox
+
+[test]
+black
+flake8
+isort
+mypy
+pytest

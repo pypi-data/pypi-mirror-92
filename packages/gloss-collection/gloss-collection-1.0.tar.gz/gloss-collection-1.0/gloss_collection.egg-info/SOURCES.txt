@@ -1,0 +1,9 @@
+README.md
+setup.py
+gloss/__init__.py
+gloss/gloss.py
+gloss_collection.egg-info/PKG-INFO
+gloss_collection.egg-info/SOURCES.txt
+gloss_collection.egg-info/dependency_links.txt
+gloss_collection.egg-info/requires.txt
+gloss_collection.egg-info/top_level.txt
