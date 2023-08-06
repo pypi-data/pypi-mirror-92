@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: PartSegData
+Version: 0.10.0
+Summary: PartSeg data files
+Home-page: https://4dnucleome.cent.uw.edu.pl/PartSeg/
+Author: Grzegorz Bokota
+Author-email: g.bokota@cent.uw.edu.pl
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+PartSeg_data
+============
+
+This package contains data for PartSeg program:
+
+* Repository_
+* Website_
+* PyPi_
+
+.. _Repository: https://github.com/4DNucleome/PartSeg
+.. _Website: https://4dnucleome.cent.uw.edu.pl/PartSeg/
+.. _PyPi: https://pypi.org/project/PartSeg/
+
+
