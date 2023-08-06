@@ -1,0 +1,3 @@
+[sphinx.html_themes]
+tensorly_sphinx_theme = tensorly_sphinx_theme
+
