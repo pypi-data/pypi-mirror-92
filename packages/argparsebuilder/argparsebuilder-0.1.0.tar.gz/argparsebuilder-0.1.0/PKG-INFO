@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: argparsebuilder
+Version: 0.1.0
+Summary: Builder for argparse.ArgumentParser.
+Home-page: https://andreas19.github.io/argparsebuilder/
+Author: Andreas Suhre
+Author-email: andreas19@posteo.eu
+License: BSD-3-Clause
+Project-URL: Source code, https://github.com/andreas19/argparsebuilder/
+Description: # ArgParseBuilder
+        
+        Builder for argparse.ArgumentParser.
+        
+        For more information see the [documentation](https://andreas19.github.io/argparsebuilder/overview.html).
+        
+        History
+        -------
+        
+        **2021-01-22 (0.1.0)**
+         - First public release
+        
+Keywords: argparse,argumentparser,parser,commandline
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

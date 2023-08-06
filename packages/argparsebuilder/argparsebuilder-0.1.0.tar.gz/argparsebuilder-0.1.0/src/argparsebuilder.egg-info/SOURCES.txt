@@ -1,0 +1,13 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/argparsebuilder/VERSION
+src/argparsebuilder/__init__.py
+src/argparsebuilder/_argparsebuilder.py
+src/argparsebuilder.egg-info/PKG-INFO
+src/argparsebuilder.egg-info/SOURCES.txt
+src/argparsebuilder.egg-info/dependency_links.txt
+src/argparsebuilder.egg-info/top_level.txt
