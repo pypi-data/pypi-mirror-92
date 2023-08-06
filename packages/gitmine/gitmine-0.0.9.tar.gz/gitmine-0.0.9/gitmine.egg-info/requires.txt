@@ -1,0 +1,5 @@
+click==7.1.2
+colorama==0.4.3
+cryptography==3.2
+mypy
+requests==2.24.0
