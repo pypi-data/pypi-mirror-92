@@ -1,0 +1,3 @@
+[console_scripts]
+cit=Cit.main:app
+
