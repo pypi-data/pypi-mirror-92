@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/route53-recordset-converter
+route53_recordset_converter/__init__.py
+route53_recordset_converter/app.py
+route53_recordset_converter.egg-info/PKG-INFO
+route53_recordset_converter.egg-info/SOURCES.txt
+route53_recordset_converter.egg-info/dependency_links.txt
+route53_recordset_converter.egg-info/requires.txt
+route53_recordset_converter.egg-info/top_level.txt
