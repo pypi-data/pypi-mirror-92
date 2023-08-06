@@ -1,0 +1,7 @@
+README.md
+setup.py
+spec_classifier/__init__.py
+spec_classifier_rake146.egg-info/PKG-INFO
+spec_classifier_rake146.egg-info/SOURCES.txt
+spec_classifier_rake146.egg-info/dependency_links.txt
+spec_classifier_rake146.egg-info/top_level.txt
