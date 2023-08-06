@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest
+Version: 0.0.2
+Summary: a
+Home-page: https://google.com
+Author: Cole Wilson
+Author-email: test@colewilson.xyz
+License: none
+Keywords: a
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# test
+a
+### Contributors
+- Cole Wilson
+### Contact
+<test@colewilson.xyz> 
+
