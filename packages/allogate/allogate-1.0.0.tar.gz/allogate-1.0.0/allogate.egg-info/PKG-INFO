@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: allogate
+Version: 1.0.0
+Summary: A logging package but very pretty and has stacks and stuff
+Home-page: https://github.com/FlameOfIgnis/allogate
+Author: Ignis
+Author-email: me@ignis.wtf
+License: UNKNOWN
+Description: # Allogate
+        A very simple logging package
+        
+        ## Output example
+        
+        ![](https://i.imgur.com/MynkRmY.png)
+        
+        ## Usage example
+        ```python
+        import allogate as logging
+        
+        logging.VERBOSITY=1
+        print(f"Verbosity = {logging.VERBOSITY}")
+        logging.pprint(f"Hello, this is a failure", 0)
+        logging.pprint(f"Hello, this is a success", 1)
+        logging.pprint(f"Hello, this is a warning", 2)
+        logging.pprint(f"Hello, this is an info"  , 3)
+        logging.pprint(f"Hello, this is verbose"  , 4)
+        logging.pprint(f"Hello, this is very verbose"  , 12)
+        
+        logging.VERBOSITY=3
+        print(f"Verbosity = {logging.VERBOSITY}")
+        logging.pprint(f"Hello, this is a failure", 0)
+        logging.pprint(f"Hello, this is a success", 1)
+        logging.pprint(f"Hello, this is a warning", 2)
+        logging.pprint(f"Hello, this is an info"  , 3)
+        logging.pprint(f"Hello, this is verbose"  , 4)
+        logging.pprint(f"Hello, this is very verbose"  , 12)
+        
+        
+        logging.VERBOSITY=5
+        print(f"Verbosity = {logging.VERBOSITY}")
+        logging.pprint(f"Hello, this is a failure", 0)
+        logging.pprint(f"Hello, this is a success", 1)
+        logging.pprint(f"Hello, this is a warning", 2)
+        logging.pprint(f"Hello, this is an info"  , 3)
+        logging.pprint(f"Hello, this is verbose"  , 4)
+        logging.pprint(f"Hello, this is very verbose"  , 12)
+        
+        
+        logging.VERBOSITY=15
+        print(f"Verbosity = {logging.VERBOSITY}")
+        logging.pprint(f"Hello, this is a failure", 0)
+        logging.pprint(f"Hello, this is a success", 1)
+        logging.pprint(f"Hello, this is a warning", 2)
+        logging.pprint(f"Hello, this is an info"  , 3)
+        logging.pprint(f"Hello, this is verbose"  , 4)
+        logging.pprint(f"Hello, this is very verbose"  , 12)
+        
+        
+        logging.pprint(f"Clamp me AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"  , 12)
+        
+        
+        def test_function():
+            logging.pprint(f"Hello, this is a failure", 0)
+            logging.pprint(f"Hello, this is a success", 1)
+            logging.pprint(f"Hello, this is a warning", 2)
+            logging.pprint(f"Hello, this is an info"  , 3)
+            logging.pprint(f"Hello, this is verbose"  , 4)
+            logging.pprint(f"Hello, this is very verbose"  , 12)
+        
+        test_function()
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown

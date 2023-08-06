@@ -1,0 +1,7 @@
+README.md
+setup.py
+allogate/__init__.py
+allogate.egg-info/PKG-INFO
+allogate.egg-info/SOURCES.txt
+allogate.egg-info/dependency_links.txt
+allogate.egg-info/top_level.txt
