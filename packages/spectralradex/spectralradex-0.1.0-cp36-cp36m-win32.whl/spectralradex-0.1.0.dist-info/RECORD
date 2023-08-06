@@ -1,0 +1,14 @@
+radexwrap.cp36-win32.pyd,sha256=BweSIS-DnYPPNZM5F3kx5e0qKDBK1yYH_1Bw_WbREdQ,24064
+radexwrap/.libs/libtypes.2PTSKPV4W4O2OA2ZZ7FB4DB27KFJPMWZ.gfortran-win32.dll,sha256=YIi2GTjQEio8mwxe6GCFXsE3A_FjsxC2HNZGQ87E6bQ,886205
+spectralradex/__init__.py,sha256=HAw53lChLhHtKvKsgbStYrfA_XBh0myIBQ1-FAgVjRU,4595
+spectralradex/radex/__init__.py,sha256=bh8NG15-wx_RgGJI9JgTrywRGrq1M4mnW0ctdBUodFk,6846
+spectralradex/radex/data/SO-pH2.dat,sha256=MMaS98jvWNXCgUiff_puZx4McFnU2EStNq5yAZjqX8A,87377
+spectralradex/radex/data/c+.dat,sha256=_KoLEsiGQJbVyfd9fqa77wiF7_elpFUOkP-U-suG1VU,3446
+spectralradex/radex/data/c2h_h2_e.dat,sha256=zrUqwdz7w-dkhnPFVEFYjEltqxAzobTh4ZlPsWpkByU,174497
+spectralradex/radex/data/co.dat,sha256=AVqUOcMW0K1PBJQuMzpcHi1vpqYqFRTZ9J0YxtaJkbk,445956
+spectralradex/radex/data/hco+.dat,sha256=5YkdauHM7TnJWIEqkgOEEa7itBvEumPiiOiDXtyRgI4,26859
+spectralradex-0.1.0.dist-info/LICENSE,sha256=d8JvMncxXU_rKHZaGPkCcZ_fXX3m8rel_icBS30_A24,1062
+spectralradex-0.1.0.dist-info/METADATA,sha256=GZcblYKxs9XSwf9dZWaErj2-2nwCwmy1Nbm_8qnywuQ,3868
+spectralradex-0.1.0.dist-info/WHEEL,sha256=MIcnjHs8vB2T7t3biMROEABHsna_miSfN1s4sPkohUM,97
+spectralradex-0.1.0.dist-info/top_level.txt,sha256=wVsDZL-n2ehheoevBqPrBblonj7b0nvb2R6LqxVQLQQ,24
+spectralradex-0.1.0.dist-info/RECORD,,
