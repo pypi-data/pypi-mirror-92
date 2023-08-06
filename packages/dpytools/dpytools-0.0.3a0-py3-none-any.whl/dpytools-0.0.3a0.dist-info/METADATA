@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: dpytools
+Version: 0.0.3a0
+Summary: Simple tools to build discord bots using discord.py
+Home-page: UNKNOWN
+Author: ChrisDewa
+License: UNKNOWN
+Keywords: discord.py,tools,extensions
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: discord.py (==1.6.0)
+
+# dpytools
+A simple set of tools to make coding discord bot's faster.
+
+<hr>
+
+## Status of the project
+
+Early development. As such its expected to be unstable and unsuited for production.
+
+## Components
+
+**Module** | **Functions** | **Notes**
+--- | --- | --- 
+menus | arrows  | Dispays a menu made from passed Embeds with navigation by reaction.
+.| confirm | Returns the user reaction to confirm or deny a passed message.
+More to come... |
+
+<hr>
+
+# Contributing
+Feel free to make a pull request.
+
