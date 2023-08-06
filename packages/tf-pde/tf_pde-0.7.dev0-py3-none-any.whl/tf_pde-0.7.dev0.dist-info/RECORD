@@ -1,0 +1,15 @@
+tfpde/__init__.py,sha256=LAcAQsMNLyS0mfxwrOhfN1BojyDUi9XZYZVMN2UrkJo,345
+tfpde/boundary_conditions.py,sha256=vA9K8aP2KmyIIw2vsINfmduuYWRsMnmNrRL3sjzep6o,1088
+tfpde/main.py,sha256=zOVXrZ3Q7H3aEkUNXOtLBVuPmCZ2eBL6m5ipoCx0mXE,2321
+tfpde/network.py,sha256=YSpSLphuhuYsZEQV4HUgHfRfQhNEnSsgx44vvAzzLRc,4471
+tfpde/network_tf_module.py,sha256=xNCFPgaynJuqYHK2mqSE2UPGKZEXaY3v4ZTBbqbHk0E,4807
+tfpde/options.py,sha256=vj-yttTcKLYo4Q3KuHuSdTN1RAbu3hYPXj94lXfysnQ,2305
+tfpde/pde.py,sha256=v3j7hUQK1ULKxJ-x5FQiO3AZhX-fVPDgo0dmsTYAtDM,1983
+tfpde/plotter.py,sha256=1MSFysYVKf6EbaMEquOIOnwYn22KRnNl7YSOjOR5dLw,1666
+tfpde/qnw.py,sha256=cp6LEWksyq4WF49lVUjDkxWOFCnueevXkE7hHiLpyPY,6102
+tfpde/sampler.py,sha256=ZEMoGwCZK2_RH-h0oHwyBKzae0S7GBvH09SdwhexQV0,2628
+tfpde/training_ground.py,sha256=Ta3_5sBK790VGmc5tmbMf4QbOu_kutxT10DJeQcug9M,8870
+tf_pde-0.7.dev0.dist-info/METADATA,sha256=wFzDDoDigjKS7ra5Vbkb6UOZZVmSEQfJc_GMr8B8W94,3976
+tf_pde-0.7.dev0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tf_pde-0.7.dev0.dist-info/top_level.txt,sha256=GYDAafzhefEbPE7IgdXOGkI0Q0gQC7KExy2yDFeMSfc,6
+tf_pde-0.7.dev0.dist-info/RECORD,,
