@@ -1,0 +1,24 @@
+Changelog
+=========
+
+1.0.4
+-----
+ - updated doctests
+
+1.0.3
+-----
+ - modified catalog cache key adapter
+ - updated doctests
+
+1.0.2
+-----
+ - added "autocommit" argument to "index_site" function, used for testing purposes
+ - updated doctests
+
+1.0.1
+-----
+ - updated Gitlab-CI tests and integration
+
+1.0.0
+-----
+ - initial release
