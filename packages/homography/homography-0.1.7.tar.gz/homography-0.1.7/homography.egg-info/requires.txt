@@ -1,0 +1,6 @@
+numpy
+affine
+
+[full]
+Shapely
+opencv-contrib-python
