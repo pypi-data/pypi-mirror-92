@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: L41
+Version: 0.1
+Summary: OOP Learning Example
+Home-page: https://github.com/L4L4L17T4/L41
+Author: L4L4L17T4
+Author-email: chawakorn.maopimpa@gmail.com
+License: MIT
+Download-URL: https://github.com/L4L4L17T4/L41/archive/v_01.tar.gz
+Description: OOP Learning Example
+Keywords: OOP python,Thai,Uncle Engineer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
