@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: doryrips
+Version: 0.0.6
+Summary: Python interface for the Dory
+Home-page: UNKNOWN
+Author: Manu Aggarwal
+Author-email: manu.aggarwal@nih.gov
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
