@@ -1,0 +1,3 @@
+[console_scripts]
+ingot-tcp = ingot_tcp.scripts.ingot_tcp:main
+
