@@ -1,0 +1,11 @@
+tornado
+opentracing<2.4,>=2.1
+wrapt
+
+[tests]
+flake8<4
+flake8-quotes
+pytest>=4.6.9
+pytest-cov
+mock
+tox
