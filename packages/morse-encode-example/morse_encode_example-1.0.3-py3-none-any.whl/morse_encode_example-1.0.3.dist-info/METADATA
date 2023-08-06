@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: morse-encode-example
+Version: 1.0.3
+Summary: A very bad Morse translator.
+Home-page: https://github.com/TheMerryMango/Morse-Encryptor
+Author: Jonny Parker
+Author-email: jonny.yatesfield@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
+
+# Morse-Encryptor
+A very, very bad Morse Encryptor.
+
+
