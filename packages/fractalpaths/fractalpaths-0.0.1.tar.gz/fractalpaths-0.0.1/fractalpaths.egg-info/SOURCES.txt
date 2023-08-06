@@ -1,0 +1,8 @@
+README.md
+setup.py
+fractalpaths/__init__.py
+fractalpaths/fractal.py
+fractalpaths.egg-info/PKG-INFO
+fractalpaths.egg-info/SOURCES.txt
+fractalpaths.egg-info/dependency_links.txt
+fractalpaths.egg-info/top_level.txt
