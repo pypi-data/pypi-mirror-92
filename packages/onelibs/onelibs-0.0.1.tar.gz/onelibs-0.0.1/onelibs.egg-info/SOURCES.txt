@@ -1,0 +1,10 @@
+README.md
+setup.py
+onelibs/__init__.py
+onelibs/scripts.py
+onelibs.egg-info/PKG-INFO
+onelibs.egg-info/SOURCES.txt
+onelibs.egg-info/dependency_links.txt
+onelibs.egg-info/entry_points.txt
+onelibs.egg-info/not-zip-safe
+onelibs.egg-info/top_level.txt
