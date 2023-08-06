@@ -1,0 +1,6 @@
+beautifulsoup4
+bs4
+urllib3
+requests
+texttable
+soupsieve
