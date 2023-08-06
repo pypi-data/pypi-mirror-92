@@ -1,0 +1,15 @@
+Changelog
+=========
+
+1.0.2
+-----
+ - updated Gitlab-CI configuration
+ - removed Travis-CI configuration
+
+1.0.1
+-----
+ - updated plug-in interface to use PyAMS_utils Beaker cache helpers
+
+1.0.0
+-----
+ - initial release
