@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "catwire"
+version = "0.1.0"
+description = ""
+authors = ["Johannes K Becker <jkbecker@bu.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+kaitaistruct = "^0.9"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
