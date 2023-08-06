@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: my_happy_flow
+Version: 0.0.49
+Summary: From data to information. Peformance first with easy use.
+Home-page: https://github.com/ggservice007/my-happy-flow
+Author: ggservice007
+Author-email: ggservice007@126.com
+License: Apache 2
+Description: # happy-flow
+        
+        From data to information. Peformance first with easy use.
+        
+        This project is based on Ray and is inspired by Prefect.
+        
+        First of all, thanks a lots for many^2 open source projects.
+        
+        Now this project is developping.
+        
+        ## Goal
+        
+        ### Idea Factory
+        
+        ### Task Management
+        
+        ### Data Analysis
+        
+        ### Predict Valiation
+        
+        ### Feedback Improvement
+        
+        
+        ## test and developing environment
+        OS: centos7
+        
+        python:  3.7.7
+        
+        
+        ## install
+        ```shell
+        python3.7 -m pip install -i https://pypi.org/simple/ -U my-happy-flow
+        ```
+        
+        ## dependency
+        
+        ### graphviz
+        ```shell
+        yum install python-devel graphviz-devel
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7.7
+Description-Content-Type: text/markdown
