@@ -1,0 +1,7 @@
+requests
+pandas
+datetime
+openpyxl
+futures
+beautifulsoup4
+lxml
