@@ -1,0 +1,9 @@
+gcloud_oauth_headers/__init__.py,sha256=NztyfwHQThyWGMK9RCOePXJsVZGB3BbOMnPfoAffR-c,984
+gcloud_oauth_headers/__main__.py,sha256=rwIiOguUCLheXgcAqPjAYPpVl4lfcx6RhA3rfDAsvfs,735
+gcloud_oauth_headers/auth.py,sha256=JYZm1w4HXK_fmSH3bpohEYLqtBJ_YvV_a6BxPk-kkvQ,1086
+gcloud_auth_headers-1.0.0.dist-info/LICENSE,sha256=NvEU_QyOaYxVi0-Qo5Oz91jgtjtiO253VSDfFmTAhbA,1064
+gcloud_auth_headers-1.0.0.dist-info/METADATA,sha256=XyzdSvTH9YQbfDWEFAozT29jUL77Xvt655AdSK6A8w0,523
+gcloud_auth_headers-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gcloud_auth_headers-1.0.0.dist-info/entry_points.txt,sha256=CY9FC4qAs7mYmeZKjnIzGuIIGmFUkNbwySeuKH_bgOw,73
+gcloud_auth_headers-1.0.0.dist-info/top_level.txt,sha256=PENS1Lp2eY0RHUSfREZz3d8eLgAFHpdsKoku4ZzOXvE,21
+gcloud_auth_headers-1.0.0.dist-info/RECORD,,

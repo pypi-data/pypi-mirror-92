@@ -1,0 +1,3 @@
+[console_scripts]
+generate_headers = gcloud_oauth_headers.__main__:main
+
