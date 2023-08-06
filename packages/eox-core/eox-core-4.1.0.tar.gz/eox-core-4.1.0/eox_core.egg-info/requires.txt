@@ -1,0 +1,15 @@
+django-oauth2-provider
+celery
+django-waffle
+django-oauth-toolkit
+edx-api-doc-tools>=1.4.0
+edx-proctoring
+edx-opaque-keys[django]
+django-filter
+djangorestframework
+
+[sentry]
+sentry-sdk==0.14.3
+
+[tpa]
+social-auth-core[openidconnect]
