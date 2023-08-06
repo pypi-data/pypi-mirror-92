@@ -1,0 +1,14 @@
+wev_awscodeartifact/__init__.py,sha256=i-tN6nxO8LdsSRz6ctSP_10NbqEjINDi3q_K5gQQkZM,68
+wev_awscodeartifact/authoriser.py,sha256=N1WCr5lfzNsCHGCYSWJteEnFWkSxSR-hgNF8NDS5FUg,2168
+wev_awscodeartifact/conftest.py,sha256=5ny0LNkGv1u6E8anqwjVaA95Dhv1nq3OefJOwLSfGME,234
+wev_awscodeartifact/plugin.py,sha256=kBi6D36t9JZ2QNkC-gkKU6HzaZqiKfBfEpK5NgbrXJ0,2170
+wev_awscodeartifact/test_authoriser.py,sha256=-GyK2fsiuOzlrDEYCS6Y6NapHILvaDtcZXXcTiKwlyQ,1848
+wev_awscodeartifact/test_plugin.py,sha256=uxmqIJo4vcWmoduTcRh0F0171Ad6zDmuSusCCQOFBew,1505
+wev_awscodeartifact/test_version.py,sha256=jrLmU7Nn_UvxpV3Qp7SGOpz_jl2PO-H9698RedwCug0,125
+wev_awscodeartifact/version.py,sha256=uEA7gvRt7O47zQABQdppd-JYqHTPp9cNsEJv4jtjEhc,258
+wev_awscodeartifact-1.0.0.dist-info/LICENSE,sha256=jecwHNG8OzeBOT_VaopmQWpty9muYzuw03tmWBQRwPs,1073
+wev_awscodeartifact-1.0.0.dist-info/METADATA,sha256=AI6ipSrH_k1iXO5XRvhplYjhQxzsfVdtenCzmM3jrvE,5603
+wev_awscodeartifact-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+wev_awscodeartifact-1.0.0.dist-info/entry_points.txt,sha256=TXefgQVlp-3m2Gh9o31lvQ1kT__E_MD3nkuaN3HlJ8M,57
+wev_awscodeartifact-1.0.0.dist-info/top_level.txt,sha256=2x8iQGzvjylg092NLOjzksAuF0Au8_oGaNnd4AJvnHc,20
+wev_awscodeartifact-1.0.0.dist-info/RECORD,,
