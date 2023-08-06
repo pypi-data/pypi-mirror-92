@@ -1,0 +1,136 @@
+# This image is based on Alpine linux to get a minimum memory footprint
+# Some say that alpine should not be used for Python (https://pythonspeed.com/articles/alpine-docker-python/),
+# however given some additional work, overall it may be better in the end (https://nickjanetakis.com/blog/the-3-biggest-wins-when-using-alpine-as-a-base-docker-image)
+
+
+#################
+# STAGE 1
+#################
+
+# openjdk11 is not packaged for ARM on Alpine but Python is
+# So we start from the openjdk Docker image, which is compiled for every arch
+# and we install Python inside
+#FROM openjdk:11-jre AS builder
+FROM python:3-alpine AS builder
+
+WORKDIR /root
+
+# python:3-alpine misses gcc, ffi.h, ...
+#
+# GCC part :
+# https://number1.co.za/alpine-python-docker-base-image-problem-with-gcc/
+# https://wiki.alpinelinux.org/wiki/How_to_get_regular_stuff_working
+#
+# Python cryptography part :
+# https://stackoverflow.com/questions/35736598/cannot-pip-install-cryptography-in-docker-alpine-linux-3-3-with-openssl-1-0-2g
+# https://github.com/pyca/cryptography/blob/1340c00/docs/installation.rst#building-cryptography-on-linux
+
+# build-base gcc ... : required to build Python dependencies
+# openjdk : javac to compile GetSystemProperty.java (to check the value of java.library.path)
+# git zip cargo make : to compile libzkgroup
+RUN apk add --no-cache build-base gcc abuild binutils cmake \
+            libressl-dev musl-dev libffi-dev \
+            git zip cargo make
+
+# Manual installation of java as openjdk11 is not packaged for ARM on Alpine
+# The trick is to let 'docker build' take the files from the image for the right CPU architecture
+# Or we could start from the openjdk image and the install Python inside (since it has packages for all arch under Alpine)
+# See https://github.com/docker-library/openjdk/blob/master/Dockerfile-oracle-alpine.template
+ENV JAVA_HOME=/opt/openjdk
+COPY --from=openjdk:16-alpine /opt/openjdk-16 "$JAVA_HOME"
+COPY --from=openjdk:16-alpine /etc/ssl/certs/java/cacerts "$JAVA_HOME/lib/security/cacerts"
+ENV PATH="$JAVA_HOME/bin:$PATH"
+RUN jar --help
+
+## A helper tool to get Java's library path (not automated, just for manual checks)
+#WORKDIR /root
+##ENV PATH=/usr/lib/jvm/java-11-openjdk/bin:$PATH
+#COPY docker/GetSystemProperty.java .
+#RUN javac -cp . GetSystemProperty.java
+#RUN java GetSystemProperty java.library.path > /root/java.library.path.txt
+
+WORKDIR /root
+RUN git clone https://github.com/signalapp/zkgroup.git
+WORKDIR /root/zkgroup
+RUN make libzkgroup
+
+# Signal installation
+WORKDIR /root
+# TODO Allow this to be a build variable
+ENV SIGNAL_VERSION=0.7.1
+RUN wget "https://github.com/AsamK/signal-cli/releases/download/v${SIGNAL_VERSION}/signal-cli-${SIGNAL_VERSION}.tar.gz"
+RUN tar xf "signal-cli-${SIGNAL_VERSION}.tar.gz" -C /opt
+RUN mv "/opt/signal-cli-${SIGNAL_VERSION}" /opt/signal-cli
+# Compiles the native libzkgroup depency for alpine/musl libc
+# See https://github.com/AsamK/signal-cli/wiki/Provide-native-lib-for-libsignal
+# Option a : Removes the classic library from the JAR (the alpine-compatible one has to be put somewhere in java.library.path)
+#RUN zip -d /opt/signal-cli/lib/zkgroup-java-*.jar libzkgroup.so
+# Option b : Replaces the classic library directly inside the JAR with the compiled one
+# Maybe less clean but also simpler in the second build stage
+RUN jar -uf /opt/signal-cli/lib/zkgroup-java-*.jar -C /root/zkgroup/target/release libzkgroup.so
+
+WORKDIR /usr/src/app
+COPY requirements-runtime.txt .
+RUN pip install --no-cache-dir --user -r requirements-runtime.txt
+# The 'qr' command is used in the process to link the machine with a Signal account
+RUN pip install --no-cache-dir --user qrcode
+# It could be packaged (RUN python setup.py sdist bdist_wheel) to possibly
+# improve size and speed ; probably as a multistage build
+# And update the version from git using setuptools-scm
+# But it requires a bit of work
+#RUN python setup.py sdist bdist_wheel
+
+
+
+#################
+# STAGE 2
+#################
+
+# NOTE The requirements of JRE and rust totally ruins the point
+# of using alpine to build small images...
+
+FROM python:3-alpine
+
+WORKDIR /usr/src/app
+
+
+# Runtime packages requirements
+#
+# libressl-dev : seems required for python to locate modules, or for omemo ?
+#
+# bash is to use extended syntax in entrypoint.sh (in particular tee >(...))
+#
+# rust brings the runtime requirements for the zkgroup library (for signal-cli)
+# TODO rust (or cargo) highly increase the size of the image : identify the minimal requirements
+# See https://blog.logrocket.com/packaging-a-rust-web-service-using-docker/
+RUN apk add --no-cache libressl-dev bash rust
+
+# All Python files, including nicobot's
+COPY --from=builder /root/.local /root/.local/
+# https://www.docker.com/blog/containerized-python-development-part-1/
+ENV PATH=/root/.local/bin:$PATH
+
+# signal-cli files and dependencies
+#
+# openjdk : requirement for signal-cli
+# A Java 8+ runtime seems to be required for 0.6, 0.7 requires JRE 11 (which is 50MB bigger...)
+# For an even smaller JRE image, see maybe https://github.com/rhuss/docker-java-jolokia/blob/master/base/alpine/jre/8/Dockerfile
+# or https://hub.docker.com/r/azul/zulu-openjdk-alpine/dockerfile
+#
+ENV JAVA_HOME=/opt/openjdk
+COPY --from=builder "$JAVA_HOME" "$JAVA_HOME"
+ENV PATH="$JAVA_HOME/bin:$PATH"
+COPY --from=builder /opt/signal-cli /opt/signal-cli
+ENV PATH=/opt/signal-cli/bin:$PATH
+
+# Or it could be COPY . . with a proper .dockerignore
+# Or build the context as a preliminary step
+COPY nicobot nicobot/
+
+# This script allows packaging several bots in the same image
+# (to be clean they could be in separate images but they're so close that it's a lot easier to package and does not waste space by duplicating images)
+# Otherwise the ENTRYPOINT should simply be [ "python"]
+# Made a a separate COPY because it's a docker-specific layer
+# (other layers don't need to be re-built if this one changes)
+COPY docker/docker-entrypoint.sh .
+ENTRYPOINT [ "./docker-entrypoint.sh" ]

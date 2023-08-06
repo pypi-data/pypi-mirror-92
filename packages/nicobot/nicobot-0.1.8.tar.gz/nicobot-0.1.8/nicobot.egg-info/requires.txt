@@ -1,0 +1,6 @@
+python-i18n
+python-i18n
+requests
+emoji-country-flag
+pyyaml
+slixmpp-omemo
