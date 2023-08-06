@@ -1,0 +1,6 @@
+setup.py
+maxflow/__init__.py
+maxflow.egg-info/PKG-INFO
+maxflow.egg-info/SOURCES.txt
+maxflow.egg-info/dependency_links.txt
+maxflow.egg-info/top_level.txt
