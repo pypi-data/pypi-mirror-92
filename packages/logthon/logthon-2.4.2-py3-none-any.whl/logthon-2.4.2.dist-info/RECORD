@@ -1,0 +1,9 @@
+logthon/__init__.py,sha256=CMJYhOgC5cnJFZiaFPlliqWPxMBoxhj1BUflVk7gJk0,29
+logthon/logthon.py,sha256=R6T4m_liMAz9pyqVUuh5DG5QgXWe4Z9l3FD7g3hSmio,5450
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_logthon.py,sha256=1K1Lx5CUFEuvZPBC4-EN_YQRowgTLjAfuQAIDxLO4vg,6628
+logthon-2.4.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+logthon-2.4.2.dist-info/METADATA,sha256=eSpHlK1O0d2Y9_0AhDbcGZ3PJPvyFyKBl5Zjfxvp68k,4730
+logthon-2.4.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+logthon-2.4.2.dist-info/top_level.txt,sha256=6or2hQlGT8_QU63GkfZCoxVeFgE5XBfEC0xBNddcdTY,14
+logthon-2.4.2.dist-info/RECORD,,
