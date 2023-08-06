@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ovpn-server-creator-do
+Version: 0.0.1
+Summary: ('OpenVPN server in Digitalocean',)
+Home-page: https://github.com/NMelis/ovpn-server-creator-do
+Author: NMelis
+Maintainer: NMelis
+License: MIT
+Description: # Auto creater OpenVpn server in Digital Ocean
+        
+        This script auto creaded openvpn server in our Digital Ocean and download opvn client file
+        
+        ## install
+        ```
+        pip install openvpn-server-do
+        ```
+        or download the project via git clone and run the following:
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        ## usages
+        ```shell
+        $ ovpnserver --help
+        OpenVPN creator
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          --token TOKEN [TOKEN ...]
+                                token from Digital Ocean with permission create droplet
+          --tag TAG [TAG ...]   Droplet tags
+          --local-path LOCAL_PATH [LOCAL_PATH ...]
+                                local path where file will save: /home/username/Documents/
+        
+        $ ovpnserver --token <YOUR TOKEN>
+        ```
+        Or You can save your token in home directory to file .do_token and start script without argument --token
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown

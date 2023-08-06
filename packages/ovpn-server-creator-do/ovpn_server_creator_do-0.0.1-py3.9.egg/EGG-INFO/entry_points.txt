@@ -1,0 +1,3 @@
+[console_scripts]
+ovpnserver = ovpnserver.main:main
+
