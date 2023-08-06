@@ -1,0 +1,15 @@
+dicom_client/__init__.py,sha256=PuqvrUmCok9A5Ex40xsrGH-BcQtX1vcMG3_z7Sa4ULo,109
+dicom_client/client.py,sha256=Odd4xFoGj4AUNutWHdnP81gzWVlWH3umqFhS-5W7w9A,16001
+dicom_client/metadata_utils.py,sha256=yIB4CPC7ujrTha1ikeyhuAJsnbElRDOWR78eGVUeQCk,2648
+dicom_client/token.py,sha256=TlJnz5oLcPmM2qlZpP5wWsWBCGDrBeYm86929j3se4k,1799
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=UXboYzWNvItOevLYTtj6YOIS_YLwFMyi_srrVamwH8c,220
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/test_dicom_client.py,sha256=_LD2gikxXHpNRzdCkQEjKmoP3lLsI0C4616i4lk6XYg,15490
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/test_dicomclient.py,sha256=LRbgazedk0gVZIzq9qO6ycZFOrXq7nVq-QpMQOpbQXw,1335
+dicom_client_python-0.2.14.dev787.dist-info/LICENSE.txt,sha256=_VMkgdgo4ToLE8y1mOAjOKNhd0BnWoYu5r3BVBto6T0,1073
+dicom_client_python-0.2.14.dev787.dist-info/METADATA,sha256=CMaYhUECv3iH0mERSucfO5XbCRzsbaG3KFCmDwcNeHQ,5244
+dicom_client_python-0.2.14.dev787.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dicom_client_python-0.2.14.dev787.dist-info/top_level.txt,sha256=kZo75o6oBuI4272iUAyzuNHRQfxOwjTE9tO_94PKnzs,19
+dicom_client_python-0.2.14.dev787.dist-info/RECORD,,
