@@ -1,0 +1,15 @@
+sqlvalidator/__init__.py,sha256=AU1rPlMeRSMgYGcSD80D6HnIWK0FYWDXdaq4nvlAiDE,111
+sqlvalidator/file_formatter.py,sha256=y6DvWFzqghbi73tif9vvYPCB-aJDNN7EjGcnw35645M,9463
+sqlvalidator/main.py,sha256=VITrP0YfruMWLu5ZgjjubKGUV8H9Emo0_pezrVf5HmY,1140
+sqlvalidator/sql_formatter.py,sha256=ZayIcLyoSHPTafHusqX6_sqY3eJASRjcYQR7NzzJCaw,247
+sqlvalidator/sql_validator.py,sha256=UGosAmNMOnohH31shZxTGuvE82ILulBXyIZVdcp7TWQ,775
+sqlvalidator/grammar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlvalidator/grammar/lexer.py,sha256=jW0qzx2U3Bs4kuAguZSL0jBvs6Xz-xTQBhPtUlrkOLY,31826
+sqlvalidator/grammar/sql.py,sha256=t_hchWhVQZAQmsdZwvA0UeWAODdsr4n95yp79svlkKw,40156
+sqlvalidator/grammar/tokeniser.py,sha256=ehycWaSIJwuVfRCOJZ0IZE6SR50wsTskUeh3Zb8RIYs,4423
+sqlvalidator-0.0.13.dist-info/LICENSE,sha256=P062QLoozaSQa9t0JWkzymdEJ2JGrkrhKL0eDhEBnc0,1070
+sqlvalidator-0.0.13.dist-info/METADATA,sha256=pvrdw_j2vhzB11jorDRdNOmYQ2oeZCinsMwCCLxbhdw,3707
+sqlvalidator-0.0.13.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+sqlvalidator-0.0.13.dist-info/entry_points.txt,sha256=eTFwWKJVFs0VzTcwr1DComXt2dRurbFFx0oQgj5xjXY,58
+sqlvalidator-0.0.13.dist-info/top_level.txt,sha256=7q11jYXVyvAms6UKE2ASMgzgbQQ78qcOe0E1Sw7qSoM,13
+sqlvalidator-0.0.13.dist-info/RECORD,,
