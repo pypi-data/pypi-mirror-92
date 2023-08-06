@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: acl2_jupyter
+Version: 0.3
+Summary: Jupyter Kernel for ACL2
+Home-page: https://github.com/rubengamboa/acl2_jupyter
+Author: Ruben Gamboa
+Author-email: ruben@uwyo.edu
+License: bsd-3-clause
+Download-URL: https://github.com/rubengamboa/acl2_jupyter/archive/v0_3.zip
+Description: UNKNOWN
+Keywords: ACL2,theorem proving,verification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
