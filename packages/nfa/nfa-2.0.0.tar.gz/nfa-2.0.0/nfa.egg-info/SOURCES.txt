@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+nfa/__init__.py
+nfa/nfa.py
+nfa.egg-info/PKG-INFO
+nfa.egg-info/SOURCES.txt
+nfa.egg-info/dependency_links.txt
+nfa.egg-info/requires.txt
+nfa.egg-info/top_level.txt
+test/test_nfa.py
