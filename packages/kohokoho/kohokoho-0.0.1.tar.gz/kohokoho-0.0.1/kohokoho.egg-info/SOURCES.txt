@@ -1,0 +1,9 @@
+README.md
+kohokoho.py
+setup.py
+kohokoho.egg-info/PKG-INFO
+kohokoho.egg-info/SOURCES.txt
+kohokoho.egg-info/dependency_links.txt
+kohokoho.egg-info/entry_points.txt
+kohokoho.egg-info/requires.txt
+kohokoho.egg-info/top_level.txt
