@@ -1,0 +1,9 @@
+README.md
+setup.py
+clementinepdf.egg-info/PKG-INFO
+clementinepdf.egg-info/SOURCES.txt
+clementinepdf.egg-info/dependency_links.txt
+clementinepdf.egg-info/top_level.txt
+clmntn-pdf/__init__.py
+clmntn-pdf/pdf2image.py
+clmntn-pdf/pdf2text.py
