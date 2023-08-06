@@ -1,0 +1,86 @@
+// Based on RFC-4506, but added some additional specifications
+// to make it compatible with Stellar XDR.
+// https://tools.ietf.org/html/rfc4506
+
+DECIMAL_CONSTANT: "0" | ["-"] ("1".."9") ("0".."9")*
+HEXADECIMAL_CONSTANT: "0x" ("a".."f" | "A".."F" | "0".."9")+
+OCTAL_CONSTANT: "0" ("0".."7")+
+
+IDENTIFIER: ("a".."z" | "A".."Z") ("a".."z" | "A".."Z" | "0".."9" | "_")*
+
+identifier: IDENTIFIER
+
+constant: DECIMAL_CONSTANT -> decimal_constant
+    | HEXADECIMAL_CONSTANT -> hexadecimal_constant
+    | OCTAL_CONSTANT       -> octal_constant
+
+declaration: type_specifier identifier              -> type_specifier_declaration
+    | type_specifier identifier "[" value "]"       -> type_specifier_fixed_length_declaration
+    | type_specifier identifier "<" [value] ">"     -> type_specifier_variable_length_declaration
+    | "opaque" identifier "[" value "]"             -> opaque_fixed_length_declaration
+    | "opaque" identifier "<" [value] ">"           -> opaque_variable_length_declaration
+    | "string" identifier "<" [value] ">"           -> string_declaration
+    | type_specifier "*" identifier                 -> type_specifier_optional_declaration
+    | "void"                                        -> void_declaration
+
+value: constant -> constant
+    | identifier -> identifier
+
+type_specifier: "int"        -> int_specifier
+    | "unsigned" "int"       -> unsigned_int_specifier
+    | "hyper"                -> hyper_specifier
+    | "unsigned" "hyper"     -> unsigned_hyper_specifier
+    | "float"                -> float_specifier
+    | "double"               -> double_specifier
+    | "quadruple"            -> quadruple_specifier
+    | "bool"                 -> bool_specifier
+    | enum_type_specifier
+    | struct_type_specifier
+    | union_type_specifier
+    | identifier             -> identifier_specifier
+
+enum_type_specifier: "enum" enum_body
+
+enum_body: "{" ( identifier "=" value ) ("," identifier "=" value )* "}"
+
+struct_type_specifier: "struct" struct_body
+
+struct_body: "{" ( declaration ";")+ "}"
+
+union_type_specifier: "union" union_body
+
+union_body: "switch" "(" declaration ")" "{" case_specifier+ ["default" ":" declaration ";"] "}"
+
+case_specifier: ("case" value ":")+ declaration ";"
+
+constant_definition: "const" identifier "=" constant ";" -> constant_definition
+
+type_definition: "typedef" declaration ";"   -> typedef_definition
+    | "enum" identifier enum_body ";" -> enum_definition
+    | "struct" identifier struct_body ";" -> struct_definition
+    | "union" identifier union_body ";" -> union_definition
+
+definition: type_definition
+    | constant_definition
+
+specification: definition*
+
+// It seems that it is not defined in RFC-4506, but it is used in Stellar's XDR.
+namespace: "namespace" identifier "{" definition* "}"
+
+?document: namespace | specification
+
+// It seems that AMPERSAND_LINE and LINE_COMMENT are not defined in RFC-4506, but it is used in Stellar's XDR.
+AMPERSAND_LINE: /
+                %[^\n]*
+            /x
+LINE_COMMENT: /
+                \/\/[^\n]*
+            /x
+BLOCK_COMMENT: "/*" /.*?/s "*/"
+
+WHITESPACE: (" " | "\n")+
+%ignore WHITESPACE
+%ignore AMPERSAND_LINE
+%ignore BLOCK_COMMENT
+%ignore LINE_COMMENT

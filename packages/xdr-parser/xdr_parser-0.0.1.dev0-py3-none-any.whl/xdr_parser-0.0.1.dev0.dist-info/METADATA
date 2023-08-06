@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: xdr-parser
+Version: 0.0.1.dev0
+Summary: A XDR parser.
+Home-page: https://github.com/overcat/xdr-parser
+License: Apache-2.0
+Keywords: xdr-parser,parser,ast,xdr,rfc-4506,rfc-1014,rfc-1832
+Author: overcat
+Author-email: 4catcode@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: lark-parser (>=0.11.1,<0.12.0)
+Project-URL: Documentation, https://github.com/overcat/xdr-parser
+Project-URL: Repository, https://github.com/overcat/xdr-parser
+Description-Content-Type: text/markdown
+
+# XDR-Parser
