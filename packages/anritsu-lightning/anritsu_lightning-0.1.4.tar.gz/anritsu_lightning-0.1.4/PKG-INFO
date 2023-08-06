@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: anritsu_lightning
+Version: 0.1.4
+Summary: Communication with Anritsu Lightning VNA
+Home-page: https://github.com/l-johnston/anritsu_lightning
+Author: Lee Johnston
+Author-email: lee.johnston.100@gmail.com
+License: MIT
+Description: ![Build Status](https://github.com/l-johnston/anritsu_lightning/workflows/publish/badge.svg)
+        ![PyPI](https://img.shields.io/pypi/v/anritsu_lightning)
+        # `anritsu_lightning`
+        Python interface to the Anritsu Lightning 37xxxD VNA
+        
+        ## Installation
+        ```cmd
+        > pip install anritsu_lightning
+        ```  
+        
+        ## Usage
+        
+        ```python
+        >>> from anritsu_lightning import CommChannel
+        >>> with CommChannel(address=6) as vna:
+        ...     vna.ch3.parameter = "S21"
+        ...     s21 = vna.read(channel=3, data_status="corrected")
+        >>> 
+        ```
+        
+        Supported features:
+        - Measurement setup: frequency sweep, data points, etc.
+        - Channel setup: parameter (S11, S12, ...), graph type, etc.
+        - Graph setup: scale, reference, offset
+        - Data transfer: channel data, screen bitmap, S2P file
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Description-Content-Type: text/markdown
