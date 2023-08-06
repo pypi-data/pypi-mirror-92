@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bot-config
+Version: 0.2.18
+Summary: bot_config
+Home-page: https://github.com/kopnt/bot_config
+Author: Kristof & Zselter
+License: UNKNOWN
+Description: # amazon_config
+        ![python_version](https://img.shields.io/static/v1?label=Python&message=3.5%20|%203.6%20|%203.7&color=blue) [![PyPI downloads/month](https://img.shields.io/pypi/dm/amazon_config?logo=pypi&logoColor=white)](https://pypi.python.org/pypi/amazon_config)
+        
+        ## Description
+        
+        
+        ## Install
+        ~~~~bash
+        pip install amazon_config
+        # or
+        pip3 install amazon_config
+        ~~~~
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

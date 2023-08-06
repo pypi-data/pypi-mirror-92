@@ -1,0 +1,11 @@
+amazon_platform
+kcu
+selenium_uploader_account
+amazon_config
+amazon_buddy
+selenium_facebook
+selenium_instagram
+selenium_tiktok
+selenium_twitter
+selenium_youtube
+simple_multiprocessing
