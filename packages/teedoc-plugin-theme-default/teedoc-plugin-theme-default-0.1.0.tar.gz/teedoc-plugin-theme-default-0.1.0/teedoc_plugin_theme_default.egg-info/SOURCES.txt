@@ -1,0 +1,12 @@
+README.md
+setup.py
+teedoc_plugin_theme_default/__init__.py
+teedoc_plugin_theme_default.egg-info/PKG-INFO
+teedoc_plugin_theme_default.egg-info/SOURCES.txt
+teedoc_plugin_theme_default.egg-info/dependency_links.txt
+teedoc_plugin_theme_default.egg-info/top_level.txt
+teedoc_plugin_theme_default/assets/dark.css
+teedoc_plugin_theme_default/assets/indicator.svg
+teedoc_plugin_theme_default/assets/jquery.min.js
+teedoc_plugin_theme_default/assets/light.css
+teedoc_plugin_theme_default/assets/main.js
