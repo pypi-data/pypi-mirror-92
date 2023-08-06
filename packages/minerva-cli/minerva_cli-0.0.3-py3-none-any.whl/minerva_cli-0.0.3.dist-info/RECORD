@@ -1,0 +1,14 @@
+minerva_cli/__init__.py,sha256=UkzWyczxRi5ep-eSgut1HSHozUSgd6YUYin3RZ9CCEA,101
+minerva_cli/_version.py,sha256=cqMRlSvtXNenfrMB-M-Tt6_yTB4wzKdaO5USAZtNm0o,142
+minerva_cli/minerva.py,sha256=W79LIRGk0tGhbjymPGsay1aGFu5K_85GGmxvjR84pY4,14345
+minerva_cli/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minerva_cli/util/configurer.py,sha256=KQqquVP218Xeh_b12vmVJbEK4lHLkrAkfmQ8LQpjIYw,1377
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/mocks.py,sha256=okTja-C9mx5U6YGE1Hfn5xNiNtraSx3C962itpa9vHA,2251
+minerva_cli-0.0.3.dist-info/LICENSE,sha256=8mZ3wku0MV4POJixUAsjII9AEWFDJ0a-JARz1gc7De4,1101
+minerva_cli-0.0.3.dist-info/METADATA,sha256=MjP6qJ7TxnAh5rR43Zwg-o6JbmL8vsb8ZMZajwa9Kuo,4221
+minerva_cli-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+minerva_cli-0.0.3.dist-info/dependency_links.txt,sha256=CPWCGT41VdbgUmo4BeGofFzqLHG1eTbtNl2EoVHm6ZM,77
+minerva_cli-0.0.3.dist-info/entry_points.txt,sha256=cA9gLhajLf0yJXgbVG8qixiVzbDXR7oUHeSDen1G7LI,54
+minerva_cli-0.0.3.dist-info/top_level.txt,sha256=RaY35D02ciSLi9GFdOenvyPixq_85-XnxbuG5XtJ0yE,17
+minerva_cli-0.0.3.dist-info/RECORD,,
