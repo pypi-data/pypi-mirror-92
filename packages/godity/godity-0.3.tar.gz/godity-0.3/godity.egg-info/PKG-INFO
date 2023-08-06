@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: godity
+Version: 0.3
+Summary: A simple framework to create 2D games!
+Home-page: https://github.com/samueldev45/GodityEngine
+Author: Samuel Andrade
+Author-email: sameuldeveloper45@gmail.com
+License: MIT
+Project-URL: github, https://github.com/samueldev45/GodityEngine
+Project-URL: API, https://samueldev45.github.io/godity/docs
+Description: Godity Engine is a open-source framework based on pygame, it is being developed for to facilitate work of game developers who use pygame to create 2D games.
+Keywords: game engine,framework
+Platform: UNKNOWN
