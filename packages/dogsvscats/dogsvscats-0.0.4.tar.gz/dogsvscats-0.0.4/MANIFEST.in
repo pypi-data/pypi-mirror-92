@@ -1,0 +1,3 @@
+# MANIFEST.in
+graft dogsvscats
+global-exclude *.py[co]

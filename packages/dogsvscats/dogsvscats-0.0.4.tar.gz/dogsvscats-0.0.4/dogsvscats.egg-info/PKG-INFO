@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: dogsvscats
+Version: 0.0.4
+Summary: A simple toy project using dogs-vs-cats Kaggle competition
+Home-page: https://github.com/albertoburgosplaza/dogsvscats
+Author: Alberto Burgos
+Author-email: albertoburgosplaza@gmail.com
+License: MIT
+Description: # Dogs VS Cats
+        A simple but end-to-end toy project based on [Dogs vs. Cats Kaggle competition](https://www.kaggle.com/c/dogs-vs-cats).
+        
+        Play with the demo:
+        
+        [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1efSsFrZWQv1O4-8RORMCnoQwkHAa5Rpi?usp=sharing)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: test
