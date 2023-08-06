@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: usachev-pylint-checkers
+Version: 0.1
+Summary: A library provides pylint checkers.
+Home-page: https://github.com/NightFantom/usachev_pylint_checkers
+Author: Denis Usachev
+Author-email: usachevdy@yandex.ru
+License: UNKNOWN
+Description: # Introduction
+        A library provides pylint checkers.  
+        
+        # Install
+        
+        ```bash
+        pip install usachev_pylint_checkers
+        ```
+        
+        # Get started
+        ```bash
+        pylint --load-plugins=usachev.checkers src >> report.txt
+        ```
+        
+        # Checkers
+        
+        ## forbidden-print-statement
+        The checker looks usage of print statement and provides warning if it finds.
+        
+        # Release notes
+        ## 0.1
+        1. Added forbidden-print-statement checker
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
