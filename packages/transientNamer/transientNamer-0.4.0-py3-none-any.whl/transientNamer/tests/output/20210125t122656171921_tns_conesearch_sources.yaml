@@ -1,0 +1,20 @@
+- TNSId: 2016ayk
+  TNSName: AT2016ayk
+  decDeg: 35.741569
+  decSex: '+35:44:29.65'
+  discDate: '2016-03-03 08:09:36.000'
+  discMag: '17.99'
+  discMagFilter: cyan-ATLAS
+  discSurvey: ATLAS, GaiaAlerts
+  discoveryName: ATLAS16aex
+  hostName: null
+  hostRedshift: null
+  objectUrl: https://www.wis-tns.org/object/2016ayk
+  raDeg: 101.26391666666666
+  raSex: '06:45:03.340'
+  reportingSurvey: ATLAS, GaiaAlerts
+  separationArcsec: '0.3'
+  separationEastArcsec: '-0.2'
+  separationNorthArcsec: '-0.1'
+  specType: null
+  transRedshift: null

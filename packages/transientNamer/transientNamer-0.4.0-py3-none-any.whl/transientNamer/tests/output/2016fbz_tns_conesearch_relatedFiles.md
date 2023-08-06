@@ -1,0 +1,4 @@
+| TNSId    | filename                                                    | url                                                                                                            | dateObs              | spec1phot2  |
+|:---------|:------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------|:---------------------|:------------|
+| 2016fbz  | tns_2016fbz_2016-08-26_08-56-52_P60_SED-Machine_iPTF.ascii  | https://www.wis-tns.org/system/files/uploaded/iPTF/tns_2016fbz_2016-08-26_08-56-52_P60_SED-Machine_iPTF.ascii  | 2016-08-26 08:56:52  | 1           |
+| 2016fbz  | tns_2016fbz_2016-08-27.60_BAO-2.16m_Phot-spec.txt           | https://www.wis-tns.org/system/files/uploaded/general/tns_2016fbz_2016-08-27.60_BAO-2.16m_Phot-spec.txt        | 2016-08-27 14:24:00  | 1           |

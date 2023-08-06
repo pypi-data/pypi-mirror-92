@@ -1,0 +1,162 @@
+- TNSId: 2021avg
+  TNSuser: sschulze
+  exptime: '1800'
+  obsdate: '2021-01-25 03:04:02'
+  reportAddedDate: '2021-01-25 09:47:54'
+  specType: SN II
+  survey: ZTF
+  telescope: NOT_ALFOSC
+  transRedshift: '0.031'
+- TNSId: 2021aul
+  TNSuser: ePESSTOplus_Bot1
+  exptime: '900'
+  obsdate: '2021-01-20 04:02:46'
+  reportAddedDate: '2021-01-20 15:14:44'
+  specType: SN II
+  survey: ePESSTO+
+  telescope: ESO-NTT_EFOSC2-NTT
+  transRedshift: '0.04'
+- TNSId: 2021aqq
+  TNSuser: saurabh
+  exptime: ''
+  obsdate: '2021-01-18 09:41:46'
+  reportAddedDate: '2021-01-18 23:46:03'
+  specType: SN Ia
+  survey: SIRAH
+  telescope: Lick-3m_KAST
+  transRedshift: '0.04918'
+- TNSId: 2021apd
+  TNSuser: crangus
+  exptime: ''
+  obsdate: '2021-01-18 00:00:00'
+  reportAddedDate: '2021-01-19 10:24:34'
+  specType: SN Ia
+  survey: YSE
+  telescope: NOT_ALFOSC
+  transRedshift: '0.1'
+- TNSId: 2021yk
+  TNSuser: jhinkle
+  exptime: '3020'
+  obsdate: '2021-01-14 10:20:54'
+  reportAddedDate: '2021-01-14 20:58:47'
+  specType: SN Ia
+  survey: SCAT
+  telescope: UH88_SNIFS
+  transRedshift: '0.075345'
+- TNSId: 2021xv
+  TNSuser: sschulze
+  exptime: '1800'
+  obsdate: '2021-01-25 05:15:16'
+  reportAddedDate: '2021-01-25 09:53:02'
+  specType: SN Ic-BL
+  survey: ZTF
+  telescope: NOT_ALFOSC
+  transRedshift: '0.05'
+- TNSId: 2021gl
+  TNSuser: ZTF_Bot1
+  exptime: '2700'
+  obsdate: '2021-01-06 07:33:52'
+  reportAddedDate: '2021-01-06 23:32:01'
+  specType: SN Ia
+  survey: ZTF
+  telescope: P60_SEDM
+  transRedshift: '0.06'
+- TNSId: 2021ab
+  TNSuser: ePESSTOplus_Bot1
+  exptime: '600'
+  obsdate: '2021-01-08 06:18:47'
+  reportAddedDate: '2021-01-08 19:51:35'
+  specType: SN Ia
+  survey: ePESSTO+
+  telescope: ESO-NTT_EFOSC2-NTT
+  transRedshift: '0.07'
+- TNSId: 2021G
+  TNSuser: tuckerma
+  exptime: '1800'
+  obsdate: '2021-01-05 12:02:44'
+  reportAddedDate: '2021-01-05 18:00:30'
+  specType: SN Ia
+  survey: SCAT
+  telescope: UH88_SNIFS
+  transRedshift: '0.0512'
+- TNSId: 2020aeuv
+  TNSuser: sschulze
+  exptime: '1800'
+  obsdate: '2021-01-25 03:40:56'
+  reportAddedDate: '2021-01-25 09:50:52'
+  specType: SN IIn
+  survey: ZTF
+  telescope: NOT_ALFOSC
+  transRedshift: '0.042843'
+- TNSId: 2020aeqo
+  TNSuser: ePESSTOplus_Bot1
+  exptime: '780'
+  obsdate: '2021-01-02 03:11:41'
+  reportAddedDate: '2021-01-02 19:29:49'
+  specType: SN II
+  survey: ePESSTO+
+  telescope: ESO-NTT_EFOSC2-NTT
+  transRedshift: '0.031'
+- TNSId: 2020adlp
+  TNSuser: ZTF_Bot1
+  exptime: '2700'
+  obsdate: '2021-01-02 05:46:19'
+  reportAddedDate: '2021-01-06 23:11:37'
+  specType: SN Ia
+  survey: ZTF
+  telescope: P60_SEDM
+  transRedshift: '0.07848'
+- TNSId: 2020adbk
+  TNSuser: ZTF_Bot1
+  exptime: '2700'
+  obsdate: '2021-01-04 07:38:16'
+  reportAddedDate: '2021-01-06 23:13:54'
+  specType: SN Ia-pec
+  survey: ZTF
+  telescope: P60_SEDM
+  transRedshift: '0.083'
+- TNSId: 2020acma
+  TNSuser: ePESSTOplus_Bot1
+  exptime: '600'
+  obsdate: '2020-12-15 06:31:22'
+  reportAddedDate: '2020-12-15 15:59:13'
+  specType: SN Ia
+  survey: ePESSTO+
+  telescope: ESO-NTT_EFOSC2-NTT
+  transRedshift: '0.014'
+- TNSId: 2020acew
+  TNSuser: ZTF_Bot1
+  exptime: ''
+  obsdate: '2021-01-08 00:00:00'
+  reportAddedDate: '2021-01-21 02:59:04'
+  specType: SN Ia
+  survey: ZTF
+  telescope: P200_DBSP
+  transRedshift: '0.067'
+- TNSId: 2020zko
+  TNSuser: tuckerma
+  exptime: '1800'
+  obsdate: '2020-11-14 14:59:43'
+  reportAddedDate: '2020-11-14 15:57:06'
+  specType: SN Ia
+  survey: SCAT
+  telescope: UH88_SNIFS
+  transRedshift: '0.051'
+- TNSId: 2020ytk
+  TNSuser: ePESSTOplus_Bot1
+  exptime: '1500'
+  obsdate: '2020-11-10 02:20:42'
+  reportAddedDate: '2020-11-10 17:39:08'
+  specType: SN II
+  survey: ePESSTO+
+  telescope: ESO-NTT_EFOSC2-NTT
+  transRedshift: '0.058'
+- TNSId: 2020pub
+  TNSuser: ZTF_Bot1
+  exptime: '2700'
+  obsdate: '2020-12-15 12:01:30'
+  reportAddedDate: '2020-12-20 15:42:05'
+  specType: SN II
+  survey: ZTF
+  telescope: P60_SEDM
+  transRedshift: '0.011'

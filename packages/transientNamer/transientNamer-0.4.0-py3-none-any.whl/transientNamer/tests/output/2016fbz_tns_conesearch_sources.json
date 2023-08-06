@@ -1,0 +1,21 @@
+[
+    {
+        "TNSId": "2016fbz",
+        "TNSName": "SN2016fbz",
+        "decDeg": 22.05019,
+        "decSex": "+22:03:00.70",
+        "discDate": "2016-08-16 19:59:31.000",
+        "discMag": "17.4",
+        "discMagFilter": "G-Gaia",
+        "discSurvey": "GaiaAlerts, iPTF, Pan-STARRS1",
+        "discoveryName": "Gaia16bbi",
+        "hostName": null,
+        "hostRedshift": null,
+        "objectUrl": "https://www.wis-tns.org/object/2016fbz",
+        "raDeg": 359.816667,
+        "raSex": "23:59:16.000",
+        "reportingSurvey": "GaiaAlerts, iPTF, Pan-STARRS1",
+        "specType": "SN Ia",
+        "transRedshift": "0.045"
+    }
+]
