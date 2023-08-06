@@ -1,0 +1,11 @@
+nlpaeg/__init__.py,sha256=h894NWa2xDfOmUX87GWMTeRw4L_bYbWN3AjwsGoALF4,84
+nlpaeg/__main__.py,sha256=o9knIpdtchY3izpPedBpRW9Ej4YvtkkVDNfG-C0x7i4,3826
+nlpaeg/error_generator.py,sha256=dHcFZ9ecJw9H33iPld0VMkJazWiNR-bG60Vfc3sFzw0,4097
+nlpaeg/generator.py,sha256=diep0NDY2yQeU8KA055r_HvLR6bweYxDtqppjG3lBjY,3142
+nlpaeg/helper_functions.py,sha256=ZWtShzeXdZMkW2f0oaxjxPTwUienxWOFEiQ9JbXv_eQ,9035
+nlpaeg/helper_variables.py,sha256=AkY1CmQRY1Lj9mQnpb1WzsksawfAySWxgwlotMZMw34,2317
+nlpaeg-0.0.4.dist-info/METADATA,sha256=-1i7-qeblR7upVbUrqHFZJ-LlZectW7Qp3_ybHasMM0,978
+nlpaeg-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nlpaeg-0.0.4.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+nlpaeg-0.0.4.dist-info/top_level.txt,sha256=4uU7_zQm4tHDt2IBVctp8xOfuPCc2dfy80DBWiWOubc,7
+nlpaeg-0.0.4.dist-info/RECORD,,
