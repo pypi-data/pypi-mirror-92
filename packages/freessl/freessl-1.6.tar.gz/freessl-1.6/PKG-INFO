@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: freessl
+Version: 1.6
+Summary: Install Free Let\s Encrypt SSL on RunCloud servers in the easy way.
+Home-page: https://github.com/alihusnainarshad/freessl
+Author: Ali Husnain Arshad
+Author-email: info@alihusnain.ml
+License: MIT
+Download-URL: https://github.com/alihusnainarshad/freessl/archive/1.6.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN

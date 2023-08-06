@@ -1,0 +1,3 @@
+[console_scripts]
+freessl = freessl.freessl:main
+
