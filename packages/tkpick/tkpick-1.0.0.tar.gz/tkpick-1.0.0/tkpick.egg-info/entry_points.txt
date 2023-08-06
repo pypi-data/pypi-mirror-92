@@ -1,0 +1,4 @@
+[gui_scripts]
+Tkpick = tkpick:main
+tkpick = tkpick:main
+

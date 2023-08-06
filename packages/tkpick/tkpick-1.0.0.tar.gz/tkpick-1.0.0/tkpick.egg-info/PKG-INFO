@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tkpick
+Version: 1.0.0
+Summary: Get pixel color using the cursor
+Home-page: https://github.com/beucismis/tkpick
+Author: Adil Gurbuz
+Author-email: beucismis@tutamail.com
+License: GPL-3.0
+Description: # tkpick
+        <a href="https://pypi.org/project/tkpick"><img src="https://img.shields.io/pypi/v/tkpick?style=flat"></a> <img src="https://img.shields.io/pypi/pyversions/tkpick?style=flat"> <img src="https://img.shields.io/pypi/l/tkpick"> <img src="https://img.shields.io/badge/style-black-black?style=flat">
+        
+        Get pixel color using the cursor
+        
+        ![](demo.gif)
+        
+        ### Availability
+        Only GNU/Linux
+        
+        ## Installing
+        ### pip (No auto-update)
+        Install via `pip`:
+        ```
+        [sudo] pip install tkpick
+        ```
+        
+        ## Usage
+        ```sh
+        $ tkpick or Tkpick
+        ```
+        
+        or `Application Menu` > `Graphics` > `Tkpick`
+        
+        ## Shortcuts
+        
+        Shortcut | Function
+        --- | ---
+        `Shift-c` | Copy color to clipboard
+        `Shift-a` | Open the about window
+        `Shift-q` | Close tool
+        
+        ## License
+        This project is licensed under the GPL-3.0 - see the [LICENSE](LICENSE) file for details
+Keywords: tkinter,pick,cursor,pixel,color
+Platform: Linux
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Environment :: X11 Applications
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: X11 Applications :: GTK
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

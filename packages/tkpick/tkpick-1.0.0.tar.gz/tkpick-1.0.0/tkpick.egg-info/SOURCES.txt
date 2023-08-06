@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+tkpick.desktop
+tkpick/__init__.py
+tkpick/about.py
+tkpick/workbench.py
+tkpick.egg-info/PKG-INFO
+tkpick.egg-info/SOURCES.txt
+tkpick.egg-info/dependency_links.txt
+tkpick.egg-info/entry_points.txt
+tkpick.egg-info/requires.txt
+tkpick.egg-info/top_level.txt
+tkpick/assets/tkpick.gif
+tkpick/assets/tkpick.png

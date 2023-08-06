@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Tkpick
+Comment=Get pixel color using the cursor
+Exec=/usr/local/bin/tkpick %F
+Icon=tkpick
+Terminal=false
+Categories=Graphics
+MimeType=text/x-python;
