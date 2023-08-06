@@ -1,0 +1,8 @@
+opentelemetry/exporter/prometheus/__init__.py,sha256=bs1AkpK_DorkXJ4oTqSQAnqrqMCTHLf_HVZPBpKw5_0,6673
+opentelemetry/exporter/prometheus/version.py,sha256=4u3g8c5AED640k8XWJU1o3_rPHPm7tyB2kiNflADz3Y,608
+opentelemetry_exporter_prometheus-0.17b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_exporter_prometheus-0.17b0.dist-info/METADATA,sha256=nGt8so6Km5evEmCWoCTjoqgHg6qp-kyUy5FJT0_jwVw,1741
+opentelemetry_exporter_prometheus-0.17b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_prometheus-0.17b0.dist-info/entry_points.txt,sha256=iZkTLlUH2e0Yba4TstC_EUMeJ2KHu4oZ0HdZYym628A,99
+opentelemetry_exporter_prometheus-0.17b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_prometheus-0.17b0.dist-info/RECORD,,
