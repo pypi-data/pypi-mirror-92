@@ -1,0 +1,12 @@
+README.md
+setup.py
+aifig/__init__.py
+aifig/draw.py
+aifig/element.py
+aifig/figure.py
+aifig/graph.py
+aifig.egg-info/PKG-INFO
+aifig.egg-info/SOURCES.txt
+aifig.egg-info/dependency_links.txt
+aifig.egg-info/requires.txt
+aifig.egg-info/top_level.txt
