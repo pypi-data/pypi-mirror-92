@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: settings-master
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/semenInRussia/FreeSpotify_back
+Author: semenInRussia
+Author-email: hrams205@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv (~=0.15.0)
+
+
+This Is Package for fast use SETTINGS.
+
+## Example
+#### STRUCTURE
+
+```
+settings
+|
+-- db.py
+|
+-- api.py
+|
+-- __init__.py
+```
+
+#### settings/db.py
+```python
+DB_NAME = "name"
+DB_PASSWORD = "password"
+``` 
+#### settings/api.py
+```python
+API_TOKEN = "dekejfire"
+```
+
+#### settings/\_\_init__.py
+```python
+import settings as this
+from settings_master import DirectorySettings
+
+
+settings = DirectorySettings(this)
+```
+
+Now we can use this:
+```jupyterpython
+from settings import settings
+
+assert settings.DB_NAME == "name"
+assert settings.DB_PASWORD == "password"
+assert settings.API_TOKEN == "dekejfire"
+```
+

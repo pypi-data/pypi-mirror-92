@@ -1,0 +1,16 @@
+entities/__init__.py,sha256=A1yN91tLtfCrypkKycmfAMtVXracQMSxLX3RzuvZCiw,83
+entities/abstract_settings.py,sha256=fpMs553qUzW0jVuX_b9o701uDCcCCNtrLMPcdLrmP8o,438
+entities/directory_settings.py,sha256=KhHvXpOuMga5nv6pjiQlhl9rnneC0c6zY15z-uBN1ug,781
+entities/settings.py,sha256=bOSdmObhmII-IZ1BIaIfqXBortJbPrNVEPZu95BQ-cA,735
+settings/__init__.py,sha256=Gl8TD5orpRGU4IH27vgRRFbByZQ6pl6i8MDJfM-iOIw,127
+settings/main.py,sha256=FLuwrvSY7h3AW9CxeSGhdPa0HkBsUBcByVi5ukZpnro,343
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_directory_settings.py,sha256=HXdGA4jnxFVro09hWPVDk2k57GeClQL0z2JgBZFFS6w,328
+tests/test_settings.py,sha256=01OITETG0lyZmLLK1hzAykiKkWxAHt3A9EqSKvOn-XQ,1241
+tests/example/__init__.py,sha256=CP75xorgRMf6tGKUmz6e25AR5hoaYkhUSczgPM6Aync,37
+tests/example/api.py,sha256=wRRr05er-7K3ji1LTbN3Y6dxcuLbJKpcQ_Nax2_D3BA,21
+tests/example/db.py,sha256=cVTVKDCwCjfC3Proo2yNZbkQqsTzLvvwPwsr3H52Krg,56
+settings_master-0.1.0.dist-info/METADATA,sha256=VVsQoILmYZkfGB_udjnMvCYCKB7HGIsZt22aPUPPpOs,907
+settings_master-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+settings_master-0.1.0.dist-info/top_level.txt,sha256=9JVkxZk6w73UNIPuFQyYORoMTqmnk3xvK4X3UE_ev-8,24
+settings_master-0.1.0.dist-info/RECORD,,
