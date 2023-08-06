@@ -1,0 +1,10 @@
+<section data-ams-modules="plugins">
+	<fieldset class="border">
+		<legend>
+			<i tal:omit-tag="" i18n:translate="">${view.table_label}</i>
+			${structure:provider:pyams.toolbar}
+		</legend>
+		<i tal:omit-tag="">${structure:provider:pyams.help}</i>
+		<i tal:omit-tag="">${structure:view.table.render()}</i>
+	</fieldset>
+</section>
