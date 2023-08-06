@@ -1,0 +1,3 @@
+[console_scripts]
+fetch_lyrics = lyricsfetcher.lyricsfetcher:main
+
