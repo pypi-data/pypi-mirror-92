@@ -1,0 +1,8 @@
+README.rst
+setup.py
+editini/__init__.py
+editini/iniio.py
+editini.egg-info/PKG-INFO
+editini.egg-info/SOURCES.txt
+editini.egg-info/dependency_links.txt
+editini.egg-info/top_level.txt
