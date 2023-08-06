@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+choria_discovery/__init__.py
+choria_discovery/discovery.py
+choria_discovery/exceptions.py
+choria_discovery/protocol.py
+choria_discovery/version.py
+choria_discovery/schemas/io.choria.choria.discovery.v1.external_reply.json
+choria_discovery/schemas/io.choria.choria.discovery.v1.external_request.json
+py_choria_discovery.egg-info/PKG-INFO
+py_choria_discovery.egg-info/SOURCES.txt
+py_choria_discovery.egg-info/dependency_links.txt
+py_choria_discovery.egg-info/requires.txt
+py_choria_discovery.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+include README.md
+include choria_discovery/schemas/*.json
