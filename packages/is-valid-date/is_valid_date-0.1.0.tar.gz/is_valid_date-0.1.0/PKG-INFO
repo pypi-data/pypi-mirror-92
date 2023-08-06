@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: is_valid_date
+Version: 0.1.0
+Summary: Check if a date is valid
+Home-page: https://github.com/rogervila/python_is_valid_date
+Author: Roger Vilà
+Author-email: rogervila@me.com
+License: MIT
+Download-URL: https://github.com/rogervila/python_is_valid_date/archive/0.1.0.tar.gz
+Description: # pymongo_is_valid_date
+        Check if a date is valid
+        
+Keywords: valid date,check date,validate date
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
