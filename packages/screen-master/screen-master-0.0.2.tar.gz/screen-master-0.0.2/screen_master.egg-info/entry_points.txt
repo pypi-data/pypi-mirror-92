@@ -1,0 +1,5 @@
+[console_scripts]
+sbuild = screen_master:BuildScreen.main
+skill = screen_master:KillScreen.main
+srun = screen_master:EnterScreen.main
+
