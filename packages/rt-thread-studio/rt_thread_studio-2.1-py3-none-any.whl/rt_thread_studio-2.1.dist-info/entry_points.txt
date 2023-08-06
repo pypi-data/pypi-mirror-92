@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        rt_tools=rt_thread_studio.rt_thread_studio_tools:cli
+    
