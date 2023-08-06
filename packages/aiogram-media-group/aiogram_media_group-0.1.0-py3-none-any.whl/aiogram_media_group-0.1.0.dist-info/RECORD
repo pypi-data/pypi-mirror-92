@@ -1,0 +1,11 @@
+aiogram_media_group/__init__.py,sha256=5-Zw1v0FG2pGI5vYNSRenOT1WHPWyQSTczhA3QX-Jsg,102
+aiogram_media_group/filters.py,sha256=1Zo7uJ270_nUTeuqtOe4W0xBDzzuKCYQzXAsn6fVrgk,207
+aiogram_media_group/handler.py,sha256=UtXNTIgvf-ENY0R_L5dWpTI9uEmNh10ImvYvj480gk4,3079
+aiogram_media_group/storages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiogram_media_group/storages/base.py,sha256=2prcttu0JVtT2dYq106SoIU8A5IMT3IzoehVhLi_vbk,505
+aiogram_media_group/storages/memory.py,sha256=QKVTInwvkMQCKelR4oqT6ylXLpCrlpW_iR6-_n3U6cA,899
+aiogram_media_group/storages/redis.py,sha256=oIWP5zhTo22LJxMELLihH-_txIWpJv-UH6O-_C59EU8,1854
+aiogram_media_group-0.1.0.dist-info/LICENSE,sha256=lxGJUx3Nw0jo0Ob27yJV9pxa2mCuqlcgqvXvsr2UY4U,1065
+aiogram_media_group-0.1.0.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+aiogram_media_group-0.1.0.dist-info/METADATA,sha256=IZfTZx-AqGrB1RLyRhHMHLTs2KKsY5VqWmjvK7CTht4,1298
+aiogram_media_group-0.1.0.dist-info/RECORD,,
