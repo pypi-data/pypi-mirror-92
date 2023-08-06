@@ -1,0 +1,9 @@
+setup.py
+pytmi/__init__.py
+pytmi/client.py
+pytmi/message.py
+pytmi/stream.py
+pytmi.egg-info/PKG-INFO
+pytmi.egg-info/SOURCES.txt
+pytmi.egg-info/dependency_links.txt
+pytmi.egg-info/top_level.txt
