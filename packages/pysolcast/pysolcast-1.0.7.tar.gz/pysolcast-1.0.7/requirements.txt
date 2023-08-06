@@ -1,0 +1,16 @@
+pip
+bump2version
+tox
+pytest
+pytest-cov
+sphinx-autodoc-typehints
+Sphinx
+autopep8
+rope
+pydocstyle
+pycodestyle
+anyconfig
+mock
+pylint
+responses
+setuptools_scm

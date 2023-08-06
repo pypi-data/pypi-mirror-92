@@ -1,0 +1,92 @@
+Metadata-Version: 1.2
+Name: pysolcast
+Version: 1.0.7
+Summary: Solcast API
+Home-page: https://github.com/mcaulifn/solcast
+Author: Nathaniel McAuliffe
+Author-email: nathanielmcauliffe@hotmail.com
+License: UNKNOWN
+Description: =========
+        pysolcast
+        =========
+        
+        | |Build Status| |CodeCov| |pypi| |codeclimate|
+        
+        
+        
+        
+        Solcast API
+        
+        Client library for interacting with the Solcast API
+        
+        Basic Usage
+        -----------
+        
+        Get Forecasts
+        ~~~~~~~~~~~~~
+        
+        .. code-block:: python
+        
+            from pysolcast.rooftop import RooftopSite
+            
+            site = RooftopSite(api_key, resource_id)
+            forecasts = site.get_forecasts()
+        
+        Post Measurements
+        ~~~~~~~~~~~~~~~~~
+        .. code-block:: python
+        
+          measurement = {
+            'measurement': {
+              'period_end': '2021-01-25T17:45:00.0000000Z', 
+              'period': 'PT15M', 
+              'total_power': 0.388
+            }
+          }
+          results = site.post_measurements(measurement)
+        
+        Full API Documentation_.
+        
+        .. _Documentation: https://docs.solcast.com.au
+        
+        
+        .. |Build Status| image:: https://github.com/mcaulifn/solcast/workflows/build/badge.svg
+           :target: https://github.com/mcaulifn/solcast
+        
+        .. |CodeCov| image:: https://codecov.io/gh/mcaulifn/solcast/branch/master/graph/badge.svg?token=04NTIH61T2
+          :target: https://codecov.io/gh/mcaulifn/solcast
+        
+        .. |pypi| image:: https://badge.fury.io/py/pysolcast.svg
+            :target: https://badge.fury.io/py/pysolcast
+        
+        .. |codeclimate| image:: https://api.codeclimate.com/v1/badges/670e0a037d968b173393/maintainability
+           :target: https://codeclimate.com/github/mcaulifn/solcast/maintainability
+           :alt: Maintainability
+        
+        
+        =======
+        History
+        =======
+        
+        1.0.4 (2020-04-16)
+        ------------------
+        * Readme fix
+        
+        1.0.2 (2020-04-14)
+        ------------------
+        * Release to pypi
+        
+        1.0.0 (2020-04-10)
+        ------------------
+        
+        * First release
+        
+Keywords: solcast
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
