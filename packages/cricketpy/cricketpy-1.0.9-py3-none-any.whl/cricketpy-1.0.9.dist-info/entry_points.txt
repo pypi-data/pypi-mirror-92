@@ -1,0 +1,3 @@
+[console_scripts]
+cricketpy = cricketpy.__main__:cricpy
+
