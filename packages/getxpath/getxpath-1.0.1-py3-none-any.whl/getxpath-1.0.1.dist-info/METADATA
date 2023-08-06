@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: getxpath
+Version: 1.0.1
+Summary: finding xpath of the element in the webpage
+Home-page: UNKNOWN
+Author: Mayank
+Author-email: mayankkumar648@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: lxml
+
+This is a XPATH finder package
+======================
+
+
+Hey! I'm MAYANK
+
+----------
+
+
+Examples
+-------------
+
+Find XPATH by entering the text displaying on the web page. **online!**
+Just Pass in the URL and the text of the element.
+
+
+
+> import getxpath
+> 
+> a = getxpath.findxpath("https://www.w3schools.com/","LEARN HTML")
+> print(a)
+
+
+
+
