@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: slate-utils
+Version: 0.0.5.4
+Summary: Some simple utilites to help automate tasks in Slate.
+Home-page: UNKNOWN
+Author: Jamie Davis
+Author-email: jamjam@umich.edu
+License: BSD
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: loguru
+Requires-Dist: lxml
+Requires-Dist: requests
+Requires-Dist: selenium
+Requires-Dist: umdriver
+
+# Slate Utils
+
+Simple utilities to accelerate tasks in Slate.
+
