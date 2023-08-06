@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scratch-to-python
+Version: 0.1.0
+Summary: An easy transition from Scratch to Python
+Home-page: UNKNOWN
+Author: Gordon Chen
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pygame (==2.0.1)
+
+UNKNOWN
+
+
