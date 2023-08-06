@@ -1,0 +1,9 @@
+build
+dist
+config
+*egg*
+pdfs
+_posts
+venv
+note2self.txt
+__pycache__
