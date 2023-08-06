@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: airflow-python-sdk
+Version: 0.0.2
+Summary: Airflow API (Stable)
+Home-page: UNKNOWN
+Author: Zach Liu
+Author-email: zach.z.liu@gmail.com
+License: MIT
+Description:     Apache Airflow management API.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Airflow API (Stable)
+Platform: UNKNOWN
+Requires-Python: >=3.6
