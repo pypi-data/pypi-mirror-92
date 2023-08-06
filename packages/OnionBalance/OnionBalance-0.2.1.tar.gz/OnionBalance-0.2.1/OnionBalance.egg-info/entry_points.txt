@@ -1,0 +1,4 @@
+[console_scripts]
+onionbalance = onionbalance.manager:main
+onionbalance-config = onionbalance.config_generator.config_generator:main
+

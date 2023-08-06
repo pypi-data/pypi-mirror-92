@@ -1,0 +1,69 @@
+Metadata-Version: 1.2
+Name: OnionBalance
+Version: 0.2.1
+Summary: OnionBalance provides load-balancing and redundancy for Tor hidden services by distributing requests to multiple backend Tor instances.
+Home-page: https://github.com/asn-d6/onionbalance
+Author: George Kadianakis, Donncha O'Cearbhaill
+Author-email: asn@torproject.org
+License: GPL
+Description: .. image:: obv3_logo.jpg
+        
+        OnionBalance
+        ============
+        
+        Introduction
+        ------------
+        
+        OnionBalance allows Tor onion service requests to be distributed across
+        multiple backend Tor instances. OnionBalance provides load-balancing while also
+        making onion services more resilient and reliable by eliminating single
+        points-of-failure.
+        
+        |build-status| |docs|
+        
+        Getting Started
+        ---------------
+        
+        Installation and usage documentation is available at https://onionbalance.readthedocs.org.
+        
+        Contact
+        -------
+        
+        This software is under active development and likely contains bugs. Please
+        open bug reports on Github if you discover any issues with the software or
+        documentation.
+        
+        ::
+        
+            pub   rsa4096 2012-02-22 [SC]
+                  13C81580203AE18BB7C0424E09CC7F5315F271D9
+            uid           [ultimate] George Kadianakis <asn@torproject.org>
+            uid           [ultimate] George Kadianakis <desnacked@riseup.net>
+            sub   rsa4096 2012-02-22 [E]
+        
+        The Onionbalance software was originally authored and maintained by Donncha Ó
+        Cearbhaill. Thanks for all the code!!!
+        
+        .. |build-status| image:: https://img.shields.io/travis/asn-d6/onionbalance.svg?style=flat
+            :alt: build status
+            :scale: 100%
+            :target: https://travis-ci.org/asn-d6/onionbalance
+        
+        .. |coverage| image:: https://coveralls.io/repos/github/asn-d6/onionbalance/badge.svg?branch=master
+            :alt: Code coverage
+            :target: https://coveralls.io/github/asn-d6/onionbalance?branch=master
+        
+        .. |docs| image:: https://readthedocs.org/projects/onionbalance-v3/badge/?version=latest
+            :alt: Documentation Status
+            :scale: 100%
+            :target: https://onionbalance.readthedocs.org/en/latest/
+        
+Keywords: tor
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3.6
