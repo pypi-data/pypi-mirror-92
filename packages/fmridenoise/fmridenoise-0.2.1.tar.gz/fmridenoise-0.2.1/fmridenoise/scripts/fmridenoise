@@ -1,0 +1,7 @@
+#!/usr/bin/sh
+if command -v "python3" > /dev/null
+then
+    python3 -O -m fmridenoise "$@"
+else
+    python -O -m fmridenoise "$@"
+fi

@@ -1,0 +1,16 @@
+nibabel
+matplotlib
+seaborn
+numpy
+scipy
+nilearn
+pandas
+jsonschema
+traits
+nipype
+sklearn
+pydot
+pybids
+psutil
+jinja2
+frozendict
