@@ -1,0 +1,4 @@
+requests
+warn
+termcolor
+docopt
