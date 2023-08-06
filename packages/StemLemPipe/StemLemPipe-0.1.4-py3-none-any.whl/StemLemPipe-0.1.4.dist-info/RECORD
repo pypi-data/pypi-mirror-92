@@ -1,0 +1,15 @@
+StemLemPipe/__init__.py,sha256=huB9trhC0C0S4LcC3AxmtBsvdHPQ2MOHwjgc6e6CIeM,530
+StemLemPipe/metrics.py,sha256=KrfDHJZYirmudFOzYSVcrOwoTRjY9IVYxiG6wwBvtlk,1256
+StemLemPipe/pipeline.py,sha256=bMc9djJgsz7Fy50IRJeEuZXx85CxoMCNipjkAVpoMnc,470
+StemLemPipe/regular_expressions.py,sha256=amFAzHtxe_d6bvlwLq7bBTDobeHhbLHWDoGyzW99gqU,327
+StemLemPipe/simplifiers.py,sha256=9amFPVf8idRQMworcUEq-6wiGPOc7h2nSiXrxKmLoxs,672
+StemLemPipe/stemlem_operators.py,sha256=vScuRAU5tYdUMP2IKkLyPHMINxG4031EYLQ1WyKMsyU,2930
+StemLemPipe/stopwords.py,sha256=vU5O85k5CfDOj4QsTP3CXK0oinK7SBAnEOxwMs8LDyo,327
+StemLemPipe/tokenizers.py,sha256=XT2P0mPBw9bzdPm3fFFQ_jb4XYiuKSmwPf-Les7LfBs,1962
+StemLemPipe/transformers.py,sha256=WwZEJAZEo6jr-8w7pWbnc9WDZTO0FeFAOe7f2JjmskI,2005
+StemLemPipe/useful_functions.py,sha256=HNjYlyEd7sP_AcLcsh-7P1SKJfBp8IGOs8AQuBrwNow,1770
+StemLemPipe-0.1.4.dist-info/LICENSE,sha256=nIgbrXJZEfO710KyDjswa6w9h8DynfllSJQC7isDOGQ,1093
+StemLemPipe-0.1.4.dist-info/METADATA,sha256=6hdhICbf6o5Q9RJ3oxPN3cY_Dx89qi30ERl2Q9V-k-s,32087
+StemLemPipe-0.1.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+StemLemPipe-0.1.4.dist-info/top_level.txt,sha256=qP4TnhmihfKly841MxOjXfMWCZvf3bEjZLj7AbG_tNk,12
+StemLemPipe-0.1.4.dist-info/RECORD,,
