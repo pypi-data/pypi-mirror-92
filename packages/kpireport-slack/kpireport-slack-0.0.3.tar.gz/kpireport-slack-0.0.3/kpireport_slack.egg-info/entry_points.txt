@@ -1,0 +1,3 @@
+[kpireport.output]
+slack = kpireport_slack:SlackOutputDriver
+
