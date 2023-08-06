@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+cookiecutter_science_project_demo_repo/__init__.py
+cookiecutter_science_project_demo_repo/_version.py
+cookiecutter_science_project_demo_repo/dummy.py
+cookiecutter_science_project_demo_repo.egg-info/PKG-INFO
+cookiecutter_science_project_demo_repo.egg-info/SOURCES.txt
+cookiecutter_science_project_demo_repo.egg-info/dependency_links.txt
+cookiecutter_science_project_demo_repo.egg-info/not-zip-safe
+cookiecutter_science_project_demo_repo.egg-info/requires.txt
+cookiecutter_science_project_demo_repo.egg-info/top_level.txt
