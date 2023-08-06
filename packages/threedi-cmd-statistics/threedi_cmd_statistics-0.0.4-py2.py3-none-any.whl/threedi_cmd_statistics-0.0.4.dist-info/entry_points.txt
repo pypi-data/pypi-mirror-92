@@ -1,0 +1,3 @@
+[console_scripts]
+statistics = threedi_cmd_statistics.commands.statistics:main
+

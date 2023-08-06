@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: threedi-cmd-statistics
+Version: 0.0.4
+Summary: Statistics plugin for the 3Di cmd client
+Home-page: https://github.com/nens/threedi-cmd-statistics
+Author: Lars Claussen
+Author-email: claussen.lars@nelen-schuurmans.nl
+License: MIT license
+Keywords: threedi_api_stats
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Requires-Dist: rich (>=9.4.0)
+Requires-Dist: typer (>=0.3.2)
+Requires-Dist: threedi-api-client (>=3.0.21)
+
+======================
+threedi-cmd-statistics
+======================
+
+
+Statistics plugin for the 3Di cmd client
+
+
+* Free software: MIT license
+* Documentation: https://threedi-api-stats.readthedocs.io.
+
+
+Features
+--------
+
+* session statistics like counts
+* usage overview like total hours calculated
+* active customers overview
+
+
+Installation
+------------
+
+This plugin is pip installable. Install alongside with the `threedi-cmd`_ client package ::
+
+    $ pip install threedi-cmd-statistics
+
+The threedi command client will automatically detect the plugin and will add the commands to the
+client interface.
+
+.. _threedi-cmd: https://github.com/nens/threedi-cmd
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.4 (2021-01-21)
+------------------
+
+- New name for the threedi command client package.
+
+
+0.0.3 (2021-01-21)
+------------------
+
+- Test github action pipeline.
+
+
+0.0.1 (2021-01-21)
+------------------
+
+* First release on PyPI.
+
+
