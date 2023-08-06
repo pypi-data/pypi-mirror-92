@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+synse/__init__.py
+synse/client.py
+synse/errors.py
+synse/models.py
+synse/utils.py
+synse.egg-info/PKG-INFO
+synse.egg-info/SOURCES.txt
+synse.egg-info/dependency_links.txt
+synse.egg-info/not-zip-safe
+synse.egg-info/requires.txt
+synse.egg-info/top_level.txt

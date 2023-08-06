@@ -1,0 +1,5 @@
+aiodns
+aiohttp
+cchardet
+iso8601
+multidict
