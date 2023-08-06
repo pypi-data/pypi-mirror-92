@@ -1,0 +1,7 @@
+nilearn
+numpy
+scipy
+pandas
+requests
+matplotlib
+jinja2
