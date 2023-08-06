@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hlda
+Version: 0.3
+Summary: Gibbs sampler for the Hierarchical Latent Dirichlet Allocation topic model. This is based on the hLDA implementation from Mallet, having a fixed depth on the nCRP tree.
+Home-page: https://github.com/joewandy/hlda
+Author: Joe Wandy
+Author-email: joe.wandy@glasgow.ac.uk
+License: UNKNOWN
+Description: Hierarchical Latent Dirichlet Allocation
+        ----------------------------------------
+        
+        Hierarchical Latent Dirichlet Allocation (hLDA) addresses the problem of learning topic hierarchies from data. The model relies on a non-parametric prior called the nested Chinese restaurant process, which allows for arbitrarily large branching factors and readily accommodates growing
+        data collections. The hLDA model combines this prior with a likelihood that is based on a hierarchical variant of latent Dirichlet allocation.
+        
+        [Hierarchical Topic Models and the Nested Chinese Restaurant Process](http://www.cs.columbia.edu/~blei/papers/BleiGriffithsJordanTenenbaum2003.pdf)
+        
+        [The Nested Chinese Restaurant Process and Bayesian Nonparametric Inference of Topic Hierarchies](http://cocosci.berkeley.edu/tom/papers/ncrp.pdf)
+        
+        Implementation
+        --------------
+        
+        - [hlda/sampler.py](hlda/sampler.py) is the Gibbs sampler for hLDA inference, based on the implementation from [Mallet](http://mallet.cs.umass.edu/topics.php) having a fixed depth on the nCRP tree.
+        
+        
+        Installation
+        ------------
+        
+        - Simply use `pip install hlda` to install the package.
+        - An example notebook that infers the hierarchical topics on the BBC Insight corpus can be found in [notebooks/bbc_test.ipynb](notebooks/bbc_test.ipynb).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

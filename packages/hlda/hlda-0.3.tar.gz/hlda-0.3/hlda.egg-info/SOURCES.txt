@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+hlda/__init__.py
+hlda/sampler.py
+hlda.egg-info/PKG-INFO
+hlda.egg-info/SOURCES.txt
+hlda.egg-info/dependency_links.txt
+hlda.egg-info/requires.txt
+hlda.egg-info/top_level.txt
