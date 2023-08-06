@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gbwog.panel
+Version: 5
+Summary: DevOpsCourse Project
+Home-page: https://github.com/gboimel98/WorldOfGames/
+Author: GalB
+Author-email: gboimel98@gmail.com
+License: UNKNOWN
+Description: # _DevOps Course Gaming Project_
+        ## To get the full experience you will need two things:
+        ### 1a. Installing the gameplay using 'pip install gbwog.panel'
+        ### 1b. Calling it with 'pycommand (python in Windows and python/python3 in Linux) -m gbwog.panel
+        ### 2a. Installing the score site using 'pip install gbwog.website'
+        ### 2b. Run the site simultaneously with the game using another process of 'pycommand -m gbwog.website'
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
