@@ -1,0 +1,6 @@
+include metapop/metapop_r/MetaPop_Codon_Bias_Viz.R
+include metapop/metapop_r/MetaPop_Macrodiversity.R
+include metapop/metapop_r/MetaPop_Microdiversity.R
+include metapop/metapop_r/MetaPop_Microdiversity_Visualizations.R
+include metapop/metapop_r/MetaPop_Mine_Reads.R
+include metapop/metapop_r/MetaPop_Preprocessing_Summaries.R
