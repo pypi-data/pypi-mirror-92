@@ -1,0 +1,15 @@
+README.md
+setup.py
+src/ccdl/__init__.py
+src/ccdl/binb.py
+src/ccdl/comic_action.py
+src/ccdl/comic_earthstar.py
+src/ccdl/comic_walker.py
+src/ccdl/ganma.py
+src/ccdl/urasunday.py
+src/ccdl/utils.py
+src/ccdl.egg-info/PKG-INFO
+src/ccdl.egg-info/SOURCES.txt
+src/ccdl.egg-info/dependency_links.txt
+src/ccdl.egg-info/requires.txt
+src/ccdl.egg-info/top_level.txt
