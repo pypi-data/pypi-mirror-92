@@ -1,0 +1,11 @@
+README.md
+setup.py
+redshift_connection/__init__.py
+redshift_connection/provider.py
+redshift_connection_provider.egg-info/PKG-INFO
+redshift_connection_provider.egg-info/SOURCES.txt
+redshift_connection_provider.egg-info/dependency_links.txt
+redshift_connection_provider.egg-info/requires.txt
+redshift_connection_provider.egg-info/top_level.txt
+tests/__init__.py
+tests/test_redshift_connection.py
