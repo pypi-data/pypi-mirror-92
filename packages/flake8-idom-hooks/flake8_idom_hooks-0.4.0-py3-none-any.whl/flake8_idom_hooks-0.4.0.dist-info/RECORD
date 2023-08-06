@@ -1,0 +1,11 @@
+flake8_idom_hooks/__init__.py,sha256=o7fOk6kD8XMSg_RsnDWjmD9l2Jz83esMunlbX27dvos,353
+flake8_idom_hooks/exhaustive_deps.py,sha256=2pMLhmev2WeDfQm2oL82xQEyl6q7HGS3nP3o6eUTP9Y,7699
+flake8_idom_hooks/flake8_plugin.py,sha256=96foIPDEc5pifiid9NSxeQTqygLE6d_Vn0whGQeZqxI,797
+flake8_idom_hooks/rules_of_hooks.py,sha256=sV6fp3KdWLLNcq2Y2KHM3ARIg_7l9vVJL6hx_c2xiQ0,3552
+flake8_idom_hooks/utils.py,sha256=yTiR40qlS6T51SWFKgrkKcI3owWiCnvqrKa_Pi2vK1M,1129
+flake8_idom_hooks-0.4.0.dist-info/LICENSE,sha256=2g6gYokLtgiM_s7J3Jv41vRMaEfQ_GgkvQ718EqXxdQ,1083
+flake8_idom_hooks-0.4.0.dist-info/METADATA,sha256=RXeqeiuZsATDTTNAO3c-vENjf5pfeMsMHPzXt2Cyczc,1284
+flake8_idom_hooks-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flake8_idom_hooks-0.4.0.dist-info/entry_points.txt,sha256=M7_MtDYdHW_VoQSlviy85in7lo--oBxuZvtTjjB8QOM,51
+flake8_idom_hooks-0.4.0.dist-info/top_level.txt,sha256=e4y9DFMug6DYLtgkFa8oX6iDqh6Xx5S1eFU4rDh6AVM,18
+flake8_idom_hooks-0.4.0.dist-info/RECORD,,
