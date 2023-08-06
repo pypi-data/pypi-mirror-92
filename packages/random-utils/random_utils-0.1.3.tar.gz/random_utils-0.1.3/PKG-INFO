@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: random_utils
+Version: 0.1.3
+Summary: Module with various useful utilities.
+Home-page: https://github.com/ArjunSahlot/random_utils
+Author: Arjun Sahlot
+Author-email: iarjun.sahlot@gmail.com
+License: UNKNOWN
+Description: # random_utils
+        
+        A [python module](https://pypi.org/project/random-utils/) with various useful utilities.
+        
+        ## Read about features on the [wiki](https://github.com/ArjunSahlot/random_utils/wiki/Feature-List)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
