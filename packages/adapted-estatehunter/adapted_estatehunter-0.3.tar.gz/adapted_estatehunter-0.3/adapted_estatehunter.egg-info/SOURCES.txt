@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+adapted_estatehunter/__init__.py
+adapted_estatehunter/consumer.py
+adapted_estatehunter/producer.py
+adapted_estatehunter.egg-info/PKG-INFO
+adapted_estatehunter.egg-info/SOURCES.txt
+adapted_estatehunter.egg-info/dependency_links.txt
+adapted_estatehunter.egg-info/requires.txt
+adapted_estatehunter.egg-info/top_level.txt
