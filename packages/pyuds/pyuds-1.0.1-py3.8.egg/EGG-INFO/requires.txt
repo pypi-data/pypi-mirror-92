@@ -1,0 +1,4 @@
+pyserial
+mako
+pywin32
+xlrd

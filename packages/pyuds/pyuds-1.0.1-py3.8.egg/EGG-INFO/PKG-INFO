@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pyuds
+Version: 1.0.1
+Summary: python uds testcase
+Home-page: https://github.com/LevyHe/PyUds
+Author: levy.he
+Author-email: levy.he@gmail.com
+License: MIT Licence
+Description: python uds testcase
+Platform: any
+Requires-Python: >=3.6
