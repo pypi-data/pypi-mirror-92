@@ -1,0 +1,13 @@
+fabric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fabric/analysis.py,sha256=ymI6Xkw7S54d9lfcmHUbZ3C3pwLnSS5QdU7x6el1pr8,3231
+fabric/common_args.py,sha256=6w_3RLzrxCl1NzmnZS1uIeebEVUV6zF4cJeo4TXw0sg,1421
+fabric/gene_score_dist.py,sha256=fY4-LA_2dGs_gHRb_IqYKxUEobnWVKE07irdRlibfRs,7814
+fabric/gene_testing.py,sha256=cKMs5stRLM-UTxk01yu16YgjRDdYE8eSiZ8ZojtCjMo,4280
+fabric/util.py,sha256=InlUH0PGfumQtILE1VNrnGBv9l9C0mCYa12OkbECw10,812
+fabric/vcf_processing.py,sha256=a3c8UaQRFFX7MYRUIAj3B-29dumliGRUNp6pmPU5rz8,1610
+fabric_genetics-1.2.0.data/scripts/fabric,sha256=MzDU_orIKype4agqO0GoeEdTV4aJZWbOo9h-WPvT1lg,15457
+fabric_genetics-1.2.0.data/scripts/vcf_to_csv,sha256=Napnf9__E4c67N69d7wii7ycbJ-cSJEunMR1nZhItpQ,2347
+fabric_genetics-1.2.0.dist-info/METADATA,sha256=tY6TSJm4Jpe6POAsG3UGJAOpU7DA_PlsAQgJmMQURSY,479
+fabric_genetics-1.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fabric_genetics-1.2.0.dist-info/top_level.txt,sha256=thYVtHqxtidDsGQhNcBi6HDNM13leiLr6ISHkR66xO8,7
+fabric_genetics-1.2.0.dist-info/RECORD,,

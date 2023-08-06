@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: fabric-genetics
+Version: 1.2.0
+Summary: FABRIC (Functional Alteration Bias Recovery In Coding-regions) is a framework for detecting genes showing functional alteration bias.
+Home-page: https://github.com/nadavbra/fabric
+Author: Nadav Brandes
+Author-email: nadav.brandes@mail.huji.ac.il
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: statsmodels
+
+See: https://github.com/nadavbra/fabric
+
+
