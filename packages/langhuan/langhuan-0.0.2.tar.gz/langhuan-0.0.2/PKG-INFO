@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: langhuan
+Version: 0.0.2
+Summary: Language Human Annotation
+Home-page: https://github.com/raynardj/langhuan
+Author: xiaochen(ray) zhang
+Author-email: b2ray2c@gmail.com
+License: Apache Software License 2.0
+Description: # LangHuAn
+        > **Lang**uage **Hu**man **An**notations, a frontend for tagging AI project labels
+        
+        > From Chinese word **琅嬛[langhuan]** (Legendary realm where god curates books)
+        
+        ## Installation
+        ```shell
+        pip install langhuan
+        ```
+        
+        ## Minimun configuration walk through
+        > Simplest configuration for NER task
+        
+        ```python
+        from langhuan import NERTask
+        app = NERTask.from_df(df, text_col="text", options=["institution", "company", "name"])
+        app.run("0.0.0.0")
+        ```
+        
+Keywords: python pandas label data science
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
