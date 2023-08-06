@@ -1,0 +1,13 @@
+Coinpaprika/Client.py,sha256=umKZHa0uD7ZvLeNUCur1fby548HYw9C7IXtaCODRKf8,1581
+Coinpaprika/Coinpaprika.py,sha256=2SXsMZrX6PrOWWOXOsuJys_tN-dFKrmVK2ceUkgxa2o,2070
+Coinpaprika/CoinpaprikaCoin.py,sha256=h0LCf-hHhnA8bmABbICDyfI3DKWbP0bcyWHR5mzZP4c,13630
+Coinpaprika/CoinpaprikaExchanges.py,sha256=gkVwKdfp65ziTUuTnrjts5ZAvRME3mIqyM0V-c2NiTM,8754
+Coinpaprika/CoinpaprikaPeople.py,sha256=6kUDqewSWntfbwugmdWSjUrKnHFow2AW3jakxzpoYZQ,2334
+Coinpaprika/CoinpaprikaTags.py,sha256=1CNb3JdNeVj_8Mxod88ZQV8azIVFmWH114VP4x8eLT4,3658
+Coinpaprika/CoinpaprikaTickers.py,sha256=aXsCVElWO3rlYr7oPspz4v3Ps1uYyliEO_0cIA_cyXw,10890
+Coinpaprika/__init__.py,sha256=wmwb-525IKfopejIJLBkQZOigWs39RRxgEy2rPqSTEo,314
+coinpaprika_client-1.0.0.dist-info/LICENSE,sha256=ErtXAM_wgFiD3GHCGvgII-_8VP7_LQM2PdVSAbjLjZw,1100
+coinpaprika_client-1.0.0.dist-info/METADATA,sha256=1c9cKEX_dvd3C9pHNKQNQEbm8h09R1PWPjyWRzKM394,5240
+coinpaprika_client-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+coinpaprika_client-1.0.0.dist-info/top_level.txt,sha256=BafiRFShcCWqOUtm1Fo2ea2Ta5r1pQZombvHsGNLeEc,12
+coinpaprika_client-1.0.0.dist-info/RECORD,,
