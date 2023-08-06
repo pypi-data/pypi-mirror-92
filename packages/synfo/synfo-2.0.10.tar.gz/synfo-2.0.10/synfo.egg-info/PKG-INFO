@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: synfo
+Version: 2.0.10
+Summary: A lightweight utility for retrieving system information and specifications.
+Home-page: https://github.com/sfneal/synfo
+Author: Stephen Neal
+Author-email: stephen@stephenneal.net
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: memory
