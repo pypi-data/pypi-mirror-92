@@ -1,0 +1,17 @@
+click
+oss2
+PyYAML
+
+[dev]
+coverage
+flake8
+pytest-cov
+bumpversion
+pip>=7.0.0
+Sphinx
+sphinx-click
+
+[test]
+coverage
+flake8
+pytest-cov
