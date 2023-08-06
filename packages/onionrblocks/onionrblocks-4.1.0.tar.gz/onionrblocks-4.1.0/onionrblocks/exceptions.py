@@ -1,0 +1,1 @@
+class BlockExpired(Exception): pass
