@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: samanage-py
+Version: 0.1.1
+Summary: A package to easily connect to Samanage API
+Home-page: https://github.com/rodneymandap/samanage-py
+Author: Rodney Jan Mandap
+Author-email: rodneyjan.mandap@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# samanage-py 
+
+> Detailed usage documentation is still in progress
+
+My personal package to easily connect to Samanage ServiceDesk Platform. This is still a work in progress and doesn't support all modules provided by Samanage API but will add it in the future.
+
+
+## Installation
+```bash
+pip intall samanage-py
+```
+
+Project dependencies:
+  - requests
+
+## Usage
+```python
+from samanage import Samanage
+client = Samanage(<token here>)
+```
+
