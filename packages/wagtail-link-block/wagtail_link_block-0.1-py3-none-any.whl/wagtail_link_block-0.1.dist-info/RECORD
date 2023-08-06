@@ -1,0 +1,11 @@
+wagtail_link_block/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wagtail_link_block/blocks.py,sha256=yt_ACmjeOQQGfLkgD-m7CkINkr6so2k9ZZpRFhu8c-Q,3314
+wagtail_link_block/wagtail_hooks.py,sha256=D9UcvAElFbgFMMqa7b7jHGxuR-tq6dlHvdq-_EUkCFk,447
+wagtail_link_block/static/link_block/link_block.css,sha256=2ljDvN6-7PeLJWXu3nuulEyiCucgGgxXhqxm1MTbvow,43
+wagtail_link_block/static/link_block/link_block.js,sha256=DOvaBJgj3g5dSH7qbzLXMez92pOrMcCvsTdreV6-8qQ,2574
+wagtail_link_block/templates/wagtailadmin/block_forms/link_block.html,sha256=jIlsy5fSP53JeEvELsxJbijo_5bTH5uTc5gX_2ILgQ0,924
+wagtail_link_block-0.1.dist-info/LICENSE,sha256=gE8s_EpJVhK0XCP2CFN-ECXf9Wzkr8zYWiuOe7xqqT0,1503
+wagtail_link_block-0.1.dist-info/METADATA,sha256=GDuEHoiXKATNIxDWSKSM8r4ezCR_KdYL9ktlrVQKBa4,1684
+wagtail_link_block-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wagtail_link_block-0.1.dist-info/top_level.txt,sha256=OGH3LmjKbhrleKCJFJJaLHnRV3CDnCyDn_vtzckqtGY,19
+wagtail_link_block-0.1.dist-info/RECORD,,
