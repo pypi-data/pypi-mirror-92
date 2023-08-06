@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: threedi-cmd
+Version: 0.0.1.dev0
+Summary: Python 3Di command line client
+Home-page: https://github.com/nens/threedi-cmd
+Author: Jelle Prins
+Author-email: info@nelen-schuurmans.nl
+License: MIT license
+Keywords: 3Di,client,command line,scenario
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: threedi-api-client (>=3.0.21)
+Requires-Dist: PyYAML (>=5.1)
+Requires-Dist: websockets (>=8.1)
+Requires-Dist: arrow (>=0.14.4)
+Requires-Dist: Jinja2 (>=2.10.1)
+Requires-Dist: jinja2-time (>=0.2.0)
+Requires-Dist: slackclient (>=2.8.2)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: requests (>=2.25.0)
+Requires-Dist: rich (>=9.4.0)
+Requires-Dist: typer (>=0.3.2)
+
+# The 3Di command line client
+
+The 3Di command line client allows for 
+
+ - Defining and running 3Di scenarios from the command line. 
+ - Assembling different scenarios as a "suite" that will be run in batch.    
+ - Management commands, for instance to list currently running simulations. 
+
+There are three main entry points for the 3Di command line client.
+
+## Scenario command
+
+```
+$ scenario --help
+
+Usage: scenario [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --endpoint [localhost|staging|production]
+                                  The endpoint where commands are run against
+  --help                          Show this message and exit.
+
+Commands:
+  auth           Provide authentication details
+  models         List available threedimodels
+  organisations  List available organisations
+  results        Download results of a simulation
+  run            Run a given scenario
+  scenarios      List local scenarios
+  settings       Set default settings
+  simulations    List simulations
+```
+
+
+## Suite command
+
+```
+$ suite --help
+
+Usage: suite [OPTIONS]
+
+  run suite a given suite
+
+Options:
+  --suite PATH  path to the suite file  [required]
+  --help        Show this message and exit.
+``` 
+
+
+## Active simulations command
+
+```
+$ active_simulations --help
+
+Usage: active_simulations [OPTIONS]
+
+  Show currently running simulations
+
+Options:
+  --endpoint [localhost|staging|production]
+                                  The endpoint where commands are run against
+  --help                          Show this message and exit.
+
+```
+
+## Dependencies
+
+`python >= 3.8`
+
+
+## Installation
+
+Dependencies python >= 3.8
+
+```
+pip install --user 3Di-cmd-client
+```
+
+
+
+
+# History
+
+0.0.4 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+0.0.3 (2020-12-21)
+
+- Fixed settings context if config file is not yet available.
+
+
+## 0.0.1b (2020-12-18)
+
+- First (beta) pypi release.
+
+
