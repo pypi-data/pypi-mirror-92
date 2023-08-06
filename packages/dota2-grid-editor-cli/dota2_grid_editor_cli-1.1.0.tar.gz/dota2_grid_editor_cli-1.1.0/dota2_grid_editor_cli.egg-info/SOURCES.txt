@@ -1,0 +1,8 @@
+cli_grid.py
+setup.py
+dota2_grid_editor_cli.egg-info/PKG-INFO
+dota2_grid_editor_cli.egg-info/SOURCES.txt
+dota2_grid_editor_cli.egg-info/dependency_links.txt
+dota2_grid_editor_cli.egg-info/entry_points.txt
+dota2_grid_editor_cli.egg-info/requires.txt
+dota2_grid_editor_cli.egg-info/top_level.txt

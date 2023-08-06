@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            cli_grid = cli_grid:cli_grid
+        
