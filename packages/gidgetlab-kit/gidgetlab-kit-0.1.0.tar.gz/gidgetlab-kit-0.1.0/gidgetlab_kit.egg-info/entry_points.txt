@@ -1,0 +1,3 @@
+[console_scripts]
+gidgetlab = gidgetlab_kit.command:app
+

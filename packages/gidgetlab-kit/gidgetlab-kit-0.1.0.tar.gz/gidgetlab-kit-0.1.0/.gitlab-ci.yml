@@ -1,0 +1,55 @@
+---
+variables:
+  TWINE_USERNAME: __token__
+  TWINE_PASSWORD: secret
+
+default:
+  image: python:3.8
+
+stages:
+  - check
+  - build
+  - test
+  - release
+
+run-pre-commit:
+  stage: check
+  before_script:
+    - pip install pre-commit
+  script:
+    - pre-commit run --all-files
+
+build-pypi-package:
+  stage: build
+  script:
+    - python setup.py check sdist bdist_wheel
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist/
+
+test-python38:
+  stage: test
+  image: python:3.8
+  before_script:
+    - pip install -e .[tests]
+  script:
+    - pytest -v --cov=gidgetlab_kit tests
+
+test-python39:
+  stage: test
+  image: python:3.9
+  before_script:
+    - pip install -e .[tests]
+  script:
+    - pytest -v --cov=gidgetlab_kit tests
+
+release-pypi-package:
+  stage: release
+  before_script:
+    - pip install twine
+  script:
+    - twine upload dist/*
+  only:
+    - tags
+  when: manual
