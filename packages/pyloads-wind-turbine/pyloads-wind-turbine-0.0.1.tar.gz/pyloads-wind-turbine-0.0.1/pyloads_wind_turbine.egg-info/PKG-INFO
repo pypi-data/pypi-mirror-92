@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pyloads-wind-turbine
+Version: 0.0.1
+Summary: Loads and deflection for wind turbine blade.
+Home-page: https://github.com/GonMazzini/pyloads
+Author: Gonzalo Mazzini
+Author-email: gmazzini@itba.edu.ar
+License: MIT
+Download-URL: https://github.com/GonMazzini/pyloads/archive/v.0.0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
