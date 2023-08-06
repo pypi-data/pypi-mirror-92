@@ -1,0 +1,6 @@
+[console_scripts]
+lisa=lisa:main
+
+[pytest11]
+lisa=lisa
+
