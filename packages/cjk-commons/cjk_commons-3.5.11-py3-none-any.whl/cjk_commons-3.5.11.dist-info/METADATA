@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cjk-commons
+Version: 3.5.11
+Summary: Commons
+Home-page: https://github.com/Cujoko/commons
+License: MIT
+Keywords: commons
+Author: Cujoko
+Author-email: cujoko@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Russian
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML
+Requires-Dist: appdirs
+Requires-Dist: loguru
+Requires-Dist: yodl
+Project-URL: Repository, https://github.com/Cujoko/commons
