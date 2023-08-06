@@ -1,0 +1,58 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Delete Nexpose user."
+    parser.add_argument(
+        "-f",
+        "--field",
+        help="""Field to match on.
+        Default is "login".
+        Another common option is "name".
+        """,
+        default="login",
+        action="store",
+        required=True,
+    )
+    parser.add_argument(
+        "-m",
+        "--match",
+        help="""
+        Match to make in FIELD.
+        """,
+        action="store",
+        required=True,
+    )
+    args = parser.parse_args()
+
+    config = nexpose.config(args)
+    field = args.field
+    match = args.match
+
+    users = [
+        user for user in nexpose.users(nlogin=config)
+        if user[field] == match
+    ]
+    if not users:
+        raise Exception
+    if len(users) != 1:
+        raise Exception
+    user = users[0]
+    nexpose.delete_user(nlogin=config, user_id=user['id'])
+    message = f"""
+    deleted user
+    id: {user['id']}
+    name: {user['name']}
+    login: {user['login']}
+    """
+    print(message)
+
+
+if __name__ == "__main__":
+    main()

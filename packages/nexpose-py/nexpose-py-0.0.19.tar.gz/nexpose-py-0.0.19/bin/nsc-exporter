@@ -1,0 +1,122 @@
+#!/usr/bin/env python3
+
+import datetime
+import os
+
+from time import sleep
+
+import configargparse
+from prometheus_client import CollectorRegistry, Gauge, write_to_textfile
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+
+def export_metrics(scans, export):
+    """
+    Accept scans (list of Nexpose API v 3 scan objects)
+    and export (file-like object to write export to).
+    Write export file. Return None on success; raise exception on failure.
+    """
+
+    registry = CollectorRegistry()
+    status = Gauge(
+        name="nexpose_scan_status",
+        documentation="Nexpose scan statuses",
+        labelnames=["status"],
+        registry=registry,
+    )
+    message = Gauge(
+        name="nexpose_scan_message",
+        documentation="Nexpose scan messages",
+        labelnames=["message"],
+        registry=registry,
+    )
+    last_run = Gauge(
+        name="nexpose_scan_metrics_last_run_time_seconds",
+        documentation="time in seconds since 1970 of last run",
+        registry=registry,
+    )
+
+    for scan in scans:
+        this_status = scan.get("status", False)
+        if this_status:
+            status.labels(status=this_status).inc()
+
+        this_message = scan.get("message", False)
+        if this_message:
+            message.labels(message=this_message).inc()
+
+    now = str(datetime.datetime.utcnow().timestamp())
+    last_run.set(now)
+
+    write_to_textfile(export, registry)
+
+
+
+def main():
+    """
+    Parse arguments.
+    """
+    # We will make a new parser here in order to use configarparse,
+    # The new parser inherits from the generic parser.
+    # resolve conflicts, since both will provide a help argument.
+    parent = nexposeargs.parser
+
+    parser = configargparse.ArgumentParser(
+        parents=[parent],
+        default_config_files=["/etc/nexpose-exporter.conf"],
+        description="Export Nexpose console metrics for Prometheus.",
+        conflict_handler="resolve",
+    )
+    parser.add_argument(
+        "-e",
+        "--export-file",
+        help="""File to export metrics to.
+        Default is
+        /var/lib/node_exporter/textfile_collector/nexpose_scan_metrics.prom.
+        Be sure this process has write access to the file and parent directory.
+        """,
+        action="store",
+        default="/var/lib/node_exporter/textfile_collector/nexpose_scan_metrics.prom",
+        dest="export",
+    )
+    parser.add_argument(
+        "-s",
+        "--single-pass",
+        help="""Perform a single pass collecting data and exit,
+        instead of repeating forever.
+        """,
+        action="store_true",
+        default=False,
+    )
+    parser.add_argument(
+        "-l",
+        "--lag",
+        help="""Lag in seconds between repeating main loop.
+        Default is 3600 (1 hour). Set higher for larger amounts of data.
+        """,
+        action="store",
+        type=int,
+        default=3600,
+    )
+
+    args = parser.parse_args()
+    export = args.export
+    single_pass = args.single_pass
+    lag = args.lag
+    config = nexpose.config(args)
+
+    while True:
+        try:
+            scans = nexpose.scans(nlogin=config)
+            export_metrics(scans, export)
+        except nexpose.requests.exceptions.RequestException:
+            pass
+        if single_pass:
+            break
+        sleep(lag)
+
+
+if __name__ == "__main__":
+    main()

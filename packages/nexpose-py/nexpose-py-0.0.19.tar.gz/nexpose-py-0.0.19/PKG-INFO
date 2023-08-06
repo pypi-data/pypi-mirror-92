@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: nexpose-py
+Version: 0.0.19
+Summary: Python3 bindings and CLI tools for Nexpose API version 3
+Home-page: https://github.com/coalfire/nexpose-py
+Author: Noah Birnel
+Author-email: noah.birnel@coalfire.com
+License: UNKNOWN
+Description: nexpose-py
+        ==========
+        
+        Python3 bindings and CLI tools for
+        `Nexpose <https://www.rapid7.com/products/nexpose/>`_
+        API version 3.
+        
+        cli programs
+        ------------
+        
+        nsc-exporter
+        ~~~~~~~~~~~~
+        
+        A `Prometheus <https://prometheus.io/>`_ exporter for
+        Nexpose scan console metrics.
+        
+        It is a good idea to create a Nexpose user and role specifically for this,
+        with permissions only to:
+        
+        - "View Site Asset Data"
+        - "View Group Asset Data".
+        
+        A ``systemd`` service file is provided at
+        ``etc/systemd/system/nexpose-exporter.service``,
+        and a sample env file at ``etc/defaults/nexpose-exporter.env``.
+        These will be relative to your virtualenv for a virtualenv install,
+        relative to ``$HOME/.local`` for a ``pip install --user`` install,
+        and (probably, depending on your OS) relative to ``/usr/local`` for a
+        root pip install.
+        
+        nsc-janitor
+        ~~~~~~~~~~~~
+        
+        Maintenance service for Nexpose scan console.
+        This will remove sites and reports older than 90 days.
+        
+        It is a good idea to create a Nexpose user and role specifically for this,
+        with permissions only to:
+        
+        - "Manage Sites"
+        - "Manage Report Templates".
+        - "View Group Asset Data"
+        - "Manage Report Access"
+        
+        A ``systemd`` service file is provided at
+        ``etc/systemd/system/nexpose-janitor.service``,
+        and a sample env file at ``etc/defaults/nexpose-janitor.env``.
+        These will be relative to your virtualenv for a virtualenv install,
+        relative to ``$HOME/.local`` for a ``pip install --user`` install,
+        and (probably, depending on your OS) relative to ``/usr/local`` for a
+        root pip install.
+        
+        nsc-remove-old-reports
+        ~~~~~~~~~~~~~~~~~~~~~~
+        
+        nsc-remove-old-sites
+        ~~~~~~~~~~~~~~~~~~~~
+        
+        library usage
+        ~~~~~~~~~~~~~
+        
+        Basic usage:
+        
+        .. code-block:: python
+        
+            import nexpose.nexpose as nexpose
+        
+            login = nexpose.login(
+                base_url='https://localhost:3780',
+                user='some_nexpose_user',
+                password='secure_nexpose_password',
+            )
+        
+            nexpose.engines(nlogin=login)
+        
+        
+        With CLI argument parsing:
+        
+        .. code-block:: python
+        
+            import nexpose.nexpose as nexpose
+            import nexpose.args as nexposeargs
+        
+            parser = nexposeargs.parser
+            parser.description = "My nexpose script"
+            parser.add_argument(
+                "-f",
+                "--foo",
+                help="foo argument",
+                action="store",
+            )
+        
+            args = parser.parse_args()
+            config = nexpose.config(args)
+        
+            nexpose.engines(nlogin=config)
+            print(f"my foo argument was {args.foo}")
+        
+        
+        alternatives
+        ------------
+        
+        ``nexpose`` (`<https://pypi.org/project/nexpose/>`_ )
+        is the official python binding for Nexpose API versions 1.1 and 1.2.
+        
+        ``nexpose-rest`` (`<https://pypi.org/project/nexpose-rest/>`_) is unofficial.
+        It is (partially?) auto-generated and more comprehensive than ``nexpose-py``.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst

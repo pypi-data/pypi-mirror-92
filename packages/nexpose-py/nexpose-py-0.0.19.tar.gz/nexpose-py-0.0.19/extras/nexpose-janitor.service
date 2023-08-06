@@ -1,0 +1,17 @@
+[Unit]
+Description=Continuous maintenance of Nexpose console
+Documentation=https://github.com/coalfire/nexpose-py
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=prometheus
+Group=prometheus
+EnvironmentFile=/etc/default/nexpose-janitor
+ExecStart=/usr/local/bin/nsc-janitor $ARGS
+Restart=always
+RestartSec=42sec
+
+[Install]
+WantedBy=multi-user.target
