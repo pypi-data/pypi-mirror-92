@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: sortfolder
+Version: 1.0.0
+Summary: Simple script for sorting folders by their extension
+Home-page: UNKNOWN
+Author: psyche_wolf
+Author-email: jaforjaber@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# Sort Folder
+
+## Installation
+
+	python -m pip install sortfolder
+
+## How to use
+
+Go to CMD
+
+	python -m sortfolder
+
+If you dont want to sort current working directory,
+
+	python -m sortfolder -l "path/to/folder
+
+Add some exceptions,
+
+	python -m sortfolder -e png psd jpg
+
