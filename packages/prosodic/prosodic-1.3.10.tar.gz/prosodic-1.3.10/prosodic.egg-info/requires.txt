@@ -1,0 +1,10 @@
+nltk
+numpy
+Pyphen
+pyparsing
+xlrd
+networkx
+scipy
+xlwt
+levenshtein
+p_tqdm
