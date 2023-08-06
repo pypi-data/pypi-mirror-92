@@ -1,0 +1,8 @@
+orthanc_ext/__init__.py,sha256=IkSzjR4Ou0FVtpn_O0MfIYomH1YALDFkAycu8xoJqWY,133
+orthanc_ext/event_dispatcher.py,sha256=oriqVGTjg05KLcVBF3yjOXoErwp9VT2nIHZhGYsW_1E,1453
+orthanc_ext/orthanc.py,sha256=-l9VCFBtiIAXFU5S9PGL6CRzDK_yksbkdbIFNJP_X_E,2687
+orthanc_server_extensions-2.2.1.dist-info/LICENSE,sha256=0fDQRXdoxSCAxMlqFT_rB8bfzfoJyBhH8kwskTCmuj8,1619
+orthanc_server_extensions-2.2.1.dist-info/METADATA,sha256=SzAb1Ie4IdEYDCIBwDj0s1LjEWvr7iGsIypz3VTZ7Pk,2432
+orthanc_server_extensions-2.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+orthanc_server_extensions-2.2.1.dist-info/top_level.txt,sha256=krJ1em9I04xnAtkmJFrq0VynbJpHSP-7vARoGeHI3iE,12
+orthanc_server_extensions-2.2.1.dist-info/RECORD,,
