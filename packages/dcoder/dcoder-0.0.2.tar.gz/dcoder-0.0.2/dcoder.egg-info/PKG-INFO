@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: dcoder
+Version: 0.0.2
+Summary: A module that can decode/encode text in various ciphers.
+Home-page: UNKNOWN
+Author: Swas.py
+Author-email: cwswas.py@gmail.com
+License: MIT
+Description: This is a module for decoding/encoding text in various ciphers.
+        
+        CHANGE LOG
+        
+        ==========
+        
+        0.0.1 (23/01/2021)
+        -------------------
+        - Inititial Release
+        
+        0.0.2 (24/01/2021)
+        -------------------
+        - Added functions for encoding/decoding the RailFence/Zig-Zag cipher.
+Keywords: decoder,encoder,ciphers
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
