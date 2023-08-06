@@ -1,0 +1,11 @@
+README.rst
+setup.py
+xapy/__init__.py
+xapy/client.py
+xapy/game.py
+xapy/gamercard.py
+xapy.egg-info/PKG-INFO
+xapy.egg-info/SOURCES.txt
+xapy.egg-info/dependency_links.txt
+xapy.egg-info/requires.txt
+xapy.egg-info/top_level.txt
