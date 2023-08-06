@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: certbot-dns-infomaniak
+Version: 0.1.10
+Summary: Infomaniak DNS Authenticator plugin for Certbot
+Home-page: https://github.com/infomaniak/certbot-dns-infomaniak
+Author: Rene Luria
+Author-email: rene.luria@infomaniak.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Security
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.0
+Description-Content-Type: text/x-rst
+Requires-Dist: certbot (>=0.31.0)
+Requires-Dist: setuptools
+Requires-Dist: requests
+Requires-Dist: mock
+Requires-Dist: requests-mock
+
+certbot-dns-infomaniak
+======================
+
+Infomaniak_ DNS Authenticator plugin for certbot_
+
+This plugin enables usage of Infomaniak public API to complete ``dns-01`` challenges.
+
+.. _Infomaniak: https://www.infomaniak.com/
+.. _certbot: https://certbot.eff.org/
+
+Issue a token
+-------------
+
+At your Infomaniak manager dashboard_, to to the API section and generate a token
+with "Domain" scope
+
+.. _dashboard: https://manager.infomaniak.com/v3/infomaniak-api
+
+Then, export this token as an environment variable:
+
+::
+
+    export INFOMANIAK_API_TOKEN=xxx
+
+Installation
+------------
+
+::
+
+    pip install certbot-dns-infomaniak
+
+Usage
+-----
+
+.. code-block:: bash
+
+   export INFOMANIAK_API_TOKEN=xxx
+   certbot certonly \
+     --authenticator certbot-dns-infomaniak:dns-infomaniak \
+     --server https://acme-v02.api.letsencrypt.org/directory \
+     --agree-tos \
+     --rsa-key-size 4096 \
+     -d 'death.star'
+
+If certbot requires elevated rights, the following command must be used instead:
+
+.. code-block:: bash
+
+   export INFOMANIAK_API_TOKEN=xxx
+   sudo --preserve-env=INFOMANIAK_API_TOKEN certbot certonly \
+     --authenticator certbot-dns-infomaniak:dns-infomaniak \
+     --server https://acme-v02.api.letsencrypt.org/directory \
+     --agree-tos \
+     --rsa-key-size 4096 \
+     -d 'death.star'
+
+Automatic renewal
+-----------------
+
+By default, certbot installs a service that periodically renews its
+certificates automatically. In order to do this, the command must know the API
+key, otherwise it will fail silently.
+
+In order to enable automatic renewal for your wildcard certificates, you will
+need to edit ``/lib/systemd/system/certbot.service``. In there, add the
+following line in ``Service``, with <YOUR_API_TOKEN> replaced with your actual
+token:
+
+::
+
+   Environment="INFOMANIAK_API_TOKEN=<YOUR_API_TOKEN>"
+
+Acknowledgments
+---------------
+
+Based on certbot-dns-ispconfig plugin at https://github.com/m42e/certbot-dns-ispconfig/
+
+
