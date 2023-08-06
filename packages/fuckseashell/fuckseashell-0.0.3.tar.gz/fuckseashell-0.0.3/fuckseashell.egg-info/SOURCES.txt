@@ -1,0 +1,13 @@
+README.md
+setup.py
+fuckseashell/__init__.py
+fuckseashell/download_assignment.py
+fuckseashell/env.py
+fuckseashell/extract_assignment.py
+fuckseashell/fsrun.py
+fuckseashell/fstest.py
+fuckseashell.egg-info/PKG-INFO
+fuckseashell.egg-info/SOURCES.txt
+fuckseashell.egg-info/dependency_links.txt
+fuckseashell.egg-info/entry_points.txt
+fuckseashell.egg-info/top_level.txt
