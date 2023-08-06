@@ -1,0 +1,25 @@
+[runperf.machine.distro_info]
+50get_distro_info = runperf.machine:get_distro_info
+
+[runperf.profiles]
+50DefaultLibvirt = runperf.profiles:DefaultLibvirt
+50Localhost = runperf.profiles:Localhost
+50Overcommit1_5 = runperf.profiles:Overcommit1p5
+50TunedLibvirt = runperf.profiles:TunedLibvirt
+
+[runperf.provisioners]
+50Beaker = runperf.provisioners:Beaker
+
+[runperf.tests]
+50DummyTest = runperf.tests:DummyTest
+50Linpack = runperf.tests:Linpack
+50PBenchFio = runperf.tests:PBenchFio
+50PBenchNBD = runperf.tests:PBenchNBD
+50UPerf = runperf.tests:UPerf
+
+[runperf.utils.cloud_image_providers]
+50Fedora = runperf.utils.cloud_image_providers:Fedora
+
+[runperf.utils.pbench]
+50Dnf = runperf.utils.pbench:Dnf
+
