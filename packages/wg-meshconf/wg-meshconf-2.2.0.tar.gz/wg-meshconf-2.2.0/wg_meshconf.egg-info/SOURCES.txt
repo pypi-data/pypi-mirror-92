@@ -1,0 +1,12 @@
+README.md
+setup.py
+wg_meshconf/__init__.py
+wg_meshconf/database_manager.py
+wg_meshconf/wg_meshconf.py
+wg_meshconf/wireguard.py
+wg_meshconf.egg-info/PKG-INFO
+wg_meshconf.egg-info/SOURCES.txt
+wg_meshconf.egg-info/dependency_links.txt
+wg_meshconf.egg-info/entry_points.txt
+wg_meshconf.egg-info/requires.txt
+wg_meshconf.egg-info/top_level.txt
