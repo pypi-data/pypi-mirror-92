@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: financialmodelingprep
+Version: 0.0.1
+Summary: The unofficial python interface for the financialmodelingprep API
+Home-page: https://github.com/JosephCottingham/financialmodelingprep-python.git
+Author: Joseph Cottingham | Joseph Conigliari
+Author-email: joseph.cottingham@protonmail.com
+License: MIT
+Description: # financialmodelingprep-python
+        Wrapper for financialmodelingprep API V3
+        
+        ## Installation
+        '''pip install financialmodelingprep'''
+        
+        ## License
+        
+        © 2021 Joseph Cottingham
+        
+        This repository is licensed under the MIT license
+        See LICENSE for details.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
