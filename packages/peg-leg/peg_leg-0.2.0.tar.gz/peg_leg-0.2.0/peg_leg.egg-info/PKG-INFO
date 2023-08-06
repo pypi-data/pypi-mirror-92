@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: peg-leg
+Version: 0.2.0
+Summary: PEG parser generator
+Home-page: https://github.com/formerly-a-trickster/peg-leg
+Author: Gabriel Ionescu
+Author-email: gabe@erisian.tech
+License: UNKNOWN
+Description: Peg Leg
+        =======
+        
+        A PEG parsing library that supports:
+        - semantic actions
+        - direct and indirect left recursive rules
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
