@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: minds-kit
+Version: 0.0.1.dev2
+Summary: A SAT-based toolkit for learning optimal decision sets
+Home-page: https://github.com/alexeyignatiev/minds
+Author: Alexey Ignatiev
+Author-email: alexey.ignatiev@monash.edu
+License: MIT
+Description: 
+        *minds* is a Python toolkit, which can be used for computing minimum size
+        decisions sets, i.e. unordered sets of *if-then* rules. The toolkit represents
+        a set of pure Python modules, which can be used in a Python script in the
+        standard way through the provided API. Additionally, it contains an executable
+        ``mds.py``, which can be applied for constructing a smallest size decision set
+        for a training dataset in CSV.
+        
+        Details can be found at `https://github.com/alexeyignatiev/minds
+        <https://github.com/alexeyignatiev/minds>`__.
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst; charset=UTF-8
