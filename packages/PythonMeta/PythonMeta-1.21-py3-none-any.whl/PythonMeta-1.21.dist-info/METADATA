@@ -1,0 +1,342 @@
+Metadata-Version: 2.1
+Name: PythonMeta
+Version: 1.21
+Summary: A Python module of Meta-Analysis, usually applied in systemtic reviews of Evidence-based Medicine.
+Home-page: http://www.pymeta.com
+Author: 邓宏勇Deng, Hongyong
+Author-email: dephew@126.com
+License: UNKNOWN
+Keywords: meta analysis,meta-analysis,meta_analysis,systematic review,EBM,Evidence-based Medicine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+PythonMeta
+---
+Info
+---
+Name = PythonMeta
+
+Version = 1.21 
+
+Author = 邓宏勇Deng Hongyong
+
+Email = dephew@126.com
+
+URL = www.pymeta.com
+
+Date = 2021.1.21
+
+History
+---
+2019.7.23
+Ver 1.11 released.
+
+2021.1.20
+Ver 1.20 released.
+Fixed a bug while calculating random effect subgroup's weight.
+
+About
+---
+This is a Meta-Analysis package. 
+
+This module was designed to perform some Evidence-based medicine (EBM) tasks, such as:
+
+* Combining effect measures (OR, RR, RD for count data and MD, SMD for continuous data);
+* Heterogeneity test(Q/Chi-square test);
+* Subgroup analysis;
+* Plots drawing: forest plot, funnel plot, etc.
+
+Statistical algorithms in this software cited from:
+**Jonathan J Deeks and Julian PT Higgins, on behalf of the Statistical Methods Group of The Cochrane Collaboration. Statistical algorithms in Review Manager 5, August 2010.**
+
+Please cite me in any publictions like:
+**Deng Hongyong. PyMeta, Python module of Meta-analysis, cited 20xx-xx-xx (or your time); 1 screen(s). Available from URL: http://www.pymeta.com**
+
+This is an ongoing project, so, any questions and suggestions from you are very welcome.
+
+Installing
+---
+Install and update using `pip`:
+```
+pip install PythonMeta
+```
+
+Import
+---
+Import the PythonMeta module in your code:
+```
+import PythonMeta
+```
+
+Functions and Classes
+---
+There are four functions/classes in PythonMeta package:
+
+**Help()**(*function*): Show help information of PythonMeta.
+
+**Data()**(*class*): Set and Load data to analysis.
+* datatype (*attribute, string*): set the data type:'CATE' for CATEgorical/count/binary/dichotomous data, or 'CONT' for continuous data.
+* studies (*attribute, array*): Array to store the study data.
+* subgroup (*attribute, array*): Array to store the subgroup.
+* nototal (*attribute, binary*): Flag of do NOT calculate the total effect.
+* readfile(filename) (*method*): Read data file. 
+    + Input: filename(string) (e.g. "c:\\1.txt"); 
+    + Output: lines array (always as input of method getdata()). 
+    (See Sample code and data files)
+* getdata(lines) (*method*): Load data into attribute array of 'studies'. 
+    + Input: lines array (always from method readfile()); 
+    + Output: attribute 'studies'. 
+    (See Sample code and data files)
+
+**Meta()**(*class*): Set and perform the Meta-Analysis.
+* datatype (*attribute, string*): set the data type:'CATE' for CATEgorical/count/binary/dichotomous data, or 'CONT' for CONTinuous data. Attention: this attribute should same to Data().datatype.
+* studies (*attribute, array*): Array of study data to meta-analysis.
+* subgroup (*attribute, array*): Array to store the subgroup. Attention: this attribute should same to Data().subgroup.
+* nototal (*attribute, binary*): Flag of do NOT calculate the total effect. Attention: this attribute should same to Data().nototal.
+* models (*attribute, string*): set effect models as 'Fixed' or 'Random'.
+* effect (*attribute, string*): set effect size as 'OR':odds ratio; 'RR': risk ratio; 'RD':risk difference; 'MD':weighted mean diff; 'SMD':standard mean diff.
+* algorithm (*attribute, string*): set the algorithms of meta-analysis: 'MH':Mantel-Haenszel;'Peto';'IV':Inverse variance;'IV-Heg'(DEFAULT),'IV-Cnd','IV-Gls':for SMD algorithms
+* meta(studies, nosubgrp=False) (*method*): perform the meta-analysis. 
+    + Input: 1, studies array (always from Data().getdata); 2, nosubgrp flag, False as default. 
+    + Output: result array [[Total...],[study1...],[subgroup1,...],[studyn,...]...[subgroupk,...]]. 
+    (See Sample code for more information)
+
+**Fig()**(*class*): Set and draw the result figures.
+* size (*attribute, integer array*): set the canvas size in inchs, default [6,6].
+* dpi (*attribute, integer*): set the resolution of figure (dot per inch), default 80pts.
+* title (*attribute, string*): set the title of figure.
+* nototal (*attribute, binary*): Flag of do NOT show the total effect, default False.
+* forest(results) (*method*): drawing the forest plot. 
+    + Input: results array, always from Meta().meta.
+    + Output: matplotlib.pyplot.figure object;
+    (See Sample code for more information)
+* funnel(results) (*method*): drawing the funnel plot. 
+    + Input: results array, always from Meta().meta;
+    + Output: matplotlib.pyplot.figure object.
+    (See Sample code for more information)
+
+Example
+---
+
+Sample code: **sample.py**
+```Python
+
+import PythonMeta as PMA
+
+def showstudies(studies,dtype):    
+    #show continuous data
+    if dtype.upper()=="CONT":
+        text = "%-10s %-30s %-30s \n"%("Study ID","Experiment Group","Control Group")
+        text += "%-10s %-10s %-10s %-10s %-10s %-10s %-10s \n"%(" ","m1","sd1","n1","m2","sd2","n2")
+        for i in range(len(studies)):
+            text += "%-10s %-10s %-10s %-10s %-10s  %-10s %-10s \n"%(
+            studies[i][6],        #study ID
+            str(studies[i][0]),   #mean of group1
+            str(studies[i][1]),   #SD of group1
+            str(studies[i][2]),   #total num of group1
+            str(studies[i][3]),   #mean of group2
+            str(studies[i][4]),   #SD of group2
+            str(studies[i][5])    #total num of group2
+            )
+        return text
+
+    #show dichotomous data
+    text = "%-10s %-20s %-20s \n"%("Study ID","Experiment Group","Control Group")
+    text += "%-10s %-10s %-10s %-10s %-10s \n"%(" ","e1","n1","e2","n2")
+    for i in range(len(studies)):
+        text += "%-10s %-10s %-10s %-10s %-10s \n"%(
+        studies[i][4],        #study ID
+        str(studies[i][0]),   #event num of group1
+        str(studies[i][1]),   #total num of group1
+        str(studies[i][2]),   #event num of group2
+        str(studies[i][3])    #total num of group2
+        )
+    return text
+
+def showresults(rults):
+    text = "%-10s %-6s  %-18s %-10s"%("Study ID","n","ES[95% CI]","Weight(%)\n")    
+    for i in range(1,len(rults)):
+        text += "%-10s %-6d  %-4.2f[%.2f %.2f]   %6.2f\n"%(   # for each study
+        rults[i][0],     #study ID
+        rults[i][5],     #total num
+        rults[i][1],     #effect size
+        rults[i][3],     #lower of CI
+        rults[i][4],     #higher of CI
+        100*(rults[i][2]/rults[0][2])  #weight
+        )
+    text += "%-10s %-6d  %-4.2f[%.2f %.2f]   %6d\n"%(         # for total effect
+        rults[0][0],     #total effect size name
+        rults[0][5],     #total N (all studies)
+        rults[0][1],     #total effect size
+        rults[0][3],     #total lower CI
+        rults[0][4],     #total higher CI
+        100
+        )  
+    text += "%d studies included (N=%d)\n"%(len(rults)-1,rults[0][5])
+    text += "Heterogeneity: Tau\u00b2=%.3f "%(rults[0][12]) if not rults[0][12]==None else "Heterogeneity: "
+    text += "Q(Chisquare)=%.2f(p=%s); I\u00b2=%s\n"%(
+        rults[0][7],     #Q test value
+        rults[0][8],     #p value for Q test
+        str(round(rults[0][9],2))+"%")   #I-square value
+    text += "Overall effect test: z=%.2f, p=%s\n"%(rults[0][10],rults[0][11])  #z-test value and p-value
+
+    return text
+
+def main(stys,settings):
+    d = PMA.Data()  #Load Data class
+    m = PMA.Meta()  #Load Meta class
+    f = PMA.Fig()   #Load Fig class
+
+    #You should always tell the datatype first!!!
+    d.datatype = settings["datatype"]                #set data type, 'CATE' for binary data or 'CONT' for continuous data
+    studies = d.getdata(stys)                        #load data
+    #studies = d.getdata(d.readfile("studies.txt"))  #get data from a data file, see examples of data files
+    print(showstudies(studies,d.datatype))           #show studies
+
+    m.datatype=d.datatype                            #set data type for meta-analysis calculating
+    m.models = settings["models"]                    #set effect models: 'Fixed' or 'Random'
+    m.algorithm = settings["algorithm"]              #set algorithm, based on datatype and effect size
+    m.effect = settings["effect"]                    #set effect size:RR/OR/RD for binary data; SMD/MD for continuous data
+    results = m.meta(studies)                        #performing the analysis
+    print(m.models + " " + m.algorithm + " " + m.effect)
+    print (showresults(results))                     #show results table
+    f.forest(results).show()                         #show forest plot
+    f.funnel(results).show()                         #show funnel plot
+
+if __name__ == '__main__':
+    samp_cate=[  #this array can be stored into a data file by lines, and loaded with d.readfile("filename")
+    "Fang 2015,15,40,24,37",
+    "Gong 2012,10,40,18,35",
+    "Liu 2015,30,50,40,50",
+    "Long 2012,19,40,26,40",
+    "Wang 2003,7,86,15,86",
+    "<subgroup>name=short term",
+    "Chen 2008,20,60,28,60",
+    "Guo 2014,31,51,41,51",
+    "Li 2015,29,61,31,60",
+    "Yang 2006,21,40,31,40",
+    "Zhao 2012,27,40,30,40",
+    "<subgroup>name=medium term",
+    "#<nototal>",
+    " ",
+    "#This is a sample of binary data with subgroup.",
+    "#Syntax: study name, e1, n1, e2, n2",
+    "#e1,n1: events and number of experiment group;",
+    "#e2,n2: events and number of control group.",
+    "#And you can add a line of <nototal> to hide the Overall result."]
+
+    samp_cont=[  #this array can be stored into a data file by lines, and loaded with d.readfile("filename")
+    "Atmaca 2005, 20.9,  6.0,  15,  27.4,  8.5,  14",
+    "Guo 2014,    12.8,  5.2,  51,  11.9,  5.3,  51",
+    "Liu 2010,    23.38, 5.86, 35,  24.32, 5.43, 35",
+    "Wang 2012,   15.67, 8.78, 43,  18.67, 9.87, 43",
+    "Xu 2002,     15.49, 7.16, 50,  21.72, 8.07, 50",
+    "Zhao 2012,   12.8,  5.7,  40,  13.0,  5.2,  40",
+    " ",
+    "#This is a sample of continuous data.",
+    "#Input one study in a line;",
+    "#Syntax: study name, m1, sd1, n1, m2, sd2, n2",
+    "#m1, sd1, n1: mean, SD and number of experiment group;",
+    "#m2, sd2, n2: mean, SD and number of control group."]
+
+    #sample 1: dichotomous data
+    settings={
+    "datatype":"CATE",  #for CATEgorical/count/binary/dichotomous data
+    "models":"Fixed",             #models: Fixed or Random
+    "algorithm":"MH",             #algorithm: MH, Peto or IV
+    "effect":"RR"}                #effect size: RR, OR, RD
+    main(samp_cate,settings)
+
+    #sample 2: continuous data
+    settings={
+    "datatype":"CONT",  #for CONTinuous data
+    "models":"Fixed",             #models: Fixed or Random
+    "algorithm":"IV",             #algorithm: IV
+    "effect":"MD"}                #effect size: MD, SMD
+    main(samp_cont,settings)
+```
+
+Or you can load data from a file, like:
+```
+studies = d.getdata(d.readfile("studies.txt")
+```
+
+Here are some examples of data file:
+(Please remember all lines start with # are comment lines, which will be ignored while loading.)
+
+**Sample of continuous data**
+```
+Atmaca 2005, 20.9,  6.0,  15,  27.4,  8.5,  14
+Guo 2014,    12.8,  5.2,  51,  11.9,  5.3,  51
+Liu 2010,    23.38, 5.86, 35,  24.32, 5.43, 35
+Wang 2012,   15.67, 8.78, 43,  18.67, 9.87, 43
+Xu 2002,     15.49, 7.16, 50,  21.72, 8.07, 50
+Zhao 2012,   12.8,  5.7,  40,  13.0,  5.2,  40
+
+#This is a sample of continuous data.
+#Input one study in a line;
+#Syntax: study name, m1, sd1, n1, m2, sd2, n2
+#m1, sd1, n1: mean, SD and number of experiment group;
+#m2, sd2, n2: mean, SD and number of control group.
+```
+
+**Sample of dichotomous data**
+```
+Fang 2015, 15, 40,  24, 37 
+Gong 2012, 10, 40,  18, 35 
+Liu 2015,  30, 50,  40, 50 
+Long 2012, 19, 40,  26, 40 
+Pan 2015a, 57, 100, 68, 100 
+Wang 2001, 13, 18,  17, 18 
+Wang 2003, 7,  86,  15, 86
+
+#This is a sample of binary data.
+#Input one study in a line;
+#Syntax: study name, e1, n1, e2, n2
+#e1,n1: events and number of experiment group;
+#e2,n2: events and number of control group.
+```
+
+**Sample of data with subgroup**
+```
+Fang 2015,15,40,24,37
+Gong 2012,10,40,18,35
+Liu 2015,30,50,40,50
+Long 2012,19,40,26,40
+Wang 2003,7,86,15,86
+<subgroup>name=short term
+Chen 2008,20,60,28,60
+Guo 2014,31,51,41,51
+Li 2015,29,61,31,60
+Yang 2006,21,40,31,40
+Zhao 2012,27,40,30,40
+<subgroup>name=medium term
+#<nototal>
+
+#This is a sample of subgroup.
+#Cumulative meta-analysis and Senstivity analysis will blind to all <subgroup> tags.
+#And you can add a line of <nototal> to hide the Overall result.
+```
+Please download all above sample code and data files (maybe updated) at www.pymeta.com.
+
+Contact
+---
+
+Deng Hongyong Ph.D
+
+Shanghai University of Traditional Chinese Medicine
+
+Shanghai, China 201203
+
+Email: dephew@126.com
+
+Web: www.PyMeta.com
+
