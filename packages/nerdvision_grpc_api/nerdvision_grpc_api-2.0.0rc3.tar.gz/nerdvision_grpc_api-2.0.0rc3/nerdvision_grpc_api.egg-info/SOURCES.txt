@@ -1,0 +1,9 @@
+nerdvision_pb2.py
+nerdvision_pb2_grpc.py
+setup.py
+nerdvision_grpc_api.egg-info/PKG-INFO
+nerdvision_grpc_api.egg-info/SOURCES.txt
+nerdvision_grpc_api.egg-info/dependency_links.txt
+nerdvision_grpc_api.egg-info/namespace_packages.txt
+nerdvision_grpc_api.egg-info/top_level.txt
+nerdvision_grpc_api.egg-info/zip-safe
