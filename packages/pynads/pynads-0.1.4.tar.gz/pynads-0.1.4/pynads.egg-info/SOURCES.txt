@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+pynads/__init__.py
+pynads/_utils.py
+pynads/_version.py
+pynads/nads.py
+pynads/nads_bind.cpython-39-x86_64-linux-gnu.so
+pynads.egg-info/PKG-INFO
+pynads.egg-info/SOURCES.txt
+pynads.egg-info/dependency_links.txt
+pynads.egg-info/requires.txt
+pynads.egg-info/top_level.txt
