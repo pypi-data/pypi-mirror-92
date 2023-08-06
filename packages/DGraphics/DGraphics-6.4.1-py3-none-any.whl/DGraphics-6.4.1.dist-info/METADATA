@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: DGraphics
+Version: 6.4.1
+Summary: An Object Based 2D (A bit 3D) Graphics Engine
+Home-page: https://github.com/VertexBufferObject/DGraphics
+Author: Darcy Day
+Author-email: darcy.day@outlook.com
+License: UNKNOWN
+Keywords: development 2d graphics engine
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5, <3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+Requires-Dist: pillow
+
+DGraphics 6.4x86_01 Dependencies (Order of importance):
+- Pygame
+- Pillow
+- Tkinter
+- PodSixNet (Optional for networking capabilities)
+
+
