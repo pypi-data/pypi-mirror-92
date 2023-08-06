@@ -1,0 +1,10 @@
+sphinx>=2.2
+sphinx-prompt
+furo
+recommonmark
+pyvisa
+numpy
+pandas
+argparse
+matplotlib
+tqdm
