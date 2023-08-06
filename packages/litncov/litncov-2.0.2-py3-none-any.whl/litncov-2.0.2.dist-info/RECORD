@@ -1,0 +1,11 @@
+litncov/__init__.py,sha256=kop3grA2P0XW0amdj2T43LEDkK9bZEZeKPQ2jcG6Cxg,646
+litncov/__main__.py,sha256=vBQ82334kX06ImDbFlPFgiBRiLIinwNk3z8Khs6hd74,31
+litncov/main.py,sha256=_RdQ1-bhMDJWrMVmBLxu28qRIsWQ8n6iC1JJ9moxNxU,7414
+litncov/user.py,sha256=-IeDiCvqPFRaZa8tFjx6NolhKiTPsp9qdl-5l-rj-7Q,11462
+litncov/util.py,sha256=uP2LvkEVo9D8hJg3KAwVeAkkv3uAjll9P3ZbX5VjnLk,1587
+litncov-2.0.2.dist-info/LICENSE,sha256=qH4xmVregJ0H2i4HJ00Vl245kjFNX_4sycWxgwjiU_o,1060
+litncov-2.0.2.dist-info/METADATA,sha256=Xx6WjQ9yDX8DEnzSsFoH5aFn2kJdULsyOWl_Tj0IJME,5085
+litncov-2.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+litncov-2.0.2.dist-info/entry_points.txt,sha256=B5ukqt_icfG5gUR7JMUujT-GhgQ-24Axn3C04f8_mjY,47
+litncov-2.0.2.dist-info/top_level.txt,sha256=87sd1qkrWVak0BvaFz1L10Rf4kwNXf1drRV4EIxhwsc,8
+litncov-2.0.2.dist-info/RECORD,,
