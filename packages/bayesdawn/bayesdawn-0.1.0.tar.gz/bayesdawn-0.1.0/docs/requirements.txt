@@ -1,0 +1,6 @@
+ipykernel
+pygments
+sphinx
+sphinx_rtd_theme
+nbsphinx
+nbsphinx-link
