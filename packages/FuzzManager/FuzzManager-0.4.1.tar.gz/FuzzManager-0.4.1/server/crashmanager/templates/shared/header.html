@@ -1,0 +1,85 @@
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="navbar-brand" href="#"><img alt="Mozilla" width="20" height="20" src="{{STATIC_URL}}img/logo.png"></a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="drop1" class="dropdown-toggle navbar-brand" data-toggle="dropdown" href="#menu">FuzzManager</a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                        {% if perms.crashmanager.view_crashmanager %}
+                        <li><a href="/crashmanager"><i class="glyphicon glyphicon-alert"> </i> CrashManager</a></li>
+                        {% endif %}
+                        {% if perms.crashmanager.view_taskmanager %}
+                        <li><a href="/taskmanager"><i class="glyphicon glyphicon-tasks"></i> TaskManager</a></li>
+                        {% endif %}
+                        {% if perms.crashmanager.view_ec2spotmanager %}
+                        <li><a href="/ec2spotmanager"><i class="glyphicon glyphicon-scale"></i> EC2SpotManager</a></li>
+                        {% endif %}
+                        {% if perms.crashmanager.view_covmanager %}
+                        <li><a href="/covmanager"><i class="glyphicon glyphicon-stats"></i> CovManager</a></li>
+                        {% endif %}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            {% if app_name == 'crashmanager' %}
+                <li><a href="{% url 'crashmanager:crashes' %}"><i class="glyphicon glyphicon-list-alt"></i> Crashes</a></li>
+                <li><a href="{% url 'crashmanager:signatures' %}"><i class="glyphicon glyphicon-tag"></i> Signatures</a></li>
+                <li><a href="{% url 'crashmanager:stats' %}"><i class="glyphicon glyphicon-object-align-bottom"></i> Statistics</a></li>
+                <li><a href="{% url 'crashmanager:bugproviders' %}"><i class="glyphicon glyphicon-globe"></i> Providers</a></li>
+            {% elif app_name == 'taskmanager' %}
+                <li><a href="{% url 'taskmanager:pool-list-ui' %}"><i class="glyphicon glyphicon-tasks"></i> Pools</a></li>
+            {% elif app_name == 'ec2spotmanager' %}
+                <li><a href="{% url 'ec2spotmanager:pools' %}"><i class="glyphicon glyphicon-scale"></i> Pools</a></li>
+                <li><a href="{% url 'ec2spotmanager:configs' %}"><i class="glyphicon glyphicon-list-alt"></i> Configurations</a></li>
+            {% elif app_name == 'covmanager' %}
+                <li><a href="{% url 'covmanager:reports' %}"><i class="glyphicon glyphicon-scale"></i> Reports</a></li>
+                <li><a href="{% url 'covmanager:collections' %}"><i class="glyphicon glyphicon-hdd"></i> Collections</a></li>
+                <li><a href="{% url 'covmanager:repositories' %}"><i class="glyphicon glyphicon-book"></i> Repositories</a></li>
+                <li><a href="{% url 'covmanager:reportconfigurations' %}"><i class="glyphicon glyphicon-filter"></i> Report Configurations</a></li>
+	        {% endif %}
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if perms.crashmanager.view_crashmanager %}
+                <li>
+                    <form class="navbar-form navbar-right" role="search" id="simple_search" method="get" action="{% url 'crashmanager:crashes' %}">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" id="search" name="q" placeholder='{{ q|default:"Search" }}'/>
+                            <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                        </div>
+                    </form>
+                </li>
+                {% endif %}
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        <i class="glyphicon glyphicon-user"></i>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'logout' %}?next={{request.path}}?{{request.GET.urlencode}}"><i class="glyphicon glyphicon-lock"></i> Logout</a>
+                            {% else %}
+                                <a href="{% url 'login' %}?next={{request.path}}?{{request.GET.urlencode}}"><i class="glyphicon glyphicon-lock"></i> Login</a>
+                            {% endif %}
+                        </li>
+                        <li class="divider" role="presentation"></li>
+                        {% if perms.crashmanager.view_crashmanager %}
+                        <li><a href="{% url 'crashmanager:usersettings' %}"><i class="glyphicon glyphicon-cog"></i> Settings</a></li>
+                        {% endif %}
+                        <li><a href="#"><i class="glyphicon glyphicon-envelope"></i> Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
