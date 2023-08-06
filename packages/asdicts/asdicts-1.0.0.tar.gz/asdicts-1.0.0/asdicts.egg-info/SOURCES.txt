@@ -1,0 +1,16 @@
+AUTHORS.rst
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+asdicts/__init__.py
+asdicts/dict.py
+asdicts.egg-info/PKG-INFO
+asdicts.egg-info/SOURCES.txt
+asdicts.egg-info/dependency_links.txt
+asdicts.egg-info/not-zip-safe
+asdicts.egg-info/requires.txt
+asdicts.egg-info/top_level.txt
+tests/test_dict.py
