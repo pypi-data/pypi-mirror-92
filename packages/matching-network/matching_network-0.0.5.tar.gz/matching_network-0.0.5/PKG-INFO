@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: matching-network
+Version: 0.0.5
+Summary: Design lumped-parameters matching networks (L-sections)
+Home-page: https://pypi.org/project/matching-network/
+License: MIT
+Keywords: matching networks,l-section-matching,lumped-parameters-matching
+Author: Francesco Urbani
+Author-email: francescourbanidue@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: quantiphy (>=2.13.0,<3.0.0)
+Project-URL: Documentation, https://github.com/urbanij/matching-network
+Project-URL: Repository, https://github.com/urbanij/matching-network
+Description-Content-Type: text/markdown
+
+<div align="right" style="text-align:right"><i><a href="https://urbanij.github.io/">Francesco Urbani</a></i></div>
+
+### Index of Jupyter (IPython) Notebooks
+
+|Title                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------|
+|<a href="https://github.com/urbanij/matching-network/blob/master/aux/L-section_matching_calculations.ipynb">L-section_matching_calculations</a>|
+|<a href="https://github.com/urbanij/matching-network/blob/master/aux/calculations.ipynb">Calculations</a>|
+|<a href="https://github.com/urbanij/matching-network/blob/master/aux/demo_matching_network.ipynb">Demo</a>|
+
+
+
+---
+
+
+[![Downloads](https://pepy.tech/badge/matching-network)](https://pepy.tech/project/matching-network)
+
+
+Installation
+============
+
+```sh
+pip install matching-network
+```
+
+
+
+Documentation
+=============
+
+
+```python
+import matching_network as mn
+
+
+impedance_you_have         = 90 + 32j # Ω 
+impedance_you_want_to_have = 175      # Ω
+
+frequency                  = 900e6    # Hz
+
+mn.L_section_matching(impedance_you_have, impedance_you_want_to_have, frequency).match()
+```
+
