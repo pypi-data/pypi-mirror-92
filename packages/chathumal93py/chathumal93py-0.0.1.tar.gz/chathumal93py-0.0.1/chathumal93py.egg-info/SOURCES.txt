@@ -1,0 +1,5 @@
+setup.py
+chathumal93py.egg-info/PKG-INFO
+chathumal93py.egg-info/SOURCES.txt
+chathumal93py.egg-info/dependency_links.txt
+chathumal93py.egg-info/top_level.txt
