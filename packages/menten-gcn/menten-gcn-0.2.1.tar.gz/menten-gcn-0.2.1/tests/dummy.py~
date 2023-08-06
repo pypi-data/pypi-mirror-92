@@ -1,0 +1,10 @@
+from test_menten_gcn import *
+'''
+import numpy as np
+
+x = [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+i = [ 4, 5, 2 ]
+T = [x[j] for j in i]
+print( T )
+'''
+test_expected_md_traj_results()
