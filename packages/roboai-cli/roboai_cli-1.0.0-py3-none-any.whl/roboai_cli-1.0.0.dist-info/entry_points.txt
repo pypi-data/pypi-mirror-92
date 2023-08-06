@@ -1,0 +1,3 @@
+[console_scripts]
+roboai=roboai_cli:run
+
