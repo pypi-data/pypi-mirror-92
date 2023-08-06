@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: wable
+Version: 0.0.4
+Summary: A client to communicate with wable.org api
+Home-page: https://wable.org
+License: Apache-2.0
+Keywords: wable,service,client
+Author: Madhu
+Author-email: madhu@wable.org
+Maintainer: Madhu
+Maintainer-email: madhu@wable.org
+Requires-Python: >3.6
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, https://gitlab.com/wable/wable-client
+Description-Content-Type: text/markdown
+
+## Wable client
+
+A client to communicate with wable.org api.
+
+## Requirements
+
+- [python > 3.7](https://www.python.org/downloads/release/python-370/)
+- [pip](https://pip.pypa.io/en/stable/)
+
+## Development
+
+Clone the repository
+
+```sh
+pip install poetry
+poetry install
+```
+
+To install a new python package
+
+```sh
+poetry add [NEW_PACKAGE]
+```
+
+To export poetry lock file to `requirements.txt` run
+
+```sh
+make deps
+```
+
+## Tests
+
+```sh
+make test
+```
+
+## Installation
+
+The package is published at https://pypi.org/project/wable/
+
+```sh
+pip install wable
+```
+
+## Usage
+
+```python
+from wable.client import Wable
+
+w = Wable()
+# more to come here
+```
+
