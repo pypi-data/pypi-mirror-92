@@ -1,0 +1,40 @@
+{
+    "version": "1.0.0b15",
+    "name": "aiidalab-widgets-base",
+    "author_email": "aiidalab@materialscloud.org",
+    "url": "https://github.com/aiidalab/aiidalab-widgets-base",
+    "license": "MIT",
+    "classifiers": [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Framework :: AiiDA",
+        "Development Status :: 4 - Beta"
+    ],
+    "install_requires": [
+        "aiida-core>=1.0.0,<2.0.0",
+        "ase",
+        "bokeh",
+        "fileupload",
+        "ipywidgets",
+        "more_itertools",
+        "nglview",
+        "numpy",
+        "optimade-client",
+        "pandas",
+        "scikit-learn"
+    ],
+    "extras_require": {
+        "docs": [
+            "sphinx",
+            "sphinx-rtd-theme",
+            "sphinxcontrib-contentui",
+            "sphinxcontrib-details-directive"
+        ],
+        "pre-commit": [
+            "pre-commit==1.17.0",
+            "yapf==0.28.0",
+            "prospector==1.1.7",
+      	    "pylint==2.3.1"
+        ]
+    }
+}
