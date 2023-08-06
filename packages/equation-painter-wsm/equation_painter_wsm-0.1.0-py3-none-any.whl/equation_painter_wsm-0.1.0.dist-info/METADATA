@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: equation-painter-wsm
+Version: 0.1.0
+Summary: A way for teachers to make equation painter worksheets for their students.
+Home-page: https://github.com/cole-wilson/wsm
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pillow
+Requires-Dist: xlsxwriter
+
+# Equation_Painter
+A way for teachers to make equation painter worksheets for their students.
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
