@@ -1,0 +1,9 @@
+toppy/__init__.py,sha256=Y5AWorJb_b_3MnMJwGUhBVT_qdIwerQRKTRfui4YYXE,96
+toppy/client.py,sha256=i5X8lEaBeq__WhYiqfBe4_0sj5tjLG9sNL1IV5xwkcY,6945
+toppy/models/__init__.py,sha256=LRXybEnumIimMeBKRaqm2fu-Bjcts5G725u-56ppz6c,114
+toppy/models/user.py,sha256=Po3-GqvAveONjdZjXh_6H20H0JQSk_NfPJTstqmGJ7k,5907
+toppy/models/widget.py,sha256=H_CsYgziqJDCoJrdjoarooe01I7CtD6qyrYRYzw9Dwc,4810
+top.py-0.1.0.dist-info/METADATA,sha256=M5ZQ24zWogk5O2fhw2IxYe4RbJ4Cr3SO2bcEQS6QrAY,245
+top.py-0.1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+top.py-0.1.0.dist-info/top_level.txt,sha256=53IYLLLLVUU9maAIT5kyHVkl6VgyfGoCd4FaSf25RiE,6
+top.py-0.1.0.dist-info/RECORD,,
