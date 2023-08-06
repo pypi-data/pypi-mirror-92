@@ -1,0 +1,3 @@
+[console_scripts]
+xbus-python-client = xbus.cli:main
+
