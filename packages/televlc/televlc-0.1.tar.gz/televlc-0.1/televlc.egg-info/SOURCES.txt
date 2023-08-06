@@ -1,0 +1,8 @@
+README.md
+setup.py
+televlc/__init__.py
+televlc/televlc.py
+televlc.egg-info/PKG-INFO
+televlc.egg-info/SOURCES.txt
+televlc.egg-info/dependency_links.txt
+televlc.egg-info/top_level.txt
