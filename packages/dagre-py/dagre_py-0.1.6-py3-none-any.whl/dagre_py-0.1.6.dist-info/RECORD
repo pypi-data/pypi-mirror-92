@@ -1,0 +1,12 @@
+dagre_py/__init__.py,sha256=n3oM6B_EMz93NsTI18NNZd-jKFcUPzUkbIKj5VFK5ok,22
+dagre_py/core.py,sha256=x8AI8vHJVJBW4LYMSFMSvQgr0dy3IMrvK5hBln9vZoE,1831
+dagre_py/js/d3.v5.min.js,sha256=0OcjjB7oKWCwru7gzilCYvXgTE9augkyvMI0WFC1ODg,236746
+dagre_py/js/dagre-d3.min.js,sha256=Winv5erj3_tj5qlKolgTwxUrjS8E-cm6OEFOGfzvU6Q,1168245
+dagre_py/js/index.html,sha256=D2GI286d5LcIIYyynfNlGYuZqYmM8mYP8oitq3gpk64,677
+dagre_py/js/script.js,sha256=PnJ1HPWdUp6BclXPKTR34pm8ZwFVZx4BFpb8Y-JXzjg,2328
+dagre_py/js/style.css,sha256=UDYH10hk9MZKSWHFoGnGE7KCJDdrdFqNEUG79xWCLCM,904
+dagre_py/js/tippy.all.min.js,sha256=HdIQOX-k0mj4UNWUFtyyCW-QecRRwFwr5vMVIMReANU,53027
+dagre_py-0.1.6.dist-info/LICENSE,sha256=q9KTIiRSTnbyfQAg3Iu1TprqKqbdlv2er2QxamCtRAU,1070
+dagre_py-0.1.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dagre_py-0.1.6.dist-info/METADATA,sha256=9gNUL0f-HzQzOf6JUS0Jza8eTOAPbqq9rjCHvMI_AGM,616
+dagre_py-0.1.6.dist-info/RECORD,,

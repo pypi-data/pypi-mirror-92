@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dagre-py
+Version: 0.1.6
+Summary: Thin python wrapper around dagre-d3
+Home-page: https://github.com/Vernacular-ai/dagre-py
+License: MIT
+Author: Abhinav Tushar
+Author-email: abhinav@vernacular.ai
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/Vernacular-ai/dagre-py
