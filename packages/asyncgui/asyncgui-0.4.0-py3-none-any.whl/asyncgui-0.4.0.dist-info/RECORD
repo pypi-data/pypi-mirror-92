@@ -1,0 +1,9 @@
+asyncgui/__init__.py,sha256=p9RRbWbbDLqdaoTa3TP8PG5jXe2c47xBlGdVIuH6CcM,47
+asyncgui/_core.py,sha256=no7QAzfUEWBiEZK4GX0Obmr_RnsZVUi1r5rdmOiabek,8925
+asyncgui/adaptor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asyncgui/adaptor/to_trio.py,sha256=mfJ8HkLAXxlB0A4QcXzOo039wvOX7D6YjG-d0V4CKqE,2452
+asyncgui/exceptions.py,sha256=syIqteKUnogIj1upRo2IEJ5RQMicuj72hEnvOWXt_x4,393
+asyncgui-0.4.0.dist-info/LICENSE,sha256=zdEfMrLu9-uJk1Y-D7fn_gqgODq71StrNs47LvNE5b0,1055
+asyncgui-0.4.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+asyncgui-0.4.0.dist-info/METADATA,sha256=uVdLy1baCyxbgJhRRIa0ZXpa0DJtrx6AnZq0KALbkuY,1426
+asyncgui-0.4.0.dist-info/RECORD,,
