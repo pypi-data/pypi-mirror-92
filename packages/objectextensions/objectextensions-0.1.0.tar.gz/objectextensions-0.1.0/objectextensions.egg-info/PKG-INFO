@@ -1,0 +1,133 @@
+Metadata-Version: 2.1
+Name: objectextensions
+Version: 0.1.0
+Summary: A basic framework for implementing an extension pattern
+Home-page: https://github.com/immijimmi/objectextensions
+Author: immijimmi
+Author-email: imranhamid99@msn.com
+License: MIT
+Download-URL: https://github.com/immijimmi/objectextensions/archive/v0.1.0.tar.gz
+Description: # Object Extensions
+        
+        ###### A basic framework for implementing an extension pattern
+        
+        ## Quickstart
+        
+        ### Setup
+        
+        Below is an example of an extendable class, and an example extension that can be applied to it.
+        
+        ```python
+        from objectextensions import Extendable
+        
+        
+        class HashList(Extendable):
+            def __init__(self, iterable=()):
+                self.values = {}
+                self.list = []
+        
+                for value in iterable:
+                    self.append(value)
+        
+            def append(self, item):
+                self.list.append(item)
+                self.values[item] = self.values.get(item, []) + [len(self.list) - 1]
+        
+            def index(self, item):
+                """
+                Returns all indexes containing the specified item.
+                Much lower time complexity than a typical list due to dict lookup usage
+                """
+        
+                if item not in self.values:
+                    raise ValueError("{0} is not in hashlist".format(item))
+        
+                return self.values[item]
+        ```
+        ```python
+        from objectextensions import Extension
+        
+        
+        class Listener(Extension):
+            @staticmethod
+            def can_extend(target_cls):
+                return issubclass(target_cls, HashList)
+        
+            @staticmethod
+            def extend(target_cls):
+                target_cls.increment_append_count = Listener._increment_append_count
+        
+                Extension.wrap(target_cls, "__init__", Listener._wrap_init)
+                Extension.wrap(target_cls, 'append', Listener._wrap_append)
+        
+            def _increment_append_count(self):
+                self.append_count += 1
+        
+            def _wrap_init(self, *args, **kwargs):
+                self.append_count = 0
+                yield
+        
+            def _wrap_append(self, *args, **kwargs):
+                yield
+                self.increment_append_count()
+        ```
+        
+        ### Instantiation
+        ```python
+        HashListWithListeners = HashList.with_extensions(Listener)
+        my_hashlist = HashListWithListeners(iterable=[5,2,4])
+        ```
+        or, for shorthand:
+        ```python
+        my_hashlist = HashList.with_extensions(Listener)(iterable=[5,2,4])
+        ```
+        
+        ### Result
+        ```python
+        >>> my_hashlist.append_count  # Attribute that was added by the Listener extension
+        3
+        >>> my_hashlist.append(7)  # Listener has wrapped this to increment .append_count
+        >>> my_hashlist.append_count
+        4
+        ```
+        
+        ## Functionality
+        
+        ### Properties
+        
+        Extendable.**extensions**\
+        &nbsp;&nbsp;&nbsp;&nbsp;Returns a reference to a frozenset containing the applied extensions.\
+        &nbsp;
+        
+        ### Methods
+        
+        Extendable.**with_extensions**(*cls, \*extensions: Type[Extension]*)\
+        &nbsp;&nbsp;&nbsp;&nbsp;Returns a copy of the class with the provided extensions applied to it.\
+        &nbsp;
+        
+        Extension.**extend**(*target_cls: Extendable*)\
+        &nbsp;&nbsp;&nbsp;&nbsp;Abstract staticmethod which must be overridden.\
+        &nbsp;&nbsp;&nbsp;&nbsp;Any modification of the target class should take place in this function.\
+        &nbsp;
+        
+        Extension.**can_extend**(*target_cls: Extendable*)\
+        &nbsp;&nbsp;&nbsp;&nbsp;Abstract staticmethod which must be overridden.\
+        &nbsp;&nbsp;&nbsp;&nbsp;Should return a bool indicating whether this Extension can be applied to the target class.\
+        &nbsp;
+        
+        Extension.**wrap**(*target_cls: Extendable, method_name: str,*\
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*gen_func: Callable[[Extendable, Any, Any], Generator[None, Any, None]]*)\
+        &nbsp;&nbsp;&nbsp;&nbsp;Used to wrap an existing method on the target class.\
+        &nbsp;&nbsp;&nbsp;&nbsp;Passes copies of the method parameters to the generator function provided.\
+        &nbsp;&nbsp;&nbsp;&nbsp;The generator function should yield once,\
+        &nbsp;&nbsp;&nbsp;&nbsp;with the yield statement receiving a copy of the result of executing the core method.\
+        &nbsp;
+        
+Keywords: extensions,plugins
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
