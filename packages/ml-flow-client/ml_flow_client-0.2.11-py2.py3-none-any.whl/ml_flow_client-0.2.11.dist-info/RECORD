@@ -1,0 +1,15 @@
+ml_flow_client/__init__.py,sha256=wHK3w_3wVTjhR-ITfbwpKOH0yUI2zjty6sHOemvS6-M,374
+ml_flow_client/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_flow_client/skeleton.py,sha256=vVx3-Lj8Z1rwNJGxXorQe4MD2Hsqwv-D1KARBjnMyg8,2779
+ml_flow_client/flow/__init__.py,sha256=wHK3w_3wVTjhR-ITfbwpKOH0yUI2zjty6sHOemvS6-M,374
+ml_flow_client/modell/__init__.py,sha256=wHK3w_3wVTjhR-ITfbwpKOH0yUI2zjty6sHOemvS6-M,374
+ml_flow_client/prep/__init__.py,sha256=wHK3w_3wVTjhR-ITfbwpKOH0yUI2zjty6sHOemvS6-M,374
+ml_flow_client/prep/prep.py,sha256=Inn5xybtV3WQMh532hSfUck48bqQOxoTfCQt4_4HjN0,436
+ml_flow_client/transfer/__init__.py,sha256=wHK3w_3wVTjhR-ITfbwpKOH0yUI2zjty6sHOemvS6-M,374
+ml_flow_client/transfer/connector.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml_flow_client-0.2.11.dist-info/AUTHORS.rst,sha256=EDox49G4IrUi9hKatZ1zxGc1I-9ZmyhfCjtXGfgK3oM,77
+ml_flow_client-0.2.11.dist-info/LICENSE.txt,sha256=9VddiAAAw529mHA89Pq6XHnG1XsFgbtxdKjeE21KCJE,1078
+ml_flow_client-0.2.11.dist-info/METADATA,sha256=FX1xiJdMN5-t-9oVd1dZFpuk5U7VF0qj5cY7zBRYS-A,1249
+ml_flow_client-0.2.11.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ml_flow_client-0.2.11.dist-info/top_level.txt,sha256=7GDKhRoxVwYsgmx2BdxvmeWDxLh2-hhJCfgCuihiZP0,15
+ml_flow_client-0.2.11.dist-info/RECORD,,
