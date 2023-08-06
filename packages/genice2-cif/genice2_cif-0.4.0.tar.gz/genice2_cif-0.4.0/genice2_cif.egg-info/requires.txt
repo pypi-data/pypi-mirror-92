@@ -1,0 +1,3 @@
+cif2ice>=0.2.2
+GenIce2
+validators

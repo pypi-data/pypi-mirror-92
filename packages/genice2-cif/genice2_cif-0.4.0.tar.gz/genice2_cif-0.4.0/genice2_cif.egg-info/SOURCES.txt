@@ -1,0 +1,12 @@
+README.md
+setup.py
+genice2_cif/__init__.py
+genice2_cif.egg-info/PKG-INFO
+genice2_cif.egg-info/SOURCES.txt
+genice2_cif.egg-info/dependency_links.txt
+genice2_cif.egg-info/entry_points.txt
+genice2_cif.egg-info/requires.txt
+genice2_cif.egg-info/top_level.txt
+genice2_cif/lattices/__init__.py
+genice2_cif/lattices/cif.py
+genice2_cif/lattices/zeolite.py
