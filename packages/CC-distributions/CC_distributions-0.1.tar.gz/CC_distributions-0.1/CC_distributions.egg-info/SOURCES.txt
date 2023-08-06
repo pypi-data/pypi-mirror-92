@@ -1,0 +1,10 @@
+setup.py
+CC_distributions/Binomialdistribution.py
+CC_distributions/Gaussiandistribution.py
+CC_distributions/Generaldistribution.py
+CC_distributions/__init__.py
+CC_distributions.egg-info/PKG-INFO
+CC_distributions.egg-info/SOURCES.txt
+CC_distributions.egg-info/dependency_links.txt
+CC_distributions.egg-info/not-zip-safe
+CC_distributions.egg-info/top_level.txt
