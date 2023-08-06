@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "grafiti"
+version = "0.1.0"
+description = "Automatic graph-based dependency resolution"
+authors = ["Shiv Dhar <shiv.dhar@gmail.com>"]
+license = "GPL-3.0-only"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.dephell.main]
+from = {format = "poetry", path = "pyproject.toml"}
+to = {format = "setuppy", path = "setup.py"}
