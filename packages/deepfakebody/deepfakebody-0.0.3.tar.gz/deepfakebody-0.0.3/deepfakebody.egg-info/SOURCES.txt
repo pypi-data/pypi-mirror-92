@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+deepfakebody/__init__.py
+deepfakebody.egg-info/PKG-INFO
+deepfakebody.egg-info/SOURCES.txt
+deepfakebody.egg-info/dependency_links.txt
+deepfakebody.egg-info/requires.txt
+deepfakebody.egg-info/top_level.txt
+deepfakebody/cardiovascular/__init__.py
+deepfakebody/cardiovascular/deepfakeecg/__init__.py
+deepfakebody/cardiovascular/deepfakeecg/deepfakeecg.py
+deepfakebody/digestive/__init__.py
+deepfakebody/digestive/gitract/__init__.py
+deepfakebody/digestive/gitract/functions.py
