@@ -1,0 +1,10 @@
+analytics_sdk/__init__.py,sha256=qO3-f9yu_9cLcIgrC6JEbNmtrUUmw5eHRwdXGyOWZWc,30
+analytics_sdk/oap_dash.py,sha256=ADB_rR--SoTMQJV_pgobMpVC_wiuLtMuxbv7VSrupd4,7656
+analytics_sdk/utilities.py,sha256=u5ZBA9qvfZtjVArq01FveAxGuUXul6BsHR37AeoDdAE,1423
+analytics_sdk/assets/bootstrap.css,sha256=lGykdeaSpYQg9zra-VQLOyqZtMzYsWyNfBCfO7hFeM4,275853
+analytics_sdk/assets/bootstrap.min.css,sha256=zTG0zPVM4E_H21CVLHMtCnMGFIkvJxWJ0u5xtnhppOc,151143
+opsramp_analytics_utils-1.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+opsramp_analytics_utils-1.0.6.dist-info/METADATA,sha256=G7We9RYLFc4ayr_Rfa6A0mu7RmGMoMwZnck4bNVM0H0,689
+opsramp_analytics_utils-1.0.6.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+opsramp_analytics_utils-1.0.6.dist-info/top_level.txt,sha256=5xfoK69yOx9DcexzQZVN0xOW7Mb5jja-5UZ6jBBGuGE,14
+opsramp_analytics_utils-1.0.6.dist-info/RECORD,,
