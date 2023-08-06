@@ -1,0 +1,4 @@
+pydantic>=1.7,<2
+pyzmq==21.0.1
+arivo.om
+orjson
