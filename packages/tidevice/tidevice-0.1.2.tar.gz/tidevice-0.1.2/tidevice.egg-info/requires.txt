@@ -1,0 +1,6 @@
+cached_property
+logzero
+Pillow
+requests
+colored
+packaging
