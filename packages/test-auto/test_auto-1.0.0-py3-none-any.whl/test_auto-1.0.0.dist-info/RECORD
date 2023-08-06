@@ -1,0 +1,17 @@
+testauto/__init__.py,sha256=80qvvPCzTrGVX1oiT9VqwM4fR5ZJDijOTCqVTe1Ief0,160
+testauto/__main__.py,sha256=oZgaDIOaW4hF6YmlZzfiomSk6IGNnsWKr3VOS_pKmPI,119
+testauto/case.py,sha256=7hKoDPGCnWOAoSk4HOdzlaaY-10yKGRvSJgOme4Hyog,2789
+testauto/core.py,sha256=HwYP4O0QLu4DqXf9-2-QyisAM9CrosfW_Tok3OnjeF4,9732
+testauto/recorder.py,sha256=RlakBf-5Gv9gW7MyKtpvw1d4IS2EFXDNeyA6ZORTFT4,12763
+testauto/runner.py,sha256=mu_a5E3yCtFgTxazmFQ1Ypug4zh10B-WfbRQvLYd18k,6107
+testauto/task.py,sha256=EcSt3u8pbtuIjjbHoR9jThwkHdsVEGzYN1YLp7hVCEw,11864
+testauto/util.py,sha256=e2_hmq8jzRo-dw3tt85462lHcB-OMkV5eW_yVOk6z8Y,3444
+testauto_test/__init__.py,sha256=yK_MWuPtajXWQLFrjHw7aeixSvIutR_FQxngzTiBBB4,32
+testauto_test/getting_started.py,sha256=Cd84bvSbUiK97qdfqn7B9f7VfIbS0EeZt2AdXj2BKqY,207
+testauto_test/test_case.py,sha256=y3fC5ypqt2Iu69PRzdymsw7ioHzGcxeoyV9Wom_bkKk,3007
+testauto_test/test_task.py,sha256=rYjxK5W6LZuC2LKgIWZYmA2s2GyghfV3CPbV7uVaFuc,1730
+test_auto-1.0.0.dist-info/LICENSE,sha256=0RU55di8RvWaTHpvSUsF5Pz9z2XKauUJID2INzCnxTc,1070
+test_auto-1.0.0.dist-info/METADATA,sha256=dXCMB5rdsKk_agBgYPRs_bl_JyiKtokMiX07sgVxqs4,17525
+test_auto-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+test_auto-1.0.0.dist-info/top_level.txt,sha256=AYvoZcwo3Qdrc4FM4CSlDYzZybm9XiWSzr79uBIhAX0,23
+test_auto-1.0.0.dist-info/RECORD,,
