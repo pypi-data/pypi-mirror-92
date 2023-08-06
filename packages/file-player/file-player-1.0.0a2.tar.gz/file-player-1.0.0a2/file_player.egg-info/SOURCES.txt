@@ -1,0 +1,11 @@
+README.md
+setup.py
+file_player.egg-info/PKG-INFO
+file_player.egg-info/SOURCES.txt
+file_player.egg-info/dependency_links.txt
+file_player.egg-info/entry_points.txt
+file_player.egg-info/requires.txt
+file_player.egg-info/top_level.txt
+filep/__main__.py
+filep/config.py
+filep/main_window.py
