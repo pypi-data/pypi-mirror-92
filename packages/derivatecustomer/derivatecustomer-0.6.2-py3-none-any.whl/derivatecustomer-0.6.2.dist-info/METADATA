@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: derivatecustomer
+Version: 0.6.2
+Summary: AgriConnect internal tool to make a derivation of PlantingHouse for customer
+Home-page: https://gitlab.com/agriconnect/tools/derivatecustomer
+License: MIT
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: click-help-colors (>=0.6,<0.7)
+Requires-Dist: dulwich (>=0.19.13,<0.20.0)
+Requires-Dist: git-url-parse (>=1.2.2,<2.0.0)
+Requires-Dist: logbook (>=1.5.3,<2.0.0)
+Requires-Dist: single-version (>=1.5.1,<2.0.0)
+Requires-Dist: unidecode (>=1.1.1,<2.0.0)
+Requires-Dist: vistickedword (>=0.9.5,<0.10.0)
+Project-URL: Repository, https://gitlab.com/agriconnect/tools/derivatecustomer.git
+Description-Content-Type: text/x-rst
+
+================
+DerivateCustomer
+================
+
+`AgriConnect`_ internal tool to make a derivation of PlantingHouse for customer.
+
+Usage
+-----
+
+- Fork the PlantingHouse repo.
+- Go to "Settings > General > Change path", change to customer codename.
+- Run the command, passing forked repo URL. Example:
+
+.. code-block:: sh
+
+    python3 -m derivatecustomer -g git@gitlab.com:quan/phuc-daothanh.git -n "Phúc Đạo Thạnh" -s fa
+
+- To learn about this tool's options, run with ``--help``:
+
+.. code-block:: sh
+
+    python3 -m derivatecustomer --help
+
+
+.. _agriconnect: https://agriconnect.vn
+
