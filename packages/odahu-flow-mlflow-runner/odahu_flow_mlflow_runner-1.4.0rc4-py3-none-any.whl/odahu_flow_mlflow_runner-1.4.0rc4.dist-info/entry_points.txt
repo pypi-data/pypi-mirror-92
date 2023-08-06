@@ -1,0 +1,5 @@
+[console_scripts]
+odahu-flow-mlflow-project-runner = odahuflow.trainer.mlflow_projects.runner:main
+odahu-flow-mlflow-runner = odahuflow.trainer.mlflow_full.runner:main
+odahu-flow-mlflow-wrapper = odahuflow.trainer.helpers.wrapper.wrapper:main
+
