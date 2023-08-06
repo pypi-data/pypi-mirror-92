@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+stickytape/__init__.py
+stickytape/main.py
+stickytape/prelude.py
+stickytape/stdlib.py
+stickytape.egg-info/PKG-INFO
+stickytape.egg-info/SOURCES.txt
+stickytape.egg-info/dependency_links.txt
+stickytape.egg-info/entry_points.txt
+stickytape.egg-info/top_level.txt
