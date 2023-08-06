@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: names-matcher
+Version: 1.0.2
+Summary: Fuzzy biject people's names between two lists.
+Home-page: https://github.com/athenian/names-matcher
+Author: Athenian
+Author-email: vadim@athenian.co
+License: Apache-2.0
+Description: # names-matcher
+        [![Build Status](https://github.com/athenianco/names-matcher/workflows/Push/badge.svg?branch=master)](https://github.com/athenianco/names-matcher/actions)
+        [![Code coverage](https://codecov.io/github/athenianco/names-matcher/coverage.svg)](https://codecov.io/github/athenianco/names-matcher)
+        [![PyPI package](https://badgen.net/pypi/v/names-matcher)](https://pypi.org/project/names-matcher/)
+        
+        Fuzzy biject people's names between two lists.
+        
+Keywords: fuzzy matching
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
