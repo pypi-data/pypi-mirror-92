@@ -1,0 +1,58 @@
+{% extends "articles/lart-de-classifier-les-decks/_layout.html" %}
+
+{% block title %}
+L'Art de classifier les decks
+{% endblock %}
+
+{% block section %}
+{% trans trimmed
+	partie_1=link("/articles/lart-de-classifier-les-decks/classification-en-macrotypes"),
+	partie_2=link("/articles/lart-de-classifier-les-decks/categories-de-decks"),
+	partie_3=link("/articles/lart-de-classifier-les-decks/classification-en-tiers"),
+	partie_4=link("/articles/lart-de-classifier-les-decks/pour-aller-plus-loin")
+%}
+<p>
+	Au sens premier, le metagame est l'étude des différentes stratégies qu'un jeu permet. Avoir une
+	vue globale des stratégies possibles et de leurs efficacités les unes par rapport aux autres
+	est un point crucial pour progresser et améliorer son style de jeu. Vouloir regrouper les
+	différents decks selon leurs points communs ou leurs startégies permet de mieux les étudier.
+	Par conséquent, comment classer les deck ?
+</p>
+<p>
+	Deux méthodes s'opposent :
+</p>
+<ul>
+	<li>
+		L'approche par <strong>archétype</strong> qui rassemble des decks similaires en terme de
+		cartes jouées ;
+	</li>
+	<li>
+		L'approche en <strong>macrotype</strong> qui rassemble des decks dont le plan de jeu est
+		similaire. Cette approche rapproche un maximum de decks dans un minimum de macrotypes.
+	</li>
+</ul>
+<p>
+	Cet article est de taille conséquente ; pour en faciliter la lecture, son contenu a été découpé
+	en plusieurs sections :
+</p>
+<ul>
+	<li>
+		{{ partie_1 }}
+		présente les classifications en macrotypes les plus répandues, leurs avantages et leurs limites.
+	</li>
+	<li>
+		{{ partie_2 }}
+		présente les raffinements intermédiaires entre les classifications en macrotypes et
+		archétypes.
+	</li>
+	<li>
+		{{ partie_3 }}
+		étudie la classification en tier et de l'évolution d'un metagame avec le temps.
+	</li>
+	<li>
+		{{ partie_4 }}
+		conclue cet article et propose des pistes de réflexion.
+	</li>
+</ul>
+{% endtrans %}
+{% endblock %}
