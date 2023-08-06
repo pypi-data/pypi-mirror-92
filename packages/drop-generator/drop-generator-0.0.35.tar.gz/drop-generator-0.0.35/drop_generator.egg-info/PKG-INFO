@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: drop-generator
+Version: 0.0.35
+Summary: RPG Loot Drop Engine
+Home-page: https://gitlab.com/ramencatz/python-loot
+Author: Mascha Loomis
+Author-email: mascha.loomis@gmail.com
+License: MIT
+Description: # RPG Loot Drop Engine
+        What started as a personal project of getting better at python and learning about lootboxes turned into something that might be useful to others.
+        
+        These sites helped me understand the basic concept and mechanics of loot boxes/tables:
+        * [How to code monster loot drops](https://gamedevelopment.tutsplus.com/tutorials/how-to-code-monster-loot-drops--cms-20449)
+        * [Loot Drop Tables](https://lostgarden.home.blog/2014/12/08/loot-drop-tables/)
+        
+        When I stumbled across this two article series, I was "Booyah!!!!".  The original code was written in C#.  This project is my resulting translation.
+        * [Loot-Tables, Random Maps and Monsters - Part I](https://www.codeproject.com/Articles/420046/Loot-Tables-Random-Maps-and-Monsters-Part-I)
+        * [Loot-Tables, Random Maps and Monsters - Part II](https://www.codeproject.com/Articles/420845/Loot-Tables-Random-Maps-and-Monsters-Part-II)
+        
+        Differences between the original and this engine:
+        * The flag `always` will always drop *at least* one item from a table or of that item.  Initial testing showed that `always` would always drop *one and only* one.  To always drop *one and only one* `always` and `unique` will both need to be `true`.
+        * The `Randomizer`  was not implemented
+        * The `IRDSObjectCreator` and subsequent code was not implemented.  I didn't see the need, based on what I was trying to do.
+        
+        ## Install 
+        
+        `pip install drop-generator`
+        
+        ## Sample code
+        ```python
+        from dropgen.RDSTable import RDSTable
+        from dropgen.RDSItem import RDSItem
+        
+        if __name__ == '__main__':
+            loot_table = RDSTable(count=5)
+        
+            loot_table.add_entry(RDSItem("Ham Sandwich"))
+            loot_table.add_entry(RDSItem("Felt Hat"))
+            loot_table.add_entry(RDSItem("Diamond Ring"))
+            loot_table.add_entry(RDSItem("Red Brick"))
+            loot_table.add_entry(RDSItem("Feral Cat"))
+            loot_table.add_entry(RDSItem("Empty Flask"))
+            loot_table.add_entry(RDSItem("Someone's garbage"))
+        
+            results = loot_table.rds_result
+        
+            print("Simple loot drop. Everything has the same chance")
+            for result in results:
+                print(f"\t{result}")
+        ```
+        
+        ## Code changes to try out
+        Flags can be set at `RDSItem` or `RDSTable` creation time or set/adjusted upon being added to the parent `RDSTable`. 
+        
+        ```python
+        loot_table.add_entry(RDSItem("Feral Cat", probability=5))
+        ```
+        and
+        ```python
+        loot_table.add_entry(RDSItem("Feral Cat"), probability=5)
+        ```
+        These two statements functionally achieve the same thing.
+        
+        The flags you can set.
+        * `always`: An item or item from a table will *always* drop at least once.  If enough items/tables are marked with `always`, then actual drops could actually exceed what is defined (`count`)in the parent table.
+        * `unique`: If the item is selected, then it will be dropped *only* once.
+        * `probability`: The probability of the item dropping.  [Wikipedia](https://en.wikipedia.org/wiki/Probability)
+        * `enabled`: Will this item drop.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Classifier: Topic :: Utilities
+Requires-Python: >=3
+Description-Content-Type: text/markdown
