@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bodas
+Version: 0.0.1
+Summary: Asymptotic Bode Plot in Python
+Home-page: https://github.com/urbanij/bodas
+License: MIT
+Keywords: bode,bode diagram,bode plot
+Author: Francesco Urbani
+Author-email: francescourbanidue@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.3.3,<4.0.0)
+Requires-Dist: numpy (>=1.19.5,<2.0.0)
+Requires-Dist: sympy (>=1.7.1,<2.0.0)
+Project-URL: Documentation, https://github.com/urbanij/bodas
+Project-URL: Repository, https://github.com/urbanij/bodas
+Description-Content-Type: text/markdown
+
+## bodas
+
+![](https://github.com/urbanij/bodas/blob/main/docs/example1.png?raw=true)
+
+### Installation
+`pip install bodas`
+
+
+### Basic usage
+```python
+import bodas
+import sympy
+
+s = sympy.Symbol('s')
+
+H = 1/(1 + s/120)
+
+bodas.plot( str(H) )
+```
+
