@@ -1,0 +1,3 @@
+[napari.plugin]
+microscope = napari_microscope
+

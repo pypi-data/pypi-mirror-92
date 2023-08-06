@@ -1,0 +1,9 @@
+README
+setup.py
+napari_microscope/__init__.py
+napari_microscope.egg-info/PKG-INFO
+napari_microscope.egg-info/SOURCES.txt
+napari_microscope.egg-info/dependency_links.txt
+napari_microscope.egg-info/entry_points.txt
+napari_microscope.egg-info/requires.txt
+napari_microscope.egg-info/top_level.txt
