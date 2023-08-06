@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: UncleDongPackage
+Version: 1.0
+Summary: 这是UncleDong的第一个模块！
+Home-page: UNKNOWN
+Author: UncleDong
+Author-email: 20171000970@cug.edu.cn
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
