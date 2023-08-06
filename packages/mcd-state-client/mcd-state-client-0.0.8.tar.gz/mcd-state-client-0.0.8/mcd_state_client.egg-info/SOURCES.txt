@@ -1,0 +1,8 @@
+README.md
+setup.py
+mcd_state_client.egg-info/PKG-INFO
+mcd_state_client.egg-info/SOURCES.txt
+mcd_state_client.egg-info/dependency_links.txt
+mcd_state_client.egg-info/top_level.txt
+mcdstate/__init__.py
+mcdstate/mcd_state.py
