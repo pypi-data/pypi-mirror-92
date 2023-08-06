@@ -1,0 +1,15 @@
+README.md
+setup.py
+pyelmer/__init__.py
+pyelmer/elmer.py
+pyelmer/execute.py
+pyelmer/gmsh_objects.py
+pyelmer/gmsh_utils.py
+pyelmer/post.py
+pyelmer.egg-info/PKG-INFO
+pyelmer.egg-info/SOURCES.txt
+pyelmer.egg-info/dependency_links.txt
+pyelmer.egg-info/requires.txt
+pyelmer.egg-info/top_level.txt
+pyelmer/test/__init__.py
+pyelmer/test/test_gmsh_objects.py
