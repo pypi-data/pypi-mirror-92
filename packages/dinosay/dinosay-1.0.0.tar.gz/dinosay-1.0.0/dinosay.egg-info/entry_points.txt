@@ -1,0 +1,4 @@
+[console_scripts]
+dinolist = dinosay.dinosay:dinolist
+dinosay = dinosay.dinosay:dinospeak
+

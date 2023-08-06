@@ -1,0 +1,9 @@
+README.md
+setup.py
+dinosay/__init__.py
+dinosay/dinosay.py
+dinosay.egg-info/PKG-INFO
+dinosay.egg-info/SOURCES.txt
+dinosay.egg-info/dependency_links.txt
+dinosay.egg-info/entry_points.txt
+dinosay.egg-info/top_level.txt
