@@ -1,0 +1,8 @@
+lie_transformer_pytorch/__init__.py,sha256=loAs6ZVFxMU7lNyJyQZkmxNX8tdgD_hXC4grDzqfGEc,75
+lie_transformer_pytorch/lie_transformer_pytorch.py,sha256=Qpf2AvN1Ci4AxGCDP9TjO3feG4VX68SbHf4CzsGrxWI,13975
+lie_transformer_pytorch/se3.py,sha256=xDU7vV7C8G20JZoONM3Loj94lIVCU1Iy-zTcqPZT0s4,7952
+lie_transformer_pytorch-0.0.6.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+lie_transformer_pytorch-0.0.6.dist-info/METADATA,sha256=UWITUrfJDP4FVYw-YaDdHXJ61xJo0ceyNF3-0mkW0Tg,679
+lie_transformer_pytorch-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lie_transformer_pytorch-0.0.6.dist-info/top_level.txt,sha256=o-jbHk86tk9fOuARzvQySaPgArxQqbEUOlr_JdN1DKk,24
+lie_transformer_pytorch-0.0.6.dist-info/RECORD,,
