@@ -1,0 +1,14 @@
+README.md
+setup.py
+pastiche/__init__.py
+pastiche/__main__.py
+pastiche/pastiche.py
+pastiche/version.txt
+pastiche/vgg19.py
+pastiche/vgg19_weights_tf_dim_ordering_tf_kernels_notop_q.bin
+pastiche.egg-info/PKG-INFO
+pastiche.egg-info/SOURCES.txt
+pastiche.egg-info/dependency_links.txt
+pastiche.egg-info/entry_points.txt
+pastiche.egg-info/requires.txt
+pastiche.egg-info/top_level.txt

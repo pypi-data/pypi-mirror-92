@@ -1,0 +1,7 @@
+h5py
+pillow
+torch
+torchvision
+
+[dev]
+kmeans1d
