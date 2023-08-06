@@ -1,0 +1,2 @@
+class BaseMain(object):
+    pass
