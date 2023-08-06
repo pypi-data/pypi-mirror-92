@@ -1,0 +1,125 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# Author: Stefan Agner
+
+import argparse
+import os
+import sys
+import time
+import usb
+
+
+BITMODE_CBUS = 0x20
+
+SIO_SET_BITMODE_REQUEST = 0x0b
+SIO_READ_PINS_REQUEST = 0x0c
+
+# FTDIs CBUS bitmode expect the following value:
+# CBUS Bits
+# 3210 3210
+#      |------ Output Control 0->LO, 1->HI
+# |----------- Input/Output   0->Input, 1->Output
+
+# PyUSB control endpoint communication, see also:
+# https://github.com/pyusb/pyusb/blob/master/docs/tutorial.rst
+
+def ftdi_set_bitmode(dev, bitmask):
+    bmRequestType = usb.util.build_request_type(usb.util.CTRL_OUT,
+                                                usb.util.CTRL_TYPE_VENDOR,
+                                                usb.util.CTRL_RECIPIENT_DEVICE)
+
+    wValue = bitmask | (BITMODE_CBUS << 8)
+    dev.ctrl_transfer(bmRequestType, SIO_SET_BITMODE_REQUEST, wValue)
+
+def ftdi_get_pin(dev, bitmask):
+    bmRequestType = usb.util.build_request_type(usb.util.CTRL_IN,
+                                                usb.util.CTRL_TYPE_VENDOR,
+                                                usb.util.CTRL_RECIPIENT_DEVICE)
+
+    ret = dev.ctrl_transfer(bmRequestType, SIO_READ_PINS_REQUEST, 0, 0, 1)
+    if len(ret) < 1:
+        return None
+
+    return ret[0]
+
+def ftdi_find_sdremux(serial=None):
+    devs = usb.core.find(find_all=True, custom_match = \
+            lambda d: \
+                d.idVendor==0x0403 and \
+                d.idProduct==0x6015 and \
+                (d.serial_number==serial if serial else True))
+    return list(devs)
+
+def print_list(devs):
+    print("Found the following devices:")
+    for dev in sorted(devs, key=lambda dev: dev.address):
+        print(f"Device: {dev.address:03d}, Manufacturer: {dev.manufacturer}, Product: {dev.product}, Serial: {dev.serial_number}")
+
+def get_sdrewire_dev(serial=None):
+    devs = ftdi_find_sdremux(serial)
+
+    if len(devs) > 1:
+        print_list(devs)
+        print()
+        print("Please use --serial argument to select a device.")
+        sys.exit(1)
+
+    if len(devs) == 0:
+        print("No device found.")
+        sys.exit(1)
+
+    return devs[0]
+
+def list_devs(args):
+    devs = ftdi_find_sdremux(args.serial)
+
+    if len(devs) == 0:
+        print("No SDReWire device found")
+
+    print_list(devs)
+
+def sdmux(args):
+    dev = get_sdrewire_dev(args.serial)
+
+    if args.ts:
+        ftdi_set_bitmode(dev, 0x88)
+    elif args.dut:
+        ftdi_set_bitmode(dev, 0x80)
+
+    if args.status:
+        if ftdi_get_pin(dev, 0x80) & 0x08:
+            mode = "TS"
+        else:
+            mode = "DUT"
+        print(f"SD mux connected to: {mode}")
+
+parser = argparse.ArgumentParser(description='SDReWire control utility.')
+parser.add_argument('--serial', type=str)
+
+subparsers = parser.add_subparsers(title='Sub-commands')
+
+parser_sdmux = subparsers.add_parser('sdmux', help='Commands related to SD card muxing')
+
+sdmux_mode_group = parser_sdmux.add_mutually_exclusive_group()
+sdmux_mode_group.add_argument('--ts', action='store_true', dest="ts", help="Mux SD card to test system")
+sdmux_mode_group.add_argument('--dut', action='store_true', dest="dut", help="Mux SD card to device under test")
+parser_sdmux.add_argument('--status', action='store_true', help="Display current status")
+parser_sdmux.set_defaults(func=sdmux)
+
+parser_list = subparsers.add_parser('list', help='Print a list of SDReWire devices')
+parser_list.set_defaults(func=list_devs)
+
+
+def main():
+    """Main program"""
+    args = parser.parse_args()
+
+    if not hasattr(args, 'func'):
+        parser.print_help()
+        sys.exit(1)
+
+    args.func(args)
+
+if __name__ == "__main__":
+    main()
+

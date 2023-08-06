@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+sdrewirectl
+setup.cfg
+sdrewire.egg-info/PKG-INFO
+sdrewire.egg-info/SOURCES.txt
+sdrewire.egg-info/dependency_links.txt
+sdrewire.egg-info/requires.txt
+sdrewire.egg-info/top_level.txt
