@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: mbfxml2ex
+Version: 0.4.1
+Summary: Python client for generating Ex format model descriptions from MBF XML.
+Home-page: https://github.com/hsorby/mbfxml2ex
+Author: Auckland Bioengineering Institute
+Author-email: h.sorby@auckland.ac.nz
+License: Apache Software License
+Description: 
+        MBF XML 2 Ex
+        ============
+        
+        This program converts MBF XML to Ex format suitable for OpenCMISS-Zinc.
+        
+        
+        Install
+        -------
+        
+        ::
+        
+          pip install mbfxml2ex
+        
+        Usage
+        -----
+        
+        ::
+        
+          mbfxml2exconverter /path/to/input.xml
+        
+        For more information use the help::
+        
+          mbfxml2exconverter --help
+        
+        Developing
+        ----------
+        
+        When developing install the required packages with::
+        
+          pip install -r requirements.txt
+        
+        Then run the tests with::
+        
+          nosetests
+        
+        from the repository root directory.
+        
+Keywords: MBF OpenCMISS-Zinc
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst
