@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+teamwork.egg-info/PKG-INFO
+teamwork.egg-info/SOURCES.txt
+teamwork.egg-info/dependency_links.txt
+teamwork.egg-info/requires.txt
+teamwork.egg-info/top_level.txt
