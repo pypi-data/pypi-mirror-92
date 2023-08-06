@@ -1,0 +1,46 @@
+{
+    "service": "model1.goods.action.GoodsAction",
+    "methods": [
+        {
+            "name": "get",
+            "api_method": "GET",
+            "api_path": "/model1/goods/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "default": 0,
+                            "message": "此{}为必填项"
+                        },
+                        {
+                            "type": "range",
+                            "min": 1,
+                            "max": 10,
+                            "message": "数值范围 0~10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "post",
+            "api_method": "POST",
+            "api_path": "/model1/goods/",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "此{}为必填项"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
