@@ -1,0 +1,17 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+simple_metrics_manager/__init__.py
+simple_metrics_manager/_version.py
+simple_metrics_manager/dated_cache_manager.py
+simple_metrics_manager/storage_interface.py
+simple_metrics_manager.egg-info/PKG-INFO
+simple_metrics_manager.egg-info/SOURCES.txt
+simple_metrics_manager.egg-info/dependency_links.txt
+simple_metrics_manager.egg-info/requires.txt
+simple_metrics_manager.egg-info/top_level.txt
+test/test_dated_cache_manager.py
+test/test_simple_metrics_manager.py
