@@ -1,0 +1,3 @@
+[console_scripts]
+graphql-dsl = graphql_dsl.cli:main
+
