@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pygraphblas
+Version: 4.0.3a1
+Summary: GraphBLAS Python bindings.
+Home-page: UNKNOWN
+Author: Michel Pelletier
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: cffi (>=1.0.0)
+Requires-Dist: numpy (>=1.15)
+Requires-Dist: numba
+Requires-Dist: scipy
+
+UNKNOWN
+
+
