@@ -1,0 +1,23 @@
+mshtensorflow/Activation.py,sha256=LDQvJzwTjT21s12M-2dS1vYmmUXQThpfHvU-lV-q1DE,769
+mshtensorflow/Dropout.py,sha256=5ZDccncG1UqfkZ2nFMXz9QJqgGUNeGTTm9SOV8dMi2o,1008
+mshtensorflow/Flatten.py,sha256=UyYbLChhdiJonh7bqP_wFRjHSr0SGrlyKsWop4H-GYY,918
+mshtensorflow/Layer.py,sha256=qlTdi4_txtAqtI1odG6WD9iR7Yxjui13xuSbJ6QzP-k,2400
+mshtensorflow/Loss_Function.py,sha256=pm5HpESB3KKScvqv6J4268rS_Lh3Gdbqmavs7PLMqDI,2387
+mshtensorflow/Model.py,sha256=VWZhBwI7lM2flaHss14MVbjLTyNLmsHGelMus1AZ51A,7472
+mshtensorflow/Optimizer.py,sha256=5wno3L7NFLiZ4IeVbANXvtv8OFZf5SIZzQwViW5XXEY,3034
+mshtensorflow/PCA.py,sha256=1kN02mIMBgyBywAtwpyec2iwX2Hf5idNCv6mkcrpzRk,3415
+mshtensorflow/Read_and_process_data.py,sha256=LPp5Qp0WOVNwOEQNOVma3rDesJwX6lb7K-WY8wbSOE4,3857
+mshtensorflow/Visualization.py,sha256=D0N_b8qx3vTl1JHQLT68BVh1M8DlD5XDbXHK66-IlaM,1757
+mshtensorflow/__init__.py,sha256=FtfLlu62-blC0xzDduH6Gep1WQgeaaLbGAAN8KQAOZg,485
+mshtensorflow/conv_layer.py,sha256=a5VP6uMOxWC62U1Tazy3zkTRrafTvjrxTxE_9z1HI_M,7816
+mshtensorflow/metrics.py,sha256=7P_mYgCSxq-Tz5uLi96_uBSmd0BtstR09aWYE7D6SMI,2270
+mshtensorflow/pool_layer.py,sha256=7ZITFLWhb9wmrefKCIJ_iQ9je5XD_xkzmeRQIrIOVX0,9324
+mshtensorflow/predicted samples visualization.py,sha256=5p3apx0kjiPxynZEemhPdQHOQ75xK4aZDhjfAQVOnqQ,6015
+mshtensorflow/predicted_samples_visualization.py,sha256=thQPD8vYN_dEGVfIpbM5I0xI6K1s0k4_H5241f_3ZQ0,6350
+mshtensorflow/predicted_visualization.py,sha256=ATtH9FWFf1nKmg-7pSAATz4lCIdFE0gU2qABJM80Gzo,6129
+mshtensorflow/utilities.py,sha256=h6rOQ268bOwGN-V9--lirvwxJZjVl_l_WjRY-2_yyoA,1026
+mshtensorflow-0.0.3.dist-info/LICENSE.txt,sha256=AMvtKGFU2uBJElpZhHSah2w2I5G-xCr4XB_G-LxwZg4,1099
+mshtensorflow-0.0.3.dist-info/METADATA,sha256=QKw2c4IHWjDMFmFwXA88N4vwDLgwQlj1pQ0SoyEMMaU,1134
+mshtensorflow-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mshtensorflow-0.0.3.dist-info/top_level.txt,sha256=5YaT6WlVIDe7gygz4SInemQeRNp4S7H_ZVkxaZMZjbo,14
+mshtensorflow-0.0.3.dist-info/RECORD,,
