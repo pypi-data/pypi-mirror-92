@@ -1,0 +1,33 @@
+#-------------------------------------------------- {{ignore}}
+echo "Port Configuration" {{_start_}}
+#-------------------------------------------------- {{ignore}}
+<group name="configure.ports">
+    port {{port-id}}
+        shutdown {{admin_state | set(false)}}
+        description "{{description}}"
+        <group name="ethernet">
+        ethernet {{_start_}}
+            mode {{mode}}
+            encap-type {{encap-type}}
+            mtu {{mtu | DIGIT}}
+            loopback internal persistent {{loopback | set(true)}}
+            <group name="network">
+            network {{ignore}}
+                queue-policy "{{queue-policy | DIGIT}}"
+            exit {{_end_}}
+            </group>
+            <group name="hold-time">
+            hold-time down {{down}}
+            </group>
+            <group name="hold-time">
+            hold-time up {{up| DIGIT}} down {{down | DIGIT}}
+            </group>
+            no autonegotiate {{autonegotiate | set(false)}}
+            autonegotiate {{autonegotiate}}
+            egress-rate {{egress-rate | DIGIT}} 
+        exit {{_end_}}
+        </group>
+        no shutdown {{admin_state | set(true)}}
+    exit {{_end_}}
+    </group>
+#-------------------------------------------------- {{_end_}}
