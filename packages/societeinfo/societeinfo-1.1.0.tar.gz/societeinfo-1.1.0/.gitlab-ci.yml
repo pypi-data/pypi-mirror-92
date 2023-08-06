@@ -1,0 +1,30 @@
+stages:
+  - style
+  - tests
+
+flake8:
+  stage: style
+  image: python:3.7
+  script:
+    - pip install flake8 flake8-import-order
+    - flake8
+
+.pytest:
+  stage: tests
+  coverage: '/^TOTAL\s+\d+\s+\d+\s+(\d+\%)$/'
+  before_script:
+    - pip install '.[dev]'
+  script:
+    - pytest --cov=societeinfo --cov-report=term-missing -vv tests
+
+py35:
+  extends: .pytest
+  image: python:3.5
+
+py36:
+  extends: .pytest
+  image: python:3.6
+
+py37:
+  extends: .pytest
+  image: python:3.7

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: societeinfo
+Version: 1.1.0
+Summary: Python wrapper to SOCIETE INFO api.
+Home-page: https://gitlab.com/PierreKephas/societeinfo-python
+Author: Pierre Kephas
+License: UNKNOWN
+Description: Python wrapper to SOCIETE INFO api. See https://gitlab.com/PierreKephas/societeinfo-python.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: dev
