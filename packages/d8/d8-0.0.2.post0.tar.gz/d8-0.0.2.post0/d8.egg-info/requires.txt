@@ -1,0 +1,11 @@
+kaggle
+pandas>=1.1.0
+tqdm
+xxhash
+matplotlib
+numpy
+pillow
+
+[:python_version < "3.7"]
+dataclasses
+contextvars
