@@ -1,0 +1,7 @@
+README.md
+setup.py
+pytechecker/__init__.py
+pytechecker.egg-info/PKG-INFO
+pytechecker.egg-info/SOURCES.txt
+pytechecker.egg-info/dependency_links.txt
+pytechecker.egg-info/top_level.txt
