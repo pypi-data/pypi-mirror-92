@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<metal:master use-macro="load_template('master/page.pt').macros.master">
+    <metal:slot fill-slot="style_slot">
+        <style>
+            #endpoint-listing_filter,
+            #endpointhandler-listing_filter {
+                width: 100%;
+            }
+
+            #endpoint-listing_filter input,
+            #endpointhandler-listing_filter input {
+                width: 70%;
+            }
+        </style>
+    </metal:slot>
+
+    <metal:slot fill-slot="page-body">
+        <div id="endpointmgr">
+            <div class='row'>
+                <div class="col-md-6">
+                    <h2>Endpoint</h2>
+                    <table id="endpoint-listing" class="table table-striped table-bordered dt-responsive nowrap"
+                        cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Endpoint</th>
+                                <th>Title</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <button id="endpoint-add" class="btn btn-default modal-link"
+                        data-url="${request.relative_url('/endpoint/+modal-create')}">
+                        Add
+                    </button>
+
+                </div>
+                <div class="col-md-6">
+                    <div id="endpointhandler-wrapper" class="hidden">
+                        <h2>Handler</h2>
+                        <table id="endpointhandler-listing"
+                            class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                            width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                        <button id="endpointhandler-add" class="btn btn-default modal-link"
+                            data-url="${request.relative_url('/endpointhandler/+modal-create')}">
+                            Add
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </metal:slot>
+
+    <metal:slot fill-slot="footer_script_slot">
+        <script>
+            $(document).ready(function () {
+                $('#endpoint-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.link(context, '+datatable.json')}",
+                    columns: [
+                        { 'name': 'name' },
+                        { 'name': 'title' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+                $('#endpoint-add').on('click', function () {
+                    $('#endpointhandler-wrapper').addClass('hidden');
+                });
+                $('#endpoint-listing').on('click', '.endpoint-view-link', function (event) {
+                    var url = $(this).attr('data-url');
+                    var create_url = $(this).attr('data-create-url');
+                    $('#endpointhandler-wrapper').removeClass('hidden');
+                    if ($.fn.dataTable.isDataTable('#endpointhandler-listing')) {
+                        var tbl = $('#endpointhandler-listing').DataTable();
+                        tbl.destroy();
+                    }
+
+                    $('#endpointhandler-listing').DataTable({
+                        serverSide: true,
+                        processing: true,
+                        ajax: url,
+                        columns: [
+                            { 'name': 'method' },
+                            { 'name': 'structure:buttons' }
+                        ]
+                    })
+                    $('#endpointhandler-add').attr('data-url', create_url);
+                });
+
+
+                $('#iframe-modal').on('hidden.bs.modal', function () {
+                    ['#endpoint-listing', '#endpointhandler-listing'].map(
+                        function (identifier) {
+                            var el = $(identifier);
+                            if ($.fn.DataTable.isDataTable(el)) {
+                                el.DataTable().ajax.reload();
+                            }
+                        }
+                    )
+                });
+            })
+        </script>
+    </metal:slot>
+</metal:master>
+
+</html>

@@ -1,0 +1,16 @@
+<metal:macro define-macro="step">
+    <tal:def define="formid string:${wizard.id}-step-${repeat.step.index};
+                     form step.get_form(formid=formid);
+                     form_data step.sessiondata;
+                     readonly readonly|False">
+        <metal:form use-macro="load_template('master/simple-form.pt').macros.form">
+        </metal:form>
+    </tal:def>
+</metal:macro>
+
+<metal:macro define-macro="step-handler">
+    <tal:def define="form_data form_data|None">
+        <metal:form use-macro="load_template('master/simple-form.pt').macros.form">
+        </metal:form>
+    </tal:def>
+</metal:macro>

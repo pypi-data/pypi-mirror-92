@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<metal:master metal:use-macro="load_template('master/page.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body">
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_content_body')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel"
+                        tal:define="collapse_panel True">
+                        <h2 metal:fill-slot="panel-title">Metadata</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:metadataform.render(appstruct=form_data, readonly=True, request=request, context=context)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_content_main')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">${form_title}</h2>
+                        <ul>
+                            <metal:macro fill-slot="panel-toolbox">
+                                <metal:toolbox use-macro="load_template('master/crud/form.pt').macros.toolbox" />
+                            </metal:macro>
+                        </ul>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:form.render(appstruct=form_data, readonly=True, request=request, context=context)">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div tal:condition="xattrform" metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">Extended Attributes</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:xattrform.render(appstruct=xattrform_data, readonly=True, request=request, context=context)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel"
+                        tal:condition="context.model.blob_fields">
+                        <h2 metal:fill-slot="panel-title">File Attachments</h2>
+                        <div metal:fill-slot="panel-content">
+                            <form class="form-horizontal">
+                                <tal:loop repeat="blobfield context.model.blob_fields">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">${blobfield.title()}
+                                        </label>
+                                        <tal:def define="blob context.model.get_blob(blobfield)">
+                                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                                <p class="form-control-static">
+                                                    <tal:cond condition="blob">
+                                                        <a
+                                                            href="${request.link(context, '+download?field=%s#sha256sum=%s' % (blobfield, blob.sha256sum))}">
+                                                            <i class="fa fa-download"></i> <span
+                                                                tal:content="blob.filename"></span>
+
+                                                        </a><br />
+                                                        <small condition="blob.sha256sum">
+                                                            ( SHA256SUM: ${blob.sha256sum} )
+                                                        </small>
+                                                    </tal:cond>
+                                                    <tal:cond condition="not:blob">
+                                                        No blob uploaded
+                                                    </tal:cond>
+                                                </p>
+                                            </div>
+                                        </tal:def>
+                                    </div>
+                                </tal:loop>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_references')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+
+            <div class="row" tal:repeat="ref references">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel"
+                        tal:define="collapse_panel True">
+                        <h2 metal:fill-slot="panel-title">${ ref['title'] }</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:ref['form'].render(ref['form_data'], request=request, context=ref['content'], readonly=True)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" tal:repeat="sbref single_backreferences">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel"
+                        tal:define="collapse_panel True">
+                        <h2 metal:fill-slot="panel-title">${sbref['title']}
+                        </h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:sbref['form'].render(sbref['form_data'], request=request, context=sbref['content'], readonly=True)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_backreferences')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+
+            <div class="row" tal:repeat="bref backreferences">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">${ bref['title'] }</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="table-${ bref['name'] }"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th tal:repeat="c bref['columns']" tal:content="c"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <div>
+                                <a class="modal-link" tal:attributes="data-url bref['modal_create_link']" href="#">
+                                    <button class="btn btn-primary">
+                                        <i class="fa fa-plus"></i>Add</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div tal:condition="bref['single_reference'] and bref['content']"
+                        metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">${bref['title']}
+                        </h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:bref['form'].render(bref['form_data'], request=request, context=bref['content'], readonly=True)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.after_content_body')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+
+        </div>
+
+        <div metal:fill-slot="footer_script_slot">
+            <metal:macro define-macro="footer_scripts">
+                <script tal:repeat="bref backreferences">
+
+                    $(document).ready(function () {
+                        $('#table-${bref["name"]}').DataTable({
+                            serverSide: true,
+                            processing: true,
+                            searching: false,
+                            ajax: {
+                                url: "${bref['datatable_url']}",
+                                type: "${bref['datatable_method']}"
+                            },
+                            columns: eval('${ bref["column_options"] }'),
+                            order: eval('${ bref["columns_order"] }')
+                        });
+
+                        $('#iframe-modal').on('hidden.bs.modal', function () {
+                            var el = $("#table-${bref['name']}");
+                            if ($.fn.DataTable.isDataTable(el)) {
+                                el.DataTable().ajax.reload();
+                            }
+                        });
+
+                    });
+                </script>
+            </metal:macro>
+        </div>
+
+    </body>
+</metal:master>
+
+</html>

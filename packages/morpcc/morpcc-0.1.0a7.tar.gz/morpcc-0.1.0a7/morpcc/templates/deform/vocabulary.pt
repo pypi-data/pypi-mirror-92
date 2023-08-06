@@ -1,0 +1,58 @@
+<div tal:define="
+     name name|field.name;
+     style field.widget.style;
+     oid oid|field.oid;
+     css_class css_class|field.widget.css_class;
+     unicode unicode|str;
+     optgroup_class optgroup_class|field.widget.optgroup_class;
+     multiple multiple|field.widget.multiple;" tal:omit-tag="">
+
+  <style>
+    .select2-selection.form-control {
+      padding: 0px 0px;
+    }
+
+    .select2-container--default .select2-selection--multiple,
+    .select2-container--default .select2-selection--single {
+      border: 1px solid #ccc;
+    }
+  </style>
+  <input type="hidden" name="__start__" value="${name}:sequence" tal:condition="multiple" />
+  <select tal:attributes="
+          name name;
+          id oid;
+          class string: form-control ${css_class or ''};
+          data-placeholder field.widget.placeholder|None;
+          multiple multiple;
+          style style;
+          attributes|field.widget.attributes|{};">
+    <option tal:attributes="selected field.widget.get_select_value(cstruct, cstruct);
+                                  value cstruct" tal:content="field.widget.get_label(request, cstruct)">
+    </option>
+  </select>
+
+  <script type="text/javascript">
+    deform.addCallback(
+      '${field.oid}',
+      function (oid) {
+        $('#' + oid).select2({
+          containerCssClass: 'form-control',
+          placeholder: "${str(field.widget.placeholder).replace('"','\\"')|""}" || undefined,
+          allowClear: "${hasattr(field.widget, 'placeholder')}",
+          data: [${ structure: field.widget.get_data_json(request, cstruct, selected = True) }],
+          templateResult: function (result) { if (!result.html) { return result.text } else { return $(result.html) } },
+          templateSelection: function (selection) { if (!selection.html) { return selection.text } else { return $(selection.html) } },
+          tags: ${ str(getattr(field.widget, 'tags', 'undefined')).lower()
+      },
+      ajax: {
+      url: '${structure:field.widget.search_url(context, request)}',
+      dataType: 'json'
+    }
+       });
+
+     }
+   );
+  </script>
+
+  <input type="hidden" name="__end__" value="${name}:sequence" tal:condition="multiple" />
+</div>

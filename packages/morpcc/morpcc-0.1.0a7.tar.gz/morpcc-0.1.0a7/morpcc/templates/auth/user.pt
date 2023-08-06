@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<metal:master metal:use-macro="load_template('master/page.pt').macros.master">
+
+    <head>
+        <metal:slot fill-slot="style_slot">
+            <!-- Custom Theme Style -->
+            <!-- <link href="/__static__/dqmt/custom.css" rel="stylesheet"/> -->
+        </metal:slot>
+    </head>
+
+    <body>
+
+        <div metal:fill-slot="page-actions">
+            <a href="${request.link(context,'+edit')}" class="btn btn-default">
+                <i class="fa fa-edit"></i> Edit Profile
+            </a>
+        </div>
+        <div metal:fill-slot="page-body" class="row">
+            <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                <h2 metal:fill-slot="panel-title">${context['username']}</h2>
+                <div metal:fill-slot="panel-content">
+                    <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+                        <div class="profile_img">
+                            <div id="crop-avatar">
+                                <!-- Current avatar -->
+                                <img class="img-responsive avatar-view" src="${profilephoto_url}">
+                            </div>
+                        </div>
+                        <br />
+                        <ul class="list-unstyled user_data">
+                            <li><i class="fa fa-envelope user-profile-icon"></i> ${context['email']}
+                            </li>
+
+                            <li>
+                                <i class="fa fa-globe user-profile-icon"></i> ${context['timezone'] or 'UTC'}
+                            </li>
+
+                            <li tal:condition="context['is_administrator']">
+                                <span class="badge bg-green">Administrator<span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div
+                            tal:replace="structure:xattrform.render(appstruct=xattrform_data, readonly=True, request=request, context=context)">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</metal:master>
+
+</html>

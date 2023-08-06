@@ -1,0 +1,13 @@
+<div tal:attributes="class css_class|nothing">
+    <metal:block use-macro="load_template('master/panel.pt').macros.panel">
+        <metal:title fill-slot="panel-title">
+            ${widget.title}
+            <small tal:condition="widget.title_small|nothing">
+                ${widget.title_small}
+            </small>
+        </metal:title>
+        <metal:content fill-slot="panel-content">
+            <canvas id="${widget.widget_id}" tal:attributes="height widget.canvas_height"></canvas>
+        </metal:content>
+    </metal:block>
+</div>

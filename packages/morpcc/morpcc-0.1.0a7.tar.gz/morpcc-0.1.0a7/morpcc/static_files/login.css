@@ -1,0 +1,11 @@
+.login_content form div a.btn {
+    font-family: inherit;
+    font-size: 14px;
+    text-shadow: none;
+    font-weight: inherit;
+    margin: 0 0 5px 5px;
+}
+
+.login_content form div a.btn:hover {
+    text-decoration:none;
+}

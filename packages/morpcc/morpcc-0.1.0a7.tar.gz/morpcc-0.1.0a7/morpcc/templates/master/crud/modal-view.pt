@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<metal:master metal:use-macro="load_template('master/modal.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body" class="row">
+            <div class="col-md-8 col-sm-12 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">${form_title}</h2>
+                    <div metal:fill-slot="panel-content">
+                        <div
+                            tal:replace="structure:form.render(form_data, readonly=True, request=request, context=context)">
+                        </div>
+                    </div>
+                </div>
+
+                <div tal:condition="xattrform" metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">Extended Attributes</h2>
+                    <div metal:fill-slot="panel-content">
+                        <div
+                            tal:replace="structure:xattrform.render(xattrform_data, readonly=True, request=request, context=context)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">Metadata</h2>
+                    <div metal:fill-slot="panel-content">
+                        <div
+                            tal:replace="structure:metadataform.render(form_data, readonly=True, request=request, context=context)">
+                        </div>
+                    </div>
+                </div>
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel"
+                    tal:condition="context.model.blob_fields">
+                    <h2 metal:fill-slot="panel-title">Blobs</h2>
+                    <div metal:fill-slot="panel-content">
+                        <form class="form-horizontal">
+                            <tal:loop repeat="blobfield context.model.blob_fields">
+                                <div class="form-group">
+                                    <label class="control-label col-md-5 col-sm-5 col-xs-12">${blobfield} </label>
+                                    <tal:def define="blob context.model.get_blob(blobfield)">
+                                        <div class="col-md-7 col-sm-7 col-xs-12">
+                                            <p class="form-control-static">
+                                                <tal:cond condition="blob">
+                                                    <a
+                                                        href="${request.link(context, '+download?field=%s' % blobfield)}">
+                                                        <i class="fa fa-download"></i> <span
+                                                            tal:content="blob.filename"></span>
+                                                    </a>
+                                                </tal:cond>
+                                                <tal:cond condition="not:blob">
+                                                    No blob uploaded
+                                                </tal:cond>
+                                            </p>
+                                        </div>
+                                    </tal:def>
+                                </div>
+                            </tal:loop>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</metal:master>
+
+</html>

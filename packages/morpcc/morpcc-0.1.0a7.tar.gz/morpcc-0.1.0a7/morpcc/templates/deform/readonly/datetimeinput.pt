@@ -1,0 +1,7 @@
+<div>
+   <p tal:condition="date and time"
+      class="form-control-static" id="${oid|field.oid}">${date} ${time}</p>
+   <p tal:condition="not:date and time" class="form-control-static">
+      &nbsp;
+   </p>
+</div>

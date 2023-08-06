@@ -1,0 +1,5 @@
+<div class="pull-right">
+      <span tal:condition="copyright_notice" tal:content="structure copyright_notice">
+      </span> |
+      Licensed under <a href="${request.relative_url('/+license')}">GPLv3+</a>.
+</div>

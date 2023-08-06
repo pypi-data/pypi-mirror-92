@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<metal:master metal:use-macro="load_template('master/modal.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body" class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">${form_title}</h2>
+                    <div metal:fill-slot="panel-content">
+                        <tal:cond condition="form_data">
+                            <div
+                                tal:replace="structure:form.render(form_data, readonly=True, request=request, context=context)">
+                            </div>
+                        </tal:cond>
+                        <tal:cond condition="not:form_data">
+                            <div tal:replace="structure:form.render(readonly=True, request=request, context=context)">
+                            </div>
+                        </tal:cond>
+                        <div class="ln_solid"></div>
+                        <form method="POST" tal:attributes="action request.url">
+                            <div class="form-group deform-form-buttons">
+                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                                    <button name="delete" id="delete-button" class="btn btn-danger"
+                                        value="Delete">Delete!</button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</metal:master>
+
+</html>

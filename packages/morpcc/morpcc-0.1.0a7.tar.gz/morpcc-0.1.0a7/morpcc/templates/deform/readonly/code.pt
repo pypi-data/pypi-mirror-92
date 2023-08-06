@@ -1,0 +1,3 @@
+<div id="${oid|field.oid}" class="form-control-static code-display">
+    <div tal:replace="structure:field.widget.highlight(cstruct)"></div>
+</div>

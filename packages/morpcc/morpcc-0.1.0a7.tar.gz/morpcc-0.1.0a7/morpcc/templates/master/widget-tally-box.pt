@@ -1,0 +1,24 @@
+<html>
+
+<body>
+    <div metal:define-macro="widget">
+        <div class="widget_tally_box">
+            <div class="x_panel ui-ribbon-container">
+                <div tal:condition="ribbon_text|nothing" class="ui-ribbon-wrapper">
+                    <div class="ui-ribbon">
+                        ${ribbon_text}
+                    </div>
+                </div>
+                <div tal:condition="widget_title|nothing" class="x_title">
+                    <h2>${widget_title}</h2>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <metal:slot define-slot="widget-content"></metal:slot>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

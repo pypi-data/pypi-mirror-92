@@ -1,0 +1,4 @@
+<div i18n:domain="">
+  <p class="form-control-static" tal:content="field.widget.get_label(request, cstruct)">
+  </p>
+</div>

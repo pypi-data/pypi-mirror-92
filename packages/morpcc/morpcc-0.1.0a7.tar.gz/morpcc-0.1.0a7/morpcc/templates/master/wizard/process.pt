@@ -1,0 +1,1 @@
+<tal:repl metal:use-macro="step.handler_macro(load_template)"></tal:repl>

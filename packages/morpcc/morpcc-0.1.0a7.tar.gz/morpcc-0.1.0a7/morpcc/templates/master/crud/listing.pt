@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+<metal:master use-macro="load_template('master/page.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body" class="row">
+
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_content_body')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12" tal:condition="search_form">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">Search</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div id="search-form-wrapper">
+                                <form
+                                    tal:replace="structure:search_form.render(search_data, request=request, context=context)">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.before_listing')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">${listing_title}</h2>
+                        <div metal:fill-slot="panel-content">
+
+                            <table id="content-listing" class="table table-striped table-bordered dt-responsive nowrap"
+                                cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th tal:repeat="c columns" tal:content="c"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <div tal:condition="context.create_view_enabled">
+                                <a class="modal-link" tal:attributes="data-url request.link(context, '+modal-create')"
+                                    href="#">
+                                    <button class="btn btn-primary">
+                                        <i class="fa fa-plus"></i>Add</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <tal:block
+                    tal:define="portletprovider request.app.get_contextportletprovider(context, 'morpcc.context.after_content_body')"
+                    tal:condition="portletprovider"
+                    tal:replace="structure:portletprovider.render(context, request, load_template)">
+                    >
+                </tal:block>
+            </div>
+        </div>
+
+        <metal:slot fill-slot="footer_script_slot">
+            <script tal:define="ajax_url datatable_url|request.link(context, '+datatable.json');
+                                ajax_method datatable_method|'GET'">
+                                    $(document).ready(function () {
+                                        var qs = window.location.href.split('?')[1];
+                                        var ajax_url = "${ajax_url}";
+                                        if (qs !== undefined) {
+                                            ajax_url = ajax_url + '?' + qs;
+                                        }
+                                        $('#content-listing').DataTable({
+                                            serverSide: true,
+                                            processing: true,
+                                            searching: false,
+                                            ajax: {
+                                                url: ajax_url,
+                                                type: '${datatable_method}'
+                                            },
+                                            columns: eval('${ column_options }'),
+                                            order: eval('${ order }')
+                                        });
+
+
+                                        $('#iframe-modal').on('hidden.bs.modal', function () {
+                                            var el = $('#content-listing');
+                                            if ($.fn.DataTable.isDataTable(el)) {
+                                                el.DataTable().ajax.reload();
+                                            }
+                                        });
+
+                                        $('#search-form-wrapper>form').on('submit', function (ev) {
+                                            var data = $(this).serializeArray();
+                                            var data = $.map(data, function (value, index) {
+                                                return 'mfw_search[' + value['name'] + ']=' + value['value']
+                                            });
+                                            var el = $('#content-listing');
+                                            if ($.fn.DataTable.isDataTable(el)) {
+                                                var dt = el.DataTable();
+                                                var url = dt.ajax.url().split('?')[0];
+                                                url = url + '?' + data.join('&');
+                                                dt.ajax.url(url);
+                                                dt.ajax.reload();
+                                                var docurl = window.location.href.split('?')[0];
+                                                docurl = docurl + '?' + data.join('&');
+                                                window.history.pushState({ 'url': docurl }, document.title, docurl);
+                                            }
+                                            return false;
+                                        })
+                                    })
+                                </script>
+        </metal:slot>
+    </body>
+</metal:master>
+
+</html>

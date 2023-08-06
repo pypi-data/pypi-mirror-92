@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+<metal:master use-macro="load_template('master/modal.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body" class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">${form_title}</h2>
+                    <div metal:fill-slot="panel-content" tal:define="form_data form_data|None;
+                                                                    readonly readonly|None">
+                        <metal:macro use-macro="load_template('master/simple-form.pt').macros.form" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</metal:master>
+<

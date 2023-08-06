@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<metal:master define-macro="master" tal:define="body_class body_class|nothing;
+                                                body_style body_style|nothing;">
+
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title tal:define="page_title page_title|nothing">
+      ${settings.application.title} <tal:block condition="page_title">- ${page_title}</tal:block>
+    </title>
+
+    <!-- Bootstrap -->
+    <link href="/__static__/morpcc/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/__static__/morpcc/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/__static__/morpcc/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="/__static__/morpcc/gentelella/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+    <!-- bootstrap-progressbar -->
+    <link href="/__static__/morpcc/gentelella/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css"
+      rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="/__static__/morpcc/gentelella/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <!-- bootstrap-daterangepicker -->
+    <link href="/__static__/morpcc/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- bootstrap-datetimepicker -->
+    <link href="/__static__/morpcc/gentelella/vendors/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css"
+      rel="stylesheet">
+
+    <!-- Switchery -->
+    <link href="/__static__/morpcc/gentelella/vendors/switchery/dist/switchery.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="/__static__/morpcc/gentelella/build/css/custom.min.css" rel="stylesheet">
+
+    <!-- PNotify -->
+    <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+
+    <!-- Datatables -->
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net-bs/css/dataTables.bootstrap.min.css"
+      rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css"
+      rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css"
+      rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css"
+      rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css"
+      rel="stylesheet">
+    <link href="/__static__/morpcc/gentelella/vendors/datatables.net/css/jquery.rowReorder.dataTables.min.css"
+      rel="stylesheet">
+
+
+    <!-- deform -->
+    <link href="/__static__/deform/select2/select2.css" rel="stylesheet">
+    <link href="/__static__/deform/tinymce/skins/lightgray/skin.min.css" rel="stylesheet">
+
+    <!--    <link href="/__static__/deform/tinymce/skins/lightgray/content.min.css" rel="stylesheet">
+    <link href="/__static__/deform/tinymce/skins/lightgray/content.inline.min.css" rel="stylesheet">-->
+    <link href="/__static__/deform/tinymce/skins/lightgray/skin.ie7.min.css" rel="stylesheet">
+    <link href="/__static__/deform/css/typeahead.css" rel="stylesheet">
+    <link href="/__static__/morpcc/pygments-css/default.css" rel="stylesheet">
+    <link href="/__static__/morpcc/main.css" rel="stylesheet">
+
+    <tal:block tal:define="portletprovider request.app.get_portletprovider('morpcc.style-portlets')"
+      tal:condition="portletprovider" tal:replace="structure:portletprovider.render(context, request, load_template)">
+      >
+    </tal:block>
+    <metal:slot define-slot="style_slot">
+    </metal:slot>
+
+    <script src="/__static__/morpcc/gentelella/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="/__static__/morpcc/modernizr/modernizr-min.js"></script>
+    <script src="/__static__/deform/scripts/typeahead.min.js"></script>
+    <script src="/__static__/deform/scripts/jquery.form.js"></script>
+    <script src="/__static__/deform/scripts/deform.js"></script>
+    <tal:block tal:define="portletprovider request.app.get_portletprovider('morpcc.header-script-portlets')"
+      tal:condition="portletprovider" tal:replace="structure:portletprovider.render(context, request, load_template)">
+      >
+    </tal:block>
+
+    <metal:slot define-slot="header_script_slot">
+    </metal:slot>
+  </head>
+
+  <body class="nav-md ${body_class}" style="${body_style}">
+    <div class="container body" metal:define-slot="body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+
+            <div class="left-portlets" tal:define="portletprovider app.get_portletprovider('morpcc.left-portlets')"
+              tal:condition="portletprovider"
+              tal:content="structure:portletprovider.render(context, request, load_template)">
+            </div>
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a tal:condition="permits('morpcc.permission:SiteSearch', context='/')"
+                href="${request.relative_url('/+site-search')}" data-toggle="tooltip" data-placement="top"
+                title="Search">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              </a>
+              <a tal:condition="permits('morpcc.permission:ManageSite', context='/')"
+                href="${request.relative_url('/+site-settings')}" data-toggle="tooltip" data-placement="top"
+                title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a href="${request.relative_url('/profile')}" data-toggle="tooltip" data-placement="top" title="Profile">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout"
+                tal:attributes="href request.relative_url('/+logout')">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              <div class="topleft-portlets"
+                tal:define="portletprovider request.app.get_portletprovider('morpcc.topleft-portlets')"
+                tal:condition="portletprovider"
+                tal:replace="structure:portletprovider.render(context, request, load_template)">
+                >
+              </div>
+              <div class="top-navigation-portlets"
+                tal:define="portletprovider request.app.get_portletprovider('morpcc.top-navigation')"
+                tal:condition="portletprovider"
+                tal:replace="structure:portletprovider.render(context, request, load_template)">
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="abovecontent-portlets"
+            tal:define="portletprovider app.get_portletprovider('morpcc.abovecontent-portlets')"
+            tal:condition="portletprovider"
+            tal:content="structure:portletprovider.render(context, request, load_template)">
+          </div>
+          <div class="main-body" metal:define-slot="main">
+          </div>
+          <div class="belowcontent-portlets"
+            tal:define="portletprovider app.get_portletprovider('morpcc.belowcontent-portlets')"
+            tal:condition="portletprovider"
+            tal:content="structure:portletprovider.render(context, request, load_template)">
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="footer-portlets" tal:define="portletprovider app.get_portletprovider('morpcc.footer-portlets')"
+            tal:condition="portletprovider"
+            tal:content="structure:portletprovider.render(context, request, load_template)">
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <div id="notifications" style="display:none">
+      <span tal:repeat="message request.messages()" tal:attributes="data-category message['category'];
+                         data-message message['message'];
+                         data-title message['title']"></span>
+    </div>
+
+    <div id="iframe-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document" style="width:90%">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div id="iframe-modal-spinner"><i class="fa fa-spin fa-spinner"></i></div>
+            <iframe style="border:0;width:100%;height:500px;"></iframe>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <metal:slot define-slot="footer_body_slot"></metal:slot>
+    <!-- Bootstrap -->
+    <script src="/__static__/morpcc/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <!--<script src="/__static__/morpcc/gentelella/vendors/fastclick/lib/fastclick.js"></script>-->
+    <!-- NProgress -->
+    <!--<script src="/__static__/morpcc/gentelella/vendors/nprogress/nprogress.js"></script>-->
+    <!-- Chart.js -->
+    <!--<script src="/__static__/morpcc/gentelella/vendors/moment/min/moment.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/Chart.js/dist/Chart.min.js"></script>-->
+    <script src="/__static__/morpcc/chartjs/moment.js"></script>
+    <script src="/__static__/morpcc/chartjs/Chart.js"></script>
+    <script src="/__static__/morpcc/chartjs/Chart.Financial.js"></script>
+    <script src="/__static__/morpcc/echarts/echarts.min.js"></script>
+    <!-- gauge.js -->
+    <script src="/__static__/morpcc/gentelella/vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="/__static__/morpcc/gentelella/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="/__static__/morpcc/gentelella/vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="/__static__/morpcc/gentelella/vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="/__static__/morpcc/gentelella/vendors/Flot/jquery.flot.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="/__static__/morpcc/gentelella/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="/__static__/morpcc/gentelella/vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="/__static__/morpcc/gentelella/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="/__static__/morpcc/maps/jquery.vmap.malaysia.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+
+    <script src="/__static__/morpcc/gentelella/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- bootstrap-datetimepicker -->
+    <script
+      src="/__static__/morpcc/gentelella/vendors/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!-- PNotify -->
+    <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.buttons.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+    <!-- DataTables -->
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net/js/jquery.dataTables.rowReorder.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script
+      src="/__static__/morpcc/gentelella/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script
+      src="/__static__/morpcc/gentelella/vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script
+      src="/__static__/morpcc/gentelella/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/jszip/dist/jszip.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="/__static__/morpcc/gentelella/vendors/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- editarea -->
+
+    <script src="/__static__/morpcc/editarea/edit_area/edit_area_full.js">
+    </script>
+
+
+    <!-- deform -->
+    <script src="/__static__/deform/select2/select2.js"></script>
+    <script src="/__static__/deform/tinymce/tinymce.min.js"></script>
+    <script src="/__static__/deform/scripts/file_upload.js"></script>
+
+    <!-- Wizard -->
+    <script src="/__static__/morpcc/gentelella/vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
+    <!-- Switchery -->
+
+    <script src="/__static__/morpcc/gentelella/vendors/switchery/dist/switchery.min.js"></script>
+
+
+    <!-- Custom Theme Scripts -->
+    <script src="/__static__/morpcc/gentelella/build/js/custom.js"></script>
+
+    <!-- Morpfw script -->
+    <script src="/__static__/morpcc/main.js"></script>
+
+    <tal:block tal:define="portletprovider request.app.get_portletprovider('morpcc.footer-script-portlets')"
+      tal:condition="portletprovider" tal:replace="structure:portletprovider.render(context, request, load_template)">
+      >
+    </tal:block>
+
+    <metal:slot define-slot="footer_script_slot">
+    </metal:slot>
+
+  </body>
+</metal:master>
+
+</html>

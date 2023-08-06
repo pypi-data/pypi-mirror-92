@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html metal:use-macro="load_template('master/page.pt').macros.master">
+
+<body>
+    <div metal:fill-slot="page-body" class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <metal:macro define-macro="form_panel">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <div metal:fill-slot="panel-title">
+                        License Notice
+                    </div>
+                    <div metal:fill-slot="panel-content">
+                        <p tal:condition="copyright_notice" tal:content="structure copyright_notice">
+                        </p>
+                        <p>This application was built on top of <a href='http://morpcc.rtfd.org'>
+                                MorpCC platform</a> which is licensed under <a
+                                href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License v3 or
+                                later (GPLv3+)</a>.
+                            The source code of MorpCC can be freely accessed at
+                            <a href="http://github.com/morpframework/morpcc">
+                                <i class="fa fa-github"></i>
+                                Github</a>
+                        </p>
+                        <tal:comment replace="nothing">
+                            <!-- leaving this here for now until we have a better model/use-case for this -->
+                            <tal:no_license condition="not:license">
+                                <p>The administrator of this application deployment did not acquire
+                                    an AGPL Exception License from an authorized licensor.
+                                    As per AGPLv3 terms and conditions, you as a user have the rights to request and
+                                    receive the source code of this application. If you wish to have access to the
+                                    source
+                                    code of this application, please contact its respective administrator.
+                                </p>
+                            </tal:no_license>
+                            <tal:has_license condition="license">
+                                <p>The administrator of this application deployment have acquired an GPL Exception
+                                    License
+                                    from an authorized licensor. The exception license exclude this application
+                                    deployment
+                                    from the requirements to offer and provide its source code under the same terms of
+                                    GPL.
+                                </p>
+                                <tal:expired_license condition="license_expired">
+                                    <div class="alert alert-danger" role="alert">
+                                        <strong>License Expired!</strong>
+                                    </div>
+                                </tal:expired_license>
+                                <dl>
+                                    <dt>License Creation Date</dt>
+                                    <dd>${license['created']}</dd>
+                                    <dt>License Activation Date </dt>
+                                    <dd>${license['start']}</dd>
+                                    <dt>License Expiry Date</dt>
+                                    <dd>${license['end']}</dd>
+                                </dl>
+                            </tal:has_license>
+                        </tal:comment>
+                    </div>
+                </div>
+            </metal:macro>
+        </div>
+    </div>
+</body>
+
+</html>

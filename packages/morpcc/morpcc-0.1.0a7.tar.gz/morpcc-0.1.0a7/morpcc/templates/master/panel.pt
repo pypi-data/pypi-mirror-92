@@ -1,0 +1,33 @@
+<html>
+
+<body>
+    <div metal:define-macro="panel">
+        <div class="x_panel">
+            <div class="x_title" tal:define="exclude_panel_header exclude_panel_header|nothing;
+                                             collapse_panel collapse_panel|nothing;"
+                tal:condition="not:exclude_panel_header">
+                <h2>
+                    <metal:slot define-slot="panel-title">Panel Title</metal:slot>
+                </h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <metal:slot define-slot="panel-toolbox">
+                    </metal:slot>
+                    <li>
+                        <a class="collapse-link">
+                            <i tal:condition="not:collapse_panel" class="fa fa-chevron-up"></i>
+                            <i tal:condition="collapse_panel" class="fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content" tal:define="collapse_panel collapse_panel|nothing"
+                style="${'display: none;' if collapse_panel else ''}">
+                <div metal:define-slot="panel-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

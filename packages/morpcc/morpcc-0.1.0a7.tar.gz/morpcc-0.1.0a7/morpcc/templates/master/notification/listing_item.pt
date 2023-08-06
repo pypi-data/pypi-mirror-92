@@ -1,0 +1,20 @@
+<metal:macro define-macro="listing_item">
+    <div class="x_panel ${'read' if item['read'] else ''}">
+        <div class="x_content">
+            <a href="${request.link(item.ui())}">
+                <div class="image" tal:define="icon_url get_icon_url(item['icon'])">
+                    <i tal:condition="not:icon_url" class="fa fa-${item['icon'] or 'bell'}"></i>
+                    <img tal:condition="icon_url" src="${icon_url}" />
+                </div>
+                <div>
+
+                    <span class="subject"><b>${item['subject']}</b></span><br />
+                    <span class="message">${item['message']}</span>
+                    <p style="text-align: right;">
+                        <span class="time">${timeago(item['created'])}</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</metal:macro>

@@ -1,0 +1,28 @@
+<div tal:attributes="class css_class|nothing">
+    <metal:block use-macro="load_template('master/panel.pt').macros.panel">
+        <metal:title fill-slot="panel-title">
+            ${widget.title}
+            <small tal:condition="widget.title_small|nothing">
+                ${widget.title_small}
+            </small>
+        </metal:title>
+        <metal:content fill-slot="panel-content">
+            <div tal:repeat="row widget.chart_data(data)" class="widget_summary">
+                <div class="w_left w_25">
+                    ${row['label']}
+                </div>
+                <div class="w_left w_45">
+                    <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="${row['value_percent']}"
+                            aria-valuemin="0" aria-valuemax="100" style="width:${row['value_percent']}%">
+                            <span class="sr-only">${row['value_percent']}%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w_right w_20">
+                    <span>${row['value_short']}</span>
+                </div>
+            </div>
+        </metal:content>
+    </metal:block>
+</div>

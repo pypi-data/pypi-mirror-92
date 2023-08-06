@@ -1,0 +1,41 @@
+<div metal:define-macro="step">
+    <pre tal:content="step.agreement_text" class="agreement-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in mauris felis. Nulla maximus ante sed diam
+            consequat porttitor. Sed auctor turpis id dui elementum, quis accumsan quam euismod. Etiam nec arcu nec erat
+            vestibulum fringilla. Suspendisse potenti. Nam efficitur faucibus pulvinar. Vestibulum convallis posuere
+            dictum.
+            Cras a pharetra est, et pulvinar felis. Quisque justo nulla, facilisis in tempor non, sodales ut tellus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce neque
+            est,
+            volutpat vel sodales eu, ultrices fringilla ligula. Ut sed tristique mauris, vel consequat orci. Suspendisse
+            elementum est purus, ac lobortis metus fringilla eu. Integer ut lectus sit amet turpis ornare imperdiet.
+    </pre>
+    <form id="${wizard.id}-step-${step.index}" method="POST">
+        <input type="hidden" name="__formid__" value="${wizard.id}-step-${step.index}" />
+        <input type="checkbox" name="agree" value="true" />
+        <span tal:content="step.agreement_checkbox_label">I agree to the terms</span>
+    </form>
+</div>
+
+<metal:macro define-macro="step-handler">
+    <tal:cond condition="failed">
+        <form id="${step.wizard.id}-step-${step.index}" method="POST">
+
+            <div class="alert alert-danger">
+                <p class="error-msg" tal:content="step.agreement_error_msg">
+                    You must agree with the terms &amp; condition to proceed
+                </p>
+            </div>
+            <input type="hidden" name="__formid__" value="${step.wizard.id}-step-${step.index}" />
+            <input type="checkbox" value="true" name="agree" />
+            <span tal:content="step.agreement_checkbox_label">I agree to the terms</span>
+        </form>
+    </tal:cond>
+    <tal:cond condition="not:failed">
+        <form id="${step.wizard.id}-step-${step.index}" method="POST">
+            <input type="hidden" name="__formid__" value="${step.wizard.id}-step-${step.index}" />
+            <input type="checkbox" value="true" name="agree" />
+            <span tal:content="step.agreement_checkbox_label">I agree to the terms</span>
+        </form>
+    </tal:cond>
+</metal:macro>

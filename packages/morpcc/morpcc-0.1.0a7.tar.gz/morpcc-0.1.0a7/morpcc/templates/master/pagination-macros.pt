@@ -1,0 +1,14 @@
+<metal:macro define-macro="pagination">
+    <ul class="pagination">
+        <tal:r repeat="page pages">
+            <li tal:attributes="class page['state']|nothing">
+                <a tal:condition="page['url']|nothing" href="${page['url']}">
+                    ${page['title']}
+                </a>
+                <span tal:condition="not:page['url']|nothing">
+                    ${page['title']}
+                </span>
+            </li>
+        </tal:r>
+    </ul>
+</metal:macro>

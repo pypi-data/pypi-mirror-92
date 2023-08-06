@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<metal:macro use-macro="load_template('master/page.pt').macros.master">
+
+
+    <body>
+
+        <div metal:fill-slot="page-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">General</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div
+                                tal:replace="structure:form.render(form_data, request=request, context=context, readonly=True)">
+                            </div>
+                            <a href="${request.link(context,'records')}" class="btn btn-default">
+                                Manage Records
+                            </a>
+
+                            <a href="${request.link(context,'+edit')}" class="btn btn-default">
+                                Modify Schema
+                            </a>
+
+                            <a href="${request.link(context,'+schema-upgrade')}" class="btn btn-default">
+                                Update Database
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div metal:fill-slot="footer_script_slot">
+            <script>
+            </script>
+        </div>
+    </body>
+
+</metal:macro>

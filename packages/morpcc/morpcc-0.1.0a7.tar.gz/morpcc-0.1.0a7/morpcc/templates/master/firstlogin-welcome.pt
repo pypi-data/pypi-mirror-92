@@ -1,0 +1,17 @@
+<div metal:define-macro="step">
+    <div id="morpcc-splash" class="text-center">
+        <img src="${step.splash_url()}" />
+    </div>
+    <div class="clearfix"></div>
+    <script>
+        $(document).ready(function () {
+            $("#morpcc-splash img").one("load", function () {
+                $('#${step.wizard.id}').smartWizard('fixHeight');
+            }).each(function () {
+                if (this.complete) {
+                    $(this).trigger('load');
+                }
+            });
+        });
+    </script>
+</div>

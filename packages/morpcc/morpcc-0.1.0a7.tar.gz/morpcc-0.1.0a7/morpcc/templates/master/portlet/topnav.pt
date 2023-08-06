@@ -1,0 +1,65 @@
+<ul class="nav navbar-nav navbar-right">
+    <li class="">
+        <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <img src="${profilephoto_url}"><span tal:content="displayname"></span>
+            <span class=" fa fa-angle-down"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-usermenu pull-right">
+            <li>
+                <a tal:attributes="href request.relative_url('/profile')"> Profile</a>
+            </li>
+            <li>
+                <a tal:attributes="href request.relative_url('/+site-settings')">
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a tal:attributes="href request.relative_url('/+license')">
+                    <span>License</span>
+                    <span class="label label-danger" tal:condition="license_expired">
+                        Expired
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a tal:attributes="href request.relative_url('/logout')">
+                    <i class="fa fa-sign-out pull-right"></i> Log Out</a>
+            </li>
+        </ul>
+    </li>
+
+    <li role="presentation" class="dropdown">
+        <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-bell-o"></i>
+            <span class="badge bg-red" tal:condition="notification_count">${notification_count}</span>
+        </a>
+        <ul id="notification" class="dropdown-menu list-unstyled msg_list" role="menu">
+            <tal:loop repeat="notif notifications">
+                <li tal:attributes="class 'read' if notif.model['read'] else ''">
+                    <a href="${request.link(notif)}">
+                        <div class="image" tal:define="icon_url get_icon_url(notif['icon'])">
+                            <i tal:condition="not:icon_url" class="fa fa-${notif['icon'] or 'bell'}"></i>
+                            <img tal:condition="icon_url" src="${icon_url}" />
+                        </div>
+                        <div>
+
+                            <span class="subject"><b>${notif['subject']}</b></span><br />
+                            <span class="message">${notif.model['message']}</span>
+                            <p style="text-align: right;">
+                                <span class="time">${timeago(notif.model['created'])}</span>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </tal:loop>
+            <li>
+                <div class="text-center">
+                    <a href="${request.relative_url('/notification')}">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>

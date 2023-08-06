@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<metal:macro use-macro="load_template('master/page.pt').macros.master">
+
+
+    <body>
+
+        <div metal:fill-slot="page-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">General</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div tal:replace="structure:form.render(form_data, request=request, context=context)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+                        <h2 metal:fill-slot="panel-title">Entities</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="entity-listing" class="table table-striped table-bordered dt-responsive nowrap"
+                                cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+
+                            <button id="entity-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/entity/+modal-create?schema_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div metal:fill-slot="footer_script_slot">
+            <script>
+                $('#entity-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/entity/+datatable.json?filter=schema_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'name' },
+                        { 'name': 'title' },
+                        { 'name': 'description' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+                $('#iframe-modal').on('hidden.bs.modal', function () {
+                    ['#entity-listing'].map(
+                        function (identifier) {
+                            var el = $(identifier);
+                            if ($.fn.DataTable.isDataTable(el)) {
+                                el.DataTable().ajax.reload();
+                            }
+                        }
+                    )
+                });
+            </script>
+        </div>
+    </body>
+
+</metal:macro>

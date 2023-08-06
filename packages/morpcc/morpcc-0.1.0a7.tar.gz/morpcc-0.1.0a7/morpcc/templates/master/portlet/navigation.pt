@@ -1,0 +1,30 @@
+<!-- sidebar menu -->
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+
+    <div class="menu_section" tal:repeat="navsection navtree">
+        <h3 tal:content="navsection.section">General</h3>
+        <ul class="nav side-menu">
+            <li tal:repeat="navitem navsection.children">
+                <a tal:attributes="href navitem.href" tal:condition="not:navitem.children|None">
+                    <i tal:attributes="class string:fa fa-${navitem.icon}">
+                    </i>
+                    <span tal:replace="navitem.title" />
+                </a>
+                <a tal:condition="navitem.children|None">
+                    <i tal:attributes="class string:fa fa-${navitem.icon}">
+                    </i>
+                    <span tal:replace="navitem.title" />
+                    <span class="fa fa-chevron-down" tal:condition="navitem.children|None"></span>
+                </a>
+                <ul class="nav child_menu" tal:condition="navitem.children|None">
+                    <li tal:repeat="childnavitem navitem.children">
+                        <a tal:attributes="href childnavitem.href" tal:content="childnavitem.title">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /sidebar menu -->
+

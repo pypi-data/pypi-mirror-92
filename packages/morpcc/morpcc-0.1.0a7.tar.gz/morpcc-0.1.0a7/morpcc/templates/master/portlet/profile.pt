@@ -1,0 +1,14 @@
+<!-- menu profile quick info -->
+<div class="profile clearfix">
+    <div class="profile_pic">
+        <img src="${profilephoto_url}" style="width:70px;height:70px" class="img-circle profile_img">
+    </div>
+    <div class="profile_info">
+        <span>Welcome,</span>
+        <h2 tal:content="displayname">John Doe</h2>
+    </div>
+
+</div>
+<!-- /menu profile quick info -->
+
+<br />

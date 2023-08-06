@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<metal:macro use-macro="load_template('master/page.pt').macros.master">
+
+
+    <body>
+
+        <div metal:fill-slot="page-body">
+
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">Permissions</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="permission-listing"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Permission</th>
+                                        <th>Roles</th>
+                                        <th>Rule</th>
+                                        <th>Enabled</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+
+                            <button id="attribute-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/entitypermissionassignment/+modal-create?application_uuid=%s&entity_uuid=%s' % (application.uuid, entity.uuid))}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div metal:fill-slot="footer_script_slot">
+            <script>
+                $('#permission-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url('/entitypermissionassignment/+datatable.json?filter=%s' % table_filter)}",
+                    columns: [
+                        { 'name': 'permission' },
+                        { 'name': 'roles' },
+                        { 'name': 'rule' },
+                        { 'name': 'enabled' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+
+                $('#iframe-modal').on('hidden.bs.modal', function () {
+                    ['#permission-listing'].map(
+                        function (identifier) {
+                            var el = $(identifier);
+                            if ($.fn.DataTable.isDataTable(el)) {
+                                el.DataTable().ajax.reload();
+                            }
+                        }
+                    )
+                });
+            </script>
+        </div>
+    </body>
+
+</metal:macro>

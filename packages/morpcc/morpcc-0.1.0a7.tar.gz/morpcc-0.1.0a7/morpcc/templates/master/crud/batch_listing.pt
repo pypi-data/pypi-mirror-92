@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <metal:master define-macro="master">
+        <metal:master use-macro="load_template('master/page.pt').macros.master" tal:define="hide_title True">
+            <metal:slot metal:fill-slot="page-body">
+                <tal:def tal:condition="search_form|nothing">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">Search</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div id="search-form-wrapper">
+                                <form
+                                    tal:replace="structure:search_form.render(search_data, request=request, context=context)">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </tal:def>
+                <div class="batch-items">
+                    <tal:r repeat="item batch.items()">
+                        <metal:macro use-macro="item_macro" />
+                    </tal:r>
+                </div>
+                <div class="text-center">
+                    <tal:def define="pages batch.navigator()">
+                        <metal:pagination use-macro="load_template('master/pagination-macros.pt').macros.pagination" />
+                    </tal:def>
+                </div>
+            </metal:slot>
+        </metal:master>
+    </metal:master>
+</body>
+
+</html>

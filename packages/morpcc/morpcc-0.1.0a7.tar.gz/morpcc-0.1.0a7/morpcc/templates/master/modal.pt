@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+
+<metal:master define-macro="master">
+    <tal:def define="body_class string:modal-window">
+        <metal:master use-macro="main_template.macros.master">
+
+            <body metal:fill-slot="body">
+                <div class="row" style="margin-top:30px">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <metal:slot define-slot="page-body">
+                        </metal:slot>
+                    </div>
+                </div>
+            </body>
+        </metal:master>
+    </tal:def>
+</metal:master>

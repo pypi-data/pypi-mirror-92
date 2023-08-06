@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<metal:macro use-macro="load_template('master/page.pt').macros.master">
+
+    <head>
+        <div metal:fill-slot="style_slot">
+            <style tal:content="highlight_styles">
+            </style>
+        </div>
+    </head>
+
+    <body>
+        <div metal:fill-slot="page-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">Update Database Schema/Structure</h2>
+                        <div metal:fill-slot="panel-content">
+                            <p>
+                                Data structure of this application have changed and an update is required to migrate
+                                database to new structure. Following is the summary of database update activities to be
+                                applied.
+                            </p>
+                            <p><b>Note:</b> Depending on data size, this may take a while. </p>
+                            <div tal:replace="structure:highlighted_code" tal:condition="need_update">
+                            </div>
+                            <form action="${request.url}" method="POST">
+                                <input name="action" type="submit" value="Update" class="btn btn-danger" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div metal:fill-slot="footer_script_slot">
+            <script>
+            </script>
+        </div>
+    </body>
+
+</metal:macro>

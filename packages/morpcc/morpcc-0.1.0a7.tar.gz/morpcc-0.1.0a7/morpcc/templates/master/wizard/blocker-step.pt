@@ -1,0 +1,11 @@
+<metal:macro define-macro="step">
+    <form id="${step.wizard.id}-step-${repeat.step.index}" class="blocker-step" method="POST" action="${request.url}">
+        <input type="hidden" name="__formid__" value="${step.wizard.id}-step-${repeat.step.index}" />
+    </form>
+</metal:macro>
+<metal:macro define-macro="step-handler">
+    <form id="${step.wizard.id}-step-${step.index}" class="blocker-step" method="POST" action="${request.url}">
+        <input type="hidden" name="__formid__" value="${step.wizard.id}-step-${step.index}" />
+        <p class="error-msg" tal:condition="error" tal:content="step.blocker_error_msg">Validation Failure</p>
+    </form>
+</metal:macro>

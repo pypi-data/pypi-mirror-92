@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html metal:use-macro="load_template('master/page.pt').macros.master">
+
+<body metal:fill-slot="body">
+    <div class="row" style="margin-top:30px;width:100%">
+        <div class="col-md-3 col-sm-2 hidden-xs"></div>
+        <div class="col-md-6 col-sm-8 col-xs-12">
+            <metal:macro use-macro="load_template('master/simple-form.pt').macros.form_panel">
+            </metal:macro>
+        </div>
+        <div class="col-md-3 col-sm-2 hidden-xs"></div>
+    </div>
+</body>
+
+</html>

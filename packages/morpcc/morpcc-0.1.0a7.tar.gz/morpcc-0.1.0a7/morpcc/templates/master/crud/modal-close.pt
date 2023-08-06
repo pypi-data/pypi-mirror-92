@@ -1,0 +1,13 @@
+<html>
+
+<head>
+    <script>
+        parent.$('#iframe-modal').modal('hide');
+    </script>
+</head>
+
+<body>
+    Closing Modal ..
+</body>
+
+</html>

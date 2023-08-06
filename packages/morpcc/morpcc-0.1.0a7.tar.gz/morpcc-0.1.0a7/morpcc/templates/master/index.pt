@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<metal:master use-macro="load_template('master/page.pt').macros.master">
+
+    <metal:slot metal:fill-slot="page-body">
+        <div class="container-fluid">
+            <tal:loop repeat="typeinfo typeinfos">
+                <div class="col-md-3 col-sm-4 col-xs-6" tal:define="card_icon typeinfo['icon'] or 'database';
+                                card_icon_link typeinfo['href']">
+                    <metal:card use-macro="load_template('master/card.pt').macros.card">
+                        <metal:body fill-slot="card_content">
+                            <h4 style="text-align:center"><a href="${typeinfo['href']}">${typeinfo['title']}</a>
+                            </h4>
+                        </metal:body>
+                    </metal:card>
+                </div>
+            </tal:loop>
+        </div>
+    </metal:slot>
+</metal:master>
+
+</html>

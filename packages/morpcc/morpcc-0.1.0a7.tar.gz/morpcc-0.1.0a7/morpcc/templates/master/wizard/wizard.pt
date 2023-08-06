@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html metal:use-macro="main_template.macros.master">
+
+<body>
+    <div metal:fill-slot="main">
+        <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+            <h2 metal:fill-slot="panel-title" tal:condition="page_title">${page_title}</h2>
+            <div metal:fill-slot="panel-content">
+                <div metal:use-macro="wizard.macro(load_template)">
+                </div>
+            </div>
+        </div>
+    </div>
+    <metal:slot fill-slot="footer_script_slot">
+        <script metal:use-macro="wizard.macro(load_template, 'script')"></script>
+    </metal:slot>
+</body>
+
+</html>

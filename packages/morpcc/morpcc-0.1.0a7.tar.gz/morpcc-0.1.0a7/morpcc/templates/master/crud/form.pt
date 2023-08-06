@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+<metal:master use-macro="load_template('master/page.pt').macros.master">
+
+    <body>
+
+        <div metal:fill-slot="page-body" class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">${form_title}</h2>
+                    <ul>
+                        <metal:slot fill-slot="panel-toolbox">
+                            <metal:macro define-macro="toolbox">
+                                <li>
+                                    <a tal:attributes="href request.link(context, '+%s' % context.default_view)">
+                                        <i data-toggle="tooltip" data-placement="top" data-original-title="View"
+                                            class="fa fa-eye"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown" tal:condition="permits('morpfw.crud.permission:Edit')">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        <i data-toggle="tooltip" data-placement="top" data-original-title="Edit"
+                                            class="fa fa-edit"></i>
+                                    </a>
+
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li>
+                                            <a tal:attributes="href request.link(context, '+edit')">Edit Resource</a>
+                                        </li>
+                                        <li tal:condition="context.model.xattrprovider()">
+                                            <a tal:attributes="href request.link(context, '+xattredit')">
+                                                Edit Extended Attributes</a>
+                                        </li>
+                                        <li tal:condition="context.model.blob_fields">
+                                            <a tal:attributes="href request.link(context, '+upload')">
+                                                Edit File Attachments</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li tal:condition="permits('morpfw.crud.permission:Delete')">
+                                    <a tal:attributes="href request.link(context, '+delete')">
+                                        <i data-toggle="tooltip" data-placement="top" data-original-title="Delete"
+                                            class="fa fa-trash"></i>
+                                    </a>
+                                </li>
+                                <li tal:condition="permits('morpfw.crud.permission:Edit')">
+                                    <a tal:attributes="href request.link(context, '+manage-permissions')">
+                                        <i data-toggle="tooltip" data-placement="top"
+                                            data-original-title="Manage Permissions" class="fa fa-shield"></i>
+                                    </a>
+                                </li>
+                                <li class="dropdown" tal:define="transitions context.transitions()"
+                                    tal:condition="transitions and permits('morpfw.crud.permission:Edit')">
+
+                                    <a class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-expanded="false">
+                                        <i data-toggle="tooltip" data-placement="top" data-original-title="Transitions"
+                                            class="fa fa-cogs"></i>
+                                    </a>
+
+                                    <ul role="menu" class="dropdown-menu">
+                                        <li tal:repeat="transition transitions"
+                                            onclick="$('#transition-value').val('${transition}');$('#transition-form').submit();">
+                                            <a>${transition}</a>
+                                        </li>
+                                    </ul>
+                                    <form id="transition-form" method="POST"
+                                        tal:attributes="action request.link(context, '+statemachine')"
+                                        style="display: none">
+                                        <input id="transition-value" type="hidden" name="transition" value="" />
+                                    </form>
+                                </li>
+                            </metal:macro>
+                        </metal:slot>
+                    </ul>
+                    <div metal:fill-slot="panel-content" tal:define="form_data form_data|None;
+                                                                    readonly readonly|None">
+                        <metal:macro use-macro="load_template('master/simple-form.pt').macros.form" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</metal:master>
+
+</html>

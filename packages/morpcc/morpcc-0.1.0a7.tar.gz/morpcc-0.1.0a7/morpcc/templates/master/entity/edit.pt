@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<metal:macro use-macro="load_template('master/page.pt').macros.master">
+
+
+    <body>
+
+        <div metal:fill-slot="page-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                        <h2 metal:fill-slot="panel-title">General</h2>
+                        <div metal:fill-slot="panel-content">
+                            <div tal:replace="structure:form.render(form_data, request=request, context=context)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+                        <h2 metal:fill-slot="panel-title">Behaviors</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="behavior-listing" class="table table-striped table-bordered dt-responsive nowrap"
+                                cellspacing="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Behavior</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+
+                            <button id="attribute-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/behaviorassignment/+modal-create?entity_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+                        <h2 metal:fill-slot="panel-title">Attributes</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="attribute-listing"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Attribute</th>
+                                        <th>Type</th>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+
+                            <button id="attribute-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/attribute/+modal-create?entity_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+
+                        <h2 metal:fill-slot="panel-title">Relationships</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="relationship-listing"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Attribute</th>
+                                        <th>Title</th>
+                                        <th>Reference Attribute</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <button id="attribute-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/relationship/+modal-create?entity_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+
+                        <h2 metal:fill-slot="panel-title">Back Relationships</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="backrelationship-listing"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Attribute</th>
+                                        <th>Title</th>
+                                        <th>Reference Attribute</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <button id="backrelationship-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/backrelationship/+modal-create?entity_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12">
+                    <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+
+
+                        <h2 metal:fill-slot="panel-title">Validators</h2>
+                        <div metal:fill-slot="panel-content">
+                            <table id="validator-listing"
+                                class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Validator</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+
+                            <button id="validator-add" class="btn btn-default modal-link"
+                                data-url="${request.relative_url('/entityvalidatorassignment/+modal-create?entity_uuid=' + context.model.uuid)}">
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div metal:fill-slot="footer_script_slot">
+            <script>
+                $('#behavior-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/behaviorassignment/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'behavior' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+                var attrtable = $('#attribute-listing').DataTable({
+                    serverSide: true,
+                    rowReorder: {
+                        dataSrc: 1,
+                        update: false
+                    },
+                    processing: true,
+                    ajax: "${request.relative_url(r'/attribute/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'order' },
+                        { 'name': 'name', 'orderable': false },
+                        { 'name': 'type', 'orderable': false },
+                        { 'name': 'title', 'orderable': false },
+                        { 'name': 'description', 'orderable': false },
+                        { 'name': 'structure:buttons', 'orderable': false }
+                    ],
+                    order: [[0, 'asc']]
+                });
+
+                attrtable.on('row-reorder', function (e, diff, edit) {
+                    var result = '';
+                    var remap_payload = [];
+                    for (var i = 0, ien = diff.length; i < ien; i++) {
+                        remap_payload.push({ 'old': $(diff[i].oldData).text().trim(), 'new': $(diff[i].newData).text().trim() });
+                    };
+
+                    $.ajax({
+                        url: "${request.relative_url('/attribute/+reorder?entity_uuid=' + context.model.uuid)}",
+                        data: JSON.stringify({ mapping: remap_payload }),
+                        type: 'POST',
+                        contentType: 'application/json; charset=utf-8'
+                    }).done(function () {
+                        attrtable.ajax.reload();
+                    });
+
+                });
+
+                $('#selattribute-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/selectionattribute/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'name' },
+                        { 'name': 'title' },
+                        { 'name': 'description' },
+                        { 'name': 'referencedata_uuid' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+                $('#relationship-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/relationship/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'name' },
+                        { 'name': 'title' },
+                        { 'name': 'reference_attribute_uuid' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+                $('#backrelationship-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/backrelationship/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'name' },
+                        { 'name': 'title' },
+                        { 'name': 'reference_relationship_uuid' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+                $('#validator-listing').DataTable({
+                    serverSide: true,
+                    processing: true,
+                    ajax: "${request.relative_url(r'/entityvalidatorassignment/+datatable.json?filter=entity_uuid%3D%3D\"' + context.model.uuid + r'\"')}",
+                    columns: [
+                        { 'name': 'entityvalidator_name' },
+                        { 'name': 'structure:buttons' }
+                    ]
+                });
+
+                $('#iframe-modal').on('hidden.bs.modal', function () {
+                    ['#behavior-listing', '#attribute-listing',
+                        '#selattribute-listing',
+                        '#relationship-listing', '#backrelationship-listing',
+                        '#validator-listing'].map(
+                            function (identifier) {
+                                var el = $(identifier);
+                                if ($.fn.DataTable.isDataTable(el)) {
+                                    el.DataTable().ajax.reload();
+                                }
+                            }
+                        )
+                });
+            </script>
+        </div>
+    </body>
+
+</metal:macro>

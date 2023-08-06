@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html>
+
+<body id="notification-listing">
+    <metal:master use-macro="load_template('master/crud/batch_listing.pt').macros.master" tal:define="hide_title True;
+    item_macro load_template('master/notification/listing_item.pt').macros.listing_item">
+    </metal:master>
+</body>

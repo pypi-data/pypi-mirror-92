@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html metal:use-macro="load_template('master/page.pt').macros.master">
+
+<body>
+    <div metal:fill-slot="body">
+        <div class="row" style="margin-top:30px">
+            <div class="col-md-1 col-sm-1 hidden-xs"></div>
+            <div class="col-md-10 col-sm-10 col-xs-12">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">${page_title}</h2>
+                    <div metal:fill-slot="panel-content">
+                        <metal:macro use-macro="wizard.macro(load_template)">
+                        </metal:macro>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1 hidden-xs"></div>
+        </div>
+    </div>
+    <metal:slot fill-slot="footer_script_slot">
+        <script metal:use-macro="wizard.macro(load_template, 'script')"></script>
+    </metal:slot>
+</body>
+
+</html>

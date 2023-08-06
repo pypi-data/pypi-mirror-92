@@ -1,0 +1,129 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <metal:macro define-macro="wizard">
+        <tal:cond condition="wizard.style == 'vertical'">
+            <div id="${wizard.id}" class="form_wizard wizard_verticle">
+                <ul class="list-unstyled wizard_steps">
+                    <li tal:repeat="step wizard.steps">
+                        <a tal:attributes="href string:#${wizard.id}-step-${repeat.step.index}">
+                            <span class="step_no">${repeat.step.number}</span>
+                        </a>
+                    </li>
+                </ul>
+                <div tal:repeat="step wizard.steps" tal:attributes="id string:${wizard.id}-step-${repeat.step.index}">
+                    <h2 class="StepTitle">${step.title}</h2>
+                    <div metal:use-macro="load_template(step.template).macros.step">
+                    </div>
+                </div>
+            </div>
+        </tal:cond>
+
+        <tal:cond condition="wizard.style == 'horizontal'">
+            <div id="${wizard.id}" class="form_wizard wizard_horizontal">
+                <ul class="wizard_steps">
+                    <li tal:repeat="step wizard.steps">
+                        <a tal:attributes="href string:#${wizard.id}-step-${repeat.step.index}">
+                            <span class="step_no">${repeat.step.number}</span>
+                            <span class="step_descr">${step.title}</span>
+                        </a>
+                    </li>
+                </ul>
+                <div tal:repeat="step wizard.steps" tal:attributes="id string:${wizard.id}-step-${repeat.step.index}">
+                    <h2 class="StepTitle">${step.title}</h2>
+                    <div metal:use-macro="load_template(step.template).macros.step">
+                    </div>
+                </div>
+            </div>
+            <form id="${wizard.id}-finalize" method="POST" action="${request.url}" style="display:none">
+                <input type="hidden" name="__formid__" value="${wizard.id}-finalize" />
+                <input type="hidden" name="finalize" value="${wizard.id}" />
+            </form>
+        </tal:cond>
+
+    </metal:macro>
+    <metal:macro define-macro="script">
+        <script>
+
+            var wizardStepLeaveHandler = function (obj, context) {
+                if (context.toStep - context.fromStep > 0) {
+                    var direction = 'forward';
+                } else if (context.toStep - context.fromStep < 0) {
+                    var direction = 'backward';
+                } else {
+                    var direction = 'finalize';
+                }
+
+                if (direction == 'backward') {
+                    return true;
+                }
+
+                if (direction != 'finalize') {
+                    var step_selector = $(obj).attr('href');
+                } else {
+                    var step_selector = '#${wizard.id}-step-' + (context.fromStep - 1);
+                }
+                var form = $(step_selector).find('form');
+                if ($(form).length) {
+                    var success = $(form).attr('data-success');
+                    if (success == 'true') {
+                        return true;
+                    }
+                    var submit_url = $(form).attr('action');
+                    var method = $(form).attr('method');
+                    var data = $(form).serialize();
+                    $.ajax(submit_url, {
+                        method: 'POST',
+                        data: data
+                    }).success(function (data) {
+                        var body = $.parseHTML(data, document, true);
+                        var newform = $(body).filter('form');
+                        var has_error = newform.find('.error-msg').length;
+                        if (has_error) {
+                            $(form).replaceWith(newform);
+                            deform.processCallbacks();
+                            deform.clearCallbacks();
+                            $('#${wizard.id}').smartWizard('fixHeight');
+                        } else {
+                            $(newform).attr('data-success', 'true');
+                            $(form).replaceWith(newform);
+                            deform.processCallbacks();
+                            deform.clearCallbacks();
+                            $(form).attr('data-success', 'true');
+                            if (direction != 'finalize') {
+                                $('#${wizard.id}').smartWizard('goForward');
+                            } else {
+                                $('#${wizard.id}-finalize').submit();
+                            }
+                        }
+                    });
+                    return false;
+                }
+
+                return true;
+
+            }
+            $('#${wizard.id}').smartWizard({
+                'onShowStep': function (obj, context) {
+                    var step_selector = $(obj).attr('href');
+                    $('#${wizard.id} .stepContainer').css('overflow', 'visible');
+                    var form = $(step_selector).find('form');
+                    if ($(form).length) {
+                        $(form).attr('data-success', 'false');
+                    }
+                    var blocker_form = $(step_selector).find('form.blocker-step');
+                    if ($(blocker_form).length) {
+                        $('#${wizard.id}').smartWizard('goForward');
+                    }
+                },
+                'onLeaveStep': wizardStepLeaveHandler,
+                'onFinish': wizardStepLeaveHandler
+            });
+        </script>
+    </metal:macro>
+</body>
+
+</html>

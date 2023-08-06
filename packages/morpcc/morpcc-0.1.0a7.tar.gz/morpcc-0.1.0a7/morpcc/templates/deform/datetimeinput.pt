@@ -1,0 +1,43 @@
+<div i18n:domain="deform" tal:omit-tag="" tal:define="oid oid|field.oid;
+                  css_class css_class|field.widget.css_class;
+                  style style|field.widget.style;">
+  ${field.start_mapping()}
+  <div class="row">
+    <div class="col-xs-6">
+      <div class="input-group">
+        <span class="input-group-addon" i18n:translate="">Date</span>
+        <input type="text" name="date" value="${date}" class="span2 form-control ${css_class or ''} hasDatepicker" tal:attributes="style style;
+                      date_attributes|field.widget.date_attributes|{}" id="${oid}-date"/>
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar"></span>
+        </span>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <div class="input-group">
+        <span class="input-group-addon" i18n:translate="">Time</span>
+        <input type="text" name="time" value="${time}" class="span2 form-control ${css_class or ''} hasDatepicker" tal:attributes="style style;
+                      time_attributes|field.widget.time_attributes|{}" id="${oid}-time"/>
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-time"></span>
+        </span>
+      </div>
+    </div>
+  </div>
+  ${field.end_mapping()}
+  <script type="text/javascript">
+   deform.addCallback(
+     '${oid}',
+     function(oid) {
+/*       $('#' + oid + '-date').pickadate(${date_options_json});
+       $('#' + oid + '-time').pickatime(${time_options_json});*/
+       $('#' + oid + '-date').datetimepicker({
+          format: 'YYYY-MM-DD'
+       });
+       $('#' + oid + '-time').datetimepicker({
+          format: 'HH:mm'
+       });
+     }
+   );
+  </script>
+</div>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html tal:define="content component.render(context, request, load_template);
+                  script component.render_script(context, request, load_template);">
+<metal:master use-macro="load_template('master/page.pt').macros.master">
+
+    <body>
+        <div metal:fill-slot="page-body">
+            <div tal:replace="structure content"></div>
+        </div>
+        <metal:slot fill-slot="footer_script_slot">
+            <tal:block condition="script" tal:replace="structure script" />
+        </metal:slot>
+
+    </body>
+
+</metal:master>
+
+</html>

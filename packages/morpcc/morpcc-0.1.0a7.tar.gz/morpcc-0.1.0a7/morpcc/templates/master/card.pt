@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <div metal:define-macro="card">
+        <div class="x_panel widget_card" tal:define="card_icon card_icon|string:cogs;
+                                                     card_icon_link card_icon_link|string:#">
+            <div class="x_content">
+                <div class="card-icon">
+                    <a href="${card_icon_link}">
+                        <i class="fa fa-${card_icon}"></i>
+                    </a>
+                </div>
+                <div metal:define-slot="card-content">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

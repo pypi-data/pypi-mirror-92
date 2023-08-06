@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <metal:master use-macro="load_template('master/page.pt').macros.master" tal:define="hide_title True">
+        <metal:slot metal:fill-slot="page-body">
+
+            <tal:def tal:condition="search_form">
+                <div metal:use-macro="load_template('master/panel.pt').macros.panel">
+                    <h2 metal:fill-slot="panel-title">Search</h2>
+                    <div metal:fill-slot="panel-content">
+                        <div id="search-form-wrapper">
+                            <form
+                                tal:replace="structure:search_form.render(search_data, request=request, context=context)">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </tal:def>
+            <tal:r repeat="item batch.items()">
+                <metal:macro use-macro="load_template('master/panel.pt').macros.panel">
+                    <metal:slot fill-slot="panel-title">${item['signal']} </metal:slot>
+                    <metal:slot fill-slot="panel-toolbox">
+                        <li tal:condition="item['state'] == 'new'"><span class="label label-default">New</span></li>
+                        <li tal:condition="item['state'] == 'running'"><span class="label label-warning">Running</span>
+                        </li>
+                        <li tal:condition="item['state'] == 'cancelled'"><span
+                                class="label label-warning">Cancelled</span>
+                        </li>
+                        <li tal:condition="item['state'] == 'failed'"><span class="label label-danger">Failed</span>
+                        </li>
+                        <li tal:condition="item['state'] == 'success'"><span class="label label-success">Success</span>
+                        </li>
+                    </metal:slot>
+                    <metal:slot fill-slot="panel-content">
+                        <div class="row" tal:define="render_column item.collection.ui().render_column;
+                                                     file_output item.get_blob('output')">
+
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row" tal:condition="item['params']">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                        <label>Task ID:</label>
+                                        <a href="${request.link(item.ui())}">${item['task_id']}</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label>Start</label>
+                                        <span tal:content="structure render_column(item, 'start')" />
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <label>End</label>
+                                        <span tal:content="structure render_column(item, 'end')" />
+                                    </div>
+                                </div>
+                                <div class="row" tal:condition="item['params']">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                        <label>Task Parameter</label>
+                                        <div tal:content="structure item.collection.ui().render_column(item, 'params')">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" tal:condition="item['traceback']">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                                        <label>Traceback</label>
+                                        <div
+                                            tal:content="structure item.collection.ui().render_column(item, 'traceback')">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row" tal:condition="file_output">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <a class="btn btn-default"
+                                            href="${request.link(item.ui(), '+download?field=output')}">
+                                            <span class="fa fa-download"> Download Output
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </metal:slot>
+                </metal:macro>
+            </tal:r>
+            <div class="text-center">
+                <tal:def define="pages batch.navigator()">
+                    <metal:pagination use-macro="load_template('master/pagination-macros.pt').macros.pagination" />
+                </tal:def>
+            </div>
+        </metal:slot>
+    </metal:master>
+</body>
+
+</html>

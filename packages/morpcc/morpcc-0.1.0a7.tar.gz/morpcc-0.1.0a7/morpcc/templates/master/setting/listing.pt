@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <metal:master use-macro="load_template('master/page.pt').macros.master" tal:define="hide_title True">
+        <metal:slot metal:fill-slot="page-body">
+            <metal:macro use-macro="load_template('master/panel.pt').macros.panel">
+                <metal:slot fill-slot="panel-title">Settings</metal:slot>
+                <metal:slot fill-slot="panel-content">
+                    <div class="row">
+                        <div class="col-xs-3 col-md-3 col-lg-2">
+                            <ul class="nav nav-tabs tabs-left">
+                                <tal:loop repeat="page pages">
+                                    <li tal:attributes="class 'active' if page.name == current_page else None">
+                                        <a href="${request.link(context, '+listing?page=%s' % page.name)}">
+                                            ${page.title}
+                                        </a>
+                                    </li>
+                                </tal:loop>
+                            </ul>
+                        </div>
+                        <div class="col-xs-9 col-md-9 col-lg-10" tal:define="form_data form_data|None;
+                                                                     readonly readonly|None">
+                            <h3>${form_title}</h3>
+                            <hr />
+                            <metal:macro use-macro="load_template('master/simple-form.pt').macros.form" />
+                        </div>
+                    </div>
+                </metal:slot>
+            </metal:macro>
+
+        </metal:slot>
+    </metal:master>
+</body>
+
+</html>

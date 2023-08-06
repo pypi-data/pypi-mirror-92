@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<metal:master define-macro="master">
+
+    <body metal:use-macro="main_template.macros.master">
+        <div metal:fill-slot="main">
+
+            <div class="row page-title" tal:define="hide_title hide_title|False;
+                                                    page_title page_title|nothing"
+                tal:condition="(not hide_title) and (page_title)">
+                <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    <metal:slot define-slot="page-title">
+                        <h3 tal:condition="page_title">
+                            ${page_title}
+                        </h3>
+                    </metal:slot>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 text-right top_search">
+                    <metal:slot define-slot="page-actions" />
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <!-- page body -->
+            <div class="belowtitle-portlets"
+                tal:define="portletprovider app.get_portletprovider('morpcc.belowtitle-portlets')"
+                tal:condition="portletprovider"
+                tal:content="structure:portletprovider.render(context, request, load_template)">
+            </div>
+            <div id="page-body">
+                <metal:slot define-slot="page-body">
+                </metal:slot>
+            </div>
+            <!-- /page body -->
+        </div>
+    </body>
+</metal:master>
+
+</html>

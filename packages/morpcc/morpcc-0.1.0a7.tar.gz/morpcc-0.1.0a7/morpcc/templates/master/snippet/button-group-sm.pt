@@ -1,0 +1,10 @@
+<div class="btn-group btn-group-sm" role="group">
+    <tal:loop repeat="button buttons">
+        <a title="${button['title']}" type="button" tal:attributes="data-url button['data-url']|nothing;
+                                                          data-create-url button['data-create-url']|nothing;
+                                                          class 'btn btn-default ' + button.get('class', '');
+                                                          href button.get('url','#')">
+            <i class="fa fa-${button['icon']}"></i>
+        </a>
+    </tal:loop>
+</div>

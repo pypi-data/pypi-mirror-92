@@ -1,0 +1,28 @@
+<div tal:define="rows rows|field.widget.rows;
+                      cols cols|field.widget.cols;
+                      css_class css_class|field.widget.css_class;
+                      syntax field.widget.editarea_syntax();
+                      oid oid|field.oid;
+                      name name|field.name;
+   style style|field.widget.style">
+
+   <textarea tal:attributes="rows rows;
+                          cols cols;
+                          class string: form-control ${css_class or ''};
+                          style style;
+                          attributes|field.widget.attributes|{};" id="${oid}" name="${name}">${cstruct}</textarea>
+   <script type="text/javascript">
+      (function ($) {
+         deform.addCallback('${oid}', function (oid) {
+            var jqoid = $('#' + oid);
+            editAreaLoader.init({
+               id: '${oid}',
+               syntax: '${syntax}',
+               start_highlight: true,
+               replace_tab_by_spaces: 4
+            });
+         })
+      })(jQuery);
+
+   </script>
+</div>

@@ -1,0 +1,8 @@
+<div i18n:domain="" tal:define="resource field.widget.get_resource(request, cstruct)">
+   <p class="form-control-static" tal:condition="resource">
+      <a tal:attributes="href request.link(resource)"
+         tal:content="field.widget.get_resource_term(request, cstruct)"></a>
+   </p>
+   <p tal:condition="not:resource">&nbsp;
+   </p>
+</div>

@@ -1,0 +1,3 @@
+<div class="row ${css_class|nothing}" tal:attributes="style ('height:%spx' % widget.height) if widget.height else None"
+    tal:content="structure content">
+</div>

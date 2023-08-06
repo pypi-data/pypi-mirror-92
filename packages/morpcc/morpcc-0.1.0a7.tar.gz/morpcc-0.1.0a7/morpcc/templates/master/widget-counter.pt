@@ -1,0 +1,25 @@
+<html>
+<tal:comment>
+    counter_icon : FontAwesome icon css class
+    counter_count : current count
+    counter_header: title of counter
+    counter_description: description of counter
+</tal:comment>
+
+<body>
+    <div metal:define-macro="widget">
+        <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12"
+            tal:define="counter_icon counter_icon|string:fa-bar-chart">
+            <div class="tile-stats">
+                <div class="icon"><i tal:attributes="style counter_icon_style|nothing" class="fa ${counter_icon}"></i>
+                </div>
+                <div class="count">${counter_count}</div>
+
+                <h3>${counter_header}</h3>
+                <p tal:condition="counter_description|nothing">${counter_description}</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

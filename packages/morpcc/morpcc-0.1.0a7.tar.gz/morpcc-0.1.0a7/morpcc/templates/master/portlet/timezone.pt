@@ -1,0 +1,4 @@
+<div class="text-right">
+    <i class="fa fa-clock-o"></i>
+    <span tal:content="timezone"></span>
+</div>

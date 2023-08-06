@@ -1,0 +1,19 @@
+<nav aria-label="breadcrumb" tal:condition="breadcrumb">
+    <ol class="breadcrumb">
+        <tal:loop repeat="crumb breadcrumb">
+            <tal:block define="url crumb['url']|nothing">
+                <li class="breadcrumb-item" tal:condition="not crumb['active']">
+                    <a tal:condition="url" tal:attributes="href url">
+                        ${crumb['title']}
+                    </a>
+                    <tal:block condition="not url">
+                        ${crumb['title']}
+                    </tal:block>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page" tal:condition="crumb['active']">
+                    ${crumb['title']}
+                </li>
+            </tal:block>
+        </tal:loop>
+    </ol>
+</nav>

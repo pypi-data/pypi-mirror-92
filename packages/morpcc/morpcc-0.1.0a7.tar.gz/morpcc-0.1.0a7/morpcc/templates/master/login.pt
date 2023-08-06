@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>${settings.application.title}</title>
+
+
+  <!-- Bootstrap -->
+  <link href="/__static__/morpcc/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="/__static__/morpcc/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="/__static__/morpcc/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link href="/__static__/morpcc/gentelella/vendors/animate.css/animate.min.css" rel="stylesheet">
+
+  <!-- PNotify -->
+  <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.css" rel="stylesheet">
+  <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.buttons.css" rel="stylesheet">
+  <link href="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.nonblock.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="/__static__/morpcc/gentelella/build/css/custom.min.css" rel="stylesheet">
+
+  <link href="/__static__/morpcc/login.css" rel="stylesheet">
+</head>
+
+<body class="login">
+  <div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+
+    <div class="login_wrapper">
+      <div class="animate form login_form">
+        <section class="login_content">
+          <form tal:attributes="action request.url" method="POST">
+            <h1>Login Form</h1>
+            <div>
+              <input name="username" type="text" class="form-control" placeholder="Username" required="" />
+            </div>
+            <div>
+              <input name="password" type="password" class="form-control" placeholder="Password" required="" />
+            </div>
+            <div>
+              <button id="login-button" class="btn btn-default btn-primary submit">Log in</button>
+              <a href="/register" class="to_register btn btn-default">Sign Up</a>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="separator">
+              <p class="change_link">
+                <a href="/reset-password">Lost your password?</a>
+              </p>
+
+              <div class="clearfix"></div>
+              <br />
+
+              <div>
+                <h1>
+                  <i class="fa fa-wrench"></i> ${settings.application.title}</h1>
+                <p>Morp Control Center</p>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div id="notifications" style="display:none">
+    <span tal:repeat="message request.messages()" tal:attributes="data-category message['category'];
+    data-message message['message'];
+    data-title message['title']"></span>
+  </div>
+
+  <script src="/__static__/morpcc/gentelella/vendors/jquery/dist/jquery.min.js"></script>
+  <!-- PNotify -->
+  <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.js"></script>
+  <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.buttons.js"></script>
+  <script src="/__static__/morpcc/gentelella/vendors/pnotify/dist/pnotify.nonblock.js"></script>
+
+
+  <script src="/__static__/morpcc/main.js"></script>
+</body>
+
+</html>
