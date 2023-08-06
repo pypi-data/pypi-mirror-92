@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: underline
+Version: 1.0.2
+Summary: A human friendly web crawling library
+Home-page: https://github.com/anyms/underline
+Author: Jeeva
+Author-email: mytellee@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: web,spider,crawler
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Provides-Extra: dev
