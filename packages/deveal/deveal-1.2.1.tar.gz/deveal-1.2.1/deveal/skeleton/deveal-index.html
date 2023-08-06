@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% endif %}
+
+    <meta name="description" content="{{ title }}">
+    <meta name="author" content="{{ authors }}">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="{{ reveal_path }}/dist/reset.css">
+    <link rel="stylesheet" href="{{ reveal_path }}/dist/reveal.css">
+    <link rel="stylesheet" href="{{ reveal_path }}/dist/theme/{{ reveal_theme }}.css" id="theme">
+    {% if custom_css %}
+    {%- if custom_css is string -%}
+    <link rel="stylesheet" href="{{ custom_css }}">
+    {% else %}
+    {%- for css in custom_css -%}
+    <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
+    {% endif %}
+    {% endif %}
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="{{ reveal_path }}/plugin/highlight/zenburn.css">
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+{% for f in content_files %}
+{% include "%s" % f %}
+{% endfor %}
+
+
+      </div>
+
+    </div>
+
+    <script src="{{ reveal_path }}/dist/reveal.js"></script>
+    <script src="{{ reveal_path }}/plugin/notes/notes.js"></script>
+		<script src="{{ reveal_path }}/plugin/highlight/highlight.js"></script>
+
+    <script>
+
+      // More info https://revealjs.com/ > Customization > Config Options 
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        slideNumber: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        plugins: [RevealHighlight, RevealNotes]
+      });
+
+    </script>
+
+  </body>
+</html>
