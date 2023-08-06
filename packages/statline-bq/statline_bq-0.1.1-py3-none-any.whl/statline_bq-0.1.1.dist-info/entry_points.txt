@@ -1,0 +1,3 @@
+[console_scripts]
+statline-bq=statline_bq.cli:upload_datasets
+

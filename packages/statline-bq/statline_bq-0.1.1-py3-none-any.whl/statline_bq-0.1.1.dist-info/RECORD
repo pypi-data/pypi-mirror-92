@@ -1,0 +1,11 @@
+statline_bq/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+statline_bq/cli.py,sha256=KrLR2P4yysBRukjf8QxN_dDgupE9Jn0w4LS1wojEg2A,2026
+statline_bq/config.py,sha256=yYzniY3XxqXaY0xVfwV6fA6uotG0wfHD9gaiAp479Ms,4395
+statline_bq/config.toml,sha256=jiRhK5NXY6JMEJJDzB29zlZ15rN7cTAb200Rips2-tg,1338
+statline_bq/datasets.toml,sha256=IbsarrEMRLmX7Ryen-6mJ0R8jR2OIT4eEIyCaViJphE,119
+statline_bq/utils.py,sha256=NBVDgLXVlRO-F24bVkt1IqRP1ObGksvPXovda0jiHc0,52572
+statline_bq-0.1.1.dist-info/entry_points.txt,sha256=jpvWgd8ifmsFD-rROiChuTvT7ofEZoeTWVaLhi5kKWg,63
+statline_bq-0.1.1.dist-info/LICENSE,sha256=B_EMpoZfSSvM8yXqAKXUqhrZbvP8iWNczwIePw10Xew,1084
+statline_bq-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+statline_bq-0.1.1.dist-info/METADATA,sha256=zvX5CknA1HNGP_hlP-HClr5FqSd4sAhvZfHyLaC6mdk,997
+statline_bq-0.1.1.dist-info/RECORD,,
