@@ -1,0 +1,4 @@
+GIT_BRANCH="release"
+GIT_COMMIT_ID="25d0162215eb13c9063bb41b6457f80377faa66f"
+GIT_AUTHOR_NAME="Marcus Rickert"
+GIT_AUTHOR_EMAIL="marcus.rickert@web.de"
