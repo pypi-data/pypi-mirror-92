@@ -1,0 +1,10 @@
+README.md
+setup.py
+dfclient/__init__.py
+dfclient/client.py
+dfclient/exceptions.py
+dfclient.egg-info/PKG-INFO
+dfclient.egg-info/SOURCES.txt
+dfclient.egg-info/dependency_links.txt
+dfclient.egg-info/requires.txt
+dfclient.egg-info/top_level.txt

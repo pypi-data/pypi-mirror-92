@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dfclient
+Version: 0.0.3
+Summary: data finance client
+Home-page: https://github.com/greyfox-dev/dfclient
+Author: RBC
+Author-email: vlatish@rbc.ru
+License: UNKNOWN
+Description: # dfclient
+        
+        Data finance client
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6.0, <4
+Description-Content-Type: text/markdown
