@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: types-six
+Version: 0.1.0
+Summary: Typing stubs for six
+Home-page: https://github.com/python/typeshed
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+
+Typing stubs for six
+
+
