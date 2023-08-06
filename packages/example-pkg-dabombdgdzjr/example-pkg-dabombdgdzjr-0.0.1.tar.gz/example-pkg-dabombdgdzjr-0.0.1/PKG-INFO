@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: example-pkg-dabombdgdzjr
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: @angrydoge
+Author-email: author@example.com
+License: UNKNOWN
+Description: # About
+        File is a python module for manipulating and running files, with ease.
+        This couldnt have been done without [Repl.it](https://repl.it) <3
+        
+        # Documentation
+        ## Opening files
+        ```py
+        py(file)
+        # Runs a python file (.py)
+        
+        js(file)
+        # Runs a js file (.js)
+        
+        bash(file)
+        # Runs a bash file (.sh)
+        
+        cpp(filename, unicodename)
+        # Converts the (.cpp) file into a unicode file and runs it (.cpp)
+        
+        c(filename, unicodename)
+        # Converts the (.c) file into a unicode file and runs it ()
+        ```
+        
+        ## Making files
+        ```py
+        make(file, code)
+        # Makes a file with the code inside it
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
