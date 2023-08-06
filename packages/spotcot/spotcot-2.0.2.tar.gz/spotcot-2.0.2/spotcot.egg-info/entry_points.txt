@@ -1,0 +1,3 @@
+[console_scripts]
+spotcot = spotcot.commands:cli
+
