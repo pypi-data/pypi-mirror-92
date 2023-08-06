@@ -1,0 +1,8 @@
+README.md
+setup.py
+NHXDB/NHXDB.py
+NHXDB/__init__.py
+NHXDB.egg-info/PKG-INFO
+NHXDB.egg-info/SOURCES.txt
+NHXDB.egg-info/dependency_links.txt
+NHXDB.egg-info/top_level.txt
