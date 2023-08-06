@@ -1,0 +1,7 @@
+.mypy_cache
+*.egg-info
+*.eggs
+python/dist
+.mypy_cache
+*.log
+python/build
