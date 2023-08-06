@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+covid19umbria/__init__.py
+covid19umbria/covid19umbria.py
+covid19umbria.egg-info/PKG-INFO
+covid19umbria.egg-info/SOURCES.txt
+covid19umbria.egg-info/dependency_links.txt
+covid19umbria.egg-info/not-zip-safe
+covid19umbria.egg-info/requires.txt
+covid19umbria.egg-info/top_level.txt
