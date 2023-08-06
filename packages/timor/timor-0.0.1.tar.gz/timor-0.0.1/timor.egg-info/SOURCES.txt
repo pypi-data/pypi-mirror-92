@@ -1,0 +1,7 @@
+setup.py
+timor/__init__.py
+timor.egg-info/PKG-INFO
+timor.egg-info/SOURCES.txt
+timor.egg-info/dependency_links.txt
+timor.egg-info/entry_points.txt
+timor.egg-info/top_level.txt

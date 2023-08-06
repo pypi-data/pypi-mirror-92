@@ -1,0 +1,4 @@
+[console_scripts]
+tma = timor:tma
+tmb = timor:tmb
+
