@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+mopyx_pyside2/__init__.py
+mopyx_pyside2/py.typed
+mopyx_pyside2.egg-info/PKG-INFO
+mopyx_pyside2.egg-info/SOURCES.txt
+mopyx_pyside2.egg-info/dependency_links.txt
+mopyx_pyside2.egg-info/top_level.txt
