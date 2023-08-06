@@ -1,0 +1,28 @@
+version:
+bottom:
+grab:
+ignorecase:
+wrap:
+ifne:
+nooverlap:
+lines:
+monitor:
+height:
+prompt:
+prefix:
+index:
+scrollbar:
+font:
+title background:
+title foreground:
+normal background:
+normal foreground:
+filter background:
+filter foreground:
+high background:
+high foreground:
+scroll background:
+scroll foreground:
+selected background:
+selected foreground:
+windowid:
