@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+natera_add_sentinel.egg-info/PKG-INFO
+natera_add_sentinel.egg-info/SOURCES.txt
+natera_add_sentinel.egg-info/dependency_links.txt
+natera_add_sentinel.egg-info/entry_points.txt
+natera_add_sentinel.egg-info/requires.txt
+natera_add_sentinel.egg-info/top_level.txt
+sentinel/__init__.py
+sentinel/entrypoint.py
