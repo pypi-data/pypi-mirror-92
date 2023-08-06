@@ -1,0 +1,67 @@
+# Download posts and user metadata from the microblogging service Twitter
+
+***Twitterhistory*** **is in BETA status. Using it in production might be a bad idea. If you encounter any issues, [please report them](https://gitlab.com/christoph.fink/twitterhistory/-/issues) and/or submit a merge request with a fix.**
+
+This is a Python module to download posts and user metadata from the microblogging service Twitter using its API’s as of 2021 latest version 2. Data are saved to an SQLAlchemy/GeoAlchemy2-compatible database (currently only PostgreSQL/PostGIS is fully supported, SQLite with some limitations, see the [documention of GeoAlchemy2](https://geoalchemy-2.readthedocs.io/en/latest/)).
+
+The script will download all photos up until the current time, and keep track of already downloaded time periods in a cache file (default location `~/.cache/twitterhistory.yml`). When started the next time, it will attempt to fill gaps in the downloaded data and catch up until the then current time. 
+
+To use *twitterhistory* your API keys (see further down) need to be associated to an account with [academic research access](https://developer.twitter.com/en/portal/petition/academic/is-it-right-for-you).
+
+If you use *twitterhistory* for academic research, please cite it in your publication: <br />
+Fink, C. (2021): *twitterhistory: a Python tool to download historical Twitter data*. [doi:10.5281/zenodo.4471196](https://doi.org/10.5281/zenodo.4471196)
+
+### Dependencies
+
+The script is written in Python 3 and depends on the Python modules [blessed](https://blessed.readthedocs.io/), [GeoAlchemy2](https://geoalchemy-2.readthedocs.io/), [psycopg2](https://www.psycopg.org/), [PyYaml](https://pyyaml.org/), [Requests](https://2.python-requests.org/en/master/) and [SQLAlchemy](https://sqlalchemy.org/).
+
+### Installation
+
+- Download the latest [release](https://gitlab.com/christoph.fink/twitterhistory/-/releases), and use `pip` to install *twitterhistory* and its dependencies:
+
+```shell
+pip install twitterhistory-0.0.0.tar.gz
+```
+
+### Configuration
+
+Copy the example configuration file [twitterhistory.yml.example](https://gitlab.com/christoph.fink/twitterhistory/-/raw/master/twitterhistory.yml.example) to a suitable location, depending on your operating system: 
+
+- on Linux systems:
+    - system-wide configuration: `/etc/twitterhistory.yml`
+    - per-user configuration: 
+        - `~/.config/twitterhistory.yml` OR
+        - `${XDG_CONFIG_HOME}/twitterhistory.yml`
+- on MacOS systems:
+    - per-user configuration:
+        - `${XDG_CONFIG_HOME}/twitterhistory.yml`
+- on Microsoft Windows systems:
+    - per-user configuration:
+        `%APPDATA%\twitterhistory.yml`
+
+Adapt the configuration:
+
+- Configure a database connection string (`connection_string`), pointing to an existing database (with the PostGIS extension enabled).
+- Configure an API [OAuth 2.0 Bearer token](https://developer.twitter.com/en/docs/authentication/oauth-2-0) with access to the Twitter API v2 `twitter_oauth2_bearer_token`).
+- Configure one or more search terms for the query (`search_terms`).
+
+If you have a cache file from a previous installation in which already downloaded time periods are saved, copy it to `${XDG_CACHE_HOME}/twitterhistory.yml` or `%LOCALAPPDATA%/twitterhistory.yml` on Linux or MacOS, and Microsoft Windows, respectively.
+
+### Usage
+
+#### Command line executable
+
+```shell
+python -m twitterhistory
+```
+
+#### Python
+
+Import the `twitterhistory` module. Instantiate a `TwitterDownloader`, and call its `download()` method.
+
+```python
+import twitterhistory
+
+downloader = twitterhistory.TwitterDownloader()
+downloader.download()
+```
