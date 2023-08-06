@@ -1,0 +1,5 @@
+setup.py
+confusionmatrix.egg-info/PKG-INFO
+confusionmatrix.egg-info/SOURCES.txt
+confusionmatrix.egg-info/dependency_links.txt
+confusionmatrix.egg-info/top_level.txt
