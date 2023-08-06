@@ -1,0 +1,10 @@
+README.md
+setup.py
+libeasyobv/__init__.py
+libeasyobv/easyobv.py
+libeasyobv/fileops.py
+libeasyobv.egg-info/PKG-INFO
+libeasyobv.egg-info/SOURCES.txt
+libeasyobv.egg-info/dependency_links.txt
+libeasyobv.egg-info/requires.txt
+libeasyobv.egg-info/top_level.txt
