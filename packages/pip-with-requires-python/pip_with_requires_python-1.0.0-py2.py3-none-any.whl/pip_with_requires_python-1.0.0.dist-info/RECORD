@@ -1,0 +1,5 @@
+pip_with_requires_python.py,sha256=VIdDgRIKJyD1H0493lh17nLIhmmiseEJO-wFtFiaPHo,72
+pip_with_requires_python-1.0.0.dist-info/LICENSE,sha256=ZXezyveCxN7VWjz4Sw0asYYDfeFnnXcmqmtxWPoaxMA,1082
+pip_with_requires_python-1.0.0.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+pip_with_requires_python-1.0.0.dist-info/METADATA,sha256=YKTggIgJdBjfjvav32LlKtzQciYal6mWOuaRBCgYXCY,1200
+pip_with_requires_python-1.0.0.dist-info/RECORD,,
