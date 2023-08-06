@@ -1,0 +1,10 @@
+pynads/__init__.py,sha256=dlFahKt7D4IvRKq6JFBCqxG30YQgIh3elrLtCjyWvAI,93
+pynads/_utils.py,sha256=3tteZjDKzrvyLqM2yWMzYxac61ZeoLsJZ79EZWe4pW8,1103
+pynads/_version.py,sha256=eo8AoytdN4GJNixQJjo7XP1aVo0XLZsTIKXqKvrTLLQ,497
+pynads/nads.py,sha256=D2VAlz6OIcjdtUDFGoMWEPbuq7aU3wrEV5vA53bOEHQ,2535
+pynads/nads_bind.cpython-39-x86_64-linux-gnu.so,sha256=GAjbB_fxE_rIHWRbOUPbebmaSWmuww0K2xSLHjkKb10,313256
+pynads-0.1.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynads-0.1.4.dist-info/METADATA,sha256=QHccXyxFMGpvxMtc-Hh72evigMgW62ZAm2n2YyvgCiI,3691
+pynads-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pynads-0.1.4.dist-info/top_level.txt,sha256=hGBkrYIo1xn9VuKbwdKvy45FYvZs0g3NdLlSujz51BM,7
+pynads-0.1.4.dist-info/RECORD,,
