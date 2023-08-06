@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+snvoter/__init__.py
+snvoter/__main__.py
+snvoter.egg-info/PKG-INFO
+snvoter.egg-info/SOURCES.txt
+snvoter.egg-info/dependency_links.txt
+snvoter.egg-info/entry_points.txt
+snvoter.egg-info/requires.txt
+snvoter.egg-info/top_level.txt
+snvoter/model/NA12878_20FC_model.h5
+snvoter/model/NA12878_20FC_model.h5.pkl
