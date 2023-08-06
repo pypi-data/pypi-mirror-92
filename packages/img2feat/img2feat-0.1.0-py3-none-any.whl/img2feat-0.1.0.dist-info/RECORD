@@ -1,0 +1,13 @@
+img2feat/__init__.py,sha256=CaXBA_IQAwh8bTqdvut09iWheIjSd6xCBVp3Z763Wp8,229
+img2feat/antbee.py,sha256=7BX_pYeRnfsT1ky9wZ6g6OtSfKFoRISji4DSWQm4upc,4967
+img2feat/aug.py,sha256=vIWte2SEvO0iSJAmubFAdxTYVsw5IrZFj7VUwRMavNk,3029
+img2feat/buildnet.py,sha256=s1-D6h3mB49zwnsbh3UM_XvkODJjN8No5Gr-bcU1QzM,5312
+img2feat/cnn.py,sha256=yEPFrTspPT_clgGpb9cVS4zwCWOda4kAD6I1vrzjaXg,5111
+img2feat-0.1.0.dist-info/DESCRIPTION.rst,sha256=Dp2TQKqH9LMXjePTvbTS5W5L28oRBI6Hy06g-GkOuq8,5812
+img2feat-0.1.0.dist-info/METADATA,sha256=SiDEqOfRn3uTQKG2zddARMjfMpJdTBZX4jjY596IiR0,6451
+img2feat-0.1.0.dist-info/RECORD,,
+img2feat-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+img2feat-0.1.0.dist-info/metadata.json,sha256=Tb7zGQ0-3nI246OXzV4uoVVlaHtGYwNDTae7FQsn0sM,759
+img2feat-0.1.0.dist-info/top_level.txt,sha256=fTk4uS42la6_2lZz3ZqDV8oIax7pkIkVlsWuuzfR7L0,15
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_img2feat.py,sha256=UZd87bgTM2IJBjwp15oJ497La2_lAvF00MBglu6g4rg,3769
