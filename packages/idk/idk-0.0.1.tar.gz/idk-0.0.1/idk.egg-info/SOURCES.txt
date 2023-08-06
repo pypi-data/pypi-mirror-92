@@ -1,0 +1,7 @@
+pyproject.toml
+idk/__init__.py
+idk/setup.py
+idk.egg-info/PKG-INFO
+idk.egg-info/SOURCES.txt
+idk.egg-info/dependency_links.txt
+idk.egg-info/top_level.txt
