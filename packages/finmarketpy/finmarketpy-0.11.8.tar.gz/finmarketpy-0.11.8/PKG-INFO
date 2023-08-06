@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: finmarketpy
+Version: 0.11.8
+Summary: finmarketpy is a Python based library for backtesting trading strategies
+Home-page: https://github.com/cuemacro/finmarketpy
+Author: Saeed Amen
+Author-email: saeed@cuemacro.com
+License: Apache 2.0
+Description: finmarketpy is a Python based library that enables you to analyze market data and also to backtest 
+        trading strategies using a simple to use API, which has prebuilt templates for you to define backtest.
+Keywords: trading,markets,currencies,pandas,data,Bloomberg,tick,stocks,equities
+Platform: UNKNOWN

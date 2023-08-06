@@ -1,0 +1,11 @@
+pandas
+twython
+pytz
+requests
+numpy
+multiprocess
+seasonal
+sklearn
+matplotlib
+numba
+financepy

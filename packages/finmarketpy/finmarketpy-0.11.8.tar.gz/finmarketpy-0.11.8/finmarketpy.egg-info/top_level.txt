@@ -1,0 +1,4 @@
+doc
+finmarketpy
+finmarketpy_examples
+tests
