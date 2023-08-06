@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "labo@geek-guild.jp", "name": "Geek Guild Co., Ltd.", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "https://www.geek-guild.jp"}}}, "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "smalltrain", "summary": "SmallTrain", "version": "0.2.1.0"}
