@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+django_database_postgresql_aad_backend/__init__.py
+django_database_postgresql_aad_backend/base.py
+django_database_postgresql_aad_backend/mixins.py
+django_database_postgresql_aad_backend.egg-info/PKG-INFO
+django_database_postgresql_aad_backend.egg-info/SOURCES.txt
+django_database_postgresql_aad_backend.egg-info/dependency_links.txt
+django_database_postgresql_aad_backend.egg-info/requires.txt
+django_database_postgresql_aad_backend.egg-info/top_level.txt
