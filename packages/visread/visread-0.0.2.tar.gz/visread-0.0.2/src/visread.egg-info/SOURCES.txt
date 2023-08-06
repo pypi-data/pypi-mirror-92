@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/visread/__init__.py
+src/visread/visread.py
+src/visread.egg-info/PKG-INFO
+src/visread.egg-info/SOURCES.txt
+src/visread.egg-info/dependency_links.txt
+src/visread.egg-info/requires.txt
+src/visread.egg-info/top_level.txt
