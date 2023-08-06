@@ -1,0 +1,3 @@
+[console_scripts]
+pulsequantum = pulsequantum.app:run
+
