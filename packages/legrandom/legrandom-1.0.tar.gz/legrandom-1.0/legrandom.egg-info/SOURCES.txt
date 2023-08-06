@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+legrandom.egg-info/PKG-INFO
+legrandom.egg-info/SOURCES.txt
+legrandom.egg-info/dependency_links.txt
+legrandom.egg-info/top_level.txt
+xrandom/__init__.py
+xrandom/xrandom.py
