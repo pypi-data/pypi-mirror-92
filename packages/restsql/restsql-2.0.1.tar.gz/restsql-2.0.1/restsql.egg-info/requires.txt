@@ -1,0 +1,7 @@
+numpy==1.16.6
+pandas==0.24.2
+pyyaml==5.4.1
+elasticsearch==6.8.1
+psycopg2-binary==2.8.6
+mysqlclient==1.4.6
+impyla==0.16.3
