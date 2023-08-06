@@ -1,0 +1,7 @@
+numpy
+notebook
+pynwb
+h5py
+isodate
+ndx-tank-metadata
+nwb-conversion-tools
