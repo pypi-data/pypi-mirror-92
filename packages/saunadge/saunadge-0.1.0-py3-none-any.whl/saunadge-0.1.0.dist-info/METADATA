@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: saunadge
+Version: 0.1.0
+Summary: 
+Home-page: http://github.com/po3rin/saunadge
+License: Apache-2.0
+Author: po3rin
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Flask (>=1.1.2,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: gunicorn (>=20.0.4,<21.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Project-URL: Repository, http://github.com/po3rin/saunadge
+Description-Content-Type: text/markdown
+
+# saunadge
+
+![Build image](https://github.com/po3rin/saunadge/workflows/Build%20image/badge.svg)
+
+saunadge lets you to generate sakatu(サ活/サウナ活動) badge. saunadge server aggregates from the data over [SAUNA-IKITAI](https://sauna-ikitai.com/).
+
+## Usage
+
+[![sakatsu badge](https://img.shields.io/endpoint.svg?url=https://saunadge-gjqqouyuca-an.a.run.app/api/v1/badge/46531&style=flat-square)](https://sauna-ikitai.com/saunners/46531)
+
+
+```sh
+[![sakatsu badge](https://img.shields.io/endpoint.svg?url=https://saunadge-gjqqouyuca-an.a.run.app/api/v1/badge/46531&style=flat-square)](https://sauna-ikitai.com/saunners/46531)
+```
+
