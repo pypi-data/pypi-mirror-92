@@ -1,0 +1,3 @@
+[console_scripts]
+run_exp = reformer_fastai.expscript:run_exp
+
