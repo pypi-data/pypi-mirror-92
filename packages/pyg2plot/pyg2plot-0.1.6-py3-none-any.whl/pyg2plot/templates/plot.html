@@ -1,0 +1,15 @@
+{% import 'macro' as macro %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ plot.page_title }}</title>
+  {{ macro.render_plot_dependencies(plot) }}
+</head>
+<body>
+  {{ macro.render_plot_container(plot) }}
+  <script>
+    {{ macro.render_plot_content(plot) }}
+  </script>
+</body>
+</html>
