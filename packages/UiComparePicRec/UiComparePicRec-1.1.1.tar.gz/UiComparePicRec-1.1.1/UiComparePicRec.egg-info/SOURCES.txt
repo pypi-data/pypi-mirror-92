@@ -1,0 +1,10 @@
+README.md
+setup.py
+UiComparePicRec/__init__.py
+UiComparePicRec/example.py
+UiComparePicRec/findHander.py
+UiComparePicRec/picHander.py
+UiComparePicRec.egg-info/PKG-INFO
+UiComparePicRec.egg-info/SOURCES.txt
+UiComparePicRec.egg-info/dependency_links.txt
+UiComparePicRec.egg-info/top_level.txt
