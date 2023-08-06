@@ -1,0 +1,14 @@
+newick
+clldutils>=3.5
+termcolor
+
+[dev]
+flake8
+wheel
+twine
+
+[test]
+pytest>=5
+pytest-mock
+pytest-cov
+coverage>=4.2
