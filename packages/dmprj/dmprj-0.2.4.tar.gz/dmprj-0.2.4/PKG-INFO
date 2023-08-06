@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dmprj
+Version: 0.2.4
+Summary: Dedicated Modeling Project
+Home-page: UNKNOWN
+Author: Liang Chen
+License: Apache License 2.0
+Description: # DMPrj -- Dedicated Modeling Project
+        
+        ## Overview
+        
+        Abstract models on real world entities
+        
+        ## License
+        
+        Apache License, Version 2.0
+        
+Keywords: Modeling,Abstract
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
