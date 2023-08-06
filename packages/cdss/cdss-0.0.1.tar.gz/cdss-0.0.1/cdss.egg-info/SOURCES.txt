@@ -1,0 +1,6 @@
+README.rst
+cdss.egg-info/PKG-INFO
+cdss.egg-info/SOURCES.txt
+cdss.egg-info/dependency_links.txt
+cdss.egg-info/requires.txt
+cdss.egg-info/top_level.txt
