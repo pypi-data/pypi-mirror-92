@@ -1,0 +1,10 @@
+github_parser_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github_parser_pkg/main.py,sha256=Gcs50Vk593auXinFhIJFiPL8Ysyww8GWFHK2Zu1WzIE,440
+github_parser_pkg/user_profile.py,sha256=glPnzRJrY2j-PrCMLRuSZ4lWDhE_Z_nkZvKLC4Ogcdg,1640
+github_parser_pkg/user_repos.py,sha256=EULj0rPxKLD-AU2CSBfErO6NJzzxBds2wVarw5NZhoM,976
+Github_Crawler-0.0.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+Github_Crawler-0.0.2.dist-info/METADATA,sha256=UA8mQLKIRaw3bLob0PkS30Hf03FlSqTBpqDYZhIl75U,806
+Github_Crawler-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Github_Crawler-0.0.2.dist-info/entry_points.txt,sha256=J9Qx7os7plRpyBfP9yxJaKZQAYiEAaBspEjf319rFzo,60
+Github_Crawler-0.0.2.dist-info/top_level.txt,sha256=0SfJ6_WWxeVM0xsDLL32c-GxeACbQLya8EhahkNnhX4,18
+Github_Crawler-0.0.2.dist-info/RECORD,,
