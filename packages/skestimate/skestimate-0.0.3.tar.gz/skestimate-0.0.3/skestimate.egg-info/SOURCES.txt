@@ -1,0 +1,10 @@
+README.md
+setup.py
+skestimate/__init__.py
+skestimate/fit_est.py
+skestimate/test_skestimate.py
+skestimate.egg-info/PKG-INFO
+skestimate.egg-info/SOURCES.txt
+skestimate.egg-info/dependency_links.txt
+skestimate.egg-info/requires.txt
+skestimate.egg-info/top_level.txt
