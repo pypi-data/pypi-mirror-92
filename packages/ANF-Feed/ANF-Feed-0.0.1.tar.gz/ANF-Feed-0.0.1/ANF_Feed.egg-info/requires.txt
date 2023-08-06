@@ -1,0 +1,4 @@
+feedparser
+requests
+PyQt5
+qdarkstyle

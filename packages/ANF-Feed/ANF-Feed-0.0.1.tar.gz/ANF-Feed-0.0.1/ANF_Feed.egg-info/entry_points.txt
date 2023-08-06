@@ -1,0 +1,3 @@
+[console_scripts]
+anfrss = anfrss.gui.guiapp:run
+
