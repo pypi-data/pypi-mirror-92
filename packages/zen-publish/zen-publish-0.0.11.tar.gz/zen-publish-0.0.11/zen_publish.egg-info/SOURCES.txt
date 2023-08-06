@@ -1,0 +1,9 @@
+README.md
+setup.py
+zen_publish.py
+zen_publish.egg-info/PKG-INFO
+zen_publish.egg-info/SOURCES.txt
+zen_publish.egg-info/dependency_links.txt
+zen_publish.egg-info/entry_points.txt
+zen_publish.egg-info/requires.txt
+zen_publish.egg-info/top_level.txt
