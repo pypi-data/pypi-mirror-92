@@ -1,0 +1,3 @@
+[datalad.extensions]
+helloworld = datalad_mihextras:command_suite
+
