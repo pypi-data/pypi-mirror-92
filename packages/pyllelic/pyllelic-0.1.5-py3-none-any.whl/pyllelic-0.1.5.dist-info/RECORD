@@ -1,0 +1,10 @@
+pyllelic/__init__.py,sha256=lCPsQ4xnWylvoxnMSEiFw4nMZfPuYOplztFRLOBiuoY,63
+pyllelic/__version__.py,sha256=L1mAq5rzm0Lgg9vyp64b9Z0xKm3rbmJyvVpR-6gk4Vw,356
+pyllelic/config.py,sha256=ceC13snf9Wsv-onFJCJdEDvi9Npyn8zYe23taqSf8S0,421
+pyllelic/process.py,sha256=u1H-ZXYLcGwuv1gVBp_E4eZlSJmRs_RSlx5qMZAOmE4,1625
+pyllelic/pyllelic.py,sha256=2404c_z_w4JrqjYVR__q_qIXgfuMvj8X98GcmQCLpuU,24499
+pyllelic-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyllelic-0.1.5.dist-info/METADATA,sha256=1D0qTl0SJI0SnwFxTxGr5_R_BS6UIcicAB2nSkRsdyY,5036
+pyllelic-0.1.5.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pyllelic-0.1.5.dist-info/top_level.txt,sha256=gMITZgZ1xjevFwYNOxtvgoTEl8rC0W1uQuHX6vwOfoE,9
+pyllelic-0.1.5.dist-info/RECORD,,
