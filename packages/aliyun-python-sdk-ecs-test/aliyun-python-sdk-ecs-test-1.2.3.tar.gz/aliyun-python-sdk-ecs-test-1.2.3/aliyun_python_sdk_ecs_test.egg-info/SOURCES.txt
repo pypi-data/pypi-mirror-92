@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aliyun_python_sdk_ecs_test.egg-info/PKG-INFO
+aliyun_python_sdk_ecs_test.egg-info/SOURCES.txt
+aliyun_python_sdk_ecs_test.egg-info/dependency_links.txt
+aliyun_python_sdk_ecs_test.egg-info/requires.txt
+aliyun_python_sdk_ecs_test.egg-info/top_level.txt
+aliyunsdkecs/__init__.py
+aliyunsdkecs/request/__init__.py
+aliyunsdkecs/request/v20200129/CreateInstanceRequest.py
+aliyunsdkecs/request/v20200129/__init__.py
