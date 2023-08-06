@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sealion
+Version: 1.0
+Summary: Sealion is a simple machine learning and data science library for beginners and ml-engineers alike.
+Home-page: https://github.com/anish-lakkapragada/SeaLion
+Author: Anish Lakkapragada
+Author-email: anish.lakkapragada@gmail.com
+License: MIT
+Download-URL: https://github.com/anish-lakkapragada/SeaLion/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: Machine Learning,Data Science,Python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
