@@ -1,0 +1,15 @@
+numpy
+pytz
+datetime2
+matplotlib
+ConfigArgParse
+
+[dev]
+setuptools
+wheel
+pytest
+flake8
+twine
+sphinx
+sphinx_rtd_theme
+python-can

@@ -1,0 +1,3 @@
+[console_scripts]
+orbital-elements = orbital_elements.__main__:main
+
