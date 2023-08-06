@@ -1,0 +1,11 @@
+trainml/__init__.py,sha256=aj6VF5SOZFkvSYo6OjfHyF6bMJGQEXiDkf4MY9STGDw,73
+trainml/auth.py,sha256=tJHiqtMJsFDoU_CXTsojqpy8yVpMnkis_g8AmDBMBUU,25322
+trainml/datasets.py,sha256=mzVUnls9XVxGt5WIhNtVIAy7gcEDH8iY8biE_8YEEgA,2173
+trainml/gpu_types.py,sha256=-pYR0aFkGpFq_yWIb5WbaLcwyuyIRiwLNrHIt_mXj5s,1398
+trainml/jobs.py,sha256=ZtXQydcJe_BV7n80LlFIy8JgKnR1e1XG58CoeNt0f4o,3566
+trainml/trainml.py,sha256=Jk-IoJCZSqR7v3iW4_WraGuRLued5sOK6JiZLVfxeNs,2801
+trainml-0.0.1.dist-info/LICENSE,sha256=s0lpBxhSSUEpMavwde-Vb6K_K7xDCTTvSpNznVqVGR0,1069
+trainml-0.0.1.dist-info/METADATA,sha256=LpvczeyQUPtbV2YiXQYGbkj-zGRr0ZooZeiwyVjrUq8,1334
+trainml-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trainml-0.0.1.dist-info/top_level.txt,sha256=btyQixFbKbPE0bp4lf4IYkWD5b5dBcSaNK-vfZ-wbpk,8
+trainml-0.0.1.dist-info/RECORD,,
