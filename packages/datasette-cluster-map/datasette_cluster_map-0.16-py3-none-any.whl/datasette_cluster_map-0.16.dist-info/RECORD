@@ -1,0 +1,8 @@
+datasette_cluster_map/__init__.py,sha256=_NtcBaBEmc_1LwGHtC6eDqPDBemNv1NwJpXHWofUjRo,3337
+datasette_cluster_map/static/datasette-cluster-map.js,sha256=wvyqlRgwybBGHW2OKnhS6XIuh2PFEQFSvdgkgzDf2ac,8664
+datasette_cluster_map-0.16.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+datasette_cluster_map-0.16.dist-info/METADATA,sha256=tKPL_L5W93mJdrTVE1q5Fbtev8zplPBDnBc73Fkk-0A,8055
+datasette_cluster_map-0.16.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_cluster_map-0.16.dist-info/entry_points.txt,sha256=K0g_viUYT3zwk5YtocWQ4TtbX6wQ5oBA7kSAphR4KMo,49
+datasette_cluster_map-0.16.dist-info/top_level.txt,sha256=sgklbmbJ_i4Z36N3B9IfBRHNIS-29AS8Jh6LlbLmdvw,22
+datasette_cluster_map-0.16.dist-info/RECORD,,
