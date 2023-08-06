@@ -1,0 +1,11 @@
+Pillow
+aiohttp
+gpiozero
+librosa
+numpy
+opencv-contrib-python
+opencv-python
+pydub
+soundfile
+websockets
+wsmprpc>=1.1.1
