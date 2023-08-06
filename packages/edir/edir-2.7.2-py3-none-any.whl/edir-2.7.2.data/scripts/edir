@@ -1,0 +1,4 @@
+#!python
+from sys import exit
+from edir import main
+exit(main())
