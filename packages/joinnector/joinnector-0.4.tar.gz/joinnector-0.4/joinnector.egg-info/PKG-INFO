@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: joinnector
+Version: 0.4
+Summary: Nector python SDK (nector.io is a B2B SaaS loyalty platform that allows the business to target a wider audience and increase customer engagement by rewarding them.)
+Home-page: https://github.com/joinnector/rewardpythonsdk
+Author: Ayush Shukla
+Author-email: ayush@nector.io
+License: MIT
+Download-URL: https://github.com/joinnector/rewardpythonsdk/archive/0.4.tar.gz
+Description: # Python SDK
+        nector.io is a B2B SaaS loyalty platform that allows the business to target a wider audience and increase customer engagement by rewarding them.
+        
+        ## Dependency
+        Python 3
+        
+        ## Installation
+        - `pip install joinnector` 
+        
+        ## Doumentation
+        Please refer https://docs.nector.io
+        
+        ## Pip upload
+        https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56
+Keywords: nector,reward,loyalty,coins,wallets,deals
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
