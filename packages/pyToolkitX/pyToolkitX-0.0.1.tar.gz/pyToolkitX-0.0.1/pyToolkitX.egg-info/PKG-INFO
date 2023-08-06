@@ -1,0 +1,17 @@
+Metadata-Version: 1.0
+Name: pyToolkitX
+Version: 0.0.1
+Summary: python tools repository.
+Home-page: https://gitlab.ilongyuan.cn/pyhifive/toolkit
+Author: wangdongming
+Author-email: wangdongming@hifive.ai
+License: MIT
+Description: 
+        pyToolkitX
+        =======================
+        
+        Python Toolkit for XingzeAI & HifiveAI.
+        
+        
+Keywords: pyToolkitX
+Platform: UNKNOWN
