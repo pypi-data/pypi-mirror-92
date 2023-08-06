@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pyrtable
+Version: 0.7.4
+Summary: Django-inspired library to interface with Airtable
+Home-page: UNKNOWN
+Author: Vilar da Camara Neto
+Author-email: vilarneto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ==3.*,>=3.8.0
+Requires-Dist: deprecated
+Requires-Dist: pytz
+Requires-Dist: pyyaml (==5.*,>=5.1.0)
+Requires-Dist: requests (==2.*,>=2.22.0)
+Requires-Dist: simplejson (==3.*,>=3.16.0)
+Provides-Extra: dev
+Requires-Dist: click (==7.*,>=7.1.2) ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: sphinx (==3.*,>=3.0.3) ; extra == 'dev'
+Requires-Dist: twine (==3.*,>=3.3.0) ; extra == 'dev'
+
+UNKNOWN
+
+
