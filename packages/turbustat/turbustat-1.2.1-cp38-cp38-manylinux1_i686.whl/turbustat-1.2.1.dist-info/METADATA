@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: turbustat
+Version: 1.2.1
+Summary: Statistics of Turbulence
+Home-page: https://turbustat.readthedocs.org
+Author: TurbuStat Development Team
+Author-email: koch.eric.w@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.7)
+Requires-Dist: astropy (>=2.0)
+Requires-Dist: matplotlib (>=1.2)
+Requires-Dist: scipy (>=0.21)
+Requires-Dist: scikit-learn (>=0.13)
+Requires-Dist: statsmodels (>=0.4.0)
+Requires-Dist: scikit-image (>=0.12)
+Requires-Dist: spectral-cube
+Provides-Extra: all
+Requires-Dist: astrodendro ; extra == 'all'
+Requires-Dist: emcee ; extra == 'all'
+Requires-Dist: pyfftw ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: sphinx-astropy ; extra == 'docs'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest-astropy ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: spectral-cube ; extra == 'test'
+Requires-Dist: radio-beam ; extra == 'test'
+
+This package implements tools for the comparison of radio data cubes.
+
+
