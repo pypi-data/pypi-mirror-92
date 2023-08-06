@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+elasticsearch_opentracing/__init__.py
+signalfx_instrumentation_elasticsearch.egg-info/PKG-INFO
+signalfx_instrumentation_elasticsearch.egg-info/SOURCES.txt
+signalfx_instrumentation_elasticsearch.egg-info/dependency_links.txt
+signalfx_instrumentation_elasticsearch.egg-info/requires.txt
+signalfx_instrumentation_elasticsearch.egg-info/top_level.txt
