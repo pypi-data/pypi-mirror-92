@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qbism
+Version: 0.0.1
+Summary: quantum bettabilitarianism
+Home-page: https://github.com/heyredhat/qbism/tree/master/
+Author: Matthew Weiss
+Author-email: heyredhat@gmail.com
+License: Apache Software License 2.0
+Keywords: quantum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: qutip
+
+# Qbism
+> Python tools for the budding quantum bettabilitarian.
+
+
+
