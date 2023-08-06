@@ -1,0 +1,12 @@
+lodstorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lodstorage/jsonable.py,sha256=o06330xEjL3pEnfuXuBpOfGDmvLkyBIL7yghdzFr8Us,13215
+lodstorage/sample.py,sha256=moB5WRgR1-UTM7rEeeyKxveZ35xOsPHln31TTgeYP-k,2991
+lodstorage/schema.py,sha256=vxPUF1dfSkAX4TL2fG-prTOAr-5IyRWo9PHhPHYdNtM,3694
+lodstorage/sparql.py,sha256=dM702Cq1yHpwItkKKUAYxkaLeKg1pMDRl3kERrzsqnI,14098
+lodstorage/sql.py,sha256=PpoFY21tCgkgT8Vy99TI_8Rh-5vU5YerqHhiOmGEqPo,18495
+lodstorage/uml.py,sha256=Pexfh6qLnjkis6ofoPOB3MXr-MVkXbkGrTKtg6uJWfA,6166
+pylodstorage-0.0.19.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pylodstorage-0.0.19.dist-info/METADATA,sha256=LuJIPpWLfgtgiJs7hG2FqHCyg_CjEEa6GkOzqwY5Ywg,2556
+pylodstorage-0.0.19.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pylodstorage-0.0.19.dist-info/top_level.txt,sha256=st19uGwrkkqmHTXbXcsJTIXKbeLb2vSQWJqztorxngc,11
+pylodstorage-0.0.19.dist-info/RECORD,,
