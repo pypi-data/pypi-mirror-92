@@ -1,0 +1,50 @@
+{% extends 'django_namek/base.html' %}
+
+{% load humanize %}
+
+{% block title %}Results{% endblock %}
+{% block description %}TODO{% endblock %}
+
+{% block content %}
+
+    {% block action %}
+    {% endblock %}
+
+    {% block debug %}
+        {% if debug %}
+            <div>
+                <h2>Debug :</h2>
+                <table>
+                    <tbody>
+                    {% for key, value in action.items %}
+                        <tr>
+                            <td>{{ key }}</td>
+                            <td>
+                                {% if key == 'errors' %}
+                                    <ul>
+                                        {% for error in value %}
+                                            <li>• {{ error }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    {{ value }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <p>{{ key }}</p>
+                <p>{{ value }}</p>
+            </div>
+        {% endif %}
+    {% endblock %}
+
+    {% block resume %}
+        <div class="sessions-forms">
+            <h2>Resume</h2>
+            {% include 'django_namek/forms/form_display.html' %}
+        </div>
+    {% endblock %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="important stylesheet" href="chrome://messagebody/skin/messageBody.css">
+</head>
+
+<body style="background: #f2f2f2;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;">
+
+<div style="max-width: 560px; padding: 20px; background: #ffffff; border-radius: 5px; margin: 40px auto; font-family: Open Sans,Helvetica,Arial; font-size: 15px; color: #666;">
+    <div style="color: #444444; font-weight: normal;">
+        <div style="text-align: center; font-weight: 600; font-size: 26px; padding: 10px 0; border-bottom: solid 3px #eeeeee;">
+            {{ constants.CLIENT_COMPANY }}
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <div style="color: #999; padding: 20px 30px;">
+        <div>
+            <a style="color: {{ constants.CLIENT_COLOR_PRIMARY }}; text-decoration: none;" href="{{ constants.DN_BRAND_WEBSITE }}">
+                {{ constants.DN_BRAND_NAME }}
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

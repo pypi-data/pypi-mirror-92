@@ -1,0 +1,35 @@
+{% extends 'django_namek/base.html' %}
+
+{% block title %}Validation{% endblock %}
+{% block description %}TODO{% endblock %}
+
+{% block content %}
+
+    {% if is_validated %}
+
+        <h1>Merci d'avoir validé votre email</h1>
+        <p>Vous avez reçu votre estimation par mail</p>
+
+    {% else %}
+
+        <h1>Validation de l'estimation</h1>
+
+        <div class="form-validation">
+            <h2>Adresse email de réception de l'estimation</h2>
+
+            <p>Recevez votre estimation par email en là renseignant ci-dessous.</p>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form_validation }}
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div class="sessions-forms">
+            <h2>Resume</h2>
+            {% include 'django_namek/forms/form_display.html' %}
+        </div>
+
+    {% endif %}
+
+{% endblock %}

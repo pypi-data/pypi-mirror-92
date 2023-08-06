@@ -1,0 +1,29 @@
+{% extends 'django_namek/base.html' %}
+
+{% block title %}{{ self.display_name }}{% endblock %}
+{% block description %}TODO{% endblock %}
+
+{% block content %}
+
+    <h1>{{ self.display_name }} - {{ form.display_name }}</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Valider">
+    </form>
+
+    {% if debug %}
+        <div class="pagination">
+
+            {% if prev %}
+                <a href="{{ prev_url }}"><small>Précedent</small></a>
+            {% endif %}
+
+            {% if next %}
+                <a href="{{ next_url }}"><small>Suivant</small></a>
+            {% endif %}
+
+        </div>
+    {% endif %}
+
+{% endblock content %}

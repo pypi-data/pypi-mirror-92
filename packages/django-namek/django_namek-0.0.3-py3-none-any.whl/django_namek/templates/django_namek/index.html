@@ -1,0 +1,12 @@
+{% extends 'django_namek/base.html' %}
+
+{% block title %}Index{% endblock %}
+{% block description %}{% endblock %}
+
+{% block content %}
+    {% for workflow in workflows %}
+        <p>
+            <a href="{{ workflow.start_url }}">{{ workflow.display_name }}</a>
+        </p>
+    {% endfor %}
+{% endblock %}
