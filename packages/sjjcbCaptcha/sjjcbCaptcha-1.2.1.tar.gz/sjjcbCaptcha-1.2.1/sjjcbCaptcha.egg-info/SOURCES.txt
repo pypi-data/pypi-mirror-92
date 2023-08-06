@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+setup.py
+data/data_file
+sjjcbCaptcha/__init__.py
+sjjcbCaptcha/captchaAction.py
+sjjcbCaptcha.egg-info/PKG-INFO
+sjjcbCaptcha.egg-info/SOURCES.txt
+sjjcbCaptcha.egg-info/dependency_links.txt
+sjjcbCaptcha.egg-info/not-zip-safe
+sjjcbCaptcha.egg-info/top_level.txt
