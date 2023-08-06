@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mydatapy"
+version = "0.1.1"
+description = "A simple wrapper of mydata platform of greek tax registry"
+authors = ["Dimitrios Strantsalis <dstrants@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.25.1"
+xmltodict = "^0.12.0"
+pydantic = "^1.7.3"
+requests-xml = "^0.2.3"
+Jinja2 = "^2.11.2"
+
+[tool.poetry.dev-dependencies]
+pylama = "^7.7.1"
+isort = "^5.7.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
