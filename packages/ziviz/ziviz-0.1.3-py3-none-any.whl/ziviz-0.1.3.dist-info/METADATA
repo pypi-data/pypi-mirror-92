@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ziviz
+Version: 0.1.3
+Summary: Ziviz
+Home-page: https://github.com/mikheyevav/ziviz
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ipywidgets (>=7.6.0)
+
+Ziviz exploratory data analysis tool for Jupyter
+
+
