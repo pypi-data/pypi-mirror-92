@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: comfo
+Version: 0.2.0
+Summary: Python API client for comfo, a Zehnder ComfoAir home         automation controller.
+Home-page: https://github.com/ti-mo/comfo
+Author: Timo Beckers
+Author-email: timo@incline.eu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: twirp (==0.0.3)
+
+comfo [![CircleCI](https://circleci.com/gh/ti-mo/comfo.svg?style=svg)](https://circleci.com/gh/ti-mo/comfo) [![Coverage Status](https://coveralls.io/repos/github/ti-mo/comfo/badge.svg?branch=master)](https://coveralls.io/github/ti-mo/comfo?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/ti-mo/comfo)](https://goreportcard.com/report/github.com/ti-mo/comfo)
+===
+
+

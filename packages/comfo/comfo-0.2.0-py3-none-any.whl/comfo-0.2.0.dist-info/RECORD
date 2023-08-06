@@ -1,0 +1,10 @@
+comfo/__init__.py,sha256=1rW6pObMPdOXiX9gBAjbPHltKHkUMQeo9hM9u6mSjQg,252
+comfo/client.py,sha256=DpKZwWJeQ90BcaQRPmzkW7k4II0XWgiCH3cRe4Jumog,8138
+comfo/comfo_pb2.py,sha256=QNlvpywCn2RQ1xtCox-xnL5_ixvilnuoHk03HUzprqw,59942
+comfo/comfo_twirp.py,sha256=jKFkBjzdR3ySAambkSdzELV8dpSYw45vhmpQhO1muIg,6681
+comfo/exceptions.py,sha256=AN1krV0NfKEQ6yVfpld5eo3IIbVLToVTkojnKAeGKYI,341
+comfo/types.py,sha256=cl8tybS46hl6_3dm6nWfwLWP4JtKcuQCZIea0jRorfg,2963
+comfo-0.2.0.dist-info/METADATA,sha256=AJ7_P7l6NSEBhiOmBZShSBxo8Y2aAHppxClO8o5E84I,753
+comfo-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+comfo-0.2.0.dist-info/top_level.txt,sha256=lvmXewRPunxBI1NNKO8k_ItuCRP_uXIEgHyi7SSEeGo,6
+comfo-0.2.0.dist-info/RECORD,,
