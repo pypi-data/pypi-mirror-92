@@ -1,0 +1,8 @@
+setup.py
+AJLib/BasicMath.py
+AJLib/Numbers.py
+AJLib/__init__.py
+NewAJLIB.egg-info/PKG-INFO
+NewAJLIB.egg-info/SOURCES.txt
+NewAJLIB.egg-info/dependency_links.txt
+NewAJLIB.egg-info/top_level.txt
