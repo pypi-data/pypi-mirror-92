@@ -1,0 +1,14 @@
+datacker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacker/builder.py,sha256=U8RGyaEwJzQBpw-FTVP5kKPIVwn0wEEIhh2jqUJm2Eg,2352
+datacker/cli.py,sha256=ExMA0tF79XjAIOMNtu8DJqhzSnz667u40rJWh2aDtTM,493
+datacker/fs.py,sha256=ISefEdk2kwRk17XdNPVdadWzbUb4hvwpDaUlq15R61c,1081
+datacker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datacker/tests/notebooks/test.ipynb,sha256=Ar6zrHbnJMU7U_HGOMG5z_tFwXWXzdCA8RZghzyi81s,869
+datacker/tests/test_builder.py,sha256=RkvgOxOUVY70i8svEnsKyzjrNf-siDZH9UrQfUKUBS8,7221
+datacker/tests/test_cli.py,sha256=yIBxWiyRwLsfkPcwVoGNgM4VN_FYYmD1sr8fFnbGmko,887
+datacker/tests/test_fs.py,sha256=VLCm0cPVv2_bnYV_QBao7zZB0OORBeG7amHPmB40hbQ,1739
+datacker-0.1.0.dist-info/entry_points.txt,sha256=w_DjTSXTYPH3nQfXG4ZsZymiqYGuz-rHDueKr-14Ytg,45
+datacker-0.1.0.dist-info/LICENSE,sha256=TxvzqdrKcCstljlVkGzPE8ojwE-A1hebaVBRk92fZVw,1534
+datacker-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+datacker-0.1.0.dist-info/METADATA,sha256=tMeff0oYPj8CNduow2ZTdcoYOLnYjjC9hpaimwurZK0,388
+datacker-0.1.0.dist-info/RECORD,,
