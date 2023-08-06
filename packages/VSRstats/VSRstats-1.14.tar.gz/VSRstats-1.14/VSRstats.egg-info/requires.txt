@@ -1,0 +1,6 @@
+pyhrv
+numpy
+pandas==0.25.3
+peakutils
+matplotlib
+xlrd
