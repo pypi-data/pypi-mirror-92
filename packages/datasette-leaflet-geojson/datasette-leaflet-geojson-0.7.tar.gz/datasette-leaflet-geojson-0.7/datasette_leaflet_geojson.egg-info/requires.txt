@@ -1,0 +1,5 @@
+datasette>=0.48
+
+[test]
+pytest
+pytest-asyncio
