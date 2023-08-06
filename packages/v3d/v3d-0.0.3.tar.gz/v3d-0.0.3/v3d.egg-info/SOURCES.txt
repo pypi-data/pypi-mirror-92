@@ -1,0 +1,8 @@
+README.md
+setup.py
+v3d/__init__.py
+v3d/calc.py
+v3d.egg-info/PKG-INFO
+v3d.egg-info/SOURCES.txt
+v3d.egg-info/dependency_links.txt
+v3d.egg-info/top_level.txt
