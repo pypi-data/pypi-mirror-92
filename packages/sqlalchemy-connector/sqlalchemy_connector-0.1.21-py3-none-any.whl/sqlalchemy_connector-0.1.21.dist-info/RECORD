@@ -1,0 +1,7 @@
+alchemy_connector/__init__.py,sha256=xXQMaIpVNylygRFCP5g9gaPFl18sDEkxrpnSLbJw3oE,94
+alchemy_connector/alchemy_connector.py,sha256=54cZwrNssO46xeNpMe8Ebr_RoyxdJOV-vpPuy1uGEYQ,5448
+alchemy_connector/sqlalchemy_ssh.py,sha256=ba-Y7Vf90X5qsoX7gye2ac3nXMXfMXNcvI6M8ayjFtQ,2954
+sqlalchemy_connector-0.1.21.dist-info/METADATA,sha256=lEhU7o0Z480_CXqxyiL1eKEWSsSOS1_ZYk4gOcj4nAc,2121
+sqlalchemy_connector-0.1.21.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlalchemy_connector-0.1.21.dist-info/top_level.txt,sha256=Kqi_UYUeBULT8TyzPdzlIPcrnx550ycK27i_9Q1xFVQ,18
+sqlalchemy_connector-0.1.21.dist-info/RECORD,,
