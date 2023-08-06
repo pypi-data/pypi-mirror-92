@@ -1,0 +1,14 @@
+dropgen/IRDSObject.py,sha256=1Z8EqLeeK_zwYGabiPCpUbaL6fD-dpmNauzSg7vBCAg,3171
+dropgen/IRDSTable.py,sha256=8PaehXaD4MiTAp-KP_63aZ3xu745FAeuSXRM7n1hyn8,1465
+dropgen/IRDSValue.py,sha256=dWOad20id2mF4eC9z996FNhu6FBV_IdthZt-W8uQuu4,572
+dropgen/RDSItem.py,sha256=ICqdgkfLW-w1_C416uFZRH-nNBWEEBIMlloeCiEZDpk,649
+dropgen/RDSNullValue.py,sha256=RYDw8COxTAze5V5mQWMLGb-AJc141EU2JJschEuvn5E,437
+dropgen/RDSObject.py,sha256=VcVmuJhWxqtLcy7J9WfT2cWFs7UGiNurAgQ1KcHlSwo,1414
+dropgen/RDSTable.py,sha256=NJdcExuDJlCVv86kWldnBZH9gc5eVmmbCfnhviLAGnA,6483
+dropgen/RDSValue.py,sha256=jlfKXJPgm4EZJtROZUwueqAbFj576TYAN3gMFhNy0kg,1447
+dropgen/__init__.py,sha256=9KnGX19jAoqTCI0IKhSTsYWS-Uko1Pjd-NauqAtN154,76
+drop_generator-0.0.35.dist-info/LICENSE,sha256=rHPlMlObY7DqBNMoUcz8XGAxUsg1Zv3lvjfHFuvxubI,1069
+drop_generator-0.0.35.dist-info/METADATA,sha256=Dyk-5etwgbZH2MZrZVWZBnaMhgVN2hJ5-qvLuZ7aOVg,3400
+drop_generator-0.0.35.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+drop_generator-0.0.35.dist-info/top_level.txt,sha256=4ER58bkERYy-y72XIEzOHdkFFENngcXQbKg99xVZeeE,8
+drop_generator-0.0.35.dist-info/RECORD,,
