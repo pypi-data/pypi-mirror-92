@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: or-gym
+Version: 0.2.0
+Summary: OR-Gym: A set of environments for developing reinforcement learning agents for OR problems.
+Home-page: https://github.com/hubbs5/or-gym
+Author: Christian Hubbs, Hector Perez Parra, Owais Sarwar
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: gym (>=0.15.0)
+Requires-Dist: numpy (>=1.16.1)
+Requires-Dist: scipy (>=1.0)
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: networkx (>=2.3)
+
+UNKNOWN
+
+
