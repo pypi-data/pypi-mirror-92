@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: alpha-vantage-py
+Version: 0.0.3
+Summary: Alpha Vantage Python package.
+Home-page: https://github.com/wstolk/vantage-py
+Author: Wouter Stolk
+Author-email: stolk.wouter@gmail.com
+License: Apache 2.0
+Project-URL: Source, https://github.com/wstolk/vantage_py
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2)
+
+# Alpha Vantage Python
+
+**alpha_vantage** is a simple Python wrapper around the Alpha Vantage API:
+
+```python
+from alpha_vantage import Client
+from alpha_vantage.functions import TimeSeries
+
+# setup API client and TimeSeries interface for retrieving IBM stock data
+client = Client("API_TOKEN")
+ts = TimeSeries(client=client, symbol="IBM")
+
+# retrieve historic stock data on a daily level
+daily = ts.daily()
+
+# loop over results
+for day in daily.timeseries:
+    print(f"- {day.timestamp}: {day.high}")
+
+```
+
+## Installation 
+
+alpha_vantage is available on PyPi:
+
+```shell script
+$ python -m pip install alpha-vantage-py
+```
+
+## Features
+
+* Easy integration with your Python project
+* Alpha Vantage endpoints wrapped in functions
+
+
