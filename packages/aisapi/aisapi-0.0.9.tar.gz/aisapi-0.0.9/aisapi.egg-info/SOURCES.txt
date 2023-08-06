@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+aisapi/__init__.py
+aisapi/const.py
+aisapi/ws.py
+aisapi.egg-info/PKG-INFO
+aisapi.egg-info/SOURCES.txt
+aisapi.egg-info/dependency_links.txt
+aisapi.egg-info/requires.txt
+aisapi.egg-info/top_level.txt
