@@ -1,0 +1,11 @@
+twod/__init__.py,sha256=eWLbsVe5S3Q_94YEsTKW7olr91iSC8-JMfGA6YxXQOM,235
+twod/constants.py,sha256=WO4CDTRfsR7wS64WhDXVe2hvazlsHrwAd779VVJRT4M,206
+twod/ellipse.py,sha256=I2JBebDu6Rkx4mw76cRLhDeL6cNsd0xZQSvTgVoMbnI,1544
+twod/exceptions.py,sha256=pKdG3xtJ8WoPwTK14OTbwTpzsro4jG1DVJ8A7dDfGfQ,52
+twod/point.py,sha256=r4dWucAi94jCZSWttBWKVNTVonbirhHW40HBm6b4tU0,14701
+twod/rect.py,sha256=ipNIcrkfh-X3efQ6CAN8y-3S91-CxIFoOJqyqF4cULk,6572
+twod/types.py,sha256=mqc4A1c-quX2x-bwlgNq_Fc40c8CBgBAX-7h974j0PM,225
+twod-0.1.9.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+twod-0.1.9.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+twod-0.1.9.dist-info/METADATA,sha256=4VC3dklpztqpTFHR0CAE4WVfoIzQMo6VCps9uKQQQaU,2302
+twod-0.1.9.dist-info/RECORD,,
