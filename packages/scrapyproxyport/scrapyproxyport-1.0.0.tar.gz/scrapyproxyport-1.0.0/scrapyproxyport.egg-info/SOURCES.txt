@@ -1,0 +1,10 @@
+README.md
+setup.py
+scrapyproxyport/__init__.py
+scrapyproxyport/__version__.py
+scrapyproxyport/middlewares.py
+scrapyproxyport.egg-info/PKG-INFO
+scrapyproxyport.egg-info/SOURCES.txt
+scrapyproxyport.egg-info/dependency_links.txt
+scrapyproxyport.egg-info/requires.txt
+scrapyproxyport.egg-info/top_level.txt
