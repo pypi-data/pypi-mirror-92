@@ -1,0 +1,37 @@
+<div>
+    <table class="loggers">
+        {% for logger in loggers %}
+            <tr>
+                <td>{{ logger.name }}</td>
+                <td>
+                    <select name="level" value="{{ logger.level }}" onchange="handleOnChange(this, '{{ logger.name }}')">
+                        <option value="50" {% if logger.level == 50 %} selected="selected" {% endif %}>CRITICAL</option>
+                        <option value="40" {% if logger.level == 40 %} selected="selected" {% endif %}>ERROR</option>
+                        <option value="30" {% if logger.level == 30 %} selected="selected" {% endif %}>WARNING</option>
+                        <option value="20" {% if logger.level == 20 %} selected="selected" {% endif %}>INFO</option>
+                        <option value="10" {% if logger.level == 10 %} selected="selected" {% endif %}>DEBUG</option>
+                    </select>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+<script>
+
+function handleOnChange(select, loggerName) {
+    data = { "level": select.value };
+    const xhr = new XMLHttpRequest();
+    xhr.onload = () => {
+        if (xhr.status >= 200 && xhr.status < 300) {
+            console.log("Logger patch succeeded")
+        } else {
+            console.log('Update log level failed.  xhr:', xhr);
+            alert('Failed to update log level for  ' + loggerName)
+        }
+    };
+    xhr.open('PATCH', `/astutus/app/log/${loggerName}`);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify(data));
+}
+
+</script>

@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: astutus
+Version: 0.1.8
+Summary: A demonstration of the state of my python skills.
+Home-page: https://github.com/rich-dobbs-13440/astutus/
+Author: Rich Dobbs
+Author-email: rich.dobbs.13440@gmail.com
+License: 'BSD 3-Clause License'
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: Flask
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: serial
+Requires-Dist: treelib
+Requires-Dist: webcolors
+
+Astutus Readme
+==============
+
+Astutus is a portofolio to demonstrate the range and depth of my
+python development skills.  It also serves as a useful codebase
+from which I can search and reuse code as needed. Next, it
+serves as repository of things that I've learned and want to be
+able to efficiently reuse.
+
+Finally, over the next few months it will develop into
+a set of capabilities that you might find useful.
+
+Installing
+----------
+
+Install and update using `pip`_:
+
+.. _pip: https://pip.pypa.io/en/stable/quickstart/
+
+.. code-block:: text
+
+    pip install -U astutus
+
+At this time, this code is Alpha quality, having only been used
+on the development machine.
+
+
+Technologies
+------------
+
+Here are some of the technologies I've used in the past and will
+be incorporating into this code base.
+
+Full-stack web developer skills:
+
+- Flask
+- Flask-SQLAlchemy
+- Jinja2
+- HTML5
+- CSS
+- SQL
+- Javascript
+- JQuery
+- Sphinx
+- Restructured Text
+- REST API's
+
+
+Python Technologies:
+
+- Integrated Documentation
+- Setuptools
+- Pytest
+
+Productivity Technologies:
+
+- Test Driven Development
+- Continuous Improvement
+- Automation
+- Continuous Integration
+- Continuous Deployment
+- Semantic Versioning
+- Agile Planning
+- Bias for Action
+
+Other Technologies:
+
+- Docker
+- Raspbery Pi
+
+Not all of these are yet incorporated into this code base.
+This is a work-in-progress.  As time passes more of these
+capabilities will be published.
+
+

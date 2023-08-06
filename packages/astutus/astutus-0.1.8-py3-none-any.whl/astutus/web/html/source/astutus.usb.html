@@ -1,0 +1,898 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>astutus.usb package &mdash; Astutus 0.1.8a2021.01.14.22.19 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/astutus_dynamic_sphinx_pages.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="astutus.util package" href="astutus.util.html" />
+    <link rel="prev" title="astutus.sphinx package" href="astutus.sphinx.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Astutus
+          
+
+          
+            
+            <img src="../_static/favicon.ico" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.8
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">Application</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../doc/index.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../doc/welcome.html">Welcome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/changes.html">Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/maintanence/guidelines.html">Guidelines for Maintaining the System</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">API Documentation</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="astutus.html">astutus package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="astutus.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="astutus.db.html">astutus.db package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.log.html">astutus.log package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.raspi.html">astutus.raspi package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.sphinx.html">astutus.sphinx package</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">astutus.usb package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.device_aliases">astutus.usb.device_aliases module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.device_configurations">astutus.usb.device_configurations module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.lcus_1_usb_relay">astutus.usb.lcus_1_usb_relay module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.node">astutus.usb.node module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.tree">astutus.usb.tree module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.usb.usb_impl">astutus.usb.usb_impl module</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.util.html">astutus.util package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.web.html">astutus.web package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="astutus.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="astutus.html#module-astutus.version">astutus.version module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../doc/index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../doc/index.html">Documentation</a> &raquo;</li>
+        
+          <li><a href="modules.html">API Documentation</a> &raquo;</li>
+        
+          <li><a href="astutus.html">astutus package</a> &raquo;</li>
+        
+      <li>astutus.usb package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/source/astutus.usb.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-astutus.usb">
+<span id="astutus-usb-package"></span><h1>astutus.usb package<a class="headerlink" href="#module-astutus.usb" title="Permalink to this headline">¶</a></h1>
+<p>USB products are troublesome.  The physical USB device that you purchase
+consists of various physical and logical USB components.  The same
+physical components are used by various manufacturers to implement
+a large array of devices.  In many, if not most cases, the physical
+components do not have stable, unique identifiers, such as serial numbers.
+Although, the cost to provide this capabilities is mere pennies in
+2020, the large array of USB devices that have already been purchased
+will never have this feature.  Instead, a more convoluted approach must
+be taken.</p>
+<p>Each USB device is identified by a unique <strong>busnum</strong> and <strong>devnum</strong>
+while in operation.  Unfortunately, the same device is likely to have
+a different <strong>busnum</strong> and <strong>devnum</strong> if it is unplugged and plugged
+into a different port, or even the same one at a later time.  In addition,
+if a computer is rebooted, the <strong>devnum</strong> is likely to change, and the
+<strong>busnum</strong> may also change, depending on the exact start up time.  The
+order can even be effected by the exact versions of drivers associated
+with particular devices.</p>
+<p>In addition, each USB device is typically associated with a location
+in the directory structure of /sys/devices under the Unix family of
+operating system.  AFAIK, with most computers this is connected to the
+devices in the PCI bus system.  Unfortunately, the labeling of this
+hierachy is not stable upon reboot.  The parts of the system that are
+initialized early are likely to be stably labeled, but due to timing
+of various start up activities, the lower reaches of the PCI bus
+tree are likely to be inconsistently labeled.  So the /sys/devices
+hierachary can not be used to uniquely identify USB devices.</p>
+<p>Next, the same physical device can have a different logical identity
+depending on what it is plugged into.  Take a device that is a 3.1 USB
+hub.  If it is plugged into a USB 1.1 port, the logical 3.0 port
+won’t be present.  Or if it is plugged into a USB 3.0 port, but
+a USB 1.1 device is plugged into it, it will show up as USB 3.0
+logical device, a USB 2.0 logical device, and a USB 1.1. logical
+device.</p>
+<p>Despite these challenges, it is often possible to uniquely identify
+a particular USB device in a system based on how it connects with
+the computer of interest and how different physical devices are
+connected.</p>
+<p>This module provides the capabilities to identify particular
+nodes for visualization as well as selection of nodes as
+needed for device control.</p>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-astutus.usb.device_aliases">
+<span id="astutus-usb-device-aliases-module"></span><h2>astutus.usb.device_aliases module<a class="headerlink" href="#module-astutus.usb.device_aliases" title="Permalink to this headline">¶</a></h2>
+<p>Device aliases allow the USB device tree to identify a node with a
+label associated with the physical device.</p>
+<p>This module provides the capabilities to identify particular
+nodes for visualization as well as selection of nodes as
+needed for device control.</p>
+<p>The selectors implement here are influenced by XPath.</p>
+<p>Conceptually, the directory hierarch for sys/devices could
+be mapped into an XML document.  Then XPath could be directly
+applied to this.  This approach might be used in a second
+implementation of this system. But for know, the initial
+implementation will be driven by the needs to identify
+particular USB relays plugged into the current computer.</p>
+<p>In looking at the tree there are two distinct ilk of nodes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>PCI nodes identified by <strong>vendor</strong> and <strong>device</strong></p></li>
+<li><p>USB noded identified by <strong>idVendor</strong> and <strong>idProduct</strong></p></li>
+</ul>
+</div></blockquote>
+<p>The nodes are identified as:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>pci(<em>{vendor}</em>:<em>{device}</em>)</p></li>
+<li><p>usb(<em>{idVendor}</em>:<em>{idProduct}</em>)</p></li>
+</ul>
+</div></blockquote>
+<dl class="py class">
+<dt id="astutus.usb.device_aliases.DeviceAliases">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">DeviceAliases</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">filepath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>The device aliases class provides a dictionary between selectors and aliases for a node.</p>
+<p>The aliases should have the following attributes:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>“color”</p></li>
+<li><p>“label”</p></li>
+<li><p>“order”</p></li>
+<li><p>“priority”</p></li>
+</ul>
+</div></blockquote>
+<p>Each of these attributes are string values.</p>
+<p>Color should be as defined using css compatible color names or #rrggbb values.</p>
+<p>The order and priority values should be two character values, such as “44”.</p>
+<p>Aliases with higher priority are selected over other potential aliases
+of lesser priority for a particular node.</p>
+<p>Order is used in sorting the nodes in the USB tree for display.</p>
+<p>Here is structure of the raw aliases file:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="nt">&quot;pci(0x1002:0x5a19)/pci(0x1b21:0x1042)&quot;</span><span class="p">:</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Come up with good name&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;#5a1ddd&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;description_template&quot;</span><span class="p">:</span> <span class="s2">&quot;ASM1042 Alias&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;order&quot;</span><span class="p">:</span> <span class="s2">&quot;00&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;pci(0x1002:0x5a19)/pci(0x1b21:0x1042)&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;priority&quot;</span><span class="p">:</span> <span class="mi">50</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.find">
+<code class="sig-name descname">find</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodepath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; <span class="p">[</span>typing.Dict<span class="p">]</span><a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all aliases that partially match the nodepath.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.find_highest_priority">
+<code class="sig-name descname">find_highest_priority</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">nodepath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.find_highest_priority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the alias with the highest priority.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pattern</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the alias that exactly matches the pattern</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.parse_raw_aliases">
+<em class="property">static </em><code class="sig-name descname">parse_raw_aliases</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_aliases</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.parse_raw_aliases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.read_raw_from_json">
+<em class="property">static </em><code class="sig-name descname">read_raw_from_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.read_raw_from_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.to_javascript">
+<code class="sig-name descname">to_javascript</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.to_javascript" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the device aliases as a Javascript object with a small set of methods.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes the aliases to filepath</p>
+<p>if filepath is None, then write to original path</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_aliases.DeviceAliases.write_raw_as_json">
+<em class="property">static </em><code class="sig-name descname">write_raw_as_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">raw_aliases</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.usb.device_aliases.DeviceAliases.write_raw_as_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.device_aliases.find_all_pci_paths">
+<code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">find_all_pci_paths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.device_aliases.find_all_pci_paths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all that terminate with a node that matches the value.</p>
+<p>The value is something like usb(1a86:7523) or pci(0x1002:0x5a19)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.device_aliases.find_node_paths">
+<code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">find_node_paths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.device_aliases.find_node_paths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.device_aliases.matches_as_node">
+<code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">matches_as_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">ilk</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">vendor</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">device</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#astutus.usb.device_aliases.matches_as_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.device_aliases.matches_as_pci_node">
+<code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">matches_as_pci_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">vendor</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">device</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#astutus.usb.device_aliases.matches_as_pci_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.device_aliases.matches_as_usb_node">
+<code class="sig-prename descclassname">astutus.usb.device_aliases.</code><code class="sig-name descname">matches_as_usb_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">vendor</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">product</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#astutus.usb.device_aliases.matches_as_usb_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-astutus.usb.device_configurations">
+<span id="astutus-usb-device-configurations-module"></span><h2>astutus.usb.device_configurations module<a class="headerlink" href="#module-astutus.usb.device_configurations" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.device_configurations.</code><code class="sig-name descname">DeviceConfiguration</code><span class="sig-paren">(</span><em class="sig-param">config</em>, <em class="sig-param">command_runner=&lt;function run_cmd&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.find_description_template">
+<code class="sig-name descname">find_description_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.find_description_template" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.find_styler">
+<code class="sig-name descname">find_styler</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.find_styler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.find_tty">
+<code class="sig-name descname">find_tty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.find_tty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.generate_description">
+<code class="sig-name descname">generate_description</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.generate_description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.get_color">
+<code class="sig-name descname">get_color</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.get_color" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get color in #rrggbb format suitable for HTML input control.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.get_name">
+<code class="sig-name descname">get_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.get_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfiguration.get_stylers">
+<code class="sig-name descname">get_stylers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfiguration.get_stylers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.device_configurations.</code><code class="sig-name descname">DeviceConfigurations</code><span class="sig-paren">(</span><em class="sig-param">filepath=None</em>, <em class="sig-param">command_runner=&lt;function run_cmd&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.find_configuration">
+<code class="sig-name descname">find_configuration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.find_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.find_device_info">
+<code class="sig-name descname">find_device_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">slot</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; dict<a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.find_device_info" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.find_pci_configuration">
+<code class="sig-name descname">find_pci_configuration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.find_pci_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.find_usb_configuration">
+<code class="sig-name descname">find_usb_configuration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.find_usb_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.find_usb_configuration_for_node">
+<code class="sig-name descname">find_usb_configuration_for_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.find_usb_configuration_for_node" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.get_item">
+<code class="sig-name descname">get_item</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.get_item" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.items">
+<code class="sig-name descname">items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.items" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.make_generic_other_configuration">
+<em class="property">static </em><code class="sig-name descname">make_generic_other_configuration</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">command_runner=&lt;function run_cmd&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.make_generic_other_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.make_generic_usb_configuration">
+<em class="property">static </em><code class="sig-name descname">make_generic_usb_configuration</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">command_runner=&lt;function run_cmd&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.make_generic_usb_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.make_pci_configuration">
+<em class="property">static </em><code class="sig-name descname">make_pci_configuration</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">command_runner=&lt;function run_cmd&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.make_pci_configuration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.read_from_json">
+<code class="sig-name descname">read_from_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.read_from_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.to_javascript">
+<code class="sig-name descname">to_javascript</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.to_javascript" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.device_configurations.DeviceConfigurations.write_as_json">
+<code class="sig-name descname">write_as_json</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filepath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.device_configurations.DeviceConfigurations.write_as_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astutus.usb.lcus_1_usb_relay">
+<span id="astutus-usb-lcus-1-usb-relay-module"></span><h2>astutus.usb.lcus_1_usb_relay module<a class="headerlink" href="#module-astutus.usb.lcus_1_usb_relay" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.usb.lcus_1_usb_relay.SerialPort">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.lcus_1_usb_relay.</code><code class="sig-name descname">SerialPort</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">tty_dev</span></em>, <em class="sig-param"><span class="n">baudrate</span></em>, <em class="sig-param"><span class="n">bytesize</span><span class="o">=</span><span class="default_value">8</span></em>, <em class="sig-param"><span class="n">parity</span><span class="o">=</span><span class="default_value">'N'</span></em>, <em class="sig-param"><span class="n">stopbits</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.SerialPort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="astutus.usb.lcus_1_usb_relay.SerialPort.close">
+<code class="sig-name descname">close</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.SerialPort.close" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.lcus_1_usb_relay.SerialPort.open">
+<code class="sig-name descname">open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.SerialPort.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.lcus_1_usb_relay.SerialPort.write">
+<code class="sig-name descname">write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bytes</span><span class="p">:</span> <span class="n">bytearray</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.SerialPort.write" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.usb.lcus_1_usb_relay.UsbRelayLcus1">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.lcus_1_usb_relay.</code><code class="sig-name descname">UsbRelayLcus1</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tty_dev</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.UsbRelayLcus1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.OFF_SIGNAL">
+<code class="sig-name descname">OFF_SIGNAL</code><em class="property"> = bytearray(b'\xa0\x01\x01\xa2')</em><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.OFF_SIGNAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.ON_SIGNAL">
+<code class="sig-name descname">ON_SIGNAL</code><em class="property"> = bytearray(b'\xa0\x01\x00\xa1')</em><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.ON_SIGNAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.turn_off">
+<code class="sig-name descname">turn_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.turn_off" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.turn_on">
+<code class="sig-name descname">turn_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.lcus_1_usb_relay.UsbRelayLcus1.turn_on" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-astutus.usb.node">
+<span id="astutus-usb-node-module"></span><h2>astutus.usb.node module<a class="headerlink" href="#module-astutus.usb.node" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.usb.node.DeviceNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">DeviceNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#astutus.usb.device_configurations.DeviceConfiguration" title="astutus.usb.device_configurations.DeviceConfiguration">astutus.usb.device_configurations.DeviceConfiguration</a></span></em>, <em class="sig-param"><span class="n">alias</span><span class="p">:</span> <span class="n">Dict</span></em>, <em class="sig-param"><span class="n">cls_order</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.node.DeviceNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Base class for particular device nodes</p>
+<dl class="py method">
+<dt id="astutus.usb.node.DeviceNode.colorized_node_label_for_terminal">
+<em class="property">property </em><code class="sig-name descname">colorized_node_label_for_terminal</code><a class="headerlink" href="#astutus.usb.node.DeviceNode.colorized_node_label_for_terminal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.DeviceNode.key">
+<code class="sig-name descname">key</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.node.DeviceNode.key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.usb.node.DeviceNode.verbose">
+<code class="sig-name descname">verbose</code><em class="property"> = False</em><a class="headerlink" href="#astutus.usb.node.DeviceNode.verbose" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.usb.node.OtherDeviceNodeData">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">OtherDeviceNodeData</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#astutus.usb.device_configurations.DeviceConfiguration" title="astutus.usb.device_configurations.DeviceConfiguration">astutus.usb.device_configurations.DeviceConfiguration</a></span></em>, <em class="sig-param"><span class="n">alias</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.node.OtherDeviceNodeData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#astutus.usb.node.DeviceNode" title="astutus.usb.node.DeviceNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">astutus.usb.node.DeviceNode</span></code></a></p>
+<dl class="py attribute">
+<dt id="astutus.usb.node.OtherDeviceNodeData.cls_order">
+<code class="sig-name descname">cls_order</code><em class="property"> = '05'</em><a class="headerlink" href="#astutus.usb.node.OtherDeviceNodeData.cls_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.OtherDeviceNodeData.extract_data">
+<em class="property">classmethod </em><code class="sig-name descname">extract_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.node.OtherDeviceNodeData.extract_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.OtherDeviceNodeData.node_id_from_data">
+<em class="property">static </em><code class="sig-name descname">node_id_from_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.node.OtherDeviceNodeData.node_id_from_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.usb.node.PciDeviceNodeData">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">PciDeviceNodeData</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#astutus.usb.device_configurations.DeviceConfiguration" title="astutus.usb.device_configurations.DeviceConfiguration">astutus.usb.device_configurations.DeviceConfiguration</a></span></em>, <em class="sig-param"><span class="n">alias</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.node.PciDeviceNodeData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#astutus.usb.node.DeviceNode" title="astutus.usb.node.DeviceNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">astutus.usb.node.DeviceNode</span></code></a></p>
+<dl class="py attribute">
+<dt id="astutus.usb.node.PciDeviceNodeData.cls_order">
+<code class="sig-name descname">cls_order</code><em class="property"> = '10'</em><a class="headerlink" href="#astutus.usb.node.PciDeviceNodeData.cls_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.PciDeviceNodeData.extract_data">
+<em class="property">classmethod </em><code class="sig-name descname">extract_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.node.PciDeviceNodeData.extract_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.PciDeviceNodeData.node_id_from_data">
+<em class="property">static </em><code class="sig-name descname">node_id_from_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.node.PciDeviceNodeData.node_id_from_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.usb.node.UsbDeviceNodeData">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">UsbDeviceNodeData</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n"><a class="reference internal" href="#astutus.usb.device_configurations.DeviceConfiguration" title="astutus.usb.device_configurations.DeviceConfiguration">astutus.usb.device_configurations.DeviceConfiguration</a></span></em>, <em class="sig-param"><span class="n">alias</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.node.UsbDeviceNodeData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#astutus.usb.node.DeviceNode" title="astutus.usb.node.DeviceNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">astutus.usb.node.DeviceNode</span></code></a></p>
+<dl class="py attribute">
+<dt id="astutus.usb.node.UsbDeviceNodeData.cls_order">
+<code class="sig-name descname">cls_order</code><em class="property"> = '00'</em><a class="headerlink" href="#astutus.usb.node.UsbDeviceNodeData.cls_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.UsbDeviceNodeData.extract_data">
+<em class="property">classmethod </em><code class="sig-name descname">extract_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.node.UsbDeviceNodeData.extract_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.node.UsbDeviceNodeData.node_id_from_data">
+<em class="property">static </em><code class="sig-name descname">node_id_from_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="p">:</span> <span class="n">Dict</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.node.UsbDeviceNodeData.node_id_from_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.node.node_id_for_dirpath">
+<code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">node_id_for_dirpath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.node.node_id_for_dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.node.parse_value">
+<code class="sig-prename descclassname">astutus.usb.node.</code><code class="sig-name descname">parse_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.node.parse_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a value break it down by the ilk of node (usb or pci), the vendor, and the device or product.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-astutus.usb.tree">
+<span id="astutus-usb-tree-module"></span><h2>astutus.usb.tree module<a class="headerlink" href="#module-astutus.usb.tree" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.usb.tree.UsbDeviceTree">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">UsbDeviceTree</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">basepath</span></em>, <em class="sig-param"><span class="n">device_aliases_filepath</span></em>, <em class="sig-param"><span class="n">device_configurations_filepath</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Provides a tree of USB devices and the PCI buses and devices that connect them.</p>
+<p>The representation can provide aliases that are meaningful in terms of physical USB devices
+and ports on the computer.</p>
+<p>The representation can be color-coded as desired by the user.</p>
+<p>To speed up rendering, this code implements caching of intermediate calculations
+and lazy evaluation.</p>
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.assemble_bare_tree">
+<code class="sig-name descname">assemble_bare_tree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.assemble_bare_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.assemble_tree">
+<code class="sig-name descname">assemble_tree</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">basepath</span></em>, <em class="sig-param"><span class="n">tree_dirpaths</span></em>, <em class="sig-param"><span class="n">data_by_dirpath</span></em>, <em class="sig-param"><span class="n">ilk_by_dirpath</span></em>, <em class="sig-param"><span class="n">device_aliases</span></em>, <em class="sig-param"><span class="n">device_configurations</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.assemble_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.augment_data_by_nodepath">
+<em class="property">static </em><code class="sig-name descname">augment_data_by_nodepath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tree_dirpaths</span></em>, <em class="sig-param"><span class="n">data_by_dirpath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.augment_data_by_nodepath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.execute_tree_cmd">
+<code class="sig-name descname">execute_tree_cmd</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">node_ids</span><span class="o">=</span><span class="default_value">[]</span></em>, <em class="sig-param"><span class="n">show_tree</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">to_dict</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">to_tree_dirpaths</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">to_bare_tree</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.execute_tree_cmd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.find_data_for_paths">
+<code class="sig-name descname">find_data_for_paths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ilk_by_dirpath</span></em>, <em class="sig-param"><span class="n">dirpaths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.find_data_for_paths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.find_tree_dirpaths">
+<em class="property">static </em><code class="sig-name descname">find_tree_dirpaths</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">basepath</span></em>, <em class="sig-param"><span class="n">device_paths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.find_tree_dirpaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.formulate_data_as_table">
+<code class="sig-name descname">formulate_data_as_table</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.formulate_data_as_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.formulate_data_consisely">
+<em class="property">static </em><code class="sig-name descname">formulate_data_consisely</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.formulate_data_consisely" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.generate_alias_json_snippet">
+<em class="property">static </em><code class="sig-name descname">generate_alias_json_snippet</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">node_ids</span></em>, <em class="sig-param"><span class="n">tree_dirpaths</span></em>, <em class="sig-param"><span class="n">data_by_dirpath</span></em>, <em class="sig-param"><span class="n">device_configurations</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.generate_alias_json_snippet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_aliases">
+<code class="sig-name descname">get_aliases</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_aliases" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_data_by_dirpath">
+<code class="sig-name descname">get_data_by_dirpath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_data_by_dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_device_configurations">
+<code class="sig-name descname">get_device_configurations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_device_configurations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_device_info_map">
+<code class="sig-name descname">get_device_info_map</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_device_info_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_ilk_by_dirpath">
+<code class="sig-name descname">get_ilk_by_dirpath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_ilk_by_dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_tree_as_dict">
+<code class="sig-name descname">get_tree_as_dict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_tree_as_dict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_tree_dirpaths">
+<code class="sig-name descname">get_tree_dirpaths</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_tree_dirpaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_treelib_tree">
+<code class="sig-name descname">get_treelib_tree</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_treelib_tree" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.get_usb_device_dirpath">
+<code class="sig-name descname">get_usb_device_dirpath</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.get_usb_device_dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.sanitize_for_html">
+<em class="property">static </em><code class="sig-name descname">sanitize_for_html</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.sanitize_for_html" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.usb.tree.UsbDeviceTree.walk_basepath_for_usb">
+<em class="property">static </em><code class="sig-name descname">walk_basepath_for_usb</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">basepath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.UsbDeviceTree.walk_basepath_for_usb" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.tree.get_data_for_dirpath">
+<code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">get_data_for_dirpath</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ilk</span></em>, <em class="sig-param"><span class="n">dirpath</span></em>, <em class="sig-param"><span class="n">device_info</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.get_data_for_dirpath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.tree.get_node_data">
+<code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">get_node_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">device_config</span></em>, <em class="sig-param"><span class="n">alias</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.get_node_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.tree.key_by_node_data_key">
+<code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">key_by_node_data_key</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.key_by_node_data_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.tree.main">
+<code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_args</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.main" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.tree.parse_arguments">
+<code class="sig-prename descclassname">astutus.usb.tree.</code><code class="sig-name descname">parse_arguments</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">raw_args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.usb.tree.parse_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-astutus.usb.usb_impl">
+<span id="astutus-usb-usb-impl-module"></span><h2>astutus.usb.usb_impl module<a class="headerlink" href="#module-astutus.usb.usb_impl" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.extract_specified_data">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">extract_specified_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dirpath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">filenames</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#astutus.usb.usb_impl.extract_specified_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_busnum_and_devnum_for_sym_link">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_busnum_and_devnum_for_sym_link</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sym_link</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>int<span class="p">, </span>int<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_busnum_and_devnum_for_sym_link" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_busnum_and_devnum_for_sys_device">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_busnum_and_devnum_for_sys_device</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pci_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>int<span class="p">, </span>int<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_busnum_and_devnum_for_sys_device" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_busnum_and_devnum_for_tty">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_busnum_and_devnum_for_tty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tty</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>int<span class="p">, </span>int<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_busnum_and_devnum_for_tty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_paths_for_vendor_and_product">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_paths_for_vendor_and_product</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vendor_id</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">product_id</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_paths_for_vendor_and_product" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_sym_link_for_tty">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_sym_link_for_tty</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tty</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.usb_impl.find_sym_link_for_tty" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_tty_description_from_pci_path">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_tty_description_from_pci_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pci_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_tty_description_from_pci_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns tty, busnum, devnum, vendorid, productid, description</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_tty_for_busnum_and_devnum">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_tty_for_busnum_and_devnum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">busnum</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">devnum</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.usb.usb_impl.find_tty_for_busnum_and_devnum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.usb.usb_impl.find_vendor_info_from_busnum_and_devnum">
+<code class="sig-prename descclassname">astutus.usb.usb_impl.</code><code class="sig-name descname">find_vendor_info_from_busnum_and_devnum</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">busnum</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">devnum</span><span class="p">:</span> <span class="n">int</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>str<span class="p">, </span>str<span class="p">, </span>str<span class="p">]</span><a class="headerlink" href="#astutus.usb.usb_impl.find_vendor_info_from_busnum_and_devnum" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns vendorid, productid, description</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="astutus.util.html" class="btn btn-neutral float-right" title="astutus.util package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="astutus.sphinx.html" class="btn btn-neutral float-left" title="astutus.sphinx package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rich Dobbs.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

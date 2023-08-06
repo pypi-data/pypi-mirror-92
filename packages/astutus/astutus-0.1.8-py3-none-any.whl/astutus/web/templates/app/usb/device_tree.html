@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="/static/device_tree.css" />
+<p>
+  <input type="checkbox" onclick="toggleVisibility(this, '.node_id_class', 'inline')">Node ID</input>
+  <span>
+  <input type="color" value="{{ tree_html_background_color }}" onchange="onBackgroundColorChange(this)" class="astutus-color">Background Color</input>
+  </span>
+</p>
+<div class="astutus-tree-html" id="tree-html-container">
+
+  {% if bare_tree is not none %}
+    {{ bare_tree | safe }}
+  {% endif %}
+
+</div>
+  <!-- TODO: Add in collapsing feature without bringing the ugly styling
+    <script>
+    $(function() {
+      $('#tree-html-container').jstree();
+    });
+  </script> -->
+<div id="add-alias-form-container" class="astutus-popup">
+  <div class="add-alias-form">
+    <form method="POST">
+      <table id="astutus-add-alias-table">
+      <tr>
+        <td><label for="nodepath">Node path:</label></td>
+        <td>
+          <textarea name="nodepath" id="nodepath" rows="3" cols="50" wrap="soft"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="template">Template:</label></td>
+        <td><input
+            name="template"
+            id="template"
+            type="text"
+            value="need to populate ..."
+            onselect="console.log('onselect: ' + Date.now())"
+            oninput="console.log('oninput: ' + Date.now())"
+            onblur="rememberTemplateSelection(this.selectionStart, this.selectionEnd)"
+            onchange="console.log('onchange: ' + Date.now())"/></td>
+      </tr>
+      <tr>
+        <td><label for="color">Choose a color:</label></td>
+        <td>
+          <input name="color" id="color" type="color" class="astutus-color"/>
+        </td>
+      </tr>
+      <tr>
+        <td><input name="action" id="action" type="hidden" value="add_or_update_alias" /></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="Add" id="add_alias_form_add_button" /></td>
+        <td><input type="button" value="Cancel" onclick="handleAddAliasFormCancel()"/></td>
+      </tr>
+      </table>
+    </form>
+  </div>
+  <div id="placeholder-instructions">
+    The following placeholders can be inserted into the template by clicking its Insert button.
+    <table class="astutus-table-scroll-header">
+      <thead><tr><th></th><th>Placeholder</th><th>Current Value</th></tr></thead>
+    </table>
+  </div>
+  <div class="astutus-table-scroll-wrapper">
+    <div class="astutus-table-scroll">
+      <table id="alias-placeholder-table" class="astutus-table-scroll">
+        <tr><td>Placeholder</td><td>Current Value</td><td></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% if aliases_javascript is not none %}
+{{ aliases_javascript | safe }}
+{% endif %}
+{% if configurations_javascript is not none %}
+{{ configurations_javascript | safe }}
+{% endif %}
+<script>
+// Set the background color upon loading
+document.querySelector("#tree-html-container").style.background = '{{ tree_html_background_color }}';
+</script>
+
+<script src="/static/device_tree.js"></script>

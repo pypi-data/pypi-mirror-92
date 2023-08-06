@@ -1,0 +1,394 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Changes &mdash; Astutus 0.1.8a2021.01.14.22.19 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/astutus_dynamic_sphinx_pages.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Roadmap to Documentation" href="roadmap_to_documentation.html" />
+    <link rel="prev" title="Welcome" href="welcome.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Astutus
+          
+
+          
+            
+            <img src="../_static/favicon.ico" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.8
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">Application</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="welcome.html">Welcome</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Changes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-s-up">What’s Up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-s-new">What’s New</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="maintanence/guidelines.html">Guidelines for Maintaining the System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../source/modules.html">API Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Documentation</a> &raquo;</li>
+        
+      <li>Changes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/doc/changes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="changes">
+<h1>Changes<a class="headerlink" href="#changes" title="Permalink to this headline">¶</a></h1>
+<div class="astutus-toggle admonition note docutils container">
+<input type="checkbox" id="astutus-toggle-0" checked />
+<label for="astutus-toggle-0"><p class="astutus-toggle-symbol admonition-title">Note: To Developers</p></label>
+<div class="astutus-toggle docutils container">
+
+<p>To the developer:  With incremental, test-driven development, it should be possible to deliver
+<a class="reference external" href="https://en.wikipedia.org/wiki/Peter_Coad">Frequent, Tangible, Working Results</a>
+most days. You should be <strong>concerned</strong> if you haven’t committed in a day.  You should probably
+<strong>throw away your changes</strong> and replan if you’ve gone two days without having something to
+push to the repository.  It is reasonable to see regular transitions between what’s on your
+backlog, and what’s done, and available for use as new features.  It is <strong>concerning</strong> if
+that is not happening.</p>
+</div>
+</div>
+<div class="section" id="what-s-up">
+<h2>What’s Up<a class="headerlink" href="#what-s-up" title="Permalink to this headline">¶</a></h2>
+<p>Here’s where you can find what we are working on.</p>
+<p>Rather we work on something else?  Just let us know!</p>
+<div class="astutus-toggle admonition note docutils container">
+<input type="checkbox" id="astutus-toggle-1" checked />
+<label for="astutus-toggle-1"><p class="astutus-toggle-symbol admonition-title">Note: To Developers</p></label>
+<div class="astutus-toggle docutils container">
+
+<p>To the developer:  Your <strong>backlog</strong> should consist of epics, stories, tasks, and spikes. For planning purposes,
+your backlog shouldn’t be too large and it shouldn’t be too small.  You’ll need to
+at least one epic on it, and I don’t understand why you’d need more than two!
+Stories tell where you’re headed, and tasks get you there. Spikes are for deciding
+what to do, and helping you know how long until you get there.</p>
+<p>At any point, it should be possible for a smart manager to look at your backlog,
+understand what you are trying to get done, what sort of things that you are
+currently working on, and whether you are about done.</p>
+<p>By looking at your backlog over time, it should be possible for a smart manager
+to understand about where you’ll be at in the future, without having to
+trust your assessment (which is probably over-optimimistic!).</p>
+<p>Chances are, you should be adding tasks after each commmit, as you discover
+new tasks, plan new work, or get to the point where you want to communicate
+details of the work required.</p>
+</div>
+</div>
+<p>Backlog:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Story Improve Application of Continuous Integration / Continuous Deployment.</p></li>
+<li><p>Add a progress list directive.</p></li>
+<li><p>Task: Provide a link to the RPi’s astutus-web-app.</p></li>
+<li><p>Task: Have an indication that publish wheels is proceding.</p></li>
+<li><p>Task: Fetch Wheels from Internet from Flask App - At least for same platform.</p></li>
+<li><p>Task: Mark relay tests as slow.</p></li>
+<li><p>Task: Get color sensor working on RPi.</p></li>
+<li><p>Task: Write test with relays controlling lights and monitored by color sensor.</p></li>
+<li><p>Task: Some tests of USB devices that are independent of current /sys/devices structure.</p></li>
+<li><p>Epic: Get repository good enough to be publically visible.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="what-s-new">
+<h2>What’s New<a class="headerlink" href="#what-s-new" title="Permalink to this headline">¶</a></h2>
+<p>Here is where you’ll find a record of what things have gotten done.  Not a lot of
+hand waving, but not as detailed as repository commits.</p>
+<div class="astutus-toggle admonition note docutils container">
+<input type="checkbox" id="astutus-toggle-2" checked />
+<label for="astutus-toggle-2"><p class="astutus-toggle-symbol admonition-title">Note: To the Developer</p></label>
+<div class="astutus-toggle docutils container">
+
+<p>To the developer: Just move items from the backlog to here as you make commits.</p>
+</div>
+</div>
+<p>Done:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span style="background-color: yellow">✔</span> Task: Add type hints to most code.</p></li>
+<li><p><span style="background-color: yellow">✔</span> Task: Update astutus.sphinx doc strings for good presentation in the API docs.</p></li>
+<li><p><span style="background-color: yellow">✔</span> Story: Polish sphinx extension so that it is good-enough to be used by others.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-26 20:35 Task: Add Ringtail Cat as logo on the page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-26 20:35 Task: Style Raspberry Pi ifconfig page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-26 17:08 Task: Style Raspberry Pi ifconfig page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-25 11:15 Task: Change to a better prefix for styled templates.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 20:05 Task: Useful defaults if .. astutus_dyn_destination::  is omitted.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 16:22 Task: Cleanup and generalize reading and processing of post processing directives.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 13:03 Task: Keep HTML lines as list in post processing, rather than combining and splitting.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 11:56 Task: Work out search page with new structure.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 11:56 Task: Work out Index with new structure.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 11:56 Task: Work out module Index with new structure.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-24 11:56 Task: Generalize inclusion of new header material for astutus dynamic pages.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-23 17:18 Task: Automate generation of breadcrumbs for dynamic pages.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-23 10:00 Task: Backout dead javascript and Sphinx extension code</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-23 09:07 Task: Use id’s rather than direct docnames for identifying dynamic replacements.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-22 12:27 Task: Move Toggle styling to a static CSS file.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-22 11:24 Task: Handle markup within astutus_toggle_note content.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-22 09:31 Task: Directive astutus_toggle_note working in basic form.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-21 12:31 Task: Fix up indentation so that it does better with Javascript</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-21 11:15 Spike: Try handling navigation to dynamic pages in flask. Successful, can be merged.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-20 10:13 Task: Fix bug with other page’s vertical menu not substituting for dynamic templates.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-20 06:40 Task: Move most post processing out of packaging into Sphinx extension and use it from there.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-19 21:33 Task: Convert «« »» markup into Sphinx directives.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-19 15:36 Task: Polish up device names</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-19 14:09 Task: For item dynamic pages, fix up vertical menu, both for item and parent.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-18 01:01 Task: For dynamic pages, need to fix up vertical menu links back to docs.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-18 01:01 Task: Update UI for dynamic pages.  Do a round of clean up and polish.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-17 18:23 Task: Sphinx toctrees automatic for dynamic web pages.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-17 13:51 Spike: Suppress vertical menu replacement, and understand how vertical menu is defined.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-17 10:22 Task: Sphinx toctree entries to dynamic web pages.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-16 10:43 Story: As a developer, I can view documentation from RPi</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-16 10:43 Task: Implement command to launch flask app.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-15 16:28 Task: Install Astutus on Rpi without internet.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-15 10:31 Task: Publish wheels to RPi.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 21:53 Task: Provide decent titles for dynamic pages suitable for book marking.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 14:24 Task: Custom favicon for documentation pages.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 13:19 Task: Get search to work from dynamic page without Javascript error.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 12:48 Task: Reduce usage of Jquery.  Use vanilla Javascript techniques instead.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 12:02 Task: Style /astutus/raspi/ifconfig page. (Gets rid of generic page with a JQuery ajax call)</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-14 03:40 Task: Fix regressions with devices page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-13 12:33 Task: Implement OnClick for device with ajax page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-13 12:33 Task: Speedup rendering of device tree page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-13 12:33 Task: Rework structure of device aliases file and DeviceAliases class.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-10 10:01 Task: Refactor popup dialog templating for better reuse.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-10 08:07 Task: Add data and instructions to Add alias dialog in tree display.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 22:28 Task: Single source version number between code, package, and documentation.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 20:28 Story: As a Flask developer, I need to be able to control logging by module at runtime.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 20:28 Task: In flask_app, connect up with loggers enumerated by module, and set log level.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 20:28 Task: Persist desired level of loggers in database.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 17:21 Task: Handle dynamic changing of log levels via web page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 12:47 Task: Create an /astutus/log page that lists the modules with loggers.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-09 07:34 Task: Clean up handling of top of tree.  Visual layout + adding, deleting aliases.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-08 08:22 Task: Add an initial favicon to website.  Mechanics working.  Image needs work.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-07 22:49 Task: Clean up add alias form on device tree. Background colors and padding.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-07 22:02 Task: Get basic placeholder insertion to work.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-06 20:05 Task: Polish browser presentation of USB tree.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-06 14:54 Story: Implement a USB print tree command for package.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-06 14:54 Story: As a user, I can configure my own aliases for physical USB devices.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-06 14:54 Task: Add ability to edit alias.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-06 14:54 Task: Get rid of Colorama; replace with webcolors.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-05 12:36 Task: Display Device Configurations.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-04 22:01 Task: Add links to /astutus/usb.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-04 19:07 Task: Add ability to delete an alias.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-04 12:50 Task: Refactor: Move USB and Raspberry Pi to Flask Blueprints.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-04 05:18 Task: Apply alias, styling to USB page, and get rid of unneed data attributes.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-03 18:57 Task: Show alias contents on USB page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-03 02:05 Task: Handle form submission add or update alias and rewrite file.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-03 12:15 Task: Implement Cancel function for add alias form.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-03 01:56 Task: Display USB tree in browser.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-01 23:49 Task: Style /astutus/raspi/item page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-01 22:17 Task: Style /astutus/raspi find page.g</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-01 15:10 Task: Style /astutus page.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2021-01-01 11:22 Task: First pass at displaying USB device tree with Jinja2 template include.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-31 19:30 Spike: Try to use Sphinx to generate a styled base for a Jinja2 template.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-30 20:13 Task: Create a verbose mode for the astutus-usb-tree</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-29 19:13 Epic: Get package available on PyPi</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-29 18:17 Task: Create the docstring for the DeviceAliases class.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-29 14:51 Task: Create an initial pass for module docstring for astutus.usb.tree</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-29 12:00 Task: Update for autodocs for all modules.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-29 09:16 Story: As a user, I can run a command to view the USB tree.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-28 13:06 Story: As a developer, the database is operational in the Flask App.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-27 21:42 Story: As a developer, I have instructions on how to build the package.</p></li>
+<li><p><span style="background-color: light-gray">✔</span> 2020-12-27 10:50 Use selector searches to allow relay test to work after rebooting.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="roadmap_to_documentation.html" class="btn btn-neutral float-right" title="Roadmap to Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="welcome.html" class="btn btn-neutral float-left" title="Welcome" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rich Dobbs.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,808 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>astutus.sphinx package &mdash; Astutus 0.1.8a2021.01.14.22.19 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/astutus_dynamic_sphinx_pages.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="astutus.usb package" href="astutus.usb.html" />
+    <link rel="prev" title="astutus.raspi package" href="astutus.raspi.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Astutus
+          
+
+          
+            
+            <img src="../_static/favicon.ico" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.8
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../app/index.html">Application</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../doc/index.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../doc/welcome.html">Welcome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/changes.html">Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../doc/maintanence/guidelines.html">Guidelines for Maintaining the System</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="modules.html">API Documentation</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="astutus.html">astutus package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="astutus.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="astutus.db.html">astutus.db package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.log.html">astutus.log package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.raspi.html">astutus.raspi package</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">astutus.sphinx package</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#directives">Directives</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.sphinx.dyn_pages">astutus.sphinx.dyn_pages module</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#module-astutus.sphinx.post_process">astutus.sphinx.post_process module</a><ul>
+<li class="toctree-l7"><a class="reference internal" href="#implementation">Implementation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.usb.html">astutus.usb package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.util.html">astutus.util package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="astutus.web.html">astutus.web package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="astutus.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="astutus.html#module-astutus.version">astutus.version module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../doc/index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../doc/index.html">Documentation</a> &raquo;</li>
+        
+          <li><a href="modules.html">API Documentation</a> &raquo;</li>
+        
+          <li><a href="astutus.html">astutus package</a> &raquo;</li>
+        
+      <li>astutus.sphinx package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/source/astutus.sphinx.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-astutus.sphinx">
+<span id="astutus-sphinx-package"></span><h1>astutus.sphinx package<a class="headerlink" href="#module-astutus.sphinx" title="Permalink to this headline">¶</a></h1>
+<p>A Sphinx extension for styled, dynamic web pages with Flask web applications.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>At this time, the extension is targeted at the  <strong>sphinx_rtd_theme</strong> Sphinx theme.</p>
+<p>At this time, the Sphinx extension is not designed to be installed separately from the
+Astutus python package.</p>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>The package can be used by adding this line into your Sphinx documentation conf.py file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s1">&#39;astutus.sphinx.dyn_pages&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>In addition, you need to add the extension’s CSS file  into you _static folder:</p>
+<blockquote>
+<div><p>astutus_dynamic_sphinx_pages.css</p>
+</div></blockquote>
+<p>There are a number of configuration variables that must be defined:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Options for the Astutus dynamic pages custom extension.</span>
+<span class="n">astutus_dyn_pages_dir</span> <span class="o">=</span> <span class="s2">&quot;app&quot;</span>  <span class="c1"># relative to the configuration directory.</span>
+<span class="n">astutus_dyn_base</span> <span class="o">=</span> <span class="s2">&quot;/your_applications_urls_leading_path&quot;</span>  <span class="c1"># web app URL path to get to top of dynamic pages.</span>
+<span class="n">astutus_dyn_extra_head_material</span> <span class="o">=</span> <span class="s2">&quot; what every you want to add in the HTML head section of dynamic pages. &quot;</span>
+</pre></div>
+</div>
+<p>Optional configuration variables have good-enough default values that it is not expected that
+user’s of the extension will need to customize them.  At this time, the extension has one
+optional configuration variable:</p>
+<blockquote>
+<div><p>astutus_dyn_styled_templates_path = ‘astutus_dyn_styled_templates’</p>
+</div></blockquote>
+</div>
+<div class="section" id="directives">
+<h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<p>The directives implemented are:</p>
+<p><strong>.. astutus_dyn_include::</strong> <em>use Jinja2 template in a styled page</em></p>
+<p><strong>.. astutus_dyn_link::</strong> <em>fix up the ..toc_tree:: directive to work with the page</em></p>
+<p><strong>.. astutus_dyn_bookmark::</strong> <em>customize the browser bookmark (and tab title) for a page</em></p>
+<p><strong>.. astutus_dyn_breadcrumb::</strong> <em>customize the Read-the-Docs breadcrumb navigation for a page</em></p>
+<p><strong>.. astutus_dyn_destination::</strong> <em>place the styled template in a particular location</em></p>
+<p><strong>.. astutus_toggle_note::</strong> <em>write a note that can be expanded or collapsed</em></p>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-astutus.sphinx.dyn_pages">
+<span id="astutus-sphinx-dyn-pages-module"></span><h2>astutus.sphinx.dyn_pages module<a class="headerlink" href="#module-astutus.sphinx.dyn_pages" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.BookmarkDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">BookmarkDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements the  .. astutus_dyn_bookmark::  directive.</p>
+<p>This directive allows customizing the title tag in the head section
+of the HTML tag.  This tag is used in labeling browser tabs and suggested
+values for browser book marks.</p>
+<p>The one required argument specifies replacement bookmark text.</p>
+<p>The argument can contain values in angled brackets that are translated
+into Jinja2 variables.  This is useful when corresponding page should be
+dynamically labeled.</p>
+<p>The directive should be used once on a particular page, if the default
+bookmark is not adequate.</p>
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.BookmarkDirective.final_argument_whitespace">
+<code class="sig-name descname">final_argument_whitespace</code><em class="property"> = True</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.BookmarkDirective.handle_insert_markup">
+<em class="property">static </em><code class="sig-name descname">handle_insert_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">doctree</span></em>, <em class="sig-param"><span class="n">fromdocname</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkDirective.handle_insert_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle title modification by inserting post processing markup in the doctree.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.BookmarkDirective.required_arguments">
+<code class="sig-name descname">required_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.BookmarkDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="#astutus.sphinx.dyn_pages.BookmarkNode" title="astutus.sphinx.dyn_pages.BookmarkNode">astutus.sphinx.dyn_pages.BookmarkNode</a><span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces the directive in the *.rst file with a BookMarkNode.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.BookmarkNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">BookmarkNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rawsource</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">children</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">attributes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BookmarkNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.General</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.Element</span></code></p>
+<p>Stores the processed value of the argument to the directive.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">BreadCrumbDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements the  .. astutus_dyn_breadcrumb:: directive.</p>
+<p>This directive allows overriding the final entry in the breadcrumb navigation
+displayed by the Read-the-Docs theme near the top of the page.
+The last entry is for the current page, and is static text, rather than being
+a link like the rest of the breadcrumbs.</p>
+<p>This directive is optional, and is typically used for item pages where the
+value normally derived from the title of the page is not informative.
+It should only be used once on a dynamic page.</p>
+<dl class="simple">
+<dt>Usage:</dt><dd><p>.. astutus_dyn_breadcrumb:: breadcrumb_text</p>
+</dd>
+</dl>
+<p>The breadcrumb text may contain whitespace and variables marked with angle brackets.</p>
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbDirective.final_argument_whitespace">
+<code class="sig-name descname">final_argument_whitespace</code><em class="property"> = True</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbDirective.handle_insert_markup">
+<em class="property">static </em><code class="sig-name descname">handle_insert_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">doctree</span></em>, <em class="sig-param"><span class="n">fromdocname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbDirective.handle_insert_markup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbDirective.required_arguments">
+<code class="sig-name descname">required_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="#astutus.sphinx.dyn_pages.BreadCrumbNode" title="astutus.sphinx.dyn_pages.BreadCrumbNode">astutus.sphinx.dyn_pages.BreadCrumbNode</a><span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.BreadCrumbNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">BreadCrumbNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rawsource</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">children</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">attributes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.BreadCrumbNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.General</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.Element</span></code></p>
+<p>Stores the processed value of the argument to the directive.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.DestinationDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">DestinationDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.DestinationDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements the  .. astutus_dyn_destintation::  directive.</p>
+<p>The one required argument specifies a relative filepath where to write
+the styled template.</p>
+<p>Its optional, and is for the convenience of the web developer.  In most
+cases, the default location based on the name and location the dynamic
+page.</p>
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.DestinationDirective.handle_insert_markup">
+<em class="property">static </em><code class="sig-name descname">handle_insert_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">doctree</span></em>, <em class="sig-param"><span class="n">fromdocname</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.DestinationDirective.handle_insert_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle title modification by inserting post processing markup.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.DestinationDirective.required_arguments">
+<code class="sig-name descname">required_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.DestinationDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.DestinationDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>docutils.nodes.Node<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.DestinationDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces the directive in the *.rst file with a DestinationNode.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.DestinationNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">DestinationNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rawsource</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">children</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">attributes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.DestinationNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.General</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.Element</span></code></p>
+<p>Stores the processed value of the argument to the directive.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.IncludeDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">IncludeDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.IncludeDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements the  .. astutus_dyn_include::  directive.</p>
+<p>This directive allows inserting functional Jinja2 templates into the
+styled template generated for dynamic pages.</p>
+<p>The one required argument specifies a relative filepath to locate the
+template within the template directory of the Flask application.</p>
+<p>This directive is optional.  It may be used multiple times on a dynamic
+page as needed for the layout of the page.</p>
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.IncludeDirective.handle_insert_markup">
+<em class="property">static </em><code class="sig-name descname">handle_insert_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">doctree</span></em>, <em class="sig-param"><span class="n">fromdocname</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.IncludeDirective.handle_insert_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Handle include modification by inserting post processing markup.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.IncludeDirective.required_arguments">
+<code class="sig-name descname">required_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.IncludeDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.IncludeDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>docutils.nodes.Node<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.IncludeDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replaces the directive in the *.rst file with a IncludeNode.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.IncludeNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">IncludeNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rawsource</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">children</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">attributes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.IncludeNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.General</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.Element</span></code></p>
+<p>Stores the processed value of the argument to the directive.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.LinkDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">LinkDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.LinkDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements the  .. astutus_dyn_link::  directive.</p>
+<dl class="simple">
+<dt>Usage:</dt><dd><p>.. astutus_dyn_link:: link_path [link_replacement_text]</p>
+</dd>
+</dl>
+<p>The replacement text may contain whitespace.</p>
+<p>This directive is required on all dynamic styled pages.</p>
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.LinkDirective.final_argument_whitespace">
+<code class="sig-name descname">final_argument_whitespace</code><em class="property"> = True</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.LinkDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.LinkDirective.optional_arguments">
+<code class="sig-name descname">optional_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.LinkDirective.optional_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.LinkDirective.required_arguments">
+<code class="sig-name descname">required_arguments</code><em class="property"> = 1</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.LinkDirective.required_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.LinkDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>docutils.nodes.Node<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.LinkDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Processes the astutus_dyn_link directive arguments and stores them in the environmment.</p>
+<p>No node is added to the docutils doctree.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">ToggleNoteDirective</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">arguments</span></em>, <em class="sig-param"><span class="n">options</span></em>, <em class="sig-param"><span class="n">content</span></em>, <em class="sig-param"><span class="n">lineno</span></em>, <em class="sig-param"><span class="n">content_offset</span></em>, <em class="sig-param"><span class="n">block_text</span></em>, <em class="sig-param"><span class="n">state</span></em>, <em class="sig-param"><span class="n">state_machine</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.util.docutils.SphinxDirective</span></code></p>
+<p>Implements a note directive that allows the content of the note to be collapsed by the browser user.</p>
+<p>Usage:</p>
+<blockquote>
+<div><p>..  astutus_toggle_note:: [ expanded|collapsed   [extra_title_text]]</p>
+<blockquote>
+<div><p>indented block of text for note
+…</p>
+</div></blockquote>
+</div></blockquote>
+<p>If the first argument is omitted, it defaults to expanded.</p>
+<p>If extra_title_text is to be provided, the author must explicitly specify the toggle state.
+The argument extra_title_text may contain whitespace.</p>
+<p>This directive does not require support from Flask.  It is implemented using CSS and
+HTML.  It can be used on any page.</p>
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective.final_argument_whitespace">
+<code class="sig-name descname">final_argument_whitespace</code><em class="property"> = True</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective.final_argument_whitespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective.handle_insert_markup">
+<em class="property">static </em><code class="sig-name descname">handle_insert_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">doctree</span></em>, <em class="sig-param"><span class="n">fromdocname</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective.handle_insert_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method converts any ToggleNoteNodes into docutil nodes for HTML.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective.has_content">
+<code class="sig-name descname">has_content</code><em class="property"> = True</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective.has_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective.optional_arguments">
+<code class="sig-name descname">optional_arguments</code><em class="property"> = 2</em><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective.optional_arguments" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteDirective.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span><a class="reference internal" href="#astutus.sphinx.dyn_pages.ToggleNoteNode" title="astutus.sphinx.dyn_pages.ToggleNoteNode">astutus.sphinx.dyn_pages.ToggleNoteNode</a><span class="p">]</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteDirective.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parses the directive when encountered in a *.rst file.</p>
+<p>At the time this method is called, the arguments, options, and content
+for the directive have been store in initializing the directive object.  This
+method returns a list containing any nodes to be inserted into the Docutils document.</p>
+<p>For this directive, all useful directive values are stored in a single specialized node
+for subsequent processing after the document tree has been resolved.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="astutus.sphinx.dyn_pages.ToggleNoteNode">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">ToggleNoteNode</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">rawsource</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="o">*</span><span class="n">children</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">attributes</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.ToggleNoteNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">docutils.nodes.note</span></code></p>
+<p>Stores the processed values of the arguments and content of the directive.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.config_inited">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">config_inited</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">config</span><span class="p">:</span> <span class="n">sphinx.config.Config</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.config_inited" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check that the required configuration variables have been initialized</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.create_post_processing_markup">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">create_post_processing_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tag</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">value</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.sphinx.dyn_pages.create_post_processing_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the markup to be embedded in the HTML used to communicate to the post processor.</p>
+<p>At this time, the markup looks like this:
+««TAG»»<strong>value</strong>««END_TAG»»</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.depart_generic_node">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">depart_generic_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.depart_generic_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.log_as_info">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">log_as_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.dyn_pages.log_as_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenience function to log with colored output if desired for development or debugging.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.post_processing_mark_found">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">post_processing_mark_found</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tag</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#astutus.sphinx.dyn_pages.post_processing_mark_found" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search the text for the post processing directive identified by the tag.  Returns true if found.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.read_post_processing_directive_value">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">read_post_processing_directive_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tag</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">text</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.sphinx.dyn_pages.read_post_processing_directive_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches the text for the post processing directive identified by the tag, and return the value.</p>
+<p>Returns None if the tag is not found.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.setup">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">setup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em><span class="sig-paren">)</span> &#x2192; Tuple<a class="headerlink" href="#astutus.sphinx.dyn_pages.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is the standard set function for the extension.</p>
+<p>It specifies extension configuration values, directives implemented by
+the extension, nodes used in processing the directives, and
+the connection between Sphinx events and the functions that implement
+the extension.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.dyn_pages.visit_generic_node">
+<code class="sig-prename descclassname">astutus.sphinx.dyn_pages.</code><code class="sig-name descname">visit_generic_node</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">node</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.dyn_pages.visit_generic_node" title="Permalink to this definition">¶</a></dt>
+<dd><p>Does nothing.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-astutus.sphinx.post_process">
+<span id="astutus-sphinx-post-process-module"></span><h2>astutus.sphinx.post_process module<a class="headerlink" href="#module-astutus.sphinx.post_process" title="Permalink to this headline">¶</a></h2>
+<p>Handle the post processing step that converts the styled html pages to Jinja2 templates.</p>
+<div class="section" id="implementation">
+<h3>Implementation<a class="headerlink" href="#implementation" title="Permalink to this headline">¶</a></h3>
+<p>At this time, the details of how the toctree directive works are not understood,
+nor the process by which the html writer interacts with the theme.  Consequently,
+for pragmatic reasons, instead of creating a specialized builder or writer, the insertion of
+Jinja2 markup for use in the Flask application is handled as a post processing step.</p>
+<p>The information needed for this step comes from post processing “directive markup” embedded in
+Sphinx generated documents, as well as Sphinx application configuration and environment values.</p>
+<p>The markup is described in astutus.sphinx.dyn_pages module documentation.</p>
+<p>The resulting Jinja templates are stored in a distinct subdirectory directory within the Sphinx _build
+directory.  It is expected that the astutus.sphinx extension user’s build process will move the
+resulting files as required by the flask application that they are developing.</p>
+<dl class="py class">
+<dt id="astutus.sphinx.post_process.FilePostProcessor">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.sphinx.post_process.</code><code class="sig-name descname">FilePostProcessor</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_path</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">docname</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">dyn_link_list</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Dict<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">dyn_base</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">extra_head_material</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">default_template_prefix</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Convert a Sphinx generated *.html file into a Jinja2 template for use with Flask.</p>
+<p>Any post-processing directives are read and implemented, and then the result is written
+as a reasonably-well indented Jinja2 template for use in creating dynamic HTML pages.</p>
+<p>The key directive to allow dynamic pages is .. astutus_dyn_include::, which
+allows variable-driven content generation templates created by the web site
+developer to be placed into the Read-the-Docs styled page.</p>
+<p>Other directives are used to fix up navigation to dynamic pages using the vertical
+side bar menu generated from the toc_tree directive styled usin the Read-the-Docs theme,
+as well as the bread crumb navigation at the top of the page.</p>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(input_path, docname, dyn_link_list, …)</p></td>
+<td><p>Initialize self.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.apply_line_oriented_replacements" title="astutus.sphinx.post_process.FilePostProcessor.apply_line_oriented_replacements"><code class="xref py py-obj docutils literal notranslate"><span class="pre">apply_line_oriented_replacements</span></code></a>(…)</p></td>
+<td><p>Applies line oriented replacements, but does not handle table-of-contents modifications.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.execute_and_write" title="astutus.sphinx.post_process.FilePostProcessor.execute_and_write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">execute_and_write</span></code></a>(output_basepath)</p></td>
+<td><p>Process the Sphinx generated html file to produced a styled Jinja template</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.fix_navigation_hrefs" title="astutus.sphinx.post_process.FilePostProcessor.fix_navigation_hrefs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fix_navigation_hrefs</span></code></a>(input_html_lines)</p></td>
+<td><p>Fix up hrefs used in table of contents.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.parse_li_a_href_link_line" title="astutus.sphinx.post_process.FilePostProcessor.parse_li_a_href_link_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_li_a_href_link_line</span></code></a>(original_li_line)</p></td>
+<td><p>Takes a line containing a &lt;li&gt;&lt;a href=”…”&gt;link_text&lt;/a&gt;&lt;/li&gt; and parses it.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.set_destination_filename" title="astutus.sphinx.post_process.FilePostProcessor.set_destination_filename"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_destination_filename</span></code></a>(relative_file_path)</p></td>
+<td><p>Set the destination relative filepath based on the provided input.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.strip_post_processing_markup" title="astutus.sphinx.post_process.FilePostProcessor.strip_post_processing_markup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_post_processing_markup</span></code></a>(input_html_lines)</p></td>
+<td><p>Remove any post processing markup.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.wrap_in_jinja2_loop" title="astutus.sphinx.post_process.FilePostProcessor.wrap_in_jinja2_loop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">wrap_in_jinja2_loop</span></code></a>(…)</p></td>
+<td><p>Take a list item wrapped anchor and returns lines that implement with a Jinja2 loop around it.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#astutus.sphinx.post_process.FilePostProcessor.write_template" title="astutus.sphinx.post_process.FilePostProcessor.write_template"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_template</span></code></a>(output_basepath, html_text)</p></td>
+<td><p>Write the processed template to a location relative to the output base path.</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.apply_line_oriented_replacements">
+<code class="sig-name descname">apply_line_oriented_replacements</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_html_lines</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.apply_line_oriented_replacements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies line oriented replacements, but does not handle table-of-contents modifications.</p>
+<dl class="simple">
+<dt>Line oriented replacements include:</dt><dd><ul class="simple">
+<li><p>Remove HTML navigation features not supported for dynamic pages.</p></li>
+<li><p>Fixing up general links as needed to work with the Flask application.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Table of contents fix-ups are handled in a separate method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.execute_and_write">
+<code class="sig-name descname">execute_and_write</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_basepath</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.execute_and_write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Process the Sphinx generated html file to produced a styled Jinja template</p>
+<p>The phases of the processing are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Read whole-file related post processing directives from the HTML text.</p></li>
+<li><p>Process the file line-by-line to make appropriate and necessary modifications.</p></li>
+<li><p>Write the resulting processed lines out as Jinja2 template file.</p></li>
+</ul>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.fix_navigation_hrefs">
+<code class="sig-name descname">fix_navigation_hrefs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_html_lines</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.fix_navigation_hrefs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fix up hrefs used in table of contents.</p>
+<p>The original hrefs do not necessarily have the right nesting for routes used in the Flask application.
+They also may need to be converted to elements that represent variable parts of the route, such as
+used with RESTful web applications.  The variable parts of the route are identified by angle brackets
+similar to that used in Flask routing in the replacement dynamic links.  These are expanded into
+Jinja2 variables and loops.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.parse_li_a_href_link_line">
+<code class="sig-name descname">parse_li_a_href_link_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">original_li_line</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Tuple<span class="p">[</span>str<span class="p">, </span>List<span class="p">[</span>str<span class="p">]</span><span class="p">, </span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.parse_li_a_href_link_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a line containing a &lt;li&gt;&lt;a href=”…”&gt;link_text&lt;/a&gt;&lt;/li&gt; and parses it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>li_template, replacements_tags, link_replacement_text</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.set_destination_filename">
+<code class="sig-name descname">set_destination_filename</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relative_file_path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.set_destination_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the destination relative filepath based on the provided input.</p>
+<p>The destination relative filepat may be specified by the
+astutus_dyn_destination directive.</p>
+<p>If no directive is provided, the system uses a reasonable default
+destination based on the docname of the file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.strip_post_processing_markup">
+<code class="sig-name descname">strip_post_processing_markup</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_html_lines</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.strip_post_processing_markup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove any post processing markup.  This markup should not be in the template.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.wrap_in_jinja2_loop">
+<code class="sig-name descname">wrap_in_jinja2_loop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">list_item_line_with_angled_tags</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">tags</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em>, <em class="sig-param"><span class="n">link_text</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.wrap_in_jinja2_loop" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take a list item wrapped anchor and returns lines that implement with a Jinja2 loop around it.</p>
+<p>The Flask application will provide data when rendering the template
+to provide a menu with a dynamic number of entries.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="astutus.sphinx.post_process.FilePostProcessor.write_template">
+<code class="sig-name descname">write_template</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">output_basepath</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">html_text</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.post_process.FilePostProcessor.write_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write the processed template to a location relative to the output base path.</p>
+<p>The actual location is derived from the output base path combined with a file-specific
+relative filepath.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.post_process.extract_tags_from_path">
+<code class="sig-prename descclassname">astutus.sphinx.post_process.</code><code class="sig-name descname">extract_tags_from_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>str<span class="p">]</span><a class="headerlink" href="#astutus.sphinx.post_process.extract_tags_from_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>For something that looks like a path, extract tags indicated by angle brackets, such as &lt;idx&gt;.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.post_process.handle_build_finished">
+<code class="sig-prename descclassname">astutus.sphinx.post_process.</code><code class="sig-name descname">handle_build_finished</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app</span><span class="p">:</span> <span class="n">sphinx.application.Sphinx</span></em>, <em class="sig-param"><span class="n">exception</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.post_process.handle_build_finished" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post-process all generated HTML files that will be used as styled Jinja2 templates.</p>
+<p>This method is triggered by the ‘build-finished’ event.  It connects the Sphinx application
+to the post processing class astutus.sphinx.post_process.FilePostProcessor.</p>
+<p>At this time, the source styled *.html are found by examining the contents within the
+directory identified by the astutus_dyn_pages_dir configuration variable.</p>
+<p>The files are placed in a location identified by the astutus_dyn_styled_templates_path
+configuration variable.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.post_process.indented_html_text_from_html_lines">
+<code class="sig-prename descclassname">astutus.sphinx.post_process.</code><code class="sig-name descname">indented_html_text_from_html_lines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">html_lines</span><span class="p">:</span> <span class="n">List<span class="p">[</span>str<span class="p">]</span></span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#astutus.sphinx.post_process.indented_html_text_from_html_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attempts to indent html in a somewhat meaningful fashion.</p>
+<p>Needs some semi-manual patch up to take care of HTML comments.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.sphinx.post_process.log_as_info">
+<code class="sig-prename descclassname">astutus.sphinx.post_process.</code><code class="sig-name descname">log_as_info</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#astutus.sphinx.post_process.log_as_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log at the information for this module in a distinct color for development and troubleshooting.</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="astutus.usb.html" class="btn btn-neutral float-right" title="astutus.usb package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="astutus.raspi.html" class="btn btn-neutral float-left" title="astutus.raspi package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rich Dobbs.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

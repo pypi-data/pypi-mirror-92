@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Documenting &mdash; Astutus 0.1.8a2021.01.14.22.19 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/app.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/astutus_dynamic_sphinx_pages.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Developer Notes" href="developer_notes.html" />
+    <link rel="prev" title="Packaging" href="packaging.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Astutus
+          
+
+          
+            
+            <img src="../../_static/favicon.ico" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.8
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../app/index.html">Application</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../welcome.html">Welcome</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changes.html">Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="guidelines.html">Guidelines for Maintaining the System</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="packaging.html">Packaging</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Documenting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#new-capabilities">New Capabilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#auto-doc-code">Auto-Doc Code</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="developer_notes.html">Developer Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="developer_notes_older.html">Developer Notes from Before January 27, 2021</a></li>
+<li class="toctree-l3"><a class="reference internal" href="design.html">Application Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="templates.html">Styled Flask Application Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html">Astutus Readme</a></li>
+<li class="toctree-l3"><a class="reference internal" href="macosx.html">Working with Macintosh OSX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="smakn_usb_relay.html">SMAKN LCUS-1 USB Relay</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../source/modules.html">API Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../index.html">Documentation</a> &raquo;</li>
+        
+          <li><a href="guidelines.html">Guidelines for Maintaining the System</a> &raquo;</li>
+        
+      <li>Documenting</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/doc/maintanence/documenting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="documenting">
+<h1>Documenting<a class="headerlink" href="#documenting" title="Permalink to this headline">¶</a></h1>
+<p>As new capabilities are added to the system, they need to be documented.</p>
+<p>As the system evolves, outdated documentation needs to be updated, and
+obsolete documentation needs to be purged.</p>
+<p>As the documentation evolves, it needs to be tested to ensure that it is
+accurate, useable, adequate, and organized.</p>
+<p>The workflow used in this system treats working on documentation as a
+programming and testing task, rather than an exercise in writing.
+Developers typically like to program.  Journeymen developers have
+used test-driven-devlopment to increase their effectiveness.  The
+goal here is to generate adequate to high quality documentation
+without getting bogged down with writers block, by relying on
+a developer’s skillset.</p>
+<div class="section" id="new-capabilities">
+<h2>New Capabilities<a class="headerlink" href="#new-capabilities" title="Permalink to this headline">¶</a></h2>
+<p>Whenever you work on a new capability, you are likely to install
+new python packages or other software.  You won’t know ahead of
+time what will be needed in the long term, and if so, the exact
+configuration. In addition, these configuration steps will not
+be often repeated, so it is easy to forget the exact steps.
+To avoid reinventing the wheel, the work in these configuration
+steps should be captured so that you have the raw material
+to document or automate the configuration.</p>
+<p>At this time, the recommended practice is to create an .rst
+file for the issue.  Run all installation activities from
+a terminal if possible.  Copy the terminal output to the
+file, and indent it.   Lead off with a <strong>.. code-block console</strong>
+Sphinx directive.</p>
+</div>
+<div class="section" id="auto-doc-code">
+<h2>Auto-Doc Code<a class="headerlink" href="#auto-doc-code" title="Permalink to this headline">¶</a></h2>
+<p>API documentionation is generated using the sphinx.ext.autodoc
+extension.  As new modules are written, the initial <strong>package</strong>.rst
+file needs to generated.</p>
+<p><strong>Do not use the -f or –force option.</strong> The existing files
+may contain customizations that you don’t want to lose.
+Instead, if you want to update an existing file, look
+at the file.  If it doesn’t contain any customization,
+delete the file, and rebuild the documentation.  If it
+does contain customization, rename the file, regenerate
+the documentation, and add the customizations back into
+the autogenerated file.  Update git as appropriate.</p>
+<blockquote>
+<div><p>“A foolish consistency is the hobgoblin of little minds,
+adored by little statesmen and philosophers and divines.
+With consistency a great soul has simply nothing to do.
+He may as well concern himself with his shadow on the wall.
+Speak what you think now in hard words, and to-morrow
+speak what to-morrow thinks in hard words again, though
+it contradict every thing you said to-day. — ‘Ah, so you
+shall be sure to be misunderstood.’ — Is it so bad, then,
+to be misunderstood? Pythagoras was misunderstood, and
+Socrates, and Jesus, and Luther, and Copernicus, and
+Galileo, and Newton, and every pure and wise spirit
+that ever took flesh. To be great is to be misunderstood.”</p>
+<p class="attribution">—Ralph Waldo Emerson, 1841</p>
+</div></blockquote>
+<p>In general, work on high level API documentation, rather
+than focusing on low level docstrings.  With well written
+Python code, the interpretion of arguments should be pretty
+straightforward.  Strictly applying “complete” docstrings
+with all arguments documented with small functions is likely
+to double the size of the code and the effort to maintain it
+with perhaps 10 percent additional information useful to
+someone at some time. If some aspect of the code is not
+straightforward, consider renaming functions and arguments
+rather than elaborating on the docstrings.</p>
+<p>This system relies on Sphinx for documentation.  Consequently,
+docstrings can use Restructured Text markup.  Use it to
+please the consumer of the API documentation, and have them
+think you are a hot-shot rather than clueless.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="developer_notes.html" class="btn btn-neutral float-right" title="Developer Notes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="packaging.html" class="btn btn-neutral float-left" title="Packaging" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Rich Dobbs.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

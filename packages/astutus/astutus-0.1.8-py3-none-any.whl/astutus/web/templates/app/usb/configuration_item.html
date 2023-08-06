@@ -1,0 +1,28 @@
+
+<!-- Start configuration_item.html -->
+<table>
+    <tr>
+        <td>Name</td><td>{{ device_config.name }}</td>
+    </tr>
+    <tr>
+        <td>Device ID</td><td>{{ device_config.id }}</td>
+    </tr>
+    <tr>
+        <td>Stylers:</td>
+        <td>
+            {% for styler in device_config.stylers %}
+            <table>
+                {% for key, value in styler.items() %}
+                    {% if key == 'color' %}
+                        <tr><td>{{ key }}</td><td><input type="color" value="{{ value }}" class="astutus-color"/></td></tr>
+                    {% else %}
+                        <tr><td>{{ key }}</td><td><input type="text" value="{{ value }}"/></td></tr>
+                    {% endif %}
+                {% endfor %}
+            </table>
+            <hr/>
+            {% endfor %}
+        </td>
+    </tr>
+</table>
+<!-- End configuration_item.html -->
