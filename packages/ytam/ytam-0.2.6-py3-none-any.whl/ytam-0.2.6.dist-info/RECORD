@@ -1,0 +1,15 @@
+ytam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ytam/cmd.py,sha256=d8HhYJwIGRhfN9-QiBxcHg0B1hi8O0goME9J4of3Upc,6884
+ytam/error.py,sha256=qMj23Kr6Lvu0hiAl32S2oWLo4vxfTgxkPU7XrpcMwDE,1647
+ytam/font.py,sha256=OwYZRzLRrvDJY6sVPqrFjUmsrsglENTxFiP_tjebDVI,842
+ytam/title.py,sha256=vLlcX2p5QFFS-lFXBaRYd7GnyqF0ScLfoH9df2w92E0,2626
+ytam/ytam.py,sha256=OlkjZmp3rRaEBxm7oWdKfIGm3WSZ8z1rl2XqCJBldag,9761
+ytam/check/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ytam/check/check.jpg,sha256=6PuuAix68p3bOCN8aX8jXHL4xbUtU7srS0PLZh64i-0,124556
+ytam/check/check.txt,sha256=AjH6YlezlV-M56V7widvg-U3_HRZtNV_C3RJMDsvzwE,76
+ytam-0.2.6.dist-info/LICENSE,sha256=ISUlxZAu39bqxsg_J3pMzVUGpeaZESMuaExZP29saxU,1154
+ytam-0.2.6.dist-info/METADATA,sha256=XO4NxtIIWMRmCJww1ZvRafNaqdA-ogItkX9jkf1jM5g,5399
+ytam-0.2.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ytam-0.2.6.dist-info/entry_points.txt,sha256=oPviEbbI2F7AL8pVFKhQ7BRaJAUr9L2aiMdBwGqyLW0,40
+ytam-0.2.6.dist-info/top_level.txt,sha256=QQKQZBlGSqd40TShwIrYseJ5xSnK-rrU1nTO_yBD4T8,5
+ytam-0.2.6.dist-info/RECORD,,
