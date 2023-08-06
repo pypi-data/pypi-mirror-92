@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: mshtensorflow
+Version: 0.0.1
+Summary: A free and simple deep learning framework for everyone
+Home-page: https://github.com/adhamhesham97/Deep-Learning-framework
+Author: salah adel
+Author-email: salahadel820@gmail.com
+License: MIT
+Keywords: framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# meshtensorflow
+A free and simple deep learning framework for everyone.
+
+### Install
+```sh
+$ pip install meshtensorflow
+```
+### Update
+```sh
+$ pip install meshtensorflow --upgrade
+```
+
+
+### Usage
+```sh
+$ from meshtensorflow import meshtensorflow
+```
+License
+----
+
+MIT
+
+
+
+
