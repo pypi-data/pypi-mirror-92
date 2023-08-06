@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: kelvin-sdk-client
+Version: 5.0.1
+Summary: Kelvin API Client
+Home-page: https://kelvininc.com/
+Author: Kelvin Inc
+Author-email: engineering@kelvininc.com
+License: UNKNOWN
+Platform: any
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: <3.9,>=3.7.0
+Description-Content-Type: text/markdown
+Requires-Dist: PyJWT
+Requires-Dist: PyYAML
+Requires-Dist: jinja2
+Requires-Dist: keyring
+Requires-Dist: keyrings.alt
+Requires-Dist: numpy
+Requires-Dist: pydantic[email]
+Requires-Dist: python-keycloak
+Requires-Dist: requests
+Requires-Dist: ruamel.yaml
+Requires-Dist: structlog
+Requires-Dist: tzlocal
+Requires-Dist: xdg
+Provides-Extra: build
+Requires-Dist: datamodel-code-generator ; extra == 'build'
+Requires-Dist: prance ; extra == 'build'
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: ipython ; extra == 'docs'
+Provides-Extra: format
+Requires-Dist: isort ; extra == 'format'
+Requires-Dist: black ; extra == 'format'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: flake8-print ; extra == 'lint'
+Requires-Dist: flake8-isort ; extra == 'lint'
+Requires-Dist: pep8-naming ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+Requires-Dist: lxml ; extra == 'lint'
+Provides-Extra: security
+Requires-Dist: bandit ; extra == 'security'
+Requires-Dist: safety ; extra == 'security'
+Provides-Extra: tests
+Requires-Dist: coverage (>=5.3) ; extra == 'tests'
+Requires-Dist: ipython ; extra == 'tests'
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-asyncio ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pytest-benchmark (==3.2.3) ; extra == 'tests'
+Requires-Dist: pytest-codestyle (==2.0.1) ; extra == 'tests'
+Requires-Dist: pytest-flakes (==4.0.0) ; extra == 'tests'
+Requires-Dist: pytest-html (==2.1.1) ; extra == 'tests'
+Requires-Dist: pytest-mypy (==0.6.1) ; extra == 'tests'
+Requires-Dist: pytest-timeout (==1.3.4) ; extra == 'tests'
+Requires-Dist: pytest-xdist (==1.32.0) ; extra == 'tests'
+Requires-Dist: pytest-virtualenv ; extra == 'tests'
+Requires-Dist: requests-mock ; extra == 'tests'
+Provides-Extra: wheel
+Requires-Dist: wheel ; extra == 'wheel'
+Requires-Dist: twine ; extra == 'wheel'
+
+# kelvin-sdk-client
+
+Access platform data with the python **kelvin-sdk-client**.
+
+## License
+
+See the [License](https://www.kelvininc.com/license-sdk) for more information.
+
