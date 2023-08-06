@@ -1,0 +1,5 @@
+numpy
+pandas
+lemminflect
+tqdm
+requests
