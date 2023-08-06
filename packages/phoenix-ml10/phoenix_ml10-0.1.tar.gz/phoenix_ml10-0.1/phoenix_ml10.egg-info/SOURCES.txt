@@ -1,0 +1,8 @@
+setup.py
+phoenix_ml10/Framework.py
+phoenix_ml10/__init__.py
+phoenix_ml10.egg-info/PKG-INFO
+phoenix_ml10.egg-info/SOURCES.txt
+phoenix_ml10.egg-info/dependency_links.txt
+phoenix_ml10.egg-info/not-zip-safe
+phoenix_ml10.egg-info/top_level.txt
