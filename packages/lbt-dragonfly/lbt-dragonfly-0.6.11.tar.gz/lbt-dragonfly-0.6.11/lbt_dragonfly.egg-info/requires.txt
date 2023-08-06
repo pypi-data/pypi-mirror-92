@@ -1,0 +1,9 @@
+dragonfly-energy==1.11.18
+dragonfly-uwg==0.5.0
+lbt-honeybee==0.2.307
+
+[cli]
+click==7.1.2
+
+[cli:python_version >= "3.6"]
+dragonfly-schema==1.6.29
