@@ -1,0 +1,14 @@
+keypair_permissions/__init__.py,sha256=qheA3DKxbLEYORfPtyVvMaPI8c_v0D-2qxpd5c9My-4,161
+keypair_permissions/__version__.py,sha256=B9kKWJLln1i8LjtkcYecvNWGLTrez4gCUOHtnPlInFo,22
+keypair_permissions/admin.py,sha256=-cXHcJStH7eaYgBZiHjhvQxwhiVRV1_QZKOFheRH-vE,620
+keypair_permissions/apps.py,sha256=x6LsqaaO2txwRD6ojQOecA7eJU77xpCkNJsyIXZgHds,113
+keypair_permissions/crypto.py,sha256=2AXE2EDaOz79JvjCBeTJYBr0S3svwvvoggl2f3q6HPA,5900
+keypair_permissions/exceptions.py,sha256=iYa16VrY4fC2-9ha7dZ3ATJgsaKOeFcKYMoMj6J5nG8,4881
+keypair_permissions/mixins.py,sha256=HWGXHRJYrIbhRIsQE2NMjT5vKNMDf05aJjbX9-XGtK0,1423
+keypair_permissions/models.py,sha256=ogNFCiEKz7XnDqtE0lYb1JwFfQpXJcRa8AgyeVL6-zM,17539
+keypair_permissions/permissions.py,sha256=b-KOMApcdSYJiZJbJAL6yYD_IHNMo61YFX8JYQxlAns,1548
+drf_keypair_permissions-1.0.5.dist-info/LICENSE,sha256=Oqdiee0fICEa-kqiTOJMb_3CgPVAMcqUvApkdgggwaw,735
+drf_keypair_permissions-1.0.5.dist-info/METADATA,sha256=Bo8NXGeawix48iufG2G74qArJUtIqL-IfeTHqIvcRlc,11206
+drf_keypair_permissions-1.0.5.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+drf_keypair_permissions-1.0.5.dist-info/top_level.txt,sha256=LA0tW34NjOUKbUXj-EBHoaUftPfCQ3gbfIdrZ3el-Uw,20
+drf_keypair_permissions-1.0.5.dist-info/RECORD,,
