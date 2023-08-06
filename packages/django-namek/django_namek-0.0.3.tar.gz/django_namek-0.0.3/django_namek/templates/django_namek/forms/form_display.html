@@ -1,0 +1,14 @@
+{% for form in session_forms %}
+    <hr>
+    {% for field in form.form.visible_fields %}
+        <p>
+            <tr>
+                <th>{{ field.label_tag }}</th>
+                <td>
+                    <strong>{{ field.value }}</strong>
+                </td>
+            </tr>
+        </p>
+    {% endfor %}
+    <a href="{{ form.edit_url_results }}"><strong>Editer</strong></a>
+{% endfor %}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% block css %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.min.css">
+        <style>
+            :root {
+                --links: {{ context.DN_BRAND_COLOR_SECONDARY }};
+                --focus: {{ context.DN_BRAND_COLOR_PRIMARY }};
+                --text-main: {{ context.DN_BRAND_COLOR_SECONDARY }};
+                --text-bright: {{ context.DN_BRAND_COLOR_SECONDARY }};
+                --text-muted: {{ context.DN_BRAND_COLOR_SECONDARY }};
+                --selection: {{ context.DN_BRAND_COLOR_PRIMARY }};
+            }
+        </style>
+    {% endblock css %}
+
+</head>
+
+<body>
+
+{% block header %}
+    <header>
+        <a href="{% url 'django_namek:index' %}">
+            <button type="button" id="dialog-trigger">
+                Index
+            </button>
+        </a>
+    </header>
+    <hr>
+{% endblock header %}
+
+
+<div class="content">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+{% block js %}
+{% endblock js %}
+
+</body>
+</html>

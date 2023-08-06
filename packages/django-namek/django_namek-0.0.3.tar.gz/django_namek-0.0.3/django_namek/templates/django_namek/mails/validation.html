@@ -1,0 +1,7 @@
+{% extends 'django_namek/mails/mail.html' %}
+
+{% block title %}Validation{% endblock %}
+
+{% block content %}
+    <a href="{{ workflow.url_full_results }}">Click here to see results</a></p>
+{% endblock %}
