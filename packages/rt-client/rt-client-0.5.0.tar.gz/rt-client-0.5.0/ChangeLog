@@ -1,0 +1,69 @@
+CHANGES
+=======
+
+0.5.0
+-----
+
+* Refresh expired session
+* add black code style check to ci
+* Add ci job
+* Drop optional params from client setup example
+* Drop warning about non standard fork
+* Add examples to docs
+* client.rt\_info() fails to run HTTP GET request
+
+0.4.2
+-----
+
+* Fix issue with subfields
+
+0.4.1
+-----
+
+* Don't override content-type on ticket reply
+
+0.4.0
+-----
+
+* Update file uploading to match official upstream
+
+0.3.4
+-----
+
+* Add support for resource history to be sorted
+
+0.3.3
+-----
+
+* Add order params to search method of record manager
+* Add order and orderby parameters to methods which fetch record collections
+
+0.3.2
+-----
+
+* fix multiple file uploads
+
+0.3.1
+-----
+
+* Fix slight issue with fields query function
+
+0.3.0
+-----
+
+* Major refactor and restructure of the Client
+* Refactored to record manager design
+* Refactored to reduce code duplication
+
+0.1.2
+-----
+
+* Updates for attachment code
+
+0.1.1
+-----
+
+* Added new methods for attachments and transactions
+* Add pbr support and setup files
+* Fix for pagination: page & per\_page params added where missing
+* Initial commit
