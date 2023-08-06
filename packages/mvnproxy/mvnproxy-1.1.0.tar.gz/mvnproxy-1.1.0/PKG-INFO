@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: mvnproxy
+Version: 1.1.0
+Summary: mvnproxy
+Home-page: UNKNOWN
+Author: Bogdan Mustiata
+Author-email: bogdan.mustiata@gmail.com
+License: BSD
+Description: mvnproxy program.
+        
+        Installation
+        ============
+        
+        .. code:: sh
+        
+            pip install mvnproxy
+        
+Platform: UNKNOWN
