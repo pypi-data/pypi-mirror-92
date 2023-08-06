@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+genice2_extra.egg-info/PKG-INFO
+genice2_extra.egg-info/SOURCES.txt
+genice2_extra.egg-info/dependency_links.txt
+genice2_extra.egg-info/requires.txt
+genice2_extra.egg-info/top_level.txt
