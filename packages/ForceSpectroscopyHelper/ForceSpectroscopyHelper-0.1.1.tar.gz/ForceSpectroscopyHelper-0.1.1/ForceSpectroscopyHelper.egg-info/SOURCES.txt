@@ -1,0 +1,15 @@
+MANIFEST.in
+README.MD
+setup.py
+ForceSpectroscopyHelper/__init__.py
+ForceSpectroscopyHelper/analyzer.py
+ForceSpectroscopyHelper/converter.py
+ForceSpectroscopyHelper/dulcineaMapCreator.py
+ForceSpectroscopyHelper/formula.py
+ForceSpectroscopyHelper/structures.py
+ForceSpectroscopyHelper/visualizer.py
+ForceSpectroscopyHelper.egg-info/PKG-INFO
+ForceSpectroscopyHelper.egg-info/SOURCES.txt
+ForceSpectroscopyHelper.egg-info/dependency_links.txt
+ForceSpectroscopyHelper.egg-info/requires.txt
+ForceSpectroscopyHelper.egg-info/top_level.txt

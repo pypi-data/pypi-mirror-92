@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ForceSpectroscopyHelper
+Version: 0.1.1
+Summary: NC-AFM experiment data IO, DF/F convert, 3D visualization tool.
+Home-page: UNKNOWN
+Author: ZHUO DIAO
+Author-email: enzian0515@gmail.com
+License: MIT
+Description: ForceSpectroscopyHelper
+        ===================================
+        
+        Introduction
+        -------
+        
+        - NC-AFM experiment data IO
+        support Dulcinea file and Nanonis file IO
+        A speical intergrated file format for force spectroscopy data.
+        
+        - Df/F convert
+        support sader-jarvis method and matrix method
+        
+        - 3D visualization tool.
+        specially view tool for Nanonis Grid file
+        
+        Installation
+        -------
+        
+        this package runs in the environment of python 3.6:
+        
+        * `pip install ForceSpectroscopyHelper`
+        
+        
+        Basic Usage
+        -------------
+        * preparing...
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
