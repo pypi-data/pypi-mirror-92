@@ -1,0 +1,10 @@
+statadict/__init__.py,sha256=uFBrJMWwCc68PkWD0LqFpzlU-rmMZlwQN5K1chNxPY4,34
+statadict/base.py,sha256=Cn1yRjRwO-r0vK0t6Rn7SqP1XUySmeyNMFhthS9YMX0,4529
+statadict/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+statadict/tests/test_parse_stata_dict.py,sha256=QkSJ5KUyghCLX_sw3LxCaFSkx1WhXiKMgxUps1uon2g,1122
+statadict/tests/resources/2017_2019_FemPregSetup.dct,sha256=mDp__L6Q9QQyiNmhYA17eroJ3nn4hEMJnDngTGbgBKs,20405
+statadict-1.0.0.dist-info/LICENSE,sha256=aUsGDgibKKTuYAO6IQi55o6ozprkL4OnibcuxXsoMYg,1521
+statadict-1.0.0.dist-info/METADATA,sha256=XzH56vXj-O7VR4yF0QXwSIkNqNDnapernEB1ZENGX3Q,1461
+statadict-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+statadict-1.0.0.dist-info/top_level.txt,sha256=Y5Q8R3uot9Q-Hd5kZ2DPhUvyB5EBztIUNdoyI1Rm_Uw,10
+statadict-1.0.0.dist-info/RECORD,,
