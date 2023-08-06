@@ -1,0 +1,9 @@
+README.md
+setup.py
+aclass/__init__.py
+aclass/__main__.py
+aclass.egg-info/PKG-INFO
+aclass.egg-info/SOURCES.txt
+aclass.egg-info/dependency_links.txt
+aclass.egg-info/entry_points.txt
+aclass.egg-info/top_level.txt
