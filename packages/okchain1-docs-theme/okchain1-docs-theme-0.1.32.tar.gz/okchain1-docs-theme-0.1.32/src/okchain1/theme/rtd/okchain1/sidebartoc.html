@@ -1,0 +1,29 @@
+<ul class="toctree nav nav-list">
+
+  {% if project == 'OKExChainDocs' %}
+  <li class="navleft-item">
+    <a class="project" href="{{ pathto(master_doc) }}">OKExChain</a>
+    {{ toctree(maxdepth=1|toint, collapse=False, includehidden=theme_globaltoc_includehidden|tobool) }}
+  </li>
+  {% else %}
+  <li class="navleft-item" style="display: none">
+      <a  class="project" href="https://okchain-docs.readthedocs.io/en/latest/">OKChain</a>
+  </li>
+  {% endif %}
+
+  {% if project == 'OIPs' %}
+  <li class="navleft-item">
+    <a class="project" href="{{ pathto(master_doc) }}">OIPs</a>
+    {{ toctree(maxdepth=1, collapse=False, includehidden=theme_globaltoc_includehidden|tobool) }}
+  </li>
+  {% else %}
+  <li class="navleft-item" style="display: none">
+    <a  class="project" href="https://oips.readthedocs.io/en/latest/">OIPs</a>
+  </li>
+  {% endif %}
+
+  <!--maxdepth=1|toint
+  <li class="navleft-item border-top"><a href="https://github.com/crate/crate-sample-apps">Sample Applications</a></li>
+  <li class="navleft-item"><a href="/support/">Support</a></li>
+  -->
+</ul>
