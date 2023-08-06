@@ -1,0 +1,8 @@
+README.md
+setup.py
+morse-encode-example/__init__.py
+morse-encode-example/main.py
+morse_encode_example.egg-info/PKG-INFO
+morse_encode_example.egg-info/SOURCES.txt
+morse_encode_example.egg-info/dependency_links.txt
+morse_encode_example.egg-info/top_level.txt
