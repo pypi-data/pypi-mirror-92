@@ -1,0 +1,17 @@
+steinloss/Data_Presenter.py,sha256=fGjzCRVjRWBbJquV9RMxeGcA8s6NPUn6H-6sne-eUiA,1068
+steinloss/__init__.py,sha256=yP3JEMLFkaFc0sKvLvL6opKpMqTxrH_1UN0QACPD0_E,77
+steinloss/__main__.py,sha256=zzfOh0eAXe38h58lRxCQaQCjl8p06rHUMYWZIFjb0-U,132
+steinloss/loss_calculator.py,sha256=TNaqSjLXaLd0UmFS4F15SAoj7jg4Tg1hcHVUBbI5dJ0,3277
+steinloss/package.py,sha256=xXdfPlDeJNLO3_fAGVQ0UKIqDdk2tbqwSUUL-BaXcac,765
+steinloss/probe.py,sha256=WulXClVHZzM91t214k3m8L3D1wBWCZyFtwEe7hq6RF4,3355
+steinloss/server.py,sha256=cAJC4eo0y_2_f0e3Oco_flMSIsMfHXCJ7ZeJBGWmQMY,5860
+steinloss/stein_parser.py,sha256=6zC1OcQSZ3E59TK6SKzq4E3cRqvapEDLBmiH-MirDRw,3712
+steinloss/utilities.py,sha256=FqfL3lj5SXNNd3UXdw72KmX8EqQeL2mye9pUSxOEdyo,159
+steinloss/dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+steinloss/dashboard/dashboard.py,sha256=MsoXN8SKO9uCVtYVyUXugL6yh4wu9nnua7T_Oe7PXrk,3957
+steinloss-0.3.5.dist-info/LICENSE,sha256=mTsdOxIXRwI8GSZqZ2SWdlzqG_yB4Cs4m7p8pXkUyPo,1066
+steinloss-0.3.5.dist-info/METADATA,sha256=oNABn6PzqkyMdSAy8gq0ACoxFk0zfn4Ye-BzaBTGWI8,3075
+steinloss-0.3.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+steinloss-0.3.5.dist-info/entry_points.txt,sha256=E91WybOpjPa9oKSF2A2Rdeimf4Sw49BpLGGGCERGHGg,58
+steinloss-0.3.5.dist-info/top_level.txt,sha256=Snw93rB0-YWQX0L81uBoK7CwzYoGTKsQyoMXVkwTmU4,10
+steinloss-0.3.5.dist-info/RECORD,,
