@@ -1,0 +1,8 @@
+README.md
+lexode.py
+setup.py
+lexode.egg-info/PKG-INFO
+lexode.egg-info/SOURCES.txt
+lexode.egg-info/dependency_links.txt
+lexode.egg-info/not-zip-safe
+lexode.egg-info/top_level.txt
