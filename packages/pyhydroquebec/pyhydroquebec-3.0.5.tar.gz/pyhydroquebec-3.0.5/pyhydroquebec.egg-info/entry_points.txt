@@ -1,0 +1,4 @@
+[console_scripts]
+mqtt_pyhydroquebec = pyhydroquebec.__main__:mqtt_daemon
+pyhydroquebec = pyhydroquebec.__main__:main
+
