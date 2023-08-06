@@ -1,0 +1,903 @@
+Metadata-Version: 2.1
+Name: AutoPy_Android
+Version: 1.9.6
+Summary: AutoPy轻松实现python操作android,实现安卓手机自动化操作!
+Home-page: UNKNOWN
+Author: 1019157263@qq.com
+Author-email: 1019157263@qq.com
+License: MIT
+Description: 
+        # 1. AutoPy文档
+        
+        ## 1.2. 目录
+        autoauto- [1. AutoPy文档](#1-autopy文档)auto    - [1.1. 目录](#11-目录)auto    - [1.2. 简介](#12-简介)auto    - [1.3. 捐赠AutoPy](#13-捐赠autopy)auto    - [1.4. 安装](#14-安装)auto    - [1.5. APK下载地址](#15-apk下载地址)auto    - [1.6. AutoPy](#16-autopy)auto    - [1.7. AutoPy Lite（推荐使用，快，稳，准，狠）](#17-autopy-lite推荐使用快稳准狠)auto    - [1.8. 端口号](#18-端口号)auto        - [1.8.1. AutoPy Lite ：8020](#181-autopy-lite-8020)auto        - [1.8.2. AutoPy ：33445](#182-autopy-33445)auto    - [1.9. 快速开始](#19-快速开始)auto    - [1.10. 准备](#110-准备)auto                - [1.10.0.0.1. 安装模块](#110001-安装模块)auto                - [1.10.0.0.2. 开启无障碍辅助权限](#110002-开启无障碍辅助权限)auto                - [1.10.0.0.3. 显示指针位置](#110003-显示指针位置)auto    - [1.11. 测试](#111-测试)auto    - [1.12. 导入](#112-导入)auto    - [1.13. 使用](#113-使用)auto        - [1.13.1. AutoPy.tap(X,Y)](#1131-autopytapxy)auto        - [1.13.2. AutoPy.swipe(x1,y1,x2,y2,t)](#1132-autopyswipex1y1x2y2t)auto        - [1.13.3. AutoPy.gesturer([x1,y1,x2,y2,...,t])](#1133-autopygesturerx1y1x2y2t)auto                    - [1.13.3.0.3.1. .](#1133031-)auto        - [1.13.4. AutoPy.capturer()](#1134-autopycapturer)auto        - [1.13.5. AutoPy.StartServer()](#1135-autopystartserver)auto        - [1.13.6. AutoPy.HOME()](#1136-autopyhome)auto        - [1.13.7. AutoPy.RECENTS()](#1137-autopyrecents)auto        - [1.13.8. AutoPy.BACK()](#1138-autopyback)auto        - [1.13.9. AutoPy.openapp()](#1139-autopyopenapp)auto        - [1.13.10. AutoPy.getID()](#11310-autopygetid)auto        - [1.13.11. AutoPy.getText()](#11311-autopygettext)auto        - [1.13.12. AutoPy.getView()](#11312-autopygetview)auto        - [1.13.13. AutoPy.Locker()](#11313-autopylocker)auto        - [1.13.14. 悬浮窗和Toast功能](#11314-悬浮窗和toast功能)auto        - [1.13.15. AutoPy.floatWindowOpenApi()](#11315-autopyfloatwindowopenapi)auto    - [1.14. 录制教学功能](#114-录制教学功能)auto    - [1.15. 最后所有方法实现代码](#115-最后所有方法实现代码)auto                - [1.15.0.0.4. 更多功能持续开发中......](#115004-更多功能持续开发中)auto                - [1.15.0.0.5. QQ群:540717901](#115005-qq群540717901)autoauto
+        
+        ## 1.3. 简介
+        > ``AutoPy``是为python开发者提供的一个安卓插件,主要功能为了实现使用python在安卓端完成一些操作,例如点击,滑动,返回，吐司。。。
+        ## 1.4. 捐赠AutoPy
+        我们利用有限的业余时间设计了 AutoPy，虽然它并不那么美好，但正努力前行。
+        
+        如果你喜欢我们的作品，可以捐赠来支持我们。
+        
+        
+        ![avatar](https://img2020.cnblogs.com/blog/1150532/202101/1150532-20210108180802579-1522943811.png)
+        
+        **所有的捐赠都将用来：提升AutoPy的功能以及开发的积极性。**
+        
+        **联系方式：
+        QQ：1019157263
+        QQ群：1019924151,540717901**
+        
+        
+        <!-- 支付宝: 18381801393
+        
+        PayPal: wiar1824@gmail.com -->
+        
+        ## 1.5. 安装
+        ```shell
+        pip install AutoPy-Android -i https://pypi.python.org/simple
+        ```
+        ## 1.6. APK下载地址
+        ## 1.7. AutoPy
+            https://www.coolapk.com/apk/260916
+        ## 1.8. AutoPy Lite（推荐使用，快，稳，准，狠）
+            https://www.coolapk.com/apk/276714
+        
+        ## 1.9. 端口号
+        ### 1.9.1. AutoPy Lite ：8020
+        ### 1.9.2. AutoPy ：33445
+        ## 1.10. 快速开始
+        下面演示了AutoPy的一个使用例子,该示例实现了在android上画圆.
+        其中 a,b 表示圆心坐标, r 表示半径.
+        本示例中 使用了 AutoPy 中的悬浮窗接口方法 `AutoPy.floatWindowOpenApi()` 和 手势方法 `AutoPy.gesturer()`.
+        这两个方法将在后续的文档中介绍.
+        ```python
+        import AutoPy_Android as AutoPy
+        
+        AutoPy.server_url="http://127.0.0.1:33445/?code="
+        #同一局域网下的安卓设备地址,wifi就可以
+        # AutoPy端口为33445
+        # AutoPy Lite端口为8020
+        
+        a=535
+        b=1696
+        r=100
+        
+        li=[]
+        
+        for x in range(a-r,a+r):
+            y=int((((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+            
+        
+        for x in range(a+r,a-r,-1):
+            y=int(-1*(((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+        
+        li.append(4000)#执行速度
+        
+        while True:
+            if AutoPy.floatWindowOpenApi():
+               AutoPy.floatWindowClose()
+               AutoPy.gesturer(li)
+        
+        ```
+        
+        ## 1.11. 准备
+        > 安装`AutoPy.apk`,点击`安装模块`,开启`无障碍权限`,开启`开发者选项`中`显示指针位置`
+        
+        
+        ##### 1.11.0.0.1. 安装模块
+        点击安装模块后会在`/sdcard/qpython`目录下写入 `AutoPy.py` 文件.
+        在`AutoPy.py` 文件中包含AutoPy中的所有方法,用户可以自行修改该文件,进行自定义操作.
+        
+        用户可以将 `AutoPy.py` 文件移动到 用户自己的项目中去导入..
+        
+        在本文的最后会给出AutoPy.py的方法实现代码.
+        
+        
+        
+        ##### 1.11.0.0.2. 开启无障碍辅助权限
+        
+        AutoPy依赖android的无障碍辅助权限进行自动化操作.
+        
+        Android 的辅助模式（Accessibility）功能非常的强大。基本上被获取到授权之后，可以监听手机上的任何事件，例如：屏幕点击、窗口的变化、以及模拟点击、模拟系统按键等等。
+        
+        无障碍功能实现 点击 滑动 手势 等全局操作.
+        
+        ##### 1.11.0.0.3. 显示指针位置
+        PS:AutoPy不依赖此项功能,这项功能打开才能 "看到" 点击效果
+        
+        1. 打开Android手机`“设置”`APP，点击`“关于手机”`。
+        2. 在`版本号`上连续点击5次，打开“开发者选项”。也有些手机在`“关于手机”`里找不到`“版本号”`条目，那么也可以点击其他类似的条目，比如`“软件版本”`。
+        3. 在“设置”APP里找到“开发者选项”，打开它。
+        4. 打开“指针位置”，这个时候可以在手机顶部看到以下一行说明：`P:0/0  X:0/0  Y:0/0  Xv:0:0  Yv:0:0  Prs:0:0  Size:0:0`。其中的X/Y冒号后面的值就是绝对坐标，这行表示坐标原点(0,0)，也就是手机左上角。这个时候在屏幕上点击某个位置，就可以看到该位置的坐标；如果在屏幕上划动，也可以看到划动的轨迹。
+        5. 比如用手指按在“某按钮”上，如下图所示，界面上显示一横一竖两条线，中间有个交叉的点，手机顶部有一行说明：`P:1/1  X:458  Y:647  Xv:0:0  Yv:0:0  Prs:0.25  Size:0.2`。这说明这个点的X坐标是458.6，Y坐标是647.7。
+        6. 有了坐标值，就可以利用它来做一些简单的自动化。比如利用命令`AutoPy.tap(458,647)`点击坐标(458，647)，从而自动打开“某按钮”。
+        
+        
+        ## 1.12. 测试
+        > 完成准备工作后,点测试按钮,测试相应功能,若功能正常,请继续后面操作,若功能无响应,则检查准备工作
+        
+        点击 AutoPy的`高级`按钮可以打开AutoPy的测试界面,
+        如果你`确保`你已经`打开了无障碍,显示指针位置` 等各种权限.那么你点击测试按钮时会看到相应的效果.
+        每一个测试按钮都有对应的相关的python方法接口,可以使用python 灵活的对方法编程.
+        
+        
+        ## 1.13. 导入
+        > 完成上述操作后,模块路径`/sdcard/qpython/AutoPy.py` 进入目录导入模块
+        ```shell
+        $ cd /sdcard/qpython  #进入目录
+        $ python  #启动python
+        $
+        ```
+        ```python
+        >>> import AutoPy_Android as AutoPy#导入模块
+        >>>
+        ```
+        ## 1.14. 使用
+        ### 1.14.1. AutoPy.tap(X,Y)
+        > 点击指定位置
+        
+        |参数|类型|说明|
+        |:-:|:-:|:-:|
+        |X|`int`| 点击位置x坐标 |
+        |Y|`int`| 点击位置y坐标 |
+        
+        
+        
+        >
+        **示例:**
+        某 `铁匠铺游戏` 制作材料等均需要用手进行快速点击,所谓能者多得.勤劳致富.
+        **例: 刷`500`铁** 
+        该功能用 AutoPy 编程实现即用:
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        
+        number=500
+        #点击次数
+        coordinate={
+            #按钮坐标位置
+            "x":400,
+            "y":400,
+        }
+        for i in range(number):
+            AutoPy.tap(coordinate["x"],coordinate["y"]) 
+            #点击(400,400)位置
+        ```
+        上述代码轻松实现刷铁工作的自动化,并且AutoPy的响应速度十分的快.
+        
+        ### 1.14.2. AutoPy.swipe(x1,y1,x2,y2,t)
+        > 滑动操作
+        
+        |参数|类型|说明|
+        |:-:|:-:|:-:|
+        |x1|`int`| 起始位置x坐标 |
+        |y1|`int`| 起始位置y坐标|
+        |x2|`int`| 结束位置x坐标 |
+        |y2|`int`| 结束位置y坐标 |
+        |t|`int`| 执行时间(默认为8000毫秒) |
+        
+        
+        
+        **示例:**
+        某 `画板` 工具上用手画直线十分的难画直,并且长度无法精确控制.
+        
+        **例: 画边长为`500`的正方形** 
+        画一个正方形需要它的边长`定型尺寸`以外,我们还需要它的`定位尺寸` 也就是我们把 `边长500 `的正方形放在哪个位置.
+        以右下角`角点`定位为例.
+        因为要画4条边的正方形,所有需要调用4次`AutoPy.swipe()`方法.
+        
+        该功能用 AutoPy 编程实现即用:
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        
+        Corner_point={
+            #右下角角点坐标,可以方便的修改坐标位置
+            "x":100,
+            "y":100,
+        }
+        
+        lenth=500
+        
+        AutoPy.swipe(Corner_point["x"],Corner_point["y"],Corner_point["x"]+lenth,Corner_point["y"])
+        #画第一条边
+        AutoPy.swipe(Corner_point["x"]+lenth,Corner_point["y"],Corner_point["x"]+lenth,Corner_point["y"]+lenth)
+        #画第二条边
+        AutoPy.swipe(Corner_point["x"]+lenth,Corner_point["y"]+lenth,Corner_point["x"],Corner_point["y"]+lenth)
+        #画第三条边
+        AutoPy.swipe(Corner_point["x"],Corner_point["y"]+lenth,Corner_point["x"]+lenth,Corner_point["y"])
+        #画第四条边
+        
+        ```
+        
+        ### 1.14.3. AutoPy.gesturer([x1,y1,x2,y2,...,t])
+        > 连续滑动操作
+        
+        ###### 1.14.3.0.3.1. .
+         **注意:AutoPy.gesturer方法只有一个list(列表)参数**
+        **AutoPy.gesturer只能传入一个列表**
+        
+        其中`list列表`数据格式如下
+        |参数|类型|说明|
+        |:-:|:-:|:-:|
+        |x1|`int`|起始位置x坐标|
+        |y1|`int`|起始位置y坐标|
+        |x2|`int`|结束位置x坐标|
+        |y2|`int`|结束位置y坐标|
+        |...|`int`|...|
+        |t [必须]|`int`|起始位置到结束位置持续时间|
+        
+        
+        
+        **示例:**
+        上一个方法介绍了怎样画一个正方形,有些小伙伴就要问了,那怎么样画一个曲线呢,连续光滑的曲线.于是便有了`AutoPy.gesturer()`方法,可以传入多个坐标,实现画出连续光滑的曲线.可以制作迷宫,连连看,等游戏的自动化解题.
+        **例: 画`r100`圆** 
+        上面说到r100是圆的`定型尺寸`,所以还需要圆的`定位尺寸`,即圆放在哪个位置.
+        
+        该功能用 AutoPy 编程实现即用:
+        
+        
+        ```python
+        import AutoPy_Android as AutoPy
+        a=535
+        b=1696
+        r=100
+        
+        li=[]
+        
+        for x in range(a-r,a+r):
+            y=int((((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+            
+        
+        for x in range(a+r,a-r,-1):
+            y=int(-1*(((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+        
+        li.append(4000)#执行速度
+        
+        AutoPy.gesturer(li)
+        
+        ```
+        
+        其中a,b是圆心坐标,r是半径.
+        
+        ### 1.14.4. AutoPy.capturer()
+        > 三指下滑截图,没有三指截图功能机型无效
+        
+        三指截图功能是3个异步的手势同时滑动模拟出了3条路径
+        截图后的文件会储存到手机自带的截图文件夹里面,例`/sdcard/截图文件夹/`.需要自行获取路径+文件名来配合使用.
+        
+        
+        **示例:**
+        如我们需要自动录制3帧的视频,则需要调用3次截图功能,最后用图片来合成视频.
+        **例: 每10秒 截`1帧`图** 
+        
+        
+        该功能用 AutoPy 编程实现即用:
+        
+        
+        
+        ```python
+        
+        import AutoPy_Android as AutoPy#导入模块
+        import time
+        
+        #**例: 每10秒 截`1帧`图** 
+        num=3
+        for i in range(num):
+            AutoPy.capturer()#三指下滑实现截图
+            time.sleep(10)
+        
+        ```
+        
+        
+        
+        ### 1.14.5. AutoPy.StartServer()
+        > 截图服务
+        
+        在上面我们介绍到截图的图片会放到手机自带的文件夹里面去,对于我们去取这个图片就会造成极大的不便.
+        本方法实现的主要功能是监控手机的截图文件夹,如有新截图会自动返回并且将新图片放到用户自定义的位置去,方便用户使用截图进行分析.
+        
+        
+        **示例:**
+        以小米手机为例,将监控的截图文件夹的新文件,自动监控并自动转移至我们工程目录下.
+        小米手机的截图目录:`/sdcard/DCIM/Screenshots/`
+        工程目录:`/sdcard/qpython/`
+        
+        **例: 监控截图到工程目录下** 
+        
+        该功能需要改写 AutoPy.py的`AutoPy.StartServer()`方法
+        编程实现即用:
+        
+        ```python
+        
+        import AutoPy_Android as AutoPy#导入模块
+        
+        def StartServer(_Screenshots_='/sdcard/DCIM/Screenshots/',_newdir_='/sdcard/qpython/'):
+             _thread.start_new_thread(ListenServer, (_Screenshots_,_newdir_) )
+        
+        StartServer()
+        
+        ```
+        如上便能自动监控截图并且自动返回到项目目录中.
+        
+        ### 1.14.6. AutoPy.HOME()
+        > 主页键
+        
+        主页键就是返回桌面.
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        AutoPy.HOME()#模拟主页键
+        ```
+        
+        ### 1.14.7. AutoPy.RECENTS()
+        > 多任务键
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        AutoPy.RECENTS()#模拟多任务键
+        ```
+        
+        ### 1.14.8. AutoPy.BACK()
+        > 返回键
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        AutoPy.BACK()#模拟返回键
+        ```
+        
+        ### 1.14.9. AutoPy.openapp()
+        > 打开第三方app
+        
+        **例: 打开QQ界面** 
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块open
+        
+        pkg_name="com.tencent.mobileqq"#QQ的包名
+        cls_name="com.tencent.mobileqq.activity.SplashActivity"#界面的类名
+        #这两个参数可以用工具"当前界面.apk"找到
+        
+        AutoPy.openapp(pkg_name,cls_name)
+        
+        ```
+        
+        
+        
+        ### 1.14.10. AutoPy.getID()
+        > ID点击按钮
+        
+        **例: 通过控件ID点击按钮** 
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        
+        ID="button1"#可通过"当前界面"app获取
+        
+        AutoPy.getID(ID)
+        
+        ```
+        
+        ### 1.14.11. AutoPy.getText()
+        > 文本点击按钮
+        
+        **例: 通过文本点击按钮** 
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块open
+        
+        
+        AutoPy.getText("按钮")
+        
+        ```
+        
+        
+        ### 1.14.12. AutoPy.getView()
+        > 获取当前界面控件树
+        
+        **例: 通过爬取控件文本信息** 
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块open
+        
+        
+        AutoPy.getView()
+        
+        ```
+        
+        
+        
+        ### 1.14.13. AutoPy.Locker()
+        > 锁屏
+        
+        **例: 完成工作后自动锁屏** 
+        
+        ```python
+        import AutoPy_Android as AutoPy#导入模块
+        def job():
+            print("这是一个需要执行5个小时的工作....")
+        
+        job()
+        print("工作结束.")
+        AutoPy.Locker()#锁屏
+        
+        ```
+        
+        
+        ### 1.14.14. 悬浮窗和Toast功能
+        用法如下
+        下面为测试程序
+        
+        ```python
+        import AutoPy_Android as AutoPy
+        AutoPy.server_url='http://192.168.31.93:8020/?code='
+        A=AutoPy.FloatWindow("a1")#创建一个悬浮窗，通过指定不同id可以创建多个悬浮窗
+        A.delete()#删除悬浮窗(清屏)
+        A.makeToast("开始运行AutoPy测试程序")#弹出一条Toast
+        time.sleep(1)
+        A.show()#显示悬浮窗
+        for i in range(20):
+            A.View["text"]=f"测试{i}"#修改View属性
+            A.View["size"]=str(int(A.View["size"])+1)#修改View属性
+            A.View["X"]=str(int(A.View["X"])+10)#修改View属性
+            A.View["Y"]=str(int(A.View["Y"])+10)#修改View属性
+            A.modify()#修改生效
+            # time.sleep(0.5)
+        A.View["text"]=f"两秒关掉"#修改View属性
+        A.modify()#修改生效
+        
+        time.sleep(2)
+        A.delete()#删除悬浮窗(清屏)
+        A.makeToast("已关掉，已结束")#弹出一条Toast
+        
+        ```
+        test2.py 按钮与文本互动
+        ```python
+        import AutoPy_Android as AutoPy
+        import time,json
+        
+        AutoPy.server_url='http://192.168.31.93:8020/?code='
+        Butt=AutoPy.FloatButton("b1")#按钮控件
+        Butt.View["Y"]="1000"
+        Butt.delete()
+        Butt.show()
+        
+        A=AutoPy.FloatWindow("a1")
+        A.View["Y"]="800"
+        A.delete()
+        A.show()
+        
+        info_O = Butt.getinfo()
+        N=0
+        while True:
+            info_N = Butt.getinfo()
+            print(info_N,end="\r")
+            if info_N != info_O:
+                print("已点击")
+                N+=1
+                A.View["text"]=f"已点击{N}下"
+                A.modify()
+            info_O=info_N
+        ```
+        test3.py imgView的基本用法
+        imgView 接收一个base64编码的图片用于展示
+        
+        ```python
+        
+        import AutoPy_Android as AutoPy
+        import time,json,base64
+        import json,base64
+        
+        
+        def img_to_base64(path):
+            image_path = path
+        
+            image= open(image_path, 'rb').read()
+            image_base64 = str(base64.b64encode(image), encoding='utf-8')
+            return image_base64
+        
+        if __name__ == "__main__":
+            img_list=[
+                r'C:\Users\Administrator\Desktop\都市蓝领 .png',
+                r'C:\Users\Administrator\Desktop\小镇中老年.png',
+                r'C:\Users\Administrator\Desktop\旅游.png',
+            ]
+            base64_data=img_to_base64(img_list[0])
+        
+            AutoPy.server_url='http://192.168.31.93:8020/?code='
+            imgView=AutoPy.FloatImgView("xx")#设置ID
+            imgView.View["X"]="0"#设置位置
+            imgView.View["Y"]="100"#设置位置
+            imgView.View["Width"]="1000"#设置大小
+            imgView.View["Height"]="1000"#设置大小
+            imgView.setImg(base64_data)
+            ret=imgView.show()
+            print(ret)
+            for x in range(10):
+                for i in img_list:
+                    base64_data=img_to_base64(i)
+                    imgView.setImg(base64_data)
+                    ret=imgView.modify()
+                    print(ret)
+            print(imgView.getinfo())
+            imgView.delete()
+        
+        ```
+        test4.py
+        ```python
+        import AutoPy_Android as AutoPy
+        AutoPy.server_url='http://192.168.31.93:8020/?code='
+        Butt=AutoPy.FloatButton("b1")#按钮控件
+        Butt.delete()
+        Butt.show()
+        print(Butt.getinfo())
+        edittext= AutoPy.FloatEditText("ED1")#编辑框控件
+        edittext.View["Y"]="1000"
+        edittext.delete()
+        edittext.show()
+        A=AutoPy.FloatWindow("a1")
+        A.delete()
+        A.makeToast("开始运行AutoPy测试程序")
+        time.sleep(1)
+        A.show()
+        for i in range(20):
+            A.View["text"]=f"测试{i}"
+            A.View["size"]=str(int(A.View["size"])+1)
+            A.View["X"]=str(int(A.View["X"])+10)
+            A.View["Y"]=str(int(A.View["Y"])+10)
+            A.modify()
+            # time.sleep(0.5)
+        A.View["text"]=f"两秒关掉"
+        A.modify()
+        
+        time.sleep(2)
+        A.delete()
+        A.makeToast("已关掉，已结束")
+        print(Butt.getinfo())#获取按钮点击状态
+        print(edittext.getinfo())#获取编辑框状态
+        Butt.delete()
+        edittext.delete()
+        
+        
+        ```
+        其中View的参数有：
+        ```python
+        
+        
+        
+        {
+        	"id":"new",
+        	"type":"textview",
+        	"color":[255,255,255],
+        	"text":"测试文本",
+        	"Width":"100",
+        	"Height":"100",
+        	"X":"100",
+        	"Y":"100",
+        	"operation":"newly",
+        	"info":"备用"
+        }
+        #新增悬浮窗
+        #指定唯一ID新增.指定operation为newly
+        
+        
+        
+        {
+        	"id":"new",
+        	"operation":"delete",
+        	"info":"备用"
+        }
+        
+        #删除悬浮窗
+        #指定ID删除.指定operation为delete
+        
+        
+        {
+        	"id":"new",
+        	"type":"textview",
+        	"color":[255,255,255,255],
+        	"text":"测试文本",
+        	"Width":"100",
+        	"Height":"100",
+        	"X":"100",
+        	"Y":"100",
+        	"operation":"modify",
+        	"info":"备用"
+        }
+        #修改悬浮窗
+        #指定ID修改.指定operation为modify
+        #执行完modify()后立刻生效
+        
+        
+        {
+        	"id":"newx",
+        	"type":"Toast",
+        	"color":[255,255,255,255],
+        	"text":"测试文本",
+        	"Width":"100",
+        	"Height":"100",
+        	"X":"100",
+        	"Y":"100",
+        	"operation":"modify",
+        	"info":"备用"
+        }
+        
+        #弹出一条 Toast
+        #必填参数type："Toast"，"text":"测试文本",其他非必填
+        
+        ```
+        
+        
+        
+        
+        ### 1.14.15. AutoPy.floatWindowOpenApi()
+        > 悬浮窗接口
+        
+        该功能是AutoPy的高级用法,一般用于阻塞当前程序,等待按钮按下后再运行.
+        一般用作按钮的按钮的点击事件触发.
+        如上面的程序都是执行后马上运行,不会等待用户到达指定场景后再运行,该功能就可以解决上面的问题,将等带用户点击开启悬浮窗后才会执行,即可达到交互的控制.
+        
+        **例: 用户点击后进行画圆操作** 
+        使用`AutoPy.floatWindowOpenApi()`和`AutoPy.floatWindowClose()`方法进行控制.
+        AutoPy目前提供了两个按钮的接口服务.可供处理两个按钮的点击事件.
+        如下用了一个开启按钮事件:
+        
+        
+        ```python
+        import AutoPy_Android as AutoPy
+        a=535
+        b=1696
+        r=100
+        
+        li=[]
+        
+        for x in range(a-r,a+r):
+            y=int((((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+            
+        
+        for x in range(a+r,a-r,-1):
+            y=int(-1*(((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+        
+        li.append(4000)#执行速度
+        
+        while True:
+            if AutoPy.floatWindowOpenApi():
+               AutoPy.floatWindowClose()
+               AutoPy.gesturer(li)
+        
+        
+        ```
+        **关闭按钮写法与开启按钮类似**
+        如下:
+        
+        ```python
+        import AutoPy_Android as AutoPy
+        a=535
+        b=1696
+        r=100
+        
+        li=[]
+        
+        for x in range(a-r,a+r):
+            y=int((((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+            
+        
+        for x in range(a+r,a-r,-1):
+            y=int(-1*(((r**2)-(x-a)**2)**(1/2))+b)
+            li.append(x)
+            li.append(y)
+        
+        li.append(4000)#执行速度
+        
+        while True:
+            if AutoPy.floatWindowCloseApi():
+               AutoPy.floatWindowClose()
+               AutoPy.gesturer(li)
+        
+        
+        ```
+        
+        
+        ## 1.15. 录制教学功能
+        点击录制教学,按住文字可以拖动,当拖动到适当位置的时候,选择执行点击或拖动功能,AutoPy会自动记录下当前的坐标,并且会自动点击当前选定的位置,会生成一个悬浮窗标记当前位置,可以很方便的实现坐标记录和python代码生成.
+        
+        AutoPy可以自动生成python代码.
+        生成一段代码如下:
+        **示例:**
+        ```python
+        import AutoPy,time
+        
+        dy=80 #y坐标偏移调整
+        dx=0 #x坐标偏移调整
+        t=1000 #毫秒数转秒数
+        
+        """
+        此脚本由 AutoPy自动生成，
+        位置坐标和时间延迟可能不准确，
+        请手动微调！
+        """
+            
+        AutoPy.tap(324+dx,1692+dy)
+        time.sleep(1)
+        AutoPy.tap(559+dx,1680+dy)
+        time.sleep(750/t)
+        AutoPy.tap(343+dx,1600+dy)
+        time.sleep(1363/t)
+        AutoPy.tap(600+dx,1731+dy)
+        time.sleep(708/t)
+        AutoPy.tap(696+dx,1669+dy)
+        time.sleep(1100/t)
+        AutoPy.tap(241+dx,1835+dy)
+        time.sleep(959/t)
+        AutoPy.tap(557+dx,1845+dy)
+        time.sleep(904/t)
+        AutoPy.tap(685+dx,1804+dy)
+        time.sleep(821/t)
+        AutoPy.tap(781+dx,1676+dy)
+        time.sleep(779/t)
+        AutoPy.tap(855+dx,1555+dy)
+        time.sleep(930/t)
+        AutoPy.tap(455+dx,1949+dy)
+        time.sleep(2147/t)
+        AutoPy.swipe(681+dx,1844+dy,396+dx,1784+dy,2683)
+        time.sleep(396/t)
+        AutoPy.tap(396+dx,1784+dy)
+        time.sleep(2216/t)
+        AutoPy.tap(640+dx,1796+dy)
+        time.sleep(2672/t)
+        AutoPy.swipe(281+dx,1853+dy,571+dx,1864+dy,1326)
+        time.sleep(571/t)
+        AutoPy.swipe(145+dx,1692+dy,145+dx,1692+dy,754)
+        time.sleep(145/t)
+        AutoPy.tap(120+dx,1941+dy)
+        time.sleep(8120/t)
+        AutoPy.tap(105+dx,1770+dy)
+        time.sleep(1463/t)
+        AutoPy.tap(699+dx,1871+dy)
+        time.sleep(3436/t)
+        ```
+        以上代码由AutoPy自动生成.
+        
+        
+        ## 1.16. 最后所有方法实现代码
+        
+        ```python
+        # -*- coding: utf-8 -*-
+        
+        import sys
+        import time
+        import os,_thread
+        
+        if sys.version[0] == 2:
+            from urllib2 import urlopen
+        else:
+            from urllib.request import urlopen
+        
+        server_url = 'http://127.0.0.1:33445?code='
+        
+        def dian(x,y):
+            f=urlopen(server_url+'0,'+str(x)+','+str(y))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]点击执行成功')
+            time.sleep(0.1)
+            
+        def tuo(x1,y1,x2,y2,t=1000):
+            f=urlopen(server_url+'1,'+str(x1)+','+str(y1)+','+str(x2)+','+str(y2)+','+str(t))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]滑动执行成功')
+            time.sleep(0.0023*t)
+        
+        def swipe(x1,y1,x2,y2,t=1000):
+            f=urlopen(server_url+'1,'+str(x1)+','+str(y1)+','+str(x2)+','+str(y2)+','+str(t))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]滑动执行成功')
+            time.sleep(0.0023*t)
+        
+        def tap(x,y):
+            f=urlopen(server_url+'0,'+str(x)+','+str(y))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]点击执行成功')
+            time.sleep(0.1)
+            
+        def click(x,y):
+            f=urlopen(server_url+'0,'+str(x)+','+str(y))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]点击执行成功')
+            time.sleep(0.1)
+            
+        def capturer():
+            f=urlopen(server_url+'2,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]截屏执行成功')
+            
+        def ListenServer(_Screenshots_='/sdcard/DCIM/Screenshots/',_newdir_='/sdcard/qpython/'):#暂时无用
+            _Screenshots_=_Screenshots_
+            _newdir_=_newdir_
+            t=os.listdir(_Screenshots_)
+            while (True):
+              nt=os.listdir(_Screenshots_)
+              li=list(set(nt)-set(t))
+              if(len(li)!=0):
+                 t=os.listdir(_Screenshots_)
+                 print('监控到截图',li)#监控到截图
+                 os.system('mv '+_Screenshots_+li[0]+' '+_newdir_+'AutoPy_Screenshots.jpg')
+        
+        
+        
+        def StartServer(_Screenshots_='/sdcard/DCIM/Screenshots/',_newdir_='/sdcard/qpython/'):
+             _thread.start_new_thread(ListenServer, (_Screenshots_,_newdir_) )
+        
+        
+        def gesturer(li):
+            li=li
+            f=urlopen(server_url+'3,'+','.join(map(str,li)))
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]手势执行成功')
+            
+        def HOME():
+            f=urlopen(server_url+'HOME,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]主页键执行成功')
+        
+        def BACK():
+            f=urlopen(server_url+'BACK,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]返回键执行成功')
+            
+        def RECENTS():
+            f=urlopen(server_url+'RECENTS,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]菜单键执行成功')
+        
+        
+            
+        def Locker():
+            f=urlopen(server_url+'Lock,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]锁屏执行成功')
+        
+        def floatWindowOpenApi():
+            f=open('/sdcard/AutoFloatWindow.info','r+').read()
+            if f=='1':
+                return True
+            #o=open('/sdcard/AutoFloatWindow.info',1w+').close()
+        
+        
+        def floatWindowCloseApi():
+            f=open('/sdcard/AutoFloatWindow.info','r+').read()
+            if f=='0':
+                return True
+        
+        def floatWindowClose():
+            o=open('/sdcard/AutoFloatWindow.info','w+').close()
+        def systemCapturer():
+            f=urlopen(server_url+'capturer,')
+            f.close()
+            print(time.ctime()[11:19]+' [AutoPy]返回键执行成功')
+            
+            
+        #作者:sunny开始学坏
+        
+        ```
+        
+        ##### 1.16.0.0.4. 更多功能持续开发中......
+        ##### 1.16.0.0.5. QQ群:540717901
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
