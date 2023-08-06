@@ -1,0 +1,9 @@
+xapy/__init__.py,sha256=rYsu6XmV80vX-SweWzfVOCUaVzFsjlpy71AEQUWetok,45
+xapy/client.py,sha256=6Hvi2wUm8egckF-j6sa3frkPWFvCMJQCa43zFWC8KlI,3583
+xapy/game.py,sha256=HiJPlnNzk6bcTGeJ9ssVD6XAcQviwJ4weiQo13KmDCA,1134
+xapy/gamercard.py,sha256=iCr3hVs_S7ZVKQkxjQFbXOo-K9clS-k3KbqzA59SVx8,1659
+xapy-0.0.1.dist-info/LICENSE,sha256=j_8BBwR6AsE0JiqFdoHwrhBEY_FHYShEPl1iRDhHGB0,1066
+xapy-0.0.1.dist-info/METADATA,sha256=lbUaO0LwgRid40LKg7cX4rjKhS5G2oq4xksC29YE8Oo,822
+xapy-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+xapy-0.0.1.dist-info/top_level.txt,sha256=VQnWZyCZBxfnPrve35_Gh5Q3IHx5goFj6Zvlny4uDCQ,5
+xapy-0.0.1.dist-info/RECORD,,
