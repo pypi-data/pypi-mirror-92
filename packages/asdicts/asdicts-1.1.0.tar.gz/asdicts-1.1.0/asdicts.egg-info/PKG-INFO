@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: asdicts
+Version: 1.1.0
+Summary: Missed utilities for working with Python dictionaries
+Home-page: https://github.com/sergeyklay/asdicts
+Author: Serghei Iakovlev
+Author-email: egrep@protonmail.ch
+Maintainer: Serghei Iakovlev
+Maintainer-email: egrep@protonmail.ch
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/sergeyklay/asdicts/issues
+Project-URL: Source Code, https://github.com/sergeyklay/asdicts
+Description: ===============================================================
+        asdicts: Missed utilities for working with Python dictionaries
+        ===============================================================
+        
+        
+        
+        
+        Missed utilities for working with Python dictionaries.
+        
+        Python has great builtins for working with lists as well as dictionaries, but
+        some utilities for working with dictionaries are still missed. This fills the
+        gap.
+        
+        .. teaser-end
+        
+        .. -project-information-
+        
+        Project Information
+        ===================
+        
+        ``asdicts`` is released under the `Apache Licence 2.0 <https://choosealicense.com/licenses/apache-2.0/>`_,
+        and the code on `GitHub <https://github.com/sergeyklay/asdicts>`_. It’s rigorously
+        tested on Python 3.6+. If you'd like to contribute to ``asdicts`` you're most welcome!
+        
+        .. -support-
+        
+        Support
+        =======
+        
+        Should you have any question, any remark, or if you find a bug, or if there is
+        something you can't do with the ``asdicts``, please
+        `open an issue <https://github.com/sergeyklay/asdicts/issues>`_.
+        
+        
+        Release Information
+        ===================
+        
+        1.1.0 (2021-01-26)
+        ------------------
+        
+        Features
+        ^^^^^^^^
+        
+        - Enable Python 3.6 support
+        
+        `Full changelog <https://github.com/sergeyklay/asdicts/blob/master/CHANGELOG.rst>`_.
+        
+        Credits
+        =======
+        
+        ``asdicts`` is written and maintained by `Serghei Iakovlev <https://github.com/sergeyklay/>`_.
+        
+        A full list of contributors can be found in `GitHub's overview <https://github.com/sergeyklay/asdicts/graphs/contributors>`_.
+        
+Keywords: dict,collections,helpers
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/x-rst
+Provides-Extra: testing
