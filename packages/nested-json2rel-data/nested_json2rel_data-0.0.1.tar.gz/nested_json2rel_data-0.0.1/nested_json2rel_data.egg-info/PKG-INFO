@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nested-json2rel-data
+Version: 0.0.1
+Summary: package to convert nested json to relational and flat data structure.  
+Home-page: UNKNOWN
+Author: Joy Maitra
+Author-email: joy_maitra@yahoo.co.in
+License: UNKNOWN
+Description: # Nested Json Package
+        
+        This is a package to convert nested json data to flat and relational dictionary. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
