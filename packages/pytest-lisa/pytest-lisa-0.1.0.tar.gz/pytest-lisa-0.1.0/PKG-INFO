@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pytest-lisa
+Version: 0.1.0
+Summary: Pytest plugin for organizing tests.
+Home-page: https://microsoft.github.io/lisa
+License: MIT
+Author: Andrew Schwartzmeyer
+Author-email: andrew@schwartzmeyer.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Dist: pytest (>=6.1.2,<7.0.0)
+Requires-Dist: pytest-playbook (>=0.1.0,<0.2.0)
+Requires-Dist: pytest-xdist (>=2.1.0,<3.0.0)
+Requires-Dist: schema (==0.7.2)
+Project-URL: Repository, https://github.com/microsoft/lisa/tree/andschwa/pytest/pytest-lisa
+Description-Content-Type: text/markdown
+
+# pytest-lisa
+
+Pytest plugin for organizing tests. Supports the LISAv3 framework.
+
+See the [documentation][] for more information, and the LISAv3 [`README.md`][]
+for notices.
+
+[documentation]: https://microsoft.github.io/lisa/modules/lisa.html
+[`README.md`]: https://github.com/microsoft/lisa/blob/andschwa/pytest/README.md
+
