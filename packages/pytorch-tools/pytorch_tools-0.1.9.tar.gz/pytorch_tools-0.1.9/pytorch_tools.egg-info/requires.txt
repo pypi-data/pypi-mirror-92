@@ -1,0 +1,6 @@
+adamp==0.3.0
+inplace-abn>=1.0.12
+loguru>=0.4.1
+torch>=1.6
+torchvision>=0.7.0
+tqdm>=4.49
