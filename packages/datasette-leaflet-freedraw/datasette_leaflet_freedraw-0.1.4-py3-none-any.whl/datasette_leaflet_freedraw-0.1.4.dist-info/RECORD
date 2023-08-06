@@ -1,0 +1,10 @@
+datasette_leaflet_freedraw/__init__.py,sha256=kXDTJECCrFykMo1zNuK_RYSlZNSK6FDZhNl65YT8REQ,661
+datasette_leaflet_freedraw/static/datasette-leaflet-freedraw.js,sha256=rdTZcsHczvd9lEAVEM2Qcg_PcBG6PqiDwUPx84Bufww,2434
+datasette_leaflet_freedraw/static/leaflet-freedraw.esm.js,sha256=-9A7gyphf7MSOwcHpL_JRUjNRbfLVbKNDdfjb4_ROVw,893797
+datasette_leaflet_freedraw/static/leaflet.css,sha256=BPfK9M5v34c2XP6p0cxVz1mUQLst0gTLk0mlc7kuodA,14272
+datasette_leaflet_freedraw/static/leaflet.js,sha256=yDc0eil8GjWFKqN1OSzHSVCiuGghTosZCcRje4tj7iQ,141941
+datasette_leaflet_freedraw-0.1.4.dist-info/METADATA,sha256=JOT8n7eG2k0XTvwPX3wcvIR9KRdOpc6xiejdk4LXBOM,4516
+datasette_leaflet_freedraw-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_leaflet_freedraw-0.1.4.dist-info/entry_points.txt,sha256=ahBzsiWtius_KFnIg7eMLKRtsDsSyqDlNC4or8h_Mbk,59
+datasette_leaflet_freedraw-0.1.4.dist-info/top_level.txt,sha256=Q75nyshF00WrffQ_9uPR1j99oMXhVv9ld1dkY1LV06M,27
+datasette_leaflet_freedraw-0.1.4.dist-info/RECORD,,
