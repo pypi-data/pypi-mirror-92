@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: agron_load
+Version: 1.0.1
+Summary: Loader module for Agron data collection microservices
+Home-page: https://github.com/akhtariali/agron_load
+Author: Ali Akhtari
+Author-email: hi@aliakh.me
+License: UNKNOWN
+Description: Load module of agron data collection microservices (is loaded to all functions to make connections to the API)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
