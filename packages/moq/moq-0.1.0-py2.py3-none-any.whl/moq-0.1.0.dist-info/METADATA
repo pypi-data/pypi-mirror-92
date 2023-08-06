@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: moq
+Version: 0.1.0
+Summary: Python HTTP mocking made simple
+Home-page: https://github.com/symonk/moq
+Author: Simon K
+Author-email: jackofspaces@gmail.com
+Maintainer: Simon K
+Maintainer-email: jackofspaces@gmail.com
+License: MIT license
+Keywords: mocking,http,python
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Python: >3.8
+Provides-Extra: testing
+Requires-Dist: assertpy (==1.1) ; extra == 'testing'
+Requires-Dist: coverage (==5.3.1) ; extra == 'testing'
+Requires-Dist: pip (==20.3.3) ; extra == 'testing'
+Requires-Dist: pytest (==6.2.1) ; extra == 'testing'
+Requires-Dist: pytest-cov (==2.11.1) ; extra == 'testing'
+Requires-Dist: Sphinx (==3.4.3) ; extra == 'testing'
+Requires-Dist: sphinx-rtd-theme (==0.5.1) ; extra == 'testing'
+Requires-Dist: tox (==3.21.2) ; extra == 'testing'
+Requires-Dist: twine (==3.3.0) ; extra == 'testing'
+Requires-Dist: watchdog (==1.0.2) ; extra == 'testing'
+Requires-Dist: wheel (==0.36.2) ; extra == 'testing'
+Requires-Dist: pre-commit (==2.9.3) ; extra == 'testing'
+Requires-Dist: towncrier (==19.2.0) ; extra == 'testing'
+
+TODO
+
+
