@@ -1,0 +1,11 @@
+kmlplus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kmlplus/coordinates.py,sha256=O9KCrnG2jCiwOUMYgwYShz7Jo8jXKfHbUMn1rqqp3b4,12405
+kmlplus/paths.py,sha256=6y2_nTqRFvF3ocW316wJ2UE0WOhv06Zv0-x4GnQTFYQ,11705
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_coordinates.py,sha256=AhVi3ouD-vZnqvfbCBynf1-YB3Bzec59zNfpyflHGHU,5624
+test/test_paths.py,sha256=HhtE00AV0poSK1NmqPLwJqtYZudQ9jPRda-3SCPk1C4,4091
+KMLPlus-1.1.0.dist-info/LICENSE,sha256=eFVpRrTvn6uhVHS9WBc2HyJKwrXwSgMPoV16Gka-SaU,1071
+KMLPlus-1.1.0.dist-info/METADATA,sha256=Bb_j1sIdOnGw4mqUHwuL9NW2FhFyorR2Ct3P-9-O9JY,5046
+KMLPlus-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+KMLPlus-1.1.0.dist-info/top_level.txt,sha256=AihjRIVoHtFB6MV0ES9r9JJXLIYBXtlJy2hs9ZLpaMA,13
+KMLPlus-1.1.0.dist-info/RECORD,,
