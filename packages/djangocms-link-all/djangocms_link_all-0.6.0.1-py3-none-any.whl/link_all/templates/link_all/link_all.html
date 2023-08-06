@@ -1,0 +1,8 @@
+{% spaceless %}
+{% if not instance.is_link_empty %}
+    <a
+        href="{{ instance.get_link_url }}"
+        {% if instance.link_is_open_in_new_tab %}target="_blank"{% endif %}
+    >{{ instance.get_link_label }}</a>
+{% endif %}
+{% endspaceless %}

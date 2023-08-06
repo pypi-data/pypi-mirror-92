@@ -1,0 +1,19 @@
+{% extends 'admin/change_form.html' %}
+
+{% load static %}
+
+
+{% block admin_change_form_document_ready %}
+    {{ block.super }}
+    
+    {% if IS_LINK_ALL_DEV %}
+        <script data-is-reload-on-page-edit defer src="http://localhost:8080/chunk-vendors.js"></script>
+        <script data-is-reload-on-page-edit defer src="http://localhost:8080/app.js"></script>
+    {% else %}
+        <script data-is-reload-on-page-edit defer src="{% static 'link_all/dist/chunk-vendors.js' %}"></script>
+        <script data-is-reload-on-page-edit defer src="{% static 'link_all/dist/app.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'link_all/dist/chunk-vendors.css' %}">
+        <link rel="stylesheet" href="{% static 'link_all/dist/app.css' %}">
+    {% endif %}
+
+{% endblock %}
