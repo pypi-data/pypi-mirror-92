@@ -1,0 +1,8 @@
+setup.py
+src/additionalFiles.py
+src/toolkitFile.py
+src/toolkitpack.egg-info/PKG-INFO
+src/toolkitpack.egg-info/SOURCES.txt
+src/toolkitpack.egg-info/dependency_links.txt
+src/toolkitpack.egg-info/requires.txt
+src/toolkitpack.egg-info/top_level.txt
