@@ -1,0 +1,15 @@
+resumify/__init__.py,sha256=8qxCYZ_KI0rnI4sqVLUk7RU2Gc_8ATHc1CqvOMCOhwE,60
+resumify/resume.py,sha256=VsGd8COpXDDGgW4sJjt08jRvrTNycrYF5d81yURPk7o,24075
+resumify/fonts/Ubuntu/Ubuntu-Bold.ttf,sha256=-DeTo8dWgKFPwWP32MRm9ehpPekrGHwHye5jB62dOCs,269584
+resumify/fonts/Ubuntu/Ubuntu-BoldItalic.ttf,sha256=CfcdFU-Q6Ac8N9r390vSGXM3E8aOUn5Euko0ihvDhC8,282700
+resumify/fonts/Ubuntu/Ubuntu-Italic.ttf,sha256=BTQmwnvWbMkRcAxWDve6LuhCLR57XNlnITsf63JqbYk,326292
+resumify/fonts/Ubuntu/Ubuntu-Light.ttf,sha256=gDB7jadkmqTuTUhLIyFA484ewMoJMHPTxTyPWlztenA,361676
+resumify/fonts/Ubuntu/Ubuntu-LightItalic.ttf,sha256=Ngz-FJG3YfUfyqCs7O0ekOpaAyEEYEZa6dEDt2ohp-A,349540
+resumify/fonts/Ubuntu/Ubuntu-Medium.ttf,sha256=BbRt9fMBZMdOljQ7_gYSdqYqEHQbkZT3pzTLz02bHFs,284424
+resumify/fonts/Ubuntu/Ubuntu-MediumItalic.ttf,sha256=YQlardbqPWab_ScCYxD8NDV83cwL7uJZtyMETxcxQsw,308748
+resumify/fonts/Ubuntu/Ubuntu-Regular.ttf,sha256=usZGH-s0iOXTMOfpQ0_I4MUTqjwee1dZjqsWVOEFWhQ,298928
+resumify-1.1.7.dist-info/LICENSE,sha256=-Bkg_FiMQ1qoJ8PSvBg7N3RbcfzXsr5nMNYj5lMKEqY,1069
+resumify-1.1.7.dist-info/METADATA,sha256=eklOHoVxMnWFlWfKngjpTLDEFHuRoe7n9RU-tF1MzhI,884
+resumify-1.1.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+resumify-1.1.7.dist-info/top_level.txt,sha256=0N29wU3Vno1TkrPrjmfhkKS-kdytqR3xKuqQfq6A8PU,9
+resumify-1.1.7.dist-info/RECORD,,
