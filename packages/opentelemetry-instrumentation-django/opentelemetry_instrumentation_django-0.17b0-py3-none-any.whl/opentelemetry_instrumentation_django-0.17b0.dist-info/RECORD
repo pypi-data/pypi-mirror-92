@@ -1,0 +1,9 @@
+opentelemetry/instrumentation/django/__init__.py,sha256=c1Tcs1O1zbGt5r-fFKvWdXwz_EKk7X8cgpf9DRKl2T4,3479
+opentelemetry/instrumentation/django/middleware.py,sha256=rinMEdU1Z07tCWD4zALynSO6wpGr3a4GYcLVGSownj0,8176
+opentelemetry/instrumentation/django/version.py,sha256=4u3g8c5AED640k8XWJU1o3_rPHPm7tyB2kiNflADz3Y,608
+opentelemetry_instrumentation_django-0.17b0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_instrumentation_django-0.17b0.dist-info/METADATA,sha256=Dc8pbzvS5nPNHA-9dAqXSuQwbZux8sRJ9Jb4Wrir7CA,2816
+opentelemetry_instrumentation_django-0.17b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_instrumentation_django-0.17b0.dist-info/entry_points.txt,sha256=_Jbt-3tZhIJ213p07Q305Y3TH91p-5_I_Hn0Gcr_qd4,95
+opentelemetry_instrumentation_django-0.17b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_instrumentation_django-0.17b0.dist-info/RECORD,,
