@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: NAnPack
+Version: 1.0.0a1
+Summary: A package for learning numerical methods.
+Home-page: https://github.com/vxsharma-14/NAnPack
+Author: Vishal Sharma
+Author-email: sharma_vishal14@hotmail.com
+License: LICENSE.md
+Keywords: numerical methods computational engineering computational fluid dynamics scientific computing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# NAnPack
+## Learners Edition
+### A Numerical Analysis Package
+
+NAnPack Learners Edition is a collection of tools and numerical solvers based on existing computational methods for one-dimensional and two-dimensional partial differential equations written in Python language and inteded for use in learning and teaching.
+
+Thank you for visiting this page. I hope that together we will make NAnPack a great experience for all users.
+
+# Table of Contents
+1. Installation
+2. Usage
+3. Contribution
+4. Code of Conduct
+5. License
+
+
+## Installation
+For installation instructions, visit [NSTALLATION](INSTALLATION.md) page.
+
+## Usage
+The NAnPack Learners edition is intended to be used for the purpose of teaching and learning various numerical schemes for solving partial differential equations in engineering and science.
+
+For detailed objective and usage, read [USAGE](USAGE.md) page.
+
+## Contribution
+
+Want to contribute? Please read the section on [CONTRIBUTION GUIDELINES](CONTRIBUTING.md).
+
+## Code of Conduct
+
+This project and everyone participating in it is governed by the [NAnPack Code of Conduct](CODE-OF-CONDUCT.md). By participating, you are expected to uphold this code.
+Please report unacceptable behavior to project.NAnPack@gmail.com.
+
+## License
+This project is licensed under the terms of the [MIT license](LICENSE.md).
+
+
+
+
+
