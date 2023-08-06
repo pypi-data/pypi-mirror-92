@@ -1,0 +1,15 @@
+rescomp/DrivenResComp.py,sha256=ZPkW3tTrpl1uYhycDz0FpQAAFCN0oTErdVB91ufFFl4,7071
+rescomp/ResComp.py,sha256=EwGnqMfDvCmIVA5h0i64QbuhC0oLXuts9A9CoK48qX0,20535
+rescomp/__init__.py,sha256=inWxJQPGzcuzoGcjZ5WkLOTMDsp1TqXEqvhiIDz2myY,382
+rescomp/chaosode.py,sha256=Upi2Ed5rdiyo-Riz_MKeQ3p9YmE3jO8m9S_PPIKBLUc,5551
+rescomp/complex_networks.py,sha256=yEybcZjHbwoRVZkLyr-r-kkYeDWKgaggOfnuhWmhuio,2640
+rescomp/utils.py,sha256=1XTMdUOZxw6b355a7PeWb0bx8j8nn7DbXgmbLi76gnw,5159
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_DrivenResComp.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ResComp.py,sha256=peRNRuBivA3fWE5ZHcP5cGbJy06SVHAzdbEFNtbHcD8,9494
+tests/test_extras.py,sha256=M_kUQFlIcx28VASUKUlsaYsxe8auEVs9EKU0t7sdecY,1287
+rescomp-0.1.1.dist-info/LICENSE,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+rescomp-0.1.1.dist-info/METADATA,sha256=RNGb__k4f5tj5Z2ZQAMCmvHKRgkJjk3N3yku-KN4Lfw,4072
+rescomp-0.1.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+rescomp-0.1.1.dist-info/top_level.txt,sha256=9koc6XpOxVSoiOhMa1asd6IcNJ0gI5PSFpfOsygAgaY,14
+rescomp-0.1.1.dist-info/RECORD,,
