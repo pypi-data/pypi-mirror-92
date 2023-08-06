@@ -1,0 +1,7 @@
+tree_sitter/__init__.py,sha256=rfu4F1NY_Z4jHolJ9Qw0BIuNluJ0U4LFKgOVuD6cc9I,3422
+tree_sitter/binding.cpython-38-darwin.so,sha256=v8FZK-IR20GWph2yq9yaO7x4Mhqyr5xA3B0VjtdVoEo,260392
+tree_sitter-0.2.2.dist-info/LICENSE,sha256=GvB5BUP_-smd070pC_g8qWP0-AKQZetvNWOPTfhjro4,1088
+tree_sitter-0.2.2.dist-info/METADATA,sha256=wCxCk6BAntw8LW1iPum2IXLNdIovZ4v3mTwNI2jHEeA,5356
+tree_sitter-0.2.2.dist-info/WHEEL,sha256=Ylm15sSUid92cdFeaRwBWqFPNU1PmetXIVrYmRl82M8,110
+tree_sitter-0.2.2.dist-info/top_level.txt,sha256=oNKDFAeLi6i39EcTTW75DL0SE5sMBkgX0TRMpJe3Lrs,12
+tree_sitter-0.2.2.dist-info/RECORD,,
