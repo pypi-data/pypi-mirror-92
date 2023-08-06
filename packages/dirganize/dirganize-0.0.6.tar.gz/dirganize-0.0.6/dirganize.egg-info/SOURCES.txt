@@ -1,0 +1,11 @@
+README.md
+setup.py
+dirganize/__init__.py
+dirganize/main.py
+dirganize.egg-info/PKG-INFO
+dirganize.egg-info/SOURCES.txt
+dirganize.egg-info/dependency_links.txt
+dirganize.egg-info/entry_points.txt
+dirganize.egg-info/not-zip-safe
+dirganize.egg-info/requires.txt
+dirganize.egg-info/top_level.txt
