@@ -1,0 +1,10 @@
+ua_clarity_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ua_clarity_api/get_endpoint_map.py,sha256=lJCTKQ7KDce7P1bDAA65sQqk-DbxALVqVJIPeB1dzag,2441
+ua_clarity_api/get_multiple_items.xml,sha256=TeOzj0s2HZQBcg3uZcXBOtKojNHKnLxxwyYQrAS8YkE,109
+ua_clarity_api/post_batch_receive_template.xml,sha256=81OpS4-8I5ksoUtnBJeh2iggqcTaiuRpnnatep8QOuw,155
+ua_clarity_api/ua_clarity_api.py,sha256=Nm-8QMPEcUM5xpScUd4tpxe4Zc-TvKo3hht61QKlXBo,7773
+ua_clarity_api-1.1.4.dist-info/LICENSE,sha256=jpU7R2JKPBbBt5igeF1P7Y7xqm696SWyst16Ofm3FVw,1065
+ua_clarity_api-1.1.4.dist-info/METADATA,sha256=fZ1LmlPZrRrvp1cWEQF8WPh-5DuAKO3kvbvZnShqnZM,2076
+ua_clarity_api-1.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ua_clarity_api-1.1.4.dist-info/top_level.txt,sha256=l5yrMuwr3gJJQrzlljwRckQoHRS7AVWl1Ig6fV3Xiog,15
+ua_clarity_api-1.1.4.dist-info/RECORD,,
