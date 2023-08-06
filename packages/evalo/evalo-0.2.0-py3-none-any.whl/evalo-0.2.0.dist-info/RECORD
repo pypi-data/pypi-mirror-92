@@ -1,0 +1,10 @@
+evalo/__init__.py,sha256=u5vySl3TI0AZUWOGK4KhOLqCi2yswBXbS01JMWSQiYg,231
+evalo/evalo.py,sha256=jENitOqGNjsYRwuPJN4skomrhUrAib0p2S3WN-Re1q0,10835
+evalo/reify.py,sha256=Cjp_8vlhygzFZ881nWUK4JTKvtCRlQ7yU6Czl8CO7Oo,777
+evalo/solve.py,sha256=F8SiAtLEhHObvGdmuG2mnjoOJ3YPNJsF4K-JMwYWi-s,397
+evalo/utils.py,sha256=O4SoIedqJ2Dg_yAdKchjY34dlxeNrkdDAP7fulqqCT4,3689
+evalo-0.2.0.dist-info/LICENSE,sha256=EsLQ-f2dsdHq3TbPss3fhqj1xRgrhRGQHsIjNjMF0qQ,1073
+evalo-0.2.0.dist-info/METADATA,sha256=i7xzkVPeXpVQZOXO8SX2Ve57wLakHUZJEfCk6WAWZRo,3081
+evalo-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+evalo-0.2.0.dist-info/top_level.txt,sha256=mtha2jrKqpGX4bLqSKGa9U0iA-guvKJKacPPAyhhaTA,6
+evalo-0.2.0.dist-info/RECORD,,
