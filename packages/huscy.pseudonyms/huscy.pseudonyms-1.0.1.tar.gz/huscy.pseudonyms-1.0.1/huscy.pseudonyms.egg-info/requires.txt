@@ -1,0 +1,9 @@
+django>=2.1
+huscy.subjects
+
+[development]
+psycopg2-binary
+
+[testing]
+tox
+watchdog
