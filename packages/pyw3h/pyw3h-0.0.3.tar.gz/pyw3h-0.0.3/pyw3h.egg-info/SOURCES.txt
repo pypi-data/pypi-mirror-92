@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+pyw3h/ERC20.json
+pyw3h/UniFactory.json
+pyw3h/UniPair.json
+pyw3h/__init__.py
+pyw3h/w3h.py
+pyw3h.egg-info/PKG-INFO
+pyw3h.egg-info/SOURCES.txt
+pyw3h.egg-info/dependency_links.txt
+pyw3h.egg-info/top_level.txt
+tests/ERC20.json
+tests/UniFactory.json
+tests/UniPair.json
