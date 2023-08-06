@@ -1,0 +1,12 @@
+neuroquery_image_search/__init__.py,sha256=SpJgKgnnIFv3KUjteg9X-BIoViNP5z1s8F7lLY1kRms,510
+neuroquery_image_search/_datasets.py,sha256=29ELChexR8-DPU2xnuJU0E_gu2GjxHQbri5f62eruA4,1703
+neuroquery_image_search/_searching.py,sha256=ztwGefwW0uheWHR8Xvx64bFIuGeKyIJ4iB_6wkAN1Ow,9401
+neuroquery_image_search/data/VERSION.txt,sha256=pjEQCcbDIsqKwuYgz_UgTww68jEV1AMpOgy1vjZ5Zog,4
+neuroquery_image_search/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuroquery_image_search/data/search_results_template.html,sha256=Slk1E56Ca8OG1MMaKH7i9NkO7FKxjgW_tNlG8oUC9vo,1044
+neuroquery_image_search-0.1.dist-info/LICENSE,sha256=0JXeGHZS8ONbCVS0xndSRh76zAVgzpkcBMCXAvtqwVc,1524
+neuroquery_image_search-0.1.dist-info/METADATA,sha256=9gAOtCa-4srLhPivHHmFy6wQuM2f_9L33bPOBYN9fog,548
+neuroquery_image_search-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+neuroquery_image_search-0.1.dist-info/entry_points.txt,sha256=Pw5TgGaNOhbjTL6j-kdknz9ETFxXbgC_wuAVlUZKnZw,93
+neuroquery_image_search-0.1.dist-info/top_level.txt,sha256=uvJAFesL23CNnzlUE8h5aPg36J0WBhU9jG7ulSHf2qo,24
+neuroquery_image_search-0.1.dist-info/RECORD,,
