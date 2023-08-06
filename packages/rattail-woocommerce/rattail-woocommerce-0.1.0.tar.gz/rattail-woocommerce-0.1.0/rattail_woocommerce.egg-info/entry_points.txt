@@ -1,0 +1,4 @@
+[rattail.commands]
+export-woocommerce = rattail_woocommerce.commands:ExportWooCommerce
+import-woocommerce = rattail_woocommerce.commands:ImportWooCommerce
+

@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: rattail-woocommerce
+Version: 0.1.0
+Summary: Rattail Software Interfaces for WooCommerce
+Home-page: https://rattailproject.org/
+Author: Lance Edgar
+Author-email: lance@edbob.org
+License: GNU GPL v3
+Description: 
+        rattail-woocommerce
+        ===================
+        
+        Rattail is a retail software framework, released under the GNU General Public
+        License.
+        
+        This package contains software interfaces for the `WooCommerce`_ system.
+        
+        .. _WooCommerce: https://woocommerce.com/
+        
+        Please see the `Rattail Project`_ for more information.
+        
+        .. _`Rattail Project`: https://rattailproject.org/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Office/Business
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
