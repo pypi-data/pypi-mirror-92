@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+emailrep/__init__.py
+emailrep/cli.py
+emailrep/utils.py
+emailrep.egg-info/PKG-INFO
+emailrep.egg-info/SOURCES.txt
+emailrep.egg-info/dependency_links.txt
+emailrep.egg-info/entry_points.txt
+emailrep.egg-info/requires.txt
+emailrep.egg-info/top_level.txt
