@@ -1,0 +1,11 @@
+README.md
+setup.py
+dpytools/__init__.py
+dpytools/checks.py
+dpytools/embeds.py
+dpytools/menus.py
+dpytools.egg-info/PKG-INFO
+dpytools.egg-info/SOURCES.txt
+dpytools.egg-info/dependency_links.txt
+dpytools.egg-info/requires.txt
+dpytools.egg-info/top_level.txt
