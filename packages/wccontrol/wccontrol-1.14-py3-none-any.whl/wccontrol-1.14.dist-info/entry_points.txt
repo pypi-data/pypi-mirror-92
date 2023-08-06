@@ -1,0 +1,3 @@
+[console_scripts]
+wccontrol = wccontrol:main
+
