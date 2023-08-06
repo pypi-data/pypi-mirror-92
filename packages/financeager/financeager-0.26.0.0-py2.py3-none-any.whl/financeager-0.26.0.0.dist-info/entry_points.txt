@@ -1,0 +1,4 @@
+[console_scripts]
+fina = financeager.cli:main
+financeager = financeager.cli:deprecated_main
+
