@@ -1,0 +1,9 @@
+numpy
+netcdf4
+matplotlib
+cython
+pyshp
+six
+shapely
+pykdtree
+cartopy
