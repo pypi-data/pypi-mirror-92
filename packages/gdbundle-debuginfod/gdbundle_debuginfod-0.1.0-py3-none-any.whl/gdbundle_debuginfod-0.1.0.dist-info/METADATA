@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: gdbundle-debuginfod
+Version: 0.1.0
+Summary: GDB and LLDB plugins to enable older versions of GDB and LLDB to support debuginfod
+License: MIT
+Author: Matt Schulte
+Author-email: schultetwin1@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: progressist (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Debuginfod Plugins
+
+This repo contains both a GDB and LLDB plugin to support
+[debuginfod](https://www.mankier.com/8/debuginfod#) in the versions of GDB and
+LLDB which not do have debuginfod built in.
+
+## Supported Environments
+
+| Debuggger | Versions              |
+|-----------|-----------------------|
+| gdb*      | <10.1                 |
+| lldb*     | Support in the works  |
+
+\* Debuggers must have python API enabled
+
+## Getting Started
+
+These plugins can be installed in two different ways:
+
+* Using [gdbundle](https://github.com/memfault/gdbundle). A GDB/LLDB plugin
+  manager from [MemFault](https://interrupt.memfault.com/blog/gdbundle-plugin-manager). (Preferred method)
+
+* Manual
+
+### Using gdbundle
+
+First follow gdbundle's install [steps](https://github.com/memfault/gdbundle#quickstart).
+
+Then install the debuginfod plugins with the following command:
+
+```shell
+pip install gdbundle-debuginfod-plugin
+```
+### Manual Install
+
+Instructions to come...

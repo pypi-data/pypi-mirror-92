@@ -1,0 +1,6 @@
+gdbundle_debuginfod/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+gdbundle_debuginfod/gdb_loader.py,sha256=uQO95JY-R3O3jhht5bG3CJKv6dn5g1wzXD8L-q5PLto,327
+gdbundle_debuginfod/scripts/debuginfod_plugin.py,sha256=CFA9TA92V1I38wTx3JiJBYDY1icdFgjK7PEDXMLQ8Dc,2549
+gdbundle_debuginfod-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gdbundle_debuginfod-0.1.0.dist-info/METADATA,sha256=puZlBeIQIX6tQWyD1BxwevTybkXn40nSFuUvOuh75Ts,1606
+gdbundle_debuginfod-0.1.0.dist-info/RECORD,,
