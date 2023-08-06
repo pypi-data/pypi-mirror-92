@@ -1,0 +1,7 @@
+pkginfo
+multipledispatch>=0.4.9
+ujson
+toml
+PyYAML>=3.12
+typing_inspect
+bourbaki.introspection>=0.5.1
