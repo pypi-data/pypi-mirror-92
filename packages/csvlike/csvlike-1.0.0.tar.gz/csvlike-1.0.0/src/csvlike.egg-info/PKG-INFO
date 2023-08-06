@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: csvlike
+Version: 1.0.0
+Summary: Read CSV-like files
+Home-page: https://github.com/MikeSmithEU/csvlike/
+Author: MikeSmithEU
+Author-email: github@mikesmith.eu
+Maintainer: MikeSmithEU
+Maintainer-email: github@mikesmith.eu
+License: MIT
+Description: ========
+        CSV-like
+        ========
+        
+        .. image:: https://img.shields.io/github/license/mikesmitheu/csvlike.svg
+            :target: https://github.com/MikeSmithEU/csvlike/blob/main/LICENCE.md
+        
+        .. image:: https://img.shields.io/github/workflow/status/MikeSmithEU/csvlike/Python%20package
+            :alt: GitHub Workflow Status (branch)
+            :target: https://github.com/MikeSmithEU/csvlike/actions
+        
+        .. image:: https://readthedocs.org/projects/csvlike/badge/?version=latest
+            :target: https://csvlike.readthedocs.io/
+            :alt: Documentation Status
+        
+        
+        Read CSV-like files with support of comments and trimming in native python.
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.5
+Provides-Extra: test
+Provides-Extra: docs

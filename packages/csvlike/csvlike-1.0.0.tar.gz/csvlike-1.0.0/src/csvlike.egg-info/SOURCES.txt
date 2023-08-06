@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+src/csvlike/__init__.py
+src/csvlike/__meta__.py
+src/csvlike/csv.py
+src/csvlike/helpers.py
+src/csvlike.egg-info/PKG-INFO
+src/csvlike.egg-info/SOURCES.txt
+src/csvlike.egg-info/dependency_links.txt
+src/csvlike.egg-info/entry_points.txt
+src/csvlike.egg-info/requires.txt
+src/csvlike.egg-info/top_level.txt
