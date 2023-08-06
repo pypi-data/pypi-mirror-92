@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: batterycharge
+Version: 1
+Summary: Gives you the battery charge
+Home-page: UNKNOWN
+Author: Pranav
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
