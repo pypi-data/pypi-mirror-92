@@ -1,0 +1,11 @@
+fastapi_localization/__init__.py,sha256=l9fz4a76sfrGo8wcmlwBPZ_29Qm0AYBLFg_1RkkpmhE,660
+fastapi_localization/exception_handlers.py,sha256=pRTvXeoLJxKFKU1fZ-cHpOrLsvFKdJQhBX2r70eHu6M,657
+fastapi_localization/localization.py,sha256=ydyqUkzYOD-U7PleQV-gta5SgybvQ2bCBookpP9px4Q,1494
+fastapi_localization/middleware.py,sha256=0NO32nxplU7clk4zg5PDgCNW9uURl19jg-AvuSBxK5M,845
+fastapi_localization/response.py,sha256=RVpnvn0EuwzZVE30mQ19XI3_s2yaW1GZEH3X_PrLSj0,712
+fastapi_localization/route.py,sha256=bCuW77-oKDH-VL0e85dDv_LnIHayNc4HqIl5DmQZV0A,704
+fastapi_localization-0.0a1.dev1.dist-info/LICENSE,sha256=TE8Rb_P4kJa3n30CGRSKEtJCf6oYQNc1UC2JV8okNSc,1062
+fastapi_localization-0.0a1.dev1.dist-info/METADATA,sha256=EIn41GNGLpGnahhhX8Mm6fXC5fGyLiRRG05S0sDXb08,598
+fastapi_localization-0.0a1.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastapi_localization-0.0a1.dev1.dist-info/top_level.txt,sha256=GehX8lacYRpa2i-d98L_FR_8emsoFxa_xOlf48PxJB8,21
+fastapi_localization-0.0a1.dev1.dist-info/RECORD,,
