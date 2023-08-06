@@ -1,0 +1,7 @@
+django>=1.10
+opentelemetry-instrumentation-wsgi==0.17b0
+opentelemetry-instrumentation==0.17b0
+opentelemetry-api==0.17b0
+
+[test]
+opentelemetry-test==0.17b0
