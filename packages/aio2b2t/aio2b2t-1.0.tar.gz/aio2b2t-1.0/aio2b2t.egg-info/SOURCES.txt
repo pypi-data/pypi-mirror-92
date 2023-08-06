@@ -1,0 +1,11 @@
+README.md
+setup.py
+aio2b2t/__init__.py
+aio2b2t/endpoints.py
+aio2b2t/extra.py
+aio2b2t/main.py
+aio2b2t.egg-info/PKG-INFO
+aio2b2t.egg-info/SOURCES.txt
+aio2b2t.egg-info/dependency_links.txt
+aio2b2t.egg-info/requires.txt
+aio2b2t.egg-info/top_level.txt
