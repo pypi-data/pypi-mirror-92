@@ -1,0 +1,4 @@
+[console_scripts]
+check-untracked-migrations = hooks.check_untracked_migrations:main
+po-location-format = hooks.po_location_format:main
+

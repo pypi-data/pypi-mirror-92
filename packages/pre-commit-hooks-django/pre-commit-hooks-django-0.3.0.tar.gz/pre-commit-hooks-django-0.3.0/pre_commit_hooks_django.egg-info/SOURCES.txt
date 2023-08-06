@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+hooks/__init__.py
+hooks/check_untracked_migrations.py
+hooks/po_location_format.py
+hooks/utils.py
+pre_commit_hooks_django.egg-info/PKG-INFO
+pre_commit_hooks_django.egg-info/SOURCES.txt
+pre_commit_hooks_django.egg-info/dependency_links.txt
+pre_commit_hooks_django.egg-info/entry_points.txt
+pre_commit_hooks_django.egg-info/top_level.txt
