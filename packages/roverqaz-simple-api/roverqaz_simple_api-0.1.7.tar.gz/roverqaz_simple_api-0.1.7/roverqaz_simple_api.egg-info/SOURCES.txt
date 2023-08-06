@@ -1,0 +1,10 @@
+README.md
+setup.py
+roverqaz_simple_api/__init__.py
+roverqaz_simple_api/__main__.py
+roverqaz_simple_api/app.py
+roverqaz_simple_api.egg-info/PKG-INFO
+roverqaz_simple_api.egg-info/SOURCES.txt
+roverqaz_simple_api.egg-info/dependency_links.txt
+roverqaz_simple_api.egg-info/requires.txt
+roverqaz_simple_api.egg-info/top_level.txt
