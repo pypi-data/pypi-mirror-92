@@ -1,0 +1,17 @@
+DESCRIPTION.md
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+AEMET_OpenData.egg-info/PKG-INFO
+AEMET_OpenData.egg-info/SOURCES.txt
+AEMET_OpenData.egg-info/dependency_links.txt
+AEMET_OpenData.egg-info/not-zip-safe
+AEMET_OpenData.egg-info/requires.txt
+AEMET_OpenData.egg-info/top_level.txt
+aemet_opendata/__init__.py
+aemet_opendata/const.py
+aemet_opendata/helpers.py
+aemet_opendata/interface.py
