@@ -1,0 +1,12 @@
+README.rst,sha256=QrvrFS62BaErk0hE9bLeMeiWpet1jEC0ErC8khcGRgo,2712
+activesoup/__init__.py,sha256=eoRSxajLD4RlylZt8GAEvhmS98xO3y7sWQSY32a3e-k,56
+activesoup/csv.py,sha256=7sTTYuFAAR1NWxbRAMDFD61RZaLugiz4wwS2Ha96cPA,785
+activesoup/driver.py,sha256=YYNZ7yEMiuwwxBeVoafLInnj5SeKArHAm_rEyueqf0U,3287
+activesoup/html.py,sha256=9JyfgZqSgTI5-wslfbaAYGad7hXWlzGM_sA7fH0Vpo4,3617
+activesoup/json_response.py,sha256=mPVSVNt4hArlh4XK-nN00gX9pfY65CpPhGuxs6UqrOU,784
+activesoup/protocols.py,sha256=4Z7EMTZ8fgLtWUO3Qc_F8oDOvyELQ8aKbkIA6D9uCyg,858
+activesoup/response.py,sha256=6h4_Jq4RI4M2c3JqId0lvzprdyHIOg-xpkkxWGmqT40,622
+activesoup-0.0.6.dist-info/LICENSE,sha256=A8JETHT58Oxl7aubQClnAZCUQAxfIANDkPGlFKa7sYw,1079
+activesoup-0.0.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+activesoup-0.0.6.dist-info/METADATA,sha256=Pt9JgY3QBflQPeKkvX5mcHk5gNOjSrt1MtlN_gGQiHA,3428
+activesoup-0.0.6.dist-info/RECORD,,
