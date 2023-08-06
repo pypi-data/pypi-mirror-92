@@ -1,0 +1,3 @@
+[console_scripts]
+tdown = tdownloader.main:main
+
