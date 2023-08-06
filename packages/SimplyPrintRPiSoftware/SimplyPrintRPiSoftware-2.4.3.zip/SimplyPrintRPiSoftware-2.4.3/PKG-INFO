@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SimplyPrintRPiSoftware
+Version: 2.4.3
+Summary: The SimplyPrint software used to communicate with the platform
+Home-page: https://simplyprint.io
+Author: SimplyPrint
+Author-email: cp2004.github@gmail.com
+License: UNKNOWN
+Description: # SimplyPrintRPiSoftware
+        The SimplyPrint software used to communicate with the platform at [https://simplyprint.io](https://simplyprint.io).
+        Needs to be installed for the platform to work, currently only works on a Raspberry Pi.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=2.7.9, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4
+Description-Content-Type: text/markdown

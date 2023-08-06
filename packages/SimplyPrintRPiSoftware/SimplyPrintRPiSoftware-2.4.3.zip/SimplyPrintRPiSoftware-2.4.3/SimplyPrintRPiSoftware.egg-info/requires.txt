@@ -1,0 +1,4 @@
+PyYAML
+python-crontab
+requests
+urllib3
