@@ -1,0 +1,19 @@
+-e .
+
+# Requirements to run the test suite
+pytest
+pytest-wholenodeid
+flake8
+tox
+
+# Requirements for building docs
+Sphinx
+
+# Requirements for updating package
+twine
+
+# Requirements for running setup.py bdist_wheel
+wheel
+
+# Requirements for updating the vendored html5lib
+hashin
