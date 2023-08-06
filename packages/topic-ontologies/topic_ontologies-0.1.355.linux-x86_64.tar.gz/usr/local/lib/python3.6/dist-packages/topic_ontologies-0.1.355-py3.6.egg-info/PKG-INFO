@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: topic-ontologies
+Version: 0.1.355
+Summary: Topic Ontologies
+Home-page: https://git.webis.de/arguana/topic-ontologies-for-argumentation
+Author: Yamen Ajjour
+Author-email: yajjour@hotmail.com
+License: UNKNOWN
+Description: ### Copy Dataset and Run models
+        ```
+        ./deploy/copy-dataset.sh 'argument-inventory'
+        ./deploy/run-model.sh topic_modelling/model_argument_inventory.py 'argument-inventory'
+        ./deploy/copy-dataset-vectors.sh 'argument-inventory'
+        ```
+        ### Run Experiment
+        ```
+        ./deploy/run-experiments.h
+        ```
+        Models results /mnt/ceph/storage/data-in-progress/data-research/arguana/topic-ontologies/topic-identification-experiment
+        
+        ### Produce Topic Coverage of Argument Corproa 
+        ```
+        ./deploy/report-topic-coverage.sh
+        ```
+        
+        ### Run annotation interface
+        ```
+        ./deploy/deploy-judgement-interface.sh
+        ```
+        ### Data Exists
+        /mnt/ceph/storage/data-in-progress/data-research/arguana/topic-ontologies/
+        
+        #### Author
+        Yamen Ajjour, Johannes Kiesel
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
