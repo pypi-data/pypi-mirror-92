@@ -1,0 +1,3 @@
+include py/unsiotools/py_unstools.i py/unsiotools/numpy.i py/README.md
+include lib/utils/nemodep/cfalcon.h lib/utils/csnaptools.h lib/utils/*.h lib/utils/ctree.h lib/projects/nemodep/crectify.h lib/projects/nemodep/c2dplot.h
+exclude py/unsiotools/py_unstools.py py/unsiotools/version.py                                                                                                                                       
