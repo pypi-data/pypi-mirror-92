@@ -1,0 +1,14 @@
+sleep_inhibitor.py,sha256=f_64Eznv4DAcRP4dbDawd0U4nl4fk53ooGwLAGPA2hw,6342
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/README.md,sha256=Ohp6OhYEHjDb23YhpsvfNBtvxfqMIMEaFrpAdLHZMug,7400
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/sleep-inhibitor.conf,sha256=lYZfmH9XgOILOEWKv-aO65_-yZI-fec4KF4adBDefzA,2173
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/sleep-inhibitor.service,sha256=y7deZR9wzM6LWSIRt_j4DVm1l-KocbGEH2k3l4Z84EU,131
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/plugins/apk-running,sha256=CYk7NtKHjWEEFyvZCMpQoLtbQ0PbWQACzc73mbdlLO0,126
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/plugins/is-process-running,sha256=I3IsaHTXK9xq7GBwa1p3BptuYhXadwR1dTtP4SmsfN4,156
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/plugins/jellyfin-server,sha256=4GPiI0sXSERoZfF1iowgJfPyud4GKTwoRt2Pgl1g7Mg,260
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/plugins/plex-media-server,sha256=76EQZ4j_gKhY3X_-0rn89PhSlgr9-3wFrBfFTaDB16A,304
+sleep_inhibitor-1.8.1.data/data/share/sleep-inhibitor/plugins/ssh-session-open,sha256=pBfPx4_wIwgJihFSlHyHtcS6hrf2dY1aV05SSC2Q-eY,123
+sleep_inhibitor-1.8.1.dist-info/METADATA,sha256=eAm1O1qbbGabEKr2SP2cxVBJDYJwjuuc1Bb3KGleDrY,7848
+sleep_inhibitor-1.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sleep_inhibitor-1.8.1.dist-info/entry_points.txt,sha256=-5i3egzimVF__Fe5-hX2GORb4PJHT6rEpv1r1zeMlS4,58
+sleep_inhibitor-1.8.1.dist-info/top_level.txt,sha256=XROXLmDk4mAMzsXudFnCU8DM4_6I6fMVRGKnExe_Kf0,16
+sleep_inhibitor-1.8.1.dist-info/RECORD,,
