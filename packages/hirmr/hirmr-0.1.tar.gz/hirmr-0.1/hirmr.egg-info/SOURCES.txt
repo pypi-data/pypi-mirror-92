@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+hirmr/__init__.py
+hirmr/hi.py
+hirmr.egg-info/PKG-INFO
+hirmr.egg-info/SOURCES.txt
+hirmr.egg-info/dependency_links.txt
+hirmr.egg-info/top_level.txt
