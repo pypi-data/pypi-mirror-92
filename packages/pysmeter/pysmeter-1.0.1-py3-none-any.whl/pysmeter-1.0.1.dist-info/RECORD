@@ -1,0 +1,11 @@
+pysmeter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysmeter/common.py,sha256=TEm_jpRqoft-4fQ6VVd-s8S-eGNJQJAEidqJ834Kbzw,212
+pysmeter/download_model.py,sha256=v6Yi5mpfQWRJbgNfnR3rOZOl_tzoGUOhXyW6cu4fBnE,1806
+pysmeter/model.py,sha256=-ElrTUqPRWhISttcSLgMxn2auKKOtdGkQj3pxU8inK8,2957
+pysmeter-1.0.1.data/scripts/pysmeter,sha256=SQ6ongt6qaZDUXTppQeQHVfb2qjnk8zd6x6dWKVNzeM,3208
+pysmeter-1.0.1.dist-info/LICENSE,sha256=F1VfQGwqCvdfAbTkqYDwWUD7krIEOtgONZF7h5WGhNo,11426
+pysmeter-1.0.1.dist-info/METADATA,sha256=lCe-9V_z81hbXv7pyns1-sdkSAoX1DuHv6AryK0iOOM,7717
+pysmeter-1.0.1.dist-info/NOTICE,sha256=qtWY4QjW4sBQPbqULzMGN4kQ07ZP0w00MTdT_ry7vP8,99
+pysmeter-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pysmeter-1.0.1.dist-info/top_level.txt,sha256=wfK77W4qox6_tZk10blJUiwkdC1oM4gqLlRsxvv7-r4,9
+pysmeter-1.0.1.dist-info/RECORD,,
