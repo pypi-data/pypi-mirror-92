@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pypisumtest01
+Version: 0.0.1
+Summary: adding number
+Home-page: UNKNOWN
+Author: Mayank
+Author-email: Someone@domain.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This is a sample test package
+======================
+
+
+Hey! I'm MAYANK
+
+----------
+
+
+Documents
+-------------
+
+StackEdit stores your documents in your browser, which means all your documents are automatically saved locally and are accessible **offline!**
+
+> **Note:**
+
