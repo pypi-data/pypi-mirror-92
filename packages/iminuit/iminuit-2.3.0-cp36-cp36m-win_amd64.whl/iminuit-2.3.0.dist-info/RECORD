@@ -1,0 +1,17 @@
+iminuit/__init__.py,sha256=vQ_LtGerbkBwtc5NT50sWhCuEyUZ0ySeyYBo8o6nqoA,737
+iminuit/_core.cp36-win_amd64.pyd,sha256=tSgrFMlmgXZ1EJAK0HyH1aCO4S5rkohhifs-dI1rLBc,579072
+iminuit/_deprecated.py,sha256=MT7Q5CenzFFDM_oYpHmJCPJDEqD3mSXYdXT2luLMXbE,558
+iminuit/_repr_html.py,sha256=JjVQ0ftLq9_xbbwLuwjW3IMaI9KGNlN74f7U--zauz0,9397
+iminuit/_repr_text.py,sha256=53GGFoErWKFTMV22bM-zFGOMJfT6Q4-dXaxJfAGI5ys,6392
+iminuit/cost.py,sha256=IGHBARN8lsFv0X7_tFX_AHzGLmIYDxHy76SctBJ5hPo,23155
+iminuit/minimize.py,sha256=1s9VlrpQyjc8ipdpCM7S7Y-MJZMfRrc7t73bfJ1IEbk,4317
+iminuit/minuit.py,sha256=0RbMcqhVJiylwK-5k7kaeso1uOUZUpwRyyvNw4zEB5g,55845
+iminuit/pdg_format.py,sha256=kY8_VCHHYjSFA0fnYYFeZsp7eY6jH4g8S7ITPU4gP40,10504
+iminuit/testing.py,sha256=jV1ac_zUAwpsUB-tfFWjb_D61hn29BxdA2dqZuQwauw,1714
+iminuit/util.py,sha256=4NcK5sk_Twoy-HhmnMNAlMeTy1QiYi57rDYdpMIpg7Y,28878
+iminuit/version.py,sha256=097aQ7Nt6-A3RDN70LRrQZoK2FoPwtlCU1-Nr8ffpds,676
+iminuit-2.3.0.dist-info/LICENSE,sha256=QTvAVWzzpw8Fc_6YGNcKpb19uRYJRonXKTgim_Cw-MM,1567
+iminuit-2.3.0.dist-info/METADATA,sha256=pa_6_DXfEBGO8PnsU7o-mz8BEZVuJjGo-bARU5D8erg,3298
+iminuit-2.3.0.dist-info/WHEEL,sha256=epucrC2yyYTysDCMzXuz8eGMTMKryzRfNOvMGdslbjc,101
+iminuit-2.3.0.dist-info/top_level.txt,sha256=MlcGU2ICuVp32ffzVzn0UkUG3Q8pCLpMmXSsWsXRPk0,8
+iminuit-2.3.0.dist-info/RECORD,,
