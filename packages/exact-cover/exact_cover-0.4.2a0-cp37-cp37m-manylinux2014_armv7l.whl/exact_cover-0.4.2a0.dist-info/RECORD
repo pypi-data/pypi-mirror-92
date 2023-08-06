@@ -1,0 +1,9 @@
+exact_cover/dummy.py,sha256=-ztaJqUIDpWss5iR3XqlggBwGHylKhmBhHezVfVwlxY,83
+exact_cover.cpython-37m-arm-linux-gnueabihf.so,sha256=m-QrMHUSpEIJn577CzTeY3RqY9poMRNC7kumwpXc9O8,68204
+exact_cover/__init__.py,sha256=YCQhGUbGvG2dXtJ0hRBht97UGW_-MgqTzjVQs-Rwf7s,47
+exact_cover/ext.cpython-37m-arm-linux-gnueabihf.so,sha256=_-AEsI6qPth7EwCp7lf3hJsq6mhf3rGdDQkaR-2UUF8,68188
+exact_cover-0.4.2a0.dist-info/entry_points.txt,sha256=5gYFKEkB_NJUTzP-OCUTs4Ke2hB6dsPXGotA9_qBQlE,69
+exact_cover-0.4.2a0.dist-info/LICENSE,sha256=pF0LtXLteS7TRienJiGDSzupKqtuLMTgQwHe56co11M,18027
+exact_cover-0.4.2a0.dist-info/WHEEL,sha256=2AGDV5_3nuDU-vFooXw5Fuy8AP_YKlI88EU1xPM01-U,103
+exact_cover-0.4.2a0.dist-info/METADATA,sha256=81yrCC778bvpIEclFDpQN8tguVtqPngtUwv9uvgoKi4,4748
+exact_cover-0.4.2a0.dist-info/RECORD,,
