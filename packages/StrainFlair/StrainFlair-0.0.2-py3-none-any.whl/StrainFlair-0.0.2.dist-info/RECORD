@@ -1,0 +1,14 @@
+StrainFlair-0.0.2.data/scripts/StrainFLAIR.sh,sha256=pMtXKWh0HjK5mKzx2b0N4LB8tn3ibMALCePD09xLMkw,18380
+strainflair/__init__.py,sha256=7RwBiLDvCdQBiVY0qdLgFn9kx9JFpEHnoJWAYtg1N-U,261
+strainflair/__main__.py,sha256=ahFXJeG6i9AhQ56y9DDNGqr_L1lC16SoMKmqkiYZGNI,152
+strainflair/compute_strains_abundance.py,sha256=2-OuQ7ktslY7sUmTXAHpAbCgfDtWHoRjRu4iJt54-9o,2036
+strainflair/concat_graphs.py,sha256=4ogz-gBBv2L0vmR6op3xRtfAEu4yZD-GcZ9AVeiv8Z8,3754
+strainflair/genes_prediction.py,sha256=PUsjsJmDeJpaYimEb2zh5dhZKe1mH42-b4LkpCBzMAQ,4859
+strainflair/graphs_construction.py,sha256=g2hsnebJTMksX-yjx63dYQyOnguQs71kjRP7_JldMpU,6283
+strainflair/json2csv.py,sha256=3Uf_8oS6EqE6OZdILn6IK5Cr-BbOwGXJF8RMMSwFBI4,38474
+StrainFlair-0.0.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+StrainFlair-0.0.2.dist-info/METADATA,sha256=7bxzlpw4PfIHg66E8jJ-icTYWtfynnnNEsy2_J_YQ2E,4494
+StrainFlair-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+StrainFlair-0.0.2.dist-info/entry_points.txt,sha256=v15Se8i02NFDKsnxgOEcjW5mVA7oYGC8-DwhiimtGnA,331
+StrainFlair-0.0.2.dist-info/top_level.txt,sha256=Hop0GNc_WI6rDQ48ccRl871p2Whczy2qKoCVv9oMF0w,12
+StrainFlair-0.0.2.dist-info/RECORD,,
