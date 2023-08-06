@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+openload_wonder_woman_1984_ww84_2020_all_version.egg-info/PKG-INFO
+openload_wonder_woman_1984_ww84_2020_all_version.egg-info/SOURCES.txt
+openload_wonder_woman_1984_ww84_2020_all_version.egg-info/dependency_links.txt
+openload_wonder_woman_1984_ww84_2020_all_version.egg-info/requires.txt
+openload_wonder_woman_1984_ww84_2020_all_version.egg-info/top_level.txt
