@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ml.x
+Version: 0.11
+Summary: A Docker and AWS utility package
+Home-page: https://github.com/kleeeeea/dokr2
+Author: Ke
+Author-email: keqian.li@verizonmedia.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# dokr1
+
+
