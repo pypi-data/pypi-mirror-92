@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: scrapyproxyport
+Version: 1.0.1
+Summary: Proxy Port integration with Scrapy framework.
+Home-page: https://github.com/proxyport/scrapy-proxyport
+Author: Proxy Port
+Author-email: proxyportcom@gmail.com
+License: MIT
+Description: [Proxy Port](https://github.com/proxyport/py-proxyport) integration with Scrapy framework.
+        
+        ## Installation
+        
+        ```shell
+        $ pip install scrapyproxyport
+        ```
+        ## Getting Started
+        
+        ```python
+        # inside <your_project>/settings.py
+        
+        DOWNLOADER_MIDDLEWARES = {
+            # Add middleware with order number right before CookiesMiddleware
+            'scrapyproxyport.middlewares.ProxyMiddleware': 898,
+            'scrapy.downloadermiddlewares.cookies.CookiesMiddleware': 899,
+        }
+        DOWNLOAD_TIMEOUT = 10
+        RETRY_TIMES = 20
+        DUPEFILTER_CLASS = 'scrapy.dupefilters.BaseDupeFilter'
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
