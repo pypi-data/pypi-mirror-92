@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: i4u
+Version: 0.0.2
+Summary: Python package to interact with Invoice4U API
+Home-page: https://github.com/ofersadan85/i4u-py
+Author: Ofer Sadan
+Author-email: ofersadan85@gmail.com
+License: MIT License
+Description: README.md
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
