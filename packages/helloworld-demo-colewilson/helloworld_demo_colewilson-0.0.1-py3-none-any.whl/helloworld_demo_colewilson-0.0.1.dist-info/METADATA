@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: helloworld-demo-colewilson
+Version: 0.0.1
+Summary: short description
+Home-page: https://google.com/
+Author: Cole Wilson
+Author-email: cole@colewilson.xyz
+License: none
+Keywords: keyword1 keyword2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Hello_World_Demo
+short description
+### Contributors
+- Cole Wilson
+### Contact
+<cole@colewilson.xyz> 
+
