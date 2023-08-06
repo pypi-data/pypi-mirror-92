@@ -1,0 +1,10 @@
+fb4/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fb4/app.py,sha256=Boc_Cf8Ycdb6hXLLBX3fhQgNVxZ58Z9vY9Vu8SefaeY,5170
+fb4/login_bp.py,sha256=09vELrKlWoWFaOyWexYr113ozbursixrAA5kT6IJJW4,3965
+fb4/sqldb.py,sha256=VKFdqSLz7q5XEjq_1onIr7bDErcTKgUfMxk3UTVTiiw,109
+fb4/widgets.py,sha256=Yxfs9QL5FcWi_X7hLrncR39c0Dp72gwDJW2aRbGZMwU,4940
+pyFlaskBootstrap4-0.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyFlaskBootstrap4-0.2.2.dist-info/METADATA,sha256=P488PkJ6XWjqV0X_oojFFHzrAGVCxrtG0K3nIISO3eg,2973
+pyFlaskBootstrap4-0.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyFlaskBootstrap4-0.2.2.dist-info/top_level.txt,sha256=tGMUKKZhDMRm_cbulK3DQoSQmvd9T70_AlouuTocVAs,4
+pyFlaskBootstrap4-0.2.2.dist-info/RECORD,,
