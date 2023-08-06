@@ -1,0 +1,10 @@
+differentiable_randaugment/__init__.py,sha256=3-7OOsnInArrbsUMsjGyeqLfZMauQCm9CDydmjf9RU4,1754
+differentiable_randaugment/base.py,sha256=pgKpzuHnGOWOZDaJSobAv-nFRHWg3z2ULLUMfFQXC60,4124
+differentiable_randaugment/enhance.py,sha256=b78cMhaCITSOayke6dmT_Gs8u0TbLnfOjJ7rfTLAmu8,11279
+differentiable_randaugment/geometric.py,sha256=QKxjNVPlTI5M7sTWt4Bs8tJabzpyoVmmsGIH83wfK8E,9055
+differentiable_randaugment/randaugment.py,sha256=yFco9wNfMGf7DkhlV-sywEbSXF_CPa9Wxe9AmCOVaSU,6267
+differentiable_randaugment-0.1.2.dist-info/LICENSE,sha256=n0BNHvWPZXTICvI4wtvgy47_bIIrApSh6q3sjxW2vmA,11342
+differentiable_randaugment-0.1.2.dist-info/METADATA,sha256=Hs3y2DqlLTHmJgEQ5fchIUzvqUJ6JqTK-tTRkQNQ8nQ,6113
+differentiable_randaugment-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+differentiable_randaugment-0.1.2.dist-info/top_level.txt,sha256=GNoVwzvTNDLXEZNNebyYijr-sVHC_P_pnpUig2hGhLI,27
+differentiable_randaugment-0.1.2.dist-info/RECORD,,
