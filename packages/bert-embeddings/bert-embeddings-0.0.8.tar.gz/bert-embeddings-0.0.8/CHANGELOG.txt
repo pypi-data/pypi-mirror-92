@@ -1,0 +1,30 @@
+Change Log
+==========
+
+0.0.8 (24/01/2021)
+------------------
+- Removed torch from requirements.txt
+
+0.0.7 (24/01/2021)
+------------------
+- Exception stuff still didn't work, so I changed it to just all exceptions
+
+0.0.6 (24/01/2021)
+------------------
+- Changed ImportError to ModuleNotFoundError
+
+0.0.5 (24/01/2021)
+------------------
+- Assert error if torch is not installed. This is a non-permanent solution to error when installing PyTorch
+
+0.0.3 (23/01/2021)
+------------------
+- Fixed Installment issue
+
+0.0.2 (23/01/2021)
+------------------
+- Fixed not finding package
+
+0.0.1 (22/01/2021)
+------------------
+- First release
