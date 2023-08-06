@@ -1,0 +1,17 @@
+pyfstat/__init__.py,sha256=n1-V40Ze0DxLKL3n40z6TGLMik9Fiv8bfuBdGOUBMSs,865
+pyfstat/_version.py,sha256=tP88iwr47-XLNxlGTZIC2sL6eTWhCivNkpSkQHFwtDw,499
+pyfstat/core.py,sha256=NoBwaSrl6tEGC8H-xfGnFiIuHG42bPA7nqIqYIEIkcs,86955
+pyfstat/grid_based_searches.py,sha256=vlMfsLFaWuAubySH9ydnbJnUr5LLUO3DmR-Nt2TN21I,45193
+pyfstat/gridcorner.py,sha256=ZMs7f8FhZoeijAu3SE4Pj6AK_NFk3-hnhZJerOvTeAs,8608
+pyfstat/helper_functions.py,sha256=iBN7WJa-oQC0N9HTXWlycULXZaLXzOZfrOAgHFWiTVY,35070
+pyfstat/make_sfts.py,sha256=b6Wr0JUrGcynBUfAU8A6WAD1WVI7jCt-8cOaEd6N7lk,53752
+pyfstat/mcmc_based_searches.py,sha256=FBXrA8ClNAaweZljQj2BjVjxzwm2iluq5USkxd2ooW4,131451
+pyfstat/optimal_setup_functions.py,sha256=w-NGKZdMiaFZTTJvrig5_JIcuwxybeBLFrN8nTtvCfE,8757
+pyfstat/tcw_fstat_map_funcs.py,sha256=4J-af66M9oYWYAR8g2o72T9gOJc3iwJSFrCKQBoBzrk,26799
+pyfstat/pyCUDAkernels/cudaTransientFstatExpWindow.cu,sha256=cW8Nw6HZXFcX9FY95xJrZIIpyojbrZVdmzVNuHDrqmQ,4443
+pyfstat/pyCUDAkernels/cudaTransientFstatRectWindow.cu,sha256=Hd9TKMqohKHlBrd_or_imXBlzYUMxxvXt2nQXF-tqBw,4237
+PyFstat-1.11.0.dist-info/LICENSE,sha256=_NeIonwe-TdoUbJ_YhtmWkwvRU4JRM9C2FKAwEr200w,1081
+PyFstat-1.11.0.dist-info/METADATA,sha256=51dBwjEpK-ciLGnXD8m1n-Oh7wfWbRSWQu8XWHv60vI,15615
+PyFstat-1.11.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+PyFstat-1.11.0.dist-info/top_level.txt,sha256=qBFYgj9_V8A811uySuu0CZ0HWZEyrjoj5_bDq1z1YZM,8
+PyFstat-1.11.0.dist-info/RECORD,,
