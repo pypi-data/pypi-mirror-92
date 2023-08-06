@@ -1,0 +1,7 @@
+README.md
+setup.py
+py_countreg.egg-info/PKG-INFO
+py_countreg.egg-info/SOURCES.txt
+py_countreg.egg-info/dependency_links.txt
+py_countreg.egg-info/requires.txt
+py_countreg.egg-info/top_level.txt
