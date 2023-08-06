@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: mtaa
+Version: 1.2
+Summary: A package consisting of all Tanzania locations from region to streets in a easy accessible way
+Home-page: https://github.com/Kalebu/mtaa
+Author: Jordan Kalebu
+Author-email: isaackeinstein@gmail.com
+License: MIT
+Download-URL: https://github.com/Kalebu/mtaa/archive/v1.2.tar.gz
+Description: UNKNOWN
+Keywords: mtaa,python-tanzania,tanzania locations,mtaa python,mtaa package,mtaa python package,all tanzania location,mtaa github,python mtaa
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
