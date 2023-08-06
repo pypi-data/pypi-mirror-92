@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: ckanext-dc-log-view
+Version: 0.2.5
+Summary: View DC data logs on DCOR
+Home-page: https://github.com/DCOR-dev/ckanext-dc_log_view
+Author: Paul Müller
+Author-email: dev@craban.de
+License: AGPLv3+
+Keywords: CKAN,DCOR,RT-DC
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: dclab (>=0.27.11)
+Requires-Dist: dcor-shared (>=0.2.0)
+
+ckanext-dc_log_view
+===================
+
+A CKAN log viewer for DC files.
+
+Installation
+------------
+
+::
+
+    pip install ckanext-dc_log_view
+
+
+
+Add this extension to the plugins and defaul_views in ckan.ini:
+
+::
+
+    ckan.plugins = [...] dc_log_view
+    ckan.views.default_views = [...] dc_log_view
+
+
