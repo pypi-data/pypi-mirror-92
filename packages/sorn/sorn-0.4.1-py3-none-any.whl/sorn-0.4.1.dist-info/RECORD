@@ -1,0 +1,13 @@
+sorn/__init__.py,sha256=YRzhHFccN2RTb1Jn5Evvit8BPvbTnSR0TKBfFNTu50Y,187
+sorn/configuration.ini,sha256=ycVRtRdA7t3CfxCbhHW9mQ1D9wmZMlLUsYqLmCrdYX0,699
+sorn/sorn.py,sha256=vb47KmZecSysgQDUubL4D0UTNh33DR31X0YYfPzUSK4,43531
+sorn/test_sorn.py,sha256=amfyH_nIT4ABZc4L8WPxECfQ7IbROXnizRE3Q2y9cO4,6048
+sorn/utils.py,sha256=5UUJIU-93eZQM6NkoZSPDmuWB08atdUwT-u_QtvUak0,40004
+sorn-0.4.1.data/data/LICENSE,sha256=ZM6Or-CmPKXdoVedoTAyYN45saT0P_QXZst9FTrz3-Y,612
+sorn-0.4.1.data/data/configuration.ini,sha256=ycVRtRdA7t3CfxCbhHW9mQ1D9wmZMlLUsYqLmCrdYX0,699
+sorn-0.4.1.dist-info/LICENSE,sha256=ZM6Or-CmPKXdoVedoTAyYN45saT0P_QXZst9FTrz3-Y,612
+sorn-0.4.1.dist-info/LICENSE.md,sha256=oVN-wEEQ3YYnbO-eQn8xW9VBX1j_sOslhNJ-1McTrIc,1104
+sorn-0.4.1.dist-info/METADATA,sha256=uybuQnBGClX3vU0yni5cYj0CezRXAVwnoQ38ou0tJQQ,11126
+sorn-0.4.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+sorn-0.4.1.dist-info/top_level.txt,sha256=cwmZrvA4ht4FuBlo4_T_XXr6Y4PEi5Lg0JOLopykReo,5
+sorn-0.4.1.dist-info/RECORD,,
