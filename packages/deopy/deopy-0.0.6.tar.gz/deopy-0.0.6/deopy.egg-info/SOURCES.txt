@@ -1,0 +1,9 @@
+README.md
+setup.py
+deopy/__init__.py
+deopy/deopy.py
+deopy.egg-info/PKG-INFO
+deopy.egg-info/SOURCES.txt
+deopy.egg-info/dependency_links.txt
+deopy.egg-info/requires.txt
+deopy.egg-info/top_level.txt
