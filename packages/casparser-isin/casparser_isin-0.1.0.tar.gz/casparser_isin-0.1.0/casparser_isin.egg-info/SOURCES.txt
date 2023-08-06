@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+casparser_isin/__init__.py
+casparser_isin/__version__.py
+casparser_isin/cli.py
+casparser_isin/mf_isin.py
+casparser_isin.egg-info/PKG-INFO
+casparser_isin.egg-info/SOURCES.txt
+casparser_isin.egg-info/dependency_links.txt
+casparser_isin.egg-info/entry_points.txt
+casparser_isin.egg-info/not-zip-safe
+casparser_isin.egg-info/requires.txt
+casparser_isin.egg-info/top_level.txt
