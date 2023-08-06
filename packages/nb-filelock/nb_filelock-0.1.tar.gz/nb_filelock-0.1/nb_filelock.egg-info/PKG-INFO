@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: nb-filelock
+Version: 0.1
+Summary: filelock ,it can run on linux and windows
+Home-page: UNKNOWN
+Author: bfzs
+Author-email: ydf0509@sohu.com
+Maintainer: ydf
+Maintainer-email: ydf0509@sohu.com
+License: BSD License
+Description: ## 1. pip install nb_filelock
+        
+        基于代码所在机器的跨进程 跨(jvm)解释器的文件互斥锁。
+        
+        兼容windwos和linux
+        
+        ```
+        比如希望在当前机器只能同时运行某一个代码块，完全豪不相关的两次启动xx.py，没有办法使用进程锁，
+        压根就不是使用multiprossing包同时启动的多个子进程而是手动两次运行了python xx.py，
+        好的方式是使用redis分布式锁，可以保证所有机器只提示一个获得锁，但如果没安装redis切要保证当前机器只有一个能执行代码块，
+        则使用此锁
+        
+        ```
+        
+        
+Keywords: filelock,multiprocessing lock
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
