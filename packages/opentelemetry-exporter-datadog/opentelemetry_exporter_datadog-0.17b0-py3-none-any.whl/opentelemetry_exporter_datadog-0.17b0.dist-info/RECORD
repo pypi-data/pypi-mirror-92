@@ -1,0 +1,10 @@
+opentelemetry/exporter/datadog/__init__.py,sha256=dwK6XCArCMyKtcg50yR2jhw0ebc_JZTGESaeJe_kfKg,2509
+opentelemetry/exporter/datadog/constants.py,sha256=S9O__yRXiQQTT4QiutDyVYE7I0VBPBIHsKcwNdZgJXM,230
+opentelemetry/exporter/datadog/exporter.py,sha256=XDpdsC4SfXQT9yCONHQtNdQZMjDERTg9pZDDQIwqT9Q,11008
+opentelemetry/exporter/datadog/propagator.py,sha256=mAUqKMzPV-6TQQqRs7vHQRDVxkKmzwZiIETFOmkHyLM,4307
+opentelemetry/exporter/datadog/spanprocessor.py,sha256=4VpTWCtt1pGGocaLTTluexFfaVEvAGEJboTFICphq2w,8201
+opentelemetry/exporter/datadog/version.py,sha256=4u3g8c5AED640k8XWJU1o3_rPHPm7tyB2kiNflADz3Y,608
+opentelemetry_exporter_datadog-0.17b0.dist-info/METADATA,sha256=8amqt8DFYaJd3Mcw2Xpegpedy95VJIHu9PKu6bm_jjQ,1687
+opentelemetry_exporter_datadog-0.17b0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+opentelemetry_exporter_datadog-0.17b0.dist-info/top_level.txt,sha256=5p97iTMneNm1LAKDalzEVpYhvPZsaqJZzdLuD_upSaQ,14
+opentelemetry_exporter_datadog-0.17b0.dist-info/RECORD,,
