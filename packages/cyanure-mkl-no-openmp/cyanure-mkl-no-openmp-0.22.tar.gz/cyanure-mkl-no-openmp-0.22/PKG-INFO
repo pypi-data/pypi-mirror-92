@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cyanure-mkl-no-openmp
+Version: 0.22
+Summary: optimization toolbox for machine learning
+Home-page: http://julien.mairal.org/cyanure/
+Author: Julien Mairal
+Author-email: julien.mairal@inria.fr
+License: bsd-3-clause
+Description: UNKNOWN
+Platform: UNKNOWN
