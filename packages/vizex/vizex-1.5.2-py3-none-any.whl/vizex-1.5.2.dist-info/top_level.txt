@@ -1,0 +1,6 @@
+battery
+charts
+cli
+cpu
+disks
+tools
