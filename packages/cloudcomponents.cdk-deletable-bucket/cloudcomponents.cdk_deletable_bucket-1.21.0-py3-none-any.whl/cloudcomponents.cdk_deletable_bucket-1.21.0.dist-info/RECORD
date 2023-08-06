@@ -1,0 +1,8 @@
+cloudcomponents/cdk_deletable_bucket/__init__.py,sha256=5cpO3LREMaj96ZkvV4wD8f9ewBWy9aB8Yy3Q4stieq4,29526
+cloudcomponents/cdk_deletable_bucket/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_deletable_bucket/_jsii/__init__.py,sha256=hj8hfEYwiiG0oCU7p_hLyARnQOid64rRDnv_xzUn49M,508
+cloudcomponents/cdk_deletable_bucket/_jsii/cdk-deletable-bucket@1.21.0.jsii.tgz,sha256=ClgzRBvusbDwD41pCSx4HIR3rHOK97ijwZ7a6fwYfkQ,11069
+cloudcomponents.cdk_deletable_bucket-1.21.0.dist-info/METADATA,sha256=uySQJg_yUwtvhD1waEZHYFMEt8duf3Z2xdpJQYUjCx0,3372
+cloudcomponents.cdk_deletable_bucket-1.21.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloudcomponents.cdk_deletable_bucket-1.21.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_deletable_bucket-1.21.0.dist-info/RECORD,,
