@@ -1,0 +1,8 @@
+pytest >= 3.1
+pytest-cov
+numpy
+wheel
+codecov
+twine
+check-manifest
+readme_renderer[md]
