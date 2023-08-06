@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ndpretty/__init__.py
+ndpretty/_nbdev.py
+ndpretty/core.py
+ndpretty.egg-info/PKG-INFO
+ndpretty.egg-info/SOURCES.txt
+ndpretty.egg-info/dependency_links.txt
+ndpretty.egg-info/entry_points.txt
+ndpretty.egg-info/not-zip-safe
+ndpretty.egg-info/requires.txt
+ndpretty.egg-info/top_level.txt

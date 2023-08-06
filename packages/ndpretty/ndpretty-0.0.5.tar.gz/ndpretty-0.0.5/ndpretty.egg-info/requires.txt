@@ -1,0 +1,9 @@
+numpy
+IPython
+ipywidgets
+
+[dev]
+pandas
+matplotlib
+torch
+seaborn
