@@ -1,0 +1,14 @@
+waybackpy/__init__.py,sha256=tRmlzPDNwk_4OdH7Jf0FMLUWN3pisa1gPFCfTaiN-B4,2647
+waybackpy/__version__.py,sha256=EUwOdJHbu1amRy32wsn0U--chBBgjaUixYPgAXX1_Qw,400
+waybackpy/cdx.py,sha256=Ru8cEdH-7SnPkfg_y4djpXl6UUFX3jGRJ2JfAGaUD0o,7530
+waybackpy/cli.py,sha256=8jOiARKs6QOhJzkFcbfb1Q1zrnl5wHhf7CnFiU-R6Yc,9698
+waybackpy/exceptions.py,sha256=y6oHDuNedklr5TPKYr--B7dC2nIWQNuY8B-Ay5lUbms,411
+waybackpy/snapshot.py,sha256=741MeM3B_eFEYLhgb7Mkk5m0o2TxP0hJfGN56WpQtNA,1276
+waybackpy/utils.py,sha256=zylZU7xDD4g-0HeqJ9pYNONQBZZPzgzS6w9lyfC7sFA,11057
+waybackpy/wrapper.py,sha256=Wxv69E-8g_SZr_VOAcwu_x_Hci_83MKGYvFE7gNgBOw,11297
+waybackpy-2.4.2.dist-info/LICENSE,sha256=LM2pjkuNabhP3D7eLXrKlPQiQJbF2KJsBFa8azsrVcQ,1139
+waybackpy-2.4.2.dist-info/METADATA,sha256=8_vuJNolVj3gNemrm5RHUtOF5rEY4WC_l5AGE5dnxvQ,6414
+waybackpy-2.4.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+waybackpy-2.4.2.dist-info/entry_points.txt,sha256=zQvQ2V9vZ3j6zZfxbLE11v36cX-Hz5wt0IMzCjHL3k4,50
+waybackpy-2.4.2.dist-info/top_level.txt,sha256=K2L-YCQPRV1qgwzLTFpSC6JEpedBFKlFKoABWNixL34,10
+waybackpy-2.4.2.dist-info/RECORD,,
