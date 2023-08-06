@@ -1,0 +1,5 @@
+pin: 2
+temp_id: 0
+humid_id: 1
+logpath: log
+
