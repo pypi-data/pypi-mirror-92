@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+changelog.rst
+setup.py
+tinybird/__init__.py
+tinybird/beam.py
+tinybird_beam.egg-info/PKG-INFO
+tinybird_beam.egg-info/SOURCES.txt
+tinybird_beam.egg-info/dependency_links.txt
+tinybird_beam.egg-info/not-zip-safe
+tinybird_beam.egg-info/requires.txt
+tinybird_beam.egg-info/top_level.txt
