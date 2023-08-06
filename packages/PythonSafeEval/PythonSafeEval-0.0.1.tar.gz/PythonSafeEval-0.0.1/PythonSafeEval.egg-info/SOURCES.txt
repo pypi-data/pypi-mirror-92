@@ -1,0 +1,9 @@
+README.md
+setup.py
+PythonSafeEval/Dockerfile_template.txt
+PythonSafeEval/__init__.py
+PythonSafeEval/safe_eval.py
+PythonSafeEval.egg-info/PKG-INFO
+PythonSafeEval.egg-info/SOURCES.txt
+PythonSafeEval.egg-info/dependency_links.txt
+PythonSafeEval.egg-info/top_level.txt
