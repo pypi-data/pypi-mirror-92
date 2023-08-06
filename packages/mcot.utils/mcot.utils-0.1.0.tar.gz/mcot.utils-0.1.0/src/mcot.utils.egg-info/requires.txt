@@ -1,0 +1,6 @@
+fslpy
+loguru
+mcot.surface~=0.1.0
+nibabel
+numpy
+pandas
