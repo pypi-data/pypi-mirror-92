@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: tegridy-tools
+Version: 1.0.0
+Summary: All tegridy-tools as python modules
+Home-page: https://github.com/asigalov61/tegridy-tools
+Author: Aleksandr Sigalov
+Author-email: asigalov61@hotmail.com
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: tegridy tools midi artificial intelligence machine learning deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
