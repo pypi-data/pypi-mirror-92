@@ -1,0 +1,9 @@
+README.md
+setup.py
+typehints_checker/__init__.py
+typehints_checker/utils.py
+typehints_checker.egg-info/PKG-INFO
+typehints_checker.egg-info/SOURCES.txt
+typehints_checker.egg-info/dependency_links.txt
+typehints_checker.egg-info/requires.txt
+typehints_checker.egg-info/top_level.txt
