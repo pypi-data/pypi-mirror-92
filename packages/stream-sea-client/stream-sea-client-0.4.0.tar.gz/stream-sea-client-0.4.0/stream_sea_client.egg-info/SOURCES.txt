@@ -1,0 +1,11 @@
+README.md
+setup.py
+stream_sea_client/__init__.py
+stream_sea_client/api.py
+stream_sea_client/stream_sea_connection.py
+stream_sea_client/stream_sea_schema_definition.py
+stream_sea_client.egg-info/PKG-INFO
+stream_sea_client.egg-info/SOURCES.txt
+stream_sea_client.egg-info/dependency_links.txt
+stream_sea_client.egg-info/requires.txt
+stream_sea_client.egg-info/top_level.txt
