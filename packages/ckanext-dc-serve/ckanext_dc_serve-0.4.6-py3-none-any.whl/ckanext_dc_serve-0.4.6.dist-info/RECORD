@@ -1,0 +1,17 @@
+ckanext_dc_serve-0.4.6-py3.9-nspkg.pth,sha256=VaH--vNo0_vzXvZAeqyq-Bg6m47pBBRlxwvBj0KQxe0,544
+ckanext/dc_serve/__init__.py,sha256=11ozJKiUsqDCZ3_mcAHhGYUyGK_Unl54djVSBBExFB4,59
+ckanext/dc_serve/_version.py,sha256=fo5OmshoTcb5C3p3FEdDHuCx62Yx5-N0L9A6YnKhCvw,7095
+ckanext/dc_serve/_version_save.py,sha256=euF5TYZ14WgFEze8vwCo0ipVYffLAWA5oIi5ROJU1o8,82
+ckanext/dc_serve/jobs.py,sha256=su1WeZlxMfVFSdI5AN-lQebhXspxuzC_gAKpLnQsOtM,502
+ckanext/dc_serve/plugin.py,sha256=zQx3atv_N7NpTB-O8YPM7AMD-V8zobVa2lW2vM66ryw,1707
+ckanext/dc_serve/route_funcs.py,sha256=TTFiUKl3zWmRHlkIwRu3Ckr4TDFE-MvSMyJ2Z0U8Gj8,1341
+ckanext/dc_serve/serve.py,sha256=9Grvdh_dyjB2JX42kTrq92ETlQZy1ZJy_A8LJdTMr94,4497
+ckanext/dc_serve/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/dc_serve/tests/test_plugin.py,sha256=4JxGELYkUCFSMNxlyLShVUg117UYgszcGCWPgKz9Xj4,112
+ckanext_dc_serve-0.4.6.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ckanext_dc_serve-0.4.6.dist-info/METADATA,sha256=9azCYU408JkyHOOZaTiYE59G8XlF2kTHUrzl30g3uOs,1193
+ckanext_dc_serve-0.4.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ckanext_dc_serve-0.4.6.dist-info/entry_points.txt,sha256=kKfLXngnFY6gPi8-7YBsftSrUSXYEwO3q7mc_5xwbdA,83
+ckanext_dc_serve-0.4.6.dist-info/namespace_packages.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_dc_serve-0.4.6.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_dc_serve-0.4.6.dist-info/RECORD,,
