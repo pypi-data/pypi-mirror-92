@@ -1,0 +1,17 @@
+MCMAlgorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MCMAlgorithms/Classification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MCMAlgorithms/Evaluation/Relationship.py,sha256=sTslHA01etesPbGuK1uY_QAu56nOyi8PPoP5Gj3Qefg,4971
+MCMAlgorithms/Evaluation/Weighting.py,sha256=4LnId_0pXDXxuIEQEtFZtmm2XPkAPvitzCc5FQ7ssCk,1670
+MCMAlgorithms/Evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MCMAlgorithms/Optimization/Animals.py,sha256=Y0avfcLXEgCeA1-2Yh6zA7wt3bFYRZrSMnYKVKey4Vk,5036
+MCMAlgorithms/Optimization/Evolution.py,sha256=D_jJohHg1bg_wXtEJ_6n7Ne5VcbKzZXKZectNvoKMuA,7506
+MCMAlgorithms/Optimization/Single.py,sha256=9bQ_xdONc8QMARdv8r4OmXM0JgNjUJ-MNtcRKy2E958,7494
+MCMAlgorithms/Optimization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MCMAlgorithms/Prediction/Simple.py,sha256=m6bv4zCsF_7mJmv-duGfP9rAcJXGvFDzhP_a2cL73Hg,2601
+MCMAlgorithms/Prediction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+MCMAlgorithms-0.0.1.dist-info/LICENSE.txt,sha256=1KZsnipBaf1mXtNFbfcdErg19eEdqVSl_Tbe1hU4PdU,1086
+MCMAlgorithms-0.0.1.dist-info/METADATA,sha256=gfOIjPfxCUmS2Fnqhj6xuTzvVzjqxEm0jHPC5R_QXXA,555
+MCMAlgorithms-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+MCMAlgorithms-0.0.1.dist-info/entry_points.txt,sha256=cpVCMwM2qB6UiFN6kNqr919yAEzwSm-UgZYHsv_YiEQ,17
+MCMAlgorithms-0.0.1.dist-info/top_level.txt,sha256=AXcfOsUEGONdqcBB5E6Py4y0ryxyJ1GC-lcGo5Za9TM,14
+MCMAlgorithms-0.0.1.dist-info/RECORD,,

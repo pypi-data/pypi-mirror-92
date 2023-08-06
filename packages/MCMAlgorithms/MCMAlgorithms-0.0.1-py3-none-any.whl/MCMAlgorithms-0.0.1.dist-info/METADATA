@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MCMAlgorithms
+Version: 0.0.1
+Summary: Automatically register models in the admin interface in a smart way.
+Home-page: https://github.com/XHJ-TS9527/MCM-algorithms
+Author: TS9527
+Author-email: scutee_xhj_ts9527@126.com
+License: MIT
+Keywords: python
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
+Provides-Extra: test
+
+UNKNOWN
+
+
