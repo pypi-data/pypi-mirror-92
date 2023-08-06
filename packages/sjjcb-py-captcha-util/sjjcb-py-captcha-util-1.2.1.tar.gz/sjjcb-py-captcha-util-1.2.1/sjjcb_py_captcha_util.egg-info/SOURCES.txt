@@ -1,0 +1,7 @@
+setup.py
+sjjcb-py-captcha-util/captchaAction.py
+sjjcb_py_captcha_util.egg-info/PKG-INFO
+sjjcb_py_captcha_util.egg-info/SOURCES.txt
+sjjcb_py_captcha_util.egg-info/dependency_links.txt
+sjjcb_py_captcha_util.egg-info/not-zip-safe
+sjjcb_py_captcha_util.egg-info/top_level.txt

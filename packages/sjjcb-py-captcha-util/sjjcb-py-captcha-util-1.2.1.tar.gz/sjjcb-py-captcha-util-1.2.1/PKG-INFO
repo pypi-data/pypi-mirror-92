@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: sjjcb-py-captcha-util
+Version: 1.2.1
+Summary: Public POM project: sjjcb-py-captcha-util 
+Home-page: http://www.example.com
+Author: zijian
+Author-email: ah.fanjian@aisino.com
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: Django
