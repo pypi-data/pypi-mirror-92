@@ -1,0 +1,3 @@
+[console_scripts]
+ddhi_aggregate = ddhi_aggregator.aggregate:run
+

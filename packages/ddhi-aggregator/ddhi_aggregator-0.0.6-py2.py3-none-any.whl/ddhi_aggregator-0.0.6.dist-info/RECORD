@@ -1,0 +1,13 @@
+ddhi_aggregator/__init__.py,sha256=S5D4y3Sid5_8KaNuWtM8Yuw7yCp8demROoEXqTXHYGw,372
+ddhi_aggregator/aggregate.py,sha256=t0_bN7-lMYEvgO9HV_XIvx1Z6c7NIF8HnExc5hgb6-o,2531
+ddhi_aggregator/aggregators/aggregators.py,sha256=RgHK4dqV6pNyn0ZBgJt2nc9olrOsfI-y60-6H8qzzmg,7241
+ddhi_aggregator/entities/entities.py,sha256=5iN43dPUm9ppjvpnBof_zRKzMgd-ssnCky_G13vNScA,2431
+xsl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xsl/ddhi-tei2repo.xsl,sha256=WLrxwnsNxa_rRrKh49_eRVX_8PLvubDQ15YU4A28obI,4222
+ddhi_aggregator-0.0.6.dist-info/AUTHORS.rst,sha256=O9pu_qNxe_pYLfKaGp2S1L3MBV2k6hNV4O5f97A75ho,77
+ddhi_aggregator-0.0.6.dist-info/LICENSE.txt,sha256=tpGk3PuRfQynzHT57cK8XGgJHS4d84yfNsGsd2RfyGM,1080
+ddhi_aggregator-0.0.6.dist-info/METADATA,sha256=xZWXsYpyvem3ICkDehuB_9FWBUo3t1U_rLjwEH8Q8Yc,901
+ddhi_aggregator-0.0.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ddhi_aggregator-0.0.6.dist-info/entry_points.txt,sha256=v1yy0Ja4RLUtOoRotCeX2hONPjiBHBromy80RpP7cGk,66
+ddhi_aggregator-0.0.6.dist-info/top_level.txt,sha256=4w0jtMve6cOgDQjt0pM2LYEURl_LxWyxrI8MfVO9oC0,20
+ddhi_aggregator-0.0.6.dist-info/RECORD,,
