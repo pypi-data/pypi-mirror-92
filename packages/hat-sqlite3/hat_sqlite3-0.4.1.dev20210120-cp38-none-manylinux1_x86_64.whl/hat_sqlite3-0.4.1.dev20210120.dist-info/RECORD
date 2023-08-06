@@ -1,0 +1,7 @@
+hat/sqlite3/__init__.py,sha256=Us7ZfcSzEjQGMyNpX2hVS6CkPgOvGPMBwvgz9VQV3xE,4078
+hat/sqlite3/_sqlite3.so,sha256=G-2GRDY1ss_pHUGzDGR5jDhWDGlO1c7ttfL7lrQSOgM,1028184
+hat_sqlite3-0.4.1.dev20210120.dist-info/METADATA,sha256=g3B1PyWb8dGQyLiYOmISI9b9ft0SGcvyy9yPfbqtZLg,1149
+hat_sqlite3-0.4.1.dev20210120.dist-info/WHEEL,sha256=x8DgB0CbA_QKc6yyBtErwDAomS7Mw_QLegHxEkl9ViA,107
+hat_sqlite3-0.4.1.dev20210120.dist-info/entry_points.txt,sha256=mUNMmpYTR3SQX28bXHIajDqBXHktexsbcq1_r41xrys,36
+hat_sqlite3-0.4.1.dev20210120.dist-info/top_level.txt,sha256=3RuRoRsaXQZNKwr3T2RE9XepBRTk4YpnXUbMiH5nes8,4
+hat_sqlite3-0.4.1.dev20210120.dist-info/RECORD,,
