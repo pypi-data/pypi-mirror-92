@@ -1,0 +1,13 @@
+README.md
+setup.py
+pyEzviz.egg-info/PKG-INFO
+pyEzviz.egg-info/SOURCES.txt
+pyEzviz.egg-info/dependency_links.txt
+pyEzviz.egg-info/entry_points.txt
+pyEzviz.egg-info/requires.txt
+pyEzviz.egg-info/top_level.txt
+pyezviz/DeviceSwitchType.py
+pyezviz/__init__.py
+pyezviz/__main__.py
+pyezviz/camera.py
+pyezviz/client.py
