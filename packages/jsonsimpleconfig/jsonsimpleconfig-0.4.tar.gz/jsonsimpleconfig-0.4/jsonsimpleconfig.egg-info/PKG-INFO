@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: jsonsimpleconfig
+Version: 0.4
+Summary: The simple idea to prepare configuration for your application.
+Home-page: https://github.com/xmzxmz/jsonsimpleconfig
+Author: Marcin Zelek
+Author-email: marcin.zelek@gmail.com
+License: MIT
+Description: The simple idea to prepare configuration for your application.
+Keywords: json configuration jsc simple config
+Platform: UNKNOWN
