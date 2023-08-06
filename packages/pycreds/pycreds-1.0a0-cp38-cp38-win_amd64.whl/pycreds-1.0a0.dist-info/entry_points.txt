@@ -1,0 +1,3 @@
+[console_scripts]
+pycreds = pycreds.cli:main
+
