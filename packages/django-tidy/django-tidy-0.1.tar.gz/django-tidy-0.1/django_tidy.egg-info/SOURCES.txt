@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_tidy.egg-info/PKG-INFO
+django_tidy.egg-info/SOURCES.txt
+django_tidy.egg-info/dependency_links.txt
+django_tidy.egg-info/requires.txt
+django_tidy.egg-info/top_level.txt
+tidy/__init__.py
+tidy/middleware.py
