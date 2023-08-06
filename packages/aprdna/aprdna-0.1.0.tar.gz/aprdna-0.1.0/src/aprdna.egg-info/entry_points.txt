@@ -1,0 +1,3 @@
+[console_scripts]
+aprdna = aprdna.script:main
+

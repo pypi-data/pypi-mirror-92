@@ -1,0 +1,11 @@
+README.rst
+setup.py
+src/aprdna/__init__.py
+src/aprdna/script.py
+src/aprdna.egg-info/PKG-INFO
+src/aprdna.egg-info/SOURCES.txt
+src/aprdna.egg-info/dependency_links.txt
+src/aprdna.egg-info/entry_points.txt
+src/aprdna.egg-info/not-zip-safe
+src/aprdna.egg-info/requires.txt
+src/aprdna.egg-info/top_level.txt
