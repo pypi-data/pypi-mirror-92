@@ -1,0 +1,10 @@
+README.md
+setup.py
+sage3reader/__init__.py
+sage3reader/read_solar.py
+sage3reader/sage3reader.py
+sage3reader.egg-info/PKG-INFO
+sage3reader.egg-info/SOURCES.txt
+sage3reader.egg-info/dependency_links.txt
+sage3reader.egg-info/requires.txt
+sage3reader.egg-info/top_level.txt
