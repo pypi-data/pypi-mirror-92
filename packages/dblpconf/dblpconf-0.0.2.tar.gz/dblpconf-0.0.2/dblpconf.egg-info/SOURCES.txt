@@ -1,0 +1,12 @@
+README.md
+setup.py
+dblp/__init__.py
+dblp/dblp.py
+dblp/schema.py
+dblp/webserver.py
+dblpconf.egg-info/PKG-INFO
+dblpconf.egg-info/SOURCES.txt
+dblpconf.egg-info/dependency_links.txt
+dblpconf.egg-info/not-zip-safe
+dblpconf.egg-info/requires.txt
+dblpconf.egg-info/top_level.txt
