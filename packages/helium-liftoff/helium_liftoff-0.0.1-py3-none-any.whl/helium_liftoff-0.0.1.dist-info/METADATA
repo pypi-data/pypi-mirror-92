@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: helium-liftoff
+Version: 0.0.1
+Summary: Command line tools for creating local development projects and resources
+Home-page: https://bitbucket.org/teamhelium/com.helium.liftoff.cli/
+Author: Helium, LLC
+Author-email: developers@heliumservices.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Liftoff
+Liftoff is a set of command line tools for creating local development projects and resources.
+
+## Pre-Release
+Liftoff is currently in pre-release, and does not include any official support. Use this tool with caution, and report
+any error messages or bugs to [developers@heliumservices.com](mailto:developers@heliumservices.com).
+
+## How it Works
+Under the hood, liftoff uses a selection of docker containers to run all of the services necessary to power your web
+application locally. Before using liftoff, ensure that you have Docker installed on your system.
+
+Liftoff includes the following service containers:
+- PostgreSQL (database)
+- MySQL (database)
+- Adminer (web-based database client tool)
+- Mailhog (fake smtp server for local email testing, includes web-based inbox)
+- PHP 7.4 (interpreter for NGINX)
+- PHP 8.0 (interpreter for NGINX)
+- NGINX (local web server)
+
+These containers are shared between all of your local development projects, rather than creating new instances for each
+new project. For each project that you configure with liftoff, liftoff creates a `.liftoff` directory which includes 
+all of the configuration files necessary to serve your project in the shared containers.
+
+Note that the `.liftoff` configuration directory should be included in your project source control, while select files
+in that directory will be automatically added to your `.gitignore` file.
+
+## Usage
+### Liftoff Services
+To start liftoff services:
+```
+liftoff start
+```
+
+To stop liftoff services:
+```
+liftoff stop
+```
+
+To restart liftoff services:
+```
+liftoff restart
+```
+
+### Configuring a New Liftoff Project
+To configure liftoff for a new project:
+```
+cd /your/project/directory
+liftoff init
+```
+
+Then follow the question prompts to configure your project.
+
+Note that any questions that display numbered multiple choice options, you must enter the number of your answer, not the
+text.
+
+### Configuring an Existing Liftoff Project
+For projects which have been previously initialized with Liftoff, but need to be configured for your system:
+```
+cd /your/project/directory
+liftoff build
+```
+
+This is for projects which have an existing `.liftoff` configuration directory, but are new to your system, such as
+projects which were configured on another developer's system, and you are now cloning the project on your own system.
+
+Alternatively, if you have already configured a project with liftoff, but you relocate the project directory on your
+system, you should run this command.
+
