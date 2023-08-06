@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.cfg
+setup.py
+redis_opentracing/__init__.py
+redis_opentracing/constants.py
+redis_opentracing/tracing.py
+signalfx_instrumentation_redis.egg-info/PKG-INFO
+signalfx_instrumentation_redis.egg-info/SOURCES.txt
+signalfx_instrumentation_redis.egg-info/dependency_links.txt
+signalfx_instrumentation_redis.egg-info/requires.txt
+signalfx_instrumentation_redis.egg-info/top_level.txt
