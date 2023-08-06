@@ -1,0 +1,9 @@
+README.md
+setup.py
+GenerNation/GenerNation.py
+GenerNation/__init__.py
+GenerNation.egg-info/PKG-INFO
+GenerNation.egg-info/SOURCES.txt
+GenerNation.egg-info/dependency_links.txt
+GenerNation.egg-info/not-zip-safe
+GenerNation.egg-info/top_level.txt
