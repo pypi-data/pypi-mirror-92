@@ -1,0 +1,14 @@
+supersolids/Animation.py,sha256=a-T9mp-qE76vC_Mm-IidIgfDgIVgA3cFAPONs60BUUs,24415
+supersolids/MayaviAnimation.py,sha256=tJYC6dY1JjYpWwOI1tU8feLHiRWVSTAlKsKyYwl_fxE,14440
+supersolids/Schroedinger.py,sha256=SK5RJqctU4CxQm0uRw0cTsH6JSkdiIA_Rmj79uYc4V4,16149
+supersolids/__init__.py,sha256=Uc6K1dh6g629da6ke5rwrtsCZSRPvnbvtwAT3sq6edc,216
+supersolids/constants.py,sha256=Y2G6MS_PICRJbkcb2MrDgntjmaHzoxyWDCfanEp2FFk,880
+supersolids/density_in_trap.py,sha256=mQIF4iBON75qEcKKLomdaGT5AFgLa_y58uVoKGHhI74,1713
+supersolids/functions.py,sha256=Wc40e0U0gPWniV0S-X38jrMAss6gWvg_XkqHJbzwLfA,16013
+supersolids/main.py,sha256=AydfO-UbCEa3EtwfHNjmanldMU4sVFcXzHh26jE2xAI,17672
+supersolids/run_time.py,sha256=rzdAGRfmVzPpEnqFowkkWU5t44H2iV9CLJNTL_nXNIc,615
+supersolids-0.1.24.dist-info/LICENSE,sha256=NESncjwUZu1ikpUAlYrL_3dJoFZMf8wT34W-QhEWMvU,1068
+supersolids-0.1.24.dist-info/METADATA,sha256=tPv9yqWqD7An5b-1PVQ-9Uv_AJ0vsLAGPj05jX4qW1c,4117
+supersolids-0.1.24.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+supersolids-0.1.24.dist-info/top_level.txt,sha256=jC7Ij_GwlHaPizNi7ZBShFrwzNJwrBrpf7rpBFcf5HA,13
+supersolids-0.1.24.dist-info/RECORD,,
