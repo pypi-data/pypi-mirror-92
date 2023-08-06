@@ -1,0 +1,10 @@
+setup.py
+bin/eqpaint
+equation_painter_wsm/__init__.py
+equation_painter_wsm/__main__.py
+equation_painter_wsm.egg-info/PKG-INFO
+equation_painter_wsm.egg-info/SOURCES.txt
+equation_painter_wsm.egg-info/dependency_links.txt
+equation_painter_wsm.egg-info/entry_points.txt
+equation_painter_wsm.egg-info/requires.txt
+equation_painter_wsm.egg-info/top_level.txt
