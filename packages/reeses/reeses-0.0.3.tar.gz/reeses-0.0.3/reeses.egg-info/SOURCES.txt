@@ -1,0 +1,12 @@
+README.md
+setup.py
+reeses/__init__.py
+reeses/defaults.py
+reeses/pieces.py
+reeses/utils.py
+reeses.egg-info/PKG-INFO
+reeses.egg-info/SOURCES.txt
+reeses.egg-info/dependency_links.txt
+reeses.egg-info/not-zip-safe
+reeses.egg-info/requires.txt
+reeses.egg-info/top_level.txt
