@@ -1,0 +1,10 @@
+README.txt
+setup.py
+BotDr/BotDr.py
+BotDr/__init__.py
+BotDr.egg-info/PKG-INFO
+BotDr.egg-info/SOURCES.txt
+BotDr.egg-info/dependency_links.txt
+BotDr.egg-info/entry_points.txt
+BotDr.egg-info/not-zip-safe
+BotDr.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+BotDr = BotDr.BotDr:super_main
+
