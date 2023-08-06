@@ -1,0 +1,3 @@
+[console_scripts]
+d8 = d8.main:main
+

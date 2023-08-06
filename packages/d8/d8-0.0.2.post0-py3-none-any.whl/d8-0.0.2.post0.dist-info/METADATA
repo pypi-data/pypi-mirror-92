@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: d8
+Version: 0.0.2.post0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: kaggle
+Requires-Dist: pandas (>=1.1.0)
+Requires-Dist: tqdm
+Requires-Dist: xxhash
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: dataclasses ; python_version < "3.7"
+Requires-Dist: contextvars ; python_version < "3.7"
+
+UNKNOWN
+
+
