@@ -1,0 +1,3 @@
+[console_scripts]
+stork = stork.cli:cli
+
