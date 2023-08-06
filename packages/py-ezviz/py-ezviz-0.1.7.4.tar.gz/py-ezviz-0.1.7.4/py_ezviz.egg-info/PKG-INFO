@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: py-ezviz
+Version: 0.1.7.4
+Summary: Pilot your Ezviz cameras
+Home-page: https://github.com/RenierM26/py-Ezviz
+Author: Renier Moorcroft
+Author-email: RenierM26@users.github.com
+License: GPL-3.0 License
+Description: This package is based on pyEzviz, written by BaQs. Pilot your Ezviz cameras with this module. Please view readme on github
+Platform: UNKNOWN
+Requires-Python: >=3.6
