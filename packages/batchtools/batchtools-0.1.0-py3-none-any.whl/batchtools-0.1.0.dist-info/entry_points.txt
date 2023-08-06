@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        submit_subjects=batchtools.submit_subjects:submit_subjects
+        check_status=batchtools.check_status:check_status
+    
