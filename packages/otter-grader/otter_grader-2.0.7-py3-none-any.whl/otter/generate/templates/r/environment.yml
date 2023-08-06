@@ -1,0 +1,13 @@
+name: {{ otter_env_name }}
+channels:
+    - defaults
+    - conda-forge
+dependencies:
+    - python=3.7
+    - pip
+    - r-base 
+    - r-essentials 
+    - r-devtools
+    - libgit2
+    - pip:
+        - -r file:requirements.txt
