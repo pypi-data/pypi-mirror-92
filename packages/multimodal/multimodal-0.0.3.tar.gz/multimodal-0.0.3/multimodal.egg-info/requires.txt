@@ -1,0 +1,8 @@
+numpy
+tqdm
+appdirs
+torch>=1
+pySmartDL
+torchtext
+tables
+pytorch_lightning
