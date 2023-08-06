@@ -1,0 +1,11 @@
+README.md
+setup.py
+pylz78/__init__.py
+pylz78.egg-info/PKG-INFO
+pylz78.egg-info/SOURCES.txt
+pylz78.egg-info/dependency_links.txt
+pylz78.egg-info/entry_points.txt
+pylz78.egg-info/top_level.txt
+pylz78/compression/__init__.py
+pylz78/ctrie/__init__.py
+pylz78/ctrie/trie.py
