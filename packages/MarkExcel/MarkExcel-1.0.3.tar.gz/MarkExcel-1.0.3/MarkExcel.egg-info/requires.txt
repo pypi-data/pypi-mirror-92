@@ -1,0 +1,6 @@
+openpyxl
+et-xmlfile
+jdcal
+flask
+xlrd
+xlwt
