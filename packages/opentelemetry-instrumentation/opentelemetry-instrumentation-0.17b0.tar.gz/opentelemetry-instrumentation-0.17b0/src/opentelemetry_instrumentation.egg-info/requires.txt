@@ -1,0 +1,4 @@
+opentelemetry-api==0.17b0
+wrapt<2.0.0,>=1.0.0
+
+[test]
