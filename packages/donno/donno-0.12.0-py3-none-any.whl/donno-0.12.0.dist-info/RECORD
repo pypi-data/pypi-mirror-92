@@ -1,0 +1,10 @@
+donno/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donno/app.py,sha256=B9np3QWHxKaudXciDuK5Cqsiuv7dPMbAfET0yffCVY0,3047
+donno/config.py,sha256=k3ZiSxmhxMF7ZB3iYkwiu8zKmy1AmxC0CthRLv_e50g,1404
+donno/notes.py,sha256=umVR_fiKEY7Zjvkd1RQVKZLbZi8hGFvx6Yjla_sWnho,7627
+donno-0.12.0.dist-info/LICENSE,sha256=Vb5dztbJBzWo8D6VriUmiSdEgbHfKiS8Z0eqLrcZpGw,1156
+donno-0.12.0.dist-info/METADATA,sha256=SouhQJ8gnZyxRFsnedK6XiEZpoWF2C-d5HP0u0z_ULE,7107
+donno-0.12.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+donno-0.12.0.dist-info/entry_points.txt,sha256=MiMWGoWzViprJzfDz__iDEwXZL1iiQMPr_sjsGJeujo,40
+donno-0.12.0.dist-info/top_level.txt,sha256=OoxwwI8kSNmNvTvA4MbG2ryhY4u82wTMzQxq_A2iaX8,6
+donno-0.12.0.dist-info/RECORD,,
