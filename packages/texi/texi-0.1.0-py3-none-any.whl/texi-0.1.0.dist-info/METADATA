@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: texi
+Version: 0.1.0
+Summary: texi
+Author: Yevgnen Koh
+Author-email: wherejoystarts@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
