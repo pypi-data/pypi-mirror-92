@@ -1,0 +1,7 @@
+[console_scripts]
+dealsmailalert = gameprices.cli.mailalert:main
+eshopcli = gameprices.cli.cli:eshop_main
+psncli = gameprices.cli.cli:psn_main
+psndealsmailalert = gameprices.cli.psndealsmailalert:main
+psnmailalert = gameprices.cli.mailalert:main
+
