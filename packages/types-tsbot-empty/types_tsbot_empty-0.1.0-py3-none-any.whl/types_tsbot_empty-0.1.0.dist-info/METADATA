@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: types-tsbot-empty
+Version: 0.1.0
+Summary: Empty typing stubs for testing typeshed/PyPI auto-upload
+Home-page: https://github.com/typeshed-internal/stub_uploader
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+
+Empty typing stubs for testing typeshed/PyPI auto-upload
+
+
