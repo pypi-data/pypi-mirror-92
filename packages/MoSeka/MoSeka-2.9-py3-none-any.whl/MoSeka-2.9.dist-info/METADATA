@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: MoSeka
+Version: 2.9
+Summary: Deep learning framework
+Home-page: https://github.com/Muhamedelsayed/MNiST
+Author: Mohamed elsayed
+Author-email: mohamedelsayed16397@gmail.com
+License: MIT
+Download-URL: https://github.com/Muhamedelsayed/MNiST/archive/2.9.tar.gz
+Keywords: Lenet5,Framework,MNIST
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
