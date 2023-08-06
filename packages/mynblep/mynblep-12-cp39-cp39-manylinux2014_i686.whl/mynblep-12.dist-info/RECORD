@@ -1,0 +1,16 @@
+mynblep-12.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+mynblep-12.dist-info/METADATA,sha256=c7vAnOcYWQxx8_8JqYpwxSCqP7azl7SfTZqYG-Y1eak,1260
+mynblep-12.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+mynblep-12.dist-info/WHEEL,sha256=hVHh29F_i8jxKOhg-W1rsF5gLR7lWqbMktx0LLKAYX4,109
+mynblep-12.dist-info/top_level.txt,sha256=Yqm8m36JuRcoe1ZTB3f0Ym0FxScX7pRPMfknRyAWJ1g,8
+mynblep-12.dist-info/RECORD,,
+mynblep/const.py,sha256=CT0cmASFv2YmdlRA-3gqfjNgaVvGJ6naKJUIxtn41D0,747
+mynblep/__init__.py,sha256=QpOrinbP-lXrmz7qUttaEp3RJvpbG2pp9JFL3E5Iamg,712
+mynblep/shapes.py,sha256=N4kIoDPggw1YYnPaKSbVmYf55Z3hTZBfR0kq6P7NZTY,785
+mynblep/warmup.py,sha256=FzvaqrPGInmRJNPROM9MyJFUmaR-DXaPMHfp6t4PArk,842
+mynblep/paste.py,sha256=4-V0DtTv74LZWmuueRKnGgoDNGT76_xjY-MRpDf3p_o,2802
+mynblep/minblep.py,sha256=ciVE-EI-WX6244CEeJQcju7nXhkRsq-TYMMWbiXZivA,6217
+mynblep/paste_turbo/pasteminbleps.pyx,sha256=VpBfSMUNAWEv_APYTIQiAz9-nx0XxQLNrKJYeN81mZI,117466
+mynblep/paste_turbo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mynblep/paste_turbo/pasteminbleps.pyxbld,sha256=HXXw-b6PaNVtjTVYwSEmh1Bz0EVo0-rcgwAnFlKrdIk,162
+mynblep/paste_turbo/pasteminbleps.cpython-39-i386-linux-gnu.so,sha256=cSf5Taif54j22-XOHLSBlE4oFNGy2PtXuc2DuY1GJhA,275948
