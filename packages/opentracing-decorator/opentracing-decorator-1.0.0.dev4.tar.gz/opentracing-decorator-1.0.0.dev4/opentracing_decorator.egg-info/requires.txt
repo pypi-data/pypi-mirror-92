@@ -1,0 +1,4 @@
+opentracing<3.0,>=2.4.0
+flatten-dict==0.3.0
+
+[tests]

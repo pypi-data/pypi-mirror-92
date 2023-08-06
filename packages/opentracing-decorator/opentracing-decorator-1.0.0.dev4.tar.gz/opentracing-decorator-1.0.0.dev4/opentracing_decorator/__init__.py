@@ -1,0 +1,1 @@
+from opentracing_decorator.tracing import Tracing
