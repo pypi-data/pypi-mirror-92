@@ -1,0 +1,8 @@
+README.md
+setup.py
+DateFull/Datefull.py
+DateFull/__init__.py
+Datefull.egg-info/PKG-INFO
+Datefull.egg-info/SOURCES.txt
+Datefull.egg-info/dependency_links.txt
+Datefull.egg-info/top_level.txt
