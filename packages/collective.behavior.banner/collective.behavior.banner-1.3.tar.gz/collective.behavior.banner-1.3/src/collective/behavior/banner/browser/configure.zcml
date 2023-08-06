@@ -1,0 +1,35 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.behavior.banner">
+
+    <!-- Publish static files -->
+    <browser:resourceDirectory
+      name="collective.behavior.banner"
+      directory="static"
+      />
+
+    <utility
+      factory=".controlpanel.SizesVocabulary"
+      name="collective.behavior.banner.all_sizes" />
+
+    <browser:viewlet
+      name="collective.bannerviewlet"
+      for="plone.dexterity.interfaces.IDexterityContent"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class=".viewlets.BannerViewlet"
+      layer="..interfaces.ICollectiveBannerLayer"
+      permission="zope2.View"
+      />
+
+    <include package="Products.CMFCore" file="permissions.zcml" />
+
+    <browser:page
+        name="banner_configlet"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.BannerSettingsControlPanel"
+        permission="cmf.ManagePortal"
+        />
+
+</configure>
