@@ -1,0 +1,12 @@
+pastiche/__init__.py,sha256=gs50gHGtS1z_QivRp18ZbawwXJr_fKLrsLI4dQi15x4,42
+pastiche/__main__.py,sha256=6bmv0t9_rbD31P2yi-TFur3FxIgkU4ygYGgLDPqa8-o,96
+pastiche/pastiche.py,sha256=2VNawlNjJDntmHkmfEhgLGaMwp9EQ3i5OCQKSa5blR0,22173
+pastiche/version.txt,sha256=FXXhr0qV8S9wtO5qatzoFglT2T6hfcJhG5CIPMw607g,6
+pastiche/vgg19.py,sha256=WfgoKZKKz0YdVpNxj9kfTaLlvYYJhL3WdX4ueHAkroI,14019
+pastiche/vgg19_weights_tf_dim_ordering_tf_kernels_notop_q.bin,sha256=w0dI0qixrQplHBijrd_xsBia9_Bwzaqg3O0NthULavY,20063401
+pastiche-1.1.0.dist-info/LICENSE,sha256=9JZLJbKsdtsjSfrdQ71pckjo5F1H2CruBQftrKsxuPg,1073
+pastiche-1.1.0.dist-info/METADATA,sha256=K6gO73T-WhbZeRCZhi-LWRMe-EuUhDl02FKZF00Vyk4,6525
+pastiche-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pastiche-1.1.0.dist-info/entry_points.txt,sha256=pTaCVCKXszLgTmxi9FVVYNkeXOvFteawBDondLgdjrg,53
+pastiche-1.1.0.dist-info/top_level.txt,sha256=hCxbxdmRfdr3W68FPOV39CIdQEbXsfJnxUX8tuyvtSg,9
+pastiche-1.1.0.dist-info/RECORD,,
