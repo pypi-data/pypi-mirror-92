@@ -1,0 +1,16 @@
+COPYING
+MANIFEST.in
+eudist.cpp
+eudist.pyx
+eudist_cpp.cxx
+eudist_cpp.hxx
+setup.cfg
+setup.py
+eudist/test_point_plane.py
+eudist/test_polymesh.py
+eudist/test_seqment.py
+eudist.egg-info/PKG-INFO
+eudist.egg-info/SOURCES.txt
+eudist.egg-info/dependency_links.txt
+eudist.egg-info/requires.txt
+eudist.egg-info/top_level.txt
