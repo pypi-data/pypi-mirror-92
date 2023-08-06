@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: beir
+Version: 0.0.2
+Summary: A Heterogeneous Benchmark for Information Retrieval
+Home-page: https://github.com/beir-nlp/beir
+Author: Nandan Thakur
+Author-email: nandant@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/beir-nlp/beir/archive/v0.0.1.zip
+Keywords: Information Retrieval Transformer Networks BERT PyTorch IR NLP deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: sentence-transformers
+Requires-Dist: pytrec-eval
+
+# beir
+A heterogeneous benchmark for Information Retrieval
+
+## Installation
+
+Install via pip:
+
+```
+pip install beir
+```
+
+If you want to build from source, use:
+
+```
+$ git clone https://github.com/beir-nlp/beir.git
+$ pip install -e .
+```
+
+Tested with python versions 3.6 and 3.7
+## Steps To Follow
+
+1. Download datasets using ``datasets/download_data.py``
+2. Evaluate using ``evaluate_model.py`` wherein set line 4 => ``data_path = "../datasets/{dataset-name}"``
+
