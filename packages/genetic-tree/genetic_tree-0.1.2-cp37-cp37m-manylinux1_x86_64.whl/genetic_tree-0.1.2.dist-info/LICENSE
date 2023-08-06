@@ -1,0 +1,30 @@
+Copyright (c) 2020-2021 Karol Pysiak & Tomasz Makowski
+
+Remark 1:
+This work is a bachelor thesis project at Warsaw University of Technology. Commercial use forbidden.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense. It is prohibited 
+to sell or use this software in any commercial way.
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Remark 2:
+
+Package is based on sklearn with BSD-3-Clause License.
+
+High-level interface of package is inspired by sklearn (https://github.com/scikit-learn/scikit-learn).
+Especially there are methods like: fit(), predict(), predict_proba(), apply(), set_params(), check_X(), check_input() which are inspired and / or copied from sklearn.
+
+A low-level interface is inspired by sklearn decision_tree. The structure of tree (tree/tree.pyx) and some utils (tree/\_utils.pyx) were copied from sklearn tree (https://github.com/scikit-learn/scikit-learn/tree/master/sklearn/tree).
