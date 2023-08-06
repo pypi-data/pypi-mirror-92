@@ -1,0 +1,4 @@
+[opentelemetry_exporter]
+otlp_metric = opentelemetry.exporter.otlp.metrics_exporter:OTLPMetricsExporter
+otlp_span = opentelemetry.exporter.otlp.trace_exporter:OTLPSpanExporter
+
