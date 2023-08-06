@@ -1,0 +1,6 @@
+typing-inspect
+typing_extensions
+
+[:python_version < "3.7"]
+dataclasses
+aenum
