@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: ipyigv
+Version: 0.1.9
+Summary: A Jupyter wrapper for the igv.js library
+Home-page: https://github.com/QuantStack/ipyigv
+Author: Project Jupyter
+Author-email: jeandavid.harrouet@hopsys.com
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: ipywidgets (<8,>=7.6.0)
+Provides-Extra: test
+Requires-Dist: pytest (>4.6) ; extra == 'test'
+
+A Jupyter wrapper for the igv.js library
+
+
