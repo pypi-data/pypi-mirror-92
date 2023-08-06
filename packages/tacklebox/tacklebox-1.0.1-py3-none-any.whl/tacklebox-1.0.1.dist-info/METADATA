@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tacklebox
+Version: 1.0.1
+Summary: Improved handling of PyTorch module hooks
+Home-page: https://github.com/IsaacRe/tacklebox
+Author: Isaac Rehg
+Author-email: isaacrehg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: tqdm
+
+# TackleBox
+### A framework for improved handling of PyTorch module hooks
+
