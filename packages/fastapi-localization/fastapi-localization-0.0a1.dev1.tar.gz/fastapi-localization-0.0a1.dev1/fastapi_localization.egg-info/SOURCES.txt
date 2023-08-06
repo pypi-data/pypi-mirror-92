@@ -1,0 +1,14 @@
+README.md
+setup.py
+fastapi_localization/__init__.py
+fastapi_localization/exception_handlers.py
+fastapi_localization/localization.py
+fastapi_localization/middleware.py
+fastapi_localization/response.py
+fastapi_localization/route.py
+fastapi_localization.egg-info/PKG-INFO
+fastapi_localization.egg-info/SOURCES.txt
+fastapi_localization.egg-info/dependency_links.txt
+fastapi_localization.egg-info/not-zip-safe
+fastapi_localization.egg-info/requires.txt
+fastapi_localization.egg-info/top_level.txt

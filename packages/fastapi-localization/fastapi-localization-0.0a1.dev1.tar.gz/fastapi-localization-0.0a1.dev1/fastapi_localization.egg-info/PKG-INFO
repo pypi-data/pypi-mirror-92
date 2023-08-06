@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: fastapi-localization
+Version: 0.0a1.dev1
+Summary: Language localization fastapi
+Home-page: https://github.com/ikasymov/fastapi-localization
+Author: Ilgiz Kasymov
+Author-email: ilgizkasymov@gmail.com
+License: MIT
+Description: # fastapi_localization
+        
+        **fastapi_localization** - provides a simple language localization from Accept-Language header in your application.
+        
+        Installation
+        ```shell script
+        $ pip install fastapi-localization
+        ```
+        
+        Examples how to [use](https://github.com/ikasymov/fastapi-localization-example)
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
