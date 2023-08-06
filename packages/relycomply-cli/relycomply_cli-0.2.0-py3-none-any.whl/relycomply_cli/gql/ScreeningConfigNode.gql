@@ -1,0 +1,70 @@
+{
+  id
+  name
+  label
+  description
+  screeningType
+  ... on WatchlistScreeningConfigNode {
+    enableReviewStage
+    rescreeningFrequency
+    nameWeight
+    birthdateWeight
+    nationalityWeight
+    idCodeWeight
+    nameDefault
+    birthdateDefault
+    nationalityDefault
+    idCodeDefault
+    threshold
+    sources {
+      edges {
+        node {
+          id
+          name
+          label
+        }
+      }
+    }
+  }
+  ... on ZaIdentityScreeningConfigNode {
+    enableReviewStage
+    validateFacePhoto
+    validateDocumentCharacteristics
+    validateFacePhotoMatchesIdDocument
+    validateFacePhotoMatchesEasydebit
+    validateFacePhotoMatchesNiis
+    validatePreloadedIidentifiiChecks
+    forceManualCitizenVerification
+    forceManualAsylumSeekerVerification
+    forceManualRefugeeVerification
+    forceManualPassportVerification
+  }
+  ... on KeIdentityScreeningConfigNode {
+    enableReviewStage
+    validateFacePhoto
+    validateDocumentCharacteristics
+    validateFacePhotoMatchesIdDocument
+    validateFacePhotoMatchesNrb
+    forceManualCitizenVerification
+    forceManualPassportVerification
+  }
+  ... on EddScreeningConfigNode {
+    requireDocuments
+    requireCommitteeReview
+    productServiceScore
+    distributionChannelScore
+    occupationScore
+  }
+  ... on TransactionScreeningConfigNode {
+    enableReviewStage
+    sources {
+      edges {
+        node {
+          id
+          name
+          label
+        }
+      }
+    }
+  }
+}

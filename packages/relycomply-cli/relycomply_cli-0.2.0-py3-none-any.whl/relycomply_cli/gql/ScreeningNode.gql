@@ -1,0 +1,30 @@
+{
+  id
+  outcome
+  screeningConfig {
+    name
+    screeningType
+  }
+  assessment {
+    id
+    assessmentConfig {
+      name
+      assessmentType
+    }
+    customer {
+      id
+      firstName
+      lastName
+    }
+  }
+  cases {
+    edges {
+      node {
+        id
+        state
+        closed
+        outcome
+      }
+    }
+  }
+}
