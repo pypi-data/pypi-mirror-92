@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: onigiri-aw
+Version: 0.0.1
+Summary: onigiri-api sdk
+Home-page: UNKNOWN
+Author: onigiri
+License: UNKNOWN
+Description: # 
+        python sdk for 
+        
+        https://pypi.org/account/register/
+        验证邮箱
+        https://pypi.org/manage/account/
+        Add API token
+        
+        pypi-AgEIcHlwaS5vcmcCJGIyNzYzMTdhLTM5ZDgtNGQzNC04NzMxLTJkODNiZjE3ZGE1OAACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgCXWQek40y9QA8FXHncUXsq6XIS8vM1jghyYMrLfPPAM
+        python3 setup.py sdist bdist_wheel
+        twine upload dist/*
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
