@@ -1,0 +1,17 @@
+muffin>=0.46
+aioauth-client>=0.25.4
+muffin_session>=0.9.2
+
+[build]
+bump2version
+twine
+wheel
+
+[example]
+uvicorn
+
+[tests]
+anyio
+pytest
+trio
+mypy
