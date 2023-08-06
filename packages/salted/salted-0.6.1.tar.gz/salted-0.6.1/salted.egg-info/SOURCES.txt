@@ -1,0 +1,14 @@
+README.md
+setup.py
+salted/__init__.py
+salted/__main__.py
+salted/database_io.py
+salted/input_handler.py
+salted/network_interaction.py
+salted/parser.py
+salted/report_generator.py
+salted.egg-info/PKG-INFO
+salted.egg-info/SOURCES.txt
+salted.egg-info/dependency_links.txt
+salted.egg-info/requires.txt
+salted.egg-info/top_level.txt
