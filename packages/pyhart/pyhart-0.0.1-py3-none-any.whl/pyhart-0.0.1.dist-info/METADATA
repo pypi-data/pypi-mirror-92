@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyhart
+Version: 0.0.1
+Summary: Python Hardware Reservation Tool Command Line App
+Home-page: https://github.com/NexSabre/pyhart
+Author: Nex Sabre
+Author-email: nexsabre@protonmail.com
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.25.1)
+
+# pyHaRT cmd (Python Hardware Reservation Tool Command App)
+
+

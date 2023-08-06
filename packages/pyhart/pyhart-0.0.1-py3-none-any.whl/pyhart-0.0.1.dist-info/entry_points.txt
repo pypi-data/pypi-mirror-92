@@ -1,0 +1,3 @@
+[console_scripts]
+pyhart = hartcmd.main.main:main
+
