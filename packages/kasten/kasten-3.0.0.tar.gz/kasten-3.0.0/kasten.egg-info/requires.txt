@@ -1,0 +1,2 @@
+msgpack
+mimcvdf>=1.2.0
