@@ -1,0 +1,189 @@
+#!/usr/bin/python3
+# GENOCIDE - by using the law to administer poison the king commits (bin/genocide)
+#
+# this file is placed in the public domain
+
+"""GENOCIDE(1)			   User Commands 			 GENOCIDE(1)
+
+NAME
+        GENOCIDE - using the law to administer poison the king of the
+                   netherlands commits genocide.
+
+SYNOPSIS
+        1) genocide <cmd> [mods=mod1,mod2] [-d] [-h] [-s] [-v]
+        2) genocide cfg server=<server> channel=<channel> nick=<nick>
+        3) genocide met <userhost>
+        4) genocide rss <url>
+        5) genocide ftc
+        6) genocide cmd
+        7) genocide mods=irc
+
+DESCCRIPTION
+        GENOCIDE is a python3 program that holds evidence that the king of the
+        netherlands is doing a genocide, a written response where the king of
+        the netherlands  confirmed taking note of “what i have written”, namely
+        proof that medicine he uses in treatement laws like zyprexa, haldol,
+        abilify and clozapine are poison. This means that the king of the
+        netherlands is not using laws to provide care for the elderly,
+        handicapped, psychiatric patients and criminals but is using the laws
+        to administer poison. Poison that makes impotent, is both physical
+        (contracted muscles) and mental (let people hallucinate) torture and
+        kills members of the victim groups.
+
+        GENOCIDE shows correspondence with the Internationnal Criminal Court
+        about the genocide of the king of the netherlands (using the law to
+        administer poison), including stats on suicide while the king of the
+        netherland's genocide is still going on. Status is that there is not
+        a basis to proceed, whether the king of the netherland's genocide
+        doesn’t fit the description or the netherlands doesn’t want to
+        cooperate with stopping the genocide the king of the netherlands is
+        doing.
+
+        GENOCIDE provides a IRC bot that can run as a background daemon for
+        24/7 a day presence in a IRC channel. You can use it to display RSS
+        feeds, act as a UDP to IRC gateway, program your own commands for it
+        and have it log objects on disk to search them.
+
+        GENOCIDE is placed in the Public Domain, no COPYRIGHT, no LICENSE.
+        
+OPTIONS
+        -d              daemon mode
+        -s              start a shell
+        -v              be verbose
+        -h              print this message
+        -x              enable debug
+"""
+
+import os, sys ; sys.path.insert(0, os.getcwd())
+
+import atexit
+import op
+import op.irc
+import op.usr
+import os
+import readline
+import sys
+import threading
+import time
+
+from op.hdl import Command, Handler, cmd
+from op.prs import parse_cli
+from op.thr import launch
+from op.trm import console, termreset
+from op.utl import privileges
+
+import genocide.ver
+
+# defines
+
+wd = os.path.abspath(os.path.expanduser("~/.genocide"))
+
+# classes
+
+class Console(Handler):
+
+    "console class"
+
+    def __init__(self):
+        super().__init__()
+        self.register("cmd", cmd)
+
+    def announce(self, txt):
+        "silence announcing"
+        #self.direct(txt)
+
+    def direct(self, txt):
+        print(txt)
+
+    def input(self):
+        "loop for input"
+        while 1:
+            try:
+                e = self.poll()
+            except EOFError:
+                break
+            self.put(e)
+            e.wait()
+
+    def poll(self):
+        "wait for input"
+        return Command(input("> "))
+
+    def say(self, channel, txt):
+        "strip channel from output"
+        self.direct(txt)
+
+    def start(self):
+        "start console"
+        super().start()
+        launch(self.input)
+
+class Mini(Handler):
+
+    def direct(self, txt):
+        print(txt)
+
+# functions
+
+def daemon():
+    "fork to child proces"
+    pid = os.fork()
+    if pid != 0:
+        termreset()
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    si = open("/dev/null", 'r')
+    so = open("/dev/null", 'a+')
+    se = open("/dev/null", 'a+')
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
+def opcheck(ops, cfg):
+    for o in ops:
+        if o in cfg.opts:
+             return True    
+    return False
+
+def main():
+    "main function"
+    op.irc.Cfg.channel = "#genocide"
+    op.irc.Cfg.nick = "genocide"
+    op.irc.Cfg.server = "localhost"
+    cfg = parse_cli(wd)
+    if opcheck("r", cfg):
+        op.wd = cfg.wd = "/var/lib/genocide/"
+        privileges("genocide")
+    if opcheck("h", cfg):
+        return print(__doc__)
+    if opcheck("bx", cfg):
+        print("GENOCIDE %s - using the law to administer poison the king of the netherlands commits genocide started at %s" % (genocide.ver.__version__, time.ctime(time.time())))
+        print(op.format(cfg))
+    if opcheck("x", cfg):
+        op.debug = True
+    h = Mini()
+    h.load("op.cmd")
+    h.walk("genocide")
+    if cfg.txt or opcheck("n", cfg):
+        return h.cmd(cfg.otxt)
+    if opcheck("d", cfg):
+        daemon()
+    h.start()
+    for thr in h.init(cfg.sets.mods):
+        thr.join()
+    for thr in h.init(cfg.sets.mods, "genocide"):
+        thr.join()
+    if opcheck("s", cfg):
+        c = Console()
+        c.clone(h)
+        c.start()
+    if opcheck("sdw", cfg) or cfg.sets.mods:
+        h.wait()
+
+# runtime
+
+cmds = []
+starttime = time.time()
+console(main)
+os._exit(0)
