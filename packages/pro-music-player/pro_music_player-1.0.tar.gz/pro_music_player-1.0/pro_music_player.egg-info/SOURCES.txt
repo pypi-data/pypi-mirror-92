@@ -1,0 +1,9 @@
+README.md
+setup.py
+pro_music_player/__init__.py
+pro_music_player/audio.py
+pro_music_player/ondas_sonoras.py
+pro_music_player.egg-info/PKG-INFO
+pro_music_player.egg-info/SOURCES.txt
+pro_music_player.egg-info/dependency_links.txt
+pro_music_player.egg-info/top_level.txt
