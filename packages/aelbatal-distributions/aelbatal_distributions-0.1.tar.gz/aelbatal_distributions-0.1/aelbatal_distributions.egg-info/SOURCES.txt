@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+aelbatal_distributions/Binomialdistribution.py
+aelbatal_distributions/Gaussiandistribution.py
+aelbatal_distributions/Generaldistribution.py
+aelbatal_distributions/__init__.py
+aelbatal_distributions.egg-info/PKG-INFO
+aelbatal_distributions.egg-info/SOURCES.txt
+aelbatal_distributions.egg-info/dependency_links.txt
+aelbatal_distributions.egg-info/not-zip-safe
+aelbatal_distributions.egg-info/top_level.txt
