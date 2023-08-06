@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: gapi-helper
+Version: 0.1.0
+Summary: Helpers around Google APIs
+Home-page: https://github.com/upOwa/gapi-helper
+License: LGPL-3.0-or-later
+Author: Thomas Muguet
+Author-email: thomas.muguet@upowa.org
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Utilities
+Requires-Dist: Flask (>=1.1.2,<2.0.0)
+Requires-Dist: Flask-SQLAlchemy (>=2.4.4,<3.0.0)
+Requires-Dist: google-api-python-client (>=1.12.8,<2.0.0)
+Requires-Dist: oauth2client (>=4.1.3,<5.0.0)
+Requires-Dist: simpletasks (>=0.1.0,<0.2.0)
+Requires-Dist: simpletasks-data (>=0.1.0,<0.2.0)
+Project-URL: Repository, https://github.com/upOwa/gapi-helper
+Description-Content-Type: text/markdown
+
+# gapi-helper
+
+Helpers around Google APIs
+
+
+----
+Contributing
+
+```
+poetry install --no-root
+```
