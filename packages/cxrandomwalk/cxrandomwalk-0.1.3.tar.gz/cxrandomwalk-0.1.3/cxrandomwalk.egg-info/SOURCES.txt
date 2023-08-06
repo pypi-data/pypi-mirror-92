@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+cxrandomwalk.egg-info/PKG-INFO
+cxrandomwalk.egg-info/SOURCES.txt
+cxrandomwalk.egg-info/dependency_links.txt
+cxrandomwalk.egg-info/top_level.txt
+cxrandomwalk/Python/PyCXRandomWalk.c
+cxrandomwalk/Source/CVDictionary.c
+cxrandomwalk/Source/CVDistribution.c
+cxrandomwalk/Source/CVNetwork.c
+cxrandomwalk/Source/CVSet.c
+cxrandomwalk/Source/CVSimpleQueue.c
