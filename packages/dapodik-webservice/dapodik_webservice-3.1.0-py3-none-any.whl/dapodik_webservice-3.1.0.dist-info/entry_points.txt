@@ -1,0 +1,3 @@
+[console_scripts]
+dapodik=dapodik_webservice.__main__:main
+
