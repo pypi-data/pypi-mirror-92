@@ -1,0 +1,6 @@
+include pypolarity/sentiment/negative_adjectives.txt
+include pypolarity/sentiment/negative_new.txt
+include pypolarity/sentiment/negative_verbs.txt
+include pypolarity/sentiment/positive_adjectives.txt
+include pypolarity/sentiment/positive_verbs.txt
+include pypolarity/sentiment/positive_new.txt

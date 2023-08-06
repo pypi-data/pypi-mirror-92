@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pypolarity
+Version: 0.0.3
+Summary: analyze news article as positive or negative
+Home-page: UNKNOWN
+Author: sumeth
+Author-email: author@example.com
+License: MIT
+Description: from pypolarity import do_sentiment_whole_news <br/>
+        result, sentiment = do_sentiment_whole_news(string)
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
