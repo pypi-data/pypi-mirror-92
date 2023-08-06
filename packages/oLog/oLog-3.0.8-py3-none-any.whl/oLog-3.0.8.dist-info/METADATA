@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: oLog
+Version: 3.0.8
+Summary: oLog is a log module for python
+Home-page: https://github.com/ZonovumOrg/pylog
+Author: Zonovum
+Author-email: info.zonovum@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# oLog
+oLog is a log module for Python3
+To use oLog, you must call the class of the log type of your choice.
+## Types of logs available
+* sign_color_log - log with colored sign ([!] [x] [?] [*])
+* sign_log - log with sign ([!] [x] [?] [*]) not colored
+* color_log - log without colored signs. The signs will be replaced by: [ERROR], [WARNING]
+* simple_log - log without colorless signs. The signs will be replaced by: [ERROR], [WARNING]
+## Use
+Import oLog:
+``` py
+import olog
+```
+You must therefore create a journal object:
+``` py
+# For the newspaper with sign:
+log = olog.sign_log ('Server') # Replace server with the name of your application
+# For the newspaper without colored sign:
+log = olog.color_log ('Server') # Replace server with the name of your application
+# For the newspaper without signs:
+log = olog.simple_log ('Server') # Replace server with the name of your application
+```
+Then, to view a log, you need to do this:
+```py
+log.error ('An error has occurred')
+```
+You can replace "error" with:
+info, valid and warning
+
+## In development
+We are in the process of developing a log to file system.
+
+
