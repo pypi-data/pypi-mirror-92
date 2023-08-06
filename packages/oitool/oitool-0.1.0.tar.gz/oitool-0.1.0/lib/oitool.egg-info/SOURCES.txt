@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+lib/oitool/__init__.py
+lib/oitool/fetchoi.py
+lib/oitool.egg-info/PKG-INFO
+lib/oitool.egg-info/SOURCES.txt
+lib/oitool.egg-info/dependency_links.txt
+lib/oitool.egg-info/requires.txt
+lib/oitool.egg-info/top_level.txt
