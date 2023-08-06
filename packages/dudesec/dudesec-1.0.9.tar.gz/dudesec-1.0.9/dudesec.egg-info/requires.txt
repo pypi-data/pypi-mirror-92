@@ -1,0 +1,3 @@
+bs4
+ping3
+requests
