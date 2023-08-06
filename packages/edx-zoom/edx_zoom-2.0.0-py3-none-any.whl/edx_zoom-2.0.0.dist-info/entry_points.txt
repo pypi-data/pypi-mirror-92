@@ -1,0 +1,9 @@
+[cms.djangoapp]
+edx_zoom = edx_zoom.apps:XBlockZoomApp
+
+[lms.djangoapp]
+edx_zoom = edx_zoom.apps:XBlockZoomApp
+
+[xblock.v1]
+edx_zoom = edx_zoom:ZoomXBlock
+
