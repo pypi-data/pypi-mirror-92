@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: sonicapi
+Version: 0.2.1
+Summary: Python3 Module to interact with the SonicWall® SonicOS API.
+Home-page: https://github.com/hbonath/sonicapi
+Author: Henry Bonath
+Author-email: henry@thebonaths.com
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: urllib3 (>=1.25.8)
+
+
+# sonicapi
+## Python3 Module to interact with the SonicWall® SonicOS API  
+
+
+> This Module currently only contains basic functionality:
+>
+>* Address Objects
+>* Address Groups
+>* Service Objects
+>* Service Groups
+>* Zones
+>* Access Rules
+>* NAT Policies
+>* Route Policies
+>* Restart
+
+### Installation:
+
+```
+pip3 install sonicapi
+```
+
+### Usage:
+
+```
+from sonicapi import sonicapi
+import json
+
+def main():
+    # This example connects to the API, dumps out a JSON list of Address Objects, and logs out.
+    s = sonicapi('192.168.168.168', 443, 'admin', 'password')
+    print(json.dumps(s.auth(login=True), indent=2))
+    print(json.dumps(s.AddressObjects(type='ipv4'), indent=2))
+    print(json.dumps(s.AddressObjects(type='ipv6'), indent=2))
+    print(json.dumps(s.auth(logout=True), indent=2))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+
