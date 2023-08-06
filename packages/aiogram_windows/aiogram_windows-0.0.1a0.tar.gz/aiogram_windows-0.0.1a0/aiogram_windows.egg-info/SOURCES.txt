@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiogram_windows/__init__.py
+aiogram_windows/core.py
+aiogram_windows.egg-info/PKG-INFO
+aiogram_windows.egg-info/SOURCES.txt
+aiogram_windows.egg-info/dependency_links.txt
+aiogram_windows.egg-info/top_level.txt
