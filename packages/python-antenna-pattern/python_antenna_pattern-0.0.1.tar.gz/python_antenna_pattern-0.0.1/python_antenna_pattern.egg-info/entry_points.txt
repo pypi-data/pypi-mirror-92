@@ -1,0 +1,3 @@
+[console_scripts]
+pyap = python_antenna_pattern.cli:main
+
