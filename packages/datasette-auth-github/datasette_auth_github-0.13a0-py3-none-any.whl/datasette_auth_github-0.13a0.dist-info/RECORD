@@ -1,0 +1,10 @@
+datasette_auth_github/__init__.py,sha256=1GdojJZ90pK2L43l9WjwU4q_X81szu-nwA75-3oBAlU,357
+datasette_auth_github/utils.py,sha256=KI4dNgD-nqX6MUFX71GMkdrCtPJXEMjx4y1O04AyyrU,1326
+datasette_auth_github/views.py,sha256=pgEwsTmDSXM7z6A7d-_VVGQfYbaQ8bNDQ3YfYxvVBSQ,4799
+datasette_auth_github/templates/base.html,sha256=8ILXDDkbpNbczwC0HfdfOiJPbI1mdBFv6cqOq4YRX3M,418
+datasette_auth_github-0.13a0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_auth_github-0.13a0.dist-info/METADATA,sha256=UeJ5BOHUMJmygfGlLMDKp8mKJ8NbsianPyWRkJOHl3Q,5256
+datasette_auth_github-0.13a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_auth_github-0.13a0.dist-info/entry_points.txt,sha256=Dw7jZWkxevBzHiSqpLktWOv9jE5vlKETNI6yXhdwHzk,49
+datasette_auth_github-0.13a0.dist-info/top_level.txt,sha256=ce6KZhKPOeELBRf6j2BFhPf_m26jVry03yap4kHbVFQ,22
+datasette_auth_github-0.13a0.dist-info/RECORD,,
