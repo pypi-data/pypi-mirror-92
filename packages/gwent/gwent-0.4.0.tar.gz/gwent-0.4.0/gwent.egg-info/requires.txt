@@ -1,0 +1,8 @@
+numpy
+scipy
+astropy
+hasasia
+matplotlib
+h5py
+pyyaml
+lalsuite
