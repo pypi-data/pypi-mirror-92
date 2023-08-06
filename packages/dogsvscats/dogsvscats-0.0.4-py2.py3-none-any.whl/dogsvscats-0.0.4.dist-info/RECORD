@@ -1,0 +1,14 @@
+dogsvscats/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+dogsvscats/config.py,sha256=DZR-TvxHU0NzcGYKqjBFo3iNFOwZxKW7zjJ0InoT3_k,509
+dogsvscats/train.py,sha256=HcBA2TZ3vfud7qQZTg2sY5zUO_yqKHZOH-weoRTRO00,1092
+dogsvscats/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dogsvscats/data/dataset.py,sha256=G1froWC15AjFIwn7ffMZ22vApJGrPWH6xrIWE7AWXm8,3119
+dogsvscats/data/transforms.py,sha256=uv6diRD9FZzQwotSbO2IurAK_wHxPgrf-OsCQfmqx2s,470
+dogsvscats/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dogsvscats/model/model.py,sha256=Bal5okGGdLRuNcl7c-janMA7j-16jbAkcHhsMZZKXe0,3509
+dogsvscats/model/predict.py,sha256=jjer1rswzeb-K_BNCAczI6Xff6feKfj-fuJrANA3jKs,596
+dogsvscats/model/utils.py,sha256=Z3Lt--mWAy7Pg9a76oy_GoZl0rdOwiQGfPDHMJXmTl4,2214
+dogsvscats-0.0.4.dist-info/METADATA,sha256=0Gmz5RaG_0HGWpcb8lU4pTT88lsv24bqkNoXbPdZVpI,1282
+dogsvscats-0.0.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+dogsvscats-0.0.4.dist-info/top_level.txt,sha256=v3lgXhQuJ7VC3iPYer4xnW-coDm0b6WD2xRMqX8Yoxc,11
+dogsvscats-0.0.4.dist-info/RECORD,,
