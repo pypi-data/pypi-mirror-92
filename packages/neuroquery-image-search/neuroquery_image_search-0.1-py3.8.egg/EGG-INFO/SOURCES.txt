@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/neuroquery_image_search/__init__.py
+src/neuroquery_image_search/_datasets.py
+src/neuroquery_image_search/_searching.py
+src/neuroquery_image_search.egg-info/PKG-INFO
+src/neuroquery_image_search.egg-info/SOURCES.txt
+src/neuroquery_image_search.egg-info/dependency_links.txt
+src/neuroquery_image_search.egg-info/entry_points.txt
+src/neuroquery_image_search.egg-info/requires.txt
+src/neuroquery_image_search.egg-info/top_level.txt
+src/neuroquery_image_search/data/VERSION.txt
+src/neuroquery_image_search/data/__init__.py
+src/neuroquery_image_search/data/search_results_template.html
