@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GIUP.egg-info/PKG-INFO
+GIUP.egg-info/SOURCES.txt
+GIUP.egg-info/dependency_links.txt
+GIUP.egg-info/entry_points.txt
+GIUP.egg-info/requires.txt
+GIUP.egg-info/top_level.txt
+giup/__init__.py
+giup/__main__.py
+giup/__version__.py
+giup/command.py
+giup/git.py
+giup/project.py
+giup/util.py
