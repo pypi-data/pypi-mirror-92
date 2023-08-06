@@ -1,0 +1,4 @@
+aiohttp>=3.7
+boto3>=1.16
+python-jose[cryptography]>=3.2
+requests>=2.25
