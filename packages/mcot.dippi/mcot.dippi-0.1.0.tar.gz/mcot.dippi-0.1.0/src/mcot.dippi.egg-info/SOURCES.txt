@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+src/mcot/__init__.py
+src/mcot.dippi.egg-info/PKG-INFO
+src/mcot.dippi.egg-info/SOURCES.txt
+src/mcot.dippi.egg-info/dependency_links.txt
+src/mcot.dippi.egg-info/namespace_packages.txt
+src/mcot.dippi.egg-info/requires.txt
+src/mcot.dippi.egg-info/top_level.txt
+src/mcot/dippi/README.rst
+src/mcot/dippi/VERSION
+src/mcot/dippi/__init__.py
+src/mcot/dippi/model.py
+src/mcot/dippi/scan.py
+src/mcot/dippi/simulator.py
+src/mcot/dippi/geometry/__init__.py
+src/mcot/dippi/geometry/cylinders.py

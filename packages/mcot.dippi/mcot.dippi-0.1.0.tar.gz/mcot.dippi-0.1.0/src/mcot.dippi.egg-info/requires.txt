@@ -1,0 +1,10 @@
+dataclasses_json
+dipy
+fslpy
+mcot.maths~=0.1.0
+mcot.surface~=0.1.0
+mcot.utils~=0.1.0
+numpy
+pandas
+scipy
+xarray

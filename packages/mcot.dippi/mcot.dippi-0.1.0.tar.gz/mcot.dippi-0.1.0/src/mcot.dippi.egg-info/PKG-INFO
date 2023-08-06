@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: mcot.dippi
+Version: 0.1.0
+Summary: Simulates/fits DIPPI data
+Home-page: https://git.fmrib.ox.ac.uk/ndcn0236/mcot
+Author: Michiel Cottaar
+Author-email: Michiel.Cottaar@ndcn.ox.ac.uk
+License: MIT license
+Description: Module to analyse DIffusion-Prepared Phase Imaging (DIPPI) data
+        
+        Contains both code to simulate the data and to fit the data.
+        Preprocessing scripts are not yet provided.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
