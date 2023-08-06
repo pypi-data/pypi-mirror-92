@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: mshtensorflow
+Version: 0.0.7
+Summary: A free and simple deep learning framework for everyone
+Home-page: https://github.com/adhamhesham97/Deep-Learning-framework
+Author: salah adel
+Author-email: salahadel820@gmail.com
+License: MIT
+Download-URL: https://github.com/adhamhesham97/Deep-Learning-framework/archive/0.0.6.tar.gz
+Description: # mshtensorflow
+        A free and simple deep learning framework for everyone.
+        
+        ### Install
+        ```sh
+        $ pip install mshtensorflow
+        ```
+        ### Update
+        ```sh
+        $ pip install mshtensorflow --upgrade
+        ```
+        
+        
+        ### Usage
+        ```sh
+        $ import mshtensorflow 
+        ```
+        License
+        ----
+        
+        MIT
+        
+        
+        
+Keywords: framework
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
