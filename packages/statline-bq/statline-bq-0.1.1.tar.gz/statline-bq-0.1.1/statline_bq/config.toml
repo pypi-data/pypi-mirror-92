@@ -1,0 +1,32 @@
+[gcp]
+    [gcp.prod]
+    project_id = "dataverbinders"
+    bucket = "dataverbinders"
+    location = "EU"
+    # credentials = ""  # currently not taken here. User needs to have authentication setup previous to using this library.
+                        # see "https://cloud.google.com/docs/authentication/end-user" for instructions if issues occur with authentication.
+
+    [gcp.test]
+    project_id = "dataverbinders-test"
+    bucket = "dataverbinders-test"
+    location = "EU"
+    # credentials = ""  # currently not taken here. User needs to have authentication setup previous to using this library.
+                        # see "https://cloud.google.com/docs/authentication/end-user" for instructions if issues occur with authentication.
+
+    [gcp.dev]
+    project_id = "dataverbinders-dev"
+    bucket = "dataverbinders-dev"
+    location = "EU"
+    # credentials = ""  # currently not taken here. User needs to have authentication setup previous to using this library.
+                        # see "https://cloud.google.com/docs/authentication/end-user" for instructions if issues occur with authentication.
+    
+[paths]
+# Temporary paths to use for transformations are defined here.
+
+# temp folder is relative to "Path(__file__).parent"
+temp = "temp"
+
+# All other folders are nested under temp
+cbs = "cbs"
+mlz = "mlz"
+rivm = "rivm"
