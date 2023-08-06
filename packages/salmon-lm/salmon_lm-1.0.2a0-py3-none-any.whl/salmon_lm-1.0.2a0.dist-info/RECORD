@@ -1,0 +1,12 @@
+salmon/__init__.py,sha256=GV_yOvnGQcHMTobCJikfTNRYWOm7pot7g4hE5FiSHQY,96
+salmon/building.py,sha256=6gKBBd7C7jX7DjwglLUyy5Jjp5BXIhe0Ouw35AH2370,7447
+salmon/comparison.py,sha256=L3MKKISbXmbDWanPah0FokRwNfMpagfIsLRBTrffiyI,7305
+salmon/expression.py,sha256=wIkPyYPMYKwihLr7XikZQpYEBlylQpPGu03RWjkU5ws,41265
+salmon/model.py,sha256=CaBrxVhqLXz8QZ_sAjpRcu7QNy11fiZpJzj12WU9zsA,35566
+salmon/test.py,sha256=kTBE59-KwMDyST6g0LO00CNx69vPAjQDVmL1Den3ZMU,10388
+salmon/transformation.py,sha256=IBS8QwpVNGIU_zmkezZJXbOjv2BzqGsrOo1teoxPoYI,5554
+salmon_lm-1.0.2a0.dist-info/LICENSE.txt,sha256=wzujrb9Zyz31bOD03awSAVP8qIaxTYMkCm9eausjwTo,731
+salmon_lm-1.0.2a0.dist-info/METADATA,sha256=SuuPJ_qjCB1jeCSkvYijfmPZoYANuPZtKGxDgfq7ZD8,717
+salmon_lm-1.0.2a0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+salmon_lm-1.0.2a0.dist-info/top_level.txt,sha256=il6Kmow7mMcdI6fILw0-yYkWVv7KTngVRLZz7wikNtg,7
+salmon_lm-1.0.2a0.dist-info/RECORD,,
