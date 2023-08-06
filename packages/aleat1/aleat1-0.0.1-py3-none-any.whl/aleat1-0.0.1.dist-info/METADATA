@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aleat1
+Version: 0.0.1
+Summary: An aleatory syntaxes package. Original generation.
+Home-page: https://github.com
+Author: Diego Ramirez
+Author-email: dr01191115@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Aleatoryous 1
+
+The original Aleatoryous project.
+
+## __WARNING! Newer generation available__
+
+Since January 20, 2021, the [3rth generation](http://pypi.org/project/aleat3) of Aleatoryous objects is available at
+[PyPi](http://pypi.org). We strongly recommend you to install the latest version of _aleat3_ library by
+this reasons:
+
+- _aleat1_ does not contain this features from _aleat3_:
+  - "Roulette" algorithm
+  - "CoinToBinary" function
+- _aleat3_ operations are much easier and fast. 
+
+
