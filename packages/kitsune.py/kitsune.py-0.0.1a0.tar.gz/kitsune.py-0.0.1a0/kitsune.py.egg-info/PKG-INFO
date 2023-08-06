@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kitsune.py
+Version: 0.0.1a0
+Summary: A simple and extensible Python API wrapper for Kitsu.
+Home-page: https://github.com/frissyn/kitsune
+Author: frissyn
+Author-email: author@example.com
+License: UNKNOWN
+Description: # kitsune
+        
+        **Work in progress -- Pre-Alpha**.
+        
+        A simple and extensible Python API wrapper for the Kitsu API. 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

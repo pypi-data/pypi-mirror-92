@@ -1,0 +1,9 @@
+README.md
+setup.py
+kitsune/__init__.py
+kitsune/client.py
+kitsune/values.py
+kitsune.py.egg-info/PKG-INFO
+kitsune.py.egg-info/SOURCES.txt
+kitsune.py.egg-info/dependency_links.txt
+kitsune.py.egg-info/top_level.txt
