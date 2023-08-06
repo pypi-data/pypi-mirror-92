@@ -1,0 +1,3 @@
+flask_resource_chassis
+oauth_client
+utils
