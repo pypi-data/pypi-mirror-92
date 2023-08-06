@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ae_python
+Version: 1.0.0
+Summary: Create After Effects scripts in Python.
+Home-page: https://kalbra.github.io/after-effects-python/index.html
+Author: Kalle Bracht
+Author-email: kalle.bracht@outlook.de
+License: LICENSE
+Description: ## After Effects scripts with python
+        Create After Effects scripts in Python. See the [documentation](https://kalbra.github.io/after-effects-python).
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
