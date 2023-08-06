@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+regugcb/__init__.py
+regugcb.egg-info/PKG-INFO
+regugcb.egg-info/SOURCES.txt
+regugcb.egg-info/dependency_links.txt
+regugcb.egg-info/top_level.txt
