@@ -1,0 +1,1 @@
+from .load_cifar100 import load_data
