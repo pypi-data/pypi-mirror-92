@@ -1,0 +1,7 @@
+include iraclis/__version__.txt 
+include iraclis/__databases__.pickle 
+include iraclis/_0database.pickle 
+include README.md 
+include LICENSE 
+include readme.md 
+include licence 

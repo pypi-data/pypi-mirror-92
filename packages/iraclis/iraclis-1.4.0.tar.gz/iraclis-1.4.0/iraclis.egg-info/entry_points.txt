@@ -1,0 +1,3 @@
+[console_scripts]
+iraclis = iraclis.__main__:console
+
