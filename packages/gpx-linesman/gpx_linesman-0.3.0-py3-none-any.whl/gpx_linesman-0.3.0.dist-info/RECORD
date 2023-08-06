@@ -1,0 +1,11 @@
+linesman/__init__.py,sha256=dBTt4WZ4v6ZKMkxymyi_LwKb4ypR4w7z7vm1vU6R204,2370
+linesman/geo.py,sha256=n5rpn48XSSBGDstrs9O2AtTy43V6iA-RSYK2y-PMh8I,1608
+linesman/geometry.py,sha256=30OQBwgot-ldmpaO3i3m17r-oqDcMffKQffEE7FEh2Y,2828
+linesman/measure.py,sha256=u0n_dMvzyFt74ZZuVTt1QBeyp8Ms5TDCqMBI6TI5dqg,2677
+linesman/output.py,sha256=O80E3rcnYgkG2xOwFQqRULNF9tk1ax9YPLRrsYfV8jI,160
+linesman/parse.py,sha256=UyTImcTXNhj28zwNNb46Oe34fy9qDHXNc6dA-1LJp9s,1759
+gpx_linesman-0.3.0.dist-info/entry_points.txt,sha256=Yljt1XR_uya73sjXrLb1XVI7zANcBStVX_sUMJJahho,41
+gpx_linesman-0.3.0.dist-info/LICENSE,sha256=uG74LqDVaD5w2zRwjZDaHp8p2rSGYN-8HF5jsVURlmc,1066
+gpx_linesman-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gpx_linesman-0.3.0.dist-info/METADATA,sha256=pudpqISZWxoEE-aTau4GYTR5gaxcDb-qXBJQdqfMEDE,2755
+gpx_linesman-0.3.0.dist-info/RECORD,,
