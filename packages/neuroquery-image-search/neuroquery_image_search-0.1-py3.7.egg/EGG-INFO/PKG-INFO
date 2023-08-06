@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: neuroquery-image-search
+Version: 0.1
+Summary: Search the NeuroQuery dataset for studies with activation patterns similar to an input image.
+Home-page: https://github.com/neuroquery/neuroquery_image_search
+Maintainer: Jerome Dockes
+License: BSD 3-Clause License
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
