@@ -1,0 +1,14 @@
+Change Log
+==========
+
+0.0.1 (22/01/2021)
+------------------
+- First release
+
+0.0.2 (23/01/2021)
+------------------
+- Fixed not finding package
+
+0.0.3 (23/01/2021)
+------------------
+- Fixed Installment issue
