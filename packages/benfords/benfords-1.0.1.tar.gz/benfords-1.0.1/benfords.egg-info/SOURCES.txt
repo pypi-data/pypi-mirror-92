@@ -1,0 +1,7 @@
+README.md
+setup.py
+benfords/__init__.py
+benfords.egg-info/PKG-INFO
+benfords.egg-info/SOURCES.txt
+benfords.egg-info/dependency_links.txt
+benfords.egg-info/top_level.txt
