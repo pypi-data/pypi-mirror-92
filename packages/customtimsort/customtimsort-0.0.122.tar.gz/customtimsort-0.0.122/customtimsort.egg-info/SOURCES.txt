@@ -1,0 +1,10 @@
+README.md
+listobject.c
+listobject.h
+setup.py
+timsort.c
+clinic/listobject.c.h
+customtimsort.egg-info/PKG-INFO
+customtimsort.egg-info/SOURCES.txt
+customtimsort.egg-info/dependency_links.txt
+customtimsort.egg-info/top_level.txt
