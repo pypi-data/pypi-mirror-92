@@ -1,0 +1,9 @@
+README.md
+setup.py
+mauricepdf/__init__.py
+mauricepdf/pdf2image.py
+mauricepdf/pdf2text.py
+mauricepdf.egg-info/PKG-INFO
+mauricepdf.egg-info/SOURCES.txt
+mauricepdf.egg-info/dependency_links.txt
+mauricepdf.egg-info/top_level.txt
