@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: testext
+Version: 1.0.1.1
+Summary: ext sdk
+Home-page: UNKNOWN
+Author: skyeye
+Author-email: skyeye@gmail.com
+License: MIT Licence
+Description: ext sdk for python
+Keywords: test,ext
+Platform: any
