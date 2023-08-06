@@ -1,0 +1,11 @@
+skfmm/__init__.py,sha256=XINqoz4YdWKItfohYLr1VsrIMN8YNY2HeEoEZ0ilzjc,32923
+skfmm/cfmm.cp38-win_amd64.pyd,sha256=AiAXzz5m4-IeL-JHDQomJAvwSK-b2tq6U2FxWHjJnJU,43008
+skfmm/heap.py,sha256=aIqu8tvx7Xqid6nBnPU-WQXBNePbOJQibYxxkXPuSQA,4872
+skfmm/pfmm.py,sha256=Q7-nvRmg5Q4gidS37Uq_-K76DQVdb_OGqqleH4UxKcg,9716
+skfmm/pheap.cp38-win_amd64.pyd,sha256=Le4XqQ451e4v1S_MNqY2Q0x9WsqaOldR-xrYw0OyXh8,33792
+skfmm/setup.py,sha256=jYbzSZu_l5LVS62S9iu2jatdx4DddbQcQAM7OC_AKNU,788
+scikit_fmm-2021.1.21.dist-info/LICENSE.txt,sha256=pj06b72gJOIfVwCdxJl4IiWB-_XraoZQf3iBfvpPJXw,1540
+scikit_fmm-2021.1.21.dist-info/METADATA,sha256=y17qgF63JTfkX6MbitWorFWeVv3xlYl1e5BWAnUXQJI,995
+scikit_fmm-2021.1.21.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+scikit_fmm-2021.1.21.dist-info/top_level.txt,sha256=ox5NcjzJsOlBzdipJ8TB6xLBaAy_PTGcXTinl5u4FC4,6
+scikit_fmm-2021.1.21.dist-info/RECORD,,
