@@ -1,0 +1,16 @@
+pretix_log_read_access/__init__.py,sha256=XhbzokjTl7dQ8h0WDODGexxKIi9vh3oI0dtJGfSdDYY,1090
+pretix_log_read_access/middleware.py,sha256=aybB8d31gjks-2tt4LDW9Q37OeMyru_O884xWyXgxts,4227
+pretix_log_read_access/signals.py,sha256=am9_PYE39eXdEhrpwejayA-0TTS6HtHNge_EvmVs70g,650
+pretix_log_read_access/locale/de/LC_MESSAGES/django.mo,sha256=K6CaJ0B7qCduM8fPXhJ111OTbwIoU6QmKBYAgrysa0E,269
+pretix_log_read_access/locale/de/LC_MESSAGES/django.po,sha256=id2KCI-qsYlJ20GXAOw9s_VqkNbBqpH6X2nXbyR9aVU,311
+pretix_log_read_access/locale/de_Informal/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_log_read_access/locale/de_Informal/LC_MESSAGES/django.mo,sha256=K6CaJ0B7qCduM8fPXhJ111OTbwIoU6QmKBYAgrysa0E,269
+pretix_log_read_access/locale/de_Informal/LC_MESSAGES/django.po,sha256=id2KCI-qsYlJ20GXAOw9s_VqkNbBqpH6X2nXbyR9aVU,311
+pretix_log_read_access/static/pretix_log_read_access/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_log_read_access/templates/pretix_log_read_access/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pretix_log_read_access-1.0.0.dist-info/LICENSE,sha256=ePtOJa7la9hsiGwtnEUYLW55jfVSRM7qjkrREvqsaPQ,554
+pretix_log_read_access-1.0.0.dist-info/METADATA,sha256=751GoEhh_wZwqfJd5PRXuPhTP3NfHwgXGSJWhP23tvc,2849
+pretix_log_read_access-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pretix_log_read_access-1.0.0.dist-info/entry_points.txt,sha256=7YLLHRz3Xl3KVJ7LsDDSheU2w8waB_wfn6uOtn7zmhU,80
+pretix_log_read_access-1.0.0.dist-info/top_level.txt,sha256=I8ICF7ETnTibkIFbxEzcXrmEYwL0vwoSjQJ09T9hlAE,23
+pretix_log_read_access-1.0.0.dist-info/RECORD,,

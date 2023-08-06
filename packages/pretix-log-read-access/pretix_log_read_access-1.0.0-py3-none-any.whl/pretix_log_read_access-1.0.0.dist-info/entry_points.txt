@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_log_read_access=pretix_log_read_access:PretixPluginMeta
