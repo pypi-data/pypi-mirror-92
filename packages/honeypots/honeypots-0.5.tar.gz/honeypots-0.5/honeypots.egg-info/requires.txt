@@ -1,0 +1,15 @@
+dnspython
+impacket
+mysql-connector
+paramiko==2.7.1
+pipenv
+psutil
+psycopg2-binary
+pycryptodome
+pygments
+redis
+requests
+requests[socks]
+service_identity
+twisted
+vncdotool
