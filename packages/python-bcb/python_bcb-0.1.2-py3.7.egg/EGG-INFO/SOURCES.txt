@@ -1,0 +1,10 @@
+README.md
+setup.py
+bcb/__init__.py
+bcb/currency.py
+bcb/sgs.py
+bcb/utils.py
+python_bcb.egg-info/PKG-INFO
+python_bcb.egg-info/SOURCES.txt
+python_bcb.egg-info/dependency_links.txt
+python_bcb.egg-info/top_level.txt
