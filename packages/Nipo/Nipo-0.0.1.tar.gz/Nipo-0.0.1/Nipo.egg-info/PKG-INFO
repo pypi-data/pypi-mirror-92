@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Nipo
+Version: 0.0.1
+Summary: Awesome Wsgi Framework
+Home-page: https://github.com/harsha7addanki/Nipo
+Author: Harsha Addanki
+Author-email: harsha7addanki@gmail.com
+License: UNKNOWN
+Description: # Nipo
+        The Awesome Wsgi Framework
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
