@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+edotools/AutoMlClassification.py
+edotools/AutoMlregression.py
+edotools/BaseAutoMlEstimator.py
+edotools/__init__.py
+edotools/mytransformers.py
+edotools.egg-info/PKG-INFO
+edotools.egg-info/SOURCES.txt
+edotools.egg-info/dependency_links.txt
+edotools.egg-info/not-zip-safe
+edotools.egg-info/top_level.txt
