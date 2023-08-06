@@ -1,0 +1,7 @@
+example_conda_pkg/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+example_conda_pkg/example_project.py,sha256=DShZ_4i7sb4BQZAZuc8W_XCNK9epxRrO4Gd2ZCpTMVE,261
+example_pkg_dajtmullaj-0.0.3.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+example_pkg_dajtmullaj-0.0.3.dist-info/METADATA,sha256=DAfaIWfV9G-ZV7LjzvRrVMv1ibZv3btNuXRlrIROjXk,615
+example_pkg_dajtmullaj-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+example_pkg_dajtmullaj-0.0.3.dist-info/top_level.txt,sha256=hGUFpDqbknVKRHsN52KmbrVxGekYeXp1SWPpSmgmng0,18
+example_pkg_dajtmullaj-0.0.3.dist-info/RECORD,,
