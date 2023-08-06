@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: akida_models
+Version: 1.0.10
+Summary: Akida Models
+Home-page: https://doc.brainchipinc.com
+Author: David Corvoysier
+Author-email: dcorvoysier@brainchip.com
+License: Apache 2.0
+Description: # Akida models
+        
+        This package contains a zoo of TensorFlow/Keras defined models that can be
+        quantized and that are compatible for Akida conversion.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

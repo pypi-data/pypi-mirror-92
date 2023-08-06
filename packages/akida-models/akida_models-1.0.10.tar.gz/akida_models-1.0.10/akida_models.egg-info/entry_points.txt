@@ -1,0 +1,8 @@
+[console_scripts]
+akida_models = akida_models.cli:main
+cifar10_train = akida_models.cifar10.cifar10_train:main
+dvs_train = akida_models.dvs.dvs_train:main
+kws_train = akida_models.kws.kws_train:main
+utk_face_train = akida_models.utk_face.utk_face_train:main
+yolo_train = akida_models.detection.yolo_train:main
+
