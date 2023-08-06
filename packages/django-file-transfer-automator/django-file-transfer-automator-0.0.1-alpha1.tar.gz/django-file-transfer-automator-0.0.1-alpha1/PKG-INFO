@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: django-file-transfer-automator
+Version: 0.0.1-alpha1
+Summary: File Transfer Automation Library
+Home-page: https://gitlab.com/iamswaroopp/django-file-transfer-automator
+Author: Swaroop P
+Author-email: iamswaroopp@gmail.com
+License: lgpl-3.0
+Download-URL: https://gitlab.com/iamswaroopp/django-file-transfer-automator/-/archive/0.0.1-alpha1/django-file-transfer-automator-0.0.1-alpha1.zip
+Description: # django-file-transfer-automator
+        
+        
+Keywords: django,celery,file,file transfer,automation,scheduler
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Internet :: File Transfer Protocol (FTP)
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
