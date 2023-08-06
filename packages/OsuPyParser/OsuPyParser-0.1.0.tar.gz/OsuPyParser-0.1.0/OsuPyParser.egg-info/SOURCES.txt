@@ -1,0 +1,17 @@
+README.md
+setup.py
+OsuPyParser.egg-info/PKG-INFO
+OsuPyParser.egg-info/SOURCES.txt
+OsuPyParser.egg-info/dependency_links.txt
+OsuPyParser.egg-info/top_level.txt
+osupyparser/__init__.py
+osupyparser/const.py
+osupyparser/difficulty.py
+osupyparser/editor.py
+osupyparser/general.py
+osupyparser/hitobject.py
+osupyparser/hitobjects.py
+osupyparser/metadata.py
+osupyparser/osuparser.py
+osupyparser/timingpoint.py
+osupyparser/timingpoints.py
