@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: sld.nagios_plugin
+Version: 0.0.5
+Summary: Library to implement the Nagios Core Plugin API
+Home-page: https://github.com/SoldenServices/python-nagios-plugin
+Author: Matthew Larsen
+Author-email: Matt Larsen <matt.larsen@connorgp.com>
+License: MIT license
+Description: # Nagios Plugin Tool
+        
+        Library facilitate implementing the Nagios Core Plugin API with custom Nagios plugins
+        
+        ## Installation
+        
+        ```
+        pip install sld.nagios_plugin
+        ```
+        
+        ## Usage 
+        
+        ```python 
+        from nagios_plugin import Plugin
+        
+        plugin = Plugin()
+        # Do stuff and determine result
+        plugin.return_ok(message="OK", perf_data="/=123;0;")
+        ```
+        
+        ## Credits
+        
+        
+        
+        ---
+        Version: 0.0.5
+Keywords: nagios plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
