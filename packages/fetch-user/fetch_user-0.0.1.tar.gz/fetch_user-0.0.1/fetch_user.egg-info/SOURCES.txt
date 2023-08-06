@@ -1,0 +1,6 @@
+fetch_user/__init__.py
+fetch_user/setup.py
+fetch_user.egg-info/PKG-INFO
+fetch_user.egg-info/SOURCES.txt
+fetch_user.egg-info/dependency_links.txt
+fetch_user.egg-info/top_level.txt
