@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: migreat
+Version: 0.1.2
+Summary: A flexible SQL migration runner.
+Home-page: https://github.com/jpmelos/migreat
+Author: João Sampaio
+Author-email: jpmelos@gmail.com
+License: MIT
+Description: For more information, visit https://github.com/jpmelos/migreat.
+Keywords: database,databases,psql,postgresql,postgres,sql,migration,migrations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Database
+Requires-Python: >=3.6,<3.9
+Description-Content-Type: text/plain

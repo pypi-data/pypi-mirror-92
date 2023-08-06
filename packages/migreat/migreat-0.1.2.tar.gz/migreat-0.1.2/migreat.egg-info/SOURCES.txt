@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+min-requirements.txt
+pyproject.toml
+setup.py
+migreat/__init__.py
+migreat/__main__.py
+migreat.egg-info/PKG-INFO
+migreat.egg-info/SOURCES.txt
+migreat.egg-info/dependency_links.txt
+migreat.egg-info/entry_points.txt
+migreat.egg-info/requires.txt
+migreat.egg-info/top_level.txt
