@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: BasicDeepLearningFramework
+Version: 0.4.0
+Summary: A Deep learning framework can be used to build deep learning models and CNNS
+Home-page: UNKNOWN
+Author: Omar Hatem
+Author-email: omarhatem221@gmail.com
+License: MIT
+Description: # Deep Learning Framework
+        This deep learning framework can be used primarily to build deep learning models with ease. it provieds many utilities such as: visualization costs with epochs, Evaluation metrics and more !
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (23/1/2021)
+        -----------------
+        - First Release
+Keywords: deep learning framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
