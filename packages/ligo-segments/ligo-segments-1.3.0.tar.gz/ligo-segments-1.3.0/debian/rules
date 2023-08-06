@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export PYBUILD_NAME := ligo-segments
+
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild
+
+# do not run tests at all.
+override_dh_auto_test:
+	true
