@@ -1,0 +1,2 @@
+pyaml==20.4.0
+stepfunctions==1.1.2
