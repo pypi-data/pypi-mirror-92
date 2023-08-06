@@ -1,0 +1,9 @@
+devpipeline_geotag_tools/__init__.py,sha256=3kLe7FDInLFBjRw4XFgi83j2iA00bOfKE3pnqN98OIM,45
+devpipeline_geotag_tools/geo_ops.py,sha256=F5g8akPIy88U60FhBCziY2Z-z0YzLlY75QsTsBqTVB0,3423
+devpipeline_geotag_tools/picture_reference.py,sha256=VNtPGj4N3f-k0JlF5bBtXyYoiBZAwZOSToEIciSr8gY,1112
+devpipeline_geotag_tools/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geotagging_alexr96-0.0.6.dist-info/LICENCE,sha256=8FENO50SI8Rej90rSScOyHNP_0kcf30blI7nAWLhzv8,1210
+geotagging_alexr96-0.0.6.dist-info/METADATA,sha256=JIOiUi7bITckrvkfQk0-5-dK6HgNpQTGoZ6F_cfssoc,1526
+geotagging_alexr96-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+geotagging_alexr96-0.0.6.dist-info/top_level.txt,sha256=0OuYtOp1vLd9cGlNwIJA3bU3MBy9RdSxvTchQfgORtk,25
+geotagging_alexr96-0.0.6.dist-info/RECORD,,
