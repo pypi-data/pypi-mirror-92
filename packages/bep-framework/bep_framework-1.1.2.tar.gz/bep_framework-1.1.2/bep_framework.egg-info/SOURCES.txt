@@ -1,0 +1,9 @@
+README.md
+setup.py
+bep_framework.egg-info/PKG-INFO
+bep_framework.egg-info/SOURCES.txt
+bep_framework.egg-info/dependency_links.txt
+bep_framework.egg-info/requires.txt
+bep_framework.egg-info/top_level.txt
+beplibrarylib/__init__.py
+beplibrarylib/myfunctions.py
