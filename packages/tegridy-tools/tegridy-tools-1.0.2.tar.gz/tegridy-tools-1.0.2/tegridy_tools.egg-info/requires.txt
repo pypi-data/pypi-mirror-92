@@ -1,0 +1,15 @@
+tqdm
+unidecode
+torch
+torchvision
+keras
+pretty-midi
+tensorflow==1.15.0
+tensorflow-datasets==3.2.1
+visual_midi
+pyfluidsynth
+pypianoroll
+matplotlib
+librosa
+fluidsynth
+midi2audio
