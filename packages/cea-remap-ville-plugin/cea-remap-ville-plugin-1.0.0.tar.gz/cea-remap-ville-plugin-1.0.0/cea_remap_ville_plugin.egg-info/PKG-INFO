@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cea-remap-ville-plugin
+Version: 1.0.0
+Summary: A CEA plugin for the ReMaP / VILLE project
+Home-page: https://github.com/architecture-building-systems/cea-remap-ville-plugin
+Author: Architecture and Building Systems
+Author-email: cea@arch.ethz.ch
+License: MIT
+Description: A CEA plugin for the ReMaP / VILLE project.
+Platform: UNKNOWN
