@@ -1,0 +1,4 @@
+click
+flatten_json
+pymongo
+redis
