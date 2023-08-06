@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: xmlhelpy
+Version: 0.2.0
+Summary: CLI wrapper for the xmlhelp interface.
+Home-page: https://gitlab.com/iam-cms/workflows/xmlhelpy
+Author: Karlsruhe Institute of Technology
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (>=7.0)
+Requires-Dist: lxml (>=4.5.0)
+Provides-Extra: dev
+Requires-Dist: black (==20.8b1) ; extra == 'dev'
+Requires-Dist: pre-commit (>=2.7.0) ; extra == 'dev'
+Requires-Dist: pylint (<2.5.0,>=2.4.4) ; extra == 'dev'
+Requires-Dist: tox (>=3.15.0) ; extra == 'dev'
+
+# xmlhelpy
+
+CLI wrapper for Python scripts or external tools adding (part of) the
+`--xmlhelp` interface and a few other helpful options.
+
+
