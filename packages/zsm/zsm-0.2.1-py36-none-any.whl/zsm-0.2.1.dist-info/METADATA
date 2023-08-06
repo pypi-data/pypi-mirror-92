@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: zsm
+Version: 0.2.1
+Summary: ZFS Snapshot Manager
+Home-page: UNKNOWN
+Author: Mattias Lindvall
+Author-email: mattias.lindvall@gmail.com
+License: BSD-2-Clause
+Project-URL: Documentation, https://zsm.readthedocs.io/
+Project-URL: Source, https://gitlab.com/thnee/zsm
+Keywords: zfs snapshots freebsd linux
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: System :: Filesystems
+Requires-Python: >=3.6
+Requires-Dist: click (~=7.1.2)
+Requires-Dist: pid (~=3.0.4)
+Requires-Dist: zsm-lib (~=0.2.1)
+
+Please see the project links.
+
+
