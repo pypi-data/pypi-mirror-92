@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: keyoscacquire
+Version: 4.0.0
+Summary: keyoscacquire is a Python package for acquiring traces from Keysight oscilloscopes through a VISA interface.
+Home-page: UNKNOWN
+Author: Andreas Svela
+Author-email: asvela@ic.ac.uk
+License: MIT
+Project-URL: Documentation, https://keyoscacquire.readthedocs.io/
+Project-URL: Source, https://github.com/asvela/keyoscacquire
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/x-rst
+Requires-Dist: pyvisa
+Requires-Dist: argparse
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: tqdm
+
+keyoscacquire: Keysight oscilloscope acquire
+============================================
+
+.. image:: https://img.shields.io/pypi/v/keyoscacquire?style=flat-square
+  :target: https://pypi.org/project/keyoscacquire/
+  :alt: PyPI
+
+.. image:: https://img.shields.io/codefactor/grade/github/asvela/keyoscacquire?style=flat-square
+  :target: https://www.codefactor.io/repository/github/asvela/keyoscacquire
+  :alt: CodeFactor
+
+.. image:: https://img.shields.io/codeclimate/maintainability/asvela/keyoscacquire?style=flat-square
+  :target: https://codeclimate.com/github/asvela/keyoscacquire
+  :alt: Code Climate maintainability
+
+.. image:: https://img.shields.io/readthedocs/keyoscacquire?style=flat-square
+  :target: https://keyoscacquire.rtfd.io
+  :alt: Read the Docs Building
+
+.. .. image:: https://img.shields.io/static/v1?label=docstring%20coverage&message=97%25&color=success&style=flat-square
+..   :target: https://interrogate.readthedocs.io/en/latest/
+..   :alt: docstring coverage
+
+.. image:: https://img.shields.io/pypi/l/keyoscacquire?style=flat-square
+  :target: https://keyoscacquire.readthedocs.io/en/dev-v4.0.0/contents/license.html
+  :alt: License
+
+keyoscacquire is a Python package for acquiring traces from Keysight
+InfiniiVision oscilloscopes through a VISA interface.
+
+Based on `PyVISA <https://pyvisa.readthedocs.io/en/latest/>`_, keyoscacquire
+provides programmes for acquiring and exporting traces to your choice of ASCII
+format files (default csv) or numpy `npy <https://numpy.org/doc/stable/reference/generated/numpy.lib.format.html>`_,
+and a png of the trace plot. The package also provides an API for integration
+in other Python code.
+
+By default, the package uses the binary ``WORD`` format for the waveform
+transfer from the oscilloscope, giving roughly an order of magnitude speed-up
+over the ``ASCII`` *transfer* type.
+
+The code has been tested on Windows 7 and 10 with a Keysight DSO2024A model
+using a USB connection.
+
+.. documentation-marker
+
+Documentation
+-------------
+
+Available at `keyoscacquire.rtfd.io <http://keyoscacquire.readthedocs.io/en/latest/>`_.
+A few examples below, but formatting and links are broken as this file is intended
+for the documentation parser.
+
+Building a local copy of the docs
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. start-local-copy-documentation-marker
+
+Should you wish to build a local copy of the sphinx docs, make sure the
+necessary packages are installed::
+
+    pip install sphinx sphinx-prompt furo recommonmark
+
+and then build by executing ``make html`` in the ``docs`` folder.
+
+.. end-local-copy-documentation-marker
+
+Installation
+------------
+
+Install the package with pip::
+
+  pip install keyoscacquire
+
+or download locally and install with ``$ python setup.py install`` or
+by running ``install.bat``.
+
+
+
