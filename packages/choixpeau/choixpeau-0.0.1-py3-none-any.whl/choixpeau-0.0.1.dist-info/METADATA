@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: choixpeau
+Version: 0.0.1
+Summary: Efficiently assign users to buckets.
+Home-page: UNKNOWN
+Author: Keurcien Luu
+Author-email: keurcien@appchoose.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# choixpeau
+
+
