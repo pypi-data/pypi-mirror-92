@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/pinttr/__init__.py
+src/pinttr/_make.py
+src/pinttr/_metadata.py
+src/pinttr/converters.py
+src/pinttr/exceptions.py
+src/pinttr/util.py
+src/pinttr/validators.py
+src/pinttrs.egg-info/PKG-INFO
+src/pinttrs.egg-info/SOURCES.txt
+src/pinttrs.egg-info/dependency_links.txt
+src/pinttrs.egg-info/requires.txt
+src/pinttrs.egg-info/top_level.txt
