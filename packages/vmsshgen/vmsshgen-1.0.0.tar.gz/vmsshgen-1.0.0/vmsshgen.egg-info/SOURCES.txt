@@ -1,0 +1,11 @@
+README.md
+setup.py
+vmsshgen/__init__.py
+vmsshgen/helpers.py
+vmsshgen/vmsshgen.py
+vmsshgen.egg-info/PKG-INFO
+vmsshgen.egg-info/SOURCES.txt
+vmsshgen.egg-info/dependency_links.txt
+vmsshgen.egg-info/entry_points.txt
+vmsshgen.egg-info/requires.txt
+vmsshgen.egg-info/top_level.txt
