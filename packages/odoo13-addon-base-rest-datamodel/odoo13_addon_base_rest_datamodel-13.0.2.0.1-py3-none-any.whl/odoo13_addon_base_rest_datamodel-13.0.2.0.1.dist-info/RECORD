@@ -1,0 +1,13 @@
+odoo/addons/base_rest_datamodel/README.rst,sha256=ubyadAPwZHdxNNVl8Rpd-wkKcj1PF_VcIr4exOr-Kak,3867
+odoo/addons/base_rest_datamodel/__init__.py,sha256=g3OgzUIGmAJyVIzqkmxN4QEpvVuwpUWa2LpOYB6pGRc,22
+odoo/addons/base_rest_datamodel/__manifest__.py,sha256=FCSugfwyC-EqeekLd6BUeoaPQv9cBiQZYGWAdwxX6aA,499
+odoo/addons/base_rest_datamodel/restapi.py,sha256=ZsAhlV2kdTLoTp1eOThUebAYfmyQvMlJ0p2JhhlkiRg,2943
+odoo/addons/base_rest_datamodel/readme/CONTRIBUTORS.rst,sha256=RqZZFJ_WyebKrBztRG56MCIHBnSryLzhaxlXepsfhVg,44
+odoo/addons/base_rest_datamodel/readme/DESCRIPTION.rst,sha256=r69N0YbFyKofiLlNYP7Uhnov9zPWcwcNiYwnqCgmPnY,101
+odoo/addons/base_rest_datamodel/readme/USAGE.rst,sha256=fqMXVhcmuEz2KJc-iKe_wx5lK3IqQqrHpe2J0mH5ueo,1134
+odoo/addons/base_rest_datamodel/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/base_rest_datamodel/static/description/index.html,sha256=Gr3GKL2UVqcv8lkH_2B2TVwnCa7u6qzLTkL68tihaIg,15861
+odoo13_addon_base_rest_datamodel-13.0.2.0.1.dist-info/METADATA,sha256=mxzRQtitTYKKhIab9sYQfS1wa5al67PeOsY19pCuZaI,4480
+odoo13_addon_base_rest_datamodel-13.0.2.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+odoo13_addon_base_rest_datamodel-13.0.2.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_base_rest_datamodel-13.0.2.0.1.dist-info/RECORD,,
