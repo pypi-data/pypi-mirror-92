@@ -1,0 +1,4 @@
+{
+  "test_utils.py::test_divideChunks": true,
+  "test_utils.py::test_listToArray": true
+}

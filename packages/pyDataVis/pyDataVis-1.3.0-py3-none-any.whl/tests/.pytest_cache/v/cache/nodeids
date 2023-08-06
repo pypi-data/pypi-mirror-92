@@ -1,0 +1,11 @@
+[
+  "test_utils.py::test_arrayToString",
+  "test_utils.py::test_commaToDot",
+  "test_utils.py::test_divideChunks",
+  "test_utils.py::test_isNotNumeric",
+  "test_utils.py::test_isNumData",
+  "test_utils.py::test_isNumber",
+  "test_utils.py::test_isNumeric",
+  "test_utils.py::test_listToArray",
+  "test_utils.py::test_round_to_n"
+]
