@@ -1,0 +1,14 @@
+README.md
+setup.py
+setton/Pygame/__init__.py
+setton/Pygame/collisions.py
+setton/Pygame/hitboxes.py
+setton/Pygame/others.py
+setton/pygame/__init__.py
+setton/pygame/collisions.py
+setton/pygame/hitboxes.py
+setton/pygame/others.py
+setton/setton.egg-info/PKG-INFO
+setton/setton.egg-info/SOURCES.txt
+setton/setton.egg-info/dependency_links.txt
+setton/setton.egg-info/top_level.txt
