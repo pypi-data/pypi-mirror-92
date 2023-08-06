@@ -1,0 +1,4 @@
+# MANIFEST.in
+graft dogsvscats
+prune tests
+global-exclude *.py[co]
