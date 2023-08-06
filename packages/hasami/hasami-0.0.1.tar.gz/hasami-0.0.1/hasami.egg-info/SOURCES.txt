@@ -1,0 +1,11 @@
+README.md
+setup.py
+hasami/__init__.py
+hasami/cli.py
+hasami/hasami.py
+hasami/util.py
+hasami.egg-info/PKG-INFO
+hasami.egg-info/SOURCES.txt
+hasami.egg-info/dependency_links.txt
+hasami.egg-info/entry_points.txt
+hasami.egg-info/top_level.txt
