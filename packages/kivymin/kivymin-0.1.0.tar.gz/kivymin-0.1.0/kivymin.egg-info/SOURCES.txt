@@ -1,0 +1,9 @@
+README.md
+setup.py
+kivymin/__init__.py
+kivymin/kivymin.py
+kivymin.egg-info/PKG-INFO
+kivymin.egg-info/SOURCES.txt
+kivymin.egg-info/dependency_links.txt
+kivymin.egg-info/requires.txt
+kivymin.egg-info/top_level.txt
