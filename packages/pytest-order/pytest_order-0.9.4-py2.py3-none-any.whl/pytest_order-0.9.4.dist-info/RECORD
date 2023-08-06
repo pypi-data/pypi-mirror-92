@@ -1,0 +1,8 @@
+pytest_order/__init__.py,sha256=HJngOFlnPnQ06BOw3Zk3xU90ccB9l2MeJhmZY03-Uyw,12077
+pytest_order/_version.py,sha256=iPcoATf7BiWjSu-KocRdM5zFTR4wx4ktCHlGGpvdc1M,23
+pytest_order-0.9.4.dist-info/LICENSE,sha256=XYSAuA81ffcs0_qSC_LP5ZOU5AKwPcaDv8ioZZF59E4,1097
+pytest_order-0.9.4.dist-info/METADATA,sha256=Gk3h5HffzZZtDrAdpTY1Mfanl-xJKOcf4wTimNNVX3Y,5650
+pytest_order-0.9.4.dist-info/WHEEL,sha256=gxPaqcqKPLUXaSAKwmfHO7_iAOlVvmp33DewnUluBB8,116
+pytest_order-0.9.4.dist-info/entry_points.txt,sha256=tGxtBjamwUsdkwQI65i9FBWpzUrNgKzoOYIj5hFSiho,40
+pytest_order-0.9.4.dist-info/top_level.txt,sha256=2lHZ_c32QY1dY850YfncLjPcuphL6LneirboiTw_gY8,13
+pytest_order-0.9.4.dist-info/RECORD,,
