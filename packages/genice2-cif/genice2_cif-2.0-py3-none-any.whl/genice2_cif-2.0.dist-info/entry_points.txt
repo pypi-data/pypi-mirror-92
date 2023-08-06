@@ -1,0 +1,4 @@
+[genice2_lattice]
+cif = genice2_cif.lattices.cif
+zeolite = genice2_cif.lattices.zeolite
+
