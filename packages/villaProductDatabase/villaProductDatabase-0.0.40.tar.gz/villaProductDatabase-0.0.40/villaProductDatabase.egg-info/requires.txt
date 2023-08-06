@@ -1,0 +1,7 @@
+linesdk
+dict-hash
+s3bz
+boto3
+awsSchema
+dataclasses-json
+requests
