@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README
+setup.py
+PythonMeta/__init__.py
+PythonMeta/core.py
+PythonMeta.egg-info/PKG-INFO
+PythonMeta.egg-info/SOURCES.txt
+PythonMeta.egg-info/dependency_links.txt
+PythonMeta.egg-info/requires.txt
+PythonMeta.egg-info/top_level.txt
