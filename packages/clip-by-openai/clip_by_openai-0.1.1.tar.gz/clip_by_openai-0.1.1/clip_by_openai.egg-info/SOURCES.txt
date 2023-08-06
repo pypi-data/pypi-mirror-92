@@ -1,0 +1,11 @@
+README.md
+setup.py
+clip/__init__.py
+clip/clip.py
+clip/model.py
+clip/simple_tokenizer.py
+clip_by_openai.egg-info/PKG-INFO
+clip_by_openai.egg-info/SOURCES.txt
+clip_by_openai.egg-info/dependency_links.txt
+clip_by_openai.egg-info/requires.txt
+clip_by_openai.egg-info/top_level.txt
