@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: zen-publish
+Version: 0.0.10
+Summary: Package for Zen Reports
+Home-page: UNKNOWN
+Author: Dr. P. B. Patel
+Author-email: contact.zenreportz@gmail.com
+License: Apache License
+Description: Link for project is https://github.com/Zen-Reportz/ZenPublish
+        
+        Zen is command line package for Zen Reportz (https://zenreportz.com).
+        
+        There are three main method of package.
+        1. create
+           
+           This is used for storing credentials and url for zen report
+        
+        
+        2. update
+           
+           This is used for updating credentials and url for zen report
+        
+        
+        3. publish
+            This is used for publishing report
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
