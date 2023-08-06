@@ -1,0 +1,11 @@
+kdependencies/__init__.py,sha256=63lkIvvQ9Y4BxVEDUb3rumqYgrH27N_cvypv4Kpecr4,76
+kdependencies/dependencies.py,sha256=IWb2gzEnZ7hqz3HfwbAXnho1gHs8jRxPKAhxS7mjZAc,1421
+kdependencies/models/__init__.py,sha256=NOyBpERDM6bz3bmJsguJBEmqrOg7O5Oghoij6xFlpb4,76
+kdependencies/models/installed_package.py,sha256=8gBE32RXXOyJPKeaGFjjc-tF564TOx8iaBDjo8h02yc,2961
+kdependencies/models/package.py,sha256=TimFcJvG2yZda2BisvJ7d1PrHMVyeVAsQ1Pj1QVfiuI,1503
+kdependencies/models/core/__init__.py,sha256=B8H8kjs0F0KUyOywpJz6xu2LIten5sipeNW1RWkHOoY,24
+kdependencies/models/core/utils.py,sha256=id9gf0gZiqOzRcOqdcvZzU0dTX-eSoCgFso1f1acK2Y,1531
+kdependencies-0.0.3.dist-info/METADATA,sha256=IbG3vk99AkTLuli5bsJa4Kzm1iLVxr4StJzr8EQBwg4,797
+kdependencies-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kdependencies-0.0.3.dist-info/top_level.txt,sha256=qAhD-YMPYkhhWu7chKG1M1ISudm5tWk4KZkgI015KQg,14
+kdependencies-0.0.3.dist-info/RECORD,,
