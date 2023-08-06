@@ -1,0 +1,8 @@
+appchance_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+appchance_cli/ace/__init__.py,sha256=8X6FiEg3d9zb1sfbbWUVELdvLF-YcNzWhey7gXsnE8Y,47
+appchance_cli/ace/ace.py,sha256=E9zaR_HX6sGudBH0uQt1hGUh61m8HWYFrV1LXgLgIFo,2949
+appchance_cli-0.1.3.2.data/scripts/ace,sha256=H0pQbqGky5BmaS2ml6nJ8ul1dQXSBn2kQQ3WdfCDhgM,409
+appchance_cli-0.1.3.2.dist-info/METADATA,sha256=DAWW0r8adswcI-MKMTGSoQ9yFHDcqij4LF_PCe5O1z0,762
+appchance_cli-0.1.3.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+appchance_cli-0.1.3.2.dist-info/top_level.txt,sha256=lu9DOo0EuOhdnl7h9lBeDV7r431rNB6FUA0hHXOK1pY,14
+appchance_cli-0.1.3.2.dist-info/RECORD,,

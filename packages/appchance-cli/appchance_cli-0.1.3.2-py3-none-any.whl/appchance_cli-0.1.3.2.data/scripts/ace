@@ -1,0 +1,15 @@
+#!python
+
+import fire
+
+from appchance_cli.ace import AppchanceCLI, HelperCommander
+
+
+if __name__ == "__main__":
+    controllers = [AppchanceCLI]
+    plugins = HelperCommander.import_plugins()
+    for base_cmd, plugin in plugins.items():
+        if base_cmd.startswith("main#"):
+            controllers.append(plugins.pop(base_cmd))
+    ACLI = type('ACLI', tuple(controllers), {})
+    fire.Fire(ACLI(plugins))
