@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: dsplab
+Version: 0.39.0
+Summary: Some tools for digital signal processing
+Home-page: https://bitbucket.org/aleneus/dsplab
+Author: Aleksandr Popov, Kirill Butin
+Author-email: aleneus@gmail.com
+License: LGPLv3
+Description: UNKNOWN
+Keywords: digital signal processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
