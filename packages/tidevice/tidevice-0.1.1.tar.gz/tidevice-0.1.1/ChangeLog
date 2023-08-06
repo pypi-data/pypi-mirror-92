@@ -1,0 +1,22 @@
+CHANGES
+=======
+
+0.1.1
+-----
+
+* merge linpengchen code
+* add get ipa embedded.mobileprovision file information function
+* 更新MODELS
+* fix imagemounter
+* optimize version condition
+* disble init control session before wda launch on iOS 10.1
+* fix wda launch failed on iOS 10.1
+* add badge
+* add logo
+
+0.1.0
+-----
+
+* fix build
+* init commit
+* Initial commit
