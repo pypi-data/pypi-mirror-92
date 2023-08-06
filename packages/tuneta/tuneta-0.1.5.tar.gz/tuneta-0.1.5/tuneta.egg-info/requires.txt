@@ -1,0 +1,5 @@
+pandas-ta
+finta
+ta-lib
+optuna
+pathos
