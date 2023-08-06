@@ -1,0 +1,13 @@
+thai_tokenizer/__init__.py,sha256=BzSmTCcmIIS0iuqiGKYcRShad5rJ3WqJtm_ETPp86TE,171
+thai_tokenizer/__main__.py,sha256=ARudb3SDR0_Z6S3VzJtB5DP-Z8QRsxteJqqwQ1gkQ5c,6852
+thai_tokenizer/tcc.py,sha256=v8FB693WFfpUD9LpzgiZYkSERKdIfnQkzLZv0znxgjk,571
+thai_tokenizer/tokenizer.py,sha256=pPaX9tNO6Bosn41napbAVTVF3Lr2SHl6WzauPess524,1620
+thai_tokenizer/utils.py,sha256=UC8wyqjnV4ZgXVoOaKuOt_xBhrkkAUvj2P0taJAlbvg,741
+thai_tokenizer/data/__init__.py,sha256=vtQrCmYBbYev74fOeDvl4deAXkevcx5zOPNgGDFchXg,173
+thai_tokenizer/data/bpe_merges.jsonl,sha256=BfsJaP5lTPhmjE19JAPwSQ5y3wxADSWCNA5tPWMGZgY,98229
+thai_tokenizer-0.1.0.dist-info/LICENSE.txt,sha256=_n_3J1QRMKQd_6tSVVe5HuRuRjbr-8uRQHHXSzBSqzY,1069
+thai_tokenizer-0.1.0.dist-info/METADATA,sha256=pEGx2p2c4RJono9S5Lzdki2r9fPrCLIdlJTnzEv1xCA,795
+thai_tokenizer-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+thai_tokenizer-0.1.0.dist-info/top_level.txt,sha256=e5FcoAj7gJVtiHHbstwvvdChO6sJuzKFaxHR2IM9DmQ,15
+thai_tokenizer-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thai_tokenizer-0.1.0.dist-info/RECORD,,
