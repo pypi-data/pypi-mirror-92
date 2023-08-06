@@ -1,0 +1,7 @@
+README.md
+setup.py
+giter/__init__.py
+giter.egg-info/PKG-INFO
+giter.egg-info/SOURCES.txt
+giter.egg-info/dependency_links.txt
+giter.egg-info/top_level.txt

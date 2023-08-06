@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: giter
+Version: 0.0.1
+Summary: Wrapper functions to help with branches and submodules in `happyai`.
+Home-page: UNKNOWN
+Author: Happy Health
+Author-email: developer@happy.ai
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
