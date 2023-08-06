@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+dynamicmethod/__init__.py
+dynamicmethod/__meta__.py
+dynamicmethod.egg-info/PKG-INFO
+dynamicmethod.egg-info/SOURCES.txt
+dynamicmethod.egg-info/dependency_links.txt
+dynamicmethod.egg-info/top_level.txt
