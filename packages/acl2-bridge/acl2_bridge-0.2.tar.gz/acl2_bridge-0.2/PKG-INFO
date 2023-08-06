@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: acl2_bridge
+Version: 0.2
+Summary: Connect to an ACL2 Server from Python
+Home-page: https://github.com/rubengamboa/acl2_bridge
+Author: Ruben Gamboa
+Author-email: ruben@uwyo.edu
+License: bsd-3-clause
+Download-URL: https://github.com/rubengamboa/acl2_bridge/archive/v0_2.zip
+Description: UNKNOWN
+Keywords: ACL2,theorem proving,verification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.8
