@@ -1,0 +1,6 @@
+setup.py
+vsave/__init__.py
+vsave.egg-info/PKG-INFO
+vsave.egg-info/SOURCES.txt
+vsave.egg-info/dependency_links.txt
+vsave.egg-info/top_level.txt
