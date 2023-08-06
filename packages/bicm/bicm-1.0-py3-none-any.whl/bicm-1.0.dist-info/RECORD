@@ -1,0 +1,13 @@
+bicm/BipartiteGraph.py,sha256=nubE1PC55I7ApthMmSH3LvctWqguqoDWE_EiOD5KErY,53439
+bicm/Pval_class.py,sha256=sz-G7a9kkDRDuV7O_At4FcDxdPI4X6fZNyUAL7u23PU,6740
+bicm/PvaluesHandler.py,sha256=Q94Bb7Y7mw53w81nd09pCHUcUSNxIQ68P4fcXXI-1uc,9412
+bicm/__init__.py,sha256=Q1KPLnHaU5cNyxPx7_RrBw4GwBexYR0nlCB16oUaLTo,462
+bicm/functions.py,sha256=cpOLaHFt_IbfY81rOu3KDmxAENd9pOA2r2ddve3akoc,17614
+bicm/poibin.py,sha256=w8Oe23RRYUlrv5HTFbWPrIjaQbVByHail254njTvPIU,6409
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/bicm_test.py,sha256=ZIuBD53LIUiEUUvcToUj9h3xQdiAL2ysAWr2qh2DIBc,6897
+bicm-1.0.dist-info/LICENSE.txt,sha256=YsZEgz087JjGAlCP4TArx6VHQIE0EnIR52GY_CYdxjQ,1068
+bicm-1.0.dist-info/METADATA,sha256=88msPGwzCsX8546uhqVy0IFafBv91nawdGL_obFshdE,1842
+bicm-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bicm-1.0.dist-info/top_level.txt,sha256=O2WGROauau5spQ5ejiNI-qsAkF4LUFbnI2aRRCC6CQg,11
+bicm-1.0.dist-info/RECORD,,
