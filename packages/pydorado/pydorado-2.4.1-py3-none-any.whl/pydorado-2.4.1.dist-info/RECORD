@@ -1,0 +1,14 @@
+dorado/__init__.py,sha256=MUIJ-WKAJrEpSrJoe-TQl3bzWHIcJaGiCLr3hLccqCo,139
+dorado/lagrangian_walker.py,sha256=glziJSvlRntItvJxO_Kqk7dyaG_e1O3TUA3UDaGwnt4,13321
+dorado/parallel_routing.py,sha256=37NniHD29qbVuAFYuHMfm77xDcUSu40R9aFZj_xo8wI,4836
+dorado/particle_track.py,sha256=w0KMj-CJ-Ex95cgEpFSYnVYip7zaejfUJjUWI0D1T2w,48018
+dorado/routines.py,sha256=-iipCylV-JNADaRXFBxKW6kyauRKFBMSTdJT9YFmVwM,43367
+dorado/example_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dorado/example_data/define_params.py,sha256=DEQ2vVKwc0UwG0NWvMzktLe08IiXFG-tFr73ltgi5FM,1645
+dorado/example_data/ex_anuga_data.npz,sha256=1VhRPB6dXY8KsHCgfMCo4lnNqk31MvNb-BaxsbWknOQ,240676
+dorado/example_data/ex_deltarcm_data.npz,sha256=8iYRJE6oevGbhtZlnnCspCupYaQB_2_QpeyUr4to2tM,230866
+pydorado-2.4.1.dist-info/LICENSE,sha256=8nhjP8dli7LgYUxgxK2piOOX9JadGG9U69nxwkuiiF8,1074
+pydorado-2.4.1.dist-info/METADATA,sha256=7ec93fVcDn1scDO3azToh0friDefTfeJkZv6GzKxq_Y,681
+pydorado-2.4.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pydorado-2.4.1.dist-info/top_level.txt,sha256=HHAs-iN0JbygW_MgoPq7QD7QsMa3aNXeuP6CB3uN3WI,7
+pydorado-2.4.1.dist-info/RECORD,,
