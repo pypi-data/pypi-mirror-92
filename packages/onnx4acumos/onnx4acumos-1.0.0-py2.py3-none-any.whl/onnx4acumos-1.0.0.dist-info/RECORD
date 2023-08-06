@@ -1,0 +1,10 @@
+onnx4acumos/__init__.py,sha256=xdwWWhGGhe0G5DAbl6B4w3bf2iNWY88WVObypHov2LM,1031
+onnx4acumos/_version.py,sha256=KqXz-w6DLIA6v34nuvb7u5iACQRnKh5I7vudGob_ECg,976
+onnx4acumos/acumos_onnx_onboarding.py,sha256=pLuvK9dc0afWdat59EpXR05fJfzKAFGwVVN32nlGzYg,25373
+onnx4acumos/Templates/onnxClientTemplate.py,sha256=ikBYIXkegDGkJHPq5SMtIkZG_kt2NiafLEklVW5rhzg,4260
+onnx4acumos/Templates/onnxModelOnBoardingTemplate.py,sha256=o6SN6OKoMpKVdFKZ3JNOGfHRPJYSDxejG5N-fPhH9JE,4854
+onnx4acumos-1.0.0.dist-info/METADATA,sha256=24gmcaYKxjoHrMYXDtz3S0WtwtVhWJ4Pt2ZzYNL_kd4,21090
+onnx4acumos-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+onnx4acumos-1.0.0.dist-info/entry_points.txt,sha256=mk5EXAHBprhjIGRkHZOhzfnrR6PTCkCbUOwxMFKCbOA,90
+onnx4acumos-1.0.0.dist-info/top_level.txt,sha256=KSz5Bdrt-0OL0MdIBWhVESB009WgXvcu-zHmY2O2SzA,12
+onnx4acumos-1.0.0.dist-info/RECORD,,

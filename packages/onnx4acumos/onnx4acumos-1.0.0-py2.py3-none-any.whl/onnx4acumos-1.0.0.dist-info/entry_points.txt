@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    onnx4acumos=onnx4acumos.acumos_onnx_onboarding:run_app_cli
+    
