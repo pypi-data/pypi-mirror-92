@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: saturpy
+Version: 0.0.3
+Summary: A python library for machine learning and ANN
+Home-page: https://github.com/sciencedt/saturpy
+Author: Surendra Shukla
+Author-email: surendra.shukla29@gmail.com
+License: UNKNOWN
+Description: # saturpy
+        A python library for machine learning and ANN
+        
+        ```
+        pip install saturpy
+        ```
+        
+        
+        
+        
+        
+        
+        
+        
+        **Note:** writing this library for fun inspired by famous sklearn 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
