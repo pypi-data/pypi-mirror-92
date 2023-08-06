@@ -1,0 +1,8 @@
+aiohttp
+parsel
+
+[dev]
+pytest
+pytest-asyncio
+pytest-aiohttp
+nest_asyncio
