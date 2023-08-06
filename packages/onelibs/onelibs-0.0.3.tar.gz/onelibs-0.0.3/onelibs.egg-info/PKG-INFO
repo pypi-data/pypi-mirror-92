@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: onelibs
+Version: 0.0.3
+Summary: onelibs is an out-of-the-box libs written in python
+Home-page: https://github.com/istommao/onelibs-python
+Author: codingcat
+Author-email: istommao@gmail.com
+License: UNKNOWN
+Description: # onelibs-python
+        
+        onelibs is an out-of-the-box libs written in python
+        
+        ## Install
+        
+        ```bash
+        pip install onelibs
+        ```
+        
+        ## feature
+        
+        - [ ] datetime handler
+        - [ ] string handler
+        - [ ] common validations
+        
+Keywords: onelibs
+Platform: UNKNOWN
