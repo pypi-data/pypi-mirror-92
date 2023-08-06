@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+lyrics_fetcher.egg-info/PKG-INFO
+lyrics_fetcher.egg-info/SOURCES.txt
+lyrics_fetcher.egg-info/dependency_links.txt
+lyrics_fetcher.egg-info/entry_points.txt
+lyrics_fetcher.egg-info/requires.txt
+lyrics_fetcher.egg-info/top_level.txt
+lyricsfetcher/__init__.py
+lyricsfetcher/__main__.py
+lyricsfetcher/docopt.py
+lyricsfetcher/fetcher_helper.py
+lyricsfetcher/genius_token.conf
+lyricsfetcher/lyricsfetcher.py
+lyricsfetcher/outdir.conf
