@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: s3insync
+Version: 0.2.1
+Summary: Synchronise an S3 directory to the local filesystem, as a daemon
+Home-page: https://github.com/namelessjon/s3insync
+Author: Jonathan Stott
+Author-email: jonathan.stott@gmail.com
