@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/helloworld_mcv.egg-info/PKG-INFO
+src/helloworld_mcv.egg-info/SOURCES.txt
+src/helloworld_mcv.egg-info/dependency_links.txt
+src/helloworld_mcv.egg-info/requires.txt
+src/helloworld_mcv.egg-info/top_level.txt
