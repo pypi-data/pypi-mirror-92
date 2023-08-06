@@ -1,0 +1,3 @@
+[console_scripts]
+kune = kune.cli:main
+
