@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: wslm
+Version: 0.1.1
+Summary: 在WSL中执行Windows10系统命令，用于端口转发，防火墙管理
+Home-page: https://xqitw.coding.net/public/wslm/wslm/git
+License: Apache-2.0
+Keywords: wsl,windows,linux
+Author: IT小强xqitw.cn
+Author-email: mail@xqitw.cn
+Maintainer: IT小强xqitw.cn
+Maintainer-email: mail@xqitw.cn
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: prettytable (>=2.0.0,<3.0.0)
+Project-URL: Documentation, https://xqitw.coding.net/public/wslm/wslm/git
+Project-URL: Repository, https://e.coding.net/xqitw/wslm/wslm.git
+Description-Content-Type: text/markdown
+
+WSL Management Tool
+===============
+
+### Installation
+
+```shell
+pip install wslm
+```
+
+### Ports info
+
+```shell
+# view ports info
+wslm port info
+
+# show
++---------------+------------+----------------+-------------+
+| ListenAddress | ListenPort | ConnectAddress | ConnectPort |
++---------------+------------+----------------+-------------+
+|    0.0.0.0    |    3306    |  172.23.60.88  |     3306    |
+|    0.0.0.0    |    3307    |  172.23.60.88  |     3307    |
++---------------+------------+----------------+-------------+
+```
+
+### Add Ports
+
+```shell
+# add ports
+wslm port add -p 3306 3307
+# add ports with firewall
+wslm port add -p 3306 3307 -w
+# add ports with firewall Inbound
+wslm port add -p 3306 3307 -w Inbound
+# add ports with firewall Outbound
+wslm port add -p 3306 3307 -w Outbound
+```
+
+### Delete Ports
+
+```shell
+# del ports
+wslm port del -p 3306 3307
+# del ports with firewall
+wslm port del -p 3306 3307 -w
+# del ports with firewall Inbound
+wslm port del -p 3306 3307 -w Inbound
+# del ports with firewall Outbound
+wslm port del -p 3306 3307 -w Outbound
+```
+
+### Reset Ports
+
+```shell
+# reset ports
+wslm port reset
+```

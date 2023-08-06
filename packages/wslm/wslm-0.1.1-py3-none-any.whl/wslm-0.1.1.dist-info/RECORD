@@ -1,0 +1,7 @@
+wslm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wslm/windows_command.py,sha256=svadVQwi7yA0wKWqQSHxtbegBs8jK5wEdluDn7Bh5RM,9448
+wslm/wslm.py,sha256=MCdJ0pTUCPeCBghzo0OW4dM0Kj0ayBHiS0AtQigD45A,8940
+wslm-0.1.1.dist-info/entry_points.txt,sha256=RVR42KUFDVwxZF9fczhV-p6J6KxRF1VDun3avep5QLI,39
+wslm-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+wslm-0.1.1.dist-info/METADATA,sha256=Byhn7zn2VdHTrMac1QPQrzM3oL_XQhe-74r9Wp15Hrg,2228
+wslm-0.1.1.dist-info/RECORD,,
