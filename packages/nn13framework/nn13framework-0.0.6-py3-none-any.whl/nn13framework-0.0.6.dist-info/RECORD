@@ -1,0 +1,14 @@
+nn13framework/__init__.py,sha256=gKHz4Hm_hFD3Jb19_A9rdaVsPqBJrd-LI3pLf4VyzR8,10807
+nn13framework/data_loader/__init__.py,sha256=M65PQOfdIyw0v_QHsvTQYVvRT3kZPC3r-2W3KHEnK_A,11865
+nn13framework/metrics/__init__.py,sha256=w4VdT-aaUdff4DDSwXZrtv1MlGKflcYhdyIPiLlk620,1302
+nn13framework/neural_networks/__init__.py,sha256=0caa6QjAtaErth-8WsxPCwLn7Yb4bZKS7gqyoPFH7-Q,8010
+nn13framework/neural_networks/activation_functions.py,sha256=g1ibZvy6kp2rO6tqwtq6v2Ki2g7QiwbSG9JUdPcMaJQ,5717
+nn13framework/neural_networks/loss_functions.py,sha256=nc_c21sR2WdLGKTBk8EVZM4jjCHliSkndgLdof3lVQc,16293
+nn13framework/neural_networks/layers/__init__.py,sha256=Z3J41-aAlzXl3gj0rgQTWHI7uXzG2_G4dXe1s3Tp5NU,22610
+nn13framework/optimizer/__init__.py,sha256=I7aKCQR-MsGROn4po49ZwBKzwfMdPu7lwkdcPp_O-B4,9552
+nn13framework/utils/__init__.py,sha256=z2w_YArLGaisUaiYfj3THeJwwn2Pjv2KsfMx2ciOfYg,1110
+nn13framework/visualization/__init__.py,sha256=Vb2D8a1w49gavnm_YwvbUtGkKpWBCpeAbep7LrGaskY,5062
+nn13framework-0.0.6.dist-info/METADATA,sha256=L8AyWZHVde_WdAa8h8Aw2UJ1HkitfVOgSWzqVRQfDmM,714
+nn13framework-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nn13framework-0.0.6.dist-info/top_level.txt,sha256=z0qWaE_edkGFO8X0FKYWf7ttf6q_5VCMFjhQKBM2Y90,14
+nn13framework-0.0.6.dist-info/RECORD,,
