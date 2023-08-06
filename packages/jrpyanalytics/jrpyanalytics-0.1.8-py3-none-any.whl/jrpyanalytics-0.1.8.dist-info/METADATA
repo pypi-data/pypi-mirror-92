@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jrpyanalytics
+Version: 0.1.8
+Summary: Jumping Rivers: Predictive Analytics in Python
+Author: Jamie
+Author-email: jamie@jumpingrivers.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: graphviz (>=0.10.1,<0.11.0)
+Requires-Dist: jrpytests (>=0.1.4,<0.2.0)
+Requires-Dist: matplotlib (>=3.0,<4.0)
+Requires-Dist: numpy (>=1.15,<2.0)
+Requires-Dist: pandas (>=1,<2)
+Requires-Dist: seaborn (>=0.11.0,<0.12.0)
+Requires-Dist: sklearn (>=0.0.0,<0.0.1)
