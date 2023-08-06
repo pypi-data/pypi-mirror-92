@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: nth_weekday
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: fx-kirin
+Author-email: fx.kirin@gmail.com
+License: MIT
+Description: nth_weekday
+        ===========
+        
+        .. image:: https://img.shields.io/pypi/v/nth_weekday.svg
+            :target: https://pypi.python.org/pypi/nth_weekday
+            :alt: Latest PyPI version
+        
+        
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `nth_weekday` was written by `fx-kirin <fx.kirin@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
