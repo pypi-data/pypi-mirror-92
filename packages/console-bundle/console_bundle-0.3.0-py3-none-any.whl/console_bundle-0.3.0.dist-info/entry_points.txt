@@ -1,0 +1,6 @@
+[console_scripts]
+console=consolebundle.CommandRunner:runCommand
+
+[pyfony.bundle]
+create=consolebundle.ConsoleBundle:ConsoleBundle
+
