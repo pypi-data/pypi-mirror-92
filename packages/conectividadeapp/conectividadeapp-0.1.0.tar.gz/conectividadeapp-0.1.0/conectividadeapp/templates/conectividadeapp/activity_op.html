@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Activitys Conectividade </strong>
+    </div>
+    <div class="list-group">
+        <div class="list-group-item">
+            
+                <span class="badge pull-right"><!--47 add contabilidade dinamicamente--></span>
+                <h4 class="list-group-item-heading"><a href="{% url 'plugins:conectividadeapp:activity_install_list' %}">Activity Installs</a></h4>
+            
+            <p class="list-group-item-text text-muted">Activity Install devices</p>
+        </div>
+        <div class="list-group-item">
+            
+                <span class="badge pull-right"><!--34 add contabilidade dinamicamente--></span><!--add contabilidade-->
+                <h4 class="list-group-item-heading"><a href="{% url 'plugins:conectividadeapp:activity_remove_list' %}">Activity Remove</a></h4>
+            
+                <p class="list-group-item-text text-muted">Activity Remove devices </p>
+            </div>
+    </div>
+</div>
+
+{% endblock %}
