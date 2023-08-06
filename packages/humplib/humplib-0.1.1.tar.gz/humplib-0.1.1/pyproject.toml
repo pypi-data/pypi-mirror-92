@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "humplib"
+version = "0.1.1"
+description = "a hump to underline tool"
+authors = ["huoyinghui <yhhuo@yunjinginc.com>"]
+homepage = "https://github.com/pydtools/humplib/"
+repository = "https://github.com/pydtools/humplib/"
+documentation = "https://github.com/pydtools/humplib/wiki"
+include = ["CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/pydtools/humplib/issues"
+"github" = "https://github.com/pydtools/humplib/"
+"Documentation" = "https://github.com/pydtools/humplib/wiki"
