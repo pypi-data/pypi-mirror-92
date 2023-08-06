@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: micropython-eydam-prototyping-logging
+Version: 0.0.7
+Summary: Some logging functions for MicroPython in combination with syslog-server
+Home-page: https://github.com/eydam-prototyping/tutorials_de/blob/master/micropython/packages/ep_logging
+Author: Tobias Eydam
+Author-email: eydam-prototyping@outlook.com
+License: UNKNOWN
+Description: long_description
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
