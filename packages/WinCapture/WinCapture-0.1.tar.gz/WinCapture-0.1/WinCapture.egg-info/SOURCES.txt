@@ -1,0 +1,7 @@
+setup.py
+WinCapture/__init__.py
+WinCapture.egg-info/PKG-INFO
+WinCapture.egg-info/SOURCES.txt
+WinCapture.egg-info/dependency_links.txt
+WinCapture.egg-info/requires.txt
+WinCapture.egg-info/top_level.txt
