@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cyanure-openblas-no-openmp
+Version: 0.22
+Summary: optimization toolbox for machine learning
+Home-page: http://julien.mairal.org/cyanure/
+Author: UNKNOWN
+Author-email: julien.mairal@inria.fr
+License: bsd-3-clause
+Description: UNKNOWN
+Platform: UNKNOWN

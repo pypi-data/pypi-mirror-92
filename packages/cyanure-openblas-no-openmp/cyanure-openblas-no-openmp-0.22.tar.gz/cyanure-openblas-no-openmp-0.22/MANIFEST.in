@@ -1,0 +1,4 @@
+include cyanure.py
+include cyanure_wrap_module.cpp
+include LICENSE
+include utils/*.h
