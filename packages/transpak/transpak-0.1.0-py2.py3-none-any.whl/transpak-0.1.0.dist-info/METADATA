@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: transpak
+Version: 0.1.0
+Summary: Binary packaging and compression library for PQM-800 transient data 
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Christoph Kattmann
+Author-email: christoph.kattmann@bss-hs.de
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+# transpak
