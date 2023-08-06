@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: corona-alrimi
+Version: 0.0.2
+Summary: 국내 코로나 현황을 알려주는 패키지
+Home-page: https://github.com/matmang/jaram-python-project
+Author: Jiwoo Kim, Raewoo Kang, Yongchan Lee
+Author-email: matmang@hanyang.ac.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.9.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: requests (==2.23.0)
+
+#jaram-python-project
+===========================
+Korea's Covid-19 Board
+----------------------
+It is a package that informs the current status of coronavirus in Korea.
+
+
+
