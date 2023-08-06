@@ -1,0 +1,3 @@
+[console_scripts]
+fsva = fsva.main:main
+
