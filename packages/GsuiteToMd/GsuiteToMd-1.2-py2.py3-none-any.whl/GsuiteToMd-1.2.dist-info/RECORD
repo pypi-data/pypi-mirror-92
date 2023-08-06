@@ -1,0 +1,16 @@
+gstomd/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gstomd/__main__.py,sha256=lGcXu8l8SAW9vhHmruQJrhWLy5Y1tNXbDAicf790Lys,1506
+gstomd/convert.py,sha256=3ZcNcWYetREUVgEiiwlQRLH3qCywUmniatVbigl2TGw,1369
+gstomd/corpus.py,sha256=nCFCNFnNjPAhsDDHGm5w21TbXjxspUjRv2xVttR4b1s,10549
+gstomd/gdoc.py,sha256=WhPDm3xCN6DtMZ85lcftREp2-dXNh6vbAEqDTetT9So,1949
+gstomd/gfolder.py,sha256=72vsA4_UtlVr5BqdNjN0UHu8oO_7yjo0uhthF9NQPiI,5767
+gstomd/node.py,sha256=Npw-p1tLhUVqB-AlaeFZA34dJue-F_bHd9JfYVkH1aY,1571
+gstomd/settings.py,sha256=QBrn4b9CS4nH7WgbAWI3VW1R-DmyCxwcifVRD5OLumg,1643
+gstomd/utils.py,sha256=gUQXn_FzN7YPnfaDJWctDFOk-uRMIgV-1hS4TO-Fxos,1288
+gstomd/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gstomd/test/test_corpus.py,sha256=7EjSnE3JHW4EC6Si9KAQUKjLjigxB6lz-uvwg3Z-hQ0,822
+GsuiteToMd-1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+GsuiteToMd-1.2.dist-info/METADATA,sha256=zQuon3POO9xSyCNPnBaZD_Gcqyc6vio3LkpSmUWnBeQ,2177
+GsuiteToMd-1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+GsuiteToMd-1.2.dist-info/top_level.txt,sha256=JlBAkKeoYurvdA2ZgWL1qrrz1fJ-7fzxPhaFow61Ayo,7
+GsuiteToMd-1.2.dist-info/RECORD,,
