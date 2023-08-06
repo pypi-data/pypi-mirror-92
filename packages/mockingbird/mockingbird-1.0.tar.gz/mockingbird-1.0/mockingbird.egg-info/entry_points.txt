@@ -1,0 +1,3 @@
+[console_scripts]
+mockingbird_cli = mockingbird.__command_line:main
+
