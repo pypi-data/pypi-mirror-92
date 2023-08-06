@@ -1,0 +1,15 @@
+bank_statement_reader/__init__.py,sha256=58kyltTQnN78KTQv1aiGwVfGpu9wMnH99bajCAYqZiE,851
+bank_statement_reader/bookings.py,sha256=d1w0eB-wM9UGwRitUbUWBU51iYYrKcshfseJvYZG5gQ,6018
+bank_statement_reader/cli.py,sha256=0kTX1OiAOz0HCLAuopTS_b3XOlPTloTgaeX3n8tK3wU,1673
+bank_statement_reader/exceptions.py,sha256=BFsEbCSuofRBKWHi8TNfN4c9q_dmU3dxMiT5jL7rC7Y,93
+bank_statement_reader/statement_reader.py,sha256=GAdKzQXt-cL2sHv4lT3OI1jTocCVaZrC8M2SoJxZUDs,9759
+bank_statement_reader/booking/__init__.py,sha256=eNxtE4GGoGyhF5odnvJmhgXyCr3qEuRFAUUQ-avo3VY,135
+bank_statement_reader/booking/booking_base.py,sha256=sct9Y9HE3J4mZ6uAkVAViVPSDzG8WimFb8QpHURvsHE,10175
+bank_statement_reader/booking/personal.py,sha256=Y-HTwMyYmLRjigVLypb3USTzyn9bD7LYkuBJxf5sq0A,9159
+bank_statement_reader-0.1.2.dist-info/AUTHORS.rst,sha256=ic9GTwbXfm6Kza0_Fm8133xNUyqIxytdkws_EL4sDRA,79
+bank_statement_reader-0.1.2.dist-info/LICENSE.txt,sha256=z1a3dL7rqQcB7BXKfhMYOnwwcUSvgoz1lgjI0UwMBTk,1085
+bank_statement_reader-0.1.2.dist-info/METADATA,sha256=x-K2lKsYwbi9jz_ou1I4LdxBrB4q9b2AULKY7VQUOuk,4320
+bank_statement_reader-0.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bank_statement_reader-0.1.2.dist-info/entry_points.txt,sha256=6SmgQAK5XjjD7sCrcS_zyDmqVKoKA1uMGa45__ag4MA,65
+bank_statement_reader-0.1.2.dist-info/top_level.txt,sha256=ODhUAmzP6Z6VqL5bEWU6xqLP8zfDpOsD0UHBGZSN8vA,22
+bank_statement_reader-0.1.2.dist-info/RECORD,,

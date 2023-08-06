@@ -1,0 +1,3 @@
+[console_scripts]
+statement2csv = bank_statement_reader.cli:run
+
