@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: abdoconvo
+Version: 2.0.0
+Summary:  anything
+Home-page: https://www.innovsoltech.com/
+Author: Abdelrahman ahmed
+Author-email: abdelrahman.ahmed@smarttechsys.com
+Maintainer: Abdelrahman ahmed
+Maintainer-email: abdelrahman.ahmed@smarttechsys.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6,<3.9
+Provides-Extra: full
+Provides-Extra: gh-release-notes
+Provides-Extra: jieba
+Provides-Extra: spacy
+Provides-Extra: transformers
