@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wagtail-pdf-view
+Version: 0.1.0
+Summary: PDF rendering views for the Wagtail CMS
+Home-page: https://github.com/donhauser/wagtail-pdf
+Author: Jonas Donhauser
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: wagtail
+Provides-Extra: django-tex
+Requires-Dist: django-tex ; extra == 'django-tex'
+Provides-Extra: weasyprint
+Requires-Dist: django-weasyprint ; extra == 'weasyprint'
+
+UNKNOWN
+
+
