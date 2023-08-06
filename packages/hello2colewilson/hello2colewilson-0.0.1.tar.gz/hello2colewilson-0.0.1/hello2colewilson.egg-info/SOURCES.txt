@@ -1,0 +1,8 @@
+setup.py
+bin/hello
+hello2colewilson/__init__.py
+hello2colewilson.egg-info/PKG-INFO
+hello2colewilson.egg-info/SOURCES.txt
+hello2colewilson.egg-info/dependency_links.txt
+hello2colewilson.egg-info/entry_points.txt
+hello2colewilson.egg-info/top_level.txt
