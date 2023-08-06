@@ -1,0 +1,11 @@
+deveal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deveal/__main__.py,sha256=y22KeZvbAdLFpblmrv0fjEVyw658vThkhBseqL1m4OY,6976
+deveal/skeleton/deveal-index.html,sha256=6y5MEhgWBfzfwpbRIjBE8sXWgfVwe0wU74p-tT3Gzho,1983
+deveal/skeleton/deveal.css,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deveal/skeleton/deveal.yaml,sha256=VX6ZJkGtAPhDxbHNWyht-p465Ua_SOvbDWD3F_pEBvY,196
+deveal-1.1.0.dist-info/LICENSE,sha256=aLAM0o-jO0uQaBhKgEJ8hrc1eIFMv5X1Z5iaSE5F_Go,611
+deveal-1.1.0.dist-info/METADATA,sha256=R0Whw0I26MEEWaHFXjlHo68aZsiOm_z40tZqUqzq9s4,3930
+deveal-1.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+deveal-1.1.0.dist-info/entry_points.txt,sha256=3HIB-LLzEERCNML8K4VxH4t4U5QVVhRk1MuhB-hJtQA,49
+deveal-1.1.0.dist-info/top_level.txt,sha256=9ygqRuLbYlSYZ-fg2mSnVgpv4A-2VAtFgKYNFFWl7Ns,7
+deveal-1.1.0.dist-info/RECORD,,
