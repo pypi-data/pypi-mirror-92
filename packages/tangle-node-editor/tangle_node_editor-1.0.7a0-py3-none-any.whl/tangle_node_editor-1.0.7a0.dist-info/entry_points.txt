@@ -1,0 +1,3 @@
+[console_scripts]
+tangle = tangle.app:main
+
