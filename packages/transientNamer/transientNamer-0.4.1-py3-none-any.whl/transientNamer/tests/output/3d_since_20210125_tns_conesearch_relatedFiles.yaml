@@ -1,0 +1,140 @@
+- TNSId: 2021avg
+  dateObs: '2021-01-25 03:04:02'
+  filename: tns_2021avg_2459239.627795336_NOT_ALFOSC_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2021avg_2459239.627795336_NOT_ALFOSC_ZTF.ascii
+- TNSId: 2021aul
+  dateObs: '2021-01-20 04:02:46'
+  filename: tns_2021aul_2021-01-20_04-02-46_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2021aul_2021-01-20_04-02-46_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+- TNSId: 2021aul
+  dateObs: '2021-01-20 04:02:46'
+  filename: tns_2021aul_2021-01-20_04-02-46_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2021aul_2021-01-20_04-02-46_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+- TNSId: 2021aqq
+  dateObs: '2021-01-18 09:41:46'
+  filename: tns_2021aqq_2021-01-18.404_Lick-3m_KAST_SIRAH.flm
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/SIRAH/tns_2021aqq_2021-01-18.404_Lick-3m_KAST_SIRAH.flm
+- TNSId: 2021apd
+  dateObs: '2021-01-18 00:00:00'
+  filename: tns_2021apd_2021-01-18_NOT_ALFOSC_YSE.csv
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/YSE/tns_2021apd_2021-01-18_NOT_ALFOSC_YSE.csv
+- TNSId: 2021ajy
+  dateObs: '2021-01-15 11:44:14'
+  filename: tns_2021ajy_2021-01-15_11-44-14.027454_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2021ajy_2021-01-15_11-44-14.027454_P60_SEDM_ZTF.ascii
+- TNSId: 2021yk
+  dateObs: '2021-01-14 10:20:54'
+  filename: tns_2021yk_2021-01-14_10-20-54_UH88_SNIFS_SCAT.dat
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/SCAT/tns_2021yk_2021-01-14_10-20-54_UH88_SNIFS_SCAT.dat
+- TNSId: 2021xv
+  dateObs: '2021-01-25 05:15:16'
+  filename: tns_2021xv_2459239.7189359954_NOT_ALFOSC_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2021xv_2459239.7189359954_NOT_ALFOSC_ZTF.ascii
+- TNSId: 2021gl
+  dateObs: '2021-01-06 07:33:52'
+  filename: tns_2021gl_2021-01-06_07-33-52.115795_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2021gl_2021-01-06_07-33-52.115795_P60_SEDM_ZTF.ascii
+- TNSId: 2021fg
+  dateObs: '2021-01-14 07:13:53'
+  filename: tns_2021fg_2021-01-14_07-13-53.199279_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2021fg_2021-01-14_07-13-53.199279_P60_SEDM_ZTF.ascii
+- TNSId: 2021at
+  dateObs: '2021-01-11 00:00:00'
+  filename: tns_2021at_2021-01-11_Lick-3m_KAST_UCSC.flm
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/UCSC/tns_2021at_2021-01-11_Lick-3m_KAST_UCSC.flm
+- TNSId: 2021ab
+  dateObs: '2021-01-08 06:18:47'
+  filename: tns_2021ab_2021-01-08_06-18-47_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2021ab_2021-01-08_06-18-47_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+- TNSId: 2021ab
+  dateObs: '2021-01-08 06:18:47'
+  filename: tns_2021ab_2021-01-08_06-18-47_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2021ab_2021-01-08_06-18-47_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+- TNSId: 2021G
+  dateObs: '2021-01-05 12:02:44'
+  filename: tns_2021G_2459220.0019_UH88_SNIFS_SCAT.dat
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/SCAT/tns_2021G_2459220.0019_UH88_SNIFS_SCAT.dat
+- TNSId: 2020aeuv
+  dateObs: '2021-01-25 03:40:56'
+  filename: tns_2020aeuv_2459239.653425347_NOT_ALFOSC_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020aeuv_2459239.653425347_NOT_ALFOSC_ZTF.ascii
+- TNSId: 2020aeqp
+  dateObs: '2021-01-11 00:00:00'
+  filename: tns_2020aeqp_2021-01-11_Lick-3m_KAST_UCSC.flm
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/UCSC/tns_2020aeqp_2021-01-11_Lick-3m_KAST_UCSC.flm
+- TNSId: 2020aeqo
+  dateObs: '2021-01-02 03:11:41'
+  filename: tns_2020aeqo_2021-01-02_03-11-41_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020aeqo_2021-01-02_03-11-41_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+- TNSId: 2020aeqo
+  dateObs: '2021-01-02 03:11:41'
+  filename: tns_2020aeqo_2021-01-02_03-11-41_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020aeqo_2021-01-02_03-11-41_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+- TNSId: 2020adlp
+  dateObs: '2021-01-02 05:46:19'
+  filename: tns_2020adlp_2021-01-02_05-46-19.143271_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020adlp_2021-01-02_05-46-19.143271_P60_SEDM_ZTF.ascii
+- TNSId: 2020adbk
+  dateObs: '2021-01-04 07:38:16'
+  filename: tns_2020adbk_2021-01-04_07-38-16.472752_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020adbk_2021-01-04_07-38-16.472752_P60_SEDM_ZTF.ascii
+- TNSId: 2020acma
+  dateObs: '2020-12-15 06:31:22'
+  filename: tns_2020acma_2020-12-15_06-31-22_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020acma_2020-12-15_06-31-22_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+- TNSId: 2020acma
+  dateObs: '2020-12-15 06:31:22'
+  filename: tns_2020acma_2020-12-15_06-31-22_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020acma_2020-12-15_06-31-22_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+- TNSId: 2020acew
+  dateObs: '2021-01-08 00:00:00'
+  filename: tns_2020acew_2021-01-08_00-00-00_P200_DBSP_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020acew_2021-01-08_00-00-00_P200_DBSP_ZTF.ascii
+- TNSId: 2020zko
+  dateObs: '2020-11-14 14:59:43'
+  filename: tns_2020zko_2459168.1248_UH88_SNIFS_SCAT.dat
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/SCAT/tns_2020zko_2459168.1248_UH88_SNIFS_SCAT.dat
+- TNSId: 2020ytk
+  dateObs: '2020-11-10 02:20:42'
+  filename: tns_2020ytk_2020-11-10_02-20-42_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020ytk_2020-11-10_02-20-42_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.asci
+- TNSId: 2020ytk
+  dateObs: '2020-11-10 02:20:42'
+  filename: tns_2020ytk_2020-11-10_02-20-42_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ePESSTO%2B/tns_2020ytk_2020-11-10_02-20-42_ESO-NTT_EFOSC2-NTT_ePESSTO%2B.fits
+- TNSId: 2020xba
+  dateObs: '2020-10-18 10:22:36'
+  filename: tns_2020xba_2020-10-18_10-22-36_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020xba_2020-10-18_10-22-36_P60_SEDM_ZTF.ascii
+- TNSId: 2020pub
+  dateObs: '2020-12-15 12:01:30'
+  filename: tns_2020pub_2020-12-15_12-01-30.339432_P60_SEDM_ZTF.ascii
+  spec1phot2: 1
+  url: https://www.wis-tns.org/system/files/uploaded/ZTF/tns_2020pub_2020-12-15_12-01-30.339432_P60_SEDM_ZTF.ascii

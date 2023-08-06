@@ -1,0 +1,50 @@
+[
+    {
+        "TNSId": "2016ayk",
+        "exptime": "60",
+        "filter": "G-Gaia",
+        "limitingMag": 0,
+        "mag": "18.59",
+        "magErr": "0.2",
+        "magUnit": "ABMag",
+        "objectName": "Gaia18dmh",
+        "obsdate": "2018-11-18 10:52:19",
+        "reportAddedDate": "2018-11-20 13:53:11",
+        "reportingGroup": "GaiaAlerts",
+        "suggestedType": "Other",
+        "survey": "GaiaAlerts",
+        "telescope": "Gaia_Gaia-photometric"
+    },
+    {
+        "TNSId": "2016ayk",
+        "exptime": "",
+        "filter": "G-Gaia",
+        "limitingMag": 1,
+        "mag": "21.5",
+        "magErr": "",
+        "magUnit": "ABMag",
+        "objectName": "Gaia18dmh",
+        "obsdate": "2018-11-17 22:50:52",
+        "reportAddedDate": "2018-11-20 13:53:11",
+        "reportingGroup": "GaiaAlerts",
+        "suggestedType": "Other",
+        "survey": "GaiaAlerts",
+        "telescope": "Gaia_Gaia-photometric"
+    },
+    {
+        "TNSId": "2016ayk",
+        "exptime": "",
+        "filter": "cyan-ATLAS",
+        "limitingMag": 0,
+        "mag": "17.99",
+        "magErr": "",
+        "magUnit": "ABMag",
+        "objectName": "ATLAS16aex",
+        "obsdate": "2016-03-03 08:09:36",
+        "reportAddedDate": "2016-03-11 17:16:41",
+        "reportingGroup": "ATLAS",
+        "suggestedType": "PSN",
+        "survey": "ATLAS",
+        "telescope": "ATLAS1_ACAM1"
+    }
+]

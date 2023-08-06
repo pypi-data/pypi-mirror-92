@@ -1,0 +1,4 @@
+TNSId,survey,obsdate,filter,limitingMag,mag,magErr,magUnit,suggestedType,telescope,exptime,reportAddedDate,reportingGroup,objectName
+2016ayk,GaiaAlerts,2018-11-18 10:52:19,G-Gaia,0,18.59,0.2,ABMag,Other,Gaia_Gaia-photometric,60,2018-11-20 13:53:11,GaiaAlerts,Gaia18dmh
+2016ayk,GaiaAlerts,2018-11-17 22:50:52,G-Gaia,1,21.5,,ABMag,Other,Gaia_Gaia-photometric,,2018-11-20 13:53:11,GaiaAlerts,Gaia18dmh
+2016ayk,ATLAS,2016-03-03 08:09:36,cyan-ATLAS,0,17.99,,ABMag,PSN,ATLAS1_ACAM1,,2016-03-11 17:16:41,ATLAS,ATLAS16aex
