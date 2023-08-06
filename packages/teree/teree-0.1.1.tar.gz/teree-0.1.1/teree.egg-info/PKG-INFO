@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: teree
+Version: 0.1.1
+Summary: Terminal tree -- package to print any objects as tree
+Home-page: https://github.com/fagcinsk/teree
+Author: Mikhail Yudin
+Author-email: fagci.nsk@gmail.com
+License: MIT
+Description: # teree
+        Terminal tree &mdash; package to print any objects as tree
+        
+        ## Usage
+        
+        ```python
+        from teree import Teree
+        
+        print(Teree([0,[1,2],{'test':'passed'}]))
+        ```
+        
+Keywords: terminal,tree,any object
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown

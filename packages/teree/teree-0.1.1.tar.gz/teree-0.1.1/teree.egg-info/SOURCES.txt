@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+teree/__init__.py
+teree/teree.py
+teree.egg-info/PKG-INFO
+teree.egg-info/SOURCES.txt
+teree.egg-info/dependency_links.txt
+teree.egg-info/top_level.txt
