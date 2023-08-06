@@ -1,0 +1,12 @@
+apptools
+envisage
+ffmpeg-python
+matplotlib
+mayavi
+numpy
+psutil
+PyQt5
+sphinx-rtd-theme
+traits
+traitsui
+vtk
