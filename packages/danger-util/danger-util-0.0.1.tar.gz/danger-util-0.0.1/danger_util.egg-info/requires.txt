@@ -1,0 +1,5 @@
+pydatahub>=2.17.0
+aliyun-log-python-sdk>=0.6.48.9
+mysqlclient==1.4.6
+DBUtils==1.3
+pexpect==4.8.0
