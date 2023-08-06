@@ -1,0 +1,3 @@
+[console_scripts]
+lambda-run = lambda_run.cli:main [cli]
+
