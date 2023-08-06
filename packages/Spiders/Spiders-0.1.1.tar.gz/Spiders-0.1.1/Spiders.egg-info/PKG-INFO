@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: Spiders
+Version: 0.1.1
+Summary: Asynchronous python server
+Home-page: https://github.com/Sparklapse/Spiders
+Author: mr-josh
+Author-email: mr-josh@sparklapse.com
+License: UNKNOWN
+Description: # Spiders
+        V: `0.1.1`<br>
+        An asynchronous server made in pure python
+        
+        # Installation
+        
+        ## Requirements
+        - Python >= 3.9
+        - A spare brain cell 🧠
+        
+        ## Install
+        `pip install Spiders`
+        
+        https://pypi.org/project/Spiders/
+        
+        # Usage
+        
+        ## Example Web Server
+        ```python
+        from spider import Server, serve
+        from spider.web import WebService, HTTPResponse
+        
+        @serve
+        class MyWebServer(Server):
+            service = WebService
+            routes = {
+                r"^/?$": HTTPResponse("Hello World!")
+            }
+        ```
+        
+        ## Example API Endpoint
+        ```python
+        from spider import Server, serve
+        from spider.web import WebService, responses
+        
+        def my_api(request):
+            return responses.JSONResponse({
+                "path": request.path,
+                "params": str(request.params),
+                "body": request.body_json
+            })
+        
+        @serve
+        class MyAPIEndpoint(Server):
+            service = WebService
+            routes = {
+                r"^/foo/bar/?$": my_api
+            }
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

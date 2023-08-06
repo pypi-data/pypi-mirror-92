@@ -1,0 +1,14 @@
+setup.py
+Spiders.egg-info/PKG-INFO
+Spiders.egg-info/SOURCES.txt
+Spiders.egg-info/dependency_links.txt
+Spiders.egg-info/top_level.txt
+spider/__init__.py
+spider/__main__.py
+spider/_server.py
+spider/web/__init__.py
+spider/web/_http.py
+spider/web/_service.py
+spider/web/_static.py
+spider/web/responses/__init__.py
+spider/web/responses/_responses.py
