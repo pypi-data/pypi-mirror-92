@@ -1,0 +1,6 @@
+setup.py
+PackageInstaller.egg-info/PKG-INFO
+PackageInstaller.egg-info/SOURCES.txt
+PackageInstaller.egg-info/dependency_links.txt
+PackageInstaller.egg-info/entry_points.txt
+PackageInstaller.egg-info/top_level.txt
