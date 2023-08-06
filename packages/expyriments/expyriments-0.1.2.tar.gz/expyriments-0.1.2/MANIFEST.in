@@ -1,0 +1,1 @@
+recursive-include src/expyriments/server/static_webapp *
