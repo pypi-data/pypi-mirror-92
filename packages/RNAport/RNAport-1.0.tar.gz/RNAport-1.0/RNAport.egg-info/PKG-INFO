@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: RNAport
+Version: 1.0
+Summary: This port only used for preparing RNAref or RNA Denovo pipeline of BGI
+Home-page: https://github.com/chenjunhui/RNAport
+Author: chenjunhui
+Author-email: chenjunhui@genomics.cn
+License: GPLv3
+Description: UNKNOWN
+Keywords: RNAport
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
