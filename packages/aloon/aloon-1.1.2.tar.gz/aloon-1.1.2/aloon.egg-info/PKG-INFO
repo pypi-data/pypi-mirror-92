@@ -1,0 +1,38 @@
+Metadata-Version: 1.2
+Name: aloon
+Version: 1.1.2
+Summary: Common helper
+Home-page: https://github.com/dww410/aloon
+Author: David
+Author-email: dww410@163.com
+License: MIT
+Description: ## Getting started
+        
+        To install run:
+        ```bash
+        pip install aloon
+        ```
+        
+        ## Usage
+        
+        ### Options
+        
+        #### -h, --help
+        aloon commond help
+        
+        ## License
+        See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
+        
+        CHANGES
+        =======
+        
+        0.1.0 (2015-01-03)
+        ------------------
+        
+        -  convert specified language android string to csv.
+Keywords: android localization translation translate
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
