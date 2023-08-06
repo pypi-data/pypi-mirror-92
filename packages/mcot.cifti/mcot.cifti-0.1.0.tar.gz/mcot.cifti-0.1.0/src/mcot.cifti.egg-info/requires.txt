@@ -1,0 +1,13 @@
+colorcet
+dask[array]
+fslpy
+h5py
+loguru
+mcot.surface~=0.1.0
+mcot.utils~=0.1.0
+nibabel
+numpy
+pandas
+scipy
+sklearn
+zarr
