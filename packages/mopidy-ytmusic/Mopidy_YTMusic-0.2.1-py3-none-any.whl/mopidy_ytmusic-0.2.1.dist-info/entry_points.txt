@@ -1,0 +1,3 @@
+[mopidy.ext]
+ytmusic=mopidy_ytmusic:Extension
+
