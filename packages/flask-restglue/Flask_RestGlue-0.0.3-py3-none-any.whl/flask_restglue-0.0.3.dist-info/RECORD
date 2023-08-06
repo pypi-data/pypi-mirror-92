@@ -1,0 +1,8 @@
+flask_rest_glue/__init__.py,sha256=uwjF3QHfTP3hTl_wrB1OkpukAPXi5R9mr3KJojT5ifY,2392
+flask_rest_glue/flask_endpoint.py,sha256=hVXFn1gq3HoALg0aOYL_IBXiRvgmkFC6fWxqtsAHXfw,3848
+flask_rest_glue/misc.py,sha256=xiI76mre4XFM4iXLnzjNL63dSrYhMr8zm8_vJwSYSbY,708
+flask_rest_glue/openapi_spec.py,sha256=ftPjciENKnPR4K1kQEO-Bx3p-zWjWsE44WrRl27L-4A,12942
+flask_restglue-0.0.3.dist-info/LICENSE,sha256=59CGEjcoZLd9FaJG3gGfdqqiwnM1O7RxXtb68r3DbA0,1064
+flask_restglue-0.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+flask_restglue-0.0.3.dist-info/METADATA,sha256=EGR11VOqXt1Whq_C0i2H9r3h8M7wPV9E7HuY0aQLWxg,7208
+flask_restglue-0.0.3.dist-info/RECORD,,
