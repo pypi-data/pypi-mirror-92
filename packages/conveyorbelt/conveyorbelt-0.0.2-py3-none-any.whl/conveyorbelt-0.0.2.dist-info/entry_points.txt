@@ -1,0 +1,3 @@
+[console_scripts]
+conveyorbelt = conveyorbelt.__main__:main
+
