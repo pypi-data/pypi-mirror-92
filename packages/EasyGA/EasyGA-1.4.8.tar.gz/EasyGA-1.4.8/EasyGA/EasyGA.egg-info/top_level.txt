@@ -1,0 +1,12 @@
+EasyGA
+attributes
+crossover
+database
+decorators
+examples
+mutation
+parent
+structure
+survivor
+termination
+test_EasyGA
