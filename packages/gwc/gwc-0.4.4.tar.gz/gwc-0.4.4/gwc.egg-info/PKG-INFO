@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gwc
+Version: 0.4.4
+Summary: GeneDock command-line workflow client for interacting with GeneDock platform
+Home-page: https://gitlab.genedock.com/genedock/gwc
+Author: genedock
+Author-email: gwc@genedock.com
+License: UNKNOWN
+Description: GeneDock command-line workflow client for interacting with GeneDock platform
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown; charset=UTF-8

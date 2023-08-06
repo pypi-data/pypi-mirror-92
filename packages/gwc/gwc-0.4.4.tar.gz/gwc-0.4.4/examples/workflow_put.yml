@@ -1,0 +1,44 @@
+workflow:
+  account: public
+  description: 工作流Fastqc
+  name: Fastqc
+  nodelist:
+  - alias: 输入序列文件
+    app_id: 55128c58f6f4067d63b956b5
+    inputs: null
+    name: loaddata
+    node_id: loaddata_reads
+    outputs:
+      data:
+        enid: loaddata_reads
+    parameters: null
+  - alias: fastqc 0.11.3
+    app_id: 585b73e4534680001aa385c7
+    inputs:
+      reads:
+      - enid: loaddata_reads
+    name: Fastqc
+    node_id: Fastqc_node1
+    outputs:
+      tgz:
+      - enid: Fastqc_output_tgz
+    parameters:
+      threads:
+        value: 2
+        variable: true
+  - alias: store Fastqc_output_tgz
+    app_id: 55128c94f6f4067d63b956b6
+    inputs:
+      data:
+        enid: Fastqc_output_tgz
+    name: storedata
+    node_id: store_data_node_fastqc
+    outputs: null
+    parameters:
+      description:
+        value: ' '
+        variable: false
+      name:
+        value: ' '
+        variable: false
+  version: 1
