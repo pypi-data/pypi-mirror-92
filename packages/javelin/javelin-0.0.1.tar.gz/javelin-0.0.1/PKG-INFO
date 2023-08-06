@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: javelin
+Version: 0.0.1
+Summary: A small micro-controller commander
+Home-page: https://github.com/0xJeremy/javelin
+Author: Jeremy Kanovsky
+Author-email: kanovsky.jeremy@gmail.com
+License: UNKNOWN
+Description: # javelin
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown

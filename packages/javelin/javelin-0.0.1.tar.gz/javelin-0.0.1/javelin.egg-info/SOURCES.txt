@@ -1,0 +1,6 @@
+README.md
+setup.py
+javelin.egg-info/PKG-INFO
+javelin.egg-info/SOURCES.txt
+javelin.egg-info/dependency_links.txt
+javelin.egg-info/top_level.txt
