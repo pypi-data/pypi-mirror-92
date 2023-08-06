@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+webdriver_update_tool/__init__.py
+webdriver_update_tool/config.ini
+webdriver_update_tool/update_chromedriver4mac.py
+webdriver_update_tool.egg-info/PKG-INFO
+webdriver_update_tool.egg-info/SOURCES.txt
+webdriver_update_tool.egg-info/dependency_links.txt
+webdriver_update_tool.egg-info/requires.txt
+webdriver_update_tool.egg-info/top_level.txt
