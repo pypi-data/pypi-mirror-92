@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: django-menu-generator-ng
+Version: 1.2.1
+Summary: A straightforward menu generator for Django
+Home-page: https://edugit.org/AlekSIS/libs/django-menu-generator-ng
+Author: The AlekSIS Team
+Author-email: aleksis-dev@lists.teckids.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Topic :: Utilities
+
+UNKNOWN
+
+
