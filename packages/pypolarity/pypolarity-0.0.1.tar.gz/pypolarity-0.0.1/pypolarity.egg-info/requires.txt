@@ -1,0 +1,4 @@
+numpy
+cut-sent-thai>=0.0.4
+pythainlp>=2.2.0
+ujson
