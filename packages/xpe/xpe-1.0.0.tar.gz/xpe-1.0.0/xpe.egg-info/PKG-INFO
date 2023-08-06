@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: xpe
+Version: 1.0.0
+Summary: A versatile commandline xpath parser
+Home-page: https://github.com/charmparticle/xp
+Author: github.com/charmparticle
+Author-email: UNKNOWN
+License: BSD 3-Clause License
+Description: # xpe
+        
+        *Finally, a commandline xpath tool for linux that doesn't suck.*
+        
+        ***What is this?***
+        
+        xp is a commandline xpath parser. It takes data from stdin, and then outputs the result of the xpath expression you supply it. For example:
+        
+            curl -sL github.com | xpe "//meta[@name='twitter:title']"
+            GitHub: Where the world builds software
+            
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
