@@ -1,0 +1,6 @@
+click<8
+pluggy==0.13.1
+
+[dev]
+pytest<7
+pytest-cov<3
