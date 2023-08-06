@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: scurri-zipcode
+Version: 0.1.2
+Summary: Python library to validate zip codes in the UK for Scurri interview
+Home-page: https://github.com/JuliColombo/scurri-zipcode
+Author: Julieta Colombo
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# scurri-zipcode
+This library supports validating post codes from UK.
+
+## Install
+`pip install scurri_zipcode`
+
+## Usage
+To check whether a post code is well formatted or not:
+```
+from scurri_zipcode import is_valid
+
+is_valid('EC1A 1BB')
+# returns True
+```
+
