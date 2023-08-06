@@ -1,0 +1,6 @@
+start: "Complete the following sentences:"
+
+samples:
+  - "Begin: I like\nEnd: beer."
+  - "Begin: I like\nEnd: soccer."
+  - "Begin: I like\nEnd: pizza."
