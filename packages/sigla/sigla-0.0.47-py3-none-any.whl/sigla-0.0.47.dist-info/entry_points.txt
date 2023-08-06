@@ -1,0 +1,3 @@
+[console_scripts]
+sigla=sigla.cli.cli:cli
+
