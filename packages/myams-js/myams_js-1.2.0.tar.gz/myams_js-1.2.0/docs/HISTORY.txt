@@ -1,0 +1,36 @@
+Changelog
+=========
+
+1.2.0
+-----
+ - added french translation for file input "Browse" label
+ - packages upgrades
+ - CSS styles updates
+
+1.1.0
+-----
+ - added Bootstrap "Tempus Dominus" plug-in for datetime input fields
+ - automatically scroll to errors alerts in modal forms
+ - packages upgrades
+ - CSS styles updates
+
+1.0.4
+-----
+ - updated DataTables plug-in integration
+ - updated Select2 CSS styles
+
+1.0.3
+-----
+ - updated form group switcher state for inner switchers
+
+1.0.2
+-----
+ - updated Fanstatic library path to switch between source and egg installations
+
+1.0.1
+-----
+ - Travis update
+
+1.0.0
+-----
+ - initial release
