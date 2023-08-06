@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: asdicts
+Version: 1.0.0
+Summary: Easy use dictionaries with specific features
+Home-page: https://github.com/sergeyklay/asdicts
+Author: Serghei Iakovlev
+Author-email: egrep@protonmail.ch
+Maintainer: Serghei Iakovlev
+Maintainer-email: egrep@protonmail.ch
+License: Apache 2.0
+Project-URL: Bug Tracker, https://github.com/sergeyklay/asdicts/issues
+Project-URL: Source Code, https://github.com/sergeyklay/asdicts
+Keywords: dict,collections,helpers
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/x-rst
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+======================================================
+asdicts: Easy use dictionaries with specific features
+======================================================
+
+
+Easy use dictionaries with specific features.
+
+.. teaser-end
+
+.. -project-information-
+
+.. -support-
+
+
+Release Information
+===================
+
+
+
+`Full changelog <https://github.com/sergeyklay/asdicts/blob/master/CHANGELOG.rst>`_.
+
+Credits
+=======
+
+``asdicts`` is written and maintained by `Serghei Iakovlev <https://github.com/sergeyklay/>`_.
+
+A full list of contributors can be found in `GitHub's overview <https://github.com/sergeyklay/asdicts/graphs/contributors>`_.
+
+
