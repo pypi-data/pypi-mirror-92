@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: meteoalertapi
+Version: 0.1.7
+Summary: A small api to get alerting messages from extreme weather in Europe from https://www.meteoalarm.eu.
+Home-page: https://github.com/rolfberkenbosch/meteoalarm-api
+Author: Rolf Berkenbosch
+Author-email: rolf@berkenbosch.nl
+License: UNKNOWN
+Description: # meteoalarm-api
+        
+        
+        ![PyPI](https://img.shields.io/pypi/v/meteoalertapi.svg?style=for-the-badge|https://pypi.org/project/meteoalertapi)
+        ![Travis (.org)](https://img.shields.io/travis/rolfberkenbosch/meteoalert-api.svg?style=for-the-badge)
+        
+        (Unofficial) Python wrapper for the MeteoAlarm.eu website (European Weahter alarm), which can be used to look if your province in your country has currently had a weather alarm.
+        
+        ## Installation
+        
+        Using Pip:
+        
+        ```console
+        pip install meteoalertapi
+        ```
+        
+        ## Code Example
+        
+        ```python
+        from meteoalertapi import Meteoalert
+        
+        # Find you country and province on http://meteoalarm.eu/
+        meteo = Meteoalert('country_letters', 'province_name')
+        
+        # Get the weather alarm from your place
+        meteo = Meteoalert('country_letters', 'province_name')
+        print(str(meteo.get_alert()))
+        ```
+        
+        ## Changelog
+        
+        See the [CHANGELOG](./CHANGELOG.md) file.
+        
+        ## License
+        
+        MIT
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
