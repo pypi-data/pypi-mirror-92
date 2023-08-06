@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+scrapy_util.egg-info/PKG-INFO
+scrapy_util.egg-info/SOURCES.txt
+scrapy_util.egg-info/dependency_links.txt
+scrapy_util.egg-info/requires.txt
+scrapy_util.egg-info/top_level.txt
+scrapy_util.egg-info/zip-safe
