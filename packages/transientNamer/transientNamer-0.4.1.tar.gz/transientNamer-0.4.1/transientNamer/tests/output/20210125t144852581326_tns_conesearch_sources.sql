@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS `fs_tns_sources` (
+  `primaryId` bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'An internal counter',
+  `TNSId` varchar(20) NOT NULL,
+  `TNSName` varchar(20) DEFAULT NULL,
+  `dateCreated` datetime DEFAULT NULL,
+  `decDeg` double DEFAULT NULL,
+  `decSex` varchar(45) DEFAULT NULL,
+  `discDate` datetime DEFAULT NULL,
+  `discMag` double DEFAULT NULL,
+  `discMagFilter` varchar(45) DEFAULT NULL,
+  `discSurvey` varchar(100) DEFAULT NULL,
+  `discoveryName` varchar(100) DEFAULT NULL,
+  `objectUrl` varchar(200) DEFAULT NULL,
+  `raDeg` double DEFAULT NULL,
+  `raSex` varchar(45) DEFAULT NULL,
+  `specType` varchar(100) DEFAULT NULL,
+  `transRedshift` double DEFAULT NULL,
+  `updated` tinyint(4) DEFAULT '0',
+  `dateLastModified` datetime DEFAULT NULL,
+  `hostName` VARCHAR(100) NULL DEFAULT NULL,
+  `hostRedshift` DOUBLE NULL DEFAULT NULL, 
+  `survey` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`primaryId`),
+  UNIQUE KEY `tnsid` (`TNSId`)
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+            
+INSERT IGNORE INTO `fs_tns_sources` (`TNSId`,`TNSName`,`decDeg`,`decSex`,`discDate`,`discMag`,`discMagFilter`,`discSurvey`,`discoveryName`,`hostName`,`hostRedshift`,`objectUrl`,`raDeg`,`raSex`,`reportingSurvey`,`separationArcsec`,`separationEastArcsec`,`separationNorthArcsec`,`specType`,`survey`,`transRedshift`, dateCreated) VALUES ("1991W" ,"SN1991W" ,"0.0" ,"+00:00:00.00" ,null ,"0" ,null ,null ,null ,"IC 4425" ,null ,"https://www.wis-tns.org/object/1991w" ,"0.0" ,"00:00:00.000" ,null ,"0.0" ,"-0.0" ,"-0.0" ,null ,null ,null, NOW())  ON DUPLICATE KEY UPDATE  `TNSId`="1991W", `TNSName`="SN1991W", `decDeg`="0.0", `decSex`="+00:00:00.00", `discDate`=null, `discMag`="0", `discMagFilter`=null, `discSurvey`=null, `discoveryName`=null, `hostName`="IC 4425", `hostRedshift`=null, `objectUrl`="https://www.wis-tns.org/object/1991w", `raDeg`="0.0", `raSex`="00:00:00.000", `reportingSurvey`=null, `separationArcsec`="0.0", `separationEastArcsec`="-0.0", `separationNorthArcsec`="-0.0", `specType`=null, `survey`=null, `transRedshift`=null ;
+INSERT IGNORE INTO `fs_tns_sources` (`TNSId`,`TNSName`,`decDeg`,`decSex`,`discDate`,`discMag`,`discMagFilter`,`discSurvey`,`discoveryName`,`hostName`,`hostRedshift`,`objectUrl`,`raDeg`,`raSex`,`reportingSurvey`,`separationArcsec`,`separationEastArcsec`,`separationNorthArcsec`,`specType`,`survey`,`transRedshift`, dateCreated) VALUES ("1973G" ,"SN1973G" ,"0.0" ,"+00:00:00.00" ,null ,"0" ,null ,null ,null ,"Anon." ,null ,"https://www.wis-tns.org/object/1973g" ,"0.0" ,"00:00:00.000" ,null ,"0.0" ,"-0.0" ,"-0.0" ,null ,null ,null, NOW())  ON DUPLICATE KEY UPDATE  `TNSId`="1973G", `TNSName`="SN1973G", `decDeg`="0.0", `decSex`="+00:00:00.00", `discDate`=null, `discMag`="0", `discMagFilter`=null, `discSurvey`=null, `discoveryName`=null, `hostName`="Anon.", `hostRedshift`=null, `objectUrl`="https://www.wis-tns.org/object/1973g", `raDeg`="0.0", `raSex`="00:00:00.000", `reportingSurvey`=null, `separationArcsec`="0.0", `separationEastArcsec`="-0.0", `separationNorthArcsec`="-0.0", `specType`=null, `survey`=null, `transRedshift`=null ;
+INSERT IGNORE INTO `fs_tns_sources` (`TNSId`,`TNSName`,`decDeg`,`decSex`,`discDate`,`discMag`,`discMagFilter`,`discSurvey`,`discoveryName`,`hostName`,`hostRedshift`,`objectUrl`,`raDeg`,`raSex`,`reportingSurvey`,`separationArcsec`,`separationEastArcsec`,`separationNorthArcsec`,`specType`,`survey`,`transRedshift`, dateCreated) VALUES ("1961W" ,"SN1961W" ,"0.0" ,"+00:00:00.00" ,null ,"0" ,null ,null ,null ,null ,null ,"https://www.wis-tns.org/object/1961w" ,"0.0" ,"00:00:00.000" ,null ,"0.0" ,"-0.0" ,"-0.0" ,null ,null ,null, NOW())  ON DUPLICATE KEY UPDATE  `TNSId`="1961W", `TNSName`="SN1961W", `decDeg`="0.0", `decSex`="+00:00:00.00", `discDate`=null, `discMag`="0", `discMagFilter`=null, `discSurvey`=null, `discoveryName`=null, `hostName`=null, `hostRedshift`=null, `objectUrl`="https://www.wis-tns.org/object/1961w", `raDeg`="0.0", `raSex`="00:00:00.000", `reportingSurvey`=null, `separationArcsec`="0.0", `separationEastArcsec`="-0.0", `separationNorthArcsec`="-0.0", `specType`=null, `survey`=null, `transRedshift`=null ;
+INSERT IGNORE INTO `fs_tns_sources` (`TNSId`,`TNSName`,`decDeg`,`decSex`,`discDate`,`discMag`,`discMagFilter`,`discSurvey`,`discoveryName`,`hostName`,`hostRedshift`,`objectUrl`,`raDeg`,`raSex`,`reportingSurvey`,`separationArcsec`,`separationEastArcsec`,`separationNorthArcsec`,`specType`,`survey`,`transRedshift`, dateCreated) VALUES ("1956C" ,"SN1956C" ,"0.0" ,"+00:00:00.00" ,null ,"0" ,null ,null ,null ,"Anon." ,null ,"https://www.wis-tns.org/object/1956c" ,"0.0" ,"00:00:00.000" ,null ,"0.0" ,"-0.0" ,"-0.0" ,null ,null ,null, NOW())  ON DUPLICATE KEY UPDATE  `TNSId`="1956C", `TNSName`="SN1956C", `decDeg`="0.0", `decSex`="+00:00:00.00", `discDate`=null, `discMag`="0", `discMagFilter`=null, `discSurvey`=null, `discoveryName`=null, `hostName`="Anon.", `hostRedshift`=null, `objectUrl`="https://www.wis-tns.org/object/1956c", `raDeg`="0.0", `raSex`="00:00:00.000", `reportingSurvey`=null, `separationArcsec`="0.0", `separationEastArcsec`="-0.0", `separationNorthArcsec`="-0.0", `specType`=null, `survey`=null, `transRedshift`=null ;
+INSERT IGNORE INTO `fs_tns_sources` (`TNSId`,`TNSName`,`decDeg`,`decSex`,`discDate`,`discMag`,`discMagFilter`,`discSurvey`,`discoveryName`,`hostName`,`hostRedshift`,`objectUrl`,`raDeg`,`raSex`,`reportingSurvey`,`separationArcsec`,`separationEastArcsec`,`separationNorthArcsec`,`specType`,`survey`,`transRedshift`, dateCreated) VALUES ("1950E" ,"SN1950E" ,"0.0" ,"+00:00:00.00" ,null ,"0" ,null ,null ,null ,"Anon." ,null ,"https://www.wis-tns.org/object/1950e" ,"0.0" ,"00:00:00.000" ,null ,"0.0" ,"-0.0" ,"-0.0" ,null ,null ,null, NOW())  ON DUPLICATE KEY UPDATE  `TNSId`="1950E", `TNSName`="SN1950E", `decDeg`="0.0", `decSex`="+00:00:00.00", `discDate`=null, `discMag`="0", `discMagFilter`=null, `discSurvey`=null, `discoveryName`=null, `hostName`="Anon.", `hostRedshift`=null, `objectUrl`="https://www.wis-tns.org/object/1950e", `raDeg`="0.0", `raSex`="00:00:00.000", `reportingSurvey`=null, `separationArcsec`="0.0", `separationEastArcsec`="-0.0", `separationNorthArcsec`="-0.0", `specType`=null, `survey`=null, `transRedshift`=null ;
