@@ -1,0 +1,14 @@
+click
+click_log
+configparser
+requests
+simplejson
+
+[dev]
+flake8
+numpydoc
+pytest
+pytest-cov
+responses
+sphinx
+sphinxcontrib-programoutput
