@@ -1,0 +1,21 @@
+numpy>=1.13.3
+pandas
+lmdb
+scipy
+matplotlib
+prettytable
+
+[:python_version < "3.5"]
+typing
+
+[dev]
+pytest>=4.6
+
+[docs]
+recommonmark>=0.5.0
+Sphinx>=3.0.0
+sphinx_copybutton
+sphinx_rtd_theme>=0.5.0
+
+[test]
+pytest>=4.6

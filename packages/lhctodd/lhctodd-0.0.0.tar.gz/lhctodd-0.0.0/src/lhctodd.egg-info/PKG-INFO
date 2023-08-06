@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lhctodd
+Version: 0.0.0
+Summary: Compare LHC DM limit to Direct Dectction Experiments
+Home-page: https://github.com/yhaddad/lhctodd
+Author: Yacine Haddad
+Author-email: yacine.haddad@cern.ch
+Maintainer: yhaddad
+Maintainer-email: yhaddad@cern.ch
+License: BSD 3-Clause License
+Description: # LHCToDD
+        
+        [![Documentation Status][rtd-badge]][rtd-link]
+        [![PyPI version][pypi-version]][pypi-link]
+        [![PyPI platforms][pypi-platforms]][pypi-link]
+        
+        [pypi-link]:                https://pypi.org/project/lhctodd/
+        [pypi-platforms]:           https://img.shields.io/pypi/pyversions/lhctodd
+        [pypi-version]:             https://badge.fury.io/py/lhctodd.svg
+        [rtd-badge]:                https://readthedocs.org/projects/lhctodd/badge/?version=latest
+        [rtd-link]:                 https://lhctodd.readthedocs.io/en/latest/?badge=latest
+        
+Platform: Any
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
