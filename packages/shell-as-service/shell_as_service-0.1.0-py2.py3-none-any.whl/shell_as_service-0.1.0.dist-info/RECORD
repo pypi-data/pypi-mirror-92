@@ -1,0 +1,8 @@
+shell_as_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shell_as_service/client.py,sha256=bMsh6W9O1xRqIdOFdv0T4lj7ZNgDG1PWElQLxUgdF3E,3754
+shell_as_service/server.py,sha256=0t5d7RPRaC3sQ4L3rtqRs3WiTYUvD4t_8gVQ-CDWZBY,1730
+shell_as_service-0.1.0.dist-info/METADATA,sha256=w--JK5QHrpNA6KJfX744W3lKgss9YVXVPiBs4_1KjrY,418
+shell_as_service-0.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+shell_as_service-0.1.0.dist-info/entry_points.txt,sha256=J9Oldtk0rzglRBVdQJB8y7OA4XXrEi1wYzIZytghFy4,67
+shell_as_service-0.1.0.dist-info/top_level.txt,sha256=H6MNAS2nxcHs6y8ts0DrVkJrdpD-zgTrNjkbVkJyzDE,17
+shell_as_service-0.1.0.dist-info/RECORD,,
