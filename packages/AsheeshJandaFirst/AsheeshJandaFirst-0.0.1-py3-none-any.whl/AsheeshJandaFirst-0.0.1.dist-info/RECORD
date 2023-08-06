@@ -1,0 +1,16 @@
+AsheeshJandaFirst/__init__.py,sha256=4Yia61lWNuaglcCuXS9jLisOxnDAdhgzcLlxrV0p1bA,149
+AsheeshJandaFirst/add.py,sha256=Nlr01qq9CDT4T_vifU237KxZiCo-Rc57Z83RFv6TlFg,99
+AsheeshJandaFirst/substract.py,sha256=mJVWvC5dN0xL64RC7zYsNG-QofAfWb59FwRW7oeWmg0,99
+AsheeshJandaFirst/extras/__init__.py,sha256=3phLzYgYZ5Xin4Jra4oVzhToAv6OQ87aNrzOLxzviSM,155
+AsheeshJandaFirst/extras/divide.py,sha256=wIPgWaeKJI5ykoi9hi5DnorL7NRh6ZsZfECFoW2fGU4,99
+AsheeshJandaFirst/extras/multiply.py,sha256=ieaIqzxfAYCF553jtfx2riXfNBrUcHiH2wnbuM1wMtk,99
+verysimplemodule/__init__.py,sha256=4Yia61lWNuaglcCuXS9jLisOxnDAdhgzcLlxrV0p1bA,149
+verysimplemodule/add.py,sha256=Nlr01qq9CDT4T_vifU237KxZiCo-Rc57Z83RFv6TlFg,99
+verysimplemodule/substract.py,sha256=mJVWvC5dN0xL64RC7zYsNG-QofAfWb59FwRW7oeWmg0,99
+verysimplemodule/extras/__init__.py,sha256=3phLzYgYZ5Xin4Jra4oVzhToAv6OQ87aNrzOLxzviSM,155
+verysimplemodule/extras/divide.py,sha256=wIPgWaeKJI5ykoi9hi5DnorL7NRh6ZsZfECFoW2fGU4,99
+verysimplemodule/extras/multiply.py,sha256=ieaIqzxfAYCF553jtfx2riXfNBrUcHiH2wnbuM1wMtk,99
+AsheeshJandaFirst-0.0.1.dist-info/METADATA,sha256=RBGSWzwD83i3juRDVS3zOKUBBxVkxGevSRSLokXxPHY,592
+AsheeshJandaFirst-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+AsheeshJandaFirst-0.0.1.dist-info/top_level.txt,sha256=Ul91KcLUorXb2bRtSzbOHCcsSHCTDUfGNa5pq4HrPtg,18
+AsheeshJandaFirst-0.0.1.dist-info/RECORD,,
