@@ -1,0 +1,3 @@
+[console_scripts]
+corr=corrscope.cli:main
+
