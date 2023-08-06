@@ -1,0 +1,319 @@
+Metadata-Version: 2.1
+Name: DevTool
+Version: 0.0.2
+Summary: a small tool for python development
+Home-page: https://github.com/guchengxi1994/dev-tool-for-python
+Author: Chengxi GU
+Author-email: guchengxi1994@qq.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (==41.0.1)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: concurrent-log-handler (==0.9.16)
+Requires-Dist: PyYAML (==5.1.1)
+
+<!--
+ * @lanhuage: markdown
+ * @Descripttion: 
+ * @version: beta
+ * @Author: xiaoshuyui
+ * @Date: 2021-01-06 08:24:38
+ * @LastEditors: xiaoshuyui
+ * @LastEditTime: 2021-01-26 14:57:45
+-->
+# dev-tool-for-python
+ a small tool for python development
+
+[![Build Status](https://www.travis-ci.com/guchengxi1994/dev-tool-for-python.svg?branch=dev)](https://www.travis-ci.com/guchengxi1994/dev-tool-for-python.svg?branch=dev)
+
+
+# Introduction
+
+### Recently, I have wrote a lot of python codes but always like this.
+
+![devtool-example](./static/devtool_example.gif)
+
+![wtf](./static/wtf.jpg)
+
+#### I think i am a bad programmer. o(￣ヘ￣o＃)
+
+#### I will forget where can i find the proper function or method even with a doc-string.(But i seldom write doc-string when coding alone.)
+
+## So i want to develop a tool to record informations when coding by using python decorators.
+
+# HOW TO USE.
+
+## 1. Download this repo. run
+
+    pip install -r requestments.txt
+
+## 2. Copy the "devtool" folder into your project.
+
+## 3. Details.
+
+### 3.1 For logs filter.
+
+    from devtool.devTool import DevTool
+    DevTool.logFilter(*kwds, **params)
+
+kws are the keywords to be searched,params include path,since and until under this version.
+
+To record log file easily,try this.
+
+    from devtool import logit
+
+    @logit()
+    def test4():
+        x = 1 / 0
+
+    test4()
+
+then DevLog/devlog.log will be created and log information will be added.
+
+    2021-01-09 09:49:00,143 - DevTool - ERROR - __main__.test4 Traceback (most recent call last):
+    File "D:\dev-tool-for-python\devtool\__init__.py", line 112, in execute
+        func(*args, **kwargs)
+    File ".\testWrap.py", line 35, in test4
+        x = 1 / 0
+    ZeroDivisionError: division by zero
+
+@logit can add three params: save,load,ignore
+
+@save ,to record the function ,params and result to DevLog/devCache.dump
+
+@load, load result from DevLog/devCache.dump if the function costs much time. if the params are same to the stored params, then return the result. Otherwise, excute again.
+
+@ignore, force to execute the function 
+
+    @logit(save=True,load=True,ignore=False)
+    def test8(a=1,b=2):
+        import time
+        rs = 'aaaaab'
+        t1 = time.time()
+        time.sleep(5)
+        print(time.time()-t1)
+        return rs
+
+    if __name__ == "__main__":
+        a = test8(a=3,b=4)
+        print(a)
+
+
+first time:
+
+    (base) PS D:\dev-tool-for-python> python .\testWrap.py
+    5.01481556892395
+    aaaaab
+
+second time:
+
+    (base) PS D:\dev-tool-for-python> python .\testWrap.py
+    aaaaab
+
+
+![linux](./static/devtool_linux.gif)
+
+### 3.2 init a new python project
+
+    from devtool.devTool import DevTool
+
+    if __name__ == "__main__":
+        DevTool.initProject('Test')
+
+![initproject](./static/devtool_init_project.gif)
+
+If 'DevTool.initProject' got a param 'tree=True', then
+
+    This script needs a parameter "path",but got "",using D:\testALg\mask2json\devTool\dev-tool-for-python\Test instead.
+    Init finishes.
+    .
+    |-- main.py
+    |-- static
+    |-- tests
+    |-- utils
+    |   |-- __init__.py
+
+The structure of project is stored in [style.yaml](./devtool/style.yaml).
+
+    MINE:
+        scripts:
+            main : root/main.py
+            utils_init : root/utils/__init__.py
+        folders:
+            static : root/static
+            utils : root/utils
+            tests : root/tests
+
+And "MINE" is my style. :)
+
+# Change log
+
+### 2021.1.26
+
+1. merge some usage from ['show-and-search'](https://github.com/guchengxi1994/show-and-search)
+
+2. add function [plot](./devtool/__init__.py)
+
+To use this decorator, try [testPlot.py](./testPlot.py), effect:
+
+    @traceplot(False)
+    def add1(a, b):
+        c = 3
+        d = 4
+        e = c + d
+        return a + b + e
+
+    @traceplot()
+    def add2(a, b):
+        c = 3
+        d = 4
+        e = c + d
+        return a + b + e
+
+    if __name__ == "__main__":
+        add1(3,4)
+        add2(3,4)
+
+
+    (base) PS D:\testALg\mask2json\devTool\dev-tool-for-python> & D:/anaconda/python.exe d:/testALg/mask2json/devTool/dev-tool-for-python/testPlot.py
+    call __main__.add1:35 {'a': 3, 'b': 4} None
+    line __main__.add1:37 {'a': 3, 'b': 4} None
+    line __main__.add1:38 {'a': 3, 'b': 4, 'c': 3} None
+    line __main__.add1:39 {'a': 3, 'b': 4, 'c': 3, 'd': 4} None
+    line __main__.add1:40 {'a': 3, 'b': 4, 'c': 3, 'd': 4, 'e': 7} None
+    return __main__.add1:40 {'a': 3, 'b': 4, 'c': 3, 'd': 4, 'e': 7} 14
+
+            section1
+     _____________________
+    |        call         |
+    |      __main__       |
+    |       add2:42       |
+    |        None         |
+    |_____________________|
+
+                |
+                |
+                |
+                |
+                V
+
+            section2
+     _____________________
+    |        line         |
+    |      __main__       |
+    |       add2:44       |
+    |        None         |
+    |_____________________|
+
+                |
+                |
+                |
+                |
+                V
+
+            section3
+     _____________________
+    |        line         |
+    |      __main__       |
+    |       add2:45       |
+    |        None         |
+    |_____________________|
+
+                |
+                |
+                |
+                |
+                V
+
+            section4
+     _____________________
+    |        line         |
+    |      __main__       |
+    |       add2:46       |
+    |        None         |
+    |_____________________|
+
+                |
+                |
+                |
+                |
+                V
+
+            section5
+     _____________________
+    |        line         |
+    |      __main__       |
+    |       add2:47       |
+    |        None         |
+    |_____________________|
+
+                |
+                |
+                |
+                |
+                V
+
+            section6
+     _____________________
+    |       return        |
+    |      __main__       |
+    |       add2:47       |
+    |         14          |
+    |_____________________|
+
+                |
+                |
+                O
+
+3. running function with a int number as the memory threshold.
+
+        @running(mThres=5)
+        def test11():
+            i = 0
+            while i <= 2:
+                print(test11.__name__ + ' running')
+                time.sleep(1.5)
+                i += 1
+
+    test11 running
+    memory : 21MB, memory_persent : 0.261%, cpu_percent : 0.0
+
+    This function out of memory with threshold 5 MB, but got 21 MB during runtime.
+
+### 2021.1.25 
+
+1. add decorator "running", see  [here](./devtool/__init__.py)
+
+To use this decorator, try [testWrap.test10](./testWrap.py), effect:
+
+    (base) PS D:\testALg\mask2json\devTool\dev-tool-for-python> python .\testWrap.py
+    test10 running
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    test10 running
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    test10 running
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+    memory : 21MB, memory_persent : 0.264%, cpu_percent : 0.0
+
+                                            Total
+                =============================================================
+                Used time:                 9.000941753387451 s,
+                Average memory:            21.0 MB,
+                Average memory percent:    0.264 %,
+                Average cpu percent:       0.0 % ,
+                Average used gpu:          0.0 MB.
+                =============================================================
+
+
+
+
+

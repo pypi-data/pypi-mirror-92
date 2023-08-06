@@ -1,0 +1,28 @@
+MINE:
+    scripts:
+        main : root/main.py
+        utils_init : root/utils/__init__.py
+    folders:
+        static : root/static
+        utils : root/utils
+        tests : root/tests
+
+MINE-SERVER:
+    scripts:
+        main : root/server.py
+        utils_init : root/utils/__init__.py
+    folders:
+        static : root/static
+        utils : root/utils
+        tests : root/tests
+        template : root/template
+
+MINE-UI:
+    scripts:
+        main : root/ui.py
+        utils_init : root/utils/__init__.py
+    folders:
+        static : root/static
+        utils : root/utils
+        tests : root/tests
+        components : root/components

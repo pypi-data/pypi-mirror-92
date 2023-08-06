@@ -1,0 +1,3 @@
+[console_scripts]
+devtool = devtool.main:script
+
