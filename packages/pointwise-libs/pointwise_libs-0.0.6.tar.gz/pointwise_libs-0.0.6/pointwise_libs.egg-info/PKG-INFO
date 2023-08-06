@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pointwise-libs
+Version: 0.0.6
+Summary: Helper functions for my political science research
+Home-page: https://github.com/lieuzhenghong/pointwise-libs
+Author: Lieu Zheng Hong
+Author-email: lieuzhenghong@gmail.com
+License: UNKNOWN
+Description: # pointwise-libs
+        library functions for pointwise polisci research
+        
+        ## How to build package
+        
+        First, ensure that there's a `.pypirc` in your home directory `~/`
+        that looks like this:
+        
+        ```
+        [pypi]
+            username = __token__
+            password = pypi-GET_API_TOKEN_FROM_PYPI_ACCOUNT
+        ```
+        
+        Then build with
+        
+        ```
+        python3 -m pip install --user --upgrade setuptools wheel
+        python3 -m pip install --user --upgrade twine
+        rm -r dist
+        # Increment the version in `setup.py`
+        python3 setup.py sdist bdist_wheel
+        twine upload dist/*
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
