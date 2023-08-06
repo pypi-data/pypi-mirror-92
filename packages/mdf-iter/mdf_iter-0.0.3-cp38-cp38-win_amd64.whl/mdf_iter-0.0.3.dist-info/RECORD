@@ -1,0 +1,11 @@
+mdf_iter/FileInterface.py,sha256=5pI_4J219a8dMp1COHwON4FhopsI75cB6b-Y9tmAleE,762
+mdf_iter/IFileInterface.py,sha256=c1gO0SQGwOoMm9d0X8JxW1Ug64pqGqoKkiGX4hYsRd8,1312
+mdf_iter/__init__.py,sha256=nHCRXtSgoa3q_KMcPCrwumeV3kq2OzvXseqhqlneNfw,137
+mdf_iter/_version.py,sha256=zFyutMc9LWorGP1pu6vCvT4qkdTdRUjgoVkc_Ji3dLA,18969
+mdf_iter/mdf_iter.pyd,sha256=48gsimrvyhlpH3BYSFBrm_wwfIuGvD8jS5Cr0_2kg-Y,988160
+mdf_iter/mdf_iter.pyi,sha256=RlTvmvDzGBc1qCR32eOxYGpxB0fySIMD-gl4RxhNHXg,6489
+mdf_iter-0.0.3.dist-info/LICENSE,sha256=LnTHuT4W4wCiiCBQmm1fY1o9sUXikaSubXtPlaJniXw,1093
+mdf_iter-0.0.3.dist-info/METADATA,sha256=19Q8zDS4ilwsmicsQ0-qiH0yC1Zmx4C_cXvYdt7koVY,5076
+mdf_iter-0.0.3.dist-info/WHEEL,sha256=9MdUI0OzwjYaHl3jWlKFDIJ5MFBPjwppNgWNtexntqg,105
+mdf_iter-0.0.3.dist-info/top_level.txt,sha256=KZ9D9VSD6QPNSOh8P_ugaqZOhK3G4jCZe0P2her8Mqo,9
+mdf_iter-0.0.3.dist-info/RECORD,,
