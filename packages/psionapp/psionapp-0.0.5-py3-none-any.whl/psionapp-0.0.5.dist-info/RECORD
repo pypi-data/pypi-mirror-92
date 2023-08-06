@@ -1,0 +1,15 @@
+psionapp/__init__.py,sha256=ojQLGmZgrutmoMDqEdvGDPkdykeHl5u44om5DfNltm0,226
+psionapp/_version.py,sha256=0Uc3zDF9XadX9j08cOIZbGoZsI0JPHTxemWum3gkos4,21
+psionapp/applicationbase.py,sha256=ZK06xdDgySz_sS9S35D-aS6mRk8qRlMcWDw7VmFFppw,6844
+psionapp/applicationclass.py,sha256=R1quSN6cxlSdhLHPykCz9h6BOgviQO9a_6OqTH8iPBc,8623
+psionapp/applicationuser.py,sha256=0IQHXt-JzFZmRl6ForfwVIdb8NthofNI7x6MxS5cD5Y,1456
+psionapp/config.py,sha256=BF-S4IOWaLW2rAEfecaTZV-Z0WMSeKtC06QeD8ruiiA,2296
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/classes_for_testing.py,sha256=E1vhpT7DjTO8FOIKwIHCU5KZB875Tmr1QYx6ckwzCkA,3926
+tests/test_applications.py,sha256=NS78miiL5BkNjJFlnGqq0jZu25L64wYcV_9lP5bzdOk,4011
+tests/test_directories.py,sha256=GB9DUbKaCszQT0_ZP8qSYonkTZSSkhj1cCz_3t0HsSY,7120
+tests/test_user.py,sha256=8Za6VmxvLPm0vEtKddlkKYUecqq8SJ8z-uuN1X7IvhI,6073
+psionapp-0.0.5.dist-info/METADATA,sha256=qU9otUR3zQuI3cfHEZenCXDhtefXLHu6ysvmx_7zvS0,2906
+psionapp-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+psionapp-0.0.5.dist-info/top_level.txt,sha256=WU4sMc9XCUz7KscFHvaxzz21Oh30rmcYimilVPOMWvI,15
+psionapp-0.0.5.dist-info/RECORD,,
