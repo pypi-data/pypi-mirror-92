@@ -1,0 +1,23 @@
+name: stub
+author: fetchai
+version: 0.15.0
+type: connection
+description: The stub connection implements a connection stub which reads/writes messages
+  from/to file.
+license: Apache-2.0
+aea_version: '>=0.9.0, <0.10.0'
+fingerprint:
+  README.md: Qmb827dTgs7psRDFFz9tjT59jsmfKMJZu1kCLZK3p8hkkd
+  __init__.py: QmWwepN9Fy9gHAp39vUGFSLdnB9JZjdyE3STnbowSUhJkC
+  connection.py: QmP9DTZTQS71GMbUoXv4axhU948dNyixkkX6GmdfQM9JgD
+fingerprint_ignore_patterns: []
+connections: []
+protocols: []
+class_name: StubConnection
+config:
+  input_file: ./input_file
+  output_file: ./output_file
+excluded_protocols: []
+restricted_to_protocols: []
+dependencies: {}
+is_abstract: false
