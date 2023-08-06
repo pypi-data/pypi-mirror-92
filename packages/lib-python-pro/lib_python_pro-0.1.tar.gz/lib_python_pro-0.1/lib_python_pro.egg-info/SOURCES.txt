@@ -1,0 +1,10 @@
+README.md
+setup.py
+lib_python_pro.egg-info/PKG-INFO
+lib_python_pro.egg-info/SOURCES.txt
+lib_python_pro.egg-info/dependency_links.txt
+lib_python_pro.egg-info/not-zip-safe
+lib_python_pro.egg-info/requires.txt
+lib_python_pro.egg-info/top_level.txt
+libpythonpro/__init__.py
+libpythonpro/github_api.py
