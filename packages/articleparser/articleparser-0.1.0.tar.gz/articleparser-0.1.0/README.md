@@ -1,0 +1,38 @@
+# articleparser
+Extracts structured data from web articles.
+
+If you've ever needed to automatically extract the content of web articles, you know how non-straightforward it can get. This project extracts the article text, authors, title, and more - with one command. 
+
+### Installation
+Install with `pip install articleparser`.  
+Requires Python 3.8+, and the following dependencies:
+```
+beautifulsoup4>=4.8
+django>=3.0
+html5lib>=1.1
+language-tags>=1.0.0
+lxml>=4.5.0
+python-dateutil>=2.8.0
+```
+
+
+### Usage
+Example usage:
+
+```
+from articleparser.article import Article
+
+# this is a filepath to a HTML document.
+filepath = "/path/to/html/document.html"
+
+a = Article(filepath)
+a.parse()
+```
+
+The parsed content will then be stored in `a.content`.
+
+### Versioning
+We use [semantic versioning](semver.org) for versioning.
+
+### License
+This project is licensed under the GNU General Public License.
