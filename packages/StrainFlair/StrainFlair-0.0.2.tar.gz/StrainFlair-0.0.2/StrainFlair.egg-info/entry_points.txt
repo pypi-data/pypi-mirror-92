@@ -1,0 +1,7 @@
+[console_scripts]
+compute_strains_abundance = strainflair.__main__:compute_strains_abundance_main
+concat_graphs = strainflair.__main__:concat_graphs_main
+genes_prediction = strainflair.__main__:genes_prediction_main
+graphs_construction = strainflair.__main__:graphs_construction_main
+json2csv = strainflair.__main__:json2csv_main
+
