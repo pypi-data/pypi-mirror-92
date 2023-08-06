@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: tutorialpypi
+Version: 0.5
+Summary: Tutorial for a new package
+Home-page: https://github.com/GonMazzini/tutorialpypi/releases/tag/v0.4
+Author: Gonzalo Mazzini
+Author-email: gmazzini@itba.edu.ar
+License: MIT
+Download-URL: https://github.com/GonMazzini/tutorialpypi/releases/tag/v5.0
+Description: UNKNOWN
+Keywords: SOME,KEYWORDS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
