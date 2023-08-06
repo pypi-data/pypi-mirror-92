@@ -1,0 +1,3 @@
+[console_scripts]
+appstore-tools=appstore_tools:run
+
