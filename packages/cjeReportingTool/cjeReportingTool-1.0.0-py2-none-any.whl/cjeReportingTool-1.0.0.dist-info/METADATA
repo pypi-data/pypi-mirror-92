@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cjeReportingTool
+Version: 1.0.0
+Summary: This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. of Tsukuba, KLIS. This package converts source code comment to markdown text using split words.
+Home-page: https://github.com/murataka9/cjeReportingTool
+Author: kami; Takahito Murakami
+Author-email: takahito@klis.tsukuba.ac.jp
+License: MIT
+Keywords: cjeReportingTool comment converter CJE University of Tsukuba KLIS
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# cjeReportingTool
+This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. Tsukuba, klis.
+
+
