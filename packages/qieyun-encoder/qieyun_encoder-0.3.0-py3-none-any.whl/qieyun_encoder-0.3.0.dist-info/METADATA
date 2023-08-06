@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: qieyun-encoder
+Version: 0.3.0
+Summary: Convert a phonological position of the Qieyun phonological system to the three-character phonological encoding and the phonological description
+Home-page: https://github.com/nk2028/qieyun-encoder
+Author: Ngiox Khyen 2028 Project
+Author-email: support@nk2028.shn.hk
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/nk2028/qieyun-encoder/issues
+Project-URL: Source, https://github.com/nk2028/qieyun-encoder
+Keywords: middle-chinese historical-linguistics qieyun
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+
+# qieyun-encoder [![](https://badge.fury.io/py/qieyun-encoder.svg)](https://pypi.org/project/qieyun-encoder/) ![](https://github.com/nk2028/qieyun-encoder/workflows/Python%20package/badge.svg)
+
+Convert a phonological position of the Qieyun phonological system to the three-character phonological encoding and the phonological description.
+
+Note: this package is only intended for developers.
+
+## Install
+
+```sh
+$ pip install qieyun-encoder
+```
+
+## Usage
+
+```python
+>>> import QieyunEncoder
+>>> QieyunEncoder.to編碼('端', None, '一', None, '東', '平')
+'EAA'
+>>> QieyunEncoder.from編碼('EAA')
+('端', None, '一', None, '東', '平')
+>>> QieyunEncoder.to描述('端', None, '一', None, '東', '平')
+'端一東平'
+>>> QieyunEncoder.from描述('端一東平')
+('端', None, '一', None, '東', '平')
+```
+
+
