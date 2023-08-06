@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: aevent
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Matthias Urlichs
+Author-email: matthias@urlichs.de
+License: MIT
+Project-URL: Source code, https://github.com/M-o-a-T/aevent
+Project-URL: Issue tracker, https://github.com/M-o-a-T/aevent/issues
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7.0
+Provides-Extra: doc
+Provides-Extra: test
+Provides-Extra: trio
