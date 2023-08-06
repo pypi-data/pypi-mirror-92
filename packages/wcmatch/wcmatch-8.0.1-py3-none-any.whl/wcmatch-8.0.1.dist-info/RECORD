@@ -1,0 +1,14 @@
+wcmatch/__init__.py,sha256=B1TCU0K3_tBWPrQHtFjcpqwZqIzuQHgnoSQcFd-zhJ0,1263
+wcmatch/__meta__.py,sha256=TsgrMAJ6E6g0xd7VfQ0PKNEnWZbjL-hen8fyyoFkp20,6621
+wcmatch/_wcparse.py,sha256=Rsi7WXkYNrYgx9Y7wv_gYEHxT7SGBf7ffZVOkrJaBF8,64432
+wcmatch/fnmatch.py,sha256=mC7QIsM-Hn0xFIDVx1Ts7dHxJR_81D-oJWjTqwMZXiU,3363
+wcmatch/glob.py,sha256=UAgE2Jo8yKFAPGw8aRjsIWQhNAfYRV39ti5FTPs379o,22464
+wcmatch/pathlib.py,sha256=czDwDR7k4egti6je8IVvPY75gkPZWCPPNl6TZpP2nFQ,5918
+wcmatch/posix.py,sha256=7wevQymN2bPJxE2LaZVR-yUWcpwJC2rEVEO8Cwa4yl0,2732
+wcmatch/util.py,sha256=B9z2MLDBF6UlI2tO7Y8qpLvijUbIn1Kr1H6BrnniBB0,6811
+wcmatch/wcmatch.py,sha256=YrWk3cIbmyvvAjnusmkoia_Mw4URPRkzPE6yrSdSKLk,9600
+wcmatch-8.0.1.dist-info/LICENSE.md,sha256=Le3cWORIglH37o7Vsk3Zu9ox5o89u9boobnK4OTx-44,1076
+wcmatch-8.0.1.dist-info/METADATA,sha256=rYIYJpRbXorfcO18T4LyobmeWhs0OW4E-32mwVF682Y,5943
+wcmatch-8.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wcmatch-8.0.1.dist-info/top_level.txt,sha256=n0uLo7IwWxe6Yw6hzGUVUfKD0r89ZS0Uw0z2lJMVYO4,8
+wcmatch-8.0.1.dist-info/RECORD,,
