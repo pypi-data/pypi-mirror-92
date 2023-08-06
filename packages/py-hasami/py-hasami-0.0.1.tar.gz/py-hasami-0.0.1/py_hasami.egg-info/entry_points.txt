@@ -1,0 +1,3 @@
+[console_scripts]
+hasami = hasami.cli:main
+
