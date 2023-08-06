@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: wordrank
+Version: 0.1.0
+Summary: query word rank, context-aware bag-of-words term weights for query and document.
+Home-page: https://github.com/shibing624/wordrank
+Author: XuMing
+Author-email: xuming624@qq.com
+License: Apache 2.0
+Description: # wordrank
+        Calculate word rank(term weighting), context-aware bag-of-words term weights for documents and queries.
+        
+Keywords: wordrank,term weighting,textrank,word rank
+Platform: Windows
+Platform: Linux
+Platform: Solaris
+Platform: Mac OS-X
+Platform: Unix
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: Chinese (Traditional)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
