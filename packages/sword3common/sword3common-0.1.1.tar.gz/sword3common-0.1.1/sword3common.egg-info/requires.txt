@@ -1,0 +1,7 @@
+
+[docs]
+Sphinx
+sphinx-autodoc-annotation
+
+[test]
+nose
