@@ -1,0 +1,17 @@
+nicobot/__init__.py,sha256=6CUeGWwGP81my0sOVMMSDcCF3xaSW-7tE957iB0lH9o,97
+nicobot/askbot.py,sha256=xb92B2FTiceopxu7D7M_V-vhkfG4AxJ9y5SJwvyXVp0,6820
+nicobot/bot.py,sha256=TJkMm8sfZqKd8Vld6DN41h9WOmSJQFkER0pdZ4h4SOw,6617
+nicobot/chatter.py,sha256=vv8Kg10KF2Ur69S8Xv0Uk2r7uzSAEE764JjlxaOffUQ,896
+nicobot/console.py,sha256=9IY8Z_JCABUyXDxq-7gYHWQIV3G3A1lqDerWg5FVMGM,918
+nicobot/helpers.py,sha256=f9PBcmqoZcJ2An48i3rtHxi01yvHiE5Hl-jALSPlogM,4878
+nicobot/jabber.py,sha256=oceBSATacZ0HHZVJhu4hJjSHYiP1XLxBetN1M7cxlJQ,15613
+nicobot/signalcli.py,sha256=AfS4sPg1lsyiC_xRwqRElT4Gk_7dbhWUjiWvhAIgm3s,7329
+nicobot/stealth.py,sha256=YHogJTE9cP1C_sKHCBRvmuENKKygGQ7gzgsb6WjhcAo,580
+nicobot/transbot.py,sha256=rTZu0tLsBetKI6vjuGUyaWDGyuctZzRUEcEi5Y58LOk,30360
+nicobot/version.py,sha256=ghFuq8DptpO7PID3HqG4He425FaEYwQu1OhHamdmtDQ,142
+nicobot-0.1.9.dist-info/LICENSE,sha256=rMQpCy2eB7kN3YbREdCE7iwG2jIk3yFREo37ubX8YZo,1065
+nicobot-0.1.9.dist-info/METADATA,sha256=GpHdQFCjG6Ckwd2DfZPBMaMivrJSqFtooaCjohoDarM,22167
+nicobot-0.1.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nicobot-0.1.9.dist-info/entry_points.txt,sha256=4zQgRy58eUq86lQpaH7DgqYnkGugdnWgfYYLKlRcjag,79
+nicobot-0.1.9.dist-info/top_level.txt,sha256=UiY6SDEQYGKSpWkNPz6ioPzSYANQ5EolWEyeqJVY2zE,8
+nicobot-0.1.9.dist-info/RECORD,,
