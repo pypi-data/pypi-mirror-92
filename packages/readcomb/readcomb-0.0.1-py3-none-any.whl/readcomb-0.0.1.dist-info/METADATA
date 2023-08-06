@@ -1,0 +1,35 @@
+Metadata-Version: 2.0
+Name: readcomb
+Version: 0.0.1
+Summary: Fast detection of recombinant reads in BAMs
+Home-page: https://github.com/ness-lab/readcomb
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: GNU GPLV3+
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Dist: cyvcf2
+Requires-Dist: pysam
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+# `Readcomb` - fast detection of recombinant reads in BAMs
+
+Currently in alpha
+
+development repo [here](https://github.com/ness-lab/recombinant-reads)
+
+### Usage:
+
+bamprep:
+
+vcfprep:
+
+filter:
+
+
+
