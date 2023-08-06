@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: PythonEventSystem
+Version: 1.0.2
+Summary: An easy-to-use pygame User Interface Library
+Home-page: https://github.com/Hugo4IT/PythonEventSystem
+Author: Hugo van de Kuilen from Hugo4IT.com
+Author-email: hugo.vandekuilen1234567890@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Super Simple and efficient EventSystem for python
+
+##### Example:
+```python
+def printHello():
+  print("hello")
+
+e = Event()     # Create event system
+e += printHello # Add printHello to the event
+e()             # Output "hello"
+e -= printHello # Remove it again
+e()             # Does nothing because there are no subscribed functions
+```
+
+
