@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: c_mssql
+Version: 0.2.1
+Summary: c_mssql
+Home-page: https://www.cnblogs.com/Evan-fanfan/
+Author: evanyang
+Author-email: lightyiyi@qq.com
+License: MIT tencent_message
+Description: 1-use pyodbc instead of pymssql.
+        2-add trust connection
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
