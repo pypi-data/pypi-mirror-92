@@ -1,0 +1,15 @@
+#!python
+import sys
+import cicd.driver
+from cicd.logger import log
+
+def main():
+    try:
+        return cicd.driver.main()
+    except Exception as e:
+        log.exception(e)
+        if 'returncode' in e.__dict__.keys():
+            sys.exit(e.returncode)
+        sys.exit(1)
+if __name__ == '__main__':
+    sys.exit(main())
