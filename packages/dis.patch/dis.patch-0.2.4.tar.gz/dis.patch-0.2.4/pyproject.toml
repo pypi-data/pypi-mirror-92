@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "dis.patch"
+version = "0.2.4"
+description = "A discord.py utility library."
+authors = ["makubob <makupi@icloud.com>"]
+license = "GPLv3"
+packages = [{include = "dispatch"}]
+readme = "README.md"
+repository = "https://github.com/makupi/dispatch"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-vvv"
+testpaths = ["tests"]
+
+[tool.poe.tasks]
+test = "python -m pytest"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pydantic = "^1.7.3"
+python-dotenv = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+"discord.py" = "^1.5.1"
+aiounittest = "^1.4.0"
+pytest = "^6.2.1"
+poethepoet = "^0.9.0"
+pytest-asyncio = "^0.14.0"
+python-dotenv = "^0.15.0"
+bumpversion = "^0.6.0"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
