@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: rays_pycocotools
+Version: 2.5
+Summary: Wrapper of pycocotools that correctly installs with pip.
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: # rays_pycocotools
+        
+        Wrapper of [pycocotools](https://github.com/cocodataset/cocoapi) that correctly installs with pip.
+Platform: UNKNOWN
+Requires-Python: >=3.6
