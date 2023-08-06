@@ -1,0 +1,13 @@
+pyproject.toml
+setup.cfg
+src/tdownloader/__init__.py
+src/tdownloader/downloader.py
+src/tdownloader/input_file_reader.py
+src/tdownloader/main.py
+src/tdownloader.egg-info/PKG-INFO
+src/tdownloader.egg-info/SOURCES.txt
+src/tdownloader.egg-info/dependency_links.txt
+src/tdownloader.egg-info/entry_points.txt
+src/tdownloader.egg-info/requires.txt
+src/tdownloader.egg-info/top_level.txt
+test/test_downloader.py
