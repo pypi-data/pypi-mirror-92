@@ -1,0 +1,3 @@
+[console_scripts]
+chipmunkdb_python_client = chipmunkdb.ChipmunkDb:main
+
