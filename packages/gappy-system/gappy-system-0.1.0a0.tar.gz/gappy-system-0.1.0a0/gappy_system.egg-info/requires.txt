@@ -1,0 +1,11 @@
+cysignals
+psutil
+
+[docs]
+Sphinx
+
+[tests]
+pytest
+pytest-cython>=0.1.1
+pytest-doctestplus
+setuptools_scm
