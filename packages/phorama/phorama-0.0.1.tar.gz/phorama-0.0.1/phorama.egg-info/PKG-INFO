@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: phorama
+Version: 0.0.1
+Summary: A package for neural image enhancement
+Home-page: https://github.com/hnhaefliger/placeholder
+Author: Henry Haefliger
+Author-email: code@henryhaefliger.com
+License: GPLv3+
+Description: # phorama
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
