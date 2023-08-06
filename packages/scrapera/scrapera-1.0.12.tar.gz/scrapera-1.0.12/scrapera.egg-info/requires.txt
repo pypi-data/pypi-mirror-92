@@ -1,0 +1,17 @@
+bs4
+numpy
+pandas
+beautifulsoup4
+certifi
+chardet
+idna
+Pillow
+python-dateutil
+pytube
+pytz
+requests
+selenium
+six
+soupsieve
+tqdm
+typing-extensions
