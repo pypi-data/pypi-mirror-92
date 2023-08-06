@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Remove old Nexpose reports."
+    args = parser.parse_args()
+
+    config = nexpose.config(args)
+
+    reports = nexpose.remove_old_reports(nlogin=config)
+    for report in reports:
+        print(f"removed report id {report}")
+
+
+if __name__ == "__main__":
+    main()

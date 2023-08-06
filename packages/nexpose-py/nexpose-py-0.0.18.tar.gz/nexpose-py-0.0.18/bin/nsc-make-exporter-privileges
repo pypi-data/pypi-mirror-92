@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Make priviledges sufficient to monitor Nexpose"
+    args = parser.parse_args()
+
+    config = nexpose.config(args)
+    role = {
+        "description": "Read-only privileges adequate for monitoring health.",
+        "id": "monitor",
+        "name": "monitor",
+        "privileges": ["view-asset-group-asset-data", "view-site-asset-data"]
+        }
+
+    print(nexpose.create_role(nlogin=config, role=role))
+
+if __name__ == "__main__":
+    main()

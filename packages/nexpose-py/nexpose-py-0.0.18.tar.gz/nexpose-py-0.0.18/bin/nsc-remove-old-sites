@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Remove old or unscheduled Nexpose sites."
+
+    parser.add_argument(
+        "-d",
+        "--days",
+        help="""Minimum age in days to delete.
+        Default is 90.
+        """,
+        action="store",
+        type=int,
+        default=90,
+    )
+    parser.add_argument(
+        "-r",
+        "--regex",
+        help="""Regex to match site names on. Do not delete site names which
+        do not match this regex.
+        Default is '.*'
+        """,
+        action="store",
+        default=".*",
+    )
+
+    args = parser.parse_args()
+    config = nexpose.config(args)
+    regex = args.regex
+    days = args.days
+
+    sites = nexpose.remove_old_sites(nlogin=config, days=days, regex=regex)
+    for site in sites:
+        print(f"deleted site id {site}")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+
+from time import sleep
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = """
+    Maintenance service for Nexpose scan console.
+    Remove old sites and old reports.
+    """
+
+    parser.add_argument(
+        "-d",
+        "--days",
+        help="""Minimum age in days to delete.
+        Default is 90.
+        """,
+        action="store",
+        type=int,
+        default=90,
+    )
+    parser.add_argument(
+        "-r",
+        "--regex",
+        help="""Regex to match site names on. Do not delete site names which
+        do not match this regex.
+        Default is '.*'
+        """,
+        action="store",
+        default=".*",
+    )
+    parser.add_argument(
+        "-s",
+        "--single-pass",
+        help="""Perform a single pass cleaning up and exit,
+        instead of repeating forever.
+        """,
+        action="store_true",
+        default=False,
+    )
+    parser.add_argument(
+        "-l",
+        "--lag",
+        help="""Lag in seconds between repeating main loop.
+        Default is 3600 (1 hour). Set higher for larger amounts of data.
+        """,
+        action="store",
+        type=int,
+        default=3600,
+    )
+
+    args = parser.parse_args()
+    regex = args.regex
+    days = args.days
+    single_pass = args.single_pass
+    lag = args.lag
+    config = nexpose.config(args)
+
+    while True:
+        sites = nexpose.remove_old_sites(nlogin=config, days=days, regex=regex)
+        for site in sites:
+            print(f"deleted site id {site}")
+        reports = nexpose.remove_old_reports(nlogin=config)
+        for report in reports:
+            print(f"removed report id {report}")
+        if single_pass:
+            break
+        sleep(lag)
+
+
+if __name__ == "__main__":
+    main()
