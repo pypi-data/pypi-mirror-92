@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PiWaterflow irrigation system</title>
+<link rel="stylesheet" type="text/css" href="static/css/view.css" media="all">
+<link rel="icon" type="image/png" sizes="32x32" href="static/img/icon-32.png">
+<link rel="icon" type="image/png" sizes="256x256" href="static/img/icon-256.png">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body id="main_body" >
+	
+	<img id="top" src="static/img/top.png" alt="">
+	<div id="form_container">
+	
+		<h1><a align="center">PiWaterflow</a></h1>
+		<form id="form_9355" class="appnitro"  method="POST" action="">
+			<div class="form_description">
+				<ul>
+					<li>
+						<img src="static/img/icon-32.png" alt="Icon">
+						<strong>PiWaterflow remote control</strong>
+					</li>
+				</ul>
+				<p id = 'status'>Status: Retrieving status...</p>
+			</div>
+
+			<ul >
+				<fieldset>
+					<legend>Program 1</legend>
+					<li id="program1" >
+						<span>
+							<label class="description">Start </label>
+							<input type="time" id="time1" name="time1" value={{time1}} required>
+						</span>
+						<span>
+							<label class="description" >Valve 1</label>
+							<input id="valve11" name="valve11" class="element text " size="2" type="text" maxlength="2" value={{valve11}} />
+						</span>
+						<span>
+							<label class="description" >Valve 2</label>
+							<input id="valve12" name="valve12" class="element text " size="2" type="text" maxlength="2" value={{valve12}} />
+						</span>
+						<span>
+							<label class="description" >Enabled</label>
+							<input type="checkbox" id="prog1enabled" name="prog1enabled" value="True">
+							<script type="text/javascript">
+								document.getElementById('prog1enabled').checked = '{{enabled1}}'=='True'
+							</script>
+						</span>
+						<span>
+							<label class="description" >Force now</label>
+							<button id="play1" style="border:none; background:none;">
+								<img src="static/img/play.png"></img>
+							</button>
+						</span>
+					</li>
+				</fieldset>
+				<fieldset>
+					<legend>Program 2</legend>
+					<li id="program2" >
+						<span>
+							<label class="description">Start </label>
+							<input type="time" id="time2" name="time2" value={{time2}} required>
+						</span>
+						<span>
+							<label class="description" >Valve 1</label>
+							<input id="valve21" name="valve21" class="element text " size="2" type="text" maxlength="2" value={{valve21}} />
+						</span>
+						<span>
+							<label class="description" >Valve 2</label>
+							<input id="valve22" name="valve22" class="element text " size="2" type="text" maxlength="2" value={{valve22}} />
+						</span>
+						<span>
+							<label class="description" >Enabled</label>
+							<input type="checkbox" id="prog2enabled" name="prog2enabled" value="True">
+							<script type="text/javascript">
+								document.getElementById('prog2enabled').checked = '{{enabled2}}'=='True'
+							</script>
+						</span>
+						<span>
+							<label class="description" >Force now</label>
+							<button id="play2" style="border:none; background:none;">
+								<img src="static/img/play.png"></img>
+							</button>
+						</span>
+					</li>
+				</fieldset>
+				<li class="buttons">
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="Change Programs" />
+				</li>
+			</ul>
+		</form>	
+	</div>
+	<textarea id="log" rows="20"  style = "width:440px; resize: vertical; font-size: 10px;" readonly>Retrieving log...</textarea>
+
+	<img id="bottom" src="static/img/bottom.png" alt="">
+	<script type="text/javascript" src="static/js/code.js"></script>
+
+	</body>
+</html>
