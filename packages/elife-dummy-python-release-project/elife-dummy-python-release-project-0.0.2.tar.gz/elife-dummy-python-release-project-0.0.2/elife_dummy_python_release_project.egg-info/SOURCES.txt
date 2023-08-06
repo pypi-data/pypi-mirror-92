@@ -1,0 +1,7 @@
+README.md
+setup.py
+dummy/__init__.py
+elife_dummy_python_release_project.egg-info/PKG-INFO
+elife_dummy_python_release_project.egg-info/SOURCES.txt
+elife_dummy_python_release_project.egg-info/dependency_links.txt
+elife_dummy_python_release_project.egg-info/top_level.txt
