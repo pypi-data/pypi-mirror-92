@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: winter
+Version: 1.0
+Summary: Web Framework inspired by Spring Framework
+Home-page: https://github.com/mofr/winter
+Author: Alexander Egorov
+Author-email: mofr@zond.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Dist: dataclasses (>=0.6)
+Requires-Dist: djangorestframework (>=3.9.0)
+Requires-Dist: Django (>=1.11.16)
+Requires-Dist: docstring-parser (>=0.1)
+Requires-Dist: drf-yasg (>=1.11.0)
+Requires-Dist: injector (>=0.13.4)
+Requires-Dist: pydantic (>=0.15)
+
+UNKNOWN
+
+
