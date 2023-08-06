@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            clock=package_name:main
+        
