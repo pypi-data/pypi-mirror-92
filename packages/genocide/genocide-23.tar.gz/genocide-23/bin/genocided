@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+# OTP-CR-117/19 otp.informationdesk@icc-cpi.int http://genocide.rtfd.io
+#
+# this file is placed in the public domain
+
+"Object Programming Daemon"
+
+# imports
+
+import op
+import os
+
+from op.hdl import Handler
+from op.trm import execute
+from op.utl import privileges
+
+# defines
+
+mods = "irc,rss,udp"
+wd = "/var/lib/opd"
+
+# functions
+
+def main():
+    "main function"
+    op.wd = wd
+    privileges("opd")
+    h = Handler()
+    h.load("op.cmd")
+    h.start()
+    for thr in h.init(mods):
+        thr.join()
+    h.wait()
+
+# runtime
+
+execute(main)
+os._exit(0)
