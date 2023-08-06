@@ -1,0 +1,6 @@
+[sentry.apps]
+webhooks = sentry_slack_integration_webhooks
+
+[sentry.plugins]
+webhooks = sentry_slack_integration_webhooks.plugin:SlackWebHooksPlugin
+
