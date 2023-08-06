@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: tccloud
+Version: 0.1.1
+Summary: Python client for interacting with TeraChem Cloud
+Home-page: https://github.com/coltonbh/terachem-cloud-pyclient
+Author: Colton Hicks
+Author-email: pypi@coltonhicks.com
