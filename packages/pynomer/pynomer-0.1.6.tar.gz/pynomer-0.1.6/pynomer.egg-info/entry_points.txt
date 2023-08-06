@@ -1,0 +1,3 @@
+[console_scripts]
+pynomer = pynomer.cli:main
+
