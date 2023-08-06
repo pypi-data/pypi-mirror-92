@@ -1,0 +1,4 @@
+*.sw[a-z]
+*.patch
+_build
+*.pt

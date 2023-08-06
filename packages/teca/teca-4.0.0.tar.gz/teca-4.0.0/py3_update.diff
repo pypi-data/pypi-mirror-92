@@ -1,0 +1,427 @@
+commit aa19057fffeeb88a68a6e929105310afa4ecf9cf
+Author: Burlen Loring <bloring@lbl.gov>
+Date:   Thu Nov 29 09:31:36 2018 -0800
+
+    update to Python 3
+
+diff --git a/CMake/FindNumpy.cmake b/CMake/FindNumpy.cmake
+index b6988c5..5e2419b 100644
+--- a/CMake/FindNumpy.cmake
++++ b/CMake/FindNumpy.cmake
+@@ -10,7 +10,7 @@
+ set(_TMP_PY_OUTPUT)
+ set(_TMP_PY_RETURN)
+ exec_program("${PYTHON_EXECUTABLE}"
+-  ARGS "-c 'import numpy; print numpy.get_include()'"
++  ARGS "-c 'import numpy; print(numpy.get_include())'"
+   OUTPUT_VARIABLE _TMP_PY_OUTPUT
+   RETURN_VALUE _TMP_PY_RETURN)
+ set(NUMPY_INCLUDE_FOUND FALSE)
+@@ -24,7 +24,7 @@ set(NUMPY_INCLUDE_DIR "${_TMP_PY_OUTPUT}")
+ set(_TMP_PY_OUTPUT)
+ set(_TMP_PY_RETURN)
+ exec_program("${PYTHON_EXECUTABLE}"
+-  ARGS "-c 'import numpy; print numpy.version.version'"
++  ARGS "-c 'import numpy; print(numpy.version.version)'"
+   OUTPUT_VARIABLE _TMP_PY_OUTPUT
+   RETURN_VALUE _TMP_PY_RETURN)
+ set(NUMPY_VERSION_FOUND FALSE)
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index eb91136..c7e28e5 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -163,26 +163,9 @@ set(TECA_HAS_OPENSSL ${tmp} CACHE BOOL "OpenSSL features")
+ 
+ # configure for Python
+ set(tmp OFF)
+-find_package(PythonInterp)
+-if(PYTHONINTERP_FOUND)
+-    find_program(PYTHON_CONFIG_EXECUTABLE python-config)
+-    if (NOT PYTHON_CONFIG_EXECUTABLE)
+-        message(SEND_ERROR "python-config executable is required.")
+-    endif()
+-    execute_process(COMMAND ${PYTHON_CONFIG_EXECUTABLE} --prefix
+-        OUTPUT_VARIABLE python_prefix OUTPUT_STRIP_TRAILING_WHITESPACE)
+-    set(PYTHON_INCLUDE_DIR ${python_prefix}/include/python2.7)
+-    if (EXISTS ${python_prefix}/lib/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-        set(PYTHON_LIBRARY ${python_prefix}/lib/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-    elseif (EXISTS ${python_prefix}/lib64/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-        set(PYTHON_LIBRARY ${python_prefix}/lib64/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-    elseif (EXISTS ${python_prefix}/lib/x86_64-linux-gnu/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-        set(PYTHON_LIBRARY ${python_prefix}/lib/x86_64-linux-gnu/libpython2.7${CMAKE_SHARED_LIBRARY_SUFFIX})
+-    else()
+-        message(SEND_ERROR "Failed to locate Python library for ${python_prefix}")
+-    endif()
+-endif()
+-find_package(PythonLibs)
++find_package(PythonInterp 3)
++find_package(PythonLibs 3)
++#find_package(Python COMPONENTS Interpreter Development)
+ find_package(Numpy)
+ find_program(swig_cmd NAMES swig swig3.0)
+ find_package(Mpi4Py)
+diff --git a/python/teca_py_algorithm.h b/python/teca_py_algorithm.h
+index 94a8744..1e08f5a 100644
+--- a/python/teca_py_algorithm.h
++++ b/python/teca_py_algorithm.h
+@@ -15,7 +15,7 @@
+ #define TECA_PY_CALLBACK_ERROR(_phase, _cb_obj)             \
+     {                                                       \
+     PyObject *cb_str = PyObject_Str(_cb_obj);               \
+-    const char *cb_c_str = PyString_AsString(cb_str);       \
++    const char *cb_c_str = PyUnicode_AsUTF8(cb_str);        \
+                                                             \
+     TECA_ERROR("An exception ocurred when invoking the "    \
+     "user supplied Python callback \"" << cb_c_str << "\""  \
+diff --git a/python/teca_py_common.i b/python/teca_py_common.i
+index 5024302..9a36346 100644
+--- a/python/teca_py_common.i
++++ b/python/teca_py_common.i
+@@ -11,7 +11,7 @@
+ 
+         std::ostringstream oss;
+         self->to_stream(oss);
+-        return PyString_FromString(oss.str().c_str());
++        return PyUnicode_FromString(oss.str().c_str());
+     }
+ %enddef
+ 
+diff --git a/python/teca_py_data.i b/python/teca_py_data.i
+index f089b22..d2fee17 100644
+--- a/python/teca_py_data.i
++++ b/python/teca_py_data.i
+@@ -246,8 +246,8 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+         if (PyInt_Check(id))
+             col = self->get_column(PyInt_AsLong(id));
+         else
+-        if (PyString_Check(id))
+-            col = self->get_column(PyString_AsString(id));
++        if (PyUnicode_Check(id))
++            col = self->get_column(PyUnicode_AsUTF8(id));
+ 
+         if (!col)
+         {
+@@ -345,7 +345,7 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+ 
+         for (Py_ssize_t i = 0; i < n_names; ++i)
+         {
+-            const char *name = PyString_AsString(PyList_GetItem(names, i));
++            const char *name = PyUnicode_AsUTF8(PyList_GetItem(names, i));
+             if (!name)
+             {
+                 PyErr_Format(PyExc_TypeError,
+@@ -353,7 +353,7 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+                 return;
+             }
+ 
+-            const char *type = PyString_AsString(PyList_GetItem(types, i));
++            const char *type = PyUnicode_AsUTF8(PyList_GetItem(types, i));
+             if (!type)
+             {
+                 PyErr_Format(PyExc_TypeError,
+@@ -393,7 +393,7 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+         }
+ 
+         // sequences
+-        if (PySequence_Check(obj) && !PyString_Check(obj))
++        if (PySequence_Check(obj) && !PyUnicode_Check(obj))
+         {
+             long n_items = PySequence_Size(obj);
+             for (long i = 0; i < n_items; ++i)
+diff --git a/python/teca_py_iterator.h b/python/teca_py_iterator.h
+index 3815741..48445f6 100644
+--- a/python/teca_py_iterator.h
++++ b/python/teca_py_iterator.h
+@@ -44,7 +44,7 @@ namespace teca_py_iterator
+ bool is_iterable(PyObject *obj)
+ {
+     PyObject *iter = nullptr;
+-    if (PyString_Check(obj)|| !(iter = PyObject_GetIter(obj)))
++    if (PyUnicode_Check(obj) || !(iter = PyObject_GetIter(obj)))
+     {
+         PyErr_Clear();
+         return false;
+diff --git a/python/teca_py_object.h b/python/teca_py_object.h
+index 0c621a9..e8a238d 100644
+--- a/python/teca_py_object.h
++++ b/python/teca_py_object.h
+@@ -16,8 +16,8 @@ if know the Python type tag then this class gives you:
+ ::value -- convert given PyObject to its C++ type
+ 
+ Python type tags and their coresponding PyObject's are:
+-int --> PyInt, long --> PyLong, bool --> PyBool,
+-float --> PyFloat, char* --> PyString
++int --> PyLong, long --> PyLong, bool --> PyBool,
++float --> PyFloat, char* --> PyUnicode
+ */
+ template <typename py_t> struct cpp_tt
+ {};
+@@ -34,11 +34,11 @@ template <> struct cpp_tt<PY_T>                                         \
+     static bool is_type(PyObject *obj) { return PY_CHECK(obj); }        \
+     static type value(PyObject *obj) { return PY_AS_CPP(obj); }         \
+ };
+-teca_py_object_cpp_tt_declare(int, long, PyInt_Check, PyInt_AsLong)
++teca_py_object_cpp_tt_declare(int, long, PyLong_Check, PyLong_AsLong)
+ teca_py_object_cpp_tt_declare(long, long, PyLong_Check, PyLong_AsLong)
+ teca_py_object_cpp_tt_declare(float, double, PyFloat_Check, PyFloat_AsDouble)
+-teca_py_object_cpp_tt_declare(char*, std::string, PyString_Check, PyString_AsString)
+-teca_py_object_cpp_tt_declare(bool, int, PyBool_Check, PyInt_AsLong)
++teca_py_object_cpp_tt_declare(char*, std::string, PyUnicode_Check, PyUnicode_AsUTF8)
++teca_py_object_cpp_tt_declare(bool, int, PyBool_Check, PyLong_AsLong)
+ 
+ /// py_tt, traits class for working with PyObject's
+ /**
+@@ -71,16 +71,16 @@ template <> struct py_tt<CPP_T>                             \
+     static PyObject *new_object(CPP_T val)                  \
+     { return CPP_AS_PY(val); }                              \
+ };
+-teca_py_object_py_tt_declare(char, int, PyInt_FromLong)
+-teca_py_object_py_tt_declare(short, int, PyInt_FromLong)
+-teca_py_object_py_tt_declare(int, int, PyInt_FromLong)
+-teca_py_object_py_tt_declare(long, int, PyInt_FromLong)
+-teca_py_object_py_tt_declare(long long, int, PyInt_FromSsize_t)
+-teca_py_object_py_tt_declare(unsigned char, int, PyInt_FromSize_t)
+-teca_py_object_py_tt_declare(unsigned short, int, PyInt_FromSize_t)
+-teca_py_object_py_tt_declare(unsigned int, int, PyInt_FromSize_t)
+-teca_py_object_py_tt_declare(unsigned long, int, PyInt_FromSize_t)
+-teca_py_object_py_tt_declare(unsigned long long, int, PyInt_FromSize_t)
++teca_py_object_py_tt_declare(char, int, PyLong_FromLong)
++teca_py_object_py_tt_declare(short, int, PyLong_FromLong)
++teca_py_object_py_tt_declare(int, int, PyLong_FromLong)
++teca_py_object_py_tt_declare(long, int, PyLong_FromLong)
++teca_py_object_py_tt_declare(long long, int, PyLong_FromSsize_t)
++teca_py_object_py_tt_declare(unsigned char, int, PyLong_FromSize_t)
++teca_py_object_py_tt_declare(unsigned short, int, PyLong_FromSize_t)
++teca_py_object_py_tt_declare(unsigned int, int, PyLong_FromSize_t)
++teca_py_object_py_tt_declare(unsigned long, int, PyLong_FromSize_t)
++teca_py_object_py_tt_declare(unsigned long long, int, PyLong_FromSize_t)
+ teca_py_object_py_tt_declare(float, float, PyFloat_FromDouble)
+ teca_py_object_py_tt_declare(double, float, PyFloat_FromDouble)
+ // strings are a special case
+@@ -88,7 +88,7 @@ template <> struct py_tt<std::string>
+ {
+     typedef char* tag;
+     static PyObject *new_object(const std::string &s)
+-    { return PyString_FromString(s.c_str()); }
++    { return PyUnicode_FromString(s.c_str()); }
+ };
+ // TODO -- special case for teca_metadata
+ 
+diff --git a/python/teca_py_sequence.h b/python/teca_py_sequence.h
+index de9d767..08e2da5 100644
+--- a/python/teca_py_sequence.h
++++ b/python/teca_py_sequence.h
+@@ -71,7 +71,7 @@ bool is_type(PyObject *seq)
+ bool append(teca_variant_array *va, PyObject *seq)
+ {
+     // not a sequence
+-    if (!PySequence_Check(seq) || PyString_Check(seq))
++    if (!PySequence_Check(seq) || PyUnicode_Check(seq))
+         return false;
+ 
+     // nothing to do
+@@ -113,7 +113,7 @@ bool append(teca_variant_array *va, PyObject *seq)
+ bool copy(teca_variant_array *va, PyObject *seq)
+ {
+     // not a sequence
+-    if (!PySequence_Check(seq) || PyString_Check(seq))
++    if (!PySequence_Check(seq) || PyUnicode_Check(seq))
+         return false;
+ 
+     // nothing to do
+@@ -158,7 +158,7 @@ bool copy(teca_variant_array *va, PyObject *seq)
+ p_teca_variant_array new_variant_array(PyObject *seq)
+ {
+     // not a sequence
+-    if (!PySequence_Check(seq) || PyString_Check(seq))
++    if (!PySequence_Check(seq) || PyUnicode_Check(seq))
+         return nullptr;
+ 
+     // nothing to do
+diff --git a/test/python/CMakeLists.txt b/test/python/CMakeLists.txt
+index fbf50a4..3e70350 100644
+--- a/test/python/CMakeLists.txt
++++ b/test/python/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ teca_add_test(py_test_cf_reader
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_cf_reader.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_cf_reader.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     1 2 "py_test_cf_reader_%t%.vtk" U850 V850
+     FEATURES ${TECA_HAS_NETCDF}
+@@ -8,61 +8,61 @@ teca_add_test(py_test_cf_reader
+ # TODO -- camke_parse_arguments eats ""
+ if (TECA_DATA_ROOT AND TECA_HAS_NETCDF)
+     add_test(NAME py_test_connected_components
+-        COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_connected_components.py
++        COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_connected_components.py
+         "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-01-10800\\.nc"
+         "" U850 V850 15 0 0 "py_test_connected_components_%t%.vtk"
+         WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+ endif()
+ 
+ teca_add_test(py_test_derived_quantity
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_derived_quantity.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_derived_quantity.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     U850 V850 0 0 "py_test_derived_quantity_%t%.vtk"
+     FEATURES ${TECA_HAS_NETCDF}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_programmable_algorithm
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_algorithm.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_algorithm.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     U850 V850 0 0 "py_test_programmable_algorithm_%t%.vtk"
+     FEATURES ${TECA_HAS_NETCDF}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_vector_ops
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_vector_ops.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_vector_ops.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-01-10800\\.nc"
+     0 0 py_test_vector_ops_%t%.vtk U850 V850
+     FEATURES ${TECA_HAS_NETCDF}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_array_collection
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_array_collection.py)
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_array_collection.py)
+ 
+ teca_add_test(py_test_metadata
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_metadata.py)
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_metadata.py)
+ 
+ teca_add_test(py_test_variant_array
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_variant_array.py)
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_variant_array.py)
+ 
+ teca_add_test(py_test_database
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_database.py)
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_database.py)
+ 
+ teca_add_test(py_test_programmable_map_reduce_serial
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     "${TECA_DATA_ROOT}/py_test_programmable_map_reduce.bin" 0 -1 1 TMQ T200 T500
+     FEATURES ${TECA_HAS_NETCDF} ${TECA_HAS_UDUNITS}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_programmable_map_reduce_thread
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     "${TECA_DATA_ROOT}/py_test_programmable_map_reduce.bin" 0 -1 4 TMQ T200 T500
+     FEATURES ${TECA_HAS_NETCDF} ${TECA_HAS_UDUNITS}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_programmable_map_reduce_mpi
+-    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} python
++    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} ${PYTHON_EXECUTABLE}
+     ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     "${TECA_DATA_ROOT}/py_test_programmable_map_reduce.bin" 0 -1 1 TMQ T200 T500
+@@ -70,7 +70,7 @@ teca_add_test(py_test_programmable_map_reduce_mpi
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_programmable_map_reduce_mpi_thread
+-    COMMAND ${MPIEXEC} -n ${HALF_CORES} python
++    COMMAND ${MPIEXEC} -n ${HALF_CORES} ${PYTHON_EXECUTABLE}
+     ${CMAKE_CURRENT_SOURCE_DIR}/test_programmable_map_reduce.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2\\.cam2\\.h2\\.1991-10-0[12]-10800\\.nc"
+     "${TECA_DATA_ROOT}/py_test_programmable_map_reduce.bin" 0 -1 ${HALF_CORES}
+@@ -79,7 +79,7 @@ teca_add_test(py_test_programmable_map_reduce_mpi_thread
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_candidates_serial
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
+     "${TECA_DATA_ROOT}/test_tc_candidates_1990_07_0[12]\\.nc"
+     "${TECA_DATA_ROOT}/test_tc_candidates_20.bin" 0 3 1
+     U850 V850 UBOT VBOT PSL T500 T200 Z1000 Z200 -20 20
+@@ -87,7 +87,7 @@ teca_add_test(py_test_tc_candidates_serial
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_candidates_mpi
+-    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} python
++    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} ${PYTHON_EXECUTABLE}
+     ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
+     "${TECA_DATA_ROOT}/test_tc_candidates_1990_07_0[12]\\.nc"
+     "${TECA_DATA_ROOT}/test_tc_candidates_20.bin" 0 3 1
+@@ -96,7 +96,7 @@ teca_add_test(py_test_tc_candidates_mpi
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_candidates_threads
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
+     "${TECA_DATA_ROOT}/test_tc_candidates_1990_07_0[12]\\.nc"
+     "${TECA_DATA_ROOT}/test_tc_candidates_20.bin" 0 3 ${TECA_TEST_CORES}
+     U850 V850 UBOT VBOT PSL T500 T200 Z1000 Z200 -20 20
+@@ -104,7 +104,7 @@ teca_add_test(py_test_tc_candidates_threads
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_candidates_mpi_threads
+-    COMMAND ${MPIEXEC} -n ${HALF_CORES} python
++    COMMAND ${MPIEXEC} -n ${HALF_CORES} ${PYTHON_EXECUTABLE}
+     ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_candidates.py
+     "${TECA_DATA_ROOT}/test_tc_candidates_1990_07_0[12]\\.nc"
+     "${TECA_DATA_ROOT}/test_tc_candidates_20.bin" 0 3 ${HALF_CORES}
+@@ -113,20 +113,20 @@ teca_add_test(py_test_tc_candidates_mpi_threads
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_event_filter
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_event_filter.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_event_filter.py
+     "${TECA_DATA_ROOT}/test_tc_candidates_20.bin"
+     "${TECA_DATA_ROOT}/test_event_filter.bin"
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_stats
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_stats.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_stats.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2_classify_2005_09.bin"
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2_stats_2005_09.bin"
+     FEATURES ${TECA_HAS_UDUNITS}
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_trajectory_scalars_serial
+-    COMMAND python ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_trajectory_scalars.py
++    COMMAND ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_trajectory_scalars.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2_tracks_2005_09.bin"
+     "${TECA_DATA_ROOT}/earthmap4k.png"
+     "${TECA_DATA_ROOT}/py_test_tc_trajectory_scalars.bin" 0 -1
+@@ -134,7 +134,7 @@ teca_add_test(py_test_tc_trajectory_scalars_serial
+     REQ_TECA_DATA)
+ 
+ teca_add_test(py_test_tc_trajectory_scalars_mpi
+-    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} python
++    COMMAND ${MPIEXEC} -n ${TECA_TEST_CORES} ${PYTHON_EXECUTABLE}
+     ${CMAKE_CURRENT_SOURCE_DIR}/test_tc_trajectory_scalars.py
+     "${TECA_DATA_ROOT}/cam5_1_amip_run2_tracks_2005_09.bin"
+     "${TECA_DATA_ROOT}/earthmap4k.png"
+diff --git a/test/python/test_variant_array.py b/test/python/test_variant_array.py
+index 2c8d5bc..1fdbe05 100644
+--- a/test/python/test_variant_array.py
++++ b/test/python/test_variant_array.py
+@@ -27,9 +27,9 @@ start_sec('set')
+ for arr in arrs:
+     out('%s\n'%(str(type(arr))))
+     arr.resize(20)
+-    for i in xrange(10):
++    for i in range(10):
+         arr[i] = int(i)
+-    for i in xrange(10):
++    for i in range(10):
+         arr[i+10] = float(10 - i)
+ end_sec('set')
+ 
+@@ -45,7 +45,7 @@ end_sec('append')
+ start_sec('get')
+ for arr in arrs:
+     out('%s\n'%(str(type(arr))))
+-    for i in xrange(20):
++    for i in range(20):
+         out('%g '%(arr[i]))
+     out('\n')
+ end_sec('get')

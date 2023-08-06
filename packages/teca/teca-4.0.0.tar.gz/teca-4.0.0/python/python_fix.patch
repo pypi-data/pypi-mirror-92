@@ -1,0 +1,127 @@
+diff --git a/python/teca_py_alg.i b/python/teca_py_alg.i
+index 67d3296..3336760 100644
+--- a/python/teca_py_alg.i
++++ b/python/teca_py_alg.i
+@@ -142,22 +142,24 @@
+ %shared_ptr(teca_programmable_algorithm)
+ %extend teca_programmable_algorithm
+ {
+-    // note: its not worth acquiring the GIL while setting the callbacks
+-    // as these are intended to be used only from the main thread during
+-    // initialization
+-
+     void set_report_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_report_callback(teca_py_algorithm::report_callback(f));
+     }
+ 
+     void set_request_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_request_callback(teca_py_algorithm::request_callback(f));
+     }
+ 
+     void set_execute_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_execute_callback(teca_py_algorithm::execute_callback(f));
+     }
+ }
+@@ -178,22 +180,24 @@
+ %shared_ptr(teca_programmable_reduce)
+ %extend teca_programmable_reduce
+ {
+-    // note: its not worth acquiring the GIL while setting the callbacks
+-    // as these are intended to be used only from the main thread during
+-    // initialization
+-
+     void set_report_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_report_callback(teca_py_algorithm::report_callback(f));
+     }
+ 
+     void set_request_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_request_callback(teca_py_algorithm::request_callback(f));
+     }
+ 
+     void set_reduce_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_reduce_callback(teca_py_algorithm::reduce_callback(f));
+     }
+ }
+@@ -214,10 +218,10 @@
+ %shared_ptr(teca_derived_quantity)
+ %extend teca_derived_quantity
+ {
+-    // see notes in teca_programmable_algorithm
+-
+     void set_execute_callback(PyObject *f)
+     {
++        teca_py_gil_state gil;
++
+         self->set_execute_callback(teca_py_algorithm::execute_callback(f));
+     }
+ }
+diff --git a/python/teca_py_algorithm.h b/python/teca_py_algorithm.h
+index 94a8744..d4e9b91 100644
+--- a/python/teca_py_algorithm.h
++++ b/python/teca_py_algorithm.h
+@@ -146,7 +146,7 @@ public:
+                 SWIGTYPE_p_teca_metadata, SWIG_POINTER_OWN));
+         }
+ 
+-        //wrap the request
++        // wrap the request
+         PyObject *py_req = SWIG_NewPointerObj(
+             SWIG_as_voidptr(new teca_metadata(request)),
+             SWIGTYPE_p_teca_metadata, SWIG_POINTER_OWN);
+@@ -250,7 +250,7 @@ public:
+         // wrap the request
+         PyObject *py_req = SWIG_NewPointerObj(
+             SWIG_as_voidptr(new teca_metadata(request)),
+-            SWIGTYPE_p_teca_metadata, SWIG_POINTER_NEW);
++            SWIGTYPE_p_teca_metadata, SWIG_POINTER_OWN);
+ 
+         // call the callback
+         PyObject *args = Py_BuildValue("INN", port, py_data, py_req);
+diff --git a/python/teca_py_data.i b/python/teca_py_data.i
+index f089b22..e20e61d 100644
+--- a/python/teca_py_data.i
++++ b/python/teca_py_data.i
+@@ -9,7 +9,6 @@
+ #include "teca_py_object.h"
+ #include "teca_table_collection.h"
+ #include "teca_database.h"
+-#include "teca_py_object.h"
+ %}
+ 
+ /***************************************************************************
+@@ -270,6 +269,8 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+     /* declare a column */
+     void declare_column(const char *name, const char *type)
+     {
++        teca_py_gil_state gil;
++
+         using u_char_t = unsigned char;
+         using u_int_t = unsigned int;
+         using u_long_t = unsigned long;
+@@ -455,6 +456,8 @@ TECA_PY_DYNAMIC_CAST(teca_table, teca_dataset)
+     /* return an array using the syntax: col['name'] */
+     p_teca_table __getitem__(const std::string &name)
+     {
++        teca_py_gil_state gil;
++
+         p_teca_table table = self->get(name);
+         if (!table)
+         {
