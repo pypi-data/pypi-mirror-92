@@ -1,0 +1,2 @@
+drapo>=1.0.5
+importlib-metadata
