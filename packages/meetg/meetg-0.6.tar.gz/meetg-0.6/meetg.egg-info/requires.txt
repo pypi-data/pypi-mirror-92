@@ -1,0 +1,4 @@
+parameterized
+python-telegram-bot
+pymongo
+pytz
