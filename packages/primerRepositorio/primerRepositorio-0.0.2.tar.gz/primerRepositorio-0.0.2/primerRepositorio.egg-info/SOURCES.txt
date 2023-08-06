@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+primerRepositorio.egg-info/PKG-INFO
+primerRepositorio.egg-info/SOURCES.txt
+primerRepositorio.egg-info/dependency_links.txt
+primerRepositorio.egg-info/top_level.txt
