@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: xls-to-csv
+Version: 1.0.0
+Summary: XLS to CSV converter. Complementary to xlsx2csv package
+Home-page: https://github.com/Sosomqk/xlstocsv
+Author: Miroslav Isikiyski
+Author-email: misho8520@abv.bg
+License: MIT
+Download-URL: https://pypi.org/project/xls-to-csv/
+Description: XLS to CSV converter.
+        Very fast, extremely light and easy to use.
+        
+        Installation: `pip install xlstocsv`
+        
+        Complementary package to xlsx2csv(https://github.com/xevo/xls2csv) - great tool, but does not work with .xls files
+        
+        `xlstocsv` works only with xls file (for legacy systems and 'legacy' clients :))
+        
+        Dependencies: 
+            - python > 2.7
+            - pandas, 
+            - xlrd
+        
+        Usage: `xlstocsv /path/to/xls_or_xlsx_file/` # spits CSV lines on CLI
+        Usage: `xlstocsv /path/to/xls_or_xlsx_file/ /path/to/file.csv` # writes in a CSV file
+        
+Keywords: xls,csv,convert,python,pandas,xlrd
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
