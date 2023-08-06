@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+MANIFEST.in
+readme.md
+requirements.txt
+setup.py
+src/RobotFrameworkNetAddr/__init__.py
+src/RobotFrameworkNetAddr/robotframeworknetaddr.py
+src/robotframework_netaddr.egg-info/PKG-INFO
+src/robotframework_netaddr.egg-info/SOURCES.txt
+src/robotframework_netaddr.egg-info/dependency_links.txt
+src/robotframework_netaddr.egg-info/requires.txt
+src/robotframework_netaddr.egg-info/top_level.txt

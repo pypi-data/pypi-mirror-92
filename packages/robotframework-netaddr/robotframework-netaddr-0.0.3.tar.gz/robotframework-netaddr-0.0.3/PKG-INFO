@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: robotframework-netaddr
+Version: 0.0.3
+Summary: Robotframework keyword for the python netaddr library
+Home-page: https://github.com/nkeulen/robotframework-netaddr
+Author: Niels Keulen
+Author-email: nkeulen@gmail.com
+License: UNKNOWN
+Description: # robotframework-netaddr
+        
+        Provides a class which wraps much of the netaddr (https://netaddr.readthedocs.io/en/latest/introduction.html) library functionality.
+        
+        The wrapped functions are accesible within Robot Framework and can be used there as keywords.
+        
+Keywords: netaddr,robotframework,ip address,ipv4,ipv6,mac address,network
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Framework :: Robot Framework
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Acceptance
+Description-Content-Type: text/markdown
