@@ -1,0 +1,3 @@
+[console_scripts]
+ApiLogicServer = app_logic_server.create_server:start
+
