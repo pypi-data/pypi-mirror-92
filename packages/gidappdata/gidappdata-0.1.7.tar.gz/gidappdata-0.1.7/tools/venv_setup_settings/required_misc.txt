@@ -1,0 +1,14 @@
+appdirs
+Jinja2
+natsort
+checksumdir
+click
+marshmallow
+regex
+parce
+jsonpickle
+fuzzywuzzy
+fuzzysearch
+python-Levenshtein
+gidconfig==0.1.5
+gidlogger==0.1.4
