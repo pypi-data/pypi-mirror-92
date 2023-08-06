@@ -1,0 +1,10 @@
+README.rst
+setup.py
+kpireport_table/__init__.py
+kpireport_table/table.py
+kpireport_table.egg-info/PKG-INFO
+kpireport_table.egg-info/SOURCES.txt
+kpireport_table.egg-info/dependency_links.txt
+kpireport_table.egg-info/entry_points.txt
+kpireport_table.egg-info/requires.txt
+kpireport_table.egg-info/top_level.txt

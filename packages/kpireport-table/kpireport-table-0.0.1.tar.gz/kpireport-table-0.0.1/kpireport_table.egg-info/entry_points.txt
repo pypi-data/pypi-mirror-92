@@ -1,0 +1,3 @@
+[kpireport.view]
+table = kpireport_table:Table
+
