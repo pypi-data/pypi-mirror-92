@@ -1,0 +1,8 @@
+README.md
+setup.py
+AutoUpdate/AutoUpdate.py
+AutoUpdate/__init__.py
+AutoUpdate.egg-info/PKG-INFO
+AutoUpdate.egg-info/SOURCES.txt
+AutoUpdate.egg-info/dependency_links.txt
+AutoUpdate.egg-info/top_level.txt
