@@ -1,0 +1,8 @@
+setup.py
+matrix_operations/Matrices.py
+matrix_operations/__init__.py
+matrix_operations_for_the_basic_people.egg-info/PKG-INFO
+matrix_operations_for_the_basic_people.egg-info/SOURCES.txt
+matrix_operations_for_the_basic_people.egg-info/dependency_links.txt
+matrix_operations_for_the_basic_people.egg-info/not-zip-safe
+matrix_operations_for_the_basic_people.egg-info/top_level.txt
