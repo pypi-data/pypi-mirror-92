@@ -1,0 +1,13 @@
+ANF_Feed-0.0.1.dev2.data/data/anf.png,sha256=655Gj6JqXi1dMa1hkgkOmTOqu7HwDesfK2mOI3CfYIk,7896
+anfrss/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+anfrss/__main__.py,sha256=jluxvynSIci-UDzaDMBcYSI11T9deFHmrA592IXiyCo,214
+anfrss/anffeed.py,sha256=CLdjaKk3EDBP6kqRNNS2-eRQqjaOt-NO_JEqfiW0AQo,2787
+anfrss/assets/anf.png,sha256=655Gj6JqXi1dMa1hkgkOmTOqu7HwDesfK2mOI3CfYIk,7896
+anfrss/gui/__init__.py,sha256=oqdng3NmU4LxFXl7zfPyq85iYUhQ3O0ckprv_G34aaE,24
+anfrss/gui/guiapp.py,sha256=eE6Vk9bAjb9Rldx95LPdxZeRgX5IoxUeTm6a61phpso,7580
+ANF_Feed-0.0.1.dev2.dist-info/LICENSE,sha256=ZKgR9s3S12QdLj56UrpUDu57scWH5M-kTRxrpSOpVks,35804
+ANF_Feed-0.0.1.dev2.dist-info/METADATA,sha256=9oMoURTjFP4sm1t3tXBbbPe5dytM-AfAb1i2TrdbA-A,3034
+ANF_Feed-0.0.1.dev2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ANF_Feed-0.0.1.dev2.dist-info/entry_points.txt,sha256=xWiUOZll1E7oUZYe-vwl2xdnEnOZQUk_eAMLzpUPrm4,50
+ANF_Feed-0.0.1.dev2.dist-info/top_level.txt,sha256=lJBFYHKgYe7VoWlMAPbd_LmTooYsxXI_oIwsyBPfpCs,7
+ANF_Feed-0.0.1.dev2.dist-info/RECORD,,
