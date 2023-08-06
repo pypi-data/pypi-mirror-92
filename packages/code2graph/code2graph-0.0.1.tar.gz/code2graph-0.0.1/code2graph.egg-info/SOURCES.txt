@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+code2graph/__init__.py
+code2graph/code2graph.py
+code2graph.egg-info/PKG-INFO
+code2graph.egg-info/SOURCES.txt
+code2graph.egg-info/dependency_links.txt
+code2graph.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: code2graph
+Version: 0.0.1
+Summary: A package for creating directed graph from python files
+Home-page: https://gitlab.com/avarf/code2graph
+Author: Ali Varfan
+License: UNKNOWN
+Description: This program will recursively search a path, finds all the python files and extracts a directed graph from them to show which functions is calling/using which other function and class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
