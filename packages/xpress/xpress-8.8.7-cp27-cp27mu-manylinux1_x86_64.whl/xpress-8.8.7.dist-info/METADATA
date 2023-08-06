@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: xpress
+Version: 8.8.7
+Summary: FICO-Xpress Optimizer Python interface
+Home-page: http://www.fico.com/en/products/fico-xpress-optimization-suite
+Author: FICO-Xpress Optimizer dev. team
+Author-email: support@fico.com
+License: UNKNOWN
+Keywords: optimization mip minlp xpress
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: License :: Other/Proprietary License
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.8)
+
+Xpress Python interface
+=======================
+
+The Xpress Python interface is a Python module to create and solve optimization problems using the Python programming language and the [FICO Xpress](http://www.fico.com/en/products/fico-xpress-optimization-suite) Optimizer library. The module allows for
+
+-   Creating, handling, solving, and querying optimization problems;
+-   Using Python numerical libraries such as NumPy to create optimization problems;
+-   Setting and getting the value of parameters (controls and attributes) of a problem; and
+-   Using Python functions as callbacks for the Xpress Optimizer and the Xpress Nonlinear solver.
+
+The Xpress Python interface allows for creating, handling, and solving all problems that can be solved with the FICO-Xpress library: Linear Programming (LP), Quadratic Programming (QP), Second-Order Conic Programming (SOCP), and their mixed-integer extensions: MILP, MIQP, MIQCQP, MISOCP, together with general nonlinear and mixed-integer nonlinear.
+
+Examples
+--------
+
+The following is a Optimization problem with a quadratic constraint and two variables, one of which integer:
+```
+min  x1^2 + 2 x2
+s.t. x1 + 3 x2 >= 4
+     -10 <= x1 <= 10
+     x1 in Z
+     x2 >= 0
+```
+
+The program can be input and solved as follows (note that all variables are assumed nonnegative):
+```python
+import xpress as xp
+x = xp.var(vartype=xp.integer, name='x1', lb=-10, ub=10)
+y = xp.var(name='x2')
+p = xp.problem(name='myexample')
+p.addVariable(x,y)
+p.setObjective(x**2 + 2*y)
+p.addConstraint(x + 3*y >= 4)
+p.solve()
+print ("solution: {0} = {1}; {2} = {3}".format (x.name, p.getSolution(x), y.name, p.getSolution(y)))
+```
+
+The interface allows for a more compact problem formulation where `xp.problem` is passed all components of the problem:
+
+```python
+p = xp.problem(x, y, x**2 + 2*y, x + 3*y >= 4, name='myexample')
+```
+
+Installation
+------------
+
+The Xpress Python interface can be downloaded from [PyPI](https://www.pypi.org) and from [Anaconda](https://www.anaconda.com). Run
+```
+pip install xpress
+```
+
+to install from PyPI, and
+```
+conda install -c fico-xpress xpress
+```
+
+to install from the Conda repository.
+
+The downloaded package contains: a folder with several examples of usages of the module, with varying degrees of difficulty; a directory `license` containing the [Xpress Community License](http://subscribe.fico.com/xpress-optimization-community-license); and a directory `doc` with the manual in PDF version---the full HTML documentation for the Xpress Optimizer's library, including the Python interface with its example, is also available at the [FICO Xpress Optimization Help](http://www.fico.com/fico-xpress-optimization/docs/latest/solver/GUID-ACD7E60C-7852-36B7-A78A-CED0EA291CDD.html) page.
+
+If you do not have any FICO Xpress license, the community license will be recognized by the module and no further action is needed. If you do have a license, for instance located in `/users/johndoe/xpauth.xpr`, make sure to set the global environment variable `XPRESS` to point to the folder containing the `xpauth.xpr` file, i.e. `XPRESS=/user/johndoe`.
+
+Licensing
+---------
+
+The file `community-xpauth.xpr` license file in the `license` directory allows to solve problems with up to 5000 rows+columns. To obtain an unlimited license, please contact FICO at [support@fico.com](mailto:support@fico.com).  Academic licenses are also unlimited and can be obtained via the [Academic Partnership Program](http://subscribe.fico.com/Academic-Partner-Program).
+
+Copyright (C) Fair Isaac 1983-2021
+
