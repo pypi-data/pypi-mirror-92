@@ -1,0 +1,7 @@
+Click
+requests
+newspaper3k
+numpy==1.19.5
+gensim
+spacy==2.2.0
+summarizer
