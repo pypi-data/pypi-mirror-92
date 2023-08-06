@@ -1,0 +1,31 @@
+"""libpykaライブラリのutilsモジュールのテスト
+"""
+
+from typing import Optional, Union, Any
+from typing import Callable, NoReturn
+from typing import Sequence, Iterable, List, Tuple
+from typing import Dict
+from typing import TypeVar, Generic, NewType, Type
+
+import unittest
+from pathlib import Path
+from libpyka.utils import bytes_enc
+
+class BytesEncTest(unittest.TestCase):
+    """libpykaライブラリのbytes_enc()関数のテスト
+    バイトの文字列から文字コードを認識できるかテストする。
+    """
+    
+    def test_bytes_enc_utf8(self):
+        """このファイルを元にUTF-8を認識できるかテストする
+        Raises:
+            AssertionError:  このファイルをUTF-8と認識できない
+        """
+#         fname = __file__
+#         with open(fname, 'rb') as fp:
+#             byte_content = fp.read()
+        fname = Path(__file__)
+        byte_content = fname.read_bytes()
+        enc = bytes_enc(byte_content)
+        self.assertEqual('utf-8', enc)
+
