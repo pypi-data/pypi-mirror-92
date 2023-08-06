@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: atomnlp
+Version: 0.0.1a1
+Summary: Atomic Natural Language Processing
+Home-page: https://github.com/GaoangLiu/atomnlp
+Author: Gaogle
+Author-email: byteleap@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: colorlog (>=4.6.1)
+Requires-Dist: tqdm (>=4.56.0)
+
+Just a toy NLP toolkit.
+
+Atom stands for: Simple and Fast.
+
+
+
