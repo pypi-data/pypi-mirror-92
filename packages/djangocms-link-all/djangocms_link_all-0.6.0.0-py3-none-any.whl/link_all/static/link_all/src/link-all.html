@@ -1,0 +1,52 @@
+<div class="link-all-component">
+    <label>Link</label>
+    <div class="field-type-input">
+        <Multiselect
+            v-model="linkType"
+            label="verboseName"
+            track-by="name"
+            v-on:input="selectLinkType($event)"
+            :options="linkTypes"
+            :preselectFirst="true"
+            :searchable="false"
+            :allowEmpty="false"
+            :multiple="false"
+            :selectLabel="''"
+            :selectedLabel="''"
+            :deselectLabel="''"
+        ></Multiselect>
+    </div>
+
+    <div class="field-type-input">
+        <Multiselect
+            v-model="instance"
+            v-if="linkType.isGenericForeignKey"
+            label="label"
+            track-by="instancePk"
+            v-on:input="linkInstanceChanged($event)"
+            :options="instancesSelectable"
+            :preselectFirst="true"
+            :allowEmpty="false"
+            :custom-label="instanceLabel"
+            :searchable="true"
+            :multiple="false"
+            :selectLabel="''"
+            :selectedLabel="''"
+            :deselectLabel="''"
+        ></Multiselect>
+    </div>
+
+    <div class="field-type-input">
+        <input
+                v-model="linkUrl"
+                v-bind:placeholder="linkType.placeholder"
+                v-if="!linkType.isGenericForeignKey"
+                v-on:input="linkUrlChanged($event.target.value)"
+        >
+    </div>
+
+    <a v-if="getFileUrl()" v-bind:href="getFileUrl()" target="_blank">
+        <img class="file-preview" v-bind:src="getFileUrl()">
+    </a>
+
+</div>
