@@ -1,0 +1,8 @@
+numpy
+matplotlib
+opencv-python
+pyqtgraph
+timedcapture>=0.3.2
+
+[dlc]
+dlclib>=1.0.3

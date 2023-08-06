@@ -1,0 +1,4 @@
+[console_scripts]
+pose-trigger = posetrigger:main
+posetrigger = posetrigger:main
+
