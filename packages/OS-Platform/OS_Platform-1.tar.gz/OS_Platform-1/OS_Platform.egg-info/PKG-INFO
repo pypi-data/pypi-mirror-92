@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: OS-Platform
+Version: 1
+Summary: Detects OS
+Home-page: UNKNOWN
+Author: Pranav
+License: UNKNOWN
+Description: This returns the OS Name in a user-friendly format etc. Android.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

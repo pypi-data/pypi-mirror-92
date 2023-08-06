@@ -1,0 +1,3 @@
+[console_scripts]
+OS_Platform = OS_Platform.OS_Platform:main
+
