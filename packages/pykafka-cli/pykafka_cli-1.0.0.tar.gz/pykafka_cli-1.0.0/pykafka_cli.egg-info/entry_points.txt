@@ -1,0 +1,3 @@
+[console_scripts]
+kafka_cli = kafka_cli.cli.main:start
+
