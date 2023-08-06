@@ -1,0 +1,9 @@
+README.md
+choto.py
+setup.py
+choto.egg-info/PKG-INFO
+choto.egg-info/SOURCES.txt
+choto.egg-info/dependency_links.txt
+choto.egg-info/entry_points.txt
+choto.egg-info/requires.txt
+choto.egg-info/top_level.txt
