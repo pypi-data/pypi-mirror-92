@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+    <t t-extend="mail.chatter.Buttons">
+        <t t-jquery=".o_chatter_button_log_note" t-operation="replace"></t>
+        <t t-jquery=".o_chatter_button_new_message" t-operation="replace"></t>
+    </t>
+</template>
