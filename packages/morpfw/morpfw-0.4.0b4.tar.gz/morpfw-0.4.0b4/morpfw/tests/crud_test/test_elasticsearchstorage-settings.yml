@@ -1,0 +1,6 @@
+application:
+  class: morpfw.tests.crud_test.test_elasticsearchstorage:App
+
+configuration:
+  morpfw.authn.policy: morpfw.tests.crud_test.crud_common:AuthnPolicy
+  morpfw.storage.elasticsearch.hosts: 127.0.0.1:9085

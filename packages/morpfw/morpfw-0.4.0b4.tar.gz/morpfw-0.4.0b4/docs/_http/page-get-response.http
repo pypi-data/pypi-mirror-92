@@ -1,0 +1,32 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "data": {
+        "id": 1,
+        "uuid": "ea31ebb4eb814572b2cbfc2d30fac7f2",
+        "creator": "285969eefd7547d38fb3a5d06996f93e",
+        "created": "2019-01-29T08:37:48.653715",
+        "modified": "2019-01-29T08:37:48.653715",
+        "state": null,
+        "deleted": null,
+        "body": "Hello world",
+        "value": 0
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://localhost:5000/pages/ea31ebb4eb814572b2cbfc2d30fac7f2"
+        },
+        {
+            "rel": "update",
+            "href": "http://localhost:5000/pages/ea31ebb4eb814572b2cbfc2d30fac7f2",
+            "method": "PATCH"
+        },
+        {
+            "rel": "delete",
+            "href": "http://localhost:5000/pages/ea31ebb4eb814572b2cbfc2d30fac7f2",
+            "method": "DELETE"
+        }
+    ]
+}

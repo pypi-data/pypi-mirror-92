@@ -1,0 +1,27 @@
+server:
+  listen_host: 127.0.0.1
+  listen_port: 5000
+  server_url: http://localhost:5000
+
+application:
+  factory: morpfw.main:create_app
+# class: 
+# title:
+
+configuration:
+  app.development_mode: true
+  morpfw.scan: []
+  morpfw.log_directory: /tmp
+  morpfw.authn.policy: morpfw.authn.noauth:AuthnPolicy
+  morpfw.authn.policy.settings: {}
+  morpfw.user.new_user_state: active
+  # morpfw.storage.sqlstorage.dburi: 'postgresql://postgres:postgres@localhost:5432/app'
+  morpfw.security.allowed_nets: 
+    - 127.0.0.1/32
+  morpfw.security.jwt: 
+    master_secret: secret
+    leeway: 10
+    allow_refresh: true
+    refresh_nonce_handler: morpfw.authn.pas.user.path.refresh_nonce_handler
+  morpfw.worker.task_dir: /tmp
+  morpfw.celery: {}

@@ -1,0 +1,8 @@
+[console_scripts]
+mfw-profilemodule = morpfw.cli:run_module_profile
+mfw-runmodule = morpfw.cli:run_module
+morpfw = morpfw.cli:main
+
+[morepath]
+scan = morpfw
+
