@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: databricks-bundle
+Version: 0.6.0a20
+Summary: Databricks bundle for the Pyfony framework
+Home-page: https://github.com/bricksflow/databricks-bundle
+License: MIT
+Author: Jiri Koutny
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.7.3,<3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: console-bundle (>=0.3.0a7)
+Requires-Dist: injecta (>=0.8.13b3)
+Requires-Dist: logger-bundle (>=0.6.0a3)
+Requires-Dist: pyfony-bundles (>=0.2.5a7)
+Requires-Dist: pyfony-core (>=0.7.0a9)
+Project-URL: Repository, https://github.com/bricksflow/databricks-bundle
+Description-Content-Type: text/markdown
+
+# Databricks bundle
+
+This bundle helps you to create simple function-based Databricks notebooks, which can be easily auto-documented and unit-tested. It is part of the [Bricksflow framework](https://github.com/bricksflow/bricksflow).
+
+![alt text](docs/function-based-notebook.png "Databricks function-based notebook example")
+
+## Installation
+
+Install the bundle via Poetry:
+
+```
+$ poetry add databricks-bundle && poetry add databricks-connect --dev
+```
+
+## Usage
+
+1. [Writing function-based notebooks](docs/function-based-notebooks.md)
+1. [Recommended notebooks structure](docs/structure.md)
+1. [Configuring notebook functions](docs/configuration.md)
+1. [Using dependencies](docs/dependencies.md)
+1. [Databricks Connect setup](docs/databricks-connect.md)
+
