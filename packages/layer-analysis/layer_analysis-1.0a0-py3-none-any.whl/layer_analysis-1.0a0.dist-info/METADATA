@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: layer-analysis
+Version: 1.0a0
+Summary: 
+Author: deepio
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Keras (==2.3.1)
+Requires-Dist: opencv-python (>=4.5.1,<5.0.0)
+Requires-Dist: tensorflow (==1.14.0)
