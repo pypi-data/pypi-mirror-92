@@ -1,0 +1,12 @@
+[console_scripts]
+merging_time.py = unsiotools.simulations.ccod:commandLineMT
+post_build_movie.py = unsiotools.simulations.cmovie:commandLine
+post_build_movie2.py = unsiotools.simulations.c2dplot:commandLinePbm2
+process_analysis.py = unsiotools.simulations.cuns_analysis:commandLine
+ramses2gadget.py = unsiotools.simulations.cramses2gadget:commandLine
+remove_sim_halo.py = unsiotools.simulations.creducesim:commandLine
+uns_2dpgplot.py = unsiotools.simulations.c2dpgplot:commandLine
+uns_cod.py = unsiotools.simulations.ccod:commandLine
+uns_inert.py = unsiotools.simulations.cinert:commandLine
+uns_plot_inert.py = unsiotools.simulations.cplotinert:commandLine
+
