@@ -1,0 +1,10 @@
+README.md
+setup.py
+webargs_sanic/__init__.py
+webargs_sanic/sanicparser.py
+webargs_sanic.egg-info/PKG-INFO
+webargs_sanic.egg-info/SOURCES.txt
+webargs_sanic.egg-info/dependency_links.txt
+webargs_sanic.egg-info/not-zip-safe
+webargs_sanic.egg-info/requires.txt
+webargs_sanic.egg-info/top_level.txt
