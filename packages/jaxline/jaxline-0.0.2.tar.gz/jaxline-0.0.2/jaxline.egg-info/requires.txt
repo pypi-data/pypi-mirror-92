@@ -1,0 +1,18 @@
+absl-py>=0.7.1
+chex>=0.0.2
+ml_collections>=0.1
+numpy>=1.18.0
+typing_extensions>=3.7
+wrapt>=1.11.2
+
+[jax]
+jax>=0.1.71
+
+[jaxlib]
+jaxlib>=0.1.49
+
+[tensorflow]
+tensorflow>=2
+
+[tensorflow with gpu]
+tensorflow-gpu>=2
