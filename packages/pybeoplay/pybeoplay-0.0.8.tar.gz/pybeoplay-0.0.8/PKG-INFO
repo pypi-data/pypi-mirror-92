@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pybeoplay
+Version: 0.0.8
+Summary: BeoPlay API for Python
+Home-page: https://github.com/giachello/py-beoplay
+Author: Giovanni Iachello
+Author-email: giac@clovermail.net
+License: MIT License
+Download-URL: https://github.com/giachello/py-beoplay/tarball/0.0.8
+Description: UNKNOWN
+Keywords: beoplay,pybeoplay,B&O,Bang & Olufsen
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.4
