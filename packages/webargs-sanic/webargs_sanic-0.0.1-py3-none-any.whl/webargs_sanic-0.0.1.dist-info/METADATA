@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: webargs-sanic
+Version: 0.0.1
+Summary: webargs-sanic provides integration of Webargs with Sanic applications
+Home-page: https://github.com/EndurantDevs/webargs-sanic
+Author: Endurant Devs
+Author-email: info@endurantdevs.com
+License: MIT
+Keywords: webargs-sanic webargs sanic testing
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Description-Content-Type: text/markdown
+Requires-Dist: sanic
+
+# webargs-sanic
+Sanic integration with Webargs
+
+
