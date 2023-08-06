@@ -1,0 +1,6 @@
+README.md
+chipshover.egg-info/PKG-INFO
+chipshover.egg-info/SOURCES.txt
+chipshover.egg-info/dependency_links.txt
+chipshover.egg-info/requires.txt
+chipshover.egg-info/top_level.txt
