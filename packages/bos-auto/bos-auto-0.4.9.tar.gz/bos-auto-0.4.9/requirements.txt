@@ -1,0 +1,28 @@
+peerplays
+bos-sync
+bos-incidents
+
+redis
+rq
+
+click
+click-datetime
+
+jsonschema
+pyyaml
+strict_rfc3339
+
+flask
+flask-rq
+
+prettytable
+dateutils
+colorlog
+tqdm
+
+# Notifications
+requests==2.21.0
+python-telegram-handler
+
+# needed for fast signing of transactions!
+secp256k1
