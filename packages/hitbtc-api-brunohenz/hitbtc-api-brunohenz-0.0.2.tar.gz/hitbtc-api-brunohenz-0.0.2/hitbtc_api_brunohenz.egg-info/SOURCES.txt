@@ -1,0 +1,9 @@
+setup.py
+hitbtc_api_brunohenz.egg-info/PKG-INFO
+hitbtc_api_brunohenz.egg-info/SOURCES.txt
+hitbtc_api_brunohenz.egg-info/dependency_links.txt
+hitbtc_api_brunohenz.egg-info/top_level.txt
+hitbtcapi/__init__.py
+hitbtcapi/constants.py
+hitbtcapi/hitbtc.py
+hitbtcapi/hitbtcClient.py
