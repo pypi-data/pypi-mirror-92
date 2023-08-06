@@ -1,0 +1,10 @@
+setup.py
+kprototypes/__init__.py
+kprototypes/kprototypes.py
+kprototypes/utils.py
+kprototypes.egg-info/PKG-INFO
+kprototypes.egg-info/SOURCES.txt
+kprototypes.egg-info/dependency_links.txt
+kprototypes.egg-info/not-zip-safe
+kprototypes.egg-info/requires.txt
+kprototypes.egg-info/top_level.txt
