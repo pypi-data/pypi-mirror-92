@@ -1,0 +1,7 @@
+thriftpy2>=0.4.11
+httpx~=0.16.1
+typing_extensions; python_version < '3.8'
+
+pytest
+pytest-asyncio
+async_generator; python_version < '3.7'
