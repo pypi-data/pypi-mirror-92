@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+common/gason.cpp
+common/gason.h
+common/maskApi.c
+common/maskApi.h
+rays_pycocotools/__init__.py
+rays_pycocotools/_mask.pyx
+rays_pycocotools/coco.py
+rays_pycocotools/cocoeval.py
+rays_pycocotools/mask.py
+rays_pycocotools.egg-info/PKG-INFO
+rays_pycocotools.egg-info/SOURCES.txt
+rays_pycocotools.egg-info/dependency_links.txt
+rays_pycocotools.egg-info/top_level.txt
