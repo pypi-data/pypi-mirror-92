@@ -1,0 +1,4 @@
+dvp-common==3.0.0
+dvp-libs==3.0.0
+dvp-platform==3.0.0
+dvp-tools==3.0.0
