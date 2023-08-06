@@ -1,0 +1,11 @@
+outcome-pysqlite3-binary/_sqlite3.cpython-37m-x86_64-linux-gnu.so,sha256=idO6O9CGORIa_qlGzHLQEWsrAiKC2ENoXzSYHKSa8co,433016
+pysqlite3/__init__.py,sha256=Zn-tuwGEIb6IYWwAwp_6oY4qnvn3X8N0Mic49CBQYXg,1019
+pysqlite3/_sqlite3.cpython-37m-x86_64-linux-gnu.so,sha256=vINyZ0Qh2dr86wUsfR87-8p_dJObIQ0JL5FH1Fb_kKs,9037497
+pysqlite3/dbapi2.py,sha256=lpcJ9lrNxkprsgxLcx-mfnfx1qTkGOUQH8C6kow7tUU,2725
+outcome_pysqlite3_binary-0.4.5.dist-info/METADATA,sha256=sGF2chsdzctF2IxBj4WglcUTE3uQ2BJKuwphZiYNDAo,762
+outcome_pysqlite3_binary-0.4.5.dist-info/WHEEL,sha256=YuK2D4GEfn5egRtpxwtNXqS6oo6NJGt_NUlX8IjB65k,109
+outcome_pysqlite3_binary-0.4.5.dist-info/LICENSE,sha256=-iPPJQEmVI6QAI_pLeTudtSFv7s1kvW-iqcxd1iSqWA,889
+outcome_pysqlite3_binary-0.4.5.dist-info/top_level.txt,sha256=5xmZrK8GomkEGWy1lUuzrK0q3ErKNBkc-gD1rQVjCJg,35
+outcome_pysqlite3_binary-0.4.5.dist-info/RECORD,,
+outcome_pysqlite3_binary.libs/libz-a147dcb0.so.1.2.3,sha256=_HZ_XiOuVypJhy7VEy7Pv-QM6RxKmNtmQG2swxTNcvE,87848
+outcome_pysqlite3_binary.libs/libsqlite3-27d95dec.so.0.8.6,sha256=TUEN2nkRTOfoR1r4sst6iD9IVDbXZ8quf50nHnClUN8,6015144
