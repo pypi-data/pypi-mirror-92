@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: pyrtable
+Version: 0.7.5
+Summary: Django-inspired library to interface with Airtable
+Home-page: UNKNOWN
+Author: Vilar da Camara Neto
+Author-email: vilarneto@gmail.com
+License: MIT
+Project-URL: documentation, https://pyrtable.readthedocs.io/
+Project-URL: repository, https://github.com/vilarneto/pyrtable
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Requires-Python: ==3.*,>=3.8.0
