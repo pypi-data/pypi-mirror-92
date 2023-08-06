@@ -1,0 +1,3 @@
+[console_scripts]
+pymischief=mischief.bin.pymischief:main
+
