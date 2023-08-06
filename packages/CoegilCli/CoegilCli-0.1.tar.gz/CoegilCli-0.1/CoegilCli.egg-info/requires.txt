@@ -1,0 +1,4 @@
+click==7.1.2
+wheel
+boto3==1.13.22
+requests==2.5.1
