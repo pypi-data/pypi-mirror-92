@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+
+[dev]
+pipenv
+pytest
+ipdb
+pre-commit
+black

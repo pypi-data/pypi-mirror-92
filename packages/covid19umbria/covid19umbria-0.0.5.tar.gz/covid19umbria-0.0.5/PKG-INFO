@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: covid19umbria
+Version: 0.0.5
+Summary: Covid-19 statistics for Regione Umbria, based on the public API
+Home-page: https://github.com/reale/covid19umbria
+Author: Roberto Reale
+Author-email: roberto@reale.me
+License: MIT
+Project-URL: Source, https://github.com/reale/covid19umbria
+Description: # Covid19Umbria
+        
+        ![PyPI](https://img.shields.io/pypi/v/covid19umbria)
+        
+        Covid-19 statistics for Regione Umbria, based on the [public API](https://apistore.regione.umbria.it/store/apis/info?name=COVID-19&version=1.0.0&provider=admin&tag=Agenda%20digitale-group).
+        
+        Cf. also the [Dashboard COVID-19 Regione Umbria](https://github.com/Regione-Umbria/coronavirus).
+        
+        Partially inspired by the [covid](https://github.com/ahmednafies/covid) package.
+        
+        ## Installation
+        
+            pip install covid19umbria
+        
+        ## Usage
+        
+        See the [example](example.py).
+        
+        ### Get All Data
+        
+        ```python
+        from covid19umbria import Covid19Umbria
+        
+        covid19 = Covid19Umbria()
+        covid19.get_data()
+        ```
+        
+        ### Get Currently Active cases
+        
+        ```python
+        current_active = covid19.get_current_active_cases()
+        ```
+        
+        ### Get New Active Active cases
+        
+        ```python
+        new_active = covid19.get_new_confirmed_cases()
+        ```
+        
+        ### Get Total Recovered cases
+        
+        ```python
+        recovered = covid19.get_total_recovered()
+        ```
+        
+        ### Get Total Deaths
+        
+        ```python
+        deaths = covid19.get_total_deaths()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
