@@ -1,0 +1,7 @@
+fastapi
+aiofiles
+pydantic
+uvicorn
+PyYAML
+jinja2
+colorama
