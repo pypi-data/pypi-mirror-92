@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: filenames
+Version: 0.1.1
+Summary: Rename or Copy Files with Replacement Optinos.
+Home-page: https://github.com/kkatayama/filenames
+Author: Teddy Katayama
+Author-email: katayama@udel.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# filenames
+Rename and/or Copy Files with Replacement Optinos
+
+Command Line Tool to assist with copying and renaming multiple files under nested directories.
+
+
