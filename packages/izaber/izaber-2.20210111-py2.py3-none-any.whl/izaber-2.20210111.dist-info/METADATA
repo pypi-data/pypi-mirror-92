@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: izaber
+Version: 2.20210111
+Summary: Base load point for iZaber code
+Author: Aki Mimoto
+Author-email: aki@zaber.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: email
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: appdirs (>=1.4.4,<2.0.0)
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0); extra == "email"
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: lxml (>=4.6.2,<5.0.0); extra == "email"
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: pytz (>=2020.5,<2021.0)
+Requires-Dist: six (>=1.15.0,<2.0.0)
