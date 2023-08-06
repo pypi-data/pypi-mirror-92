@@ -1,0 +1,17 @@
+click
+httmock
+khmer
+networkx
+numpy
+pandas
+scikit-learn
+seaborn
+sourmash
+tqdm
+ipykernel
+joblib
+notebook
+pyarrow
+s3fs
+fastparquet
+pytest

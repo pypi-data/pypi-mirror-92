@@ -1,0 +1,10 @@
+click
+tqdm
+numpy
+pandas
+sourmash
+khmer
+httmock
+seaborn
+scikit-learn
+networkx

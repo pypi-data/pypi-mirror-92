@@ -1,0 +1,15 @@
+pytest
+coverage
+click
+tqdm
+numpy
+pandas
+sourmash
+khmer
+notebook
+ipykernel
+joblib
+s3fs
+seaborn
+scikit-learn
+networkx
