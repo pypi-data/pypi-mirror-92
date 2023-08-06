@@ -1,0 +1,12 @@
+setup.py
+NN-FRAMEWORK-FOR-DUMMIES/Activations.py
+NN-FRAMEWORK-FOR-DUMMIES/DataPreProcessing.py
+NN-FRAMEWORK-FOR-DUMMIES/Losses.py
+NN-FRAMEWORK-FOR-DUMMIES/nn.py
+NN-FRAMEWORK-FOR-DUMMIES/optimization.py
+NN-FRAMEWORK-FOR-DUMMIES/save_load.py
+NN-FRAMEWORK-FOR-DUMMIES/visualization.py
+NN-FRAMEWORK-FOR-DUMMIES/nn_for_dummies.egg-info/PKG-INFO
+NN-FRAMEWORK-FOR-DUMMIES/nn_for_dummies.egg-info/SOURCES.txt
+NN-FRAMEWORK-FOR-DUMMIES/nn_for_dummies.egg-info/dependency_links.txt
+NN-FRAMEWORK-FOR-DUMMIES/nn_for_dummies.egg-info/top_level.txt
