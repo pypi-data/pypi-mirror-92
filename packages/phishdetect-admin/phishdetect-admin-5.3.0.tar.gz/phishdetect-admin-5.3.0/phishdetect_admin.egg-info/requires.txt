@@ -1,0 +1,5 @@
+Flask
+PyYAML
+flask_wtf
+phishdetect>=1.10.0
+requests
