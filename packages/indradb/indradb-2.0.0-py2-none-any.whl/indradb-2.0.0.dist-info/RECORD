@@ -1,0 +1,10 @@
+indradb/__init__.py,sha256=uwI0Ec8ugc5kxZyF9-HlnqH9YnpfMzkrns_EBKeUGpk,859
+indradb/client.py,sha256=L98wJ2XuemTp4jnD-MhiIMC7whLdU17rqYx4QZkhkZg,12974
+indradb/indradb_pb2.py,sha256=U_2vzWjW3LqCc20eXsEbCI2zjvmT_jFhbT_zEgX1YqU,78570
+indradb/indradb_pb2_grpc.py,sha256=_IiFAuHLPKBN25R5D7-9TgLuHFOn8XN-PFoq7wcUKl0,3103
+indradb/models.py,sha256=TyY4xPgNhOsP_mga0U8MrXSqiirTilVui-sXn9ZjdyE,10874
+indradb-2.0.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+indradb-2.0.0.dist-info/METADATA,sha256=QbdKV-gkmDG2ubN4qIh4G8CUWv_1NMeud6rWfcwpoHE,246
+indradb-2.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+indradb-2.0.0.dist-info/top_level.txt,sha256=XaxVRugd9xr8JvoTI0lQFeTj8_rPx4eA6rCexHH3lnc,8
+indradb-2.0.0.dist-info/RECORD,,

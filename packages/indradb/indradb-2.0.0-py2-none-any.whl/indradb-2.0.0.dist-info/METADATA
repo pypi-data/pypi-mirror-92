@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: indradb
+Version: 2.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Yusuf Simonson
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: grpcio (>=1.26.0)
+Requires-Dist: protobuf (>=3.11.2)
+
+UNKNOWN
+
+
