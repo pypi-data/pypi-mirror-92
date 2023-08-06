@@ -1,0 +1,23 @@
+# Each entry is a couple of [ name, pattern ]
+patterns:
+    - [ "yes", "(?i)\\b(yes|ok)\\b" ]
+    - [ "no", "(?i)\\bno\\b" ]
+    - [ "cancel", "(?i)\\b(cancel|abort)\\b" ]
+
+backend: console
+#backend: jabber
+#backend: signal
+
+# Used when backend = signal
+# Make sure to put quotes around the username field as it is a phone number for Signal
+signal_username: "+33123456789"
+signal_recipients:
+    - "+33123456789"
+# Get this group ID with the command `signal-cli -u +33123456789 listGroups`
+#signal_group: "mABCDNVoEFGz0YeZM1234Q=="
+
+# Used when backend = jabber
+jabber_username: mybot@conversations.im
+jabber_password: TheBestPasswordInTheWorld
+jabber_recipients:
+    - itsme@conversations.im
