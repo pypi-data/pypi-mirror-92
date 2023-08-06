@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: py-hi
+Version: 0.1.1
+Summary: hi from asyncio
+License: GPLV3
+Author: Ehco1996
+Author-email: zh19960202@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.3,<4.0.0)
+Requires-Dist: rich (>=9.8.2,<10.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
