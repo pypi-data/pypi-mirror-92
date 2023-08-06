@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+mensuration3d/__init__.py
+mensuration3d.egg-info/PKG-INFO
+mensuration3d.egg-info/SOURCES.txt
+mensuration3d.egg-info/dependency_links.txt
+mensuration3d.egg-info/top_level.txt

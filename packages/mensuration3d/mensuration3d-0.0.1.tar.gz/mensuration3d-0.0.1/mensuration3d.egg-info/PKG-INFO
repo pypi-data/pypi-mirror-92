@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: mensuration3d
+Version: 0.0.1
+Summary: A module that can calculate surface areas and volumes of 3d geometric shapes.
+Home-page: UNKNOWN
+Author: Swas.py
+Author-email: cwswas.py@gmail.com
+License: MIT
+Description: This is a module for calculating surface areas and volumes of 3d geometric shapes. 
+        
+        CHANGE LOG
+        
+        ==========
+        
+        0.0.1 (22/01/2021)
+        -------------------
+        - Inititial Release
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
