@@ -1,0 +1,5 @@
+pop
+pop-config>=6.10
+cryptography
+msgpack
+dict-toolbox>=1.8
