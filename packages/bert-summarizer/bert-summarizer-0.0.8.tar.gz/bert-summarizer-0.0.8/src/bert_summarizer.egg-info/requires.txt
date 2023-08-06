@@ -1,0 +1,8 @@
+fugashi
+ginza
+ipadic
+OpenNMT-py
+spacy
+transformers==3.5.1
+torch
+torchvision
