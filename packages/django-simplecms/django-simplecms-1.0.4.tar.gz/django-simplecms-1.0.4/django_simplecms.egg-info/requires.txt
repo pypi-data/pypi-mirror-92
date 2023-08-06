@@ -1,0 +1,9 @@
+django
+django-embed-video
+django-extensions
+django-tidy
+easy-thumbnails
+libsass
+markdown
+psycopg2
+pylibmc
