@@ -1,0 +1,12 @@
+pytest_localftpserver/__init__.py,sha256=jyQPFVS6BD6zbM6ac7gfVPgBglObglg3OfSKf8Sfv6o,108
+pytest_localftpserver/default_keycert.pem,sha256=OuAxV28flLGv7sTATrZiiU1BUOINFb7sjbTDkIYSf4o,5374
+pytest_localftpserver/helper_functions.py,sha256=XY-snNAETzHiWzZy1qr5ooAtiB-6tIYKDvrvyBX2CtA,12703
+pytest_localftpserver/plugin.py,sha256=BVKkX9X3edvyXtN5Kn8TOZXC0RBzlLRpOctiEcmjcek,2046
+pytest_localftpserver/servers.py,sha256=6iI6_r-qIslN0MTovzqLJ0OR0HtpC1HIQ4tXoN39ZDo,38444
+pytest_localftpserver-1.1.2.dist-info/AUTHORS.rst,sha256=Vo89i3wcZ3nbxGkPAxp4J3quaDhmbKB3yU4wMsHNFTw,166
+pytest_localftpserver-1.1.2.dist-info/LICENSE,sha256=YsX42VJrsOj56GWhYxzSqewmLEmA-8qXKr8a0Y4EmCI,1714
+pytest_localftpserver-1.1.2.dist-info/METADATA,sha256=jZzgO-qYYyVPW26Vm378Ng9vqQMyAA9vK8mMs-bmcCA,6447
+pytest_localftpserver-1.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pytest_localftpserver-1.1.2.dist-info/entry_points.txt,sha256=FFgeGD2cUaF6BXQ4AHo4P1b1IeEVAgK-OtiREultq3k,58
+pytest_localftpserver-1.1.2.dist-info/top_level.txt,sha256=MKj9_AoZc24jQhuqEkHXOP5GiTjsuQCoK6NusRHlP28,22
+pytest_localftpserver-1.1.2.dist-info/RECORD,,
