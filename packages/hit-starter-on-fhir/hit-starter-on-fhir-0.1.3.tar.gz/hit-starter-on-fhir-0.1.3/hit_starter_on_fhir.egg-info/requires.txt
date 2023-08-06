@@ -1,0 +1,3 @@
+requests
+dataclasses
+fhir.resources==6.0.0
