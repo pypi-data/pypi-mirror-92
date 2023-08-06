@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: logtailtool
+Version: 1.0.1
+Summary: LogTailTool tail a log file in python
+Home-page: https://github.com/minyong-jeong/logtailtool
+Author: minyong-jeong
+Author-email: jmy3155@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# LogTailTool
+
+LogTailTool tail a log file in python.
+
+## Usage
+
+```python
+from logtailtool import LogTailTool
+
+lines = LogTailTool("name.log")
+for line in lines:
+    print(line)
+```
+
+
