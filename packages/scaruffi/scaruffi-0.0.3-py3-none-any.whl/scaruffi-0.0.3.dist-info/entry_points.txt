@@ -1,0 +1,3 @@
+[console_scripts]
+scaruffi = scaruffi.__main__:main
+

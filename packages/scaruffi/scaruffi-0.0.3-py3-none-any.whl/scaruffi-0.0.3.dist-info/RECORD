@@ -1,0 +1,10 @@
+scaruffi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scaruffi/__main__.py,sha256=YSpb7dbS3-8aVMKl7sF1SYHj98zHIqxV4UCGOCbzIn4,1450
+scaruffi/api.py,sha256=zZYiIm3V6FPxKPsXAWVCkpmAxdH0v50Y9vTVFdV7ZWQ,7087
+scaruffi/log.py,sha256=vBCkXFzg2K6sytNb01JIipX-158493lzH2Y6YGXf2zw,4497
+scaruffi/tests.py,sha256=5tlv69-E9AtC8pZ2q4UzcU_LfPA2OYXLD2H9C38FZkg,714
+scaruffi-0.0.3.dist-info/METADATA,sha256=mqYoaJpar5rga088mV8yIUSP2fxV6dbbpolJwwVTeTs,1681
+scaruffi-0.0.3.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+scaruffi-0.0.3.dist-info/entry_points.txt,sha256=4O_VqnONqxpm0hlq2K13ZfpyPcDnuSRif2tfdY-DTtU,53
+scaruffi-0.0.3.dist-info/top_level.txt,sha256=7onO2McFGhN_mEuJSB3t03use6wrnMc4jY81-M_qkyY,9
+scaruffi-0.0.3.dist-info/RECORD,,
