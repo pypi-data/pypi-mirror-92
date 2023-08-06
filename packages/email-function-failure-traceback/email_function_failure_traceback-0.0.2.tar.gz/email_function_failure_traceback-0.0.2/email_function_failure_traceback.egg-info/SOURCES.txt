@@ -1,0 +1,7 @@
+README.md
+setup.py
+email_function_failure_traceback/__init__.py
+email_function_failure_traceback.egg-info/PKG-INFO
+email_function_failure_traceback.egg-info/SOURCES.txt
+email_function_failure_traceback.egg-info/dependency_links.txt
+email_function_failure_traceback.egg-info/top_level.txt
