@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+manimpango/__init__.py
+manimpango/cmanimpango.c
+manimpango/cmanimpango.pxd
+manimpango/cmanimpango.pyx
+manimpango.egg-info/PKG-INFO
+manimpango.egg-info/SOURCES.txt
+manimpango.egg-info/dependency_links.txt
+manimpango.egg-info/not-zip-safe
+manimpango.egg-info/top_level.txt
