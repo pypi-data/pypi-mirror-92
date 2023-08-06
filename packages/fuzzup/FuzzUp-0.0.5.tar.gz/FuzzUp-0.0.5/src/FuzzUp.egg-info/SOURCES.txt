@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/FuzzUp.egg-info/PKG-INFO
+src/FuzzUp.egg-info/SOURCES.txt
+src/FuzzUp.egg-info/dependency_links.txt
+src/FuzzUp.egg-info/requires.txt
+src/FuzzUp.egg-info/top_level.txt
+src/fuzzup/__init__.py
+src/fuzzup/gear.py
