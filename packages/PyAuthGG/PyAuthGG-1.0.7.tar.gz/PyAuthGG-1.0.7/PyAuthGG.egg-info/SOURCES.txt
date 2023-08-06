@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyAuthGG/Administration.py
+PyAuthGG/Application.py
+PyAuthGG/Exceptions.py
+PyAuthGG/__init__.py
+PyAuthGG.egg-info/PKG-INFO
+PyAuthGG.egg-info/SOURCES.txt
+PyAuthGG.egg-info/dependency_links.txt
+PyAuthGG.egg-info/requires.txt
+PyAuthGG.egg-info/top_level.txt
