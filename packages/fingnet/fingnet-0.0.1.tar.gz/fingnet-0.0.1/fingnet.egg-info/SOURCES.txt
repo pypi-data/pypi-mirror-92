@@ -1,0 +1,7 @@
+README.md
+setup.py
+fingnet/__init__.py
+fingnet.egg-info/PKG-INFO
+fingnet.egg-info/SOURCES.txt
+fingnet.egg-info/dependency_links.txt
+fingnet.egg-info/top_level.txt
