@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: libeasyobv
+Version: 0.0.1
+Summary: easyobv python3 library
+Home-page: https://github.com/QianfengClarkShen/libeasyobv
+Author: Qianfeng (Clark) Shen
+Author-email: qianfeng.shen@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: libfpga
+
+# libeasyobv
+easyobv python3 library
+
+
