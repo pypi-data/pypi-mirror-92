@@ -1,0 +1,8 @@
+httpx>=0.15
+tqdm
+click
+aiofiles
+
+[:python_version < "3.8"]
+importlib-metadata
+typing-extensions
