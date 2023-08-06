@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: vak
+Version: 0.4.0.dev1
+Summary: neural network toolbox for animal communication and bioacoustics
+License: BSD
+Author: David Nicholson
+Author-email: nickledave@users.noreply.github.com
+Requires-Python: >=3.6.2,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: SoundFile (>=0.10.3,<0.11.0)
+Requires-Dist: attrs (>=20.3.0,<21.0.0)
+Requires-Dist: crowsetta (>=3.1.0)
+Requires-Dist: dask[bag] (>=2021.1.0,<2022.0.0)
+Requires-Dist: evfuncs (>=0.3.1,<0.4.0)
+Requires-Dist: joblib (>=1.0.0,<2.0.0)
+Requires-Dist: matplotlib (>=3.3.3,<4.0.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
+Requires-Dist: scipy (>=1.5.4,<2.0.0)
+Requires-Dist: tensorboard (>=2.2.0,<3.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: torch (>=1.7.1,<2.0.0)
+Requires-Dist: torchvision (>=0.8.2,<0.9.0)
+Requires-Dist: tqdm (>=4.55.0,<5.0.0)
