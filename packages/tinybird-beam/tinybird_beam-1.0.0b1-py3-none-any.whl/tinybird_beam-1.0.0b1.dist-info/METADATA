@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tinybird-beam
+Version: 1.0.0b1
+Summary: An Apache Beam Sink Library for Tinybird.
+Home-page: UNKNOWN
+Author: Tinybird
+Author-email: support@tinybird.co
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: apache-beam[gcp] (==2.27.0)
+
+
+Tinybird CLI
+============
+
+The Tinybird Apache Beam Sink allows you to ingest from an Apache Beam pipeline to a Tinybird Data Source.
+
+Changelog
+---------
+
+1.0.0b1
+*******
+
+- First version to stream from DataFlow to Tinybird in batches
+
+
