@@ -1,0 +1,12 @@
+[console_scripts]
+awsmux = cloudtrace.scripts.awsmux:main
+awssync = cloudtrace.scripts.awssync:main
+awstargets = cloudtrace.scripts.awstargets:main
+cloudscamper = cloudtrace.trace.cloudscamper:main
+cloudtargets = cloudtrace.scripts.cloudtargets:main
+ct-randomize = cloudtrace.trace.randomize:main
+fastread = cloudtrace.read.reader:main
+fasttrace = cloudtrace.trace.fasttrace:main
+pickup = cloudtrace.pickup:main
+scampertrace = cloudtrace.trace.scampertrace:main
+
