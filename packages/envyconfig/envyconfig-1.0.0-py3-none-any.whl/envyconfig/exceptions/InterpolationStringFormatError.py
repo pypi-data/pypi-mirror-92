@@ -1,0 +1,2 @@
+class InterpolationStringFormatError(Exception):
+    pass
