@@ -1,0 +1,16 @@
+name: aeolus_docs
+channels:
+- conda-forge
+dependencies:
+- python=3.9
+- cartopy
+- f90nml
+- iris>=2.4
+- latlon23
+- matplotlib>=3.3
+- nbsphinx
+- numpy
+- pip
+- python-stratify
+- sphinx
+- sphinx_rtd_theme
