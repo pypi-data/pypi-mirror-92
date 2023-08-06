@@ -1,0 +1,17 @@
+hysteresis/__init__.py,sha256=Rh6tQKjS_hw8qQrSw8DuoWFI3wRaqcsK7T8qicDkrA8,512
+hysteresis/baseClass.py,sha256=ZaFuIJmXejhpj7xIJXHCKm96nNA0t-8gGUlvw6u9r2k,18711
+hysteresis/baseFuncs.py,sha256=P-Esnj3Huj30jjCFTwPRBF0GcQNmpe7TEwwYvwWjODk,4439
+hysteresis/climate.py,sha256=wmH5mPOEwHXe_JwwvN-dr54idvM_qye2rdD_QcXFTyY,4152
+hysteresis/compare.py,sha256=GgFrLL9UDjQnx3ZTUu8uTUoG7cJxs7nkd2Qz1nawdxw,2683
+hysteresis/data.py,sha256=IFSXZnfOlvYxv4tKHKMww-A3NRF3gj08LcNoASAvYXw,13013
+hysteresis/defaultDataFuncs.py,sha256=OgyyAwEEliPUxMJhlkIDbs5Tc13lGeYm5X6mHxtPMDA,3877
+hysteresis/defaultPlotFuncs.py,sha256=mf4X0QyH9iD1CXmElYbz6lmdGHHacpFiY_8V7pR1pw0,4912
+hysteresis/env.py,sha256=x8D4dDrRa9rkc66HVQFYlJnduxytE2jkB_c6ek5prI8,1064
+hysteresis/envelope.py,sha256=93cYm4va0St7C0nwvMoEcFth3Yq-zDyDUq0NqTmuq-A,9817
+hysteresis/protocol.py,sha256=6mw-rlYBtPeIM_rkYp5iOegv5rSAlbPNBYee_V0Ej08,7197
+hysteresis/resample.py,sha256=iprdROMhka8Y06KfjNXTErWeYzzwj-1r3keIumTVgRc,4375
+hysteresis-1.0.1.dist-info/METADATA,sha256=cDdfoILfYRc3Nj910gR9gjhvkMTkrXEmllGZYulsqDg,687
+hysteresis-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hysteresis-1.0.1.dist-info/license.txt,sha256=4pCK7LJ8sNLYjk2D5kN4_4JHuvlYvm8LsoxGkIQL7nc,1096
+hysteresis-1.0.1.dist-info/top_level.txt,sha256=ZBpGZ4rG5vabwRDBQtt3Tzowm4IoLYJ5Winbil648y0,11
+hysteresis-1.0.1.dist-info/RECORD,,
