@@ -1,0 +1,434 @@
+Summary of changes
+==================
+
+HEAD
+----
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Mon Jan 25 14:42:38 2021 -0800
+
+    Update version to 4.0.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Mon Jan 25 14:50:21 2021 -0800
+
+    Remove reference to DurusWorks.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Mon Jan 25 14:45:07 2021 -0800
+
+    Use python3 for scripts.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Sun May 10 12:15:07 2020 -0700
+
+    Small optimization for setting _p_* attributes.
+    
+    Use _setattribute() function to avoid the Persistent.__setattr__ hook.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Sep 19 11:59:31 2017 -0700
+
+    Pickler.clear_memo() can get slow.  Work-around that issue.
+    
+    The clear_memo() method can get very slow if the memo table
+    gets large.  It is never shrunk, at least with the current
+    version of the _pickle module.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Aug 1 15:27:32 2017 -0700
+
+    When finishing FileStorage commit, log file size.
+    
+    This matches the logging done by Shelf storage and it has proved
+    useful for debugging issues.  Using the file size, you can "time
+    travel" by truncating the DB file at that size and opening it.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Mon Mar 20 09:54:47 2017 -0700
+
+    Order pack todo queue by file offset.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Fri Jun 24 17:35:01 2016 +0000
+
+    Add support for an inherited server socket.
+    
+    Check the LISTEN_PID environment variable for an inherited
+    socket (as passed by systemd).  Add support for Linux abstract
+    namespace sockets (AF_UNIX with path beginning with @ sign).
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue May 31 20:53:44 2016 +0000
+
+    Revert cache shrink behavior to DurusWorks version.
+    
+    My backport of the old Durus code was buggy so just revert to the
+    DurusWorks behavior of using 2X the current excess.  Optimal
+    behavior here is really dependant on the work load so it is hard
+    to come up with something general purpose.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue May 31 20:50:20 2016 +0000
+
+    Improve db_to_py3k.py script.
+
+
+v4.0a1
+------
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Feb 9 20:27:13 2016 +0000
+
+    Move scripts to 'bin' directory.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Fri Feb 7 10:16:50 2014 -0600
+
+    Restore old behavior of determining cache shrink size.
+    
+    I'm not sure if the restored code is very good but using
+    
+        (len(all) - self.size) * 2
+    
+    results in the shrink often doing too much work and introducing long
+    delays if you have a large cache.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Fri Feb 7 10:19:51 2014 -0600
+
+    Define separate methods for PersistentSet.
+    
+    This is more friendly for subclassing rather than aliasing
+    methods.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Feb 9 20:02:39 2016 +0000
+
+    Reorganize package, add README.md, version to 4.0a1
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Feb 9 18:42:02 2016 +0000
+
+    Fix unit test, stale ghost access raises ReadConflictError.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Feb 9 18:41:33 2016 +0000
+
+    Python 3 fix for sqlite_storage.py, extract SQL text as bytes.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Tue Feb 9 18:40:50 2016 +0000
+
+    Add --storage-class option to 'durus' command line tool.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Fri Feb 5 20:48:11 2016 +0000
+
+    When packing, sort records by ascending OID.
+    
+    This is fairly cheap do to compared to file IO and could have some
+    benefits for data locality.  At minimum, packing the file will
+    result in near linear access.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Fri Oct 21 16:51:50 2011 -0600
+
+    Add experimental sqlite storage module.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Thu Feb 4 18:06:16 2016 +0000
+
+    Fix suble bug in FileStorage2 packer.
+    
+    Rewrite packer logic and fix a potential bug.  We must trace
+    references of objects in 'pack_extra' and ensure they too end up in
+    packed file.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Thu Feb 4 18:04:45 2016 +0000
+
+    Add create_from_records() method.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Thu Feb 6 18:10:09 2014 -0600
+
+    Restore DFS20 file storage format.
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Sat Jun 22 19:27:37 2013 -0600
+
+    Import changes from DurusWorks 1.2 release.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Fri Aug 14 08:32:50 2009 -0600
+
+    Import 3.9.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Mon Dec 1 16:33:26 2008 -0600
+
+    Import 3.8.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Apr 25 08:10:03 2007 -0600
+
+    Import 3.7.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Nov 15 14:42:21 2006 -0600
+
+    Import 3.6.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Aug 15 11:30:35 2006 -0600
+
+    Import 3.5.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu May 11 13:25:14 2006 -0600
+
+    Import 3.4.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu May 18 14:00:13 2006 -0600
+
+    Import 3.4.1.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Mar 15 08:17:09 2006 -0600
+
+    Import 3.3.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Jan 31 15:56:11 2006 -0600
+
+    Import 3.2.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Oct 18 12:04:47 2005 -0600
+
+    Import 3.1.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Aug 9 14:29:53 2005 -0600
+
+    Import 3.0a.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu Sep 8 06:47:07 2005 -0600
+
+    Import 3.0.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Apr 26 13:51:50 2005 -0600
+
+    Import 2.0.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Mon Mar 7 14:00:56 2005 -0600
+
+    Import 1.5.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu Jan 27 18:51:17 2005 -0600
+
+    Import 1.4.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Fri Dec 10 05:59:15 2004 -0600
+
+    Import 1.3.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Sep 8 15:27:04 2004 -0600
+
+    Import 1.2.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Sat Jul 31 19:48:04 2004 -0600
+
+    Import 1.0.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Fri Jul 23 14:35:16 2004 -0600
+
+    Import 0.1.
+
+
+v3.9
+----
+
+Author: Neil Schemenauer <nas@arctrix.com>
+Date:   Sat Jan 15 22:46:07 2011 -0600
+
+    Import 3.9
+
+
+v3.8
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Mon Dec 1 16:33:26 2008 -0600
+
+    Import 3.8.
+
+
+v3.7
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Apr 25 08:10:03 2007 -0600
+
+    Import 3.7.
+
+
+v3.6
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Nov 15 14:42:21 2006 -0600
+
+    Import 3.6.
+
+
+v3.5
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Aug 15 11:30:35 2006 -0600
+
+    Import 3.5.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu May 11 13:25:14 2006 -0600
+
+    Import 3.4.
+
+
+v3.4.1
+------
+
+
+
+v3.4
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu May 11 13:25:14 2006 -0600
+
+    Import 3.4.
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu May 18 14:00:13 2006 -0600
+
+    Import 3.4.1.
+
+
+v3.3
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Mar 15 08:17:09 2006 -0600
+
+    Import 3.3.
+
+
+v3.2
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Jan 31 15:56:11 2006 -0600
+
+    Import 3.2.
+
+
+v3.1
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Oct 18 12:04:47 2005 -0600
+
+    Import 3.1.
+
+
+v3.0a
+-----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Aug 9 14:29:53 2005 -0600
+
+    Import 3.0a.
+
+
+v3.0
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu Sep 8 06:47:07 2005 -0600
+
+    Import 3.0.
+
+
+v2.0
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Tue Apr 26 13:51:50 2005 -0600
+
+    Import 2.0.
+
+
+v1.5
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Mon Mar 7 14:00:56 2005 -0600
+
+    Import 1.5.
+
+
+v1.4
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Thu Jan 27 18:51:17 2005 -0600
+
+    Import 1.4.
+
+
+v1.3
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Fri Dec 10 05:59:15 2004 -0600
+
+    Import 1.3.
+
+
+v1.2
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Wed Sep 8 15:27:04 2004 -0600
+
+    Import 1.2.
+
+
+v1.0
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Sat Jul 31 19:48:04 2004 -0600
+
+    Import 1.0.
+
+
+v0.1
+----
+
+Author: MEMS Exchange <webmaster@mems-exchange.org>
+Date:   Fri Jul 23 14:35:16 2004 -0600
+
+    Import 0.1.
+
