@@ -1,0 +1,3 @@
+[console_scripts]
+upload_app = pdr_python_sdk.tools.upload:upload
+
