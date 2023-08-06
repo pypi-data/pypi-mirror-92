@@ -1,0 +1,16 @@
+README.md
+setup.py
+Clusters/MemberSelect.py
+Clusters/__init__.py
+Convert/CoordConvert.py
+Convert/MockConvert.py
+Convert/__init__.py
+Dynamics/Orbits.py
+Dynamics/__init__.py
+Mock/MockMilkyWay.py
+Mock/__init__.py
+ProfileFit/__init__.py
+RevealMilkyWay.egg-info/PKG-INFO
+RevealMilkyWay.egg-info/SOURCES.txt
+RevealMilkyWay.egg-info/dependency_links.txt
+RevealMilkyWay.egg-info/top_level.txt
