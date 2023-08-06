@@ -1,0 +1,14 @@
+odoo_backup_db_cli/__init__.py,sha256=kLbQW-Ji9c3OGDZYHHAq2s4hdnz8gKrWHPvzwLd6UNQ,89
+odoo_backup_db_cli/cli.py,sha256=sMzp-HlG1NRuPLcO8tT065cnIsMutxdNdz7LZRVQJ3k,6697
+odoo_backup_db_cli/db_backup.py,sha256=nTn3A5rhX0hVctz3MN0BMABofRaeixJG2rLfgZLaW3g,1796
+odoo_backup_db_cli/protocols/__init__.py,sha256=kLbQW-Ji9c3OGDZYHHAq2s4hdnz8gKrWHPvzwLd6UNQ,89
+odoo_backup_db_cli/protocols/ftp.py,sha256=w58sadNODlmGCS6JoAz9wGdhgEUcChvpRaHXq1JMTuM,2800
+odoo_backup_db_cli/protocols/local.py,sha256=exrqAvvJfdeRX2RLuJ8EH70QKC18L3QUUEAGoDXxsQk,1884
+odoo_backup_db_cli/protocols/sftp.py,sha256=XMgTeSzunmfmClQYOrblCgYBoFVzcv2pS0cMRV_GLlw,2491
+odoo_backup_db_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo_backup_db_cli/utils.py,sha256=N4xQBItweJPZf_sJWedF1bmTX4j8SXpDw3cazv1-zGg,5147
+odoo_backup_db_cli-1.0.0.dist-info/entry_points.txt,sha256=tmAxlEv1n2kdk9Nzjg6PNcayUUcd1tqVcKbx-SZEtrs,92
+odoo_backup_db_cli-1.0.0.dist-info/LICENSE,sha256=0LOTFMlvhmn28vxg8iIMoY31UYB0NFrWEFLmHP2n8qw,35178
+odoo_backup_db_cli-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+odoo_backup_db_cli-1.0.0.dist-info/METADATA,sha256=x5HYySmsQNdDKmLLT5_2lHYUOwq0LWajJ3M0EYYyf1E,4347
+odoo_backup_db_cli-1.0.0.dist-info/RECORD,,

@@ -1,0 +1,4 @@
+[console_scripts]
+odoo-backup-db-cli=odoo_backup_db_cli.cli:main
+poetry=poetry.console:run
+
