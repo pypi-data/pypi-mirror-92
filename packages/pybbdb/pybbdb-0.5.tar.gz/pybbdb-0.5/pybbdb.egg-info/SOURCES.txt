@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+bbdb/__init__.py
+bbdb/database.py
+bbdb/model.py
+bbdb/parser.py
+bbdb/timestamp.py
+pybbdb.egg-info/PKG-INFO
+pybbdb.egg-info/SOURCES.txt
+pybbdb.egg-info/dependency_links.txt
+pybbdb.egg-info/requires.txt
+pybbdb.egg-info/top_level.txt
