@@ -1,0 +1,4 @@
+[console_scripts]
+ibdds=investments.ibdds.ibdds:main
+ibtax=investments.ibtax.ibtax:main
+
