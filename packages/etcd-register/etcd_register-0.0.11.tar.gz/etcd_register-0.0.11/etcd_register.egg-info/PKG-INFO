@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: etcd-register
+Version: 0.0.11
+Summary: A register method for grpc to etcd
+Home-page: https://github.com/wuranxu/etcd_register
+Author: woody
+Author-email: 619434176@qq.com
+License: UNKNOWN
+Description: #### Description
+        
+            It's a library for rpc service register to etcd
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
