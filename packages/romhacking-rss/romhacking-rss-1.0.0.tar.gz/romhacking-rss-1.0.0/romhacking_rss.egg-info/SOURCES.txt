@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+romhacking_rss/__init__.py
+romhacking_rss/main.py
+romhacking_rss.egg-info/PKG-INFO
+romhacking_rss.egg-info/SOURCES.txt
+romhacking_rss.egg-info/dependency_links.txt
+romhacking_rss.egg-info/entry_points.txt
+romhacking_rss.egg-info/requires.txt
+romhacking_rss.egg-info/top_level.txt
+romhacking_rss.egg-info/zip-safe
