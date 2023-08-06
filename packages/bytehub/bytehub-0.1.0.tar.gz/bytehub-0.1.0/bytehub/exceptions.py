@@ -1,0 +1,2 @@
+class FeatureStoreException(Exception):
+    pass
