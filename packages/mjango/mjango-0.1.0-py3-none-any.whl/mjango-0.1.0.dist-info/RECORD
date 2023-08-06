@@ -1,0 +1,14 @@
+mjango/__init__.py,sha256=CqmMuA_qFoLBqXHYuw5w9K9wLq1qZPEgX083PfawFn4,63
+mjango/db.py,sha256=fkvuTtZx1h9oncDUjMMjSqlqUNNfwMgnXAH0aIO1XDU,1568
+mjango/exceptions.py,sha256=fDKKUb76wN2ozBhEUhL8WAOW0BGpv1MT4cjLbkBwtT8,237
+mjango/expressions.py,sha256=stSSgRuazXleGgTu1YHAeVB8OtdmGT9J2Lg54yIe1VU,1951
+mjango/jstorage.py,sha256=Mgb2yHZFBcjr7ge0itQfvvga7mqA-tsAxIByjecUub8,47
+mjango/manager.py,sha256=0Yw1fCqXmxxiJ8ZtBwmTO2QD8ecCytCt1NFOD94eJ5w,1649
+mjango/models.py,sha256=BcTGGIsp9N6RzQnLPh2DoGgVIXfuA79ufuBBcLS3glU,2399
+mjango/operators.py,sha256=aYNndn1l5YA1h2LJkTftIZud4YhEv2ZxqQS4_pt6Rkk,871
+mjango/query.py,sha256=zHko5VsCRCzlLaRVw7sQgycjeN5Gi3x04YMM9Bc6nLA,3578
+mjango/settings.py,sha256=M2JcPix4I7RTiCHvGOwnmyHKHehgtDJBGBiuRjB_pWo,368
+mjango-0.1.0.dist-info/METADATA,sha256=IIIi319jKJQLculiCAY7RdHugj3SQ4ADRpMOcccDe7E,675
+mjango-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mjango-0.1.0.dist-info/top_level.txt,sha256=ct2tPHw733qBhQ9WTIyAooeF7qVVOsNqnN4CZyRRjjk,7
+mjango-0.1.0.dist-info/RECORD,,
