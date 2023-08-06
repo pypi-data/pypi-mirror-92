@@ -1,0 +1,3 @@
+[console_scripts]
+runAM = runAM.cli:interpreter
+

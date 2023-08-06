@@ -1,0 +1,4 @@
+argcomplete==1.12.1
+glom==20.11.0
+jq==1.1.1
+PyYAML==5.3.1
