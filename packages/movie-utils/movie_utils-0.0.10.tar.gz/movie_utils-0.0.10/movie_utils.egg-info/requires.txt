@@ -1,0 +1,7 @@
+ilds
+librosa
+numpy
+scenedetect
+moviepy
+opencv-python
+OpenTimelineIO-Py

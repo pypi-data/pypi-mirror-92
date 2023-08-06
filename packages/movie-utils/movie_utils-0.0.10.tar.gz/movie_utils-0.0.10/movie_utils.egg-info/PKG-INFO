@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: movie-utils
+Version: 0.0.10
+Summary: 视频文件处理的辅助工具
+Home-page: https://github.com/ldsxp
+Author: lds
+Author-email: 85176878@qq.com
+License: GNU GPL 3
+Download-URL: https://pypi.org/project/movie_utils
+Description: # 说明
+        
+        ```
+        视频文件处理的辅助工具
+        ```
+        
+        ## 安装
+        
+        ```sh
+        # 本地安装
+        pip movie_utils
+        ```
+        
+        ### 功能
+        
+        查找音频节拍
+        
+        查找视频场景
+        
+        分割视频
+        
+Keywords: video,audio,scene_detect
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
