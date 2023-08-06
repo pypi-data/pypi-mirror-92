@@ -1,0 +1,5 @@
+autoextract-poet>=0.2.0
+scrapinghub-autoextract>=0.6.0
+scrapy-poet>=0.1.0
+aiohttp
+tldextract
