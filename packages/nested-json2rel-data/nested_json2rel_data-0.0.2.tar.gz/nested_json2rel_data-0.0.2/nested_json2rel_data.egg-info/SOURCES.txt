@@ -1,0 +1,8 @@
+README.md
+setup.py
+nested_json2rel_data/__init__.py
+nested_json2rel_data/nested_json_parser.py
+nested_json2rel_data.egg-info/PKG-INFO
+nested_json2rel_data.egg-info/SOURCES.txt
+nested_json2rel_data.egg-info/dependency_links.txt
+nested_json2rel_data.egg-info/top_level.txt
