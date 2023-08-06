@@ -1,0 +1,166 @@
+[tool.poetry]
+name = "structlog-sentry-logger"
+version = "0.6.1"
+description = "Log without the setup via a pre-configured structlog logger with optional Sentry integration"
+authors = ["Teo Zosa <teo@sonosim.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/TeoZosa/structlog-sentry-logger"
+homepage = "https://github.com/TeoZosa/structlog-sentry-logger"
+include = ["structlog_sentry_logger/py.typed"]
+keywords = ["logging", "structured", "structure", "log", "structured logging", "sentry", "structlog", "structlog-sentry"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.urls]
+Changelog = "https://github.com/TeoZosa/structlog-sentry-logger/releases"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+colorama = "^0.4.3"
+gitpython = "^3.1.7"
+orjson = "^3.4.0"
+python-dotenv = "^0.15.0"
+sentry-sdk = ">0.17.0"
+structlog = "^20.1.0"
+structlog-sentry = "^1.2.2"
+
+# Documentation
+importlib-metadata = { version = "^3.4.0", optional = true}
+myst-parser = { version = "^0.13.1", optional = true}
+pygments = { version = "^2.7.3", optional = true}
+sphinx = { version = "^3.4.3", optional = true}
+sphinx-autodoc-typehints = { version = "^1.11.1", optional = true}
+sphinx-rtd-theme = { version = "^0.5.1", optional = true}
+sphinxcontrib-apidoc = { version = "^0.3.0", optional = true}
+sphinxcontrib-confluencebuilder = { version = "^1.3.0", optional = true}
+
+[tool.poetry.dev-dependencies]
+# Testing
+pytest = "^6.2.1"
+pytest-cov = "^2.11.1"
+pytest-emoji = "^0.2.0"
+pytest-mock = "^3.5.1"
+pytest-sugar = "^0.9.4"
+pytest-xdist = "^2.2.0"
+xdoctest = "^0.15.0"
+mutmut = "^2.1.0"
+tox = "^3.21.2"
+tox-gh-actions = "^2.3.0"
+# Code formatter
+# see: https://black.readthedocs.io/en/stable/editor_integration.html
+black = "^20.8b1"
+# Linters
+flakehell = "^0.9.0"
+pylint = "^2.6.0"
+# Static type checker
+mypy = "^0.790"
+# Runtime type checker
+typeguard = "^2.10.0"
+# Linting & formatting orchestrator
+pre-commit = "^2.9.3"
+# Project boilerplate synchronizer
+cruft = "^2.6.0"
+
+# Documentation
+darglint = "^1.5.8"
+
+[tool.poetry.extras]
+docs = [
+    "importlib-metadata",
+    "myst-parser",
+    "pygments",
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "sphinx-rtd-theme",
+    "sphinxcontrib-apidoc",
+    "sphinxcontrib-confluencebuilder",
+]
+
+#################################################################################
+# Tooling configs                                                               #
+#################################################################################
+[tool.coverage.run]
+branch = true
+parallel = true
+source = ["structlog_sentry_logger"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+
+[tool.cruft]
+skip = [
+    ".env",
+    ".python-version",
+    "README.md",
+    "structlog_sentry_logger/__init__.py",
+    "docs/source/.env",
+    "docs/source/ref/dev/"
+]
+
+[tool.flakehell]
+# specify any flake8 options
+exclude = [".*"] # Ignore dotfiles
+# make output nice
+format = "grouped"
+# show line of source code in output
+show_source = true
+
+# list of plugins and rules for them
+[tool.flakehell.plugins]
+# cyclomatic complexity (https://github.com/PyCQA/mccabe)
+mccabe = ["+*"]
+# include everything in pyflakes except F401
+pyflakes = ["+*", "-F401"]
+# include everything in pycodestyle except what Black covers
+pycodestyle = ["+*",
+    "-E203", # Whitespace before ":"
+    "-E501", # Line too long (82 > 78 characters)
+    "-W503"  # Line break occurred before a binary operator <- this is now considered best practice by PEP 8
+]
+
+[tool.isort]
+profile = "black"
+atomic = "true"
+combine_as_imports = true
+
+[tool.pylint.basic]
+good-names-rgxs = ["^Test_.*$", "^.*DSN.*$"]
+
+[tool.pylint.messages_control]
+disable = [
+  # Explicitly document only as needed
+  "missing-module-docstring",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  # Black & Flake8 purview
+  "line-too-long",
+  "bad-continuation",
+  "c-extension-no-member",
+]
+
+[tool.pylint.similarities]
+# Ignore imports when computing similarities.
+ignore-imports = "yes"
+
+[tool.pytest.ini_options]
+addopts = ["-rfsxX", "-l", "--tb=short", "--strict-markers", "-vv", "--emoji", "--xdoctest"]
+xfail_strict = "true"
+testpaths = ["tests",]
+norecursedirs = [".*", "*.egg", "build", "dist",]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
