@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: simodes
+Version: 0.4
+Summary: Platform for connection of ODE and DES based simulations
+Home-page: http://github.com/hrbolek/simodes
+Author: Profesor Hrbolek
+Author-email: profesor@hrbolek.cz
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Linguistic
