@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: airportAI-simulator
+Version: 0.0.1
+Summary: Airport simulator
+Home-page: https://github.com/burnpiro/airport-ai
+Author: Marek Pokropiński and Kemal Erdem
+Author-email: marek.pokropinski@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (~=1.18.5)
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: numba
+
+Airport simulator for evaluating airport gate assignment problem. Part of ariportAI project.
+
+
