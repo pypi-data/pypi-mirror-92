@@ -1,0 +1,3 @@
+[console_scripts]
+pelican-stat=pelican_stat.__main__:main
+
