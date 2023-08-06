@@ -1,0 +1,3 @@
+_build/
+/full_api/*.rst
+!/full_api/index.rst
