@@ -1,0 +1,3 @@
+[genice2_format]
+_RDF = genice2_rdf.formats._RDF
+
