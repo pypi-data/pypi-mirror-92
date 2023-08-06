@@ -1,0 +1,1 @@
+tensorly_sphinx_theme

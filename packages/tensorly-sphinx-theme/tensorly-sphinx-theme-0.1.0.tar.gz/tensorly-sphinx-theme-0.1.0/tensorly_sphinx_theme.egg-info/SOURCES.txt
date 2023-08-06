@@ -1,0 +1,9 @@
+README.rst
+setup.py
+tensorly_sphinx_theme/__init__.py
+tensorly_sphinx_theme.egg-info/PKG-INFO
+tensorly_sphinx_theme.egg-info/SOURCES.txt
+tensorly_sphinx_theme.egg-info/dependency_links.txt
+tensorly_sphinx_theme.egg-info/entry_points.txt
+tensorly_sphinx_theme.egg-info/requires.txt
+tensorly_sphinx_theme.egg-info/top_level.txt
