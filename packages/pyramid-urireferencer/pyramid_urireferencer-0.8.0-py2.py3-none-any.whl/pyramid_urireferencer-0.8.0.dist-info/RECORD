@@ -1,0 +1,11 @@
+pyramid_urireferencer/__init__.py,sha256=xaChxfwVIvgcmWAIy5etwG-wjHdBsMa0G0S4fJ_fc-o,1395
+pyramid_urireferencer/models.py,sha256=WnOJl4Vgyr5hWM3seShtAES-wi_nb7-Z4jd6c6e7OFY,4161
+pyramid_urireferencer/protected_resources.py,sha256=ICFb1WIU3fwVVh-pAkiWyUh5uMsC2IMQzS_X6JmXIeM,6248
+pyramid_urireferencer/referencer.py,sha256=LsN94xjAUeCjcP1tCxqzp2ELJs8ma-WQloiX9_Et1yo,3091
+pyramid_urireferencer/renderers.py,sha256=kUrZmd6L1uVB3X5fWD6hQuzPK5eS8Wj8Rl20Jraz0s4,2079
+pyramid_urireferencer/views.py,sha256=_Zk5UIoDTlmNWHHenj9mIcBKfJg8XKr7hShCqtfhc54,721
+pyramid_urireferencer-0.8.0.dist-info/LICENSE,sha256=XBpa20bWNzn9g-x_OR2bcjKD-ENmEn0ImQ5j_0H5IsM,1066
+pyramid_urireferencer-0.8.0.dist-info/METADATA,sha256=jvWPA8fNIlXs37nr1KehKAi6vu5PAIJwk46K3ojDQbc,3285
+pyramid_urireferencer-0.8.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pyramid_urireferencer-0.8.0.dist-info/top_level.txt,sha256=N_lAP9DvZxnBY-Vx-medl8YCM5FJtCtLu5Ilxpt8Q3g,22
+pyramid_urireferencer-0.8.0.dist-info/RECORD,,
