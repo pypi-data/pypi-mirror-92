@@ -1,0 +1,4 @@
+[console_scripts]
+superinactive=superinactive.superinactive:main
+touch_file=superinactive.touch_file:main
+

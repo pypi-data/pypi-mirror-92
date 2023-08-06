@@ -1,0 +1,9 @@
+LICENSE,sha256=kopOaJewgzVd5ebCsHTR0va1S6AeYf9EyiYwFD7zVrw,1063
+superinactive/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+superinactive/superinactive.py,sha256=zPF0ZHS40822xTR6-SmjNNNI6cz6vUav1-xSF-4-G3w,5385
+superinactive/touch_file.py,sha256=oilZvUKsZYWOpH3frkMBoWh2XtCCOrXK2oUsiSPMSxY,257
+superinactive-0.1.0.dist-info/entry_points.txt,sha256=i6P_3Zo0h0Gf353D6uHbU60k8Ge7TLiqm5boDGB-lbU,107
+superinactive-0.1.0.dist-info/LICENSE,sha256=kopOaJewgzVd5ebCsHTR0va1S6AeYf9EyiYwFD7zVrw,1063
+superinactive-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+superinactive-0.1.0.dist-info/METADATA,sha256=0b2imJwC-db4ScGHjxDWe3ImOu1nx_c8uajOBNFURXM,2101
+superinactive-0.1.0.dist-info/RECORD,,
