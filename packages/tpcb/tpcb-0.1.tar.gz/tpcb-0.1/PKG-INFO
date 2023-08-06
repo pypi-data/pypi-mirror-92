@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tpcb
+Version: 0.1
+Summary: A command-line utility that converts the text in clipboard intokeystrokes after a given amount of time (default: 2sec).
+Home-page: https://github.com/5j9/tpcb
+Author: 5j9
+Author-email: 5j9@users.noreply.github.com
+License: GNU General Public License v3 (GPLv3)
+Description: ``pip intall tpcb``
+        
+        You are going to log into a website, but the password field is paste-protected (`stupid web developers`_)!
+        Call ``tpcb`` from command line (or ``Run`` dialog on Windows). Put the cursor back at the password field.
+        The program will start typing the clipboard after 2 seconds.
+        
+        Requires Python 3.6+.
+        
+        .. _stupid web developers: https://security.stackexchange.com/questions/131106/is-there-any-reason-to-disable-paste-password-on-login
+        
+Keywords: convert type clipboard paste keystroke
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
