@@ -1,0 +1,6 @@
+masonite>=2.2.24
+qiniu<8.x,>=7.x
+
+[test]
+coverage
+pytest
