@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: manim-rubikscube
+Version: 0.0.8
+Summary: A Manim implementation of a Rubik's Cube
+Home-page: https://github.com/WampyCakes/manim-rubikscube
+License: GNU General Public License v3 (GPLv3)
+Author: KingWampy
+Author-email: none@ya.business
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: manim
+Project-URL: Repository, https://github.com/WampyCakes/manim-rubikscube
+Description-Content-Type: text/x-rst
+
+Manim RubiksCube
+----------------
+For installation, importing, use, examples, and more `see the Github repository <https://github.com/WampyCakes/manim-rubikscube>`_.
