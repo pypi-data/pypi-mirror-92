@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pypolarity/__init__.py
+pypolarity/main.py
+pypolarity.egg-info/PKG-INFO
+pypolarity.egg-info/SOURCES.txt
+pypolarity.egg-info/dependency_links.txt
+pypolarity.egg-info/not-zip-safe
+pypolarity.egg-info/requires.txt
+pypolarity.egg-info/top_level.txt
+pypolarity/sentiment/negative_adjectives.txt
+pypolarity/sentiment/negative_new.txt
+pypolarity/sentiment/negative_verbs.txt
+pypolarity/sentiment/positive_new.txt
