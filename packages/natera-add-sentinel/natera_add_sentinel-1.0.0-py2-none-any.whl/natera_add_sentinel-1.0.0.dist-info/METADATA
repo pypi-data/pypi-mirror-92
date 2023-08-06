@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: natera-add-sentinel
+Version: 1.0.0
+Summary: Natera sentinel
+Home-page: UNKNOWN
+Author: Sergey Tyurin
+Author-email: styurin@natera.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: dxpy (==0.288.0)
+
+Natera Constellation Sentinel
+
+
