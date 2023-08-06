@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jbtech-utils-package
+Version: 0.0.21
+Summary: Package for just basic utitilies
+Home-page: https://github.com/jamberin/jbtech-utils-package
+Author: James Beringer
+Author-email: jamberin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: Public Domain
+Description-Content-Type: text/markdown
+
+# utils_packages
+Utilities and controllers that I like to use among several projects 
+implemented via pypi package
+
+#### data_controller
+All postgres controlled logic and scripts
+
+#### py_utils
+Recyclable utilities
+
