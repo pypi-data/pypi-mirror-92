@@ -1,0 +1,5 @@
+setup.py
+dlFramework_2021C.egg-info/PKG-INFO
+dlFramework_2021C.egg-info/SOURCES.txt
+dlFramework_2021C.egg-info/dependency_links.txt
+dlFramework_2021C.egg-info/top_level.txt
