@@ -1,0 +1,8 @@
+README.md
+setup.py
+qt_range_slider/__init__.py
+qt_range_slider.egg-info/PKG-INFO
+qt_range_slider.egg-info/SOURCES.txt
+qt_range_slider.egg-info/dependency_links.txt
+qt_range_slider.egg-info/requires.txt
+qt_range_slider.egg-info/top_level.txt
