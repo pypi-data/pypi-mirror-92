@@ -1,0 +1,12 @@
+README.md
+setup.py
+osrparse/__init__.py
+osrparse/enums.py
+osrparse/parse.py
+osrparse/replay.py
+osrparse.egg-info/PKG-INFO
+osrparse.egg-info/SOURCES.txt
+osrparse.egg-info/dependency_links.txt
+osrparse.egg-info/top_level.txt
+tests/__init__.py
+tests/test_replay.py
