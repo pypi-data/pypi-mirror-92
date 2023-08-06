@@ -1,0 +1,8 @@
+README.md
+setup.py
+xxlGsc/__init__.py
+xxlGsc/xxlGsc.py
+xxlGsc.egg-info/PKG-INFO
+xxlGsc.egg-info/SOURCES.txt
+xxlGsc.egg-info/dependency_links.txt
+xxlGsc.egg-info/top_level.txt

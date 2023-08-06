@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xxlGsc
+Version: 0.1
+Summary: xing xiu lao xian, fa li wu bian!
+Home-page: https://github.com/guochaoxxl/learnPython
+Author: GSC
+Author-email: guochaoxxl@163.com
+License: UNKNOWN
+Description: #xxlGSC
+        这个模块老牛拜了，星宿老仙，法力无边
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
