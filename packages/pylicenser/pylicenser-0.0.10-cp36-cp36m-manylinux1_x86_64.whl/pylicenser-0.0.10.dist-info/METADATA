@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: pylicenser
+Version: 0.0.10
+Summary: 代码混淆
+Home-page: https://gitlab.bailian-ai.com/ai_algo/pylicenser
+Author: blair
+Author-email: tech@bailian.ai
+License: UNKNOWN
+Project-URL: Source, https://gitlab.bailian-ai.com/ai_algo/pylicenser
+Keywords: encrypt,pylicenser
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: pyCrypto
+Provides-Extra: dev
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+# Pylicenser
+提供了2种加密的方式：
+1. 基于[sourcedefender](https://pypi.org/project/sourcedefender/)的原理自己加以实现的，更好的兼容了目录级别的代码加密
+2. 使用Cython进行代码封装。
+
+## 安装
+
+```shell script
+pip install pylicenser
+```
+
+### 加密
+```text
+usage: pylicenser encrypt [-h] [--ttl TTL] [--dist DIST] str [str ...]
+
+positional arguments:
+  str          待加密的文件或文件夹
+
+optional arguments:
+  -h, --help   帮助信息
+  --ttl TTL    有效日期，默认：0，单位：seconds。示例： 1s、2d、3m、4h (default: 0)
+  --dist DIST  输出目录，默认当前dist目录 (default: ./dist)
+```
+
+### 运行加密代码
+```text
+usage: pylicenser run [-h] script ...
+
+positional arguments:
+  script      py脚本文件
+  args        脚本需要的参数
+
+optional arguments:
+  -h, --help  帮助信息
+```
+
+
+
+##  使用Cython方式加密
+采用该方式需要预先安装Cython，安装方式如下：
+```shell script
+pip install Cython --install-option="--no-cython-compile"
+```
+使用方式如下：
+```text
+usage: pylicenser cython [--dist DIST] [-h] str [str ...]
+
+positional arguments:
+  str          待编译的代码文件或文件夹
+
+optional arguments:
+  --dist DIST  输出目录，默认当前dist目录 (default: ./dist)
+  -h, --help   帮助信息
+
+```
+
+**Cython加密后，不影响代码原有使用方式，即原来脚本怎么运行，加密后还是怎么运行。**  
+**相较于第一种加密，Cython加密具有平台依赖性，即在darwin上加密的代码在win或者linux下不一定能运行。**
+
