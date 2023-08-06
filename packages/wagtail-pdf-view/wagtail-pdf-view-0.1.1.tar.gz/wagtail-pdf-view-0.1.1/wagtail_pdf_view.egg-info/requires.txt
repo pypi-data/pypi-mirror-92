@@ -1,0 +1,7 @@
+wagtail
+
+[django-tex]
+django-tex
+
+[weasyprint]
+django-weasyprint

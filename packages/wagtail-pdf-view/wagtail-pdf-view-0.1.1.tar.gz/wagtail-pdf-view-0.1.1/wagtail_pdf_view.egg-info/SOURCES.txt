@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+wagtail_pdf_view/__init__.py
+wagtail_pdf_view/environment.py
+wagtail_pdf_view/mixins.py
+wagtail_pdf_view/utils.py
+wagtail_pdf_view/views.py
+wagtail_pdf_view.egg-info/PKG-INFO
+wagtail_pdf_view.egg-info/SOURCES.txt
+wagtail_pdf_view.egg-info/dependency_links.txt
+wagtail_pdf_view.egg-info/requires.txt
+wagtail_pdf_view.egg-info/top_level.txt
+wagtail_pdf_view/templates/wagtail_preamble.tex
