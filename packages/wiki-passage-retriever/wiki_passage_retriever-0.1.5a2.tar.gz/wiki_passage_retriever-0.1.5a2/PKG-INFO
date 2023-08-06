@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: wiki_passage_retriever
+Version: 0.1.5a2
+Summary: A small tool for retrieving relevant passages to a question from Wikipedia
+Home-page: https://github.com/nhatsmrt/wiki-dpr
+Author: Nhat Pham
+Author-email: nphamcs@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
