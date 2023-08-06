@@ -1,0 +1,6 @@
+pyyaml
+beautifulsoup4
+validators
+six
+soupsieve
+twine
