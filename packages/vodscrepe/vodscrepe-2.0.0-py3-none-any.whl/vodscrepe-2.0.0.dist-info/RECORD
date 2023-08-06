@@ -1,0 +1,11 @@
+vodscrepe/__init__.py,sha256=jvL2jmVJpBNN8u68dSUYRt0FHrXCR5ru3PXSXwiBwGg,54
+vodscrepe/__main__.py,sha256=1jiDz0G8U6uAGx4KrMPTtYAWm-jos4tjeZNUj3jypEs,2538
+vodscrepe/aliases.py,sha256=5fx9JTlE09cm1GBDSmXB-dMWFfTDZ7VNtFA97v-hrgs,3100
+vodscrepe/errors.py,sha256=Iy3OdbyAmfEoMysvI5AAM5fJGX75In9rha03z-w5ot0,423
+vodscrepe/scrape.py,sha256=Ydm7UzTTCBsPEqdkHVNG-4xBOtBfqHPtpt4lSSvwlqY,6876
+vodscrepe/vod.py,sha256=r6lMWd8UHhM-gqsQ37AKfWffARnjfolIAuuyjlPfpi8,1052
+vodscrepe-2.0.0.dist-info/entry_points.txt,sha256=WrcVuOXoapRUkFsNjItQTthl6rEeYMrjoBV3tRZ9aKc,53
+vodscrepe-2.0.0.dist-info/LICENSE,sha256=b4jKNDfSOuaomx8GDdw13sVa5077p3tz7zkTLLmMeDI,1088
+vodscrepe-2.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+vodscrepe-2.0.0.dist-info/METADATA,sha256=IwLNGMvwQ-6fMid03JbR3ZIfIag04AhGEfTbYRCCs5Y,4308
+vodscrepe-2.0.0.dist-info/RECORD,,
