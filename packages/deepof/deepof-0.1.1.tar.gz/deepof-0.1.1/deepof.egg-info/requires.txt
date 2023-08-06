@@ -1,0 +1,16 @@
+tensorflow
+numpy
+pandas
+joblib
+matplotlib
+networkx
+opencv-python
+regex
+scikit-learn
+scipy
+seaborn
+sklearn
+tables
+tensorflow-probability
+tqdm
+umap-learn
