@@ -1,0 +1,14 @@
+README.md
+setup.py
+synfo/__init__.py
+synfo/_version.py
+synfo/drives.py
+synfo/format.py
+synfo/package.py
+synfo/system.py
+synfo.egg-info/PKG-INFO
+synfo.egg-info/SOURCES.txt
+synfo.egg-info/dependency_links.txt
+synfo.egg-info/entry_points.txt
+synfo.egg-info/requires.txt
+synfo.egg-info/top_level.txt
