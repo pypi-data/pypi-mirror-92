@@ -1,0 +1,10 @@
+mcot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mcot/maths/README.rst,sha256=FPV4GMK6gprM6xQRpla6FuDaopGNKMGvhmUxQ7klmvc,10
+mcot/maths/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+mcot/maths/__init__.py,sha256=XkQlTTpoc5yJ5UBd0QKpN4MrGy9XzKOqw_viYKg1B-4,98
+mcot/maths/spherical.py,sha256=3QI3nRiKlve2ZOlpOliQbiXrY86YT4nsV7xGAT11LFw,3572
+mcot.maths-0.1.0.dist-info/METADATA,sha256=LtZoR9pNeomUR5JbBMGYKOHMHCnKO3XeCG41rO9UnZw,477
+mcot.maths-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+mcot.maths-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+mcot.maths-0.1.0.dist-info/top_level.txt,sha256=3hHIBIGOzpCbfIgQ2yLHGIKL_OeSrL9ss_Jwr2SXVgM,5
+mcot.maths-0.1.0.dist-info/RECORD,,
