@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{284:function(e,o,n){"use strict";n.r(o),o.default={projects:"Projekte"}}}]);
