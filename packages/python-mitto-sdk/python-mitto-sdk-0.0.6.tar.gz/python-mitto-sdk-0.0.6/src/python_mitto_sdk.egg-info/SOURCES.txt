@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/mitto_sdk/__init__.py
+src/mitto_sdk/client.py
+src/python_mitto_sdk.egg-info/PKG-INFO
+src/python_mitto_sdk.egg-info/SOURCES.txt
+src/python_mitto_sdk.egg-info/dependency_links.txt
+src/python_mitto_sdk.egg-info/requires.txt
+src/python_mitto_sdk.egg-info/top_level.txt
