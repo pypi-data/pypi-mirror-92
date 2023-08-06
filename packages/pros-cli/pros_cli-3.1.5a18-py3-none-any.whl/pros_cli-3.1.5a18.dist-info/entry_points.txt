@@ -1,0 +1,5 @@
+
+        [console_scripts]
+        pros=pros.cli.main:main
+        prosv5=pros.cli.main:main
+        
