@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: oitool
+Version: 0.1.0
+Summary: Utilities for the analysis of Option data
+Home-page: UNKNOWN
+Author: Chiranjeev
+Author-email: stockalgos@gmail.com
+License: MIT
+Download-URL: https://github.com/stockalgo/OItool/archive/v0.1.0.tar.gz
+Project-URL: Organization, http://www.bandl.io
+Project-URL: Source, https://github.com/stockalgo/OItool
+Project-URL: Tracker, https://github.com/stockalgo/OItool/issues
+Keywords: python,option,nse,open-interest,open-interest-charts
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: bandl
+Requires-Dist: influxdb
+
+# OItool Open Interest Analysis Tool
+
+
+
+
+<p align="center"><a href="http://bandl.io/oitool" target="_blank"><img src="https://raw.githubusercontent.com/stockalgo/OItool/main/demo/bar.gif"></a> </p>
+<p align="center"><a href="http://bandl.io/oitool" target="_blank"><img src="https://raw.githubusercontent.com/stockalgo/OItool/main/demo/chart.gif"></a> </p>
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install bandl.
+
+```bash
+pip install oitool
+```
+
+
