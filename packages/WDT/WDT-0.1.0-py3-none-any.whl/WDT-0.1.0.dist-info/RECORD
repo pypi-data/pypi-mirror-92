@@ -1,0 +1,10 @@
+WDT/WDT.py,sha256=IzNtHFlI7ZCR8Y-qif1Ujg8xiYaGD0drNZVNKx2x4sk,2241
+WDT/__init__.py,sha256=gCXBObTLyTLw0SZHzVYV3tjMKegQd0xc54f1_-lYPoA,100
+WDT-0.1.0.dist-info/DESCRIPTION.rst,sha256=V9-SZXNPBmZHkwoVNkOhwdanQACkkvTQXKgOySFN4DY,3121
+WDT-0.1.0.dist-info/METADATA,sha256=tNwPoDV63rD_Jg_cuS8QFKv1RGDR6ersq_XOTQPPgko,3482
+WDT-0.1.0.dist-info/RECORD,,
+WDT-0.1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+WDT-0.1.0.dist-info/metadata.json,sha256=FaMCELveUFR0f--tGHhqGJwr5CbdHpdsXqsNLbxAJ8o,529
+WDT-0.1.0.dist-info/top_level.txt,sha256=6FCyV9Cm6d36bKzYJ1oykzxj6prvFRIBFYQKrXI7fRE,10
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_WDT.py,sha256=fqRyUc7zF1uUZ2Pic2PGFxkEvRTUherUkM401Gehae4,2018
