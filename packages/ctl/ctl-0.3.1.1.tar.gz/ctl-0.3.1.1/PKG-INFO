@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ctl
+Version: 0.3.1.1
+Summary: Full control of your environment
+Home-page: https://github.com/20c/ctl
+License: Apache-2.0
+Author: 20C
+Author-email: code@20c.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Documentation
+Requires-Dist: confu (>=1.4,<2.0)
+Requires-Dist: git-url-parse (>=1.1,<2.0)
+Requires-Dist: grainy (>=1.4,<2.0)
+Requires-Dist: munge (>=1,<2)
+Requires-Dist: pluginmgr (>=1,<2)
+Project-URL: Repository, https://github.com/20c/ctl
