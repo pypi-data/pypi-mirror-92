@@ -1,0 +1,13 @@
+twisted>16.4
+
+[:python_version < "3.5"]
+typing
+
+[jsonschema]
+jsonschema
+
+[jsonschema:python_version < "3"]
+pyrsistent<=0.16.1
+
+[sentry]
+sentry-sdk
