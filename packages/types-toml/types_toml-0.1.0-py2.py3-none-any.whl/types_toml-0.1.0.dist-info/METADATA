@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: types-toml
+Version: 0.1.0
+Summary: Typing stubs for toml
+Home-page: https://github.com/python/typeshed
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+
+Typing stubs for toml
+
+
