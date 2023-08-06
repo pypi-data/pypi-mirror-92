@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+memsource/__init__.py
+memsource/auth.py
+memsource/constants.py
+memsource/exceptions.py
+memsource/version.py
+memsource.egg-info/PKG-INFO
+memsource.egg-info/SOURCES.txt
+memsource.egg-info/dependency_links.txt
+memsource.egg-info/requires.txt
+memsource.egg-info/top_level.txt
