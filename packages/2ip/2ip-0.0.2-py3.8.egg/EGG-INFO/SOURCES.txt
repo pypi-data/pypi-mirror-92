@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+2ip.egg-info/PKG-INFO
+2ip.egg-info/SOURCES.txt
+2ip.egg-info/dependency_links.txt
+2ip.egg-info/requires.txt
+2ip.egg-info/top_level.txt
+twoip/__init__.py
+twoip/__version__.py
+twoip/twoip.py
