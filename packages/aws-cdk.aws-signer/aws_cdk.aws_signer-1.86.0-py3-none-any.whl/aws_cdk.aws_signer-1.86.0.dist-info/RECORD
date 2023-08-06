@@ -1,0 +1,8 @@
+aws_cdk/aws_signer/__init__.py,sha256=5IirIIOp4U80F9_km1QDAGeGIBHOQAcez0A9KD2DUtw,21356
+aws_cdk/aws_signer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_signer/_jsii/__init__.py,sha256=X3hhFNSHVVEZlTUFv3r7ZFFXa5vtrDL07IW-HG7bPoI,345
+aws_cdk/aws_signer/_jsii/aws-signer@1.86.0.jsii.tgz,sha256=g9_VKPYtiKmsPGHg3pMEhiZuyMMux0DIeGdpjnNl1ok,21149
+aws_cdk.aws_signer-1.86.0.dist-info/METADATA,sha256=EH09lq1kXzFGUPXiVo06u65-7njWku0bUI2W_C7TwPo,1648
+aws_cdk.aws_signer-1.86.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_signer-1.86.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_signer-1.86.0.dist-info/RECORD,,
