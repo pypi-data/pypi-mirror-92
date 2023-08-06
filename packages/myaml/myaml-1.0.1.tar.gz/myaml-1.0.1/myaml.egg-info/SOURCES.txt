@@ -1,0 +1,9 @@
+README.md
+setup.py
+myaml/__init__.py
+myaml/myaml.py
+myaml.egg-info/PKG-INFO
+myaml.egg-info/SOURCES.txt
+myaml.egg-info/dependency_links.txt
+myaml.egg-info/requires.txt
+myaml.egg-info/top_level.txt
