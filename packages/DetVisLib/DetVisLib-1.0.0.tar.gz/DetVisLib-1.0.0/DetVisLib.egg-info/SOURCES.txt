@@ -1,0 +1,7 @@
+README.md
+setup.py
+DetVisLib.egg-info/PKG-INFO
+DetVisLib.egg-info/SOURCES.txt
+DetVisLib.egg-info/dependency_links.txt
+DetVisLib.egg-info/entry_points.txt
+DetVisLib.egg-info/top_level.txt
