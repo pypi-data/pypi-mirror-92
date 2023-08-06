@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bkr
+Version: 0.0.1
+Summary: SVG generator
+Home-page: UNKNOWN
+Author: Takaaki Yoneda
+Author-email: 
+License: MIT
+Keywords: SVG
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pillow
+
+#bkr the SVG Generator. 
+bkr generate SVG strings.<br />Examples are in preparation.<br /><br />## Change Log
+### 0.0.1(26/01/2021)
+- First Release
+

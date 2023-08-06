@@ -1,0 +1,17 @@
+bkr/__init__.py,sha256=B92QX6UsMuk4PXv7SqUxrzW_LVDjRjkvO9W74r1xCXY,82
+bkr/cnvs.py,sha256=Kb_DKxou83CUhPaod9mkwSvdEhO337WdAVweQQ4rKDw,608
+bkr/essentials/__init__.py,sha256=CaLoDVFeAuUSu5MHe6GO5A9LJ61qWOxdtV8hwcr5OEw,138
+bkr/essentials/color.py,sha256=k1hOk8umPnocqQNt6PbQqwgplls6keFwVBPY5h7hLC0,1030
+bkr/essentials/elm.py,sha256=tjhbgeiVDnSKyCeeCp13fuYoaAhwSjmwy_k-IRlG7iU,2863
+bkr/essentials/utils.py,sha256=7XE0FIjDVJPugoynATU02cmdSmcfkqRj-EWAtTdcZfg,117
+bkr/essentials/vector.py,sha256=339ECNCjqS20UhDXciWIFPpklHYtBFfXjA-Owf92ZjU,1430
+bkr/illustrator/__init__.py,sha256=fJa0nef5elklQ63ZBzj1BkTCrZchaCPFHv3i1le6fWA,152
+bkr/illustrator/image.py,sha256=uFmrOeASEbiFdBH0unAjH6s91xP9DVR_Jm1pjt5WF4o,1315
+bkr/illustrator/pathes.py,sha256=30zk2FqPE6HzsZoL9I2UgxrUVqQmcwqYdc4NO9ZEBQg,2543
+bkr/illustrator/shapes.py,sha256=mx1lcfV-d8alP-tly1owGewAUOKr6Ui_l2RrzK689xc,1965
+bkr/illustrator/typography.py,sha256=L4s597fXAm08va9hb56gR5VIrzRJa-9tjQvyd68dl_Q,2897
+bkr-0.0.1.dist-info/LICENSE.txt,sha256=FOaen5qUn0mZ7-DQncYUW4gcQtjVzhGKzWibAOGQ_fU,1053
+bkr-0.0.1.dist-info/METADATA,sha256=hqFgoB8LK_beMoVrCZ6HHAtBJxVK2eWUqQ6esG-aa-E,674
+bkr-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bkr-0.0.1.dist-info/top_level.txt,sha256=uVP8Al2sEyWjTyvCTthhkY3DhYGK7WzqgNpxC6Djro4,4
+bkr-0.0.1.dist-info/RECORD,,
