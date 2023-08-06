@@ -1,0 +1,26 @@
+bashlex!=0.13
+toml
+certifi
+bracex
+
+[:python_version < "3.8"]
+typing_extensions
+
+[:python_version < "3.9"]
+importlib_resources>=1.4
+
+[dev]
+click
+mkdocs-include-markdown-plugin==2.1.1
+mkdocs==1.0.4
+mypy
+pip-tools
+pygithub
+pymdown-extensions
+pytest
+pytest-timeout
+pyyaml
+requests
+typing-extensions
+packaging>=20.8
+rich>=9.6
