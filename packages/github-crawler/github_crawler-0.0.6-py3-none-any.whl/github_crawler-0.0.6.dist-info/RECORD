@@ -1,0 +1,14 @@
+github_crawler/__init__.py,sha256=tmQh7c25-MrOlrHvZzGW0qUlX86KcMiJbt6KF4B2JyU,58
+github_crawler/main.py,sha256=igH2E1o7wU-G7zpBgzyYOwAfqVcg7_s9F_fBroOqjF0,406
+github_crawler/user_profile_main.py,sha256=glPnzRJrY2j-PrCMLRuSZ4lWDhE_Z_nkZvKLC4Ogcdg,1640
+github_crawler/user_repos_main.py,sha256=EULj0rPxKLD-AU2CSBfErO6NJzzxBds2wVarw5NZhoM,976
+github_parser_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github_parser_pkg/main.py,sha256=Gcs50Vk593auXinFhIJFiPL8Ysyww8GWFHK2Zu1WzIE,440
+github_parser_pkg/user_profile.py,sha256=glPnzRJrY2j-PrCMLRuSZ4lWDhE_Z_nkZvKLC4Ogcdg,1640
+github_parser_pkg/user_repos.py,sha256=EULj0rPxKLD-AU2CSBfErO6NJzzxBds2wVarw5NZhoM,976
+github_crawler-0.0.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+github_crawler-0.0.6.dist-info/METADATA,sha256=PtjbnojosDS1OUvaCspnfGis8ebky1aRCCxBNR7d8sY,2131
+github_crawler-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+github_crawler-0.0.6.dist-info/entry_points.txt,sha256=yiAn44p_Xapakxu_1NOlY9FGizrp578PaALfMnfbxHE,57
+github_crawler-0.0.6.dist-info/top_level.txt,sha256=witYAfFkS-209-jqIGa2gE2BsCHabLmDp9cjWpA34C4,15
+github_crawler-0.0.6.dist-info/RECORD,,
