@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: tensorflow-datasets-ko
+Version: 0.2
+Summary: Custom TensorFlow Datasets for Korean Text Data
+Home-page: https://github.com/chrisjihee/tensorflow-datasets-ko
+Author: Jihee Ryu
+Author-email: chrisjihee@etri.re.kr
+License: UNKNOWN
+Download-URL: https://github.com/chrisjihee/tensorflow-datasets-ko/archive/v0.2.tar.gz
+Description: # tensorflow-datasets-ko
+        
+        Custom TensorFlow Datasets for Korean Text Data
+        
+        ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=tensorflow-datasets-ko)
+        
+        # Requirements
+        
+        ```
+        tensorflow-datasets[c4]
+        ```
+        
+        # Installation
+        
+        ```bash
+        pip install tensorflow-datasets-ko
+        ```
+        
+        # Reference
+        
+        - https://www.tensorflow.org/datasets
+        - https://www.tensorflow.org/datasets/catalog/c4
+        - https://www.tensorflow.org/datasets/add_dataset
+        - https://github.com/tensorflow/datasets
+        - https://github.com/google-research/text-to-text-transfer-transformer#c4
+        
+Keywords: TensorFlow,Dataset,C4,Korean,Python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
