@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tae-grader
+Version: 1.0.5
+Summary: Python and Jupyter Notebook autograder
+Home-page: UNKNOWN
+Author: TAE Developers
+Author-email: master@taecoding.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: PyPDF2
+Requires-Dist: dill
+Requires-Dist: docker
+Requires-Dist: ipython
+Requires-Dist: jinja2
+Requires-Dist: nbconvert (<6.0.0)
+Requires-Dist: nbformat
+Requires-Dist: pandas
+Requires-Dist: pdfkit
+Requires-Dist: pyyaml
+Requires-Dist: setuptools
+Requires-Dist: tornado
+Requires-Dist: tqdm
+
+## TAE Grader: 
+Under development
+
