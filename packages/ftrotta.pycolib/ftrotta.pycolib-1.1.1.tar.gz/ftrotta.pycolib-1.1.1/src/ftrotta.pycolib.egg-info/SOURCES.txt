@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/ftrotta/__init__.py
+src/ftrotta/pycolib/__init__.py
+src/ftrotta/pycolib/_amodule.py
+src/ftrotta/pycolib/common_tests.py
+src/ftrotta/pycolib/input_checks.py
+src/ftrotta/pycolib/log.py
+src/ftrotta/pycolib/setup.py
