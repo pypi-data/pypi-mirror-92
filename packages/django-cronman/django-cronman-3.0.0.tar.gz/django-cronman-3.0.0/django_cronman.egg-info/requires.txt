@@ -1,0 +1,14 @@
+croniter<0.4
+django
+python-dateutil
+requests
+six
+
+[:python_version < "3.0"]
+typing
+
+[redis]
+redis<2.11
+
+[sentry]
+sentry_sdk
