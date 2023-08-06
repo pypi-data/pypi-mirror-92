@@ -1,0 +1,8 @@
+target/__init__.py,sha256=vfiNBxI9uhHpfDI18lE3qBLKHoVKkPOfpxM0HAt1qrk,1581
+target/azure.py,sha256=0DhcM_f0UG_0N9vEi6tXwAHN3ukkGbuOSbC1c3e0T7w,7353
+target/plugin.py,sha256=nveYqlvnfZOhLTFCfDuqy1ANgHnijK6nVl8hJMmaHK0,12014
+target/target.py,sha256=nuJkzH17Zvz8LU8BY08PPrlgcSDvIEzX1Q55BWtNBQc,12739
+pytest_target-0.1.0.dist-info/entry_points.txt,sha256=i5ggnZwcfeVj2Yt3svGozRJhwb-Qk2g_o208KbJi_6E,33
+pytest_target-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pytest_target-0.1.0.dist-info/METADATA,sha256=3zu1OhDQ3xUz9mcqGZ67Z3JkxJP4EO3HnCST3DRj8vU,1533
+pytest_target-0.1.0.dist-info/RECORD,,
