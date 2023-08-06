@@ -1,0 +1,7 @@
+opencv-python
+numpy
+Pillow>=2.8.0
+Pillow
+Deprecated
+pygubu
+pandas
