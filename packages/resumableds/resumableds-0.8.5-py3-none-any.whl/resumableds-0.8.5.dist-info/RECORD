@@ -1,0 +1,16 @@
+resumableds/__init__.py,sha256=9KD0ukBk3TXjgRTMy95HrDrJDPPBBSE_ei58Et7Yq2Y,592
+resumableds/featherfs.py,sha256=nt8GGs5oPaXF4p1681Or_ciRJMvG6mDaUSTc-JDvnrQ,1823
+resumableds/fs.py,sha256=JeOMplI2ms0YsCGct8Q500JUWVoqO8NknOvE_E-SNLI,16269
+resumableds/functimelog.py,sha256=zB_N8Qv-d4s7XpxcwDBLzTI_xMdwTD1FIuLqMHkze2M,439
+resumableds/hasher.py,sha256=iQNDYV7MQ_8qUApEQb0mPeaK0Om1PzgYhvdENYikau0,2079
+resumableds/logger.py,sha256=WR5JPTrSGqHUE9UWcGmX1Q-KDDSOHfneILXTNLTLWyM,1400
+resumableds/parquetfs.py,sha256=DuFvFkYwlb25duGcwmMqXCIzKnwVvS-h8qwGRJHaQP8,1840
+resumableds/plotfs.py,sha256=QgniUiLdxs4Z670-ZH0AXbpFry58s-tAG63sJmW87QA,3698
+resumableds/project.py,sha256=60ZSFhkBc-PbhlrXrwT8P3kVN4SH4ySJ6b5ekmpzIB4,27356
+resumableds_before_redesign/__init__.py,sha256=Zj6NQZsaeUE9NmX2cC_2DM-n2V6JZ46pBhZ_FW2hNzA,244
+resumableds_before_redesign/resumableds.py,sha256=Wfsfk8VRQ4VfqvzBbwvmppuBxsb_HVZyuWeJ-QB7iyY,54208
+resumableds-0.8.5.dist-info/LICENSE,sha256=jvCDxqSIdUs5nZfCNUmZI9dZ6hEzxg0P9OnEdU4Dt4o,1074
+resumableds-0.8.5.dist-info/METADATA,sha256=dnljpnoGpPlwN1JT--PRBwMnwEG0bXsRvAVOxb5c42I,2490
+resumableds-0.8.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+resumableds-0.8.5.dist-info/top_level.txt,sha256=Sj3wYkncgtP3D8JsLEMY9EOmiykTr6wZL-UjnOzV3EQ,40
+resumableds-0.8.5.dist-info/RECORD,,
