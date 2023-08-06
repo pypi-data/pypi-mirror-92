@@ -1,0 +1,7 @@
+Pillow==8.1.0
+click==7.1.2
+
+[tests]
+pre-commit==2.9.3
+pytest==6.2.1
+pytest-cov==2.11.1
