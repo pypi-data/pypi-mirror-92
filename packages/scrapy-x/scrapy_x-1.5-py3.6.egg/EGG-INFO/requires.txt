@@ -1,0 +1,6 @@
+Scrapy
+coloredlogs
+fastapi
+redis
+scrapydo
+uvicorn[standard]
