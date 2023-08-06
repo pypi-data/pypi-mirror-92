@@ -1,0 +1,16 @@
+sphinxcontrib_django2/__init__.py,sha256=xFoxZVsnQ4FCNB9ewcVvgEUFIoHq-ESmwbAnHjAZ-x4,645
+sphinxcontrib_django2/roles.py,sha256=aJggKEezeZvQPcS8ra2G5waHI9BSGUTASLPljbGhWZw,3181
+sphinxcontrib_django2/docstrings/__init__.py,sha256=z5Hiyxenpt6tI-zZilygOBNbcGfV2afsj5UxEsx1Njc,5955
+sphinxcontrib_django2/docstrings/attributes.py,sha256=WOu7ZAE7k8NruLbWPm1TyzkpPRPOjKTmjsrGJRxCSvU,3897
+sphinxcontrib_django2/docstrings/classes.py,sha256=_08y01UL6tIZd-0T9V6A9PCD1Koildd19Exx3nOsQoU,4450
+sphinxcontrib_django2/docstrings/config.py,sha256=gkFSiMHuP5YHVmgMhSI55qH5rGJoiFjI-hlxqHFJN38,592
+sphinxcontrib_django2/docstrings/data.py,sha256=G1CwUEOnFXdq4niO4FO1orZNYelgfIsLTn5ktdZz6ME,837
+sphinxcontrib_django2/docstrings/field_utils.py,sha256=rRtjep92hZsRqwqU7HEfeLjntv3bdJTSJ6ZuNGIsxwk,5399
+sphinxcontrib_django2/docstrings/methods.py,sha256=rk45ZarMR0OZgIWqk1bKvZVuvo2wdaDEdTddcR_Y33k,2032
+sphinxcontrib_django2/docstrings/patches.py,sha256=ApB96wtuci85ygi_YnzZb1dYo9YDl06f7uLPSr0ifQQ,2595
+sphinxcontrib_django2-1.0.dist-info/AUTHORS,sha256=aTSHccf7rKyQ0TLjQUqrRYEDpTPTdFZnQ6ZLwzVGpek,108
+sphinxcontrib_django2-1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sphinxcontrib_django2-1.0.dist-info/METADATA,sha256=HfbSJEFpwofyUal_wXCLo0fXBfSJlGsPh_3jisT2qIw,4872
+sphinxcontrib_django2-1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+sphinxcontrib_django2-1.0.dist-info/top_level.txt,sha256=Oai55w63lOqS10gG7gZXiOY7HS2HnU2EjNS-5XnppQ4,22
+sphinxcontrib_django2-1.0.dist-info/RECORD,,
