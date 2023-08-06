@@ -1,0 +1,11 @@
+.gitignore
+Makefile
+README.md
+setup.py
+url2env/__init__.py
+zerotk.url2env.egg-info/PKG-INFO
+zerotk.url2env.egg-info/SOURCES.txt
+zerotk.url2env.egg-info/dependency_links.txt
+zerotk.url2env.egg-info/entry_points.txt
+zerotk.url2env.egg-info/requires.txt
+zerotk.url2env.egg-info/top_level.txt

@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: zerotk.url2env
+Version: 1.3.0
+Summary: Produces env vars from Heroku-style database URLs
+Home-page: https://github.com/zerotk/url2env
+Author: Alexandre Andrade
+Author-email: kaniabi@gmail.com
+License: MIT
+Description: # url2env
+        
+        Turns database URLs into shell environment variables.
+        
+        ### Usage:
+        
+        ```
+        $ url2env psql://joebloggs:secret@db.example.com:4433/blog
+        PGUSER=joebloggs
+        PGPASSWORD=secret
+        PGHOST=db.example.com
+        PGPORT=4433
+        PGDATABASE=blog
+        ```
+        
+        With all options:
+        
+        ```
+        $ url2env --engine --export --prefix=DB_ psql://joebloggs:secret@db.example.com:4433/blog
+        export DB_ENGINE=psql
+        export DB_USER=joebloggs
+        export DB_PASSWORD=secret
+        export DB_HOST=db.example.com
+        export DB_PORT=4433
+        export DB_DATABASE=blog
+        ```
+        
+        
+        The output could be used in conjunction with `eval`, e.g.::
+        
+        ```
+        $ eval $(url2env $DATABASE_URL)
+        ```
+        
+        
+        ### Installation
+        
+        ```
+        $ pip install zerotk.url2env
+        ```
+        
+        
+        ### Distribution
+        
+        ```
+        $ git tag <x.y>
+        $ make build upload
+        ```
+        
+Keywords: postgresql shell environment
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
