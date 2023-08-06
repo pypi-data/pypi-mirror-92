@@ -1,0 +1,10 @@
+hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hooks/check_untracked_migrations.py,sha256=ISnOaG8EtmLOWfkKlBKDWpRc5mN5PdJuMzAdWfNGmAY,881
+hooks/po_location_format.py,sha256=QNzAKRY5GC2nk1XAiX_zrWBy-PwiA2lwV9q-GEJLg0M,1588
+hooks/utils.py,sha256=Z0Y082fGfWgAfPpQ9etwimXaXk920_U93dRLpXVVBp4,422
+pre_commit_hooks_django-0.3.0.dist-info/LICENSE,sha256=02xs-t0Y_lflmZ1tUCRkeLTvvgiSWmx7mAxeVWKqZgQ,1072
+pre_commit_hooks_django-0.3.0.dist-info/METADATA,sha256=4XMkv5bAuGqEnRgP_wal2B4E_w6e3LsfBb9EpQwNxoQ,2343
+pre_commit_hooks_django-0.3.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pre_commit_hooks_django-0.3.0.dist-info/entry_points.txt,sha256=17EmGrG0Xj__MSQV10uF_3w220b-EVoJIpR8uT-giQQ,137
+pre_commit_hooks_django-0.3.0.dist-info/top_level.txt,sha256=I0gcmmeA3xdjjkokY-bVx5WycqQcFVAk4RHQB-wl9h8,6
+pre_commit_hooks_django-0.3.0.dist-info/RECORD,,
