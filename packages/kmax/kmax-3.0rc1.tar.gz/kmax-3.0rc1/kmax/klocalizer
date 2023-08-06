@@ -1,0 +1,487 @@
+#!/usr/bin/env python
+
+from kmax.klocalizer import *
+import logging
+
+
+class BasicLogger:
+  def __init__(self, quiet=False):
+    self.quiet = quiet
+  
+  def info(self, msg):
+    if not self.quiet: sys.stderr.write("INFO: %s" % msg)
+  def warning(self, msg):
+    sys.stderr.write("WARNING: %s" % msg)
+  def error(self, msg):
+    sys.stderr.write("ERROR: %s" % msg)
+
+def klocalizerCLI():
+  klocalizer=Klocalizer()
+  
+  # Parse command line arguments
+  argparser = argparse.ArgumentParser()
+  # TODO: klocalizer is not all about linux ksrc but any source with Kconfig config system, maybe change the naming here
+  argparser.add_argument('--linux-ksrc',
+                        type=str,
+                        default="./",
+                        help="""Path to the Linux kernel source directory.  Used to generate kmax, kextract, and kclause formulas as needed.  Also, the defaults for kmax, kextract, and kclause formulas directories/files are relative to this.  Defaults to \"./\"""")
+  argparser.add_argument('--formulas',
+                         type=str,
+                         help="""Path to the formulas which contain one kmax file for all compilation units and one directory for each architecture containing kclause files.  Defaults to \"LINUX_KSRC/.kmax/\"""")
+  argparser.add_argument('--kmax-formulas',
+                         type=str,
+                         default=None,
+                         help="""The file containing the Kbuild constraints as a pickled dictionary from compilation unit to formula.  Defaults to \"kmax\" in the --formulas directory."""
+                              """  If the kmax file doesn't exist, formulas are computed on demand instead to be read from/written to  \"kmax_cache\" in the --formulas directory.""")
+  argparser.add_argument('--kclause-formulas',
+                         type=str,
+                         default=None,
+                         help="""The file containing the a pickled tuple with a mapping from configuration option to its formulas and a list of additional constraints.  This overrides --arch.""")
+  argparser.add_argument('--use-composite-kclause-formulas-files',
+                         action="store_true",
+                         help="""Use composite kclause formulas files where all constraints are in a single list instead of a mapping from configuration option to its formulas. """
+                              """This reduces the time spent on parsing the kclause formulas file, hence, increases the performance. The input kclause formulas file needs to be in composite format. """)
+  argparser.add_argument('--kextract',
+                         type=str,
+                         default=None,
+                         help="""The file containing the kconfig extract.  This must be accompanied by --kclause-formulas.""")
+  argparser.add_argument('--constraints-file',
+                         type=str,
+                         help="""A text file containing ad-hoc constraints.  One configuration option name per line.  Prefix with ! to force it off; no prefix means force on.""")
+  argparser.add_argument('--constraints-file-smt2',
+                         type=str,
+                         help="""A text file containing constraints in SMTLib format.""")
+  argparser.add_argument('-a',
+                         '--arch',
+                         action="extend",
+                         default=[],
+                         nargs="+",
+                         help="""Specify each architecture to try.  These archs will be tried first in order if --all is also given.  Defaults to all.  Available architectures: %s""" % (", ".join(Arch.ARCHS)))
+  argparser.add_argument('--all',
+                         '--all-architectures',
+                         action="store_true",
+                         help="""Try all architectures for a satisfying configuration.  By default, klocalizer stops when a valid configuration is found.  Use --report-all-architectures to check each architecture instead of generating a configuration.""")
+  argparser.add_argument('--report-all',
+                         '--report-all-architectures',
+                         action="store_true",
+                         help="""Report the list of architectures in which there is a satisfying configuration for the given compilation unit(s)""")
+  argparser.add_argument('-o',
+                         '--output',
+                         type=str,
+                         default=".config",
+                         help="""Name of the output .config file.  Defaults to .config.""")
+  argparser.add_argument('-m',
+                         '--approximate',
+                         '--match',
+                         type=str,
+                         help="""An existing .config file to use to try to match as closely as possible while still containing the desired objective.""")
+  argparser.add_argument('--modules',
+                         action="store_true",
+                         help="""Set tristate options to 'm' instead of 'y' to build as modules instead of built-ins.""")
+  argparser.add_argument('-u',
+                         '--show-unsat-core',
+                         action="store_true",
+                         help="""Show the unsatisfiable core if the formula is unsatisfiable.""")
+  argparser.add_argument('-D',
+                         '--define',
+                         action="append",
+                         default=[],
+                         help="""Manually set a configuration option to be enabled.""")
+  argparser.add_argument('-U',
+                         '--undefine',
+                         action="append",
+                         default=[],
+                         help="""Manually set a configuration option to be disabled.""")
+  argparser.add_argument('--allow-config-broken',
+                         action="store_true",
+                         help="""Allow CONFIG_BROKEN dependencies.""")
+  argparser.add_argument('--allow-non-visibles',
+                         action="store_true",
+                         help="""Allow non-visible Kconfig configuration options to be set in the resulting config file.  By default, they are removed.""")
+  argparser.add_argument('--view-kbuild',
+                         action="store_true",
+                         help="""Just show the Kbuild constraints for the given compilation unit.  All other arguments are ignored.""")
+  argparser.add_argument("--sample",
+                         type=int,
+                         help="""Generate the given number of configurations.  Cannot be used with --approximate and will output to --sample-prefix instead of --output-file.""")
+  argparser.add_argument("--sample-prefix",
+                         type=str,
+                         help="""The prefix of the generated configurations.  Defaults to \"config\".""")
+  argparser.add_argument("--random-seed",
+                         type=int,
+                         help="""The random seed for the solver's model generation.""")
+  argparser.add_argument("--exclude-compilation-units",
+                         action="store_true",
+                         help="""Invert the z3 formula of the compilation unit (.o file) when generating .config""")
+  argparser.add_argument("--force-unmet-free",
+                         action="store_true",
+                         help="""Force unmet direct dependency free configuration.  This requires kclause direct depedency formulas file to exist in KMAX_FORMULAS/kclause/ARCH/kclause.normal_dep, which is a pickled dictionary from configuration options to direct dependency formulas.""")
+  argparser.add_argument("--allow-unmet-for",
+                         action="append",
+                         nargs="*",
+                         default=[],
+                         help="""The list of configuration symbols for which allow unmet direct dependency.  Can be used with --force-unmet-free only to relax the constraints for some symbols.""")
+  argparser.add_argument('-q',
+                         '--quiet',
+                         action="store_true",
+                         help="""Quiet mode prints no messages to stderr.""")
+  argparser.add_argument('--version',
+                         action="version",
+                         version="%s %s" % (kmax.about.__title__, kmax.about.__version__),
+                         help="""Print the version number.""")
+  argparser.add_argument("compilation_units",
+                         nargs='*',
+                         help="The path of the compilation unit (.o file) to generate a .config for, relative to the top of the source tree.")
+  args = argparser.parse_args()
+  
+  linux_ksrc = args.linux_ksrc
+  formulas = args.formulas
+  kmax_file = args.kmax_formulas
+  kclause_file = args.kclause_formulas
+  use_composite_kclause_formulas_files = args.use_composite_kclause_formulas_files
+  kextract_file = args.kextract
+  archs_arg = args.arch
+  allarchs = args.all
+  reportallarchs = args.report_all
+  constraints_file = args.constraints_file
+  constraints_file_smt2 = args.constraints_file_smt2
+  output_file = args.output
+  show_unsat_core = args.show_unsat_core
+  approximate = args.approximate
+  modules_arg = args.modules
+  define = args.define
+  undefine = args.undefine
+  disable_config_broken = not args.allow_config_broken
+  allow_non_visibles = args.allow_non_visibles
+  view_kbuild = args.view_kbuild
+  sample = args.sample
+  sample_count = sample if sample else 1 # default sample count is 1
+  sample_prefix = args.sample_prefix
+  random_seed = args.random_seed
+  compilation_units = args.compilation_units
+  dont_compile = args.exclude_compilation_units
+  force_unmet_free = args.force_unmet_free
+  allow_unmet_for = args.allow_unmet_for
+  quiet = args.quiet
+
+  kmax.common.quiet = quiet
+  logger = BasicLogger(quiet=quiet)
+  klocalizer.set_logger(logger)
+
+  klocalizer.set_linux_krsc(linux_ksrc)
+
+  # set default value for formulas if not specified
+  if not formulas:
+    formulas = os.path.join(linux_ksrc, ".kmax/")
+  
+  # flatten allow_unmet_for list of lists
+  allow_unmet_for = [ item for elem in allow_unmet_for for item in elem ]
+
+  # TODO: we can actually compute kclause formulas from kextract, thus, does this really need --kclause-formulas?
+  if kextract_file and not kclause_file:
+    argparser.print_help()
+    logger.error("--kextract can only be used with --kclause-formulas\n")
+    exit(12)
+
+  if kclause_file and len(archs_arg) > 0:
+    argparser.print_help()
+    logger.error("Cannot provide --arch arguments when already providing an explicit --kclause-formulas argument\n")
+    exit(12)
+
+  if kclause_file and reportallarchs:
+    argparser.print_help()
+    logger.error("Cannot use --report-all when providing an explicit --kclause-formulas argument.\n")
+    exit(12)
+
+  if kclause_file and allarchs:
+    argparser.print_help()
+    logger.error("Cannot use --all-architectures when providing an explicit --kclause-formulas argument.\n")
+    exit(12)
+  
+  if allow_unmet_for and not force_unmet_free:
+    argparser.print_help()
+    logger.error("--allow-unmet-for can only be used with --force-unmet-free.\n")
+    exit(12)
+  
+  if allarchs and len(archs_arg) > 0:
+    argparser.print_help()
+    logger.error("Cannot use --all-architectures when providing explicit --arch arguments.\n")
+    exit(12)
+
+  if sample is not None:
+    if sample_prefix is None:
+      sample_prefix="config"
+    if approximate is not None:
+      argparser.print_help()
+      logger.error("--approximate and --sample cannot currently be used together\n")
+      exit(12)
+    if sample < 0:
+      argparser.print_help()
+      logger.error("Must provide a sample size of 0 or more\n")
+      exit(12)
+    if reportallarchs:
+      argparser.print_help()
+      logger.error("Cannot use --report-all when requesting a sample.\n")
+      exit(12)
+  else:
+    if sample_prefix is not None:
+      argparser.print_help()
+      logger.error("--sample-prefix only to be used with --sample\n")
+      exit(12)
+
+  if not os.path.exists(formulas):
+    logger.warning("No formulas found.  Generating them on demand.  They can also be downloaded from https://configtools.org/kmax/formulas/ for some Linux versions.\n")
+    os.makedirs(formulas)
+
+  #
+  # Set kmax file
+  #
+  if len(compilation_units) > 0:
+    if not kmax_file:
+      kmax_file = os.path.join(formulas, "kmax") # default kmax file
+    
+    if not os.path.isfile(kmax_file): # if default kmax file doesn't exist, attempt to reach default kmax cache file
+      kmax_cache_file = os.path.join(formulas, "kmax_cache")
+      logger.info("No prebuilt kmax formulas.  Running kmax on demand with kmax cache file: %s\n" % kmax_cache_file)
+      if os.path.isfile(kmax_cache_file): klocalizer.load_kmax_formulas(kmax_cache_file, is_cache=True)
+      is_kmax_cache = True
+    else:
+      logger.info("Kmax formula file: %s\n" % (kmax_file))
+      klocalizer.load_kmax_formulas(kmax_file, is_cache=False)
+      is_kmax_cache = False
+
+  #
+  # Check compilation units' names
+  #
+  for i, unit in enumerate(compilation_units):
+    if not unit.endswith(".o"):
+      logger.warning("Forcing file extension to be .o, since lookup is by compilation unit: %s\n" % (unit))
+      unit = os.path.splitext(unit)[0] + ".o"
+      compilation_units[i] = unit
+
+  #
+  # Add the compilation units
+  #
+  for unit in compilation_units:
+    if dont_compile:
+      klocalizer.exclude_compilation_unit(unit)
+    else:
+      klocalizer.include_compilation_unit(unit)
+  
+  if view_kbuild:
+    if len(compilation_units) > 0:
+      for unit in compilation_units:
+        logger.info("The Kbuild constraints for %s:\n" % (unit))
+        get_kmax_constraints(klocalizer.get_kmax_formulas(), unit, view=True)
+      exit(0)
+    else:
+      logger.error("Please provide a compilation unit when using --view-kbuild.\n")
+      exit(5)
+
+  #
+  # Update the kmax cache (now that we are done with generating new kmax formulas)
+  #
+  if len(compilation_units) > 0 and is_kmax_cache:
+    logger.info("Updating Kmax formulas cache file: %s\n" % kmax_cache_file)
+    klocalizer.update_kmax_cache_file(kmax_cache_file)
+    logger.info("Kmax formulas cache file was updated.\n")
+
+  #
+  # Prepare the architectures
+  #
+  archs = []
+  
+  arch_logger_level = logging.INFO if not quiet else logging.WARNING
+  def get_arch_formulas_dir(formulas: str, arch: str) -> str:
+    assert arch != None
+    return os.path.join(formulas, "kclause", arch)
+
+  assert allarchs + (len(archs_arg) > 0) + (kclause_file != None) < 2 # at most one can be defined
+  if len(archs_arg) > 0:
+    archs = [Arch(arch, linux_ksrc=linux_ksrc, arch_dir=get_arch_formulas_dir(formulas, arch), is_kclause_composite=use_composite_kclause_formulas_files, loggerLevel=arch_logger_level) for arch in archs_arg]
+  elif kclause_file != None:
+    # A custom architecture
+    arch = Arch(Arch.CUSTOM_ARCH_NAME, loggerLevel=arch_logger_level)
+    if kextract_file != None: arch.load_kextract(kextract_file, delay_loading=True)
+    arch.load_kclause(kclause_file, is_composite=use_composite_kclause_formulas_files, delay_loading=True)
+    archs = [arch]
+  else: # allarchs is enabled, or if the above are not defined behave as if allarchs
+    archs = [Arch(arch, linux_ksrc=linux_ksrc, arch_dir=get_arch_formulas_dir(formulas, arch), is_kclause_composite=use_composite_kclause_formulas_files, loggerLevel=arch_logger_level) for arch in Arch.ARCHS]
+
+  if kclause_file == None:
+    logger.info("Trying the following architectures: %s\n" % " ".join(arch.name for arch in archs))
+  
+  #
+  # Filter archs based on unit name
+  #
+  if not kclause_file:
+    for unit in compilation_units:
+      if unit.startswith("arch/"):
+        unit_archs = Arch.get_archs_from_subdir(unit)
+        archs = [ arch for arch in archs if arch.name in unit_archs ]
+        if not archs:
+          logger.error("Resolved compilation unit is architecture-specific, but its architecture is not available: %s\n" % (unit))
+          exit(9)
+  
+  assert len(archs) > 0
+  
+  #
+  # Add user-specified constraints
+  #
+  klocalizer.add_constraints( [z3.Bool(user_def) for user_def in define] )
+  klocalizer.add_constraints( [z3.Not(z3.Bool(user_def)) for user_def in undefine] )
+
+  #
+  # Add constraints file constraints
+  #
+  def get_ad_hoc_constraints(config_file):
+    ad_hoc_on_pattern = regex.compile("^(CONFIG_[A-Za-z0-9_]+)$")
+    ad_hoc_off_pattern = regex.compile("^!(CONFIG_[A-Za-z0-9_]+)$")
+
+    constraints = []
+    with open(config_file, 'r') as fp:
+      lines = fp.readlines()
+      for line in lines:
+        line = line.strip()
+        off = ad_hoc_off_pattern.match(line)
+        if off:
+          name = off.group(1)
+          constraint = z3.Not(z3.Bool(name))
+          constraints.append(constraint)
+        else:
+          on = ad_hoc_on_pattern.match(line)
+          if on:
+            name = on.group(1)
+            constraint = z3.Bool(name)
+            constraints.append(constraint)
+          
+      return constraints
+
+  if constraints_file:
+    klocalizer.add_constraints(get_ad_hoc_constraints(constraints_file))
+
+  #
+  # Add smt2 constraints file constraints
+  #
+  if constraints_file_smt2:
+    with open(constraints_file_smt2, "r") as f:
+      klocalizer.add_constraints( z3.parse_smt2_string(f.read()) )
+  
+  #
+  # Disable config broken
+  #
+  config_broken = z3.Not(z3.Bool("CONFIG_BROKEN"))
+  if disable_config_broken:
+    klocalizer.add_constraints([config_broken])
+  
+  #
+  # Add unmet direct dependency free constraints
+  #
+  if force_unmet_free:
+    klocalizer.set_unmet_free(unmet_free=True, except_for=allow_unmet_for)
+  
+  #
+  # Get the approximate constraints
+  #
+  approximate_constraints=None
+  if approximate:
+    approximate_constraints=Klocalizer.get_config_file_constraints(approximate)
+  
+  # Everything is set. Continue with SAT checking and config sample generation.
+  seen_unsat = False # to prevent logging some info multiple times for unsat cases
+  sat_archs = []
+  for arch in archs:
+    logger.info("Trying \"%s\"\n" % (arch.name))
+    constraints = klocalizer.compile_constraints(arch)
+    model_sampler = Klocalizer.Z3ModelSampler(constraints, approximate_constraints=approximate_constraints, random_seed=random_seed)
+    is_sat, payload = model_sampler.sample_model()
+
+    #
+    # Constraints are UNSAT
+    #
+    if not is_sat:
+      unsat_core = payload
+      logger.info("The constraints are unsatisfiable.  Either no configuration is possible or the formulas are overconstrained.\n")
+      if show_unsat_core:
+        logger.info("The following constraint(s) prevented satisfiability:\n%s\n" % (str(unsat_core)))
+      else:
+        if not seen_unsat:
+          logger.info("Run with --show-unsat-core to see what constraints prevented satisfiability.\n")
+          seen_unsat = True
+        if disable_config_broken and config_broken in unsat_core:
+          logger.error("Found a dependency on CONFIG_BROKEN, so the compilation unit may not be buildable.  Stopping the search.  Run again with --allow-config-broken to search anyway.\n")
+          exit(10)
+    #
+    # Constraints are SAT
+    #
+    else: # is_sat: True
+      model = payload
+      logger.info("The constraints are satisfiable.\n")
+      sat_archs.append(arch)
+
+      #
+      # Sample configs
+      #
+      if not reportallarchs and sample_count > 0:
+
+        # Prepare the configs by sampling models
+        configs = [Klocalizer.get_config_from_model(model, arch, set_tristate_m=modules_arg, allow_non_visibles=allow_non_visibles)]
+        for _ in range(sample_count-1):
+          is_sat, model = model_sampler.sample_model()
+          assert is_sat
+          configs.append(Klocalizer.get_config_from_model(model, arch, set_tristate_m=modules_arg, allow_non_visibles=allow_non_visibles))
+        
+        # Prepare the config filenames
+        if sample_count == 1:
+          logger.info("Writing the configuration to %s\n" % (output_file))
+          config_filenames = [output_file]
+        elif sample_count > 1:
+          logger.info("Generating %s configurations with prefix %s\n" % (str(sample_count), sample_prefix))
+          config_filenames = ["%s%d" % (sample_prefix, i + 1) for i in range(sample_count)]
+        
+        assert len(configs) == len(config_filenames)
+
+        # Dump the config files
+        for config, filename in zip(configs, config_filenames):
+          with open(filename, "w") as config_fp:
+            config_fp.write(config)
+
+        # Print the command for building
+        if sample_count == 1:
+          if not compilation_units:
+            build_cmd = "make.cross ARCH=%s clean; make.cross ARCH=%s" % (arch.name, arch.name)
+          else:
+            build_cmd = "make.cross ARCH=%s clean %s" % (arch.name, " ".join(compilation_units))
+          logger.info("Build with \"make.cross ARCH=%s olddefconfig; %s\".\n" % (arch.name, build_cmd))
+      
+      # Stop the SAT search with the first SAT arch if not reporting for all archs
+      if not reportallarchs:
+        break # break the loop iterating over the architectures searching for SAT
+
+  # End of SAT search
+  if len(sat_archs) > 0:
+    print("\n".join([arch.name for arch in sat_archs]))
+    exit(0)
+  else:
+    logger.error("No satisfying configuration found.\n")
+    exit(11)
+
+if __name__ == '__main__':
+  logger = BasicLogger()
+  try:
+    klocalizerCLI()
+  except Klocalizer.NoFormulaFoundForCompilationUnit as e:
+    logger.error("No formula from kmax was found for the compilation unit: %s\n" % (e.unit))
+    exit(3)
+  except Klocalizer.MultipleCompilationUnitsMatch as e:
+    logger.error("There are multiple compilation units that match %s.  Please provide one of the Kbuild paths from below.\n" % (e.unit))
+    print("\n".join(e.matching_units))
+    exit(4)
+  except Arch.FormulaFileNotFound as e:
+    logger.error("Cannot find %s formulas file: %s\n" % (e.formula_type, e.filepath))
+    exit(6)
+  except Arch.FormulaGenerationError as e:
+    logger.error("Cannot generate %s formulas.\n" % (e.formula_type))
+    exit(13)
+  
+  exit(0)
