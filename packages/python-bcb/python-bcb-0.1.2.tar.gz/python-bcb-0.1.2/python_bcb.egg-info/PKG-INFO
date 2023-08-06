@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: python-bcb
+Version: 0.1.2
+Summary: Python interface to Brazilian Central Bank web services
+Home-page: https://github.com/wilsonfreitas/python-bcb
+Author: Wilson Freitas
+Author-email: wilson.freitas@gmail.com
+License: UNKNOWN
+Description: **bcb** is an interface to structure the information provided by the [Brazilian Central Bank](https://www.bcb.gov.br).
+        This package interfaces the [Brazilian Central Bank web services](https://www3.bcb.gov.br/sgspub) to provide data already formatted into pandas's data structures and download currency data from [Brazilian Centra Bank](https://www.bcb.gov.br) web site.
+        
+        ## Install
+        
+        **bcb** is avalilable at PyPI, so it is pip instalable.
+        
+        	pip install python-bcb
+        
+        ## Using
+        
+        Getting currency rates data.
+        
+        ```python
+        from bcb  import currency
+        from datetime import date
+        
+        currency.get('USD', start_date=date(2020, 12, 1), end_date=date(2020, 12, 31))
+        ```
+        
+        The rates are quoted in BRL.
+        
+        
+        
+Keywords: brazilian central bank,finance,central bank,banking
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
