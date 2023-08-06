@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pykafka-cli
+Version: 1.0.0
+Summary: A simple commandline app for interacting with Kafka.
+Home-page: https://github.com/AbhishekBose/kafka-cli
+Author: Abhishek Bose
+Author-email: abose550@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: confluent-kafka
+Requires-Dist: python-dotenv
+Requires-Dist: coverage
+Requires-Dist: prompt-toolkit
+Requires-Dist: pydantic
+Requires-Dist: pyinquirer
+
+CLI tool for Kafka.
+Produce and Consume messages easily
+
+
