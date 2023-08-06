@@ -1,0 +1,14 @@
+README.md
+setup.py
+haros_plugin_model_ged/__init__.py
+haros_plugin_model_ged/graph_diff.py
+haros_plugin_model_ged/graph_matching.py
+haros_plugin_model_ged/nx_patch.py
+haros_plugin_model_ged/output_format.py
+haros_plugin_model_ged/plugin.py
+haros_plugin_model_ged.egg-info/PKG-INFO
+haros_plugin_model_ged.egg-info/SOURCES.txt
+haros_plugin_model_ged.egg-info/dependency_links.txt
+haros_plugin_model_ged.egg-info/requires.txt
+haros_plugin_model_ged.egg-info/top_level.txt
+haros_plugin_model_ged.egg-info/zip-safe

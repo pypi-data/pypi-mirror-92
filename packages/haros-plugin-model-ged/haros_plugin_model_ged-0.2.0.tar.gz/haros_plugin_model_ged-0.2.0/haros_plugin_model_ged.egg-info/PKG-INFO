@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: haros-plugin-model-ged
+Version: 0.2.0
+Summary: Graph Edit Distance of HAROS models.
+Home-page: https://github.com/git-afsantos/haros-plugin-model-ged
+Author: André Santos
+Author-email: andre.f.santos@inesctec.pt
+License: MIT
+Description: UNKNOWN
+Keywords: graph-edit-distance model-extraction
+Platform: UNKNOWN
