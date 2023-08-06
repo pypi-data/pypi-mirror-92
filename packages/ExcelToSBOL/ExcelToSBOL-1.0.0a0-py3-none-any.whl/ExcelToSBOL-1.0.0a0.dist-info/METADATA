@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ExcelToSBOL
+Version: 1.0.0a0
+Summary: convert excel resources into sbol
+Home-page: https://github.com/SynBioDex/Excel-to-SBOL/tree/master/excel2sbol
+Maintainer: Tramy Nguyen
+Maintainer-email: tramy.nguy@gmail.com
+License: BSD 3-clause
+Platform: UNKNOWN
+Requires-Dist: sbol2 (>=1.0b8)
+Requires-Dist: pandas (>=1.0.1)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: xlrd (>=1.0.0)
+
+This library is a collection of functions used to convert an excel template into SBOL libraries and compositions.
+
+
