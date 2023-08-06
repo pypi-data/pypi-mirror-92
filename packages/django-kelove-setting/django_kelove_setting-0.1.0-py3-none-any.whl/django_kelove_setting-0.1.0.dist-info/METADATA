@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: django-kelove-setting
+Version: 0.1.0
+Summary: DJANGO 配置管理
+Home-page: https://gitee.com/itxq/django-kelove-setting
+License: Apache-2.0
+Keywords: django,django-kelove,django-kelove-setting
+Author: IT小强xqitw.cn
+Author-email: mail@xqitw.cn
+Maintainer: IT小强xqitw.cn
+Maintainer-email: mail@xqitw.cn
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: django (>=3.1,<4.0)
+Project-URL: Documentation, https://gitee.com/itxq/django-kelove-setting/blob/master/README.md
+Project-URL: Repository, https://gitee.com/itxq/django-kelove-setting.git
+Description-Content-Type: text/markdown
+
+DJANGO 配置管理
+===============
+
+依托 `django-kelove-setting` 模块，可快速定制 `Django` 应用配置，并在 `Django Admin` 中统一管理应用的配置信息
+
+[![Django Kelove Setting Version](https://img.shields.io/badge/stable-v0.1.0-blue.svg)](https://gitee.com/itxq/django-kelove-setting)
+[![Python Version](https://img.shields.io/badge/Python-3.6+-blue.svg)](https://www.python.org/)
+[![Django Version](https://img.shields.io/badge/Django-v3.1+-important.svg)](https://www.djangoproject.com/)
+[![LICENSE](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)](https://gitee.com/itxq/django-kelove-setting/blob/master/LICENSE)
+
+### 1.安装模块
+
+```shell
+pip install django-kelove-setting
+```
+
+### 2.启用模块
+
+```python
+INSTALLED_APPS = [
+    ...
+    'django_kelove_setting',
+]
+```
+
+### 3.定制配置
+
+> 你的配置类应该继承自 `django_kelove_setting.setting_forms.Settings`，并设置 `settings_title` 属性（为你的配置起一个名称）
+
+> 表单字段的设置同 `Django forms` ，注意：不要添加不支持 `json` 序列化的表单字段（例如：forms.FileField）
+
+> 以下是一个配置示例：
+
+```python
+from django.utils.translation import gettext_lazy as _
+from django.conf import settings
+from django import forms
+
+from django_kelove_setting.setting_forms import Settings
+
+
+class Demo01Settings(Settings):
+    """
+    邮件配置
+    """
+
+    settings_title: str = _('DEMO01配置')
+
+    fieldsets = (
+        (_('基础配置'), {
+            'fields': (
+                'EMAIL_HOST',
+                'EMAIL_PORT',
+                'EMAIL_HOST_USER',
+                'DEFAULT_FROM_EMAIL',
+                'OTP_EMAIL_SENDER',
+                'EMAIL_HOST_PASSWORD',
+            ),
+            'classes': ('extrapretty', 'wide')
+        }),
+        (_('安全链接'), {
+            'fields': (
+                'EMAIL_USE_TLS',
+                'EMAIL_USE_SSL',
+            ),
+            'classes': ('extrapretty', 'wide')
+        }),
+        (_('配置信息'), {
+            'fields': (
+                'settings_title',
+                'settings_key',
+            ),
+            'classes': ('extrapretty', 'wide')
+        })
+    )
+
+    EMAIL_HOST = forms.CharField(
+        initial=getattr(settings, 'EMAIL_HOST', 'smtp.qq.com'),
+        empty_value=getattr(settings, 'EMAIL_HOST', 'smtp.qq.com'),
+        required=False,
+        label=_('邮件服务器域名'),
+        help_text=_('例如：smtp.qq.com')
+    )
+
+    EMAIL_PORT = forms.IntegerField(
+        initial=getattr(settings, 'EMAIL_PORT', 465),
+        required=False,
+        label=_('邮件服务器端口号，为数字'),
+        help_text=_('例如：465')
+    )
+
+    EMAIL_HOST_USER = forms.CharField(
+        initial=getattr(settings, 'EMAIL_HOST_USER', ''),
+        required=False,
+        label=_('发件人邮箱'),
+    )
+
+    DEFAULT_FROM_EMAIL = forms.CharField(
+        initial=getattr(settings, 'DEFAULT_FROM_EMAIL', ''),
+        required=False,
+        label=_('发件人地址'),
+        help_text=_('fred@example.com 和 Fred &lt;fred@example.com&gt; 形式都是合法的')
+    )
+
+    OTP_EMAIL_SENDER = forms.CharField(
+        initial=getattr(settings, 'OTP_EMAIL_SENDER', ''),
+        required=False,
+        label=_('一次性验证码发件人地址'),
+        help_text=_('留空自动使用发件人地址。fred@example.com 和 Fred &lt;fred@example.com&gt; 形式都是合法的')
+    )
+
+    EMAIL_HOST_PASSWORD = forms.CharField(
+        widget=forms.PasswordInput(render_value=True),
+        initial=getattr(settings, 'EMAIL_HOST_PASSWORD', ''),
+        required=False,
+        label=_('发件人授权码'),
+        help_text=_('发件人授权码不一定是邮箱密码')
+    )
+
+    EMAIL_USE_TLS = forms.BooleanField(
+        initial=getattr(settings, 'EMAIL_USE_TLS', False),
+        required=False,
+        label=_('是否启用安全链接TLS'),
+        help_text=_('通常端口为587 TLS/SSL是相互排斥的，因此仅将其中一个设置设置为启用即可')
+    )
+
+    EMAIL_USE_SSL = forms.BooleanField(
+        initial=getattr(settings, 'EMAIL_USE_SSL', True),
+        required=False,
+        label=_('是否启用安全链接SSL'),
+        help_text=_('通常端口为465 TLS/SSL是相互排斥的，因此仅将其中一个设置设置为启用即可')
+    )
+
+    @classmethod
+    def get(cls) -> dict:
+        data = super().get()
+        otp_email_sender_value = data.get('OTP_EMAIL_SENDER', '')
+        if not otp_email_sender_value:
+            otp_email_sender_value = data.get('DEFAULT_FROM_EMAIL', '')
+        data['OTP_EMAIL_SENDER'] = otp_email_sender_value
+        return data
+```
+
+### 4.启用配置
+
+> 在你的 `AppConfig` 类中添加 `kelove_settings` 属性，值为定制好的应用配置类 `list`
+
+```python
+from django.apps import AppConfig
+
+
+class Demo01Config(AppConfig):
+    name = 'demo01'
+
+    kelove_settings = [
+        'demo01.kelove_settings.Demo01Settings'
+    ]
+```
+
+### 5.后台管理
+
+> 进入 `Django` 后台 `应用配置` 即可进行管理 。 点击 `添加` 按钮，可快速初始化所有应用的配置。 
+

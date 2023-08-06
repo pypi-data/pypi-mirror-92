@@ -1,0 +1,14 @@
+django_kelove_setting/__init__.py,sha256=81rDCSyzF-XaLgpwxl_JLD5m4mxZ0ppKSnKAsK0T0Zs,153
+django_kelove_setting/admin.py,sha256=D4z11lrARVkkj30FhizwDA3Af67fgCzbddVGdazv0Nk,5151
+django_kelove_setting/apps.py,sha256=BipSI3N23yi3VFen65lb0jmIbvyjC7kWQbjPFOu973U,456
+django_kelove_setting/kelove_settings.py,sha256=XnsNkSYblPLTyQQxDdk6LAjB6H1QVspIFoekuZajSnI,3560
+django_kelove_setting/migrations/0001_initial.py,sha256=m65JTsG7J9zzZBR_qeQAzwL6qeOWRCGvrSpZZhv7_X8,1850
+django_kelove_setting/migrations/__init__.py,sha256=mW0Z0LL7lCfthJTaVKccPvy3YLnqm12wJfPSUGaGbrE,76
+django_kelove_setting/models.py,sha256=xixNyidRviDY5ZopcOfjbozLwYRBO4rbIv-UyN34jK8,3456
+django_kelove_setting/setting_forms.py,sha256=bDlRAwS6h795nr8-hKkveEf6ONC3LKu_sfocE3dFiRo,6471
+django_kelove_setting/templates/kelove_setting/change_form.html,sha256=U5n3BX5NXUyu5So3iapbBY3DvOQR5L2ZwTbsiZkWUnI,148
+django_kelove_setting/templates/kelove_setting/form_css.html,sha256=Tksn6zVuiB43lnfD7_oivybN-xJGrRT_sP4IUTNI0xY,944
+django_kelove_setting-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+django_kelove_setting-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_kelove_setting-0.1.0.dist-info/METADATA,sha256=W5iWfjFnyDTOi8T9dcSz-cueCrHRJSuqrSZLG71ZJ2w,6244
+django_kelove_setting-0.1.0.dist-info/RECORD,,
