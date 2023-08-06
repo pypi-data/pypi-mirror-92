@@ -1,0 +1,4 @@
+coloredlogs
+aurore
+pyyaml
+jinja2
