@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yara-python-dex
+Version: 1.0.0
+Summary: Python interface for YARA
+Home-page: https://github.com/MobSF/yara-python-dex
+Author: Victor M. Alvarez
+Author-email: plusvic@gmail.com, vmalvarez@virustotal.com
+License: Apache 2.0
+
+.. image:: https://travis-ci.org/VirusTotal/yara-python.svg
+
+
