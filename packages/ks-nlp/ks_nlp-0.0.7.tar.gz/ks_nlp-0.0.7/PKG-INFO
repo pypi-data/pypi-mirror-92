@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ks_nlp
+Version: 0.0.7
+Summary: NLP Hackathon toolbox
+Home-page: https://github.com/Armandpl/ks_nlp
+Author: Armand du Parc Locmaria
+Author-email: adpl33@gmail.com
+License: UNKNOWN
+Description: # NLP Hackhaton toolbox
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
