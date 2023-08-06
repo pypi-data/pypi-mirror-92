@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: deepModel
+Version: 0.0.1
+Summary: A PyPi test project
+Home-page: https://github.com/Excuses123/deepModel
+Author: lujie
+Author-email: 597906300@qq.com
+License: Apache-2.0
+Download-URL: https://github.com/Excuses123/deepModel/tags
+Description: 
+        **这是一个PYPi测试项目**
+Keywords: deep learning,tensorflow,tensor
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

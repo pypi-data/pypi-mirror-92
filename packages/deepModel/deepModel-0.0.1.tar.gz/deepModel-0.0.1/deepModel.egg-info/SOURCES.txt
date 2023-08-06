@@ -1,0 +1,13 @@
+README.md
+setup.py
+deepModel.egg-info/PKG-INFO
+deepModel.egg-info/SOURCES.txt
+deepModel.egg-info/dependency_links.txt
+deepModel.egg-info/requires.txt
+deepModel.egg-info/top_level.txt
+test/__init__.py
+test/hello.py
+test/utils.py
+test/models/__init__.py
+test/models/deepfm.py
+test/models/youtube.py
