@@ -1,0 +1,16 @@
+OmMariamFlow/Activations.py,sha256=XgIBIv-I97ezTj3OV862oAHKeSGAXsqNIFq5oGNp9R0,4816
+OmMariamFlow/Data.py,sha256=kaJqnaTXvcwa-Zsf1__lX0ywJNB0xomPQpnWkUj7ohk,3788
+OmMariamFlow/Function.py,sha256=z-4bFhc8q2qXBjyTHisMa9bP4C0xO038NzHUFUad7_4,1324
+OmMariamFlow/Layers.py,sha256=bxk7ixV-60OpHJH6Xj4cJ04k1dv8JUqYnEKqi6nI6lI,10508
+OmMariamFlow/Losses.py,sha256=gCeZMYdO0eVTnuqzMz77oUgiUZY0Q2m9lP4BPyHjbPU,5599
+OmMariamFlow/Model.py,sha256=F0Dsi6_ikFqDlJ5yAqIGoUn2yQj62rNK9HET303VP5I,2270
+OmMariamFlow/Optimizations.py,sha256=jQli_cczjPCFnzGAlCJLR4Gw2AyttSGGyG7qHVbyQGs,16377
+OmMariamFlow/Test_Q8_Sheet4.py,sha256=BMGf1jes2CLuURBUP0Ky6_gS7z9GNai36I3noXMJ1e0,1156
+OmMariamFlow/Utils.py,sha256=jp_jZPvrJQvthYNepG03ZX_nEogojYBuapMQ9HYlt38,4136
+OmMariamFlow/Visualizer.py,sha256=Uiij69r284zNCLTi4s7ytETuQLDdG1tdFVWDwHza2iE,1306
+OmMariamFlow/__init__.py,sha256=ZcuJd84pSqphKs6ULreZzZ_25_ayt91ZyMLDrFBM_xY,25
+OmMariamFlow-0.0.7.dist-info/LICENSE.txt,sha256=KAKc9oH_F3sq5pPdHflH0PadvRUBI-kOyAqunqLSMpU,1059
+OmMariamFlow-0.0.7.dist-info/METADATA,sha256=QFpfWfUTJlO8Cx3BJT1ceB2QoBFN0-mJNHcby2PcTaQ,503
+OmMariamFlow-0.0.7.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+OmMariamFlow-0.0.7.dist-info/top_level.txt,sha256=44zSQLaQoC6_-B0KQOdnlv3qOA02PZi2bAPuglkLnnw,13
+OmMariamFlow-0.0.7.dist-info/RECORD,,
