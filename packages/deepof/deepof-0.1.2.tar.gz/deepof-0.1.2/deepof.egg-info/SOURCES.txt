@@ -1,0 +1,17 @@
+README.md
+setup.py
+deepof/__init__.py
+deepof/data.py
+deepof/hypermodels.py
+deepof/model_utils.py
+deepof/models.py
+deepof/pose_utils.py
+deepof/train_model.py
+deepof/train_utils.py
+deepof/utils.py
+deepof/visuals.py
+deepof.egg-info/PKG-INFO
+deepof.egg-info/SOURCES.txt
+deepof.egg-info/dependency_links.txt
+deepof.egg-info/requires.txt
+deepof.egg-info/top_level.txt
