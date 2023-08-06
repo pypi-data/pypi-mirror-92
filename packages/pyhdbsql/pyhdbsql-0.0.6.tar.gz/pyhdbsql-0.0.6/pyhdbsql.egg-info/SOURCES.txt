@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyhdbsql/__init__.py
+pyhdbsql/console.py
+pyhdbsql.egg-info/PKG-INFO
+pyhdbsql.egg-info/SOURCES.txt
+pyhdbsql.egg-info/dependency_links.txt
+pyhdbsql.egg-info/entry_points.txt
+pyhdbsql.egg-info/requires.txt
+pyhdbsql.egg-info/top_level.txt
