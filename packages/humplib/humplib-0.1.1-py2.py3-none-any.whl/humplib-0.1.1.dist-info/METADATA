@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: humplib
+Version: 0.1.1
+Summary: a hump to underline tool
+Home-page: https://github.com/pydtools/humplib/
+Author: huoyinghui
+Author-email: yhhuo@yunjinginc.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Bug Tracker, https://github.com/pydtools/humplib/issues
+Project-URL: Documentation, https://github.com/pydtools/humplib/wiki
+Project-URL: Repository, https://github.com/pydtools/humplib/
+Project-URL: github, https://github.com/pydtools/humplib/
