@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tests/__init__.py
+vss/__init__.py
+vss.egg-info/PKG-INFO
+vss.egg-info/SOURCES.txt
+vss.egg-info/dependency_links.txt
+vss.egg-info/requires.txt
+vss.egg-info/top_level.txt
+vss/tree/__init__.py
+vss/tree/vss_rel_2.0.0-alpha+006@87155cc.json

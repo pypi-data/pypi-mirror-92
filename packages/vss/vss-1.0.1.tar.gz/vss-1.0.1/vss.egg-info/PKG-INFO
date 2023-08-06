@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: vss
+Version: 1.0.1
+Summary: utility for parsing GENIVI's vehicle signal specification
+Home-page: https://github.com/XevoInc/vss
+Author: Ryan Rowe
+Author-email: rrowe@xevo.com
+License: Apache License, Version 2.0
+Description: # VSS
+        
+        ![Build status](https://img.shields.io/github/workflow/status/XevoInc/vss/Push%20CI/master)
+        [![PyPI](https://img.shields.io/pypi/v/vss)](https://pypi.org/project/vss/)
+        ![PyPI - License](https://img.shields.io/pypi/l/vss)
+        
+        Simple, safe parsing utilities for [GENIVI's Vehicle Signal Specification](https://github.com/GENIVI/vehicle_signal_specification). [Pint](https://github.com/hgrecco/pint) is used for unit parsing and [typeguard](https://github.com/agronholm/typeguard) is used for type safety.
+        
+        ## Compatibility
+        This package works for specifications compatible with VSS spec 2.0.
+        
+        ## Install
+        You may install this via git:
+        ```bash
+        pip3 install git+ssh://git@github.com/XevoInc/vss.git#egg=vss
+        ```
+        
+        ## Development
+        When developing, it is recommended to use Pipenv. To create your development environment:
+        ```bash
+        pipenv install --dev
+        ```
+        
+        ### Testing
+        TODO
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Provides-Extra: dev
