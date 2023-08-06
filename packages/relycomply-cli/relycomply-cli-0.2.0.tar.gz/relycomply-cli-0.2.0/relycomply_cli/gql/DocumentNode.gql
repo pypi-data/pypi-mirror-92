@@ -1,0 +1,25 @@
+{
+  id
+  created
+  documentType
+  format
+  url
+  customer {
+    id
+    firstName
+    lastName
+  }
+  validations {
+    edges {
+      node {
+        validator
+        checks {
+          key
+          label
+          passed
+          message
+        }
+      }
+    }
+  }
+}

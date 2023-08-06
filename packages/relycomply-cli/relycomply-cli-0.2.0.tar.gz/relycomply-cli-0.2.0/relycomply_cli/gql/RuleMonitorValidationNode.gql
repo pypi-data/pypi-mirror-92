@@ -1,0 +1,30 @@
+{
+    errors {
+        path
+        message
+    }
+    variables {
+        name
+        description
+        value
+    }
+    steps {
+        name
+        operator
+        errors {
+            path
+            message
+        }
+        datastructure {
+            columns {
+                name
+                dtype
+            }
+        }
+
+        ... on RuleMonitorFilterStepNode {
+            filter
+            source
+        }
+    }
+}
