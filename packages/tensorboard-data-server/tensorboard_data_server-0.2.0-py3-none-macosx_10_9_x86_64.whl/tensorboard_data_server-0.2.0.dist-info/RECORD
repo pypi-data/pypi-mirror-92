@@ -1,0 +1,6 @@
+tensorboard_data_server/__init__.py,sha256=M6vRO857cbg9tR8K4K13Wky-3VzgYvlW5n0jlHZPs4Y,1250
+tensorboard_data_server/bin/server,sha256=CHfXzB2bLP20EolwJ7tt-Sh4ZUdUUVbR2BK59y4qkwk,4731024
+tensorboard_data_server-0.2.0.dist-info/METADATA,sha256=AzDJIZ1s-o1nHYukM_0_MdtifSoJYIGVPKhYhSLKhmI,1097
+tensorboard_data_server-0.2.0.dist-info/WHEEL,sha256=BwVdCnQ0dBs8uniMJKUA_pkI8OZK_6H7mpK5rwhqM7U,107
+tensorboard_data_server-0.2.0.dist-info/top_level.txt,sha256=xVFfaq5BKa5Mzmcx1X42UFHY8vHK6KWmujVpc5VlHgA,24
+tensorboard_data_server-0.2.0.dist-info/RECORD,,
