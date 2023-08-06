@@ -1,0 +1,12 @@
+lxml<4.7,>=4.6
+marko==1.0.1
+pillow<8.2,>=8.1
+pygments<2.8,>=2.7
+pypdf2<1.27,>=1.26
+
+[cairo]
+cairocffi==1.2.0
+cairosvg==2.5.1
+pangocairocffi==0.6.0
+pangocffi==0.10.0
+webcolors==1.11.1
