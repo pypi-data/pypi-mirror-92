@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tae-grader
+Version: 1.0.6
+Summary: Python and Jupyter Notebook autograder
+Home-page: UNKNOWN
+Author: TAE Developers
+Author-email: master@taecoding.com
+License: BSD-3-Clause
+Description: ## TAE Grader: 
+        Under development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
