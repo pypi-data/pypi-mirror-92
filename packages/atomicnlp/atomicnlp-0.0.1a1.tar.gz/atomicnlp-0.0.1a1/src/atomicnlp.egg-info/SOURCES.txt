@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/atomnlp.py
+src/atomicnlp.egg-info/PKG-INFO
+src/atomicnlp.egg-info/SOURCES.txt
+src/atomicnlp.egg-info/dependency_links.txt
+src/atomicnlp.egg-info/entry_points.txt
+src/atomicnlp.egg-info/requires.txt
+src/atomicnlp.egg-info/top_level.txt
