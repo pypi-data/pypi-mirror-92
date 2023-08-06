@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RWAPIMicroservicePython
+Version: 0.1.0
+Summary: Python integration library for the RW API microservices
+Home-page: UNKNOWN
+Author: Vizzuality
+Author-email: info@vizzuality.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: Flask (==1.1.1) ; extra == 'dev'
+Requires-Dist: pytest (==5.2.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'dev'
+Requires-Dist: pytest-mock (==1.11.1) ; extra == 'dev'
+Requires-Dist: codecov (==2.0.15) ; extra == 'dev'
+Requires-Dist: requests-mock (==1.7.0) ; extra == 'dev'
+
+UNKNOWN
+
+
