@@ -1,0 +1,3 @@
+[console_scripts]
+tasksched = tasksched:main
+
