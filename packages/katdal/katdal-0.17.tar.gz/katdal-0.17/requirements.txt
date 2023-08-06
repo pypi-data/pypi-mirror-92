@@ -1,0 +1,30 @@
+botocore
+certifi
+chardet
+cityhash
+dask
+docutils
+ephem
+jmespath
+future
+h5py
+idna
+katversion
+llvmlite
+msgpack
+netifaces
+numba
+numpy
+pyephem
+pyjwt
+python-dateutil
+python-lzf
+rdbtools
+redis
+requests
+six
+toolz
+urllib3
+
+katpoint @ git+https://github.com/ska-sa/katpoint
+katsdptelstate @ git+https://github.com/ska-sa/katsdptelstate
