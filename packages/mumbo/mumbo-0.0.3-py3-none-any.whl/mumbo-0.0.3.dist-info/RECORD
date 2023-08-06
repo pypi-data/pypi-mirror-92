@@ -1,0 +1,9 @@
+mumbo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mumbo/api.py,sha256=v-Um97Lp_wW6-BqIcbacQw0eYLaSML-74YayusSAf2Q,3788
+mumbo/middleware.py,sha256=JAoA7vZ8P7M3fQfPi1f4qloBnEqUY3k4A22HuyDZ-lM,675
+mumbo/orm.py,sha256=dohVFDyCfZiZ66DRSI8rvoRVAyHt0KPi6SFFRDPbEXQ,6271
+mumbo/response.py,sha256=f8Ha4QdRAsejs4SOs-J3p8x_YmlJ_abDQBV8Xs_NSwc,955
+mumbo-0.0.3.dist-info/METADATA,sha256=uZAamjckhMZp6h3tyLPh-6gk8U1dlIEHTAopbsD-LgQ,4857
+mumbo-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mumbo-0.0.3.dist-info/top_level.txt,sha256=ETZok-_xXm-iWmu9A2n4BAL8a_-CRnhvOUE98tEZ840,6
+mumbo-0.0.3.dist-info/RECORD,,
