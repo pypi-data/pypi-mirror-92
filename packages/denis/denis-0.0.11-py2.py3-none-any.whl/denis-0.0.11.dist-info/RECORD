@@ -1,0 +1,10 @@
+denis/__init__.py,sha256=PI4T_K_XF-UZmc8uPzLmVhf3vnGotvMyy5ne-mi_dZM,6785
+denis/_native.py,sha256=A3-2sNQ84we5sjPS_71Dch-TqDTCpgkorTrwER9f4po,800
+denis/libdenis.darwin.arm64.dylib,sha256=jZuLHHGAgpuiRHyxgLRvq8in9FfPnGJdJZ8njsAKPz0,52859
+denis/libdenis.darwin.x86_64.dylib,sha256=4SJaCWJ18fX56EJQE1DDn9LQweGVhOMf5F-rneofZ4k,170492
+denis/libdenis.linux.x86_64.so,sha256=coyYLzQVZGDBi2UDZ9QTKOx2JC36pNdDNtSZKVq4yL4,1969637
+denis-0.0.11.dist-info/LICENSE,sha256=uSn-1MM_aeSyTdeSUndr3X4vh1xKzdeNv9YM0_7UITU,1088
+denis-0.0.11.dist-info/METADATA,sha256=aFyXu_rDR2MPKWLVyr268WwHU1oGQEdp8IwIYPDldeQ,556
+denis-0.0.11.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+denis-0.0.11.dist-info/top_level.txt,sha256=CAzcmk_6TY_ce3T5B902JlMiphRiUE0ftmC0PhqX1S0,6
+denis-0.0.11.dist-info/RECORD,,
