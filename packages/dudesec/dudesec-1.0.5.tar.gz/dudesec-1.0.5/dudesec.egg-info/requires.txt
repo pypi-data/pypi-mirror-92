@@ -1,0 +1,7 @@
+bs4
+ping3
+random
+requests
+socket
+string
+urllib.request
