@@ -1,0 +1,3 @@
+[console_scripts]
+helloworld=cruft_helloworld.app:cli
+
