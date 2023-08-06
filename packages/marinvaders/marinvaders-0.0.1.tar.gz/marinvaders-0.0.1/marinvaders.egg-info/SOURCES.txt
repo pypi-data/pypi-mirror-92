@@ -1,0 +1,9 @@
+README.md
+setup.py
+marinvaders/__init__.py
+marinvaders/marinelife.py
+marinvaders.egg-info/PKG-INFO
+marinvaders.egg-info/SOURCES.txt
+marinvaders.egg-info/dependency_links.txt
+marinvaders.egg-info/requires.txt
+marinvaders.egg-info/top_level.txt
