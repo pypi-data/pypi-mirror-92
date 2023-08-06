@@ -1,0 +1,8 @@
+README.md
+setup.py
+camp.egg-info/PKG-INFO
+camp.egg-info/SOURCES.txt
+camp.egg-info/dependency_links.txt
+camp.egg-info/requires.txt
+camp.egg-info/top_level.txt
+camp.egg-info/zip-safe
