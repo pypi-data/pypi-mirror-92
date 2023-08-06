@@ -1,0 +1,7 @@
+[console_scripts]
+ghenerate = quantarhei.scripts.ghenerate:main
+qlaunch = quantarhei.scripts.qlaunch:main
+qrhei = quantarhei.scripts.qrhei:main
+qtask = quantarhei.scripts.qtask:main
+qview = quantarhei.scripts.qview:main
+
