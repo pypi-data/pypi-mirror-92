@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: jisho_scraper
+Version: 1.0.0
+Summary: Jisho scraper capable of outputting search results to CSV or Anki
+Home-page: https://github.com/m4tx/jisho-scraper
+Author: Mateusz Maćkowski
+Author-email: mateusz@mackowski.org
+License: MIT
+Description: # jisho-scraper
+        
+        Jisho scraper capable of outputting search results to CSV or Anki.
+        
+        ## Requirements
+        
+        * Python 3.7+
+        
+        ## Installation
+        
+        ```shell
+        pip install jisho-scraper
+        ```
+        
+        ## Usage
+        
+        ```
+        jisho-scraper [-h] [--csv PATH] [--tsv PATH] [--anki DECK] search_keyword
+        ```
+        
+        CSV/TSV exports the search results in "kanji,kana,meaning" form.
+        
+        Anki exporting feature requires [AnkiConnect](https://foosoft.net/projects/anki-connect/) to be installed with default settings (listening on `http://localhost:8765`). The app assumes that the there are `jisho-scraper (kanji + kana + meaning)` and `jisho-scraper (kana + meaning)` Anki note types available with `Kanji`, `Kana`, and `Meaning` fields.
+        
+Keywords: jisho anki hiragana katakana kanji
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Education
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
