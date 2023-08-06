@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: types-typed-ast
+Version: 1.4.0
+Summary: Typing stubs for typed-ast
+Home-page: https://github.com/python/typeshed
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+
+Typing stubs for typed-ast
+
+
