@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: discordpythonv2
+Version: 0.0.1
+Summary: Discord.py cog
+Home-page: https://github.com/
+Author: Caipie123
+Author-email: example@example.com
+License: UNKNOWN
+Description: Cog
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
