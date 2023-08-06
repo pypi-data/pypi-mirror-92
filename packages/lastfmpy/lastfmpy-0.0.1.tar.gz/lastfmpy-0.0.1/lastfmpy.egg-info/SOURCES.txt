@@ -1,0 +1,12 @@
+README.md
+setup.py
+lastfm/__init__.py
+lastfm/client.py
+lastfm/exceptions.py
+lastfm/objects.py
+lastfm/requests.py
+lastfm/testing.py
+lastfmpy.egg-info/PKG-INFO
+lastfmpy.egg-info/SOURCES.txt
+lastfmpy.egg-info/dependency_links.txt
+lastfmpy.egg-info/top_level.txt

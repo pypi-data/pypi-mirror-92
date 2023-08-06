@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: lastfmpy
+Version: 0.0.1
+Summary: An API Wrapper for Last.FM
+Home-page: https://github.com/myerfire/lastfm.py
+Author: Myer
+Author-email: realmyerfire@gmail.com
+License: UNKNOWN
+Description: # lastfm.py
+        Async Last.fm API wrapper written in Python.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
