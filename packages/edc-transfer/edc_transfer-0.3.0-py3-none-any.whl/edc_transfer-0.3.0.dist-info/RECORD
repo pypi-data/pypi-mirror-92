@@ -1,0 +1,17 @@
+edc_transfer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_transfer/action_items.py,sha256=gu62QSDDMn8b9Q3vmg04EffC_9kLra29edWWaSjor6I,770
+edc_transfer/apps.py,sha256=0yhvI8CsTZeza4OOjRQ3y8CAxKIxK5dJRN8wPnEXDp0,149
+edc_transfer/choices.py,sha256=Y5dCHTfCIFueJYWWQm0nL_vbWf8sQ01dkCE4n3txGds,181
+edc_transfer/constants.py,sha256=oICUq7brwBylRTqEFmUFDfsUb6Nyp-esRqLeeTOF878,87
+edc_transfer/model_mixins.py,sha256=O9OLKkeifHScclE1GBecXS5EBPzmNGovGbyA4vAZm1A,1949
+edc_transfer/modeladmin_mixins.py,sha256=GvSbHb-qVsr4kPtv1sMtGYuiZ5iaxB4ZsZFnxgr6MBI,1617
+edc_transfer/modelform_mixins.py,sha256=qFXdqfJb8EJGWxqEA_miL3EXuQerDGrpsu4pE_FmpmU,4008
+edc_transfer/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_transfer/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_transfer/tests/urls.py,sha256=ShlGqJhfXRIJ84V_ygySKoMeYfxOXdkY8Pwl4_I2hZk,111
+edc_transfer/tests/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edc_transfer-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+edc_transfer-0.3.0.dist-info/METADATA,sha256=XZwnbBjkBb6do1s8rYn6VUh_lEbHyoXk8l9TMD5Z3Z0,1419
+edc_transfer-0.3.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+edc_transfer-0.3.0.dist-info/top_level.txt,sha256=WQK6KOrQ-0ghKWvFRegNhbeK8U58hnNcDobQ537z3lU,13
+edc_transfer-0.3.0.dist-info/RECORD,,
