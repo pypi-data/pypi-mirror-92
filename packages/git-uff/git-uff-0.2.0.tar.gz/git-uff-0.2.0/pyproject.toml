@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "git-uff"
+version = "0.2.0"
+description = "Prints the forge url for a given file of a Git repository checkout"
+readme = "README.md"
+authors = ["Aurélien Gâteau <mail@agateau.com>"]
+license = "Apache 2.0"
+homepage = "https://github.com/agateau/git-uff"
+repository = "https://github.com/agateau/git-uff"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+gitpython = "^3.1.12"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+git-uff = "git_uff.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
