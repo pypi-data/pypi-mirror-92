@@ -1,0 +1,9 @@
+cloudmesh-common
+cloudmesh-cmd5
+wget
+python-hostlist
+docopt
+prompter
+pyyaml
+oyaml
+requests
