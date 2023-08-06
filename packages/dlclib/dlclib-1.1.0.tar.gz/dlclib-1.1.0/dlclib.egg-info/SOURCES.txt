@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+dlclib/__init__.py
+dlclib/estimate.py
+dlclib/posture.py
+dlclib/writer.py
+dlclib.egg-info/PKG-INFO
+dlclib.egg-info/SOURCES.txt
+dlclib.egg-info/dependency_links.txt
+dlclib.egg-info/requires.txt
+dlclib.egg-info/top_level.txt
