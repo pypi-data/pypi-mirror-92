@@ -1,0 +1,8 @@
+README.md
+setup.py
+truecaser/case.py
+truecaser/truecaser.py
+truecaser/truecaser.egg-info/PKG-INFO
+truecaser/truecaser.egg-info/SOURCES.txt
+truecaser/truecaser.egg-info/dependency_links.txt
+truecaser/truecaser.egg-info/top_level.txt
