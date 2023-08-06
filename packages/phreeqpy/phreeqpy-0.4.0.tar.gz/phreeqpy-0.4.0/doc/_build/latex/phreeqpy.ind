@@ -1,0 +1,97 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{accumulate\_line()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{add\_error()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{add\_warning()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{clear\_accumlated\_lines()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{column\_count()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc property}, 
+		\hyperpage{3}
+  \item \spxentry{component\_count()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc property}, 
+		\hyperpage{3}
+  \item \spxentry{create\_iphreeqc()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{destroy\_iphreeqc()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get\_component()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{get\_component\_list()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{get\_error\_string()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{3}
+  \item \spxentry{get\_selected\_output\_array()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{get\_selected\_output\_column()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{get\_selected\_output\_row()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{get\_selected\_output\_value()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{IPhreeqc}\spxextra{class in phreeqpy.iphreeqc.phreeqc\_dll}, \hyperpage{3}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{load\_database()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{load\_database\_string()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{module}
+    \subitem \spxentry{phreeqpy.iphreeqc.phreeqc\_dll}, \hyperpage{3}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{PhreeqcException}, \hyperpage{4}
+  \item \spxentry{phreeqpy.iphreeqc.phreeqc\_dll}
+    \subitem \spxentry{module}, \hyperpage{3}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{raise\_ipq\_error()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc static method}, 
+		\hyperpage{4}
+  \item \spxentry{raise\_string\_error()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{row\_count()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc property}, 
+		\hyperpage{4}
+  \item \spxentry{run\_string()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{set\_output\_file\_off()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{set\_output\_file\_on()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{set\_selected\_output\_file\_off()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+  \item \spxentry{set\_selected\_output\_file\_on()}\spxextra{phreeqpy.iphreeqc.phreeqc\_dll.IPhreeqc method}, 
+		\hyperpage{4}
+
+  \indexspace
+  \bigletter V
+  \item \spxentry{VAR}\spxextra{class in phreeqpy.iphreeqc.phreeqc\_dll}, \hyperpage{4}
+  \item \spxentry{VARUNION}\spxextra{class in phreeqpy.iphreeqc.phreeqc\_dll}, \hyperpage{4}
+
+\end{sphinxtheindex}

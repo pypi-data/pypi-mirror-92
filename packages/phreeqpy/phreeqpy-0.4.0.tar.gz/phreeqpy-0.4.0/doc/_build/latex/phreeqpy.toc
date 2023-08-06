@@ -1,0 +1,20 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}PhreeqPy \sphinxhyphen {} Python Tools for PHREEQC}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Installation}{1}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Benchmark Test Comparing PhreeqPy to External Processes, COM and C++}{2}{section.1.3}% 
+\contentsline {chapter}{\numberline {2}Class IPhreeqc}{3}{chapter.2}% 
+\contentsline {chapter}{\numberline {3}Examples for PhreeqPy}{5}{chapter.3}% 
+\contentsline {chapter}{\numberline {4}Changelog history}{11}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Changes between versions 0.2 and 0.3}{11}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Changes between versions 0.1 and 0.2}{11}{section.4.2}% 
+\contentsline {chapter}{\numberline {5}Contact}{13}{chapter.5}% 
+\contentsline {chapter}{\numberline {6}Datenschutzerkl\IeC {\"a}rung}{15}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}1. Datenerhebung und \sphinxhyphen {}protokollierung}{15}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}2. Verwendung von Cookies}{15}{section.6.2}% 
+\contentsline {chapter}{\numberline {7}Data Protection Statement}{17}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}1. Data Collection and Data Logging}{17}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}2. Use of Cookies}{18}{section.7.2}% 
+\contentsline {chapter}{\numberline {8}Indices and tables}{19}{chapter.8}% 
+\contentsline {chapter}{Python Module Index}{21}{section*.33}% 
+\contentsline {chapter}{Index}{23}{section*.34}% 

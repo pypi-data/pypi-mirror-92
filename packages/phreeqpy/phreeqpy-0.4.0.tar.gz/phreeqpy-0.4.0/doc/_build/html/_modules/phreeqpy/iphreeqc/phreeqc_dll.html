@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>phreeqpy.iphreeqc.phreeqc_dll &#8212; PhreeqPy 0.4.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinxdoc.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../contents.html">PhreeqPy 0.4.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" accesskey="U">Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">phreeqpy.iphreeqc.phreeqc_dll</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for phreeqpy.iphreeqc.phreeqc_dll</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-*</span>
+
+<span class="sd">&quot;&quot;&quot;Access PHREEQC-DLL via ctypes.</span>
+
+<span class="sd">This is exchangeable with the COM interface.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">ctypes</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+    <span class="c1">#pylint: disable-msg=W0622</span>
+    <span class="nb">range</span> <span class="o">=</span> <span class="n">xrange</span> <span class="c1">#pylint: disable-msg=C0103</span>
+    <span class="c1">#pylint: enable-msg=W0622</span>
+
+
+<div class="viewcode-block" id="IPhreeqc"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc">[docs]</a><span class="k">class</span> <span class="nc">IPhreeqc</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper for the IPhreeqc DLL.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># All methods in `method_mapping` are added dynamically.</span>
+    <span class="c1"># Therefore, pylint complains.</span>
+    <span class="c1">#pylint: disable-msg=E1101</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dll_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Connect to DLL and create IPhreeqc.</span>
+
+<span class="sd">        The optional `dll_path` takes a path to the IPhreeqc shared library.</span>
+<span class="sd">        If not provided it tries to select an appropriate library.</span>
+<span class="sd">        Make sure you have the right library for your operating system.</span>
+<span class="sd">        You may download one from here:</span>
+<span class="sd">        ftp://brrftp.cr.usgs.gov/pub/charlton/iphreeqc/</span>
+
+<span class="sd">        See the PhreeqPy documentation for help on compiling a IPhreeqc shared</span>
+<span class="sd">        library.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">dll_path</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;win32&#39;</span><span class="p">:</span>
+                <span class="n">dll_name</span> <span class="o">=</span> <span class="s1">&#39;IPhreeqc.dll&#39;</span>
+            <span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;linux2&#39;</span><span class="p">:</span>
+                <span class="n">dll_name</span> <span class="o">=</span> <span class="s1">&#39;./libiphreeqc.so.0.0.0&#39;</span>
+            <span class="k">elif</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span> <span class="o">==</span> <span class="s1">&#39;darwin&#39;</span><span class="p">:</span>
+                <span class="n">dll_name</span> <span class="o">=</span> <span class="s1">&#39;./libiphreeqc.0.dylib&#39;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Platform </span><span class="si">%s</span><span class="s1"> is not supported.&#39;</span> <span class="o">%</span> <span class="n">sys</span><span class="o">.</span><span class="n">platform</span>
+                <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+            <span class="n">dll_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="n">dll_name</span><span class="p">)</span>
+        <span class="n">phreeqc</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">cdll</span><span class="o">.</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="n">dll_path</span><span class="p">)</span>
+        <span class="n">c_int</span> <span class="o">=</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_int</span>
+        <span class="n">method_mapping</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;_accumulate_line&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">AccumulateLine</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_add_error&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">AddError</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_add_error&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">AddWarning</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_clear_accumlated_lines&#39;</span><span class="p">,</span>
+                            <span class="n">phreeqc</span><span class="o">.</span><span class="n">ClearAccumulatedLines</span><span class="p">,</span> <span class="p">[</span><span class="n">c_int</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_create_iphreeqc&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">CreateIPhreeqc</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_void_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_destroy_iphreeqc&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">DestroyIPhreeqc</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_component&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetComponent</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">c_int</span><span class="p">],</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_component_count&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetComponentCount</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_error_string&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetErrorString</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">],</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_selected_output_column_count&#39;</span><span class="p">,</span>
+                           <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetSelectedOutputColumnCount</span><span class="p">,</span> <span class="p">[</span><span class="n">c_int</span><span class="p">],</span>
+                           <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_selected_output_row_count&#39;</span><span class="p">,</span>
+                           <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetSelectedOutputRowCount</span><span class="p">,</span> <span class="p">[</span><span class="n">c_int</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_get_value&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">GetSelectedOutputValue</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">POINTER</span><span class="p">(</span><span class="n">VAR</span><span class="p">)],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_load_database&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">LoadDatabase</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_load_database_string&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">LoadDatabaseString</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_run_string&#39;</span><span class="p">,</span> <span class="n">phreeqc</span><span class="o">.</span><span class="n">RunString</span><span class="p">,</span>
+                           <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">],</span> <span class="n">c_int</span><span class="p">),</span>
+                          <span class="p">(</span><span class="s1">&#39;_set_selected_output_file_on&#39;</span><span class="p">,</span>
+                           <span class="n">phreeqc</span><span class="o">.</span><span class="n">SetSelectedOutputFileOn</span><span class="p">,</span> <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">c_int</span><span class="p">],</span>
+                           <span class="n">c_int</span><span class="p">),</span>
+                           <span class="p">(</span><span class="s1">&#39;_set_output_file_on&#39;</span><span class="p">,</span>
+                           <span class="n">phreeqc</span><span class="o">.</span><span class="n">SetOutputFileOn</span><span class="p">,</span> <span class="p">[</span><span class="n">c_int</span><span class="p">,</span> <span class="n">c_int</span><span class="p">],</span>
+                           <span class="n">c_int</span><span class="p">),</span>
+                           <span class="p">]</span>
+        <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">com_obj</span><span class="p">,</span> <span class="n">argtypes</span><span class="p">,</span> <span class="n">restype</span> <span class="ow">in</span> <span class="n">method_mapping</span><span class="p">:</span>
+            <span class="n">com_obj</span><span class="o">.</span><span class="n">argtypes</span> <span class="o">=</span> <span class="n">argtypes</span>
+            <span class="n">com_obj</span><span class="o">.</span><span class="n">restype</span> <span class="o">=</span> <span class="n">restype</span>
+            <span class="nb">setattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">com_obj</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">var</span> <span class="o">=</span> <span class="n">VAR</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">phc_error_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">phc_warning_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">phc_database_error_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">id_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_iphreeqc</span><span class="p">()</span>
+
+<div class="viewcode-block" id="IPhreeqc.raise_ipq_error"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_ipq_error">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">raise_ipq_error</span><span class="p">(</span><span class="n">error_code</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;There was an error, raise an exception.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">error_types</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">&#39;ok&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;out of memory&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;bad value&#39;</span><span class="p">,</span>
+                       <span class="o">-</span><span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;invalid argument type&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">:</span> <span class="s1">&#39;invalid row&#39;</span><span class="p">,</span>
+                       <span class="o">-</span><span class="mi">5</span><span class="p">:</span> <span class="s1">&#39;invalid_column&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">:</span> <span class="s1">&#39;invalid instance id&#39;</span><span class="p">}</span>
+        <span class="n">error_type</span> <span class="o">=</span> <span class="n">error_types</span><span class="p">[</span><span class="n">error_code</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">error_type</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PhreeqcException</span><span class="p">(</span><span class="n">error_type</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.raise_string_error"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_string_error">[docs]</a>    <span class="k">def</span> <span class="nf">raise_string_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">errors</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Raise an exception with message from IPhreeqc error.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> errors occured.</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">errors</span>
+        <span class="k">elif</span> <span class="n">errors</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;An error occured.</span><span class="se">\n</span><span class="s1">&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Wrong error number.&#39;</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="n">msg</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_error_string</span><span class="p">())</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.accumulate_line"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.accumulate_line">[docs]</a>    <span class="k">def</span> <span class="nf">accumulate_line</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">line</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Put line in input buffer.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_accumulate_line</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_string_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.add_error"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_error">[docs]</a>    <span class="k">def</span> <span class="nf">add_error</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phc_error_msg</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an error message to Phreeqc.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_add_error</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">phc_error_msg</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_string_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">phc_error_count</span> <span class="o">=</span> <span class="n">errors</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.add_warning"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_warning">[docs]</a>    <span class="k">def</span> <span class="nf">add_warning</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phc_warn_msg</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Add an warning message to Phreeqc.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_add_warning</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">phc_warn_msg</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_string_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">phc_warning_count</span> <span class="o">=</span> <span class="n">errors</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.clear_accumlated_lines"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.clear_accumlated_lines">[docs]</a>    <span class="k">def</span> <span class="nf">clear_accumlated_lines</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Clear the input buffer.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_clear_accumlated_lines</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_string_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">column_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get number of columns in selected output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_selected_output_column_count</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span>
+
+<div class="viewcode-block" id="IPhreeqc.create_iphreeqc"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.create_iphreeqc">[docs]</a>    <span class="k">def</span> <span class="nf">create_iphreeqc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Create a IPhreeqc object.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">error_code</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_iphreeqc</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">c_void_p</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">error_code</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_ipq_error</span><span class="p">(</span><span class="n">error_code</span><span class="p">)</span>
+        <span class="n">id_</span> <span class="o">=</span> <span class="n">error_code</span>
+        <span class="k">return</span> <span class="n">id_</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.destroy_iphreeqc"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.destroy_iphreeqc">[docs]</a>    <span class="k">def</span> <span class="nf">destroy_iphreeqc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Delete the current instance of IPhreeqc.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">error_code</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_destroy_iphreeqc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">error_code</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_ipq_error</span><span class="p">(</span><span class="n">error_code</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_component"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component">[docs]</a>    <span class="k">def</span> <span class="nf">get_component</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get one component.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">component</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_component</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">component</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">IndexError</span><span class="p">(</span><span class="s1">&#39;No component for index </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">component</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">component_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return the number of components.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_component_count</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span>
+
+<div class="viewcode-block" id="IPhreeqc.get_component_list"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component_list">[docs]</a>    <span class="k">def</span> <span class="nf">get_component_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return all component names.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">get_component</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_component</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">get_component</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">component_count</span><span class="p">)]</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_error_string"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_error_string">[docs]</a>    <span class="k">def</span> <span class="nf">get_error_string</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Retrieves the error messages.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_error_string</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_selected_output_value"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_value">[docs]</a>    <span class="k">def</span> <span class="nf">get_selected_output_value</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get one value from selected output at given row and column.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">error_code</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">var</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">error_code</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_ipq_error</span><span class="p">(</span><span class="n">error_code</span><span class="p">)</span>
+        <span class="n">type_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">var</span><span class="o">.</span><span class="n">type</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">var</span><span class="o">.</span><span class="n">value</span>
+        <span class="k">if</span> <span class="n">type_</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">double_value</span>
+        <span class="k">elif</span> <span class="n">type_</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">long_value</span>
+        <span class="k">elif</span> <span class="n">type_</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">value</span><span class="o">.</span><span class="n">string_value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">type_</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">type_</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_error</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">error_code</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">val</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_selected_output_array"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_array">[docs]</a>    <span class="k">def</span> <span class="nf">get_selected_output_array</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all values from selected output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">nrows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">row_count</span>
+        <span class="n">ncols</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">column_count</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
+            <span class="n">result_row</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>
+                <span class="n">result_row</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_selected_output_value</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">))</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">result_row</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">results</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_selected_output_row"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_row">[docs]</a>    <span class="k">def</span> <span class="nf">get_selected_output_row</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">row</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all values for one from selected output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">row</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">row_count</span> <span class="o">+</span> <span class="n">row</span>
+        <span class="n">ncols</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">column_count</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ncols</span><span class="p">):</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_selected_output_value</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">results</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.get_selected_output_column"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_column">[docs]</a>    <span class="k">def</span> <span class="nf">get_selected_output_column</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">col</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get all values for one column from selected output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">col</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">column_count</span> <span class="o">+</span> <span class="n">col</span>
+        <span class="n">nrows</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">row_count</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nrows</span><span class="p">):</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_selected_output_value</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">results</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.set_selected_output_file_off"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_off">[docs]</a>    <span class="k">def</span> <span class="nf">set_selected_output_file_off</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Turn on writing to selected output file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_selected_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.set_selected_output_file_on"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_on">[docs]</a>    <span class="k">def</span> <span class="nf">set_selected_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Turn on writing to selected output file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_selected_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.set_output_file_off"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_off">[docs]</a>    <span class="k">def</span> <span class="nf">set_output_file_off</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Turn on writing to selected output file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.set_output_file_on"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_on">[docs]</a>    <span class="k">def</span> <span class="nf">set_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Turn on writing to selected output file.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_output_file_on</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.load_database"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database">[docs]</a>    <span class="k">def</span> <span class="nf">load_database</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">database_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load a database with given file_name.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">phc_database_error_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_database</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">database_name</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">))</span></div>
+
+<div class="viewcode-block" id="IPhreeqc.load_database_string"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database_string">[docs]</a>    <span class="k">def</span> <span class="nf">load_database_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Load a datbase from a string.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">phc_database_error_count</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_database_string</span><span class="p">(</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">(</span><span class="n">input_string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span></div>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">row_count</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Get number of rows in selected output.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_selected_output_row_count</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">)</span>
+
+<div class="viewcode-block" id="IPhreeqc.run_string"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.run_string">[docs]</a>    <span class="k">def</span> <span class="nf">run_string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cmd_string</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Run PHREEQC input from string.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_string</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">id_</span><span class="p">,</span>
+                                  <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">(</span><span class="n">cmd_string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)))</span>
+        <span class="k">if</span> <span class="n">errors</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">raise_string_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="VARUNION"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.VARUNION">[docs]</a><span class="k">class</span> <span class="nc">VARUNION</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">Union</span><span class="p">):</span>
+    <span class="c1"># pylint: disable-msg=R0903</span>
+    <span class="c1"># no methods</span>
+    <span class="sd">&quot;&quot;&quot;Union with types.</span>
+
+<span class="sd">    See Var.h in PHREEQC source.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_fields_</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;long_value&#39;</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_long</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">&#39;double_value&#39;</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_double</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">&#39;string_value&#39;</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_char_p</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">&#39;error_code&#39;</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_int</span><span class="p">)]</span></div>
+
+
+<div class="viewcode-block" id="VAR"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.VAR">[docs]</a><span class="k">class</span> <span class="nc">VAR</span><span class="p">(</span><span class="n">ctypes</span><span class="o">.</span><span class="n">Structure</span><span class="p">):</span>
+    <span class="c1"># pylint: disable-msg=R0903</span>
+    <span class="c1"># no methods</span>
+    <span class="sd">&quot;&quot;&quot;Struct with data type and data values.</span>
+
+<span class="sd">    See Var.h in PHREEQC source.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_fields_</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="n">ctypes</span><span class="o">.</span><span class="n">c_int</span><span class="p">),</span>
+                <span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">,</span> <span class="n">VARUNION</span><span class="p">)]</span></div>
+
+
+<div class="viewcode-block" id="PhreeqcException"><a class="viewcode-back" href="../../../iphreeqc.html#phreeqpy.iphreeqc.phreeqc_dll.PhreeqcException">[docs]</a><span class="k">class</span> <span class="nc">PhreeqcException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Error in Phreeqc call.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span></div>
+</pre></div>
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<a href="download/phreeqpy-0.2.0.tar.gz"> Download</a>
+<br />
+<a href="contact.html"> Contact</a>
+<br />
+<a href="datenschutz.html"> Datenschutz (data protection) </a>
+<br />
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../contents.html">PhreeqPy 0.4.0 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../index.html" >Module code</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">phreeqpy.iphreeqc.phreeqc_dll</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2013 - 2019, Mike Müller.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>

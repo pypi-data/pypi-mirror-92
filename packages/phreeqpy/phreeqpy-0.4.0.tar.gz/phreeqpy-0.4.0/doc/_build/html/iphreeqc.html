@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class IPhreeqc &#8212; PhreeqPy 0.4.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Examples for PhreeqPy" href="examples.html" />
+    <link rel="prev" title="PhreeqPy - Python Tools for PHREEQC" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples for PhreeqPy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PhreeqPy - Python Tools for PHREEQC"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">PhreeqPy 0.4.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Class IPhreeqc</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="class-iphreeqc">
+<h1>Class IPhreeqc<a class="headerlink" href="#class-iphreeqc" title="Permalink to this headline">¶</a></h1>
+<p>This is the main class to work with the IPhreeqc interface.</p>
+<p>You can <a class="reference internal" href="index.html#installation"><span class="std std-ref">add your own shared library for IPhreeqc</span></a>.</p>
+<span class="target" id="module-phreeqpy.iphreeqc.phreeqc_dll"></span><p>Access PHREEQC-DLL via ctypes.</p>
+<p>This is exchangeable with the COM interface.</p>
+<dl class="py class">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc">
+<em class="property">class </em><code class="sig-prename descclassname">phreeqpy.iphreeqc.phreeqc_dll.</code><code class="sig-name descname">IPhreeqc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dll_path</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for the IPhreeqc DLL.</p>
+<p>Connect to DLL and create IPhreeqc.</p>
+<p>The optional <cite>dll_path</cite> takes a path to the IPhreeqc shared library.
+If not provided it tries to select an appropriate library.
+Make sure you have the right library for your operating system.
+You may download one from here:
+<a class="reference external" href="ftp://brrftp.cr.usgs.gov/pub/charlton/iphreeqc/">ftp://brrftp.cr.usgs.gov/pub/charlton/iphreeqc/</a></p>
+<p>See the PhreeqPy documentation for help on compiling a IPhreeqc shared
+library.</p>
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.accumulate_line">
+<code class="sig-name descname">accumulate_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.accumulate_line"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.accumulate_line" title="Permalink to this definition">¶</a></dt>
+<dd><p>Put line in input buffer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_error">
+<code class="sig-name descname">add_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">phc_error_msg</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.add_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an error message to Phreeqc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_warning">
+<code class="sig-name descname">add_warning</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">phc_warn_msg</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.add_warning"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.add_warning" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an warning message to Phreeqc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.clear_accumlated_lines">
+<code class="sig-name descname">clear_accumlated_lines</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.clear_accumlated_lines"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.clear_accumlated_lines" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the input buffer.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.column_count">
+<em class="property">property </em><code class="sig-name descname">column_count</code><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.column_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get number of columns in selected output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.component_count">
+<em class="property">property </em><code class="sig-name descname">component_count</code><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.component_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of components.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.create_iphreeqc">
+<code class="sig-name descname">create_iphreeqc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.create_iphreeqc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.create_iphreeqc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a IPhreeqc object.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.destroy_iphreeqc">
+<code class="sig-name descname">destroy_iphreeqc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.destroy_iphreeqc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.destroy_iphreeqc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the current instance of IPhreeqc.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component">
+<code class="sig-name descname">get_component</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">index</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_component"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get one component.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component_list">
+<code class="sig-name descname">get_component_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_component_list"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_component_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all component names.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_error_string">
+<code class="sig-name descname">get_error_string</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_error_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_error_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieves the error messages.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_array">
+<code class="sig-name descname">get_selected_output_array</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_selected_output_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all values from selected output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_column">
+<code class="sig-name descname">get_selected_output_column</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">col</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_selected_output_column"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_column" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all values for one column from selected output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_row">
+<code class="sig-name descname">get_selected_output_row</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">row</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_selected_output_row"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all values for one from selected output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_value">
+<code class="sig-name descname">get_selected_output_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">row</span></em>, <em class="sig-param"><span class="n">col</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.get_selected_output_value"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.get_selected_output_value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get one value from selected output at given row and column.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database">
+<code class="sig-name descname">load_database</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">database_name</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.load_database"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a database with given file_name.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database_string">
+<code class="sig-name descname">load_database_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_string</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.load_database_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.load_database_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a datbase from a string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_ipq_error">
+<em class="property">static </em><code class="sig-name descname">raise_ipq_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">error_code</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.raise_ipq_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_ipq_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>There was an error, raise an exception.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_string_error">
+<code class="sig-name descname">raise_string_error</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">errors</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.raise_string_error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.raise_string_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Raise an exception with message from IPhreeqc error.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.row_count">
+<em class="property">property </em><code class="sig-name descname">row_count</code><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.row_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get number of rows in selected output.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.run_string">
+<code class="sig-name descname">run_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd_string</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.run_string"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.run_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run PHREEQC input from string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_off">
+<code class="sig-name descname">set_output_file_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.set_output_file_off"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_off" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on writing to selected output file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_on">
+<code class="sig-name descname">set_output_file_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.set_output_file_on"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_output_file_on" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on writing to selected output file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_off">
+<code class="sig-name descname">set_selected_output_file_off</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.set_selected_output_file_off"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_off" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on writing to selected output file.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_on">
+<code class="sig-name descname">set_selected_output_file_on</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#IPhreeqc.set_selected_output_file_on"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.IPhreeqc.set_selected_output_file_on" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on writing to selected output file.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.PhreeqcException">
+<em class="property">exception </em><code class="sig-prename descclassname">phreeqpy.iphreeqc.phreeqc_dll.</code><code class="sig-name descname">PhreeqcException</code><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#PhreeqcException"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.PhreeqcException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Error in Phreeqc call.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.VAR">
+<em class="property">class </em><code class="sig-prename descclassname">phreeqpy.iphreeqc.phreeqc_dll.</code><code class="sig-name descname">VAR</code><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#VAR"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.VAR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Struct with data type and data values.</p>
+<p>See Var.h in PHREEQC source.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="phreeqpy.iphreeqc.phreeqc_dll.VARUNION">
+<em class="property">class </em><code class="sig-prename descclassname">phreeqpy.iphreeqc.phreeqc_dll.</code><code class="sig-name descname">VARUNION</code><a class="reference internal" href="_modules/phreeqpy/iphreeqc/phreeqc_dll.html#VARUNION"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phreeqpy.iphreeqc.phreeqc_dll.VARUNION" title="Permalink to this definition">¶</a></dt>
+<dd><p>Union with types.</p>
+<p>See Var.h in PHREEQC source.</p>
+</dd></dl>
+
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">PhreeqPy - Python Tools for PHREEQC</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="examples.html"
+                        title="next chapter">Examples for PhreeqPy</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<a href="download/phreeqpy-0.2.0.tar.gz"> Download</a>
+<br />
+<a href="contact.html"> Contact</a>
+<br />
+<a href="datenschutz.html"> Datenschutz (data protection) </a>
+<br />
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="examples.html" title="Examples for PhreeqPy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="PhreeqPy - Python Tools for PHREEQC"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">PhreeqPy 0.4.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Class IPhreeqc</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2013 - 2019, Mike Müller.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
