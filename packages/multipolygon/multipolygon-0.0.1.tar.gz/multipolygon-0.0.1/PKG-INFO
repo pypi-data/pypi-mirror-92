@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: multipolygon
+Version: 0.0.1
+Summary: 判断某个坐标点[x,y]是否在一个多边形内[[x,y],[x,y],[x,y],[x,y]]
+Home-page: https://github.com/tanxinyue/isin_multipolygon
+Author: 李厚奇
+Author-email: 884359533@qq.com
+License: UNKNOWN
+Description: 判断某个坐标点[x,y]是否在一个多边形内[[x,y],[x,y],[x,y],[x,y]],每个ｘ,y坐标点都需要写入到一个列表中
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown

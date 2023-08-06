@@ -1,0 +1,8 @@
+README.md
+setup.py
+multipolygon/__init__.py
+multipolygon/inpolygon.py
+multipolygon.egg-info/PKG-INFO
+multipolygon.egg-info/SOURCES.txt
+multipolygon.egg-info/dependency_links.txt
+multipolygon.egg-info/top_level.txt
