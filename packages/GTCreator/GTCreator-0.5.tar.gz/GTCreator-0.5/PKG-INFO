@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: GTCreator
+Version: 0.5
+Summary: Create your own timelapse from images simply
+Home-page: https://github.com/ECMGS/GTCreator/tree/main
+Author: ecmgs
+Author-email: prog.ecmgs@gmail.com
+License: apache-2.0
+Download-URL: https://github.com/ECMGS/GTCreator/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: timelapse,ffmpeg,mp4
+Platform: UNKNOWN
