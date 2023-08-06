@@ -1,0 +1,10 @@
+README.md
+setup.py
+sipcp/__init__.py
+sipcp/sipcp.py
+sipcp.egg-info/PKG-INFO
+sipcp.egg-info/SOURCES.txt
+sipcp.egg-info/dependency_links.txt
+sipcp.egg-info/entry_points.txt
+sipcp.egg-info/requires.txt
+sipcp.egg-info/top_level.txt
