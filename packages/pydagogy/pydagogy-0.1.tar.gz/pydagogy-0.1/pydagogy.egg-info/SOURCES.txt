@@ -1,0 +1,10 @@
+README.md
+setup.py
+pydagogy/__init__.py
+pydagogy/asserts.py
+pydagogy/tests.py
+pydagogy/utils.py
+pydagogy.egg-info/PKG-INFO
+pydagogy.egg-info/SOURCES.txt
+pydagogy.egg-info/dependency_links.txt
+pydagogy.egg-info/top_level.txt
