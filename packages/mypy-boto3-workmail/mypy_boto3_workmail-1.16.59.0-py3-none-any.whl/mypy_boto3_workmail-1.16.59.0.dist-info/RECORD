@@ -1,0 +1,15 @@
+mypy_boto3_workmail/__init__.py,sha256=EahOraW0oXz6Tt1CJmf1CoJP3JHXTsVrNOP5B-BxLeE,2074
+mypy_boto3_workmail/__init__.pyi,sha256=mhmFM40Y2Cn-ikpzf6WsSSvbsDKWKBTwzdledZ4ZYzo,2073
+mypy_boto3_workmail/__main__.py,sha256=w89Z8u1-bTXj7uQZIR_79peINtIIsufFfyS-wyu1Ins,396
+mypy_boto3_workmail/client.py,sha256=gipn3XkaMX9O4Ho_rOmcmN17XEy891ULsQGyLe4w2Hw,23606
+mypy_boto3_workmail/client.pyi,sha256=yPHD6qgRlioPyJTTsQN33HCsS_XyL_yFW0xM3Sceb_I,23542
+mypy_boto3_workmail/paginator.py,sha256=HCE9g_PDBPgRT5N6xt91bj55okOZm7bcCIYfc76lnMg,6893
+mypy_boto3_workmail/paginator.pyi,sha256=pSI324p_CMRQ3oLRJy85Is0U9iV6jtKX-9dI5D7Lnq8,6885
+mypy_boto3_workmail/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_workmail/type_defs.py,sha256=WLtRY8AxWUWKvLcsc6kmS4sGEaRIxwqmntinMJ3vpkk,10634
+mypy_boto3_workmail/type_defs.pyi,sha256=tBxX9V-murkiosLzpcda5CSCc_4XGdWJ0vSAX40SSk0,10631
+mypy_boto3_workmail/version.py,sha256=jKa_BBC_n52SQCuX3KmWZG5Vj8OGxKKUllA6wXQZBrQ,57
+mypy_boto3_workmail-1.16.59.0.dist-info/METADATA,sha256=b1OYZNNlJZpgMv5KXkuPuWLBJrg-UO2mPWhu5LygmFE,8686
+mypy_boto3_workmail-1.16.59.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_workmail-1.16.59.0.dist-info/top_level.txt,sha256=q28973Ou6RDP-PWerdELKphoyxTL-TdsGXdqxp__hiA,20
+mypy_boto3_workmail-1.16.59.0.dist-info/RECORD,,
