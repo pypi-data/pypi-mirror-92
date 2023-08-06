@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ftrotta.pycolib
+Version: 1.1.0
+Summary: A collection of tools of common usage in Python
+Home-page: UNKNOWN
+Author: Francesco Trotta
+License: UNKNOWN
+Project-URL: Source Code, https://gitlab.com/ftrotta/pycolib
+Project-URL: Documentation, https://ftrotta-pycolib.readthedocs.io
+Description: # ftrotta.pycolib: Python Common Library
+        
+        A collection of tools of common usage in Python.
+        
+        * Documentation: https://ftrotta-pycolib.readthedocs.io
+        * Source: https://gitlab.com/ftrotta/pycolib/
+        * Issues: https://gitlab.com/ftrotta/pycolib/issues
+        
+        
+        ## Installation
+        
+            pip install ftrotta.pycolib
+        
+        ### Installation from source
+        
+            pip install git+https://gitlab.com/ftrotta/pycolib.git
+        
+        In case a specific version is needed, append the corresponding
+        [tag](https://gitlab.com/ftrotta/pycolib/-/tags).
+        
+            pip install git+https://gitlab.com/ftrotta/pycolib.git@v1.0.0
+        
+        ## Test
+        
+        The `Dockerfile` in the root directory of the repo is meant to build 
+        an image from which to run a container with a Python interpreter.
+        
+        1. Build the image once for all with:
+           
+               docker build -t pycolib .
+        
+        2. An ephemeral container can then be run from the project root:
+        
+               docker run --rm -it -v $(pwd):/opt/project pycolib
+        
+        3. From inside such container the tests can be run.
+        
+               cd /opt/project/src
+               pytest tests
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
