@@ -1,0 +1,3 @@
+[console_scripts]
+parole = src.generate:main
+
