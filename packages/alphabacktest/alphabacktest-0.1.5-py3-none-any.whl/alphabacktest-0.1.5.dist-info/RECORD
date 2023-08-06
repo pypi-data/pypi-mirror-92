@@ -1,0 +1,14 @@
+alphabacktest/__init__.py,sha256=xU-L6BVKGauETGzrK2u_OSZhgRxvZRJi3_0iWox3oWU,1037
+alphabacktest/_dash_results.py,sha256=YKnZbfCP3_OqjXL7qybsOzKaiJ15LUgkYivIhpTGbS8,10270
+alphabacktest/alphabacktest.py,sha256=clk9GuQMkRBhcysQEUlzXZAlQs8EL1AzPX53sqzFOqI,22611
+alphabacktest/cli.py,sha256=uTvigbAQQ4PO2SrBgR_ppRUkTodmlva3PCyMWLaV8Hg,417
+alphabacktest/assets/custom-script.js,sha256=Q_elRSrmWKSxIqmO6PgnhByyAAVTAuV5GBnd6FWW4jw,79
+alphabacktest/assets/header.css,sha256=ACN0srAqZuAnva3VLvsV-WKUbd9_Pg2yyJyXZvYjF2Y,12197
+alphabacktest/assets/typography.css,sha256=m674l8fB68McKKtX1tA7Vx7msNiL_UcVBGJzaz78k3g,953
+alphabacktest-0.1.5.dist-info/AUTHORS.rst,sha256=k_AJyZM8MCvyanuAXwAPWDHUkLyise-xtTmVq2vH1ZI,157
+alphabacktest-0.1.5.dist-info/LICENSE,sha256=LF_S3KGOgAIHkXwLPNNxWke__zi_KKCOSOOxhkKkB9k,1066
+alphabacktest-0.1.5.dist-info/METADATA,sha256=M0W0A3LIkQ9THwyjH1d_Cdjr6NHwxHk_gbh8zyMZvhg,16629
+alphabacktest-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+alphabacktest-0.1.5.dist-info/entry_points.txt,sha256=NqADD1BJGb7hlvxIjtLrRoNTEL5Ktp-dAUHHKwfUb30,58
+alphabacktest-0.1.5.dist-info/top_level.txt,sha256=hS6EUoRe413cFXLW1ywu1y8wnzcW5P73vHg2EJqSGAA,14
+alphabacktest-0.1.5.dist-info/RECORD,,
