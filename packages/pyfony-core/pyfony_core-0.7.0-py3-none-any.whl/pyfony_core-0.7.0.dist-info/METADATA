@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyfony-core
+Version: 0.7.0
+Summary: Pyfony core
+Home-page: https://github.com/pyfony/core
+License: MIT
+Author: Jiri Koutny
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.7.3,<3.8.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: injecta (>=0.9.0,<0.10.0)
+Requires-Dist: pyfony-bundles (>=0.3.0,<0.4.0)
+Project-URL: Repository, https://github.com/pyfony/core
+Description-Content-Type: text/markdown
+
+# Pyfony Core
+
+Part of the [Pyfony Framewok](https://github.com/pyfony/pyfony)
+
+## Installation
+
+```
+$ poetry add pyfony-core
+```
+
