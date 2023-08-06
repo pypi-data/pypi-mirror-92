@@ -1,0 +1,13 @@
+radexwrap.cpython-37m-darwin.so,sha256=cynwsPTASLyJvHdRUjx4xIQCiVl2z_lpuzqAETcGXe8,153552
+spectralradex/__init__.py,sha256=cOoGRgKsFmeUtb0Lv8plvN28LmyaCFZ12mdDNux0Kwc,4461
+spectralradex/radex/__init__.py,sha256=22In1bQnleR58gucbbDjYu5QooiTqU4BpAwqgafnMZg,6685
+spectralradex/radex/data/SO-pH2.dat,sha256=4v8zIvLWvq8riz6bvNmqq2LMRPHSTATS4_tSjAzROV4,86758
+spectralradex/radex/data/c+.dat,sha256=HmKHtLMJX7Kt7BTUWTX_SAKEJd_6FdB2O8kv-9KuTmQ,3351
+spectralradex/radex/data/c2h_h2_e.dat,sha256=Knvd-vFDvuRJP0Dm19QcRQyllOC4sthND-rDwG4wfdc,173313
+spectralradex/radex/data/co.dat,sha256=BJEa4O2osaPLbJjvKfcIaWlK7Wi3mD-uaM-OMYT3HDc,444204
+spectralradex/radex/data/hco+.dat,sha256=WFpNx6xxcZQPlSOmFBxRLJPabnlxEF6lRKw7kNH3DKo,26584
+spectralradex-0.1.0.dist-info/LICENSE,sha256=aX4uM4bAjTXTJx8ANtnufd-xWeaI-lnAkTKRNjly4-k,1056
+spectralradex-0.1.0.dist-info/METADATA,sha256=GZcblYKxs9XSwf9dZWaErj2-2nwCwmy1Nbm_8qnywuQ,3868
+spectralradex-0.1.0.dist-info/WHEEL,sha256=YiopvuMYSKV6Y-7cdLZE7bZlnCzK-2hOQbHfu5FfM0c,110
+spectralradex-0.1.0.dist-info/top_level.txt,sha256=wVsDZL-n2ehheoevBqPrBblonj7b0nvb2R6LqxVQLQQ,24
+spectralradex-0.1.0.dist-info/RECORD,,
