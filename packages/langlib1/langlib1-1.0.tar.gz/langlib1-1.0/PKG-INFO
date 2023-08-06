@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: langlib1
+Version: 1.0
+Summary: langlib is a library for work by words
+Home-page: https://github.com/Bahman-Ahmadi/langlib
+Author: Bahman Ahmadi
+Author-email: bahmanahmadi.mail@gmail.com
+License: MIT
+Download-URL: https://github.com/Bahman-Ahmadi/langlib/archive/v_10.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
