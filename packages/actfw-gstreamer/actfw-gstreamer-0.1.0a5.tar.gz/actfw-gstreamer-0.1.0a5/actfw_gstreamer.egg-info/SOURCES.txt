@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+actfw_gstreamer/__init__.py
+actfw_gstreamer/_version.py
+actfw_gstreamer.egg-info/PKG-INFO
+actfw_gstreamer.egg-info/SOURCES.txt
+actfw_gstreamer.egg-info/dependency_links.txt
+actfw_gstreamer.egg-info/requires.txt
+actfw_gstreamer.egg-info/top_level.txt
