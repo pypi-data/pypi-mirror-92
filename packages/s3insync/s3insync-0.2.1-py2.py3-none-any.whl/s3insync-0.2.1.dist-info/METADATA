@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: s3insync
+Version: 0.2.1
+Summary: Synchronise an S3 directory to the local filesystem, as a daemon
+Home-page: https://github.com/namelessjon/s3insync
+License: UNKNOWN
+Author: Jonathan Stott
+Author-email: jonathan.stott@gmail.com
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: boto3 ~=1.16
+Requires-Dist: prometheus_client
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: moto ; extra == "test"
+Requires-Dist: pyfakefs ; extra == "test"
+Provides-Extra: test
