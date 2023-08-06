@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: telnetlib-proxy
+Version: 0.3
+Summary: Python telnetlib with SOCKS proxy support
+Home-page: https://github.com/dwapstra/telnetlib-proxy/
+Author: Dave Wapstra
+Author-email: dwapstra@cisco.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Requires-Dist: pysocks
+
+
+telnetlib with SOCKS proxy support
+==================================
+
+This is a python package that adds socks proxy support to `telnetlib` using PySocks.
+
+It includes a telnet client that you can use via `telnet5` command that uses
+SOCKS4, SOCKS5 or HTTP proxy set via telnet_proxy environment variable.
+
+Installation:
+
+    pip install telnetlib_proxy
+
+Usage:
+
+    export telnet_proxy=socks5://host:port
+
+    telnet5 [-d] .. host port
+
+    # press Ctrl-C to close the connection
+
+
