@@ -1,0 +1,11 @@
+_layout.cp38-win32.pyd,sha256=Jhnh38P-CYs9Ujt1lKJ_9p1h71INi_GxSSDMDFaa0V0,90112
+s_gd2/__init__.py,sha256=Iyvp2lFBzBrD_g8J8oAeVj0JteMd-GhzPV2wknvmyBQ,56
+s_gd2/s_gd2.py,sha256=9oeKcLqYMUHiO6Jun_HuESD6hWiaaTDMaDv6vG0CvYg,13412
+s_gd2/version.py,sha256=dudj0dznvKKVRbZK0_b3ht9V5LBQbsAdPc_B4gSV9lM,21
+s_gd2/swig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s_gd2/swig/layout.py,sha256=D-y5CTBdSkiNjQivxqzFGf6kNL5gQdQWqRdTQXq5xVg,4962
+s_gd2-1.8.dist-info/LICENSE,sha256=Xggu6-TvuEYFIQNOe9qC_20oFx_QsEiI5O4z5E1VRHM,1077
+s_gd2-1.8.dist-info/METADATA,sha256=9paP6gnuCmvyJWfyduW3L2NrjDQXgEdveAe9rWrz7Qc,418
+s_gd2-1.8.dist-info/WHEEL,sha256=_iQIYqodxlIIeRSKaaUx61MUqAflFno6m3IasYrHq0k,96
+s_gd2-1.8.dist-info/top_level.txt,sha256=XVFHEQKC5N5mn8yGKEQakWIC_oVywlNQV5QXFpdr4OI,14
+s_gd2-1.8.dist-info/RECORD,,
