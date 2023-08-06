@@ -1,0 +1,5 @@
+Cerberus>=1.3.2
+colorama>=0.4.4
+requests>=2.25.1
+torrequest>=0.1.0
+psutil>=5.8.0

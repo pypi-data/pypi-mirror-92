@@ -1,0 +1,7 @@
+__title__ = "socialname"
+__version__ = "0.1.3"
+__author__ = "Yusuke Hayashi"
+__author_email__ = "yusuke8h@gmail.com"
+__license__ = "MIT"
+__description__ = "Find username across social network sites"
+__url__ = "https://github.com/yhay81/socialname"
