@@ -1,0 +1,12 @@
+dbcli_mongo_redis.egg-info/PKG-INFO
+dbcli_mongo_redis.egg-info/SOURCES.txt
+dbcli_mongo_redis.egg-info/dependency_links.txt
+dbcli_mongo_redis.egg-info/entry_points.txt
+dbcli_mongo_redis.egg-info/requires.txt
+dbcli_mongo_redis.egg-info/top_level.txt
+dbcli_mongo_redis/mcli/__init__.py
+dbcli_mongo_redis/mcli/mcli.py
+dbcli_mongo_redis/mcli/test_mcli.py
+dbcli_mongo_redis/rcli/__init__.py
+dbcli_mongo_redis/rcli/rcli.py
+dbcli_mongo_redis/rcli/test_rcli.py
