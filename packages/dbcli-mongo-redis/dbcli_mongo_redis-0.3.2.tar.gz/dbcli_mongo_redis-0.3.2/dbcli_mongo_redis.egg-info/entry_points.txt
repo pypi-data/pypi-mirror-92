@@ -1,0 +1,4 @@
+[console_scripts]
+mcli = dbcli.mcli:_main
+rcli = dbcli.rcli:_main
+
