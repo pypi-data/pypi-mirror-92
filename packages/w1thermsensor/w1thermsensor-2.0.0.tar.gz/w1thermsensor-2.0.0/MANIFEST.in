@@ -1,0 +1,25 @@
+include LICENSE
+include *.md
+include *.rst
+include *.txt
+recursive-include tests *.py
+include *.yml
+include pylintrc
+include tox.ini
+include *.toml
+recursive-include changelog *.rst
+recursive-include changelog *.removal
+recursive-include changelog *.feature
+recursive-include changelog *.doc
+recursive-include changelog *.bugfix
+recursive-include docs *.1
+recursive-include examples *.py
+recursive-include tests *.sh
+include debian/changelog
+include debian/compat
+include debian/control
+include debian/copyright
+include debian/rules
+include debian/source/format
+recursive-include debian *.conf
+recursive-include debian *.manpages

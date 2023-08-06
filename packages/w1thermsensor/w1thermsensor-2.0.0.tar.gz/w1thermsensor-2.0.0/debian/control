@@ -1,0 +1,19 @@
+Source: w1thermsensor
+Maintainer: Timo Furrer <tuxtimo@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9), dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-click,
+ python3-pytest,
+ python3-pytest-mock
+Standards-Version: 3.9.6
+Homepage: https://github.com/timofurrer/w1thermsensor
+
+Package: python3-w1thermsensor
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-setuptools, python3-click
+Description: Python w1 therm sensor module (Python 3)
+ A Python package and CLI tool to work with w1 temperature sensors like
+ DS1822, DS18S20 & DS18B20 on the Raspberry Pi, Beagle Bone and other devices.
