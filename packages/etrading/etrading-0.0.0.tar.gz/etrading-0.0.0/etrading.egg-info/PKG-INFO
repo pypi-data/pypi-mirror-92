@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: etrading
+Version: 0.0.0
+Summary: Module for live trading via Metatrader (with MQL5)
+Home-page: https://github.com/serginc21/etrading
+Author: Sergi Novellas
+Author-email: sernocr@gmail.com
+License: MIT license
+Description: # etrading
+        
+        # Under construction
+        
+         Live trading with Metatrader5
+        
+        
+        
+        # History
+        
+        0.0.0 - First release PyPI
+Keywords: etrading
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
