@@ -1,0 +1,13 @@
+README.md
+setup.py
+lesting.api.client.egg-info/PKG-INFO
+lesting.api.client.egg-info/SOURCES.txt
+lesting.api.client.egg-info/dependency_links.txt
+lesting.api.client.egg-info/namespace_packages.txt
+lesting.api.client.egg-info/not-zip-safe
+lesting.api.client.egg-info/requires.txt
+lesting.api.client.egg-info/top_level.txt
+lesting/api/client/__init__.py
+lesting/api/client/discovery.py
+lesting/api/client/resources.py
+lesting/api/client/schemas.py
