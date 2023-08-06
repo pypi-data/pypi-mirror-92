@@ -1,0 +1,12 @@
+scissors/__init__.py,sha256=XSAoyAMo5GEn7bUMZutL-1dfu0ZyQxUTiZur5-zQzyg,126
+scissors/cnvs.py,sha256=ZBKPD7yJZ3PPQkABwQOQdHa0O3KfsdYIr8XaXSRpMps,604
+scissors/essentials/__init__.py,sha256=kUya-j6DAA381V1hSb0aj6Oq7j5pEhSKnyOrTG6TTbs,40
+scissors/essentials/elm.py,sha256=qt1PoviRQFdwYPjXrkPI6GWq6Vkd9EUFDr-ZCSm25WU,2848
+scissors/essentials/vector.py,sha256=339ECNCjqS20UhDXciWIFPpklHYtBFfXjA-Owf92ZjU,1430
+scissors/illustrator/__init__.py,sha256=VbDFPKqDz7Cv0l8OCnrPRE8NYNz1R31_L7fOGm6Aclk,21
+scissors/illustrator/shapes.py,sha256=Agym7Hrnc5-sGAsIer1bZVDU8CkaquoDSTQjVwvIXN0,1957
+run_with_scissors-0.0.5.dist-info/LICENSE.txt,sha256=FOaen5qUn0mZ7-DQncYUW4gcQtjVzhGKzWibAOGQ_fU,1053
+run_with_scissors-0.0.5.dist-info/METADATA,sha256=Y5d1i3_wop6o8LSYo0jU7Qhn-XbArECQy-oCybIexws,751
+run_with_scissors-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+run_with_scissors-0.0.5.dist-info/top_level.txt,sha256=k6NAJWr7VOUXcQJh-E4kL2Nvsg2U_JqARu014QsDkBE,9
+run_with_scissors-0.0.5.dist-info/RECORD,,
