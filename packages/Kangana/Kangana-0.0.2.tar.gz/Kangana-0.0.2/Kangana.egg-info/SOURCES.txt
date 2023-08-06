@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+Kangana.egg-info/PKG-INFO
+Kangana.egg-info/SOURCES.txt
+Kangana.egg-info/dependency_links.txt
+Kangana.egg-info/top_level.txt
+kangana/__init__.py

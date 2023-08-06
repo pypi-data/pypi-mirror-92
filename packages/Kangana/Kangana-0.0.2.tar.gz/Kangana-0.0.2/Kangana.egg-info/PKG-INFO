@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: Kangana
+Version: 0.0.2
+Summary: Python package to encrypt and decrypt files.
+Home-page: UNKNOWN
+Author: moridb
+Author-email: elogger@web.de
+License: MIT
+Description: Kangana can decrypt and encrypt files on a very safe way!
+        Encrypt-Examples:
+        
+        import kangana
+        
+        kangana.encrypt("YOUR FILENAME")
+        
+        
+        This will generate a key file.
+        
+        Decrypt-Example:
+        
+        import kangana
+        
+        kangana.decrypt("YOUR ENCRYPTED FILE", "YOUR KEY")
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+        
+Keywords: kangana
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
