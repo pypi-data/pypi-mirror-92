@@ -1,0 +1,4 @@
+[console_scripts]
+simc = simc.simc:run
+simpack = simc.simpack:get_package
+
