@@ -1,0 +1,7 @@
+README.md
+setup.py
+lovely_logger/__main__.py
+lovely_logger.egg-info/PKG-INFO
+lovely_logger.egg-info/SOURCES.txt
+lovely_logger.egg-info/dependency_links.txt
+lovely_logger.egg-info/top_level.txt
