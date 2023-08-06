@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: crontzconvert
+Version: 0.1.0
+Summary: Change crontab between two timezones.
+Home-page: https://github.com/vidocqh/cron-timezone-convert
+Author: Vidocq
+Author-email: vidocqho@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytz
+
+# Change cron between timezones
+
+## Usage
+
+```python
+convert(cron_expression, source_timezone, target_timezone)
+```
+
+```python
+>> from crontzconvert import convert
+>> convert('* 0/12 * * *', 'Asia/Shanghai', 'UTC')
+'* 16/12 * * *'
+```
+
+### TODO
+
+Change day and week when switch timezone
+
+
