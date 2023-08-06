@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: flask-scrapinghub
+Version: 0.0.3
+Summary: python-scrapinghub with flask
+Home-page: UNKNOWN
+Author: chienaeae
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: scrapinghub (==2.3.1)
+Requires-Dist: msgpack-python (==0.5.6)
+
+
+# ALPHA version
+
+python-scrapinghub with flask
+
+
