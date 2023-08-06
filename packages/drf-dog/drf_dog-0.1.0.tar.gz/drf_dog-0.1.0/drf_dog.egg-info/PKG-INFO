@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: drf-dog
+Version: 0.1.0
+Summary: Copy-paste utilities for Django REST Framework
+Home-page: https://github.com/coaxsoft/drf_dog
+Author: Mikhail Kravets
+Author-email: mike.k@coaxsoft.com
+License: ISC
+Project-URL: Documentation, https://coaxsoft.github.io/drf_dog/
+Project-URL: Source, https://github.com/coaxsoft/drf_dog
+Description: # DRF Dog
+        
+        ![Tests](https://github.com/coaxsoft/drf_dog/workflows/Tests/badge.svg)
+        
+        Copy-paste utilities for Django REST Framework.
+        
+        ---
+        
+        **Documentation** [https://coaxsoft.github.io/drf_dog](https://coaxsoft.github.io/drf_dog)
+        
+        **Source code** [https://github.com/coaxsoft/drf_dog](https://github.com/coaxsoft/drf_dog)
+        
+        ---
+        
+        Why copy-paste utilities? Often, it is mentally hard to install
+        no name packages, especially, to commercial project, but it is easy to copy-paste
+        the solution from stack overflow or github. 
+        
+        For this reason, we try to keep this project the way that it
+        can be easily installed from `PyPi` or just copy-pasted to your own code.
+        
+        ## Requirements
+        
+        -  Python 3.6+
+        -  Django 3.0+
+        -  Django REST Framework 3.11+
+        
+        ## Installation
+        
+        Install using ``pip``
+        
+        
+        ```bash
+        $ pip install drf_dog
+        ```
+        
+        ## License
+        
+        This project is licensed under the terms of the ISC License
+Keywords: django rest_framework drf utils
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

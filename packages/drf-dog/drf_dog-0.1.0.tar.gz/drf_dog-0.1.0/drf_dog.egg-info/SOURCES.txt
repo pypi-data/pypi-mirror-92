@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+drf_dog/__init__.py
+drf_dog/serializers.py
+drf_dog.egg-info/PKG-INFO
+drf_dog.egg-info/SOURCES.txt
+drf_dog.egg-info/dependency_links.txt
+drf_dog.egg-info/top_level.txt
