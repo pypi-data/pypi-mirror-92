@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: takeonme
+Version: 0.3.0
+Summary: Enumerate resources vulnerable to takeover
+License: MPL-2
+Author: SecOps
+Author-email: secops+takeonme@mozilla.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: boto3 (>=1.16.55,<2.0.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: google-api-python-client (>=1.12.8,<2.0.0)
+Requires-Dist: google-auth (>=1.24.0,<2.0.0)
