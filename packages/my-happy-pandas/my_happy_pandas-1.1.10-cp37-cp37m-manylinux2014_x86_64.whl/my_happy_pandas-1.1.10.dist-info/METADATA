@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: my-happy-pandas
+Version: 1.1.10
+Summary: It is just for my-happy-modin. 
+Home-page: https://github.com/ggservice007/my-happy-pandas
+Maintainer: ggservice007
+Maintainer-email: ggservice007@126.com
+License: Apache 2
+Platform: UNKNOWN
+Requires-Python: >=3.7.7
+Requires-Dist: python-dateutil (>=2.7.3)
+Requires-Dist: pytz (>=2017.2)
+Requires-Dist: numpy (>=1.15.4)
+Provides-Extra: test
+Requires-Dist: pytest (>=4.0.2) ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: hypothesis (>=3.58) ; extra == 'test'
+
+
+This project is based on pandas-1.1.5 and is mainly used for my-happy-modin.
+The original modin is only for pandas-1.1.5.
+After use my-happy-pandas you can use any version of pandas.
+
+https://github.com/pandas-dev/pandas/releases/tag/v1.1.5
+
+

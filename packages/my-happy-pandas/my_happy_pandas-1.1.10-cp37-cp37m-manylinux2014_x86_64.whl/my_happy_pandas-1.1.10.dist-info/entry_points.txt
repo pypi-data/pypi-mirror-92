@@ -1,0 +1,3 @@
+[my_happy_pandas_plotting_backends]
+matplotlib = my_happy_pandas:plotting._matplotlib
+
