@@ -1,0 +1,6 @@
+[console_scripts]
+napari-imc = napari_imc.__main__:main
+
+[napari.plugin]
+imc = napari_imc
+
