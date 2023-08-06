@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+GLXViewer/__init__.py
+GLXViewer/colors.py
+GLXViewer/utils.py
+GLXViewer/viewer.py
+galaxie_viewer.egg-info/PKG-INFO
+galaxie_viewer.egg-info/SOURCES.txt
+galaxie_viewer.egg-info/dependency_links.txt
+galaxie_viewer.egg-info/not-zip-safe
+galaxie_viewer.egg-info/top_level.txt
