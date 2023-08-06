@@ -1,0 +1,3 @@
+[console_scripts]
+orpheum = orpheum.commandline:cli
+
