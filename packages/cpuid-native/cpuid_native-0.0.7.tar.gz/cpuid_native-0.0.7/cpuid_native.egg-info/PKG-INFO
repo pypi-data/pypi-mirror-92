@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cpuid-native
+Version: 0.0.7
+Summary: x86 cpuid native API
+Home-page: https://github.com/fpelliccioni/cpuid-py-native
+Author: Fernando Pelliccioni
+Author-email: fpelliccioni@gmail.com
+License: MIT
+Description: x86 cpuid native API
+Keywords: intel amd cpuid x86
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: test
+Provides-Extra: dev
