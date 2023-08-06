@@ -1,0 +1,10 @@
+<group name="system">
+#-------------------------------------------------- {{ignore}}
+echo "Router (Network Side) Configuration" {{ignore}}
+#-------------------------------------------------- {{ignore}}
+        <group name="router">
+        interface "system" {{_start_}}
+        autonomous-system {{autonomous-system | re(r"\d.*")}}
+        </group>
+#-------------------------------------------------- {{_end_}}
+</group>
