@@ -1,0 +1,8 @@
+sklearn
+scipy
+cytoolz
+rho_ml
+attr
+requests
+boto3
+xgboost
