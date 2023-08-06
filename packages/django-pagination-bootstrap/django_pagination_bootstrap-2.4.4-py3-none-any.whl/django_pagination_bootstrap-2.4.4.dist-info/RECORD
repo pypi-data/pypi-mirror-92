@@ -1,0 +1,10 @@
+django_pagination_bootstrap/__init__.py,sha256=PKcSa8uxlrkreJyAF3fZ-bIk82u1pjUGGoqTAOcMiHw,39
+django_pagination_bootstrap/middleware.py,sha256=h7oTV0e7N4gguQFIvkSCk9oG_ifkPm_QT0zO306y2o0,815
+django_pagination_bootstrap/paginator.py,sha256=bcan75WtojN_a0ImQyW5p_PBp95DYIKHU5Q31e4Ta44,6127
+django_pagination_bootstrap/templates/pagination.html,sha256=Bpt2bTZYpCWfdNyMzNoIAPpX0lTHhC1uutGTmE13DW0,1276
+django_pagination_bootstrap/templatetags/__init__.py,sha256=3rVJiIsZVJRY371aobpJzD7h7b4X_RFU6MIcmzyVVNw,48
+django_pagination_bootstrap/templatetags/pagination_tags.py,sha256=8B9PDDSAAfwJwOfNhVy9h7UElRrErG-KtZzDj4l-Slo,10442
+django_pagination_bootstrap-2.4.4.dist-info/LICENSE.rst,sha256=rZJYkcEbDTZMd2nufO9EbSXQfj7SgEmqFb6hmT4XTIY,1096
+django_pagination_bootstrap-2.4.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_pagination_bootstrap-2.4.4.dist-info/METADATA,sha256=lWTl9sxk_z8-VqbhopbNqwSICVfmhDNmaFgDcufshUw,7222
+django_pagination_bootstrap-2.4.4.dist-info/RECORD,,
