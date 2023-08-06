@@ -1,0 +1,16 @@
+sqlalchemy
+geoalchemy2
+psycopg2-binary
+flask
+flask-cors
+fire
+tabulate
+progressbar2
+overpy
+shapely
+requests
+beautifulsoup4
+lxml
+python-dateutil
+pandas
+stdiomask
