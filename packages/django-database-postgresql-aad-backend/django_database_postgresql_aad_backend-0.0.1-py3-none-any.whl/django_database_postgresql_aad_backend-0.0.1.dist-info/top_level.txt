@@ -1,0 +1,1 @@
+django_database_postgresql_aad_backend

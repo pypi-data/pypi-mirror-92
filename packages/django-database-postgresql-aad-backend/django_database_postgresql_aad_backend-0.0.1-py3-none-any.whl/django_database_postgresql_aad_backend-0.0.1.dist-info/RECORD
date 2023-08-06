@@ -1,0 +1,8 @@
+django_database_postgresql_aad_backend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_database_postgresql_aad_backend/base.py,sha256=C-sxj8U6SlRMJ_aKk8nrBwdq2AQsKLbLU5rIBI7dLxk,3025
+django_database_postgresql_aad_backend/mixins.py,sha256=ICEPZ1F2brhB_4m-gFQA3z90lQ1hVTfpCrv0r4SwHZE,531
+django_database_postgresql_aad_backend-0.0.1.dist-info/LICENSE.txt,sha256=b28sCS0pAAcRItZcaEcmdYuzrQIRvctrim0_7PhvuK8,1069
+django_database_postgresql_aad_backend-0.0.1.dist-info/METADATA,sha256=IHqoTF9I1_KShl7-a4DrGCSb7YKe-ELnSr42_l6pIlw,4826
+django_database_postgresql_aad_backend-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_database_postgresql_aad_backend-0.0.1.dist-info/top_level.txt,sha256=tQGsCTkvNgBhjENVEOHzehlFGvGdoJ6z6Z6IV_rxVHA,39
+django_database_postgresql_aad_backend-0.0.1.dist-info/RECORD,,
