@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: StegCipher-Tools
+Version: 0.10.1
+Summary: Collection of lib and GUI tool for steganography/manage/encrypt/decrypt your credentials.
+Home-page: https://github.com/samsepiol-e/cipher
+Author: Sam Sepiol
+Author-email: 0.alicegawa@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
