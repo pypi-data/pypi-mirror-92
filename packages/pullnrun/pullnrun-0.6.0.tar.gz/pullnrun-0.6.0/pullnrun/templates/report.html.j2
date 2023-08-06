@@ -1,0 +1,254 @@
+<html>
+  <head>
+    <title>{{ name | default('Execution report') }}</title>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --text-red: #b66;
+          --text-green: #6b6;
+          --text-blue: #77c;
+
+          --background: #222226;
+          --background-highlight: #333338;
+          --text-secondary: #666;
+          --text-primary: #ddd;
+          --text-grey: #999;
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --text-red: #b55;
+          --text-green: #393;
+          --text-blue: #66b;
+
+          --background: #fff;
+          --background-highlight: #eee;
+          --text-secondary: #999;
+          --text-primary: #333;
+          --text-grey: #666;
+        }
+      }
+      :root {
+        --border-radius: 4px;
+      }
+
+      body {
+        background: var(--background);
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+        font-family: sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      main {
+        box-sizing: border-box;
+        flex: 1;
+        margin: auto;
+        margin-top: 1em;
+        max-width: 1000px;
+        padding: 0 1em;
+      }
+
+      footer {
+        color: var(--text-secondary);
+        font-size: 0.75em;
+        margin: auto;
+        max-width: 1000px;
+        padding: 0.5em 0;
+        text-align: center;
+      }
+
+      div.title {
+        color: var(--text-secondary);
+        font-size: 1.5rem;
+        margin: 2rem 0 0 0;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0 0 1rem 0;
+        font-size: 2rem;
+      }
+
+      h3 {
+        border-bottom: 1px solid var(--text-secondary);
+        line-height: 1.25em;
+      }
+
+      .table-title {
+        color: var(--text-secondary);
+        font-size: 1rem;
+        line-height: 1.25rem;
+        margin: 0;
+        padding: 1.25rem 0 0 0;
+      }
+
+      code.console, div.table-border {
+        border: 1px solid var(--text-secondary);
+        border-radius: 0;
+        border-width: 1px 0;
+      }
+
+      div.task {
+        margin-bottom: 3em;
+      }
+
+      table {
+        border-collapse: collapse;
+        font-size: 0.8em;
+        width: 100%;
+      }
+
+      td:first-of-type {
+        border-right: 1px dotted var(--text-secondary);
+        width: 15%;
+      }
+
+      tr:first-of-type td {
+        border-top: none;
+      }
+
+      td {
+        border-top: 1px dotted var(--text-secondary);
+        width: 85%;
+        box-sizing: border-box;
+        padding: 0.5em;
+      }
+
+      code {
+        background: var(--background-highlight);
+        border-radius: var(--border-radius);
+        display: inline-block;
+        line-height: 1.25em;
+        padding: 0.25em;
+      }
+
+      code.console {
+        display: block;
+        font-family: monospace;
+        padding: 1em 0.5em;
+        white-space: pre-wrap;
+      }
+
+      code.console span.console-timestamp {
+        color: var(--text-grey);
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      code.console .stderr {
+        color: var(--text-red);
+        font-weight: bold;
+      }
+
+      code.console .stdin {
+        color: var(--text-green);
+        font-style: italic;
+      }
+
+      a {
+        color: var(--text-blue);
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: var(--text-blue);
+      }
+
+      a:hover, a:focus {
+        outline: none;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="title">pullnrun</div>
+      <h1>{{ name | default('Execution report') }}</h1>
+      {% if description %}
+        <p class='description'>{{ description }}</p>
+      {% endif %}
+      <h2 class="table-title">Statistics</h2>
+      <div class="table-border">
+        <table>
+          <tr>
+            <td>Started</td>
+            <td>
+              <code>{{ started }}</code>
+            </td>
+          </tr>
+          <tr>
+            <td>Elapsed</td>
+            <td>{{ elapsed }} s</td>
+          </tr>
+          {% for key, value in statistics.items() %}
+          <tr>
+            <td>{{ key | title}}</td>
+            <td>{{ value }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <h2>Tasks</h2>
+      {% for task in task_return_values %}
+        <div class="task">
+          {% if task.name %}
+            <h3>{{ task.name or default(task.index) }}</h3>
+          {% else %}
+            <h3>Task {{ task.index }}</h3>
+          {% endif %}
+          {% if task.description %}
+            <p class='description'>{{ task.description }}</p>
+          {% endif %}
+          <h4 class="table-title">Task definition</h4>
+          <div class="table-border">
+          <table>
+            <tr>
+              <td>Result</td>
+              <td>{{ task.result }}</td>
+            </tr>
+            <tr>
+              <td>Started</td>
+              <td>
+                <code>{{ task.started }}</code>
+              </td>
+            </tr>
+            <tr>
+              <td>Elapsed</td>
+              <td>{{ task.elapsed }} s</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td><code>{{ task.function }}</code></td>
+            </tr>
+            <tr>
+              <td>Parameters</td>
+              <td><code>{{ task.parameters | tojson }}</code></td>
+            </tr>
+            <tr>
+              <td>Settings</td>
+              <td><code>{{ task.settings | tojson }}</code></td>
+            </tr>
+            <tr>
+              <td>Return value</td>
+              <td><code>{{ task.return_value | tojson }}</code></td>
+            </tr>
+          </table>
+          </div>
+          <h4 class="table-title">Console output</h4>
+          <code class="console">
+          {%- for line in task.console_data -%}
+            <div class="{{ line.stream }}"><span class="console-timestamp">{{ line.timestamp[11:-4] }}Z </span>{{ line.text | prefix_if('+ ', line.stream == 'stdin') | replace('+ # ', '# ') }}</div>
+          {%- endfor -%}
+          </code>
+        </div>
+      {% endfor %}
+    </main>
+    <footer>
+      Generated with <a href="https://github.com/kangasta/pullnrun" target="_blank">pullnrun</a> version {{ version }}
+    </footer>
+  </body>
+</html>
