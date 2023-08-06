@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: mincfg
+Version: 0.7
+Summary: Minimal Application Configuration
+Home-page: http://github.com/pjz/mincfg
+Author: Paul Jimenez
+Author-email: pj@place.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: env
+Provides-Extra: ini
+Provides-Extra: yaml
