@@ -1,0 +1,3 @@
+[console_scripts]
+mfw-template = mfw_template.cli:cli
+

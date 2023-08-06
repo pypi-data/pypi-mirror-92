@@ -1,0 +1,9 @@
+{
+    "type_name": "Content",
+    "module_name": "{{ cookiecutter.type_name.lower() }}",
+    "type_description": "{{ cookiecutter.type_name }} type",
+    "api_mount_path": "/api/v1/{{ cookiecutter.module_name }}",
+    "ui_mount_path": "/{{ cookiecutter.module_name }}",
+    "project_name": "",
+    "project_type": ""
+}

@@ -1,0 +1,22 @@
+[Unit]
+Description="{{ cookiecutter.project_name }} Scheduler %i"
+After=network.target 
+
+[Service]
+User={{ cookiecutter.project_name }}
+Group={{ cookiecutter.project_name }}
+Type=simple
+Environment=MORP_WORKDIR=/var/lib/{{ cookiecutter.project_name }}/
+Environment=ACCESS_LOG=/var/log/{{ cookiecutter.project_name }}/access.log
+Environment=ERROR_LOG=/var/log/{{ cookiecutter.project_name }}/errors.log
+Environment=PYTHONUNBUFFERED=1
+Environment=LC_ALL=en_US.utf8
+Environment=LANG=en_US.utf8
+ExecStart=/opt/{{ cookiecutter.project_name }}/bin/morpfw -s /etc/{{ cookiecutter.project_name }}/settings.yml scheduler
+Restart=on-failure
+RestartSec=5s
+LimitNOFILE=40960
+
+[Install]
+WantedBy=multi-user.target
+

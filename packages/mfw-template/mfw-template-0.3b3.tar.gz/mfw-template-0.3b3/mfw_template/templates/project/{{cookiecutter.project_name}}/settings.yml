@@ -1,0 +1,38 @@
+server:
+  listen_host: 127.0.0.1
+  listen_port: 5000
+  server_url: http://localhost:5000
+
+configuration:
+  morpfw.scan:
+    - {{ cookiecutter.project_name }}
+{% if cookiecutter.project_type == "morpfw" %} 
+  morpfw.authn.policy: morpfw.authn.useridparam:AuthnPolicy
+{% elif cookiecutter.project_type == "morpcc" %} 
+  morpfw.authn.policy: morpcc.app:AuthnPolicy
+{% endif %}
+
+  morpfw.storage.sqlstorage.dburi: 'postgresql://postgres:postgres@localhost:5432/{{ cookiecutter.project_name }}'
+  morpfw.storage.sqlstorage.dburi.warehouse: 'postgresql://postgres:postgres@localhost:5432/{{ cookiecutter.project_name }}_warehouse'
+  morpfw.blobstorage.uri: 'fsblob://%(here)s/blobstorage'
+  # generate new key using 
+  # from cryptography.fernet import Fernet
+  # print(Fernet.generate_key().decode('utf8'))
+  morpfw.secret.fernet_key: {{ cookiecutter.fernet_key }}
+  morpfw.beaker.session.type: ext:database
+  morpfw.beaker.session.url: 'postgresql://postgres:postgres@localhost:5432/{{ cookiecutter.project_name }}_cache'
+  morpfw.beaker.cache.type: ext:database
+  morpfw.beaker.cache.url: 'postgresql://postgres:postgres@localhost:5432/{{ cookiecutter.project_name }}_cache'
+
+  morpfw.celery:
+    # celery settings variables
+    broker_url: 'amqp://guest:guest@localhost:5672/'
+    result_backend: 'db+postgresql://postgres@localhost:5432/{{ cookiecutter.project_name }}_cache'
+
+application:
+  title: {{ cookiecutter.project_name }}
+  class: {{ cookiecutter.project_name }}.app:App
+{% if cookiecutter.project_type == "morpcc" %} 
+  factory: morpcc.app:create_morpcc_app
+{% endif %}
+  development_mode: true

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mfw-template
+Version: 0.3b3
+Summary: Cookiecutter templates for Morp Framework
+Home-page: http://github.com/morpframework
+Author: Izhar Firdaus
+Author-email: kagesenshi.87@gmail.com
+License: MIT
+Description: =============
+        mfw-template
+        =============
+        
+        Cookiecutter templates for Morp Framework
+        
+        Changelog 
+        ==========
+        
+        0.3b3 (2021-01-27)
+        ------------------
+        
+        - fix %(here)s replacement in rpm build
+        - release bump to morpfw-0.4.0b4
+        
+        0.3b2 (2021-01-10)
+        ------------------
+        
+        - added missing buildout-rpm.cfg
+        - stop using bootstrap-buildout.py
+        
+        
+        0.3b1 (2020-12-29)
+        ------------------
+        
+        - Initial release with changelog
+        
+        
+        
+Platform: UNKNOWN
+Provides-Extra: docs

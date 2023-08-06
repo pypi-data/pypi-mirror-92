@@ -1,0 +1,7 @@
+{
+    "validator_name": "MyValidator",
+    "module_name": "{{ cookiecutter.validator_name.lower() }}",
+    "module_container": "fieldvalidator",
+    "project_name": "",
+    "project_type": ""
+}

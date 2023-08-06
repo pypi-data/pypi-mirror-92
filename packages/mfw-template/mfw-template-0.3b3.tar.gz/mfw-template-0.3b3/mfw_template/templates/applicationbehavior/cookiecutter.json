@@ -1,0 +1,6 @@
+{
+    "behavior_name": "MyAppBehavior",
+    "module_name": "{{ cookiecutter.behavior_name.lower() }}",
+    "project_name": "",
+    "project_type": ""
+}

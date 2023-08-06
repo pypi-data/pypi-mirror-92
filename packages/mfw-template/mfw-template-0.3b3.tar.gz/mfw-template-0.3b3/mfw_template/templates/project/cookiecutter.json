@@ -1,0 +1,22 @@
+{
+    "project_name": "myproject",
+    "project_type": [
+        "morpfw",
+        "morpcc"
+    ],
+    "project_url": "http://myproject.com",
+    "version": "0.1.0",
+    "author_name": "John Doe",
+    "author_email": "johndoe@example.com",
+    "short_description": "",
+    "fernet_key": "",
+    "rpm_date": "",
+    "license": [
+        "MIT",
+        "BSD",
+        "GPLv3+",
+        "LGPLv3+",
+        "AGPLv3+",
+        "Proprietary"
+    ]
+}
