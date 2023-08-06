@@ -1,0 +1,11 @@
+ftrotta/pycolib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ftrotta/pycolib/_amodule.py,sha256=fxn5IBSbY11bon2ZNNKYKdq7rcJKcB6OVNKmcTuHJR4,3093
+ftrotta/pycolib/common_tests.py,sha256=YGZQeFibUgjpKl2Hg2REQGK3bmhdL1t6QXfHh_-JGNg,29877
+ftrotta/pycolib/input_checks.py,sha256=Gads9VA-wYSYVeAo6HGqlpgLfoN9X2xWX3VU8sTXAoM,10794
+ftrotta/pycolib/log.py,sha256=aw2LcOo6kU_oXarmWqmpEJ08BO7gylj0vtf5N0j2nx4,1353
+ftrotta/pycolib/setup.py,sha256=7g9B3CzCyt_RrWIUzdw4UBnf3REWsQ4InJuEctNXorg,5939
+ftrotta.pycolib-1.1.1.dist-info/LICENSE,sha256=xcw2sqnZV4m-etpBMtf-2HB9lWlC7tPvVjIrVsMREPk,35077
+ftrotta.pycolib-1.1.1.dist-info/METADATA,sha256=OT5wrBc6jmg226JvkXIJKBhIFnqnmKBwcDtqdgwbrMk,1645
+ftrotta.pycolib-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ftrotta.pycolib-1.1.1.dist-info/top_level.txt,sha256=boWPJtGa6tmx5rX8srANKpu_mOpm_uu87jC5tcy-tkY,8
+ftrotta.pycolib-1.1.1.dist-info/RECORD,,
