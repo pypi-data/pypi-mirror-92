@@ -1,0 +1,10 @@
+setup.py
+django_to_sqlserver_description/__init__.py
+django_to_sqlserver_description/models.py
+django_to_sqlserver_description/setup.py
+django_to_sqlserver_description/test.py
+django_to_sqlserver_description.egg-info/PKG-INFO
+django_to_sqlserver_description.egg-info/SOURCES.txt
+django_to_sqlserver_description.egg-info/dependency_links.txt
+django_to_sqlserver_description.egg-info/requires.txt
+django_to_sqlserver_description.egg-info/top_level.txt
