@@ -1,0 +1,2 @@
+sympy>=1.6
+ipython>=7.13
