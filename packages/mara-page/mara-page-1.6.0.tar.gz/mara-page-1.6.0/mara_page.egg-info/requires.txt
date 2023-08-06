@@ -1,0 +1,6 @@
+flask>=0.12
+pygments>=2.2.0
+
+[test]
+pytest
+pytest_click
