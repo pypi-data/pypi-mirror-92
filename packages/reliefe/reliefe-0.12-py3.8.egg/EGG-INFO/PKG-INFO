@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: reliefe
+Version: 0.12
+Summary: ReliefE: Feature ranking via manifold embeddings
+Home-page: https://github.com/reliefe/reliefe
+Author: Blaž Škrlj and Matej Petković
+Author-email: matej.petkovic@ijs.si
+License: bsd-3-clause-clear
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: <3.9.0
