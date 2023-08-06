@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: io-uuid
+Version: 0.0.5
+Summary: A file name generator
+Home-page: https://github.com/LeLunZ/iouuid
+Author: LeLunZ
+Author-email: l.accounts@pm.me
+License: BSD 3-Clause
+Download-URL: https://github.com/LeLunZ/iouuid/archive/0.0.5.tar.gz
+Description: # io-uuid
+        
+        you need to create files and care about not overwriting files?
+        This util could help with that.
+        
+        ## Features
+        
+        - creates ids for files
+        - ids can be created with prefixes (e.g. the real file name)
+        - even suffixes can be added
+        
+        ## Support
+        
+        If you want to add something, create an issue and do a pull request. 
+        
+Keywords: iouuid,uuid,name generator,file name generator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
