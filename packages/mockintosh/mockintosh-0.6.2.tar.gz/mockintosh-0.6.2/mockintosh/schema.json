@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "service_ref": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "hostname": {
+          "type": "string"
+        },
+        "port": {
+          "type": "integer"
+        },
+        "ssl": {
+          "type": "boolean"
+        },
+        "sslCertFile": {
+          "type": "string"
+        },
+        "sslKeyFile": {
+          "type": "string"
+        },
+        "endpoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/endpoint_ref"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "port"
+      ]
+    },
+    "endpoint_ref": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "queryString": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {
+              "type": "string"
+            }
+          }
+        },
+        "headers": {
+          "type": "object",
+          "patternProperties": {
+            ".+": {
+              "type": "string"
+            }
+          }
+        },
+        "body": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "oneOf": [
+                {
+                  "$ref": "http://json-schema.org/draft-07/schema#"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "text": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "dataset": {
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "response": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/response_ref"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/response_ref"
+              }
+            }
+          ]
+        },
+        "multiResponsesLooped": {
+          "type": "boolean"
+        },
+        "datasetLooped": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "additionalProperties": false
+    },
+    "response_ref": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "headers": {
+              "$ref": "#/definitions/headers_ref"
+            },
+            "status": {
+              "type": [
+                "string",
+                "integer"
+              ]
+            },
+            "body": {
+              "type": "string"
+            },
+            "useTemplating": {
+              "type": "boolean"
+            },
+            "templatingEngine": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "headers_ref": {
+      "oneOf": [
+        {
+          "type": "object",
+          "patternProperties": {
+            ".+": {
+              "oneOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "templatingEngine": {
+      "type": "string"
+    },
+    "globals": {
+      "headers": {
+        "$ref": "#/definitions/headers_ref"
+      }
+    },
+    "services": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/service_ref"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "services"
+  ]
+}
