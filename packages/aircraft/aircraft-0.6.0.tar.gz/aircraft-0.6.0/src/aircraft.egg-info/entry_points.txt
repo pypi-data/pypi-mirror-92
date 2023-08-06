@@ -1,0 +1,3 @@
+[console_scripts]
+aircraft = aircraft.cli.main:main
+

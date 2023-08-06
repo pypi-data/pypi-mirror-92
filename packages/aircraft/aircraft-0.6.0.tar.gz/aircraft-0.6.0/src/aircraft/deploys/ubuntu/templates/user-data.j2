@@ -1,0 +1,71 @@
+#cloud-config
+# For a more complete set of keys, try the manual install in the GRUB menu
+# first and then finish the installation manually then copy the file
+# generated at /var/log/installer/autoinstall-user-data to here and
+# customize to taste.
+#
+# Alternatively, see: https://ubuntu.com/server/docs/install/autoinstall
+autoinstall:
+  version: 1
+  identity:
+    hostname: {{machine.hostname}}
+    password: "$6$exDY1mhS4KUYCE/2$zmn9ToZwTKLhCw.b4/b.ZRTIZM30JZ4QrOQ2aOXJ8yk96xpcCof0kxKwuX1kqLG/ygbJ1f8wxED22bTL4F46P0"
+    username: ubuntu
+  keyboard:
+    layout: us
+    toggle: null
+    variant: ''
+  locale: C
+{{ machine.network.export_netplan_v2(indent=2) }}
+  ssh:
+    allow-pw: false
+    install-server: true
+    disable-root: true
+    authorized-keys: ['ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDSaDjzC7ODr2URU2K+5Gp6BhlONmK9LWHyFCcyNI2klseDWuMDyAdhFGuoc7VutyfJpCoc+RqRRVOoFN4oogYXZgDgFKH6zdXmMNSuu4OhgoCOfWmz6tF6WssgP6SsgJz8pT6LWsk5lg7hbuIxhWbhHZBhSJCTeymIEJT2HtgjK0/9o3Rw897UO/IuIqXhPpI3sKhI30dJcGho8JGw1UrGfHhmaJ9fW8oBAv+xhZ0vv6OdjZYroqI/iolFTbLkZ0Qd8xK78F9JQ1QoEl3hNbsMJqmbbtoy6Lha7wn+aiWHb0latcCDxQtFO/uCppPcTOQiwQ5R3rXKtC8/koj1aQxdezxq+izpkM4Aasrr9WlJxXt6ZnAUYuPCrGWy1FziEW1yDm54bhSCiM7MEESea5sKvHSkDwvbExeeV9y7uPkDltDQnxUZ+aKRejaxZLJbPsVV09FWZvJw5xSi0n633DRMvB6ZL+BXJy4sdyGdEJ6/rpVDdNXT958hfUjXl8dFWXBgqladUl91Bpjr4XqtWqiyzdjGrEPynTsvZYZHtfn9+WUFIavGJMiGB78Cv2YKxsHsRy+p36ihLgEHRqXcbNAEb0kzNufCBlmbtbKoYZ9Hp2Hhx3lvR9ZYzRiidh8vqFMMlUlZ+Zgw8S8r3ycHviGOsBQ9iPHWvWz3ZT4zaBHtFQ==
+        relaxdiego@github/41264277 # ssh-import-id gh:relaxdiego', '', 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQChTBD1xS6HRkS2haLdY96STMbGEU5CPEYmii2Lh/YoqlXRmtjuMnNKyRMkhNgL+YwfocBA9Rt+EDJ/MhxAcki+ypynJ/WK3Vfx7MPu68wt8rNL8tklX+U5OFRkKLgdl9A+g2ScCAMEWxDWdQJSD6HNdaCReGbrrGpzfmKTvzCNWl/lro2ii8zUuhkTnehMCLrkQy07sauzxZFucgYwo/tHplLD8+GUXRj2R445XiUqI0D4KbGGMycoSiAOo7aAHjOrzqUXKE0/5DOC62v1Q4EzH2qDjmqWUfSO0Kc7q39lPng0/blZsPWtYZjlNZME24VUHzTUOo+kMMkhDPH7EVuevHxNMKHV/n2hN8p9Vh7YoyR70v3RMJbw6UJaw3IG3rgVOqe8H7EiyXd6xvn7xeTIH661F/gSWGQw6PeCiiFb2uS6dexeGSQs3WkIhTVLuVAbq/ac5DzqulYT3kE2MW4jbbLBWL1/Ck2yiqQhSDTqfKCxg2NmurTTLphvw9adoj8=
+        relaxdiego@github/47224202 # ssh-import-id gh:relaxdiego']
+  storage:
+    config:
+    # DISKS
+    {%- for disk in machine.storage.export_disks() %}
+    - {{disk | tojson}}
+    {%- endfor %}
+
+    # PHYSICAL PARTITIONS
+    {%- for partition in machine.storage.export_partitions() %}
+    - {{partition | tojson}}
+    {%- endfor %}
+
+    # LVM VOLUME GROUPS
+    {%- for volgroup in machine.storage.export_lvm_volgroups() %}
+    - {{volgroup | tojson}}
+    {%- endfor %}
+
+    # LVM LOGICAL VOLUMES
+    {%- for lv in machine.storage.export_lvm_logical_volumes() %}
+    - {{lv | tojson}}
+    {%- endfor %}
+
+    # FILESYSTEM FORMATS FOR EVERY PARTITION AND LOGICAL VOLUME
+    {%- for format in machine.storage.export_formats() %}
+    - {{format | tojson}}
+    {%- endfor %}
+
+    # MOUNT POINT FOR EVERY FILESYSTEM
+    {%- for mount in machine.storage.export_mounts() %}
+    - {{mount | tojson}}
+    {%- endfor %}
+
+  power_state:
+    mode: reboot
+    condition: True
+  apt:
+    geoip: true
+    preserve_sources_list: false
+    primary:
+    - arches: [amd64, i386]
+      uri: http://archive.ubuntu.com/ubuntu
+    - arches: [default]
+      uri: http://ports.ubuntu.com/ubuntu-ports
+  late-commands:
+    - "curtin in-target --target=/target -- echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/ubuntu"
