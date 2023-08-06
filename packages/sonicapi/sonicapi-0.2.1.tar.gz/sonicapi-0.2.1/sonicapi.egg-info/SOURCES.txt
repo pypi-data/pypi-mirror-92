@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sonicapi/__init__.py
+sonicapi/__version__.py
+sonicapi/sonicapi.py
+sonicapi.egg-info/PKG-INFO
+sonicapi.egg-info/SOURCES.txt
+sonicapi.egg-info/dependency_links.txt
+sonicapi.egg-info/requires.txt
+sonicapi.egg-info/top_level.txt
