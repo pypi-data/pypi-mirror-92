@@ -1,0 +1,3 @@
+[console_scripts]
+gen-iserv-credential = autIservCredGen.__main__:main
+
