@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sentry-slack-integration-webhooks
+Version: 0.2.0
+Summary: A Sentry extension which pushes events to the slack incoming webhooks.
+Home-page: UNKNOWN
+Author: Pavel Voropaev
+Author-email: pavel.voropaev@gmail.com
+License: BSD
+Description: A Sentry extension which pushes events to the slack incoming webhooks.
+Platform: UNKNOWN
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Provides-Extra: test
