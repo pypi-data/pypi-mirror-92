@@ -1,0 +1,5 @@
+=================
+collective.clamav
+=================
+
+User documentation

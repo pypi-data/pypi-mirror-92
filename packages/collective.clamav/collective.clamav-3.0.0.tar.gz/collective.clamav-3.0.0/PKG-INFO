@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: collective.clamav
+Version: 3.0.0
+Summary: A product providing clamav antivirus integration for Plone Dexterity content types
+Home-page: https://pypi.python.org/pypi/collective.clamav
+Author: Andreas Mantke
+Author-email: maand@gmx.de
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        =================
+        collective.clamav
+        =================
+        
+        .. image:: https://github.com/collective/collective.clamav/workflows/collective.clamav%20CI/badge.svg
+            :target: https://github.com/collective/collective.clamav/actions?query=workflow%3A%22collective.clamav+CI%22
+        
+        .. image:: https://coveralls.io/repos/github/collective/collective.clamav/badge.svg?branch=master
+            :target: https://coveralls.io/github/collective/collective.clamav?branch=master
+        
+        A product providing clamav antivirus integration for Plone sites with AT and Dexterity content types.
+        It does that by defining a validator which could be used with any content
+        type that uses File, Image or Named field(s). The open-source `Clam Antivirus` is
+        supported which is available for all platforms.
+        
+        
+        
+        Usage
+        -----
+        
+        - To start, you need to have ``clamd`` running on some host accessible by your instances. ``collective.clamav`` supports either UNIX socket connections or remote connections.
+        
+        - Install collective.clamav and setup the host & port or the path to the ``clamd`` socket in the control panel (default is a network connection to ``clamd`` listening on *localhost* at port 3310). By default *Files* and *Images* are going to be checked for viruses when added or updated.
+        
+        
+        Adding anti-virus protection to non-ATFile based content
+        --------------------------------------------------------
+        
+        If you want to add anti-virus protection to your custom AT content types
+        add the *isVirusFree* validator to your FileField(s). For instance::
+        
+              FileField('file',
+                validators = (('isNonEmptyFile', V_REQUIRED),
+                              ('isVirusFree', V_REQUIRED),),
+                widget = FileWidget(label=u'File'),
+              )
+        
+        If you create custom Dexterity content types add only the necessary import statement to the
+        module and all plone.namedfile fields were automatically scaned::
+        
+            from Products.validation import V_REQUIRED)
+        
+        Installation
+        ------------
+        
+        Install collective.clamav by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                collective.clamav
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/collective.clamav/issues
+        - Source Code: https://github.com/collective/collective.clamav
+        - Documentation: in the docs folder
+        
+        
+        Credits
+        -------
+        
+        
+        Some code was shamelessly borrowed from `pyClamd` and collective.ATClamAV:
+        
+        -  Clam Antivirus: http://www.clamav.net
+        -  github: https://github.com/ggozad/collective.ATClamAV
+        -  pyClamd: http://xael.org/norman/python/pyclamd
+        -  github: https://github.com/collective.ATClamAV
+        -  github: https://github.com/davisagli/collective.ATClamAV
+        
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Andreas Mantke, maand@gmx.de [andreasma]
+        - Laurent Lasudry, laurent.lasudry@affinitic.be [laulaz]
+        - Thomas Grainger, tagrain@gmail.com [graingert]
+        - Yiorgis Gozadinos, ggozadinos@gmail.com [ggozad]
+        - Hanno Schlichting, hanno@hannosch.eu [hannosch]
+        - David Glick, david@glicksoftware.com [davisagli]
+        - Víctor Fernández de Alba, sneridagh@gmail.com [sneridagh]
+        
+        
+        Changelog
+        =========
+        
+        3.0.0 (2021-01-25)
+        ------------------
+        
+        - Remove the AT schema extension and make it work within Plone 5.2
+          and Python 3. [Andreas Mantke]
+        - Increase the release number to 3 because it breaks compatibility
+          to old Archetypes content types. [Andreas Mantke]
+        - Added a test for value NOT_CHANGED to the validator module because
+          of a change in converter.py of plone.formwidget.namedfile [Andreas Mantke]
+        - isort and flake8 fixes in validator module [Andreas Mantke]
+        - Fix tests for Plone 5.2, discontinue Travis and switch to Github Actions
+          [tschorr]
+        
+        
+        
+        2.0a2 (2016-09-12)
+        ------------------
+        
+        - Fix ReST/pypi page syntax.
+          [timo]
+        
+        
+        2.0a1 (2016-09-12)
+        ------------------
+        
+        - Initial release based on collective.ATClamAV with a new controlpanel module
+          and and a configuration configlet for Plone 5 compatibility. The product
+          and release works with Dexterity content types. [andreasma]
+        
+        - Complete Plone 5 compatibility and transferring and adapting tests from
+          collective.ATClamAV.
+          [sneridagh]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test
