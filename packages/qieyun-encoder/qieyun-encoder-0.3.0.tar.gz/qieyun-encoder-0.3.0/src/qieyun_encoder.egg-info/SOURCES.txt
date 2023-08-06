@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/QieyunEncoder/__init__.py
+src/QieyunEncoder/encoder.py
+src/QieyunEncoder/version.py
+src/qieyun_encoder.egg-info/PKG-INFO
+src/qieyun_encoder.egg-info/SOURCES.txt
+src/qieyun_encoder.egg-info/dependency_links.txt
+src/qieyun_encoder.egg-info/top_level.txt
