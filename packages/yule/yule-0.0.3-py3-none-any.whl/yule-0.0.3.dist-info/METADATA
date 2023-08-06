@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: yule
+Version: 0.0.3
+Summary: A logging package for python
+Home-page: https://github.com/deancolten/yule
+Author: Colten Dean
+Author-email: coltenrdean@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Logging
+Requires-Dist: colorama
+
+# Yule
+A python logger
+
+
+## Install
+'''
+pip install yule
+'''
+
+## Example
+
+'''python
+from yule.yulelog import YuleLogger
+
+logger = YuleLogger(level=2,
+                file_path="LOG FILE PATH HERE",
+                to_file=false,
+                id="BasicTestLog"
+                )
+
+logger.info("This is info")
+logger.warning("This is a warning")
+logger.error("This is an error")
+'''
+
