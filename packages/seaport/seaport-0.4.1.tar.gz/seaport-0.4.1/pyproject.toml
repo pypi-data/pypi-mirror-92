@@ -1,0 +1,82 @@
+[tool.poetry]
+name = "seaport"
+version = "0.4.1"
+description = "A more mighty port bump"
+authors = ["harens <harensdeveloper@gmail.com>"]
+maintainers = ["harens <harensdeveloper@gmail.com>"]
+readme = "README.rst"
+license = "BSD-3-Clause"
+include = ["seaport/py.typed"]
+keywords = ["MacPorts", "Port", "Bump", "Checksums"]
+classifiers = [
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Typing :: Typed"
+]
+
+homepage = "https://github.com/harens/seaport"
+repository = "https://github.com/harens/seaport"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/harens/seaport/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.2"
+black = "^20.8b1"
+isort = "^5.7.0"
+mypy = "^0.800"
+pytest-subprocess = "^1.0.0"
+pytest-mock = "^3.5.1"
+pytest-cov = "^2.11.1"
+coverage = "^5.3.1"
+pydocstyle = "^5.1.1"
+flake8 = "^3.8.4"
+pre-commit = "^2.9.3"
+pyupgrade = "^2.7.4"
+safety = "^1.10.3"
+Sphinx = "^3.4.3"
+sphinx-autobuild = "^2020.9.1"
+sphinx-click = "^2.5.0"
+sphinxcontrib-programoutput = "^0.16"
+towncrier = "^19.2.0"
+
+[tool.poetry.scripts]
+seaport = "seaport.init:seaport"
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+
+# See https://pycqa.github.io/isort/docs/configuration/black_compatibility/
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+# See https://black.readthedocs.io/en/stable/compatible_configs.html#pylint
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.black]
+target-version = ["py38"]
+
+[tool.towncrier]
+# The name of your Python package
+package = "seaport"
+# Where you want your news files to come out. This can be .rst
+# or .md, towncrier's default template works with both.
+filename = "./seaport/docs/changelog.rst"
+issue_format = "`#{issue} <https://github.com/harens/seaport/issues/{issue}>`_"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
