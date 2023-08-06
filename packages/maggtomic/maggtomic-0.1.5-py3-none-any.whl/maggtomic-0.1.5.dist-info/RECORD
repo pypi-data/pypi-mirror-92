@@ -1,0 +1,11 @@
+maggtomic/__init__.py,sha256=PHJFZ9whyb2ZQsmAbsHFHGHTc2CqiipVptFYG9inx08,14401
+maggtomic/query.py,sha256=qLKba6TA5xbwQbIGFNqz6eb2ExSD-R1zucyt7y5xS_E,7630
+maggtomic/util.py,sha256=dEYOvma1rtcRGT1Gse_j-_JRPIf3pPDlYdipQafDswQ,2199
+maggtomic/harvester/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maggtomic/harvester/pathmachine.py,sha256=u9p3ZzoysW-pmnFW7Iv25ohVIsrZhbjRTUHpmIUv7ss,5551
+maggtomic/harvester/s3.py,sha256=Yv_DJ4mrVUgZpIWZWVJ66Vl7VzFXzFXys0l56zIwdyE,4436
+maggtomic-0.1.5.dist-info/LICENSE,sha256=0M4CmfU66CtdVtu9jcgzwoM_17Q-IHgCIV62q3Ain1M,1520
+maggtomic-0.1.5.dist-info/METADATA,sha256=6p2eZWGPOs3lONLNOmHc7oc9czcnhCg3_D7kPxI6il0,20061
+maggtomic-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+maggtomic-0.1.5.dist-info/top_level.txt,sha256=OXFCfqeEE1cIOPHfmSdkjHC8s2AeBAD_nNBU6LIS0o0,10
+maggtomic-0.1.5.dist-info/RECORD,,
