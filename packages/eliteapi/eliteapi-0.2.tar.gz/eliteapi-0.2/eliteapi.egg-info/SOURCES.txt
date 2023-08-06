@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+eliteapi/__init__.py
+eliteapi/eliteapi.py
+eliteapi.egg-info/PKG-INFO
+eliteapi.egg-info/SOURCES.txt
+eliteapi.egg-info/dependency_links.txt
+eliteapi.egg-info/requires.txt
+eliteapi.egg-info/top_level.txt
