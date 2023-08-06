@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mcd-state-client
+Version: 0.0.6
+Summary: An mcdstate.info API wrapper
+Home-page: https://github.com/tamccall/mcd-state-client
+Author: Andy McCall
+Author-email: andymc903@gmail.com
+License: UNKNOWN
+Description: # mcd-state-client
+        
+        A client for the [mcd state api](https://api.mcdstate.info/).
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
