@@ -1,0 +1,3 @@
+[console_scripts]
+telnet5 = telnetlib_proxy:main
+
