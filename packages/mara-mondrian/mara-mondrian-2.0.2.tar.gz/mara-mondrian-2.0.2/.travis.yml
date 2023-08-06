@@ -1,0 +1,22 @@
+language: python
+dist: xenial
+matrix:
+  include:
+  - python: '3.6'
+  - python: '3.7'
+    env: UPLOAD=True
+  - python: '3.8'
+install:
+- pip install .[test]
+script: echo hello world
+deploy:
+  provider: pypi
+  distributions: sdist
+  user: mara-pypi-upload-account
+  password:
+    secure: kOq1ILx7Yh2o7OpdOmA1gaoMPJ62vPbT7m1mz2SeYcdEMffX2rDOt4i05vRjV8T7Ldu1qig60uDIoPb1CvdTD1Ewpv1hsBj41fxTmK+uV1fRIxEz9tZjn3m8UHf8/tDcfXMAKKipEUmGfALpxsdRYgSTmB5T/2bJV3vzssdNPNuUR81nfQ7o0Sd7G5Nt81xGYjjnboDaXSlPFl1FuPSI9usU/XFAKk7ea9Gavw+mO1zVuQcXOIypHcBdGBnpBNEwk8cPmandhP4ssPpW+tQ69gaRmQ21dSy2AQQC2oG/Xjy2qupSGXRkgJ4vpC+SrbiVYKpsuZhoPxYD8hxBFAPTs7/pGLX1kn4xJ9wo1P1I8ZBNcE6vojeTsHmIDu5sv1HJj6L3FWwifMPmj91wyIzcTj5KFSRKi8T/QIic+LEeFyoO/FsC/H/S04Fj020tIP3ypklSEKkGIvsqISSOcPBLn5QQvJAaBr8mELoJKpQX+1EVfH5fXeISAGG25wWiqbuWwz5XB7bXq06hLJDTO/Z9sE9rRJAKiY7fXNa836YWaMh6eiuICLkvmkLr/DIf+gzMvWm9V8N3CVBb4THAB2GfKE0LMaIW6GN1k74ondOZj54JJpe+0L1d/4LntO9iYfVMtF0puZ9b9nRxwHZ0EoL2hTSr8tNff9drhUtD8LasjDo=
+  on:
+    tags: true
+    branch: master
+    repo: mara/mara-mondrian
+    condition: "$UPLOAD == True"
