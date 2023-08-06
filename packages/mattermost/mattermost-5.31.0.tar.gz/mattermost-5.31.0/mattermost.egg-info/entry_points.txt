@@ -1,0 +1,3 @@
+[console_scripts]
+mmstdin2channel = mattermost.stdin2channel:main
+

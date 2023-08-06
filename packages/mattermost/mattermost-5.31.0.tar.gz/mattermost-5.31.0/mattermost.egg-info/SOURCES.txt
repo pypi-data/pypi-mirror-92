@@ -1,0 +1,12 @@
+README.md
+setup.py
+mattermost/__init__.py
+mattermost/stdin2channel.py
+mattermost/version.py
+mattermost/ws.py
+mattermost.egg-info/PKG-INFO
+mattermost.egg-info/SOURCES.txt
+mattermost.egg-info/dependency_links.txt
+mattermost.egg-info/entry_points.txt
+mattermost.egg-info/requires.txt
+mattermost.egg-info/top_level.txt
