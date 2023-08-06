@@ -1,0 +1,7 @@
+include dash_devextreme/dash_devextreme.min.js
+include dash_devextreme/dash_devextreme.dev.js
+include dash_devextreme/metadata.json
+include dash_devextreme/package.json
+include README.md
+include LICENSE
+include package.json
