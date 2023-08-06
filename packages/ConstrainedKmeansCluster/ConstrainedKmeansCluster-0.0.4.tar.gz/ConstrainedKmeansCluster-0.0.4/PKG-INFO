@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ConstrainedKmeansCluster
+Version: 0.0.4
+Summary: A useable kmeans constrained clustering library
+Home-page: https://github.com/SeanKaat/kmeansclustering
+Author: Sean Kaat
+Author-email: seankaat@gmail.com
+License: UNKNOWN
+Description: # Kmeans Clustering with constrained weights/sizes
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
