@@ -1,0 +1,5 @@
+numpy<1.20,>=1.17.3
+dimod>=0.9.13
+dwave-neal>=0.5.7
+Deprecated>=1.2.10
+six>=1.11.0
