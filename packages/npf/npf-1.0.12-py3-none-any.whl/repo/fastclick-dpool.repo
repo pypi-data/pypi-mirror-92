@@ -1,0 +1,3 @@
+parent=fastclick
+name=FastClick - DPool
+configure+=--enable-dpdk-pool

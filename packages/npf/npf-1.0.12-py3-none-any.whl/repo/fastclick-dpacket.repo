@@ -1,0 +1,3 @@
+parent=fastclick
+name=FastClick - DPacket
+configure+=--enable-dpdk-packet
