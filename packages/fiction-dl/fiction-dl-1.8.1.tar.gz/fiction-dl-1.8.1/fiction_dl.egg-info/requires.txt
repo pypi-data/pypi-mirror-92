@@ -1,0 +1,15 @@
+PyMuPDF
+bleach
+bs4
+dreamy-utilities>=1.2.0
+ebooklib
+fake-useragent
+html5lib
+lxml
+markdown
+numpy
+opencv-python
+pillow
+praw
+pykakasi
+pyopenssl
