@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rooted-tree-classifier
+Version: 0.1.1
+Summary: A command-line tool for automatically classifying LCL problems on rooted trees.
+Home-page: https://github.com/jendas1/rooted-tree-classifier
+Author: Jan Studený
+Author-email: jendas1@yahoo.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+
+
+## Description
+
+This folder contains two programs that partially a round complexity of homogenous LCL problem on (binary) trees.  
+
+- log_decider
+    - decides whether a problem is log(n) solvable or it is inherently harder
+- log_star_decider
+    - decides whether a problem is log*(n) solvable or it is inherently harder
+
+## Usage
+
+1. Install dependencies by `pip3 install -r requirements`.
+
+2. Run `python3 log_decider.py` or `python3 log_star_decider.py` and on describe (on standard input) constraints of a problem.
+
+See `tests.py` for some problem examples.
+
+
