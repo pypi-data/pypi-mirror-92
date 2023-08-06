@@ -1,0 +1,8 @@
+click
+toml
+SecretStorage
+
+[dev]
+black
+pip-tools
+pdbpp
