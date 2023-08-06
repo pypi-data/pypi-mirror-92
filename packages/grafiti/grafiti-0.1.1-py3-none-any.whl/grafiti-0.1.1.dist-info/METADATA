@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: grafiti
+Version: 0.1.1
+Summary: Automatic graph-based dependency resolution
+License: GPL-3.0-only
+Author: Shiv Dhar
+Author-email: shiv.dhar@gmail.com
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: icecream (>=2.0.0,<3.0.0)
+Requires-Dist: pdbpp (>=0.10.2,<0.11.0)
+Description-Content-Type: text/x-rst
+
+#########
+grafiti
+#########
+
+Welcome to grafiti's documentation!
+
+
