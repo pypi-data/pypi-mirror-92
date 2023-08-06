@@ -1,0 +1,5 @@
+requests
+pybind11
+scipy
+pyyaml
+monty

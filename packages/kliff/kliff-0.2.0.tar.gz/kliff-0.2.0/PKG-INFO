@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: kliff
+Version: 0.2.0
+Summary: KLIFF: KIM-based Learning-Integrated Fitting Framework
+Home-page: https://github.com/mjwen/kliff
+Author: Mingjian Wen
+Author-email: wenxx151@gmail.com
+License: UNKNOWN
+Description: KLIFF: KIM-based Learning-Integrated Fitting Framework
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Common Development and Distribution License 1.0 (CDDL-1.0)
+Classifier: Operating System :: OS Independent
