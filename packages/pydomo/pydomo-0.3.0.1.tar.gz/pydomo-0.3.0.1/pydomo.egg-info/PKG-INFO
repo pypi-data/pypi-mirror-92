@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pydomo
+Version: 0.3.0.1
+Summary: The official Python3 Domo API SDK - Domo, Inc.
+Home-page: https://github.com/domoinc/domo-python-sdk
+Author: Jeremy Morris
+Author-email: jeremy.morris@domo.com
+License: MIT
+Download-URL: https://github.com/domoinc/domo-python-sdk/tarball/0.2.2.1
+Description: See https://github.com/domoinc/domo-python-sdk for more details.
+Keywords: domo api sdk
+Platform: UNKNOWN
+Requires-Python: >=3
