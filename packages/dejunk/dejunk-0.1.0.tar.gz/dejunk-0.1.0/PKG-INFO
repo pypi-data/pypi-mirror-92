@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: dejunk
+Version: 0.1.0
+Summary: block any junk and improve your browsing experience
+Home-page: https://github.com/nidhaloff/dejunk
+Author: Nidhal Baccouri
+Author-email: nidhalbacc@gmail.com
+License: GNU General Public License v3
+Description: ======
+        dejunk
+        ======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/dejunk.svg
+                :target: https://pypi.python.org/pypi/dejunk
+        
+        .. image:: https://img.shields.io/travis/nidhaloff/dejunk.svg
+                :target: https://travis-ci.com/nidhaloff/dejunk
+        
+        .. image:: https://readthedocs.org/projects/dejunk/badge/?version=latest
+                :target: https://dejunk.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        block any junk and improve your browsing experience
+        
+        
+        * Free software: GNU General Public License v3
+        * Documentation: https://dejunk.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2021-01-25)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: dejunk
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
