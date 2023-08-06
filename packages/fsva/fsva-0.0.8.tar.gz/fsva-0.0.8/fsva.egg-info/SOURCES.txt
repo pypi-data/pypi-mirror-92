@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fsva/__init__.py
+fsva/main.py
+fsva/verification_target.py
+fsva.egg-info/PKG-INFO
+fsva.egg-info/SOURCES.txt
+fsva.egg-info/dependency_links.txt
+fsva.egg-info/entry_points.txt
+fsva.egg-info/requires.txt
+fsva.egg-info/top_level.txt
