@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: natera-data-uploader
+Version: 1.0.0
+Summary: Natera Uploader
+Home-page: UNKNOWN
+Author: Nikita Berezin
+Author-email: nberezin@natera.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: dxpy (>=0.288.0)
+
+Natera Constellation Sequencing Uploader
+
+
