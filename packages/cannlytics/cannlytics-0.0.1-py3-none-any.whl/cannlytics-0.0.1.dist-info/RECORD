@@ -1,0 +1,10 @@
+cannlytics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cannlytics/find_labs.py,sha256=H5caXEhFhZ0HcnjlkTjPmr27OeS-mlDZCfJfVfzsolM,6240
+cannlytics/logistics.py,sha256=36qOuyreojxAOFzS9dMmJuY9Hx0A_TQFKSBqRCTJv7Y,2848
+cannlytics/scraper.py,sha256=2_Lbk4838WcqWgwsYybqfvE2Lc8SDvr3a7x8-rlCMk8,5279
+cannlytics/upload_labs.py,sha256=ROcyQej4AINtpm6Z6IqYh3dvc840CTF9HBrLzTMWbdg,1680
+cannlytics-0.0.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+cannlytics-0.0.1.dist-info/METADATA,sha256=dfp5OEeLW1_UxGpBKgoB4DbRELGhBo3Ksm4GbHTNxqw,2070
+cannlytics-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cannlytics-0.0.1.dist-info/top_level.txt,sha256=7wLNbpDVHd5TMgH7m8zVOnHJHIjLB6xIjcLh9nMC3RU,11
+cannlytics-0.0.1.dist-info/RECORD,,
