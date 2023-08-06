@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+hexastore/__init__.py
+hexastore/hexastore.py
+hexastore/version.py
+hexastore.egg-info/PKG-INFO
+hexastore.egg-info/SOURCES.txt
+hexastore.egg-info/dependency_links.txt
+hexastore.egg-info/top_level.txt
