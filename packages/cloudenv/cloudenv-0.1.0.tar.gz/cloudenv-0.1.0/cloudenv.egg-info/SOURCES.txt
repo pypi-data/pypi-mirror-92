@@ -1,0 +1,6 @@
+README.md
+setup.py
+cloudenv.egg-info/PKG-INFO
+cloudenv.egg-info/SOURCES.txt
+cloudenv.egg-info/dependency_links.txt
+cloudenv.egg-info/top_level.txt
