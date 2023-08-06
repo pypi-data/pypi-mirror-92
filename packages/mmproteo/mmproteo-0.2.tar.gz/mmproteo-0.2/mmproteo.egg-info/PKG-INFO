@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: mmproteo
+Version: 0.2
+Summary: Mirko meets Proteomics: A PRIDE downloader on steroids for deep learning-based DeNovo Sequencing
+Home-page: https://gitlab.com/dacs-hpi/pride-downloader
+Author: Mirko Krause
+Author-email: krause@codebase.one
+License: GPLv3+
+Description: # MMProteo
+        
+        (Mirko meets Proteomics)
+        
+        
+        ## Installation
+        
+        ## Usage
+        
+        
+        ## Tests
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
