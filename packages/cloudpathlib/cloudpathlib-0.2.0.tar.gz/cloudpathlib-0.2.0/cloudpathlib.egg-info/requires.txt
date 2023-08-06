@@ -1,0 +1,17 @@
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[all]
+boto3
+google-cloud-storage
+azure-storage-blob>=12
+
+[azure]
+azure-storage-blob>=12
+
+[gs]
+google-cloud-storage
+
+[s3]
+boto3
