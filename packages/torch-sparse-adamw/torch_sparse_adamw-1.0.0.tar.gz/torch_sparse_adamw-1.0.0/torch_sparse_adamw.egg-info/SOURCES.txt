@@ -1,0 +1,10 @@
+README.md
+setup.py
+test/test_optim.py
+torch_sparse_adamw/__init__.py
+torch_sparse_adamw/sparse_adamw.py
+torch_sparse_adamw.egg-info/PKG-INFO
+torch_sparse_adamw.egg-info/SOURCES.txt
+torch_sparse_adamw.egg-info/dependency_links.txt
+torch_sparse_adamw.egg-info/requires.txt
+torch_sparse_adamw.egg-info/top_level.txt
