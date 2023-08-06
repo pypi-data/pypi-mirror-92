@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+src/__init__.py
+src/loss_functions/__init__.py
+src/loss_functions/loss.py
+src/models/__init__.py
+src/models/transformer.py
+transformer_implementations.egg-info/PKG-INFO
+transformer_implementations.egg-info/SOURCES.txt
+transformer_implementations.egg-info/dependency_links.txt
+transformer_implementations.egg-info/top_level.txt
