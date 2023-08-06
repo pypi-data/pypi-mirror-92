@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+redit/__init__.py
+redit/main.py
+redit.egg-info/PKG-INFO
+redit.egg-info/SOURCES.txt
+redit.egg-info/dependency_links.txt
+redit.egg-info/entry_points.txt
+redit.egg-info/top_level.txt

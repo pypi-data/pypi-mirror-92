@@ -1,0 +1,3 @@
+[console_scripts]
+redit = redit.main:run
+
