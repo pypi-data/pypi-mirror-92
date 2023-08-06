@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "xdr-parser"
+version = "0.0.1.dev"
+description = "A XDR parser."
+authors = ["overcat <4catcode@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+homepage = "https://github.com/overcat/xdr-parser"
+repository = "https://github.com/overcat/xdr-parser"
+documentation = "https://github.com/overcat/xdr-parser"
+keywords = ["xdr-parser", "parser", "ast", "xdr", "rfc-4506", "rfc-1014", "rfc-1832"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.5"
+lark-parser = "^0.11.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
