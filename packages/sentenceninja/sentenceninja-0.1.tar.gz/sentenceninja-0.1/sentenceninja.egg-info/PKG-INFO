@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sentenceninja
+Version: 0.1
+Summary: To split paragraphs into individual sentences
+Home-page: https://github.com/iamarkaj/sentenceninja
+Author: Arkajyoti Basak
+Author-email: arkajbasak1211@gmail.com
+License: MIT
+Description: # split-into-sentences
+        
+        ## Installation:
+        
+        ```
+        pip install sentenceninja
+        ```
+        
+        ## Usage:
+        
+        ```
+        from sentenceninja import split
+        input = "This is a very simple sentence. Thank you."
+        output = split(input)
+        print(output)
+        ```
+        
+        ## Output
+        
+        ["This is a very simple sentence.",
+         "Thank you."
+        ]
+        
+        #### Reference
+        
+        https://stackoverflow.com/a/31505798
+        
+        
+Keywords: split sentences
+Platform: UNKNOWN
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

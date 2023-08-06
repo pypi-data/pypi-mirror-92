@@ -1,0 +1,7 @@
+README.md
+setup.py
+sentenceninja/__init__.py
+sentenceninja.egg-info/PKG-INFO
+sentenceninja.egg-info/SOURCES.txt
+sentenceninja.egg-info/dependency_links.txt
+sentenceninja.egg-info/top_level.txt
