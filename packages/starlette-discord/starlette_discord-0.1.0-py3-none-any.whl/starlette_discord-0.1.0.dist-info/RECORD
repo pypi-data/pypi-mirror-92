@@ -1,0 +1,8 @@
+starlette_discord/__init__.py,sha256=F8fl3r4OwMKP8OCB7i1s8_1OhoFC361bi81lJSVNthI,397
+starlette_discord/client.py,sha256=r75eokhB_a42b19PdPoHL1mMJfufceosGeQUfOuymKA,5774
+starlette_discord/oauth.py,sha256=ZcMCfpPpH26tZQtLWKP0hLop0efWOhi3PJ9ih4Ibqt0,23197
+starlette_discord-0.1.0.dist-info/LICENSE,sha256=_z81MCeCqdJP3A7tqsYq44pRvGPUttpcLTJKWC-Hkvw,1086
+starlette_discord-0.1.0.dist-info/METADATA,sha256=FmKMwXPT_xjZXZASO__0Cy99ZMkJzIp6jkvU7QSUJ6k,2262
+starlette_discord-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+starlette_discord-0.1.0.dist-info/top_level.txt,sha256=iOUtz7PRjZj1s4weHR4QMqL6IBTtzIQrLLtnSIm4ejU,18
+starlette_discord-0.1.0.dist-info/RECORD,,
