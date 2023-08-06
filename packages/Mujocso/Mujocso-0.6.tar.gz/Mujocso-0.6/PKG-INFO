@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: Mujocso
+Version: 0.6
+Summary: A library for return and display excellent and responsive static pages in Django
+Home-page: https://github.com/ThisIsMatin/Mujocso
+Author: Matin Najafi
+Author-email: i.redbern@gmail.com
+License: MIT
+Download-URL: https://github.com/ThisIsMatin/Mujocso/archive/0.6.tar.gz
+Description: UNKNOWN
+Keywords: Django,Page,Render,Views,Static,Static Page,Django Page
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
