@@ -1,0 +1,11 @@
+pimsclient/__init__.py,sha256=AeVLt7KOetE5Z__sk8B88c2B3U5hYR0StwlU-S5DFf0,167
+pimsclient/client.py,sha256=Ush23RaoAxLEykk5YqXuKncFU9t24tBU1sKg7h-9LZE,16848
+pimsclient/exceptions.py,sha256=qVH_vcD0zkC5slnFU2ZuGUR1c9-RJZk4kKPdT0mWc7U,119
+pimsclient/server.py,sha256=hSSw3ujJIj-Y1e47gw61I8mLJ4AzgHYkyvxQgAEIvxw,4988
+pimsclient/swagger.py,sha256=juD-1u-KQE9cA14x_7wFHJg5oHRgTBRANXKwXaJhE64,16657
+pimsclient-0.5.1.dist-info/AUTHORS.rst,sha256=yVG65TKGcacSQI7PlY0Ecu9KUwStQs-vjU_7KbYxh-E,172
+pimsclient-0.5.1.dist-info/LICENSE,sha256=-qfb-Ae1H_Viabc3r_J5_4n1M7YvZX7BoFShKuekxg4,1074
+pimsclient-0.5.1.dist-info/METADATA,sha256=EF-CQ_vozMWq92uPRd0oa-ann3TWfqjfQwihidX0QJA,2551
+pimsclient-0.5.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pimsclient-0.5.1.dist-info/top_level.txt,sha256=myidS1UtKrYXl27CdkWO7oVzYwzlG1ZTA3AT1TSbbqs,11
+pimsclient-0.5.1.dist-info/RECORD,,
