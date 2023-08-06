@@ -1,0 +1,5 @@
+text2vec
+pycorrector
+numpy
+jieba
+scikit-learn
