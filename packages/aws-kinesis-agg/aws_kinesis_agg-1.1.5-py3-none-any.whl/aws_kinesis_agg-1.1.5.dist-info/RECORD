@@ -1,0 +1,9 @@
+aws_kinesis_agg/__init__.py,sha256=ldyIJT8cbsaH4japBRNb7nhxO5Ghh6QRHsBLyZukn1w,1035
+aws_kinesis_agg/aggregator.py,sha256=1oQvCQnx8aBIQlsuRX1Qv42RW6PFigunx6JvoBwV-Eo,18599
+aws_kinesis_agg/deaggregator.py,sha256=0eRZuPqufXPAllmJFvCISMN0HKDHux1ee4uUBQr0Pto,10616
+aws_kinesis_agg/kpl_pb2.py,sha256=-7_xdX8ipcGvHRE0a3CYRUWt96CaWCDqnG7DAFW9diM,6906
+aws_kinesis_agg-1.1.5.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_kinesis_agg-1.1.5.dist-info/METADATA,sha256=wijzqG2qCDZ_4bWr4_bYQFTJ0TXsvjaJ3PCp3rvzYGo,15182
+aws_kinesis_agg-1.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_kinesis_agg-1.1.5.dist-info/top_level.txt,sha256=3HyVxnGNRBpT7iVa-2J8VGm0rvs1BThke1BSRCeMFM0,16
+aws_kinesis_agg-1.1.5.dist-info/RECORD,,
