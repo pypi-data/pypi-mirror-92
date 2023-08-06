@@ -1,0 +1,9 @@
+README.md
+setup.py
+madeira_utils/__init__.py
+madeira_utils/utils.py
+madeira_utils.egg-info/PKG-INFO
+madeira_utils.egg-info/SOURCES.txt
+madeira_utils.egg-info/dependency_links.txt
+madeira_utils.egg-info/requires.txt
+madeira_utils.egg-info/top_level.txt
