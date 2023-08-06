@@ -1,0 +1,14 @@
+hammer_sh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hammer_sh/doc2vec.py,sha256=6tMB69NbDy52BWosMOaPu4t0IaVE4Ych0tmugQjHjqI,1669
+hammer_sh/evaluator.py,sha256=W8JmPO1W_po7yxHM8ziuUA3fIPR44MwMTwAP2pt9jEk,1808
+hammer_sh/model_trainer.py,sha256=4Q3ENBRGj2qq-1V8cCv4YtAhuDSwNBspG-DZCA7ewYI,4762
+hammer_sh/pdf_extractor.py,sha256=JoD4hVzj6DL6XGfJqk6E4_sPxxZWtdXDlhm0nKagd88,4229
+hammer_sh/preprocessor.py,sha256=wr_D-Bb00lVROWVHfv9Lkmff93qjRCUiG0GQZhBHTBc,1656
+hammer_sh/web_scraper.py,sha256=nFLBtjy5eyNbBbUlUk8OrXSJgJ-P0vvfJuji1bdb8pQ,2711
+hammer_sh/sample_data/abstracts.pickle,sha256=P7zKHvSY9_j8CWkGAh3DaCnGTTEh6e6GS8r5dTq-L1M,234004
+hammer_sh/sample_data/articles.pickle,sha256=jmJc85gn3xjeud4kbRoxArxmGc1REf4iKKPVdpT8gNs,4864775
+hammer_sh-0.0.18.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+hammer_sh-0.0.18.dist-info/METADATA,sha256=pHqXArN9tkP8ofqxD3lA9EjY-IxF9wWSfyGxYfFM-zI,1343
+hammer_sh-0.0.18.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hammer_sh-0.0.18.dist-info/top_level.txt,sha256=_EjClLuDmTyRanol6bPE-Oy0Uzxu65M1p55xJt9Ogaw,10
+hammer_sh-0.0.18.dist-info/RECORD,,

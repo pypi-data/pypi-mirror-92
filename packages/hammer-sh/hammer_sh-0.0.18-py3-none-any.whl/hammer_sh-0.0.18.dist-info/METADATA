@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: hammer-sh
+Version: 0.0.18
+Summary: A package containing useful methods for my masterthesis
+Home-page: https://github.com/hammerse65450/hammer_sh
+Author: Sebastian Hammer
+Author-email: hammerse65450@th-nuernberg.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: transformers
+Requires-Dist: tensorflow
+Requires-Dist: sklearn
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: PyMuPDF
+Requires-Dist: pyocr
+Requires-Dist: pdf2image
+Requires-Dist: pdfminer.six
+Requires-Dist: tqdm
+Requires-Dist: gensim
+
+# hammer_sh Python Package
+
+[![Version](https://img.shields.io/pypi/v/hammer_sh.svg)](https://pypi.python.org/pypi/hammer_sh) 
+[![Support Python versions](https://img.shields.io/pypi/pyversions/hammer_sh.svg)](https://pypi.python.org/pypi/hammer_sh)
+
+This is a Python package I wrote for my master thesis. It contains useful functions for pdf extraction, data preparation, training with transformers and for evaluation.
+
+Installing
+----------
+
+Install and update using `pip`:
+
+    $ pip install hammer_sh
+
+
+
