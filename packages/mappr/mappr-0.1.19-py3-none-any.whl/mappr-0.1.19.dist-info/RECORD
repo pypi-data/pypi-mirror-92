@@ -1,0 +1,13 @@
+AUTHORS,sha256=AuR0kjxuyijTfw0hI-s1e5uHdG-SPT0fQEBDfEyuOsY,239
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.rst,sha256=C3jrctlBImnKUHTvz3ahGNWp0TqkoRpVaWq8z1c-fGU,3862
+mappr/__init__.py,sha256=bnUbhh8g5O6h2ve_qsGyXR3DtSw_jLvzngJnbE9aYSA,543
+mappr/conversion.py,sha256=wk6btM-TnnhPMhZZK3PUKJFOZd8wI-_k0KjcZmkNv7o,2895
+mappr/exc.py,sha256=rpr4qlHxkzgXyovTPjCGrn8n6N2ZDvcHKlJl0tdVjk0,611
+mappr/iterators.py,sha256=X2CoQi4QruKnuG2iVQTzJ4KHDxFtSdv66vyV1VxYRcU,1529
+mappr/mappers.py,sha256=VgjGSsY6mEQzFcCyaMnAv9VHk01PjTfS2WBwX40VDw4,3404
+mappr/types.py,sha256=sUo1hVLh59N3b0ACTnyMoZu1ajBiHJ3xZOkqq8oXgmA,763
+mappr-0.1.19.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+mappr-0.1.19.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mappr-0.1.19.dist-info/METADATA,sha256=Q-_N8_5cg_o9qgiGlkulPxvVmVKLaqpM1RtGGQfMLBs,566
+mappr-0.1.19.dist-info/RECORD,,
