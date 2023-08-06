@@ -1,0 +1,10 @@
+slapp/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+slapp/commands.py,sha256=UW3jeHQTYRR7DG6yCXSVVE-cUBS6EZJCVudHpDhXk2U,1436
+slapp/config.py,sha256=d-NZyQEbxNVjZbdBBd06nqvx1klpQhiprK_PV63TKFk,852
+slapp/main.py,sha256=w4kJEYTbLhq-W-Hyyh8AT_JOPd-8QE7nm8L9aA6F2MI,114
+slapp/utils.py,sha256=QRakNRBxKeKbfRwkNt0kCzam5gptbOkRhA1OxfmiUxA,1974
+slapp-0.2.2.dist-info/entry_points.txt,sha256=0obOq8m02o0k_CUYJ0LQiIh2HnHx34MgLPnLG6bZlS0,40
+slapp-0.2.2.dist-info/LICENSE,sha256=OJhRil2MJFzP7tjn3EgLQhWwx3bFVnO71m_rKEu5_sI,1070
+slapp-0.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+slapp-0.2.2.dist-info/METADATA,sha256=0cQJmuI0MXb_fpwG7OBy_PGTGAwhrM7wJYkmCXkkpiw,727
+slapp-0.2.2.dist-info/RECORD,,
