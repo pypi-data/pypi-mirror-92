@@ -1,0 +1,9 @@
+dpytools/__init__.py,sha256=bnetkl2Vf7ZVhO3cNTm1Um1No79Z_szo8VrUU017dPc,181
+dpytools/checks.py,sha256=0gEkZlwILdjTFmqDSr_fsPa7LSTvApVcGRt9uhvSg2A,660
+dpytools/embeds.py,sha256=scRnUPNJ689nXozuiOOM6l3CAgguLHAsfBZQpKbQucM,1708
+dpytools/menus.py,sha256=jB4gPJ_uVf94I2qDmCl1khGQ1OOQeKyA-rbQ-bRtJLk,5434
+dpytools/owner_cog.py,sha256=FDXZRcOkcplTnYdLz6c6SmlLWGFpz-1lkE37J-riG4I,2902
+dpytools/parsers.py,sha256=C-_sw57O8FaONyapivy1hPzwc22hSEK7KnmafBUfI_s,1360
+dpytools-0.0.7a3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dpytools-0.0.7a3.dist-info/METADATA,sha256=q8tuZBEDZnO-IZEUpOo8YLt5lPTgTdyc0o_BFq8_zyQ,1408
+dpytools-0.0.7a3.dist-info/RECORD,,
