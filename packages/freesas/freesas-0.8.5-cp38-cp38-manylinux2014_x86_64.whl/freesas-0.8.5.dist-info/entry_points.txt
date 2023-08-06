@@ -1,0 +1,10 @@
+[console_scripts]
+auto_gpa.py = freesas.app.auto_gpa:main
+auto_guinier.py = freesas.app.auto_guinier:main
+autorg.py = freesas.app.autorg:main
+bift.py = freesas.app.bift:main
+cormap.py = freesas.app.cormap:main
+extract_ascii = freesas.app.extract_ascii:main
+freesas = freesas.app.plot_sas:main
+supycomb.py = freesas.app.supycomb:main
+
