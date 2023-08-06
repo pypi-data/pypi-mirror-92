@@ -1,0 +1,10 @@
+README.md
+setup.py
+netdot/Client.py
+netdot/Util.py
+netdot/__init__.py
+netdot.egg-info/PKG-INFO
+netdot.egg-info/SOURCES.txt
+netdot.egg-info/dependency_links.txt
+netdot.egg-info/requires.txt
+netdot.egg-info/top_level.txt
