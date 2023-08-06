@@ -1,0 +1,15 @@
+dnspx/__init__.py,sha256=8TiM05cAsLe6gkN3exK7zbp9X7Hf-9d56z-uw5gY1Ok,175
+dnspx/__main__.py,sha256=gUvMznVCG_L-qQxcKbIGa70mKA4Z92h9jqU3TGREI40,366
+dnspx/cli.py,sha256=QXL-0oxMCjsrbKj3ZWDwNr1_5xYirakzw9YA0k-ERh0,3211
+dnspx/config.py,sha256=SJQVyU2jG7lAN582IcSoZy2u6vd_S96k9ct_XZvcd2g,8186
+dnspx/core.py,sha256=IBdXxAzA39fbmS7wCeboKYQOh2pVE8958WkXdwCSWC8,9077
+dnspx/error.py,sha256=oy9D4oZ5EzvUoDfkZLmmE9wH4drmWShKmj-6D8fTgrw,746
+dnspx/log.py,sha256=SgmBKmArIlM9nu4cDsNHZVMbSPj145N4CrxC2fAxDWE,12036
+dnspx/resolve.py,sha256=FksRQqKvcGKxWf_xDNgN56MSg4gx44IYdILDJUujd9E,22509
+dnspx/utils.py,sha256=kFD23It_IQ5POGpknJitJdr_TSNS3qOWP64kdS7T8Fk,3683
+dnspx/version.py,sha256=76ZtO-Qo5tMyvZoreqIpY6ofZziN-_zYXMgkRrOMrwU,498
+dnspx-0.1.9.dist-info/METADATA,sha256=4VW9-2dXO3rGw_b5LNKTxWa3DE4C_Kw2psBipsKUhRY,1237
+dnspx-0.1.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dnspx-0.1.9.dist-info/entry_points.txt,sha256=uwKbXu_--8mPzbuOUbrxXQg_jze3_VdGvuQ0uFrHL9Q,42
+dnspx-0.1.9.dist-info/top_level.txt,sha256=P-j0zQa_cqyR5QOEub1iWpo1D5DYN25WACvXmbyF228,6
+dnspx-0.1.9.dist-info/RECORD,,
