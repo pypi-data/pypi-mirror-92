@@ -1,0 +1,3 @@
+[console_scripts]
+pyhdbsql = pyhdbsql.console:main
+
