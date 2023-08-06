@@ -1,0 +1,8 @@
+large_image_source_tiff/__init__.py,sha256=tl-bMZ5jf7rDhRmqZvD1zmhWNpaohv2XvDFpjymZErc,21753
+large_image_source_tiff/girder_source.py,sha256=7q36BFxUl8q37DodhAS0Ahe0a6Xei0NnjiqL21LpBzs,1055
+large_image_source_tiff/tiff_reader.py,sha256=sCctoQyrXNz6qVB6uz1YNfKKZ2EnZs35SxQdbcMFhRM,37803
+large_image_source_tiff-1.3.3.dev76.dist-info/METADATA,sha256=2Fxy0ArHSSI_GPnGAx174H4qc45hWTlPOB6Ri6o4S7k,906
+large_image_source_tiff-1.3.3.dev76.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+large_image_source_tiff-1.3.3.dev76.dist-info/entry_points.txt,sha256=LWUfYYYVxCFTeDaW91q5SAwImUP04zR07uIOkj0I2iI,167
+large_image_source_tiff-1.3.3.dev76.dist-info/top_level.txt,sha256=QRx_D2oeiOOz_5FlBOAoDPF-E4Q-aFmerUWlaeP14B8,24
+large_image_source_tiff-1.3.3.dev76.dist-info/RECORD,,
