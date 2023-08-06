@@ -1,0 +1,31 @@
+bool:
+  bottom: null
+  grab: null
+  wrap: null
+  ifne: null
+  ignorecase: null
+  nooverlap: null
+
+input:
+  version: null
+  lines: null
+  monitor: null
+  height: null
+  prompt: null
+  prefix: null
+  index: null
+  scrollbar: null
+  font: null
+  title_background: null
+  title_foreground: null
+  normal_background: null
+  normal_foreground: null
+  filter_background: null
+  filter_foreground: null
+  high_background: null
+  high_foreground: null
+  scroll_background: null
+  scroll_foreground: null
+  selected_background: null
+  selected_foreground: null
+  windowid: null
