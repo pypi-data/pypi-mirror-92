@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lazy-spider
+Version: 0.1.9
+Summary: A lazy spider tools which intergrate lxml, requests, peewee......
+License: MIT
+Author: notnotype
+Author-email: 2056369669@qq.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=7.2.0,<7.3.0)
+Requires-Dist: baidu-aip (>=2.2.18.0,<2.3.0.0)
+Requires-Dist: fake-useragent (>=0.1.11,<0.2.0)
+Requires-Dist: fonttools (>=4.16.1,<4.17.0)
+Requires-Dist: html2text (>=2020.1.16,<2020.2.0)
+Requires-Dist: lxml (>=4.6.2,<4.7.0)
+Requires-Dist: peewee (>=3.14.0,<3.15.0)
+Requires-Dist: pytest (>=6.2.0,<6.3.0)
+Requires-Dist: requests (>=2.25.1,<2.26.0)
