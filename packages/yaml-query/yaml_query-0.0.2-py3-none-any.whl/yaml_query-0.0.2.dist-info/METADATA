@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: yaml-query
+Version: 0.0.2
+Summary: yaml query library
+Home-page: https://github.com/kubasobon/yaml-query
+Author: kubasobon
+Author-email: wtty.fool@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# yaml-query
+
+## Usage
+```
+~ cat configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  labels:
+    app: chirper
+  name: chirper
+data:
+  config.yaml: |
+    - a
+    - b
+    - c
+  service-config.yaml: |
+    service_on: true
+
+~ yaml-query 'metadata labels app' configmap.yaml
+chirper
+...
+
+~ cat configmap.yaml | yaml-query 'data service-config.yaml'
+service_on: true
+...
+```
+
+
