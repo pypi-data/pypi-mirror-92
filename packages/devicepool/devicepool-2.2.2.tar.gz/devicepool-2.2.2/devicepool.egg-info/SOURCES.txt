@@ -1,0 +1,7 @@
+README.md
+devicepool.py
+setup.py
+devicepool.egg-info/PKG-INFO
+devicepool.egg-info/SOURCES.txt
+devicepool.egg-info/dependency_links.txt
+devicepool.egg-info/top_level.txt
