@@ -1,0 +1,11 @@
+README.md
+setup.py
+microclient/__init__.py
+microclient/bases.py
+microclient/response.py
+microclient/utils.py
+microclient.egg-info/PKG-INFO
+microclient.egg-info/SOURCES.txt
+microclient.egg-info/dependency_links.txt
+microclient.egg-info/requires.txt
+microclient.egg-info/top_level.txt
