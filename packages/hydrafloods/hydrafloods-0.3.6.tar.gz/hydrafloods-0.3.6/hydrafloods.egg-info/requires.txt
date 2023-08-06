@@ -1,0 +1,5 @@
+simplecmr
+earthengine-api
+gcsfs
+fire
+pipetools
