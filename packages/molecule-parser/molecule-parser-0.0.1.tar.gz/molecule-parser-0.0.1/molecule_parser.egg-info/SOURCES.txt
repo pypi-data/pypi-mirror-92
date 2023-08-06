@@ -1,0 +1,14 @@
+README.md
+setup.py
+ChemicalFormulaParser/__init__.py
+ChemicalFormulaParser/atom.py
+ChemicalFormulaParser/molecule.py
+ChemicalFormulaParser/molecule_parser.py
+molecule_parser.egg-info/PKG-INFO
+molecule_parser.egg-info/SOURCES.txt
+molecule_parser.egg-info/dependency_links.txt
+molecule_parser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_atom.py
+tests/test_molecule.py
+tests/test_molecule_parser.py
