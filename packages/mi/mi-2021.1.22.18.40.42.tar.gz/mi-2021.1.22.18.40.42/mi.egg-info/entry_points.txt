@@ -1,0 +1,4 @@
+[console_scripts]
+mi-dsl = mi.cli:dsl_cli
+mi-run = mi.cli:cli
+
