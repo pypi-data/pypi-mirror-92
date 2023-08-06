@@ -1,0 +1,4 @@
+ciecplib
+pytest
+pytest-cov
+setuptools

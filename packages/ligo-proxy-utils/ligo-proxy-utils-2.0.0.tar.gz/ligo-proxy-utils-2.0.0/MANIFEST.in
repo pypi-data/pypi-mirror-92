@@ -1,0 +1,4 @@
+include COPYING README.md
+include requirements.txt
+include ligo-proxy-utils.spec
+recursive-include debian *
