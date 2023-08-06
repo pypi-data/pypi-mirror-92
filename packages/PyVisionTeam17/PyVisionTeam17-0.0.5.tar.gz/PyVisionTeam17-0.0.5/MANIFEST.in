@@ -1,0 +1,5 @@
+include *.md
+include *.txt
+include gitignore
+recursive-include __pycache__ *.pyc
+recursive-include src *.py
