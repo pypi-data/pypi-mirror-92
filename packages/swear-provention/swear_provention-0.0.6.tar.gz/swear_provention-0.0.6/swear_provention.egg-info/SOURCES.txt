@@ -1,0 +1,8 @@
+README.md
+setup.py
+swear_provention/__init__.py
+swear_provention/swear_provention.py
+swear_provention.egg-info/PKG-INFO
+swear_provention.egg-info/SOURCES.txt
+swear_provention.egg-info/dependency_links.txt
+swear_provention.egg-info/top_level.txt
