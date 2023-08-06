@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ros-type-tokens
+Version: 0.1.0
+Summary: Type tokens for ROS types
+Home-page: https://github.com/git-afsantos/ros-type-tokens
+Author: André Santos
+Author-email: andre.f.santos@inesctec.pt
+License: MIT
+Description: # ROS Type Tokens
+        
+        This is a small Python library that provides *type tokens* (objects that represent a type) for [Robot Operating System](https://www.ros.org/) built-in types and message types.
+        
+        This library was initially developed as a utility of the [HAROS framework](https://github.com/git-afsantos/haros/), and is now distributed on its own.
+        
+        ## What Is In The Box
+        
+        This repository contains a Python package, and the respective source code, to create (manually or automatically) type tokens for the various ROS data types.
+        Type tokens contain attributes not only of the type itself but also of any related subtypes.
+        For example:
+        
+        ```python
+        from rostypes import HEADER
+        
+        HEADER.type_name    # 'std_msgs/Header'
+        HEADER.is_builtin   # True
+        HEADER.is_primitive # False
+        HEADER.is_message   # True
+        HEADER.constants    # {}
+        HEADER.fields       # {'seq': UINT32, 'stamp': TIME, 'frame_id': STRING}
+        
+        assert HEADER.fields['seq'].is_number
+        assert HEADER.fields['stamp'].is_time
+        assert HEADER.fields['frame_id'].is_string
+        ```
+        
+        ## Installing
+        
+        To install this package, make sure that you have Python 2.7 or greater.
+        Simply run the command:
+        
+        ```
+        pip install ros-type-tokens
+        ```
+        
+        ## Bugs, Questions and Support
+        
+        Please use the [issue tracker](https://github.com/git-afsantos/ros-type-tokens/issues).
+        
+        ## Contributing
+        
+        See [CONTRIBUTING](./CONTRIBUTING.md).
+        
+        ## Acknowledgment
+        
+        This work is financed by the ERDF – European Regional Development Fund through the Operational Programme for Competitiveness and Internationalisation - COMPETE 2020 Programme and by National Funds through the Portuguese funding agency, FCT - Fundação para a Ciência e a Tecnologia within project PTDC/CCI-INF/29583/2017 (POCI-01-0145-FEDER-029583).
+        
+Keywords: ros types typing type-tokens
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
