@@ -1,0 +1,14 @@
+jisho_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jisho_scraper/anki_connect_client.py,sha256=i_btv-8de9Q10397lfs0GRXXLdysSrYhr5M_c35A0rk,905
+jisho_scraper/anki_exporter.py,sha256=s85QWKeeq7rtuTiUp2ez6NC-w9TIsObmUBzxg4BOIRk,946
+jisho_scraper/csv_exporter.py,sha256=_eI0tKW6hLIPv8GOeICQ6-QPPLhOWoE1lof0HmZTJSY,683
+jisho_scraper/jisho_client.py,sha256=rq4sp1DM29tQtQpwioN30r4iebglU9foYomamR407bk,1477
+jisho_scraper/jisho_data.py,sha256=o5NNDZvAVpQEUUzYJLOVVzm3HbBLQ-d_lQ90JzuTmVI,783
+jisho_scraper/main.py,sha256=hdzEkndEvBBs6ItWzkM9RQwL7m4FaAQIQSkGlOQUYJg,1306
+jisho_scraper/output_prepare.py,sha256=U6p8xwhNJDqvc08lVQtA1CTyth_apvyyyhYHhWEcIb0,1123
+jisho_scraper-1.0.0.dist-info/LICENSE,sha256=8d3Rj0CQ818pInV7WOZY4pxmVNrZA5OEsBS_bACj8SY,1075
+jisho_scraper-1.0.0.dist-info/METADATA,sha256=J3e2Pd0NAXhRxvmSipkAV6t58KWP1E7DBVFjz4FdpCo,1608
+jisho_scraper-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jisho_scraper-1.0.0.dist-info/entry_points.txt,sha256=zmyxWEql846t7ZBZuf-tBQ2GUdpOvo5177Soq_N5R9s,59
+jisho_scraper-1.0.0.dist-info/top_level.txt,sha256=Y0Ioz03MiP5zvqFkT6SJRu4QXN9jAjuOSW936sGuO_M,14
+jisho_scraper-1.0.0.dist-info/RECORD,,

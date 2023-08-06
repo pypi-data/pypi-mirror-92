@@ -1,0 +1,3 @@
+[console_scripts]
+jisho-scraper = jisho_scraper.main:main
+
