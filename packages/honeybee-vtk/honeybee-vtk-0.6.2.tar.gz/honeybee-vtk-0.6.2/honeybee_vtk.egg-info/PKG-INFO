@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: honeybee-vtk
+Version: 0.6.2
+Summary: Honeybee extension for translating HBJSON to VTK
+Home-page: https://github.com/ladybug-tools/honeybee-vtk
+Author: Ladybug Tools
+Author-email: info@ladybug.tools
+License: AGPL-3.0
+Description: # honeybee-vtk
+        🐝 VTK - Honeybee extension for translating HBJSON to VTK files.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
