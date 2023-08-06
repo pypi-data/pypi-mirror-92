@@ -1,0 +1,14 @@
+pycreds/__init__.py,sha256=ECdVSFCRu6WtSZLK7430C3RGSlgzWtEA9Q48AKmYaUc,287
+pycreds/_pycreds.cp39-win_amd64.pyd,sha256=OA7Ay0XxLtZR8SBniBpmvrAi5RlWohdk0WtvWQs1l0M,266752
+pycreds/_pycreds.pyi,sha256=D4uO9KgW2mxP91t-rmxV9yE93aEqtRz-DsDr5UolZGA,357
+pycreds/cli.py,sha256=ws1tk2Oe42lP-vvD-RGjHL-B_25D14bzVMRpZAje9qw,1676
+pycreds/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycreds/pycreds_darwin.cpp,sha256=kPsyctO6BL_0R0stqmE6upKSmw-1jQFuVSbFaZ0Ukvo,6317
+pycreds/pycreds_posix.cpp,sha256=TFpQs5suu52wuOXLQLwPlDdFJOq52BFVj-ZV5v1vjIc,4530
+pycreds/pycreds_win.cpp,sha256=sA9wHzzJRaLUSI1OMdb4Sc0rMkWj3doJm39pCn5AuWQ,5287
+pycreds-0.1.dist-info/LICENSE.md,sha256=OlyaTH5NpJyeWi7yZAqS6IVZVJMsjkk5t2DZsaia-aw,1549
+pycreds-0.1.dist-info/METADATA,sha256=Fj1mG7JmBDzRwSdKDNi8L1Yl4CT7A6xICloGf7pHdus,3732
+pycreds-0.1.dist-info/WHEEL,sha256=jr7ubY0Lkz_yXH9FfFe9PTtLhGOsf62dZkNvTYrJINE,100
+pycreds-0.1.dist-info/entry_points.txt,sha256=EtZOQhdycYo5cfhRmVfRlBCGTLs5kCbrg5kHPRCTPmY,46
+pycreds-0.1.dist-info/top_level.txt,sha256=tRarGLPfqH1oRmAEaTIq1gj1SeKlf1zCladdiTNSnA8,8
+pycreds-0.1.dist-info/RECORD,,
