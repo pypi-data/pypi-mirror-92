@@ -1,0 +1,15 @@
+Linear.py,sha256=C2xDGEQuz9crd9I4QTjlNTyBBc_Lm-MuU7Op3GCp5Fo,2663
+abstract_classes.py,sha256=KObCYIsIzUiT_HDfRGxW7ppuJKmjtx2yo89lnTkf6CQ,2075
+activations.py,sha256=2rnea_fba3yW1etuyKKd-TQWAF0ZeLrbuy-PsO0oSdY,1799
+cnn.py,sha256=e5ZcpdXTIMOpuWygXkxYfMIPt48S769UCRdIOewgS30,9528
+dataset.py,sha256=hH-Qa7zr05a8lTBwj-EAsUMXptGbSRYP4_8ouV1B59A,4706
+evaluation.py,sha256=-5lIyEICVlo1oQpGnlF2xUIUC4RN29YKwHBVLx2HCoI,737
+loss.py,sha256=_Z9RY1cUPgV8Q_LaXIBXn98I4KFhs37KJPrSn_yV8uo,2235
+model.py,sha256=Ju-ySvpzXZS3kAHjIIPB5Mt4rVVr0u_CTbGOhraqR5k,3436
+optim.py,sha256=9DPqo2UleqSLqXziC5TekprQ6LoN9P2ZZWq6WjrDdoM,4152
+utils.py,sha256=6NlrtY2ujKPRH6ATMpVBxUCnJGIJSrYQWLA5gjYjtTY,158
+visualize.py,sha256=MLM0U5_nrXwcbftTV1Zw-Nt1hK9EQZe84ZvQjnMTlVs,2876
+pyray2-0.0.4.dist-info/METADATA,sha256=dW3117qlA8eMOssFlFjTd1chCmO1rtB_tFBUabW0CMY,313
+pyray2-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyray2-0.0.4.dist-info/top_level.txt,sha256=QpYoun4fVReEh2wiiz28QvSfg7kukik8Jf0rlH5VZKE,92
+pyray2-0.0.4.dist-info/RECORD,,
