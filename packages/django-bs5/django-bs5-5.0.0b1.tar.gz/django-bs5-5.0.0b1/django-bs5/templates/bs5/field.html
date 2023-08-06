@@ -1,0 +1,33 @@
+<div class="{{ form_group_class }}">
+    {% if check %}
+        <div class="form-check">
+            {{ field }}
+            {% if show_label %}
+                <label for="{{ field.id_for_label }}" class="form-check-label {% ifequal show_label 'sr-only' %}sr-only{% endifequal %}">{{ field.label }}</label>
+            {% endif %}
+        </div>
+    {% else %}
+        {% if show_label %}
+            <label class="form-label {% ifequal show_label 'sr-only' %}sr-only{% endifequal %}" for="{{ field.id_for_label }}">{{ field.label }}</label>
+        {% endif %}
+        {% if addon_before or addon_after %}
+            <div class="input-group">
+                {% if addon_before %}
+                    <span class="input-group-text">{{ addon_before }}</span>
+                {% endif %}
+                {{ field }}
+                {% if addon_after %}
+                    <span class="input-group-text">{{ addon_after }}</span>
+                {% endif %}
+            </div>
+        {% else %}
+            {{ field }}
+        {% endif %}
+    {% endif %}
+    {% if field.help_text %}
+        <small class="form-text text-muted">{{ field.help_text }}</small>
+    {% endif %}
+    {% for error in field.errors %}
+        <small class="form-text text-danger">{{ error }}</small>
+    {% endfor %}
+</div>
