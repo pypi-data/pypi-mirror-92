@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: autoBoostcamp
+Version: 1.3
+Summary: A moudule for self-authentication
+Home-page: UNKNOWN
+Author: datadriven42
+Author-email: datadriven42@gmail.com
+License: UNKNOWN
+Description: A moudule for self-authentication
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
