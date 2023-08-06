@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pygments-style-ssms
+Version: 0.5
+Summary: A Pygments style inspired by Microsoft SSMS.
+Home-page: https://github.com/matthiaslueken/pygments-style-ssms
+Author: Matthias Lüken
+Author-email: UNKNOWN
+License: BSD
+Keywords: pygments style ssms
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pygments (>=2.2)
+
+UNKNOWN
+
+

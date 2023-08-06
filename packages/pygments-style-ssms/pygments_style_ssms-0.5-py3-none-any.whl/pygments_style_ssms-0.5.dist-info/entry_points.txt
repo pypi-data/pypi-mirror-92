@@ -1,0 +1,2 @@
+[pygments.styles]
+                    ssms=pygments_style_ssms:SSMSStyle
