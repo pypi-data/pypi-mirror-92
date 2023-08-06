@@ -1,0 +1,8 @@
+numpy
+colorama
+astpretty
+mmh3
+requests
+flask
+twine
+python-dateutil
