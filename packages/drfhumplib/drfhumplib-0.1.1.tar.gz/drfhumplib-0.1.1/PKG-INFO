@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: drfhumplib
+Version: 0.1.1
+Summary: a hump to underline tool
+Home-page: https://github.com/pydtools/drfhumplib/
+Author: huoyinghui
+Author-email: yhhuo@yunjinginc.com
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: humplib (==0.1.1)
+Project-URL: Bug Tracker, https://github.com/pydtools/drfhumplib/issues
+Project-URL: Documentation, https://github.com/pydtools/drfhumplib/wiki
+Project-URL: Repository, https://github.com/pydtools/drfhumplib/
+Project-URL: github, https://github.com/pydtools/drfhumplib/
