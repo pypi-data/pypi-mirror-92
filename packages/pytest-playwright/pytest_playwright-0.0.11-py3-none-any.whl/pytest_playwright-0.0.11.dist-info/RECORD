@@ -1,0 +1,9 @@
+pytest_playwright/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_playwright/_repo_version.py,sha256=t5r56_pSi2_G_prXLjPqw1pNF3s5J_avPDjZAobJllo,19
+pytest_playwright/pytest_playwright.py,sha256=IzB3YoD86GPvyGbZ4L8j76sNr3tzO8ZaTnLTSQduXmY,5358
+pytest_playwright-0.0.11.dist-info/LICENSE,sha256=f6sUYbQZcP83bxyTA6Y3B2v6rrcc0S3TocRKr1mhork,11399
+pytest_playwright-0.0.11.dist-info/METADATA,sha256=Jm8KF4l3n-c7XhrvhpJ2Tmq4xbpc0ghtiLbz7GYY0_8,6635
+pytest_playwright-0.0.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+pytest_playwright-0.0.11.dist-info/entry_points.txt,sha256=zeF6aB2EZYVMhBWUeQACoiMjNbPKQzmP0HrbpkSfljE,61
+pytest_playwright-0.0.11.dist-info/top_level.txt,sha256=Ee-v9oJRHKxoJNwP1tBhBk2bQi0okF-gPzCImSO6f28,18
+pytest_playwright-0.0.11.dist-info/RECORD,,
