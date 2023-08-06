@@ -1,0 +1,17 @@
+aiosonic-0.9.3b1.dist-info/LICENSE,sha256=75gX19u8NOfiXOHkEr_cerdtdGdIrZ3SqS84YeVa7-g,1077
+aiosonic-0.9.3b1.dist-info/RECORD,,
+aiosonic-0.9.3b1.dist-info/WHEEL,sha256=CdtkbqNu7DBs9FjP8gJdY-3OlUWCYZ9daXyZrkB77RQ,111
+aiosonic-0.9.3b1.dist-info/top_level.txt,sha256=541dhNj6_oodBO_jVlSrFFx6d4pul5jpQ_Wm9IteO8U,24
+aiosonic-0.9.3b1.dist-info/METADATA,sha256=1ctMEpKbGhkLPg-a3wyGQ39_tOVTqk1nEU_rGOMBlNY,7280
+aiosonic_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiosonic_utils/structures.py,sha256=IsipiUgB7BLfLN2ZH4TkNRC3P92UrCCeyPyj5-a-GGs,2490
+aiosonic/pools.cpython-38-x86_64-linux-gnu.so,sha256=4htDeLunRs0feVenPlPhzti-wKHh3h8gpeROPssa93c,782048
+aiosonic/utils.py,sha256=RCcTqlQYm0ULzLGuHNZ89cqypqasa6I8DscfrU30-p8,486
+aiosonic/connection.cpython-38-x86_64-linux-gnu.so,sha256=4c_Hul27qaYJk87JN-UjJ5ZZHFNnNY9DlvZELGWh0_8,942928
+aiosonic/__init__.py,sha256=yqaPKxfdT4quVhTtaL0NIk8y2rtbdez7xFuc6TCoD8A,28878
+aiosonic/http2.py,sha256=nsLyHMi5TmusQ9GSGNJmNSezurFrid8tqI2VvErjzzA,4181
+aiosonic/exceptions.py,sha256=eKXJc3DnHdlS1dknCKPsSZ4A-VrTAcvb1nf7Cj8hZCY,676
+aiosonic/version.py,sha256=IFR8cZLdlDl7b8H8B4YnlYGPix-psfwgZ7xOOdbtnDc,20
+aiosonic/types.py,sha256=ixJhovf43tRiuIiK0LQFBq-IihJWGPJexLFCbp9M454,523
+aiosonic/timeout.py,sha256=opnJFpvwgg_tOHwSa1Wv1qEa2dQnDy3d3cAe1inyy_E,791
+aiosonic/connectors.py,sha256=avC3tXpO_tTLzpUnbh_A5X6TfBpaF5gIpglbWnQrbLY,2445
