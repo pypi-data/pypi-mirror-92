@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: yaml-expressions
+Version: 0.0.1
+Summary: Jinja2 templates for yaml. Make dynamic rules and configs.
+Home-page: https://github.com/fagcinsk/yaml-expressions
+Author: Mikhail Yudin
+Author-email: fagci.nsk@gmail.com
+License: MIT
+Description: # YAML Jinja2 expressions
+        
+        Renders Jinja2 expressions inside YAML file.
+        
+        ## Examples:
+        
+        ### Load template from file
+        
+        cfg/cfg.yml:
+        
+        ```yaml
+        cfg:
+          test: "{{test}}"
+        ```
+        
+        ```python
+        from yex import Yex
+        
+        yex = Yex('./cfg/')
+        
+        print(yex.render_file('cfg.yml', test='passed'))
+        ```
+        
+        Output: {'cfg': {'test': 'passed'}}
+        
+        
+Keywords: yaml jinja2 exptessions template
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
