@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: covid-env-biggreen-xprize
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
