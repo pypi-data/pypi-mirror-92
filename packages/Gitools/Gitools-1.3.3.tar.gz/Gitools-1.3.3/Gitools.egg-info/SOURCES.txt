@@ -1,0 +1,15 @@
+README.md
+setup.py
+Gitools.egg-info/PKG-INFO
+Gitools.egg-info/SOURCES.txt
+Gitools.egg-info/dependency_links.txt
+Gitools.egg-info/entry_points.txt
+Gitools.egg-info/top_level.txt
+gitools/__init__.py
+gitools/__main__.py
+gitools/module.py
+gitools/modules/__init__.py
+gitools/modules/restore_backup.py
+gitools/modules/update_author.py
+gitools/modules/update_date.py
+gitools/modules/update_message.py
