@@ -1,0 +1,5 @@
+ansible (2.10.6-1) unstable; urgency=medium
+
+  * Ansible 2.10.6 release
+
+ -- Red Hat, Inc. <info@ansible.com>  Tue, 26 Jan 2021 23:25:08 +0000

@@ -1,0 +1,34 @@
+{
+ "collection_info": {
+  "namespace": "cisco",
+  "name": "nso",
+  "version": "1.0.2",
+  "authors": [
+   "Claes N\u00e4st\u00e9n (@cnasten)"
+  ],
+  "readme": "README.md",
+  "tags": [
+   "cisco",
+   "nso",
+   "cloud",
+   "collection",
+   "networking"
+  ],
+  "description": "Ansible Modules for Cisco NSO",
+  "license": [],
+  "license_file": "LICENSE",
+  "dependencies": {},
+  "repository": "https://github.com/CiscoDevNet/ansible-nso",
+  "documentation": "https://developer.cisco.com/docs/nso/",
+  "homepage": "https://github.com/CiscoDevNet/ansible-nso",
+  "issues": "https://github.com/CiscoDevNet/ansible-nso/issues"
+ },
+ "file_manifest_file": {
+  "name": "FILES.json",
+  "ftype": "file",
+  "chksum_type": "sha256",
+  "chksum_sha256": "7a9ad669842f794e729fbb04db13b606c49ed8f7e425deb8c6d374bed81b01ea",
+  "format": 1
+ },
+ "format": 1
+}
