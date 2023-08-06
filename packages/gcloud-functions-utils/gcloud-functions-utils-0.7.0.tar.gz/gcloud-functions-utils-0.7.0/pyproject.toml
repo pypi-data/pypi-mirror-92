@@ -1,0 +1,12 @@
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+src_paths = ["gcloud_functions_utils"]
+
+[tool.pytest.ini_options]
+markers = [
+    "emulation: marks tests that is running its tests through emulating services",
+]
