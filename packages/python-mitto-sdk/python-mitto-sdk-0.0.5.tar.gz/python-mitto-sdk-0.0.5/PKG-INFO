@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: python-mitto-sdk
+Version: 0.0.5
+Summary: Python library to interact with Mitto's API.
+Home-page: https://github.com/jfreels/python-mitto-sdk
+Author: Justin Freels
+Author-email: justin@zuar.com
+License: UNKNOWN
+Description: # python-mitto-sdk
+        Python Mitto SDK
+        
+        ## Overview:
+        
+        Python library to interact with Mitto's API.
+        
+        ## Installation:
+        ```python
+        pip install python-mitto-sdk
+        ```
+        
+        ## Usage:
+        ```python
+        # What's my Mitto version?
+        from mitto_sdk import Mitto
+        
+        BASE_URL = "https://{mitto_url}"
+        API_KEY = ""
+        
+        mitto = Mitto(
+                base_url=BASE_URL,
+                api_key=API_KEY
+            )
+        
+        about = mitto.get_about()
+        version = about["version"]
+        print(version)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
