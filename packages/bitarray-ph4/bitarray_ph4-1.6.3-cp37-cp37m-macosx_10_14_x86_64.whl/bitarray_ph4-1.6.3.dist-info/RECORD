@@ -1,0 +1,12 @@
+bitarray/__init__.py,sha256=rNdRZ2gF2SlC-MlSPi3PxOvZlEBDNO-C-733pQIbEw4,2196
+bitarray/_bitarray.cpython-37m-darwin.so,sha256=w60IvdlFOdjTlZPAe9jZFw55rpVbcD2R0CwpGCgPvCc,88904
+bitarray/_util.cpython-37m-darwin.so,sha256=Dp03iLjDjP7vkoDeCer0zni6tY0MI8PNZE1e1xCmQH0,35760
+bitarray/test_bitarray.py,sha256=8LOWPQTGyJbbJ1BnM09ZanZadm9rs-kHUnLGAcFQ5OY,99258
+bitarray/test_util.py,sha256=Atk-_hdMNA_YQd1tV1doKbK_q2hIw_3pCM9iQVD5wIQ,31303
+bitarray/util.py,sha256=8M416ZnahFxRg3M0Hl77ZQVY3ZLsFObTG7noxufhmcg,9448
+bitarray_ph4-1.6.3.dist-info/AUTHORS,sha256=bS1vGhLAh-zSEfQpoqbw2Z0hSXzmXkFXr0tw4xKvcLI,626
+bitarray_ph4-1.6.3.dist-info/LICENSE,sha256=twjLPMDWLuMyjN12UALNnM2lfFoAyzMTskV7CCppQkM,2412
+bitarray_ph4-1.6.3.dist-info/METADATA,sha256=y_OH1-coac3Q8tffdyrfwwiLumhuemdTEesxdJcnceM,25700
+bitarray_ph4-1.6.3.dist-info/WHEEL,sha256=SPFsdN-g7Osut7El6pRHojcroYU7REc1DdD4VXzi4B4,111
+bitarray_ph4-1.6.3.dist-info/top_level.txt,sha256=cLdoeIHotTwh4eHSe8qy8umF7zzyxUM90I8zFb2_xhg,9
+bitarray_ph4-1.6.3.dist-info/RECORD,,
