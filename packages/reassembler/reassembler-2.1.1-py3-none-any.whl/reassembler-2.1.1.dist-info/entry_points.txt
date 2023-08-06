@@ -1,0 +1,3 @@
+[console_scripts]
+reassembler = reassembler.__main__:cli
+
