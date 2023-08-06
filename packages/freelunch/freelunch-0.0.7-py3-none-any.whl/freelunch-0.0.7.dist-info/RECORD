@@ -1,0 +1,12 @@
+freelunch/__init__.py,sha256=VeAZ5-9PjTbh5ETEPIq-l3K3OzGI6mIUQ_UYDFuo32Q,100
+freelunch/base.py,sha256=-XZsR2w_7mA4J152G2HavW5q6OCg6dAKSqoG5EAdWkU,2179
+freelunch/benchmarks.py,sha256=2AhfB8iX8LvoE1wCtoLoH_uQ14FC7GnyVDNSeCYGOJM,2226
+freelunch/darwin.py,sha256=4bCqulgleDGmdFtX01lxaz4Z_P8eFpmROvfwDrdhqnY,5004
+freelunch/optimisers.py,sha256=5xTTnw_1kmUbZo_Vf0GubFJ5x-Jqx4UU6dP4b0c9YYM,15909
+freelunch/tech.py,sha256=8bhwFrsSMUfhkHRSt-onE_gAxIKO-na51w_yy1nx-A8,2436
+freelunch/zoo.py,sha256=R8kc5f6ZYR3GAf_21bYjAqqZ94TDZq6tEUMwa04f93w,2007
+freelunch-0.0.7.dist-info/LICENSE,sha256=F8btV0TYxLxhAwNNS91fFsD8lb_YF_RTnRrUaEL4BNo,1070
+freelunch-0.0.7.dist-info/METADATA,sha256=2Nfth8IEkTMpXRVpdChmNSPgGq_GAWnb4S18uKCeLBE,3676
+freelunch-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+freelunch-0.0.7.dist-info/top_level.txt,sha256=_7s0CIBwLwrEjCG3386RUY44iKs9CMwg0KFXqMC5vCU,10
+freelunch-0.0.7.dist-info/RECORD,,
