@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+PypiPackageExamplePedroOrtizPerez.egg-info/PKG-INFO
+PypiPackageExamplePedroOrtizPerez.egg-info/SOURCES.txt
+PypiPackageExamplePedroOrtizPerez.egg-info/dependency_links.txt
+PypiPackageExamplePedroOrtizPerez.egg-info/top_level.txt
+economypackage/__init__.py
+economypackage/mathseconomy/__init__.py
+economypackage/mathseconomy/mymathsUtils.py
