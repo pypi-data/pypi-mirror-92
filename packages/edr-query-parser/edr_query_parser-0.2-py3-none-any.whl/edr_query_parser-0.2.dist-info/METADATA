@@ -1,0 +1,107 @@
+Metadata-Version: 2.1
+Name: edr-query-parser
+Version: 0.2
+Summary: Environmental data retrieval API query parser
+Home-page: https://github.com/r0w4n/edr_query_parser
+Author: r0w4n
+Author-email: r0w4n@nuisance.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil
+Requires-Dist: geomet
+
+# Environmental Data Retrieval Query Parser
+The [OGC API Environmental Data Retrieval](https://github.com/opengeospatial/ogcapi-environmental-data-retrieval) query parser makes it easy to parse and use the API query.
+
+![Python package](https://github.com/r0w4n/edr_query_parser/workflows/Python%20package/badge.svg?branch=main)
+![Upload Python Package](https://github.com/r0w4n/edr_query_parser/workflows/Upload%20Python%20Package/badge.svg)
+
+# install
+```shell
+pip install edr-query-parser
+```
+
+# Usage
+## Initiate
+```python
+from edr_query_parser import EDRQueryParser
+
+edr_query = EDRQueryParser('https://somewhere.com/collections/my_collection/position?coords=POINT(57.819 '
+                           '-3.966)&datetime=2019-09-07T15:50-04:00/2019-09-07T15:50-05:00&parameter-name=parameter1,'
+                           'parameter2&f=geoJSON&crs=crs86')
+```
+
+## Get the collection name
+```python
+edr_query.get_collection_name()
+```
+
+returns string of the requested collection
+
+## Get the query type
+```python
+edr_query.get_query_type())
+```
+
+returns string of the query type
+
+## Get the requested output format
+```python
+edr_query.get_format()
+```
+
+returns string of the requested output format
+
+## Get the parameter names
+```python
+edr_query.get_parameter_name()
+```
+
+returns list of requested parameters
+
+## Get the datetime
+```python
+if edr.is_datetime_interval():
+    edr.get_datetime_from()
+    edr.get_datetime_to()
+else:
+    edr.get_datetime()
+```
+
+returns datetime object of the requested datetime
+
+## Get the get coords type
+```python
+edr.get_coords_type()
+```
+returns the well-know text coords type
+
+## Get the coords coordinates
+```python
+edr.get_coords_coordinates()
+```
+
+returns the well know text coordinates request
+
+## Get the coords dictionary
+
+```python
+edr.get_coords()
+```
+
+returns dictionary of the well known text query request
+
+
+## Get the CRS
+```python
+edr.get_crs()
+```
+
+returns string for the requested CRS
+
+
