@@ -1,0 +1,10 @@
+.gitignore
+README.md
+setup.py
+filenames/__init__.py
+filenames/__main__.py
+filenames.egg-info/PKG-INFO
+filenames.egg-info/SOURCES.txt
+filenames.egg-info/dependency_links.txt
+filenames.egg-info/entry_points.txt
+filenames.egg-info/top_level.txt
