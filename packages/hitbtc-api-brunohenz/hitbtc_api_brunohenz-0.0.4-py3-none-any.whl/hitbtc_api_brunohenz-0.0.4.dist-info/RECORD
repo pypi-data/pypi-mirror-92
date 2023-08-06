@@ -1,0 +1,9 @@
+hitbtcapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hitbtcapi/constants.py,sha256=PHx6305sVvAEThLb1b90vc2tvaR2n6bVPMuc3fRqIEY,65
+hitbtcapi/hitbtc.py,sha256=P0YejDdGIEq0LLe_Y4BFZXmjN7c2mPievYFVHZn8WME,910
+hitbtcapi/hitbtcClient.py,sha256=WgGiuAZMbhdpsIjy40feEZI0XE_ns9qRPO_O6tXdV20,705
+hitbtc_api_brunohenz-0.0.4.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+hitbtc_api_brunohenz-0.0.4.dist-info/METADATA,sha256=Z-w1Xp_vr_k8bif_0n__bUaoeN1TweSKh1_1qkL-imw,531
+hitbtc_api_brunohenz-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hitbtc_api_brunohenz-0.0.4.dist-info/top_level.txt,sha256=s7q7vTR6kIsZXRNa7ltqAnytkiWP7ev1p4ZM1jt0Cwk,10
+hitbtc_api_brunohenz-0.0.4.dist-info/RECORD,,
