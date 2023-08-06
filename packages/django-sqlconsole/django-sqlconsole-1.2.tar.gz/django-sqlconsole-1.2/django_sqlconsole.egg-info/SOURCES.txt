@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_sqlconsole.egg-info/PKG-INFO
+django_sqlconsole.egg-info/SOURCES.txt
+django_sqlconsole.egg-info/dependency_links.txt
+django_sqlconsole.egg-info/requires.txt
+django_sqlconsole.egg-info/top_level.txt
+sqlconsole/__init__.py
+sqlconsole/forms.py
+sqlconsole/tests.py
+sqlconsole/urls.py
+sqlconsole/views.py
+sqlconsole/static/sqlconsole/css/sqlconsole.css
+sqlconsole/templates/admin/sqlconsole.djhtml
