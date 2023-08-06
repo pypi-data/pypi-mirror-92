@@ -1,0 +1,14 @@
+numpy
+cython
+fabio
+scipy
+matplotlib
+numexpr
+h5py
+silx
+PyOpenGL
+PyQt5
+hdf5plugin
+wheel
+transformations
+nbsphinx
