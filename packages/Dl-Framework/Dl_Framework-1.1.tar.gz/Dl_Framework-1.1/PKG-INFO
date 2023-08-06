@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Dl_Framework
+Version: 1.1
+Summary: A deep learning framework
+Home-page: https://github.com/AmrAshmawy2099
+Author: Amr Ashmawy
+Author-email: anon_ashmawy@hotmail.com
+License: MIT
+Download-URL: https://github.com/AmrAshmawy2099/DL_Framework/archive/v_1.1.tar.gz
+Description: UNKNOWN
+Keywords: AI,Neural,Network,Deep,Learning,Framework
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
