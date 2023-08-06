@@ -1,0 +1,7 @@
+torch_sparse_adamw/__init__.py,sha256=jPnU6wL5WTdY7FSVvDN6Hm-gB4BH7U-15X2Efo6lbpg,86
+torch_sparse_adamw/sparse_adamw.py,sha256=vs1_mVzsCuric6yV3R71iBGA5-WCz83VIZa0aRkXb4g,6173
+torch_sparse_adamw-1.0.0.dist-info/LICENSE,sha256=5JyWBbaZmmL4nIjPaDsAOwKp40hPB80Pd6tw109aqj8,1074
+torch_sparse_adamw-1.0.0.dist-info/METADATA,sha256=mbw8bEJ8oe-xQcMuKi0_9lj7KXqeoJp8ZJ2fsNNpyMY,712
+torch_sparse_adamw-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+torch_sparse_adamw-1.0.0.dist-info/top_level.txt,sha256=c_L0C7ksEKQhgSx8dUmDiL_cQMfLrbSREoaSbHEpUpw,19
+torch_sparse_adamw-1.0.0.dist-info/RECORD,,
