@@ -1,0 +1,3 @@
+[console_scripts]
+ontonotes5_to_json = ontonotes5_to_json:main
+

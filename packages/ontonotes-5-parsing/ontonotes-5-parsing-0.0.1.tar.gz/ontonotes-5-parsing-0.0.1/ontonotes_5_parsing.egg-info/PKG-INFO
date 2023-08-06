@@ -1,0 +1,41 @@
+Metadata-Version: 1.1
+Name: ontonotes-5-parsing
+Version: 0.0.1
+Summary: Ontonotes-5-parsing: parser of Ontonotes 5.0 to transform this corpus to a simple JSON format.
+Home-page: https://github.com/nsu-ai/ontonotes-5-parsing
+Author: Ivan Bondarenko
+Author-email: i.bondarenko@g.nsu.ru
+License: Apache License Version 2.0
+Description: 
+        Ontonotes-5-Parsing
+        ===================
+        
+        A simple parser of the famous Ontonotes 5 dataset
+        https://catalog.ldc.upenn.edu/LDC2013T19
+        
+        This dataset is very useful for experiments with NER, i.e. Named Entity
+        Recognition. Besides, Ontonotes 5 includes three languages (English,
+        Arabic, and Chinese), and this fact increases interest to use it in
+        experiments with multi-lingual NER. But the source format of Ontonotes 5
+        is very intricate, in my view. Conformably, the goal of this project is
+        the creation of a special parser to transform Ontonotes 5 into a simple
+        JSON format. In this format, each annotated sentence is represented as
+        a dictionary with five keys: text, morphology, syntax, entities, and
+        language. In their's turn, morphology, syntax, and entities are
+        specified as dictionaries too, where each dictionary describes labels
+        (part-of-speech labels, syntactical tags, or entity classes) and their
+        bounds in the corresponded text.
+        
+Keywords: ontonotes,ontonotes5,ontonotes-5,ner,nlp,multi-lingual
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

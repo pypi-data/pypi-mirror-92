@@ -1,0 +1,9 @@
+setup.py
+ontonotes5/__init__.py
+ontonotes5/utils.py
+ontonotes_5_parsing.egg-info/PKG-INFO
+ontonotes_5_parsing.egg-info/SOURCES.txt
+ontonotes_5_parsing.egg-info/dependency_links.txt
+ontonotes_5_parsing.egg-info/entry_points.txt
+ontonotes_5_parsing.egg-info/requires.txt
+ontonotes_5_parsing.egg-info/top_level.txt
