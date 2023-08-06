@@ -1,0 +1,10 @@
+matplotlib
+click
+numpy
+scipy
+pydicom
+tqdm
+colored
+itk>=5.1.0
+uproot
+wget
