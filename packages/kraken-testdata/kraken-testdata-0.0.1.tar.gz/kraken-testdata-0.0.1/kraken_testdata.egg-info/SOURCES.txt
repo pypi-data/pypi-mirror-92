@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+kraken_testdata.egg-info/PKG-INFO
+kraken_testdata.egg-info/SOURCES.txt
+kraken_testdata.egg-info/dependency_links.txt
+kraken_testdata.egg-info/top_level.txt
