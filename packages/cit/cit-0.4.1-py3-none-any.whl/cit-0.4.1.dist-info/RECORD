@@ -1,0 +1,11 @@
+Cit/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+Cit/basic.py,sha256=MAOqwAzVptlNbRNYYIet8O6Kf72IU61buo6yqqDyuIs,548
+Cit/cit_url.py,sha256=0bSFs1CVIH-cA4b93EqRY4rys4oG32XGMwtzaIkJkow,3040
+Cit/cit_wget.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Cit/main.py,sha256=BU-2mL25P48nbhYmLbRTu_76aXnIbJR7fTt7Mi3y4ig,2169
+Cit/test.py,sha256=z1QilBlUqjh4psxenC2yYYqKQGIlrrpKHzsC6xJHVzM,766
+Cit/test01.py,sha256=djq0LJkKOte8zYwavJ6MMVo_Wn-kmPNRtuY5Xjqb13E,1513
+cit-0.4.1.dist-info/entry_points.txt,sha256=pyV2KlxaY4xZSwpF8Q0KrwnkNjLEvZ9T1zzCPpWqD8o,36
+cit-0.4.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+cit-0.4.1.dist-info/METADATA,sha256=QtKwWvdRFCiiHz0XA2E1_fWjCQxZhOFWChQnMVEwmqo,3310
+cit-0.4.1.dist-info/RECORD,,
