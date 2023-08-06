@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: supersolids
+Version: 0.1.21
+Summary: Notes and script to supersolids
+Home-page: https://github.com/Scheiermann/supersolids
+Author: Scheiermann
+Author-email: daniel.scheiermann@stud.uni-hannover.de
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: apptools
+Requires-Dist: envisage
+Requires-Dist: ffmpeg-python
+Requires-Dist: matplotlib
+Requires-Dist: mayavi
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: PyQt5
+Requires-Dist: scipy
+Requires-Dist: traits
+Requires-Dist: traitsui
+Requires-Dist: vtk
+
+UNKNOWN
+
+
