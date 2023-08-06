@@ -1,0 +1,13 @@
+README.md
+setup.py
+xaero2/__main__.py
+xaero2/charger.py
+xaero2/mylog.py
+xaero2/test_conn.py
+xaero2/time_tools.py
+xaero2.egg-info/PKG-INFO
+xaero2.egg-info/SOURCES.txt
+xaero2.egg-info/dependency_links.txt
+xaero2.egg-info/not-zip-safe
+xaero2.egg-info/requires.txt
+xaero2.egg-info/top_level.txt
