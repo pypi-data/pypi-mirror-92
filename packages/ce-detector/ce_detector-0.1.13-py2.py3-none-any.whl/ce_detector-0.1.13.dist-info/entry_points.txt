@@ -1,0 +1,3 @@
+[console_scripts]
+ce-detector = ce_detector.cli:cli
+
