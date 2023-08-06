@@ -1,0 +1,14 @@
+README.md
+setup.py
+scripts/thinkindicator
+thinkindicator/__init__.py
+thinkindicator/__main__.py
+thinkindicator/errors.py
+thinkindicator/fan.py
+thinkindicator/generate_icons.py
+thinkindicator/indicator.py
+thinkindicator.egg-info/PKG-INFO
+thinkindicator.egg-info/SOURCES.txt
+thinkindicator.egg-info/dependency_links.txt
+thinkindicator.egg-info/requires.txt
+thinkindicator.egg-info/top_level.txt
