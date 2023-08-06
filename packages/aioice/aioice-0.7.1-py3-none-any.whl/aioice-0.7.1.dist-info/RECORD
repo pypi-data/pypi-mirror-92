@@ -1,0 +1,13 @@
+aioice/__init__.py,sha256=EDcC53sJR_8IQPMWP7WcwN8Qwf8Al_ziSQyahVlaV7I,108
+aioice/about.py,sha256=OtFhimuRR2tjyFzTDLrbQhZ3eKZ3BXzuTJo1GXouE28,259
+aioice/candidate.py,sha256=9nO_b2lL5TEg_YAPD6cuNxMNHqR66N6ZjZljXMlJmZU,4060
+aioice/ice.py,sha256=pK-mdac-F_8dCBaG7H5I94ipzDgnJbDH1BLx2n84KWU,36694
+aioice/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+aioice/stun.py,sha256=gHeZJjB_c0PhTqVei5pb5yD4kTqrbs1ldywTlKvy_Vw,11609
+aioice/turn.py,sha256=zAq4xD5scxcwaHr61jDrwA1mHaz5zrzONmFKmFSxpO0,13128
+aioice/utils.py,sha256=PKPJTldUptg07SZyw38Cy1g4xt2L8uMsliUhXJ_u8Ts,264
+aioice-0.7.1.dist-info/LICENSE,sha256=BWnfth6Gb_rBfbQDLYmy4ChYlOPZtIKyAKomwBMtwoQ,1512
+aioice-0.7.1.dist-info/METADATA,sha256=-WNgoZmU8CFYAR6OzYeu-MAIgfgm3coJ5j-7f74fxms,3685
+aioice-0.7.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aioice-0.7.1.dist-info/top_level.txt,sha256=oUHtyttqCMTRUKmS9-IgRSE3BgsZrxR_iyPCmIR1_LU,7
+aioice-0.7.1.dist-info/RECORD,,
