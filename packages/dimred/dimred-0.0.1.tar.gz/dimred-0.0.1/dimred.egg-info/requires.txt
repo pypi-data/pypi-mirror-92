@@ -1,0 +1,10 @@
+sklearn
+numpy
+pandas
+matplotlib
+scipy
+colourmap
+pytest
+pytest-cov
+seaborn
+pathlib

@@ -1,0 +1,9 @@
+README.md
+setup.py
+dimred/__init__.py
+dimred/dimred.py
+dimred.egg-info/PKG-INFO
+dimred.egg-info/SOURCES.txt
+dimred.egg-info/dependency_links.txt
+dimred.egg-info/requires.txt
+dimred.egg-info/top_level.txt
