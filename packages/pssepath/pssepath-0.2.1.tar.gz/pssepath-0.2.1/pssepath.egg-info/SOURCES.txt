@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pssepath/__init__.py
+pssepath/__version__.py
+pssepath/core.py
+pssepath/helpers.py
+pssepath/pssepathinfo.py
+pssepath.egg-info/PKG-INFO
+pssepath.egg-info/SOURCES.txt
+pssepath.egg-info/dependency_links.txt
+pssepath.egg-info/top_level.txt
+pssepath/compat/__init__.py
+pssepath/compat/_compat2.py
+pssepath/compat/_compat3.py
