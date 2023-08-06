@@ -1,0 +1,10 @@
+README.md
+setup.py
+contagion/__init__.py
+contagion/contagion.py
+contagion.egg-info/PKG-INFO
+contagion.egg-info/SOURCES.txt
+contagion.egg-info/dependency_links.txt
+contagion.egg-info/top_level.txt
+tests/__init__.py
+tests/test_contagion.py
