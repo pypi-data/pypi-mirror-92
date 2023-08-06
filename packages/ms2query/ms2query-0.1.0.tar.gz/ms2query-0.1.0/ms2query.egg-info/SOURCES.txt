@@ -1,0 +1,8 @@
+README.md
+setup.py
+ms2query.egg-info/PKG-INFO
+ms2query.egg-info/SOURCES.txt
+ms2query.egg-info/dependency_links.txt
+ms2query.egg-info/not-zip-safe
+ms2query.egg-info/requires.txt
+ms2query.egg-info/top_level.txt
