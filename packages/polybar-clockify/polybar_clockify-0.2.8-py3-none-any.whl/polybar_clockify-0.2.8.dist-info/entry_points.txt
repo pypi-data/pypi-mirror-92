@@ -1,0 +1,3 @@
+[console_scripts]
+polybar-clockify=polybar_clockify.app:run
+
