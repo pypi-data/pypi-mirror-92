@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: typingx
+Version: 0.2.0
+Summary: Extend typing package functionalities
+Home-page: https://github.com/PrettyWood/typingx
+License: MIT
+Author: Eric Jolibois
+Author-email: em.jolibois@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: typing_extensions (>=3.7.4.3,<4.0.0.0); python_version < "3.9"
+Project-URL: Repository, https://github.com/PrettyWood/typingx
