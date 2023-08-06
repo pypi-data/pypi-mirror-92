@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: opti
+Version: 1.0
+Summary: A module for easy python
+Home-page: https://github.com/codingcup04/python_opti
+Author: codingPro01
+Author-email: 
+License: UNKNOWN
+Download-URL: https://github.com/codingcup04/python_opti
+Keywords: optimization,easy,python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+Requires-Dist: pynput
+
+# Opti
+
+(A module for easy python)
+
+# How to use:
+
+Commands:
+
+# Please check out the source code and website.
+
+
