@@ -1,0 +1,33 @@
+# Sanetinel
+
+The sentinel that keeps you sane when tracking down unexpected behavior in algorithms.
+
+Sanetinel is a simple sanity-check system for monitoring your algorithms.
+
+This is a proof of concept version and is not stable
+
+```python
+
+from sanetinel import sanetinel
+
+s = sanetinel('algorithm')
+s.train()
+s.log('variable', 1)
+s.log('variable', 2)
+s.log('variable', 3)
+s.test()
+s.log('variable', 100)
+
+```
+
+## Building
+
+Installation: `pip install --user --upgrade setuptools wheel`
+
+Build with: `python setup.py sdist bdist_wheel`
+
+## License
+
+(c) 2020 Simon Rovder, James Renwick
+
+This library is licensed under the GPL-3.0 license.
