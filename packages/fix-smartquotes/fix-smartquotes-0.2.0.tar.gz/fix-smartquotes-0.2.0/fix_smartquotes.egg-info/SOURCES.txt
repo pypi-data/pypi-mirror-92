@@ -1,0 +1,10 @@
+README.md
+fix_smartquotes.py
+setup.cfg
+setup.py
+fix_smartquotes.egg-info/PKG-INFO
+fix_smartquotes.egg-info/SOURCES.txt
+fix_smartquotes.egg-info/dependency_links.txt
+fix_smartquotes.egg-info/entry_points.txt
+fix_smartquotes.egg-info/requires.txt
+fix_smartquotes.egg-info/top_level.txt

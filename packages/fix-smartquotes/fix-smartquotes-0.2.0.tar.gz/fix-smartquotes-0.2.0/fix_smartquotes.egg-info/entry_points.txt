@@ -1,0 +1,3 @@
+[console_scripts]
+fix-smartquotes = fix_smartquotes:main
+
