@@ -1,0 +1,12 @@
+adcircpy
+nemspy
+numpy
+requests
+
+[development]
+oitnb
+
+[testing]
+flake8
+pytest
+pytest-cov
