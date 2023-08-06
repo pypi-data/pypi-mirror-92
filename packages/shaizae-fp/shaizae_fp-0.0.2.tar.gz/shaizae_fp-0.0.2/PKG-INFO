@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: shaizae_fp
+Version: 0.0.2
+Summary: a grate machine learning tool for beginners and dummies :)
+Home-page: UNKNOWN
+Author: shai zaedman
+Author-email: shaizae10@gmail.com
+License: MIT
+Description: a grate machine learning tool for beginers and dummis :)
+        
+        25/01/2021: 0.0.1
+        
+        only grup base is multy prossesing
+        regration berly works
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

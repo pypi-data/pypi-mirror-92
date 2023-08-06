@@ -1,0 +1,7 @@
+README.txt
+setup.py
+shaizae_fp.egg-info/PKG-INFO
+shaizae_fp.egg-info/SOURCES.txt
+shaizae_fp.egg-info/dependency_links.txt
+shaizae_fp.egg-info/requires.txt
+shaizae_fp.egg-info/top_level.txt
