@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: hasty
+Version: 0.0.1
+Summary: Hasty API client library
+Home-page: https://github.com/hasty-ai/hasty-python/
+Author: Hasty GmbH
+Author-email: herbert@hasty.ai
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
