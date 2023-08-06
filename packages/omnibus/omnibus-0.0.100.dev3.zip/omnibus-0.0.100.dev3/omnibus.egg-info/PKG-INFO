@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: omnibus
+Version: 0.0.100.dev3
+Summary: UNKNOWN
+Home-page: https://github.com/wrmsr/omnibus
+Author: wrmsr
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
