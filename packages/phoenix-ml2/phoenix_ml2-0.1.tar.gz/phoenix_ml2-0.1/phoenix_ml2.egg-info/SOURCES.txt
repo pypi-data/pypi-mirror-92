@@ -1,0 +1,17 @@
+setup.py
+phoenix_ml2/NN.py
+phoenix_ml2/back_prop.py
+phoenix_ml2/cnn.py
+phoenix_ml2/data_loader.py
+phoenix_ml2/data_preprocessing.py
+phoenix_ml2/evaluation.py
+phoenix_ml2/forward_prop.py
+phoenix_ml2/optimization.py
+phoenix_ml2/runner.py
+phoenix_ml2/utils_module.py
+phoenix_ml2/visualization.py
+phoenix_ml2.egg-info/PKG-INFO
+phoenix_ml2.egg-info/SOURCES.txt
+phoenix_ml2.egg-info/dependency_links.txt
+phoenix_ml2.egg-info/not-zip-safe
+phoenix_ml2.egg-info/top_level.txt
