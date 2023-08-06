@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyloads/__init__.py
+pyloads/aerodynamic_profiles.py
+pyloads/blade_data.py
+pyloads/static_loads.py
+pyloads/test_static_loads.py
+pyloads_wind_turbine.egg-info/PKG-INFO
+pyloads_wind_turbine.egg-info/SOURCES.txt
+pyloads_wind_turbine.egg-info/dependency_links.txt
+pyloads_wind_turbine.egg-info/top_level.txt
