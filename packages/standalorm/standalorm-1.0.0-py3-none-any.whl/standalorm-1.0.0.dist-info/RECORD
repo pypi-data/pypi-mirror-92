@@ -1,0 +1,15 @@
+standalorm/__init__.py,sha256=R3U7qKonTZp5aShdql3GtzrCBSJdatW_CPY5HvfW71s,32
+standalorm/cli.py,sha256=nXPNgo6sc4QZEMO61_2w8opFdOlTx6ROgL0NtAKBCl0,12292
+standalorm/db_makers.py,sha256=pMkeKs3kdJvfgUBxSpIjD2Sfd4qmrqg_WWAU2zfUt4Y,6423
+standalorm/LICENSE.md,sha256=YtPo3Strp5SOJCdtQ8f08mGangmxqWfeq8EeGFX4r-U,1093
+standalorm/manage.py,sha256=alFrdaS8GEWzebdb_sPiJv0sISyVI4dof-EVFCIHjiI,241
+standalorm/models_template.py,sha256=4OVMcDDx9fVgBEJ91B7dfMEG2Ni1LRSLJOKzIkVPsKo,60
+standalorm/orm-settings.toml,sha256=eSm5X3qEZ1f6724gBawWGFRrNLjmKi6Gte4g8vxqA4g,127
+standalorm/orm_init.py,sha256=c_iKqKG7F7slTsVEM2tLEzjnIXPncQKU7yJLAwpQkSM,1647
+standalorm/settings.py,sha256=oTz1CzkZDFyLlNm7qcn1HN6kyY9em-DIkOGcYKqWTjE,739
+standalorm/utils.py,sha256=iKlraz1G75NxPIwfmjpxEJs4kaJS7G1sJxPbNCUJv4o,2151
+standalorm-1.0.0.dist-info/entry_points.txt,sha256=V7RuoyibZEVdVlgHmEBWN2o5cisvnfVC_SPVKqaj9cc,49
+standalorm-1.0.0.dist-info/LICENSE.md,sha256=YtPo3Strp5SOJCdtQ8f08mGangmxqWfeq8EeGFX4r-U,1093
+standalorm-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+standalorm-1.0.0.dist-info/METADATA,sha256=q385j-FPDLtflTj9Ekg42t8jF_h38dB3nw2qVmgQ3Tw,3523
+standalorm-1.0.0.dist-info/RECORD,,
