@@ -1,0 +1,3 @@
+[console_scripts]
+wifi = wifi.__main__:main
+
