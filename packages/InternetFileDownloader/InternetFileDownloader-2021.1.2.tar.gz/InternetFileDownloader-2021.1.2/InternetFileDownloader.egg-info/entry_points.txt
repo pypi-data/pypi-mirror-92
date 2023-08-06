@@ -1,0 +1,3 @@
+[console_scripts]
+InternetFileDownloader = FileDownloader.FileDownloader:main
+

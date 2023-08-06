@@ -1,0 +1,8 @@
+setup.py
+FileDownloader/FileDownloader.py
+InternetFileDownloader.egg-info/PKG-INFO
+InternetFileDownloader.egg-info/SOURCES.txt
+InternetFileDownloader.egg-info/dependency_links.txt
+InternetFileDownloader.egg-info/entry_points.txt
+InternetFileDownloader.egg-info/requires.txt
+InternetFileDownloader.egg-info/top_level.txt
