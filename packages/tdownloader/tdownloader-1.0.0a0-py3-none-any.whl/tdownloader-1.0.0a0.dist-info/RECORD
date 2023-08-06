@@ -1,0 +1,12 @@
+tdownloader/__init__.py,sha256=Nxiogo9ABIkEMsZrqHEcSonLVv3mMTxKvJGZYXAlD8M,23
+tdownloader/downloader.py,sha256=g0PdvMAGKyddhA03bSfPdScWIlcWS4VRH20ci7kygqA,2078
+tdownloader/input_file_reader.py,sha256=Ces3LRq_Elf3El8s8Mlhrn2wCwEB9q8u-C0aOzaV42Y,573
+tdownloader/main.py,sha256=7hfHOKit57CDCUWWvFmy78Y6yoNfAJJ8rPmqWleJVZE,2456
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/conftest.py,sha256=nLKTGceIQCPBYxOqU_6i-Z3j216I8R749FPWSdGQhNU,226
+test/test_downloader.py,sha256=c8gfjbBl-8vvpbwk_2JgTBWbJtCzNJsAbduyRPqDces,616
+tdownloader-1.0.0a0.dist-info/METADATA,sha256=0Ihx1Lz1jFIHB96S_c45W2nhRCJLrhXDc2q8fGoLukE,301
+tdownloader-1.0.0a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tdownloader-1.0.0a0.dist-info/entry_points.txt,sha256=tMdbKONfcvCbEROxiOFL3OFSxPBsToaJKQvcUEuD6nU,49
+tdownloader-1.0.0a0.dist-info/top_level.txt,sha256=1o_TPTlaa6TvFDnkH5JctQikGEDMJvWTzXiqEmNmdeU,12
+tdownloader-1.0.0a0.dist-info/RECORD,,
