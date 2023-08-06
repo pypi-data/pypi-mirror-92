@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: lets-debug-helper
+Version: 1.0.3
+Summary: This is a cli tool that interacts with the Let's Debug API
+Home-page: https://github.com/jediknight112/lets-debug-helper
+Author: Jeffrey Crane
+Author-email: jediknight11206@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: mock (==4.0.3)
+Requires-Dist: parameterized (==0.8.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: urllib3 (==1.26.2)
+
+# lets-debug-helper
+This is a cli tool that interacts with the Let's Debug API
+
+The API homepage can be found at https://letsdebug.net/
+
+To install this package:
+
+```
+pip install lets-debug-helper
+```
+
+# Usage
+
+```
+lets-debug domain.com
+```
+
+
