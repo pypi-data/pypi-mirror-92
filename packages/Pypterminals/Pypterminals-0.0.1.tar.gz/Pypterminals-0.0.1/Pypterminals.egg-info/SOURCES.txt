@@ -1,0 +1,8 @@
+setup.py
+Pypterminals.egg-info/PKG-INFO
+Pypterminals.egg-info/SOURCES.txt
+Pypterminals.egg-info/dependency_links.txt
+Pypterminals.egg-info/top_level.txt
+pypterminals/__init__.py
+pypterminals/terminal.py
+pypterminals/test.py
