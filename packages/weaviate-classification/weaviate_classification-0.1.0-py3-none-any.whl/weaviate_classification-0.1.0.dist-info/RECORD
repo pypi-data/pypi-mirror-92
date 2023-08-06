@@ -1,0 +1,14 @@
+weaviate_classification/__init__.py,sha256=ycoJq1mT2Oomxu5eO32nDZ37x7csdQ0XcxRmiCg9n5g,9723
+weaviate_classification/classify.py,sha256=nVS63OGqauIAYIuK0nq-bocZ63WyR6WPHXCvE4k_MGI,3651
+weaviate_classification/data_configuration.py,sha256=NIRvClnXVcaTEgzdueZWkq7g9I9-F_jQFU12f0AbDYY,2035
+weaviate_classification/debug.py,sha256=ALTW4EX55DNf9bB3odrItFLgbiMRGYFvuQAZOeuQpIA,4317
+weaviate_classification/imports.py,sha256=q_1Z_5_SYRtot2UuKnyOGDTwd01v-rqD1msdCYqnbE8,5874
+weaviate_classification/parser.py,sha256=nTfOdj-_yC5aAVsBwnSlpWMSjfPQq-uPGv2vpSWTeno,4926
+weaviate_classification/process_result.py,sha256=2O_x5SPau49Gl9ViQAnjQden5bcBcVC7VAbQOYrbzDo,6828
+weaviate_classification/query.py,sha256=rxDBNV7rCUN9K2J0aoU5gWAZA2kb2Z95QB_IxWNGyGg,5085
+weaviate_classification/schema.py,sha256=jrlkKToyJqv8857sQnVSccovXcNiAPTBbT0XZ6xo5iI,6490
+weaviate_classification/utilities.py,sha256=3rDQkjt1tGbwOCizDiY1-b_n4LmfoH1a7-SBaLYxui4,5265
+weaviate_classification-0.1.0.dist-info/METADATA,sha256=v4tP9joPrkUSagx9YnEg5GZ-_9Rn3oTS2ivYy3_w8DQ,433
+weaviate_classification-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+weaviate_classification-0.1.0.dist-info/top_level.txt,sha256=8X9gSob6GVwiuNB-nEgImjuiTB7e39_5dXl7a9qbZ9c,24
+weaviate_classification-0.1.0.dist-info/RECORD,,
