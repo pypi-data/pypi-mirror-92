@@ -1,0 +1,3 @@
+[console_scripts]
+pyhunterdouglasplatinum = hunterdouglasplatinum.__main__:main
+
