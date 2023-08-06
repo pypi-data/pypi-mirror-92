@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dcs-release-check
+Version: 0.0.2
+Summary: "Tool to query latest versions from Source code hosting platforms."
+Home-page: UNKNOWN
+Author: "Fabian Mueller"
+Author-email: "packages@dotcs.me"
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+Requires-Dist: tabulate
+Requires-Dist: toml
+Provides-Extra: develop
+Requires-Dist: black ; extra == 'develop'
+Requires-Dist: pep517 ; extra == 'develop'
+Requires-Dist: twine ; extra == 'develop'
+
+UNKNOWN
+
+
