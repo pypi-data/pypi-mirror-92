@@ -1,0 +1,16 @@
+gaiaengine-0.3.3.dist-info/WHEEL,sha256=EzbPVXHRzO5Cusi_HRHsPfPkF-lUnFtP66wT8y3ATpA,118
+gaiaengine-0.3.3.dist-info/METADATA,sha256=K81gDWKvNxtPxM6bS6jMBxaTnvQxM03LX1NbfMXtStE,439
+gaiaengine-0.3.3.dist-info/top_level.txt,sha256=5ZQVHC1v0EZlrf8Qad2S3TmNBellD4KB040qFJBjq7s,11
+gaiaengine-0.3.3.dist-info/RECORD,,
+gaiaengine/libpng16.so.16.37.0,sha256=2uZoADOfR9E1ZpdsNQOo4TmMLXYeA4u6zvm9DvQmh0s,295552
+gaiaengine/libSDL2-2.0.so,sha256=b5Fmnj3ZohCRz7hhqitydoK3PqvH288J4H6TcnAkY1o,1658192
+gaiaengine/libz.so,sha256=FIxtQ07ikxEBxC7-yQVsRJifUt2QcYCeCQxolGwqhP0,113392
+gaiaengine/libSDL2-2.0.so.0.12.0,sha256=b5Fmnj3ZohCRz7hhqitydoK3PqvH288J4H6TcnAkY1o,1658192
+gaiaengine/gaiaengine.pypy37-pp73-x86_64-linux-gnu.so,sha256=dEBjUESssDyFOdzIOF5KZhWslwDxevbLVc7Hx4ynd3g,705408
+gaiaengine/libz.so.1,sha256=FIxtQ07ikxEBxC7-yQVsRJifUt2QcYCeCQxolGwqhP0,113392
+gaiaengine/libpng16.so.16,sha256=2uZoADOfR9E1ZpdsNQOo4TmMLXYeA4u6zvm9DvQmh0s,295552
+gaiaengine/libSDL2_image.so,sha256=aWgWxFL13fcTQaMwpe_p17vFMsqnsus3eGpwBfeYQKU,94128
+gaiaengine/libpng16.so,sha256=2uZoADOfR9E1ZpdsNQOo4TmMLXYeA4u6zvm9DvQmh0s,295552
+gaiaengine/libz.so.1.2.11,sha256=FIxtQ07ikxEBxC7-yQVsRJifUt2QcYCeCQxolGwqhP0,113392
+gaiaengine/libSDL2-2.0.so.0,sha256=b5Fmnj3ZohCRz7hhqitydoK3PqvH288J4H6TcnAkY1o,1658192
+gaiaengine/__init__.py,sha256=wtj7znCqD_DcpnVIkwmK54vma9gd1GuBgTO8o-PH4yI,25
