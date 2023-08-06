@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: google-events
+Version: 0.1.1
+Summary: A collection of first party Google Cloud Platform event objects.
+Home-page: https://github.com/googleapis/google-cloudevents
+Author: Google LLC
+Author-email: googleapis-packages@oogle.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/googleapis/google-cloudevents-python
+Project-URL: Documentation, https://github.com/googleapis/google-cloudevents-python
+Project-URL: Issue Tracker, https://github.com/googleapis/google-cloudevents-python/issues
+Description: # Google CloudEvents - Python
+        
+        This library provides classes of common event types used with Google services.
+        At this moment the following types are available:
+        
+        | Package | Python Class | Description |
+        | ------------- | ------------- | ------------- |
+        | google.events.cloud.scheduler.v1 | SchedulerJobData | Scheduler job data. |
+        | google.events.cloud.pubsub.v1 | MessagePublishedData | The event data when a message is published to a topic. |
+        | google.events.firebase.database.v1 | ReferenceEventData | The data within all Firebase Real Time Database reference events. |
+        | google.events.firebase.remoteconfig.v1 | RemoteConfigEventData | The data within all Firebase Remote Config events. |
+        | google.events.firebase.auth.v1 | AuthEventData | The data within all Firebase Auth events. |
+        | google.events.cloud.storage.v1 | StorageObjectData | An object within Google Cloud Storage. |
+        | google.events.cloud.firestore.v1 | DocumentEventData | The data within all Firestore document events. |
+        | google.events.firebase.analytics.v1 | AnalyticsLogData | The data within Firebase Analytics log events. |
+        | google.events.cloud.audit.v1 | LogEntryData | The data within all Cloud Audit Logs log entry events. |
+        | google.events.cloud.cloudbuild.v1 | BuildEventData | Build event data for Google Cloud Platform API operations. |
+        
+        ## Installation and Usage
+        
+        **Note**: This library requires Python 3.7+.
+        
+        To install this package, run
+        
+        ``` sh
+        pip install --upgrade google-events
+        ```
+        
+        To use an event class, see the snippet below:
+        
+        ``` python
+        from google.events.cloud.pubsub.v1 import MessagePublishedEvent
+        
+        # Parses a Dict into an event
+        # The Dict may be an argument in a background Cloud Function,
+        # or the payload of an HTTP request received by a Cloud Run service with event
+        # triggers.
+        event_data = "Some event data"
+        event = MessagePublishedData.from_dict(event_data)
+        print(event.message)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
