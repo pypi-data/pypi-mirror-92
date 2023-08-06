@@ -1,0 +1,13 @@
+pyop>=3.0.1
+pysaml2>=6.5.1
+pycryptodomex
+requests
+PyYAML
+gunicorn
+Werkzeug
+click
+pystache
+cookies-samesite-compat
+
+[ldap]
+ldap3
