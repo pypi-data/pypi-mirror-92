@@ -1,0 +1,8 @@
+setup.py
+PrtSc/PrtSc.py
+PrtSc.egg-info/PKG-INFO
+PrtSc.egg-info/SOURCES.txt
+PrtSc.egg-info/dependency_links.txt
+PrtSc.egg-info/entry_points.txt
+PrtSc.egg-info/requires.txt
+PrtSc.egg-info/top_level.txt
