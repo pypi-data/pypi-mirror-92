@@ -1,0 +1,4 @@
+[console_scripts]
+readcomb-filter = filter:matepair_process
+readcomb-vcfprep = vcfprep:main
+
