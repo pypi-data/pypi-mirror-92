@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: CyrilAlpha
+Version: 1.0
+Summary: CyrilAlpha Backtest System
+Home-page: https://github.com/Quant-Log/CyrilAlpha
+Author: Cyril Chen
+Author-email: chen-xirui@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=1.2.0)
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: scikit-learn (>=0.23.2)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: seaborn (>=0.11.1)
+
+# CyrilAlpha
+
+CyrilAlpha Backtest System
+
+No License
+
+

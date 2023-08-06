@@ -1,0 +1,6 @@
+{
+'TOP35': ['AU', 'AG', 'AL', 'CU', 'ZN', 'NI', 'RB', 'J', 'I', 'HC', 'V', 'FG', 'FU', 'ZC', 'SC', 'PG', 'RU', 'TA', 'L', 'MA', 'BU', 'PP', 'SP', 'EG', 'C', 'M', 'A', 'Y', 'OI', 'P', 'RM', 'CF', 'SR', 'JD', 'AP', 'IF', 'IH', 'IC'], 
+'TOP40': ['AU', 'AG', 'AL', 'CU', 'ZN', 'NI', 'RB','HC', 'J', 'I', 'ZC', 'FG', 'SC','FU', 'V', 'PG', 'EB', 'SA', 'RU', 'TA', 'L', 'MA', 'BU', 'PP', 'SP', 'EG', 'C', 'M', 'A', 'Y', 'OI', 'P', 'RM', 'CF', 'SR', 'JD', 'AP', 'IF', 'IH', 'IC'], 
+'top35': ['AU', 'AG', 'AL', 'CU', 'ZN', 'NI', 'RB', 'J', 'I', 'HC', 'V', 'FG', 'FU', 'ZC', 'SC', 'PG', 'RU', 'TA', 'L', 'MA', 'BU', 'PP', 'SP', 'EG', 'C', 'M', 'A', 'Y', 'OI', 'P', 'RM', 'CF', 'SR', 'JD', 'AP'],
+'TOP60': ['AU', 'AG', 'AL', 'CU', 'ZN', 'PB', 'NI', 'SN', 'RB', 'J', 'JM', 'I', 'HC', 'SF', 'SM', 'SS', 'V', 'FG', 'FB', 'FU', 'ZC', 'SC', 'PG', 'LU', 'RU', 'TA', 'L', 'MA', 'BU', 'PP', 'SP', 'EG', 'UR', 'NR', 'EB', 'SA', 'PF', 'C', 'RR', 'M', 'A', 'B', 'Y', 'OI', 'P', 'RM', 'CF', 'SR', 'CY', 'JD', 'CS', 'AP', 'CJ', 'IF', 'IH', 'IC', 'TF', 'T', 'TS'],
+}
