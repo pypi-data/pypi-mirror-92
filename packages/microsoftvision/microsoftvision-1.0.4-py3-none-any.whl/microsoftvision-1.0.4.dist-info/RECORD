@@ -1,0 +1,8 @@
+microsoftvision/__init__.py,sha256=SRfF7oDVlOOAi6nGKiJIUK6B_arqYLO9iSMp-2IZZps,21
+microsoftvision/models/__init__.py,sha256=JHGgODUNcFupmzGI41kBkfDvrp8tChiC3TF-UwP3eS8,24
+microsoftvision/models/resnext.py,sha256=hfVToU9yK0Az7QXxN1BIv78Gzb1g2I3RCGXIXg-891c,8571
+microsoftvision/models/utils.py,sha256=D_NsJPkxYIpuAXwPKvb8_L2tsKDBofg4nG2h8AYlVqM,2364
+microsoftvision-1.0.4.dist-info/METADATA,sha256=OcOf4nq6_xxVmvj7gG9iNobHJdEOyPZZILfuTaqFm1g,1665
+microsoftvision-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+microsoftvision-1.0.4.dist-info/top_level.txt,sha256=hAUnVdY3e-Yz9uwaCCMxhsax9ZHg-ip7WSvpTNHzxhc,16
+microsoftvision-1.0.4.dist-info/RECORD,,
