@@ -1,0 +1,4 @@
+[spacy_factories]
+elmo=camphr_allennlp:Elmo.from_nlp
+udify=camphr_allennlp:Udify.from_nlp
+
