@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: xtrmth
+Version: 1.6.1
+Summary: assorted math functions, to provide all of your math needs.
+Home-page: UNKNOWN
+Author: William Nelson
+License: MIT
+Description: # XTRMTH
+        
+        All your math.
+        #### **One Library.**
+        All you functions.
+        #### **One Import.**
+        
+        ## The days of endlessly searching through documentation are over.
+        XTRMTH uses easy-to-understand syntax, and won't force memorization of every edge-case. 
+        
+        ## No more strange, inadequate errors.
+        All edge-cases* have a detailed, concice, error message. More broad errors will use formatted strings to show exactly where and how you messed up.
+        
+        {Documentation to be added in version 2.0.0, along with xtrmth variables (xmv.py).}
+        
+        *\*personally found or reported*
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: GPU
+Classifier: Environment :: MacOS X
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Environment :: OpenStack
+Classifier: Environment :: Other Environment
+Classifier: Environment :: Plugins
+Classifier: Environment :: Web Environment
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development
+Requires-Python: >=3.0
