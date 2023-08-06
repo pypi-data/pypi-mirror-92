@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+unhashlib/__init__.py
+unhashlib/unhashlib.py
+unhashlib.egg-info/PKG-INFO
+unhashlib.egg-info/SOURCES.txt
+unhashlib.egg-info/dependency_links.txt
+unhashlib.egg-info/top_level.txt
+unhashlib/tests/__init__.py
+unhashlib/tests/test_unhashlib.py
