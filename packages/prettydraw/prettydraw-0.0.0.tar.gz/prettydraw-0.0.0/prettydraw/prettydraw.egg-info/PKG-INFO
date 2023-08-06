@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: prettydraw
+Version: 0.0.0
+Summary: Draw pretty annotations using PIL.
+Home-page: https://github.com/ChenchaoZhao/prettydraw
+Author: Chenchao Zhao
+Author-email: chenchao.zhao@gmail.com
+License: MIT
+Description: # prettydraw
+        Pretty visualization of annotation based on PIL
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

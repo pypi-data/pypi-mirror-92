@@ -1,0 +1,7 @@
+README.md
+setup.py
+prettydraw/prettydraw.egg-info/PKG-INFO
+prettydraw/prettydraw.egg-info/SOURCES.txt
+prettydraw/prettydraw.egg-info/dependency_links.txt
+prettydraw/prettydraw.egg-info/requires.txt
+prettydraw/prettydraw.egg-info/top_level.txt
