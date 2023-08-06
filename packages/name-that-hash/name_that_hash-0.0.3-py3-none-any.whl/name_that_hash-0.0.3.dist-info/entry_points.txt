@@ -1,0 +1,3 @@
+[console_scripts]
+nth=name_that_hash.runner:main
+
