@@ -1,0 +1,11 @@
+README.md
+setup.py
+prettydiff/__init__.py
+prettydiff/diff_obj.py
+prettydiff/prettydiff.py
+prettydiff/terminal.py
+prettydiff.egg-info/PKG-INFO
+prettydiff.egg-info/SOURCES.txt
+prettydiff.egg-info/dependency_links.txt
+prettydiff.egg-info/requires.txt
+prettydiff.egg-info/top_level.txt
