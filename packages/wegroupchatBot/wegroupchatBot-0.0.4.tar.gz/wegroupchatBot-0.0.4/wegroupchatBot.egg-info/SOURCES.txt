@@ -1,0 +1,9 @@
+README.md
+setup.py
+WeGroupChatBot/__init__.py
+WeGroupChatBot/group_chat_bot.py
+wegroupchatBot.egg-info/PKG-INFO
+wegroupchatBot.egg-info/SOURCES.txt
+wegroupchatBot.egg-info/dependency_links.txt
+wegroupchatBot.egg-info/requires.txt
+wegroupchatBot.egg-info/top_level.txt
