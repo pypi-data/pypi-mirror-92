@@ -1,0 +1,12 @@
+sqlconsole/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlconsole/forms.py,sha256=tKDvqFj55zl-du8p5Z1RytEPRFtjoOE7cCggPEAgGHw,146
+sqlconsole/tests.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlconsole/urls.py,sha256=JttzOPq0vd2K2XB3YK3P9PaQSPpVNr2YqMEec23zU1M,106
+sqlconsole/views.py,sha256=gpAqOFPLATuLCP098vw2GbIZPjooV_1pazdREuVDKfk,1531
+sqlconsole/static/sqlconsole/css/sqlconsole.css,sha256=8uUX419gl4UsszH1Gh14_RRAo9QJFGtmBLk-VVIajmA,341
+sqlconsole/templates/admin/sqlconsole.djhtml,sha256=9UQ8hpXFsrayPfczRMd-4YHMjLZdTucGbMXNObSI45A,2370
+django_sqlconsole-1.2.dist-info/LICENSE,sha256=fgK1YOVU_PGNyNluKlWhGiCsk71_Di8v4LrBxbsYSkk,1070
+django_sqlconsole-1.2.dist-info/METADATA,sha256=GyJJjAMRI_m5KWYemVQ4XD3S4nYIGj0nBjpN5OV2Jpg,1764
+django_sqlconsole-1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_sqlconsole-1.2.dist-info/top_level.txt,sha256=zNUWFW2GOw6G84Om0LrhH_yszWIgkr1Ool7MbDzCGOg,11
+django_sqlconsole-1.2.dist-info/RECORD,,

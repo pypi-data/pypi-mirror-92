@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: django-sqlconsole
+Version: 1.2
+Summary: sql console is an app which allows for the exeuting of sql queries in the admin section of django.
+Home-page: https://github.com/knightebsuku/django-sqlconsole
+Author: Lunga Mthembu
+Author-email: stumenz.complex@gmail.com
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: django (==2.2.*)
+
+# Django SQL Console
+
+Sqlconsole is a django app that allows for the execution of sql queries from the admin section of a django site.
+
+Sqlconsole only works with the current LTS version of django (2.2).
+
+## Install
+
+```
+pip install django-sqlconsole
+```
+
+Add the app to ```INSTALLED_APPS```
+
+```
+INSTALLED_APPS = [
+...
+'sqlconsole'
+]
+```
+Add the console url to the projects base ```urls.py``` file
+
+```
+urlpatterns = [
+...,
+path(
+        "admin/console/",
+        include(("sqlconsole.urls", "sqlconsole"), namespace="console"),
+    ),
+]
+
+```
+
+
+Go the url ```localhost:8000/admin/console``` to start entering queries.
+
+## Screenshot
+![Example Query](screenshot/query.png)
+
+
