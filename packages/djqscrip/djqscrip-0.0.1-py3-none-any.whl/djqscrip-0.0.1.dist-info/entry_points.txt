@@ -1,0 +1,3 @@
+[console_scripts]
+cv_resize_img = djqscrips.python:cv_resize_img
+

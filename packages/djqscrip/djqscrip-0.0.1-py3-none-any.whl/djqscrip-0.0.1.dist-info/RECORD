@@ -1,0 +1,11 @@
+djqscrips/__init__.py,sha256=jO2PYRIHLuUIfFiu2EUrVbTRVUA9AxcLqNOiw9MxLgs,162
+djqscrips/bash/__init__.py,sha256=f7n7TlDQoon2qdzqCuiOp13-GkjEXJ9mvyv6elhDLiE,162
+djqscrips/python/__init__.py,sha256=RHrt5uegCmGZ3lFTL9kYViAKe9Y4_RUEhEmtKa223ok,204
+djqscrips/python/funcs.py,sha256=01A9HlEUiySfcVJYZrkqQvWAdxX3NVELmbwzMAiR6Ng,854
+djqscrips/python/scrips.py,sha256=Rr7NTdSj3Y90DNQnKUq6AqYUVqWOo1CUYROnWTK-FgE,959
+djqscrip-0.0.1.dist-info/LICENSE,sha256=gWKtW7s0h1NAJrZgaHFte1QnoZiQEQfWKKS-fuDxEx8,1067
+djqscrip-0.0.1.dist-info/METADATA,sha256=3jnUKVNCrWZ9Z_CRtT2wRT2q3gGwqR6rmDtJVRK1B6w,199
+djqscrip-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+djqscrip-0.0.1.dist-info/entry_points.txt,sha256=jsJwHw5N595ldWYT12AYFhD-zHakxHEVT-mQ1M_2es8,66
+djqscrip-0.0.1.dist-info/top_level.txt,sha256=GkGFdXSrqKabHcF6v6XWcDmcctT3AHaid-LwALqk4Oc,10
+djqscrip-0.0.1.dist-info/RECORD,,
