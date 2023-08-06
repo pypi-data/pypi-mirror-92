@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: planfix-py
+Version: 0.3
+Summary: Python package for working with Planfix API
+Home-page: https://github.com/LD31D/planfix_py
+Author: LD31D
+Author-email: artem.12m21@gmail.com
+License: MIT
+Description: # planfix_py
+        
+        Python package for working with Planfix API
+        
+        ```
+        pip install planfix-py
+        ```
+        
+        ---
+        
+        #### Simple example
+        ```
+        from planfix_py import PlanfixAPI
+        
+        pf = PlanfixAPI('account', 'token', 'api_key')
+        ```
+        
+        ##### You can update:
+        * account 
+        * token
+        * api_key
+        * url
+        * headers
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
