@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sortx
+Version: 0.0.1
+Summary: A small example package
+Home-page: UNKNOWN
+Author: James Ssekitoleko
+Author-email: ssekitolekoj95@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This module useses a simple sorting algorithm to sort alist in ascending and descending order
+
+change log
+==========
+0.01 (25/Jan/2021)
+------------------
+-First Release
+
