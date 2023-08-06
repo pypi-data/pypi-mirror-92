@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: os_xml_automation
+Version: 1.0
+Summary: py automation tools for os
+Home-page: https://github.com/osfunapps/os-xml-automation-py
+Author: Oz Shabat
+Author-email: support@os-apps.com
+License: MIT
+Description: UNKNOWN
+Keywords: python,osfunapps,osapps,files,xml,tools,utils,automation,texts
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
