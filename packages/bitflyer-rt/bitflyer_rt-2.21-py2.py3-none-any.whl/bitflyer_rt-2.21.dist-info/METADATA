@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: bitflyer-rt
+Version: 2.21
+Summary: Bitflyer Realtime and Rest API
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client (==0.47.0)
+Requires-Dist: pybitflyer (==0.1.9)
+Requires-Dist: aiodns (==1.1.1)
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: python-engineio (==3.13.2)
+Requires-Dist: python-socketio (==4.6.0)
+Requires-Dist: attrs
+Requires-Dist: iso8601
+Requires-Dist: sortedcontainers
+Requires-Dist: numpy
+
+# Bitflyer Realtime Feed (python)
+
+- https://lightning.bitflyer.com/docs?lang=en
+
+## Installation
+```
+pip install bitflyer-rt
+```
+
+
+
