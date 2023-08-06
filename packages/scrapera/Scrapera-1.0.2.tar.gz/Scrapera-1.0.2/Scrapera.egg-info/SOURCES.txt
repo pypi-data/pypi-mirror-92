@@ -1,0 +1,7 @@
+README.md
+setup.py
+Scrapera.egg-info/PKG-INFO
+Scrapera.egg-info/SOURCES.txt
+Scrapera.egg-info/dependency_links.txt
+Scrapera.egg-info/requires.txt
+Scrapera.egg-info/top_level.txt
