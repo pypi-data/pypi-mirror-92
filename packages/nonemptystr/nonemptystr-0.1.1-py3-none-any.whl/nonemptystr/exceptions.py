@@ -1,0 +1,2 @@
+class EmptyString(ValueError):
+    pass

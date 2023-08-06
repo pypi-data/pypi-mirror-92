@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: nonemptystr
+Version: 0.1.1
+Summary: Non-empty string
+Home-page: https://github.com/nekonoshiri/nonemptystr
+License: MIT
+Keywords: str
+Author: Shiri Nekono
+Author-email: gexira.halen.toms@gmail.com
+Maintainer: Shiri Nekono
+Maintainer-email: gexira.halen.toms@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Project-URL: Documentation, https://github.com/nekonoshiri/nonemptystr
+Project-URL: Repository, https://github.com/nekonoshiri/nonemptystr
+Description-Content-Type: text/markdown
+
+# nonemptystr
+
+[![PyPI](https://img.shields.io/pypi/v/nonemptystr)](https://pypi.org/project/nonemptystr/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nonemptystr)](https://pypi.org/project/nonemptystr/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![license](https://img.shields.io/github/license/nekonoshiri/nonemptystr)](https://github.com/nekonoshiri/nonemptystr/blob/main/LICENSE)
+
+Non-empty string.
+
+## Usage
+
+```Python
+from nonemptystr import EmptyString, nonemptystr
+
+name: nonemptystr = nonemptystr("John")
+
+try:
+    name = nonemptystr("")
+except EmptyString:
+    print("The name is empty.")
+```
+
+## API
+
+### Module `nonemptystr`
+
+#### *class* `nonemptystr(obj: object)`
+
+Subclass of `str`.
+Raise `EmptyString` exception if `str(obj)` is empty string.
+
+#### *class* `EmptyString`
+
+Subclass of `ValueError`.
+
+
