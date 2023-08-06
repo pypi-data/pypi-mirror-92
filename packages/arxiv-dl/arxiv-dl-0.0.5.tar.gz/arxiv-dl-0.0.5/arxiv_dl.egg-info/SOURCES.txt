@@ -1,0 +1,10 @@
+README.md
+setup.py
+arxiv_dl/arxiv_dl.py
+arxiv_dl.egg-info/PKG-INFO
+arxiv_dl.egg-info/SOURCES.txt
+arxiv_dl.egg-info/dependency_links.txt
+arxiv_dl.egg-info/requires.txt
+arxiv_dl.egg-info/top_level.txt
+arxiv_dl/bin/add-paper
+arxiv_dl/bin/dl-paper
