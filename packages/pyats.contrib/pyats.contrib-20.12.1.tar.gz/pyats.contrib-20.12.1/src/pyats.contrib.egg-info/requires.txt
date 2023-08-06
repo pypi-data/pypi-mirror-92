@@ -1,0 +1,5 @@
+ansible
+requests
+xlrd==1.2
+xlwt
+xlsxwriter
