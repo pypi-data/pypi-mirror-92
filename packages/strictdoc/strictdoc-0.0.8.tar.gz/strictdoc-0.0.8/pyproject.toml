@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "strictdoc"
+version = "0.0.8"
+description = " Software for writing technical requirements and specifications."
+authors = ["Stanislav Pankevich <s.pankevich@gmail.com>"]
+maintainers = ["Stanislav Pankevich <s.pankevich@gmail.com>"]
+license = "Apache 2"
+readme = "README.md"
+homepage = ""
+repository = "https://github.com/stanislaw/strictdoc"
+documentation = "https://strictdoc.readthedocs.io/en/latest/index.html"
+keywords = [
+    "Documentation",
+    "Requirements management"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.2"
+textx = "2.3.0"
+jinja2 = "2.11.2"
+docutils = "0.16"
+XlsxWriter = "^1.3.7"
+python-datauri = "^0.2.9"
+
+[tool.poetry.dev-dependencies]
+invoke = "1.4.1"
+pytest = "*"
+lit = '0.11.0.post1'
+filecheck = "*"
+black = "20.8b1"
+pylint = "2.6.0"
+sphinx = '3.2.1'
+html5lib = '1.1'
+pytidylib = '0.3.2'
+beautifulsoup4 = '4.9.3'
+lxml = '4.6.2'
+openpyxl = '^3.0.5'
+
+# https://python-poetry.org/blog/announcing-poetry-1-1-0.html#standalone-build-backend
+# https://github.com/python-poetry/poetry/issues/3153#issuecomment-727196619
+[build-system]
+requires = ["setuptools", "poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+strictdoc = "strictdoc.cli.main:main"
+
+[tool.black]
+line-length = 80
+
