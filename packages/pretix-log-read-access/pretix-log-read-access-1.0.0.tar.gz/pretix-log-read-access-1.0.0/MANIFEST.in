@@ -1,0 +1,5 @@
+recursive-include pretix_log_read_access/static *
+recursive-include pretix_log_read_access/templates *
+recursive-include pretix_log_read_access/locale *
+include LICENSE
+exclude .gitlab-ci.yml
