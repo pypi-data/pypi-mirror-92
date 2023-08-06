@@ -1,0 +1,7 @@
+README.md
+setup.py
+PythonEventSystem/__init__.py
+PythonEventSystem.egg-info/PKG-INFO
+PythonEventSystem.egg-info/SOURCES.txt
+PythonEventSystem.egg-info/dependency_links.txt
+PythonEventSystem.egg-info/top_level.txt
