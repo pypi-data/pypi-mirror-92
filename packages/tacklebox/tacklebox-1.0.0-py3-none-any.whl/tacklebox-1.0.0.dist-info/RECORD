@@ -1,0 +1,9 @@
+tacklebox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacklebox/helpers.py,sha256=mV0R21NDOzOm_HoN6xmp0WnzSXBHOPq4FN9EvE9ZZN0,8598
+tacklebox/hook_management.py,sha256=A54EivEDKn-5A4Gd4qN5w8I9UPYjRLjbMQ-MmT31Z_w,27053
+tacklebox/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tacklebox/hooks/model_tracking.py,sha256=V2sOY48A_7u73dT7tkICppPPSf95986CnIu3gmvvs9I,10906
+tacklebox-1.0.0.dist-info/METADATA,sha256=ewcnyFvNlz_3BHcynvR6n35amJAhCaAQz0O73ewfmaM,562
+tacklebox-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tacklebox-1.0.0.dist-info/top_level.txt,sha256=cUQXKOVhHYl5sdJDSwW4yT1TM6eeuiSr5Kbho6KfCHU,10
+tacklebox-1.0.0.dist-info/RECORD,,
