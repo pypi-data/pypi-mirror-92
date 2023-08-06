@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+coloured_spectra/__init__.py
+coloured_spectra/_nbdev.py
+coloured_spectra/coloured_spectra.py
+coloured_spectra.egg-info/PKG-INFO
+coloured_spectra.egg-info/SOURCES.txt
+coloured_spectra.egg-info/dependency_links.txt
+coloured_spectra.egg-info/entry_points.txt
+coloured_spectra.egg-info/not-zip-safe
+coloured_spectra.egg-info/top_level.txt
