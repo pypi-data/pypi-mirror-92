@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bssolar
+Version: 0.0.2
+Summary: Utils for Solar Data Analysis
+Home-page: http://mod.lge.com/hub/smartdata/bssolar
+Author: Woojin Cho
+Author-email: lg.woojin.cho@lge.com
+License: UNKNOWN
+Download-URL: http://mod.lge.com/hub/smartdata/bssolar/archive/0.0.2.tar.gz
+Keywords: solar,dask
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Requires-Dist: dask[complete]
+Requires-Dist: pyarrow (==2.0)
+Requires-Dist: tqdm (==4.54)
+Requires-Dist: s3fs (==0.4.2)
+
+UNKNOWN
+
+
