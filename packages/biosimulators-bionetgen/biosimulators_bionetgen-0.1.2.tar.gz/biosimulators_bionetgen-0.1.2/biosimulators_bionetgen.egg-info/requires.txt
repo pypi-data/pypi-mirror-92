@@ -1,0 +1,14 @@
+biosimulators_utils>=0.1.34
+pandas
+
+[all]
+biosimulators_utils[docker]
+numpy
+python_dateutil
+
+[docs]
+
+[tests]
+biosimulators_utils[docker]
+numpy
+python_dateutil
