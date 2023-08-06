@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-toolbox
+Version: 0.1
+Summary: A collection of sqlalchemy utility classes and functionalities that help in using sqlalchemy
+Home-page: https://github.com/coding-kitties/sqlalchemy-toolbox.git
+Author: coding kitties
+Author-email: codingkitties@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: SQLALCHEMY,SQL,ORM,DATABASE,ALEMBIC
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
