@@ -1,0 +1,13 @@
+PyPDF2
+dill
+docker
+ipython
+jinja2
+nbconvert<6.0.0
+nbformat
+pandas
+pdfkit
+pyyaml
+setuptools
+tornado
+tqdm
