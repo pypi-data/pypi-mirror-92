@@ -1,0 +1,11 @@
+README.md
+setup.py
+ExcelToSBOL.egg-info/PKG-INFO
+ExcelToSBOL.egg-info/SOURCES.txt
+ExcelToSBOL.egg-info/dependency_links.txt
+ExcelToSBOL.egg-info/not-zip-safe
+ExcelToSBOL.egg-info/requires.txt
+ExcelToSBOL.egg-info/top_level.txt
+utils/__init__.py
+utils/converter_utils.py
+utils/excel_template_constants.py
