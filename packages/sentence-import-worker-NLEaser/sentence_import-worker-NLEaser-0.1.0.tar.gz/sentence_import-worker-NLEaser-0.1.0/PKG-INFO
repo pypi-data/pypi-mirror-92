@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: sentence_import-worker-NLEaser
+Version: 0.1.0
+Summary: Consumer do rabbit para realizar a importação e o preprocessamento das sentenças
+Home-page: UNKNOWN
+Author: Mateus Michels de Oliveira, Lucas Domiciano
+Author-email: michels09@hotmail.com, lucas2809@live.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
