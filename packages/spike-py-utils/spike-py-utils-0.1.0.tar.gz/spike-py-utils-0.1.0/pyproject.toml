@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "spike-py-utils"
+version = "0.1.0"
+description = "Assortment of datascience and data engineering utilities"
+authors = ["cd <cdagnino@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.19.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
