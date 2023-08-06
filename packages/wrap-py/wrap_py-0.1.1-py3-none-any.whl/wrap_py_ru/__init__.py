@@ -1,0 +1,1 @@
+from wrap_py_ru import wrap_app as programma
