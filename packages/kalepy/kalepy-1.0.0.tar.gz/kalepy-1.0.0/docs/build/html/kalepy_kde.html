@@ -1,0 +1,949 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>kalepy.kde &mdash; kalepy 0.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> kalepy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">kalepy API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kalepy.html">Full Package Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">kalepy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>kalepy.kde</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/kalepy_kde.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="kalepy-kde">
+<h1>kalepy.kde<a class="headerlink" href="#kalepy-kde" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#density-estimation-kalepy-density" id="id9">Density estimation: <cite>kalepy.density(…)</cite>:</a></p></li>
+<li><p><a class="reference internal" href="#data-resampling-kalepy-resample" id="id10">Data resampling: <cite>kalepy.resample(…)</cite>:</a></p></li>
+<li><p><a class="reference internal" href="#the-kde-class-kalepy-kde" id="id11">The KDE class: <cite>kalepy.KDE</cite></a></p></li>
+<li><p><a class="reference internal" href="#module-kalepy.kde" id="id12">Full submodule documentation</a></p></li>
+</ul>
+</div>
+<div class="section" id="density-estimation-kalepy-density">
+<h2><a class="toc-backref" href="#id9">Density estimation: <cite>kalepy.density(…)</cite>:</a><a class="headerlink" href="#density-estimation-kalepy-density" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname">kalepy.</code><code class="sig-name descname">density</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">probability</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">grid</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Use a KDE to calculate the density of the given data.</p>
+<p>This function (1) constructs a kernel-density estimate of the distribution function from which the given <cite>data</cite> were sampled; then (2) returns the values of the distribution function at <cite>points</cite> (which are automatically generated if they are not given).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>(</em><em>D</em><em>,</em><em>N</em><em>,</em><em>)</em>) – Dataset from which to construct the kernel-density-estimate.
+For multivariate data with <cite>D</cite> variables and <cite>N</cite> values, the data must be shaped (D,N).
+For univariate (D=1) data, this can be a single array with shape (N,).</p></li>
+<li><p><strong>points</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>M</em><em>,</em><em>) </em><em>array_like of float</em><em>, or </em><em>(</em><em>D</em><em>,</em><em>) </em><em>set of array_like point specifications</em>) – <p>The locations at which the PDF should be evaluated.  The number of dimensions <cite>D</cite> must
+match that of the <cite>dataset</cite> that initialized this class’ instance.
+NOTE: If the <cite>params</cite> kwarg (see below) is given, then only those dimensions of the
+target parameters should be specified in <cite>points</cite>.</p>
+<p>The meaning of <cite>points</cite> depends on the value of the <cite>grid</cite> argument:</p>
+<ul>
+<li><p><cite>grid=True</cite>  : <cite>points</cite> must be a set of (D,) array_like objects which each give the
+evaluation points for the corresponding dimension to produce a grid of values.
+For example, for a 2D dataset,
+<cite>points=([0.1, 0.2, 0.3], [1, 2])</cite>,
+would produce a grid of points with shape (3, 2):
+<cite>[[0.1, 1], [0.1, 2]], [[0.2, 1], [0.2, 2]], [[0.3, 1], [0.3, 2]]</cite>,
+and the returned values would be an array of the same shape (3, 2).</p></li>
+<li><p><cite>grid=False</cite> : <cite>points</cite> must be an array_like (D,M) describing the position of <cite>M</cite>
+sample points in each of <cite>D</cite> dimensions.
+For example, for a 3D dataset:
+<cite>points=([0.1, 0.2], [1.0, 2.0], [10, 20])</cite>,
+describes 2 sample points at the 3D locations, <cite>(0.1, 1.0, 10)</cite> and <cite>(0.2, 2.0, 20)</cite>,
+and the returned values would be an array of shape (2,).</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>)</em><em>, </em><em>None</em>) – Weights corresponding to each <cite>dataset</cite> point.  Must match the number of points <cite>N</cite> in
+the <cite>dataset</cite>.
+If <cite>None</cite>, weights are uniformly set to 1.0 for each value.</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.  See class docstrings:<cite>Reflection</cite> for more information.</p></li>
+<li><p><strong>params</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em>) – Only calculate the PDF for certain parameters (dimensions).
+See class docstrings:<cite>Projection</cite> for more information.</p></li>
+<li><p><strong>grid</strong> (<em>bool</em><em>,</em>) – Evaluate the KDE distribution at a grid of points specified by <cite>points</cite>.
+See <cite>points</cite> argument description above.</p></li>
+<li><p><strong>probability</strong> (<em>bool</em><em>, </em><em>normalize the results to sum to unity</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>points</strong> (<em>array_like of scalar</em>) – Locations at which the PDF is evaluated.</p></li>
+<li><p><strong>vals</strong> (<em>array_like of scalar</em>) – PDF evaluated at the given points</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="data-resampling-kalepy-resample">
+<h2><a class="toc-backref" href="#id10">Data resampling: <cite>kalepy.resample(…)</cite>:</a><a class="headerlink" href="#data-resampling-kalepy-resample" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt>
+<code class="sig-prename descclassname">kalepy.</code><code class="sig-name descname">resample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Use a KDE to resample from a reconstructed density function of the given data.</p>
+<p>This function (1) constructs a kernel-density estimate of the distribution function from which the given <cite>data</cite> were sampled; then, (2) resamples <cite>size</cite> data points from that function.  If <cite>size</cite> is not given, then the same number of points are returned as in the input <cite>data</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em><em>, </em><em>the data to be resampled</em><em>,</em>) – The input data can be either:
+* 1D array_like (N,) with <cite>N</cite> data points, or
+* 2D array_like (D,N) with <cite>D</cite> parameters, and <cite>N</cite> data points</p></li>
+<li><p><strong>size</strong> (<em>int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – The number of new data points to draw.  If <cite>None</cite>, then the number of <cite>datapoints</cite> is
+used.</p></li>
+<li><p><strong>weights</strong> ((N,) array_like or <cite>None</cite>,) – The weights of which each data point in <cite>data</cite>.</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.</p></li>
+<li><p><strong>keep</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Parameters/dimensions where the original data-values should be drawn from, instead of
+from the reconstructed PDF.
+TODO: add more information.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>samples</strong> – Newly drawn samples from the PDF, where the number of points <cite>L</cite> is determined by the
+<cite>size</cite> argument.
+If <cite>squeeze</cite> is True (default), and the number of dimensions in the original dataset
+<cite>D</cite> is one, then the returned array will have shape (L,).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>([D,]L) ndarray of float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="the-kde-class-kalepy-kde">
+<h2><a class="toc-backref" href="#id11">The KDE class: <cite>kalepy.KDE</cite></a><a class="headerlink" href="#the-kde-class-kalepy-kde" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt>
+<em class="property">class </em><code class="sig-prename descclassname">kalepy.</code><code class="sig-name descname">KDE</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">kernel</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extrema</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">neff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">diagonal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">helper</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">bw_rescale</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Core class and primary API for using <cite>kalepy</cite>, by constructin a KDE based on given data.</p>
+<p>The <cite>KDE</cite> class acts as an API to the underlying <cite>kernel</cite> structures and methods.  From the
+passed data, a ‘bandwidth’ is calculated and/or set (using optional specifications using the
+<cite>bandwidth</cite> argument).  A <cite>kernel</cite> is constructed (using optional specifications in the
+<cite>kernel</cite> argument) which performs the calculations of the kernel density estimation.</p>
+<p class="rubric">Notes</p>
+<p><em>Reflection</em></p>
+<blockquote>
+<div><p>Reflective boundary conditions can be used to better reconstruct a PDF that is known to
+have finite support (i.e. boundaries outside of which the PDF should be zero).</p>
+<p>The <cite>pdf</cite> and <cite>resample</cite> methods accept the keyword-argument (kwarg) <cite>reflect</cite> to specify
+that a reflecting boundary should be used.</p>
+<dl>
+<dt>reflect<span class="classifier">(D,) array_like, None (default)</span></dt><dd><p>Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.</p>
+<p>If a pair of boundaries are given, then the
+first value corresponds to the lower boundary, and the second value to the upper
+boundary, in that dimension.  If there should only be a single lower or upper
+boundary, then <cite>None</cite> should be passed as the other boundary value.</p>
+</dd>
+</dl>
+<p>For example, <cite>reflect=[None, [-1.0, 1.0], [0.0, None]]</cite>, specifies that the 0th dimension
+has no boundaries, the 1st dimension has boundaries at both -1.0 and 1.0, and the 2nd
+dimension has a lower boundary at 0.0, and no upper boundary.</p>
+</div></blockquote>
+<p><em>Projection / Marginalization</em></p>
+<blockquote>
+<div><p>The PDF can be calculated for only particular parameters/dimensions.
+The <cite>pdf</cite> method accepts the keyword-argument (kwarg) <cite>params</cite> to specify particular
+parameters over which to calculate the PDF (i.e. the other parameters are projected over).</p>
+<dl>
+<dt>params<span class="classifier">int, array_like of int, None (default)</span></dt><dd><p>Only calculate the PDF for certain parameters (dimensions).</p>
+<p>If <cite>None</cite>, then calculate PDF along all dimensions.
+If <cite>params</cite> is specified, then the target evaluation points <cite>pnts</cite>, must only
+contain the corresponding dimensions.</p>
+</dd>
+</dl>
+<p>For example, if the <cite>dataset</cite> has shape (4, 100), but <cite>pdf</cite> is called with <cite>params=(1, 2)</cite>,
+then the <cite>pnts</cite> array should have shape <cite>(2, M)</cite> where the two provides dimensions
+correspond to the 1st and 2nd variables of the <cite>dataset</cite>.</p>
+</div></blockquote>
+<p>TO-DO: add notes on <cite>keep</cite> parameter</p>
+<p><em>Dynamic Range</em></p>
+<blockquote>
+<div><p>When the elements of the covariace matrix between data variables differs by numerous
+orders of magnitude, the KDE values (especially marginalized values) can become spurious.
+One solution is to use a diagonal covariance matrix by initializing the KDE instance with
+<cite>diagonal=True</cite>.  An alternative is to transform the input data in such a way that each
+variable’s dynamic range becomes similar (e.g. taking the log of the values).  A warning
+is given if the covariance matrix has a large dynamic very-large dynamic range, but no
+error is raised.</p>
+</div></blockquote>
+<p class="rubric">Examples</p>
+<p>Construct semi-random data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Construct <cite>KDE</cite> instance using this data, and the default bandwidth and kernels.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">kalepy</span> <span class="k">as</span> <span class="nn">kale</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kde</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">KDE</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Compare original PDF and the data to the reconstructed PDF from the KDE:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf_tru</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">xx</span><span class="o">*</span><span class="n">xx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_kde</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">density</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_tru</span><span class="p">,</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Normal PDF&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                               <span class="n">color</span><span class="o">=</span><span class="s1">&#39;0.5&#39;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Data&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_kde</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KDE&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Compare the KDE reconstructed PDF to the “true” PDF, make sure the chi-squared is consistent:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dof</span> <span class="o">=</span> <span class="n">xx</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">pdf_kde</span> <span class="o">-</span> <span class="n">pdf_tru</span><span class="p">)</span><span class="o">/</span><span class="n">pdf_tru</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">/</span> <span class="n">dof</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">&lt;</span> <span class="mf">0.1</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Chi-Squared: </span><span class="si">{:.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span>
+<span class="go">Chi-Squared: 1.7e-02</span>
+</pre></div>
+</div>
+<p>Draw new samples from the data and make sure they are consistent with the original data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">samp</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">resample</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">samp</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bins</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>                       <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Samples&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ks</span><span class="p">,</span> <span class="n">pv</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">ks_2samp</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">samp</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">&gt;</span> <span class="mf">0.05</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Initialize the <cite>KDE</cite> class with the given dataset and optional specifications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>(</em><em>D</em><em>,</em><em>N</em><em>,</em><em>)</em>) – Dataset from which to construct the kernel-density-estimate.
+For multivariate data with <cite>D</cite> variables and <cite>N</cite> values, the data must be shaped (D,N).
+For univariate (D=1) data, this can be a single array with shape (N,).</p></li>
+<li><p><strong>bandwidth</strong> (<em>str</em><em>, </em><em>float</em><em>, </em><em>array of float</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Specification for the bandwidth, or the method by which the bandwidth should be
+determined.  If a <cite>str</cite> is given, it must match one of the standard bandwidth
+determination methods.  If a <cite>float</cite> is given, it is used as the bandwidth in each
+dimension.  If an array of <a href="#id1"><span class="problematic" id="id2">`</span></a>float`s are given, then each value will be used as the
+bandwidth for the corresponding data dimension.</p></li>
+<li><p><strong>weights</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>)</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Weights corresponding to each <cite>dataset</cite> point.  Must match the number of points <cite>N</cite> in
+the <cite>dataset</cite>.
+If <cite>None</cite>, weights are uniformly set to 1.0 for each value.</p></li>
+<li><p><strong>kernel</strong> (<em>str</em><em>, </em><a class="reference internal" href="kalepy_kernels.html#kalepy.kernels.Distribution" title="kalepy.kernels.Distribution"><em>Distribution</em></a><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – The distribution function that should be used for the kernel.  This can be a <cite>str</cite>
+specification that must match one of the existing distribution functions, or this can
+be a <cite>Distribution</cite> subclass itself that overrides the <cite>_evaluate</cite> method.</p></li>
+<li><p><strong>neff</strong> (<em>int</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – An effective number of datapoints.  This is used in the plugin bandwidth determination
+methods.
+If <cite>None</cite>, <cite>neff</cite> is calculated from the <cite>weights</cite> array.  If <cite>weights</cite> are all
+uniform, then <cite>neff</cite> equals the number of datapoints <cite>N</cite>.</p></li>
+<li><p><strong>diagonal</strong> (<em>bool</em><em>,</em>) – Whether the bandwidth/covariance matrix should be set as a diagonal matrix
+(i.e. without covariances between parameters).
+NOTE: see <cite>KDE</cite> docstrings, “Dynamic Range”.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt>
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">kernel</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extrema</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">neff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">diagonal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">helper</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">bw_rescale</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Initialize the <cite>KDE</cite> class with the given dataset and optional specifications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>(</em><em>D</em><em>,</em><em>N</em><em>,</em><em>)</em>) – Dataset from which to construct the kernel-density-estimate.
+For multivariate data with <cite>D</cite> variables and <cite>N</cite> values, the data must be shaped (D,N).
+For univariate (D=1) data, this can be a single array with shape (N,).</p></li>
+<li><p><strong>bandwidth</strong> (<em>str</em><em>, </em><em>float</em><em>, </em><em>array of float</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Specification for the bandwidth, or the method by which the bandwidth should be
+determined.  If a <cite>str</cite> is given, it must match one of the standard bandwidth
+determination methods.  If a <cite>float</cite> is given, it is used as the bandwidth in each
+dimension.  If an array of <a href="#id3"><span class="problematic" id="id4">`</span></a>float`s are given, then each value will be used as the
+bandwidth for the corresponding data dimension.</p></li>
+<li><p><strong>weights</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>)</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Weights corresponding to each <cite>dataset</cite> point.  Must match the number of points <cite>N</cite> in
+the <cite>dataset</cite>.
+If <cite>None</cite>, weights are uniformly set to 1.0 for each value.</p></li>
+<li><p><strong>kernel</strong> (<em>str</em><em>, </em><a class="reference internal" href="kalepy_kernels.html#kalepy.kernels.Distribution" title="kalepy.kernels.Distribution"><em>Distribution</em></a><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – The distribution function that should be used for the kernel.  This can be a <cite>str</cite>
+specification that must match one of the existing distribution functions, or this can
+be a <cite>Distribution</cite> subclass itself that overrides the <cite>_evaluate</cite> method.</p></li>
+<li><p><strong>neff</strong> (<em>int</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – An effective number of datapoints.  This is used in the plugin bandwidth determination
+methods.
+If <cite>None</cite>, <cite>neff</cite> is calculated from the <cite>weights</cite> array.  If <cite>weights</cite> are all
+uniform, then <cite>neff</cite> equals the number of datapoints <cite>N</cite>.</p></li>
+<li><p><strong>diagonal</strong> (<em>bool</em><em>,</em>) – Whether the bandwidth/covariance matrix should be set as a diagonal matrix
+(i.e. without covariances between parameters).
+NOTE: see <cite>KDE</cite> docstrings, “Dynamic Range”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">cdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pnts</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Cumulative Distribution Function based on KDE smoothed data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pnts</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em>) – Target evaluation points</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>cdf</strong> – CDF Values at the target points</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(N,) ndarray of scalar</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">cdf_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edges</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span></dt>
+<dd><dl class="simple">
+<dt>NOTE: optimize: there are likely much faster methods than broadcasting and flattening,</dt><dd><p>use a different method to calculate cdf on a grid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">density</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">grid</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">probability</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Evaluate the KDE distribution at the given data-points.</p>
+<p>This method acts as an API to the <cite>Kernel.pdf</cite> method for this instance’s <cite>kernel</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>M</em><em>,</em><em>) </em><em>array_like of float</em><em>, or </em><em>(</em><em>D</em><em>,</em><em>) </em><em>set of array_like point specifications</em>) – <p>The locations at which the PDF should be evaluated.  The number of dimensions <cite>D</cite> must
+match that of the <cite>dataset</cite> that initialized this class’ instance.
+NOTE: If the <cite>params</cite> kwarg (see below) is given, then only those dimensions of the
+target parameters should be specified in <cite>points</cite>.</p>
+<p>The meaning of <cite>points</cite> depends on the value of the <cite>grid</cite> argument:</p>
+<ul>
+<li><p><cite>grid=True</cite>  : <cite>points</cite> must be a set of (D,) array_like objects which each give the
+evaluation points for the corresponding dimension to produce a grid of values.
+For example, for a 2D dataset,
+<cite>points=([0.1, 0.2, 0.3], [1, 2])</cite>,
+would produce a grid of points with shape (3, 2):
+<cite>[[0.1, 1], [0.1, 2]], [[0.2, 1], [0.2, 2]], [[0.3, 1], [0.3, 2]]</cite>,
+and the returned values would be an array of the same shape (3, 2).</p></li>
+<li><p><cite>grid=False</cite> : <cite>points</cite> must be an array_like (D,M) describing the position of <cite>M</cite>
+sample points in each of <cite>D</cite> dimensions.
+For example, for a 3D dataset:
+<cite>points=([0.1, 0.2], [1.0, 2.0], [10, 20])</cite>,
+describes 2 sample points at the 3D locations, <cite>(0.1, 1.0, 10)</cite> and <cite>(0.2, 2.0, 20)</cite>,
+and the returned values would be an array of shape (2,).</p></li>
+</ul>
+</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.  See class docstrings:<cite>Reflection</cite> for more information.</p></li>
+<li><p><strong>params</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Only calculate the PDF for certain parameters (dimensions).
+See class docstrings:<cite>Projection</cite> for more information.</p></li>
+<li><p><strong>grid</strong> (<em>bool</em><em>,</em>) – Evaluate the KDE distribution at a grid of points specified by <cite>points</cite>.
+See <cite>points</cite> argument description above.</p></li>
+<li><p><strong>probability</strong> (<em>bool</em><em>, </em><em>normalize the results to sum to unity</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>points</strong> (<em>array_like of scalar</em>) – Locations at which the PDF is evaluated.</p></li>
+<li><p><strong>vals</strong> (<em>array_like of scalar</em>) – PDF evaluated at the given points</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt>
+<code class="sig-name descname">resample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">squeeze</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span></dt>
+<dd><p>Draw new values from the kernel-density-estimate calculated PDF.</p>
+<p>The KDE calculates a PDF from the given dataset.  This method draws new, semi-random data
+points from that PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<em>int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – The number of new data points to draw.  If <cite>None</cite>, then the number of <cite>datapoints</cite> is
+used.</p></li>
+<li><p><strong>keep</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Parameters/dimensions where the original data-values should be drawn from, instead of
+from the reconstructed PDF.
+TODO: add more information.</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.</p></li>
+<li><p><strong>squeeze</strong> (<em>bool</em><em>, </em><em>(</em><em>default: True</em><em>)</em>) – If the number of dimensions <cite>D</cite> is one, then return an array of shape (L,) instead of
+(1, L).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>samples</strong> – Newly drawn samples from the PDF, where the number of points <cite>L</cite> is determined by the
+<cite>size</cite> argument.
+If <cite>squeeze</cite> is True (default), and the number of dimensions in the original dataset
+<cite>D</cite> is one, then the returned array will have shape (L,).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>([D,]L) ndarray of float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-kalepy.kde">
+<span id="full-submodule-documentation"></span><h2><a class="toc-backref" href="#id12">Full submodule documentation</a><a class="headerlink" href="#module-kalepy.kde" title="Permalink to this headline">¶</a></h2>
+<p>kalepy’s top-level KDE class which provides all direct KDE functionality.</p>
+<p>Contents:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#kalepy.kde.KDE" title="kalepy.kde.KDE"><code class="xref py py-class docutils literal notranslate"><span class="pre">KDE</span></code></a> : class for interfacing with KDEs and derived functionality.</p></li>
+</ul>
+<dl class="py class">
+<dt id="kalepy.kde.KDE">
+<em class="property">class </em><code class="sig-prename descclassname">kalepy.kde.</code><code class="sig-name descname">KDE</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">kernel</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extrema</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">neff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">diagonal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">helper</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">bw_rescale</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Core class and primary API for using <cite>kalepy</cite>, by constructin a KDE based on given data.</p>
+<p>The <cite>KDE</cite> class acts as an API to the underlying <cite>kernel</cite> structures and methods.  From the
+passed data, a ‘bandwidth’ is calculated and/or set (using optional specifications using the
+<cite>bandwidth</cite> argument).  A <cite>kernel</cite> is constructed (using optional specifications in the
+<cite>kernel</cite> argument) which performs the calculations of the kernel density estimation.</p>
+<p class="rubric">Notes</p>
+<p><em>Reflection</em></p>
+<blockquote>
+<div><p>Reflective boundary conditions can be used to better reconstruct a PDF that is known to
+have finite support (i.e. boundaries outside of which the PDF should be zero).</p>
+<p>The <cite>pdf</cite> and <cite>resample</cite> methods accept the keyword-argument (kwarg) <cite>reflect</cite> to specify
+that a reflecting boundary should be used.</p>
+<dl>
+<dt>reflect<span class="classifier">(D,) array_like, None (default)</span></dt><dd><p>Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.</p>
+<p>If a pair of boundaries are given, then the
+first value corresponds to the lower boundary, and the second value to the upper
+boundary, in that dimension.  If there should only be a single lower or upper
+boundary, then <cite>None</cite> should be passed as the other boundary value.</p>
+</dd>
+</dl>
+<p>For example, <cite>reflect=[None, [-1.0, 1.0], [0.0, None]]</cite>, specifies that the 0th dimension
+has no boundaries, the 1st dimension has boundaries at both -1.0 and 1.0, and the 2nd
+dimension has a lower boundary at 0.0, and no upper boundary.</p>
+</div></blockquote>
+<p><em>Projection / Marginalization</em></p>
+<blockquote>
+<div><p>The PDF can be calculated for only particular parameters/dimensions.
+The <cite>pdf</cite> method accepts the keyword-argument (kwarg) <cite>params</cite> to specify particular
+parameters over which to calculate the PDF (i.e. the other parameters are projected over).</p>
+<dl>
+<dt>params<span class="classifier">int, array_like of int, None (default)</span></dt><dd><p>Only calculate the PDF for certain parameters (dimensions).</p>
+<p>If <cite>None</cite>, then calculate PDF along all dimensions.
+If <cite>params</cite> is specified, then the target evaluation points <cite>pnts</cite>, must only
+contain the corresponding dimensions.</p>
+</dd>
+</dl>
+<p>For example, if the <cite>dataset</cite> has shape (4, 100), but <cite>pdf</cite> is called with <cite>params=(1, 2)</cite>,
+then the <cite>pnts</cite> array should have shape <cite>(2, M)</cite> where the two provides dimensions
+correspond to the 1st and 2nd variables of the <cite>dataset</cite>.</p>
+</div></blockquote>
+<p>TO-DO: add notes on <cite>keep</cite> parameter</p>
+<p><em>Dynamic Range</em></p>
+<blockquote>
+<div><p>When the elements of the covariace matrix between data variables differs by numerous
+orders of magnitude, the KDE values (especially marginalized values) can become spurious.
+One solution is to use a diagonal covariance matrix by initializing the KDE instance with
+<cite>diagonal=True</cite>.  An alternative is to transform the input data in such a way that each
+variable’s dynamic range becomes similar (e.g. taking the log of the values).  A warning
+is given if the covariance matrix has a large dynamic very-large dynamic range, but no
+error is raised.</p>
+</div></blockquote>
+<p class="rubric">Examples</p>
+<p>Construct semi-random data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Construct <cite>KDE</cite> instance using this data, and the default bandwidth and kernels.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">kalepy</span> <span class="k">as</span> <span class="nn">kale</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kde</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">KDE</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Compare original PDF and the data to the reconstructed PDF from the KDE:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pdf_tru</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">xx</span><span class="o">*</span><span class="n">xx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_kde</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">density</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_tru</span><span class="p">,</span> <span class="s1">&#39;k--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Normal PDF&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span><span class="p">,</span> <span class="n">bins</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>                               <span class="n">color</span><span class="o">=</span><span class="s1">&#39;0.5&#39;</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Data&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">pdf_kde</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KDE&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Compare the KDE reconstructed PDF to the “true” PDF, make sure the chi-squared is consistent:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dof</span> <span class="o">=</span> <span class="n">xx</span><span class="o">.</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">pdf_kde</span> <span class="o">-</span> <span class="n">pdf_tru</span><span class="p">)</span><span class="o">/</span><span class="n">pdf_tru</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">x2</span> <span class="o">/</span> <span class="n">dof</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">&lt;</span> <span class="mf">0.1</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Chi-Squared: </span><span class="si">{:.1e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span>
+<span class="go">Chi-Squared: 1.7e-02</span>
+</pre></div>
+</div>
+<p>Draw new samples from the data and make sure they are consistent with the original data:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">samp</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">resample</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ll</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">samp</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">bins</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">rwidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>                       <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Samples&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ks</span><span class="p">,</span> <span class="n">pv</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">ks_2samp</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">samp</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pv</span> <span class="o">&gt;</span> <span class="mf">0.05</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Initialize the <cite>KDE</cite> class with the given dataset and optional specifications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>(</em><em>D</em><em>,</em><em>N</em><em>,</em><em>)</em>) – Dataset from which to construct the kernel-density-estimate.
+For multivariate data with <cite>D</cite> variables and <cite>N</cite> values, the data must be shaped (D,N).
+For univariate (D=1) data, this can be a single array with shape (N,).</p></li>
+<li><p><strong>bandwidth</strong> (<em>str</em><em>, </em><em>float</em><em>, </em><em>array of float</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Specification for the bandwidth, or the method by which the bandwidth should be
+determined.  If a <cite>str</cite> is given, it must match one of the standard bandwidth
+determination methods.  If a <cite>float</cite> is given, it is used as the bandwidth in each
+dimension.  If an array of <a href="#id5"><span class="problematic" id="id6">`</span></a>float`s are given, then each value will be used as the
+bandwidth for the corresponding data dimension.</p></li>
+<li><p><strong>weights</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>)</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Weights corresponding to each <cite>dataset</cite> point.  Must match the number of points <cite>N</cite> in
+the <cite>dataset</cite>.
+If <cite>None</cite>, weights are uniformly set to 1.0 for each value.</p></li>
+<li><p><strong>kernel</strong> (<em>str</em><em>, </em><a class="reference internal" href="kalepy_kernels.html#kalepy.kernels.Distribution" title="kalepy.kernels.Distribution"><em>Distribution</em></a><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – The distribution function that should be used for the kernel.  This can be a <cite>str</cite>
+specification that must match one of the existing distribution functions, or this can
+be a <cite>Distribution</cite> subclass itself that overrides the <cite>_evaluate</cite> method.</p></li>
+<li><p><strong>neff</strong> (<em>int</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – An effective number of datapoints.  This is used in the plugin bandwidth determination
+methods.
+If <cite>None</cite>, <cite>neff</cite> is calculated from the <cite>weights</cite> array.  If <cite>weights</cite> are all
+uniform, then <cite>neff</cite> equals the number of datapoints <cite>N</cite>.</p></li>
+<li><p><strong>diagonal</strong> (<em>bool</em><em>,</em>) – Whether the bandwidth/covariance matrix should be set as a diagonal matrix
+(i.e. without covariances between parameters).
+NOTE: see <cite>KDE</cite> docstrings, “Dynamic Range”.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="kalepy.kde.KDE.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dataset</span></em>, <em class="sig-param"><span class="n">bandwidth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">kernel</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">extrema</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">neff</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">diagonal</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">helper</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">bw_rescale</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the <cite>KDE</cite> class with the given dataset and optional specifications.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>(</em><em>D</em><em>,</em><em>N</em><em>,</em><em>)</em>) – Dataset from which to construct the kernel-density-estimate.
+For multivariate data with <cite>D</cite> variables and <cite>N</cite> values, the data must be shaped (D,N).
+For univariate (D=1) data, this can be a single array with shape (N,).</p></li>
+<li><p><strong>bandwidth</strong> (<em>str</em><em>, </em><em>float</em><em>, </em><em>array of float</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Specification for the bandwidth, or the method by which the bandwidth should be
+determined.  If a <cite>str</cite> is given, it must match one of the standard bandwidth
+determination methods.  If a <cite>float</cite> is given, it is used as the bandwidth in each
+dimension.  If an array of <a href="#id7"><span class="problematic" id="id8">`</span></a>float`s are given, then each value will be used as the
+bandwidth for the corresponding data dimension.</p></li>
+<li><p><strong>weights</strong> (<em>array_like</em><em> (</em><em>N</em><em>,</em><em>)</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – Weights corresponding to each <cite>dataset</cite> point.  Must match the number of points <cite>N</cite> in
+the <cite>dataset</cite>.
+If <cite>None</cite>, weights are uniformly set to 1.0 for each value.</p></li>
+<li><p><strong>kernel</strong> (<em>str</em><em>, </em><a class="reference internal" href="kalepy_kernels.html#kalepy.kernels.Distribution" title="kalepy.kernels.Distribution"><em>Distribution</em></a><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – The distribution function that should be used for the kernel.  This can be a <cite>str</cite>
+specification that must match one of the existing distribution functions, or this can
+be a <cite>Distribution</cite> subclass itself that overrides the <cite>_evaluate</cite> method.</p></li>
+<li><p><strong>neff</strong> (<em>int</em><em>, </em><em>None</em><em>  [</em><em>optional</em><em>]</em>) – An effective number of datapoints.  This is used in the plugin bandwidth determination
+methods.
+If <cite>None</cite>, <cite>neff</cite> is calculated from the <cite>weights</cite> array.  If <cite>weights</cite> are all
+uniform, then <cite>neff</cite> equals the number of datapoints <cite>N</cite>.</p></li>
+<li><p><strong>diagonal</strong> (<em>bool</em><em>,</em>) – Whether the bandwidth/covariance matrix should be set as a diagonal matrix
+(i.e. without covariances between parameters).
+NOTE: see <cite>KDE</cite> docstrings, “Dynamic Range”.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.bandwidth">
+<em class="property">property </em><code class="sig-name descname">bandwidth</code><a class="headerlink" href="#kalepy.kde.KDE.bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.cdf">
+<code class="sig-name descname">cdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pnts</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.cdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cumulative Distribution Function based on KDE smoothed data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pnts</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em>) – Target evaluation points</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>cdf</strong> – CDF Values at the target points</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>(N,) ndarray of scalar</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.cdf_grid">
+<code class="sig-name descname">cdf_grid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">edges</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.cdf_grid" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>NOTE: optimize: there are likely much faster methods than broadcasting and flattening,</dt><dd><p>use a different method to calculate cdf on a grid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.covariance">
+<em class="property">property </em><code class="sig-name descname">covariance</code><a class="headerlink" href="#kalepy.kde.KDE.covariance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.dataset">
+<em class="property">property </em><code class="sig-name descname">dataset</code><a class="headerlink" href="#kalepy.kde.KDE.dataset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.density">
+<code class="sig-name descname">density</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">points</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">grid</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">probability</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.density" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate the KDE distribution at the given data-points.</p>
+<p>This method acts as an API to the <cite>Kernel.pdf</cite> method for this instance’s <cite>kernel</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>points</strong> (<em>(</em><em>[</em><em>D</em><em>,</em><em>]</em><em>M</em><em>,</em><em>) </em><em>array_like of float</em><em>, or </em><em>(</em><em>D</em><em>,</em><em>) </em><em>set of array_like point specifications</em>) – <p>The locations at which the PDF should be evaluated.  The number of dimensions <cite>D</cite> must
+match that of the <cite>dataset</cite> that initialized this class’ instance.
+NOTE: If the <cite>params</cite> kwarg (see below) is given, then only those dimensions of the
+target parameters should be specified in <cite>points</cite>.</p>
+<p>The meaning of <cite>points</cite> depends on the value of the <cite>grid</cite> argument:</p>
+<ul>
+<li><p><cite>grid=True</cite>  : <cite>points</cite> must be a set of (D,) array_like objects which each give the
+evaluation points for the corresponding dimension to produce a grid of values.
+For example, for a 2D dataset,
+<cite>points=([0.1, 0.2, 0.3], [1, 2])</cite>,
+would produce a grid of points with shape (3, 2):
+<cite>[[0.1, 1], [0.1, 2]], [[0.2, 1], [0.2, 2]], [[0.3, 1], [0.3, 2]]</cite>,
+and the returned values would be an array of the same shape (3, 2).</p></li>
+<li><p><cite>grid=False</cite> : <cite>points</cite> must be an array_like (D,M) describing the position of <cite>M</cite>
+sample points in each of <cite>D</cite> dimensions.
+For example, for a 3D dataset:
+<cite>points=([0.1, 0.2], [1.0, 2.0], [10, 20])</cite>,
+describes 2 sample points at the 3D locations, <cite>(0.1, 1.0, 10)</cite> and <cite>(0.2, 2.0, 20)</cite>,
+and the returned values would be an array of shape (2,).</p></li>
+</ul>
+</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.  See class docstrings:<cite>Reflection</cite> for more information.</p></li>
+<li><p><strong>params</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Only calculate the PDF for certain parameters (dimensions).
+See class docstrings:<cite>Projection</cite> for more information.</p></li>
+<li><p><strong>grid</strong> (<em>bool</em><em>,</em>) – Evaluate the KDE distribution at a grid of points specified by <cite>points</cite>.
+See <cite>points</cite> argument description above.</p></li>
+<li><p><strong>probability</strong> (<em>bool</em><em>, </em><em>normalize the results to sum to unity</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>points</strong> (<em>array_like of scalar</em>) – Locations at which the PDF is evaluated.</p></li>
+<li><p><strong>vals</strong> (<em>array_like of scalar</em>) – PDF evaluated at the given points</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.extrema">
+<em class="property">property </em><code class="sig-name descname">extrema</code><a class="headerlink" href="#kalepy.kde.KDE.extrema" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.kernel">
+<em class="property">property </em><code class="sig-name descname">kernel</code><a class="headerlink" href="#kalepy.kde.KDE.kernel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.ndata">
+<em class="property">property </em><code class="sig-name descname">ndata</code><a class="headerlink" href="#kalepy.kde.KDE.ndata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.ndim">
+<em class="property">property </em><code class="sig-name descname">ndim</code><a class="headerlink" href="#kalepy.kde.KDE.ndim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.neff">
+<em class="property">property </em><code class="sig-name descname">neff</code><a class="headerlink" href="#kalepy.kde.KDE.neff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.pdf">
+<code class="sig-name descname">pdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.pdf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.points">
+<em class="property">property </em><code class="sig-name descname">points</code><a class="headerlink" href="#kalepy.kde.KDE.points" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.resample">
+<code class="sig-name descname">resample</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">size</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">keep</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">reflect</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">squeeze</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.kde.KDE.resample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw new values from the kernel-density-estimate calculated PDF.</p>
+<p>The KDE calculates a PDF from the given dataset.  This method draws new, semi-random data
+points from that PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>size</strong> (<em>int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – The number of new data points to draw.  If <cite>None</cite>, then the number of <cite>datapoints</cite> is
+used.</p></li>
+<li><p><strong>keep</strong> (<em>int</em><em>, </em><em>array_like of int</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Parameters/dimensions where the original data-values should be drawn from, instead of
+from the reconstructed PDF.
+TODO: add more information.</p></li>
+<li><p><strong>reflect</strong> (<em>(</em><em>D</em><em>,</em><em>) </em><em>array_like</em><em>, </em><em>None</em><em> (</em><em>default</em><em>)</em>) – Locations at which reflecting boundary conditions should be imposed.
+For each dimension <cite>D</cite>, a pair of boundary locations (for: lower, upper) must be
+specified, or <cite>None</cite>.  <cite>None</cite> can also be given to specify no boundary at that
+location.</p></li>
+<li><p><strong>squeeze</strong> (<em>bool</em><em>, </em><em>(</em><em>default: True</em><em>)</em>) – If the number of dimensions <cite>D</cite> is one, then return an array of shape (L,) instead of
+(1, L).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>samples</strong> – Newly drawn samples from the PDF, where the number of points <cite>L</cite> is determined by the
+<cite>size</cite> argument.
+If <cite>squeeze</cite> is True (default), and the number of dimensions in the original dataset
+<cite>D</cite> is one, then the returned array will have shape (L,).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>([D,]L) ndarray of float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.kde.KDE.weights">
+<em class="property">property </em><code class="sig-name descname">weights</code><a class="headerlink" href="#kalepy.kde.KDE.weights" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Luke Zoltan Kelley and Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

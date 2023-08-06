@@ -1,0 +1,920 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>kalepy.plot &mdash; kalepy 0.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> kalepy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">kalepy API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kalepy.html">Full Package Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">kalepy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>kalepy.plot</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/kalepy_plot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="kalepy-plot">
+<h1>kalepy.plot<a class="headerlink" href="#kalepy-plot" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.Corner">Corner</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.Corner.plot">Corner.plot()</a></p></li>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.Corner">Corner</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.corner">corner()</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module-kalepy.plot">
+<span id="kalepy-plot-submodule"></span><h1><cite>kalepy.plot</cite> submodule<a class="headerlink" href="#module-kalepy.plot" title="Permalink to this headline">¶</a></h1>
+<p>kalepy’s plotting submodule</p>
+<p>This submodule containts the <cite>Corner</cite> class, and all plotting methods.  The <cite>Corner</cite> class, and
+additional API functions are imported into the base package namespace of <cite>kalepy</cite>, e.g.
+<cite>kalepy.Corner</cite> and <cite>kalepy.carpet</cite> access the <cite>kalepy.plot.Corner</cite> and <cite>kalepy.plot.carpet</cite> methods
+respectively.</p>
+<p>Additional options and customization:</p>
+<p>The core plotting routines, such as <cite>draw_hist1d</cite>, <cite>draw_hist2d</cite>, <cite>draw_contour2d</cite>, etc include a
+fairly large number of keyword arguments for customization.  The top level API methods, such as
+<cite>corner()</cite> or <cite>Corner.plot_data()</cite> often do not provide access to all of those arguments, but
+additional customization is possible by using the drawing methods directly, and optionally
+subclassing the <cite>Corner</cite> class to provide additional or different functionality.</p>
+<div class="section" id="plotting-api">
+<h2>Plotting API<a class="headerlink" href="#plotting-api" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#kalepy.plot.Corner" title="kalepy.plot.Corner"><code class="xref py py-class docutils literal notranslate"><span class="pre">Corner</span></code></a> :
+class for corner/triangle/pair plots.</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.corner" title="kalepy.plot.corner"><code class="xref py py-func docutils literal notranslate"><span class="pre">corner</span></code></a> :
+method which constructs a <cite>Corner</cite> instance and plots 1D and 2D distributions.</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.dist1d" title="kalepy.plot.dist1d"><code class="xref py py-func docutils literal notranslate"><span class="pre">dist1d</span></code></a> :
+plot a 1D distribution with numerous possible elements (e.g. histogram, carpet, etc)</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.dist2d" title="kalepy.plot.dist2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">dist2d</span></code></a> :
+plot a 2D distribution with numerous possible elements (e.g. histogram, contours, etc)</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.carpet" title="kalepy.plot.carpet"><code class="xref py py-func docutils literal notranslate"><span class="pre">carpet</span></code></a> :
+draw a 1D scatter-like plot to semi-quantitatively depict a distribution.</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.contour" title="kalepy.plot.contour"><code class="xref py py-func docutils literal notranslate"><span class="pre">contour</span></code></a> :
+draw a 2D contour plot. A wrapper of additional functionality around <cite>plt.contour</cite></p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.confidence" title="kalepy.plot.confidence"><code class="xref py py-func docutils literal notranslate"><span class="pre">confidence</span></code></a> :
+draw 1D confidence intervals using shaded bands.</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.hist1d" title="kalepy.plot.hist1d"><code class="xref py py-func docutils literal notranslate"><span class="pre">hist1d</span></code></a> :
+draw a 1D histogram</p></li>
+<li><p><a class="reference internal" href="#kalepy.plot.hist2d" title="kalepy.plot.hist2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">hist2d</span></code></a> :
+draw a 2D histogram.  A wrapper of additional functionality around <cite>plt.pcolormesh</cite></p></li>
+</ul>
+<dl class="py class">
+<dt id="kalepy.plot.Corner">
+<em class="property">class </em><code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">Corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">labels</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">limits</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwfig</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Class for creating ‘corner’ / ‘pair’ plots of multidimensional covariances.</p>
+<p>The <cite>Corner</cite> class acts as a constructor for a <cite>matplotlib</cite> figure and axes, and coordinates the
+plotting of 1D and 2D distributions.  The <cite>kalepy.plot.dist1d()</cite> and <cite>kalepy.plot.dist2d()</cite>
+methods are used for plotting the distributions.  The class methods provide wrappers, and
+default setting for those methods.  The <cite>Corner.plot</cite> method is the standard plotting method
+with default parameters chosen for plotting a single, multidimensional dataset.  For
+overplotting numerous datasets, the <cite>Corner.clean</cite> or <cite>Corner.plot_data</cite> methods are better.</p>
+<ul class="simple">
+<li><p><cite>plot</cite> : the standard plotting method which, by default, includes both KDE and data elements.</p></li>
+<li><p><cite>clean</cite> : minimal plots with only the KDE generated PDF in 1D and contours in 2D, by default.</p></li>
+<li><p><cite>hist</cite> : minimal plots with only the data based 1D and 2D histograms, by default.</p></li>
+<li><p><cite>plot_kde</cite> : plot elements with only KDE based info: the <cite>clean</cite> settings with a little more.</p></li>
+<li><p><cite>plot_data</cite> : plot elements without using KDE info.</p></li>
+</ul>
+<p class="rubric">Examples</p>
+<p>Load some predefined 3D data, and generate a default corner plot:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">kalepy</span> <span class="k">as</span> <span class="nn">kale</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">_random_data_3d_03</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">corner</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">corner</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Load two different datasets, and overplot them using a <cite>kalepy.Corner</cite> instance.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">data1</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">_random_data_3d_03</span><span class="p">(</span><span class="n">par</span><span class="o">=</span><span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="n">cov</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data2</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">_random_data_3d_03</span><span class="p">(</span><span class="n">par</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">],</span> <span class="n">cov</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">corner</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">Corner</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>   <span class="c1"># construct &#39;3&#39; dimensional corner-plot (i.e. 3x3 axes)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">corner</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">data1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">corner</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">data2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Initialize Corner instance and construct figure and axes based on the given arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<em>object</em><em>, </em><em>one of the following</em>) – <ul>
+<li><p>int D, the number of parameters/dimensions to construct a DxD corner plot.</p></li>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<em>array_like scalar</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>None</em>) – The weights for each data point.
+NOTE: only applicable when <cite>kde_data</cite> is a (D,N) dataset.</p></li>
+<li><p><strong>labels</strong> (<em>array_like string</em><em> (</em><em>N</em><em>,</em><em>) </em><em>of names for each parameters.</em>) – </p></li>
+<li><p><strong>limits</strong> (<em>None</em><em>, or </em><em>(</em><em>D</em><em>,</em><em>2</em><em>) </em><em>of scalar</em>) – Specification for the limits of each axes (for each of <cite>D</cite> parameters):
+* None : the limits are determined automatically,
+* (D,2) : limits for each axis</p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>,</em>) – Whether or not the bottom-right-most axes should be rotated.</p></li>
+<li><p><strong>**kwfig</strong> (keyword-arguments passed to <cite>_figax()</cite> for constructing figure and axes.) – See <cite>kalepy.plot._figax()</cite> for specifications.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="kalepy.plot.Corner.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">labels</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">limits</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwfig</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize Corner instance and construct figure and axes based on the given arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<em>object</em><em>, </em><em>one of the following</em>) – <ul>
+<li><p>int D, the number of parameters/dimensions to construct a DxD corner plot.</p></li>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<em>array_like scalar</em><em> (</em><em>N</em><em>,</em><em>) or </em><em>None</em>) – The weights for each data point.
+NOTE: only applicable when <cite>kde_data</cite> is a (D,N) dataset.</p></li>
+<li><p><strong>labels</strong> (<em>array_like string</em><em> (</em><em>N</em><em>,</em><em>) </em><em>of names for each parameters.</em>) – </p></li>
+<li><p><strong>limits</strong> (<em>None</em><em>, or </em><em>(</em><em>D</em><em>,</em><em>2</em><em>) </em><em>of scalar</em>) – Specification for the limits of each axes (for each of <cite>D</cite> parameters):
+* None : the limits are determined automatically,
+* (D,2) : limits for each axis</p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>,</em>) – Whether or not the bottom-right-most axes should be rotated.</p></li>
+<li><p><strong>**kwfig</strong> (keyword-arguments passed to <cite>_figax()</cite> for constructing figure and axes.) – See <cite>kalepy.plot._figax()</cite> for specifications.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.clean">
+<code class="sig-name descname">clean</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dist1d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">dist2d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for <cite>plot_kde</cite> that sets parameters for minimalism: PDF and contours only.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, (D,N) array_like of scalars, or None) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+<li><p><cite>None</cite> : use the KDE/data stored during class initialization.
+raises <cite>ValueError</cite> if no KDE/data was provided</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>dist1d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist1d</cite> method.) – </p></li>
+<li><p><strong>dist2d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist2d</cite> method.) – </p></li>
+<li><p><strong>**kwargs</strong> (additiona keyword-arguments passed directly to <cite>Corner.plot_kde</cite>.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.hist">
+<code class="sig-name descname">hist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dist1d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">dist2d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for <cite>plot_data</cite> that sets parameters to only plot 1D and 2D histograms of data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, (D,N) array_like of scalars, or None) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+<li><p><cite>None</cite> : use the KDE/data stored during class initialization.
+raises <cite>ValueError</cite> if no KDE/data was provided</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>dist1d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist1d</cite> method.) – </p></li>
+<li><p><strong>dist2d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist2d</cite> method.) – </p></li>
+<li><p><strong>**kwargs</strong> (additiona keyword-arguments passed directly to <cite>Corner.plot_kde</cite>.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.legend">
+<code class="sig-name descname">legend</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">handles</span></em>, <em class="sig-param"><span class="n">labels</span></em>, <em class="sig-param"><span class="n">index</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">loc</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fancybox</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">borderaxespad</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.legend" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.plot">
+<code class="sig-name descname">plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cmap</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dist1d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">dist2d</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.plot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot with standard settings for plotting a single, multidimensional dataset or KDE.</p>
+<p>This function coordinates the drawing of a corner plot that ultimately uses the
+<cite>kalepy.plot.dist1d</cite> and <cite>kalepy.plot.dist2d</cite> methods to draw parameter distributions
+using an instance of <cite>kalepy.kde.KDE</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, (D,N) array_like of scalars, or <cite>None</cite>) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+<li><p><cite>None</cite> : use the KDE/data stored during class initialization.
+raises <cite>ValueError</cite> if no KDE/data was provided</p></li>
+</ul>
+</p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins for all dimensions, locations calculated automatically</p></li>
+<li><p>(D,) array_like of int : the number of bins for each of <cite>D</cite> dimensions</p></li>
+<li><p>(D,) of array_like : the bin-edge locations for each of <cite>D</cite> dimensions, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for all dimensions</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically for each dim</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>quantiles</strong> (<cite>None</cite> or array_like of scalar values in [0.0, 1.0] denoting the fractions of) – data to demarkate with contours and confidence bands.</p></li>
+<li><p><strong>limit</strong> (bool or <cite>None</cite>, whether the axes limits should be reset based on the plotted data.) – If <cite>None</cite>, then the limits will be readjusted unless <cite>limits</cite> were provided on class
+initialization.</p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – <dl class="simple">
+<dt>If <cite>None</cite>:</dt><dd><ul>
+<li><p><cite>cmap</cite> is given, then the color will be set to the <cite>cmap</cite> midpoint.</p></li>
+<li><p><cite>cmap</cite> is not given, then the color will be determined by the next value of the
+default matplotlib color-cycle, and <cite>cmap</cite> will be set to a matching colormap.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This parameter effects the color of 1D: histograms, confidence intervals, and carpet;
+2D: scatter points.</p>
+</p></li>
+<li><p><strong>cmap</strong> (matplotlib colormap specification, or <cite>None</cite>) – <ul>
+<li><p>All valid matplotlib specifications can be used, e.g. named value (like ‘Reds’ or
+‘viridis’) or a <cite>matplotlib.colors.Colormap</cite> instance.</p></li>
+<li><p>If <cite>None</cite> then a colormap is constructed based on the value of <cite>color</cite> (see above).</p></li>
+</ul>
+</p></li>
+<li><p><strong>dist1d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist1d</cite> method.) – </p></li>
+<li><p><strong>dist2d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist2d</cite> method.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.plot_data">
+<code class="sig-name descname">plot_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cmap</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dist1d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">dist2d</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.plot_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot with default settings to emphasize the given data (not KDE derived properties).</p>
+<p>This function coordinates the drawing of a corner plot that ultimately uses the
+<cite>kalepy.plot.dist1d</cite> and <cite>kalepy.plot.dist2d</cite> methods to draw parameter distributions
+using an instance of <cite>kalepy.kde.KDE</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> ((D,N) array_like of scalars, <cite>kalepy.KDE</cite> instance, or None) – <ul>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+<li><p><cite>None</cite> : use the KDE/data stored during class initialization.
+raises <cite>ValueError</cite> if no KDE/data was provided</p></li>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+</ul>
+<dl class="simple">
+<dt>NOTE: if a <cite>KDE</cite> instance is given, or one was stored during initilization, then the</dt><dd><p>dataset is extracted from the instance.</p>
+</dd>
+</dl>
+</p></li>
+<li><p><strong>edges</strong> (<em>object specifying historgam edge locations;</em><em> or </em><em>None</em>) – <ul>
+<li><p>int : the number of bins for all dimensions, locations calculated automatically</p></li>
+<li><p>(D,) array_like of int : the number of bins for each of <cite>D</cite> dimensions</p></li>
+<li><p>(D,) of array_like : the bin-edge locations for each of <cite>D</cite> dimensions, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for all dimensions</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically for each dim</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>quantiles</strong> (<cite>None</cite> or array_like of scalar values in [0.0, 1.0] denoting the fractions of) – data to demarkate with contours and confidence bands.</p></li>
+<li><p><strong>limit</strong> (bool or <cite>None</cite>, whether the axes limits should be reset based on the plotted data.) – If <cite>None</cite>, then the limits will be readjusted unless <cite>limits</cite> were provided on class
+initialization.</p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – <dl class="simple">
+<dt>If <cite>None</cite>:</dt><dd><ul>
+<li><p><cite>cmap</cite> is given, then the color will be set to the <cite>cmap</cite> midpoint.</p></li>
+<li><p><cite>cmap</cite> is not given, then the color will be determined by the next value of the
+default matplotlib color-cycle, and <cite>cmap</cite> will be set to a matching colormap.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This parameter effects the color of 1D: histograms, confidence intervals, and carpet;
+2D: scatter points.</p>
+</p></li>
+<li><p><strong>cmap</strong> (matplotlib colormap specification, or <cite>None</cite>) – <ul>
+<li><p>All valid matplotlib specifications can be used, e.g. named value (like ‘Reds’ or
+‘viridis’) or a <cite>matplotlib.colors.Colormap</cite> instance.</p></li>
+<li><p>If <cite>None</cite> then a colormap is constructed based on the value of <cite>color</cite> (see above).</p></li>
+</ul>
+</p></li>
+<li><p><strong>dist1d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist1d</cite> method.) – </p></li>
+<li><p><strong>dist2d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist2d</cite> method.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="kalepy.plot.Corner.plot_kde">
+<code class="sig-name descname">plot_kde</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ls</span><span class="o">=</span><span class="default_value">'-'</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cmap</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">dist1d</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="n">dist2d</span><span class="o">=</span><span class="default_value">{}</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.Corner.plot_kde" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot with default settings to emphasize the KDE derived distributions.</p>
+<p>This function coordinates the drawing of a corner plot that ultimately uses the
+<cite>kalepy.plot.dist1d</cite> and <cite>kalepy.plot.dist2d</cite> methods to draw parameter distributions
+using an instance of <cite>kalepy.kde.KDE</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde</strong> (<cite>kalepy.KDE</cite> instance, (D,N) array_like of scalars, or None) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+<li><p><cite>None</cite> : use the KDE/data stored during class initialization.
+raises <cite>ValueError</cite> if no KDE/data was provided</p></li>
+</ul>
+</p></li>
+<li><p><strong>edges</strong> (<em>object specifying historgam edge locations;</em><em> or </em><em>None</em>) – <ul>
+<li><p>int : the number of bins for all dimensions, locations calculated automatically</p></li>
+<li><p>(D,) array_like of int : the number of bins for each of <cite>D</cite> dimensions</p></li>
+<li><p>(D,) of array_like : the bin-edge locations for each of <cite>D</cite> dimensions, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for all dimensions</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically for each dim</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde</cite> argument is a (D,N) array_like of scalar data from which a
+<cite>KDE</cite> instance is created.</p></li>
+<li><p><strong>quantiles</strong> (<cite>None</cite> or array_like of scalar values in [0.0, 1.0] denoting the fractions of) – data to demarkate with contours and confidence bands.</p></li>
+<li><p><strong>limit</strong> (bool or <cite>None</cite>, whether the axes limits should be reset based on the plotted data.) – If <cite>None</cite>, then the limits will be readjusted unless <cite>limits</cite> were provided on class
+initialization.</p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – <dl class="simple">
+<dt>If <cite>None</cite>:</dt><dd><ul>
+<li><p><cite>cmap</cite> is given, then the color will be set to the <cite>cmap</cite> midpoint.</p></li>
+<li><p><cite>cmap</cite> is not given, then the color will be determined by the next value of the
+default matplotlib color-cycle, and <cite>cmap</cite> will be set to a matching colormap.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This parameter effects the color of 1D: histograms, confidence intervals, and carpet;
+2D: scatter points.</p>
+</p></li>
+<li><p><strong>cmap</strong> (matplotlib colormap specification, or <cite>None</cite>) – <ul>
+<li><p>All valid matplotlib specifications can be used, e.g. named value (like ‘Reds’ or
+‘viridis’) or a <cite>matplotlib.colors.Colormap</cite> instance.</p></li>
+<li><p>If <cite>None</cite> then a colormap is constructed based on the value of <cite>color</cite> (see above).</p></li>
+</ul>
+</p></li>
+<li><p><strong>dist1d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist1d</cite> method.) – </p></li>
+<li><p><strong>dist2d</strong> (dict of keyword-arguments passed to the <cite>kale.plot.dist2d</cite> method.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.carpet">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">carpet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">xx</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ystd</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">yave</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">shift</span><span class="o">=</span><span class="default_value">0.0</span></em>, <em class="sig-param"><span class="n">fancy</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">random</span><span class="o">=</span><span class="default_value">'normal'</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.carpet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a ‘carpet plot’ that shows semi-quantitatively the distribution of points.</p>
+<p>The given data (<cite>xx</cite>) is plotted as scatter points, where the abscissa (typically x-values) are
+the actual locations of the data and the ordinate are generated randomly.  The size and
+transparency of points are chosen based on the number of points.  If <cite>weights</cite> are given, it
+the size of the data points are chosen proportionally.</p>
+<dl class="simple">
+<dt>NOTE: the <cite>shift</cite> argument determines the reference ordinate-value of the distribution, this is</dt><dd><p>particularly useful when numerous datasets are being overplotted.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>xx</strong> (<em>(</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em><em>, </em><em>the data values to be plotted</em>) – </p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>ax</strong> (<cite>None</cite> or <cite>matplotlib.axis.Axis</cite>, if <cite>None</cite> the <cite>plt.gca()</cite> is used) – </p></li>
+<li><p><strong>ystd</strong> (scalar or <cite>None</cite>, a measure of the dispersion in the ordinate scatter of values) – If <cite>None</cite> then an appropriate value is guessed based <cite>yave</cite> or the axis limits</p></li>
+<li><p><strong>yave</strong> (scalar or <cite>None</cite>, the baseline at which the ordinate values are generated,) – This is very similar to the <cite>shift</cite> argument, determining the ordinate-offset, but in the
+case that <cite>ystd</cite> is not given but <cite>yave</cite> is given, then the <cite>yave</cite> value determines <cite>ystd</cite>.</p></li>
+<li><p><strong>shift</strong> (<em>scalar</em><em>,</em>) – A systematic ordinate shift of all data-points, particularly useful when multiple datasets
+are being plotted, such that one carpet plot can be offset from the other(s).</p></li>
+<li><p><strong>fancy</strong> (<em>bool</em><em>,</em>) – <em>Experimental</em> resizing of data-points to visually emphasize outliers.</p></li>
+<li><p><strong>random</strong> (<em>str</em><em>, </em><em>one of</em><em> [</em><em>'normal'</em><em>, </em><em>'uniform'</em><em>]</em><em>,</em>) – How the ordinate values are randomly generated: either a uniform or normal (i.e. Gaussian).</p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>, </em><em>if True switch the x and y values such that x becomes the ordinate.</em>) – </p></li>
+<li><p><strong>kwargs</strong> (additional keyword-arguments passed to <cite>matplotlib.axes.Axes.scatter()</cite>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.confidence">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">confidence</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">[0.5, 0.9]</span></em>, <em class="sig-param"><span class="n">median</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.confidence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot 1D Confidence intervals at the given quantiles.</p>
+<p>For each quantile <cite>q</cite>, a shaded range is plotted that includes a fration <cite>q</cite> of data values
+around the median.  Ultimately either <cite>plt.axhspan</cite> or <cite>plt.axvspan</cite> is used for drawing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>(</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em><em>, </em><em>the data values around which to calculate confidence intervals</em>) – </p></li>
+<li><p><strong>ax</strong> (<cite>None</cite> or <cite>matplotlib.axes.Axes</cite> instance, if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>quantiles</strong> (<em>array_like of scalar values in</em><em> [</em><em>0.0</em><em>, </em><em>1.0</em><em>] </em><em>denoting the fractions of data to mark.</em>) – </p></li>
+<li><p><strong>median</strong> (<em>bool</em><em>, </em><em>mark the location of the median value.</em>) – </p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>, </em><em>if true switch the x and y coordinates</em><em> (</em><em>i.e. rotate plot 90deg clockwise</em><em>)</em><em></em>) – </p></li>
+<li><p><strong>**kwargs</strong> (additional keyword-arguments passed to <cite>plt.axhspan</cite> or <cite>plt.axvspan</cite>.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.contour">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">contour</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cmap</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">smooth</span><span class="o">=</span><span class="default_value">1.0</span></em>, <em class="sig-param"><span class="n">upsample</span><span class="o">=</span><span class="default_value">2</span></em>, <em class="sig-param"><span class="n">pad</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.contour" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate and draw 2D contours.</p>
+<p>This is a wrapper for <cite>draw_contour</cite>, which in turn wraps <cite>plt.contour</cite>.  This function
+constructs bin-edges and calculates the histogram from which the contours are calculated.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>(</em><em>2</em><em>, </em><em>N</em><em>) </em><em>array_like of scalars</em><em>,</em>) – The data from which contours should be calculated.</p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins for both dimensions, locations calculated automatically</p></li>
+<li><p>(2,) array_like of int : the number of bins for each dimension.</p></li>
+<li><p>(2,) of array_like : the bin-edge locations for each dimension, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension: i.e. 6 total.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for both dimensions.</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically.</p></li>
+</ul>
+</p></li>
+<li><p><strong>ax</strong> (<cite>matplotlib.axes.Axes</cite> instance, or <cite>None</cite>; if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – <dl class="simple">
+<dt>If <cite>None</cite>:</dt><dd><ul>
+<li><p><cite>cmap</cite> is given, then the color will be set to the <cite>cmap</cite> midpoint.</p></li>
+<li><p><cite>cmap</cite> is not given, then the color will be determined by the next value of the
+default matplotlib color-cycle, and <cite>cmap</cite> will be set to a matching colormap.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This parameter effects the color of 1D: histograms, confidence intervals, and carpet;
+2D: scatter points.</p>
+</p></li>
+<li><p><strong>cmap</strong> (matplotlib colormap specification, or <cite>None</cite>) – <ul>
+<li><p>All valid matplotlib specifications can be used, e.g. named value (like ‘Reds’ or
+‘viridis’) or a <cite>matplotlib.colors.Colormap</cite> instance.</p></li>
+<li><p>If <cite>None</cite> then a colormap is constructed based on the value of <cite>color</cite> (see above).</p></li>
+</ul>
+</p></li>
+<li><p><strong>quantiles</strong> (<cite>None</cite> or array_like of scalar values in [0.0, 1.0] denoting the fractions of) – data to demarkate with contours and confidence bands.</p></li>
+<li><p><strong>smooth</strong> (scalar or <cite>None</cite>/<cite>False</cite>,) – if scalar: The width, in histogram bins, of a gaussian smoothing filter
+if <cite>None</cite> or <cite>False</cite>: no smoothing.</p></li>
+<li><p><strong>upsample</strong> (int or <cite>None</cite>/<cite>False</cite>,) – if int: the factor by which to upsample the histogram by interpolation.
+if <cite>None</cite> or <cite>False</cite>: no upsampling</p></li>
+<li><p><strong>pad</strong> (int, True, or <cite>None</cite>/<cite>False</cite>,) – if int: the number of edge bins added to the histogram to close contours hitting the edges
+if true: the default padding size is used
+if <cite>None</cite> or <cite>False</cite>: no padding is used.</p></li>
+<li><p><strong>**kwargs</strong> (additiona keyword-arguments passed to <cite>kalepy.plot.draw_contour2d()</cite>.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.corner">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">corner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span></em>, <em class="sig-param"><span class="n">labels</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">kwcorner</span><span class="o">=</span><span class="default_value">{}</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwplot</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.corner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple wrapper function to construct a <cite>Corner</cite> instance and plot the given data.</p>
+<p>See <cite>kalepy.plot.Corner</cite> and <cite>kalepy.plot.Corner.plot</cite> for more information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, or (D,N) array_like of scalars) – <ul>
+<li><dl class="simple">
+<dt>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.</dt><dd><p>In this case the <cite>param</cite> argument selects which dimension/parameter is plotted if
+numerous are included in the <cite>KDE</cite>.</p>
+</dd>
+</dl>
+</li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+</ul>
+</p></li>
+<li><p><strong>labels</strong> (<cite>None</cite> or (D,) array_like of string, names of each parameter being plotted.) – </p></li>
+<li><p><strong>kwcorner</strong> (dict, keyword-arguments passed to <cite>Corner</cite> constructor.) – </p></li>
+<li><p><strong>**kwplot</strong> (additional keyword-arguments passed to <cite>Corner.plot</cite> method.) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.dist1d">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">dist1d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">probability</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">param</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">density</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">confidence</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">hist</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">carpet</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ls</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.dist1d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw 1D data distributions with numerous possible components.</p>
+<p>The components of the plot are controlled by the arguments:
+* <cite>density</cite> : a KDE distribution curve,
+* <cite>confidence</cite> : 1D confidence bands calculated from a KDE,
+* <cite>hist</cite> : 1D histogram from the provided data,
+* <cite>carpet</cite> : ‘carpet plot’ (see <cite>kalepy.plot.carpet()</cite>) showing the data as a scatter-like plot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, (D,N) array_like of scalars, or <cite>None</cite>) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.
+In this case the <cite>param</cite> argument selects which dimension/parameter is plotted if
+numerous are included in the <cite>KDE</cite>.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+</ul>
+</p></li>
+<li><p><strong>ax</strong> (<cite>matplotlib.axes.Axes</cite> instance, or <cite>None</cite>; if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins, locations calculated automatically</p></li>
+<li><p>array_like : the bin-edge locations</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>probability</strong> (<em>bool</em><em>,</em>) – Whether distributions (<cite>hist</cite> and <cite>density</cite>) are normalized such that the sum is unity.</p></li>
+<li><p><strong>param</strong> (<em>int</em><em>,</em>) – If a <cite>KDE</cite> instance is provided as the <cite>kde_data</cite> argument, and it includes multiple
+dimensions/parameters of data, then this argument determines which parameter is plotted.</p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>, </em><em>if true switch the x and y coordinates</em><em> (</em><em>i.e. rotate plot 90deg clockwise</em><em>)</em><em></em>) – </p></li>
+<li><p><strong>density</strong> (bool or <cite>None</cite>, whether the density KDE distribution is plotted or not.) – If <cite>None</cite> then this is set based on what is passed as the <cite>kde_data</cite>.</p></li>
+<li><p><strong>confidence</strong> (<em>bool</em><em>, </em><em>whether confidence intervals are plotted based on the KDE distribution</em><em>,</em>) – intervals are placed according to the <cite>quantiles</cite> argument.</p></li>
+<li><p><strong>hist</strong> (bool or <cite>None</cite>, whether a histogram is plotted from the given data.) – If <cite>None</cite>, then the value is chosen based on the given <cite>kde_data</cite> argument.</p></li>
+<li><p><strong>carpet</strong> (<em>bool</em><em>, </em><em>whether</em><em> or </em><em>not a 'carpet plot' is shown from the given data.</em>) – </p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – If <cite>None</cite> then the color will be determined by the next value of the default matplotlib
+color-cycle.</p></li>
+<li><p><strong>quantiles</strong> (<em>array_like of scalar values in</em><em> [</em><em>0.0</em><em>, </em><em>1.0</em><em>] </em><em>denoting the fractions of data to mark.</em>) – </p></li>
+<li><p><strong>ls</strong> (<em>str</em><em> or </em><em>None</em><em>, </em><em>matplotlib linestyle specification</em>) – </p></li>
+<li><p><strong>**kwargs</strong> (additional keyword-arguments passed to <cite>plt.plot</cite> command when plotting ‘density’) – and ‘hist’ components.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.dist2d">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">dist2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">kde_data</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">params</span><span class="o">=</span><span class="default_value">[0, 1]</span></em>, <em class="sig-param"><span class="n">quantiles</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">cmap</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">smooth</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">upsample</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">pad</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">ls</span><span class="o">=</span><span class="default_value">'-'</span></em>, <em class="sig-param"><span class="n">median</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">scatter</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">contour</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">hist</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">mask_dense</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mask_below</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.dist2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw 2D data distributions with numerous possible components.</p>
+<p>The components of the plot are controlled by the arguments:
+* <cite>median</cite> : the median values of each coordinate in a ‘cross-hairs’ style,
+* <cite>scatter</cite> : 2D scatter points of the raw data,
+* <cite>contour</cite> : 2D contour plot from the KDE,
+* <cite>hist</cite> : 2D histogram of the raw data.</p>
+<p>These components are modified by:
+* <cite>mask_dense</cite> : mask over scatter points within the outer-most contour interval,
+* <cite>mask_below</cite> : mask out (ignore) histogram bins below a certain value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>kde_data</strong> (<cite>kalepy.KDE</cite> instance, or (D,N) array_like of scalars) – <ul>
+<li><p>instance of <cite>kalepy.kde.KDE</cite>, providing the data and KDE to be plotted.
+In this case the <cite>param</cite> argument selects which dimension/parameter is plotted if
+numerous are included in the <cite>KDE</cite>.</p></li>
+<li><p>array_like scalar (D,N) of data with <cite>D</cite> parameters and <cite>N</cite> data points.</p></li>
+</ul>
+</p></li>
+<li><p><strong>ax</strong> (<cite>matplotlib.axes.Axes</cite> instance, or <cite>None</cite>; if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins for both dimensions, locations calculated automatically</p></li>
+<li><p>(2,) array_like of int : the number of bins for each dimension.</p></li>
+<li><p>(2,) of array_like : the bin-edge locations for each dimension, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension: i.e. 6 total.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for both dimensions.</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically.</p></li>
+</ul>
+</p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>param</strong> (<em>(</em><em>2</em><em>,</em><em>) </em><em>array_like of int</em><em>,</em>) – If a <cite>KDE</cite> instance is provided as the <cite>kde_data</cite> argument, and it includes multiple
+dimensions/parameters of data, then this argument determines which parameters are plotted.</p></li>
+<li><p><strong>quantiles</strong> (<em>array_like of scalar values in</em><em> [</em><em>0.0</em><em>, </em><em>1.0</em><em>] </em><em>denoting the fractions of data to contour.</em>) – </p></li>
+<li><p><strong>color</strong> (matplotlib color specification (i.e. named color, hex or rgb) or <cite>None</cite>.) – <dl class="simple">
+<dt>If <cite>None</cite>:</dt><dd><ul>
+<li><p><cite>cmap</cite> is given, then the color will be set to the <cite>cmap</cite> midpoint.</p></li>
+<li><p><cite>cmap</cite> is not given, then the color will be determined by the next value of the
+default matplotlib color-cycle, and <cite>cmap</cite> will be set to a matching colormap.</p></li>
+</ul>
+</dd>
+</dl>
+<p>This parameter effects the color of 1D: histograms, confidence intervals, and carpet;
+2D: scatter points.</p>
+</p></li>
+<li><p><strong>cmap</strong> (matplotlib colormap specification, or <cite>None</cite>) – <ul>
+<li><p>All valid matplotlib specifications can be used, e.g. named value (like ‘Reds’ or
+‘viridis’) or a <cite>matplotlib.colors.Colormap</cite> instance.</p></li>
+<li><p>If <cite>None</cite> then a colormap is constructed based on the value of <cite>color</cite> (see above).</p></li>
+</ul>
+</p></li>
+<li><p><strong>smooth</strong> (scalar or <cite>None</cite>/<cite>False</cite>, smoothing of plotted contours (<em>only</em>)) – if scalar: The width, in histogram bins, of a gaussian smoothing filter
+if <cite>None</cite> or <cite>False</cite>: no smoothing.</p></li>
+<li><p><strong>upsample</strong> (int or <cite>None</cite>/<cite>False</cite>, upsampling of plotted contours (<em>only</em>)) – if int: the factor by which to upsample the histogram by interpolation.
+if <cite>None</cite> or <cite>False</cite>: no upsampling</p></li>
+<li><p><strong>pad</strong> (int, True, or <cite>None</cite>/<cite>False</cite>,) – if int: the number of edge bins added to the histogram to close contours hitting the edges
+if true: the default padding size is used
+if <cite>None</cite> or <cite>False</cite>: no padding is used.</p></li>
+<li><p><strong>ls</strong> (str or <cite>None</cite>, matplotlib linestyle specification for ‘contour’ and ‘mdedian’ components.) – </p></li>
+<li><p><strong>median</strong> (<em>bool</em><em>, </em><em>mark the location of the median values in both dimensions</em><em> (</em><em>cross-hairs style</em><em>)</em><em></em>) – </p></li>
+<li><p><strong>scatter</strong> (<em>bool</em><em>, </em><em>whether to plot scatter points of the data points.</em>) – The <cite>mask_dense</cite> parameter determines if some of these points are masked over.</p></li>
+<li><p><strong>contour</strong> (bool, whether or not contours are plotted at the given <cite>quantiles</cite>.) – </p></li>
+<li><p><strong>hist</strong> (<em>bool</em><em>, </em><em>whether a 2D histogram is plotted from the given data.</em>) – </p></li>
+<li><p><strong>mask_dense</strong> (<em>bool</em><em>, </em><em>whether to mask over high-density scatter points</em><em> (</em><em>within the lowest contour</em><em>)</em><em></em>) – </p></li>
+<li><p><strong>mask_below</strong> (<em>bool</em><em> or </em><em>scalar; whether</em><em>, or </em><em>the value below which</em><em>, </em><em>hist bins should be excluded.</em>) – <ul>
+<li><p>If True : exclude histogram bins with less than the average weight of a data point.
+If <cite>weights</cite> are not given, this means exclude empty histogram bins.</p></li>
+<li><p>If False : do not exclude any bins (i.e. include all bins).</p></li>
+<li><p>If scalar : exclude histogram bins with values below the given value.</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>There is no <cite>probability</cite> argument because the normalization of the 2D distributions currently
+has no effect.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.hist1d">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">hist1d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">density</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">probability</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">renormalize</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">joints</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">positive</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">rotate</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.hist1d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate and draw a 1D histogram.</p>
+<p>This is a thin wrapper around the <cite>kalepy.plot.draw_hist1d()</cite> method which draws a histogram
+that has already been computed (e.g. with <cite>kalepy.utils.histogram</cite> or <cite>numpy.histogram</cite>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>(</em><em>N</em><em>,</em><em>) </em><em>array_like of scalar</em><em>, </em><em>data to be histogrammed.</em>) – </p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins, locations calculated automatically</p></li>
+<li><p>array_like : the bin-edge locations</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically</p></li>
+</ul>
+</p></li>
+<li><p><strong>ax</strong> (<cite>matplotlib.axes.Axes</cite> instance, or <cite>None</cite>; if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>density</strong> (bool or <cite>None</cite>, whether the density KDE distribution is plotted or not.) – If <cite>None</cite> then this is set based on what is passed as the <cite>kde_data</cite>.</p></li>
+<li><p><strong>probability</strong> (<em>bool</em><em>,</em>) – Whether distributions (<cite>hist</cite> and <cite>density</cite>) are normalized such that the sum is unity.
+NOTE: this can be overridden by the <cite>renormalize</cite> argument.</p></li>
+<li><p><strong>renormalize</strong> (<em>bool</em><em> or </em><em>scalar</em><em>, </em><em>whether</em><em> or </em><em>to what value to renormalize the histrogram maximum.</em>) – If True : renormalize the maximum histogram value to unity.
+If False : do not renormalize.
+If scalar : renormalize the histogram maximum to this value.</p></li>
+<li><p><strong>joints</strong> (<em>bool</em><em>, </em><em>plot the vertical connectors</em><em> (</em><em>'joints'</em><em>) </em><em>between histogram bins; if False</em><em>, </em><em>only</em>) – horizontal lines are plotted for each bin.</p></li>
+<li><p><strong>positive</strong> (<em>bool</em><em>, </em><em>only plot bins with positive values.</em>) – </p></li>
+<li><p><strong>rotate</strong> (<em>bool</em><em>, </em><em>if true switch the x and y coordinates</em><em> (</em><em>i.e. rotate plot 90deg clockwise</em><em>)</em><em></em>) – </p></li>
+<li><p><strong>**kwargs</strong> (additional keyword-arguments passed to <cite>kalepy.plot.draw_hist1d()</cite>.) – Any arguments not caught by <cite>draw_hist1d()</cite> are eventually passed to <cite>plt.plot()</cite> method.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>TO-DO: Add <cite>scipy.binned_statistic</cite> functionality for arbitrary statistics beyond histgramming.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt id="kalepy.plot.hist2d">
+<code class="sig-prename descclassname">kalepy.plot.</code><code class="sig-name descname">hist2d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">edges</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">weights</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">mask_below</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kalepy.plot.hist2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate and draw a 2D histogram.</p>
+<p>This is a thin wrapper around the <cite>kalepy.plot.draw_hist2d()</cite> method which draws a 2D histogram
+that has already been computed (e.g. with <cite>numpy.histogram2d</cite>).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>(</em><em>2</em><em>, </em><em>N</em><em>) </em><em>array_like of scalar</em><em>, </em><em>data to be histogrammed.</em>) – </p></li>
+<li><p><strong>edges</strong> (object specifying historgam edge locations; or <cite>None</cite>) – <ul>
+<li><p>int : the number of bins for both dimensions, locations calculated automatically</p></li>
+<li><p>(2,) array_like of int : the number of bins for each dimension.</p></li>
+<li><p>(2,) of array_like : the bin-edge locations for each dimension, e.g.
+([0, 1, 2], [0.0, 0.1, 0.2, 0.3],) would describe two bins for
+the 0th dimension, and 3 bins for the 1st dimension: i.e. 6 total.</p></li>
+<li><p>(X,) array_like of scalar : the bin-edge locations to be used for both dimensions.</p></li>
+<li><p><cite>None</cite> : the number and locations of bins are calculated automatically.</p></li>
+</ul>
+</p></li>
+<li><p><strong>ax</strong> (<cite>matplotlib.axes.Axes</cite> instance, or <cite>None</cite>; if <cite>None</cite> then <cite>plt.gca()</cite> is used.) – </p></li>
+<li><p><strong>weights</strong> (<cite>None</cite> or (N,) array_like of scalar, the weighting of each data-point if and) – only-if the given <cite>kde_data</cite> argument is a (D,N) array_like of scalar data.</p></li>
+<li><p><strong>mask_below</strong> (<em>bool</em><em> or </em><em>scalar; whether</em><em>, or </em><em>the value below which</em><em>, </em><em>hist bins should be excluded.</em>) – <ul>
+<li><p>If True : exclude histogram bins with less than the average weight of a data point.
+If <cite>weights</cite> are not given, this means exclude empty histogram bins.</p></li>
+<li><p>If False : do not exclude any bins (i.e. include all bins).</p></li>
+<li><p>If scalar : exclude histogram bins with values below the given value.</p></li>
+</ul>
+</p></li>
+<li><p><strong>**kwargs</strong> (additional keyword-arguments passed to <cite>kalepy.plot.draw_hist2d()</cite>.) – Any arguments not caught by <cite>draw_hist1d()</cite> are eventually passed to <cite>plt.pcolormesh()</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<ul class="simple">
+<li><p>TO-DO: Add <cite>scipy.binned_statistic</cite> functionality for arbitrary statistics beyond histgramming.</p></li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Luke Zoltan Kelley and Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

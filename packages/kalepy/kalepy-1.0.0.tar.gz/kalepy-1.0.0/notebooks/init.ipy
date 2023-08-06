@@ -1,0 +1,23 @@
+%reload_ext autoreload
+%autoreload 2
+
+# %load init.ipy
+import os, sys, logging, datetime, warnings, shutil
+from importlib import reload
+
+import numpy as np
+import scipy as sp
+import scipy.stats
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from nose import tools
+
+import kalepy as kale
+import kalepy.utils
+import kalepy.plot
+# The `nbshow` command runs `plt.show()` in interactive jupyter notebooks, but closes
+#   figures when run from the command-line (notebooks are converted to scripts and run as tests)
+from kalepy.plot import nbshow
+
+import warnings
+warnings.simplefilter("error")

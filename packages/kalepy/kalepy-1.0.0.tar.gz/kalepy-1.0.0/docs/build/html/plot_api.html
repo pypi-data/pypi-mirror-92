@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Top Level Functions &mdash; kalepy 0.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> kalepy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html">introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">kalepy API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kalepy.html">Full Package Documentation</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">kalepy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Top Level Functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/plot_api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">kalepy</span> <span class="k">as</span> <span class="nn">kale</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+<div class="section" id="top-level-functions">
+<h1>Top Level Functions<a class="headerlink" href="#top-level-functions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="kalepy-corner-and-the-kalepy-corner-class">
+<h2>kalepy.corner() and the kalepy.Corner class<a class="headerlink" href="#kalepy-corner-and-the-kalepy-corner-class" title="Permalink to this headline">¶</a></h2>
+<p>For the full documentation, see:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.corner">kalepy.plot.corner</a></p></li>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.Corner">kalepy.plot.Corner</a></p></li>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.Corner.plot">kalepy.plot.Corner.plot</a></p></li>
+</ul>
+<p>Plot some three-dimensional data called <code class="docutils literal notranslate"><span class="pre">data3</span></code> with shape (3, N) with
+<code class="docutils literal notranslate"><span class="pre">N</span></code> data points.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">kale</span><span class="o">.</span><span class="n">corner</span><span class="p">(</span><span class="n">data3</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_9_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_9_0.png" />
+<p>Extensive modifications are possible with passed arguments, for example:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1D plot settings: turn on histograms, and modify the confidence-interval quantiles</span>
+<span class="n">dist1d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">hist</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">quantiles</span><span class="o">=</span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">])</span>
+<span class="c1"># 2D plot settings: turn off the histograms, and turn on scatter</span>
+<span class="n">dist2d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">hist</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">scatter</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">kale</span><span class="o">.</span><span class="n">corner</span><span class="p">(</span><span class="n">data3</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;purple&#39;</span><span class="p">,</span>
+            <span class="n">dist1d</span><span class="o">=</span><span class="n">dist1d</span><span class="p">,</span> <span class="n">dist2d</span><span class="o">=</span><span class="n">dist2d</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_11_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_11_0.png" />
+<p>The <code class="docutils literal notranslate"><span class="pre">kalepy.corner</span></code> method is a wrapper that builds a
+<code class="docutils literal notranslate"><span class="pre">kalepy.Corner</span></code> instance, and then plots the given data. For
+additional flexibility, the <code class="docutils literal notranslate"><span class="pre">kalepy.Corner</span></code> class can be used
+directly. This is particularly useful for plotting multiple
+distributions, or using preconfigured plotting styles.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct a `Corner` instance for 3 dimensional data, modify the figure size</span>
+<span class="n">corner</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">Corner</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">])</span>
+
+<span class="c1"># Plot two different datasets using the `clean` plotting style</span>
+<span class="n">corner</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">data3a</span><span class="p">)</span>
+<span class="n">corner</span><span class="o">.</span><span class="n">clean</span><span class="p">(</span><span class="n">data3b</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_13_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_13_0.png" />
+</div>
+<div class="section" id="kalepy-dist1d-and-kalepy-dist2d">
+<h2>kalepy.dist1d and kalepy.dist2d<a class="headerlink" href="#kalepy-dist1d-and-kalepy-dist2d" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">Corner</span></code> class ultimately calls the functions <code class="docutils literal notranslate"><span class="pre">dist1d</span></code> and
+<code class="docutils literal notranslate"><span class="pre">dist2d</span></code> to do the actual plotting of each figure panel. These
+functions can also be used directly.</p>
+<p>For the full documentation, see:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.dist1d">kalepy.plot.dist1d</a></p></li>
+<li><p><a class="reference external" href="kalepy_plot.html#kalepy.plot.dist2d">kalepy.plot.dist2d</a></p></li>
+</ul>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot a 1D dataset, shape: (N,) for `N` data points</span>
+<span class="n">kale</span><span class="o">.</span><span class="n">dist1d</span><span class="p">(</span><span class="n">data1</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_17_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_17_0.png" />
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot a 2D dataset, shape: (2, N) for `N` data points</span>
+<span class="n">kale</span><span class="o">.</span><span class="n">dist2d</span><span class="p">(</span><span class="n">data2</span><span class="p">,</span> <span class="n">hist</span><span class="o">=</span><span class="kc">False</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_18_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_18_0.png" />
+<p>These functions can also be called on a <code class="docutils literal notranslate"><span class="pre">kalepy.KDE</span></code> instance, which
+is particularly useful for utilizing the advanced KDE functionality like
+reflection.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Construct a random dataset, and truncate it on the left at 1.0</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">lognormal</span><span class="p">(</span><span class="n">sigma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="mf">3e3</span><span class="p">))</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">data</span> <span class="o">&gt;=</span> <span class="mf">1.0</span><span class="p">]</span>
+
+<span class="c1"># Construct a KDE, and include reflection (only on the lower/left side)</span>
+<span class="n">kde_reflect</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">KDE</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">reflect</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="kc">None</span><span class="p">])</span>
+<span class="c1"># plot, and include confidence intervals</span>
+<span class="n">hr</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">dist1d</span><span class="p">(</span><span class="n">kde_reflect</span><span class="p">,</span> <span class="n">confidence</span><span class="o">=</span><span class="kc">True</span><span class="p">);</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_20_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_20_0.png" />
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a predefined 2D, &#39;random&#39; dataset that includes boundaries on both dimensions</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">_random_data_2d_03</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="mf">1e3</span><span class="p">)</span>
+<span class="c1"># Initialize figure</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Construct a KDE included reflection</span>
+<span class="n">kde</span> <span class="o">=</span> <span class="n">kale</span><span class="o">.</span><span class="n">KDE</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">reflect</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="kc">None</span><span class="p">],</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># plot using KDE&#39;s included reflection parameters</span>
+<span class="n">kale</span><span class="o">.</span><span class="n">dist2d</span><span class="p">(</span><span class="n">kde</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+
+<span class="c1"># plot data without reflection</span>
+<span class="n">kale</span><span class="o">.</span><span class="n">dist2d</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">axes</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Reds&#39;</span><span class="p">)</span>
+
+<span class="n">titles</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;reflection&#39;</span><span class="p">,</span> <span class="s1">&#39;no reflection&#39;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="n">title</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="p">,</span> <span class="n">titles</span><span class="p">):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">],</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">],</span> <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_21_0.png" src="https://raw.githubusercontent.com/lzkelley/kalepy/dev/docs/media/demo_plot_files/demo_plot_21_0.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Luke Zoltan Kelley and Contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
