@@ -1,0 +1,11 @@
+ocrfixr/__init__.py,sha256=H1J5ouK31ctm87Gw7_eDWUlsh7SbUPc2gnf7_BFS66k,192
+ocrfixr/spellcheck.py,sha256=j-ke6Yl2J2V6x2KFBk2pDUS_FfRTovm648Z-dJkH4Ag,9104
+ocrfixr/unsplit.py,sha256=WYYTUEWZa3FUB00ZHeGkPpZgZ4tRUS967vnaClSB_h4,5589
+tests/__init__.py,sha256=gSMiGhlS42pmPKcTTDgiT582pnCLrRfanOxbyYj262g,37
+tests/test_spellcheck.py,sha256=Gy53lsuC65iclndfd7EfWydaGQMeSawCM9yXJyly1Mg,3976
+tests/test_unsplit.py,sha256=umHMSk9ndPFZOh3oldmxlfVd_xilCsK_Kmat1QsjY8Y,3441
+OCRfixr-1.1.0.dist-info/LICENSE,sha256=YGu5Wdfp-eRsQ6Zti5OdcCZMfZ6EdsXNq9ggpUP-c5E,1632
+OCRfixr-1.1.0.dist-info/METADATA,sha256=C3U1o_N_oXK1idGJLHjv-e9K4T1d11hZyy5dh3L3ZMc,5396
+OCRfixr-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+OCRfixr-1.1.0.dist-info/top_level.txt,sha256=JNVpTCI-LBtkFNVYKprldRibmxGQfTlBxWXfqBvZHAE,14
+OCRfixr-1.1.0.dist-info/RECORD,,
