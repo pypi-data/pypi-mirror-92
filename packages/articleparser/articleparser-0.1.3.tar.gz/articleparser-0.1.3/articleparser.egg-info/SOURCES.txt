@@ -1,0 +1,16 @@
+README.md
+setup.py
+articleparser/__init__.py
+articleparser/article.py
+articleparser/cleaner.py
+articleparser/config.py
+articleparser/extractor.py
+articleparser/metadata.py
+articleparser/settings.py
+articleparser/util.py
+articleparser/version.py
+articleparser.egg-info/PKG-INFO
+articleparser.egg-info/SOURCES.txt
+articleparser.egg-info/dependency_links.txt
+articleparser.egg-info/requires.txt
+articleparser.egg-info/top_level.txt
