@@ -1,0 +1,31 @@
+name: pep8
+
+on:
+  push:
+
+jobs:
+  pep8:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    
+    - name: Setup timezone
+      uses: zcong1993/setup-timezone@master
+      with:
+        timezone: Europe/Berlin
+
+    - name: Install dependencies
+      run: |
+        pip3 install lxml
+        pip install flake8
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -e .[teamproject]
+    
+    - name: flake8
+      run: flake8 --ignore W503
