@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pyToolkitX
+Version: 0.0.1
+Summary: python tools repository.
+Home-page: https://gitlab.ilongyuan.cn/pyhifive/toolkit
+Author: wangdongming
+Author-email: wangdongming@hifive.ai
+License: MIT
+Keywords: pyToolkitX
+Platform: UNKNOWN
+Requires-Dist: amqp (==2.6.0)
+Requires-Dist: boto3 (==1.15.16)
+Requires-Dist: botocore (==1.18.16)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: esdk-obs-python (==3.20.9)
+Requires-Dist: future (==0.18.2)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==1.7.0)
+Requires-Dist: jmespath (==0.10.0)
+Requires-Dist: kombu (==4.6.11)
+Requires-Dist: mutagen (==1.45.1)
+Requires-Dist: numpy (==1.19.2)
+Requires-Dist: pika (==1.1.0)
+Requires-Dist: pydub (==0.24.1)
+Requires-Dist: pymongo (==3.11.0)
+Requires-Dist: PyMySQL (==0.9.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: s3transfer (==0.3.3)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tornado (==6.1)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: vine (==1.3.0)
+Requires-Dist: wavio (==0.0.4)
+Requires-Dist: zipp (==3.1.0)
+
+pyToolkitX
+=======================
+
+Python Toolkit for XingzeAI & HifiveAI.
+
+
+
