@@ -1,0 +1,13 @@
+README.md
+setup.py
+torch_vectorized.egg-info/PKG-INFO
+torch_vectorized.egg-info/SOURCES.txt
+torch_vectorized.egg-info/dependency_links.txt
+torch_vectorized.egg-info/requires.txt
+torch_vectorized.egg-info/top_level.txt
+torchvectorized/__init__.py
+torchvectorized/nn.py
+torchvectorized/utils.py
+torchvectorized/vlinalg.py
+torchvectorized/debug/__init__.py
+torchvectorized/debug/nn.py
