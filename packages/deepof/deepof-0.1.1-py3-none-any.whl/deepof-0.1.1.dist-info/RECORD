@@ -1,0 +1,15 @@
+deepof/__init__.py,sha256=jb5iePVLYOTDP-6pV3IwIKSHGgHWMk8n3EniJ1wEai0,38
+deepof/data.py,sha256=PaMV9ICHuDop2iMIELoTzk1tj5Nu8AqffyDEA-uJDZk,39765
+deepof/hypermodels.py,sha256=nOwho5DFbkUVZHBpdxmaQPR8VfWL7bVWwVoHJkjYijY,5762
+deepof/model_utils.py,sha256=woIYwWLyBPKba0Jp3kWBbrWkYPcoe4GKkLb2v16POjk,16335
+deepof/models.py,sha256=4PYHxL_2KQ2S_B8ufGA4n9v8msqCAfxaFofuA8gnSo4,25499
+deepof/pose_utils.py,sha256=5Vh8RWZA2kcevVWV6XD7QAyLlsckP6FGYMjNFldvLoY,28133
+deepof/train_model.py,sha256=Ua4l0_6UQ3Fiz-4JwNgnYXp8GhPICzo-7DSn_NM3Hhg,20164
+deepof/train_utils.py,sha256=NrTK_oiQFTVSeFl0v2QRQKqIhN6jUNpHr62V02dwVRQ,8645
+deepof/utils.py,sha256=l0-wLY1QFNmSHq-NB5ROi-aqnBiXIP5B4lkIf9W0UIQ,20921
+deepof/visuals.py,sha256=iPmHy864B-C8iMaRWtI8l9cm6cYGLEyT0dxR-LNnDas,4418
+deepof-0.1.1.dist-info/LICENSE,sha256=RGeZ7R-hyrhTECaAnmHe6jRbdy9k04Fs7TZsSSwm12k,1070
+deepof-0.1.1.dist-info/METADATA,sha256=g2nevaA5AUshPU-SynUEnMJtPcYyXIzxDjSdQ1wcgWs,6772
+deepof-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+deepof-0.1.1.dist-info/top_level.txt,sha256=WNv5Ci0nfkaAVXijv3qK_ApA_H2tbrdVzF4FXcHur64,7
+deepof-0.1.1.dist-info/RECORD,,
