@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pyGenicParser
+Version: 0.4.0
+Summary: Parse Genetic files via bgi like sql indexing
+Home-page: UNKNOWN
+Author: Samuel Baker
+Author-email: samuelbaker.researcher@gmail.com
+Maintainer: Samuel Baker
+Maintainer-email: samuelbaker.researcher@gmail.com
+License: MIT
+Download-URL: https://github.com/sbaker-dev/pyGenicParser
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: zstd
+
+
+# PyGenicParser
+
+Parse Genetic files via bgi like sql indexing
+
+Designed to use sql database style of metadata created by bgenix .bgi files for indexing, but generalised to both plink
+and bgen file formats. This was a generalisation of the approach used by the [pybgen], with an attempt to include some
+of the features of [pysnptools] such as indexing, although this system isn't as clever in terms of reads.
+
+All the source code can be found at the [PyGenicParser git repository](https://github.com/sbaker-dev/pyGenicParser)
+
+
+
