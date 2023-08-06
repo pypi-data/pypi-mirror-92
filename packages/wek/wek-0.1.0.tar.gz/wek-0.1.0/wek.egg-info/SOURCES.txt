@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+wek.py
+wek.egg-info/PKG-INFO
+wek.egg-info/SOURCES.txt
+wek.egg-info/dependency_links.txt
+wek.egg-info/entry_points.txt
+wek.egg-info/top_level.txt
