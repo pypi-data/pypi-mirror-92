@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: quick_dag
+Version: 0.1
+Summary: Create quick dags
+Home-page: https://github.com/kroone/quick_dag
+Author: Stefan Krone
+Author-email: stefan.krone@yahoo.de
+License: MIT
+Download-URL: https://github.com/kroone/quick_dag/archive/0.01.tar.gz
+Description: UNKNOWN
+Keywords: dag
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
