@@ -1,0 +1,8 @@
+mydatapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mydatapy/client.py,sha256=jYFI6936SH5aVW6zbmLgV_akyqFkgL_bzLyZuii699Q,1938
+mydatapy/models/invoice.py,sha256=4tb_b9J9ZrdHf7GU3zAcNBKcirL48q1GsZibCCuJPu4,1783
+mydatapy/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mydatapy/templates/invoice.xml,sha256=1fRK8-iGFBaruuNqVy-h-_WW4uywYz0dgAlYTOw7BYc,3484
+mydatapy-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mydatapy-0.1.1.dist-info/METADATA,sha256=fuqg6WYwg44YE39sUGQVlPjt3PpRRJ03wDuzAMfAgs0,570
+mydatapy-0.1.1.dist-info/RECORD,,

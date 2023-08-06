@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InvoicesDoc xmlns="http://www.aade.gr/myDATA/invoice/v1.0"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xsi:schemaLocation="http://www.aade.gr/myDATA/invoice/v1.0/InvoicesDoc-v0.6.xsd"	
+			xmlns:icls="https://www.aade.gr/myDATA/incomeClassificaton/v1.0" 
+			xmlns:ecls="https://www.aade.gr/myDATA/expensesClassificaton/v1.0">
+	<invoice>
+		<issuer>
+			<vatNumber>{{invoice.issuer.vatNumber}}</vatNumber>
+			<country>{{invoice.issuer.country}}</country>
+			<branch>{{invoice.issuer.branch}}</branch>		          
+		</issuer>
+		<counterpart>
+			<vatNumber>{{invoice.counterpart.vatNumber}}</vatNumber>
+			<country>{{invoice.counterpart.country}}</country>
+			<branch>{{invoice.counterpart.branch}}</branch>            
+			<address>                
+				<postalCode>{{invoice.counterpart.address.postalcode}}</postalCode>
+				<city>{{invoice.counterpart.address.city}}</city>
+			</address>
+		</counterpart>
+		<invoiceHeader>
+			<series>{{invoice.header.series}}</series>
+			<aa>{{invoice.header.aa}}</aa>
+			<issueDate>{{invoice.header.issueDate}}</issueDate>
+			<invoiceType>{{invoice.header.invoiceType}}</invoiceType>
+			<currency>{{invoice.header.currency}}</currency>
+		</invoiceHeader>
+		<paymentMethods>
+			<paymentMethodDetails>
+				<type>{{invoice.payment.type}}</type>
+				<amount>{{invoice.payment.amount}}</amount>
+				<paymentMethodInfo>{{invoice.payment.paymentMethodInfo}}</paymentMethodInfo>
+			</paymentMethodDetails>
+		</paymentMethods>
+		{% for line in invoice.details%}
+			<invoiceDetails>
+				<lineNumber>{{line.lineNumber}}</lineNumber>
+				<netValue>{{line.netValue}}</netValue>
+				<vatCategory>{{line.vatCategory}}</vatCategory>
+				<vatAmount>{{line.vatAmount}}</vatAmount>
+				{%if line.discountOption %}
+					<discountOption>true</discountOption>
+				{%endif%}
+				<incomeClassification>
+					<icls:classificationType>{{line.classification.type}}</icls:classificationType>
+					<icls:classificationCategory>{{line.classification.category}}</icls:classificationCategory>
+					<icls:amount>{{line.classification.amount}}</icls:amount>
+				</incomeClassification>
+			</invoiceDetails>
+		{% endfor %}
+		{% if invoice.taxes %}
+			<taxesTotals>
+				{% for tax in invoice.taxes%}
+					<taxes>
+						<taxType>{{tax.type}}</taxType>
+						<taxCategory>{{tax.category}}</taxCategory>
+						<underlyingValue>{{tax.underlyingValue}}</underlyingValue>
+						<taxAmount>{{tax.amount}}/taxAmount>
+					</taxes>
+				{% endfor %}			
+			</taxesTotals>
+		{% endif %}
+		<invoiceSummary>
+			<totalNetValue>{{invoice.summary.net}}</totalNetValue>
+			<totalVatAmount>{{invoice.summary.vat}}</totalVatAmount>
+			<totalWithheldAmount>{{invoice.summary.withheld}}</totalWithheldAmount>
+			<totalFeesAmount>{{invoice.summary.fees}}</totalFeesAmount>
+			<totalStampDutyAmount>{{invoice.summary.stamp_duty}}</totalStampDutyAmount>
+			<totalOtherTaxesAmount>{{invoice.summary.other_taxes}}</totalOtherTaxesAmount>
+			<totalDeductionsAmount>{{invoice.summary.deductions}}</totalDeductionsAmount>
+			<totalGrossValue>{{invoice.summary.gross}}</totalGrossValue>
+			{% for income in invoice.summary.classifications %}
+			<incomeClassification>
+				<icls:classificationType>{{income.type}}</icls:classificationType>
+				<icls:classificationCategory>{{income.category}}</icls:classificationCategory>
+				<icls:amount>{{income.amount}}</icls:amount>				
+			</incomeClassification>
+			{% endfor %}
+		</invoiceSummary>
+    </invoice>
+</InvoicesDoc>

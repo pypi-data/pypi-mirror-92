@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mydatapy
+Version: 0.1.1
+Summary: A simple wrapper of mydata platform of greek tax registry
+Author: Dimitrios Strantsalis
+Author-email: dstrants@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: requests-xml (>=0.2.3,<0.3.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
