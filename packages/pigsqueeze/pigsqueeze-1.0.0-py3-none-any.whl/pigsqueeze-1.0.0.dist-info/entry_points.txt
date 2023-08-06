@@ -1,0 +1,3 @@
+[console_scripts]
+psz=pigsqueeze.pigsqueeze:cli
+
