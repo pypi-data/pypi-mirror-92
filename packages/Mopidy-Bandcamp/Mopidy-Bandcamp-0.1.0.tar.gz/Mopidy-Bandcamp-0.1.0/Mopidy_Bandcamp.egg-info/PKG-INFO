@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: Mopidy-Bandcamp
+Version: 0.1.0
+Summary: Backend for listening to bandcamp
+Home-page: https://github.com/impliedchaos/mopidy-bandcamp
+Author: Dave Maez
+Author-email: impliedchaos@gmail.com
+License: MIT License
+Description: Mopidy-Bandcamp
+        ****************
+        
+        `Mopidy <http://www.mopidy.com/>`_ extension for playing music from
+        `Bandcamp <http://bandcamp.com/>`_.
+        
+        This backend does not support authentication and listening to high quality
+        streams in your collection.  I'd love to support that if someone wants to
+        reverse-engineer the X-Bandcamp-DM and X-Bandcamp-PoW headers.  In the
+        meantime, this allows searching bandcamp and playing the 128kbps
+        preview streams.
+        
+        Installation
+        ============
+        
+        Install by running::
+        
+            sudo pip install Mopidy-Bandcamp
+        
+        
+        
+        Configuration
+        =============
+        
+        Before starting Mopidy, you must enable Mopidy-Bandcamp in 
+        the Mopidy configuration file::
+        
+            [bandcamp]
+            enabled = true
+        
+        
+        
+        Project resources
+        =================
+        
+        - `Source code <https://github.com/impliedchaos/mopidy-bandcamp>`_
+        - `Issue tracker <https://github.com/impliedchaos/mopidy-bandcamp/issues>`_
+        
+Platform: UNKNOWN
+Classifier: Environment :: No Input/Output (Daemon)
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
