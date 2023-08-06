@@ -1,0 +1,7 @@
+mpl_tools/__init__.py,sha256=ayHEizyJpLRW_p-JsC4Y_ZtZez0yRSM0K58MtOCqk80,462
+mpl_tools/ax_placement.py,sha256=haE6HQf6X9pheFglJ1QigLUTOSLHPyNsUM3Q3HScTm0,3058
+mpl_tools/log_toggler.py,sha256=-dajo-8rw-0trcbzGliWywg0aqTOmrmcF-0bRnl-KeM,2837
+mpl_tools/misc.py,sha256=82TBcSDDhuxg810E32sAXRt5Kun8ucP-SB44tIRSWIk,6316
+mpl_tools-0.2.22.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mpl_tools-0.2.22.dist-info/METADATA,sha256=JlBIqo4hHyKhKigiutRTaXwH7CfUMHW_sPJTANxPNVI,2306
+mpl_tools-0.2.22.dist-info/RECORD,,
