@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+flexconf/__init__.py
+flexconf/__main__.py
+flexconf/flexconf.py
+flexconf.egg-info/PKG-INFO
+flexconf.egg-info/SOURCES.txt
+flexconf.egg-info/dependency_links.txt
+flexconf.egg-info/not-zip-safe
+flexconf.egg-info/top_level.txt
