@@ -1,0 +1,16 @@
+include requirements.txt
+include README.md
+include LICENSE.md
+include *.txt
+
+graft prosodic
+#graft prosodic
+graft metricaltree
+graft tagged_samples
+
+graft corpora
+graft meters
+graft dicts
+
+global-exclude .DS_Store
+global-exclude __pycache__
