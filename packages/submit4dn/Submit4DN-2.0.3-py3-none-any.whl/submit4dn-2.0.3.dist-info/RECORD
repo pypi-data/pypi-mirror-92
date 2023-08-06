@@ -1,0 +1,16 @@
+wranglertools/4DNWranglerTools.egg-info/PKG-INFO,sha256=4kXyKmL1nuLUu0FYM-e4WKuVWqvBavRXJqyIrsJh2us,5257
+wranglertools/4DNWranglerTools.egg-info/SOURCES.txt,sha256=NLqQhwA9Trvb5G8zDxbd4ZakpqlhH0qE5Eg-8ZPnz-Q,327
+wranglertools/4DNWranglerTools.egg-info/dependency_links.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+wranglertools/4DNWranglerTools.egg-info/entry_points.txt,sha256=jGTAzHQzeqwVfDxImZ3J-PSVzW4nYhJWgmjQhhYut4Q,128
+wranglertools/4DNWranglerTools.egg-info/not-zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+wranglertools/4DNWranglerTools.egg-info/requires.txt,sha256=VS-R68hngBxFpi0a-arBOhesNdr177DI_4S6p15LVHA,159
+wranglertools/4DNWranglerTools.egg-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+wranglertools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wranglertools/_version.py,sha256=_gSWFKaM2RSmdysOTU5tX7A_uKJE3UJ-91ii7rt2x6s,127
+wranglertools/get_field_info.py,sha256=sGJvNYauWj8B-hCmxed0Szarx1QFgdlCCcEBPIaAuWo,21769
+wranglertools/import_data.py,sha256=Ahhy28SmokU-jXn735aHxNqxj8Bs8qnuSkFxFezmdW8,68768
+submit4dn-2.0.3.dist-info/entry_points.txt,sha256=eldf-mINSfP2jQtZijplm6HykwbzCMltwtNB3bOgY3Q,111
+submit4dn-2.0.3.dist-info/LICENSE.txt,sha256=InLZNyrICvNa9WFkpMN0fTbPaJABkuwpJdkHR4IRI0c,1083
+submit4dn-2.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+submit4dn-2.0.3.dist-info/METADATA,sha256=ljtYYDotzmzte8gcGTsORoRx2Tk0psByP75Cpbr1t3M,8199
+submit4dn-2.0.3.dist-info/RECORD,,
