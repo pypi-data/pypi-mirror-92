@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: offshore
+Version: 0.1.1
+Summary: Simple, ergonomic data persistence for Python.
+Home-page: https://github.com/kpdemetriou/offshore
+License: BSD-3-Clause
+Author: Phil Demetriou
+Author-email: inbox@philonas.net
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Object Brokering
+Classifier: Topic :: Utilities
+Requires-Dist: portalocker (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/kpdemetriou/offshore
