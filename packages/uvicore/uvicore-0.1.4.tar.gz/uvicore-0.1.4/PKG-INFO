@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: uvicore
+Version: 0.1.4
+Summary: 
+Author: Matthew Reschke
+Author-email: mail@mreschke.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiofiles (>=0.5.0,<0.6.0)
+Requires-Dist: alembic (>=1.4.2,<2.0.0)
+Requires-Dist: asyncclick (>=7.0.9,<8.0.0)
+Requires-Dist: colored (>=1.4.2,<2.0.0)
+Requires-Dist: databases (>=0.3.2,<0.4.0)
+Requires-Dist: environs (>=8.0.0,<9.0.0)
+Requires-Dist: fastapi (>=0.61.1,<0.62.0)
+Requires-Dist: gunicorn (>=20.0.4,<21.0.0)
+Requires-Dist: ipython (>=7.18.1,<8.0.0)
+Requires-Dist: jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: prettyprinter (>=0.18.0,<0.19.0)
+Requires-Dist: rx (>=3.1.1,<4.0.0)
+Requires-Dist: uvicorn (>=0.11.8,<0.12.0)
