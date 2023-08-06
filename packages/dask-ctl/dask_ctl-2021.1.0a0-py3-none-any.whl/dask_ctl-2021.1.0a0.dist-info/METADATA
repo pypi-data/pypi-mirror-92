@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: dask-ctl
+Version: 2021.1.0a0
+Summary: A set of tools to provide a control plane for managing the lifecycle of Dask clusters.
+Home-page: UNKNOWN
+Author: Jacob Tomlinson
+Author-email: jacob@tomlinson.email
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: click
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: tornado
+
+dask-ctl
+========
+
+A set of tools to provide a control plane for managing the lifecycle of Dask clusters.
+
