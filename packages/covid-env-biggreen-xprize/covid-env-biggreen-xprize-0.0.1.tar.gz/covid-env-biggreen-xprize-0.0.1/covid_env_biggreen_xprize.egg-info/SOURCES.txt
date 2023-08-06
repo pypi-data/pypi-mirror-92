@@ -1,0 +1,7 @@
+README.md
+setup.py
+covid_env_biggreen_xprize.egg-info/PKG-INFO
+covid_env_biggreen_xprize.egg-info/SOURCES.txt
+covid_env_biggreen_xprize.egg-info/dependency_links.txt
+covid_env_biggreen_xprize.egg-info/requires.txt
+covid_env_biggreen_xprize.egg-info/top_level.txt
