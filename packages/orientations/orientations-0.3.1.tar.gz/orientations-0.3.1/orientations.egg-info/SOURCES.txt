@@ -1,0 +1,14 @@
+.gitignore
+Dockerfile
+LICENSE
+Makefile
+README.md
+setup.py
+.github/workflows/test.yml
+orientations/__init__.py
+orientations/orientations.py
+orientations.egg-info/PKG-INFO
+orientations.egg-info/SOURCES.txt
+orientations.egg-info/dependency_links.txt
+orientations.egg-info/requires.txt
+orientations.egg-info/top_level.txt
