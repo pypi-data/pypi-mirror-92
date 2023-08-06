@@ -1,0 +1,331 @@
+interactions:
+- request:
+    body: '{"location": "global", "sku": {"name": "Free"}, "kind": "Bot", "properties":
+      {"displayName": "this is a test bot", "description": "this is a description
+      for a test bot", "endpoint": "https://bing.com/messages/", "msaAppId": "056d9ad9-17a9-4cc7-aebb-43bf6f293a08",
+      "developerAppInsightKey": "59513bad-10a7-4d41-b4d0-b1c34c6af511", "developerAppInsightsApiKey":
+      "w24iw5ocbhcig71su7ibaj63hey5ieaozeuwdv11", "developerAppInsightsApplicationId":
+      "cf03484e-3fdb-4b5e-9ad7-94bde32e5a19"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '481'
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd?api-version=2020-06-02
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd","name":"azurebotservice4f7115bd","type":"Microsoft.BotService/botServices","etag":"\"0000a726-0000-1800-0000-600fbf080000\"","location":"global","sku":{"name":""},"kind":"Bot","tags":{},"properties":{"displayName":"this
+        is a test bot","description":"this is a description for a test bot","iconUrl":"https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png","endpoint":"https://bing.com/messages/","msaAppId":"056d9ad9-17a9-4cc7-aebb-43bf6f293a08","developerAppInsightKey":"59513bad-10a7-4d41-b4d0-b1c34c6af511","developerAppInsightsApplicationId":"cf03484e-3fdb-4b5e-9ad7-94bde32e5a19","luisAppIds":[],"endpointVersion":"3.0","configuredChannels":["webchat"],"enabledChannels":["webchat","directline"],"isDeveloperAppInsightsApiKeySet":true,"isStreamingSupported":false,"publishingCredentials":null,"parameters":null,"allSettings":null,"manifestUrl":null,"storageResourceId":null,"migrationToken":null,"isCmekEnabled":false,"cmekKeyVaultUrl":null,"cmekEncryptionStatus":"Off","provisioningState":"Succeeded"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1202'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 26 Jan 2021 07:04:41 GMT
+      etag:
+      - '"0000a726-0000-1800-0000-600fbf080000"'
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1195'
+    status:
+      code: 201
+      message: Created
+- request:
+    body: '{"location": "global", "properties": {"channelName": "DirectLineChannel",
+      "properties": {"sites": [{"siteName": "default", "isEnabled": true, "isV1Enabled":
+      false, "isV3Enabled": true}]}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '188'
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: PUT
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel?api-version=2020-06-02
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel","name":"azurebotservice4f7115bd/DirectLineChannel","type":"Microsoft.BotService/botServices/channels","etag":"W/\"b40f11b1a1b754fe719b35aeabe546a51/26/2021
+        7:04:45 AM\"","location":"global","properties":{"properties":{"DirectLineEmbedCode":null,"sites":[{"siteId":"lPV0gYBdF_A","siteName":"default","key":"lPV0gYBdF_A.eiV3TyRCXCx1tj9UFDrhcPs_RMU5fHQ7iSywGFvDRUo","key2":"lPV0gYBdF_A.Hv690cIJvY6ms3jTx63CCiWFEf72nISl_cyLWqhEtEU","isEnabled":true,"isV1Enabled":true,"isV3Enabled":true,"isSecureSiteEnabled":false,"isBlockUserUploadEnabled":false,"trustedOrigins":null}]},"etag":"W/\"b40f11b1a1b754fe719b35aeabe546a51/26/2021
+        7:04:45 AM\"","channelName":"DirectLineChannel","location":"global","provisioningState":"Succeeded"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '914'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 26 Jan 2021 07:04:44 GMT
+      etag:
+      - W/"b40f11b1a1b754fe719b35aeabe546a51/26/2021 7:04:45 AM"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1194'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel?api-version=2020-06-02
+  response:
+    body:
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel","name":"azurebotservice4f7115bd/DirectLineChannel","type":"Microsoft.BotService/botServices/channels","etag":"W/\"07cf06d8ac9f499d4bfbe697d46271e91/26/2021
+        7:04:45 AM\"","location":"global","properties":{"properties":{"DirectLineEmbedCode":null,"sites":[{"siteId":"lPV0gYBdF_A","siteName":"default","key":null,"key2":null,"isEnabled":true,"isV1Enabled":true,"isV3Enabled":true,"isSecureSiteEnabled":false,"isBlockUserUploadEnabled":false,"trustedOrigins":null}]},"etag":"W/\"07cf06d8ac9f499d4bfbe697d46271e91/26/2021
+        7:04:45 AM\"","channelName":"DirectLineChannel","location":"global","provisioningState":"Succeeded"}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '808'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 26 Jan 2021 07:04:45 GMT
+      etag:
+      - W/"07cf06d8ac9f499d4bfbe697d46271e91/26/2021 7:04:45 AM"
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Accept-Encoding
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: POST
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel/listChannelWithKeys?api-version=2020-06-02
+  response:
+    body:
+      string: '{"resource":{"properties":{"sites":[{"siteId":"lPV0gYBdF_A","siteName":"default","key":"lPV0gYBdF_A.eiV3TyRCXCx1tj9UFDrhcPs_RMU5fHQ7iSywGFvDRUo","key2":"lPV0gYBdF_A.Hv690cIJvY6ms3jTx63CCiWFEf72nISl_cyLWqhEtEU","isEnabled":true,"isV1Enabled":true,"isV3Enabled":true,"isSecureSiteEnabled":false,"isBlockUserUploadEnabled":false}]},"etag":"W/\"b40f11b1a1b754fe719b35aeabe546a51/26/2021
+        7:04:45 AM\"","channelName":"DirectLineChannel","location":"global"},"setting":{"extensionKey1":"y04QZvgoY1s.XPJtwnU11DzPBASaH4txWMb-QJzE0t9GjBHhisQP2Ig","extensionKey2":"y04QZvgoY1s.spVf2uFMwbJNaXsh2mhLw6B_Gu_LcOiToiER36pW1ts","sites":[{"siteId":"lPV0gYBdF_A","siteName":"default","key":"lPV0gYBdF_A.eiV3TyRCXCx1tj9UFDrhcPs_RMU5fHQ7iSywGFvDRUo","key2":"lPV0gYBdF_A.Hv690cIJvY6ms3jTx63CCiWFEf72nISl_cyLWqhEtEU","isEnabled":true,"isV1Enabled":true,"isV3Enabled":true,"isWebchatPreviewEnabled":false,"isSecureSiteEnabled":false,"isBlockUserUploadEnabled":false,"eTag":"\"3c008bbc-0000-1800-0000-600fbf0a0000\""}],"channelId":"directline","channelDisplayName":"Direct
+        Line","botId":"azurebotservice4f7115bd","botIconUrl":"https://docs.botframework.com/static/devportal/client/images/bot-framework-default.png","isEnabled":true},"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel","location":"global","properties":{"properties":{"DirectLineEmbedCode":null,"sites":[{"siteId":"lPV0gYBdF_A","siteName":"default","key":"lPV0gYBdF_A.eiV3TyRCXCx1tj9UFDrhcPs_RMU5fHQ7iSywGFvDRUo","key2":"lPV0gYBdF_A.Hv690cIJvY6ms3jTx63CCiWFEf72nISl_cyLWqhEtEU","isEnabled":true,"isV1Enabled":true,"isV3Enabled":true,"isSecureSiteEnabled":false,"isBlockUserUploadEnabled":false,"trustedOrigins":null}]},"etag":"W/\"b40f11b1a1b754fe719b35aeabe546a51/26/2021
+        7:04:45 AM\"","channelName":"DirectLineChannel","location":"global"},"provisioningState":"Accepted","entityTag":"W/\"b40f11b1a1b754fe719b35aeabe546a51/26/2021
+        7:04:45 AM\"","changedTime":"0001-01-01T00:00:00Z"}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '2060'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 26 Jan 2021 07:04:45 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding,Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-writes:
+      - '1198'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: DELETE
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel?api-version=2020-06-02
+  response:
+    body:
+      string: ''
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '0'
+      date:
+      - Tue, 26 Jan 2021 07:04:45 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-deletes:
+      - '14995'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel?api-version=2020-06-02
+  response:
+    body:
+      string: '{"error":{"code":"ResourceNotFound","message":"The resource with identifier
+        ''/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd/channels/DirectLineChannel''
+        is not found."}}'
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '276'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Tue, 26 Jan 2021 07:04:46 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      User-Agent:
+      - python/3.6.9 (Linux-4.9.184-linuxkit-x86_64-with-Ubuntu-18.04-bionic) msrest/0.6.10
+        msrest_azure/0.6.2 azure-mgmt-botservice/0.3.0 Azure-SDK-For-Python
+      accept-language:
+      - en-US
+    method: DELETE
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/pythonsdkbot4f7115bd/providers/Microsoft.BotService/botServices/azurebotservice4f7115bd?api-version=2020-06-02
+  response:
+    body:
+      string: ''
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '0'
+      date:
+      - Tue, 26 Jan 2021 07:04:57 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-subscription-deletes:
+      - '14994'
+    status:
+      code: 200
+      message: OK
+version: 1
