@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: hutool
+Version: 1.0.0
+Summary: Hutool for Python
+Home-page: https://istackvip.com
+Author: isaiah
+Author-email: isaiah@sohu.com
+License: MIT
+Project-URL: Documentation, https://packaging.python.org/tutorials/distributing-packages/
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Say Thanks!, http://saythanks.io/to/example
+Project-URL: Source, https://github.com/pypa/sampleproject/
+Project-URL: Tracker, https://github.com/pypa/sampleproject/issues
+Description: Hutool is a small and comprehensive library of Python tools that reduce the cost of learning APIs and improve productivity through function and class encapsulation
+Keywords: sample tool library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Python: >=3
