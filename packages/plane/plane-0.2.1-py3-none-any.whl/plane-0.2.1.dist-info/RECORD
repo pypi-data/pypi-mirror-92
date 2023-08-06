@@ -1,0 +1,11 @@
+plane/__init__.py,sha256=FnF-YkwFxC4JWI9mNxcWx1ljsUVUlY3qFoZFTlqJlTg,480
+plane/func.py,sha256=gTNN-20els99OSB4Z0V7T1lNDl9BaGDmS0z61Cv0Yv8,2306
+plane/pattern.py,sha256=yueQgzneCNGXtVoMyPsSVKxTKcefbjaYpCbxjTMNXBo,7603
+plane/pipeline.py,sha256=4ObuUc-NCi_ITAvcB4iUsaHsvZ-oWsUAbZrjx_z4BfA,1813
+plane/plane.py,sha256=-JGPGPYNLSgR52jIPE5eUMN-IzkttL6wpUw9VU34rNE,3328
+plane/punctuation.py,sha256=6vuV8G_moh8cisft_VylixKYo2eenw817nvt8_pszJA,3218
+plane-0.2.1.dist-info/LICENSE.txt,sha256=r37UvlrQo89y-1N0L3OmzBSHIWl-6Ha-NNaWJowCCCY,1067
+plane-0.2.1.dist-info/METADATA,sha256=Wxe4eHFUu8uKT-d24NTLC-Ru6SRMa7eF5SPycllSJEg,6723
+plane-0.2.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+plane-0.2.1.dist-info/top_level.txt,sha256=F6NlRhRKo9lhGZucwldfimYyXWvC2_rmUqyi-GKLz2g,6
+plane-0.2.1.dist-info/RECORD,,
