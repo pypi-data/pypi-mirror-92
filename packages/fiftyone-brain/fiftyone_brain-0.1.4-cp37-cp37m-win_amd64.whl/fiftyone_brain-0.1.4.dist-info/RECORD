@@ -1,0 +1,15 @@
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/__init__.py,sha256=Y85A8DDOdVPDCPsJmPcXCg53XepbE5P7q8OmsFde26M,3422
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/hardness.py,sha256=JzNpq_SWxgWpUpBlBDeVod_9o3tRrnUmizGgs1Ui3-0,11575
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/mistakenness.py,sha256=5Sbez8K82ghCalcTJMtxzDUMpYmAN7GF0_ipAqg9CwU,14231
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/uniqueness.py,sha256=TNTRjRjJpP1-adUAC5yiieY_cntihtyyQD1he6BB4-U,16779
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/models/__init__.py,sha256=DWRGsDPZu8e9oRYTFSu1XHAtCEgotm6APrYy_Ce8KsY,2527
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/models/simple_resnet.py,sha256=FqOO3V9ht12OwApjG9c53NAW9WaaYjh9b3bdYaM2KVI,84279
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/models/cache/manifest.json,sha256=1a5BNy0uQn9chKYRau0M-zD1ExNjactYiz-y0rwTRVQ,1025
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/pytransform/__init__.py,sha256=Ramngn71vV7SDyaji_XD7vAsW-lNEa7IEi1uCjU56uY,12323
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/pytransform/_pytransform.dll,sha256=QxL3eLSn00bEMb1gwntv_tSATPSR8T3wHs8uQfm4cI0,729600
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/pytransform/license.lic,sha256=uzAt7e-WIrvrftH-Ou0f1fW88vdFis2iJyb5Do06-H4,216
+fiftyone_brain-0.1.4.data/purelib/fiftyone/brain/pytransform/pytransform.key,sha256=WUSWUHFPjzTLvOucTkrIBwune4srpCwY6JRbgt5ZRFU,476
+fiftyone_brain-0.1.4.dist-info/METADATA,sha256=QoKY-oALNftDMRBlaVCqybGmX-O3wuWR-IUWVyBmVjM,521
+fiftyone_brain-0.1.4.dist-info/WHEEL,sha256=BN2xGa_srxzwMcFxu90swEgxnVMEFT1jYH5a_J_8CV0,101
+fiftyone_brain-0.1.4.dist-info/top_level.txt,sha256=Dq109YXoNXena0RWq3pMhJCIOGJXBdw7-5a8Kb7qwEk,9
+fiftyone_brain-0.1.4.dist-info/RECORD,,
