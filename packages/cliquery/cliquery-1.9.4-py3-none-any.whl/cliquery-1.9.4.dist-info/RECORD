@@ -1,0 +1,14 @@
+cliquery/.cliqrc,sha256=wavgLypMPNcQCpBIrZslFA-yBW9HE9k9dS1Hjkk3xGw,72
+cliquery/__init__.py,sha256=WSibkGFjKoyZcUO0HlHTJgOKGBbmUmEWBo8iF97hwYM,538
+cliquery/bookmark.py,sha256=jo3URU5Yztrc9Pw9-wt6CQkOYXbZHnm7s03QPWX2vAM,17028
+cliquery/cliquery.py,sha256=9llCenODQEhB5st5TNLItgDKp7VyYWYhv9nOsj2dLTE,21077
+cliquery/config.py,sha256=G6qVs_W_fCZzoSR4ZGO_UdzNNqnEvmTlhtye4tYXjDI,3684
+cliquery/open.py,sha256=EhCG45IqKnXtVRFatf0tX0hdKnHRSsdUlkn38QvCisg,3093
+cliquery/pyteaser.py,sha256=qlrQPlgGlRv4WER2Nf8T5hPMNzsT1Z1J3CsY73a_mt8,9705
+cliquery/utils.py,sha256=318GpkGR3Ux4Fvmi7AeQI4mu_2gkpXfByZgNljyg08c,9011
+cliquery-1.9.4.dist-info/LICENSE.txt,sha256=0Q1_8-9wK5-bxTGDucFXHD55CfHFqNA-TyHU5vGpXhM,1083
+cliquery-1.9.4.dist-info/METADATA,sha256=H9dzjVT1kKwWrscqLypzsjoJKSSXIwkmlCgQLWPI7-4,9131
+cliquery-1.9.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cliquery-1.9.4.dist-info/entry_points.txt,sha256=NMNooKbeBaF6jCX7p14hiju3xsCSmKyj_rIpfuH9fV8,68
+cliquery-1.9.4.dist-info/top_level.txt,sha256=fCZabMOvn5muzsxwGZas6qI4pqXnlUZ6V268cn13HtQ,9
+cliquery-1.9.4.dist-info/RECORD,,
