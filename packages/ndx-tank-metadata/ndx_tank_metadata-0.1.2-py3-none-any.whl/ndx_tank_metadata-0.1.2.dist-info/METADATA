@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ndx-tank-metadata
+Version: 0.1.2
+Summary: NWB:N extension for storing metadata for Tank lab
+Home-page: https://github.com/catalystneuro/ndx-tank-metadata
+Author: Szonja Weigl, Luiz Tauffer and Ben Dichter
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pynwb (>=1.4.0)
+
+# ndx-tank-metadata
+NWB LabMetaData extension for [Tank lab](https://pni.princeton.edu/faculty/david-tank).
+
+# Install
+```
+$ pip install ndx-tank-metadata
+```
+
+# Usage
+This extension is built for extending the LabMetaData schema with custom fields
+requested for the conversion of Virmen metadata. Therefore, this extension is built into the
+Tank lab conversion pipeline ([tank-lab-to-nwb](https://github.com/catalystneuro/tank-lab-to-nwb))
+and is not necessary to be installed separately.
+
