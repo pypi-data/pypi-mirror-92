@@ -1,0 +1,21 @@
+import pyvamark.pyvamark_swig as _swig
+from pyvamark._converter import _add_converter
+
+PreprocessingParameter = _add_converter(_swig.PreprocessingParameter)
+VolatilityCalibratorParameter = _add_converter(_swig.VolatilityCalibratorParameter)
+VolatilityCalibratorSSVIParameter = _add_converter(_swig.VolatilityCalibratorSSVIParameter)
+VolatilityCalibratorGridParameter = _add_converter(_swig.VolatilityCalibratorGridParameter)
+OptionQuote = _add_converter(_swig.OptionQuote)
+ForwardCalibratorParameter = _add_converter(_swig.ForwardCalibratorParameter)
+CalibrationRequest = _add_converter(_swig.CalibrationRequest)
+BaseCalibrator = _add_converter(_swig.BaseCalibrator)
+CalibrationResult = _add_converter(_swig.CalibrationResult)
+ForwardCalibrationRequest = _add_converter(_swig.ForwardCalibrationRequest)
+BaseCalibrationData = _add_converter(_swig.BaseCalibrationData)
+ForwardCalibrationData = _add_converter(_swig.ForwardCalibrationData)
+ForwardCalibrationResult = _add_converter(_swig.ForwardCalibrationResult)
+ForwardCalibrator = _add_converter(_swig.ForwardCalibrator)
+VolatilityCalibrationData = _add_converter(_swig.VolatilityCalibrationData)
+VolatilityCalibrationResult = _add_converter(_swig.VolatilityCalibrationResult)
+VolatilityCalibrator = _add_converter(_swig.VolatilityCalibrator)
+VolatilityCalibrationRequest = _add_converter(_swig.VolatilityCalibrationRequest)
