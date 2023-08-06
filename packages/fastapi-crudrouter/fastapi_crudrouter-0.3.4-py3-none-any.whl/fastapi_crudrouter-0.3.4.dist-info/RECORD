@@ -1,0 +1,12 @@
+fastapi_crudrouter/__init__.py,sha256=MOpuI3CFHnbEhr8RhzTvkgmH5DRS2YdAE6Iv532Cv5A,78
+fastapi_crudrouter/core/__init__.py,sha256=AuLF2nOuXTSfBl8CjfpGOh-dZ0r-LKS9vYDzeC3skPw,187
+fastapi_crudrouter/core/_base.py,sha256=UxNjFIw7NpIyQQqm6tYvn2buzLy7Xv8J7fjycW6qgFU,4187
+fastapi_crudrouter/core/databases.py,sha256=ei_nKMj-QOK_0p1rVuvmgxqRseMXY7vYqauVUZdHxo4,2975
+fastapi_crudrouter/core/mem.py,sha256=4jMS4LhXovxbqq5HsAAQLyYReO_Smo-BZrDkAF0V4OY,1710
+fastapi_crudrouter/core/sqlalchemy.py,sha256=_m05miAMZWo4YQbykOer7JOaVEpZvWrOIOZVmtwEoDY,3045
+fastapi_crudrouter/core/utils.py,sha256=UYsvuCbroQw7o0brvQ9TBqSE_C6sp98R89YoTeDcOq8,141
+fastapi_crudrouter-0.3.4.dist-info/LICENSE,sha256=5utLdfX2UmSVOdWbLL3JRQKeClxQcFnDXQZGoFeLvHM,1069
+fastapi_crudrouter-0.3.4.dist-info/METADATA,sha256=4ArsBQuu23lm6UyZk_vv5SnHwoU3nEP89LqAbvBW5IM,4500
+fastapi_crudrouter-0.3.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastapi_crudrouter-0.3.4.dist-info/top_level.txt,sha256=kQxCbred6P1zjdBmT_Xq6LeENYEl883G-rWDiNrtb6w,19
+fastapi_crudrouter-0.3.4.dist-info/RECORD,,
