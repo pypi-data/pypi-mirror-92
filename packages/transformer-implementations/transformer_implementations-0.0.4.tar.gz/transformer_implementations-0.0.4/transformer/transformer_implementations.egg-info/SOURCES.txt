@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+transformer/transformer_implementations.egg-info/PKG-INFO
+transformer/transformer_implementations.egg-info/SOURCES.txt
+transformer/transformer_implementations.egg-info/dependency_links.txt
+transformer/transformer_implementations.egg-info/top_level.txt
