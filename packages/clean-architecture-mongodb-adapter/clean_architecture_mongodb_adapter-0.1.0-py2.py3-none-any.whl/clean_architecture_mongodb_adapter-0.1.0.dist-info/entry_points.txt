@@ -1,0 +1,3 @@
+[console_scripts]
+clean_architecture_mongodb_adapter = clean_architecture_mongodb_adapter.cli:main
+

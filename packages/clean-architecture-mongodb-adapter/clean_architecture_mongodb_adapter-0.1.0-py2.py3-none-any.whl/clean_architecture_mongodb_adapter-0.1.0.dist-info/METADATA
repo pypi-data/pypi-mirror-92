@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: clean-architecture-mongodb-adapter
+Version: 0.1.0
+Summary: Concrete implementation of adapter to MongoDB
+Home-page: https://github.com/aberriel/clean_architecture_mongodb_adapter
+Author: Anselmo Lira (https://github.com/aberriel)
+Author-email: anselmo.lira1@gmail.com
+License: UNKNOWN
+Keywords: clean_architecture_mongodb_adapter
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Requires-Dist: dnspython (==2.0.0)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: pymongo (==3.11.0)
+Requires-Dist: python-decouple (==3.3)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: clean-architecture-basic-classes (>=0.1.1)
+
+=================================================
+       Clean Architecture MongoDB Adapter
+=================================================
+
+
+Concrete implementation of adapter to MongoDB, using clean architecture adapter layer.
+
+Features
+--------
+
+* TODO
+
+
+=======
+History
+=======
+
+0.1.0 (2021-01-25)
+------------------
+
+* First release on PyPI.
+
+
