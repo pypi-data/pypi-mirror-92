@@ -1,0 +1,40 @@
+{
+    "service": "model2.role.action.RoleAction",
+    "methods": [
+        {
+            "name": "get",
+            "api_method": "GET",
+            "api_path": "/model2/role/",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "number",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "default": 0,
+                            "message": "id为必填项"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "post",
+            "api_method": "POST",
+            "api_path": "/model2/role/",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string",
+                    "validators": [
+                        {
+                            "type": "required",
+                            "message": "name为必填项"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
