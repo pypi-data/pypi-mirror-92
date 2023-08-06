@@ -1,0 +1,62 @@
+import sys
+from openapi_client import Configuration, ApiException
+from rich.table import Table
+from rich import box
+import typer
+
+from threedi_cmd.commands.settings import (
+    EndpointOption,
+    ScenariosMeta,
+    get_settings,
+)
+from threedi_cmd.console import console
+from threedi_cmd.logger import get_logger
+
+logger = get_logger("INFO")
+
+DEFAULT_PAGER_SIZE = 20
+
+
+scenario_app = typer.Typer()
+
+
+@scenario_app.command()
+def scenarios():
+    """List local scenarios"""
+    table = Table(show_header=True, box=box.HORIZONTALS, show_lines=True)
+    table.add_column(
+        "Id", width=5
+    )
+    table.add_column(
+        "Name",
+        width=20,
+        justify="left",
+        style="bold cyan",
+        header_style="bold cyan",
+    )
+    table.add_column("Description", justify="left", no_wrap=False)
+    table.add_column(
+        "Caution", justify="left", style="orange3", header_style="bold orange3"
+    )
+    table.add_column(
+        "yaml", justify="left", style="dim blue", header_style="bold blue"
+    )
+    s = ScenariosMeta()
+    for i, scenario in enumerate(s.scenarios, start=0):
+        if isinstance(scenario, dict):
+            s = ""
+            if scenario.get("known_constraints"):
+                for k, v in scenario["known_constraints"].items():
+                    s += f"{k}: {v} \n"
+            table.add_row(
+                f"{i}",
+                f"{scenario['name']}",
+                f"{scenario['description']}",
+                f"{s}",
+                f"{scenario['file'].stem}",
+            )
+    console.print(table)
+
+
+if __name__ == "__main__":
+    scenario_app()
