@@ -1,0 +1,2 @@
+[pygments.styles]
+                    heringer=pygments_style_heringer:HeringerStyle

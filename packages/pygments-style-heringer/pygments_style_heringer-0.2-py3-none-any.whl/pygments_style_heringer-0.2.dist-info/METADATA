@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pygments-style-heringer
+Version: 0.2
+Summary: A Pygments style inspired by Microsoft SSMS but with modified colors.
+Home-page: https://github.com/matthiaslueken/pygments-style-heringer
+Author: Matthias Lüken
+Author-email: UNKNOWN
+License: BSD
+Keywords: pygments style
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pygments (>=2.2)
+
+UNKNOWN
+
+
