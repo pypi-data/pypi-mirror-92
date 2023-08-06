@@ -1,0 +1,9 @@
+wslm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wslm/decorators.py,sha256=jfVrkLOl0fC3bzkNh6iKqPR90x_-ZR72bY-tD_66K0Y,4593
+wslm/util.py,sha256=0CGv55s6ZqQaihMYurUCEUA6DRSNDpZEreviKra4Bs4,667
+wslm/windows_command.py,sha256=22b80J3ecm_ulv28CPBn4MnyzItp5OxM8Aa4w8uGMyY,10611
+wslm/wslm.py,sha256=zRf60tW-YHxMsvy9H5FbT9uSEZXzhqRdM4AZym-ROvs,5592
+wslm-0.2.0.dist-info/entry_points.txt,sha256=RVR42KUFDVwxZF9fczhV-p6J6KxRF1VDun3avep5QLI,39
+wslm-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+wslm-0.2.0.dist-info/METADATA,sha256=DQMvGfoiTw4nPtjvFwBhSc1gOj7LFtjAzxjv6CqrXZI,3445
+wslm-0.2.0.dist-info/RECORD,,
