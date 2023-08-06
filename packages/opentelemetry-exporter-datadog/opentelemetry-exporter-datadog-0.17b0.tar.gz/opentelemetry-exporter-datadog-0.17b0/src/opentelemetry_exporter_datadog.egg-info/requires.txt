@@ -1,0 +1,5 @@
+ddtrace>=0.34.0
+opentelemetry-api==0.17b0
+opentelemetry-sdk==0.17b0
+
+[test]
