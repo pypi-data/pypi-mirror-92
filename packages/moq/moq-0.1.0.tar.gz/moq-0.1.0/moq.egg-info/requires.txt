@@ -1,0 +1,16 @@
+
+[testing]
+assertpy==1.1
+coverage==5.3.1
+coverage==5.3.1
+pip==20.3.3
+pytest==6.2.1
+pytest-cov==2.11.1
+Sphinx==3.4.3
+sphinx_rtd_theme==0.5.1
+tox==3.21.2
+twine==3.3.0
+watchdog==1.0.2
+wheel==0.36.2
+pre-commit==2.9.3
+towncrier==19.2.0

@@ -1,0 +1,3 @@
+[console_scripts]
+moq = moq.cli:main
+

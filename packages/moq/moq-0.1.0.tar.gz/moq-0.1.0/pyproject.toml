@@ -1,0 +1,4 @@
+[tool.towncrier]
+directory = "changelog"
+wrap = false  # Wrap text to 79 characters
+all_bullets = true  # make all fragments bullet points
