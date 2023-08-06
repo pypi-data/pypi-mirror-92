@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: paquete
+Version: 0.1
+Summary: paquete de operaciones
+Home-page: https://gitlab.com/personal39/paquete.git
+Author: dbp
+Author-email: dbp@ugr.es
+License: UGR
+Description: kepa queton
+Keywords: algebra operation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
