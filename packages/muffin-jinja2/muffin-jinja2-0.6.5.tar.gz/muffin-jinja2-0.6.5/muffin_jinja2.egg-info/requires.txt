@@ -1,0 +1,13 @@
+muffin>=0.46
+jinja2>=2.10
+
+[build]
+bump2version
+twine
+wheel
+
+[tests]
+anyio
+pytest
+trio
+mypy
