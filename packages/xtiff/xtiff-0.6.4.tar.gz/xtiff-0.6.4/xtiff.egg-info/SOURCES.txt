@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+xtiff.py
+xtiff.egg-info/PKG-INFO
+xtiff.egg-info/SOURCES.txt
+xtiff.egg-info/dependency_links.txt
+xtiff.egg-info/requires.txt
+xtiff.egg-info/top_level.txt
+xtiff.egg-info/zip-safe
