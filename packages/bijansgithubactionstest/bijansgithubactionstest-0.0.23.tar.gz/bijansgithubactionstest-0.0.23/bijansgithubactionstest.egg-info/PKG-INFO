@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bijansgithubactionstest
+Version: 0.0.23
+Summary: This is a test package.
+Home-page: https://gemmaanalytics.com/
+Author: Bijan Soltani
+Author-email: bijan.soltani+ewah@gemmaanalytics.com
+License: UNKNOWN
+Description: # actionstests
+        Testing GitHub Actions
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
