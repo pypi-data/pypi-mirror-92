@@ -1,0 +1,3 @@
+pygosolnp
+python_examples
+tests
