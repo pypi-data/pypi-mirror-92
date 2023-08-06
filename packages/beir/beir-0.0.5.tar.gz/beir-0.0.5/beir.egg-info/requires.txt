@@ -1,0 +1,5 @@
+sentence-transformers
+pytrec_eval
+tensorflow>=2.2.0
+tensorflow-text
+tensorflow-hub
