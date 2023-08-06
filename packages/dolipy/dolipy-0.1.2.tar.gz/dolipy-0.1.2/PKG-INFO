@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dolipy
+Version: 0.1.2
+Summary: A simple wrapper for dolibarr api
+Author: Dimitrios Strantsalis
+Author-email: dstrants@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: python-dotenv (>=0.15.0,<0.16.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
