@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+lib_browser/__init__.py
+lib_browser/__main__.py
+lib_browser/browser.py
+lib_browser/discord_browser.py
+lib_browser/side.py
+lib_browser.egg-info/PKG-INFO
+lib_browser.egg-info/SOURCES.txt
+lib_browser.egg-info/dependency_links.txt
+lib_browser.egg-info/entry_points.txt
+lib_browser.egg-info/requires.txt
+lib_browser.egg-info/top_level.txt

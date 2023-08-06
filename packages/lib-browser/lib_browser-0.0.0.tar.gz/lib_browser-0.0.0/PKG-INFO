@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: lib_browser
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/jfuruness/lib_browser.git
+Author: Justin Furuness
+Author-email: jfuruness@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/jfuruness/lib_browser.git
+Description: UNKNOWN
+Keywords: Furuness,Browser,Wrapper,Selenium Wrapper
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3

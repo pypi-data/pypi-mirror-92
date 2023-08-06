@@ -1,0 +1,3 @@
+[console_scripts]
+lib_browser = lib_browser.__main__:main
+
