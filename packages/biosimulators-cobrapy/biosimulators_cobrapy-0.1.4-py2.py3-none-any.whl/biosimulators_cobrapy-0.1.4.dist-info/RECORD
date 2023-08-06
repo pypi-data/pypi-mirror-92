@@ -1,0 +1,12 @@
+biosimulators_cobrapy/__init__.py,sha256=6-n8_3MLuGHdeWj6AAJ2TtmVgAZ7mJa8Qk7lMz1akYY,138
+biosimulators_cobrapy/__main__.py,sha256=0rGoI4ipkrf0cr-NxFA4UhyukzY356WBqcRg0NX1Asw,655
+biosimulators_cobrapy/_version.py,sha256=aBEbDvx4LMg8A1TJJR6dEHu8rQODVin528hLS_EDvuA,22
+biosimulators_cobrapy/core.py,sha256=_iOy0dd4v488f1ou2YTEFCv8sQmeX9fBjoo_6h4ZfYs,6842
+biosimulators_cobrapy/data_model.py,sha256=9H3SP54K-uhb594Nu9lT6KS5b3194w5LIbCoDoLNrCg,10810
+biosimulators_cobrapy/utils.py,sha256=t3oqIQGXEvHzEnhWunfjOrboiHRA5fzUs6lKh8XmHZ0,7789
+biosimulators_cobrapy-0.1.4.dist-info/LICENSE,sha256=HEgoRB3A2xcLy7Uu8JZdMvnKnnJLmifKaaJQwEePmUo,1110
+biosimulators_cobrapy-0.1.4.dist-info/METADATA,sha256=_rFTYC9i9uO_n8FwiMnePDESXNnxP4fWtju8zrSKyZ8,5922
+biosimulators_cobrapy-0.1.4.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+biosimulators_cobrapy-0.1.4.dist-info/entry_points.txt,sha256=y6fVru7CG7u5Lq_JjZnQ6g9C7yZX1MIYjo6HnOtsMmI,65
+biosimulators_cobrapy-0.1.4.dist-info/top_level.txt,sha256=sLV46168ZLfIxZhTZXNMFMdcg2v07ugTgHaB08C8yuA,22
+biosimulators_cobrapy-0.1.4.dist-info/RECORD,,
