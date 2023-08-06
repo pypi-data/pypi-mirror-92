@@ -1,0 +1,7 @@
+setup.py
+pentas/__init__.py
+pentas.egg-info/PKG-INFO
+pentas.egg-info/SOURCES.txt
+pentas.egg-info/dependency_links.txt
+pentas.egg-info/requires.txt
+pentas.egg-info/top_level.txt
