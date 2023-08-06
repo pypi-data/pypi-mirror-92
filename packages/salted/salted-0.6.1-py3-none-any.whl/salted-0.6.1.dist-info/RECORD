@@ -1,0 +1,15 @@
+salted/__init__.py,sha256=AZOB5Xy7kfpwUuToZSFnDTcCXr73RfnTevtn4xRcDiI,364
+salted/__main__.py,sha256=29iDigjh3FqWQKpFcowNGcSf4wEGgy22ks9u8pKmD-U,8608
+salted/database_io.py,sha256=hSxWpfjLWkqPnRuhzYz84vzdf5A0bviE3p73WfGg4SY,12838
+salted/input_handler.py,sha256=NOV7jmfMfrYcDnggHXAT-BwfE-TTCU_XXE8riDRpwTc,6908
+salted/network_interaction.py,sha256=jQaF0y2RXqnXHZWOlFRViPIVQf_O5EgWcVlkX1QELUQ,4350
+salted/parser.py,sha256=Abm5T5toWgx7tjayQ4HqjSqSnfcqhZV9YgAp62ytMEg,3262
+salted/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+salted/report_generator.py,sha256=L2XVhBQOIGyv71_c5X-7T3M2lk3N0lITXbwpK2tXXpk,9254
+salted/templates/default.cli.jinja,sha256=I3PrwYjJXcLbjQ5aLynApkvwsQZOFN2FGcYVmVdrfbs,1755
+salted/templates/default.md.jinja,sha256=IvszrpDJbI1I-3P8YKa_GL6dsaHSwru1UFUNsmH7JK8,1866
+salted-0.6.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+salted-0.6.1.dist-info/METADATA,sha256=wRL2HtPt7dn22Uxs8kLP5vMIw1U4E13Sk5GUJmd-G4w,10045
+salted-0.6.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+salted-0.6.1.dist-info/top_level.txt,sha256=DemE5zvfm7pwOrntuiNJsEeiRhtqnMPbdDw8xHMda0M,7
+salted-0.6.1.dist-info/RECORD,,
