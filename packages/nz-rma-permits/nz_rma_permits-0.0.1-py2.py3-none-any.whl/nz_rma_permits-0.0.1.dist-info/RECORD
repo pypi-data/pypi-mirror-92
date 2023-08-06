@@ -1,0 +1,10 @@
+nzpermits/__init__.py,sha256=dkHSdhDKcIH54So317V1L8jOpjpHCM7F51evlhVjtdU,46
+nzpermits/data_models.py,sha256=o7O0uCFL6T9XV_PVhGRoXUN5F73_7Pqumpfm-QWjOEY,5153
+nzpermits/iris.py,sha256=L7CmZCCeYNyp6PX29wXTrcEPffINVJJkP2MLXNeKeY0,6118
+nzpermits/utils.py,sha256=09XhzDkILmXgdtbdijozpio3tUBaqrl1JTBTumVBUyE,819
+nzpermits/datasets/__init__.py,sha256=C9XlLclK4Vjf67QIO6z65jHgx9Ub6xojXdgoy67BINI,942
+nz_rma_permits-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nz_rma_permits-0.0.1.dist-info/METADATA,sha256=Imqmjh_BTIjujNP1NE7b1o6gut0LKcfE2CbJPnHAa7g,870
+nz_rma_permits-0.0.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+nz_rma_permits-0.0.1.dist-info/top_level.txt,sha256=MBO53ODvheiBLjGWyAV2FsH9kpcBl8pVWc8S0gwPXeU,10
+nz_rma_permits-0.0.1.dist-info/RECORD,,
