@@ -1,0 +1,4 @@
+setuptools
+fire==0.1.3
+requests==2.21.0
+xmltodict==0.11.0
