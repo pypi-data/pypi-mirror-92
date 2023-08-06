@@ -1,0 +1,8 @@
+pygame>=1.9.3
+pyperclip
+
+[docs]
+pygame>=1.9.3
+pyperclip
+sphinx
+sphinx-rtd-theme
