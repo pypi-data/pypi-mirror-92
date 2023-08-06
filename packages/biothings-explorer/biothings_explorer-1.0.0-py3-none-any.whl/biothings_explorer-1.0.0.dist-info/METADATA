@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: biothings-explorer
+Version: 1.0.0
+Summary: Python Client for BioThings Explorer
+Home-page: https://github.com/biothings/biothings_explorer
+Author: Jiwen Xin, Chunlei Wu
+Author-email: cwu@scripps.edu
+License: BSD
+Keywords: schema biothings
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Dist: jupyter
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: notebook
+Requires-Dist: networkx (==2.4)
+Requires-Dist: jsonpath-rw (>=1.4.0)
+Requires-Dist: requests (>=2.21.0)
+Requires-Dist: graphviz (>=0.11.1)
+Requires-Dist: aiohttp
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: nest-asyncio
+
+UNKNOWN
+
+
