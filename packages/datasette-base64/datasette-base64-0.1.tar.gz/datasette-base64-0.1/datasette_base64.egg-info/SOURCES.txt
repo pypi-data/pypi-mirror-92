@@ -1,0 +1,9 @@
+README.md
+setup.py
+datasette_base64/__init__.py
+datasette_base64.egg-info/PKG-INFO
+datasette_base64.egg-info/SOURCES.txt
+datasette_base64.egg-info/dependency_links.txt
+datasette_base64.egg-info/entry_points.txt
+datasette_base64.egg-info/requires.txt
+datasette_base64.egg-info/top_level.txt
