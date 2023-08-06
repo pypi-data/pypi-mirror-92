@@ -1,0 +1,6 @@
+flask_sqlalchemy_bind/__init__.py,sha256=1EquQQ2_WsXIpdch1KIhOT9cytL7pTyu_8GvQi0CwV4,115
+flask_sqlalchemy_bind/sqlalchemy_bind.py,sha256=F-tfZOYBj7lUrtewInAU-2AEAsbMaE6g8kbnxWG1I_U,3443
+flask_sqlalchemy_bind-1.0.0.dist-info/METADATA,sha256=MgQLH2ZoCWRuU0XCOEp35USgCPcXBJM5o3BY-9kZFKk,2926
+flask_sqlalchemy_bind-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flask_sqlalchemy_bind-1.0.0.dist-info/top_level.txt,sha256=VVxLlH7_VcoQtJ6WsbmhunUCmTnmo-TIqqsoRjx0vS4,22
+flask_sqlalchemy_bind-1.0.0.dist-info/RECORD,,
