@@ -1,0 +1,283 @@
+Metadata-Version: 2.1
+Name: pybbdb
+Version: 0.5
+Summary: Interface to BBDB, the Insidious Big Brother Database
+Home-page: https://sr.ht/~zondo/pybbdb
+Author: Glenn Hutchings
+Author-email: zondo42@gmail.com
+License: GPL v2 or later
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Communications :: Email :: Address Book
+Classifier: Topic :: Database
+Description-Content-Type: text/markdown
+Requires-Dist: lark
+Requires-Dist: pydantic
+Requires-Dist: python-dateutil
+
+PyBBDB -- an interface to the Insidious Big Brother Database
+============================================================
+
+[![builds.sr.ht status](https://builds.sr.ht/~zondo/pybbdb.svg)](https://builds.sr.ht/~zondo/pybbdb?)
+
+Introduction
+------------
+
+PyBBDB may sound like a rude noise, but it is actually a Python interface
+to the Insidious Big Brother Database
+([BBDB](http://bbdb.sourceforge.net)), an address book used with [GNU
+Emacs](https://www.gnu.org/software/emacs).  You can find out more about
+BBDB on the [Emacs Wiki](http://www.emacswiki.org/emacs/CategoryBbdb).  The
+PyBBDB source repo is hosted at
+[Sourcehut](https://hg.sr.ht/~zondo/pybbdb).  Releases can be found on
+[PyPI](https://pypi.python.org/pypi/pybbdb).
+
+**Note:** This module currently only handles BBDB file format 9 (the latest
+format, as of January 2021).  Formats earlier than this should first be
+converted by GNU Emacs.
+
+Installation
+------------
+
+The usual incantation will install things:
+
+    pip install pybbdb
+
+Usage
+-----
+
+### Creating a BBDB database
+
+To create a new database is as simple as you might expect:
+
+    >>> from bbdb.database import BBDB
+    >>> db = BBDB()
+
+The database starts with no records.  To add a new one, use the
+`add_record()` method, specifying the first and last names, and any
+other attributes you want to set:
+
+    >>> fred = db.add_record("Fred", "Flintstone")
+    >>> fred                       # doctest: +ELLIPSIS +REPORT_UDIFF
+    Record(firstname='Fred', lastname='Flintstone', affix='', aka='', ...
+
+    >>> barney = db.add_record("Barney", "Rubble")
+    >>> db
+    <BBDB: 2 records>
+
+The first and last names are attributes:
+
+    >>> fred.firstname, fred.lastname
+    ('Fred', 'Flintstone')
+
+There's also a composite `name` property:
+
+    >>> fred.name
+    'Fred Flintstone'
+
+You can set other attributes on the returned record object:
+
+    >>> fred.company = "Slate Rock & Gravel"
+    >>> fred.affix = "Mr"
+    >>> fred.aka = "Freddie"
+
+Some BBDB attributes consist of lists of things:
+
+    >>> fred.add_net("fred@bedrock.org")
+    >>> fred.add_net("fred.flintstone@gravel.com")
+    >>> fred.net
+    ['fred@bedrock.org', 'fred.flintstone@gravel.com']
+
+Telephone records consist of a location tag and a phone number.  The phone
+number can be either a list of integers (USA-style) or a string
+(international style):
+
+    >>> fred.add_phone("Home", "555-1234")
+    >>> fred.add_phone("Work", [555, 6789])
+    >>> list(sorted(fred.phone.items()))
+    [('Home', '555-1234'), ('Work', [555, 6789])]
+
+Records can have multiple addresses, each indexed by a location tag.
+Each address in turn has several attributes:
+
+    >>> home = fred.add_address("Home")
+    >>> home.set_location("Cave 2a", "345 Cavestone Road")
+    >>> home.city = "Bedrock"
+    >>> home.state = "Hanna Barbera"
+    >>> home.zipcode = "12345"
+    >>> home.country = "USA"
+
+    >>> home                       # doctest: +ELLIPSIS +REPORT_UDIFF
+    Address(location=['Cave 2a', '345 Cavestone Road'], city='Bedrock', ...
+
+    >>> home.location
+    ['Cave 2a', '345 Cavestone Road']
+
+    >>> home.zipcode
+    '12345'
+
+Finally, each entry can have an arbitrary dictionary of user-defined
+notes:
+
+    >>> fred.add_note("spouse", "Wilma")
+    >>> fred.add_note("kids", "Pebbles, Bam-Bam")
+    >>> fred.add_note("catchphrase", '"Yabba dabba doo!"')
+    >>> list(sorted(fred.notes.items()))
+    [('catchphrase', '"Yabba dabba doo!"'), ('kids', 'Pebbles, Bam-Bam'), ('spouse', 'Wilma')]
+
+Note values can also have newlines:
+
+    >>> barney.add_note("pets", "brontosaurus\npterodactyl")
+
+### Reading and writing BBDB files
+
+The `write()` method will write the database to a stream (default
+`stdout`) in a format suitable for use by GNU Emacs.  THe `write_file()`
+method writes to a file instead.  They both use the `lisp()` method
+internally, to return the raw lisp text:
+
+    >>> print(db.lisp())      # doctest: +ELLIPSIS +REPORT_UDIFF
+    ;; -*-coding: utf-8-emacs;-*-
+    ;;; file-version: 9
+    ;;; user-fields: (catchphrase kids pets spouse)
+    ["Barney" "Rubble" nil nil nil nil nil nil ((pets . "brontosaurus\npterodactyl")) ...
+    ["Fred" "Flintstone" ("Mr") ("Freddie") ("Slate Rock & Gravel") (["Home" "555-1234"] ...
+
+The convenience `write_file()` method will put that in a file:
+
+    >>> db.write_file("examples/bbdb.el")
+
+You can read a database from file using the `fromfile()` static method:
+
+    >>> newdb = BBDB.fromfile("examples/bbdb.el")
+    >>> newdb
+    <BBDB: 2 records>
+
+The `read()` and `read_file()` methods of a BBDB database can be used
+import records from other databases.
+
+### Exporting to other formats
+
+You can convert a BBDB database to a JSON string for serialization, using
+the `json` method:
+
+    >>> print(db.json(indent=4))   # doctest: +ELLIPSIS +REPORT_UDIFF
+    {
+        "coding": "utf-8-emacs",
+        "fileversion": 9,
+        "records": [
+            {
+                "firstname": "Barney",
+                "lastname": "Rubble",
+                "affix": "",
+                "aka": "",
+                "company": "",
+                "phone": {},
+                "address": {},
+                "net": [],
+                "notes": {
+                    "pets": "brontosaurus\\npterodactyl"
+                },
+                "uuid": ...
+                "creation": ...
+                "timestamp": ...
+            },
+            {
+                "firstname": "Fred",
+                "lastname": "Flintstone",
+                "affix": "Mr",
+                "aka": "Freddie",
+                "company": "Slate Rock & Gravel",
+                "phone": {
+                    "Home": "555-1234",
+                    "Work": [
+                        555,
+                        6789
+                    ]
+                },
+                "address": {
+                    "Home": {
+                        "location": [
+                            "Cave 2a",
+                            "345 Cavestone Road"
+                        ],
+                        "city": "Bedrock",
+                        "state": "Hanna Barbera",
+                        "zipcode": "12345",
+                        "country": "USA"
+                    }
+                },
+                "net": [
+                    "fred@bedrock.org",
+                    "fred.flintstone@gravel.com"
+                ],
+                "notes": {
+                    "spouse": "Wilma",
+                    "kids": "Pebbles, Bam-Bam",
+                    "catchphrase": "\"Yabba dabba doo!\""
+                },
+                "uuid": ...
+                "creation": ...
+                "timestamp": ...
+            }
+        ]
+    }
+
+The `dict()` method dumps the database as a Python dict.  You can also
+create a BBDB database from an appropriately-structured dict using the
+`fromdict()` method:
+
+    >>> data = db.dict()
+    >>> newdb = BBDB.fromdict(data)
+    >>> newdb == db
+    True
+
+Release history
+---------------
+
+### Version 0.5 (27 January 2021)
+
+* Major rewrite to support latest BBDB file format (version 9).
+* Use [lark](https://pypi.org/project/lark) and
+  [dateutil](http://labix.org/python-dateutil) for parsing.
+* Use [pydantic](https://pydantic-docs.helpmanual.io) for validation.
+* Drop support for Python 2.
+
+### Version 0.4 (10 February 2017)
+
+* Use pytest for unit tests.
+* Bugfix: add support for newlines in fields.
+* Bugfix: allow last name to be nil.
+
+### Version 0.3 (22 July 2015)
+
+* Bugfix: get things working properly with Python 3.
+
+### Version 0.2 (2 July 2015)
+
+* Add validation of data using
+  [voluptuous](https://pypi.python.org/pypi/voluptuous).
+* Add a bunch of demo converter programs.
+* Add [tox](https://pypi.python.org/pypi/tox) test support.
+* Add Python 3 support.
+* Bugfix: convert records from file to correct type.
+
+### Version 0.1 (11 June 2015)
+
+* Initial release.
+
+Feedback
+--------
+
+Report any problems, bugs, etc, to me (Glenn Hutchings) at
+<zondo42@gmail.com>.  Patches will also be welcome!
+
+

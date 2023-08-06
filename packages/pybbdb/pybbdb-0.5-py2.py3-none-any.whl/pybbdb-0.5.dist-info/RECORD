@@ -1,0 +1,10 @@
+bbdb/__init__.py,sha256=t80N2oLyfYaKG-JOb-gGVTvfH9SP_9DJgSU0GLupnJc,84
+bbdb/database.py,sha256=5o4GcAtj3kowBvwPLA7226FQGCHh0_d1svYX5QhQ8xA,1009
+bbdb/model.py,sha256=CWDhj-V_Mgfb84j7J_hi7uvkAypiOT--CK1Ya9OU7p0,8137
+bbdb/parser.py,sha256=wOrFZPnbJu7UlL52Z1bWasIRfv895S1hzaOzk6H1WEI,2008
+bbdb/timestamp.py,sha256=X8cArLbWzl1TXsuZJwf4G4ge7_vNJ_9MC2obSANNCMA,806
+pybbdb-0.5.dist-info/COPYING,sha256=TSPIyBTluvAH2FTwHYUC533FakEUSTTgA_syxOBS0g8,18043
+pybbdb-0.5.dist-info/METADATA,sha256=TFxvJINJYcI5C0WXiUp-PHb7g6Zhm6alOVFOvb_k8-Q,8833
+pybbdb-0.5.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pybbdb-0.5.dist-info/top_level.txt,sha256=aol9z2xiT7kBlXvtgSE3aSeV-1uqZUav6lNgGLocQUE,5
+pybbdb-0.5.dist-info/RECORD,,
