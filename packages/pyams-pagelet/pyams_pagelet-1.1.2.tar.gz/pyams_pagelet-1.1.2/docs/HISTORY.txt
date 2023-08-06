@@ -1,0 +1,26 @@
+Changelog
+=========
+
+1.1.2
+-----
+ - updated Gitlab-CI configuration
+ - removed Travis-CI configuration
+
+1.1.1
+-----
+ - updated pagelet creation event notification
+
+1.1.0
+-----
+ - removed ZCML declarations
+ - updated doctests
+
+1.0.1
+-----
+ - updated pagelet templates registration to use standard (context, request, view)
+   multi-adapters
+ - updated doctests
+
+1.0.0
+-----
+ - initial release
