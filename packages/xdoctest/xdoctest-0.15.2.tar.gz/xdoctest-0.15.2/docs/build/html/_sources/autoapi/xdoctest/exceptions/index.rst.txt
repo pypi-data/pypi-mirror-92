@@ -1,0 +1,62 @@
+:mod:`xdoctest.exceptions`
+==========================
+
+.. py:module:: xdoctest.exceptions
+
+.. autoapi-nested-parse::
+
+   Define errors that may be raised by xdoctest
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.exceptions._pytest
+
+
+
+.. py:exception:: MalformedDocstr
+
+   Bases: :class:`Exception`
+
+   Exception raised when the docstring itself does not conform to the expected
+   style (e.g. google / numpy).
+
+
+.. py:exception:: DoctestParseError(msg, string=None, info=None, orig_ex=None)
+
+   Bases: :class:`Exception`
+
+   Exception raised when doctest code has an error.
+
+
+.. py:exception:: ExitTestException
+
+   Bases: :class:`Exception`
+
+   Common base class for all non-exit exceptions.
+
+
+.. py:exception:: IncompleteParseError
+
+   Bases: :class:`SyntaxError`
+
+   Used when something goes wrong in the xdoctest parser
+
+
+.. py:class:: _pytest
+
+   Bases: :class:`object`
+
+   .. py:class:: outcomes
+
+      Bases: :class:`object`
+
+
+

@@ -1,0 +1,85 @@
+:mod:`xdoctest.utils.util_path`
+===============================
+
+.. py:module:: xdoctest.utils.util_path
+
+.. autoapi-nested-parse::
+
+   Utilities related to filesystem paths
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_path.TempDir
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_path.ensuredir
+
+
+.. py:class:: TempDir(persist=False)
+
+   Bases: :class:`object`
+
+   Context for creating and cleaning up temporary files. Used in testing.
+
+   .. rubric:: Example
+
+   >>> with TempDir() as self:
+   >>>     dpath = self.dpath
+   >>>     assert exists(dpath)
+   >>> assert not exists(dpath)
+
+   .. rubric:: Example
+
+   >>> self = TempDir()
+   >>> dpath = self.ensure()
+   >>> assert exists(dpath)
+   >>> self.cleanup()
+   >>> assert not exists(dpath)
+
+   .. method:: __del__(self)
+
+
+
+   .. method:: ensure(self)
+
+
+
+   .. method:: cleanup(self)
+
+
+
+   .. method:: __enter__(self)
+
+
+
+   .. method:: __exit__(self, type_, value, trace)
+
+
+
+
+.. function:: ensuredir(dpath, mode=1023)
+
+   Ensures that directory will exist. creates new dir with sticky bits by
+   default
+
+   :Parameters: * **dpath** (*str*) -- dir to ensure. Can also be a tuple to send to join
+                * **mode** (*int*) -- octal mode of directory (default 0o1777)
+
+   :returns: path - the ensured directory
+   :rtype: str
+
+

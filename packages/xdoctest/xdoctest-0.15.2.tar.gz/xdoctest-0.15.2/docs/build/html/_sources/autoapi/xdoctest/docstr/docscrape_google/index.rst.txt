@@ -1,0 +1,243 @@
+:mod:`xdoctest.docstr.docscrape_google`
+=======================================
+
+.. py:module:: xdoctest.docstr.docscrape_google
+
+.. autoapi-nested-parse::
+
+   Handles parsing of information out of google style docstrings
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.docstr.docscrape_google.parse_google_args
+   xdoctest.docstr.docscrape_google.parse_google_returns
+   xdoctest.docstr.docscrape_google.parse_google_retblock
+   xdoctest.docstr.docscrape_google.parse_google_argblock
+   xdoctest.docstr.docscrape_google.split_google_docblocks
+
+
+.. function:: parse_google_args(docstr)
+
+   Generates dictionaries of argument hints based on a google docstring
+
+   :Parameters: **docstr** (*str*) -- a google-style docstring
+
+   :Yields: *Dict[str, str]* -- dictionaries of parameter hints
+
+   .. rubric:: Example
+
+   >>> docstr = parse_google_args.__doc__
+   >>> argdict_list = list(parse_google_args(docstr))
+   >>> print([sorted(d.items()) for d in argdict_list])
+   [[('desc', 'a google-style docstring'), ('name', 'docstr'), ('type', 'str')]]
+
+
+.. function:: parse_google_returns(docstr, return_annot=None)
+
+   Generates dictionaries of possible return hints based on a google docstring
+
+   :Parameters: * **docstr** (*str*) -- a google-style docstring
+                * **return_annot** (*str*) -- the return type annotation (if one exists)
+
+   :Yields: *Dict[str, str]* -- dictionaries of return value hints
+
+   .. rubric:: Example
+
+   >>> docstr = parse_google_returns.__doc__
+   >>> retdict_list = list(parse_google_returns(docstr))
+   >>> print([sorted(d.items()) for d in retdict_list])
+   [[('desc', 'dictionaries of return value hints'), ('type', 'Dict[str, str]')]]
+
+   .. rubric:: Example
+
+   >>> docstr = split_google_docblocks.__doc__
+   >>> retdict_list = list(parse_google_returns(docstr))
+   >>> print([sorted(d.items())[1] for d in retdict_list])
+   [('type', 'List[Tuple]')]
+
+
+.. function:: parse_google_retblock(lines, return_annot=None)
+
+   :Parameters: * **lines** (*str*) -- unindented lines from a Returns or Yields section
+                * **return_annot** (*str*) -- the return type annotation (if one exists)
+
+   Yeilds:
+       Dict[str, str]: each dict specifies the return type and its description
+
+   .. rubric:: Example
+
+   >>> # Test various ways that retlines can be written
+   >>> assert len(list(parse_google_retblock('list: a desc'))) == 1
+   >>> assert len(list(parse_google_retblock('no type, just desc'))) == 0
+   >>> # ---
+   >>> hints = list(parse_google_retblock('\n'.join([
+   ...     'entire line can be desc',
+   ...     ' ',
+   ...     ' if a return type annotation is given',
+   ... ]), return_annot='int'))
+   >>> assert len(hints) == 1
+   >>> # ---
+   >>> hints = list(parse_google_retblock('\n'.join([
+   ...     'bool: a description',
+   ...     ' with a newline',
+   ... ])))
+   >>> assert len(hints) == 1
+   >>> # ---
+   >>> hints = list(parse_google_retblock('\n'.join([
+   ...     'int or bool: a description',
+   ...     ' ',
+   ...     ' with a separated newline',
+   ...     ' ',
+   ... ])))
+   >>> assert len(hints) == 1
+   >>> # ---
+   >>> hints = list(parse_google_retblock('\n'.join([
+   ...     # Multiple types can be specified
+   ...     'threading.Thread: a description',
+   ...     '(int, str): a tuple of int and str',
+   ...     'tuple: a tuple of int and str',
+   ...     'Tuple[int, str]: a tuple of int and str',
+   ... ])))
+   >>> assert len(hints) == 4
+   >>> # ---
+   >>> hints = list(parse_google_retblock('\n'.join([
+   ...     # If the colon is not specified nothing will be parsed
+   ...     'list',
+   ...     'Tuple[int, str]',
+   ... ])))
+   >>> assert len(hints) == 0
+   ...
+
+
+.. function:: parse_google_argblock(lines)
+
+   :Parameters: **lines** (*str*) -- the unindented lines from an Args docstring section
+
+   .. rubric:: References
+
+   # It is not clear which of these is *the* standard or if there is one
+   https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google
+   http://www.sphinx-doc.org/en/stable/ext/example_google.html#example-google
+
+   .. rubric:: Example
+
+   >>> # Test various ways that arglines can be written
+   >>> line_list = [
+   ...     '',
+   ...     'foo1 (int): a description',
+   ...     'foo2: a description\n    with a newline',
+   ...     'foo3 (int or str): a description',
+   ...     'foo4 (int or threading.Thread): a description',
+   ...     #
+   ...     # this is sphynx-like typing style
+   ...     'param1 (:obj:`str`, optional): ',
+   ...     'param2 (:obj:`list` of :obj:`str`):',
+   ...     #
+   ...     # the Type[type] syntax is defined by the python typeing module
+   ...     'attr1 (Optional[int]): Description of `attr1`.',
+   ...     'attr2 (List[str]): Description of `attr2`.',
+   ...     'attr3 (Dict[str, str]): Description of `attr3`.',
+   ... ]
+   >>> lines = '\n'.join(line_list)
+   >>> argdict_list = list(parse_google_argblock(lines))
+   >>> # All lines except the first should be accepted
+   >>> assert len(argdict_list) == len(line_list) - 1
+   >>> assert argdict_list[1]['desc'] == 'a description with a newline'
+
+
+.. function:: split_google_docblocks(docstr)
+
+   Breaks a docstring into parts defined by google style
+
+   :Parameters: **docstr** (*str*) -- a docstring
+
+   :returns:
+
+             list of 2-tuples where the first item is a google style
+                 docstring tag and the second item is the bock corresponding to that
+                 tag.
+   :rtype: List[Tuple]
+
+   CommandLine:
+       xdoctest xdoctest.docstr.docscrape_google split_google_docblocks:2
+
+   .. rubric:: Example
+
+   >>> from xdoctest.docstr.docscrape_google import *  # NOQA
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   ...     '''
+   ...     one line description
+   ...
+   ...     multiline
+   ...     description
+   ...
+   ...     Args:
+   ...         foo: bar
+   ...
+   ...     Returns:
+   ...         None
+   ...
+   ...     Example:
+   ...         >>> print('eg1')
+   ...         eg1
+   ...
+   ...     Example:
+   ...         >>> print('eg2')
+   ...         eg2
+   ...     ''')
+   >>> groups = split_google_docblocks(docstr)
+   >>> assert len(groups) == 5
+   >>> [g[0] for g in groups]
+   ['__DOC__', 'Args', 'Returns', 'Example', 'Example']
+
+   .. rubric:: Example
+
+   >>> from xdoctest.docstr.docscrape_google import *  # NOQA
+   >>> docstr = split_google_docblocks.__doc__
+   >>> groups = split_google_docblocks(docstr)
+
+   .. rubric:: Example
+
+   >>> from xdoctest.docstr.docscrape_google import *  # NOQA
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   ...     '''
+   ...      a description with a leading space
+   ...
+   ...     Example:
+   ...         >>> foobar
+   ...     ''')
+   >>> groups = split_google_docblocks(docstr)
+   >>> print('groups = {!r}'.format(groups))
+
+   .. rubric:: Example
+
+   >>> from xdoctest.docstr.docscrape_google import *  # NOQA
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   ...     '''
+   ...     Example:
+   ...         >>> foobar
+   ...     ''')
+   >>> # Check that line offsets are valid if the first line is not blank
+   >>> groups = split_google_docblocks(docstr)
+   >>> offset = groups[0][1][1]
+   >>> print('offset = {!r}'.format(offset))
+   >>> assert offset == 0
+   >>> # Check that line offsets are valid if the first line is blank
+   >>> groups = split_google_docblocks(chr(10) + docstr)
+   >>> offset = groups[0][1][1]
+   >>> print('offset = {!r}'.format(offset))
+   >>> assert offset == 1
+
+

@@ -1,0 +1,222 @@
+:mod:`xdoctest.checker`
+=======================
+
+.. py:module:: xdoctest.checker
+
+.. autoapi-nested-parse::
+
+   Checks for got-vs-want statments
+
+   A "got-string" is data produced by a doctest that we want to check matches som
+   eexpected value.
+
+   A "want-string" is a representation of the output we expect, if the
+   "got-string" is different than the "want-string" the doctest will fail with a
+   :class:`GotWantException`. A want string should come directly after a doctest
+   and should not be prefixed by the three cheverons (``>>> ``).
+
+   There are two types of data that a doctest could "get" as a "got-string",
+   either the contents of standard out the value of an expression itself.
+
+   A doctest that uses stdout might look like this
+
+   >>> print('We expect this exact string')
+   We expect this exact string
+
+   A doctest that uses a raw expresion might look like this
+
+   >>> def foo():
+   >>>     return 3
+   >>> foo()
+   3
+
+   In most cases it is best to use stdout to write your got-want tests because it
+   is easier to control strings sent to stdout than it is to control the
+   representation of expression-based "got-strings".
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.checker.check_got_vs_want
+   xdoctest.checker._strip_exception_details
+   xdoctest.checker.extract_exc_want
+   xdoctest.checker.check_exception
+   xdoctest.checker.check_output
+   xdoctest.checker._check_match
+   xdoctest.checker._ellipsis_match
+   xdoctest.checker.normalize
+   xdoctest.checker.remove_blankline_marker
+
+
+.. data:: unicode_literal_re
+   
+
+   
+
+.. data:: bytes_literal_re
+   
+
+   
+
+.. data:: BLANKLINE_MARKER
+   :annotation: = <BLANKLINE>
+
+   
+
+.. data:: ELLIPSIS_MARKER
+   :annotation: = ...
+
+   
+
+.. data:: TRAILING_WS
+   
+
+   
+
+.. data:: _EXCEPTION_RE
+   
+
+   
+
+.. function:: check_got_vs_want(want, got_stdout, got_eval=constants.NOT_EVALED, runstate=None)
+
+   Determines to check against either got_stdout or got_eval, and then does
+   the comparison.
+
+   If both stdout and eval "got" outputs are specified, then the "want"
+   target may match either value.
+
+   :Parameters: * **want** (*str*) -- target to match against
+                * **got_stdout** (*str*) -- output from stdout
+                * **got_eval** (*str*) -- output from an eval statement.
+
+   :raises GotWantException - If the "got" differs from this parts want.:
+
+
+.. function:: _strip_exception_details(msg)
+
+
+.. function:: extract_exc_want(want)
+
+
+.. function:: check_exception(exc_got, want, runstate=None)
+
+   Checks want against an exception
+
+   :raises GotWantException - If the "got" differs from this parts want.:
+
+
+.. function:: check_output(got, want, runstate=None)
+
+   Does the actual comparison between `got` and `want`
+
+
+.. function:: _check_match(got, want, runstate)
+
+
+.. function:: _ellipsis_match(got, want)
+
+   The ellipsis matching algorithm taken directly from standard doctest.
+
+   Worst-case linear-time ellipsis matching.
+
+   CommandLine:
+       python -m xdoctest.checker _ellipsis_match
+
+   .. rubric:: Example
+
+   >>> _ellipsis_match('aaa', 'aa...aa')
+   False
+   >>> _ellipsis_match('anything', '...')
+   True
+   >>> _ellipsis_match('prefix-anything', 'prefix-...')
+   True
+   >>> _ellipsis_match('suffix-anything', 'prefix-...')
+   False
+   >>> _ellipsis_match('foo', '... foo')
+   True
+   >>> _ellipsis_match('took=3.4s', 'took=...s')
+   True
+   >>> _ellipsis_match('best=3.4s ave=4.5s', 'best=...s ave=...s')
+   True
+   >>> _ellipsis_match('took: 1.16e-05 s\nbest=9.63e-07 s ave=1.002e-06 ± 3e-08 s\n',
+   >>>                 'took: ...s\nbest=...s ave=...s\n')
+   True
+
+
+.. function:: normalize(got, want, runstate=None)
+
+   Adapated from doctest_nose_plugin.py from the nltk project:
+       https://github.com/nltk/nltk
+
+   Further extended to also support byte literals.
+
+   .. rubric:: Example
+
+   >>> want = "...\n(0, 2, {'weight': 1})\n(0, 3, {'weight': 2})"
+   >>> got = "(0, 2, {'weight': 1})\n(0, 3, {'weight': 2})"
+
+
+.. py:exception:: ExtractGotReprException(msg, orig_ex)
+
+   Bases: :class:`AssertionError`
+
+   Exception used when we are unable to extract a string "got"
+
+
+.. py:exception:: GotWantException(msg, got, want)
+
+   Bases: :class:`AssertionError`
+
+   Exception used when the "got" output of a doctest differs from the expected
+   "want" output.
+
+   .. method:: _do_a_fancy_diff(self, runstate=None)
+
+
+
+   .. method:: output_difference(self, runstate=None, colored=True)
+
+
+      Return a string describing the differences between the expected output
+      for a given example (`example`) and the actual output (`got`).
+      The `runstate` contains option flags used to compare `want` and `got`.
+
+      .. rubric:: Notes
+
+      This does not check if got matches want, it only outputs the raw
+      differences. Got/Want normalization may make the differences appear
+      more exagerated than they are.
+
+
+   .. method:: output_repr_difference(self, runstate=None)
+
+
+      Constructs a repr difference with minimal normalization.
+
+
+
+.. function:: remove_blankline_marker(text)
+
+   .. rubric:: Example
+
+   >>> text1 = 'foo\n{}\nbar'.format(BLANKLINE_MARKER)
+   >>> text2 = '{}\nbar'.format(BLANKLINE_MARKER)
+   >>> text4 = 'foo\n{}'.format(BLANKLINE_MARKER)
+   >>> text3 = '{}'.format(BLANKLINE_MARKER)
+   >>> text5 = text1 + text1 + text1
+   >>> assert BLANKLINE_MARKER not in remove_blankline_marker(text1)
+   >>> assert BLANKLINE_MARKER not in remove_blankline_marker(text2)
+   >>> assert BLANKLINE_MARKER not in remove_blankline_marker(text3)
+   >>> assert BLANKLINE_MARKER not in remove_blankline_marker(text4)
+   >>> assert BLANKLINE_MARKER not in remove_blankline_marker(text5)
+
+

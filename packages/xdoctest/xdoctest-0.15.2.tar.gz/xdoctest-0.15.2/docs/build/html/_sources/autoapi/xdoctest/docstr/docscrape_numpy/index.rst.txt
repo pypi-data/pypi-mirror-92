@@ -1,0 +1,6 @@
+:mod:`xdoctest.docstr.docscrape_numpy`
+======================================
+
+.. py:module:: xdoctest.docstr.docscrape_numpy
+
+

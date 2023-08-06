@@ -1,0 +1,289 @@
+:mod:`xdoctest.core`
+====================
+
+.. py:module:: xdoctest.core
+
+.. autoapi-nested-parse::
+
+   Core methods used by xdoctest runner and plugin code to statically extract
+   doctests from a module or package.
+
+
+   The following is a glossary of terms and jargon used in this repo.
+
+   * callname - the name of a callable function, method, class etc... e.g.
+     ``myfunc``, ``MyClass``, or ``MyClass.some_method``.
+
+   * got / want - a test that produces stdout or a value to check. Whatever is
+     produced is what you "got" and whatever is expected is what you "want".
+     See :mod:`xdoctest.checker` for more details.
+
+   * directives - special in-doctest comments that change the behavior of the
+     doctests at runtime. See :mod:`xdoctest.directive` for more details.
+
+   * the three cheverons (``>>> ``) - this is the standard prefix for a doctest,
+     also referred to as a PS1 line in the parser.
+
+   * TODO - complete this list.
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.core.parse_freeform_docstr_examples
+   xdoctest.core.parse_google_docstr_examples
+   xdoctest.core.parse_auto_docstr_examples
+   xdoctest.core.parse_docstr_examples
+   xdoctest.core._rectify_to_modpath
+   xdoctest.core.package_calldefs
+   xdoctest.core.parse_calldefs
+   xdoctest.core.parse_doctestables
+
+
+.. data:: DEBUG
+   
+
+   
+
+.. data:: DOCTEST_STYLES
+   :annotation: = ['freeform', 'google', 'auto']
+
+   
+
+.. function:: parse_freeform_docstr_examples(docstr, callname=None, modpath=None, lineno=1, fpath=None, asone=True)
+
+   Finds free-form doctests in a docstring. This is similar to the original
+   doctests because these tests do not requires a google/numpy style header.
+
+   Some care is taken to avoid enabling tests that look like disabled google
+   doctests or scripts.
+
+   :Parameters: * **docstr** (*str*) -- an extracted docstring
+                * **callname** (*str, default=None*) -- the name of the callable (e.g. function, class, or method)
+                  that this docstring belongs to.
+                * **modpath** (*str | PathLike, default=None*) -- original module the docstring is from
+                * **lineno** (*int, default=1*) -- the line number (starting from 1) of the docstring.  i.e. if you
+                  were to go to this line number in the source file the starting
+                  quotes of the docstr would be on this line.
+                * **fpath** (*str | PathLike, default=None*) -- the file that the docstring is from (if the file was not a module,
+                  needed for backwards compatibility)
+                * **asone** (*bool, default=True*) -- if False doctests are broken into multiple examples based on
+                  spacing, otherwise they are executed as a single unit.
+
+   :Yields: *xdoctest.doctest_example.DocTest* -- doctest object
+
+   :raises xdoctest.exceptions.DoctestParseError: if an error occurs in parsing
+
+   CommandLine:
+       python -m xdoctest.core parse_freeform_docstr_examples
+
+   .. rubric:: Example
+
+   >>> # TODO: move this to unit tests and make the doctest simpler
+   >>> from xdoctest import core
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   >>>     '''
+   >>>     freeform
+   >>>     >>> doctest
+   >>>     >>> hasmultilines
+   >>>     whoppie
+   >>>     >>> 'but this is the same doctest'
+   >>>
+   >>>     >>> secondone
+   >>>
+   >>>     Script:
+   >>>         >>> 'special case, dont parse me'
+   >>>
+   >>>     DisableDoctest:
+   >>>         >>> 'special case, dont parse me'
+   >>>         want
+   >>>
+   >>>     AnythingElse:
+   >>>         >>> 'general case, parse me'
+   >>>        want
+   >>>     ''')
+   >>> examples = list(parse_freeform_docstr_examples(docstr, asone=True))
+   >>> assert len(examples) == 1
+   >>> examples = list(parse_freeform_docstr_examples(docstr, asone=False))
+   >>> assert len(examples) == 3
+
+
+.. function:: parse_google_docstr_examples(docstr, callname=None, modpath=None, lineno=1, fpath=None, eager_parse=True)
+
+   Parses Google-style doctests from a docstr and generates example objects
+
+   :Parameters: * **docstr** (*str*) -- an extracted docstring
+                * **callname** (*str, default=None*) -- the name of the callable (e.g. function, class, or method)
+                  that this docstring belongs to.
+                * **modpath** (*str | PathLike, default=None*) -- original module the docstring is from
+                * **lineno** (*int, default=1*) -- the line number (starting from 1) of the docstring.  i.e. if you
+                  were to go to this line number in the source file the starting
+                  quotes of the docstr would be on this line.
+                * **fpath** (*str | PathLike, default=None*) -- the file that the docstring is from (if the file was not a module,
+                  needed for backwards compatibility)
+                * **eager_parse** (*bool, default=True*) -- if True eagerly evaluate the parser inside the google example
+                  blocks
+
+   :Yields: *xdoctest.doctest_example.DocTest* -- doctest object
+
+   :raises xdoctest.exceptions.MalformedDocstr: if an error occurs in finding google blocks
+   :raises xdoctest.exceptions.DoctestParseError: if an error occurs in parsing
+
+
+.. function:: parse_auto_docstr_examples(docstr, *args, **kwargs)
+
+   First try to parse google style, but if no tests are found use freeform
+   style.
+
+
+.. function:: parse_docstr_examples(docstr, callname=None, modpath=None, lineno=1, style='auto', fpath=None, parser_kw={})
+
+   Parses doctests from a docstr and generates example objects.
+   The style influences which tests are found.
+
+   :Parameters: * **docstr** (*str*) -- a previously extracted docstring
+                * **callname** (*str, default=None*) -- the name of the callable (e.g. function, class, or method)
+                  that this docstring belongs to.
+                * **modpath** (*str | PathLike, default=None*) -- original module the docstring is from
+                * **lineno** (*int, default=1*) -- the line number (starting from 1) of the docstring.  i.e. if you
+                  were to go to this line number in the source file the starting
+                  quotes of the docstr would be on this line.
+                * **style** (*str, default='auto'*) -- expected doctest style, which can
+                  be "google", "freeform", or "auto".
+                * **fpath** (*str | PathLike, default=None*) -- the file that the docstring is from (if the file was not a module,
+                  needed for backwards compatibility)
+                * **parser_kw** (*dict, default={}*) -- passed to the parser
+
+   :Yields: *xdoctest.doctest_example.DocTest* -- parsed example
+
+   CommandLine:
+       python -m xdoctest.core parse_docstr_examples
+
+   .. rubric:: Example
+
+   >>> from xdoctest.core import *
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   ...    '''
+   ...    >>> 1 + 1  # xdoctest: +SKIP
+   ...    2
+   ...    >>> 2 + 2
+   ...    4
+   ...    ''')
+   >>> examples = list(parse_docstr_examples(docstr, 'name', fpath='foo.txt', style='freeform'))
+   >>> print(len(examples))
+   1
+   >>> examples = list(parse_docstr_examples(docstr, fpath='foo.txt'))
+
+
+.. function:: _rectify_to_modpath(modpath_or_name)
+
+   if modpath_or_name is a name, statically converts it to a path
+
+
+.. function:: package_calldefs(pkg_identifier, exclude=[], ignore_syntax_errors=True, analysis='auto')
+
+   Statically generates all callable definitions in a module or package
+
+   :Parameters: * **pkg_identifier** (*str | Module*) -- path to or name of the module to be
+                  tested (or the live module itself, which is not recommended)
+                * **exclude** (*List[str]*) -- glob-patterns of file names to exclude
+                * **ignore_syntax_errors** (*bool, default=True*) -- if False raise an error when syntax errors occur in a doctest
+                * **analysis** (*str, default='auto'*) -- if 'static', only static analysis is used to parse call
+                  definitions. If 'auto', uses dynamic analysis for compiled python
+                  extensions, but static analysis elsewhere, if 'dynamic', then
+                  dynamic analysis is used to parse all calldefs.
+
+   :Yields:
+
+            Tuple[Dict[str, CallDefNode], str | Module] -
+                * item[0]: the mapping of callnames-to-calldefs
+                * item[1]: the path to the file containing the doctest
+                  (usually a module) or the module itself
+
+   .. rubric:: Example
+
+   >>> pkg_identifier = 'xdoctest.core'
+   >>> testables = list(package_calldefs(pkg_identifier))
+   >>> assert len(testables) == 1
+   >>> calldefs, modpath = testables[0]
+   >>> assert util_import.modpath_to_modname(modpath) == pkg_identifier
+   >>> assert 'package_calldefs' in calldefs
+
+
+.. function:: parse_calldefs(module_identifier, analysis='auto')
+
+   Parse calldefs from a single module using either static or dynamic
+   analysis.
+
+   :Parameters: * **module_identifier** (*str | Module*) -- path to or name of the module to be
+                  tested (or the live module itself, which is not recommended)
+                * **analysis** (*str, default='auto'*) -- if 'static', only static analysis is used to parse call
+                  definitions. If 'auto', uses dynamic analysis for compiled python
+                  extensions, but static analysis elsewhere, if 'dynamic', then
+                  dynamic analysis is used to parse all calldefs.
+
+   :returns:
+
+             the mapping of callnames-to-calldefs within
+               the module.
+   :rtype: Dict[str, CallDefNode]
+
+
+.. function:: parse_doctestables(module_identifier, exclude=[], style='auto', ignore_syntax_errors=True, parser_kw={}, analysis='static')
+
+   Parses all doctests within top-level callables of a module and generates
+   example objects.  The style influences which tests are found.
+
+   :Parameters: * **module_identifier** (*str | PathLike | Module*) -- path or name of a module or a module itself (we prefer a path)
+                * **exclude** (*List[str]*) -- glob-patterns of file names to exclude
+                * **style** (*str*) -- expected doctest style (e.g. google, freeform, auto)
+                * **ignore_syntax_errors** (*bool, default=True*) -- if False raise an error when syntax errors
+                * **parser_kw** -- extra args passed to the parser
+                * **analysis** (*str, default='static'*) -- if 'static', only static analysis is used to parse call
+                  definitions. If 'auto', uses dynamic analysis for compiled python
+                  extensions, but static analysis elsewhere, if 'dynamic', then
+                  dynamic analysis is used to parse all calldefs.
+
+   :Yields: *xdoctest.doctest_example.DocTest* -- parsed doctest example objects
+
+   CommandLine:
+       python -m xdoctest.core parse_doctestables
+
+   .. rubric:: Example
+
+   >>> module_identifier = 'xdoctest.core'
+   >>> testables = list(parse_doctestables(module_identifier))
+   >>> this_example = None
+   >>> for example in testables:
+   >>>     # print(example)
+   >>>     if example.callname == 'parse_doctestables':
+   >>>         this_example = example
+   >>> assert this_example is not None
+   >>> assert this_example.callname == 'parse_doctestables'
+
+   .. rubric:: Example
+
+   >>> from xdoctest import utils
+   >>> docstr = utils.codeblock(
+   ...    '''
+   ...    >>> 1 + 1  # xdoctest: +SKIP
+   ...    2
+   ...    >>> 2 + 2
+   ...    4
+   ...    ''')
+   >>> temp = utils.TempDoctest(docstr, 'test_modfile')
+   >>> modpath = temp.modpath
+   >>> examples = list(parse_doctestables(modpath, style='freeform'))
+   >>> print(len(examples))
+   1
+
+

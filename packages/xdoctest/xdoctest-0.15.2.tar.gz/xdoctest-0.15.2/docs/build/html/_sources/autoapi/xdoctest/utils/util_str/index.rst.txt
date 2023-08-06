@@ -1,0 +1,208 @@
+:mod:`xdoctest.utils.util_str`
+==============================
+
+.. py:module:: xdoctest.utils.util_str
+
+.. autoapi-nested-parse::
+
+   Utilities related to string manipulations
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_str.strip_ansi
+   xdoctest.utils.util_str.color_text
+   xdoctest.utils.util_str.ensure_unicode
+   xdoctest.utils.util_str.indent
+   xdoctest.utils.util_str.highlight_code
+   xdoctest.utils.util_str.add_line_numbers
+   xdoctest.utils.util_str.codeblock
+
+
+.. data:: NO_COLOR
+   
+
+   
+
+.. function:: strip_ansi(text)
+
+   Removes all ansi directives from the string.
+
+   .. rubric:: References
+
+   http://stackoverflow.com/questions/14693701/remove-ansi
+   https://stackoverflow.com/questions/13506033/filtering-out-ansi-escape-sequences
+
+   .. rubric:: Examples
+
+   >>> line = '\t\u001b[0;35mBlabla\u001b[0m     \u001b[0;36m172.18.0.2\u001b[0m'
+   >>> escaped_line = strip_ansi(line)
+   >>> assert escaped_line == '\tBlabla     172.18.0.2'
+
+
+.. function:: color_text(text, color)
+
+   Colorizes text a single color using ansii tags.
+
+   :Parameters: * **text** (*str*) -- text to colorize
+                * **color** (*str*) -- may be one of the following: yellow, blink, lightgray,
+                  underline, darkyellow, blue, darkblue, faint, fuchsia, black,
+                  white, red, brown, turquoise, bold, darkred, darkgreen, reset,
+                  standout, darkteal, darkgray, overline, purple, green, teal, fuscia
+
+   :returns:
+
+             text : colorized text.
+                 If pygments is not installed plain text is returned.
+   :rtype: str
+
+   .. rubric:: Example
+
+   >>> import sys
+   >>> if sys.platform.startswith('win32'):
+   >>>     import pytest
+   >>>     pytest.skip()
+   >>> text = 'raw text'
+   >>> from xdoctest import utils
+   >>> from xdoctest.utils import util_str
+   >>> if utils.modname_to_modpath('pygments') and not util_str.NO_COLOR:
+   >>>     # Colors text only if pygments is installed
+   >>>     import pygments
+   >>>     print('pygments = {!r}'.format(pygments))
+   >>>     ansi_text1 = color_text(text, 'red')
+   >>>     print('ansi_text1 = {!r}'.format(ansi_text1))
+   >>>     ansi_text = utils.ensure_unicode(ansi_text1)
+   >>>     prefix = utils.ensure_unicode('\x1b[31')
+   >>>     print('prefix = {!r}'.format(prefix))
+   >>>     print('ansi_text = {!r}'.format(ansi_text))
+   >>>     assert ansi_text.startswith(prefix)
+   >>>     assert color_text(text, None) == 'raw text'
+   >>> else:
+   >>>     # Otherwise text passes through unchanged
+   >>>     assert color_text(text, 'red') == 'raw text'
+   >>>     assert color_text(text, None) == 'raw text'
+
+
+.. function:: ensure_unicode(text)
+
+   Casts bytes into utf8 (mostly for python2 compatibility)
+
+   .. rubric:: References
+
+   http://stackoverflow.com/questions/12561063/python-extract-data-from-file
+
+   CommandLine:
+       python -m xdoctest.utils ensure_unicode
+
+   .. rubric:: Example
+
+   >>> assert ensure_unicode('my ünicôdé strįng') == 'my ünicôdé strįng'
+   >>> assert ensure_unicode('text1') == 'text1'
+   >>> assert ensure_unicode('text1'.encode('utf8')) == 'text1'
+   >>> assert ensure_unicode('ï»¿text1'.encode('utf8')) == 'ï»¿text1'
+   >>> import codecs
+   >>> assert (codecs.BOM_UTF8 + 'text»¿'.encode('utf8')).decode('utf8')
+
+
+.. function:: indent(text, prefix='    ')
+
+   Indents a block of text
+
+   :Parameters: * **text** (*str*) -- text to indent
+                * **prefix** (*str*) -- prefix to add to each line (default = '    ')
+
+   :returns: indented text
+   :rtype: str
+
+   CommandLine:
+       python -m xdoctest.utils ensure_unicode
+
+   .. rubric:: Example
+
+   >>> text = 'Lorem ipsum\ndolor sit amet'
+   >>> prefix = '    '
+   >>> result = indent(text, prefix)
+   >>> assert all(t.startswith(prefix) for t in result.split('\n'))
+
+
+.. function:: highlight_code(text, lexer_name='python', **kwargs)
+
+   Highlights a block of text using ansi tags based on language syntax.
+
+   :Parameters: * **text** (*str*) -- plain text to highlight
+                * **lexer_name** (*str*) -- name of language
+                * **\*\*kwargs** -- passed to pygments.lexers.get_lexer_by_name
+
+   :returns:
+
+             text : highlighted text
+                 If pygments is not installed, the plain text is returned.
+   :rtype: str
+
+   CommandLine:
+       python -c "import pygments.formatters; print(list(pygments.formatters.get_all_formatters()))"
+
+   .. rubric:: Example
+
+   >>> text = 'import xdoctest as xdoc; print(xdoc)'
+   >>> new_text = highlight_code(text)
+   >>> print(new_text)
+
+
+.. function:: add_line_numbers(source, start=1, n_digits=None)
+
+   Prefixes code with line numbers
+
+   .. rubric:: Example
+
+   >>> print(chr(10).join(add_line_numbers(['a', 'b', 'c'])))
+   1 a
+   2 b
+   3 c
+   >>> print(add_line_numbers(chr(10).join(['a', 'b', 'c'])))
+   1 a
+   2 b
+   3 c
+
+
+.. function:: codeblock(block_str)
+
+   Wraps multiline string blocks and returns unindented code.
+   Useful for templated code defined in indented parts of code.
+
+   :Parameters: **block_str** (*str*) -- typically in the form of a multiline string
+
+   :returns: the unindented string
+   :rtype: str
+
+   .. rubric:: Example
+
+   >>> # Simulate an indented part of code
+   >>> if True:
+   ...     # notice the indentation on this will be normal
+   ...     codeblock_version = codeblock(
+   ...             '''
+   ...             def foo():
+   ...                 return 'bar'
+   ...             '''
+   ...         )
+   ...     # notice the indentation and newlines on this will be odd
+   ...     normal_version = ('''
+   ...         def foo():
+   ...             return 'bar'
+   ...     ''')
+   >>> assert normal_version != codeblock_version
+   >>> print('Without codeblock')
+   >>> print(normal_version)
+   >>> print('With codeblock')
+   >>> print(codeblock_version)
+
+

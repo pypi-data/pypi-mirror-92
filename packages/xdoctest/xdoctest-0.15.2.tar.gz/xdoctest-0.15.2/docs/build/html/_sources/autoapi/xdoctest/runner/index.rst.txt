@@ -1,0 +1,188 @@
+:mod:`xdoctest.runner`
+======================
+
+.. py:module:: xdoctest.runner
+
+.. autoapi-nested-parse::
+
+   The Native XDoctest Runner
+   --------------------------
+
+   This file defines the native xdoctest interface to the collecting, executing,
+   and summarizing the results of running doctests. This is an alternative to
+   running through pytest.
+
+   Using the XDoctest Runner via the Terminal
+   ------------------------------------------
+
+   This interface is exposed via the ``xdoctest.__main__`` script and can be
+   invoked on any module via: ``python -m xdoctest <modname>``, where
+   ``<modname>`` is the path to. For example to run the tests in this module you
+   could execute:
+
+   .. code:: bash
+
+       python -m xdoctest xdoctest.runner all
+
+   For more details see:
+
+   .. code:: bash
+
+       python -m xdoctest --help
+
+   Using the XDoctest Runner Programatically
+   -----------------------------------------
+
+   This interface may also be run programmatically using
+   ``xdoctest.doctest_module(path)``, which can be placed in the
+   ``__main__`` section of any module as such:
+
+   .. code:: python
+
+       if __name__ == '__main__':
+           import xdoctest as xdoc
+           xdoc.doctest_module(__file__)
+
+   This allows you to invoke the runner on a specific module by simply running
+   that module as the main module. Via: ``python -m <modname> <command>``. For
+   example, the this module ends with the previous code, which means you can
+   run the doctests as such:
+
+   .. code:: bash
+
+       python -m xdoctest.runner list
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.runner.log
+   xdoctest.runner.doctest_callable
+   xdoctest.runner.doctest_module
+   xdoctest.runner._convert_to_test_module
+   xdoctest.runner._print_summary_report
+   xdoctest.runner._gather_zero_arg_examples
+   xdoctest.runner._run_examples
+   xdoctest.runner._parse_commandline
+   xdoctest.runner._update_argparse_cli
+
+
+.. function:: log(msg, verbose)
+
+
+.. data:: DEBUG
+   
+
+   
+
+.. function:: doctest_callable(func)
+
+   Executes doctests an in-memory function or class.
+
+   :Parameters: **func** (*callable*) -- live method or class for which we will run its doctests.
+
+   .. rubric:: Example
+
+   >>> def inception(text):
+   >>>     '''
+   >>>     Example:
+   >>>         >>> inception("I heard you liked doctests")
+   >>>     '''
+   >>>     print(text)
+   >>> func = inception
+   >>> doctest_callable(func)
+
+
+.. function:: doctest_module(module_identifier=None, command=None, argv=None, exclude=[], style='auto', verbose=None, config=None, durations=None, analysis='static')
+
+   Executes requestsed google-style doctests in a package or module.
+   Main entry point into the testing framework.
+
+   :Parameters: * **module_identifier** (*str | ModuleType | None*) -- The name of / path to the module, or the live module itself.
+                  If not specified, dynamic analysis will be used to introspect the
+                  module that called this function and that module will be used.
+                  This can also contain the callname followed by the `::` token.
+                * **command** (*str*) -- determines which doctests to run.
+                  if command is None, this is determined by parsing sys.argv
+                  Value values are
+                      'all' - find and run all tests in a module
+                      'list' - list the tests in a module
+                      'dump' - dumps tests to stdout
+                * **argv** (*List[str], default=None*) -- if specified, command line flags that might influence beharior.
+                  if None uses sys.argv.
+                  SeeAlso :func:_update_argparse_cli
+                  SeeAlso :func:doctest_example.DoctestConfig._update_argparse_cli
+                * **verbose** (*int, default=None*) --
+
+                  Verbosity level.
+                      0 - disables all text
+                      1 - minimal printing
+                      3 - verbose printing
+                * **exclude** (*List[str]*) -- ignores any modname matching any of these glob-like patterns
+                * **config** (*Dict[str, object]*) -- modifies each examples configuration
+                * **durations** (*int, default=None*) -- if specified report top N slowest tests
+                * **analysis** (*str*) -- determines if doctests are found using static or
+                  dynamic analysis.
+
+   :returns: run_summary
+   :rtype: Dict
+
+   .. rubric:: Example
+
+   >>> modname = 'xdoctest.dynamic_analysis'
+   >>> result = doctest_module(modname, 'list', argv=[''])
+
+   .. rubric:: Example
+
+   >>> # xdoctest: +SKIP
+   >>> # Demonstrate different ways "module_identifier" can be specified
+   >>> #
+   >>> # Using a module name
+   >>> result = doctest_module('xdoctest.static_analysis')
+   >>> #
+   >>> # Using a module path
+   >>> result = doctest_module(os.expandpath('~/code/xdoctest/xdoctest/static_analysis.py'))
+   >>> #
+   >>> # Using a module itself
+   >>> from xdoctest import runner
+   >>> result = doctest_module(runner)
+   >>> #
+   >>> # Using a module name and a specific callname
+   >>> from xdoctest import runner
+   >>> result = doctest_module('xdoctest.static_analysis::parse_static_value')
+
+
+.. function:: _convert_to_test_module(enabled_examples)
+
+   Converts all doctests to unit tests that can exist in a standalone module
+
+
+.. function:: _print_summary_report(run_summary, parse_warnlist, n_seconds, enabled_examples, durations, config=None, _log=None)
+
+   Summary report formatting and printing
+
+
+.. function:: _gather_zero_arg_examples(modpath)
+
+   Find functions in `modpath` args  with no args (so we can automatically
+   make a dummy docstring).
+
+
+.. function:: _run_examples(enabled_examples, verbose, config=None, _log=None)
+
+   Internal helper, loops over each example, runs it, returns a summary
+
+
+.. function:: _parse_commandline(command=None, style='auto', verbose=None, argv=None)
+
+
+.. function:: _update_argparse_cli(add_argument, prefix=None)
+
+

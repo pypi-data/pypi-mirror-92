@@ -1,0 +1,39 @@
+:mod:`xdoctest.docstr.convert_google_to_numpy`
+==============================================
+
+.. py:module:: xdoctest.docstr.convert_google_to_numpy
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.docstr.convert_google_to_numpy.convert_file_docstrings
+   xdoctest.docstr.convert_google_to_numpy.google_to_numpy_docstr
+   xdoctest.docstr.convert_google_to_numpy.main
+
+
+.. function:: convert_file_docstrings(path_to_convert, dry=True)
+
+   path_to_convert = ub.expandpath('~/code/networkx/networkx/algorithms/isomorphism/_embeddinghelpers/balanced_sequence.py')
+
+
+.. function:: google_to_numpy_docstr(docstr)
+
+   Convert a google-style docstring to a numpy-style docstring
+
+   :Parameters: **docstr** (*str*) -- contents of ``func.__doc__`` for some ``func``, assumed
+                to be in google-style.
+
+   :returns: numpy style docstring
+   :rtype: str
+
+
+.. function:: main()
+
+

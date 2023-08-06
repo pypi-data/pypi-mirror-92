@@ -1,0 +1,514 @@
+:mod:`xdoctest.directive`
+=========================
+
+.. py:module:: xdoctest.directive
+
+.. autoapi-nested-parse::
+
+   Directives special comments that influence the runtime behavior of doctests.
+   There are two types of directives: block and inline
+
+   Block directives are specified on their own line and influence the behavior
+   of multiple lines of code.
+
+   Inline directives are specified after in the same line of code and only
+   influence that line / repl part.
+
+   Basic Directives
+   ----------------
+
+   Basic directives correspond directly to an xdoctest runtime state attribute.
+   These can be modified by directly using the xdoctest directive syntax.
+   The following documents all supported basic directives.
+
+   The basic directives and their defaults are as follows:
+
+       * ``DONT_ACCEPT_BLANKLINE``: False,
+
+       * ``ELLIPSIS``: True,
+
+       * ``IGNORE_WHITESPACE``: False,
+
+       * ``IGNORE_EXCEPTION_DETAIL``: False,
+
+       * ``NORMALIZE_WHITESPACE``: True,
+
+       * ``IGNORE_WANT``: False,
+
+       * ``NORMALIZE_REPR``: True,
+
+       * ``REPORT_CDIFF``: False,
+
+       * ``REPORT_NDIFF``: False,
+
+       * ``REPORT_UDIFF``: True,
+
+       * ``SKIP``: False
+
+   Use ``-`` to disable a directive that is enabled by default, e.g.
+   ``# xdoctest: -ELLIPSIS``, or use ``+`` to enable a directive that is disabled by
+   default, e.g. ``# xdoctest +SKIP``.
+
+
+   Advanced Directives
+   -------------------
+
+   Advanced directives may take arguments, be conditional, or modify the runtime
+   state in complex ways.  For instance, whereas most directives modify a boolean
+   value in the runtime state, the advanced ``REQUIRES`` directive either adds or
+   removes a value from a ``set`` of unmet requirements. Doctests will only run if
+   there are no unmet requirements.
+
+   Currently the only advanced directive is ``REQUIRES(.)``. Multiple arguments
+   may be specified, by separating them with commas. The currently available
+   arguments allow you to condition on:
+
+
+       * Speical operating system / python implementation / python version tags, via: ``WIN32``, ``LINUX``, ``DARWIN``, ``POSIX``, ``NT``, ``JAVA``, ``CPYTHON``, ``IRONPYTHON``, ``JYTHON``, ``PYPY``, ``PY2``, ``PY3``. (e.g. ``# xdoctest +REQUIRES(WIN32)``)
+
+       * Command line flags, via: ``--<someflag>``, (e.g. ``# xdoctest +REQUIRES(--verbose)``)
+
+       * If a python module is installed, via: ``module:<modname>``, (e.g. ``# xdoctest +REQUIRES(module:numpy)``)
+
+       * Environment variables, via: ``env:<varname>==<val>``, (e.g. ``# xdoctest +REQUIRES(env:MYENVIRON==1)``)
+
+
+   CommandLine:
+       python -m xdoctest.directive __doc__
+
+
+   .. rubric:: Example
+
+   The following example shows how the ``+SKIP`` directives may be used to
+   bypass certain places in the code.
+
+   >>> # An inline directive appears on the same line as a command and
+   >>> # only applies to the current line.
+   >>> raise AssertionError('this will not be run (a)')  # xdoctest: +SKIP
+   >>> print('This line will print: (A)')
+   >>> print('This line will print: (B)')
+   >>> # However, if a directive appears on its own line, then it applies
+   >>> # too all subsequent lines.
+   >>> # xdoctest: +SKIP
+   >>> raise AssertionError('this will not be run (b)')
+   >>> print('This line will not print: (A)')
+   >>> # Note, that SKIP is simply a state and can be disabled to allow
+   >>> # the program to continue executing.
+   >>> # xdoctest: -SKIP
+   >>> print('This line will print: (C)')
+   >>> print('This line will print: (D)')
+   >>> # This applies to inline directives as well
+   >>> # xdoctest: +SKIP
+   >>> raise AssertionError('this will not be run (c)')
+   >>> print('This line will print: (E)')  # xdoctest: -SKIP
+   >>> raise AssertionError('this will not be run (d)')
+   >>> # xdoctest: -SKIP
+   >>> print('This line will print: (F)')
+
+   .. rubric:: Example
+
+   This next examples illustrates how to use the advanced ``+REQURIES()``
+   directive. Note, the REQUIRES and SKIP states are independent.
+
+   >>> import sys
+   >>> count = 0
+   >>> # xdoctest: +REQUIRES(WIN32)
+   >>> assert sys.platform.startswith('win32')
+   >>> count += 1
+   >>> # xdoctest: -REQUIRES(WIN32)
+   >>> # xdoctest: +REQUIRES(LINUX)
+   >>> assert sys.platform.startswith('linux')
+   >>> count += 1
+   >>> # xdoctest: -REQUIRES(LINUX)
+   >>> # xdoctest: +REQUIRES(DARWIN)
+   >>> assert sys.platform.startswith('darwin')
+   >>> count += 1
+   >>> # xdoctest: -REQUIRES(DARWIN)
+   >>> print(count)
+   >>> assert count == 1, 'Exactly one of the above parts should have run'
+   >>> # xdoctest: +REQUIRES(--verbose)
+   >>> print('This is only printed if you run with --verbose')
+
+   .. rubric:: Example
+
+   >>> # New in 0.7.3: the requires directive can accept module names
+   >>> # xdoctest: +REQUIRES(module:foobar)
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.directive.RuntimeState
+   xdoctest.directive.Directive
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.directive.named
+   xdoctest.directive._split_opstr
+   xdoctest.directive._is_requires_satisfied
+   xdoctest.directive._module_exists
+   xdoctest.directive.parse_directive_optstr
+
+
+.. function:: named(key, pattern)
+
+   helper for regex
+
+
+.. data:: DEFAULT_RUNTIME_STATE
+   
+
+   
+
+.. data:: Effect
+   
+
+   
+
+.. py:class:: RuntimeState(default_state=None)
+
+   Bases: :class:`xdoctest.utils.NiceRepr`
+
+   Maintains the runtime state for a single ``run()`` of an example
+
+   Inline directives are pushed and popped after the line is run.
+   Otherwise directives persist until another directive disables it.
+
+   CommandLine:
+       xdoctest -m xdoctest.directive RuntimeState
+
+   .. rubric:: Example
+
+   >>> from xdoctest.directive import *
+   >>> runstate = RuntimeState()
+   >>> assert not runstate['IGNORE_WHITESPACE']
+   >>> # Directives modify the runtime state
+   >>> directives = list(Directive.extract('# xdoc: -ELLIPSIS, +IGNORE_WHITESPACE'))
+   >>> runstate.update(directives)
+   >>> assert not runstate['ELLIPSIS']
+   >>> assert runstate['IGNORE_WHITESPACE']
+   >>> # Inline directives only persist until the next update
+   >>> directives = [Directive('IGNORE_WHITESPACE', False, inline=True)]
+   >>> runstate.update(directives)
+   >>> assert not runstate['IGNORE_WHITESPACE']
+   >>> runstate.update({})
+   >>> assert runstate['IGNORE_WHITESPACE']
+
+   .. rubric:: Example
+
+   >>> # xdoc: +IGNORE_WHITESPACE
+   >>> print(str(RuntimeState()))
+   <RuntimeState({
+       DONT_ACCEPT_BLANKLINE: False,
+       ELLIPSIS: True,
+       IGNORE_EXCEPTION_DETAIL: False,
+       IGNORE_WANT: False,
+       IGNORE_WHITESPACE: False,
+       NORMALIZE_REPR: True,
+       NORMALIZE_WHITESPACE: True,
+       REPORT_CDIFF: False,
+       REPORT_NDIFF: False,
+       REPORT_UDIFF: True,
+       REQUIRES: set(...),
+       SKIP: False
+   })>
+
+   .. method:: to_dict(self)
+
+
+
+   .. method:: __nice__(self)
+
+
+
+   .. method:: __getitem__(self, key)
+
+
+
+   .. method:: __setitem__(self, key, value)
+
+
+
+   .. method:: set_report_style(self, reportchoice, state=None)
+
+
+      .. rubric:: Example
+
+      >>> from xdoctest.directive import *
+      >>> runstate = RuntimeState()
+      >>> assert runstate['REPORT_UDIFF']
+      >>> runstate.set_report_style('ndiff')
+      >>> assert not runstate['REPORT_UDIFF']
+      >>> assert runstate['REPORT_NDIFF']
+
+
+   .. method:: update(self, directives)
+
+
+      Update the runtime state given a set of directives
+
+      :Parameters: **directives** (*List[Directive]*) -- list of directives. The ``effects``
+                   method is used to update this object.
+
+
+
+.. py:class:: Directive(name, positive=True, args=[], inline=None)
+
+   Bases: :class:`xdoctest.utils.NiceRepr`
+
+   Directives modify the runtime state.
+
+   .. method:: extract(cls, text)
+      :classmethod:
+
+
+      Parses directives from a line or repl line
+
+      :Parameters: **text** (*str*) -- must correspond to exactly one PS1 line and its PS2
+                   followups.
+
+      Yeilds:
+          Directive: directive: the parsed directives
+
+      .. rubric:: Notes
+
+      The original ``doctest`` module sometimes yeilded false positives for a
+      directive pattern. Because ``xdoctest`` is parsing the text, this issue
+      does not occur.
+
+      .. rubric:: Example
+
+      >>> from xdoctest.directive import Directive
+      >>> text = '# xdoc: + SKIP'
+      >>> print(', '.join(list(map(str, Directive.extract(text)))))
+      <Directive(+SKIP)>
+
+      >>> # Directive with args
+      >>> text = '# xdoctest: requires(--show)'
+      >>> print(', '.join(list(map(str, Directive.extract(text)))))
+      <Directive(+REQUIRES(--show))>
+
+      >>> # Malformatted directives are ignored
+      >>> # xdoctest: +REQUIRES(module:pytest)
+      >>> text = '# xdoctest: does_not_exist, skip'
+      >>> import pytest
+      >>> with pytest.warns(None) as record:
+      >>>     print(', '.join(list(map(str, Directive.extract(text)))))
+      <Directive(+SKIP)>
+
+      >>> # Two directives in one line
+      >>> text = '# xdoctest: +ELLIPSIS, -NORMALIZE_WHITESPACE'
+      >>> print(', '.join(list(map(str, Directive.extract(text)))))
+      <Directive(+ELLIPSIS)>, <Directive(-NORMALIZE_WHITESPACE)>
+
+      >>> # Make sure commas inside parens are not split
+      >>> text = '# xdoctest: +REQUIRES(module:foo,module:bar)'
+      >>> print(', '.join(list(map(str, Directive.extract(text)))))
+      <Directive(+REQUIRES(module:foo, module:bar))>
+
+      .. rubric:: Example
+
+      >>> any(Directive.extract(' # xdoctest: skip'))
+      True
+      >>> any(Directive.extract(' # badprefix: not-a-directive'))
+      False
+      >>> any(Directive.extract(' # xdoctest: skip'))
+      True
+      >>> any(Directive.extract(' # badprefix: not-a-directive'))
+      False
+
+
+   .. method:: __nice__(self)
+
+
+
+   .. method:: _unpack_args(self, num)
+
+
+
+   .. method:: effect(self, argv=None, environ=None)
+
+
+
+   .. method:: effects(self, argv=None, environ=None)
+
+
+      Returns how this directive modifies a RuntimeState object
+
+      This is called by :func:`RuntimeState.update` to update itself
+
+      :Parameters: * **argv** (*List[str], default=None*) -- if specified, overwrite sys.argv
+                   * **environ** (*Dict[str, str], default=None*) -- if specified, overwrite os.environ
+
+      :returns:
+
+                list of named tuples containing:
+                    action (str): code indicating how to update
+                    key (str): name of runtime state item to modify
+                    value (object): value to modify with
+      :rtype: List[Effect]
+
+      CommandLine:
+          xdoctest -m xdoctest.directive Directive.effects
+
+      .. rubric:: Example
+
+      >>> Directive('SKIP').effects()[0]
+      Effect(action='assign', key='SKIP', value=True)
+      >>> Directive('SKIP', inline=True).effects()[0]
+      Effect(action='assign', key='SKIP', value=True)
+      >>> Directive('REQUIRES', args=['-s']).effects(argv=['-s'])[0]
+      Effect(action='noop', key='REQUIRES', value='-s')
+      >>> Directive('REQUIRES', args=['-s']).effects(argv=[])[0]
+      Effect(action='set.add', key='REQUIRES', value='-s')
+      >>> Directive('ELLIPSIS', args=['-s']).effects(argv=[])[0]
+      Effect(action='assign', key='ELLIPSIS', value=True)
+
+      Doctest:
+          >>> # requirement directive with module
+          >>> directive = list(Directive.extract('# xdoctest: requires(module:xdoctest)'))[0]
+          >>> print('directive = {}'.format(directive))
+          >>> print('directive.effects() = {}'.format(directive.effects()[0]))
+          directive = <Directive(+REQUIRES(module:xdoctest))>
+          directive.effects() = Effect(action='noop', key='REQUIRES', value='module:xdoctest')
+
+          >>> directive = list(Directive.extract('# xdoctest: requires(module:notamodule)'))[0]
+          >>> print('directive = {}'.format(directive))
+          >>> print('directive.effects() = {}'.format(directive.effects()[0]))
+          directive = <Directive(+REQUIRES(module:notamodule))>
+          directive.effects() = Effect(action='set.add', key='REQUIRES', value='module:notamodule')
+
+          >>> directive = list(Directive.extract('# xdoctest: requires(env:FOO==1)'))[0]
+          >>> print('directive = {}'.format(directive))
+          >>> print('directive.effects() = {}'.format(directive.effects(environ={})[0]))
+          directive = <Directive(+REQUIRES(env:FOO==1))>
+          directive.effects() = Effect(action='set.add', key='REQUIRES', value='env:FOO==1')
+
+          >>> directive = list(Directive.extract('# xdoctest: requires(env:FOO==1)'))[0]
+          >>> print('directive = {}'.format(directive))
+          >>> print('directive.effects() = {}'.format(directive.effects(environ={'FOO': '1'})[0]))
+          directive = <Directive(+REQUIRES(env:FOO==1))>
+          directive.effects() = Effect(action='noop', key='REQUIRES', value='env:FOO==1')
+
+          >>> # requirement directive with two args
+          >>> directive = list(Directive.extract('# xdoctest: requires(--show, module:xdoctest)'))[0]
+          >>> print('directive = {}'.format(directive))
+          >>> for effect in directive.effects():
+          >>>     print('effect = {!r}'.format(effect))
+          directive = <Directive(+REQUIRES(--show, module:xdoctest))>
+          effect = Effect(action='set.add', key='REQUIRES', value='--show')
+          effect = Effect(action='noop', key='REQUIRES', value='module:xdoctest')
+
+
+
+.. function:: _split_opstr(optstr)
+
+   Simplified balanced paren logic to only split commas outside of parens
+
+   .. rubric:: Example
+
+   >>> optstr = '+FOO, REQUIRES(foo,bar), +ELLIPSIS'
+   >>> _split_opstr(optstr)
+   ['+FOO', 'REQUIRES(foo,bar)', '+ELLIPSIS']
+
+
+.. function:: _is_requires_satisfied(arg, argv=None, environ=None)
+
+   Determines if the argument to a REQUIRES directive is satisfied
+
+   :Parameters: * **arg** (*str*) -- condition code
+                * **argv** (*List[str]*) -- cmdline if arg is cmd code usually ``sys.argv``
+                * **environ** (*Dict[str, str]*) -- environment variables usually ``os.environ``
+
+   :returns: flag - True if the requirement is met
+   :rtype: bool
+
+   .. rubric:: Example
+
+   >>> _is_requires_satisfied('PY2', argv=[])
+   >>> _is_requires_satisfied('PY3', argv=[])
+   >>> _is_requires_satisfied('cpython', argv=[])
+   >>> _is_requires_satisfied('pypy', argv=[])
+   >>> _is_requires_satisfied('nt', argv=[])
+   >>> _is_requires_satisfied('linux', argv=[])
+
+   >>> _is_requires_satisfied('env:FOO', argv=[], environ={'FOO': '1'})
+   True
+   >>> _is_requires_satisfied('env:FOO==1', argv=[], environ={'FOO': '1'})
+   True
+   >>> _is_requires_satisfied('env:FOO==T', argv=[], environ={'FOO': '1'})
+   False
+   >>> _is_requires_satisfied('env:BAR', argv=[], environ={'FOO': '1'})
+   False
+   >>> _is_requires_satisfied('env:BAR==1', argv=[], environ={'FOO': '1'})
+   False
+   >>> _is_requires_satisfied('env:BAR!=1', argv=[], environ={'FOO': '1'})
+   True
+   >>> _is_requires_satisfied('env:BAR!=1', argv=[], environ={'BAR': '0'})
+   True
+   >>> _is_requires_satisfied('env:BAR!=1')
+   ...
+
+   >>> # xdoctest: +REQUIRES(module:pytest)
+   >>> import pytest
+   >>> with pytest.raises(ValueError):
+   >>>     _is_requires_satisfied('badflag:BAR==1', [])
+
+   >>> import pytest
+   >>> with pytest.raises(KeyError):
+   >>>     _is_requires_satisfied('env:BAR>=1', argv=[], environ={'BAR': '0'})
+
+
+.. data:: _MODNAME_EXISTS_CACHE
+   
+
+   
+
+.. function:: _module_exists(modname)
+
+
+.. data:: COMMANDS
+   
+
+   
+
+.. data:: DIRECTIVE_PATTERNS
+   
+
+   
+
+.. data:: DIRECTIVE_RE
+   
+
+   
+
+.. function:: parse_directive_optstr(optpart, inline=None)
+
+   Parses the information in the directive from the "optpart"
+
+   optstrs are:
+       optionally prefixed with ``+`` (default) or ``-``
+       comma separated
+       may contain one paren enclosed argument (experimental)
+       all spaces are ignored
+
+   :returns: the parsed directive
+   :rtype: Directive
+
+   .. rubric:: Example
+
+   >>> print(str(parse_directive_optstr('+IGNORE_WHITESPACE')))
+   <Directive(+IGNORE_WHITESPACE)>
+
+

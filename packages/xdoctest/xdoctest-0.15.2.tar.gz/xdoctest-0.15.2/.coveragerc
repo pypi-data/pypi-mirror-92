@@ -1,0 +1,34 @@
+[run]
+branch = True
+source = xdoctest
+
+[report]
+exclude_lines =
+    pragma: no cover
+    .*  # pragma: no cover
+    .*  # nocover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if 0:
+    if six.PY2:
+    if trace is not None
+    verbose = .*
+    raise
+    pass
+    if _debug:
+    if __name__ == .__main__.:
+    print(.*)
+    ^import .*
+    ^from .* import .*
+
+omit = 
+    # pytest imports this before we can cover it
+    # How can this help us?:
+    # http://pytest-cov.readthedocs.io/en/latest/plugins.html
+    xdoctest/plugin.py
+    xdoctest/__main__.py
+    xdoctest/__init__.py
+    xdoctest/exceptions.py
+    xdoctest/_old*.py
+    xdoctest/_grave*.py

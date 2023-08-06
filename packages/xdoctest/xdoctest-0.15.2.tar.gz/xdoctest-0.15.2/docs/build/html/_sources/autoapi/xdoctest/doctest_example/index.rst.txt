@@ -1,0 +1,426 @@
+:mod:`xdoctest.doctest_example`
+===============================
+
+.. py:module:: xdoctest.doctest_example
+
+.. autoapi-nested-parse::
+
+   This module defines the main class that holds a DocTest example
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.doctest_example.DoctestConfig
+   xdoctest.doctest_example.DocTest
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.doctest_example._traverse_traceback
+
+
+.. data:: __devnotes__
+   :annotation: = 
+TODO:
+    - [ ] Rename DocTest to Doctest?
+
+
+   
+
+.. py:class:: DoctestConfig(*args, **kwargs)
+
+   Bases: :class:`dict`
+
+   Doctest configuration
+
+   Static configuration for collection, execution, and reporting doctests.
+   Note dynamic directives are not managed by DoctestConfig, they use
+   RuntimeState.
+
+   .. method:: _populate_from_cli(self, ns)
+
+
+
+   .. method:: _update_argparse_cli(self, add_argument, prefix=None, defaults={})
+
+
+      Updates a pytest or argparse CLI
+
+      :Parameters: **add_argument** (*callable*) -- the parser.add_argument function
+
+
+   .. method:: getvalue(self, key, given=None)
+
+
+
+
+.. py:class:: DocTest(docsrc, modpath=None, callname=None, num=0, lineno=1, fpath=None, block_type=None, mode='pytest')
+
+   Bases: :class:`object`
+
+   Holds information necessary to execute and verify a doctest
+
+   :ivar docsrc:
+                 doctest source code
+
+   :vartype docsrc: str
+   :ivar modpath:
+                  module the source was read from
+
+   :vartype modpath: str | PathLike, default=None
+   :ivar callname:
+                   name of the function/method/class/module being tested
+
+   :vartype callname: str, default=None
+   :ivar num:
+              the index of the doctest in the docstring. (i.e. this object
+              refers to the num-th doctest within a docstring)
+
+   :vartype num: int, default=0
+   :ivar lineno:
+                 The line (starting from 1) in the file that the doctest begins on.
+                 (i.e. if you were to go to this line in the file, the first line of
+                 the doctest should be on this line).
+
+   :vartype lineno: int, default=1
+   :ivar fpath:
+                Typically the same as modpath, only specified for non-python files
+                (e.g. rst files).
+
+   :vartype fpath: PathLike
+   :ivar block_type:
+                     Hint indicating the type of docstring block. Can be ('Example',
+                     'Doctest', 'Script', 'Benchmark', 'zero-arg', etc..).
+
+   :vartype block_type: str, default=None
+   :ivar mode:
+               Hint at what created / is running this doctest. This impacts
+               how results are presented and what doctests are skipped.
+
+   :vartype mode: str, default='pytest'
+
+   CommandLine:
+       xdoctest -m xdoctest.doctest_example DocTest
+
+   .. rubric:: Example
+
+   >>> from xdoctest import core
+   >>> from xdoctest import doctest_example
+   >>> import os
+   >>> modpath = doctest_example.__file__.replace('.pyc', '.py')
+   >>> modpath = os.path.realpath(modpath)
+   >>> testables = core.parse_doctestables(modpath)
+   >>> for test in testables:
+   >>>     if test.callname == 'DocTest':
+   >>>         self = test
+   >>>         break
+   >>> assert self.num == 0
+   >>> assert self.modpath == modpath
+   >>> print(self)
+   <DocTest(xdoctest.doctest_example DocTest:0 ln ...)>
+
+   .. attribute:: UNKNOWN_MODNAME
+      :annotation: = <modname?>
+
+      
+
+   .. attribute:: UNKNOWN_MODPATH
+      :annotation: = <modpath?>
+
+      
+
+   .. attribute:: UNKNOWN_CALLNAME
+      :annotation: = <callname?>
+
+      
+
+   .. attribute:: UNKNOWN_FPATH
+      :annotation: = <fpath?>
+
+      
+
+   .. method:: __nice__(self)
+
+
+
+   .. method:: __repr__(self)
+
+
+      Return repr(self).
+
+
+   .. method:: __str__(self)
+
+
+      Return str(self).
+
+
+   .. method:: is_disabled(self, pytest=False)
+
+
+      Checks for comment directives on the first line of the doctest
+
+      A doctest is disabled if it starts with any of the following patterns:
+          # DISABLE_DOCTEST
+          # SCRIPT
+          # UNSTABLE
+          # FAILING
+
+      And if running in pytest, you can also use
+          # pytest.skip
+
+
+   .. method:: unique_callname(self)
+      :property:
+
+
+
+   .. method:: node(self)
+      :property:
+
+
+      this pytest node
+
+
+   .. method:: valid_testnames(self)
+      :property:
+
+
+
+   .. method:: wants(self)
+
+
+      Returns a list of the populated wants
+
+
+   .. method:: format_parts(self, linenos=True, colored=None, want=True, offset_linenos=None, prefix=True)
+
+
+      used by format_src
+
+
+   .. method:: format_src(self, linenos=True, colored=None, want=True, offset_linenos=None, prefix=True)
+
+
+      Adds prefix and line numbers to a doctest
+
+      :Parameters: * **linenos** (*bool*) -- if True, adds line numbers to output
+                   * **colored** (*bool*) -- if True highlight text with ansi colors. Default
+                     is specified in the config.
+                   * **want** (*bool*) -- if True includes "want" lines (default False).
+                   * **offset_linenos** (*bool*) -- if True offset line numbers to agree with
+                     their position in the source text file (default False).
+                   * **prefix** (*bool*) -- if False, exclude the doctest `>>> ` prefix
+
+      .. rubric:: Example
+
+      >>> from xdoctest.core import *
+      >>> from xdoctest import core
+      >>> testables = parse_doctestables(core.__file__)
+      >>> self = next(testables)
+      >>> self._parse()
+      >>> print(self.format_src())
+      >>> print(self.format_src(linenos=False, colored=False))
+      >>> assert not self.is_disabled()
+
+
+   .. method:: _parse(self)
+
+
+      Divide the given string into examples and intervening text.
+
+      .. rubric:: Example
+
+      >>> s = 'I am a dummy example with three parts'
+      >>> x = 10
+      >>> print(s)
+      I am a dummy example with three parts
+      >>> s = 'My purpose it so demonstrate how wants work here'
+      >>> print('The new want applies ONLY to stdout')
+      >>> print('given before the last want')
+      >>> '''
+          this wont hurt the test at all
+          even though its multiline '''
+      >>> y = 20
+      The new want applies ONLY to stdout
+      given before the last want
+      >>> # Parts from previous examples are executed in the same context
+      >>> print(x + y)
+      30
+
+      this is simply text, and doesnt apply to the previous doctest the
+      <BLANKLINE> directive is still in effect.
+
+      .. rubric:: Example
+
+      >>> from xdoctest import parser
+      >>> from xdoctest.docstr import docscrape_google
+      >>> from xdoctest import doctest_example
+      >>> DocTest = doctest_example.DocTest
+      >>> docstr = DocTest._parse.__doc__
+      >>> blocks = docscrape_google.split_google_docblocks(docstr)
+      >>> doclineno = DocTest._parse.__code__.co_firstlineno
+      >>> key, (docsrc, offset) = blocks[-2]
+      >>> lineno = doclineno + offset
+      >>> self = DocTest(docsrc, doctest_example.__file__, '_parse', 0,
+      >>>                lineno)
+      >>> self._parse()
+      >>> assert len(self._parts) >= 3
+      >>> #p1, p2, p3 = self._parts
+      >>> self.run()
+
+
+   .. method:: _import_module(self)
+
+
+      After this point we are in dynamic analysis mode, in most cases
+      xdoctest should have been in static-analysis-only mode.
+
+
+   .. method:: _extract_future_flags(namespace)
+      :staticmethod:
+
+
+      Return the compiler-flags associated with the future features that
+      have been imported into the given namespace (i.e. globals).
+
+
+   .. method:: _test_globals(self)
+
+
+
+   .. method:: anything_ran(self)
+
+
+
+   .. method:: run(self, verbose=None, on_error=None)
+
+
+      Executes the doctest, checks the results, reports the outcome.
+
+      :Parameters: * **verbose** (*int*) -- verbosity level
+                   * **on_error** (*str*) -- can be 'raise' or 'return'
+
+      :returns: summary
+      :rtype: Dict
+
+
+   .. method:: cmdline(self)
+      :property:
+
+
+      A cli-instruction that can be used to execute *this* doctest.
+
+      :returns:
+      :rtype: str
+
+
+   .. method:: _block_prefix(self)
+      :property:
+
+
+
+   .. method:: _pre_run(self, verbose)
+
+
+
+   .. method:: failed_line_offset(self)
+
+
+      Determine which line in the doctest failed.
+
+
+   .. method:: failed_lineno(self)
+
+
+
+   .. method:: repr_failure(self, with_tb=True)
+
+
+      Constructs lines detailing information about a failed doctest
+
+      CommandLine:
+          python -m xdoctest.core DocTest.repr_failure:0
+          python -m xdoctest.core DocTest.repr_failure:1
+          python -m xdoctest.core DocTest.repr_failure:2
+
+      .. rubric:: Example
+
+      >>> from xdoctest.core import *
+      >>> docstr = utils.codeblock(
+          '''
+          >>> x = 1
+          >>> print(x + 1)
+          2
+          >>> print(x + 3)
+          3
+          >>> print(x + 100)
+          101
+          ''')
+      >>> parsekw = dict(fpath='foo.txt', callname='bar', lineno=42)
+      >>> self = list(parse_docstr_examples(docstr, **parsekw))[0]
+      >>> summary = self.run(on_error='return', verbose=0)
+      >>> print('[res]' + '\n[res]'.join(self.repr_failure()))
+
+      .. rubric:: Example
+
+      >>> from xdoctest.core import *
+      >>> docstr = utils.codeblock(
+          r'''
+          >>> 1
+          1
+          >>> print('.▴  .\n.▴ ▴.') # xdoc: -NORMALIZE_WHITESPACE
+          . ▴ .
+          .▴ ▴.
+          ''')
+      >>> parsekw = dict(fpath='foo.txt', callname='bar', lineno=42)
+      >>> self = list(parse_docstr_examples(docstr, **parsekw))[0]
+      >>> summary = self.run(on_error='return', verbose=1)
+      >>> print('[res]' + '\n[res]'.join(self.repr_failure()))
+
+      .. rubric:: Example
+
+      >>> from xdoctest.core import *
+      >>> docstr = utils.codeblock(
+          '''
+          >>> assert True
+          >>> assert False
+          >>> x = 100
+          ''')
+      >>> self = list(parse_docstr_examples(docstr))[0]
+      >>> summary = self.run(on_error='return', verbose=0)
+      >>> print('[res]' + '\n[res]'.join(self.repr_failure()))
+
+
+   .. method:: _print_captured(self)
+
+
+
+   .. method:: _color(self, text, color, enabled=None)
+
+
+      conditionally color text based on config and flags
+
+
+   .. method:: _post_run(self, verbose)
+
+
+      :returns: summary
+      :rtype: Dict
+
+
+
+.. function:: _traverse_traceback(tb)
+
+

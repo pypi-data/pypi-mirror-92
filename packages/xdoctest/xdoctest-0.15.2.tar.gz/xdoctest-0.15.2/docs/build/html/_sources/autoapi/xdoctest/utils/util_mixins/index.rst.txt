@@ -1,0 +1,57 @@
+:mod:`xdoctest.utils.util_mixins`
+=================================
+
+.. py:module:: xdoctest.utils.util_mixins
+
+.. autoapi-nested-parse::
+
+   Port of NiceRepr from ubelt.util_mixins
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_mixins.NiceRepr
+
+
+
+.. py:class:: NiceRepr
+
+   Bases: :class:`object`
+
+   Defines `__str__` and `__repr__` in terms of `__nice__` function
+   Classes that inherit `NiceRepr` must define `__nice__`
+
+   .. rubric:: Example
+
+   >>> class Foo(NiceRepr):
+   ...    pass
+   >>> class Bar(NiceRepr):
+   ...    def __nice__(self):
+   ...        return 'info'
+   >>> foo = Foo()
+   >>> bar = Bar()
+   >>> assert str(bar) == '<Bar(info)>'
+   >>> assert repr(bar).startswith('<Bar(info) at ')
+   >>> assert 'object at' in str(foo)
+   >>> assert 'object at' in repr(foo)
+
+   .. method:: __repr__(self)
+
+
+      Return repr(self).
+
+
+   .. method:: __str__(self)
+
+
+      Return str(self).
+
+
+

@@ -1,0 +1,19 @@
+:mod:`xdoctest.constants`
+=========================
+
+.. py:module:: xdoctest.constants
+
+.. autoapi-nested-parse::
+
+   Defines sentinal values for internal xdoctest usage
+
+
+
+Module Contents
+---------------
+
+.. data:: NOT_EVALED
+   
+
+   
+

@@ -1,0 +1,188 @@
+:mod:`xdoctest.utils.util_notebook`
+===================================
+
+.. py:module:: xdoctest.utils.util_notebook
+
+.. autoapi-nested-parse::
+
+   Utilities for handling Jupyter / IPython notebooks
+
+   This code is copied and modified from nbimporter
+   (https://github.com/grst/nbimporter/blob/master/nbimporter.py) which is not
+   actively maintained (otherwise we would use it as a dependency).
+
+   Note that using this behavior is very much discouraged, it would be far better
+   if you maintained your reusable code in separate python modules.  See
+   https://github.com/grst/nbimporter for reasons.
+
+   ----
+
+   Allow for importing of IPython Notebooks as modules from Jupyter v4.
+
+   Updated from module collated here:
+   https://github.com/adrn/ipython/blob/master/examples/Notebook/Importing%20Notebooks.ipynb
+
+   Importing from a notebook is different from a module: because one
+   typically keeps many computations and tests besides exportable defs,
+   here we only run code which either defines a function or a class, or
+   imports code from other modules and notebooks. This behaviour can be
+   disabled by setting NotebookLoader.default_options['only_defs'] = False.
+
+   Furthermore, in order to provide per-notebook initialisation, if a
+   special function __nbinit__() is defined in the notebook, it will be
+   executed the first time an import statement is. This behaviour can be
+   disabled by setting NotebookLoader.default_options['run_nbinit'] = False.
+
+   Finally, you can set the encoding of the notebooks with
+   NotebookLoader.default_options['encoding']. The default is 'utf-8'.
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_notebook.CellDeleter
+   xdoctest.utils.util_notebook.NotebookLoader
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_notebook._find_notebook
+   xdoctest.utils.util_notebook.import_notebook_from_path
+   xdoctest.utils.util_notebook.execute_notebook
+   xdoctest.utils.util_notebook._make_test_notebook_fpath
+
+
+.. function:: _find_notebook(fullname, path=None)
+
+   Find a notebook, given its fully qualified name and an optional path
+
+   This turns "foo.bar" into "foo/bar.ipynb"
+   and tries turning "Foo_Bar" into "Foo Bar" if Foo_Bar
+   does not exist.
+
+
+.. py:class:: CellDeleter
+
+   Bases: :class:`ast.NodeTransformer`
+
+   Removes all nodes from an AST which are not suitable
+   for exporting out of a notebook.
+
+   .. method:: visit(self, node)
+
+
+      Visit a node.
+
+
+
+.. py:class:: NotebookLoader(path=None)
+
+   Bases: :class:`object`
+
+   Module Loader for Jupyter Notebooks.
+
+   .. attribute:: default_options
+      
+
+      
+
+   .. method:: load_module(self, fullname=None, fpath=None)
+
+
+      import a notebook as a module
+
+
+
+.. function:: import_notebook_from_path(ipynb_fpath, only_defs=False)
+
+   Import an IPython notebook as a module from a full path and try to maintain
+   clean sys.path variables.
+
+   :Parameters: * **ipynb_fpath** (*str | Path*) -- path to the ipython notebook file to import
+                * **only_defs** (*bool, default=False*) -- if True ignores all non-definition
+                  statements
+
+   .. rubric:: Example
+
+   >>> # xdoctest: +REQUIRES(PY3, module:IPython, module:nbconvert)
+   >>> from xdoctest import utils
+   >>> from os.path import join
+   >>> self = utils.TempDir()
+   >>> dpath = self.ensure()
+   >>> ipynb_fpath = join(dpath, 'test_import_notebook.ipydb')
+   >>> cells = [
+   >>>     utils.codeblock(
+   >>>         '''
+   >>>         def foo():
+   >>>             return 'bar'
+   >>>         '''),
+   >>>     utils.codeblock(
+   >>>         '''
+   >>>         x = 1
+   >>>         ''')
+   >>> ]
+   >>> _make_test_notebook_fpath(ipynb_fpath, cells)
+   >>> module = import_notebook_from_path(ipynb_fpath)
+   >>> assert module.foo() == 'bar'
+   >>> assert module.x == 1
+
+
+.. function:: execute_notebook(ipynb_fpath, timeout=None, verbose=None)
+
+   Execute an IPython notebook in a separate kernel
+
+   :Parameters: **ipynb_fpath** (*str | Path*) -- path to the ipython notebook file to import
+
+   :returns:
+
+             NotebookNode
+                 The executed notebook.
+             resources : dictionary
+                 Additional resources used in the conversion process.
+   :rtype: nb
+
+   .. rubric:: Example
+
+   >>> # xdoctest: +REQUIRES(PY3, module:IPython, module:nbconvert, CPYTHON)
+   >>> from xdoctest import utils
+   >>> from os.path import join
+   >>> self = utils.TempDir()
+   >>> dpath = self.ensure()
+   >>> ipynb_fpath = join(dpath, 'hello_world.ipydb')
+   >>> _make_test_notebook_fpath(ipynb_fpath, [utils.codeblock(
+   >>>     '''
+   >>>     print('hello world')
+   >>>     ''')])
+   >>> nb, resources = execute_notebook(ipynb_fpath, verbose=3)
+   >>> print('resources = {!r}'.format(resources))
+   >>> print('nb = {!r}'.format(nb))
+   >>> for cell in nb['cells']:
+   >>>     if len(cell['outputs']) != 1:
+   >>>         import warnings
+   >>>         warnings.warn('expected an output, is this the issue '
+   >>>                       'described [here](https://github.com/nteract/papermill/issues/426)?')
+
+
+.. function:: _make_test_notebook_fpath(fpath, cell_sources)
+
+   Helper for testing
+
+   :Parameters: * **fpath** (*str*) -- file to write notebook to
+                * **cell_sources** (*List[str]*) -- list of python code blocks
+
+   .. rubric:: References
+
+   https://stackoverflow.com/questions/38193878/create-notebook-from-code
+   https://gist.github.com/fperez/9716279
+
+

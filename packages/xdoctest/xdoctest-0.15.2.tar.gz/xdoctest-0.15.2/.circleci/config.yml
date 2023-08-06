@@ -1,0 +1,325 @@
+# Python CircleCI 2.0 configuration file
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+# References:
+#     # how to setup multiple python versions
+#     https://stackoverflow.com/questions/948354/default-behavior-of-git-push-without-a-branch-specified
+#     https://github.com/adambrenecki/virtualfish/blob/aa3d6271bcb86ad27b6d24f96b5bd386d176f588/.circleci/config.yml
+#
+#     # Multiple files for a checksum
+#     https://discuss.circleci.com/t/cant-checksum-multiple-files-with-slashes-in-the-file-path/20667/2
+version: 2
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test-full-3.9
+      - test-full-3.8
+      - test-full-3.7
+      - test-full-3.6
+      - test-full-3.5
+      - test-full-3.4
+      - test-full-2.7
+
+      - test-minimal-3.9
+      - test-minimal-3.8
+      - test-minimal-3.7
+      - test-minimal-3.6
+      - test-minimal-3.5
+      - test-minimal-3.4
+      - test-minimal-2.7
+
+      - test-minimal-pypy3
+      - test-full-pypy3
+
+jobs:
+
+  ###########
+  # TEMPLATES
+  ###########
+
+  .test-minimal-template: &test-minimal-template  
+    environment:
+      # Setting the python executable environ allows template reuse for pypy
+      - PYTHON_EXE: python
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      # ### INITIALIZE AND CACHE REQUIREMENTS ###
+      - restore_cache:
+          keys:
+          - v3-dependencies-{{ checksum "requirements/runtime.txt" }}-{{ checksum "requirements/tests.txt" }}-{{ checksum "requirements/jupyter.txt" }}
+      - run:
+          name: install dependencies
+          command: |
+            $PYTHON_EXE -m venv venv || virtualenv -v venv  # first command is python3 || second is python2
+            . venv/bin/activate
+            # The "minimal" tests install barebones requirements
+            pip install pip -U
+            pip install -r requirements/tests.txt
+            pip install -r requirements/runtime.txt 
+            pip install .
+      - save_cache:
+          paths:
+            - ./venv
+          key: v3-dependencies-{{ checksum "requirements/runtime.txt" }}-{{ checksum "requirements/tests.txt" }}-{{ checksum "requirements/jupyter.txt" }}
+      # ### RUN TESTS ###
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            # pip install pytest-cov==2.8.1  # hack to avoid regression
+            #python run_tests.py
+            python -m pytest --cov=xdoctest --cov-config .coveragerc --cov-report term -s
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports
+
+
+  .test-full-template: &test-full-template  
+    environment:
+      - PYTHON_EXE: python
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      # ### INITIALIZE AND CACHE REQUIREMENTS ###
+      - restore_cache:
+          keys:
+          - v3-dependencies-{{ checksum "requirements/runtime.txt" }}-{{ checksum "requirements/optional.txt" }}-{{ checksum "requirements/tests.txt" }}-{{ checksum "requirements/jupyter.txt" }}-{{ checksum "requirements/colors.txt" }}
+      - run:
+          name: install dependencies
+          command: |
+            $PYTHON_EXE -m venv venv || virtualenv -v venv  # first command is python3 || second is python2
+            . venv/bin/activate
+            # The "full" dependency install
+            pip install pip -U
+            pip install scikit-build
+            pip install -r requirements.txt
+            pip install .
+      - save_cache:
+          paths:
+            - ./venv
+          key: v3-dependencies-{{ checksum "requirements/runtime.txt" }}-{{ checksum "requirements/optional.txt" }}-{{ checksum "requirements/tests.txt" }}-{{ checksum "requirements/jupyter.txt" }}-{{ checksum "requirements/colors.txt" }}
+      # ### RUN TESTS ###
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            # pip install pytest-cov==2.8.1  # hack to avoid regression
+            #python run_tests.py
+            python -m pytest --cov=xdoctest --cov-config .coveragerc --cov-report term -s
+      - store_artifacts:
+          path: test-reports
+          destination: test-reports
+
+
+  ###################################
+  ### INHERIT FROM BASE TEMPLATES ###
+  ###################################
+
+  # Define tests fo the other python verisons using the "test3.6" template
+  # and indicating what needs to be modified.
+  #
+  # All we need to do is change the base docker image so python is the
+  # version we want we can reuse everything else from the template
+  
+  test-full-3.9:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.9
+    working_directory: ~/repo-full-39
+  
+  test-full-3.8:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.8
+    working_directory: ~/repo-full-38
+  
+  test-full-3.7:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.7
+    working_directory: ~/repo-full-37
+
+  test-full-3.6:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.5
+    working_directory: ~/repo-full-36
+
+  test-full-3.5:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.5
+    working_directory: ~/repo-full-35
+
+  test-full-3.4:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:3.4
+    working_directory: ~/repo-full-34
+
+  test-full-2.7:
+    <<: *test-full-template
+    docker:
+      - image: circleci/python:2.7
+    working_directory: ~/repo-full-27
+
+  # ------------
+  
+  test-minimal-3.9:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.9
+    working_directory: ~/repo-minimal-39
+  
+  test-minimal-3.8:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.8
+    working_directory: ~/repo-minimal-38
+
+  test-minimal-3.7:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.7
+    working_directory: ~/repo-minimal-37
+
+  test-minimal-3.6:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.6
+    working_directory: ~/repo-minimal-36
+
+  test-minimal-3.5:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.5
+    working_directory: ~/repo-minimal-35
+
+  test-minimal-3.4:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:3.4
+    working_directory: ~/repo-minimal-34
+
+  test-minimal-2.7:
+    <<: *test-minimal-template
+    docker:
+      - image: circleci/python:2.7
+    working_directory: ~/repo-minimal-27
+
+  # --- pypy ----
+
+  test-minimal-pypy3:
+    <<: *test-minimal-template
+    docker:
+      - image: pypy:3
+    environment:
+      - PYTHON_EXE: pypy3
+    working_directory: ~/repo-minimal-pypy3
+
+  test-full-pypy3:
+    <<: *test-full-template
+    docker:
+      - image: pypy:3
+    environment:
+      - PYTHON_EXE: pypy3
+    working_directory: ~/repo-full-pypy3
+        
+.__doc__: &__doc__
+    - | 
+        IMAGE_NAME=circleci/python:3.9
+        docker pull $IMAGE_NAME
+
+        IMAGE_NAME=pypy:3
+        docker pull $IMAGE_NAME
+        docker run -v $HOME/code/xdoctest:/io -it $IMAGE_NAME bash
+
+        IMAGE_NAME=circleci/python:3.10-rc
+        docker pull $IMAGE_NAME
+
+        
+        docker run -v $HOME/code/xdoctest:/io -it pypy:3 bash
+
+        docker run -v $HOME/code/xdoctest:/io -it $IMAGE_NAME bash
+
+        cd /io
+        
+        # Logic to print out the commands to reproduce CI steps
+        source $HOME/local/init/utils.sh
+        pyblock "
+            import yaml
+            import ubelt as ub
+            data = yaml.safe_load(open(ub.expandpath('$HOME/code/xdoctest/.circleci/config.yml')))
+            JOB_NAME = 'test-minimal-pypy3'
+            job = data['jobs'][JOB_NAME]
+            IMAGE_NAME = job['docker'][0]['image']
+            print('IMAGE_NAME={}'.format(IMAGE_NAME))
+            print('docker run -v $HOME/code/xdoctest:/io -it {} bash'.format(IMAGE_NAME))
+            print(ub.codeblock(
+            '''
+            ###
+            ###
+            # Clone the mounted repo for a fresh start
+            mkdir -p $HOME/code
+            git clone /io /root/{JOB_NAME}
+            cd /root/{JOB_NAME}
+            ''').format(JOB_NAME=JOB_NAME))
+            for kv in job['environment']:
+                for k, v in kv.items():
+                    print('{}={}'.format(k, v))
+            for step in job['steps']:
+                if 'run' in step:
+                    print(step['run']['command'])
+        "
+
+
+        IMAGE_NAME=pypy:3
+        docker run -v $HOME/code/xdoctest:/io -it pypy:3 bash
+        ###
+        ###
+        # Clone the mounted repo for a fresh start
+        mkdir -p /home/joncrall/code
+        git clone /io /root/test-minimal-pypy3
+        cd /root/test-minimal-pypy3
+        PYTHON_EXE=pypy3
+        $PYTHON_EXE -m venv venv || virtualenv -v venv  # first command is python3 || second is python2
+        . venv/bin/activate
+        # The "minimal" tests install barebones requirements
+        pip install pip -U
+        pip install -r requirements/tests.txt
+        pip install -r requirements/runtime.txt 
+        pip install .
+
+        . venv/bin/activate
+        python -m pytest --cov=xdoctest --cov-config .coveragerc --cov-report term -s
+        # pip install pytest-cov==2.8.1  # hack to avoid regression
+        #python run_tests.py
+
+
+        # TO RUN A JOB ON YOUR LOCAL MACHINE
+        # INSTALL CIRCLE CI
+        curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | DESTDIR=$HOME/.local/bin bash
+
+        JOB_NAME=test-minimal-pypy3
+        circleci local execute --job $JOB_NAME
+
+        JOB_NAME=test-full-pypy3
+        circleci local execute --job $JOB_NAME
+
+        # Run circleci scripts on a local machine
+        mkdir -p $HOME/Downloads
+        curl -fLSs https://raw.githubusercontent.com/CircleCI-Public/circleci-cli/master/install.sh | DESTDIR=$HOME/Downloads bash
+
+        $HOME/.local/bin/circleci update
+        $HOME/.local/bin/circleci switch
+
+        $HOME/.local/bin/circleci config validate
+        $HOME/.local/bin/circleci local execute --job test-minimal-3.9
+        $HOME/.local/bin/circleci local execute --job test-minimal-pypy3
+        $HOME/.local/bin/circleci local execute --job test-full-2.7
+        $HOME/.local/bin/circleci local execute --config .circleci/config.yml --job test_full/cp38-38-linux
+        $HOME/.local/bin/circleci local execute --config .circleci/config.yml 

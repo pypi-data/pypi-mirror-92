@@ -1,0 +1,188 @@
+:mod:`xdoctest.doctest_part`
+============================
+
+.. py:module:: xdoctest.doctest_part
+
+.. autoapi-nested-parse::
+
+   Simple storage container used to store a single executable part of a doctest
+   example. Multiple parts are typically stored in a
+   :class:`xdoctest.doctest_example.Doctest`, which manages execution of each
+   part.
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.doctest_part.DoctestPart
+
+
+
+.. data:: __devnotes__
+   :annotation: = 
+TODO:
+    perhaps rename doctest part to DoctestCell, because there is a striking
+    similarity between Jupyter notebook cells and doctest parts.
+
+
+   
+
+.. py:class:: DoctestPart(exec_lines, want_lines=None, line_offset=0, orig_lines=None, directives=None, partno=None)
+
+   Bases: :class:`object`
+
+   The result of parsing that represents a "logical block" of code.
+   If a want statment is defined, it is stored here.
+
+   :ivar exec_lines: executable lines in this part
+   :vartype exec_lines: list
+   :ivar want_lines: lines that the result of the execution should match
+   :vartype want_lines: list
+   :ivar line_offset: line number relative to the start of the doctest
+   :vartype line_offset: int
+   :ivar orig_lines: the original text parsed into exec and want
+   :vartype orig_lines: list
+   :ivar _directives: directives that this part will apply before being run
+   :vartype _directives: list
+   :ivar partno: identifies the part number in the larger example
+   :vartype partno: int
+   :ivar compile_mode: mode passed to compile.
+
+   :vartype compile_mode: str
+
+   .. method:: n_lines(self)
+      :property:
+
+
+
+   .. method:: n_exec_lines(self)
+      :property:
+
+
+
+   .. method:: n_want_lines(self)
+      :property:
+
+
+
+   .. method:: source(self)
+      :property:
+
+
+
+   .. method:: directives(self)
+      :property:
+
+
+      CommandLine:
+          python -m xdoctest.parser DoctestPart.directives
+
+      .. rubric:: Example
+
+      >>> self = DoctestPart(['# doctest: +SKIP'], None, 0)
+      >>> print(', '.join(list(map(str, self.directives))))
+      <Directive(+SKIP)>
+
+
+   .. method:: want(self)
+      :property:
+
+
+
+   .. method:: __nice__(self)
+
+
+
+   .. method:: __repr__(self)
+
+
+      Return repr(self).
+
+
+   .. method:: __str__(self)
+
+
+      Return str(self).
+
+
+   .. method:: check(part, got_stdout, got_eval=constants.NOT_EVALED, runstate=None, unmatched=None)
+
+
+      Check if the "got" output obtained by running this test matches the
+      "want" target. Note there are two types of "got" output: (1) output
+      from stdout and (2) evaled output. If both are specified, then want may
+      match either value.
+
+      :Parameters: * **got_stdout** (*str*) -- output from stdout
+                   * **got_eval** (*str*) -- output from an eval statement
+                   * **runstate** (*directive.RuntimeState*) -- runner options
+                   * **unmatched** (*list*) -- if specified, the want statement is allowed
+                     to match any trailing sequence of unmatched output and
+                     got_stdout from this doctest part.
+
+      :raises xdoctest.checker.GotWantException - If the "got" differs from this: parts want.
+
+      .. rubric:: Example
+
+      >>> # xdoctest: +REQUIRES(module:pytest)
+      >>> import pytest
+      >>> got_stdout = 'more text\n'
+      >>> unmatched = ['some text\n']
+      >>> self = DoctestPart(None, want_lines=['some text', 'more text'])
+      >>> self.check(got_stdout, unmatched=unmatched)
+      >>> # Leading junk doesnt matter if we match a trailing sequence
+      >>> self.check(got_stdout, unmatched=['junk\n'] + unmatched)
+      >>> # fail when want doesnt match any trailing sequence
+      >>> with pytest.raises(checker.GotWantException):
+      >>>     self.check(got_stdout)
+      >>> with pytest.raises(checker.GotWantException):
+      >>>     self.check(got_stdout, ['some text\n', 'junk\n'])
+
+
+   .. method:: format_part(self, linenos=True, want=True, startline=1, n_digits=None, colored=False, partnos=False, prefix=True)
+
+
+      Customizable formatting of the source and want for this doctest.
+
+      CommandLine:
+          python -m xdoctest.doctest_part DoctestPart.format_part
+
+      :Parameters: * **linenos** (*bool*) -- show line numbers
+                   * **want** (*bool*) -- include the want value if it exists
+                   * **startline** (*int*) -- offsets the line numbering
+                   * **n_digits** (*int*) -- number of digits to use for line numbers
+                   * **colored** (*bool*) -- pygmentize the colde
+                   * **partnos** (*bool*) -- if True, shows the part number in the string
+                   * **prefix** (*bool*) -- if False, exclude the doctest `>>> ` prefix
+
+      CommandLine:
+          python -m xdoctest.doctest_part DoctestPart.format_part:0
+
+      .. rubric:: Example
+
+      >>> from xdoctest.parser import *
+      >>> self = DoctestPart(exec_lines=['print(123)'],
+      >>>                    want_lines=['123'], line_offset=0, partno=1)
+      >>> # xdoctest: -NORMALIZE_WHITESPACE
+      >>> print(self.format_part(partnos=True))
+      (p1) 1 >>> print(123)
+             123
+
+      .. rubric:: Example
+
+      >>> from xdoctest.parser import *
+      >>> self = DoctestPart(exec_lines=['print(123)'],
+      >>>                    want_lines=['123'], line_offset=0, partno=1)
+      >>> # xdoctest: -NORMALIZE_WHITESPACE
+      >>> print(self.format_part(partnos=False, prefix=False,
+      >>>                       linenos=False, want=False))
+      print(123)
+
+
+

@@ -1,0 +1,54 @@
+:mod:`xdoctest.utils.util_misc`
+===============================
+
+.. py:module:: xdoctest.utils.util_misc
+
+.. autoapi-nested-parse::
+
+   Utilities that are mainly used in self-testing
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_misc.TempDoctest
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.utils.util_misc._run_case
+
+
+.. py:class:: TempDoctest(docstr, modname=None)
+
+   Bases: :class:`object`
+
+   Creates a temporary file containing a module-level doctest for testing
+
+   .. rubric:: Example
+
+   >>> from xdoctest import core
+   >>> self = TempDoctest('>>> a = 1')
+   >>> doctests = list(core.parse_doctestables(self.modpath))
+   >>> assert len(doctests) == 1
+
+
+.. function:: _run_case(source, style='auto')
+
+   Runs all doctests in a source block
+
+   :Parameters: **source** (*str*) -- source code of an entire file
+
+   TODO: run case is over-duplicated and should be separated into a test utils directory
+
+

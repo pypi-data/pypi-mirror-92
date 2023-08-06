@@ -1,0 +1,164 @@
+:mod:`xdoctest.dynamic_analysis`
+================================
+
+.. py:module:: xdoctest.dynamic_analysis
+
+.. autoapi-nested-parse::
+
+   Utilities for dynamically inspecting code
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.dynamic_analysis.parse_dynamic_calldefs
+   xdoctest.dynamic_analysis.get_stack_frame
+   xdoctest.dynamic_analysis.get_parent_frame
+   xdoctest.dynamic_analysis.iter_module_doctestables
+   xdoctest.dynamic_analysis._func_globals
+   xdoctest.dynamic_analysis.is_defined_by_module
+
+
+.. function:: parse_dynamic_calldefs(modpath_or_module)
+
+   Dynamic parsing of module doctestable items.
+
+   Unlike static parsing this forces execution of the module code before
+   test-time, however the former is limited to plain-text python files whereas
+   this can discover doctests in binary extension libraries.
+
+   :Parameters: **modpath_or_module** (*str | Module*) -- path to module or the module itself
+
+   :returns:
+
+                 maping from callnames to CallDefNodes, which contain
+                    info about the item with the doctest.
+   :rtype: Dict[str, CallDefNode]
+
+   CommandLine:
+       python -m xdoctest.dynamic_analysis parse_dynamic_calldefs
+
+   .. rubric:: Example
+
+   >>> from xdoctest import dynamic_analysis
+   >>> module = dynamic_analysis
+   >>> calldefs = parse_dynamic_calldefs(module.__file__)
+   >>> for key, calldef in sorted(calldefs.items()):
+   ...     print('key = {!r}'.format(key))
+   ...     print(' * calldef.callname = {}'.format(calldef.callname))
+   ...     if calldef.docstr is None:
+   ...         print(' * len(calldef.docstr) = {}'.format(calldef.docstr))
+   ...     else:
+   ...         print(' * len(calldef.docstr) = {}'.format(len(calldef.docstr)))
+
+
+.. function:: get_stack_frame(n=0, strict=True)
+
+   Gets the current stack frame or any of its ancestors dynamically
+
+   :Parameters: * **n** (*int*) -- n=0 means the frame you called this function in.
+                  n=1 is the parent frame.
+                * **strict** (*bool*) -- (default = True)
+
+   :returns: frame_cur
+   :rtype: frame
+
+   .. rubric:: Example
+
+   >>> frame_cur = get_stack_frame(n=0)
+   >>> print('frame_cur = %r' % (frame_cur,))
+   >>> assert frame_cur.f_globals['frame_cur'] is frame_cur
+
+
+.. function:: get_parent_frame(n=0)
+
+   Returns the frame of that called you.
+   This is equivalent to `get_stack_frame(n=1)`
+
+   :Parameters: **n** (*int*) -- n=0 means the frame you called this function in.
+                n=1 is the parent frame.
+
+   :returns: parent_frame
+   :rtype: frame
+
+   .. rubric:: Example
+
+   >>> root0 = get_stack_frame(n=0)
+   >>> def foo():
+   >>>     child = get_stack_frame(n=0)
+   >>>     root1 = get_parent_frame(n=0)
+   >>>     root2 = get_stack_frame(n=1)
+   >>>     return child, root1, root2
+   >>> # Note this wont work in IPython because several
+   >>> # frames will be inserted between here and foo
+   >>> child, root1, root2 = foo()
+   >>> print('root0 = %r' % (root0,))
+   >>> print('root1 = %r' % (root1,))
+   >>> print('root2 = %r' % (root2,))
+   >>> print('child = %r' % (child,))
+   >>> assert root0 == root1
+   >>> assert root1 == root2
+   >>> assert child != root1
+
+
+.. function:: iter_module_doctestables(module)
+
+   Yeilds doctestable objects that belong to a live python module
+
+   :Parameters: **module** (*module*) -- live python module
+
+   Yeilds:
+       tuple (str, callable): (funcname, func) doctestable
+
+   CommandLine:
+       python -m xdoctest.dynamic_analysis iter_module_doctestables
+
+   .. rubric:: Example
+
+   >>> from xdoctest import dynamic_analysis
+   >>> module = dynamic_analysis
+   >>> doctestable_list = list(iter_module_doctestables(module))
+   >>> items = sorted([str(item) for item in doctestable_list])
+   >>> print('[' + '\n'.join(items) + ']')
+
+
+.. function:: _func_globals(func)
+
+
+.. function:: is_defined_by_module(item, module)
+
+   Check if item is directly defined by a module.
+
+   This check may not always work, especially for decorated functions.
+
+   CommandLine:
+       xdoctest -m xdoctest.dynamic_analysis is_defined_by_module
+
+   .. rubric:: Example
+
+   >>> from xdoctest import dynamic_analysis
+   >>> item = dynamic_analysis.is_defined_by_module
+   >>> module = dynamic_analysis
+   >>> assert is_defined_by_module(item, module)
+   >>> item = dynamic_analysis.six
+   >>> assert not is_defined_by_module(item, module)
+   >>> item = dynamic_analysis.six.print_
+   >>> assert not is_defined_by_module(item, module)
+   >>> assert not is_defined_by_module(print, module)
+   >>> # xdoctest: +REQUIRES(CPython)
+   >>> import _ctypes
+   >>> item = _ctypes.Array
+   >>> module = _ctypes
+   >>> assert is_defined_by_module(item, module)
+   >>> item = _ctypes.CFuncPtr.restype
+   >>> module = _ctypes
+   >>> assert is_defined_by_module(item, module)
+
+

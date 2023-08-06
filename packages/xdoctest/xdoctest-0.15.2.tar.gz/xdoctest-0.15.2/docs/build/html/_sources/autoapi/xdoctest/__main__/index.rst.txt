@@ -1,0 +1,47 @@
+:mod:`xdoctest.__main__`
+========================
+
+.. py:module:: xdoctest.__main__
+
+.. autoapi-nested-parse::
+
+   Provides a simple script for running module doctests.
+
+   This should work even if the target module is unaware of xdoctest.
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.__main__.main
+
+
+.. data:: __tests
+   :annotation: = 
+
+Ignore:
+
+    xdoctest -m xdoctest.demo
+    xdoctest ~/code/xdoctest/xdoctest/demo.py
+
+
+   
+
+.. function:: main(argv=None)
+
+   python -m xdoctest xdoctest all
+   python -m xdoctest networkx all --options=+IGNORE_WHITESPACE
+
+
+.. data:: retcode
+   
+
+   
+

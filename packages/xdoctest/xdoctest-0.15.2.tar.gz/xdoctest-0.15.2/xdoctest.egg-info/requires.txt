@@ -1,0 +1,71 @@
+six
+
+[all]
+six
+pytest
+pytest-cov
+codecov
+scikit-build
+cmake
+ninja
+pybind11
+Pygments
+
+[all:platform_system == "Windows"]
+colorama
+
+[all:python_version > "3.4"]
+nbformat
+nbconvert
+jupyter_client
+IPython
+ipykernel
+nbformat
+nbconvert
+jupyter_client
+IPython
+ipykernel
+
+[colors]
+Pygments
+
+[colors:platform_system == "Windows"]
+colorama
+
+[jupyter]
+
+[jupyter:python_version > "3.4"]
+nbformat
+nbconvert
+jupyter_client
+IPython
+ipykernel
+
+[optional]
+Pygments
+
+[optional:platform_system == "Windows"]
+colorama
+
+[optional:python_version > "3.4"]
+nbformat
+nbconvert
+jupyter_client
+IPython
+ipykernel
+
+[tests]
+pytest
+pytest-cov
+codecov
+scikit-build
+cmake
+ninja
+pybind11
+
+[tests:python_version > "3.4"]
+nbformat
+nbconvert
+jupyter_client
+IPython
+ipykernel

@@ -1,0 +1,156 @@
+:mod:`xdoctest.plugin`
+======================
+
+.. py:module:: xdoctest.plugin
+
+.. autoapi-nested-parse::
+
+   The Pytest XDoctest Plugin
+   --------------------------
+
+   This file is registered as a pytest plugin when you install xdoctest. By
+   executing pytest with ``--xdoctest-modules`` (or simply ``--xdoctest``), this
+   plugin will be enabled. This also disables the original builtin doctest plugin.
+
+   When xdoctest is enabled, pytest will discover and run doctests in modules and
+   test files using xdoctest's improved parser and runtime environment.
+
+   To ensure maximum backwards compatibility with the original doctest module,
+   this code is heavilly based on ``pytest/_pytest/doctest.py`` plugin file in
+   https://github.com/pytest-dev/pytest
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.plugin.ReprFailXDoctest
+   xdoctest.plugin.XDoctestItem
+   xdoctest.plugin._XDoctestBase
+   xdoctest.plugin.XDoctestTextfile
+   xdoctest.plugin.XDoctestModule
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   xdoctest.plugin.monkey_patch_disable_normal_doctest
+   xdoctest.plugin.pytest_addoption
+   xdoctest.plugin.pytest_collect_file
+   xdoctest.plugin._is_xdoctest
+   xdoctest.plugin._setup_fixtures
+   xdoctest.plugin.xdoctest_namespace
+
+
+.. function:: monkey_patch_disable_normal_doctest()
+
+   The doctest plugin captures tests even if it is disabled. This causes
+   conflicts with this package. Thus, we monkey-patch ``_pytest.doctest`` to
+   prevent it from collecting anything. Perhaps there is a less terrible way
+   to do this.
+
+
+.. function:: pytest_addoption(parser)
+
+
+.. function:: pytest_collect_file(path, parent)
+
+
+.. function:: _is_xdoctest(config, path, parent)
+
+
+.. py:class:: ReprFailXDoctest(reprlocation, lines)
+
+   Bases: :class:`_pytest._code.code.TerminalRepr`
+
+   .. method:: toterminal(self, tw)
+
+
+
+
+.. py:class:: XDoctestItem(name, parent, example=None)
+
+   Bases: :class:`pytest.Item`
+
+   a basic test invocation item. Note that for a single function
+   there might be multiple test invocation items.
+
+   .. method:: setup(self)
+
+
+
+   .. method:: runtest(self)
+
+
+
+   .. method:: repr_failure(self, excinfo)
+
+
+
+   .. method:: reportinfo(self)
+
+
+
+
+.. py:class:: _XDoctestBase(fspath: py.path.local, parent=None, config=None, session=None, nodeid=None)
+
+   Bases: :class:`pytest.Module`
+
+   Collector for test classes and functions.
+
+   .. method:: _prepare_internal_config(self)
+
+
+
+
+.. py:class:: XDoctestTextfile(fspath: py.path.local, parent=None, config=None, session=None, nodeid=None)
+
+   Bases: :class:`xdoctest.plugin._XDoctestBase`
+
+   Collector for test classes and functions.
+
+   .. attribute:: obj
+      
+
+      
+
+   .. method:: collect(self)
+
+
+      returns a list of children (items and collectors)
+      for this collection node.
+
+
+
+.. py:class:: XDoctestModule(fspath: py.path.local, parent=None, config=None, session=None, nodeid=None)
+
+   Bases: :class:`xdoctest.plugin._XDoctestBase`
+
+   Collector for test classes and functions.
+
+   .. method:: collect(self)
+
+
+      returns a list of children (items and collectors)
+      for this collection node.
+
+
+
+.. function:: _setup_fixtures(xdoctest_item)
+
+   Used by XDoctestTextfile and XDoctestItem to setup fixture information.
+
+
+.. function:: xdoctest_namespace()
+
+   Inject names into the xdoctest namespace.
+
+
