@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+tikkie/__init__.py
+tikkie/_api.py
+tikkie/_session.py
+tikkie/_utils.py
+tikkie/exceptions.py
+tikkie/types.py
+tikkie/utils.py
+tikkie.egg-info/PKG-INFO
+tikkie.egg-info/SOURCES.txt
+tikkie.egg-info/dependency_links.txt
+tikkie.egg-info/requires.txt
+tikkie.egg-info/top_level.txt

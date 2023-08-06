@@ -1,0 +1,15 @@
+[tool.black]
+line-length = 100
+py37 = true
+
+[tool.isort]
+not_skip = "__init__.py"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+combine_as_imports = true
+line_length = 100
+default_section = "THIRDPARTY"
+known_first_party = "tikkie"
+known_tests = "tests"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,TESTS,LOCALFOLDER"
