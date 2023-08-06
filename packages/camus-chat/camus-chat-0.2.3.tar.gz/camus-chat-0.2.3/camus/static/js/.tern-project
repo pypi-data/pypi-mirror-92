@@ -1,0 +1,13 @@
+{
+  "ecmaVersion": 8,
+  "libs": [
+    "browser",
+    "ecma8",
+    "react"
+  ],
+  "plugins": {
+    "node": {},
+    "modules": {},
+    "es_modules": {}
+  }
+}
