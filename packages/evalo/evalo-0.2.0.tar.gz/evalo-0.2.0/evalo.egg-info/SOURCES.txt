@@ -1,0 +1,11 @@
+README.md
+setup.py
+evalo/__init__.py
+evalo/evalo.py
+evalo/reify.py
+evalo/solve.py
+evalo/utils.py
+evalo.egg-info/PKG-INFO
+evalo.egg-info/SOURCES.txt
+evalo.egg-info/dependency_links.txt
+evalo.egg-info/top_level.txt
