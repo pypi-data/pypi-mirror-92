@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: grexxconnect-ess
+Version: 0.1.7
+Summary: Grexx External System Service Helper
+Home-page: UNKNOWN
+Author: Grexx
+Author-email: servicedesk@grexx.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: colorlog
+
+# GrexxConnect External System Service (ESS) Helper
+
+### Installation 
+`pip install grexxconnect-ess`
+
