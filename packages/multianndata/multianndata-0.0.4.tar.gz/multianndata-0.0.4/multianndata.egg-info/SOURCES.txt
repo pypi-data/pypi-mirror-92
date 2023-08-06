@@ -1,0 +1,9 @@
+README.md
+setup.py
+multianndata/__init__.py
+multianndata/core.py
+multianndata.egg-info/PKG-INFO
+multianndata.egg-info/SOURCES.txt
+multianndata.egg-info/dependency_links.txt
+multianndata.egg-info/requires.txt
+multianndata.egg-info/top_level.txt
