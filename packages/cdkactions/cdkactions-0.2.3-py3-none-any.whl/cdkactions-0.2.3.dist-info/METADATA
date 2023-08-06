@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: cdkactions
+Version: 0.2.3
+Summary: Cloud Development Kit for GitHub Actions
+Home-page: https://github.com/ArmaanT/cdkactions.git
+Author: Armaan Tobaccowalla<armaan@tobaccowalla.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/ArmaanT/cdkactions.git
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: constructs (<4.0.0,>=3.2.109)
+Requires-Dist: jsii (<2.0.0,>=1.17.1)
+Requires-Dist: publication (>=0.0.3)
+
+# cdkactions
+
+See the [main README](https://github.com/ArmaanT/cdkactions/) for an overview of cdkactions.
+
+See the [API reference](https://github.com/ArmaanT/cdkactions/blob/master/packages/cdkactions/API.md) for detailed information about the cdkactions constructs.
+
+## License
+
+This project is distributed under the [Apache License, Version 2.0](./LICENSE).
+
+
