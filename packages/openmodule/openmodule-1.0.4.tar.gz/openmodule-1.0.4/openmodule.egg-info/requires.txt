@@ -1,0 +1,4 @@
+pydantic<2,>=1.7
+sentry-sdk<1,>=0.10.2
+orjson<4,>=3.4.7
+pyzmq<22,>=21

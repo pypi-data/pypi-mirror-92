@@ -1,0 +1,39 @@
+CHANGES
+=======
+
+v1.0.4
+------
+
+* openmodule core, and tests
+* graceful shutdown
+* init / shutdown
+* zmq context terminated excepted over everything
+* health utils, and changes for new clean startup / shutdown
+* more testcases and logging plus sentry added
+* improves testcases, ignores zmq errors during shutdown [skip ci]
+* fixed typo
+
+v1.0.3
+------
+
+* rpc server with pydantic models implemented and tested
+* fixed testsetup
+* rpc server copied over
+* initial commit
+* fixes in test setup, repo cleanup and identical layout to the other packages, added htmlcov artifacts
+
+v1.0.2
+------
+
+* change api\_key to api\_token
+
+v1.0.1
+------
+
+* cleanup repository
+
+v1.0.0
+------
+
+* added webhook secret [skip ci]
+* initial commit
