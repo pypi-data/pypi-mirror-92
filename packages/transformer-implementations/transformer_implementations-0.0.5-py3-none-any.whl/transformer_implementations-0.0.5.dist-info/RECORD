@@ -1,0 +1,10 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/loss_functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/loss_functions/loss.py,sha256=fXFEPfvnkF3qmY9tE7Ej_iFxIPn_GkoqorvOEM27984,1076
+src/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/models/transformer.py,sha256=lL3aw75BSz3T0MdHEaivDEeURhuK8d5ZfL1PNT0L1R8,18878
+transformer_implementations-0.0.5.dist-info/LICENSE,sha256=EjBcXOQGnPWcTdQ2WPRJX8oUnFb5hYs9uJMhs9L9AWk,1091
+transformer_implementations-0.0.5.dist-info/METADATA,sha256=F66QcgZATSEPLPXN7QaaSnk8fVloDK0RJfnAgd424-w,2575
+transformer_implementations-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+transformer_implementations-0.0.5.dist-info/top_level.txt,sha256=Vl6oGtnaZUVMP8PB2IxhJECQHsbDLfth5Na7I_1_-GY,5
+transformer_implementations-0.0.5.dist-info/RECORD,,
