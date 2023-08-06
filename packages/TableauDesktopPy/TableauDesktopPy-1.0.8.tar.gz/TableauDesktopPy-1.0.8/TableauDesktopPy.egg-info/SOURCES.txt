@@ -1,0 +1,8 @@
+README.md
+setup.py
+TableauDesktopPy/TableauDesktopPy.py
+TableauDesktopPy/__init__.py
+TableauDesktopPy.egg-info/PKG-INFO
+TableauDesktopPy.egg-info/SOURCES.txt
+TableauDesktopPy.egg-info/dependency_links.txt
+TableauDesktopPy.egg-info/top_level.txt
