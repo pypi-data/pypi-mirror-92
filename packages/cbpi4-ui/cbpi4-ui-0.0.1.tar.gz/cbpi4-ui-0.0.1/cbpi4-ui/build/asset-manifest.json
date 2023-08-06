@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.a014664e.chunk.css",
+    "main.js": "./static/js/main.299c49d4.chunk.js",
+    "main.js.map": "./static/js/main.299c49d4.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2aebf4dc.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2aebf4dc.js.map",
+    "static/js/2.622097d4.chunk.js": "./static/js/2.622097d4.chunk.js",
+    "static/js/2.622097d4.chunk.js.map": "./static/js/2.622097d4.chunk.js.map",
+    "static/js/3.0d4cc9e5.chunk.js": "./static/js/3.0d4cc9e5.chunk.js",
+    "static/js/3.0d4cc9e5.chunk.js.map": "./static/js/3.0d4cc9e5.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.a014664e.chunk.css.map": "./static/css/main.a014664e.chunk.css.map",
+    "static/js/2.622097d4.chunk.js.LICENSE.txt": "./static/js/2.622097d4.chunk.js.LICENSE.txt",
+    "static/media/CBPi_logo.2fc3a7bc.svg": "./static/media/CBPi_logo.2fc3a7bc.svg",
+    "static/media/cbpi.f1a4ae59.png": "./static/media/cbpi.f1a4ae59.png",
+    "static/media/cbpi_no_border.5446caa7.png": "./static/media/cbpi_no_border.5446caa7.png",
+    "static/media/cbpi_pattern.ec6e8cb2.png": "./static/media/cbpi_pattern.ec6e8cb2.png",
+    "static/media/kettle.600ccdce.svg": "./static/media/kettle.600ccdce.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2aebf4dc.js",
+    "static/js/2.622097d4.chunk.js",
+    "static/css/main.a014664e.chunk.css",
+    "static/js/main.299c49d4.chunk.js"
+  ]
+}
