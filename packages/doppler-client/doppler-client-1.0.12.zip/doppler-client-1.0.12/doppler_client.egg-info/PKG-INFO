@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: doppler-client
+Version: 1.0.12
+Summary: This package is deprecated and is no longer functional. Learn how to migrate to the new CLI at https://docs.doppler.com/docs/removal-deprecated-packages-scripts
+Home-page: https://github.com/DopplerHQ/python-client
+Author: Doppler Team
+Author-email: support@doppler.com
+License: Apache License 2.0
+Project-URL: Source, https://github.com/DopplerHQ/python-client
+Project-URL: Bug Reports, https://github.com/DopplerHQ/python-client/issues
+Description: # DEPRECATED AND SCHEDULED FOR REMOVAL FROM PYPI JANUARY 15, 2021
+        
+        This package is deprecated and is no longer functional. Learn how to migrate to the new CLI at https://docs.doppler.com/docs/removal-deprecated-packages-scripts
+Keywords: doppler environment management api key keys secrets
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown

@@ -1,0 +1,8 @@
+README.md
+setup.py
+doppler_client/__init__.py
+doppler_client.egg-info/PKG-INFO
+doppler_client.egg-info/SOURCES.txt
+doppler_client.egg-info/dependency_links.txt
+doppler_client.egg-info/requires.txt
+doppler_client.egg-info/top_level.txt
